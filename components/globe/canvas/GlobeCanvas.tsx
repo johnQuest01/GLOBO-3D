@@ -2,7 +2,6 @@
 
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { Suspense, useMemo, useRef } from 'react';
-import dynamic from 'next/dynamic';
 import * as THREE from 'three';
 
 import { useGlobeStateAndHandlers } from '@/app/hooks/useGlobeStateAndHandlers';
@@ -11,23 +10,21 @@ import { useMessageSystem } from '@/app/hooks/useMessageSystem';
 import { useGeoMapping } from '@/app/hooks/useGeoMapping';
 
 import GlobeScene from './GlobeScene';
-
-const StatePopup = dynamic(() => import('@/components/globe/ui/StatePopup'));
-const CountryPopup = dynamic(() => import('@/components/globe/ui/CountryPopup'));
-const TravelPopup = dynamic(() => import('@/components/globe/ui/TravelPopup'));
-const BaggagePopup = dynamic(() => import('@/components/globe/ui/BaggagePopup'));
-const VacationPopup = dynamic(() => import('@/components/globe/ui/VacationPopup'));
-const AdminAnimationPopup = dynamic(() => import('@/components/globe/ui/AdminAnimationPopup'));
-const UserProfilePopup = dynamic(() => import('@/components/globe/ui/UserProfilePopup'));
-const MenuPopup = dynamic(() => import('@/components/globe/ui/MenuPopup'));
-const MyNewsPopup = dynamic(() => import('@/components/globe/ui/MyNewsPopup'));
-const MyTouristSitesPopup = dynamic(() => import('@/components/globe/ui/MyTouristSitesPopup'));
-const DynamicNewsPopup = dynamic(() => import('@/components/globe/ui/DynamicNewsPopup'));
-const AdvertisePopup = dynamic(() => import('@/components/globe/ui/AdvertisePopup'));
-const TourismPopup = dynamic(() => import('@/components/globe/ui/TourismPopup'));
-const MyVacationSpotsPopup = dynamic(() => import('@/components/globe/ui/MyVacationSpotsPopup'));
-// Importa o Popup de Mensagem Atualizado
-const MessageInputPopup = dynamic(() => import('@/components/globe/ui/MessageInputPopup'));
+import StatePopup from '@/components/globe/ui/StatePopup';
+import CountryPopup from '@/components/globe/ui/CountryPopup';
+import TravelPopup from '@/components/globe/ui/TravelPopup';
+import BaggagePopup from '@/components/globe/ui/BaggagePopup';
+import VacationPopup from '@/components/globe/ui/VacationPopup';
+import AdminAnimationPopup from '@/components/globe/ui/AdminAnimationPopup';
+import UserProfilePopup from '@/components/globe/ui/UserProfilePopup';
+import MenuPopup from '@/components/globe/ui/MenuPopup';
+import MyNewsPopup from '@/components/globe/ui/MyNewsPopup';
+import MyTouristSitesPopup from '@/components/globe/ui/MyTouristSitesPopup';
+import DynamicNewsPopup from '@/components/globe/ui/DynamicNewsPopup';
+import AdvertisePopup from '@/components/globe/ui/AdvertisePopup';
+import TourismPopup from '@/components/globe/ui/TourismPopup';
+import MyVacationSpotsPopup from '@/components/globe/ui/MyVacationSpotsPopup';
+import MessageInputPopup from '@/components/globe/ui/MessageInputPopup';
 
 import AppHeader from '@/components/layout/AppHeader';
 import AppFooter from '@/components/layout/AppFooter';

@@ -117,9 +117,37 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
       .filter((label) => label.dotProduct > 0.1)
       .sort((a, b) => b.dotProduct - a.dotProduct);
 
-    setCountriesInView(sortedInView);
+    // Evita sobreposição de labels na tela:
+    // percorre na ordem de relevância e só aceita um label
+    // se ele estiver "longe o suficiente" em coordenadas de tela (NDC) dos já aceitos.
+    const nonOverlapping: typeof sortedInView = [];
+    const occupiedScreenPositions: { x: number; y: number }[] = [];
+    const MIN_SCREEN_DIST = 0.08; // distância mínima em NDC (0..1) entre labels
 
-    const visibleNow = sortedInView.filter(label => {
+    for (const label of sortedInView) {
+      const projected = label.position.clone().project(camera);
+      const x = projected.x;
+      const y = projected.y;
+
+      let tooClose = false;
+      for (const p of occupiedScreenPositions) {
+        const dx = x - p.x;
+        const dy = y - p.y;
+        if (dx * dx + dy * dy < MIN_SCREEN_DIST * MIN_SCREEN_DIST) {
+          tooClose = true;
+          break;
+        }
+      }
+
+      if (!tooClose) {
+        occupiedScreenPositions.push({ x, y });
+        nonOverlapping.push(label);
+      }
+    }
+
+    setCountriesInView(nonOverlapping);
+
+    const visibleNow = nonOverlapping.filter(label => {
       if (CONTINENT_KEYS.has(label.key)) {
         return distance < COUNTRY_VISIBILITY_THRESHOLD && distance > 1.9;
       }
@@ -180,12 +208,14 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
         />
 
         <CountryLabels visibleLabels={top5CountryLabels} openPopup={openPopup} />
-        <StateLabels
-          visibleCountries={countriesInView}
-          cameraDistance={cameraDistance}
-          popupName={popupName}
-          openPopup={openPopup}
-        />
+        {isHighResTextureActive && (
+          <StateLabels
+            visibleCountries={countriesInView}
+            cameraDistance={cameraDistance}
+            popupName={popupName}
+            openPopup={openPopup}
+          />
+        )}
 
         {pinnedLocations.map((pin) => (
           <LocationPin key={pin.key} position={pin.position} name={pin.name} onInfoClick={() => openPopup(pin.key)} />

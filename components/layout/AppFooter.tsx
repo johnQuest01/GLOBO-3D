@@ -7,7 +7,7 @@ export type AppFooterProps = {
 
 const AppFooter: React.FC<AppFooterProps> = ({ isVisible, onVacationClick }) => (
   <footer
-    className={`absolute bottom-0 left-0 right-0 z-40 h-16 px-4 py-2 bg-gradient-to-t from-black/70 to-transparent transition-transform duration-300 ease-in-out flex items-center justify-between ${
+    className={`absolute bottom-0 left-0 right-0 z-40 min-h-16 px-4 py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] bg-gradient-to-t from-black/70 to-transparent transition-transform duration-300 ease-in-out flex items-center justify-between ${
       isVisible ? 'translate-y-0' : 'translate-y-full'
     }`}
     onClick={(e) => e.stopPropagation()}

@@ -86,6 +86,13 @@ export default function Earth({
   const prevIsHighRes = useRef<boolean>(false);
 
   useFrame(({ camera }, delta) => {
+    // Se o globo não estiver interativo (popup aberto, UI travada), não processa LOD.
+    // Isso reduz o trabalho por frame exatamente quando o usuário clica em um estado/país,
+    // permitindo que o popup apareça mais rápido, especialmente em mobile.
+    if (!isInteractive) {
+      return;
+    }
+
     // Rotação removida para manter alinhamento com os labels
 
     if (!materialRef.current) return;

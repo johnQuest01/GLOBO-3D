@@ -1,7 +1,7 @@
 // components/globe/canvas/StateLabels.tsx
 'use client';
 
-import React, { FC, useMemo, useState, useEffect } from 'react';
+import React, { FC, useState, useEffect } from 'react';
 import * as THREE from 'three';
 import { useThree } from '@react-three/fiber';
 import {
@@ -16,16 +16,6 @@ const STATE_VISIBILITY_THRESHOLD = 2.5; //
 const MAX_VISIBLE_STATES = 5; //
 const DOT_PRODUCT_THRESHOLD = 0.1; //
 const DEFAULT_STATE_FONT_SIZE = 0.018; //
-
-// --- INÍCIO DA MODIFICAÇÃO (LÓGICA DE ALLOWLIST) ---
-// Este Set contém as chaves (em inglês, como no geojson) dos países
-// cujos RÓTULOS de estado você QUER EXIBIR.
-// Todos os outros serão ocultados.
-const COUNTRIES_TO_SHOW_STATES = new Set([
-  'Brazil',
-  'United States of America',
-]);
-// --- FIM DA MODIFICAÇÃO ---
 
 // --- Tipagens (Inalteradas) ---
 interface CountryLabelWithPosition extends CountryLabelData {
@@ -83,12 +73,6 @@ const StateLabels: FC<StateLabelsProps> = ({
     const cameraDirection = camera.position.clone().normalize();
 
     const sortedVisibleStates = combinedStates
-      // --- ETAPA DE MODIFICAÇÃO ---
-      // Filtra (exibe) APENAS os estados que pertencem aos países na lista de exibição
-      .filter(
-        (state) => COUNTRIES_TO_SHOW_STATES.has(state.countryKey)
-      )
-      // --- FIM DA ETAPA DE MODIFICAÇÃO ---
       .map((state) => ({
         ...state,
         dotProduct: state.position.clone().normalize().dot(cameraDirection),
