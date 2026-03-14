@@ -1,0 +1,608 @@
+[
+  {
+    "name": "Guyane française",
+    "key": "guyane française",
+    "lat": 3.7357130661334073,
+    "lon": -53.43042500222215
+  },
+  {
+    "name": "Nord",
+    "key": "nord",
+    "lat": 50.468463806111586,
+    "lon": 3.19449772928748
+  },
+  {
+    "name": "Ardennes",
+    "key": "ardennes",
+    "lat": 49.63408456577736,
+    "lon": 4.652026837679077
+  },
+  {
+    "name": "Aisne",
+    "key": "aisne",
+    "lat": 49.53549761730697,
+    "lon": 3.609131875432007
+  },
+  {
+    "name": "Meuse",
+    "key": "meuse",
+    "lat": 49.088113250443776,
+    "lon": 5.373346770960224
+  },
+  {
+    "name": "Meurthe-et-Moselle",
+    "key": "meurthe-et-moselle",
+    "lat": 48.93899092856712,
+    "lon": 6.111475487646419
+  },
+  {
+    "name": "Moselle",
+    "key": "moselle",
+    "lat": 49.05327537395288,
+    "lon": 6.801141345044198
+  },
+  {
+    "name": "Alpes-Maritimes",
+    "key": "alpes-maritimes",
+    "lat": 43.91829761516312,
+    "lon": 7.190264350747291
+  },
+  {
+    "name": "Alpes-de-Haute-Provence",
+    "key": "alpes-de-haute-provence",
+    "lat": 44.15102018705066,
+    "lon": 6.316629846130801
+  },
+  {
+    "name": "Hautes-Alpes",
+    "key": "hautes-alpes",
+    "lat": 44.660742866577934,
+    "lon": 6.263788273270107
+  },
+  {
+    "name": "Savoie",
+    "key": "savoie",
+    "lat": 45.495979699360504,
+    "lon": 6.422703424088778
+  },
+  {
+    "name": "Haute-Savoie",
+    "key": "haute-savoie",
+    "lat": 46.05914735663921,
+    "lon": 6.415517487894535
+  },
+  {
+    "name": "Pyrénées-Atlantiques",
+    "key": "pyrénées-atlantiques",
+    "lat": 43.279236871476385,
+    "lon": -0.9431326249668036
+  },
+  {
+    "name": "Haute-Garonne",
+    "key": "haute-garonne",
+    "lat": 43.205894394114885,
+    "lon": 1.0530413060164048
+  },
+  {
+    "name": "Hautes-Pyrénées",
+    "key": "hautes-pyrénées",
+    "lat": 43.03800834379333,
+    "lon": 0.14221514866670937
+  },
+  {
+    "name": "Ariège",
+    "key": "ariège",
+    "lat": 42.89586813042189,
+    "lon": 1.4887184934640898
+  },
+  {
+    "name": "Pyrénées-Orientales",
+    "key": "pyrénées-orientales",
+    "lat": 42.58937042214943,
+    "lon": 2.3334939351207695
+  },
+  {
+    "name": "Bas-Rhin",
+    "key": "bas-rhin",
+    "lat": 48.72671091641774,
+    "lon": 7.507243333840022
+  },
+  {
+    "name": "Haute-Rhin",
+    "key": "haute-rhin",
+    "lat": 47.714215497426885,
+    "lon": 7.361866775421182
+  },
+  {
+    "name": "Territoire de Belfort",
+    "key": "territoire de belfort",
+    "lat": 47.622267141697264,
+    "lon": 6.930019148357328
+  },
+  {
+    "name": "Doubs",
+    "key": "doubs",
+    "lat": 47.07558074135702,
+    "lon": 6.372496269999385
+  },
+  {
+    "name": "Ain",
+    "key": "ain",
+    "lat": 46.15532271669022,
+    "lon": 5.540339295022905
+  },
+  {
+    "name": "Jura",
+    "key": "jura",
+    "lat": 47.346176755563754,
+    "lon": 7.237140901390104
+  },
+  {
+    "name": "Var",
+    "key": "var",
+    "lat": 43.48619773517044,
+    "lon": 6.279168968584979
+  },
+  {
+    "name": "Bouches-du-Rhône",
+    "key": "bouches-du-rhône",
+    "lat": 43.497632920712,
+    "lon": 5.090194553434765
+  },
+  {
+    "name": "Gard",
+    "key": "gard",
+    "lat": 43.977275755654325,
+    "lon": 4.007187238369046
+  },
+  {
+    "name": "Hérault",
+    "key": "hérault",
+    "lat": 43.56999159727932,
+    "lon": 3.302070776724284
+  },
+  {
+    "name": "Aude",
+    "key": "aude",
+    "lat": 43.09664364674215,
+    "lon": 2.4705923518138806
+  },
+  {
+    "name": "Landes",
+    "key": "landes",
+    "lat": 43.96693822188158,
+    "lon": -0.7336672684181718
+  },
+  {
+    "name": "Gironde",
+    "key": "gironde",
+    "lat": 44.827424584388396,
+    "lon": -0.5283365370607062
+  },
+  {
+    "name": "Charente-Maritime",
+    "key": "charente-maritime",
+    "lat": 45.707017580338835,
+    "lon": -0.6008585275381305
+  },
+  {
+    "name": "Vendée",
+    "key": "vendée",
+    "lat": 46.64295599894675,
+    "lon": -1.2946924609593775
+  },
+  {
+    "name": "Loire-Atlantique",
+    "key": "loire-atlantique",
+    "lat": 47.348529407948305,
+    "lon": -1.6535272577869538
+  },
+  {
+    "name": "Morbihan",
+    "key": "morbihan",
+    "lat": 47.82664817178615,
+    "lon": -2.840603393901432
+  },
+  {
+    "name": "Finistère",
+    "key": "finistère",
+    "lat": 48.1577355904296,
+    "lon": -4.004956880779424
+  },
+  {
+    "name": "Côtes-d'Armor",
+    "key": "côtes-d'armor",
+    "lat": 48.45174837500713,
+    "lon": -2.785919245243921
+  },
+  {
+    "name": "Ille-et-Vilaine",
+    "key": "ille-et-vilaine",
+    "lat": 48.16722340357559,
+    "lon": -1.6447306596976659
+  },
+  {
+    "name": "Manche",
+    "key": "manche",
+    "lat": 48.99839214287667,
+    "lon": -1.3071388554655896
+  },
+  {
+    "name": "Calvados",
+    "key": "calvados",
+    "lat": 49.09702161815133,
+    "lon": -0.4995615845563574
+  },
+  {
+    "name": "Eure",
+    "key": "eure",
+    "lat": 49.15725982884432,
+    "lon": 0.9398710970752868
+  },
+  {
+    "name": "Seine-Maritime",
+    "key": "seine-maritime",
+    "lat": 49.616441988129964,
+    "lon": 0.964730961440031
+  },
+  {
+    "name": "Somme",
+    "key": "somme",
+    "lat": 49.9442700625137,
+    "lon": 2.278441302232853
+  },
+  {
+    "name": "Pas-de-Calais",
+    "key": "pas-de-calais",
+    "lat": 50.477771118210846,
+    "lon": 2.326155747360687
+  },
+  {
+    "name": "Martinique",
+    "key": "martinique",
+    "lat": 14.646628118750058,
+    "lon": -61.00460262774994
+  },
+  {
+    "name": "Guadeloupe",
+    "key": "guadeloupe",
+    "lat": 16.201381740500057,
+    "lon": -61.64589731883327
+  },
+  {
+    "name": "La Réunion",
+    "key": "la réunion",
+    "lat": -21.11046314909992,
+    "lon": 55.596958855100056
+  },
+  {
+    "name": "Mayotte",
+    "key": "mayotte",
+    "lat": -12.809307550199913,
+    "lon": 45.16670983180008
+  },
+  {
+    "name": "Haute-Corse",
+    "key": "haute-corse",
+    "lat": 42.31131016998311,
+    "lon": 9.120321896183814
+  },
+  {
+    "name": "Corse-du-Sud",
+    "key": "corse-du-sud",
+    "lat": 41.924399474255125,
+    "lon": 8.955633858135304
+  },
+  {
+    "name": "Gers",
+    "key": "gers",
+    "lat": 43.66392808290216,
+    "lon": 0.46501013729549
+  },
+  {
+    "name": "Haute-Vienne",
+    "key": "haute-vienne",
+    "lat": 45.9263852137466,
+    "lon": 1.2580072493950334
+  },
+  {
+    "name": "Corrèze",
+    "key": "corrèze",
+    "lat": 45.3761671296785,
+    "lon": 1.9037629820144581
+  },
+  {
+    "name": "Tarn-et-Garonne",
+    "key": "tarn-et-garonne",
+    "lat": 44.16051937772092,
+    "lon": 1.353573136990668
+  },
+  {
+    "name": "Tarn",
+    "key": "tarn",
+    "lat": 43.81074032394963,
+    "lon": 2.2806989556779627
+  },
+  {
+    "name": "Isère",
+    "key": "isère",
+    "lat": 45.2633699139131,
+    "lon": 5.487942405585722
+  },
+  {
+    "name": "Drôme",
+    "key": "drôme",
+    "lat": 44.65828115519399,
+    "lon": 5.314095029590506
+  },
+  {
+    "name": "Aveyron",
+    "key": "aveyron",
+    "lat": 44.280942167287165,
+    "lon": 2.707020960054254
+  },
+  {
+    "name": "Lot",
+    "key": "lot",
+    "lat": 44.649568574815575,
+    "lon": 1.632482847690974
+  },
+  {
+    "name": "Indre-et-Loire",
+    "key": "indre-et-loire",
+    "lat": 47.18887703134989,
+    "lon": 0.8610393907481182
+  },
+  {
+    "name": "Indre",
+    "key": "indre",
+    "lat": 46.828766859902636,
+    "lon": 1.5388821785696762
+  },
+  {
+    "name": "Loir-et-Cher",
+    "key": "loir-et-cher",
+    "lat": 47.6018057654132,
+    "lon": 1.4194497526723562
+  },
+  {
+    "name": "Creuse",
+    "key": "creuse",
+    "lat": 46.02795397551907,
+    "lon": 2.034933008527981
+  },
+  {
+    "name": "Mayenne",
+    "key": "mayenne",
+    "lat": 48.15270937156023,
+    "lon": -0.6607812447386588
+  },
+  {
+    "name": "Sarthe",
+    "key": "sarthe",
+    "lat": 48.011471329138494,
+    "lon": 0.2477895908369381
+  },
+  {
+    "name": "Vaucluse",
+    "key": "vaucluse",
+    "lat": 44.016744966182216,
+    "lon": 5.22827565120032
+  },
+  {
+    "name": "Haute-Marne",
+    "key": "haute-marne",
+    "lat": 48.16775108167338,
+    "lon": 5.179272072216769
+  },
+  {
+    "name": "Marne",
+    "key": "marne",
+    "lat": 48.897600957300135,
+    "lon": 4.214317551868063
+  },
+  {
+    "name": "Dordogne",
+    "key": "dordogne",
+    "lat": 45.09912074686781,
+    "lon": 0.6431095442414945
+  },
+  {
+    "name": "Rhône",
+    "key": "rhône",
+    "lat": 45.939464695839014,
+    "lon": 4.655673172378993
+  },
+  {
+    "name": "Vosges",
+    "key": "vosges",
+    "lat": 48.22271421983535,
+    "lon": 6.421226792132732
+  },
+  {
+    "name": "Ardèche",
+    "key": "ardèche",
+    "lat": 44.81281140929765,
+    "lon": 4.4945870032518735
+  },
+  {
+    "name": "Loire",
+    "key": "loire",
+    "lat": 45.775468180164985,
+    "lon": 4.212238774789093
+  },
+  {
+    "name": "Puy-de-Dôme",
+    "key": "puy-de-dôme",
+    "lat": 45.71668104519405,
+    "lon": 3.156116350988798
+  },
+  {
+    "name": "Allier",
+    "key": "allier",
+    "lat": 46.37520574656221,
+    "lon": 3.196395450946438
+  },
+  {
+    "name": "Loiret",
+    "key": "loiret",
+    "lat": 47.912448220309095,
+    "lon": 2.347005885363305
+  },
+  {
+    "name": "Maine-et-Loire",
+    "key": "maine-et-loire",
+    "lat": 47.400933104310866,
+    "lon": -0.7116366125817242
+  },
+  {
+    "name": "Aube",
+    "key": "aube",
+    "lat": 48.37606614593586,
+    "lon": 4.231979073825187
+  },
+  {
+    "name": "Paris",
+    "key": "paris",
+    "lat": 48.8696497227065,
+    "lon": 2.3346444990943667
+  },
+  {
+    "name": "Hauts-de-Seine",
+    "key": "hauts-de-seine",
+    "lat": 48.85502622341003,
+    "lon": 2.268988189167885
+  },
+  {
+    "name": "Seine-Saint-Denis",
+    "key": "seine-saint-denis",
+    "lat": 48.90614398140959,
+    "lon": 2.411827495292679
+  },
+  {
+    "name": "Val-d'Oise",
+    "key": "val-d'oise",
+    "lat": 49.06787007332702,
+    "lon": 2.156613172160157
+  },
+  {
+    "name": "Yvelines",
+    "key": "yvelines",
+    "lat": 48.85034343160405,
+    "lon": 1.8784737350747998
+  },
+  {
+    "name": "Charente",
+    "key": "charente",
+    "lat": 45.7353046091968,
+    "lon": 0.13090961736729495
+  },
+  {
+    "name": "Cher",
+    "key": "cher",
+    "lat": 47.06266909104483,
+    "lon": 2.3816462212482823
+  },
+  {
+    "name": "Eure-et-Loir",
+    "key": "eure-et-loir",
+    "lat": 48.345960418373885,
+    "lon": 1.2625647754263896
+  },
+  {
+    "name": "Haute-Loire",
+    "key": "haute-loire",
+    "lat": 45.14913667491759,
+    "lon": 3.720795148384525
+  },
+  {
+    "name": "Cantal",
+    "key": "cantal",
+    "lat": 45.049247339273265,
+    "lon": 2.7797179100135243
+  },
+  {
+    "name": "Lot-et-Garonne",
+    "key": "lot-et-garonne",
+    "lat": 44.351954982789145,
+    "lon": 0.4272078434965833
+  },
+  {
+    "name": "Lozère",
+    "key": "lozère",
+    "lat": 44.49417480820081,
+    "lon": 3.541134931212097
+  },
+  {
+    "name": "Nièvre",
+    "key": "nièvre",
+    "lat": 47.136779125256396,
+    "lon": 3.4891991823463777
+  },
+  {
+    "name": "Côte-d'Or",
+    "key": "côte-d'or",
+    "lat": 47.42884659619344,
+    "lon": 4.740560047388268
+  },
+  {
+    "name": "Oise",
+    "key": "oise",
+    "lat": 49.44075994376931,
+    "lon": 2.3982203430943514
+  },
+  {
+    "name": "Orne",
+    "key": "orne",
+    "lat": 48.58104959260459,
+    "lon": 0.01271404996342369
+  },
+  {
+    "name": "Haute-Saône",
+    "key": "haute-saône",
+    "lat": 47.649052953718325,
+    "lon": 6.039820857534032
+  },
+  {
+    "name": "Saône-et-Loire",
+    "key": "saône-et-loire",
+    "lat": 46.59808339450802,
+    "lon": 4.467616150702284
+  },
+  {
+    "name": "Deux-Sèvres",
+    "key": "deux-sèvres",
+    "lat": 46.5598849700653,
+    "lon": -0.37208482260648956
+  },
+  {
+    "name": "Vienne",
+    "key": "vienne",
+    "lat": 46.57302949247331,
+    "lon": 0.5049696114708695
+  },
+  {
+    "name": "Yonne",
+    "key": "yonne",
+    "lat": 47.786687385061796,
+    "lon": 3.501281270502455
+  },
+  {
+    "name": "Essonne",
+    "key": "essonne",
+    "lat": 48.555566616156376,
+    "lon": 2.248067448034283
+  },
+  {
+    "name": "Seien-et-Marne",
+    "key": "seien-et-marne",
+    "lat": 48.62745934721483,
+    "lon": 2.8820787509148644
+  },
+  {
+    "name": "Val-de-Marne",
+    "key": "val-de-marne",
+    "lat": 48.79727594572827,
+    "lon": 2.4606133659141185
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Boeny",
+    "key": "boeny",
+    "lat": -16.2482704386024,
+    "lon": 46.14442144730721
+  },
+  {
+    "name": "Sofia",
+    "key": "sofia",
+    "lat": 42.70982366143281,
+    "lon": 23.5646182459686
+  },
+  {
+    "name": "Diana",
+    "key": "diana",
+    "lat": -13.368056761826363,
+    "lon": 48.804423224700244
+  },
+  {
+    "name": "Sava",
+    "key": "sava",
+    "lat": -14.280088652816522,
+    "lon": 49.79197049680436
+  },
+  {
+    "name": "Analanjirofo",
+    "key": "analanjirofo",
+    "lat": -16.264454653554086,
+    "lon": 49.46307136400398
+  },
+  {
+    "name": "Atsinanana",
+    "key": "atsinanana",
+    "lat": -19.019110479855932,
+    "lon": 48.664135655216185
+  },
+  {
+    "name": "Vatovavy-Fitovinany",
+    "key": "vatovavy-fitovinany",
+    "lat": -21.354736576151833,
+    "lon": 47.80072162051817
+  },
+  {
+    "name": "Atsimo-Atsinanana",
+    "key": "atsimo-atsinanana",
+    "lat": -23.301105258859966,
+    "lon": 47.14523116212038
+  },
+  {
+    "name": "Anosy",
+    "key": "anosy",
+    "lat": -23.978206770342656,
+    "lon": 46.3015530825562
+  },
+  {
+    "name": "Androy",
+    "key": "androy",
+    "lat": -24.74279104663536,
+    "lon": 45.51832764975324
+  },
+  {
+    "name": "Atsimo-Andrefana",
+    "key": "atsimo-andrefana",
+    "lat": -22.862925196085527,
+    "lon": 44.57502819383642
+  },
+  {
+    "name": "Menabe",
+    "key": "menabe",
+    "lat": -20.099391298973217,
+    "lon": 44.85034092203453
+  },
+  {
+    "name": "Melaky",
+    "key": "melaky",
+    "lat": -17.888406844324262,
+    "lon": 44.88493976718819
+  },
+  {
+    "name": "Analamanga",
+    "key": "analamanga",
+    "lat": -18.490666536923154,
+    "lon": 47.45565721456476
+  },
+  {
+    "name": "Betsiboka",
+    "key": "betsiboka",
+    "lat": -17.20424289037867,
+    "lon": 46.948401110280884
+  },
+  {
+    "name": "Bongolava",
+    "key": "bongolava",
+    "lat": -18.557887015973016,
+    "lon": 46.20777418584425
+  },
+  {
+    "name": "Vakinankaratra",
+    "key": "vakinankaratra",
+    "lat": -19.724907464374656,
+    "lon": 46.81558397608627
+  },
+  {
+    "name": "Amoron'i Mania",
+    "key": "amoron'i mania",
+    "lat": -20.52365236624553,
+    "lon": 46.68597915869302
+  },
+  {
+    "name": "Alaotra-Mangoro",
+    "key": "alaotra-mangoro",
+    "lat": -18.023486366882334,
+    "lon": 48.360925985925476
+  },
+  {
+    "name": "Ihorombe",
+    "key": "ihorombe",
+    "lat": -22.67416175151791,
+    "lon": 46.159908093569356
+  },
+  {
+    "name": "Haute Matsiatra",
+    "key": "haute matsiatra",
+    "lat": -21.450721507949854,
+    "lon": 46.542602735617386
+  },
+  {
+    "name": "Itasy",
+    "key": "itasy",
+    "lat": -19.085625899495675,
+    "lon": 46.910549360644445
+  }
+]

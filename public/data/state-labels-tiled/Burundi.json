@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Muyinga",
+    "key": "muyinga",
+    "lat": -2.701806460021635,
+    "lon": 30.37588300104072
+  },
+  {
+    "name": "Kirundo",
+    "key": "kirundo",
+    "lat": -2.481849637407503,
+    "lon": 30.202018386163047
+  },
+  {
+    "name": "Ngozi",
+    "key": "ngozi",
+    "lat": -2.843278725053415,
+    "lon": 29.87285716939105
+  },
+  {
+    "name": "Cibitoke",
+    "key": "cibitoke",
+    "lat": -2.822362206965697,
+    "lon": 29.27463826504844
+  },
+  {
+    "name": "Kayanza",
+    "key": "kayanza",
+    "lat": -2.934142719051165,
+    "lon": 29.65279897129555
+  },
+  {
+    "name": "Cankuzo",
+    "key": "cankuzo",
+    "lat": -3.0979055061772,
+    "lon": 30.553844343355745
+  },
+  {
+    "name": "Ruyigi",
+    "key": "ruyigi",
+    "lat": -3.4095842383248662,
+    "lon": 30.343277720222957
+  },
+  {
+    "name": "Rutana",
+    "key": "rutana",
+    "lat": -3.878802269327519,
+    "lon": 30.12467217803932
+  },
+  {
+    "name": "Makamba",
+    "key": "makamba",
+    "lat": -4.2007826019245895,
+    "lon": 29.800229537289372
+  },
+  {
+    "name": "Bubanza",
+    "key": "bubanza",
+    "lat": -3.1254765180861415,
+    "lon": 29.3803220742702
+  },
+  {
+    "name": "Bujumbura Rural",
+    "key": "bujumbura rural",
+    "lat": -3.459610991844103,
+    "lon": 29.36913406819309
+  },
+  {
+    "name": "Bujumbura Mairie",
+    "key": "bujumbura mairie",
+    "lat": -3.4595278581737454,
+    "lon": 29.30008073047713
+  },
+  {
+    "name": "Bururi",
+    "key": "bururi",
+    "lat": -3.8948211322414736,
+    "lon": 29.57117181142954
+  },
+  {
+    "name": "Gitega",
+    "key": "gitega",
+    "lat": -3.3883716773610266,
+    "lon": 29.89735375319813
+  },
+  {
+    "name": "Muramvya",
+    "key": "muramvya",
+    "lat": -3.2326878124425966,
+    "lon": 29.648540344611206
+  },
+  {
+    "name": "Mwaro",
+    "key": "mwaro",
+    "lat": -3.46240677944931,
+    "lon": 29.74307376469247
+  },
+  {
+    "name": "Karuzi",
+    "key": "karuzi",
+    "lat": -3.144252211070687,
+    "lon": 30.12524394914891
+  }
+]

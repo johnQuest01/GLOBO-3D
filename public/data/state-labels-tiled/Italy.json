@@ -1,0 +1,662 @@
+[
+  {
+    "name": "Aoste",
+    "key": "aoste",
+    "lat": 45.7806915362111,
+    "lon": 7.386630762944549
+  },
+  {
+    "name": "Verbano-Cusio-Ossola",
+    "key": "verbano-cusio-ossola",
+    "lat": 46.03235286477251,
+    "lon": 8.29117367108788
+  },
+  {
+    "name": "Varese",
+    "key": "varese",
+    "lat": 45.83471826891143,
+    "lon": 8.814155651940544
+  },
+  {
+    "name": "Como",
+    "key": "como",
+    "lat": 45.9347267970826,
+    "lon": 9.140460455768421
+  },
+  {
+    "name": "Sondrio",
+    "key": "sondrio",
+    "lat": 46.315378216368366,
+    "lon": 9.872557937945363
+  },
+  {
+    "name": "Bozen",
+    "key": "bozen",
+    "lat": 46.69676668453866,
+    "lon": 11.285564204230695
+  },
+  {
+    "name": "Imperia",
+    "key": "imperia",
+    "lat": 43.918325477059966,
+    "lon": 7.772179372543159
+  },
+  {
+    "name": "Cuneo",
+    "key": "cuneo",
+    "lat": 44.48082995156843,
+    "lon": 7.566602429901843
+  },
+  {
+    "name": "Turin",
+    "key": "turin",
+    "lat": 45.10292514920467,
+    "lon": 7.428776841612221
+  },
+  {
+    "name": "Rimini",
+    "key": "rimini",
+    "lat": 43.92969791419969,
+    "lon": 12.419995471528054
+  },
+  {
+    "name": "Pesaro e Urbino",
+    "key": "pesaro e urbino",
+    "lat": 43.77288334982175,
+    "lon": 12.549571525515152
+  },
+  {
+    "name": "Belluno",
+    "key": "belluno",
+    "lat": 46.299233477862686,
+    "lon": 12.207551862268614
+  },
+  {
+    "name": "Udine",
+    "key": "udine",
+    "lat": 46.21766624282865,
+    "lon": 13.214374410720108
+  },
+  {
+    "name": "Gorizia",
+    "key": "gorizia",
+    "lat": 45.887995949109495,
+    "lon": 13.545287012660404
+  },
+  {
+    "name": "Trieste",
+    "key": "trieste",
+    "lat": 45.712896789459684,
+    "lon": 13.7074798540205
+  },
+  {
+    "name": "Venezia",
+    "key": "venezia",
+    "lat": 45.58407571633638,
+    "lon": 12.54269769165416
+  },
+  {
+    "name": "Padova",
+    "key": "padova",
+    "lat": 45.35877591859645,
+    "lon": 11.867048647989046
+  },
+  {
+    "name": "Rovigo",
+    "key": "rovigo",
+    "lat": 45.02888050855643,
+    "lon": 11.966390786737065
+  },
+  {
+    "name": "Ferrara",
+    "key": "ferrara",
+    "lat": 44.78008857651727,
+    "lon": 11.867908532756653
+  },
+  {
+    "name": "Ravenna",
+    "key": "ravenna",
+    "lat": 44.38307658189298,
+    "lon": 12.032830046914029
+  },
+  {
+    "name": "Forlì-Cesena",
+    "key": "forlì-cesena",
+    "lat": 44.0830728021796,
+    "lon": 12.087783681058818
+  },
+  {
+    "name": "Ancona",
+    "key": "ancona",
+    "lat": 43.50571665454968,
+    "lon": 13.202526458444027
+  },
+  {
+    "name": "Macerata",
+    "key": "macerata",
+    "lat": 43.21947404690323,
+    "lon": 13.337887487697786
+  },
+  {
+    "name": "Fermo",
+    "key": "fermo",
+    "lat": 43.13367734359104,
+    "lon": 13.577965342126737
+  },
+  {
+    "name": "Ascoli Piceno",
+    "key": "ascoli piceno",
+    "lat": 42.88610129643812,
+    "lon": 13.505336910672296
+  },
+  {
+    "name": "Teramo",
+    "key": "teramo",
+    "lat": 42.639174892169194,
+    "lon": 13.740368357549869
+  },
+  {
+    "name": "Pescara",
+    "key": "pescara",
+    "lat": 42.37353607929613,
+    "lon": 14.02480646341147
+  },
+  {
+    "name": "Chieti",
+    "key": "chieti",
+    "lat": 42.102985632452196,
+    "lon": 14.335324834768809
+  },
+  {
+    "name": "Campobasso",
+    "key": "campobasso",
+    "lat": 41.701697784297416,
+    "lon": 14.745159437316437
+  },
+  {
+    "name": "Foggia",
+    "key": "foggia",
+    "lat": 41.53229290056389,
+    "lon": 15.526325552285462
+  },
+  {
+    "name": "Barletta-Andria Trani",
+    "key": "barletta-andria trani",
+    "lat": 41.225706247349265,
+    "lon": 16.128291856268678
+  },
+  {
+    "name": "Bari",
+    "key": "bari",
+    "lat": 10.188936014125451,
+    "lon": 50.20425381342741
+  },
+  {
+    "name": "Brindisi",
+    "key": "brindisi",
+    "lat": 40.675229131061414,
+    "lon": 17.6255024372563
+  },
+  {
+    "name": "Lecce",
+    "key": "lecce",
+    "lat": 40.194554792853175,
+    "lon": 18.139133513130556
+  },
+  {
+    "name": "Taranto",
+    "key": "taranto",
+    "lat": 40.48252237610246,
+    "lon": 17.26278175863355
+  },
+  {
+    "name": "Matera",
+    "key": "matera",
+    "lat": 40.478006088281745,
+    "lon": 16.458740467013207
+  },
+  {
+    "name": "Cosenza",
+    "key": "cosenza",
+    "lat": 39.6691476601376,
+    "lon": 16.38487325352461
+  },
+  {
+    "name": "Crotene",
+    "key": "crotene",
+    "lat": 39.18612409044104,
+    "lon": 16.901230517685683
+  },
+  {
+    "name": "Catanzaro",
+    "key": "catanzaro",
+    "lat": 38.88009737980647,
+    "lon": 16.504375465804927
+  },
+  {
+    "name": "Reggio Calabria",
+    "key": "reggio calabria",
+    "lat": 38.291143738928795,
+    "lon": 16.08035740557248
+  },
+  {
+    "name": "Vibo Valentia",
+    "key": "vibo valentia",
+    "lat": 38.618115942786176,
+    "lon": 16.149171841916008
+  },
+  {
+    "name": "Potenza",
+    "key": "potenza",
+    "lat": 40.47607226949627,
+    "lon": 15.894605378874257
+  },
+  {
+    "name": "Salerno",
+    "key": "salerno",
+    "lat": 40.44680446146071,
+    "lon": 15.148876651615138
+  },
+  {
+    "name": "Napoli",
+    "key": "napoli",
+    "lat": 40.83221919683417,
+    "lon": 14.398118872636314
+  },
+  {
+    "name": "Caserta",
+    "key": "caserta",
+    "lat": 41.21382757379022,
+    "lon": 14.192016073180106
+  },
+  {
+    "name": "Latina",
+    "key": "latina",
+    "lat": 41.39840501023495,
+    "lon": 13.284298657707966
+  },
+  {
+    "name": "Roma",
+    "key": "roma",
+    "lat": 41.865277548365384,
+    "lon": 12.64142565845995
+  },
+  {
+    "name": "Viterbo",
+    "key": "viterbo",
+    "lat": 42.43168441253889,
+    "lon": 11.952446411446408
+  },
+  {
+    "name": "Grosseto",
+    "key": "grosseto",
+    "lat": 42.76544690393984,
+    "lon": 11.260853537796137
+  },
+  {
+    "name": "Livorno",
+    "key": "livorno",
+    "lat": 43.23919506865375,
+    "lon": 10.554249345726172
+  },
+  {
+    "name": "Pisa",
+    "key": "pisa",
+    "lat": 43.507802446216914,
+    "lon": 10.568985565566244
+  },
+  {
+    "name": "Lucca",
+    "key": "lucca",
+    "lat": 43.96410435297926,
+    "lon": 10.46181315491131
+  },
+  {
+    "name": "Massa-Carrara",
+    "key": "massa-carrara",
+    "lat": 44.197319885318905,
+    "lon": 10.046024690357735
+  },
+  {
+    "name": "La Spezia",
+    "key": "la spezia",
+    "lat": 44.20226998024991,
+    "lon": 9.765461800007444
+  },
+  {
+    "name": "Genova",
+    "key": "genova",
+    "lat": 44.459930779894286,
+    "lon": 9.070935141579959
+  },
+  {
+    "name": "Savona",
+    "key": "savona",
+    "lat": 44.277441236399795,
+    "lon": 8.30367463147555
+  },
+  {
+    "name": "Trapani",
+    "key": "trapani",
+    "lat": 37.799783778613836,
+    "lon": 12.794614152534145
+  },
+  {
+    "name": "Messina",
+    "key": "messina",
+    "lat": 38.02225953573117,
+    "lon": 14.829115046951294
+  },
+  {
+    "name": "Palermo",
+    "key": "palermo",
+    "lat": 37.8916885969655,
+    "lon": 13.569408950304913
+  },
+  {
+    "name": "Agrigento",
+    "key": "agrigento",
+    "lat": 37.45203798276426,
+    "lon": 13.50379135539069
+  },
+  {
+    "name": "Caltanissetta",
+    "key": "caltanissetta",
+    "lat": 37.35717498985141,
+    "lon": 14.06092925308482
+  },
+  {
+    "name": "Ragusa",
+    "key": "ragusa",
+    "lat": 36.884179657496446,
+    "lon": 14.717852993483024
+  },
+  {
+    "name": "Siracusa",
+    "key": "siracusa",
+    "lat": 37.137944171754704,
+    "lon": 15.0103913086388
+  },
+  {
+    "name": "Catania",
+    "key": "catania",
+    "lat": 37.53969301056975,
+    "lon": 14.800514669166493
+  },
+  {
+    "name": "Carbonia-Iglesias",
+    "key": "carbonia-iglesias",
+    "lat": 39.19552037284515,
+    "lon": 8.590881370750234
+  },
+  {
+    "name": "Sassari",
+    "key": "sassari",
+    "lat": 40.60404894486145,
+    "lon": 8.665287176910315
+  },
+  {
+    "name": "Nuoro",
+    "key": "nuoro",
+    "lat": 40.30666307728981,
+    "lon": 9.269274837405396
+  },
+  {
+    "name": "Olbia-Tempio",
+    "key": "olbia-tempio",
+    "lat": 40.82088946747647,
+    "lon": 9.235157657658544
+  },
+  {
+    "name": "Oristrano",
+    "key": "oristrano",
+    "lat": 40.02059629938848,
+    "lon": 8.653887039209966
+  },
+  {
+    "name": "Medio Campidano",
+    "key": "medio campidano",
+    "lat": 39.55468206938655,
+    "lon": 8.693633015518692
+  },
+  {
+    "name": "Cagliari",
+    "key": "cagliari",
+    "lat": 39.357669236682135,
+    "lon": 9.11879884189529
+  },
+  {
+    "name": "Ogliastra",
+    "key": "ogliastra",
+    "lat": 39.988493138559335,
+    "lon": 9.518248737020349
+  },
+  {
+    "name": "Enna",
+    "key": "enna",
+    "lat": 37.626335740027365,
+    "lon": 14.483877047862444
+  },
+  {
+    "name": "Benevento",
+    "key": "benevento",
+    "lat": 41.23705431661878,
+    "lon": 14.740637790078853
+  },
+  {
+    "name": "Asti",
+    "key": "asti",
+    "lat": 44.818344376316894,
+    "lon": 8.198913429111448
+  },
+  {
+    "name": "Bergamo",
+    "key": "bergamo",
+    "lat": 45.74469968771539,
+    "lon": 9.73454707603672
+  },
+  {
+    "name": "Brescia",
+    "key": "brescia",
+    "lat": 45.75594790697619,
+    "lon": 10.332158200581652
+  },
+  {
+    "name": "Cremona",
+    "key": "cremona",
+    "lat": 45.274366695091885,
+    "lon": 9.897146399911412
+  },
+  {
+    "name": "Mantova",
+    "key": "mantova",
+    "lat": 45.12626474980017,
+    "lon": 10.76982898112257
+  },
+  {
+    "name": "Milano",
+    "key": "milano",
+    "lat": 45.495896159949794,
+    "lon": 9.219516251453836
+  },
+  {
+    "name": "Lecco",
+    "key": "lecco",
+    "lat": 45.922384373240206,
+    "lon": 9.394651728294624
+  },
+  {
+    "name": "Monza e Brianza",
+    "key": "monza e brianza",
+    "lat": 45.65075374758734,
+    "lon": 9.303911511706888
+  },
+  {
+    "name": "Lodi",
+    "key": "lodi",
+    "lat": 45.27421328959912,
+    "lon": 9.52249765085839
+  },
+  {
+    "name": "Siena",
+    "key": "siena",
+    "lat": 43.17047003687518,
+    "lon": 11.488206695994705
+  },
+  {
+    "name": "Arezzo",
+    "key": "arezzo",
+    "lat": 43.518688531025866,
+    "lon": 11.856688709466349
+  },
+  {
+    "name": "Firenze",
+    "key": "firenze",
+    "lat": 43.82980443487675,
+    "lon": 11.228820238869165
+  },
+  {
+    "name": "Vercelli",
+    "key": "vercelli",
+    "lat": 45.51341563554312,
+    "lon": 8.206291128552717
+  },
+  {
+    "name": "Pavia",
+    "key": "pavia",
+    "lat": 45.11212934564277,
+    "lon": 9.031594917921108
+  },
+  {
+    "name": "Rieti",
+    "key": "rieti",
+    "lat": 42.39497109365352,
+    "lon": 12.957006456876222
+  },
+  {
+    "name": "Novara",
+    "key": "novara",
+    "lat": 45.58430988769115,
+    "lon": 8.541590467026417
+  },
+  {
+    "name": "Alessandria",
+    "key": "alessandria",
+    "lat": 44.8539517416953,
+    "lon": 8.613222526998007
+  },
+  {
+    "name": "Trento",
+    "key": "trento",
+    "lat": 46.18924575150384,
+    "lon": 11.221556699772774
+  },
+  {
+    "name": "Vicenza",
+    "key": "vicenza",
+    "lat": 45.67602598858349,
+    "lon": 11.492779521707547
+  },
+  {
+    "name": "Verona",
+    "key": "verona",
+    "lat": 45.47077725736451,
+    "lon": 11.06673326253003
+  },
+  {
+    "name": "Treviso",
+    "key": "treviso",
+    "lat": 45.81195827394516,
+    "lon": 12.27447074792666
+  },
+  {
+    "name": "Piacenza",
+    "key": "piacenza",
+    "lat": 44.90241923858198,
+    "lon": 9.599483199365148
+  },
+  {
+    "name": "Parma",
+    "key": "parma",
+    "lat": 44.69226598227107,
+    "lon": 9.996822902445883
+  },
+  {
+    "name": "Reggio Emilia",
+    "key": "reggio emilia",
+    "lat": 44.59337473909291,
+    "lon": 10.505488233095473
+  },
+  {
+    "name": "Modena",
+    "key": "modena",
+    "lat": 44.52216234246811,
+    "lon": 10.88361643467571
+  },
+  {
+    "name": "Bologna",
+    "key": "bologna",
+    "lat": 44.42345726775406,
+    "lon": 11.307174799239117
+  },
+  {
+    "name": "Pistoia",
+    "key": "pistoia",
+    "lat": 43.998188917571966,
+    "lon": 10.770725630383524
+  },
+  {
+    "name": "Terni",
+    "key": "terni",
+    "lat": 42.674130729049885,
+    "lon": 12.36191411378102
+  },
+  {
+    "name": "Perugia",
+    "key": "perugia",
+    "lat": 43.02799263678573,
+    "lon": 12.511404187962887
+  },
+  {
+    "name": "Frosinone",
+    "key": "frosinone",
+    "lat": 41.59599732426708,
+    "lon": 13.497930830043765
+  },
+  {
+    "name": "Avellino",
+    "key": "avellino",
+    "lat": 41.00446169045463,
+    "lon": 15.039545263241738
+  },
+  {
+    "name": "L'Aquila",
+    "key": "l'aquila",
+    "lat": 42.13031907955133,
+    "lon": 13.565697871643657
+  },
+  {
+    "name": "Pordenone",
+    "key": "pordenone",
+    "lat": 46.12233487650786,
+    "lon": 12.635227212093428
+  },
+  {
+    "name": "Isernia",
+    "key": "isernia",
+    "lat": 41.654512608769856,
+    "lon": 14.255200461931755
+  },
+  {
+    "name": "Biella",
+    "key": "biella",
+    "lat": 45.57807436836596,
+    "lon": 8.082300352721925
+  },
+  {
+    "name": "Prato",
+    "key": "prato",
+    "lat": 43.993631164526604,
+    "lon": 11.110313522031413
+  }
+]

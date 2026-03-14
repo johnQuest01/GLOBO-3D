@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Leninabad",
+    "key": "leninabad",
+    "lat": 39.80536359220701,
+    "lon": 69.3193757431685
+  },
+  {
+    "name": "Tadzhikistan Territories",
+    "key": "tadzhikistan territories",
+    "lat": 38.869886650444464,
+    "lon": 70.13511190801015
+  },
+  {
+    "name": "Gorno-Badakhshan",
+    "key": "gorno-badakhshan",
+    "lat": 38.19155334801296,
+    "lon": 72.6714900086422
+  },
+  {
+    "name": "Khatlon",
+    "key": "khatlon",
+    "lat": 37.879410121513054,
+    "lon": 69.30538187170525
+  },
+  {
+    "name": "Dushanbe",
+    "key": "dushanbe",
+    "lat": 38.55687592754199,
+    "lon": 68.77671755858843
+  }
+]

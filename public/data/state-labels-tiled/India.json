@@ -1,0 +1,218 @@
+[
+  {
+    "name": "Ladakh",
+    "key": "ladakh",
+    "lat": 33.916306014621895,
+    "lon": 77.5961278234274
+  },
+  {
+    "name": "Arunachal Pradesh",
+    "key": "arunachal pradesh",
+    "lat": 27.909212497318176,
+    "lon": 94.82798274374169
+  },
+  {
+    "name": "Sikkim",
+    "key": "sikkim",
+    "lat": 27.537277146038424,
+    "lon": 88.49975121302074
+  },
+  {
+    "name": "West Bengal",
+    "key": "west bengal",
+    "lat": 24.431258649469832,
+    "lon": 88.15343705119201
+  },
+  {
+    "name": "Assam",
+    "key": "assam",
+    "lat": 26.16552808078782,
+    "lon": 92.6078457751474
+  },
+  {
+    "name": "Uttarakhand",
+    "key": "uttarakhand",
+    "lat": 30.077913127877455,
+    "lon": 79.12977465082348
+  },
+  {
+    "name": "Nagaland",
+    "key": "nagaland",
+    "lat": 26.02891366426642,
+    "lon": 94.40872937050025
+  },
+  {
+    "name": "Manipur",
+    "key": "manipur",
+    "lat": 24.866586852737303,
+    "lon": 93.96344186749977
+  },
+  {
+    "name": "Mizoram",
+    "key": "mizoram",
+    "lat": 23.343862291675062,
+    "lon": 92.79883118611002
+  },
+  {
+    "name": "Tripura",
+    "key": "tripura",
+    "lat": 23.775246527274394,
+    "lon": 91.81261020215055
+  },
+  {
+    "name": "Meghalaya",
+    "key": "meghalaya",
+    "lat": 25.553549668857574,
+    "lon": 91.39542934290253
+  },
+  {
+    "name": "Punjab",
+    "key": "punjab",
+    "lat": 31.154740112847083,
+    "lon": 72.1296987515127
+  },
+  {
+    "name": "Rajasthan",
+    "key": "rajasthan",
+    "lat": 26.102210579113713,
+    "lon": 74.43842272952422
+  },
+  {
+    "name": "Gujarat",
+    "key": "gujarat",
+    "lat": 22.479763216113305,
+    "lon": 71.85702912405235
+  },
+  {
+    "name": "Himachal Pradesh",
+    "key": "himachal pradesh",
+    "lat": 31.894563929180112,
+    "lon": 77.28314031185197
+  },
+  {
+    "name": "Jammu and Kashmir",
+    "key": "jammu and kashmir",
+    "lat": 33.48298854602475,
+    "lon": 75.03173202609595
+  },
+  {
+    "name": "Bihar",
+    "key": "bihar",
+    "lat": 25.785511954156053,
+    "lon": 85.58366943039911
+  },
+  {
+    "name": "Uttar Pradesh",
+    "key": "uttar pradesh",
+    "lat": 26.66125499606325,
+    "lon": 80.36632062625937
+  },
+  {
+    "name": "Andhra Pradesh",
+    "key": "andhra pradesh",
+    "lat": 15.862310665533554,
+    "lon": 80.0646638900732
+  },
+  {
+    "name": "Odisha",
+    "key": "odisha",
+    "lat": 20.322006471681654,
+    "lon": 84.24441650857507
+  },
+  {
+    "name": "Dadra and Nagar Haveli and Daman and Diu",
+    "key": "dadra and nagar haveli and daman and diu",
+    "lat": 20.158119581553432,
+    "lon": 73.03727868041673
+  },
+  {
+    "name": "Maharashtra",
+    "key": "maharashtra",
+    "lat": 19.492722930631643,
+    "lon": 76.53492666823603
+  },
+  {
+    "name": "Goa",
+    "key": "goa",
+    "lat": 15.359020348513168,
+    "lon": 74.0207091172068
+  },
+  {
+    "name": "Karnataka",
+    "key": "karnataka",
+    "lat": 14.883153978276932,
+    "lon": 76.47746450069869
+  },
+  {
+    "name": "Kerala",
+    "key": "kerala",
+    "lat": 10.732988761899207,
+    "lon": 76.28422905878207
+  },
+  {
+    "name": "Puducherry",
+    "key": "puducherry",
+    "lat": 12.061897975882426,
+    "lon": 75.26593834781409
+  },
+  {
+    "name": "Tamil Nadu",
+    "key": "tamil nadu",
+    "lat": 11.099594739703614,
+    "lon": 78.2524312226182
+  },
+  {
+    "name": "Lakshadweep",
+    "key": "lakshadweep",
+    "lat": 8.281382554200059,
+    "lon": 73.05956464940007
+  },
+  {
+    "name": "Andaman and Nicobar",
+    "key": "andaman and nicobar",
+    "lat": 12.569419309739185,
+    "lon": 92.83102284126092
+  },
+  {
+    "name": "Jharkhand",
+    "key": "jharkhand",
+    "lat": 23.65086463909062,
+    "lon": 85.56044983251964
+  },
+  {
+    "name": "Delhi",
+    "key": "delhi",
+    "lat": 28.665032140520836,
+    "lon": 77.11742584312813
+  },
+  {
+    "name": "Chandigarh",
+    "key": "chandigarh",
+    "lat": 30.743555284628666,
+    "lon": 76.78715831902117
+  },
+  {
+    "name": "Madhya Pradesh",
+    "key": "madhya pradesh",
+    "lat": 23.80969232632842,
+    "lon": 78.12147508596051
+  },
+  {
+    "name": "Chhattisgarh",
+    "key": "chhattisgarh",
+    "lat": 21.24037444495628,
+    "lon": 81.97288682307453
+  },
+  {
+    "name": "Haryana",
+    "key": "haryana",
+    "lat": 29.271978242223618,
+    "lon": 76.39574512040556
+  },
+  {
+    "name": "Telangana",
+    "key": "telangana",
+    "lat": 17.74850099214069,
+    "lon": 79.21925294512533
+  }
+]

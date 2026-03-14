@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Norrbotten",
+    "key": "norrbotten",
+    "lat": 67.09289153444811,
+    "lon": 20.439218608854127
+  },
+  {
+    "name": "Västerbotten",
+    "key": "västerbotten",
+    "lat": 64.90343530112114,
+    "lon": 17.67196501641829
+  },
+  {
+    "name": "Jämtland",
+    "key": "jämtland",
+    "lat": 63.17733178391771,
+    "lon": 14.262051131991617
+  },
+  {
+    "name": "Dalarna",
+    "key": "dalarna",
+    "lat": 60.98993577104108,
+    "lon": 14.37162530138678
+  },
+  {
+    "name": "Värmland",
+    "key": "värmland",
+    "lat": 59.84487079036343,
+    "lon": 12.98140030720141
+  },
+  {
+    "name": "Västra Götaland",
+    "key": "västra götaland",
+    "lat": 58.3981862224106,
+    "lon": 12.663498417565032
+  },
+  {
+    "name": "Västernorrland",
+    "key": "västernorrland",
+    "lat": 63.03480890833035,
+    "lon": 17.12361981231841
+  },
+  {
+    "name": "Gävleborg",
+    "key": "gävleborg",
+    "lat": 61.475389196295424,
+    "lon": 16.17839970726208
+  },
+  {
+    "name": "Uppsala",
+    "key": "uppsala",
+    "lat": 60.032084402010696,
+    "lon": 17.527023002278554
+  },
+  {
+    "name": "Stockholm",
+    "key": "stockholm",
+    "lat": 59.50358893888882,
+    "lon": 18.108837570611392
+  },
+  {
+    "name": "Södermanland",
+    "key": "södermanland",
+    "lat": 59.069933036834335,
+    "lon": 16.778081630792954
+  },
+  {
+    "name": "Östergötland",
+    "key": "östergötland",
+    "lat": 58.33062175337386,
+    "lon": 15.818972851164931
+  },
+  {
+    "name": "Kalmar",
+    "key": "kalmar",
+    "lat": 57.36057192549459,
+    "lon": 16.075673205920854
+  },
+  {
+    "name": "Blekinge",
+    "key": "blekinge",
+    "lat": 56.307325595436815,
+    "lon": 15.209215777510252
+  },
+  {
+    "name": "Skåne",
+    "key": "skåne",
+    "lat": 55.98856063531603,
+    "lon": 13.654131001974115
+  },
+  {
+    "name": "Halland",
+    "key": "halland",
+    "lat": 56.9366263397397,
+    "lon": 12.877924048997864
+  },
+  {
+    "name": "Gotland",
+    "key": "gotland",
+    "lat": 57.478509832900045,
+    "lon": 18.524807162400073
+  },
+  {
+    "name": "Västmanland",
+    "key": "västmanland",
+    "lat": 59.81083204996436,
+    "lon": 16.418251302182153
+  },
+  {
+    "name": "Jönköping",
+    "key": "jönköping",
+    "lat": 57.47503060176086,
+    "lon": 14.48385013190605
+  },
+  {
+    "name": "Orebro",
+    "key": "orebro",
+    "lat": 59.40169293660911,
+    "lon": 14.996033491088019
+  },
+  {
+    "name": "Kronoberg",
+    "key": "kronoberg",
+    "lat": 56.81277788929247,
+    "lon": 14.499101419951069
+  }
+]

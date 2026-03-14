@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Ústecký",
+    "key": "ústecký",
+    "lat": 50.53574348489795,
+    "lon": 13.8866794603092
+  },
+  {
+    "name": "Liberecký",
+    "key": "liberecký",
+    "lat": 50.737049767959626,
+    "lon": 14.915439059923733
+  },
+  {
+    "name": "Karlovarský",
+    "key": "karlovarský",
+    "lat": 50.23078122713266,
+    "lon": 12.719108903258418
+  },
+  {
+    "name": "Plzeňský",
+    "key": "plzeňský",
+    "lat": 49.639179577576506,
+    "lon": 13.225064112189214
+  },
+  {
+    "name": "Jihočeský",
+    "key": "jihočeský",
+    "lat": 49.04150423140032,
+    "lon": 14.565954169607627
+  },
+  {
+    "name": "Královéhradecký",
+    "key": "královéhradecký",
+    "lat": 50.41461303893874,
+    "lon": 15.807646882987743
+  },
+  {
+    "name": "Olomoucký",
+    "key": "olomoucký",
+    "lat": 49.89396378549898,
+    "lon": 17.09276889557297
+  },
+  {
+    "name": "Pardubický",
+    "key": "pardubický",
+    "lat": 49.960666086480956,
+    "lon": 16.330995230311085
+  },
+  {
+    "name": "Moravskoslezský",
+    "key": "moravskoslezský",
+    "lat": 49.82533328662021,
+    "lon": 17.98307117535904
+  },
+  {
+    "name": "Jihomoravský",
+    "key": "jihomoravský",
+    "lat": 49.032146440691676,
+    "lon": 16.56089790614201
+  },
+  {
+    "name": "Zlínský",
+    "key": "zlínský",
+    "lat": 49.229624691518964,
+    "lon": 17.919691028237963
+  },
+  {
+    "name": "Vysočina",
+    "key": "vysočina",
+    "lat": 49.4095374868655,
+    "lon": 15.642971565105624
+  },
+  {
+    "name": "Středočeský",
+    "key": "středočeský",
+    "lat": 49.99152373952894,
+    "lon": 14.652161761659956
+  },
+  {
+    "name": "Prague",
+    "key": "prague",
+    "lat": 50.05117349765876,
+    "lon": 14.478486657583167
+  }
+]

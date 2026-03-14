@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Peleliu",
+    "key": "peleliu",
+    "lat": 7.044511216500055,
+    "lon": 134.26465905050006
+  },
+  {
+    "name": "Koror",
+    "key": "koror",
+    "lat": 7.277199611600065,
+    "lon": 134.44743899800008
+  },
+  {
+    "name": "Ngeremlengui",
+    "key": "ngeremlengui",
+    "lat": 7.53059570573853,
+    "lon": 134.57240446615043
+  },
+  {
+    "name": "Ngatpang",
+    "key": "ngatpang",
+    "lat": 7.47239077137616,
+    "lon": 134.52997284756242
+  },
+  {
+    "name": "Aimeliik",
+    "key": "aimeliik",
+    "lat": 7.427564479156853,
+    "lon": 134.51858895394602
+  },
+  {
+    "name": "Airai",
+    "key": "airai",
+    "lat": 7.419606602994547,
+    "lon": 134.5661909059375
+  },
+  {
+    "name": "Ngchesar",
+    "key": "ngchesar",
+    "lat": 7.4695812770996115,
+    "lon": 134.59862337882996
+  },
+  {
+    "name": "Melekeok",
+    "key": "melekeok",
+    "lat": 7.5209085183207325,
+    "lon": 134.61642677453924
+  },
+  {
+    "name": "Ngiwal",
+    "key": "ngiwal",
+    "lat": 7.571325886055594,
+    "lon": 134.63224745331394
+  },
+  {
+    "name": "Ngaraard",
+    "key": "ngaraard",
+    "lat": 7.645530442902925,
+    "lon": 134.64338008262266
+  },
+  {
+    "name": "Ngarchelong",
+    "key": "ngarchelong",
+    "lat": 7.699720454432682,
+    "lon": 134.63949600589163
+  },
+  {
+    "name": "Ngardmau",
+    "key": "ngardmau",
+    "lat": 7.591964505256186,
+    "lon": 134.59215150156416
+  },
+  {
+    "name": "Hatobohei",
+    "key": "hatobohei",
+    "lat": 3.0414248718000523,
+    "lon": 131.15733483180006
+  },
+  {
+    "name": "Sonsorol",
+    "key": "sonsorol",
+    "lat": 5.298976955250083,
+    "lon": 132.22034752675006
+  },
+  {
+    "name": "Angaur",
+    "key": "angaur",
+    "lat": 6.903225002000056,
+    "lon": 134.15731855575007
+  },
+  {
+    "name": "Kayangel",
+    "key": "kayangel",
+    "lat": 8.082066045247839,
+    "lon": 134.71152346138518
+  }
+]

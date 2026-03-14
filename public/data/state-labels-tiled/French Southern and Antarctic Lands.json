@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Iles Eparses de l'ocean Indien",
+    "key": "iles eparses de l'ocean indien",
+    "lat": -22.335788669599925,
+    "lon": 40.35927168060007
+  },
+  {
+    "name": "Archipel des Kerguelen",
+    "key": "archipel des kerguelen",
+    "lat": -49.26843391941372,
+    "lon": 69.49486682237936
+  },
+  {
+    "name": "Archipel des Crozet",
+    "key": "archipel des crozet",
+    "lat": -46.39391041419994,
+    "lon": 51.78668053460005
+  },
+  {
+    "name": "Iles Saint-Paul et Nouvelle-Amsterdam",
+    "key": "iles saint-paul et nouvelle-amsterdam",
+    "lat": -37.855584405249914,
+    "lon": 77.53233890050006
+  }
+]

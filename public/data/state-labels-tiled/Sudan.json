@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Central Darfur",
+    "key": "central darfur",
+    "lat": 12.407274061345557,
+    "lon": 23.497240235951242
+  },
+  {
+    "name": "Southern Darfur",
+    "key": "southern darfur",
+    "lat": 10.503389615538556,
+    "lon": 24.40706523062571
+  },
+  {
+    "name": "Gedarif",
+    "key": "gedarif",
+    "lat": 14.284366052813223,
+    "lon": 35.02146809344724
+  },
+  {
+    "name": "Blue Nile",
+    "key": "blue nile",
+    "lat": 11.099891989433214,
+    "lon": 34.21218164466351
+  },
+  {
+    "name": "Sennar",
+    "key": "sennar",
+    "lat": 13.003986158651715,
+    "lon": 34.09296534845211
+  },
+  {
+    "name": "Northern",
+    "key": "northern",
+    "lat": 9.115785759791477,
+    "lon": -11.868718148726737
+  },
+  {
+    "name": "River Nile",
+    "key": "river nile",
+    "lat": 18.53917583063262,
+    "lon": 33.675983653397296
+  },
+  {
+    "name": "North Darfur",
+    "key": "north darfur",
+    "lat": 14.614341692859044,
+    "lon": 25.485023931540475
+  },
+  {
+    "name": "Western Darfur",
+    "key": "western darfur",
+    "lat": 13.936733693962353,
+    "lon": 22.87054593399257
+  },
+  {
+    "name": "Red Sea",
+    "key": "red sea",
+    "lat": 19.343278250560132,
+    "lon": 36.15759498292621
+  },
+  {
+    "name": "Kassala",
+    "key": "kassala",
+    "lat": 15.942917727953601,
+    "lon": 35.776890991551255
+  },
+  {
+    "name": "White Nile",
+    "key": "white nile",
+    "lat": 13.602721258190547,
+    "lon": 32.28124430375126
+  },
+  {
+    "name": "South Kordufan",
+    "key": "south kordufan",
+    "lat": 11.314111488418076,
+    "lon": 29.899014570689793
+  },
+  {
+    "name": "Eastern Darfur",
+    "key": "eastern darfur",
+    "lat": 11.274819972768906,
+    "lon": 26.241236032972033
+  },
+  {
+    "name": "Gezira",
+    "key": "gezira",
+    "lat": 14.511631333990861,
+    "lon": 33.14811657081507
+  },
+  {
+    "name": "Khartoum",
+    "key": "khartoum",
+    "lat": 15.814138910586246,
+    "lon": 33.03525730983297
+  },
+  {
+    "name": "North Kordufan",
+    "key": "north kordufan",
+    "lat": 13.443874678445074,
+    "lon": 29.61827978444163
+  }
+]

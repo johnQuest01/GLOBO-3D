@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Nugaal",
+    "key": "nugaal",
+    "lat": 8.318361719476462,
+    "lon": 49.20670606591234
+  },
+  {
+    "name": "Mudug",
+    "key": "mudug",
+    "lat": 6.260007398016695,
+    "lon": 48.25369778254384
+  },
+  {
+    "name": "Galguduud",
+    "key": "galguduud",
+    "lat": 5.004620457761705,
+    "lon": 46.628971837412465
+  },
+  {
+    "name": "Hiiraan",
+    "key": "hiiraan",
+    "lat": 4.340974663800606,
+    "lon": 45.55774842277141
+  },
+  {
+    "name": "Bakool",
+    "key": "bakool",
+    "lat": 4.004698709214872,
+    "lon": 43.975483932008885
+  },
+  {
+    "name": "Gedo",
+    "key": "gedo",
+    "lat": 3.2292103134884758,
+    "lon": 42.189584090083905
+  },
+  {
+    "name": "Bari",
+    "key": "bari",
+    "lat": 10.188936014125451,
+    "lon": 50.20425381342741
+  },
+  {
+    "name": "Jubbada Hoose",
+    "key": "jubbada hoose",
+    "lat": -0.37353000042958984,
+    "lon": 41.9079038789928
+  },
+  {
+    "name": "Jubbada Dhexe",
+    "key": "jubbada dhexe",
+    "lat": 1.1364000038544182,
+    "lon": 42.634298913682336
+  },
+  {
+    "name": "Shabeellaha Hoose",
+    "key": "shabeellaha hoose",
+    "lat": 2.0925054684348527,
+    "lon": 44.550235574077185
+  },
+  {
+    "name": "Banaadir",
+    "key": "banaadir",
+    "lat": 2.1258298276936785,
+    "lon": 45.4668702389568
+  },
+  {
+    "name": "Shabeellaha Dhexe",
+    "key": "shabeellaha dhexe",
+    "lat": 2.9633853685572302,
+    "lon": 45.89695128550935
+  },
+  {
+    "name": "Bay",
+    "key": "bay",
+    "lat": 2.954041283078743,
+    "lon": 43.73907640604674
+  }
+]

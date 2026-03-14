@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Diekirch",
+    "key": "diekirch",
+    "lat": 49.94911343248848,
+    "lon": 6.044063496140074
+  },
+  {
+    "name": "Grevenmacher",
+    "key": "grevenmacher",
+    "lat": 49.67890907889669,
+    "lon": 6.326111944743368
+  },
+  {
+    "name": "Luxemburgo",
+    "key": "luxembourg",
+    "lat": 49.92248003017552,
+    "lon": 5.488580380113445
+  }
+]

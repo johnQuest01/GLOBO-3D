@@ -1,0 +1,68 @@
+[
+  {
+    "name": "West Flanders",
+    "key": "west flanders",
+    "lat": 50.99279533996243,
+    "lon": 3.0048060726231087
+  },
+  {
+    "name": "Hainaut",
+    "key": "hainaut",
+    "lat": 50.40221374737941,
+    "lon": 3.95777106870668
+  },
+  {
+    "name": "Namur",
+    "key": "namur",
+    "lat": 50.18946251257218,
+    "lon": 4.827972865859067
+  },
+  {
+    "name": "Luxemburgo",
+    "key": "luxembourg",
+    "lat": 49.92248003017552,
+    "lon": 5.488580380113445
+  },
+  {
+    "name": "Liege",
+    "key": "liege",
+    "lat": 50.51024187675308,
+    "lon": 5.716795765640917
+  },
+  {
+    "name": "East Flanders",
+    "key": "east flanders",
+    "lat": 51.077680583864066,
+    "lon": 3.8733400870173993
+  },
+  {
+    "name": "Antwerp",
+    "key": "antwerp",
+    "lat": 51.24695682884344,
+    "lon": 4.716040047282545
+  },
+  {
+    "name": "Limburg",
+    "key": "limburg",
+    "lat": 51.23106428820857,
+    "lon": 5.883721407664115
+  },
+  {
+    "name": "Brussels",
+    "key": "brussels",
+    "lat": 50.82160616200006,
+    "lon": 4.389459392800075
+  },
+  {
+    "name": "Flemish Brabant",
+    "key": "flemish brabant",
+    "lat": 50.83099572628559,
+    "lon": 4.50382521607763
+  },
+  {
+    "name": "Walloon Brabant",
+    "key": "walloon brabant",
+    "lat": 50.66870889244146,
+    "lon": 4.525185645034892
+  }
+]

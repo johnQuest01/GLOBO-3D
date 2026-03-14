@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Tashi Yangtse",
+    "key": "tashi yangtse",
+    "lat": 27.70576274879203,
+    "lon": 91.49947773682045
+  },
+  {
+    "name": "Lhuntshi",
+    "key": "lhuntshi",
+    "lat": 27.81680818505507,
+    "lon": 91.0817197177014
+  },
+  {
+    "name": "Bumthang",
+    "key": "bumthang",
+    "lat": 27.705796328455296,
+    "lon": 90.7106090846919
+  },
+  {
+    "name": "Ha",
+    "key": "ha",
+    "lat": 27.3458767962428,
+    "lon": 89.10954129202526
+  },
+  {
+    "name": "Samchi",
+    "key": "samchi",
+    "lat": 27.04667288055851,
+    "lon": 89.03378490100042
+  },
+  {
+    "name": "Chhukha",
+    "key": "chhukha",
+    "lat": 26.99054404952056,
+    "lon": 89.5494048246785
+  },
+  {
+    "name": "Geylegphug",
+    "key": "geylegphug",
+    "lat": 26.886599690906305,
+    "lon": 90.28043433828542
+  },
+  {
+    "name": "Shemgang",
+    "key": "shemgang",
+    "lat": 27.026986606796445,
+    "lon": 90.84829803300279
+  },
+  {
+    "name": "Samdrup Jongkhar",
+    "key": "samdrup jongkhar",
+    "lat": 26.928812862296553,
+    "lon": 91.64707969779195
+  },
+  {
+    "name": "Tashigang",
+    "key": "tashigang",
+    "lat": 27.291294268632488,
+    "lon": 91.68592165588909
+  },
+  {
+    "name": "Thimphu",
+    "key": "thimphu",
+    "lat": 27.58847750057406,
+    "lon": 89.52475338585691
+  },
+  {
+    "name": "Paro",
+    "key": "paro",
+    "lat": 27.47944872435878,
+    "lon": 89.33927767955689
+  },
+  {
+    "name": "Gasa",
+    "key": "gasa",
+    "lat": 28.01505567985884,
+    "lon": 89.88961264584009
+  },
+  {
+    "name": "Chirang",
+    "key": "chirang",
+    "lat": 27.039612302722723,
+    "lon": 90.15015808648361
+  },
+  {
+    "name": "Wangdi Phodrang",
+    "key": "wangdi phodrang",
+    "lat": 27.476064105829686,
+    "lon": 90.1164674750328
+  },
+  {
+    "name": "Daga",
+    "key": "daga",
+    "lat": 27.065893459715387,
+    "lon": 89.86392889020607
+  },
+  {
+    "name": "Punakha",
+    "key": "punakha",
+    "lat": 27.68617141807647,
+    "lon": 89.85807796942271
+  },
+  {
+    "name": "Mongar",
+    "key": "mongar",
+    "lat": 27.326588141209733,
+    "lon": 91.21836014218678
+  },
+  {
+    "name": "Tongsa",
+    "key": "tongsa",
+    "lat": 27.44024927986218,
+    "lon": 90.45766708599444
+  },
+  {
+    "name": "Pemagatsel",
+    "key": "pemagatsel",
+    "lat": 27.03744041580253,
+    "lon": 91.37006147663578
+  }
+]

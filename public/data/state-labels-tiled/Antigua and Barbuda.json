@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Saint Paul",
+    "key": "saint paul",
+    "lat": 15.353548011356668,
+    "lon": -61.37306909263786
+  },
+  {
+    "name": "Saint Philip",
+    "key": "saint philip",
+    "lat": 13.146952386641818,
+    "lon": -59.486592137723036
+  },
+  {
+    "name": "Saint Peter",
+    "key": "saint peter",
+    "lat": 13.27554059191744,
+    "lon": -59.60509607843333
+  },
+  {
+    "name": "Saint George",
+    "key": "saint george",
+    "lat": 12.071263662592411,
+    "lon": -61.69597780071473
+  },
+  {
+    "name": "Saint John",
+    "key": "saint john",
+    "lat": 12.134726429499878,
+    "lon": -61.713231150659155
+  },
+  {
+    "name": "Saint Mary",
+    "key": "saint mary",
+    "lat": 17.037359494018034,
+    "lon": -61.82234004421139
+  },
+  {
+    "name": "Barbuda",
+    "key": "barbuda",
+    "lat": 17.617043361400068,
+    "lon": -61.81257890539994
+  },
+  {
+    "name": "Redonda",
+    "key": "redonda",
+    "lat": 16.93674956841648,
+    "lon": -62.345624326842014
+  }
+]

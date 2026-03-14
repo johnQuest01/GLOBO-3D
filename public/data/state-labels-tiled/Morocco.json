@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Guelmim - Es-Semara",
+    "key": "guelmim - es-semara",
+    "lat": 28.422994171586183,
+    "lon": -9.352558603869383
+  },
+  {
+    "name": "Laâyoune - Boujdour - Sakia El Hamra",
+    "key": "laâyoune - boujdour - sakia el hamra",
+    "lat": 26.148173315815868,
+    "lon": -13.32248773255571
+  },
+  {
+    "name": "Oued el Dahab",
+    "key": "oued el dahab",
+    "lat": 23.165805330637212,
+    "lon": -15.02747359969214
+  },
+  {
+    "name": "Tanger - Tétouan",
+    "key": "tanger - tétouan",
+    "lat": 35.23418715773632,
+    "lon": -5.336230047164375
+  },
+  {
+    "name": "Oriental",
+    "key": "oriental",
+    "lat": 33.76542567036159,
+    "lon": -2.7326745720025163
+  },
+  {
+    "name": "Meknès - Tafilalet",
+    "key": "meknès - tafilalet",
+    "lat": 32.313005746800656,
+    "lon": -4.851914559562824
+  },
+  {
+    "name": "Souss - Massa - Draâ",
+    "key": "souss - massa - draâ",
+    "lat": 30.385042501438438,
+    "lon": -7.584757384977099
+  },
+  {
+    "name": "Taza - Al Hoceima - Taounate",
+    "key": "taza - al hoceima - taounate",
+    "lat": 34.45876304549787,
+    "lon": -4.1368480745054494
+  },
+  {
+    "name": "Gharb - Chrarda - Béni Hssen",
+    "key": "gharb - chrarda - béni hssen",
+    "lat": 34.50426774417787,
+    "lon": -5.919833759980122
+  },
+  {
+    "name": "Rabat - Salé - Zemmour - Zaer",
+    "key": "rabat - salé - zemmour - zaer",
+    "lat": 33.68152855044607,
+    "lon": -6.4100409560746865
+  },
+  {
+    "name": "Chaouia - Ouardigha",
+    "key": "chaouia - ouardigha",
+    "lat": 33.12955860466654,
+    "lon": -7.161296792701719
+  },
+  {
+    "name": "Grand Casablanca",
+    "key": "grand casablanca",
+    "lat": 33.540072316924636,
+    "lon": -7.606727415124837
+  },
+  {
+    "name": "Doukkala - Abda",
+    "key": "doukkala - abda",
+    "lat": 32.47949828564449,
+    "lon": -8.623176419397259
+  },
+  {
+    "name": "Marrakech - Tensift - Al Haouz",
+    "key": "marrakech - tensift - al haouz",
+    "lat": 31.680559943709316,
+    "lon": -8.447846643476767
+  },
+  {
+    "name": "Fès - Boulemane",
+    "key": "fès - boulemane",
+    "lat": 33.56194639878849,
+    "lon": -4.223739405393001
+  },
+  {
+    "name": "Tadla - Azilal",
+    "key": "tadla - azilal",
+    "lat": 32.13161138578181,
+    "lon": -6.44914109102604
+  }
+]

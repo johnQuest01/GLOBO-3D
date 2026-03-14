@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Niederösterreich",
+    "key": "niederösterreich",
+    "lat": 48.29351650193814,
+    "lon": 15.66988124750528
+  },
+  {
+    "name": "Oberösterreich",
+    "key": "oberösterreich",
+    "lat": 48.16357616862308,
+    "lon": 13.976301934875384
+  },
+  {
+    "name": "Burgenland",
+    "key": "burgenland",
+    "lat": 47.493476373014936,
+    "lon": 16.508637178007373
+  },
+  {
+    "name": "Vorarlberg",
+    "key": "vorarlberg",
+    "lat": 47.213060805283654,
+    "lon": 9.684567301271327
+  },
+  {
+    "name": "Tirol",
+    "key": "tirol",
+    "lat": 47.215385571273096,
+    "lon": 11.308799663583558
+  },
+  {
+    "name": "Salzburg",
+    "key": "salzburg",
+    "lat": 47.402235377293934,
+    "lon": 12.976858393092735
+  },
+  {
+    "name": "Kärnten",
+    "key": "kärnten",
+    "lat": 46.70864338397379,
+    "lon": 13.991401442565609
+  },
+  {
+    "name": "Steiermark",
+    "key": "steiermark",
+    "lat": 47.11119854938219,
+    "lon": 15.033503022857907
+  },
+  {
+    "name": "Wien",
+    "key": "wien",
+    "lat": 48.22186827262266,
+    "lon": 16.39148562991786
+  }
+]

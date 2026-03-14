@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Guantánamo",
+    "key": "guantánamo",
+    "lat": 20.153329532536766,
+    "lon": -74.9430890273015
+  },
+  {
+    "name": "Camagüey",
+    "key": "camagüey",
+    "lat": 21.384442028800866,
+    "lon": -77.81346574827948
+  },
+  {
+    "name": "Ciego de Ávila",
+    "key": "ciego de ávila",
+    "lat": 21.979494511436567,
+    "lon": -78.69904599435408
+  },
+  {
+    "name": "Holguín",
+    "key": "holguín",
+    "lat": 20.740635064142175,
+    "lon": -75.72598007383752
+  },
+  {
+    "name": "Isla de la Juventud",
+    "key": "isla de la juventud",
+    "lat": 21.65676956211117,
+    "lon": -82.81857029688882
+  },
+  {
+    "name": "Sancti Spíritus",
+    "key": "sancti spíritus",
+    "lat": 21.98330332852459,
+    "lon": -79.45753052016842
+  },
+  {
+    "name": "Villa Clara",
+    "key": "villa clara",
+    "lat": 22.54739214687996,
+    "lon": -80.12835303378478
+  },
+  {
+    "name": "Matanzas",
+    "key": "matanzas",
+    "lat": 22.601144068605638,
+    "lon": -81.23182321887907
+  },
+  {
+    "name": "Las Tunas",
+    "key": "las tunas",
+    "lat": 21.03367743352441,
+    "lon": -77.05295604217183
+  },
+  {
+    "name": "Mayabeque",
+    "key": "mayabeque",
+    "lat": 22.87951132573166,
+    "lon": -82.03262518041942
+  },
+  {
+    "name": "Ciudad de la Habana",
+    "key": "ciudad de la habana",
+    "lat": 23.06868040324154,
+    "lon": -82.37836695419675
+  },
+  {
+    "name": "Artemisa",
+    "key": "artemisa",
+    "lat": 22.864150498176762,
+    "lon": -82.72076605670313
+  },
+  {
+    "name": "Pinar del Río",
+    "key": "pinar del río",
+    "lat": 22.40899015833647,
+    "lon": -83.68008279889595
+  },
+  {
+    "name": "Cienfuegos",
+    "key": "cienfuegos",
+    "lat": 22.185526255757924,
+    "lon": -80.4145754195205
+  },
+  {
+    "name": "Granma",
+    "key": "granma",
+    "lat": 20.277089520236572,
+    "lon": -77.00058629328277
+  },
+  {
+    "name": "Santiago de Cuba",
+    "key": "santiago de cuba",
+    "lat": 20.13711338854586,
+    "lon": -75.99709757604379
+  }
+]

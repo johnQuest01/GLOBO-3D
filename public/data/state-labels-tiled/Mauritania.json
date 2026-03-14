@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Tiris Zemmour",
+    "key": "tiris zemmour",
+    "lat": 24.562835738583477,
+    "lon": -9.879249929850795
+  },
+  {
+    "name": "Dakhlet Nouadhibou",
+    "key": "dakhlet nouadhibou",
+    "lat": 20.606657942156048,
+    "lon": -16.24115033659515
+  },
+  {
+    "name": "Adrar",
+    "key": "adrar",
+    "lat": 24.63657598284731,
+    "lon": 0.5163695407558117
+  },
+  {
+    "name": "Brakna",
+    "key": "brakna",
+    "lat": 16.92872579073604,
+    "lon": -13.55934517901258
+  },
+  {
+    "name": "Trarza",
+    "key": "trarza",
+    "lat": 17.19905442375734,
+    "lon": -15.485502355126092
+  },
+  {
+    "name": "Gorgol",
+    "key": "gorgol",
+    "lat": 16.03040530005807,
+    "lon": -12.88149031907242
+  },
+  {
+    "name": "Guidimaka",
+    "key": "guidimaka",
+    "lat": 15.377011109512747,
+    "lon": -12.147156011252207
+  },
+  {
+    "name": "Hodh ech Chargui",
+    "key": "hodh ech chargui",
+    "lat": 17.690975489009478,
+    "lon": -7.308776828590356
+  },
+  {
+    "name": "Hodh el Gharbi",
+    "key": "hodh el gharbi",
+    "lat": 16.285056678826205,
+    "lon": -9.8984684690066
+  },
+  {
+    "name": "Assaba",
+    "key": "assaba",
+    "lat": 16.594134692884396,
+    "lon": -11.56275091321621
+  },
+  {
+    "name": "Inchiri",
+    "key": "inchiri",
+    "lat": 19.842782446717763,
+    "lon": -15.500122307697472
+  },
+  {
+    "name": "Nouakchott",
+    "key": "nouakchott",
+    "lat": 18.088669704249476,
+    "lon": -15.93737669479824
+  },
+  {
+    "name": "Tagant",
+    "key": "tagant",
+    "lat": 18.14787588933004,
+    "lon": -11.195391420266297
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Musandam",
+    "key": "musandam",
+    "lat": 25.91862174167869,
+    "lon": 56.232538351123644
+  },
+  {
+    "name": "Al Batnah North",
+    "key": "al batnah north",
+    "lat": 24.334614203338663,
+    "lon": 56.622280598677676
+  },
+  {
+    "name": "Al Buraymi",
+    "key": "al buraymi",
+    "lat": 24.2448936069559,
+    "lon": 55.87348262101484
+  },
+  {
+    "name": "Al Dhahira",
+    "key": "al dhahira",
+    "lat": 23.209168242747307,
+    "lon": 55.925210844075494
+  },
+  {
+    "name": "Dhofar",
+    "key": "dhofar",
+    "lat": 18.01411420525779,
+    "lon": 54.64614556736313
+  },
+  {
+    "name": "Al Wusta",
+    "key": "al wusta",
+    "lat": 20.245695984974084,
+    "lon": 57.379948133925076
+  },
+  {
+    "name": "Ash Sharqiyah South",
+    "key": "ash sharqiyah south",
+    "lat": 21.611384591717478,
+    "lon": 59.068913274656836
+  },
+  {
+    "name": "Ash Sharqiyah North",
+    "key": "ash sharqiyah north",
+    "lat": 22.58770158093782,
+    "lon": 58.878375487526604
+  },
+  {
+    "name": "Muscat",
+    "key": "muscat",
+    "lat": 23.30946582440366,
+    "lon": 58.59678652817357
+  },
+  {
+    "name": "Al Batnah South",
+    "key": "al batnah south",
+    "lat": 23.55787673599159,
+    "lon": 57.68618985329727
+  },
+  {
+    "name": "Ad Dakhliyah",
+    "key": "ad dakhliyah",
+    "lat": 22.669616647474495,
+    "lon": 57.70802492646705
+  }
+]

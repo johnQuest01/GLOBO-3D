@@ -1,0 +1,116 @@
+[
+  {
+    "name": "Denguélé",
+    "key": "denguélé",
+    "lat": 9.653334245920808,
+    "lon": -7.324828715180463
+  },
+  {
+    "name": "Bafing",
+    "key": "bafing",
+    "lat": 8.418721372487717,
+    "lon": -7.68638624213579
+  },
+  {
+    "name": "Dix-Huit Montagnes",
+    "key": "dix-huit montagnes",
+    "lat": 7.431525519903793,
+    "lon": -7.785752709490301
+  },
+  {
+    "name": "Zanzan",
+    "key": "zanzan",
+    "lat": 8.791479258186998,
+    "lon": -3.418148160367179
+  },
+  {
+    "name": "Comoe",
+    "key": "comoe",
+    "lat": 6.640290188465964,
+    "lon": -3.436679753844038
+  },
+  {
+    "name": "Sud-Comoé",
+    "key": "sud-comoé",
+    "lat": 5.5199832740981245,
+    "lon": -3.1353091687610495
+  },
+  {
+    "name": "Savanes",
+    "key": "savanes",
+    "lat": 10.601166261881756,
+    "lon": 0.40112317125567
+  },
+  {
+    "name": "Cavally",
+    "key": "cavally",
+    "lat": 6.454951342124243,
+    "lon": -7.7537726876846005
+  },
+  {
+    "name": "Bas-Sassandra",
+    "key": "bas-sassandra",
+    "lat": 5.443602453537083,
+    "lon": -6.849840792327536
+  },
+  {
+    "name": "Sud-Bandama",
+    "key": "sud-bandama",
+    "lat": 5.576474570908826,
+    "lon": -5.473313966042009
+  },
+  {
+    "name": "Lagunes",
+    "key": "lagunes",
+    "lat": 5.679351714676081,
+    "lon": -4.3937105163714305
+  },
+  {
+    "name": "Haut-Sassandra",
+    "key": "haut-sassandra",
+    "lat": 7.061541413166381,
+    "lon": -6.575800180262685
+  },
+  {
+    "name": "Agnéby",
+    "key": "agnéby",
+    "lat": 6.167963999533062,
+    "lon": -3.9345726718971754
+  },
+  {
+    "name": "N'zi-Comoé",
+    "key": "n'zi-comoé",
+    "lat": 7.047084700470414,
+    "lon": -4.262491077666731
+  },
+  {
+    "name": "Marahoué",
+    "key": "marahoué",
+    "lat": 7.088776813903365,
+    "lon": -5.877445583437838
+  },
+  {
+    "name": "Fromager",
+    "key": "fromager",
+    "lat": 6.275552813361634,
+    "lon": -5.751178479902933
+  },
+  {
+    "name": "Vallée du Bandama",
+    "key": "vallée du bandama",
+    "lat": 8.304384126180517,
+    "lon": -4.97132103066806
+  },
+  {
+    "name": "Lacs",
+    "key": "lacs",
+    "lat": 6.807079754383144,
+    "lon": -5.044234029173115
+  },
+  {
+    "name": "Worodougou",
+    "key": "worodougou",
+    "lat": 8.395537814568478,
+    "lon": -6.358209302817083
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Mbeya",
+    "key": "mbeya",
+    "lat": -8.400188030267529,
+    "lon": 33.31479483719388
+  },
+  {
+    "name": "Njombe",
+    "key": "njombe",
+    "lat": -9.464224661113201,
+    "lon": 34.77281676511424
+  },
+  {
+    "name": "Ruvuma",
+    "key": "ruvuma",
+    "lat": -10.561043179955368,
+    "lon": 36.130501906846845
+  },
+  {
+    "name": "Kigoma",
+    "key": "kigoma",
+    "lat": -4.761458670064265,
+    "lon": 30.44264009297888
+  },
+  {
+    "name": "Katavi",
+    "key": "katavi",
+    "lat": -6.436078460626091,
+    "lon": 31.224341197165185
+  },
+  {
+    "name": "Rukwa",
+    "key": "rukwa",
+    "lat": -8.130288652806144,
+    "lon": 31.522700076928867
+  },
+  {
+    "name": "Kagera",
+    "key": "kagera",
+    "lat": -2.022715524049666,
+    "lon": 31.068718640386216
+  },
+  {
+    "name": "Mtwara",
+    "key": "mtwara",
+    "lat": -10.715076072280324,
+    "lon": 39.21927638303088
+  },
+  {
+    "name": "Mara",
+    "key": "mara",
+    "lat": -1.7460959687436106,
+    "lon": 33.957202064805855
+  },
+  {
+    "name": "Arusha",
+    "key": "arusha",
+    "lat": -3.1234787730357123,
+    "lon": 35.87341390867466
+  },
+  {
+    "name": "Kilimanjaro",
+    "key": "kilimanjaro",
+    "lat": -3.6277190813729887,
+    "lon": 37.53332533718413
+  },
+  {
+    "name": "Tanga",
+    "key": "tanga",
+    "lat": -5.383630124892515,
+    "lon": 38.05884617564479
+  },
+  {
+    "name": "Lindi",
+    "key": "lindi",
+    "lat": -9.408470237902627,
+    "lon": 38.55659939632336
+  },
+  {
+    "name": "Pwani",
+    "key": "pwani",
+    "lat": -7.128910226708984,
+    "lon": 38.615460124058
+  },
+  {
+    "name": "Dar-Es-Salaam",
+    "key": "dar-es-salaam",
+    "lat": -6.870023777016405,
+    "lon": 39.306034823945765
+  },
+  {
+    "name": "Zanzibar South and Central",
+    "key": "zanzibar south and central",
+    "lat": -6.211084973608288,
+    "lon": 39.42226749901399
+  },
+  {
+    "name": "Kaskazini-Unguja",
+    "key": "kaskazini-unguja",
+    "lat": -5.969929659026729,
+    "lon": 39.2678075134641
+  },
+  {
+    "name": "Zanzibar West",
+    "key": "zanzibar west",
+    "lat": -6.143365247732445,
+    "lon": 39.25306152148842
+  },
+  {
+    "name": "Kusini-Pemba",
+    "key": "kusini-pemba",
+    "lat": -5.269452915117708,
+    "lon": 39.77869544296624
+  },
+  {
+    "name": "Kaskazini-Pemba",
+    "key": "kaskazini-pemba",
+    "lat": -5.082373396558824,
+    "lon": 39.76482503328316
+  },
+  {
+    "name": "Morogoro",
+    "key": "morogoro",
+    "lat": -7.892144476062115,
+    "lon": 36.929453641337076
+  },
+  {
+    "name": "Dodoma",
+    "key": "dodoma",
+    "lat": -5.853633691566012,
+    "lon": 35.96357388587246
+  },
+  {
+    "name": "Manyara",
+    "key": "manyara",
+    "lat": -4.580529228094352,
+    "lon": 36.532549215538545
+  },
+  {
+    "name": "Singida",
+    "key": "singida",
+    "lat": -5.761110333883897,
+    "lon": 34.50698781999324
+  },
+  {
+    "name": "Tabora",
+    "key": "tabora",
+    "lat": -5.2012112150927505,
+    "lon": 32.782314431376236
+  },
+  {
+    "name": "Iringa",
+    "key": "iringa",
+    "lat": -7.845201631001639,
+    "lon": 35.36307615980202
+  },
+  {
+    "name": "Mwanza",
+    "key": "mwanza",
+    "lat": -15.710941271472507,
+    "lon": 34.52556154992558
+  },
+  {
+    "name": "Simiyu",
+    "key": "simiyu",
+    "lat": -2.8823766629704823,
+    "lon": 34.25261064826278
+  },
+  {
+    "name": "Geita",
+    "key": "geita",
+    "lat": -3.1915150598692694,
+    "lon": 31.67369477792307
+  },
+  {
+    "name": "Shinyanga",
+    "key": "shinyanga",
+    "lat": -3.7847929284259134,
+    "lon": 32.95529731744222
+  }
+]

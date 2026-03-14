@@ -1,0 +1,206 @@
+[
+  {
+    "name": "Nariño",
+    "key": "nariño",
+    "lat": 1.532334185449638,
+    "lon": -77.8168975673078
+  },
+  {
+    "name": "Putumayo",
+    "key": "putumayo",
+    "lat": 0.44192699656785467,
+    "lon": -75.82613411650593
+  },
+  {
+    "name": "Chocó",
+    "key": "chocó",
+    "lat": 6.491243682896451,
+    "lon": -76.9966209082854
+  },
+  {
+    "name": "Guainía",
+    "key": "guainía",
+    "lat": 2.6355176119473733,
+    "lon": -68.55372357434618
+  },
+  {
+    "name": "Vaupés",
+    "key": "vaupés",
+    "lat": 0.3675644995906931,
+    "lon": -70.33920501588366
+  },
+  {
+    "name": "Amazonas",
+    "key": "amazonas",
+    "lat": -2.8576650622069177,
+    "lon": -64.80381048226928
+  },
+  {
+    "name": "La Guajira",
+    "key": "la guajira",
+    "lat": 11.46804547733101,
+    "lon": -72.41272281676605
+  },
+  {
+    "name": "Cesar",
+    "key": "cesar",
+    "lat": 9.401180152868575,
+    "lon": -73.53342543335071
+  },
+  {
+    "name": "Norte de Santander",
+    "key": "norte de santander",
+    "lat": 7.938997535656002,
+    "lon": -72.87427787571151
+  },
+  {
+    "name": "Arauca",
+    "key": "arauca",
+    "lat": 6.553480742550055,
+    "lon": -71.05570542786678
+  },
+  {
+    "name": "Boyacá",
+    "key": "boyacá",
+    "lat": 5.894505657502385,
+    "lon": -73.21917691323367
+  },
+  {
+    "name": "Vichada",
+    "key": "vichada",
+    "lat": 4.771976264602896,
+    "lon": -68.99410463023708
+  },
+  {
+    "name": "Cauca",
+    "key": "cauca",
+    "lat": 2.2779731755377464,
+    "lon": -76.89971013651697
+  },
+  {
+    "name": "Valle del Cauca",
+    "key": "valle del cauca",
+    "lat": 3.830037785196263,
+    "lon": -76.65394323665691
+  },
+  {
+    "name": "Antioquia",
+    "key": "antioquia",
+    "lat": 7.08694638740297,
+    "lon": -75.794910423506
+  },
+  {
+    "name": "Córdoba",
+    "key": "córdoba",
+    "lat": 8.475451076407174,
+    "lon": -75.76402998235396
+  },
+  {
+    "name": "Sucre",
+    "key": "sucre",
+    "lat": 9.170493268927542,
+    "lon": -75.20659805136826
+  },
+  {
+    "name": "Bolívar",
+    "key": "bolívar",
+    "lat": 6.13617472764037,
+    "lon": -63.58893110059461
+  },
+  {
+    "name": "Atlántico",
+    "key": "atlántico",
+    "lat": 10.683697699484803,
+    "lon": -75.03124890692098
+  },
+  {
+    "name": "Magdalena",
+    "key": "magdalena",
+    "lat": 10.1613909249454,
+    "lon": -74.2327652974966
+  },
+  {
+    "name": "San Andrés y Providencia",
+    "key": "san andrés y providencia",
+    "lat": 12.54988027560007,
+    "lon": -81.70711015539993
+  },
+  {
+    "name": "",
+    "key": "",
+    "lat": -70.85554371549992,
+    "lon": -2.7388250397499334
+  },
+  {
+    "name": "Caquetá",
+    "key": "caquetá",
+    "lat": 0.9010651628313991,
+    "lon": -73.98193370630636
+  },
+  {
+    "name": "Huila",
+    "key": "huila",
+    "lat": 2.6931087413437473,
+    "lon": -75.507483363427
+  },
+  {
+    "name": "Guaviare",
+    "key": "guaviare",
+    "lat": 1.952703580162332,
+    "lon": -71.91833883075367
+  },
+  {
+    "name": "Caldas",
+    "key": "caldas",
+    "lat": 5.393446582693629,
+    "lon": -75.318525643044
+  },
+  {
+    "name": "Casanare",
+    "key": "casanare",
+    "lat": 5.502830131167141,
+    "lon": -71.76983952188411
+  },
+  {
+    "name": "Meta",
+    "key": "meta",
+    "lat": 3.2848246160052135,
+    "lon": -73.30769659694637
+  },
+  {
+    "name": "Bogota",
+    "key": "bogota",
+    "lat": 4.17888329589167,
+    "lon": -74.21955980105112
+  },
+  {
+    "name": "Santander",
+    "key": "santander",
+    "lat": 6.807792812274502,
+    "lon": -73.50930779904358
+  },
+  {
+    "name": "Tolima",
+    "key": "tolima",
+    "lat": 3.984608308716788,
+    "lon": -75.2288701200503
+  },
+  {
+    "name": "Quindío",
+    "key": "quindío",
+    "lat": 4.456348456436103,
+    "lon": -75.67621765796852
+  },
+  {
+    "name": "Cundinamarca",
+    "key": "cundinamarca",
+    "lat": 4.659600561370456,
+    "lon": -74.09790749240759
+  },
+  {
+    "name": "Risaralda",
+    "key": "risaralda",
+    "lat": 5.119145209234009,
+    "lon": -75.80780049644575
+  }
+]

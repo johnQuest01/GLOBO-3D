@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Rivière du Rempart",
+    "key": "rivière du rempart",
+    "lat": -20.06287319213152,
+    "lon": 57.63129195576913
+  },
+  {
+    "name": "Pamplemousses",
+    "key": "pamplemousses",
+    "lat": -20.13000946792769,
+    "lon": 57.550318887974086
+  },
+  {
+    "name": "Port Louis city",
+    "key": "port louis city",
+    "lat": -20.14722474026562,
+    "lon": 57.4772491834982
+  },
+  {
+    "name": "Rivière Noire",
+    "key": "rivière noire",
+    "lat": -20.299278625612377,
+    "lon": 57.44573883925804
+  },
+  {
+    "name": "Savanne",
+    "key": "savanne",
+    "lat": -20.46148997532269,
+    "lon": 57.5388345982798
+  },
+  {
+    "name": "Grand Port",
+    "key": "grand port",
+    "lat": -20.362654359370648,
+    "lon": 57.66691069873755
+  },
+  {
+    "name": "Flacq",
+    "key": "flacq",
+    "lat": -20.194298422365687,
+    "lon": 57.69210618575456
+  },
+  {
+    "name": "Agaléga",
+    "key": "agaléga",
+    "lat": -10.354641751333256,
+    "lon": 56.539683464500065
+  },
+  {
+    "name": "Rodrigues",
+    "key": "rodrigues",
+    "lat": -19.706101169599936,
+    "lon": 63.435492383800046
+  },
+  {
+    "name": "Moka",
+    "key": "moka",
+    "lat": -20.23907445277378,
+    "lon": 57.5860063744446
+  },
+  {
+    "name": "Plaines Wilhems",
+    "key": "plaines wilhems",
+    "lat": -20.30406694170743,
+    "lon": 57.51398779087525
+  },
+  {
+    "name": "Beau Bassin-Rose Hill",
+    "key": "beau bassin-rose hill",
+    "lat": -20.244930084231015,
+    "lon": 57.46710248351778
+  },
+  {
+    "name": "Port Louis",
+    "key": "port louis",
+    "lat": -20.176862605574797,
+    "lon": 57.489748017806754
+  },
+  {
+    "name": "Quatre Bornes",
+    "key": "quatre bornes",
+    "lat": -20.272588359505185,
+    "lon": 57.476272496078806
+  },
+  {
+    "name": "Vacoas-Phoenix",
+    "key": "vacoas-phoenix",
+    "lat": -20.30728884145687,
+    "lon": 57.487398179981994
+  },
+  {
+    "name": "Curepipe",
+    "key": "curepipe",
+    "lat": -20.32279913639102,
+    "lon": 57.51062685706378
+  }
+]

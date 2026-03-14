@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Saint Croix",
+    "key": "saint croix",
+    "lat": 17.746242580250055,
+    "lon": -64.69170081299994
+  },
+  {
+    "name": "Saint John",
+    "key": "saint john",
+    "lat": 12.134726429499878,
+    "lon": -61.713231150659155
+  },
+  {
+    "name": "Saint Thomas",
+    "key": "saint thomas",
+    "lat": 18.337291879400063,
+    "lon": -64.89426966739993
+  }
+]

@@ -1,0 +1,464 @@
+[
+  {
+    "name": "Surin",
+    "key": "surin",
+    "lat": 14.956612029561603,
+    "lon": 103.60668518802999
+  },
+  {
+    "name": "Si Sa Ket",
+    "key": "si sa ket",
+    "lat": 14.87159032201697,
+    "lon": 104.3823018455121
+  },
+  {
+    "name": "Ubon Ratchathani",
+    "key": "ubon ratchathani",
+    "lat": 15.143029671304717,
+    "lon": 105.1189418609304
+  },
+  {
+    "name": "Sa Kaeo",
+    "key": "sa kaeo",
+    "lat": 13.75005091579415,
+    "lon": 102.38951375502718
+  },
+  {
+    "name": "Buri Ram",
+    "key": "buri ram",
+    "lat": 15.006920897581345,
+    "lon": 102.97985248910106
+  },
+  {
+    "name": "Trat",
+    "key": "trat",
+    "lat": 12.159033346216471,
+    "lon": 102.65392199628079
+  },
+  {
+    "name": "Chanthaburi",
+    "key": "chanthaburi",
+    "lat": 12.86949582875324,
+    "lon": 102.12369437205962
+  },
+  {
+    "name": "Satun",
+    "key": "satun",
+    "lat": 6.8642552241977555,
+    "lon": 99.97564408106767
+  },
+  {
+    "name": "Songkhla",
+    "key": "songkhla",
+    "lat": 6.815593431331468,
+    "lon": 100.56080483899855
+  },
+  {
+    "name": "Yala",
+    "key": "yala",
+    "lat": 6.2159229822625,
+    "lon": 101.19700569748312
+  },
+  {
+    "name": "Narathiwat",
+    "key": "narathiwat",
+    "lat": 6.154895198055013,
+    "lon": 101.72702072665847
+  },
+  {
+    "name": "Chiang Rai",
+    "key": "chiang rai",
+    "lat": 19.780815418371276,
+    "lon": 99.84911109032286
+  },
+  {
+    "name": "Chiang Mai",
+    "key": "chiang mai",
+    "lat": 18.779211517992167,
+    "lon": 98.76026945496041
+  },
+  {
+    "name": "Mae Hong Son",
+    "key": "mae hong son",
+    "lat": 18.738217376448556,
+    "lon": 98.00034362132706
+  },
+  {
+    "name": "Tak",
+    "key": "tak",
+    "lat": 16.683020439851788,
+    "lon": 98.70532102472954
+  },
+  {
+    "name": "Kanchanaburi",
+    "key": "kanchanaburi",
+    "lat": 14.732651288692002,
+    "lon": 99.05009200914844
+  },
+  {
+    "name": "Prachuap Khiri Khan",
+    "key": "prachuap khiri khan",
+    "lat": 11.936491305231945,
+    "lon": 99.59043975774068
+  },
+  {
+    "name": "Phetchaburi",
+    "key": "phetchaburi",
+    "lat": 12.948341292047683,
+    "lon": 99.62166128520933
+  },
+  {
+    "name": "Ratchaburi",
+    "key": "ratchaburi",
+    "lat": 13.50661715372163,
+    "lon": 99.62637926025104
+  },
+  {
+    "name": "Chumphon",
+    "key": "chumphon",
+    "lat": 10.379650276276099,
+    "lon": 99.02364819648103
+  },
+  {
+    "name": "Ranong",
+    "key": "ranong",
+    "lat": 10.02658981724808,
+    "lon": 98.72356094854719
+  },
+  {
+    "name": "Phayao",
+    "key": "phayao",
+    "lat": 19.30706596750509,
+    "lon": 100.2067501257019
+  },
+  {
+    "name": "Nan",
+    "key": "nan",
+    "lat": 18.842215019147563,
+    "lon": 100.82007759252001
+  },
+  {
+    "name": "Uttaradit",
+    "key": "uttaradit",
+    "lat": 17.7875137716792,
+    "lon": 100.51780343269665
+  },
+  {
+    "name": "Phitsanulok",
+    "key": "phitsanulok",
+    "lat": 17.02424975420936,
+    "lon": 100.50728268388558
+  },
+  {
+    "name": "Loei",
+    "key": "loei",
+    "lat": 17.48465217093207,
+    "lon": 101.59280807357695
+  },
+  {
+    "name": "Bueng Kan",
+    "key": "bueng kan",
+    "lat": 18.14135541966102,
+    "lon": 103.66091243032301
+  },
+  {
+    "name": "Nong Khai",
+    "key": "nong khai",
+    "lat": 17.997284738149563,
+    "lon": 102.90546584012021
+  },
+  {
+    "name": "Nakhon Phanom",
+    "key": "nakhon phanom",
+    "lat": 17.397186525244415,
+    "lon": 104.38697030861901
+  },
+  {
+    "name": "Mukdahan",
+    "key": "mukdahan",
+    "lat": 16.554592653064297,
+    "lon": 104.50827798449956
+  },
+  {
+    "name": "Amnat Charoen",
+    "key": "amnat charoen",
+    "lat": 15.920690704848449,
+    "lon": 104.75594241759374
+  },
+  {
+    "name": "Phangnga",
+    "key": "phangnga",
+    "lat": 8.70911548224081,
+    "lon": 98.4562007563745
+  },
+  {
+    "name": "Krabi",
+    "key": "krabi",
+    "lat": 8.180075773316279,
+    "lon": 99.02901799280968
+  },
+  {
+    "name": "Trang",
+    "key": "trang",
+    "lat": 7.491924661776762,
+    "lon": 99.6727332377342
+  },
+  {
+    "name": "Pattani",
+    "key": "pattani",
+    "lat": 6.727696063888711,
+    "lon": 101.340191108669
+  },
+  {
+    "name": "Phatthalung",
+    "key": "phatthalung",
+    "lat": 7.553189296910481,
+    "lon": 100.08114136245733
+  },
+  {
+    "name": "Nakhon Si Thammarat",
+    "key": "nakhon si thammarat",
+    "lat": 8.428581976616972,
+    "lon": 99.76029072449666
+  },
+  {
+    "name": "Surat Thani",
+    "key": "surat thani",
+    "lat": 9.01844502741484,
+    "lon": 99.09436729451596
+  },
+  {
+    "name": "Samut Songkhram",
+    "key": "samut songkhram",
+    "lat": 13.414339741418729,
+    "lon": 99.99230146644682
+  },
+  {
+    "name": "Samut Sakhon",
+    "key": "samut sakhon",
+    "lat": 13.561483401792817,
+    "lon": 100.23601425022123
+  },
+  {
+    "name": "Bangkok Metropolis",
+    "key": "bangkok metropolis",
+    "lat": 13.731371985337217,
+    "lon": 100.58590213043456
+  },
+  {
+    "name": "Samut Prakan",
+    "key": "samut prakan",
+    "lat": 13.58345594612718,
+    "lon": 100.72648031637306
+  },
+  {
+    "name": "Chachoengsao",
+    "key": "chachoengsao",
+    "lat": 13.65279636696229,
+    "lon": 101.26196579563812
+  },
+  {
+    "name": "Chon Buri",
+    "key": "chon buri",
+    "lat": 13.060997849506947,
+    "lon": 101.14554394315434
+  },
+  {
+    "name": "Rayong",
+    "key": "rayong",
+    "lat": 12.850751850357009,
+    "lon": 101.36390512717101
+  },
+  {
+    "name": "Phuket",
+    "key": "phuket",
+    "lat": 7.991026108600056,
+    "lon": 98.36498457120004
+  },
+  {
+    "name": "Khon Kaen",
+    "key": "khon kaen",
+    "lat": 16.409779408232378,
+    "lon": 102.55909611842323
+  },
+  {
+    "name": "Sakon Nakhon",
+    "key": "sakon nakhon",
+    "lat": 17.430392021860015,
+    "lon": 103.80578820196392
+  },
+  {
+    "name": "Suphan Buri",
+    "key": "suphan buri",
+    "lat": 14.68131994255629,
+    "lon": 99.88546160271076
+  },
+  {
+    "name": "Sing Buri",
+    "key": "sing buri",
+    "lat": 14.949597218094263,
+    "lon": 100.31258687892414
+  },
+  {
+    "name": "Chai Nat",
+    "key": "chai nat",
+    "lat": 15.120957687454997,
+    "lon": 99.99719539097757
+  },
+  {
+    "name": "Ang Thong",
+    "key": "ang thong",
+    "lat": 14.607418030489132,
+    "lon": 100.33488895050748
+  },
+  {
+    "name": "Saraburi",
+    "key": "saraburi",
+    "lat": 14.566853166893976,
+    "lon": 100.9496675652674
+  },
+  {
+    "name": "Nakhon Ratchasima",
+    "key": "nakhon ratchasima",
+    "lat": 14.96044412370642,
+    "lon": 102.08291474057731
+  },
+  {
+    "name": "Nakhon Nayok",
+    "key": "nakhon nayok",
+    "lat": 14.252409665473666,
+    "lon": 101.20206176540177
+  },
+  {
+    "name": "Pathum Thani",
+    "key": "pathum thani",
+    "lat": 14.067071906023624,
+    "lon": 100.6952287131046
+  },
+  {
+    "name": "Uthai Thani",
+    "key": "uthai thani",
+    "lat": 15.33402830027109,
+    "lon": 99.50927907025705
+  },
+  {
+    "name": "Kalasin",
+    "key": "kalasin",
+    "lat": 16.640711767597143,
+    "lon": 103.55956632067648
+  },
+  {
+    "name": "Roi Et",
+    "key": "roi et",
+    "lat": 15.93864722066412,
+    "lon": 103.82833389119608
+  },
+  {
+    "name": "Maha Sarakham",
+    "key": "maha sarakham",
+    "lat": 16.003817418533767,
+    "lon": 103.23720601655492
+  },
+  {
+    "name": "Nong Bua Lam Phu",
+    "key": "nong bua lam phu",
+    "lat": 17.200907752116056,
+    "lon": 102.28517473065422
+  },
+  {
+    "name": "Lop Buri",
+    "key": "lop buri",
+    "lat": 15.021014252605656,
+    "lon": 100.9443780185307
+  },
+  {
+    "name": "Udon Thani",
+    "key": "udon thani",
+    "lat": 17.375803868774945,
+    "lon": 102.9231196722814
+  },
+  {
+    "name": "Phra Nakhon Si Ayutthaya",
+    "key": "phra nakhon si ayutthaya",
+    "lat": 14.364287515087504,
+    "lon": 100.45328363215694
+  },
+  {
+    "name": "Nonthaburi",
+    "key": "nonthaburi",
+    "lat": 13.99011536332084,
+    "lon": 100.37287758799275
+  },
+  {
+    "name": "Nakhon Pathom",
+    "key": "nakhon pathom",
+    "lat": 13.9392442220432,
+    "lon": 100.13502604246786
+  },
+  {
+    "name": "Kamphaeng Phet",
+    "key": "kamphaeng phet",
+    "lat": 16.34386666174644,
+    "lon": 99.54552840753935
+  },
+  {
+    "name": "Lampang",
+    "key": "lampang",
+    "lat": 18.32935282661164,
+    "lon": 99.49071722215803
+  },
+  {
+    "name": "Sukhothai",
+    "key": "sukhothai",
+    "lat": 17.199215041383894,
+    "lon": 99.72715934210134
+  },
+  {
+    "name": "Nakhon Sawan",
+    "key": "nakhon sawan",
+    "lat": 15.654838039835656,
+    "lon": 99.98820830291086
+  },
+  {
+    "name": "Phetchabun",
+    "key": "phetchabun",
+    "lat": 16.21857556550558,
+    "lon": 101.18731641625871
+  },
+  {
+    "name": "Phichit",
+    "key": "phichit",
+    "lat": 16.27264615197332,
+    "lon": 100.43301818916306
+  },
+  {
+    "name": "Chaiyaphum",
+    "key": "chaiyaphum",
+    "lat": 15.982857247273218,
+    "lon": 101.83533765154317
+  },
+  {
+    "name": "Phrae",
+    "key": "phrae",
+    "lat": 18.216477915059425,
+    "lon": 100.00525237127844
+  },
+  {
+    "name": "Lamphun",
+    "key": "lamphun",
+    "lat": 18.174353214928907,
+    "lon": 98.96865020824046
+  },
+  {
+    "name": "Prachin Buri",
+    "key": "prachin buri",
+    "lat": 14.076251901610203,
+    "lon": 101.5497017508101
+  },
+  {
+    "name": "Yasothon",
+    "key": "yasothon",
+    "lat": 15.83584967282413,
+    "lon": 104.34389776232183
+  }
+]

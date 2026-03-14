@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Medimurska",
+    "key": "medimurska",
+    "lat": 46.452078787646656,
+    "lon": 16.42944995156686
+  },
+  {
+    "name": "Viroviticko-Podravska",
+    "key": "viroviticko-podravska",
+    "lat": 45.77887967422144,
+    "lon": 17.568374303229938
+  },
+  {
+    "name": "Koprivničko-Križevačka",
+    "key": "koprivničko-križevačka",
+    "lat": 46.12754495916741,
+    "lon": 16.809348712224704
+  },
+  {
+    "name": "Osjecko-Baranjska",
+    "key": "osjecko-baranjska",
+    "lat": 45.607694785390265,
+    "lon": 18.579961000891753
+  },
+  {
+    "name": "Istarska",
+    "key": "istarska",
+    "lat": 45.30829816555146,
+    "lon": 13.880624869244539
+  },
+  {
+    "name": "Dubrovacko-Neretvanska",
+    "key": "dubrovacko-neretvanska",
+    "lat": 42.624528306375055,
+    "lon": 18.213651387125076
+  },
+  {
+    "name": "Sisacko-Moslavacka",
+    "key": "sisacko-moslavacka",
+    "lat": 45.35479404150898,
+    "lon": 16.356689843189482
+  },
+  {
+    "name": "Brodsko-Posavska",
+    "key": "brodsko-posavska",
+    "lat": 45.18418234477705,
+    "lon": 17.9139153150269
+  },
+  {
+    "name": "Karlovacka",
+    "key": "karlovacka",
+    "lat": 45.296188135487895,
+    "lon": 15.461324771715775
+  },
+  {
+    "name": "Zadarska",
+    "key": "zadarska",
+    "lat": 44.37542926110599,
+    "lon": 15.828470679619482
+  },
+  {
+    "name": "Vukovarsko-Srijemska",
+    "key": "vukovarsko-srijemska",
+    "lat": 45.13251961944338,
+    "lon": 18.878305737390455
+  },
+  {
+    "name": "Splitsko-Dalmatinska",
+    "key": "splitsko-dalmatinska",
+    "lat": 43.56426120809553,
+    "lon": 16.732920387447443
+  },
+  {
+    "name": "Varaždinska",
+    "key": "varaždinska",
+    "lat": 46.2499205964542,
+    "lon": 16.20708056256789
+  },
+  {
+    "name": "Krapinsko-Zagorska",
+    "key": "krapinsko-zagorska",
+    "lat": 46.1233302430732,
+    "lon": 15.870288428043981
+  },
+  {
+    "name": "Zagrebacka",
+    "key": "zagrebacka",
+    "lat": 45.776288464201905,
+    "lon": 15.947467837898774
+  },
+  {
+    "name": "Primorsko-Goranska",
+    "key": "primorsko-goranska",
+    "lat": 45.373682041888685,
+    "lon": 14.721319758041554
+  },
+  {
+    "name": "Šibensko-Kninska",
+    "key": "šibensko-kninska",
+    "lat": 43.75200007131404,
+    "lon": 16.036209605930246
+  },
+  {
+    "name": "Licko-Senjska",
+    "key": "licko-senjska",
+    "lat": 44.703747635868304,
+    "lon": 15.266065312853812
+  },
+  {
+    "name": "Bjelovarsko-bilogorska",
+    "key": "bjelovarsko-bilogorska",
+    "lat": 45.76658230950096,
+    "lon": 16.979856262806276
+  },
+  {
+    "name": "Grad Zagreb",
+    "key": "grad zagreb",
+    "lat": 45.85691226918585,
+    "lon": 16.029761730069783
+  },
+  {
+    "name": "Brodsko-Posavska",
+    "key": "brodsko-posavska",
+    "lat": 45.18418234477705,
+    "lon": 17.9139153150269
+  }
+]

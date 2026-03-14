@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Hamilton",
+    "key": "hamilton",
+    "lat": 32.32851070771907,
+    "lon": -64.70777755171903
+  },
+  {
+    "name": "Smith's",
+    "key": "smith's",
+    "lat": 32.31960899073652,
+    "lon": -64.73034582007861
+  },
+  {
+    "name": "Devonshire",
+    "key": "devonshire",
+    "lat": 32.300461330270515,
+    "lon": -64.76436882645677
+  },
+  {
+    "name": "Pembroke",
+    "key": "pembroke",
+    "lat": 32.293982382778104,
+    "lon": -64.78727044390327
+  },
+  {
+    "name": "City of Hamilton",
+    "key": "city of hamilton",
+    "lat": 32.29287507426228,
+    "lon": -64.78832639764114
+  },
+  {
+    "name": "Paget",
+    "key": "paget",
+    "lat": 32.28014928871982,
+    "lon": -64.78446652424475
+  },
+  {
+    "name": "Warwick",
+    "key": "warwick",
+    "lat": 32.26361361244784,
+    "lon": -64.81326840519672
+  },
+  {
+    "name": "Southampton",
+    "key": "southampton",
+    "lat": 50.88679553877748,
+    "lon": -1.348789628768273
+  },
+  {
+    "name": "Sandys",
+    "key": "sandys",
+    "lat": 32.28141880277166,
+    "lon": -64.87149960194611
+  },
+  {
+    "name": "Saint George's",
+    "key": "saint george's",
+    "lat": 32.36142021178784,
+    "lon": -64.69584001635688
+  },
+  {
+    "name": "City of Saint George",
+    "key": "city of saint george",
+    "lat": 32.374165140428865,
+    "lon": -64.67511580674908
+  }
+]

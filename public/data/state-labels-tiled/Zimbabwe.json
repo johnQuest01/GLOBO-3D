@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Matabeleland North",
+    "key": "matabeleland north",
+    "lat": -18.76269278320645,
+    "lon": 27.519540749164147
+  },
+  {
+    "name": "Matabeleland South",
+    "key": "matabeleland south",
+    "lat": -20.922352619416294,
+    "lon": 28.83842109410996
+  },
+  {
+    "name": "Masvingo",
+    "key": "masvingo",
+    "lat": -20.682258973408864,
+    "lon": 30.97763371312678
+  },
+  {
+    "name": "Mashonaland West",
+    "key": "mashonaland west",
+    "lat": -17.13399702488015,
+    "lon": 29.660788424758803
+  },
+  {
+    "name": "Mashonaland Central",
+    "key": "mashonaland central",
+    "lat": -16.62584356158476,
+    "lon": 31.15220513651804
+  },
+  {
+    "name": "Mashonaland East",
+    "key": "mashonaland east",
+    "lat": -17.978364128006337,
+    "lon": 31.709388968154233
+  },
+  {
+    "name": "Manicaland",
+    "key": "manicaland",
+    "lat": -19.170230476482153,
+    "lon": 32.41552449303908
+  },
+  {
+    "name": "Midlands",
+    "key": "midlands",
+    "lat": -19.060741687395634,
+    "lon": 29.521433546654176
+  },
+  {
+    "name": "Harare",
+    "key": "harare",
+    "lat": -17.80223531894768,
+    "lon": 31.07433248378566
+  },
+  {
+    "name": "Bulawayo",
+    "key": "bulawayo",
+    "lat": -20.160422865472867,
+    "lon": 28.531984897984643
+  }
+]

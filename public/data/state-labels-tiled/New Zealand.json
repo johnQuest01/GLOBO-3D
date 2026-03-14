@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Auckland Islands",
+    "key": "auckland islands",
+    "lat": -50.69557057071421,
+    "lon": 166.0855644632858
+  },
+  {
+    "name": "Campbell Islands",
+    "key": "campbell islands",
+    "lat": -52.54681996974992,
+    "lon": 169.20243246325006
+  },
+  {
+    "name": "Antipodes Islands",
+    "key": "antipodes islands",
+    "lat": -49.66100432749991,
+    "lon": 178.80551191500004
+  },
+  {
+    "name": "Chatham Islands Territory",
+    "key": "chatham islands territory",
+    "lat": -43.886298652583264,
+    "lon": -176.47664343983328
+  },
+  {
+    "name": "Kermadec Islands",
+    "key": "kermadec islands",
+    "lat": -29.253431898749923,
+    "lon": -177.9166153639999
+  },
+  {
+    "name": "Tokelau",
+    "key": "tokelau",
+    "lat": -8.559991143799937,
+    "lon": -172.48836015519993
+  },
+  {
+    "name": "The Snares",
+    "key": "the snares",
+    "lat": -48.01650156059992,
+    "lon": 166.6201278004001
+  },
+  {
+    "name": "Southland",
+    "key": "southland",
+    "lat": -45.68724769713659,
+    "lon": 168.12148386269266
+  },
+  {
+    "name": "Marlborough District",
+    "key": "marlborough district",
+    "lat": -41.6352972523145,
+    "lon": 173.63238494662468
+  },
+  {
+    "name": "Nelson City",
+    "key": "nelson city",
+    "lat": -41.242573284703774,
+    "lon": 173.36216657435773
+  },
+  {
+    "name": "Tasman District",
+    "key": "tasman district",
+    "lat": -41.338361229803574,
+    "lon": 172.58088461474762
+  },
+  {
+    "name": "West Coast",
+    "key": "west coast",
+    "lat": 13.263897488937568,
+    "lon": -16.378015429087608
+  },
+  {
+    "name": "Otago",
+    "key": "otago",
+    "lat": -45.23437971583062,
+    "lon": 169.60053798628468
+  },
+  {
+    "name": "Canterbury",
+    "key": "canterbury",
+    "lat": -43.40968617951679,
+    "lon": 171.92820387034308
+  },
+  {
+    "name": "Auckland",
+    "key": "auckland",
+    "lat": -36.81295369020915,
+    "lon": 174.7660083107907
+  },
+  {
+    "name": "Waikato",
+    "key": "waikato",
+    "lat": -38.091290020740324,
+    "lon": 175.51926060323132
+  },
+  {
+    "name": "Three Kings Islands",
+    "key": "three kings islands",
+    "lat": -34.15273667243147,
+    "lon": 172.13649416626203
+  },
+  {
+    "name": "Wellington",
+    "key": "wellington",
+    "lat": -41.031983011243035,
+    "lon": 175.55483241441266
+  },
+  {
+    "name": "Manawatu-Wanganui",
+    "key": "manawatu-wanganui",
+    "lat": -39.66120889139631,
+    "lon": 175.54240783044662
+  },
+  {
+    "name": "Taranaki",
+    "key": "taranaki",
+    "lat": -39.27452556718082,
+    "lon": 174.4866441081123
+  },
+  {
+    "name": "Northland",
+    "key": "northland",
+    "lat": -35.39504941575413,
+    "lon": 173.78533765138727
+  },
+  {
+    "name": "Bay of Plenty",
+    "key": "bay of plenty",
+    "lat": -38.11572175055884,
+    "lon": 176.8627014021989
+  },
+  {
+    "name": "Gisborne District",
+    "key": "gisborne district",
+    "lat": -38.197815311816186,
+    "lon": 177.90532779828587
+  },
+  {
+    "name": "Hawke's Bay",
+    "key": "hawke's bay",
+    "lat": -39.33554523714296,
+    "lon": 176.94446371411652
+  }
+]

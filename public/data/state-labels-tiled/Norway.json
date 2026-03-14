@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Troms",
+    "key": "troms",
+    "lat": 69.32488687218311,
+    "lon": 20.356822683350053
+  },
+  {
+    "name": "Nordland",
+    "key": "nordland",
+    "lat": 66.75905362569691,
+    "lon": 14.881886223030158
+  },
+  {
+    "name": "Nord-Trøndelag",
+    "key": "nord-trøndelag",
+    "lat": 64.1679806786462,
+    "lon": 11.957299285489832
+  },
+  {
+    "name": "Sør-Trøndelag",
+    "key": "sør-trøndelag",
+    "lat": 62.94954127308332,
+    "lon": 10.414964755295063
+  },
+  {
+    "name": "Hedmark",
+    "key": "hedmark",
+    "lat": 61.40628824621512,
+    "lon": 11.322933958176904
+  },
+  {
+    "name": "Akershus",
+    "key": "akershus",
+    "lat": 60.023197964771924,
+    "lon": 11.238719267819086
+  },
+  {
+    "name": "Østfold",
+    "key": "østfold",
+    "lat": 59.44900889747512,
+    "lon": 11.404353713145243
+  },
+  {
+    "name": "Finnmark",
+    "key": "finnmark",
+    "lat": 69.93833149216373,
+    "lon": 26.435584334033255
+  },
+  {
+    "name": "Oslo",
+    "key": "oslo",
+    "lat": 59.96692012513035,
+    "lon": 10.658025787200001
+  },
+  {
+    "name": "Buskerud",
+    "key": "buskerud",
+    "lat": 60.23823151401213,
+    "lon": 9.172229415829634
+  },
+  {
+    "name": "Vestfold",
+    "key": "vestfold",
+    "lat": 59.42031100684879,
+    "lon": 10.108036593479573
+  },
+  {
+    "name": "Telemark",
+    "key": "telemark",
+    "lat": 59.46937224462372,
+    "lon": 8.473349056556911
+  },
+  {
+    "name": "Aust-Agder",
+    "key": "aust-agder",
+    "lat": 58.9723335458463,
+    "lon": 7.844441131861904
+  },
+  {
+    "name": "Vest-Agder",
+    "key": "vest-agder",
+    "lat": 58.46300972783208,
+    "lon": 7.308919603113422
+  },
+  {
+    "name": "Rogaland",
+    "key": "rogaland",
+    "lat": 59.158913567712254,
+    "lon": 6.163522938062222
+  },
+  {
+    "name": "Hordaland",
+    "key": "hordaland",
+    "lat": 60.296568882324934,
+    "lon": 6.163673541287516
+  },
+  {
+    "name": "Sogn og Fjordane",
+    "key": "sogn og fjordane",
+    "lat": 61.38288457155801,
+    "lon": 6.452063847609778
+  },
+  {
+    "name": "Møre og Romsdal",
+    "key": "møre og romsdal",
+    "lat": 62.521906889772296,
+    "lon": 7.447934912541706
+  },
+  {
+    "name": "Svalbard",
+    "key": "svalbard",
+    "lat": 78.46411354476194,
+    "lon": 15.916390511238173
+  },
+  {
+    "name": "Bouvet Island",
+    "key": "bouvet island",
+    "lat": -54.413702081399926,
+    "lon": 3.4220320976000833
+  },
+  {
+    "name": "Oppland",
+    "key": "oppland",
+    "lat": 61.360878602253486,
+    "lon": 9.485119409155349
+  }
+]

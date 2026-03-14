@@ -1,0 +1,170 @@
+[
+  {
+    "name": "Burgas",
+    "key": "burgas",
+    "lat": 42.47065874372688,
+    "lon": 27.423826881123492
+  },
+  {
+    "name": "Yambol",
+    "key": "yambol",
+    "lat": 42.20684257718573,
+    "lon": 26.635317608830356
+  },
+  {
+    "name": "Haskovo",
+    "key": "haskovo",
+    "lat": 41.87628733258896,
+    "lon": 25.97484378873027
+  },
+  {
+    "name": "Vidin",
+    "key": "vidin",
+    "lat": 43.82158844131939,
+    "lon": 22.69444829739455
+  },
+  {
+    "name": "Pernik",
+    "key": "pernik",
+    "lat": 42.64764171013207,
+    "lon": 22.80618561767599
+  },
+  {
+    "name": "Sofia",
+    "key": "sofia",
+    "lat": 42.70982366143281,
+    "lon": 23.5646182459686
+  },
+  {
+    "name": "Montana",
+    "key": "montana",
+    "lat": 43.45839115008204,
+    "lon": 23.20350116919131
+  },
+  {
+    "name": "Kyustendil",
+    "key": "kyustendil",
+    "lat": 42.30152534412989,
+    "lon": 22.783955270570154
+  },
+  {
+    "name": "Blagoevgrad",
+    "key": "blagoevgrad",
+    "lat": 41.674078542163706,
+    "lon": 23.365508399447705
+  },
+  {
+    "name": "Silistra",
+    "key": "silistra",
+    "lat": 43.94768383219577,
+    "lon": 27.047846707776696
+  },
+  {
+    "name": "Ruse",
+    "key": "ruse",
+    "lat": 43.66601717765611,
+    "lon": 25.971527404294438
+  },
+  {
+    "name": "Dobrich",
+    "key": "dobrich",
+    "lat": 43.67474389581221,
+    "lon": 27.903844714780238
+  },
+  {
+    "name": "Vratsa",
+    "key": "vratsa",
+    "lat": 43.416143534946485,
+    "lon": 23.823582984130077
+  },
+  {
+    "name": "Pleven",
+    "key": "pleven",
+    "lat": 43.49315233622101,
+    "lon": 24.60389961180919
+  },
+  {
+    "name": "Veliko Tarnovo",
+    "key": "veliko tarnovo",
+    "lat": 43.25328127427453,
+    "lon": 25.597975434008525
+  },
+  {
+    "name": "Kardzhali",
+    "key": "kardzhali",
+    "lat": 41.532185362923606,
+    "lon": 25.634445123283236
+  },
+  {
+    "name": "Smolyan",
+    "key": "smolyan",
+    "lat": 41.6378510138198,
+    "lon": 24.606221178322837
+  },
+  {
+    "name": "Varna",
+    "key": "varna",
+    "lat": 43.209885575343144,
+    "lon": 27.611641285757425
+  },
+  {
+    "name": "Plovdiv",
+    "key": "plovdiv",
+    "lat": 42.35500473133325,
+    "lon": 24.812837807268977
+  },
+  {
+    "name": "Stara Zagora",
+    "key": "stara zagora",
+    "lat": 42.40366982930503,
+    "lon": 25.5366091362438
+  },
+  {
+    "name": "Sliven",
+    "key": "sliven",
+    "lat": 42.67536603774318,
+    "lon": 26.21655874701162
+  },
+  {
+    "name": "Shumen",
+    "key": "shumen",
+    "lat": 43.30684657468464,
+    "lon": 26.93812869625731
+  },
+  {
+    "name": "Razgrad",
+    "key": "razgrad",
+    "lat": 43.65237199563107,
+    "lon": 26.609817986640753
+  },
+  {
+    "name": "Targovishte",
+    "key": "targovishte",
+    "lat": 43.20968411595416,
+    "lon": 26.303817715465176
+  },
+  {
+    "name": "Gabrovo",
+    "key": "gabrovo",
+    "lat": 42.90795912990081,
+    "lon": 25.186927154546343
+  },
+  {
+    "name": "Pazardzhik",
+    "key": "pazardzhik",
+    "lat": 42.2280450676757,
+    "lon": 24.17766842338402
+  },
+  {
+    "name": "Lovech",
+    "key": "lovech",
+    "lat": 43.01087465326761,
+    "lon": 24.56843483861564
+  },
+  {
+    "name": "Grad Sofiya",
+    "key": "grad sofiya",
+    "lat": 42.63897964609377,
+    "lon": 23.375521003291656
+  }
+]

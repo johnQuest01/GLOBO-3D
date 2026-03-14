@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Kommuneqarfik Sermersooq",
+    "key": "kommuneqarfik sermersooq",
+    "lat": 66.365205654519,
+    "lon": -37.74636465588601
+  },
+  {
+    "name": "Nationalparken",
+    "key": "nationalparken",
+    "lat": 78.1163041565098,
+    "lon": -29.15209834279401
+  },
+  {
+    "name": "Qaasuitsup Kommunia",
+    "key": "qaasuitsup kommunia",
+    "lat": 73.72477756248557,
+    "lon": -57.72961272831276
+  },
+  {
+    "name": "Pituffik",
+    "key": "pituffik",
+    "lat": 76.47258688689863,
+    "lon": -68.54338460687235
+  },
+  {
+    "name": "Qeqqata Kommunia",
+    "key": "qeqqata kommunia",
+    "lat": 66.1303961157854,
+    "lon": -51.183874684080486
+  },
+  {
+    "name": "Kommune Kujalleq",
+    "key": "kommune kujalleq",
+    "lat": 61.15771789255379,
+    "lon": -44.36729172101406
+  }
+]

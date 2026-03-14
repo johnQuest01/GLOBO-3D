@@ -1,0 +1,92 @@
+[
+  {
+    "name": "North-West",
+    "key": "north-west",
+    "lat": -18.86842610736866,
+    "lon": 23.991668432197063
+  },
+  {
+    "name": "Central",
+    "key": "central",
+    "lat": -21.53938210084973,
+    "lon": 26.99743649044483
+  },
+  {
+    "name": "North-East",
+    "key": "north-east",
+    "lat": -21.02298484769733,
+    "lon": 27.57342876216082
+  },
+  {
+    "name": "Kgatleng",
+    "key": "kgatleng",
+    "lat": -24.188540667379343,
+    "lon": 26.410398849664077
+  },
+  {
+    "name": "South-East",
+    "key": "south-east",
+    "lat": -24.909872546364696,
+    "lon": 25.825852253284566
+  },
+  {
+    "name": "Southern",
+    "key": "southern",
+    "lat": 7.871403323031413,
+    "lon": -11.970108022157978
+  },
+  {
+    "name": "Kgalagadi",
+    "key": "kgalagadi",
+    "lat": -25.4046343390142,
+    "lon": 22.177227736372352
+  },
+  {
+    "name": "Ghanzi",
+    "key": "ghanzi",
+    "lat": -22.41640895135692,
+    "lon": 22.049627478504565
+  },
+  {
+    "name": "Kweneng",
+    "key": "kweneng",
+    "lat": -23.825782236660892,
+    "lon": 24.864407308100766
+  },
+  {
+    "name": "Gaborone",
+    "key": "gaborone",
+    "lat": -24.60381205296388,
+    "lon": 25.922367997964706
+  },
+  {
+    "name": "Jwaneng",
+    "key": "jwaneng",
+    "lat": -24.549317809669173,
+    "lon": 24.71023132163816
+  },
+  {
+    "name": "Francistown",
+    "key": "francistown",
+    "lat": -21.183281214231656,
+    "lon": 27.5176142908918
+  },
+  {
+    "name": "Lobatse",
+    "key": "lobatse",
+    "lat": -25.203606759384446,
+    "lon": 25.689492858108895
+  },
+  {
+    "name": "Selebi-Phikwe",
+    "key": "selebi-phikwe",
+    "lat": -21.97955923861798,
+    "lon": 27.84445315111701
+  },
+  {
+    "name": "Sowa",
+    "key": "sowa",
+    "lat": -20.573895205139603,
+    "lon": 26.21959604184384
+  }
+]

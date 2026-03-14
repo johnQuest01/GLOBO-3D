@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Severno-Backi",
+    "key": "severno-backi",
+    "lat": 45.98383977182001,
+    "lon": 19.634480161971076
+  },
+  {
+    "name": "Zapadno-Backi",
+    "key": "zapadno-backi",
+    "lat": 45.768812737803316,
+    "lon": 19.18140908061924
+  },
+  {
+    "name": "Severno-Banatski",
+    "key": "severno-banatski",
+    "lat": 45.925008357873125,
+    "lon": 20.216339562380337
+  },
+  {
+    "name": "Pcinjski",
+    "key": "pcinjski",
+    "lat": 42.46840380459946,
+    "lon": 22.014607343859467
+  },
+  {
+    "name": "Borski",
+    "key": "borski",
+    "lat": 44.273772176353816,
+    "lon": 22.26876036575273
+  },
+  {
+    "name": "Zajecarski",
+    "key": "zajecarski",
+    "lat": 43.738306047916815,
+    "lon": 22.219441017306973
+  },
+  {
+    "name": "Pirotski",
+    "key": "pirotski",
+    "lat": 43.208811811295284,
+    "lon": 22.492643900786593
+  },
+  {
+    "name": "Jablanicki",
+    "key": "jablanicki",
+    "lat": 42.88729263450801,
+    "lon": 21.971136361980705
+  },
+  {
+    "name": "Raški",
+    "key": "raški",
+    "lat": 43.264014721228754,
+    "lon": 20.529757863879734
+  },
+  {
+    "name": "Pomoravski",
+    "key": "pomoravski",
+    "lat": 43.44750858649109,
+    "lon": 21.123706393963634
+  },
+  {
+    "name": "Toplicki",
+    "key": "toplicki",
+    "lat": 43.14833937134569,
+    "lon": 21.297338176047074
+  },
+  {
+    "name": "Zlatiborski",
+    "key": "zlatiborski",
+    "lat": 43.577262249968676,
+    "lon": 19.760347452616276
+  },
+  {
+    "name": "Sremski",
+    "key": "sremski",
+    "lat": 44.95753781433364,
+    "lon": 19.703011870607337
+  },
+  {
+    "name": "Macvanski",
+    "key": "macvanski",
+    "lat": 44.50655026897228,
+    "lon": 19.51888699455873
+  },
+  {
+    "name": "Južno-Backi",
+    "key": "južno-backi",
+    "lat": 45.420658729016786,
+    "lon": 19.654596761116142
+  },
+  {
+    "name": "Srednje-Banatski",
+    "key": "srednje-banatski",
+    "lat": 45.48634787452223,
+    "lon": 20.510228827128657
+  },
+  {
+    "name": "Južno-Banatski",
+    "key": "južno-banatski",
+    "lat": 45.0064843852648,
+    "lon": 20.867491109829107
+  },
+  {
+    "name": "Branicevski",
+    "key": "branicevski",
+    "lat": 44.51396853475893,
+    "lon": 21.595851778545637
+  },
+  {
+    "name": "Grad Beograd",
+    "key": "grad beograd",
+    "lat": 44.65302369258774,
+    "lon": 20.359023118730935
+  },
+  {
+    "name": "Podunavski",
+    "key": "podunavski",
+    "lat": 44.47344016673487,
+    "lon": 20.956696334481926
+  },
+  {
+    "name": "Nišavski",
+    "key": "nišavski",
+    "lat": 43.39987593203449,
+    "lon": 21.82000364853777
+  },
+  {
+    "name": "Pomoravski",
+    "key": "pomoravski",
+    "lat": 43.44750858649109,
+    "lon": 21.123706393963634
+  },
+  {
+    "name": "Šumadijski",
+    "key": "šumadijski",
+    "lat": 44.08277983264314,
+    "lon": 20.692520257254053
+  },
+  {
+    "name": "Moravicki",
+    "key": "moravicki",
+    "lat": 43.72953856650876,
+    "lon": 20.277793264647435
+  },
+  {
+    "name": "Kolubarski",
+    "key": "kolubarski",
+    "lat": 44.29223431733485,
+    "lon": 19.960647617143795
+  }
+]

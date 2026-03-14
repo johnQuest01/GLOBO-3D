@@ -1,0 +1,188 @@
+[
+  {
+    "name": "West Azarbaijan",
+    "key": "west azarbaijan",
+    "lat": 37.75840081498615,
+    "lon": 45.33752410150497
+  },
+  {
+    "name": "East Azarbaijan",
+    "key": "east azarbaijan",
+    "lat": 38.05071956550511,
+    "lon": 46.72206828046534
+  },
+  {
+    "name": "Ardebil",
+    "key": "ardebil",
+    "lat": 38.556990479027974,
+    "lon": 47.826293996550696
+  },
+  {
+    "name": "Gilan",
+    "key": "gilan",
+    "lat": 37.43855523959421,
+    "lon": 49.303269996817036
+  },
+  {
+    "name": "Kordestan",
+    "key": "kordestan",
+    "lat": 35.71560740757269,
+    "lon": 46.98024237970941
+  },
+  {
+    "name": "Kermanshah",
+    "key": "kermanshah",
+    "lat": 34.49767190795102,
+    "lon": 46.63029931186284
+  },
+  {
+    "name": "Ilam",
+    "key": "ilam",
+    "lat": 33.293206026941064,
+    "lon": 46.84351996464694
+  },
+  {
+    "name": "Khuzestan",
+    "key": "khuzestan",
+    "lat": 31.309427475808583,
+    "lon": 49.08234723688596
+  },
+  {
+    "name": "North Khorasan",
+    "key": "north khorasan",
+    "lat": 37.42364921340075,
+    "lon": 57.11644862552477
+  },
+  {
+    "name": "Golestan",
+    "key": "golestan",
+    "lat": 37.30122473479639,
+    "lon": 55.04140586242717
+  },
+  {
+    "name": "Razavi Khorasan",
+    "key": "razavi khorasan",
+    "lat": 35.579835200636175,
+    "lon": 58.546270334812114
+  },
+  {
+    "name": "South Khorasan",
+    "key": "south khorasan",
+    "lat": 32.628805957004694,
+    "lon": 59.70497744913
+  },
+  {
+    "name": "Sistan and Baluchestan",
+    "key": "sistan and baluchestan",
+    "lat": 27.79498890208904,
+    "lon": 60.889217663378986
+  },
+  {
+    "name": "Bushehr",
+    "key": "bushehr",
+    "lat": 28.758306602606204,
+    "lon": 51.379603156625535
+  },
+  {
+    "name": "Hormozgan",
+    "key": "hormozgan",
+    "lat": 27.09436908713363,
+    "lon": 56.18019124359986
+  },
+  {
+    "name": "Mazandaran",
+    "key": "mazandaran",
+    "lat": 36.41225272957698,
+    "lon": 52.29172201077206
+  },
+  {
+    "name": "Semnan",
+    "key": "semnan",
+    "lat": 35.745145126321496,
+    "lon": 54.537787713507136
+  },
+  {
+    "name": "Zanjan",
+    "key": "zanjan",
+    "lat": 36.4213297747402,
+    "lon": 48.48622067585258
+  },
+  {
+    "name": "Qazvin",
+    "key": "qazvin",
+    "lat": 36.14782661954284,
+    "lon": 49.63454178238734
+  },
+  {
+    "name": "Markazi",
+    "key": "markazi",
+    "lat": 34.4709956560089,
+    "lon": 49.87161258332509
+  },
+  {
+    "name": "Esfahan",
+    "key": "esfahan",
+    "lat": 32.76328318259144,
+    "lon": 51.698719558244036
+  },
+  {
+    "name": "Chahar Mahall and Bakhtiari",
+    "key": "chahar mahall and bakhtiari",
+    "lat": 31.953628312023895,
+    "lon": 50.62150121753021
+  },
+  {
+    "name": "Kohgiluyeh and Buyer Ahmad",
+    "key": "kohgiluyeh and buyer ahmad",
+    "lat": 30.789872421057975,
+    "lon": 50.83132930949131
+  },
+  {
+    "name": "Fars",
+    "key": "fars",
+    "lat": 29.32633821664571,
+    "lon": 53.092405030004315
+  },
+  {
+    "name": "Kerman",
+    "key": "kerman",
+    "lat": 28.793450088847532,
+    "lon": 57.216390075149285
+  },
+  {
+    "name": "Hamadan",
+    "key": "hamadan",
+    "lat": 34.94747721099538,
+    "lon": 48.58936370289074
+  },
+  {
+    "name": "Lorestan",
+    "key": "lorestan",
+    "lat": 33.52911584286657,
+    "lon": 48.60267874971399
+  },
+  {
+    "name": "Yazd",
+    "key": "yazd",
+    "lat": 32.555160898831396,
+    "lon": 55.71665977028715
+  },
+  {
+    "name": "Qom",
+    "key": "qom",
+    "lat": 34.61372460203505,
+    "lon": 50.98249268879179
+  },
+  {
+    "name": "Tehran",
+    "key": "tehran",
+    "lat": 35.55590326483578,
+    "lon": 51.81097928866321
+  },
+  {
+    "name": "Alborz",
+    "key": "alborz",
+    "lat": 35.99709409194734,
+    "lon": 50.772147901811344
+  }
+]

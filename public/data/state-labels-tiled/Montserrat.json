@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Saint Peter",
+    "key": "saint peter",
+    "lat": 13.27554059191744,
+    "lon": -59.60509607843333
+  },
+  {
+    "name": "Saint Anthony",
+    "key": "saint anthony",
+    "lat": 16.731875463044382,
+    "lon": -62.17891588006143
+  },
+  {
+    "name": "Saint Georges",
+    "key": "saint georges",
+    "lat": 16.75333472517677,
+    "lon": -62.16987137260797
+  }
+]

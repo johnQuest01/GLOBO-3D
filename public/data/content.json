@@ -1,0 +1,276 @@
+{
+  "default": {
+    "latitude": 0,
+    "longitude": 0,
+    "news": {},
+    "video": null,
+    "touristVideo": null,
+    "natureVideo": null,
+    "customs": "Carregando...",
+    "routine": "Carregando..."
+  },
+
+  "--- PAÍSES E ESTADOS DO SEU ARQUIVO ---": "---",
+
+  "United States of America": {
+    "latitude": 39.0,
+    "longitude": -98.0,
+    "news": {
+      "local": [
+        {
+          "title": "Inovação no Vale do Silício",
+          "imageUrl": "https://placehold.co/600x400/1E293B/94A3B8?text=CALIFÓRNIA+LOCAL",
+          "imageCaption": "Vista da Golden Gate ao amanhecer.",
+          "bodyText": "📰 Notícias da Califórnia: O Vale do Silício continua a ser o epicentro da inovação tecnológica global. A economia local segue em forte crescimento, impulsionada por investimentos em IA e biotecnologia."
+        }
+      ],
+      "science": [
+        {
+          "title": "Projeto de Energia Sustentável",
+          "imageUrl": "https://placehold.co/600x400/0E7490/FFFFFF?text=TECH+VALLEY",
+          "imageCaption": "Novo datacenter em San Jose.",
+          "bodyText": "Ciência e Tecnologia: Recentemente, um consórcio de universidades e empresas lançou um novo projeto de pesquisa em energia sustentável."
+        }
+      ]
+    },
+    "video": "L11sSzm92e8",
+    "touristVideo": null,
+    "natureVideo": null,
+    "customs": "Cultura focada em bem-estar, tecnologia e entretenimento.",
+    "routine": "Estilo de vida ativo, com longos deslocamentos (commutes).",
+    "nativeLanguage": "Inglês (English): É a principal língua falada nos EUA.",
+    "currency": "Dólar Americano (USD): A moeda oficial é o Dólar ($)."
+  },
+  "Brazil": {
+    "latitude": -14.23,
+    "longitude": -51.92,
+    "news": {
+      "local": [
+        {
+          "title": "Inovação na Região Sudeste",
+          "imageUrl": "https://placehold.co/600x400/1E293B/94A3B8?text=NOTÍCIAS+DO+BRASIL",
+          "imageCaption": "Vista da Avenida Paulista, São Paulo.",
+          "bodyText": "📰 Últimas notícias do Brasil: Grande destaque em inovação e crescimento econômico na região sudeste."
+        }
+      ],
+      "sports": [
+        {
+          "title": "Reta Final do Campeonato",
+          "imageUrl": "https://placehold.co/600x400/10B981/FFFFFF?text=FUTEBOL",
+          "imageCaption": "Estádio do Maracanã.",
+          "bodyText": "Esportes: O campeonato nacional de futebol está na reta final, com três times lutando pelo título."
+        }
+      ]
+    },
+    "video": ["0J3vgcE5i2o", "/data/videos/1.mp4"],
+    "touristVideo": ["yvP-V7yF70A", "C5N2fJjPq6s"],
+    "natureVideo": null,
+    "customs": "O Brasil é conhecido pelo Carnaval, futebol e uma rica diversidade cultural.",
+    "routine": "A rotina varia muito, desde o ritmo acelerado de São Paulo até a tranquilidade da Amazônia.",
+    "nativeLanguage": "Português (Portuguese): A língua oficial do Brasil.",
+    "currency": "Real (BRL): A moeda nacional é o Real (R$)."
+  },
+  "Angola": {
+    "latitude": -11.20,
+    "longitude": 17.87,
+    "news": {
+      "local": [
+        {
+          "title": "Investimento em Infraestrutura",
+          "imageUrl": "https://placehold.co/600x400/1E293B/94A3B8?text=LUANDA",
+          "imageCaption": "Vista da Baía de Luanda.",
+          "bodyText": "Angola: Oportunidades de investimento em infraestrutura e energia. O governo lançou novos programas de desenvolvimento regional."
+        }
+      ]
+    },
+    "video": null,
+    "touristVideo": null,
+    "natureVideo": null,
+    "customs": "Cultura rica em música e dança.",
+    "routine": "A vida em Luanda é vibrante.",
+    "nativeLanguage": "Português (Portuguese): O idioma oficial e mais usado.",
+    "currency": "Kwanza (AOA): A moeda é o Kwanza (Kz)."
+  },
+
+  "são paulo": {
+    "latitude": -22.4,
+    "longitude": -48.6,
+    "news": {
+      "local": [
+        {
+          "title": "SP Sedia Nova Conferência de Tecnologia",
+          "imageUrl": "https://placehold.co/600x400/1E293B/94A3B8?text=SÃO+PAULO+LOCAL",
+          "imageCaption": "Avenida Paulista em um dia movimentado.",
+          "bodyText": "📰 Notícias de São Paulo: A capital paulista sedia nova conferência de tecnologia, atraindo investidores de todo o mundo. O evento foca em inteligência artificial e soluções urbanas, consolidando a cidade como um polo de inovação na América Latina."
+        },
+        {
+          "title": "Novo Rodízio Inteligente Começa a Operar",
+          "imageUrl": "https://placehold.co/600x400/475569/FFFFFF?text=TRÂNSITO+SP",
+          "imageCaption": "Tráfego na Marginal Pinheiros.",
+          "bodyText": "Mobilidade Urbana: O novo sistema de rodízio inteligente, baseado em análise de dados de tráfego em tempo real, entrou em operação nesta segunda-feira. A prefeitura espera uma redução de 15% nos congestionamentos nos horários de pico."
+        }
+      ],
+      "business": [
+        {
+          "title": "Setor de Serviços Registra Alta",
+          "imageUrl": "https://placehold.co/600x400/D97706/FFFFFF?text=B3+SÃO+PAULO",
+          "imageCaption": "Sede da B3, a bolsa de valores brasileira.",
+          "bodyText": "Negócios: O setor de serviços em São Paulo registra alta de 5% no último trimestre. Startups de tecnologia financeira (fintechs) continuam a captar investimentos recordes na região, impulsionando a economia local."
+        }
+      ],
+      "entertainment": [
+        {
+          "title": "Agenda Cultural de SP: MASP e Shows",
+          "imageUrl": "https://placehold.co/600x400/BE185D/FFFFFF?text=CULTURA+SP",
+          "imageCaption": "Museu de Arte de São Paulo (MASP).",
+          "bodyText": "Entretenimento: A agenda cultural da cidade está lotada, com destaque para a reabertura de teatros e a nova exposição no MASP. Shows internacionais estão confirmados para o próximo mês no Allianz Parque."
+        }
+      ]
+    },
+    "video": ["kLcKq-tMYtM", "/data/videos/sp-video-01.mp4"],
+    "touristVideo": ["1D2l1F53v1s", "/data/videos/2.mp4"],
+    "natureVideo": null,
+    "customs": "A 'selva de pedra' é um caldeirão cultural, famosa por sua gastronomia.",
+    "routine": "Ritmo de trabalho intenso, vida noturna agitada e trânsito notório."
+  },
+  "Japan": {
+    "latitude": 36.20,
+    "longitude": 138.25,
+    "news": {
+      "local": [
+        {
+          "title": "Tóquio: Inovação e Tradição",
+          "imageUrl": "https://placehold.co/600x400/881337/FFFFFF?text=TÓQUIO+LOCAL",
+          "imageCaption": "Cruzamento de Shibuya, Tóquio.",
+          "bodyText": "📰 Notícias do Japão: Tóquio continua a ser um centro de inovação em robótica e tecnologia. O país se prepara para a temporada de flores de cerejeira (sakura)."
+        }
+      ],
+      "science": [
+        {
+          "title": "Recorde de Velocidade em Fibra Óptica",
+          "imageUrl": "https://placehold.co/600x400/0E7490/FFFFFF?text=TECNOLOGIA+JAPÃO",
+          "imageCaption": "Trem-bala Shinkansen.",
+          "bodyText": "Ciência: Engenheiros japoneses alcançam novo recorde de velocidade em transmissão de dados por fibra óptica."
+        }
+      ]
+    },
+    "video": ["lCPmmY_F-m4", "ESq5AupDgYk"],
+    "touristVideo": ["A-fL-2j2G-s"],
+    "natureVideo": null,
+    "customs": "Cultura milenar baseada no respeito, honra e harmonia.",
+    "routine": "Alta densidade populacional, eficiência no transporte público.",
+    "nativeLanguage": "Japonês (Japanese): A língua oficial é o Japonês (日本語).",
+    "currency": "Iene (JPY): A moeda oficial é o Iene (Yen), com o símbolo ¥."
+  },
+  "Peru": {
+    "latitude": -9.19,
+    "longitude": -75.01,
+    "news": {
+      "local": [
+        {
+          "title": "Crescimento Recorde no Turismo",
+          "imageUrl": "https://placehold.co/600x400/881337/FFFFFF?text=LIMA+NOTÍCIAS",
+          "imageCaption": "Vista de Miraflores, Lima.",
+          "bodyText": "📰 Últimas notícias do Peru: O país vê um crescimento recorde no turismo, impulsionado pela sua gastronomia de renome mundial e sítios arqueológicos."
+        }
+      ],
+      "entertainment": [
+        {
+          "title": "Lima: Capital Gastrônica",
+          "imageUrl": "https://placehold.co/600x400/166534/FFFFFF?text=GASTRONOMIA",
+          "imageCaption": "Prato de Ceviche.",
+          "bodyText": "Cultura e Gastronomia: Lima é novamente eleita um dos principais destinos gastronômicos do mundo."
+        }
+      ]
+    },
+    "video": ["u41-5q-3L-g"],
+    "touristVideo": ["1-3-u4-R-dY"],
+    "natureVideo": null,
+    "customs": "Uma cultura profundamente enraizada no Império Inca, famosa por Machu Picchu.",
+    "routine": "A rotina em Lima é de uma metrópole movimentada.",
+    "nativeLanguage": "Espanhol (Spanish): É a língua oficial principal.",
+    "currency": "Sol (PEN): A moeda nacional é o Sol (S/)."
+  },
+
+  "--- [NOVAS ENTRADAS PARA CENTRALIZAÇÃO] ---": "---",
+
+  "Canada": {
+    "latitude": 56.0,
+    "longitude": -106.0,
+    "news": {
+       "local": [
+        {
+          "title": "Aurora Boreal em Yukon",
+          "imageUrl": "https://placehold.co/600x400/1E293B/94A3B8?text=CANADÁ",
+          "imageCaption": "Aurora Boreal vista de Whitehorse.",
+          "bodyText": "Notícias do Canadá: A temporada de Aurora Boreal em Yukon atrai turistas de todo o mundo, impulsionando a economia local."
+        }
+      ]
+    },
+    "video": null,
+    "touristVideo": null,
+    "natureVideo": null,
+    "customs": "Conhecido por sua politeza, natureza vasta e multiculturalismo.",
+    "routine": "Foco em equilíbrio entre vida pessoal e trabalho.",
+    "nativeLanguage": "Inglês (English) e Francês (Français)",
+    "currency": "Dólar Canadense (CAD)"
+  },
+  
+  "--- Continentes (Para Centralizar os Nomes) ---": "---",
+  "Africa": {
+    "latitude": 5.0,
+    "longitude": 20.0,
+    "news": {}, "video": null, "touristVideo": null, "natureVideo": null, "customs": "", "routine": "",
+    "nativeLanguage": "Múltiplas", "currency": "Múltiplas"
+  },
+  "Europe": {
+    "latitude": 50.0,
+    "longitude": 15.0,
+    "news": {}, "video": null, "touristVideo": null, "natureVideo": null, "customs": "", "routine": "",
+    "nativeLanguage": "Múltiplas", "currency": "Múltiplas"
+  },
+  "Asia": {
+    "latitude": 40.0,
+    "longitude": 90.0,
+    "news": {}, "video": null, "touristVideo": null, "natureVideo": null, "customs": "", "routine": "",
+    "nativeLanguage": "Múltiplas", "currency": "Múltiplas"
+  },
+  "North America": {
+    "latitude": 45.0,
+    "longitude": -95.0,
+    "news": {}, "video": null, "touristVideo": null, "natureVideo": null, "customs": "", "routine": "",
+    "nativeLanguage": "Múltiplas", "currency": "Múltiplas"
+  },
+  "South America": {
+    "latitude": -15.0,
+    "longitude": -55.0,
+    "news": {}, "video": null, "touristVideo": null, "natureVideo": null, "customs": "", "routine": "",
+    "nativeLanguage": "Múltiplas", "currency": "Múltiplas"
+  },
+  "Oceania": {
+    "latitude": -25.0,
+    "longitude": 135.0,
+    "news": {}, "video": null, "touristVideo": null, "natureVideo": null, "customs": "", "routine": "",
+    "nativeLanguage": "Múltiplas", "currency": "Múltiplas"
+  },
+  "Antarctica": {
+    "latitude": -80.0,
+    "longitude": 0.0,
+    "news": {}, "video": null, "touristVideo": null, "natureVideo": null, "customs": "", "routine": "",
+    "nativeLanguage": "N/A", "currency": "N/A"
+  },
+
+  "--- Países Problemáticos (Para Centralizar os Nomes) ---": "---",
+  "Russia": {
+    "latitude": 60.0,
+    "longitude": 90.0,
+    "news": {}, "video": null, "touristVideo": null, "natureVideo": null, "customs": "", "routine": "",
+    "nativeLanguage": "Russo", "currency": "Rublo (RUB)"
+  },
+  "Australia": {
+    "latitude": -25.0,
+    "longitude": 133.0,
+    "news": {}, "video": null, "touristVideo": null, "natureVideo": null, "customs": "", "routine": "",
+    "nativeLanguage": "Inglês", "currency": "Dólar Australiano (AUD)"
+  }
+}

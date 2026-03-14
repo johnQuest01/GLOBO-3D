@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Tuamotu-Gambier",
+    "key": "tuamotu-gambier",
+    "lat": -17.792738539499936,
+    "lon": -140.73131262924989
+  },
+  {
+    "name": "Windward Islands",
+    "key": "windward islands",
+    "lat": -17.661946981333255,
+    "lon": -149.36946909633323
+  },
+  {
+    "name": "Leeward Islands",
+    "key": "leeward islands",
+    "lat": -16.80940113724992,
+    "lon": -151.4420568512499
+  },
+  {
+    "name": "Austral Islands",
+    "key": "austral islands",
+    "lat": -27.593080336399943,
+    "lon": -144.31159420479992
+  },
+  {
+    "name": "Marquesas Islands",
+    "key": "marquesas islands",
+    "lat": -8.854685154399931,
+    "lon": -140.12785397059992
+  }
+]

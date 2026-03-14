@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Ghadamis",
+    "key": "ghadamis",
+    "lat": 30.376244976166657,
+    "lon": 10.922349582418065
+  },
+  {
+    "name": "An Nuqat al Khams",
+    "key": "an nuqat al khams",
+    "lat": 32.69625701486472,
+    "lon": 11.839555528123475
+  },
+  {
+    "name": "Al Kufrah",
+    "key": "al kufrah",
+    "lat": 23.21858521405221,
+    "lon": 22.61944527558072
+  },
+  {
+    "name": "Murzuq",
+    "key": "murzuq",
+    "lat": 24.994002478537205,
+    "lon": 15.314263682139757
+  },
+  {
+    "name": "Al Butnan",
+    "key": "al butnan",
+    "lat": 30.698719539680308,
+    "lon": 24.18178619374951
+  },
+  {
+    "name": "Ajdabiya",
+    "key": "ajdabiya",
+    "lat": 29.472347139114305,
+    "lon": 21.27740581580296
+  },
+  {
+    "name": "Ash Shati'",
+    "key": "ash shati'",
+    "lat": 28.115521753550382,
+    "lon": 12.903686691516409
+  },
+  {
+    "name": "Ghat",
+    "key": "ghat",
+    "lat": 26.05445652565677,
+    "lon": 10.498067296646326
+  },
+  {
+    "name": "Surt",
+    "key": "surt",
+    "lat": 29.9834651244723,
+    "lon": 17.431210248186915
+  },
+  {
+    "name": "Misratah",
+    "key": "misratah",
+    "lat": 31.02699353856234,
+    "lon": 15.022322326357564
+  },
+  {
+    "name": "Al Marqab",
+    "key": "al marqab",
+    "lat": 32.32664119086812,
+    "lon": 13.924253130288193
+  },
+  {
+    "name": "Tajura' wa an Nawahi al Arba",
+    "key": "tajura' wa an nawahi al arba",
+    "lat": 32.655439027784816,
+    "lon": 13.36637487883174
+  },
+  {
+    "name": "Az Zawiyah",
+    "key": "az zawiyah",
+    "lat": 32.5510272102491,
+    "lon": 12.633497349001669
+  },
+  {
+    "name": "Al Qubbah",
+    "key": "al qubbah",
+    "lat": 31.97924825803657,
+    "lon": 22.50730414557483
+  },
+  {
+    "name": "Al Jabal al Akhdar",
+    "key": "al jabal al akhdar",
+    "lat": 32.10232825454362,
+    "lon": 21.7114066600705
+  },
+  {
+    "name": "Al Marj",
+    "key": "al marj",
+    "lat": 31.976535180367154,
+    "lon": 21.15764860246385
+  },
+  {
+    "name": "Benghazi",
+    "key": "benghazi",
+    "lat": 31.597547407004456,
+    "lon": 20.516191402952597
+  },
+  {
+    "name": "Al Jifarah",
+    "key": "al jifarah",
+    "lat": 32.4516542967084,
+    "lon": 13.086364373616934
+  },
+  {
+    "name": "Mizdah",
+    "key": "mizdah",
+    "lat": 30.321786867272216,
+    "lon": 13.088101581244239
+  },
+  {
+    "name": "Al Jufrah",
+    "key": "al jufrah",
+    "lat": 28.13285245082993,
+    "lon": 16.588952761377488
+  },
+  {
+    "name": "Sabha",
+    "key": "sabha",
+    "lat": 27.10593731172004,
+    "lon": 14.973376668548399
+  },
+  {
+    "name": "Wadi al Hayaa",
+    "key": "wadi al hayaa",
+    "lat": 26.381560292923155,
+    "lon": 12.878734257405045
+  }
+]

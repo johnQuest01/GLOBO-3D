@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Fujayrah",
+    "key": "fujayrah",
+    "lat": 25.39151537411951,
+    "lon": 56.13114922559155
+  },
+  {
+    "name": "Sharjah",
+    "key": "sharjah",
+    "lat": 25.207399586269354,
+    "lon": 55.72711728336443
+  },
+  {
+    "name": "Ras Al Khaymah",
+    "key": "ras al khaymah",
+    "lat": 25.051207887104155,
+    "lon": 56.14489993085456
+  },
+  {
+    "name": "Dubay",
+    "key": "dubay",
+    "lat": 25.011159035880546,
+    "lon": 55.366623057355426
+  },
+  {
+    "name": "Neutral Zone",
+    "key": "neutral zone",
+    "lat": 24.929390544319222,
+    "lon": 56.295796290077796
+  },
+  {
+    "name": "Neutral Zone",
+    "key": "neutral zone",
+    "lat": 24.929390544319222,
+    "lon": 56.295796290077796
+  },
+  {
+    "name": "Abu Dhabi",
+    "key": "abu dhabi",
+    "lat": 23.984657241360303,
+    "lon": 54.3146683188787
+  },
+  {
+    "name": "Umm Al Qaywayn",
+    "key": "umm al qaywayn",
+    "lat": 25.49027833405022,
+    "lon": 55.68204154286003
+  },
+  {
+    "name": "Ajman",
+    "key": "ajman",
+    "lat": 25.404393371659282,
+    "lon": 55.51416064342269
+  }
+]

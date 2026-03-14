@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Phôngsali",
+    "key": "phôngsali",
+    "lat": 21.731656624915477,
+    "lon": 102.21476597898585
+  },
+  {
+    "name": "Oudômxai",
+    "key": "oudômxai",
+    "lat": 20.47058410886499,
+    "lon": 101.69107481437302
+  },
+  {
+    "name": "Louang Namtha",
+    "key": "louang namtha",
+    "lat": 20.94251461919996,
+    "lon": 101.14703712177466
+  },
+  {
+    "name": "Bokeo",
+    "key": "bokeo",
+    "lat": 20.327486804110535,
+    "lon": 100.68218415174633
+  },
+  {
+    "name": "Xaignabouri",
+    "key": "xaignabouri",
+    "lat": 18.967056866656478,
+    "lon": 101.23269202889718
+  },
+  {
+    "name": "Bolikhamxai",
+    "key": "bolikhamxai",
+    "lat": 18.44195883342595,
+    "lon": 104.02957917378353
+  },
+  {
+    "name": "Khammouan",
+    "key": "khammouan",
+    "lat": 17.514220991850973,
+    "lon": 105.28521575754125
+  },
+  {
+    "name": "Savannakhét",
+    "key": "savannakhét",
+    "lat": 16.622468576949366,
+    "lon": 105.75621436890276
+  },
+  {
+    "name": "Saravan",
+    "key": "saravan",
+    "lat": 15.891100686126855,
+    "lon": 106.23641338928775
+  },
+  {
+    "name": "Vientiane [prefecture]",
+    "key": "vientiane [prefecture]",
+    "lat": 18.125909617555692,
+    "lon": 102.51975105430692
+  },
+  {
+    "name": "Vientiane",
+    "key": "vientiane",
+    "lat": 18.662960553825563,
+    "lon": 102.53755192793255
+  },
+  {
+    "name": "Champasak",
+    "key": "champasak",
+    "lat": 14.746794526682935,
+    "lon": 105.99766580164719
+  },
+  {
+    "name": "Louangphrabang",
+    "key": "louangphrabang",
+    "lat": 20.087511605975905,
+    "lon": 102.47148295775892
+  },
+  {
+    "name": "Houaphan",
+    "key": "houaphan",
+    "lat": 20.24716599900897,
+    "lon": 104.11242931215453
+  },
+  {
+    "name": "Xiangkhoang",
+    "key": "xiangkhoang",
+    "lat": 19.453180503965488,
+    "lon": 103.68414872964522
+  },
+  {
+    "name": "Xékong",
+    "key": "xékong",
+    "lat": 15.600037280372419,
+    "lon": 107.0516851806017
+  },
+  {
+    "name": "Attapu",
+    "key": "attapu",
+    "lat": 14.81625135684139,
+    "lon": 106.85660555171043
+  }
+]

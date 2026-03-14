@@ -1,0 +1,112 @@
+/* app/globals.css */
+/* 1. Diretivas do Tailwind v4. Elas DEVEM vir primeiro.
+*/
+@import "tailwindcss";
+
+/* 2. Definições de variáveis globais (:root).
+*/
+:root {
+--background: #ffffff;
+--foreground: #171717;
+}
+
+/* 3. Configuração do @theme do Tailwind.
+*/
+@theme inline {
+--color-background: var(--background);
+--color-foreground: var(--foreground);
+--font-sans: var(--font-geist-sans);
+--font-mono: var(--font-geist-mono);
+}
+
+/* 4. Regras CSS Padrão (como 'body', 'media queries', etc.)
+*/
+
+/* --- INÍCIO DA CORREÇÃO: Layout Mobile (h-screen/100vh fix) --- */
+html,body {
+  height: 100%; /* Garante que ambos ocupem 100% da viewport */
+  overflow: hidden; /* Impede que o body role */
+  overscroll-behavior: none; /* Desativa o "puxar para atualizar" no mobile */
+}
+/* --- FIM DA CORREÇÃO: Layout Mobile (h-screen/100vh fix) --- */
+
+@media (prefers-color-scheme: dark) {
+:root {
+--background: #0a0a0a;
+--foreground: #ededed;
+}
+}
+
+body {
+background: var(--background);
+color: var(--foreground);
+/* BOA PRÁTICA: Use a variável de fonte que você definiu no @theme
+para manter a consistência.
+*/
+font-family: var(--font-sans);
+}
+
+/* 5. REGRAS CUSTOMIZADAS (Keyframes, classes, etc.)
+Elas devem vir DEPOIS das diretivas do Tailwind.
+*/
+
+@keyframes explosion-animation {
+0% {
+transform: scale(0);
+opacity: 1;
+border-width: 8px;
+}
+50% {
+opacity: 0.8;
+}
+100% {
+transform: scale(1.5);
+opacity: 0;
+border-width: 0px;
+}
+}
+
+.explosion {
+width: 50px;
+height: 50px;
+background-color: rgba(255, 165, 0, 0.7); /* Laranja */
+border: 8px solid rgba(255, 69, 0, 0.8); /* Vermelho-Laranja */
+border-radius: 50%;
+position: relative;
+animation: explosion-animation 0.5s ease-out forwards;
+box-shadow: 0 0 20px 10px rgba(255, 165, 0, 0.5);
+}
+
+/* --- INÍCIO DA CORREÇÃO: Estilos de Autofill --- */
+/*
+* Remove o fundo branco padrão do autofill do Chrome/Safari (Webkit).
+* Isso força o input a usar o 'bg-transparent' definido no LoginScreen.
+*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  /* 1. Define a cor do texto (geralmente branco no tema escuro) */
+  -webkit-text-fill-color: #ffffff; /* Cor do texto (branco) */
+ 
+  /* 2. Remove o fundo branco usando uma 'box-shadow' interna */
+  /* Esta é a "trapaça" principal:
+  * 'inset 0 0 0 1000px' cria uma sombra interna gigante.
+  * '#1c1917' (stone-900) é a cor do fundo do formulário no LoginScreen.
+  * O '!important' é necessário para sobrescrever os estilos do navegador.
+  */
+  -webkit-box-shadow: 0 0 0 1000px #1c1917 inset !important; /* Cor de fundo (stone-900) */
+
+  /* 3. Transição suave (opcional, mas bom) */
+  transition: background-color 5000s ease-in-out 0s;
+}
+/* --- FIM DA CORREÇÃO --- */
+@keyframes shimmer-horizontal {
+  0% { background-position: -800px 0; } /* Começa fora da tela à esquerda */
+  100% { background-position: 800px 0; } /* Termina fora da tela à direita */
+}
+
+.animate-shimmer-horizontal {
+  animation: shimmer-horizontal 4s linear infinite;
+  background-size: 1600px 100%; /* Largura do gradiente (dobro da animação para cobrir) */
+}

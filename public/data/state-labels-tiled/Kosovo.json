@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Dečani",
+    "key": "dečani",
+    "lat": 42.536313564260126,
+    "lon": 20.188623839846713
+  },
+  {
+    "name": "Đakovica",
+    "key": "đakovica",
+    "lat": 42.427141893554364,
+    "lon": 20.37766569928864
+  },
+  {
+    "name": "Dragaš",
+    "key": "dragaš",
+    "lat": 41.944557618418095,
+    "lon": 20.66975102437448
+  },
+  {
+    "name": "Prizren",
+    "key": "prizren",
+    "lat": 42.17499575098501,
+    "lon": 20.709429927636474
+  },
+  {
+    "name": "Gnjilane",
+    "key": "gnjilane",
+    "lat": 42.38315211937587,
+    "lon": 21.43859252908188
+  },
+  {
+    "name": "Vitina",
+    "key": "vitina",
+    "lat": 42.29026272140902,
+    "lon": 21.39386980966836
+  },
+  {
+    "name": "Kačanik",
+    "key": "kačanik",
+    "lat": 42.190977883778295,
+    "lon": 21.24387835325159
+  },
+  {
+    "name": "Štrpce",
+    "key": "štrpce",
+    "lat": 42.21242421672218,
+    "lon": 21.0208312605304
+  },
+  {
+    "name": "Leposavić",
+    "key": "leposavić",
+    "lat": 43.128095181804305,
+    "lon": 20.822015584506325
+  },
+  {
+    "name": "Podujevo",
+    "key": "podujevo",
+    "lat": 42.93416904515912,
+    "lon": 21.136739964060105
+  },
+  {
+    "name": "Zubin Potok",
+    "key": "zubin potok",
+    "lat": 42.91356551653533,
+    "lon": 20.649100233588893
+  },
+  {
+    "name": "Zvečan",
+    "key": "zvečan",
+    "lat": 42.9928284820288,
+    "lon": 20.69651856384063
+  },
+  {
+    "name": "Istok",
+    "key": "istok",
+    "lat": 42.79359531207403,
+    "lon": 20.459407434419315
+  },
+  {
+    "name": "Priština",
+    "key": "priština",
+    "lat": 42.67882740298201,
+    "lon": 21.28737733623014
+  },
+  {
+    "name": "Kosovska Kamenica",
+    "key": "kosovska kamenica",
+    "lat": 42.62807773265328,
+    "lon": 21.535185536827232
+  },
+  {
+    "name": "Peć",
+    "key": "peć",
+    "lat": 42.69428802594433,
+    "lon": 20.268685560470153
+  },
+  {
+    "name": "Orahovac",
+    "key": "orahovac",
+    "lat": 42.360936590291395,
+    "lon": 20.624905665504023
+  },
+  {
+    "name": "Srbica",
+    "key": "srbica",
+    "lat": 42.7392201011553,
+    "lon": 20.734529557036257
+  },
+  {
+    "name": "Klina",
+    "key": "klina",
+    "lat": 42.61651551452936,
+    "lon": 20.584690446456914
+  },
+  {
+    "name": "Kosovska Mitrovica",
+    "key": "kosovska mitrovica",
+    "lat": 42.93370415626464,
+    "lon": 20.889997414349175
+  },
+  {
+    "name": "Glogovac",
+    "key": "glogovac",
+    "lat": 42.614544253300345,
+    "lon": 20.888626133617727
+  },
+  {
+    "name": "Mališevo",
+    "key": "mališevo",
+    "lat": 42.51212622989157,
+    "lon": 20.747970163592157
+  },
+  {
+    "name": "Suva Reka",
+    "key": "suva reka",
+    "lat": 42.35531205160987,
+    "lon": 20.830250108068512
+  },
+  {
+    "name": "Uroševac",
+    "key": "uroševac",
+    "lat": 42.352106341959086,
+    "lon": 21.124962627585667
+  },
+  {
+    "name": "Novo Brdo",
+    "key": "novo brdo",
+    "lat": 42.57399680598777,
+    "lon": 21.360433083679844
+  },
+  {
+    "name": "Obilić",
+    "key": "obilić",
+    "lat": 42.71916864116984,
+    "lon": 21.05792293924223
+  },
+  {
+    "name": "Kosovo Polje",
+    "key": "kosovo polje",
+    "lat": 42.61405949081283,
+    "lon": 21.0459592641487
+  },
+  {
+    "name": "Lipljan",
+    "key": "lipljan",
+    "lat": 42.50965866136811,
+    "lon": 21.048876918834715
+  },
+  {
+    "name": "Štimlje",
+    "key": "štimlje",
+    "lat": 42.42738697660266,
+    "lon": 21.007881147996557
+  },
+  {
+    "name": "Vučitrn",
+    "key": "vučitrn",
+    "lat": 42.80703915897998,
+    "lon": 20.989931029493402
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Groningen",
+    "key": "groningen",
+    "lat": 53.20151417391359,
+    "lon": 6.702349851430483
+  },
+  {
+    "name": "Drenthe",
+    "key": "drenthe",
+    "lat": 52.86281879242308,
+    "lon": 6.593170382356342
+  },
+  {
+    "name": "Overijssel",
+    "key": "overijssel",
+    "lat": 52.50587142918209,
+    "lon": 6.394692547115826
+  },
+  {
+    "name": "Gelderland",
+    "key": "gelderland",
+    "lat": 52.03241223526167,
+    "lon": 5.89162109890858
+  },
+  {
+    "name": "Limburg",
+    "key": "limburg",
+    "lat": 51.23106428820857,
+    "lon": 5.883721407664115
+  },
+  {
+    "name": "Zeeland",
+    "key": "zeeland",
+    "lat": 51.45108411935135,
+    "lon": 3.97578631153161
+  },
+  {
+    "name": "Noord-Brabant",
+    "key": "noord-brabant",
+    "lat": 51.55248232520652,
+    "lon": 4.979347388123749
+  },
+  {
+    "name": "Zuid-Holland",
+    "key": "zuid-holland",
+    "lat": 51.908045616743394,
+    "lon": 4.520604002194566
+  },
+  {
+    "name": "Noord-Holland",
+    "key": "noord-holland",
+    "lat": 52.510157723715295,
+    "lon": 4.9562563828942245
+  },
+  {
+    "name": "Friesland",
+    "key": "friesland",
+    "lat": 53.09406775210286,
+    "lon": 5.843776353390424
+  },
+  {
+    "name": "St. Eustatius",
+    "key": "st. eustatius",
+    "lat": 17.501087458000057,
+    "lon": -62.98010804799995
+  },
+  {
+    "name": "Saba",
+    "key": "saba",
+    "lat": 17.63230215060006,
+    "lon": -63.23805904879994
+  },
+  {
+    "name": "Flevoland",
+    "key": "flevoland",
+    "lat": 52.56577510846173,
+    "lon": 5.53554812965155
+  },
+  {
+    "name": "Utrecht",
+    "key": "utrecht",
+    "lat": 52.15182489487297,
+    "lon": 5.226492555696876
+  }
+]

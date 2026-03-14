@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Western Australia",
+    "key": "western australia",
+    "lat": -23.873379756833714,
+    "lon": 120.49596378875837
+  },
+  {
+    "name": "Northern Territory",
+    "key": "northern territory",
+    "lat": -14.742616466773859,
+    "lon": 133.455218512597
+  },
+  {
+    "name": "South Australia",
+    "key": "south australia",
+    "lat": -33.068881346731246,
+    "lon": 136.5796257401076
+  },
+  {
+    "name": "Queensland",
+    "key": "queensland",
+    "lat": -20.089241771802044,
+    "lon": 146.0014076491018
+  },
+  {
+    "name": "New South Wales",
+    "key": "new south wales",
+    "lat": -32.604541402460434,
+    "lon": 148.673114223552
+  },
+  {
+    "name": "Jervis Bay Territory",
+    "key": "jervis bay territory",
+    "lat": -35.151760105436864,
+    "lon": 150.69501597539403
+  },
+  {
+    "name": "Victoria",
+    "key": "victoria",
+    "lat": -36.991631856163835,
+    "lon": 144.88743421914128
+  },
+  {
+    "name": "Tasmania",
+    "key": "tasmania",
+    "lat": -42.1375020931272,
+    "lon": 146.79439833780006
+  },
+  {
+    "name": "Macquarie Island",
+    "key": "macquarie island",
+    "lat": -54.59430103959993,
+    "lon": 158.89346764420003
+  },
+  {
+    "name": "Lord Howe Island",
+    "key": "lord howe island",
+    "lat": -31.548811537499923,
+    "lon": 159.0740157397501
+  },
+  {
+    "name": "Australian Capital Territory",
+    "key": "australian capital territory",
+    "lat": -35.478482465166366,
+    "lon": 149.06444920167834
+  }
+]

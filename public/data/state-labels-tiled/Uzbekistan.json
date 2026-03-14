@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Ferghana",
+    "key": "ferghana",
+    "lat": 40.4414935595772,
+    "lon": 71.48466740052987
+  },
+  {
+    "name": "Tashkent",
+    "key": "tashkent",
+    "lat": 41.33402525388882,
+    "lon": 69.94317670137187
+  },
+  {
+    "name": "Namangan",
+    "key": "namangan",
+    "lat": 41.127970536441076,
+    "lon": 71.22468021418574
+  },
+  {
+    "name": "Andijon",
+    "key": "andijon",
+    "lat": 40.729839204279685,
+    "lon": 72.46281671816718
+  },
+  {
+    "name": "Sirdaryo",
+    "key": "sirdaryo",
+    "lat": 40.463349664406394,
+    "lon": 68.6256786659243
+  },
+  {
+    "name": "Jizzakh",
+    "key": "jizzakh",
+    "lat": 40.291515954544494,
+    "lon": 67.72306609676573
+  },
+  {
+    "name": "Samarkand",
+    "key": "samarkand",
+    "lat": 39.79785160543763,
+    "lon": 66.45776149185016
+  },
+  {
+    "name": "Kashkadarya",
+    "key": "kashkadarya",
+    "lat": 38.94188604028323,
+    "lon": 66.28471743494278
+  },
+  {
+    "name": "Surkhandarya",
+    "key": "surkhandarya",
+    "lat": 38.18115756351699,
+    "lon": 67.48383834630238
+  },
+  {
+    "name": "Karakalpakstan",
+    "key": "karakalpakstan",
+    "lat": 42.491708208522965,
+    "lon": 59.48246430997482
+  },
+  {
+    "name": "Navoi",
+    "key": "navoi",
+    "lat": 41.29751199160923,
+    "lon": 64.80201563070119
+  },
+  {
+    "name": "Khorezm",
+    "key": "khorezm",
+    "lat": 41.33128461335633,
+    "lon": 61.12761693501658
+  },
+  {
+    "name": "Bukhoro",
+    "key": "bukhoro",
+    "lat": 40.341459539862086,
+    "lon": 63.79485425206118
+  },
+  {
+    "name": "Tashkent",
+    "key": "tashkent",
+    "lat": 41.33402525388882,
+    "lon": 69.94317670137187
+  }
+]

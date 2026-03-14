@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Grenadines",
+    "key": "grenadines",
+    "lat": 13.020799058000051,
+    "lon": -61.21592159749993
+  },
+  {
+    "name": "Saint Andrew",
+    "key": "saint andrew",
+    "lat": 12.136522499923833,
+    "lon": -61.64461729593943
+  },
+  {
+    "name": "Saint George",
+    "key": "saint george",
+    "lat": 12.071263662592411,
+    "lon": -61.69597780071473
+  },
+  {
+    "name": "Charlotte",
+    "key": "charlotte",
+    "lat": 13.27943931364289,
+    "lon": -61.17623075576696
+  },
+  {
+    "name": "Saint David",
+    "key": "saint david",
+    "lat": 12.062006624499489,
+    "lon": -61.65212198722793
+  },
+  {
+    "name": "Saint Patrick",
+    "key": "saint patrick",
+    "lat": 12.200630520272618,
+    "lon": -61.65585988652281
+  }
+]

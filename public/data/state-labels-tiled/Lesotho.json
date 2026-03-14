@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Mokhotlong",
+    "key": "mokhotlong",
+    "lat": -29.1581580144678,
+    "lon": 28.975147467699493
+  },
+  {
+    "name": "Butha-Buthe",
+    "key": "butha-buthe",
+    "lat": -28.808383328502792,
+    "lon": 28.559441809046387
+  },
+  {
+    "name": "Leribe",
+    "key": "leribe",
+    "lat": -28.977533299615935,
+    "lon": 28.27359209958821
+  },
+  {
+    "name": "Qacha's Nek",
+    "key": "qacha's nek",
+    "lat": -29.961370157593322,
+    "lon": 28.688710816176265
+  },
+  {
+    "name": "Thaba-Tseka",
+    "key": "thaba-tseka",
+    "lat": -29.52839605571903,
+    "lon": 28.698826457473807
+  },
+  {
+    "name": "Berea",
+    "key": "berea",
+    "lat": -29.19750068284141,
+    "lon": 27.911684449312343
+  },
+  {
+    "name": "Maseru",
+    "key": "maseru",
+    "lat": -29.550076252860112,
+    "lon": 27.820189360725443
+  },
+  {
+    "name": "Mafeteng",
+    "key": "mafeteng",
+    "lat": -29.788601916703872,
+    "lon": 27.473661171282718
+  },
+  {
+    "name": "Mohale's Hoek",
+    "key": "mohale's hoek",
+    "lat": -30.021699068758046,
+    "lon": 27.80413072165801
+  },
+  {
+    "name": "Quthing",
+    "key": "quthing",
+    "lat": -30.283475458240773,
+    "lon": 28.042121495589168
+  }
+]

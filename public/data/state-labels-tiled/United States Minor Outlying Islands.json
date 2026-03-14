@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Johnston Atoll",
+    "key": "johnston atoll",
+    "lat": 16.72884756050007,
+    "lon": -169.53851274324992
+  },
+  {
+    "name": "Jarvis Island",
+    "key": "jarvis island",
+    "lat": -0.3791317685999275,
+    "lon": -160.02121334559993
+  },
+  {
+    "name": "Baker Island",
+    "key": "baker island",
+    "lat": 0.19520701700007237,
+    "lon": -176.48196367099993
+  },
+  {
+    "name": "Howland Island",
+    "key": "howland island",
+    "lat": 0.7964439965000594,
+    "lon": -176.63723710874993
+  },
+  {
+    "name": "Wake Atoll",
+    "key": "wake atoll",
+    "lat": 19.281327622500058,
+    "lon": 166.63030032675005
+  },
+  {
+    "name": "Midway Islands",
+    "key": "midway islands",
+    "lat": 28.211004950250057,
+    "lon": -177.3663732577499
+  },
+  {
+    "name": "Navassa Island",
+    "key": "navassa island",
+    "lat": 18.408815822400072,
+    "lon": -75.01532141819993
+  },
+  {
+    "name": "Palmyra Atoll",
+    "key": "palmyra atoll",
+    "lat": 5.880666408200113,
+    "lon": -162.07225501219992
+  }
+]

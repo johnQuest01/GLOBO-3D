@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Sipaliwini",
+    "key": "sipaliwini",
+    "lat": 3.7341920442604586,
+    "lon": -55.81537776514574
+  },
+  {
+    "name": "Nickerie",
+    "key": "nickerie",
+    "lat": 5.594049397607869,
+    "lon": -56.91733638781727
+  },
+  {
+    "name": "Marowijne",
+    "key": "marowijne",
+    "lat": 5.600323304085158,
+    "lon": -54.35961540494275
+  },
+  {
+    "name": "Coronie",
+    "key": "coronie",
+    "lat": 5.638978703250672,
+    "lon": -56.31302932842945
+  },
+  {
+    "name": "Saramacca",
+    "key": "saramacca",
+    "lat": 5.713887425746454,
+    "lon": -55.664957825665105
+  },
+  {
+    "name": "Wanica",
+    "key": "wanica",
+    "lat": 5.807278998141101,
+    "lon": -55.21189680640987
+  },
+  {
+    "name": "Paramaribo",
+    "key": "paramaribo",
+    "lat": 5.84808472304978,
+    "lon": -55.182988908502494
+  },
+  {
+    "name": "Commewijne",
+    "key": "commewijne",
+    "lat": 5.766832980255163,
+    "lon": -54.94826416234234
+  },
+  {
+    "name": "Para",
+    "key": "para",
+    "lat": 5.337735287496362,
+    "lon": -55.31655156677281
+  },
+  {
+    "name": "Brokopondo",
+    "key": "brokopondo",
+    "lat": 4.750285295074043,
+    "lon": -55.113791240898045
+  }
+]

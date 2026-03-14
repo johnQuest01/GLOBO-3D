@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Vakaga",
+    "key": "vakaga",
+    "lat": 9.715139014553477,
+    "lon": 22.2942346564235
+  },
+  {
+    "name": "Haute-Kotto",
+    "key": "haute-kotto",
+    "lat": 7.459496092379769,
+    "lon": 22.677417168979257
+  },
+  {
+    "name": "Haut-Mbomou",
+    "key": "haut-mbomou",
+    "lat": 6.272141112941383,
+    "lon": 25.484795720340006
+  },
+  {
+    "name": "Kémo",
+    "key": "kémo",
+    "lat": 5.7288118769094325,
+    "lon": 19.350045302234975
+  },
+  {
+    "name": "Ouaka",
+    "key": "ouaka",
+    "lat": 6.073288366083833,
+    "lon": 20.874342650313242
+  },
+  {
+    "name": "Basse-Kotto",
+    "key": "basse-kotto",
+    "lat": 4.867846021038048,
+    "lon": 21.31391803517386
+  },
+  {
+    "name": "Mbomou",
+    "key": "mbomou",
+    "lat": 5.376256354663683,
+    "lon": 23.37172418871775
+  },
+  {
+    "name": "Ombella-M'Poko",
+    "key": "ombella-m'poko",
+    "lat": 4.996881642646069,
+    "lon": 18.066720865145015
+  },
+  {
+    "name": "Bangui",
+    "key": "bangui",
+    "lat": 4.374988021327923,
+    "lon": 18.55635603880333
+  },
+  {
+    "name": "Lobaye",
+    "key": "lobaye",
+    "lat": 4.15219798409704,
+    "lon": 17.752750411797525
+  },
+  {
+    "name": "Bamingui-Bangoran",
+    "key": "bamingui-bangoran",
+    "lat": 8.442332375482332,
+    "lon": 20.689936166121992
+  },
+  {
+    "name": "Ouham",
+    "key": "ouham",
+    "lat": 6.93598746938204,
+    "lon": 17.99897508373518
+  },
+  {
+    "name": "Ouham-Pendé",
+    "key": "ouham-pendé",
+    "lat": 6.73478394239387,
+    "lon": 16.157105471314
+  },
+  {
+    "name": "Sangha-Mbaéré",
+    "key": "sangha-mbaéré",
+    "lat": 3.4683383189559445,
+    "lon": 16.40383681267555
+  },
+  {
+    "name": "Nana-Mambéré",
+    "key": "nana-mambéré",
+    "lat": 5.798447926404651,
+    "lon": 15.322938798650126
+  },
+  {
+    "name": "Mambéré-Kadéï",
+    "key": "mambéré-kadéï",
+    "lat": 4.559189773381244,
+    "lon": 16.011032571212485
+  },
+  {
+    "name": "Nana-Grébizi",
+    "key": "nana-grébizi",
+    "lat": 7.366445921668857,
+    "lon": 19.26769448596942
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Mahaica-Berbice",
+    "key": "mahaica-berbice",
+    "lat": 3.7508325001895697,
+    "lon": -57.647102293419614
+  },
+  {
+    "name": "Pomeroon-Supenaam",
+    "key": "pomeroon-supenaam",
+    "lat": 6.191620576216824,
+    "lon": -59.782974906230955
+  },
+  {
+    "name": "Potaro-Siparuni",
+    "key": "potaro-siparuni",
+    "lat": 4.822572354953589,
+    "lon": -59.31245597366906
+  },
+  {
+    "name": "Upper Demerara-Berbice",
+    "key": "upper demerara-berbice",
+    "lat": 2.998537213497364,
+    "lon": -59.05092328679061
+  },
+  {
+    "name": "Barima-Waini",
+    "key": "barima-waini",
+    "lat": 7.64406193297714,
+    "lon": -59.819078015956386
+  },
+  {
+    "name": "Demerara-Mahaica",
+    "key": "demerara-mahaica",
+    "lat": 6.490074713190961,
+    "lon": -58.3813561879756
+  },
+  {
+    "name": "Cuyuni-Mazaruni",
+    "key": "cuyuni-mazaruni",
+    "lat": 7.209437340903862,
+    "lon": -58.84311025979646
+  },
+  {
+    "name": "Upper Takutu-Upper Essequibo",
+    "key": "upper takutu-upper essequibo",
+    "lat": 5.620117579210426,
+    "lon": -58.32188445551466
+  },
+  {
+    "name": "East Berbice-Corentyne",
+    "key": "east berbice-corentyne",
+    "lat": 6.537263998827211,
+    "lon": -58.1171572743343
+  },
+  {
+    "name": "Essequibo Islands-West Demerara",
+    "key": "essequibo islands-west demerara",
+    "lat": 6.210134826742528,
+    "lon": -57.824160753048794
+  }
+]

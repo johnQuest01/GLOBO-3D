@@ -1,0 +1,32 @@
+[
+  {
+    "name": "South West",
+    "key": "south west",
+    "lat": 1.3216226558808557,
+    "lon": 103.78201437163099
+  },
+  {
+    "name": "Central Singapore",
+    "key": "central singapore",
+    "lat": 1.3475498053121908,
+    "lon": 103.87704447847172
+  },
+  {
+    "name": "South East",
+    "key": "south east",
+    "lat": 1.367883604155452,
+    "lon": 103.93215683566714
+  },
+  {
+    "name": "North East",
+    "key": "north east",
+    "lat": 1.4003884567754192,
+    "lon": 103.92089912437139
+  },
+  {
+    "name": "North West",
+    "key": "north west",
+    "lat": -26.326116127887293,
+    "lon": 25.40426365208857
+  }
+]

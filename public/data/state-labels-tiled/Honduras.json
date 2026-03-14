@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Ocotepeque",
+    "key": "ocotepeque",
+    "lat": 14.46283961894672,
+    "lon": -89.05087423400437
+  },
+  {
+    "name": "Lempira",
+    "key": "lempira",
+    "lat": 14.464813069455758,
+    "lon": -88.59319699349561
+  },
+  {
+    "name": "Intibucá",
+    "key": "intibucá",
+    "lat": 14.242978556732746,
+    "lon": -88.29062788544971
+  },
+  {
+    "name": "La Paz",
+    "key": "la paz",
+    "lat": -15.41790553128906,
+    "lon": -68.28335718231673
+  },
+  {
+    "name": "Valle",
+    "key": "valle",
+    "lat": 13.636937168502405,
+    "lon": -87.62359820154742
+  },
+  {
+    "name": "Olancho",
+    "key": "olancho",
+    "lat": 14.821608387572528,
+    "lon": -85.9631592563224
+  },
+  {
+    "name": "Gracias a Dios",
+    "key": "gracias a dios",
+    "lat": 15.159886065239082,
+    "lon": -84.2547517262668
+  },
+  {
+    "name": "El Paraíso",
+    "key": "el paraíso",
+    "lat": 13.984973317355882,
+    "lon": -86.36581665849467
+  },
+  {
+    "name": "Choluteca",
+    "key": "choluteca",
+    "lat": 13.39470032980561,
+    "lon": -87.06076427410893
+  },
+  {
+    "name": "Cortés",
+    "key": "cortés",
+    "lat": 15.38422226772716,
+    "lon": -87.99625219902808
+  },
+  {
+    "name": "Santa Bárbara",
+    "key": "santa bárbara",
+    "lat": 15.051773073201701,
+    "lon": -88.35313552356855
+  },
+  {
+    "name": "Copán",
+    "key": "copán",
+    "lat": 14.87990939873866,
+    "lon": -88.92813467748242
+  },
+  {
+    "name": "Colón",
+    "key": "colón",
+    "lat": 9.168272137247815,
+    "lon": -79.94074738673636
+  },
+  {
+    "name": "Atlántida",
+    "key": "atlántida",
+    "lat": 15.694854771861255,
+    "lon": -87.14049393841836
+  },
+  {
+    "name": "Islas de la Bahía",
+    "key": "islas de la bahía",
+    "lat": 16.34894620950007,
+    "lon": -86.47983941233326
+  },
+  {
+    "name": "Comayagua",
+    "key": "comayagua",
+    "lat": 14.595671356037704,
+    "lon": -87.65911550242059
+  },
+  {
+    "name": "Yoro",
+    "key": "yoro",
+    "lat": 15.339355487709577,
+    "lon": -87.13222227242791
+  },
+  {
+    "name": "Francisco Morazán",
+    "key": "francisco morazán",
+    "lat": 14.33389344422705,
+    "lon": -87.23391676657408
+  }
+]

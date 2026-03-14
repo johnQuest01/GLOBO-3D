@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Kangwŏn-do",
+    "key": "kangwŏn-do",
+    "lat": 38.74474410876271,
+    "lon": 127.38891707090166
+  },
+  {
+    "name": "Hwanghae-bukto",
+    "key": "hwanghae-bukto",
+    "lat": 38.590779466829645,
+    "lon": 126.38422874791671
+  },
+  {
+    "name": "Hamgyŏng-bukto",
+    "key": "hamgyŏng-bukto",
+    "lat": 41.892524190310134,
+    "lon": 129.57884290963148
+  },
+  {
+    "name": "Rasŏn",
+    "key": "rasŏn",
+    "lat": 42.41116337843724,
+    "lon": 130.44892463143293
+  },
+  {
+    "name": "Ryanggang",
+    "key": "ryanggang",
+    "lat": 41.368434068546804,
+    "lon": 128.1069762730096
+  },
+  {
+    "name": "Chagang-do",
+    "key": "chagang-do",
+    "lat": 40.7656853800599,
+    "lon": 126.39450584538652
+  },
+  {
+    "name": "P'yŏngan-bukto",
+    "key": "p'yŏngan-bukto",
+    "lat": 40.02774324133951,
+    "lon": 125.44761801584328
+  },
+  {
+    "name": "P'yŏngan-namdo",
+    "key": "p'yŏngan-namdo",
+    "lat": 39.41026218240425,
+    "lon": 126.22286513820072
+  },
+  {
+    "name": "Hwanghae-namdo",
+    "key": "hwanghae-namdo",
+    "lat": 38.1420097209475,
+    "lon": 125.62236967478137
+  },
+  {
+    "name": "Hamgyŏng-namdo",
+    "key": "hamgyŏng-namdo",
+    "lat": 40.264901146526526,
+    "lon": 127.80824809343922
+  },
+  {
+    "name": "P'yŏngyang",
+    "key": "p'yŏngyang",
+    "lat": 38.975556091878566,
+    "lon": 126.01089675057686
+  }
+]

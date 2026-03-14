@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Ahuachapán",
+    "key": "ahuachapán",
+    "lat": 13.832827667935268,
+    "lon": -89.9269820756963
+  },
+  {
+    "name": "Santa Ana",
+    "key": "santa ana",
+    "lat": 14.146104799740753,
+    "lon": -89.53275756822846
+  },
+  {
+    "name": "Chalatenango",
+    "key": "chalatenango",
+    "lat": 14.178987278697946,
+    "lon": -89.1336321259187
+  },
+  {
+    "name": "Cabañas",
+    "key": "cabañas",
+    "lat": 13.889453007591303,
+    "lon": -88.71111069928574
+  },
+  {
+    "name": "Morazán",
+    "key": "morazán",
+    "lat": 13.810365780126526,
+    "lon": -88.11619669476262
+  },
+  {
+    "name": "San Miguel",
+    "key": "san miguel",
+    "lat": 13.584243385735512,
+    "lon": -88.26328105912049
+  },
+  {
+    "name": "La Unión",
+    "key": "la unión",
+    "lat": 13.570875464167008,
+    "lon": -87.8846635130094
+  },
+  {
+    "name": "Sonsonate",
+    "key": "sonsonate",
+    "lat": 13.673767771608185,
+    "lon": -89.69612015789156
+  },
+  {
+    "name": "La Libertad",
+    "key": "la libertad",
+    "lat": -7.9015861330851545,
+    "lon": -78.31827618768897
+  },
+  {
+    "name": "La Paz",
+    "key": "la paz",
+    "lat": -15.41790553128906,
+    "lon": -68.28335718231673
+  },
+  {
+    "name": "San Vicente",
+    "key": "san vicente",
+    "lat": 13.524998110160546,
+    "lon": -88.74616085516048
+  },
+  {
+    "name": "Usulután",
+    "key": "usulután",
+    "lat": 13.348978902473949,
+    "lon": -88.44418481911191
+  },
+  {
+    "name": "Cuscatlán",
+    "key": "cuscatlán",
+    "lat": 13.861560548567951,
+    "lon": -88.98811570938497
+  },
+  {
+    "name": "San Salvador",
+    "key": "san salvador",
+    "lat": 24.073708400800058,
+    "lon": -74.47045650959993
+  }
+]

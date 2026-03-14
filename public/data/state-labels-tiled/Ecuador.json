@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Esmeraldas",
+    "key": "esmeraldas",
+    "lat": 0.6807062791400587,
+    "lon": -79.18100738685983
+  },
+  {
+    "name": "Carchi",
+    "key": "carchi",
+    "lat": 0.7807121760160272,
+    "lon": -78.08607824533175
+  },
+  {
+    "name": "Sucumbios",
+    "key": "sucumbios",
+    "lat": 0.04523275392869109,
+    "lon": -76.59932766268668
+  },
+  {
+    "name": "Orellana",
+    "key": "orellana",
+    "lat": -0.7351454682142408,
+    "lon": -76.53419001359026
+  },
+  {
+    "name": "Pastaza",
+    "key": "pastaza",
+    "lat": -1.5963113958796455,
+    "lon": -77.0902085139792
+  },
+  {
+    "name": "Morona Santiago",
+    "key": "morona santiago",
+    "lat": -2.457721381702298,
+    "lon": -78.06039379615477
+  },
+  {
+    "name": "Zamora Chinchipe",
+    "key": "zamora chinchipe",
+    "lat": -4.188282779639595,
+    "lon": -78.94791810788952
+  },
+  {
+    "name": "Loja",
+    "key": "loja",
+    "lat": -4.0573750038561744,
+    "lon": -79.689630241672
+  },
+  {
+    "name": "El Oro",
+    "key": "el oro",
+    "lat": -3.4543969490136455,
+    "lon": -79.85092026138929
+  },
+  {
+    "name": "Guayas",
+    "key": "guayas",
+    "lat": -1.9873796451040049,
+    "lon": -79.87904324800886
+  },
+  {
+    "name": "Galápagos",
+    "key": "galápagos",
+    "lat": -0.5029752656665999,
+    "lon": -91.2033607882777
+  },
+  {
+    "name": "Santa Elena",
+    "key": "santa elena",
+    "lat": -2.1099213850468534,
+    "lon": -80.5905562826373
+  },
+  {
+    "name": "Manabi",
+    "key": "manabi",
+    "lat": -0.7816954213946119,
+    "lon": -80.15599142042973
+  },
+  {
+    "name": "Azuay",
+    "key": "azuay",
+    "lat": -2.9636947564396867,
+    "lon": -79.17778311369518
+  },
+  {
+    "name": "Cañar",
+    "key": "cañar",
+    "lat": -2.5096591628900704,
+    "lon": -78.98230364908164
+  },
+  {
+    "name": "Napo",
+    "key": "napo",
+    "lat": -1.26677226011355,
+    "lon": -78.50842533291733
+  },
+  {
+    "name": "Tungurahua",
+    "key": "tungurahua",
+    "lat": -0.6469766950684328,
+    "lon": -77.71232116434794
+  },
+  {
+    "name": "Chimborazo",
+    "key": "chimborazo",
+    "lat": -1.9628353052239191,
+    "lon": -78.74305630138844
+  },
+  {
+    "name": "Bolivar",
+    "key": "bolivar",
+    "lat": -1.62584934277296,
+    "lon": -79.117203719576
+  },
+  {
+    "name": "Imbabura",
+    "key": "imbabura",
+    "lat": 0.43480294225196936,
+    "lon": -78.3498560701515
+  },
+  {
+    "name": "Cotopaxi",
+    "key": "cotopaxi",
+    "lat": -0.8552077308949281,
+    "lon": -78.86065156018562
+  },
+  {
+    "name": "Los Rios",
+    "key": "los rios",
+    "lat": -1.3303692449113964,
+    "lon": -79.41571550170237
+  },
+  {
+    "name": "Pichincha",
+    "key": "pichincha",
+    "lat": -0.09909371706504286,
+    "lon": -78.5664304525715
+  },
+  {
+    "name": "Santo Domingo de los Tsáchilas",
+    "key": "santo domingo de los tsáchilas",
+    "lat": -0.25514417842581383,
+    "lon": -79.21163398242234
+  }
+]

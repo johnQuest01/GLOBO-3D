@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Rio San Juan",
+    "key": "rio san juan",
+    "lat": 11.136916066803954,
+    "lon": -84.37723385970281
+  },
+  {
+    "name": "Atlántico Norte",
+    "key": "atlántico norte",
+    "lat": 14.021106845207578,
+    "lon": -84.41033224928589
+  },
+  {
+    "name": "Jinotega",
+    "key": "jinotega",
+    "lat": 13.746080496679793,
+    "lon": -85.52589233248688
+  },
+  {
+    "name": "Nueva Segovia",
+    "key": "nueva segovia",
+    "lat": 13.706944862668758,
+    "lon": -86.17647652397635
+  },
+  {
+    "name": "Chinandega",
+    "key": "chinandega",
+    "lat": 12.934718595099637,
+    "lon": -87.08071785921858
+  },
+  {
+    "name": "Madriz",
+    "key": "madriz",
+    "lat": 13.39540313760387,
+    "lon": -86.50180329695479
+  },
+  {
+    "name": "Rivas",
+    "key": "rivas",
+    "lat": 11.295417979389352,
+    "lon": -85.56010863059008
+  },
+  {
+    "name": "Atlántico Sur",
+    "key": "atlántico sur",
+    "lat": 12.237655450855884,
+    "lon": -84.16034507877909
+  },
+  {
+    "name": "León",
+    "key": "león",
+    "lat": 12.587479131699295,
+    "lon": -86.63550669142643
+  },
+  {
+    "name": "Managua",
+    "key": "managua",
+    "lat": 12.167785906273009,
+    "lon": -86.29740594473009
+  },
+  {
+    "name": "Carazo",
+    "key": "carazo",
+    "lat": 11.691578708833706,
+    "lon": -86.2349679386579
+  },
+  {
+    "name": "Matagalpa",
+    "key": "matagalpa",
+    "lat": 12.964657789642652,
+    "lon": -85.47017124498521
+  },
+  {
+    "name": "Boaco",
+    "key": "boaco",
+    "lat": 12.469604383495493,
+    "lon": -85.4613809339829
+  },
+  {
+    "name": "Chontales",
+    "key": "chontales",
+    "lat": 12.189013811392114,
+    "lon": -85.12973166177139
+  },
+  {
+    "name": "Estelí",
+    "key": "estelí",
+    "lat": 13.141497911274564,
+    "lon": -86.37953247072193
+  },
+  {
+    "name": "Granada",
+    "key": "granada",
+    "lat": 11.955009609475884,
+    "lon": -85.86471204299636
+  },
+  {
+    "name": "Masaya",
+    "key": "masaya",
+    "lat": 12.05390710417951,
+    "lon": -86.07132992243795
+  }
+]

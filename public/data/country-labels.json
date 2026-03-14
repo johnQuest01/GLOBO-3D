@@ -1,0 +1,1241 @@
+[
+  {
+    "name": "Fiji",
+    "key": "Fiji",
+    "lat": -17.742965555555557,
+    "lon": 178.01839333333336,
+    "continent": "Oceania"
+  },
+  {
+    "name": "Tanzania",
+    "key": "Tanzania",
+    "lat": -6.544286533889697,
+    "lon": 34.314079963746515,
+    "continent": "Africa"
+  },
+  {
+    "name": "W. Sahara",
+    "key": "W. Sahara",
+    "lat": 24.77770810015795,
+    "lon": -12.02739525423547,
+    "continent": "Africa"
+  },
+  {
+    "name": "Canadá",
+    "key": "Canada",
+    "lat": 56,
+    "lon": -106,
+    "continent": "North America"
+  },
+  {
+    "name": "Estados Unidos",
+    "key": "United States of America",
+    "lat": 39,
+    "lon": -98,
+    "continent": "North America"
+  },
+  {
+    "name": "Kazakhstan",
+    "key": "Kazakhstan",
+    "lat": 47.263796393265906,
+    "lon": 65.25235870435695,
+    "continent": "Asia"
+  },
+  {
+    "name": "Uzbekistan",
+    "key": "Uzbekistan",
+    "lat": 41.15264678868667,
+    "lon": 65.28922639500692,
+    "continent": "Asia"
+  },
+  {
+    "name": "Papua New Guinea",
+    "key": "Papua New Guinea",
+    "lat": -7.77174145219306,
+    "lon": 146.21341856600498,
+    "continent": "Oceania"
+  },
+  {
+    "name": "Indonesia",
+    "key": "Indonesia",
+    "lat": -2.039124719973774,
+    "lon": 121.59253829241577,
+    "continent": "Asia"
+  },
+  {
+    "name": "Argentina",
+    "key": "Argentina",
+    "lat": -37.016766807613394,
+    "lon": -65.0851765500259,
+    "continent": "South America"
+  },
+  {
+    "name": "Chile",
+    "key": "Chile",
+    "lat": -38.11559671977272,
+    "lon": -71.44843503334778,
+    "continent": "South America"
+  },
+  {
+    "name": "Dem. Rep. Congo",
+    "key": "Dem. Rep. Congo",
+    "lat": -3.813813268169074,
+    "lon": 23.12693294699391,
+    "continent": "Africa"
+  },
+  {
+    "name": "Somalia",
+    "key": "Somalia",
+    "lat": 6.553593113664309,
+    "lon": 46.89733992825374,
+    "continent": "Africa"
+  },
+  {
+    "name": "Kenya",
+    "key": "Kenya",
+    "lat": 1.114469571605086,
+    "lon": 37.82372143513078,
+    "continent": "Africa"
+  },
+  {
+    "name": "Sudan",
+    "key": "Sudan",
+    "lat": 12.807976761186724,
+    "lon": 29.33744082805221,
+    "continent": "Africa"
+  },
+  {
+    "name": "Chad",
+    "key": "Chad",
+    "lat": 12.995734766170797,
+    "lon": 17.99555675356704,
+    "continent": "Africa"
+  },
+  {
+    "name": "Haiti",
+    "key": "Haiti",
+    "lat": 18.83961325198578,
+    "lon": -72.70254706974123,
+    "continent": "North America"
+  },
+  {
+    "name": "Dominican Rep.",
+    "key": "Dominican Rep.",
+    "lat": 18.725987093733313,
+    "lon": -70.49342071272487,
+    "continent": "North America"
+  },
+  {
+    "name": "Rússia",
+    "key": "Russia",
+    "lat": 60,
+    "lon": 90,
+    "continent": "Europe"
+  },
+  {
+    "name": "Bahamas",
+    "key": "Bahamas",
+    "lat": 24.532767500000006,
+    "lon": -77.94611625000002,
+    "continent": "North America"
+  },
+  {
+    "name": "Falkland Is.",
+    "key": "Falkland Is.",
+    "lat": -51.735,
+    "lon": -59.585,
+    "continent": "South America"
+  },
+  {
+    "name": "Norway",
+    "key": "Norway",
+    "lat": 66.23183396477916,
+    "lon": 18.086298971934408,
+    "continent": "Europe"
+  },
+  {
+    "name": "Greenland",
+    "key": "Greenland",
+    "lat": 74.1476317573278,
+    "lon": -41.031455909090916,
+    "continent": "North America"
+  },
+  {
+    "name": "Fr. S. Antarctic Lands",
+    "key": "Fr. S. Antarctic Lands",
+    "lat": -49.118611111111115,
+    "lon": 69.46083333333334,
+    "continent": "Seven seas (open ocean)"
+  },
+  {
+    "name": "Timor-Leste",
+    "key": "Timor-Leste",
+    "lat": -8.74553587295265,
+    "lon": 125.90554332156553,
+    "continent": "Asia"
+  },
+  {
+    "name": "África do Sul",
+    "key": "South Africa",
+    "lat": -28.60390004829149,
+    "lon": 24.719575011263476,
+    "continent": "Africa"
+  },
+  {
+    "name": "Lesotho",
+    "key": "Lesotho",
+    "lat": -29.584757175415277,
+    "lon": 28.370332404636926,
+    "continent": "Africa"
+  },
+  {
+    "name": "México",
+    "key": "Mexico",
+    "lat": 23.874573248851174,
+    "lon": -103.13076274890818,
+    "continent": "North America"
+  },
+  {
+    "name": "Uruguay",
+    "key": "Uruguay",
+    "lat": -32.69753629016608,
+    "lon": -56.13862763414361,
+    "continent": "South America"
+  },
+  {
+    "name": "Brasil",
+    "key": "Brazil",
+    "lat": -14.23,
+    "lon": -51.92,
+    "continent": "South America"
+  },
+  {
+    "name": "Bolivia",
+    "key": "Bolivia",
+    "lat": -16.33658822326809,
+    "lon": -64.13008908756797,
+    "continent": "South America"
+  },
+  {
+    "name": "Peru",
+    "key": "Peru",
+    "lat": -9.19,
+    "lon": -75.01,
+    "continent": "South America"
+  },
+  {
+    "name": "Colombia",
+    "key": "Colombia",
+    "lat": 4.490703465183281,
+    "lon": -72.65296162585078,
+    "continent": "South America"
+  },
+  {
+    "name": "Panama",
+    "key": "Panama",
+    "lat": 8.936060120283182,
+    "lon": -79.12643003255582,
+    "continent": "North America"
+  },
+  {
+    "name": "Costa Rica",
+    "key": "Costa Rica",
+    "lat": 9.822146256952653,
+    "lon": -84.16182833076695,
+    "continent": "North America"
+  },
+  {
+    "name": "Nicaragua",
+    "key": "Nicaragua",
+    "lat": 13.078829305311787,
+    "lon": -84.97791375712254,
+    "continent": "North America"
+  },
+  {
+    "name": "Honduras",
+    "key": "Honduras",
+    "lat": 14.746302263010199,
+    "lon": -86.30799800946173,
+    "continent": "North America"
+  },
+  {
+    "name": "El Salvador",
+    "key": "El Salvador",
+    "lat": 13.85463526046814,
+    "lon": -88.91992219720488,
+    "continent": "North America"
+  },
+  {
+    "name": "Guatemala",
+    "key": "Guatemala",
+    "lat": 14.6246718069833,
+    "lon": -90.50734683573785,
+    "continent": "North America"
+  },
+  {
+    "name": "Belize",
+    "key": "Belize",
+    "lat": 17.593760691837183,
+    "lon": -88.41380341198602,
+    "continent": "North America"
+  },
+  {
+    "name": "Venezuela",
+    "key": "Venezuela",
+    "lat": 7.213489061339578,
+    "lon": -66.85159615261934,
+    "continent": "South America"
+  },
+  {
+    "name": "Guyana",
+    "key": "Guyana",
+    "lat": 4.481521338311496,
+    "lon": -58.898341244122534,
+    "continent": "South America"
+  },
+  {
+    "name": "Suriname",
+    "key": "Suriname",
+    "lat": 3.6974152537292855,
+    "lon": -55.87038861912923,
+    "continent": "South America"
+  },
+  {
+    "name": "França",
+    "key": "France",
+    "lat": 47.00465488679433,
+    "lon": 3.300000589452805,
+    "continent": "Europe"
+  },
+  {
+    "name": "Ecuador",
+    "key": "Ecuador",
+    "lat": -1.6370143231984393,
+    "lon": -78.70452251707455,
+    "continent": "South America"
+  },
+  {
+    "name": "Puerto Rico",
+    "key": "Puerto Rico",
+    "lat": 18.236712690000065,
+    "lon": -66.4914815487142,
+    "continent": "North America"
+  },
+  {
+    "name": "Jamaica",
+    "key": "Jamaica",
+    "lat": 18.187741456108697,
+    "lon": -77.34805218632026,
+    "continent": "North America"
+  },
+  {
+    "name": "Cuba",
+    "key": "Cuba",
+    "lat": 21.722816740301816,
+    "lon": -79.73309492326949,
+    "continent": "North America"
+  },
+  {
+    "name": "Zimbabwe",
+    "key": "Zimbabwe",
+    "lat": -18.870222967091866,
+    "lon": 29.658726653993973,
+    "continent": "Africa"
+  },
+  {
+    "name": "Botswana",
+    "key": "Botswana",
+    "lat": -22.47665874602486,
+    "lon": 24.471325778916018,
+    "continent": "Africa"
+  },
+  {
+    "name": "Namibia",
+    "key": "Namibia",
+    "lat": -21.560888240058247,
+    "lon": 17.928476615256447,
+    "continent": "Africa"
+  },
+  {
+    "name": "Senegal",
+    "key": "Senegal",
+    "lat": 13.877521812758708,
+    "lon": -14.591478736732068,
+    "continent": "Africa"
+  },
+  {
+    "name": "Mali",
+    "key": "Mali",
+    "lat": 12.08370122092468,
+    "lon": -12.07849853669389,
+    "continent": "Africa"
+  },
+  {
+    "name": "Mauritania",
+    "key": "Mauritania",
+    "lat": 18.8313791898375,
+    "lon": -12.424930098864953,
+    "continent": "Africa"
+  },
+  {
+    "name": "Benin",
+    "key": "Benin",
+    "lat": 9.808400067580854,
+    "lon": 2.3272526220891585,
+    "continent": "Africa"
+  },
+  {
+    "name": "Niger",
+    "key": "Niger",
+    "lat": 10.085022089696517,
+    "lon": 5.447608822702965,
+    "continent": "Africa"
+  },
+  {
+    "name": "Nigéria",
+    "key": "Nigeria",
+    "lat": 9.731548338672049,
+    "lon": 8.348453445456459,
+    "continent": "Africa"
+  },
+  {
+    "name": "Cameroon",
+    "key": "Cameroon",
+    "lat": 6.9062958713781715,
+    "lon": 13.168611650878622,
+    "continent": "Africa"
+  },
+  {
+    "name": "Togo",
+    "key": "Togo",
+    "lat": 8.884753793934067,
+    "lon": 0.8697443611355521,
+    "continent": "Africa"
+  },
+  {
+    "name": "Ghana",
+    "key": "Ghana",
+    "lat": 8.290339756702384,
+    "lon": -0.9706184309839273,
+    "continent": "Africa"
+  },
+  {
+    "name": "Côte d'Ivoire",
+    "key": "Côte d'Ivoire",
+    "lat": 7.944610876457284,
+    "lon": -6.3455317633834305,
+    "continent": "Africa"
+  },
+  {
+    "name": "Guinea",
+    "key": "Guinea",
+    "lat": 10.418830212556315,
+    "lon": -10.98455543809244,
+    "continent": "Africa"
+  },
+  {
+    "name": "Guinea-Bissau",
+    "key": "Guinea-Bissau",
+    "lat": 11.979001209054038,
+    "lon": -15.213983548485396,
+    "continent": "Africa"
+  },
+  {
+    "name": "Liberia",
+    "key": "Liberia",
+    "lat": 6.753908091355769,
+    "lon": -9.142703710241157,
+    "continent": "Africa"
+  },
+  {
+    "name": "Sierra Leone",
+    "key": "Sierra Leone",
+    "lat": 8.603354665187895,
+    "lon": -11.7022388371141,
+    "continent": "Africa"
+  },
+  {
+    "name": "Burkina Faso",
+    "key": "Burkina Faso",
+    "lat": 12.111433573699845,
+    "lon": -1.9164335147049927,
+    "continent": "Africa"
+  },
+  {
+    "name": "Central African Rep.",
+    "key": "Central African Rep.",
+    "lat": 6.294242274755564,
+    "lon": 20.703062916233986,
+    "continent": "Africa"
+  },
+  {
+    "name": "Congo",
+    "key": "Congo",
+    "lat": -0.9202093004866175,
+    "lon": 14.927109475681762,
+    "continent": "Africa"
+  },
+  {
+    "name": "Gabon",
+    "key": "Gabon",
+    "lat": -0.33748013081742784,
+    "lon": 11.891373548391703,
+    "continent": "Africa"
+  },
+  {
+    "name": "Eq. Guinea",
+    "key": "Eq. Guinea",
+    "lat": 1.5893385162086904,
+    "lon": 10.069804314828474,
+    "continent": "Africa"
+  },
+  {
+    "name": "Zambia",
+    "key": "Zambia",
+    "lat": -12.834840611247376,
+    "lon": 27.97799614182303,
+    "continent": "Africa"
+  },
+  {
+    "name": "Malawi",
+    "key": "Malawi",
+    "lat": -12.914037991878851,
+    "lon": 34.062624421207964,
+    "continent": "Africa"
+  },
+  {
+    "name": "Mozambique",
+    "key": "Mozambique",
+    "lat": -17.72030225241265,
+    "lon": 35.003523564831205,
+    "continent": "Africa"
+  },
+  {
+    "name": "eSwatini",
+    "key": "eSwatini",
+    "lat": -26.4202521890153,
+    "lon": 31.437017819589606,
+    "continent": "Africa"
+  },
+  {
+    "name": "Angola",
+    "key": "Angola",
+    "lat": -11.2,
+    "lon": 17.87,
+    "continent": "Africa"
+  },
+  {
+    "name": "Burundi",
+    "key": "Burundi",
+    "lat": -3.233810154070347,
+    "lon": 30.042267132459628,
+    "continent": "Africa"
+  },
+  {
+    "name": "Israel",
+    "key": "Israel",
+    "lat": 31.995640201899985,
+    "lon": 35.11451181921474,
+    "continent": "Asia"
+  },
+  {
+    "name": "Líbano",
+    "key": "Lebanon",
+    "lat": 33.798193356768905,
+    "lon": 35.85166966027962,
+    "continent": "Asia"
+  },
+  {
+    "name": "Madagascar",
+    "key": "Madagascar",
+    "lat": -17.971485126314818,
+    "lon": 46.989215089051406,
+    "continent": "Africa"
+  },
+  {
+    "name": "Palestina",
+    "key": "Palestine",
+    "lat": 31.80870186797991,
+    "lon": 35.24093513813518,
+    "continent": "Asia"
+  },
+  {
+    "name": "Gambia",
+    "key": "Gambia",
+    "lat": 13.501525999907644,
+    "lon": -15.287184744721209,
+    "continent": "Africa"
+  },
+  {
+    "name": "Tunisia",
+    "key": "Tunisia",
+    "lat": 34.016760342585286,
+    "lon": 9.841517840743212,
+    "continent": "Africa"
+  },
+  {
+    "name": "Algeria",
+    "key": "Algeria",
+    "lat": 29.665780193432095,
+    "lon": 3.016263862273785,
+    "continent": "Africa"
+  },
+  {
+    "name": "Jordânia",
+    "key": "Jordan",
+    "lat": 31.132471025639713,
+    "lon": 36.650725024912866,
+    "continent": "Asia"
+  },
+  {
+    "name": "United Arab Emirates",
+    "key": "United Arab Emirates",
+    "lat": 24.19537921987858,
+    "lon": 54.24340117224949,
+    "continent": "Asia"
+  },
+  {
+    "name": "Qatar",
+    "key": "Qatar",
+    "lat": 25.25710923467101,
+    "lon": 51.15130478518957,
+    "continent": "Asia"
+  },
+  {
+    "name": "Kuwait",
+    "key": "Kuwait",
+    "lat": 29.336788438427202,
+    "lon": 47.742474670881954,
+    "continent": "Asia"
+  },
+  {
+    "name": "Iraq",
+    "key": "Iraq",
+    "lat": 33.438604994189596,
+    "lon": 44.39874177645148,
+    "continent": "Asia"
+  },
+  {
+    "name": "Oman",
+    "key": "Oman",
+    "lat": 20.860025331217543,
+    "lon": 56.56636622947396,
+    "continent": "Asia"
+  },
+  {
+    "name": "Vanuatu",
+    "key": "Vanuatu",
+    "lat": -15.377909321470794,
+    "lon": 166.89203715585762,
+    "continent": "Oceania"
+  },
+  {
+    "name": "Cambodia",
+    "key": "Cambodia",
+    "lat": 12.641262446957994,
+    "lon": 104.89517603127703,
+    "continent": "Asia"
+  },
+  {
+    "name": "Thailand",
+    "key": "Thailand",
+    "lat": 13.180763117673692,
+    "lon": 100.66150984090703,
+    "continent": "Asia"
+  },
+  {
+    "name": "Laos",
+    "key": "Laos",
+    "lat": 18.28362764758731,
+    "lon": 103.69295620366371,
+    "continent": "Asia"
+  },
+  {
+    "name": "Myanmar",
+    "key": "Myanmar",
+    "lat": 20.000519997053352,
+    "lon": 97.15338879364597,
+    "continent": "Asia"
+  },
+  {
+    "name": "Vietnam",
+    "key": "Vietnam",
+    "lat": 16.7053243067035,
+    "lon": 105.93873177030495,
+    "continent": "Asia"
+  },
+  {
+    "name": "North Korea",
+    "key": "North Korea",
+    "lat": 39.942979122057984,
+    "lon": 127.40434046045972,
+    "continent": "Asia"
+  },
+  {
+    "name": "South Korea",
+    "key": "South Korea",
+    "lat": 36.7165066273616,
+    "lon": 127.46743381690857,
+    "continent": "Asia"
+  },
+  {
+    "name": "Mongolia",
+    "key": "Mongolia",
+    "lat": 47.20451453054017,
+    "lon": 104.58542655414976,
+    "continent": "Asia"
+  },
+  {
+    "name": "Índia",
+    "key": "India",
+    "lat": 23.965686545897018,
+    "lon": 83.5882051910369,
+    "continent": "Asia"
+  },
+  {
+    "name": "Bangladesh",
+    "key": "Bangladesh",
+    "lat": 23.398933824145637,
+    "lon": 90.61132082403013,
+    "continent": "Asia"
+  },
+  {
+    "name": "Bhutan",
+    "key": "Bhutan",
+    "lat": 27.46778703617613,
+    "lon": 90.61513240259059,
+    "continent": "Asia"
+  },
+  {
+    "name": "Nepal",
+    "key": "Nepal",
+    "lat": 28.209141281776407,
+    "lon": 84.55865384665952,
+    "continent": "Asia"
+  },
+  {
+    "name": "Pakistan",
+    "key": "Pakistan",
+    "lat": 30.79038579813847,
+    "lon": 69.44356334087091,
+    "continent": "Asia"
+  },
+  {
+    "name": "Afghanistan",
+    "key": "Afghanistan",
+    "lat": 34.828475476704945,
+    "lon": 67.76801112575714,
+    "continent": "Asia"
+  },
+  {
+    "name": "Tajikistan",
+    "key": "Tajikistan",
+    "lat": 38.512878620636485,
+    "lon": 70.78717968425964,
+    "continent": "Asia"
+  },
+  {
+    "name": "Kyrgyzstan",
+    "key": "Kyrgyzstan",
+    "lat": 41.36375089313491,
+    "lon": 73.97675917231999,
+    "continent": "Asia"
+  },
+  {
+    "name": "Turkmenistan",
+    "key": "Turkmenistan",
+    "lat": 39.330052037250695,
+    "lon": 58.45692163966276,
+    "continent": "Asia"
+  },
+  {
+    "name": "Iran",
+    "key": "Iran",
+    "lat": 33.354020420092496,
+    "lon": 53.231849484592935,
+    "continent": "Asia"
+  },
+  {
+    "name": "Síria",
+    "key": "Syria",
+    "lat": 35.14620702207313,
+    "lon": 37.95019842120447,
+    "continent": "Asia"
+  },
+  {
+    "name": "Armenia",
+    "key": "Armenia",
+    "lat": 39.94548585668253,
+    "lon": 45.31039228697465,
+    "continent": "Asia"
+  },
+  {
+    "name": "Sweden",
+    "key": "Sweden",
+    "lat": 62.73938847009565,
+    "lon": 16.563280053379835,
+    "continent": "Europe"
+  },
+  {
+    "name": "Belarus",
+    "key": "Belarus",
+    "lat": 53.34756871858299,
+    "lon": 28.300338139428543,
+    "continent": "Europe"
+  },
+  {
+    "name": "Ucrânia",
+    "key": "Ukraine",
+    "lat": 48.686981186909485,
+    "lon": 30.45089038352593,
+    "continent": "Europe"
+  },
+  {
+    "name": "Poland",
+    "key": "Poland",
+    "lat": 51.744799949295185,
+    "lon": 19.475697028624772,
+    "continent": "Europe"
+  },
+  {
+    "name": "Austria",
+    "key": "Austria",
+    "lat": 47.64469880919829,
+    "lon": 13.484573184053136,
+    "continent": "Europe"
+  },
+  {
+    "name": "Hungary",
+    "key": "Hungary",
+    "lat": 47.41615630426087,
+    "lon": 19.231928762074265,
+    "continent": "Europe"
+  },
+  {
+    "name": "Moldova",
+    "key": "Moldova",
+    "lat": 47.04663959560404,
+    "lon": 28.470352139337837,
+    "continent": "Europe"
+  },
+  {
+    "name": "Romania",
+    "key": "Romania",
+    "lat": 45.85676198992558,
+    "lon": 25.188283660961975,
+    "continent": "Europe"
+  },
+  {
+    "name": "Lithuania",
+    "key": "Lithuania",
+    "lat": 55.200951592998884,
+    "lon": 24.01655264016524,
+    "continent": "Europe"
+  },
+  {
+    "name": "Latvia",
+    "key": "Latvia",
+    "lat": 56.85766555997136,
+    "lon": 24.94021212220921,
+    "continent": "Europe"
+  },
+  {
+    "name": "Estonia",
+    "key": "Estonia",
+    "lat": 58.697071288106564,
+    "lon": 26.142054039535186,
+    "continent": "Europe"
+  },
+  {
+    "name": "Alemanha",
+    "key": "Germany",
+    "lat": 51.04436702303161,
+    "lon": 10.69112609778714,
+    "continent": "Europe"
+  },
+  {
+    "name": "Bulgaria",
+    "key": "Bulgaria",
+    "lat": 42.89366120052572,
+    "lon": 24.68732108502272,
+    "continent": "Europe"
+  },
+  {
+    "name": "Greece",
+    "key": "Greece",
+    "lat": 39.79631364375165,
+    "lon": 23.13811129302312,
+    "continent": "Europe"
+  },
+  {
+    "name": "Turkey",
+    "key": "Turkey",
+    "lat": 38.3781432584151,
+    "lon": 36.90125640933359,
+    "continent": "Asia"
+  },
+  {
+    "name": "Albania",
+    "key": "Albania",
+    "lat": 41.28046204017739,
+    "lon": 20.116781129214605,
+    "continent": "Europe"
+  },
+  {
+    "name": "Croácia",
+    "key": "Croatia",
+    "lat": 44.84539928661109,
+    "lon": 16.431294552188987,
+    "continent": "Europe"
+  },
+  {
+    "name": "Suíça",
+    "key": "Switzerland",
+    "lat": 46.796854263217654,
+    "lon": 8.306507551719198,
+    "continent": "Europe"
+  },
+  {
+    "name": "Luxemburgo",
+    "key": "Luxembourg",
+    "lat": 49.92248003017552,
+    "lon": 5.488580380113445,
+    "continent": "Europe"
+  },
+  {
+    "name": "Bélgica",
+    "key": "Belgium",
+    "lat": 50.715869305701716,
+    "lon": 4.432619235661098,
+    "continent": "Europe"
+  },
+  {
+    "name": "Netherlands",
+    "key": "Netherlands",
+    "lat": 52.10253550520834,
+    "lon": 5.489893619860956,
+    "continent": "Europe"
+  },
+  {
+    "name": "Portugal",
+    "key": "Portugal",
+    "lat": 39.764078520687576,
+    "lon": -8.038668314367241,
+    "continent": "Europe"
+  },
+  {
+    "name": "Espanha",
+    "key": "Spain",
+    "lat": 40.17528428887778,
+    "lon": -4.450721437278488,
+    "continent": "Europe"
+  },
+  {
+    "name": "Ireland",
+    "key": "Ireland",
+    "lat": 53.53152310774475,
+    "lon": -7.7233234865998845,
+    "continent": "Europe"
+  },
+  {
+    "name": "New Caledonia",
+    "key": "New Caledonia",
+    "lat": -21.17765753470657,
+    "lon": 165.5116580000957,
+    "continent": "Oceania"
+  },
+  {
+    "name": "Solomon Is.",
+    "key": "Solomon Is.",
+    "lat": -7.898506949272388,
+    "lon": 159.13148382207987,
+    "continent": "Oceania"
+  },
+  {
+    "name": "New Zealand",
+    "key": "New Zealand",
+    "lat": -38.197151381178884,
+    "lon": 175.48133425210403,
+    "continent": "Oceania"
+  },
+  {
+    "name": "Austrália",
+    "key": "Australia",
+    "lat": -25,
+    "lon": 133,
+    "continent": "Oceania"
+  },
+  {
+    "name": "Sri Lanka",
+    "key": "Sri Lanka",
+    "lat": 7.631441473822145,
+    "lon": 80.86381904492937,
+    "continent": "Asia"
+  },
+  {
+    "name": "China",
+    "key": "China",
+    "lat": 37.306994858531695,
+    "lon": 105.66841288127803,
+    "continent": "Asia"
+  },
+  {
+    "name": "Taiwan",
+    "key": "Taiwan",
+    "lat": 23.861400571290137,
+    "lon": 121.10506531968525,
+    "continent": "Asia"
+  },
+  {
+    "name": "Itália",
+    "key": "Italy",
+    "lat": 43.08665779858716,
+    "lon": 12.626575666046081,
+    "continent": "Europe"
+  },
+  {
+    "name": "Denmark",
+    "key": "Denmark",
+    "lat": 56.27796051698551,
+    "lon": 9.622694080813366,
+    "continent": "Europe"
+  },
+  {
+    "name": "Reino Unido",
+    "key": "United Kingdom",
+    "lat": 53.89674201422315,
+    "lon": -3.0846018183171373,
+    "continent": "Europe"
+  },
+  {
+    "name": "Iceland",
+    "key": "Iceland",
+    "lat": 65.27802873398113,
+    "lon": -19.265977413397614,
+    "continent": "Europe"
+  },
+  {
+    "name": "Azerbaijan",
+    "key": "Azerbaijan",
+    "lat": 40.37340895879181,
+    "lon": 47.405682649494516,
+    "continent": "Asia"
+  },
+  {
+    "name": "Georgia",
+    "key": "Georgia",
+    "lat": 32.344118260359096,
+    "lon": -82.71912442878983,
+    "continent": "Asia"
+  },
+  {
+    "name": "Philippines",
+    "key": "Philippines",
+    "lat": 15.369240719976444,
+    "lon": 121.81593937189636,
+    "continent": "Asia"
+  },
+  {
+    "name": "Malaysia",
+    "key": "Malaysia",
+    "lat": 3.6786828156120057,
+    "lon": 114.76792654392132,
+    "continent": "Asia"
+  },
+  {
+    "name": "Brunei",
+    "key": "Brunei",
+    "lat": 4.743644873468796,
+    "lon": 114.99846418666749,
+    "continent": "Asia"
+  },
+  {
+    "name": "Eslovênia",
+    "key": "Slovenia",
+    "lat": 46.107082627947435,
+    "lon": 14.995377909683235,
+    "continent": "Europe"
+  },
+  {
+    "name": "Finland",
+    "key": "Finland",
+    "lat": 65.22839810358025,
+    "lon": 25.88675196818583,
+    "continent": "Europe"
+  },
+  {
+    "name": "Slovakia",
+    "key": "Slovakia",
+    "lat": 48.7638408288636,
+    "lon": 19.35183738975511,
+    "continent": "Europe"
+  },
+  {
+    "name": "Chéquia",
+    "key": "Czechia",
+    "lat": 49.778659183486646,
+    "lon": 15.848031167995181,
+    "continent": "Europe"
+  },
+  {
+    "name": "Eritrea",
+    "key": "Eritrea",
+    "lat": 14.712020657571582,
+    "lon": 39.58833816970491,
+    "continent": "Africa"
+  },
+  {
+    "name": "Japão",
+    "key": "Japan",
+    "lat": 36.2,
+    "lon": 138.25,
+    "continent": "Asia"
+  },
+  {
+    "name": "Paraguay",
+    "key": "Paraguay",
+    "lat": -23.301975686181652,
+    "lon": -57.56991794465535,
+    "continent": "South America"
+  },
+  {
+    "name": "Yemen",
+    "key": "Yemen",
+    "lat": 15.51189292408597,
+    "lon": 46.47150417181891,
+    "continent": "Asia"
+  },
+  {
+    "name": "Saudi Arabia",
+    "key": "Saudi Arabia",
+    "lat": 24.04020401125843,
+    "lon": 43.59399494595902,
+    "continent": "Asia"
+  },
+  {
+    "name": "Antarctica",
+    "key": "Antarctica",
+    "lat": -78.62827077501336,
+    "lon": 1.5936242714786895,
+    "continent": "Antarctica"
+  },
+  {
+    "name": "N. Cyprus",
+    "key": "N. Cyprus",
+    "lat": 35.17730726271001,
+    "lon": 33.42654725010256,
+    "continent": "Asia"
+  },
+  {
+    "name": "Chipre",
+    "key": "Cyprus",
+    "lat": 35.02459974487356,
+    "lon": 33.24416583293332,
+    "continent": "Asia"
+  },
+  {
+    "name": "Morocco",
+    "key": "Morocco",
+    "lat": 28.76984335812825,
+    "lon": -9.425936349142768,
+    "continent": "Africa"
+  },
+  {
+    "name": "Egito",
+    "key": "Egypt",
+    "lat": 28.175055968116666,
+    "lon": 31.69790109166886,
+    "continent": "Africa"
+  },
+  {
+    "name": "Libya",
+    "key": "Libya",
+    "lat": 28.47683414828998,
+    "lon": 16.638207721172076,
+    "continent": "Africa"
+  },
+  {
+    "name": "Ethiopia",
+    "key": "Ethiopia",
+    "lat": 8.983416974390158,
+    "lon": 39.2091576018003,
+    "continent": "Africa"
+  },
+  {
+    "name": "Djibouti",
+    "key": "Djibouti",
+    "lat": 11.567151521317442,
+    "lon": 43.017756635486094,
+    "continent": "Africa"
+  },
+  {
+    "name": "Somaliland",
+    "key": "Somaliland",
+    "lat": 10.299110193150707,
+    "lon": 45.607615908224226,
+    "continent": "Africa"
+  },
+  {
+    "name": "Uganda",
+    "key": "Uganda",
+    "lat": 1.3389631630131444,
+    "lon": 31.951231798434637,
+    "continent": "Africa"
+  },
+  {
+    "name": "Rwanda",
+    "key": "Rwanda",
+    "lat": -2.0071987440533627,
+    "lon": 29.92947457320802,
+    "continent": "Africa"
+  },
+  {
+    "name": "Bosnia and Herz.",
+    "key": "Bosnia and Herz.",
+    "lat": 44.18504011599276,
+    "lon": 17.92135662727215,
+    "continent": "Europe"
+  },
+  {
+    "name": "North Macedonia",
+    "key": "North Macedonia",
+    "lat": 41.683540408995064,
+    "lon": 21.626566460487435,
+    "continent": "Europe"
+  },
+  {
+    "name": "Serbia",
+    "key": "Serbia",
+    "lat": 43.894671901462395,
+    "lon": 20.85544647584182,
+    "continent": "Europe"
+  },
+  {
+    "name": "Montenegro",
+    "key": "Montenegro",
+    "lat": 42.741404384107284,
+    "lon": 19.446579219260975,
+    "continent": "Europe"
+  },
+  {
+    "name": "Kosovo",
+    "key": "Kosovo",
+    "lat": 42.54599413064024,
+    "lon": 20.957034218711673,
+    "continent": "Europe"
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "key": "Trinidad and Tobago",
+    "lat": 10.478750000000002,
+    "lon": -61.459375,
+    "continent": "North America"
+  },
+  {
+    "name": "S. Sudan",
+    "key": "S. Sudan",
+    "lat": 8.0097725335214,
+    "lon": 30.092555156449862,
+    "continent": "Africa"
+  }
+]

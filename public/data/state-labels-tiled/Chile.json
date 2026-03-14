@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Arica y Parinacota",
+    "key": "arica y parinacota",
+    "lat": -18.318050879616955,
+    "lon": -69.60924572345313
+  },
+  {
+    "name": "Tarapacá",
+    "key": "tarapacá",
+    "lat": -20.24293258382885,
+    "lon": -69.3668268379914
+  },
+  {
+    "name": "Antofagasta",
+    "key": "antofagasta",
+    "lat": -23.519223218535544,
+    "lon": -69.27768944359612
+  },
+  {
+    "name": "Atacama",
+    "key": "atacama",
+    "lat": -27.497699553849433,
+    "lon": -69.93963388358982
+  },
+  {
+    "name": "Coquimbo",
+    "key": "coquimbo",
+    "lat": -30.500499247996157,
+    "lon": -70.82596293466499
+  },
+  {
+    "name": "Región Metropolitana de Santiago",
+    "key": "región metropolitana de santiago",
+    "lat": -33.61986135617519,
+    "lon": -70.53282323240805
+  },
+  {
+    "name": "Valparaíso",
+    "key": "valparaíso",
+    "lat": -32.85861179670103,
+    "lon": -71.06172821752901
+  },
+  {
+    "name": "Maule",
+    "key": "maule",
+    "lat": -35.647629120742856,
+    "lon": -71.38860863177554
+  },
+  {
+    "name": "Libertador General Bernardo O'Higgins",
+    "key": "libertador general bernardo o'higgins",
+    "lat": -34.4318063246988,
+    "lon": -70.96237357960426
+  },
+  {
+    "name": "Ñuble",
+    "key": "ñuble",
+    "lat": -36.58527335818877,
+    "lon": -71.96162767575767
+  },
+  {
+    "name": "La Araucanía",
+    "key": "la araucanía",
+    "lat": -38.64933002732109,
+    "lon": -72.10652784091708
+  },
+  {
+    "name": "Bío-Bío",
+    "key": "bío-bío",
+    "lat": -37.501125282125145,
+    "lon": -72.4534289178316
+  },
+  {
+    "name": "Los Ríos",
+    "key": "los ríos",
+    "lat": -39.97567740329849,
+    "lon": -72.53651998041863
+  },
+  {
+    "name": "Los Lagos",
+    "key": "los lagos",
+    "lat": -42.20439954388788,
+    "lon": -72.59247063565455
+  },
+  {
+    "name": "Aisén del General Carlos Ibáñez del Campo",
+    "key": "aisén del general carlos ibáñez del campo",
+    "lat": -46.29795930471688,
+    "lon": -73.2506237677341
+  },
+  {
+    "name": "Magallanes y Antártica Chilena",
+    "key": "magallanes y antártica chilena",
+    "lat": -51.83035250431384,
+    "lon": -72.50847039437981
+  }
+]

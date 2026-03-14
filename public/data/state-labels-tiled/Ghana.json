@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Upper East",
+    "key": "upper east",
+    "lat": 10.77419162490531,
+    "lon": -0.838402151426284
+  },
+  {
+    "name": "Northern",
+    "key": "northern",
+    "lat": 9.115785759791477,
+    "lon": -11.868718148726737
+  },
+  {
+    "name": "Volta",
+    "key": "volta",
+    "lat": 7.258176749140705,
+    "lon": 0.3905767259747574
+  },
+  {
+    "name": "Brong Ahafo",
+    "key": "brong ahafo",
+    "lat": 7.681425279572198,
+    "lon": -1.6549963764935898
+  },
+  {
+    "name": "Western",
+    "key": "western",
+    "lat": -2.1421606680643306,
+    "lon": 29.29291803490095
+  },
+  {
+    "name": "Upper West",
+    "key": "upper west",
+    "lat": 10.38646560026486,
+    "lon": -2.0984135842642986
+  },
+  {
+    "name": "Central",
+    "key": "central",
+    "lat": -21.53938210084973,
+    "lon": 26.99743649044483
+  },
+  {
+    "name": "Greater Accra",
+    "key": "greater accra",
+    "lat": 5.80950682093638,
+    "lon": 0.16831419130664443
+  },
+  {
+    "name": "Ashanti",
+    "key": "ashanti",
+    "lat": 6.871010499672309,
+    "lon": -1.48328571718461
+  },
+  {
+    "name": "Eastern",
+    "key": "eastern",
+    "lat": -13.276595798443843,
+    "lon": 32.03293192144825
+  }
+]

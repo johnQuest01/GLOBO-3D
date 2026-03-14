@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Lac",
+    "key": "lac",
+    "lat": 13.642845198749495,
+    "lon": 14.58606784439027
+  },
+  {
+    "name": "Sila",
+    "key": "sila",
+    "lat": 12.220245214462716,
+    "lon": 21.474711890579044
+  },
+  {
+    "name": "Salamat",
+    "key": "salamat",
+    "lat": 10.871738084204365,
+    "lon": 20.41861824915267
+  },
+  {
+    "name": "Moyen-Chari",
+    "key": "moyen-chari",
+    "lat": 9.459504389845602,
+    "lon": 18.630928576666545
+  },
+  {
+    "name": "Mandoul",
+    "key": "mandoul",
+    "lat": 8.797410981350286,
+    "lon": 17.631463272697555
+  },
+  {
+    "name": "Logone Oriental",
+    "key": "logone oriental",
+    "lat": 8.159846016078177,
+    "lon": 16.290223289972335
+  },
+  {
+    "name": "Hadjer-Lamis",
+    "key": "hadjer-lamis",
+    "lat": 12.616428734375573,
+    "lon": 16.057289443509728
+  },
+  {
+    "name": "Chari-Baguirmi",
+    "key": "chari-baguirmi",
+    "lat": 11.29890093842093,
+    "lon": 16.02621008927116
+  },
+  {
+    "name": "Ville de N'Djamena",
+    "key": "ville de n'djamena",
+    "lat": 12.092931296465121,
+    "lon": 15.064586830318365
+  },
+  {
+    "name": "Mayo-Kebbi Est",
+    "key": "mayo-kebbi est",
+    "lat": 10.185333185483097,
+    "lon": 15.515163238984822
+  },
+  {
+    "name": "Mayo-Kebbi Ouest",
+    "key": "mayo-kebbi ouest",
+    "lat": 9.269792282682568,
+    "lon": 14.868976959414578
+  },
+  {
+    "name": "Ennedi",
+    "key": "ennedi",
+    "lat": 17.128363208442348,
+    "lon": 21.948163981623726
+  },
+  {
+    "name": "Borkou",
+    "key": "borkou",
+    "lat": 18.100937629226298,
+    "lon": 18.827387357069853
+  },
+  {
+    "name": "Tibesti",
+    "key": "tibesti",
+    "lat": 20.92261825936424,
+    "lon": 16.796298588347263
+  },
+  {
+    "name": "Kanem",
+    "key": "kanem",
+    "lat": 14.484200266273497,
+    "lon": 14.983377688431085
+  },
+  {
+    "name": "Ouaddaï",
+    "key": "ouaddaï",
+    "lat": 13.531181990297423,
+    "lon": 21.142107104099413
+  },
+  {
+    "name": "Wadi Fira",
+    "key": "wadi fira",
+    "lat": 15.084330762453435,
+    "lon": 21.811152702334958
+  },
+  {
+    "name": "Barh El Gazel",
+    "key": "barh el gazel",
+    "lat": 14.030776960874391,
+    "lon": 16.545865378557092
+  },
+  {
+    "name": "Tandjilé",
+    "key": "tandjilé",
+    "lat": 9.521991774647542,
+    "lon": 16.547719633594824
+  },
+  {
+    "name": "Logone Occidental",
+    "key": "logone occidental",
+    "lat": 8.78617977570607,
+    "lon": 15.895218764034714
+  },
+  {
+    "name": "Guéra",
+    "key": "guéra",
+    "lat": 11.424347051544403,
+    "lon": 18.732518700076014
+  },
+  {
+    "name": "Batha",
+    "key": "batha",
+    "lat": 13.851952609000694,
+    "lon": 18.62270719217816
+  }
+]

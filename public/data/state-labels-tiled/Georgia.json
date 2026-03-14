@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Abkhazia",
+    "key": "abkhazia",
+    "lat": 43.142080143696425,
+    "lon": 41.09857917016345
+  },
+  {
+    "name": "Samegrelo-Zemo Svaneti",
+    "key": "samegrelo-zemo svaneti",
+    "lat": 42.749353539250606,
+    "lon": 42.34183794655663
+  },
+  {
+    "name": "Shida Kartli",
+    "key": "shida kartli",
+    "lat": 42.16285544180752,
+    "lon": 44.05934804716873
+  },
+  {
+    "name": "Racha-Lechkhumi-Kvemo Svaneti",
+    "key": "racha-lechkhumi-kvemo svaneti",
+    "lat": 42.65003554524084,
+    "lon": 43.19210233674909
+  },
+  {
+    "name": "Mtskheta-Mtianeti",
+    "key": "mtskheta-mtianeti",
+    "lat": 42.27885042869639,
+    "lon": 44.660826476441464
+  },
+  {
+    "name": "Kakheti",
+    "key": "kakheti",
+    "lat": 41.72429951820495,
+    "lon": 45.876784742509024
+  },
+  {
+    "name": "Samtskhe-Javakheti",
+    "key": "samtskhe-javakheti",
+    "lat": 41.515805515429555,
+    "lon": 43.38531807626461
+  },
+  {
+    "name": "Ajaria",
+    "key": "ajaria",
+    "lat": 41.59655687181826,
+    "lon": 42.08284113527281
+  },
+  {
+    "name": "Kvemo Kartli",
+    "key": "kvemo kartli",
+    "lat": 41.50962637489234,
+    "lon": 44.559300071007456
+  },
+  {
+    "name": "Guria",
+    "key": "guria",
+    "lat": 41.9519927318345,
+    "lon": 42.1787650298598
+  },
+  {
+    "name": "Tbilisi",
+    "key": "tbilisi",
+    "lat": 41.717944851498686,
+    "lon": 44.84248803057312
+  },
+  {
+    "name": "Imereti",
+    "key": "imereti",
+    "lat": 42.180969659622065,
+    "lon": 43.00068234505262
+  }
+]

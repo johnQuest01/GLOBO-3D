@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Équateur",
+    "key": "équateur",
+    "lat": 0.8508474739130505,
+    "lon": 20.93274658752588
+  },
+  {
+    "name": "Bandundu",
+    "key": "bandundu",
+    "lat": -4.487916551517084,
+    "lon": 18.41213424656742
+  },
+  {
+    "name": "Kinshasa City",
+    "key": "kinshasa city",
+    "lat": -4.44504759050527,
+    "lon": 15.795098491492789
+  },
+  {
+    "name": "Bas-Congo",
+    "key": "bas-congo",
+    "lat": -5.064371979196256,
+    "lon": 14.294818033289614
+  },
+  {
+    "name": "Orientale",
+    "key": "orientale",
+    "lat": 2.038919282843193,
+    "lon": 26.26908268138175
+  },
+  {
+    "name": "Sud-Kivu",
+    "key": "sud-kivu",
+    "lat": -3.1390480233012266,
+    "lon": 28.372976607785414
+  },
+  {
+    "name": "Katanga",
+    "key": "katanga",
+    "lat": -9.552041984696967,
+    "lon": 26.083143287383823
+  },
+  {
+    "name": "Nord-Kivu",
+    "key": "nord-kivu",
+    "lat": -0.48652154913119605,
+    "lon": 28.68310312445438
+  },
+  {
+    "name": "Kasaï-Occidental",
+    "key": "kasaï-occidental",
+    "lat": -5.243609996370799,
+    "lon": 21.71318400408327
+  },
+  {
+    "name": "Kasaï-Oriental",
+    "key": "kasaï-oriental",
+    "lat": -4.780097862299242,
+    "lon": 23.888382972541574
+  },
+  {
+    "name": "Maniema",
+    "key": "maniema",
+    "lat": -2.3326228733524124,
+    "lon": 26.383073552934977
+  }
+]

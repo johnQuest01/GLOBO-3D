@@ -1,0 +1,158 @@
+[
+  {
+    "name": "Outer Islands",
+    "key": "outer islands",
+    "lat": -9.391351007249924,
+    "lon": 46.44149824300007
+  },
+  {
+    "name": "La Digue and Inner Islands",
+    "key": "la digue and inner islands",
+    "lat": -4.479115492399944,
+    "lon": 55.24678795660005
+  },
+  {
+    "name": "Grand'Anse",
+    "key": "grand'anse",
+    "lat": 18.470867666708806,
+    "lon": -74.14013569797123
+  },
+  {
+    "name": "Anse Boileau",
+    "key": "anse boileau",
+    "lat": -4.713639834796278,
+    "lon": 55.49564330814927
+  },
+  {
+    "name": "Baie Lazare",
+    "key": "baie lazare",
+    "lat": -4.7599813228081285,
+    "lon": 55.49853938475398
+  },
+  {
+    "name": "Takamaka",
+    "key": "takamaka",
+    "lat": -4.7720084997750245,
+    "lon": 55.51359302081419
+  },
+  {
+    "name": "Anse Royale",
+    "key": "anse royale",
+    "lat": -4.745666647213249,
+    "lon": 55.517428155690574
+  },
+  {
+    "name": "Au Cap",
+    "key": "au cap",
+    "lat": -4.699236287807276,
+    "lon": 55.5154586350657
+  },
+  {
+    "name": "Anse aux Pins",
+    "key": "anse aux pins",
+    "lat": -4.681555170210285,
+    "lon": 55.518731257836365
+  },
+  {
+    "name": "Pointe La Rue",
+    "key": "pointe la rue",
+    "lat": -4.672473557259258,
+    "lon": 55.515536664861166
+  },
+  {
+    "name": "Cascade",
+    "key": "cascade",
+    "lat": -4.66727625781017,
+    "lon": 55.497281271703
+  },
+  {
+    "name": "Roche Caïman",
+    "key": "roche caïman",
+    "lat": -4.647472904293929,
+    "lon": 55.48156192672051
+  },
+  {
+    "name": "Plaisance",
+    "key": "plaisance",
+    "lat": -4.646743889525131,
+    "lon": 55.470760888143424
+  },
+  {
+    "name": "Mont Fleuri",
+    "key": "mont fleuri",
+    "lat": -4.633305819249911,
+    "lon": 55.4643071529118
+  },
+  {
+    "name": "Bel Air",
+    "key": "bel air",
+    "lat": -4.631108455869218,
+    "lon": 55.45488441190538
+  },
+  {
+    "name": "English River",
+    "key": "english river",
+    "lat": -4.608097748667581,
+    "lon": 55.45335841400928
+  },
+  {
+    "name": "Anse Etoile",
+    "key": "anse etoile",
+    "lat": -4.586557837274843,
+    "lon": 55.45382864304766
+  },
+  {
+    "name": "Glacis",
+    "key": "glacis",
+    "lat": -4.5830466142942825,
+    "lon": 55.4424941458045
+  },
+  {
+    "name": "Beau Vallon",
+    "key": "beau vallon",
+    "lat": -4.606119428239931,
+    "lon": 55.43044138371566
+  },
+  {
+    "name": "Bel Ombre",
+    "key": "bel ombre",
+    "lat": -4.622745773357666,
+    "lon": 55.401725331990306
+  },
+  {
+    "name": "Port Glaud",
+    "key": "port glaud",
+    "lat": -4.649131580784914,
+    "lon": 55.43402993416209
+  },
+  {
+    "name": "Baie Sainte Anne",
+    "key": "baie sainte anne",
+    "lat": -4.315039092337125,
+    "lon": 55.72202824946794
+  },
+  {
+    "name": "Grand'Anse Praslin",
+    "key": "grand'anse praslin",
+    "lat": -4.336800435661407,
+    "lon": 55.73789181200731
+  },
+  {
+    "name": "Mont Buxton",
+    "key": "mont buxton",
+    "lat": -4.613847596664272,
+    "lon": 55.441292320708996
+  },
+  {
+    "name": "Saint Louis",
+    "key": "saint louis",
+    "lat": -4.622781785311167,
+    "lon": 55.43679229930515
+  },
+  {
+    "name": "Les Mamelles",
+    "key": "les mamelles",
+    "lat": -4.659722040180031,
+    "lon": 55.48043335669403
+  }
+]

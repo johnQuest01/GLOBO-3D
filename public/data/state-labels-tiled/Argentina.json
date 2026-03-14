@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Entre Ríos",
+    "key": "entre ríos",
+    "lat": -32.09560014326176,
+    "lon": -59.00573570055498
+  },
+  {
+    "name": "Salta",
+    "key": "salta",
+    "lat": -24.03176484901078,
+    "lon": -65.31622703136767
+  },
+  {
+    "name": "Jujuy",
+    "key": "jujuy",
+    "lat": -23.391280191452367,
+    "lon": -65.73382308200357
+  },
+  {
+    "name": "Formosa",
+    "key": "formosa",
+    "lat": -24.80626664015859,
+    "lon": -60.01231408071787
+  },
+  {
+    "name": "Misiones",
+    "key": "misiones",
+    "lat": -26.91501039019598,
+    "lon": -54.7680316365963
+  },
+  {
+    "name": "Chaco",
+    "key": "chaco",
+    "lat": -26.02125969828005,
+    "lon": -60.234080605066744
+  },
+  {
+    "name": "Corrientes",
+    "key": "corrientes",
+    "lat": -28.803954081632384,
+    "lon": -57.71433284592264
+  },
+  {
+    "name": "Catamarca",
+    "key": "catamarca",
+    "lat": -27.503233835452328,
+    "lon": -66.84813465740206
+  },
+  {
+    "name": "La Rioja",
+    "key": "la rioja",
+    "lat": -29.449735136535566,
+    "lon": -67.59200527042259
+  },
+  {
+    "name": "San Juan",
+    "key": "san juan",
+    "lat": -30.803428553804434,
+    "lon": -68.99524925873227
+  },
+  {
+    "name": "Mendoza",
+    "key": "mendoza",
+    "lat": -34.425399227403204,
+    "lon": -68.98813208561523
+  },
+  {
+    "name": "Neuquén",
+    "key": "neuquén",
+    "lat": -38.60309890110334,
+    "lon": -70.45169303547885
+  },
+  {
+    "name": "Chubut",
+    "key": "chubut",
+    "lat": -43.72123866399887,
+    "lon": -68.10309956821621
+  },
+  {
+    "name": "Río Negro",
+    "key": "río negro",
+    "lat": -40.17789375449912,
+    "lon": -67.6244845749424
+  },
+  {
+    "name": "Santa Cruz",
+    "key": "santa cruz",
+    "lat": -17.156570501962296,
+    "lon": -61.57560616508186
+  },
+  {
+    "name": "Tierra del Fuego",
+    "key": "tierra del fuego",
+    "lat": -54.226979965250415,
+    "lon": -67.36747759883369
+  },
+  {
+    "name": "Buenos Aires",
+    "key": "buenos aires",
+    "lat": -36.90338446169005,
+    "lon": -60.27190708579739
+  },
+  {
+    "name": "Ciudad de Buenos Aires",
+    "key": "ciudad de buenos aires",
+    "lat": -34.63712592062474,
+    "lon": -58.44980340568263
+  },
+  {
+    "name": "Santa Fe",
+    "key": "santa fe",
+    "lat": -31.02617823641647,
+    "lon": -60.69886542200162
+  },
+  {
+    "name": "Tucumán",
+    "key": "tucumán",
+    "lat": -27.023394507329222,
+    "lon": -65.30410454403231
+  },
+  {
+    "name": "Santiago del Estero",
+    "key": "santiago del estero",
+    "lat": -27.86140557653114,
+    "lon": -63.924952743049644
+  },
+  {
+    "name": "San Luis",
+    "key": "san luis",
+    "lat": -33.36231045543376,
+    "lon": -66.2567147906139
+  },
+  {
+    "name": "La Pampa",
+    "key": "la pampa",
+    "lat": -37.56273704721695,
+    "lon": -65.96794546852853
+  },
+  {
+    "name": "Córdoba",
+    "key": "córdoba",
+    "lat": 8.475451076407174,
+    "lon": -75.76402998235396
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Wouleu-Ntem",
+    "key": "wouleu-ntem",
+    "lat": 1.4003163144020045,
+    "lon": 11.870488543142574
+  },
+  {
+    "name": "Ogooué-Ivindo",
+    "key": "ogooué-ivindo",
+    "lat": 0.45111008697829685,
+    "lon": 12.999666320422135
+  },
+  {
+    "name": "Haut-Ogooué",
+    "key": "haut-ogooué",
+    "lat": -1.3203224248894763,
+    "lon": 13.801808199281203
+  },
+  {
+    "name": "Ogooué-Lolo",
+    "key": "ogooué-lolo",
+    "lat": -0.9329291170568603,
+    "lon": 12.556037873317987
+  },
+  {
+    "name": "Ngounié",
+    "key": "ngounié",
+    "lat": -1.6743483728781925,
+    "lon": 11.20824930809986
+  },
+  {
+    "name": "Nyanga",
+    "key": "nyanga",
+    "lat": -3.1307833270075545,
+    "lon": 11.171521365913295
+  },
+  {
+    "name": "Estuaire",
+    "key": "estuaire",
+    "lat": 0.36140364956259724,
+    "lon": 9.981635870917213
+  },
+  {
+    "name": "Ogooué-Maritime",
+    "key": "ogooué-maritime",
+    "lat": -1.5526960932814846,
+    "lon": 9.650585126908915
+  },
+  {
+    "name": "Moyen-Ogooué",
+    "key": "moyen-ogooué",
+    "lat": -0.4676101542852035,
+    "lon": 10.61587874450844
+  }
+]

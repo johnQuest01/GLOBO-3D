@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Tunapuna/Piarco",
+    "key": "tunapuna/piarco",
+    "lat": 10.692403679686047,
+    "lon": -61.331889002318455
+  },
+  {
+    "name": "San Juan-Laventille",
+    "key": "san juan-laventille",
+    "lat": 10.680083575507375,
+    "lon": -61.45505812174632
+  },
+  {
+    "name": "Diego Martin",
+    "key": "diego martin",
+    "lat": 10.691144205406218,
+    "lon": -61.52491980487022
+  },
+  {
+    "name": "Port of Spain",
+    "key": "port of spain",
+    "lat": 10.653543714277259,
+    "lon": -61.51297628165996
+  },
+  {
+    "name": "Chaguanas",
+    "key": "chaguanas",
+    "lat": 10.543026028108693,
+    "lon": -61.43310847278367
+  },
+  {
+    "name": "Couva-Tabaquite-Talparo",
+    "key": "couva-tabaquite-talparo",
+    "lat": 10.42156015618874,
+    "lon": -61.357281986544365
+  },
+  {
+    "name": "San Fernando",
+    "key": "san fernando",
+    "lat": 10.2754773519195,
+    "lon": -61.461762144112654
+  },
+  {
+    "name": "Penal-Debe",
+    "key": "penal-debe",
+    "lat": 10.18850132456618,
+    "lon": -61.476036110526366
+  },
+  {
+    "name": "Siparia",
+    "key": "siparia",
+    "lat": 10.157217175188261,
+    "lon": -61.61701324066265
+  },
+  {
+    "name": "Point Fortin",
+    "key": "point fortin",
+    "lat": 10.172214463297777,
+    "lon": -61.681299964604406
+  },
+  {
+    "name": "Princes Town",
+    "key": "princes town",
+    "lat": 10.183231911171289,
+    "lon": -61.30788603421765
+  },
+  {
+    "name": "Rio Claro-Mayaro",
+    "key": "rio claro-mayaro",
+    "lat": 10.322880186607936,
+    "lon": -61.09852758369571
+  },
+  {
+    "name": "Sangre Grande",
+    "key": "sangre grande",
+    "lat": 10.664023069856,
+    "lon": -61.11420567022269
+  },
+  {
+    "name": "Eastern Tobago",
+    "key": "eastern tobago",
+    "lat": 11.286056457843426,
+    "lon": -60.60252749402192
+  },
+  {
+    "name": "Western Tobago",
+    "key": "western tobago",
+    "lat": 11.21523806052175,
+    "lon": -60.70932728841092
+  },
+  {
+    "name": "Arima",
+    "key": "arima",
+    "lat": 10.619662176967882,
+    "lon": -61.27489514815257
+  }
+]

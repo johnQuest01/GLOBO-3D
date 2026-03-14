@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Triesen",
+    "key": "triesen",
+    "lat": 47.08574525524007,
+    "lon": 9.554376005898613
+  },
+  {
+    "name": "Schaan",
+    "key": "schaan",
+    "lat": 47.17519237458277,
+    "lon": 9.531039133234058
+  },
+  {
+    "name": "Triesenberg",
+    "key": "triesenberg",
+    "lat": 47.116353817217714,
+    "lon": 9.557664004775697
+  },
+  {
+    "name": "Balzers",
+    "key": "balzers",
+    "lat": 47.06741392195845,
+    "lon": 9.511538028075737
+  },
+  {
+    "name": "Planken",
+    "key": "planken",
+    "lat": 47.16066765181281,
+    "lon": 9.556564624284604
+  },
+  {
+    "name": "Eschen",
+    "key": "eschen",
+    "lat": 47.209751236680994,
+    "lon": 9.539036171799347
+  },
+  {
+    "name": "Mauren",
+    "key": "mauren",
+    "lat": 47.226629574612346,
+    "lon": 9.540131039703269
+  },
+  {
+    "name": "Schellenberg",
+    "key": "schellenberg",
+    "lat": 47.240609493183854,
+    "lon": 9.532856001905222
+  },
+  {
+    "name": "Ruggell",
+    "key": "ruggell",
+    "lat": 47.2426159159052,
+    "lon": 9.517693846404336
+  },
+  {
+    "name": "Vaduz",
+    "key": "vaduz",
+    "lat": 47.095698739405265,
+    "lon": 9.580636158881608
+  },
+  {
+    "name": "Gamprin",
+    "key": "gamprin",
+    "lat": 47.208433534657765,
+    "lon": 9.502732286843273
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "name": "UNDOF",
+    "key": "undof",
+    "lat": 33.0891663112368,
+    "lon": 35.828482425438416
+  },
+  {
+    "name": "Homs (Hims)",
+    "key": "homs (hims)",
+    "lat": 34.53348377100494,
+    "lon": 37.58043124732844
+  },
+  {
+    "name": "Tartus",
+    "key": "tartus",
+    "lat": 34.9006978597064,
+    "lon": 36.084528851109724
+  },
+  {
+    "name": "Rif Dimashq",
+    "key": "rif dimashq",
+    "lat": 33.52982047712801,
+    "lon": 36.79281912015025
+  },
+  {
+    "name": "Hasaka (Al Haksa)",
+    "key": "hasaka (al haksa)",
+    "lat": 36.61633455765219,
+    "lon": 41.15691891372136
+  },
+  {
+    "name": "Ar Raqqah",
+    "key": "ar raqqah",
+    "lat": 36.1734083947702,
+    "lon": 38.84838971730041
+  },
+  {
+    "name": "Aleppo",
+    "key": "aleppo",
+    "lat": 36.256337831460435,
+    "lon": 37.669902586847215
+  },
+  {
+    "name": "Idlib",
+    "key": "idlib",
+    "lat": 35.86083013569795,
+    "lon": 36.63983840591075
+  },
+  {
+    "name": "Lattakia",
+    "key": "lattakia",
+    "lat": 35.60305309399605,
+    "lon": 36.0361000189197
+  },
+  {
+    "name": "As Suwayda'",
+    "key": "as suwayda'",
+    "lat": 32.799618897677846,
+    "lon": 36.80947679308142
+  },
+  {
+    "name": "Dar`a",
+    "key": "dar`a",
+    "lat": 32.81053047993215,
+    "lon": 36.20472680575695
+  },
+  {
+    "name": "Dayr Az Zawr",
+    "key": "dayr az zawr",
+    "lat": 35.31169276736812,
+    "lon": 40.409790692209356
+  },
+  {
+    "name": "Quneitra",
+    "key": "quneitra",
+    "lat": 33.040220169943744,
+    "lon": 35.890924153598434
+  },
+  {
+    "name": "Hamah",
+    "key": "hamah",
+    "lat": 35.24372961491439,
+    "lon": 37.16205840592067
+  },
+  {
+    "name": "Damascus",
+    "key": "damascus",
+    "lat": 33.5036803434231,
+    "lon": 36.30148601249445
+  }
+]

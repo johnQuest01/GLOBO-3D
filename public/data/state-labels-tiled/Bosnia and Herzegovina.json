@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Herzegovina-Neretva",
+    "key": "herzegovina-neretva",
+    "lat": 43.31124606953376,
+    "lon": 17.869094136651203
+  },
+  {
+    "name": "Trebinje",
+    "key": "trebinje",
+    "lat": 42.90564165598385,
+    "lon": 18.39776487258832
+  },
+  {
+    "name": "Foča",
+    "key": "foča",
+    "lat": 43.55944241810679,
+    "lon": 18.93130260023296
+  },
+  {
+    "name": "Banja Luka",
+    "key": "banja luka",
+    "lat": 44.68838043413998,
+    "lon": 17.12837681166526
+  },
+  {
+    "name": "Una-Sana",
+    "key": "una-sana",
+    "lat": 44.7959230384441,
+    "lon": 16.274988839362535
+  },
+  {
+    "name": "Doboj",
+    "key": "doboj",
+    "lat": 44.90333400319334,
+    "lon": 18.218214675071145
+  },
+  {
+    "name": "Posavina",
+    "key": "posavina",
+    "lat": 45.008127910359505,
+    "lon": 18.618064225637447
+  },
+  {
+    "name": "Brčko Distrikt",
+    "key": "brčko distrikt",
+    "lat": 44.84953674402512,
+    "lon": 18.830031185638884
+  },
+  {
+    "name": "Bijeljina",
+    "key": "bijeljina",
+    "lat": 44.74212284634355,
+    "lon": 19.03886036006422
+  },
+  {
+    "name": "West Bosnia",
+    "key": "west bosnia",
+    "lat": 43.99014632642872,
+    "lon": 16.8221937228111
+  },
+  {
+    "name": "West Herzegovina",
+    "key": "west herzegovina",
+    "lat": 43.379655727620644,
+    "lon": 17.445631364332584
+  },
+  {
+    "name": "Vlasenica",
+    "key": "vlasenica",
+    "lat": 44.24529705413257,
+    "lon": 19.10985198753513
+  },
+  {
+    "name": "Central Bosnia",
+    "key": "central bosnia",
+    "lat": 44.11913920288732,
+    "lon": 17.551489684390862
+  },
+  {
+    "name": "Zenica-Doboj",
+    "key": "zenica-doboj",
+    "lat": 44.329127568078064,
+    "lon": 18.20000708553542
+  },
+  {
+    "name": "Tuzla",
+    "key": "tuzla",
+    "lat": 44.558397927415214,
+    "lon": 18.599562344849684
+  },
+  {
+    "name": "Sarajevo-romanija",
+    "key": "sarajevo-romanija",
+    "lat": 43.89131386735811,
+    "lon": 18.797827477348182
+  },
+  {
+    "name": "Sarajevo",
+    "key": "sarajevo",
+    "lat": 43.81001711270286,
+    "lon": 18.383320297800363
+  },
+  {
+    "name": "Bosnian Podrinje",
+    "key": "bosnian podrinje",
+    "lat": 43.68401297724598,
+    "lon": 18.729183539616685
+  }
+]

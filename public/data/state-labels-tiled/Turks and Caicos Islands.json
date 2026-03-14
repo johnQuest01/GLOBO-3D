@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Providenciales and West Caicos",
+    "key": "providenciales and west caicos",
+    "lat": 21.806128241000053,
+    "lon": -72.3005264962499
+  },
+  {
+    "name": "South Caicos and East Caicos",
+    "key": "south caicos and east caicos",
+    "lat": 21.697723700200072,
+    "lon": -71.48400631439992
+  },
+  {
+    "name": "Middle Caicos",
+    "key": "middle caicos",
+    "lat": 21.80448368266674,
+    "lon": -71.74431989899993
+  },
+  {
+    "name": "North Caicos",
+    "key": "north caicos",
+    "lat": 21.906042792000065,
+    "lon": -71.96458899624993
+  },
+  {
+    "name": "Grand Turk",
+    "key": "grand turk",
+    "lat": 21.481075344000047,
+    "lon": -71.14037024649993
+  },
+  {
+    "name": "Salt Cay",
+    "key": "salt cay",
+    "lat": 21.328550523000068,
+    "lon": -71.20901445199993
+  }
+]

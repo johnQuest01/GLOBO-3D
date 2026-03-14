@@ -1,0 +1,206 @@
+[
+  {
+    "name": "Donegal",
+    "key": "donegal",
+    "lat": 54.93074347119691,
+    "lon": -7.87869275188775
+  },
+  {
+    "name": "Leitrim",
+    "key": "leitrim",
+    "lat": 54.200209886520874,
+    "lon": -8.058833779153963
+  },
+  {
+    "name": "Cavan",
+    "key": "cavan",
+    "lat": 54.037063275530976,
+    "lon": -7.479385481497784
+  },
+  {
+    "name": "Monaghan",
+    "key": "monaghan",
+    "lat": 54.17096876174503,
+    "lon": -6.921265640157597
+  },
+  {
+    "name": "Louth",
+    "key": "louth",
+    "lat": 53.92218118031522,
+    "lon": -6.393952438861053
+  },
+  {
+    "name": "Dublin",
+    "key": "dublin",
+    "lat": 53.35188643856823,
+    "lon": -6.220054771115798
+  },
+  {
+    "name": "Dún Laoghaire–Rathdown",
+    "key": "dún laoghaire–rathdown",
+    "lat": 53.27306685454391,
+    "lon": -6.201662851045194
+  },
+  {
+    "name": "Wicklow",
+    "key": "wicklow",
+    "lat": 52.99631057359717,
+    "lon": -6.3565737373599065
+  },
+  {
+    "name": "Wexford",
+    "key": "wexford",
+    "lat": 52.50177277225204,
+    "lon": -6.5008923409646515
+  },
+  {
+    "name": "Kilkenny",
+    "key": "kilkenny",
+    "lat": 52.515730010352385,
+    "lon": -7.222711742368985
+  },
+  {
+    "name": "Waterford",
+    "key": "waterford",
+    "lat": 52.18978539408699,
+    "lon": -7.441518426486084
+  },
+  {
+    "name": "Cork",
+    "key": "cork",
+    "lat": 51.90521810982118,
+    "lon": -8.774548444693316
+  },
+  {
+    "name": "Cork",
+    "key": "cork",
+    "lat": 51.90521810982118,
+    "lon": -8.774548444693316
+  },
+  {
+    "name": "Kerry",
+    "key": "kerry",
+    "lat": 52.1062284605392,
+    "lon": -9.777920629705177
+  },
+  {
+    "name": "Limerick",
+    "key": "limerick",
+    "lat": 52.49444677666047,
+    "lon": -8.683362391264419
+  },
+  {
+    "name": "Clare",
+    "key": "clare",
+    "lat": 52.83133468518005,
+    "lon": -8.925766486413659
+  },
+  {
+    "name": "Galway",
+    "key": "galway",
+    "lat": 53.36137349431102,
+    "lon": -8.986602296483147
+  },
+  {
+    "name": "Galway",
+    "key": "galway",
+    "lat": 53.36137349431102,
+    "lon": -8.986602296483147
+  },
+  {
+    "name": "Mayo",
+    "key": "mayo",
+    "lat": 53.848165632339274,
+    "lon": -9.37777619176989
+  },
+  {
+    "name": "Sligo",
+    "key": "sligo",
+    "lat": 54.15048290544689,
+    "lon": -8.694837558147
+  },
+  {
+    "name": "Meath",
+    "key": "meath",
+    "lat": 53.64684235686925,
+    "lon": -6.785078909344198
+  },
+  {
+    "name": "Fingal",
+    "key": "fingal",
+    "lat": 53.473261117239126,
+    "lon": -6.270849858711196
+  },
+  {
+    "name": "Kildare",
+    "key": "kildare",
+    "lat": 53.163719584241385,
+    "lon": -6.812072132772717
+  },
+  {
+    "name": "Carlow",
+    "key": "carlow",
+    "lat": 52.78118859862488,
+    "lon": -6.8288024558186935
+  },
+  {
+    "name": "Laoighis",
+    "key": "laoighis",
+    "lat": 52.94696346158536,
+    "lon": -7.277598176787179
+  },
+  {
+    "name": "South Dublin",
+    "key": "south dublin",
+    "lat": 53.283984238681626,
+    "lon": -6.385538783837812
+  },
+  {
+    "name": "Offaly",
+    "key": "offaly",
+    "lat": 53.250064863980846,
+    "lon": -7.516752343231786
+  },
+  {
+    "name": "Westmeath",
+    "key": "westmeath",
+    "lat": 53.569275723046154,
+    "lon": -7.428016526591439
+  },
+  {
+    "name": "Longford",
+    "key": "longford",
+    "lat": 53.712963888586835,
+    "lon": -7.706541422848391
+  },
+  {
+    "name": "Roscommon",
+    "key": "roscommon",
+    "lat": 53.659987670774335,
+    "lon": -8.243744513238703
+  },
+  {
+    "name": "North Tipperary",
+    "key": "north tipperary",
+    "lat": 52.83711166159207,
+    "lon": -7.9446553428516244
+  },
+  {
+    "name": "South Tipperary",
+    "key": "south tipperary",
+    "lat": 52.443309445702894,
+    "lon": -7.87637153070729
+  },
+  {
+    "name": "Waterford",
+    "key": "waterford",
+    "lat": 52.18978539408699,
+    "lon": -7.441518426486084
+  },
+  {
+    "name": "Limerick",
+    "key": "limerick",
+    "lat": 52.49444677666047,
+    "lon": -8.683362391264419
+  }
+]

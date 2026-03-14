@@ -1,0 +1,200 @@
+[
+  {
+    "name": "Sonora",
+    "key": "sonora",
+    "lat": 29.328568198754056,
+    "lon": -111.07602339870378
+  },
+  {
+    "name": "Baja California",
+    "key": "baja california",
+    "lat": 30.339836537976087,
+    "lon": -114.89636975045534
+  },
+  {
+    "name": "Chihuahua",
+    "key": "chihuahua",
+    "lat": 28.25797964901298,
+    "lon": -106.66351976022851
+  },
+  {
+    "name": "Coahuila",
+    "key": "coahuila",
+    "lat": 26.7352245384897,
+    "lon": -101.62339164982072
+  },
+  {
+    "name": "Tamaulipas",
+    "key": "tamaulipas",
+    "lat": 25.098094475959,
+    "lon": -98.87157018088078
+  },
+  {
+    "name": "Nuevo León",
+    "key": "nuevo león",
+    "lat": 25.80671128276499,
+    "lon": -99.95081183387484
+  },
+  {
+    "name": "Quintana Roo",
+    "key": "quintana roo",
+    "lat": 19.61631043874946,
+    "lon": -88.09759394331172
+  },
+  {
+    "name": "Campeche",
+    "key": "campeche",
+    "lat": 18.93908134413152,
+    "lon": -90.58420783963652
+  },
+  {
+    "name": "Tabasco",
+    "key": "tabasco",
+    "lat": 17.89163078198438,
+    "lon": -92.5007074433016
+  },
+  {
+    "name": "Chiapas",
+    "key": "chiapas",
+    "lat": 16.543062146492026,
+    "lon": -92.4584712716971
+  },
+  {
+    "name": "Colima",
+    "key": "colima",
+    "lat": 19.155217192695073,
+    "lon": -103.97392902648618
+  },
+  {
+    "name": "Nayarit",
+    "key": "nayarit",
+    "lat": 21.892597516148975,
+    "lon": -104.9111995692453
+  },
+  {
+    "name": "Baja California Sur",
+    "key": "baja california sur",
+    "lat": 25.782128752432907,
+    "lon": -111.99501562538046
+  },
+  {
+    "name": "Sinaloa",
+    "key": "sinaloa",
+    "lat": 24.72380147126045,
+    "lon": -107.23973208127607
+  },
+  {
+    "name": "Yucatán",
+    "key": "yucatán",
+    "lat": 20.678030312954043,
+    "lon": -88.95601236379648
+  },
+  {
+    "name": "Veracruz",
+    "key": "veracruz",
+    "lat": 19.78526140038875,
+    "lon": -96.87416057367217
+  },
+  {
+    "name": "Jalisco",
+    "key": "jalisco",
+    "lat": 20.881738819056057,
+    "lon": -103.47380546508552
+  },
+  {
+    "name": "Michoacán",
+    "key": "michoacán",
+    "lat": 19.275711749803712,
+    "lon": -101.85491065507661
+  },
+  {
+    "name": "Guerrero",
+    "key": "guerrero",
+    "lat": 17.791593942201864,
+    "lon": -99.97045009488222
+  },
+  {
+    "name": "Oaxaca",
+    "key": "oaxaca",
+    "lat": 17.14484285734085,
+    "lon": -96.39823610973785
+  },
+  {
+    "name": "",
+    "key": "",
+    "lat": -70.85554371549992,
+    "lon": -2.7388250397499334
+  },
+  {
+    "name": "México",
+    "key": "méxico",
+    "lat": 19.35908443578949,
+    "lon": -99.48776090607521
+  },
+  {
+    "name": "Puebla",
+    "key": "puebla",
+    "lat": 19.1369271177877,
+    "lon": -97.81256611233619
+  },
+  {
+    "name": "Morelos",
+    "key": "morelos",
+    "lat": 18.78282669742538,
+    "lon": -99.00562763648746
+  },
+  {
+    "name": "Querétaro",
+    "key": "querétaro",
+    "lat": 20.89824925385996,
+    "lon": -99.76548629432102
+  },
+  {
+    "name": "Hidalgo",
+    "key": "hidalgo",
+    "lat": 20.502162084667006,
+    "lon": -98.77019891315386
+  },
+  {
+    "name": "Guanajuato",
+    "key": "guanajuato",
+    "lat": 20.869593033691537,
+    "lon": -100.9780856257827
+  },
+  {
+    "name": "San Luis Potosí",
+    "key": "san luis potosí",
+    "lat": 22.4230574914837,
+    "lon": -100.25159271252312
+  },
+  {
+    "name": "Zacatecas",
+    "key": "zacatecas",
+    "lat": 22.91761626322805,
+    "lon": -102.700133713008
+  },
+  {
+    "name": "Aguascalientes",
+    "key": "aguascalientes",
+    "lat": 21.960806539298027,
+    "lon": -102.28909969763139
+  },
+  {
+    "name": "Durango",
+    "key": "durango",
+    "lat": 24.734776310304433,
+    "lon": -104.82103314075513
+  },
+  {
+    "name": "Tlaxcala",
+    "key": "tlaxcala",
+    "lat": 19.440370161106983,
+    "lon": -98.15703241300953
+  },
+  {
+    "name": "Distrito Federal",
+    "key": "distrito federal",
+    "lat": -15.81514546034473,
+    "lon": -47.66668120481125
+  }
+]

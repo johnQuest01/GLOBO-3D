@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Muchinga",
+    "key": "muchinga",
+    "lat": -11.301266622620657,
+    "lon": 31.797880977334344
+  },
+  {
+    "name": "Eastern",
+    "key": "eastern",
+    "lat": -13.276595798443843,
+    "lon": 32.03293192144825
+  },
+  {
+    "name": "Northern",
+    "key": "northern",
+    "lat": 9.115785759791477,
+    "lon": -11.868718148726737
+  },
+  {
+    "name": "Lusaka",
+    "key": "lusaka",
+    "lat": -15.400620812512319,
+    "lon": 29.174716173824443
+  },
+  {
+    "name": "Southern",
+    "key": "southern",
+    "lat": 7.871403323031413,
+    "lon": -11.970108022157978
+  },
+  {
+    "name": "Western",
+    "key": "western",
+    "lat": -2.1421606680643306,
+    "lon": 29.29291803490095
+  },
+  {
+    "name": "North-Western",
+    "key": "north-western",
+    "lat": -12.745192839853356,
+    "lon": 25.21732728995634
+  },
+  {
+    "name": "Luapula",
+    "key": "luapula",
+    "lat": -10.486921920959471,
+    "lon": 29.277290108956144
+  },
+  {
+    "name": "Copperbelt",
+    "key": "copperbelt",
+    "lat": -13.049339093000944,
+    "lon": 27.73889456625138
+  },
+  {
+    "name": "Central",
+    "key": "central",
+    "lat": -21.53938210084973,
+    "lon": 26.99743649044483
+  }
+]

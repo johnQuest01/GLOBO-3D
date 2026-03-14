@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Chernihiv",
+    "key": "chernihiv",
+    "lat": 51.384817040601355,
+    "lon": 32.078325982690444
+  },
+  {
+    "name": "Volyn",
+    "key": "volyn",
+    "lat": 51.09808427511423,
+    "lon": 24.84283949612568
+  },
+  {
+    "name": "Rivne",
+    "key": "rivne",
+    "lat": 50.88679952699568,
+    "lon": 26.19378229684168
+  },
+  {
+    "name": "Zhytomyr",
+    "key": "zhytomyr",
+    "lat": 50.62098942707864,
+    "lon": 28.55714275802965
+  },
+  {
+    "name": "Kiev",
+    "key": "kiev",
+    "lat": 50.366921339567355,
+    "lon": 30.486230983635632
+  },
+  {
+    "name": "Transcarpathia",
+    "key": "transcarpathia",
+    "lat": 48.37626151766708,
+    "lon": 23.185292102365008
+  },
+  {
+    "name": "Chernivtsi",
+    "key": "chernivtsi",
+    "lat": 48.2647238059973,
+    "lon": 26.083281298208433
+  },
+  {
+    "name": "Ivano-Frankivs'k",
+    "key": "ivano-frankivs'k",
+    "lat": 48.60762810245399,
+    "lon": 24.71366625086608
+  },
+  {
+    "name": "Odessa",
+    "key": "odessa",
+    "lat": 46.57584528499445,
+    "lon": 29.59249508920879
+  },
+  {
+    "name": "Vinnytsya",
+    "key": "vinnytsya",
+    "lat": 48.86052824674227,
+    "lon": 28.67273464908593
+  },
+  {
+    "name": "L'viv",
+    "key": "l'viv",
+    "lat": 49.73750332073699,
+    "lon": 24.099226329190415
+  },
+  {
+    "name": "Sumy",
+    "key": "sumy",
+    "lat": 51.25206226861606,
+    "lon": 34.12650083065027
+  },
+  {
+    "name": "Kharkiv",
+    "key": "kharkiv",
+    "lat": 49.603522084852074,
+    "lon": 36.30787665144223
+  },
+  {
+    "name": "Luhans'k",
+    "key": "luhans'k",
+    "lat": 49.03232326094922,
+    "lon": 39.05367307029235
+  },
+  {
+    "name": "Donets'k",
+    "key": "donets'k",
+    "lat": 47.987299458762116,
+    "lon": 37.639473659964864
+  },
+  {
+    "name": "Kherson",
+    "key": "kherson",
+    "lat": 46.54122146791564,
+    "lon": 33.557288840745045
+  },
+  {
+    "name": "Zaporizhzhya",
+    "key": "zaporizhzhya",
+    "lat": 47.22931349587376,
+    "lon": 35.695925673395045
+  },
+  {
+    "name": "Mykolayiv",
+    "key": "mykolayiv",
+    "lat": 47.471137277201905,
+    "lon": 31.902528980655493
+  },
+  {
+    "name": "Poltava",
+    "key": "poltava",
+    "lat": 49.74517802323571,
+    "lon": 33.7939021805783
+  },
+  {
+    "name": "Khmel'nyts'kyy",
+    "key": "khmel'nyts'kyy",
+    "lat": 49.50487449263871,
+    "lon": 27.005922638800858
+  },
+  {
+    "name": "Ternopil'",
+    "key": "ternopil'",
+    "lat": 49.42912990382197,
+    "lon": 25.689769196114568
+  },
+  {
+    "name": "Dnipropetrovs'k",
+    "key": "dnipropetrovs'k",
+    "lat": 48.284023243236184,
+    "lon": 35.03761868860739
+  },
+  {
+    "name": "Cherkasy",
+    "key": "cherkasy",
+    "lat": 49.312238866210095,
+    "lon": 31.43131240982807
+  },
+  {
+    "name": "Kirovohrad",
+    "key": "kirovohrad",
+    "lat": 48.48996838596299,
+    "lon": 31.99776685706248
+  },
+  {
+    "name": "Kiev City",
+    "key": "kiev city",
+    "lat": 50.39216109944088,
+    "lon": 30.575684981633717
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Rennell and Bellona",
+    "key": "rennell and bellona",
+    "lat": -11.665622653999927,
+    "lon": 160.2891409296667
+  },
+  {
+    "name": "Makira",
+    "key": "makira",
+    "lat": -10.586934774499928,
+    "lon": 161.90449737508337
+  },
+  {
+    "name": "Temotu",
+    "key": "temotu",
+    "lat": -10.750230313333267,
+    "lon": 165.95442168333338
+  },
+  {
+    "name": "Malaita",
+    "key": "malaita",
+    "lat": -8.96984512449993,
+    "lon": 160.99504060728572
+  },
+  {
+    "name": "Capital Territory (Honiara)",
+    "key": "capital territory (honiara)",
+    "lat": -9.437260665207987,
+    "lon": 159.97239192340948
+  },
+  {
+    "name": "Guadalcanal",
+    "key": "guadalcanal",
+    "lat": -9.592484997114443,
+    "lon": 160.14619737128993
+  },
+  {
+    "name": "Central",
+    "key": "central",
+    "lat": -21.53938210084973,
+    "lon": 26.99743649044483
+  },
+  {
+    "name": "Western",
+    "key": "western",
+    "lat": -2.1421606680643306,
+    "lon": 29.29291803490095
+  },
+  {
+    "name": "Isabel",
+    "key": "isabel",
+    "lat": -8.08020056216659,
+    "lon": 159.29357615125008
+  },
+  {
+    "name": "Choiseul",
+    "key": "choiseul",
+    "lat": 13.794248022978469,
+    "lon": -61.01369418117865
+  }
+]

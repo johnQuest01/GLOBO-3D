@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Al Jahrah",
+    "key": "al jahrah",
+    "lat": 29.5079589081578,
+    "lon": 47.566439060016904
+  },
+  {
+    "name": "Al Ahmadi",
+    "key": "al ahmadi",
+    "lat": 28.922728513932842,
+    "lon": 47.89152308757513
+  },
+  {
+    "name": "Mubarak Al-Kabeer",
+    "key": "mubarak al-kabeer",
+    "lat": 29.26769366651998,
+    "lon": 48.067414051970914
+  },
+  {
+    "name": "Hawalli",
+    "key": "hawalli",
+    "lat": 29.334891276016812,
+    "lon": 48.022210697762475
+  },
+  {
+    "name": "Al Asimah",
+    "key": "al asimah",
+    "lat": 29.33117664792771,
+    "lon": 47.916396204930074
+  },
+  {
+    "name": "Al Farwaniyah",
+    "key": "al farwaniyah",
+    "lat": 29.286774876059667,
+    "lon": 47.93440844174617
+  }
+]

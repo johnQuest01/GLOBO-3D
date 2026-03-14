@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Al Manāmah",
+    "key": "al manāmah",
+    "lat": 26.23019033407583,
+    "lon": 50.53652998141747
+  },
+  {
+    "name": "Ash Shamālīyah",
+    "key": "ash shamālīyah",
+    "lat": 26.13223109312013,
+    "lon": 50.512360110855866
+  },
+  {
+    "name": "Al Janūbīyah",
+    "key": "al janūbīyah",
+    "lat": 26.034770775184892,
+    "lon": 50.55199110160913
+  },
+  {
+    "name": "Al Wusţá",
+    "key": "al wusţá",
+    "lat": 26.15332917872615,
+    "lon": 50.56099664196985
+  },
+  {
+    "name": "Al Muḩarraq",
+    "key": "al muḩarraq",
+    "lat": 26.26296523287804,
+    "lon": 50.62376241384845
+  }
+]

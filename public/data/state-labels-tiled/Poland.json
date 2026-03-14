@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Silesian",
+    "key": "silesian",
+    "lat": 50.168983264588235,
+    "lon": 19.03870054574125
+  },
+  {
+    "name": "Lesser Poland",
+    "key": "lesser poland",
+    "lat": 49.81750372568868,
+    "lon": 20.449997452665087
+  },
+  {
+    "name": "Subcarpathian",
+    "key": "subcarpathian",
+    "lat": 50.00239205496604,
+    "lon": 22.189014354398378
+  },
+  {
+    "name": "Lower Silesian",
+    "key": "lower silesian",
+    "lat": 51.01656505717899,
+    "lon": 16.11830500820692
+  },
+  {
+    "name": "Opole",
+    "key": "opole",
+    "lat": 50.51350518950082,
+    "lon": 17.733034591871768
+  },
+  {
+    "name": "Podlachian",
+    "key": "podlachian",
+    "lat": 53.35233686215588,
+    "lon": 22.830034666999083
+  },
+  {
+    "name": "Warmian-Masurian",
+    "key": "warmian-masurian",
+    "lat": 53.84136185587609,
+    "lon": 20.934898943884455
+  },
+  {
+    "name": "Lubusz",
+    "key": "lubusz",
+    "lat": 52.16995012698851,
+    "lon": 15.401530596186673
+  },
+  {
+    "name": "West Pomeranian",
+    "key": "west pomeranian",
+    "lat": 53.48012735845794,
+    "lon": 15.496937919375407
+  },
+  {
+    "name": "Lublin",
+    "key": "lublin",
+    "lat": 51.262651038416145,
+    "lon": 22.92398468367923
+  },
+  {
+    "name": "Pomeranian",
+    "key": "pomeranian",
+    "lat": 54.073503594465684,
+    "lon": 18.301901852830973
+  },
+  {
+    "name": "Masovian",
+    "key": "masovian",
+    "lat": 52.24014108959709,
+    "lon": 21.277127984353978
+  },
+  {
+    "name": "Łódź",
+    "key": "łódź",
+    "lat": 51.56264205661892,
+    "lon": 19.383524264599778
+  },
+  {
+    "name": "Kuyavian-Pomeranian",
+    "key": "kuyavian-pomeranian",
+    "lat": 53.08211802069162,
+    "lon": 18.468985536069003
+  },
+  {
+    "name": "Greater Poland",
+    "key": "greater poland",
+    "lat": 52.32514162294466,
+    "lon": 17.361186499514467
+  },
+  {
+    "name": "Świętokrzyskie",
+    "key": "świętokrzyskie",
+    "lat": 50.76013874400255,
+    "lon": 20.839069451551826
+  }
+]

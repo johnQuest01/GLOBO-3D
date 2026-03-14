@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Boquerón",
+    "key": "boquerón",
+    "lat": -22.337851243537756,
+    "lon": -60.96688978301828
+  },
+  {
+    "name": "Presidente Hayes",
+    "key": "presidente hayes",
+    "lat": -23.685141669169195,
+    "lon": -58.666444095693926
+  },
+  {
+    "name": "Central",
+    "key": "central",
+    "lat": -21.53938210084973,
+    "lon": 26.99743649044483
+  },
+  {
+    "name": "Asunción",
+    "key": "asunción",
+    "lat": -25.332747087413146,
+    "lon": -57.612628971855266
+  },
+  {
+    "name": "Alto Paraná",
+    "key": "alto paraná",
+    "lat": -25.37526570458136,
+    "lon": -54.95160620852998
+  },
+  {
+    "name": "Itapúa",
+    "key": "itapúa",
+    "lat": -26.817313535683674,
+    "lon": -55.70891922161774
+  },
+  {
+    "name": "Ñeembucú",
+    "key": "ñeembucú",
+    "lat": -26.713888999585834,
+    "lon": -57.92877657899615
+  },
+  {
+    "name": "Misiones",
+    "key": "misiones",
+    "lat": -26.91501039019598,
+    "lon": -54.7680316365963
+  },
+  {
+    "name": "Alto Paraguay",
+    "key": "alto paraguay",
+    "lat": -21.075826837514448,
+    "lon": -58.98540371027434
+  },
+  {
+    "name": "Concepción",
+    "key": "concepción",
+    "lat": -22.745236073179104,
+    "lon": -57.1805869637039
+  },
+  {
+    "name": "Amambay",
+    "key": "amambay",
+    "lat": -22.90949251767271,
+    "lon": -56.108023812040294
+  },
+  {
+    "name": "Canindeyú",
+    "key": "canindeyú",
+    "lat": -24.18486741681698,
+    "lon": -55.20201457837984
+  },
+  {
+    "name": "San Pedro",
+    "key": "san pedro",
+    "lat": -24.207327634791547,
+    "lon": -56.581327008170355
+  },
+  {
+    "name": "Caaguazú",
+    "key": "caaguazú",
+    "lat": -25.17434750002802,
+    "lon": -55.85857341709769
+  },
+  {
+    "name": "Cordillera",
+    "key": "cordillera",
+    "lat": -25.265939949319208,
+    "lon": -56.893515111433246
+  },
+  {
+    "name": "Caazapá",
+    "key": "caazapá",
+    "lat": -26.136853936310125,
+    "lon": -55.962855283290146
+  },
+  {
+    "name": "Paraguarí",
+    "key": "paraguarí",
+    "lat": -26.009688079555513,
+    "lon": -57.08554288832221
+  },
+  {
+    "name": "Guairá",
+    "key": "guairá",
+    "lat": -25.829840277053304,
+    "lon": -56.14409085517037
+  }
+]

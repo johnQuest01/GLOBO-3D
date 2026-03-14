@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Eastern",
+    "key": "eastern",
+    "lat": -13.276595798443843,
+    "lon": 32.03293192144825
+  },
+  {
+    "name": "Southern",
+    "key": "southern",
+    "lat": 7.871403323031413,
+    "lon": -11.970108022157978
+  },
+  {
+    "name": "Western",
+    "key": "western",
+    "lat": -2.1421606680643306,
+    "lon": 29.29291803490095
+  },
+  {
+    "name": "Northern",
+    "key": "northern",
+    "lat": 9.115785759791477,
+    "lon": -11.868718148726737
+  },
+  {
+    "name": "Kigali City",
+    "key": "kigali city",
+    "lat": -1.9367866149603212,
+    "lon": 30.1110282647426
+  }
+]

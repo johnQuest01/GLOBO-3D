@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Eastern Equatoria",
+    "key": "eastern equatoria",
+    "lat": 4.666050730376743,
+    "lon": 33.953127619122824
+  },
+  {
+    "name": "Western Bahr el Ghazal",
+    "key": "western bahr el ghazal",
+    "lat": 8.375725148595153,
+    "lon": 25.950310816159675
+  },
+  {
+    "name": "Western Equatoria",
+    "key": "western equatoria",
+    "lat": 5.464820466989877,
+    "lon": 28.74944567984718
+  },
+  {
+    "name": "Central Equatoria",
+    "key": "central equatoria",
+    "lat": 4.699855791145476,
+    "lon": 31.013779019920396
+  },
+  {
+    "name": "Upper Nile",
+    "key": "upper nile",
+    "lat": 9.881199796784713,
+    "lon": 32.81552620215162
+  },
+  {
+    "name": "Jonglei",
+    "key": "jonglei",
+    "lat": 7.789748102593632,
+    "lon": 32.24165704658115
+  },
+  {
+    "name": "Unity",
+    "key": "unity",
+    "lat": 8.912374015344442,
+    "lon": 29.980691916498756
+  },
+  {
+    "name": "Northern Bahr el Ghazal",
+    "key": "northern bahr el ghazal",
+    "lat": 8.924275243382988,
+    "lon": 27.340822196756317
+  },
+  {
+    "name": "Lakes",
+    "key": "lakes",
+    "lat": 6.5376101638029995,
+    "lon": 30.02485099552701
+  },
+  {
+    "name": "Warrap",
+    "key": "warrap",
+    "lat": 7.955605666664167,
+    "lon": 28.646495737440308
+  }
+]

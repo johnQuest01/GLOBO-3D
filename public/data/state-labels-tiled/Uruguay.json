@@ -1,0 +1,116 @@
+[
+  {
+    "name": "Paysandú",
+    "key": "paysandú",
+    "lat": -32.10865089275034,
+    "lon": -57.450853762767856
+  },
+  {
+    "name": "Artigas",
+    "key": "artigas",
+    "lat": -30.552116081884495,
+    "lon": -57.08573398870685
+  },
+  {
+    "name": "Salto",
+    "key": "salto",
+    "lat": -31.3025446263341,
+    "lon": -56.9976489920504
+  },
+  {
+    "name": "Rivera",
+    "key": "rivera",
+    "lat": -31.48666220956756,
+    "lon": -55.32068204503812
+  },
+  {
+    "name": "Rocha",
+    "key": "rocha",
+    "lat": -33.89540575970896,
+    "lon": -53.9005334190756
+  },
+  {
+    "name": "Treinta y Tres",
+    "key": "treinta y tres",
+    "lat": -33.050641846134,
+    "lon": -54.22880003773573
+  },
+  {
+    "name": "Cerro Largo",
+    "key": "cerro largo",
+    "lat": -32.46624040280788,
+    "lon": -54.38320669448242
+  },
+  {
+    "name": "Maldonado",
+    "key": "maldonado",
+    "lat": -34.6103560418496,
+    "lon": -54.91552517370641
+  },
+  {
+    "name": "Canelones",
+    "key": "canelones",
+    "lat": -34.55864867269659,
+    "lon": -55.960137202020256
+  },
+  {
+    "name": "Montevideo",
+    "key": "montevideo",
+    "lat": -34.82168913516839,
+    "lon": -56.21065425774171
+  },
+  {
+    "name": "San José",
+    "key": "san josé",
+    "lat": -34.351996036360084,
+    "lon": -56.692003671966404
+  },
+  {
+    "name": "Colonia",
+    "key": "colonia",
+    "lat": -34.09118849953008,
+    "lon": -57.64530317432468
+  },
+  {
+    "name": "Soriano",
+    "key": "soriano",
+    "lat": -33.544297685465175,
+    "lon": -57.752282003358324
+  },
+  {
+    "name": "Río Negro",
+    "key": "río negro",
+    "lat": -40.17789375449912,
+    "lon": -67.6244845749424
+  },
+  {
+    "name": "Tacuarembó",
+    "key": "tacuarembó",
+    "lat": -32.12296189783997,
+    "lon": -55.801708505909474
+  },
+  {
+    "name": "Durazno",
+    "key": "durazno",
+    "lat": -32.95185021876712,
+    "lon": -56.00808742950035
+  },
+  {
+    "name": "Flores",
+    "key": "flores",
+    "lat": -33.56802087022412,
+    "lon": -56.91145975257267
+  },
+  {
+    "name": "Florida",
+    "key": "florida",
+    "lat": 28.82122225722675,
+    "lon": -83.15898237029486
+  },
+  {
+    "name": "Lavalleja",
+    "key": "lavalleja",
+    "lat": -33.83938423838014,
+    "lon": -54.96309497489436
+  }
+]

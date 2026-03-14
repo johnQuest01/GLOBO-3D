@@ -1,0 +1,194 @@
+[
+  {
+    "name": "Monte Cristi",
+    "key": "monte cristi",
+    "lat": 19.710221852951015,
+    "lon": -71.48882388644999
+  },
+  {
+    "name": "Dajabón",
+    "key": "dajabón",
+    "lat": 19.413000990229925,
+    "lon": -71.62931117666581
+  },
+  {
+    "name": "La Estrelleta",
+    "key": "la estrelleta",
+    "lat": 19.006226833669558,
+    "lon": -71.60908922961504
+  },
+  {
+    "name": "Independencia",
+    "key": "independencia",
+    "lat": 18.477212592510554,
+    "lon": -71.67951661568044
+  },
+  {
+    "name": "Pedernales",
+    "key": "pedernales",
+    "lat": 17.96659568931793,
+    "lon": -71.56514653701885
+  },
+  {
+    "name": "La Altagracia",
+    "key": "la altagracia",
+    "lat": 18.56317732845465,
+    "lon": -68.68400000026041
+  },
+  {
+    "name": "El Seybo",
+    "key": "el seybo",
+    "lat": 18.83917413130981,
+    "lon": -69.10322595246468
+  },
+  {
+    "name": "Hato Mayor",
+    "key": "hato mayor",
+    "lat": 18.90025989134531,
+    "lon": -69.41113490967133
+  },
+  {
+    "name": "Samaná",
+    "key": "samaná",
+    "lat": 19.204836147674246,
+    "lon": -69.60752228211933
+  },
+  {
+    "name": "María Trinidad Sánchez",
+    "key": "maría trinidad sánchez",
+    "lat": 19.437511358386914,
+    "lon": -69.98186084398893
+  },
+  {
+    "name": "Espaillat",
+    "key": "espaillat",
+    "lat": 19.552347960251176,
+    "lon": -70.37799040707004
+  },
+  {
+    "name": "Puerto Plata",
+    "key": "puerto plata",
+    "lat": 19.74633780840325,
+    "lon": -70.78368528186442
+  },
+  {
+    "name": "Barahona",
+    "key": "barahona",
+    "lat": 18.178808619157195,
+    "lon": -71.16654433193496
+  },
+  {
+    "name": "Azua",
+    "key": "azua",
+    "lat": 18.50613035961899,
+    "lon": -70.79626866370353
+  },
+  {
+    "name": "Peravia",
+    "key": "peravia",
+    "lat": 18.331364558348927,
+    "lon": -70.35515747364416
+  },
+  {
+    "name": "San Cristóbal",
+    "key": "san cristóbal",
+    "lat": 18.54467855384475,
+    "lon": -70.17962591670826
+  },
+  {
+    "name": "Santo Domingo",
+    "key": "santo domingo",
+    "lat": 18.541583996928082,
+    "lon": -69.88834617573106
+  },
+  {
+    "name": "Distrito Nacional",
+    "key": "distrito nacional",
+    "lat": 18.465696260540483,
+    "lon": -69.93427183494191
+  },
+  {
+    "name": "San Pedro de Macorís",
+    "key": "san pedro de macorís",
+    "lat": 18.531293867479473,
+    "lon": -69.32863438698931
+  },
+  {
+    "name": "La Romana",
+    "key": "la romana",
+    "lat": 18.485813000583107,
+    "lon": -68.96129235858206
+  },
+  {
+    "name": "Valverde",
+    "key": "valverde",
+    "lat": 19.605233432476904,
+    "lon": -71.04930541970933
+  },
+  {
+    "name": "Santiago Rodríguez",
+    "key": "santiago rodríguez",
+    "lat": 19.384337139584808,
+    "lon": -71.26799900483769
+  },
+  {
+    "name": "La Vega",
+    "key": "la vega",
+    "lat": 19.08889279001639,
+    "lon": -70.58046668143835
+  },
+  {
+    "name": "Hermanas",
+    "key": "hermanas",
+    "lat": 19.40698110624305,
+    "lon": -70.34457668746414
+  },
+  {
+    "name": "Duarte",
+    "key": "duarte",
+    "lat": 19.278179751644213,
+    "lon": -70.10785987041167
+  },
+  {
+    "name": "Santiago",
+    "key": "santiago",
+    "lat": 19.36867164430593,
+    "lon": -70.85778179591814
+  },
+  {
+    "name": "Bahoruco",
+    "key": "bahoruco",
+    "lat": 18.547923169547193,
+    "lon": -71.34060854462005
+  },
+  {
+    "name": "San Juan",
+    "key": "san juan",
+    "lat": -30.803428553804434,
+    "lon": -68.99524925873227
+  },
+  {
+    "name": "Monseñor Nouel",
+    "key": "monseñor nouel",
+    "lat": 18.90458606151001,
+    "lon": -70.40469575650394
+  },
+  {
+    "name": "Sánchez Ramírez",
+    "key": "sánchez ramírez",
+    "lat": 19.003115023168334,
+    "lon": -70.15477099711238
+  },
+  {
+    "name": "San José de Ocoa",
+    "key": "san josé de ocoa",
+    "lat": 18.63743413235074,
+    "lon": -70.51476009758613
+  },
+  {
+    "name": "Monte Plata",
+    "key": "monte plata",
+    "lat": 18.822941450865816,
+    "lon": -69.87644542383148
+  }
+]

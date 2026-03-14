@@ -1,0 +1,80 @@
+[
+  {
+    "name": "British Columbia",
+    "key": "british columbia",
+    "lat": 53.89033583278011,
+    "lon": -125.84621662013237
+  },
+  {
+    "name": "Alberta",
+    "key": "alberta",
+    "lat": 53.474480458498654,
+    "lon": -115.4688483853324
+  },
+  {
+    "name": "Saskatchewan",
+    "key": "saskatchewan",
+    "lat": 54.327270134105774,
+    "lon": -105.9613763376474
+  },
+  {
+    "name": "Manitoba",
+    "key": "manitoba",
+    "lat": 55.59386455031432,
+    "lon": -95.97277388575206
+  },
+  {
+    "name": "Ontario",
+    "key": "ontario",
+    "lat": 48.47449794391101,
+    "lon": -83.77233583665402
+  },
+  {
+    "name": "Québec",
+    "key": "québec",
+    "lat": 54.453256948816694,
+    "lon": -69.59264044151212
+  },
+  {
+    "name": "New Brunswick",
+    "key": "new brunswick",
+    "lat": 46.62886285450201,
+    "lon": -66.33398761955084
+  },
+  {
+    "name": "Yukon",
+    "key": "yukon",
+    "lat": 63.89949977649795,
+    "lon": -133.05122475425082
+  },
+  {
+    "name": "Nunavut",
+    "key": "nunavut",
+    "lat": 68.0269939539972,
+    "lon": -73.5955099813473
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "key": "newfoundland and labrador",
+    "lat": 55.18755644377996,
+    "lon": -62.659972544710115
+  },
+  {
+    "name": "Nova Scotia",
+    "key": "nova scotia",
+    "lat": 44.95529475080229,
+    "lon": -63.95772654618597
+  },
+  {
+    "name": "Northwest Territories",
+    "key": "northwest territories",
+    "lat": 66.09860514580205,
+    "lon": -126.12421618821953
+  },
+  {
+    "name": "Prince Edward Island",
+    "key": "prince edward island",
+    "lat": 46.43534908581486,
+    "lon": -63.27039773485178
+  }
+]

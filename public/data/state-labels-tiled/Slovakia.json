@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Žilinský",
+    "key": "žilinský",
+    "lat": 49.24651899865787,
+    "lon": 19.193823995801807
+  },
+  {
+    "name": "Prešov",
+    "key": "prešov",
+    "lat": 49.11465628897906,
+    "lon": 21.057220829566713
+  },
+  {
+    "name": "Košický",
+    "key": "košický",
+    "lat": 48.73024952283376,
+    "lon": 21.312156530810885
+  },
+  {
+    "name": "Bratislavský",
+    "key": "bratislavský",
+    "lat": 48.23389372707883,
+    "lon": 17.205814116733443
+  },
+  {
+    "name": "Trnavský",
+    "key": "trnavský",
+    "lat": 48.40416242825898,
+    "lon": 17.489143825857166
+  },
+  {
+    "name": "Trenciansky",
+    "key": "trenciansky",
+    "lat": 48.859776381621515,
+    "lon": 18.158745817093312
+  },
+  {
+    "name": "Banskobystrický",
+    "key": "banskobystrický",
+    "lat": 48.47318459226018,
+    "lon": 19.489446059122855
+  },
+  {
+    "name": "Nitriansky",
+    "key": "nitriansky",
+    "lat": 48.17918850202554,
+    "lon": 18.37207263079833
+  }
+]

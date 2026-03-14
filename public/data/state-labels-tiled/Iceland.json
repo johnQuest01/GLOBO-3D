@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Austurland",
+    "key": "austurland",
+    "lat": 64.97818628358989,
+    "lon": -15.313144602199479
+  },
+  {
+    "name": "Suðurland",
+    "key": "suðurland",
+    "lat": 64.09882005109338,
+    "lon": -19.526184280474105
+  },
+  {
+    "name": "Suðurnes",
+    "key": "suðurnes",
+    "lat": 63.92270984133732,
+    "lon": -22.16383231328618
+  },
+  {
+    "name": "Reykjavík",
+    "key": "reykjavík",
+    "lat": 64.12506450476165,
+    "lon": -21.86897793327851
+  },
+  {
+    "name": "Höfuðborgarsvæði",
+    "key": "höfuðborgarsvæði",
+    "lat": 64.20978968759209,
+    "lon": -21.618581318088204
+  },
+  {
+    "name": "Vesturland",
+    "key": "vesturland",
+    "lat": 64.83618342668312,
+    "lon": -21.86957311903284
+  },
+  {
+    "name": "Vestfirðir",
+    "key": "vestfirðir",
+    "lat": 65.74987033452791,
+    "lon": -22.324148575178423
+  },
+  {
+    "name": "Norðurland vestra",
+    "key": "norðurland vestra",
+    "lat": 65.48225108314095,
+    "lon": -19.81778233766791
+  },
+  {
+    "name": "Norðurland eystra",
+    "key": "norðurland eystra",
+    "lat": 65.78097124799345,
+    "lon": -16.96560322308867
+  }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "name": "Rio Grande do Sul",
+    "key": "rio grande do sul",
+    "lat": -30.153199558333487,
+    "lon": -53.25455847870274
+  },
+  {
+    "name": "Roraima",
+    "key": "roraima",
+    "lat": 2.49245759944284,
+    "lon": -61.794106243741105
+  },
+  {
+    "name": "Pará",
+    "key": "pará",
+    "lat": -2.3350180899593105,
+    "lon": -52.65959160880838
+  },
+  {
+    "name": "Acre",
+    "key": "acre",
+    "lat": -9.612033493293943,
+    "lon": -70.83911521566198
+  },
+  {
+    "name": "Amapá",
+    "key": "amapá",
+    "lat": 1.513542948480184,
+    "lon": -52.37435445798343
+  },
+  {
+    "name": "Mato Grosso do Sul",
+    "key": "mato grosso do sul",
+    "lat": -20.4422262164256,
+    "lon": -54.86884462358447
+  },
+  {
+    "name": "Paraná",
+    "key": "paraná",
+    "lat": -24.728190322972118,
+    "lon": -51.47999419480559
+  },
+  {
+    "name": "Santa Catarina",
+    "key": "santa catarina",
+    "lat": -27.14274934267312,
+    "lon": -50.9362790079829
+  },
+  {
+    "name": "Amazonas",
+    "key": "amazonas",
+    "lat": -2.8576650622069177,
+    "lon": -64.80381048226928
+  },
+  {
+    "name": "Rondônia",
+    "key": "rondônia",
+    "lat": -10.60610130214494,
+    "lon": -63.335969612817294
+  },
+  {
+    "name": "Mato Grosso",
+    "key": "mato grosso",
+    "lat": -13.357759735923764,
+    "lon": -56.19962381182115
+  },
+  {
+    "name": "Maranhão",
+    "key": "maranhão",
+    "lat": -5.381911552366737,
+    "lon": -45.48510660832836
+  },
+  {
+    "name": "Piauí",
+    "key": "piauí",
+    "lat": -7.222599513397343,
+    "lon": -42.946126161677405
+  },
+  {
+    "name": "Ceará",
+    "key": "ceará",
+    "lat": -5.253498343080372,
+    "lon": -39.59908034845174
+  },
+  {
+    "name": "Rio Grande do Norte",
+    "key": "rio grande do norte",
+    "lat": -5.976395836256734,
+    "lon": -36.8610994697404
+  },
+  {
+    "name": "Paraíba",
+    "key": "paraíba",
+    "lat": -7.146735127830362,
+    "lon": -36.856789478022826
+  },
+  {
+    "name": "Pernambuco",
+    "key": "pernambuco",
+    "lat": -8.285358067333851,
+    "lon": -38.101968229512
+  },
+  {
+    "name": "Alagoas",
+    "key": "alagoas",
+    "lat": -9.460682051427916,
+    "lon": -36.60470402374332
+  },
+  {
+    "name": "Sergipe",
+    "key": "sergipe",
+    "lat": -10.569597947561961,
+    "lon": -37.458687577807105
+  },
+  {
+    "name": "Bahia",
+    "key": "bahia",
+    "lat": -12.459100802092221,
+    "lon": -41.79396478681005
+  },
+  {
+    "name": "Espírito Santo",
+    "key": "espírito santo",
+    "lat": -19.578264713493983,
+    "lon": -40.84503095143581
+  },
+  {
+    "name": "Rio de Janeiro",
+    "key": "rio de janeiro",
+    "lat": -22.276924168024415,
+    "lon": -43.00609774696197
+  },
+  {
+    "name": "São Paulo",
+    "key": "são paulo",
+    "lat": -22.4,
+    "lon": -48.6
+  },
+  {
+    "name": "Goiás",
+    "key": "goiás",
+    "lat": -15.623098991574798,
+    "lon": -49.100081489442786
+  },
+  {
+    "name": "Distrito Federal",
+    "key": "distrito federal",
+    "lat": -15.81514546034473,
+    "lon": -47.66668120481125
+  },
+  {
+    "name": "Minas Gerais",
+    "key": "minas gerais",
+    "lat": -18.456156090779718,
+    "lon": -45.195930853844565
+  },
+  {
+    "name": "Tocantins",
+    "key": "tocantins",
+    "lat": -9.548420124661343,
+    "lon": -48.0968051102069
+  }
+]

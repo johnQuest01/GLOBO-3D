@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Saint Ann",
+    "key": "saint ann",
+    "lat": 18.331607010820008,
+    "lon": -77.28322659852853
+  },
+  {
+    "name": "Trelawny",
+    "key": "trelawny",
+    "lat": 18.35680795134929,
+    "lon": -77.64153797325572
+  },
+  {
+    "name": "Saint James",
+    "key": "saint james",
+    "lat": 13.188462540935056,
+    "lon": -59.6250307104392
+  },
+  {
+    "name": "Hanover",
+    "key": "hanover",
+    "lat": 18.353591818781553,
+    "lon": -78.15741294458591
+  },
+  {
+    "name": "Westmoreland",
+    "key": "westmoreland",
+    "lat": 18.20620799446479,
+    "lon": -78.076085628011
+  },
+  {
+    "name": "Saint Elizabeth",
+    "key": "saint elizabeth",
+    "lat": 18.038458864008327,
+    "lon": -77.73359938064787
+  },
+  {
+    "name": "Manchester",
+    "key": "manchester",
+    "lat": 17.991595946980283,
+    "lon": -77.47751691364357
+  },
+  {
+    "name": "Clarendon",
+    "key": "clarendon",
+    "lat": 17.95589148558231,
+    "lon": -77.28025421101756
+  },
+  {
+    "name": "Saint Catherine",
+    "key": "saint catherine",
+    "lat": 18.03992150085184,
+    "lon": -76.98141975251042
+  },
+  {
+    "name": "Saint Andrew",
+    "key": "saint andrew",
+    "lat": 12.136522499923833,
+    "lon": -61.64461729593943
+  },
+  {
+    "name": "Kingston",
+    "key": "kingston",
+    "lat": 17.968624673083546,
+    "lon": -76.7618983437197
+  },
+  {
+    "name": "Saint Thomas",
+    "key": "saint thomas",
+    "lat": 18.337291879400063,
+    "lon": -64.89426966739993
+  },
+  {
+    "name": "Portland",
+    "key": "portland",
+    "lat": 18.14968804041199,
+    "lon": -76.56501403247856
+  },
+  {
+    "name": "Saint Mary",
+    "key": "saint mary",
+    "lat": 17.037359494018034,
+    "lon": -61.82234004421139
+  }
+]

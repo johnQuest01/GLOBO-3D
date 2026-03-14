@@ -1,0 +1,716 @@
+[
+  {
+    "name": "Rujienas",
+    "key": "rujienas",
+    "lat": 57.93525377884226,
+    "lon": 25.31597302492827
+  },
+  {
+    "name": "Mazsalacas",
+    "key": "mazsalacas",
+    "lat": 57.95718373980767,
+    "lon": 25.042396526324165
+  },
+  {
+    "name": "Alojas",
+    "key": "alojas",
+    "lat": 57.82210365978246,
+    "lon": 24.839875005576257
+  },
+  {
+    "name": "Nauksenu",
+    "key": "nauksenu",
+    "lat": 57.90701443028202,
+    "lon": 25.499521409593466
+  },
+  {
+    "name": "Salacgrivas",
+    "key": "salacgrivas",
+    "lat": 57.723746725831184,
+    "lon": 24.50167789330536
+  },
+  {
+    "name": "Apes",
+    "key": "apes",
+    "lat": 57.499529976576355,
+    "lon": 26.455759601567973
+  },
+  {
+    "name": "Valkas",
+    "key": "valkas",
+    "lat": 57.66253818395668,
+    "lon": 25.986150671578233
+  },
+  {
+    "name": "Aluksne",
+    "key": "aluksne",
+    "lat": 57.38725913672569,
+    "lon": 27.126356454141362
+  },
+  {
+    "name": "Vilakas",
+    "key": "vilakas",
+    "lat": 57.21240115916834,
+    "lon": 27.643221042694993
+  },
+  {
+    "name": "Baltinavas",
+    "key": "baltinavas",
+    "lat": 56.955152554107066,
+    "lon": 27.644052231005627
+  },
+  {
+    "name": "Karsavas",
+    "key": "karsavas",
+    "lat": 56.780169493877025,
+    "lon": 27.5868319278012
+  },
+  {
+    "name": "Ciblas",
+    "key": "ciblas",
+    "lat": 56.636466251024686,
+    "lon": 27.793104448971555
+  },
+  {
+    "name": "Ludzas",
+    "key": "ludzas",
+    "lat": 56.38753804735103,
+    "lon": 27.863850546366034
+  },
+  {
+    "name": "Zilupes",
+    "key": "zilupes",
+    "lat": 56.28650743591017,
+    "lon": 28.11086926595845
+  },
+  {
+    "name": "Neretas",
+    "key": "neretas",
+    "lat": 56.323777011484005,
+    "lon": 25.14623600590593
+  },
+  {
+    "name": "Viesites",
+    "key": "viesites",
+    "lat": 56.27402743462301,
+    "lon": 25.523404896949096
+  },
+  {
+    "name": "Vecumnieku",
+    "key": "vecumnieku",
+    "lat": 56.52426107066823,
+    "lon": 24.69650555660398
+  },
+  {
+    "name": "Saldus",
+    "key": "saldus",
+    "lat": 56.594070165513095,
+    "lon": 22.359111676918186
+  },
+  {
+    "name": "Rucavas",
+    "key": "rucavas",
+    "lat": 56.23157546541946,
+    "lon": 21.264950356394717
+  },
+  {
+    "name": "Priekules",
+    "key": "priekules",
+    "lat": 56.40787050802008,
+    "lon": 21.56811663704379
+  },
+  {
+    "name": "Vainodes",
+    "key": "vainodes",
+    "lat": 56.444194766943305,
+    "lon": 21.8749813695101
+  },
+  {
+    "name": "Auces",
+    "key": "auces",
+    "lat": 56.47429242488404,
+    "lon": 22.930262930918072
+  },
+  {
+    "name": "Bauska",
+    "key": "bauska",
+    "lat": 56.39247218139717,
+    "lon": 24.229436277677674
+  },
+  {
+    "name": "Tervetes",
+    "key": "tervetes",
+    "lat": 56.398721550663694,
+    "lon": 23.298506490494198
+  },
+  {
+    "name": "Jelgava",
+    "key": "jelgava",
+    "lat": 56.60697641141864,
+    "lon": 23.64635346235472
+  },
+  {
+    "name": "Rundales",
+    "key": "rundales",
+    "lat": 56.39074578275953,
+    "lon": 23.989127047081155
+  },
+  {
+    "name": "Aknistes",
+    "key": "aknistes",
+    "lat": 56.12565877057141,
+    "lon": 25.806071742312145
+  },
+  {
+    "name": "Ilukstes",
+    "key": "ilukstes",
+    "lat": 56.01292133043233,
+    "lon": 26.074513805667014
+  },
+  {
+    "name": "Daugavpils",
+    "key": "daugavpils",
+    "lat": 55.94562338255812,
+    "lon": 26.60944819758349
+  },
+  {
+    "name": "Dagdas",
+    "key": "dagdas",
+    "lat": 56.145416953880805,
+    "lon": 27.75162339436663
+  },
+  {
+    "name": "Kraslavas",
+    "key": "kraslavas",
+    "lat": 55.94201386718351,
+    "lon": 27.387322617509415
+  },
+  {
+    "name": "Nicas",
+    "key": "nicas",
+    "lat": 56.38079886036439,
+    "lon": 21.045478048748418
+  },
+  {
+    "name": "Liepāja",
+    "key": "liepāja",
+    "lat": 56.542481028966925,
+    "lon": 21.057419536576468
+  },
+  {
+    "name": "Grobinas",
+    "key": "grobinas",
+    "lat": 56.51424942920637,
+    "lon": 21.156820278593024
+  },
+  {
+    "name": "Pavilostas",
+    "key": "pavilostas",
+    "lat": 56.8047146015295,
+    "lon": 21.26506503256134
+  },
+  {
+    "name": "Ventspils",
+    "key": "ventspils",
+    "lat": 57.254863154617325,
+    "lon": 21.746831988495583
+  },
+  {
+    "name": "Ventspils",
+    "key": "ventspils",
+    "lat": 57.254863154617325,
+    "lon": 21.746831988495583
+  },
+  {
+    "name": "Dundagas",
+    "key": "dundagas",
+    "lat": 57.57670904209001,
+    "lon": 22.40302253409049
+  },
+  {
+    "name": "Rojas",
+    "key": "rojas",
+    "lat": 57.52660166204132,
+    "lon": 22.72819352363996
+  },
+  {
+    "name": "Talsi",
+    "key": "talsi",
+    "lat": 57.29840299967887,
+    "lon": 22.685007625053963
+  },
+  {
+    "name": "Mersraga",
+    "key": "mersraga",
+    "lat": 57.32226419679522,
+    "lon": 23.083231691489356
+  },
+  {
+    "name": "Engures",
+    "key": "engures",
+    "lat": 57.11712320934636,
+    "lon": 23.264002126083653
+  },
+  {
+    "name": "Jurmala",
+    "key": "jurmala",
+    "lat": 56.97216895969294,
+    "lon": 23.667962263876472
+  },
+  {
+    "name": "Riga",
+    "key": "riga",
+    "lat": 56.96618246910554,
+    "lon": 24.08478670656389
+  },
+  {
+    "name": "Carnikavas",
+    "key": "carnikavas",
+    "lat": 57.11231841569023,
+    "lon": 24.219228796304282
+  },
+  {
+    "name": "Saulkrastu",
+    "key": "saulkrastu",
+    "lat": 57.23476991903041,
+    "lon": 24.37484485176145
+  },
+  {
+    "name": "Limbaži",
+    "key": "limbaži",
+    "lat": 57.45250525708957,
+    "lon": 24.62283572170216
+  },
+  {
+    "name": "Smiltenes",
+    "key": "smiltenes",
+    "lat": 57.42124544682988,
+    "lon": 25.997547332883084
+  },
+  {
+    "name": "Balvu",
+    "key": "balvu",
+    "lat": 57.00838467815321,
+    "lon": 27.26363080358298
+  },
+  {
+    "name": "Strencu",
+    "key": "strencu",
+    "lat": 57.62467889741316,
+    "lon": 25.739994506141528
+  },
+  {
+    "name": "Beverinas",
+    "key": "beverinas",
+    "lat": 57.509383226026465,
+    "lon": 25.576380618898984
+  },
+  {
+    "name": "Burtnieku",
+    "key": "burtnieku",
+    "lat": 57.70628383930771,
+    "lon": 25.403341288309786
+  },
+  {
+    "name": "Kocenu",
+    "key": "kocenu",
+    "lat": 57.53610736811053,
+    "lon": 25.184698571706697
+  },
+  {
+    "name": "Rezeknes",
+    "key": "rezeknes",
+    "lat": 56.526583530028944,
+    "lon": 27.24587458433689
+  },
+  {
+    "name": "Vecpiebalgas",
+    "key": "vecpiebalgas",
+    "lat": 57.171930634770966,
+    "lon": 25.70698662856004
+  },
+  {
+    "name": "Raunas",
+    "key": "raunas",
+    "lat": 57.24588523713396,
+    "lon": 25.93442610004446
+  },
+  {
+    "name": "Priekulu",
+    "key": "priekulu",
+    "lat": 57.36778759936106,
+    "lon": 25.49918131002656
+  },
+  {
+    "name": "Pargaujas",
+    "key": "pargaujas",
+    "lat": 57.36282198687017,
+    "lon": 25.10804084264825
+  },
+  {
+    "name": "Krimuldas",
+    "key": "krimuldas",
+    "lat": 57.26615290798029,
+    "lon": 24.78903710091896
+  },
+  {
+    "name": "Gulbene",
+    "key": "gulbene",
+    "lat": 57.18772817260991,
+    "lon": 26.513149472827028
+  },
+  {
+    "name": "Rugaju",
+    "key": "rugaju",
+    "lat": 56.97400871180402,
+    "lon": 27.081608792754423
+  },
+  {
+    "name": "Jaunpiebalgas",
+    "key": "jaunpiebalgas",
+    "lat": 57.1633401066206,
+    "lon": 25.9676764070605
+  },
+  {
+    "name": "Aglonas",
+    "key": "aglonas",
+    "lat": 56.128806964719615,
+    "lon": 27.08201850539969
+  },
+  {
+    "name": "Riebinu",
+    "key": "riebinu",
+    "lat": 56.39022953576443,
+    "lon": 26.783194239222755
+  },
+  {
+    "name": "Vilanu",
+    "key": "vilanu",
+    "lat": 56.567905985992425,
+    "lon": 26.833403340112046
+  },
+  {
+    "name": "Babites",
+    "key": "babites",
+    "lat": 56.91102268887453,
+    "lon": 23.782140200267147
+  },
+  {
+    "name": "Garkalnes",
+    "key": "garkalnes",
+    "lat": 57.02304410748526,
+    "lon": 24.35657335244966
+  },
+  {
+    "name": "Kekavas",
+    "key": "kekavas",
+    "lat": 56.80064783293112,
+    "lon": 24.23966250282222
+  },
+  {
+    "name": "Marupes",
+    "key": "marupes",
+    "lat": 56.89746877551356,
+    "lon": 23.951637482333922
+  },
+  {
+    "name": "Olaines",
+    "key": "olaines",
+    "lat": 56.82135122046814,
+    "lon": 23.942562198543758
+  },
+  {
+    "name": "Salaspils",
+    "key": "salaspils",
+    "lat": 56.89898428094978,
+    "lon": 24.328894998755164
+  },
+  {
+    "name": "Stopinu",
+    "key": "stopinu",
+    "lat": 56.94015769825914,
+    "lon": 24.313375367958837
+  },
+  {
+    "name": "Sejas",
+    "key": "sejas",
+    "lat": 57.19245234814732,
+    "lon": 24.561916604267868
+  },
+  {
+    "name": "Malpils",
+    "key": "malpils",
+    "lat": 56.985594614150095,
+    "lon": 25.008703099368528
+  },
+  {
+    "name": "Siguldas",
+    "key": "siguldas",
+    "lat": 57.069197641408,
+    "lon": 24.940641471701547
+  },
+  {
+    "name": "Madona",
+    "key": "madona",
+    "lat": 56.88364746365325,
+    "lon": 26.374499585681058
+  },
+  {
+    "name": "Lubanas",
+    "key": "lubanas",
+    "lat": 56.906912700480724,
+    "lon": 26.870350400150823
+  },
+  {
+    "name": "Varaklanu",
+    "key": "varaklanu",
+    "lat": 56.63622899991838,
+    "lon": 26.65675678075081
+  },
+  {
+    "name": "Amatas",
+    "key": "amatas",
+    "lat": 57.08054601438703,
+    "lon": 25.307603619311564
+  },
+  {
+    "name": "Erglu",
+    "key": "erglu",
+    "lat": 56.90853175052554,
+    "lon": 25.618547584546224
+  },
+  {
+    "name": "Cesvaines",
+    "key": "cesvaines",
+    "lat": 57.01411650135543,
+    "lon": 26.307541349253835
+  },
+  {
+    "name": "Ogre",
+    "key": "ogre",
+    "lat": 56.83906911699612,
+    "lon": 25.076108293737747
+  },
+  {
+    "name": "Ropazu",
+    "key": "ropazu",
+    "lat": 56.95906453090336,
+    "lon": 24.61736192191515
+  },
+  {
+    "name": "Ikskiles",
+    "key": "ikskiles",
+    "lat": 56.84439671278804,
+    "lon": 24.534614757465068
+  },
+  {
+    "name": "Baldones",
+    "key": "baldones",
+    "lat": 56.71622963174209,
+    "lon": 24.391131883979238
+  },
+  {
+    "name": "Keguma",
+    "key": "keguma",
+    "lat": 56.70172570332852,
+    "lon": 24.739510195938777
+  },
+  {
+    "name": "Iecavas",
+    "key": "iecavas",
+    "lat": 56.62931211516195,
+    "lon": 24.23909564814562
+  },
+  {
+    "name": "Plavinu",
+    "key": "plavinu",
+    "lat": 56.6950707056057,
+    "lon": 25.71107256750211
+  },
+  {
+    "name": "Kokneses",
+    "key": "kokneses",
+    "lat": 56.71608038744987,
+    "lon": 25.461717111405545
+  },
+  {
+    "name": "Aizkraukles",
+    "key": "aizkraukles",
+    "lat": 56.6614578251385,
+    "lon": 25.233008683923607
+  },
+  {
+    "name": "Skriveru",
+    "key": "skriveru",
+    "lat": 56.67222440348342,
+    "lon": 25.097280847183328
+  },
+  {
+    "name": "Lielvardes",
+    "key": "lielvardes",
+    "lat": 56.722955917661444,
+    "lon": 24.988523576501837
+  },
+  {
+    "name": "Jaunjelgavas",
+    "key": "jaunjelgavas",
+    "lat": 56.54012321131711,
+    "lon": 25.22025594233966
+  },
+  {
+    "name": "Preilu",
+    "key": "preilu",
+    "lat": 56.23289222019978,
+    "lon": 26.69084613119399
+  },
+  {
+    "name": "Livanu",
+    "key": "livanu",
+    "lat": 56.335817728555305,
+    "lon": 26.379437217653454
+  },
+  {
+    "name": "Varkavas",
+    "key": "varkavas",
+    "lat": 56.19927550478569,
+    "lon": 26.47999418535835
+  },
+  {
+    "name": "Jekabpils",
+    "key": "jekabpils",
+    "lat": 56.28329588660495,
+    "lon": 26.005088652873553
+  },
+  {
+    "name": "Krustpils",
+    "key": "krustpils",
+    "lat": 56.52667580812202,
+    "lon": 26.137007480370915
+  },
+  {
+    "name": "Salas",
+    "key": "salas",
+    "lat": 56.519049353744656,
+    "lon": 25.72276147714615
+  },
+  {
+    "name": "Aizputes",
+    "key": "aizputes",
+    "lat": 56.711472356688894,
+    "lon": 21.585547004715472
+  },
+  {
+    "name": "Kuldigas",
+    "key": "kuldigas",
+    "lat": 56.926220288281804,
+    "lon": 21.886271385662056
+  },
+  {
+    "name": "Alsungas",
+    "key": "alsungas",
+    "lat": 56.958393828032726,
+    "lon": 21.53249765210495
+  },
+  {
+    "name": "Skrundas",
+    "key": "skrundas",
+    "lat": 56.64528219246205,
+    "lon": 21.943412912504463
+  },
+  {
+    "name": "Kandavas",
+    "key": "kandavas",
+    "lat": 56.949724889791796,
+    "lon": 22.671555887194422
+  },
+  {
+    "name": "Tukums",
+    "key": "tukums",
+    "lat": 56.974592455923215,
+    "lon": 23.219110667308037
+  },
+  {
+    "name": "Dobele",
+    "key": "dobele",
+    "lat": 56.64057524219113,
+    "lon": 23.155705761461697
+  },
+  {
+    "name": "Jaunpils",
+    "key": "jaunpils",
+    "lat": 56.75077804415139,
+    "lon": 22.901499585357566
+  },
+  {
+    "name": "Brocenu",
+    "key": "brocenu",
+    "lat": 56.705157726922536,
+    "lon": 22.674606495992975
+  },
+  {
+    "name": "Ozolnieku",
+    "key": "ozolnieku",
+    "lat": 56.64807137034745,
+    "lon": 23.94031166519118
+  },
+  {
+    "name": "Jelgava",
+    "key": "jelgava",
+    "lat": 56.60697641141864,
+    "lon": 23.64635346235472
+  },
+  {
+    "name": "Daugavpils",
+    "key": "daugavpils",
+    "lat": 55.94562338255812,
+    "lon": 26.60944819758349
+  },
+  {
+    "name": "Rezekne",
+    "key": "rezekne",
+    "lat": 56.50514473414212,
+    "lon": 27.329033426451474
+  },
+  {
+    "name": "Durbes",
+    "key": "durbes",
+    "lat": 56.63992292975937,
+    "lon": 21.36322179662859
+  },
+  {
+    "name": "Incukalna",
+    "key": "incukalna",
+    "lat": 57.09142880894236,
+    "lon": 24.630051432327736
+  },
+  {
+    "name": "Ādaži",
+    "key": "ādaži",
+    "lat": 57.14322012396953,
+    "lon": 24.365216539451716
+  },
+  {
+    "name": "Valmiera",
+    "key": "valmiera",
+    "lat": 57.533349763430806,
+    "lon": 25.417402578491163
+  },
+  {
+    "name": "Cesu",
+    "key": "cesu",
+    "lat": 57.258573366827406,
+    "lon": 25.36362155670945
+  },
+  {
+    "name": "Ligatnes",
+    "key": "ligatnes",
+    "lat": 57.21399227508341,
+    "lon": 25.02542568860464
+  },
+  {
+    "name": "Jekabpils",
+    "key": "jekabpils",
+    "lat": 56.28329588660495,
+    "lon": 26.005088652873553
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Gros Islet",
+    "key": "gros islet",
+    "lat": 14.044600834111193,
+    "lon": -60.94913969723923
+  },
+  {
+    "name": "Castries",
+    "key": "castries",
+    "lat": 13.960953262720395,
+    "lon": -60.97638226136977
+  },
+  {
+    "name": "Anse-la-Raye",
+    "key": "anse-la-raye",
+    "lat": 13.924543561386244,
+    "lon": -61.03524890766096
+  },
+  {
+    "name": "Soufrière",
+    "key": "soufrière",
+    "lat": 13.848167894682582,
+    "lon": -61.00817877717882
+  },
+  {
+    "name": "Choiseul",
+    "key": "choiseul",
+    "lat": 13.794248022978469,
+    "lon": -61.01369418117865
+  },
+  {
+    "name": "Laborie",
+    "key": "laborie",
+    "lat": 13.762081807124625,
+    "lon": -60.98351028326136
+  },
+  {
+    "name": "Vieux Fort",
+    "key": "vieux fort",
+    "lat": 13.797406770631596,
+    "lon": -60.95681826474984
+  },
+  {
+    "name": "Micoud",
+    "key": "micoud",
+    "lat": 13.824959946281023,
+    "lon": -60.92839981261774
+  },
+  {
+    "name": "Praslin",
+    "key": "praslin",
+    "lat": 13.879107528167388,
+    "lon": -60.926355987999415
+  },
+  {
+    "name": "Dennery",
+    "key": "dennery",
+    "lat": 13.949859614610165,
+    "lon": -60.91145033245831
+  },
+  {
+    "name": "Dauphin",
+    "key": "dauphin",
+    "lat": 14.024926998174966,
+    "lon": -60.91222741804087
+  }
+]

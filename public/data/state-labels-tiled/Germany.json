@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Sachsen",
+    "key": "sachsen",
+    "lat": 50.93305801123023,
+    "lon": 13.221404553863488
+  },
+  {
+    "name": "Bayern",
+    "key": "bayern",
+    "lat": 48.872017721254046,
+    "lon": 11.188729318552232
+  },
+  {
+    "name": "Rheinland-Pfalz",
+    "key": "rheinland-pfalz",
+    "lat": 49.93515990479622,
+    "lon": 7.422882086133392
+  },
+  {
+    "name": "Saarland",
+    "key": "saarland",
+    "lat": 49.38462260426976,
+    "lon": 6.828075601929425
+  },
+  {
+    "name": "Schleswig-Holstein",
+    "key": "schleswig-holstein",
+    "lat": 54.14010713635137,
+    "lon": 9.86010925701876
+  },
+  {
+    "name": "Niedersachsen",
+    "key": "niedersachsen",
+    "lat": 52.652143810225965,
+    "lon": 9.12005962013506
+  },
+  {
+    "name": "Nordrhein-Westfalen",
+    "key": "nordrhein-westfalen",
+    "lat": 51.57460463501874,
+    "lon": 7.652738560927046
+  },
+  {
+    "name": "Baden-Württemberg",
+    "key": "baden-württemberg",
+    "lat": 48.472088444863054,
+    "lon": 9.010559908558985
+  },
+  {
+    "name": "Brandenburg",
+    "key": "brandenburg",
+    "lat": 52.58673243673714,
+    "lon": 13.323125149673066
+  },
+  {
+    "name": "Mecklenburg-Vorpommern",
+    "key": "mecklenburg-vorpommern",
+    "lat": 53.64205486375246,
+    "lon": 12.383407325432435
+  },
+  {
+    "name": "Bremen",
+    "key": "bremen",
+    "lat": 53.12433388965725,
+    "lon": 8.747218377186346
+  },
+  {
+    "name": "Hamburg",
+    "key": "hamburg",
+    "lat": 53.53727709616368,
+    "lon": 9.975938785916373
+  },
+  {
+    "name": "Hessen",
+    "key": "hessen",
+    "lat": 50.5343601956415,
+    "lon": 9.036625776708217
+  },
+  {
+    "name": "Thüringen",
+    "key": "thüringen",
+    "lat": 50.94169936938036,
+    "lon": 11.106705607859856
+  },
+  {
+    "name": "Sachsen-Anhalt",
+    "key": "sachsen-anhalt",
+    "lat": 51.95434845661881,
+    "lon": 11.695633462979634
+  },
+  {
+    "name": "Berlin",
+    "key": "berlin",
+    "lat": 52.52375629924237,
+    "lon": 13.394754556206351
+  }
+]

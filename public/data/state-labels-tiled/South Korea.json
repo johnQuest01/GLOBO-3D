@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Gangwon",
+    "key": "gangwon",
+    "lat": 37.58295692735088,
+    "lon": 128.3120524363326
+  },
+  {
+    "name": "Gyeonggi",
+    "key": "gyeonggi",
+    "lat": 37.56601436358581,
+    "lon": 127.09074236254216
+  },
+  {
+    "name": "South Chungcheong",
+    "key": "south chungcheong",
+    "lat": 36.45274830971126,
+    "lon": 126.97469393596931
+  },
+  {
+    "name": "Incheon",
+    "key": "incheon",
+    "lat": 37.43721957086725,
+    "lon": 126.68713477519748
+  },
+  {
+    "name": "North Jeolla",
+    "key": "north jeolla",
+    "lat": 35.68779540625073,
+    "lon": 127.16244193081022
+  },
+  {
+    "name": "South Jeolla",
+    "key": "south jeolla",
+    "lat": 34.861116993895315,
+    "lon": 127.07840816253156
+  },
+  {
+    "name": "South Gyeongsang",
+    "key": "south gyeongsang",
+    "lat": 35.33080440064005,
+    "lon": 128.4095181446562
+  },
+  {
+    "name": "Busan",
+    "key": "busan",
+    "lat": 35.18285784519797,
+    "lon": 129.11361468956318
+  },
+  {
+    "name": "Ulsan",
+    "key": "ulsan",
+    "lat": 35.53746025680018,
+    "lon": 129.2589922340143
+  },
+  {
+    "name": "North Gyeongsang",
+    "key": "north gyeongsang",
+    "lat": 36.32484400241496,
+    "lon": 128.70535242325653
+  },
+  {
+    "name": "Jeju",
+    "key": "jeju",
+    "lat": 33.41062557012507,
+    "lon": 126.59726260712506
+  },
+  {
+    "name": "Seoul",
+    "key": "seoul",
+    "lat": 37.537648763179845,
+    "lon": 127.03150231333105
+  },
+  {
+    "name": "Daejeon",
+    "key": "daejeon",
+    "lat": 36.39985169713809,
+    "lon": 127.31788211292908
+  },
+  {
+    "name": "Sejong",
+    "key": "sejong",
+    "lat": 36.563269401618705,
+    "lon": 127.2092296410636
+  },
+  {
+    "name": "North Chungcheong",
+    "key": "north chungcheong",
+    "lat": 36.67988218997771,
+    "lon": 127.81656875884111
+  },
+  {
+    "name": "Gwangju",
+    "key": "gwangju",
+    "lat": 35.20931887512596,
+    "lon": 126.92214464733756
+  },
+  {
+    "name": "Daegu",
+    "key": "daegu",
+    "lat": 35.8801142781514,
+    "lon": 128.66254832044856
+  }
+]

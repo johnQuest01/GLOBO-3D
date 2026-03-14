@@ -1,0 +1,98 @@
+[
+  {
+    "name": "East Kazakhstan",
+    "key": "east kazakhstan",
+    "lat": 48.893269717424964,
+    "lon": 81.81321781312695
+  },
+  {
+    "name": "Almaty",
+    "key": "almaty",
+    "lat": 44.78030035323575,
+    "lon": 78.49177310738173
+  },
+  {
+    "name": "Zhambyl",
+    "key": "zhambyl",
+    "lat": 43.623441977123974,
+    "lon": 72.91640658616436
+  },
+  {
+    "name": "South Kazakhstan",
+    "key": "south kazakhstan",
+    "lat": 42.845708848772894,
+    "lon": 68.52179813629807
+  },
+  {
+    "name": "Mangghystau",
+    "key": "mangghystau",
+    "lat": 44.021075668077245,
+    "lon": 52.96160162535413
+  },
+  {
+    "name": "Qyzylorda",
+    "key": "qyzylorda",
+    "lat": 45.0829042178514,
+    "lon": 64.24028130607653
+  },
+  {
+    "name": "Aqtöbe",
+    "key": "aqtöbe",
+    "lat": 49.10290889719999,
+    "lon": 58.76526058430454
+  },
+  {
+    "name": "North Kazakhstan",
+    "key": "north kazakhstan",
+    "lat": 53.72304273550585,
+    "lon": 70.01548326831173
+  },
+  {
+    "name": "Qostanay",
+    "key": "qostanay",
+    "lat": 51.746867851015544,
+    "lon": 63.97779110672116
+  },
+  {
+    "name": "Pavlodar",
+    "key": "pavlodar",
+    "lat": 51.916154725683796,
+    "lon": 75.9534197196249
+  },
+  {
+    "name": "West Kazakhstan",
+    "key": "west kazakhstan",
+    "lat": 50.11753738345984,
+    "lon": 50.90357857121253
+  },
+  {
+    "name": "Atyrau",
+    "key": "atyrau",
+    "lat": 47.43258817813031,
+    "lon": 51.78829692750635
+  },
+  {
+    "name": "Aqmola",
+    "key": "aqmola",
+    "lat": 51.68939162029039,
+    "lon": 69.85190399696985
+  },
+  {
+    "name": "Qaraghandy",
+    "key": "qaraghandy",
+    "lat": 49.19788118771307,
+    "lon": 71.83372073036132
+  },
+  {
+    "name": "Almaty City",
+    "key": "almaty city",
+    "lat": 43.27989876667472,
+    "lon": 76.93353750679047
+  },
+  {
+    "name": "Astana",
+    "key": "astana",
+    "lat": 51.10604597339293,
+    "lon": 71.4432793240815
+  }
+]

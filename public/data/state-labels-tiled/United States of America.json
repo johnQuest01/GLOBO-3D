@@ -1,0 +1,308 @@
+[
+  {
+    "name": "Washington",
+    "key": "washington",
+    "lat": 47.220431396239746,
+    "lon": -121.94337376627304
+  },
+  {
+    "name": "Idaho",
+    "key": "idaho",
+    "lat": 45.3855426276413,
+    "lon": -114.64020336469488
+  },
+  {
+    "name": "Montana",
+    "key": "montana",
+    "lat": 43.45839115008204,
+    "lon": 23.20350116919131
+  },
+  {
+    "name": "North Dakota",
+    "key": "north dakota",
+    "lat": 47.517617983586796,
+    "lon": -99.67306585232896
+  },
+  {
+    "name": "Minnesota",
+    "key": "minnesota",
+    "lat": 46.671643440424255,
+    "lon": -93.43898271792955
+  },
+  {
+    "name": "Michigan",
+    "key": "michigan",
+    "lat": 45.12158395207008,
+    "lon": -86.06714323035649
+  },
+  {
+    "name": "Ohio",
+    "key": "ohio",
+    "lat": 39.97309633054449,
+    "lon": -82.56815139123484
+  },
+  {
+    "name": "Pennsylvania",
+    "key": "pennsylvania",
+    "lat": 40.97409337233775,
+    "lon": -77.13787825892133
+  },
+  {
+    "name": "New York",
+    "key": "new york",
+    "lat": 42.96662017954263,
+    "lon": -75.65671348503464
+  },
+  {
+    "name": "Vermont",
+    "key": "vermont",
+    "lat": 43.99340610291238,
+    "lon": -72.56101625000939
+  },
+  {
+    "name": "New Hampshire",
+    "key": "new hampshire",
+    "lat": 43.88018619972477,
+    "lon": -71.61442916843426
+  },
+  {
+    "name": "Maine",
+    "key": "maine",
+    "lat": 45.02793214663777,
+    "lon": -69.30574277998569
+  },
+  {
+    "name": "Arizona",
+    "key": "arizona",
+    "lat": 34.299630929809204,
+    "lon": -113.10213915763629
+  },
+  {
+    "name": "California",
+    "key": "california",
+    "lat": 36.62733132251004,
+    "lon": -119.98096819594606
+  },
+  {
+    "name": "New Mexico",
+    "key": "new mexico",
+    "lat": 33.92295886125957,
+    "lon": -106.33511778557893
+  },
+  {
+    "name": "Texas",
+    "key": "texas",
+    "lat": 30.441944878289977,
+    "lon": -99.03915637168214
+  },
+  {
+    "name": "Alaska",
+    "key": "alaska",
+    "lat": 61.51390341922172,
+    "lon": -152.31078250212204
+  },
+  {
+    "name": "Louisiana",
+    "key": "louisiana",
+    "lat": 30.42398122826987,
+    "lon": -91.08383546526176
+  },
+  {
+    "name": "Mississippi",
+    "key": "mississippi",
+    "lat": 32.44261564893743,
+    "lon": -90.21939192793448
+  },
+  {
+    "name": "Alabama",
+    "key": "alabama",
+    "lat": 32.03691967307493,
+    "lon": -86.89409968162589
+  },
+  {
+    "name": "Florida",
+    "key": "florida",
+    "lat": 28.82122225722675,
+    "lon": -83.15898237029486
+  },
+  {
+    "name": "Georgia",
+    "key": "georgia",
+    "lat": 32.344118260359096,
+    "lon": -82.71912442878983
+  },
+  {
+    "name": "South Carolina",
+    "key": "south carolina",
+    "lat": 33.583031089767736,
+    "lon": -81.05918179993208
+  },
+  {
+    "name": "North Carolina",
+    "key": "north carolina",
+    "lat": 35.527457747816364,
+    "lon": -79.25079833637342
+  },
+  {
+    "name": "Virginia",
+    "key": "virginia",
+    "lat": 37.723301195757124,
+    "lon": -78.87905575484409
+  },
+  {
+    "name": "District of Columbia",
+    "key": "district of columbia",
+    "lat": 38.88844124272864,
+    "lon": -77.03087392892864
+  },
+  {
+    "name": "Maryland",
+    "key": "maryland",
+    "lat": 4.713677258734834,
+    "lon": -7.767946994882839
+  },
+  {
+    "name": "Delaware",
+    "key": "delaware",
+    "lat": 39.04862851571268,
+    "lon": -75.3606842726547
+  },
+  {
+    "name": "New Jersey",
+    "key": "new jersey",
+    "lat": 40.14812180478424,
+    "lon": -74.72703303207473
+  },
+  {
+    "name": "Connecticut",
+    "key": "connecticut",
+    "lat": 41.394255964495635,
+    "lon": -72.85369306467476
+  },
+  {
+    "name": "Rhode Island",
+    "key": "rhode island",
+    "lat": 41.676840323678846,
+    "lon": -71.50227827052268
+  },
+  {
+    "name": "Massachusetts",
+    "key": "massachusetts",
+    "lat": 42.103238680527326,
+    "lon": -71.25510491136572
+  },
+  {
+    "name": "Oregon",
+    "key": "oregon",
+    "lat": 44.62136694906215,
+    "lon": -121.07342318087584
+  },
+  {
+    "name": "Hawaii",
+    "key": "hawaii",
+    "lat": 19.620306375789532,
+    "lon": -155.53259191631568
+  },
+  {
+    "name": "Utah",
+    "key": "utah",
+    "lat": 39.53921307229013,
+    "lon": -111.47722854409143
+  },
+  {
+    "name": "Wyoming",
+    "key": "wyoming",
+    "lat": 42.87951214442988,
+    "lon": -107.8874792908066
+  },
+  {
+    "name": "Nevada",
+    "key": "nevada",
+    "lat": 38.24173208055676,
+    "lon": -115.92698542906645
+  },
+  {
+    "name": "Colorado",
+    "key": "colorado",
+    "lat": 39.134205747991835,
+    "lon": -105.52970341202281
+  },
+  {
+    "name": "South Dakota",
+    "key": "south dakota",
+    "lat": 44.085534424280674,
+    "lon": -98.9351683028652
+  },
+  {
+    "name": "Nebraska",
+    "key": "nebraska",
+    "lat": 41.64576650420078,
+    "lon": -98.64204751070973
+  },
+  {
+    "name": "Kansas",
+    "key": "kansas",
+    "lat": 38.73293279880561,
+    "lon": -97.72414237671326
+  },
+  {
+    "name": "Oklahoma",
+    "key": "oklahoma",
+    "lat": 34.89032798113138,
+    "lon": -97.88376564063181
+  },
+  {
+    "name": "Iowa",
+    "key": "iowa",
+    "lat": 42.00304641308874,
+    "lon": -93.0469904546412
+  },
+  {
+    "name": "Missouri",
+    "key": "missouri",
+    "lat": 38.303095518562955,
+    "lon": -91.6928214364173
+  },
+  {
+    "name": "Wisconsin",
+    "key": "wisconsin",
+    "lat": 44.85028625459437,
+    "lon": -89.88058298330513
+  },
+  {
+    "name": "Illinois",
+    "key": "illinois",
+    "lat": 39.66661383084835,
+    "lon": -89.67540981287182
+  },
+  {
+    "name": "Kentucky",
+    "key": "kentucky",
+    "lat": 37.76998039428465,
+    "lon": -85.58246464235225
+  },
+  {
+    "name": "Arkansas",
+    "key": "arkansas",
+    "lat": 34.74020151184702,
+    "lon": -91.4042301090188
+  },
+  {
+    "name": "Tennessee",
+    "key": "tennessee",
+    "lat": 35.927800311894856,
+    "lon": -86.11308313196098
+  },
+  {
+    "name": "West Virginia",
+    "key": "west virginia",
+    "lat": 38.757151420024634,
+    "lon": -80.37389945228279
+  },
+  {
+    "name": "Indiana",
+    "key": "indiana",
+    "lat": 39.14441802679334,
+    "lon": -86.26937121890377
+  }
+]

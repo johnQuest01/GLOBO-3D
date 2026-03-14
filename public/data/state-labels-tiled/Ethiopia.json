@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Southern Nations, Nationalities and Peoples",
+    "key": "southern nations, nationalities and peoples",
+    "lat": 6.740868155025273,
+    "lon": 37.0052921779652
+  },
+  {
+    "name": "Somali",
+    "key": "somali",
+    "lat": 7.440195716049364,
+    "lon": 42.17169023298844
+  },
+  {
+    "name": "Afar",
+    "key": "afar",
+    "lat": 11.734565764821605,
+    "lon": 40.55360668810268
+  },
+  {
+    "name": "Amhara",
+    "key": "amhara",
+    "lat": 11.429510647013352,
+    "lon": 38.05243429200362
+  },
+  {
+    "name": "Tigray",
+    "key": "tigray",
+    "lat": 13.702062543443061,
+    "lon": 38.46467898395638
+  },
+  {
+    "name": "Benshangul-Gumaz",
+    "key": "benshangul-gumaz",
+    "lat": 10.564181995416249,
+    "lon": 35.49611128515595
+  },
+  {
+    "name": "Gambela Peoples",
+    "key": "gambela peoples",
+    "lat": 7.789209761060805,
+    "lon": 34.156170189684055
+  },
+  {
+    "name": "Oromiya",
+    "key": "oromiya",
+    "lat": 7.715761578441512,
+    "lon": 38.56439084222601
+  },
+  {
+    "name": "Dire Dawa",
+    "key": "dire dawa",
+    "lat": 9.636314218026737,
+    "lon": 42.061638534490754
+  },
+  {
+    "name": "Addis Ababa",
+    "key": "addis ababa",
+    "lat": 8.996621710773326,
+    "lon": 38.79687082952515
+  },
+  {
+    "name": "Harari People",
+    "key": "harari people",
+    "lat": 9.270752264825148,
+    "lon": 42.19235005041448
+  }
+]

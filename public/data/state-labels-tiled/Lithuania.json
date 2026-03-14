@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Utenos",
+    "key": "utenos",
+    "lat": 55.48421000599861,
+    "lon": 25.652353279250434
+  },
+  {
+    "name": "Vilniaus",
+    "key": "vilniaus",
+    "lat": 54.88818642058791,
+    "lon": 25.330441550452264
+  },
+  {
+    "name": "Alytaus",
+    "key": "alytaus",
+    "lat": 54.22970711656492,
+    "lon": 24.130207176027653
+  },
+  {
+    "name": "Panevezio",
+    "key": "panevezio",
+    "lat": 55.900352159169785,
+    "lon": 24.85613379928602
+  },
+  {
+    "name": "Telšiai",
+    "key": "telšiai",
+    "lat": 56.02853096361466,
+    "lon": 22.176095260140148
+  },
+  {
+    "name": "Klaipedos",
+    "key": "klaipedos",
+    "lat": 55.81752109261403,
+    "lon": 21.572755486272584
+  },
+  {
+    "name": "Šiauliai",
+    "key": "šiauliai",
+    "lat": 55.99758411700257,
+    "lon": 23.30115214572676
+  },
+  {
+    "name": "Marijampoles",
+    "key": "marijampoles",
+    "lat": 54.63244466099544,
+    "lon": 23.13736682424929
+  },
+  {
+    "name": "Taurages",
+    "key": "taurages",
+    "lat": 55.29966767557199,
+    "lon": 22.594354856007055
+  },
+  {
+    "name": "Kauno",
+    "key": "kauno",
+    "lat": 55.091217401618906,
+    "lon": 23.89126410144283
+  }
+]

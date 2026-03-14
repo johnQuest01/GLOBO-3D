@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Ash Sharqiyah",
+    "key": "ash sharqiyah",
+    "lat": 24.986617988941163,
+    "lon": 49.21119485601391
+  },
+  {
+    "name": "Al Hudud ash Shamaliyah",
+    "key": "al hudud ash shamaliyah",
+    "lat": 29.523822366044552,
+    "lon": 42.23320282310945
+  },
+  {
+    "name": "Al Jawf",
+    "key": "al jawf",
+    "lat": 29.616101349703758,
+    "lon": 38.2756490791632
+  },
+  {
+    "name": "Najran",
+    "key": "najran",
+    "lat": 18.1664400377956,
+    "lon": 45.18536533843265
+  },
+  {
+    "name": "`Asir",
+    "key": "`asir",
+    "lat": 19.155077848658923,
+    "lon": 42.795322605987124
+  },
+  {
+    "name": "Jizan",
+    "key": "jizan",
+    "lat": 17.394043768894527,
+    "lon": 42.62508827997426
+  },
+  {
+    "name": "Tabuk",
+    "key": "tabuk",
+    "lat": 27.0469159679653,
+    "lon": 37.35295956290198
+  },
+  {
+    "name": "Al Madinah",
+    "key": "al madinah",
+    "lat": 24.999994577562138,
+    "lon": 39.30045505890643
+  },
+  {
+    "name": "Makkah",
+    "key": "makkah",
+    "lat": 21.124086023045603,
+    "lon": 41.1908908301195
+  },
+  {
+    "name": "Ar Riyad",
+    "key": "ar riyad",
+    "lat": 24.201752349163556,
+    "lon": 44.55196691803082
+  },
+  {
+    "name": "Al Quassim",
+    "key": "al quassim",
+    "lat": 25.92944276204729,
+    "lon": 43.1789777993288
+  },
+  {
+    "name": "Ha'il",
+    "key": "ha'il",
+    "lat": 27.261369743550627,
+    "lon": 41.82420072663221
+  },
+  {
+    "name": "Al Bahah",
+    "key": "al bahah",
+    "lat": 20.203525324676836,
+    "lon": 41.49019234345899
+  }
+]

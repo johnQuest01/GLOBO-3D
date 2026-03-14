@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Saint Joseph",
+    "key": "saint joseph",
+    "lat": 13.21292541778675,
+    "lon": -59.54752963717237
+  },
+  {
+    "name": "Saint Andrew",
+    "key": "saint andrew",
+    "lat": 12.136522499923833,
+    "lon": -61.64461729593943
+  },
+  {
+    "name": "Saint Peter",
+    "key": "saint peter",
+    "lat": 13.27554059191744,
+    "lon": -59.60509607843333
+  },
+  {
+    "name": "Saint Lucy",
+    "key": "saint lucy",
+    "lat": 13.297518166966757,
+    "lon": -59.628172925699516
+  },
+  {
+    "name": "Saint James",
+    "key": "saint james",
+    "lat": 13.188462540935056,
+    "lon": -59.6250307104392
+  },
+  {
+    "name": "Saint Michael",
+    "key": "saint michael",
+    "lat": 13.121604071612238,
+    "lon": -59.601633889920784
+  },
+  {
+    "name": "Christ Church",
+    "key": "christ church",
+    "lat": 13.09894589436642,
+    "lon": -59.52707989920975
+  },
+  {
+    "name": "Saint Philip",
+    "key": "saint philip",
+    "lat": 13.146952386641818,
+    "lon": -59.486592137723036
+  },
+  {
+    "name": "Saint John",
+    "key": "saint john",
+    "lat": 12.134726429499878,
+    "lon": -61.713231150659155
+  },
+  {
+    "name": "Saint George",
+    "key": "saint george",
+    "lat": 12.071263662592411,
+    "lon": -61.69597780071473
+  },
+  {
+    "name": "Saint Thomas",
+    "key": "saint thomas",
+    "lat": 18.337291879400063,
+    "lon": -64.89426966739993
+  }
+]

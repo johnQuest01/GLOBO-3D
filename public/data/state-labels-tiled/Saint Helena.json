@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Tristan da Cunha",
+    "key": "tristan da cunha",
+    "lat": -40.347198174999924,
+    "lon": -9.95601152279994
+  },
+  {
+    "name": "Saint Helena",
+    "key": "saint helena",
+    "lat": -15.951690362399926,
+    "lon": -5.728057420999937
+  },
+  {
+    "name": "Ascension",
+    "key": "ascension",
+    "lat": -7.922194105999921,
+    "lon": -14.353433804499943
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Central River",
+    "key": "central river",
+    "lat": 13.629308041650841,
+    "lon": -15.03346855560697
+  },
+  {
+    "name": "North Bank",
+    "key": "north bank",
+    "lat": 13.520877035416046,
+    "lon": -15.806652705757607
+  },
+  {
+    "name": "Upper River",
+    "key": "upper river",
+    "lat": 13.41116451613117,
+    "lon": -14.233780382165946
+  },
+  {
+    "name": "Lower River",
+    "key": "lower river",
+    "lat": 13.421220842121576,
+    "lon": -15.567483641429511
+  },
+  {
+    "name": "West Coast",
+    "key": "west coast",
+    "lat": 13.263897488937568,
+    "lon": -16.378015429087608
+  },
+  {
+    "name": "Banjul",
+    "key": "banjul",
+    "lat": 13.422796942500057,
+    "lon": -16.70005245674993
+  }
+]

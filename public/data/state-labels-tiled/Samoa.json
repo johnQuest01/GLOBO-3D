@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Gaga'emauga",
+    "key": "gaga'emauga",
+    "lat": -13.576632226989318,
+    "lon": -172.34552915157988
+  },
+  {
+    "name": "Gaga'ifomauga",
+    "key": "gaga'ifomauga",
+    "lat": -13.562723950104242,
+    "lon": -172.54481226460973
+  },
+  {
+    "name": "Vaisigano",
+    "key": "vaisigano",
+    "lat": -13.58880092416203,
+    "lon": -172.6694393244362
+  },
+  {
+    "name": "Satupa'itea",
+    "key": "satupa'itea",
+    "lat": -13.720507853149382,
+    "lon": -172.34596237790214
+  },
+  {
+    "name": "Palauli",
+    "key": "palauli",
+    "lat": -13.710480017810815,
+    "lon": -172.46072346554698
+  },
+  {
+    "name": "Fa'asaleleaga",
+    "key": "fa'asaleleaga",
+    "lat": -13.651920818350868,
+    "lon": -172.2300153882486
+  },
+  {
+    "name": "Atua",
+    "key": "atua",
+    "lat": -13.947141266866247,
+    "lon": -171.56394624904053
+  },
+  {
+    "name": "Va'a-o-Fonoti",
+    "key": "va'a-o-fonoti",
+    "lat": -13.950752586087972,
+    "lon": -171.53636872588595
+  },
+  {
+    "name": "Tuamasaga",
+    "key": "tuamasaga",
+    "lat": -13.889131806331282,
+    "lon": -171.78275642690042
+  },
+  {
+    "name": "A'ana",
+    "key": "a'ana",
+    "lat": -13.887736548322657,
+    "lon": -171.9345548480767
+  },
+  {
+    "name": "Aiga-i-le-Tai",
+    "key": "aiga-i-le-tai",
+    "lat": -13.857354547097666,
+    "lon": -172.028990926295
+  }
+]

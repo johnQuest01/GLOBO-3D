@@ -1,0 +1,518 @@
+[
+  {
+    "name": "Gorno-Altay",
+    "key": "gorno-altay",
+    "lat": 50.73357295657033,
+    "lon": 87.03935874203918
+  },
+  {
+    "name": "Pskov",
+    "key": "pskov",
+    "lat": 57.07024594852426,
+    "lon": 29.300842279453995
+  },
+  {
+    "name": "Krasnodar",
+    "key": "krasnodar",
+    "lat": 45.30922051957484,
+    "lon": 39.65663969896458
+  },
+  {
+    "name": "Karachay-Cherkess",
+    "key": "karachay-cherkess",
+    "lat": 43.833029945751136,
+    "lon": 41.719569297443805
+  },
+  {
+    "name": "Kabardin-Balkar",
+    "key": "kabardin-balkar",
+    "lat": 43.459993634915705,
+    "lon": 43.25119259148817
+  },
+  {
+    "name": "North Ossetia",
+    "key": "north ossetia",
+    "lat": 43.14699595253409,
+    "lon": 44.365204735012426
+  },
+  {
+    "name": "Ingush",
+    "key": "ingush",
+    "lat": 43.10238370664277,
+    "lon": 44.802813502164675
+  },
+  {
+    "name": "Chechnya",
+    "key": "chechnya",
+    "lat": 43.30509620127213,
+    "lon": 45.77900764759238
+  },
+  {
+    "name": "Dagestan",
+    "key": "dagestan",
+    "lat": 43.13551250120335,
+    "lon": 46.626391139262296
+  },
+  {
+    "name": "Murmansk",
+    "key": "murmansk",
+    "lat": 67.9114250808977,
+    "lon": 33.98848021458697
+  },
+  {
+    "name": "Karelia",
+    "key": "karelia",
+    "lat": 63.69365453679424,
+    "lon": 33.33924214744924
+  },
+  {
+    "name": "Leningrad",
+    "key": "leningrad",
+    "lat": 59.914338216769536,
+    "lon": 31.393887373378202
+  },
+  {
+    "name": "Kaliningrad",
+    "key": "kaliningrad",
+    "lat": 54.853644525609226,
+    "lon": 21.35896027666575
+  },
+  {
+    "name": "Smolensk",
+    "key": "smolensk",
+    "lat": 54.96560438398251,
+    "lon": 32.88114843436008
+  },
+  {
+    "name": "Bryansk",
+    "key": "bryansk",
+    "lat": 52.88994548394005,
+    "lon": 33.35360162946088
+  },
+  {
+    "name": "Kursk",
+    "key": "kursk",
+    "lat": 51.66912066934536,
+    "lon": 36.3430681848035
+  },
+  {
+    "name": "Belgorod",
+    "key": "belgorod",
+    "lat": 50.66808209669556,
+    "lon": 37.401511205038126
+  },
+  {
+    "name": "Voronezh",
+    "key": "voronezh",
+    "lat": 51.02284089171316,
+    "lon": 40.11956703101623
+  },
+  {
+    "name": "Rostov",
+    "key": "rostov",
+    "lat": 47.722808315065,
+    "lon": 41.15782711147456
+  },
+  {
+    "name": "Buryat",
+    "key": "buryat",
+    "lat": 53.33005264248881,
+    "lon": 108.4815538494329
+  },
+  {
+    "name": "Tuva",
+    "key": "tuva",
+    "lat": 51.62994492934532,
+    "lon": 94.61253410552607
+  },
+  {
+    "name": "Chita",
+    "key": "chita",
+    "lat": 53.13068573504152,
+    "lon": 115.80877210692024
+  },
+  {
+    "name": "Amur",
+    "key": "amur",
+    "lat": 53.50651125691136,
+    "lon": 128.08933874219963
+  },
+  {
+    "name": "Yevrey",
+    "key": "yevrey",
+    "lat": 48.549081630201705,
+    "lon": 132.51106544228756
+  },
+  {
+    "name": "Khabarovsk",
+    "key": "khabarovsk",
+    "lat": 54.573071212997455,
+    "lon": 137.16199432070033
+  },
+  {
+    "name": "Primor'ye",
+    "key": "primor'ye",
+    "lat": 45.28463454448248,
+    "lon": 134.70058685475354
+  },
+  {
+    "name": "Tyumen'",
+    "key": "tyumen'",
+    "lat": 57.52752142953869,
+    "lon": 69.51228480713628
+  },
+  {
+    "name": "Kurgan",
+    "key": "kurgan",
+    "lat": 55.37617248884699,
+    "lon": 64.97236687599832
+  },
+  {
+    "name": "Omsk",
+    "key": "omsk",
+    "lat": 55.75233029390558,
+    "lon": 72.9555522708846
+  },
+  {
+    "name": "Novosibirsk",
+    "key": "novosibirsk",
+    "lat": 55.04890281395647,
+    "lon": 80.07897830853196
+  },
+  {
+    "name": "Chelyabinsk",
+    "key": "chelyabinsk",
+    "lat": 54.36716895347171,
+    "lon": 60.39084717998313
+  },
+  {
+    "name": "Altay",
+    "key": "altay",
+    "lat": 52.60674612061541,
+    "lon": 82.90569066531226
+  },
+  {
+    "name": "Orenburg",
+    "key": "orenburg",
+    "lat": 51.9331113217594,
+    "lon": 55.96687379273547
+  },
+  {
+    "name": "Saratov",
+    "key": "saratov",
+    "lat": 51.47707441772795,
+    "lon": 46.89781638261088
+  },
+  {
+    "name": "Astrakhan'",
+    "key": "astrakhan'",
+    "lat": 47.18497731662917,
+    "lon": 47.13750788877031
+  },
+  {
+    "name": "Volgograd",
+    "key": "volgograd",
+    "lat": 49.40111890134955,
+    "lon": 44.388632905852816
+  },
+  {
+    "name": "Crimea",
+    "key": "crimea",
+    "lat": 45.28763047840178,
+    "lon": 34.585516229679484
+  },
+  {
+    "name": "Maga Buryatdan",
+    "key": "maga buryatdan",
+    "lat": 62.28797150888094,
+    "lon": 153.8197076924703
+  },
+  {
+    "name": "Sakhalin",
+    "key": "sakhalin",
+    "lat": 50.0610995921976,
+    "lon": 142.69454849388887
+  },
+  {
+    "name": "Sevastopol",
+    "key": "sevastopol",
+    "lat": 44.59091339114518,
+    "lon": 33.649563032322156
+  },
+  {
+    "name": "Chukchi Autonomous Okrug",
+    "key": "chukchi autonomous okrug",
+    "lat": 65.98579251787073,
+    "lon": 170.16564942874965
+  },
+  {
+    "name": "Yamal-Nenets",
+    "key": "yamal-nenets",
+    "lat": 67.79507759952783,
+    "lon": 74.06387853837516
+  },
+  {
+    "name": "Nenets",
+    "key": "nenets",
+    "lat": 68.02401693117629,
+    "lon": 53.60528539643176
+  },
+  {
+    "name": "Sakha (Yakutia)",
+    "key": "sakha (yakutia)",
+    "lat": 65.3826157150011,
+    "lon": 131.645464667221
+  },
+  {
+    "name": "City of St. Petersburg",
+    "key": "city of st. petersburg",
+    "lat": 59.9469577513203,
+    "lon": 30.09097879038117
+  },
+  {
+    "name": "Arkhangel'sk",
+    "key": "arkhangel'sk",
+    "lat": 63.287094419534604,
+    "lon": 43.24814301221079
+  },
+  {
+    "name": "Krasnoyarsk",
+    "key": "krasnoyarsk",
+    "lat": 65.64743221054147,
+    "lon": 95.30525461903227
+  },
+  {
+    "name": "Kalmyk",
+    "key": "kalmyk",
+    "lat": 46.61152248000791,
+    "lon": 44.83809230924566
+  },
+  {
+    "name": "Kamchatka",
+    "key": "kamchatka",
+    "lat": 59.39118951811839,
+    "lon": 163.82966137939974
+  },
+  {
+    "name": "",
+    "key": "",
+    "lat": -70.85554371549992,
+    "lon": -2.7388250397499334
+  },
+  {
+    "name": "Bashkortostan",
+    "key": "bashkortostan",
+    "lat": 54.420263646772725,
+    "lon": 56.907694490454055
+  },
+  {
+    "name": "Sverdlovsk",
+    "key": "sverdlovsk",
+    "lat": 58.30142085076953,
+    "lon": 61.08235764046637
+  },
+  {
+    "name": "Khanty-Mansiy",
+    "key": "khanty-mansiy",
+    "lat": 62.054026876854316,
+    "lon": 71.11110785823479
+  },
+  {
+    "name": "Lipetsk",
+    "key": "lipetsk",
+    "lat": 52.68596615936074,
+    "lon": 39.06235562975847
+  },
+  {
+    "name": "Tambov",
+    "key": "tambov",
+    "lat": 52.61499177879895,
+    "lon": 41.619172781375894
+  },
+  {
+    "name": "Tomsk",
+    "key": "tomsk",
+    "lat": 58.543530891698026,
+    "lon": 82.44058261407024
+  },
+  {
+    "name": "Tatarstan",
+    "key": "tatarstan",
+    "lat": 55.31601664905583,
+    "lon": 50.951786890910356
+  },
+  {
+    "name": "Ul'yanovsk",
+    "key": "ul'yanovsk",
+    "lat": 53.88246612375008,
+    "lon": 48.036959279834385
+  },
+  {
+    "name": "Penza",
+    "key": "penza",
+    "lat": 53.24286153847011,
+    "lon": 44.45006425080996
+  },
+  {
+    "name": "Kemerovo",
+    "key": "kemerovo",
+    "lat": 54.65740044192339,
+    "lon": 87.38145060731445
+  },
+  {
+    "name": "Orel",
+    "key": "orel",
+    "lat": 52.82175333146871,
+    "lon": 36.37995699866946
+  },
+  {
+    "name": "Irkutsk",
+    "key": "irkutsk",
+    "lat": 57.92931163499016,
+    "lon": 107.26705008046008
+  },
+  {
+    "name": "Khakass",
+    "key": "khakass",
+    "lat": 53.362240420778434,
+    "lon": 89.54254892191317
+  },
+  {
+    "name": "Mordovia",
+    "key": "mordovia",
+    "lat": 54.38978568939497,
+    "lon": 44.33040941225585
+  },
+  {
+    "name": "Kaluga",
+    "key": "kaluga",
+    "lat": 54.23665190376503,
+    "lon": 35.35442618897688
+  },
+  {
+    "name": "Kostroma",
+    "key": "kostroma",
+    "lat": 58.36965766636474,
+    "lon": 43.77025641007766
+  },
+  {
+    "name": "Yaroslavl'",
+    "key": "yaroslavl'",
+    "lat": 57.96752505965877,
+    "lon": 39.05873253770144
+  },
+  {
+    "name": "Vladimir",
+    "key": "vladimir",
+    "lat": 56.09517261669053,
+    "lon": 40.58102599952671
+  },
+  {
+    "name": "Ryazan'",
+    "key": "ryazan'",
+    "lat": 54.204054806261766,
+    "lon": 40.61109256377328
+  },
+  {
+    "name": "Ivanovo",
+    "key": "ivanovo",
+    "lat": 57.05143110618556,
+    "lon": 41.97143445096412
+  },
+  {
+    "name": "Nizhegorod",
+    "key": "nizhegorod",
+    "lat": 56.28347410537064,
+    "lon": 44.7491977159518
+  },
+  {
+    "name": "Tula",
+    "key": "tula",
+    "lat": 53.84967280447691,
+    "lon": 37.628532557707814
+  },
+  {
+    "name": "Chuvash",
+    "key": "chuvash",
+    "lat": 55.48104348999362,
+    "lon": 47.161763223847245
+  },
+  {
+    "name": "Vologda",
+    "key": "vologda",
+    "lat": 59.928800097410736,
+    "lon": 40.5136286365481
+  },
+  {
+    "name": "Novgorod",
+    "key": "novgorod",
+    "lat": 58.34015115811259,
+    "lon": 32.78987360232696
+  },
+  {
+    "name": "Tver'",
+    "key": "tver'",
+    "lat": 57.12214170165581,
+    "lon": 34.648668891043016
+  },
+  {
+    "name": "Moskovskaya",
+    "key": "moskovskaya",
+    "lat": 55.55945564180557,
+    "lon": 37.55162499345161
+  },
+  {
+    "name": "Moskva",
+    "key": "moskva",
+    "lat": 55.46222845760797,
+    "lon": 37.322921678800114
+  },
+  {
+    "name": "Mariy-El",
+    "key": "mariy-el",
+    "lat": 56.58809331291756,
+    "lon": 48.03348188670277
+  },
+  {
+    "name": "Kirov",
+    "key": "kirov",
+    "lat": 58.56248921531354,
+    "lon": 49.698744581942584
+  },
+  {
+    "name": "Udmurt",
+    "key": "udmurt",
+    "lat": 57.01896720145877,
+    "lon": 52.93371743059311
+  },
+  {
+    "name": "Komi",
+    "key": "komi",
+    "lat": 63.58079398621186,
+    "lon": 54.881867434344684
+  },
+  {
+    "name": "Perm'",
+    "key": "perm'",
+    "lat": 58.91110068942715,
+    "lon": 55.854508705671805
+  },
+  {
+    "name": "Samara",
+    "key": "samara",
+    "lat": 53.3919883090478,
+    "lon": 50.44256658630005
+  },
+  {
+    "name": "Stavropol'",
+    "key": "stavropol'",
+    "lat": 44.84406438603624,
+    "lon": 43.293877265838915
+  },
+  {
+    "name": "Adygey",
+    "key": "adygey",
+    "lat": 44.65181928424545,
+    "lon": 39.86664854792115
+  }
+]

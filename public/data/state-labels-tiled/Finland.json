@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Lapland",
+    "key": "lapland",
+    "lat": 67.74285580732388,
+    "lon": 25.97447728681279
+  },
+  {
+    "name": "Northern Ostrobothnia",
+    "key": "northern ostrobothnia",
+    "lat": 65.16190848767994,
+    "lon": 26.96292727957807
+  },
+  {
+    "name": "Kainuu",
+    "key": "kainuu",
+    "lat": 64.59464836639847,
+    "lon": 28.858245064040943
+  },
+  {
+    "name": "North Karelia",
+    "key": "north karelia",
+    "lat": 62.947970584256325,
+    "lon": 29.69241692892771
+  },
+  {
+    "name": "South Karelia",
+    "key": "south karelia",
+    "lat": 61.30406057193052,
+    "lon": 28.593026075687103
+  },
+  {
+    "name": "Kymenlaakso",
+    "key": "kymenlaakso",
+    "lat": 60.780414957507325,
+    "lon": 27.034324156468113
+  },
+  {
+    "name": "Uusimaa",
+    "key": "uusimaa",
+    "lat": 60.37328044370765,
+    "lon": 24.839444759500708
+  },
+  {
+    "name": "Finland Proper",
+    "key": "finland proper",
+    "lat": 60.64014134740144,
+    "lon": 22.61415197638749
+  },
+  {
+    "name": "Satakunta",
+    "key": "satakunta",
+    "lat": 61.56147138992721,
+    "lon": 22.207302545715564
+  },
+  {
+    "name": "Ostrobothnia",
+    "key": "ostrobothnia",
+    "lat": 62.9969747557874,
+    "lon": 22.198493713824806
+  },
+  {
+    "name": "Central Ostrobothnia",
+    "key": "central ostrobothnia",
+    "lat": 63.66734966945067,
+    "lon": 23.83770961338154
+  },
+  {
+    "name": "Northern Savonia",
+    "key": "northern savonia",
+    "lat": 63.122767893098754,
+    "lon": 27.439511898269757
+  },
+  {
+    "name": "Southern Savonia",
+    "key": "southern savonia",
+    "lat": 61.96584731877114,
+    "lon": 27.74538941043431
+  },
+  {
+    "name": "Central Finland",
+    "key": "central finland",
+    "lat": 62.46573025312367,
+    "lon": 25.50716809333282
+  },
+  {
+    "name": "Southern Ostrobothnia",
+    "key": "southern ostrobothnia",
+    "lat": 62.71835408104262,
+    "lon": 23.002811434167008
+  },
+  {
+    "name": "Pirkanmaa",
+    "key": "pirkanmaa",
+    "lat": 61.710365700468856,
+    "lon": 23.646569133228457
+  },
+  {
+    "name": "Tavastia Proper",
+    "key": "tavastia proper",
+    "lat": 60.96754679384944,
+    "lon": 24.350620829707506
+  },
+  {
+    "name": "Päijät-Häme",
+    "key": "päijät-häme",
+    "lat": 61.29068844175933,
+    "lon": 25.728784668759793
+  }
+]

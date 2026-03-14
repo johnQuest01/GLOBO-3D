@@ -1,0 +1,158 @@
+[
+  {
+    "name": "Valais",
+    "key": "valais",
+    "lat": 46.24967008743968,
+    "lon": 7.690446297305768
+  },
+  {
+    "name": "Ticino",
+    "key": "ticino",
+    "lat": 46.232737333590876,
+    "lon": 8.807123614582954
+  },
+  {
+    "name": "Graubünden",
+    "key": "graubünden",
+    "lat": 46.62794110907662,
+    "lon": 9.573032037171513
+  },
+  {
+    "name": "Schaffhausen",
+    "key": "schaffhausen",
+    "lat": 47.689591308234995,
+    "lon": 8.744201027811448
+  },
+  {
+    "name": "Thurgau",
+    "key": "thurgau",
+    "lat": 47.56227260344829,
+    "lon": 9.120607986600497
+  },
+  {
+    "name": "Zürich",
+    "key": "zürich",
+    "lat": 47.460009595941074,
+    "lon": 8.63306982718577
+  },
+  {
+    "name": "Aargau",
+    "key": "aargau",
+    "lat": 47.413620960578854,
+    "lon": 8.14894521615265
+  },
+  {
+    "name": "Basel-Stadt",
+    "key": "basel-stadt",
+    "lat": 47.562731266003084,
+    "lon": 7.6001742884292725
+  },
+  {
+    "name": "Basel-Landschaft",
+    "key": "basel-landschaft",
+    "lat": 47.47871945082193,
+    "lon": 7.59603756606117
+  },
+  {
+    "name": "Sankt Gallen",
+    "key": "sankt gallen",
+    "lat": 47.23814670974854,
+    "lon": 9.317369173532985
+  },
+  {
+    "name": "Solothurn",
+    "key": "solothurn",
+    "lat": 47.3059887763859,
+    "lon": 7.645120273581743
+  },
+  {
+    "name": "Jura",
+    "key": "jura",
+    "lat": 47.346176755563754,
+    "lon": 7.237140901390104
+  },
+  {
+    "name": "Genève",
+    "key": "genève",
+    "lat": 46.24703628600793,
+    "lon": 6.133620060576021
+  },
+  {
+    "name": "Vaud",
+    "key": "vaud",
+    "lat": 46.568813737215784,
+    "lon": 6.6411833478028255
+  },
+  {
+    "name": "Neuchâtel",
+    "key": "neuchâtel",
+    "lat": 46.962941480581115,
+    "lon": 6.743594222228168
+  },
+  {
+    "name": "Bern",
+    "key": "bern",
+    "lat": 46.879802473280485,
+    "lon": 7.710945282261451
+  },
+  {
+    "name": "Lucerne",
+    "key": "lucerne",
+    "lat": 47.03996367051696,
+    "lon": 8.206465854445606
+  },
+  {
+    "name": "Zug",
+    "key": "zug",
+    "lat": 47.15595917419652,
+    "lon": 8.476237501739297
+  },
+  {
+    "name": "Uri",
+    "key": "uri",
+    "lat": 46.773861050237265,
+    "lon": 8.645658685050256
+  },
+  {
+    "name": "Schwyz",
+    "key": "schwyz",
+    "lat": 47.065152199314525,
+    "lon": 8.699448683210152
+  },
+  {
+    "name": "Glarus",
+    "key": "glarus",
+    "lat": 46.96468209016881,
+    "lon": 9.003906843588439
+  },
+  {
+    "name": "Nidwalden",
+    "key": "nidwalden",
+    "lat": 46.90951795987164,
+    "lon": 8.42163618323469
+  },
+  {
+    "name": "Fribourg",
+    "key": "fribourg",
+    "lat": 46.737604865312264,
+    "lon": 7.090621819821115
+  },
+  {
+    "name": "Obwalden",
+    "key": "obwalden",
+    "lat": 46.84743537058584,
+    "lon": 8.216780470282469
+  },
+  {
+    "name": "Appenzell Ausserrhoden",
+    "key": "appenzell ausserrhoden",
+    "lat": 47.3837173079074,
+    "lon": 9.455457662241308
+  },
+  {
+    "name": "Appenzell Innerrhoden",
+    "key": "appenzell innerrhoden",
+    "lat": 47.33697525742717,
+    "lon": 9.414417962493957
+  }
+]

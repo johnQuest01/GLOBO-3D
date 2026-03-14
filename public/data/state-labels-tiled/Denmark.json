@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Syddanmark",
+    "key": "syddanmark",
+    "lat": 55.42570745690788,
+    "lon": 8.980356929788595
+  },
+  {
+    "name": "Midtjylland",
+    "key": "midtjylland",
+    "lat": 56.23353930755307,
+    "lon": 9.373267633258832
+  },
+  {
+    "name": "Nordjylland",
+    "key": "nordjylland",
+    "lat": 56.97772734380769,
+    "lon": 9.595166271062851
+  },
+  {
+    "name": "Sjaælland",
+    "key": "sjaælland",
+    "lat": 55.37976073622849,
+    "lon": 11.870462757547978
+  },
+  {
+    "name": "Hovedstaden",
+    "key": "hovedstaden",
+    "lat": 55.86321158081708,
+    "lon": 12.314936448742916
+  }
+]

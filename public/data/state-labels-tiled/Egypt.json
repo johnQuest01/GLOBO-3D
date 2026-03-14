@@ -1,0 +1,164 @@
+[
+  {
+    "name": "Shamal Sina'",
+    "key": "shamal sina'",
+    "lat": 30.536572707891928,
+    "lon": 33.71954026564462
+  },
+  {
+    "name": "Aswan",
+    "key": "aswan",
+    "lat": 23.33130548245543,
+    "lon": 32.44393720623112
+  },
+  {
+    "name": "Al Bahr al Ahmar",
+    "key": "al bahr al ahmar",
+    "lat": 25.445354393219365,
+    "lon": 33.113030459844026
+  },
+  {
+    "name": "Matruh",
+    "key": "matruh",
+    "lat": 30.330375280475945,
+    "lon": 26.80578428222502
+  },
+  {
+    "name": "Al Wadi at Jadid",
+    "key": "al wadi at jadid",
+    "lat": 24.457934152461043,
+    "lon": 30.613938210634444
+  },
+  {
+    "name": "As Suways",
+    "key": "as suways",
+    "lat": 29.724437774127924,
+    "lon": 32.42535465336038
+  },
+  {
+    "name": "Janub Sina'",
+    "key": "janub sina'",
+    "lat": 28.971919698242534,
+    "lon": 33.829206979997515
+  },
+  {
+    "name": "Bur Sa`id",
+    "key": "bur sa`id",
+    "lat": 31.18055672757355,
+    "lon": 32.360021150577246
+  },
+  {
+    "name": "Ad Daqahliyah",
+    "key": "ad daqahliyah",
+    "lat": 31.085729528895005,
+    "lon": 31.491691940962305
+  },
+  {
+    "name": "Ash Sharqiyah",
+    "key": "ash sharqiyah",
+    "lat": 24.986617988941163,
+    "lon": 49.21119485601391
+  },
+  {
+    "name": "Al Isma`iliyah",
+    "key": "al isma`iliyah",
+    "lat": 30.630069981862672,
+    "lon": 32.24314234943411
+  },
+  {
+    "name": "Dumyat",
+    "key": "dumyat",
+    "lat": 31.40959248287621,
+    "lon": 31.882118207823865
+  },
+  {
+    "name": "Kafr ash Shaykh",
+    "key": "kafr ash shaykh",
+    "lat": 31.308741125685632,
+    "lon": 30.888001911810242
+  },
+  {
+    "name": "Al Buhayrah",
+    "key": "al buhayrah",
+    "lat": 30.795133889546968,
+    "lon": 30.26584049297044
+  },
+  {
+    "name": "Al Iskandariyah",
+    "key": "al iskandariyah",
+    "lat": 30.91815972033614,
+    "lon": 29.84958476553656
+  },
+  {
+    "name": "Al Qahirah",
+    "key": "al qahirah",
+    "lat": 30.09381084969094,
+    "lon": 31.592360828989044
+  },
+  {
+    "name": "Al Jizah",
+    "key": "al jizah",
+    "lat": 29.175348763663536,
+    "lon": 30.106815836749185
+  },
+  {
+    "name": "Al Minya",
+    "key": "al minya",
+    "lat": 28.102033380336216,
+    "lon": 30.111123004854022
+  },
+  {
+    "name": "Al Fayyum",
+    "key": "al fayyum",
+    "lat": 29.37537264662033,
+    "lon": 30.710859653460226
+  },
+  {
+    "name": "Bani Suwayf",
+    "key": "bani suwayf",
+    "lat": 29.05160774040488,
+    "lon": 30.749631619278787
+  },
+  {
+    "name": "Al Minufiyah",
+    "key": "al minufiyah",
+    "lat": 30.42056093124197,
+    "lon": 30.98411773734368
+  },
+  {
+    "name": "Al Qalyubiyah",
+    "key": "al qalyubiyah",
+    "lat": 30.330244360043704,
+    "lon": 31.330085187608574
+  },
+  {
+    "name": "Al Gharbiyah",
+    "key": "al gharbiyah",
+    "lat": 30.839207499376574,
+    "lon": 31.047804633876734
+  },
+  {
+    "name": "Suhaj",
+    "key": "suhaj",
+    "lat": 26.48506680332666,
+    "lon": 31.841071145871215
+  },
+  {
+    "name": "Qina",
+    "key": "qina",
+    "lat": 25.861048397440573,
+    "lon": 32.52881845475287
+  },
+  {
+    "name": "Asyut",
+    "key": "asyut",
+    "lat": 27.245514278885846,
+    "lon": 31.10504489518074
+  },
+  {
+    "name": "Luxor",
+    "key": "luxor",
+    "lat": 25.70089790561383,
+    "lon": 32.64935106266138
+  }
+]

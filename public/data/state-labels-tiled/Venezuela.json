@@ -1,0 +1,158 @@
+[
+  {
+    "name": "Delta Amacuro",
+    "key": "delta amacuro",
+    "lat": 8.811662918048587,
+    "lon": -61.30721574488302
+  },
+  {
+    "name": "Bolívar",
+    "key": "bolívar",
+    "lat": 6.13617472764037,
+    "lon": -63.58893110059461
+  },
+  {
+    "name": "Amazonas",
+    "key": "amazonas",
+    "lat": -2.8576650622069177,
+    "lon": -64.80381048226928
+  },
+  {
+    "name": "Zulia",
+    "key": "zulia",
+    "lat": 9.92746440897056,
+    "lon": -72.16631715813081
+  },
+  {
+    "name": "Táchira",
+    "key": "táchira",
+    "lat": 7.961644406569949,
+    "lon": -72.01354242448905
+  },
+  {
+    "name": "Apure",
+    "key": "apure",
+    "lat": 7.177594125712055,
+    "lon": -69.43490576316206
+  },
+  {
+    "name": "Mérida",
+    "key": "mérida",
+    "lat": 8.57906453373793,
+    "lon": -71.30753460971242
+  },
+  {
+    "name": "Trujillo",
+    "key": "trujillo",
+    "lat": 9.404717097964035,
+    "lon": -70.50775810624245
+  },
+  {
+    "name": "Falcón",
+    "key": "falcón",
+    "lat": 11.18680674160633,
+    "lon": -69.79208668003109
+  },
+  {
+    "name": "Yaracuy",
+    "key": "yaracuy",
+    "lat": 10.290058378382334,
+    "lon": -68.70073899094827
+  },
+  {
+    "name": "Carabobo",
+    "key": "carabobo",
+    "lat": 10.200884165662558,
+    "lon": -68.02455874847895
+  },
+  {
+    "name": "Aragua",
+    "key": "aragua",
+    "lat": 10.033075366781903,
+    "lon": -67.19823370530601
+  },
+  {
+    "name": "Vargas",
+    "key": "vargas",
+    "lat": 10.527948971588271,
+    "lon": -67.02063521074611
+  },
+  {
+    "name": "Miranda",
+    "key": "miranda",
+    "lat": 10.278926844634563,
+    "lon": -66.43693451699733
+  },
+  {
+    "name": "Anzoátegui",
+    "key": "anzoátegui",
+    "lat": 9.044381655120093,
+    "lon": -64.4246322583607
+  },
+  {
+    "name": "Sucre",
+    "key": "sucre",
+    "lat": 9.170493268927542,
+    "lon": -75.20659805136826
+  },
+  {
+    "name": "Monagas",
+    "key": "monagas",
+    "lat": 9.427813519832984,
+    "lon": -63.053359289893834
+  },
+  {
+    "name": "Nueva Esparta",
+    "key": "nueva esparta",
+    "lat": 11.019128914272782,
+    "lon": -64.05600116499994
+  },
+  {
+    "name": "Dependencias Federales",
+    "key": "dependencias federales",
+    "lat": 10.938755601200047,
+    "lon": -65.28357499899994
+  },
+  {
+    "name": "",
+    "key": "",
+    "lat": -70.85554371549992,
+    "lon": -2.7388250397499334
+  },
+  {
+    "name": "Guárico",
+    "key": "guárico",
+    "lat": 8.975648725373672,
+    "lon": -66.43532234373892
+  },
+  {
+    "name": "Cojedes",
+    "key": "cojedes",
+    "lat": 9.400547959892421,
+    "lon": -68.36328521996093
+  },
+  {
+    "name": "Distrito Capital",
+    "key": "distrito capital",
+    "lat": 10.486746086612593,
+    "lon": -66.97563934308121
+  },
+  {
+    "name": "Barinas",
+    "key": "barinas",
+    "lat": 8.149676745041988,
+    "lon": -69.73160430485103
+  },
+  {
+    "name": "Lara",
+    "key": "lara",
+    "lat": 10.003926087128026,
+    "lon": -69.71272818966597
+  },
+  {
+    "name": "Portuguesa",
+    "key": "portuguesa",
+    "lat": 9.102627837242379,
+    "lon": -69.34081528132829
+  }
+]

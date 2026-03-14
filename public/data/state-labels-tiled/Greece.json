@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Dytiki Makedonia",
+    "key": "dytiki makedonia",
+    "lat": 40.40385972702122,
+    "lon": 21.401240480658142
+  },
+  {
+    "name": "Ipeiros",
+    "key": "ipeiros",
+    "lat": 39.69149034731902,
+    "lon": 20.73300296846043
+  },
+  {
+    "name": "Kentriki Makedonia",
+    "key": "kentriki makedonia",
+    "lat": 40.64950286787836,
+    "lon": 23.00951245805373
+  },
+  {
+    "name": "Anatoliki Makedonia kai Thraki",
+    "key": "anatoliki makedonia kai thraki",
+    "lat": 41.19506134096676,
+    "lon": 25.20544284150664
+  },
+  {
+    "name": "Ayion Oros",
+    "key": "ayion oros",
+    "lat": 40.28908791189174,
+    "lon": 24.149804674379173
+  },
+  {
+    "name": "Thessalia",
+    "key": "thessalia",
+    "lat": 39.45867277322015,
+    "lon": 22.29930884346945
+  },
+  {
+    "name": "Stereá Elláda",
+    "key": "stereá elláda",
+    "lat": 38.714021663361244,
+    "lon": 22.460598085800253
+  },
+  {
+    "name": "Attiki",
+    "key": "attiki",
+    "lat": 38.07481858058156,
+    "lon": 23.635591967599016
+  },
+  {
+    "name": "Peloponnisos",
+    "key": "peloponnisos",
+    "lat": 37.326307966580984,
+    "lon": 22.503193786698596
+  },
+  {
+    "name": "Dytiki Ellada",
+    "key": "dytiki ellada",
+    "lat": 37.842020803685145,
+    "lon": 21.762105440321292
+  },
+  {
+    "name": "Kriti",
+    "key": "kriti",
+    "lat": 35.24872919777782,
+    "lon": 24.960158423518596
+  },
+  {
+    "name": "Notio Aigaio",
+    "key": "notio aigaio",
+    "lat": 37.077093817000055,
+    "lon": 25.49820668500008
+  },
+  {
+    "name": "Voreio Aigaio",
+    "key": "voreio aigaio",
+    "lat": 38.41409943250006,
+    "lon": 26.02010135212508
+  },
+  {
+    "name": "Ionioi Nisoi",
+    "key": "ionioi nisoi",
+    "lat": 39.58295319212505,
+    "lon": 19.911143425625077
+  }
+]

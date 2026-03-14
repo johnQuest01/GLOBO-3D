@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Inagua",
+    "key": "inagua",
+    "lat": 21.075543368000055,
+    "lon": -73.42162085899992
+  },
+  {
+    "name": "Mayaguana",
+    "key": "mayaguana",
+    "lat": 22.38027578325007,
+    "lon": -73.02410844624993
+  },
+  {
+    "name": "Acklins",
+    "key": "acklins",
+    "lat": 22.669989325200085,
+    "lon": -73.94089921779994
+  },
+  {
+    "name": "Crooked Island and Long Cay",
+    "key": "crooked island and long cay",
+    "lat": 22.73499176625006,
+    "lon": -74.22322547074992
+  },
+  {
+    "name": "Exuma",
+    "key": "exuma",
+    "lat": 23.577834377000066,
+    "lon": -75.88794511659994
+  },
+  {
+    "name": "Long Island",
+    "key": "long island",
+    "lat": 23.20920261776477,
+    "lon": -75.05314502429405
+  },
+  {
+    "name": "Rum Cay",
+    "key": "rum cay",
+    "lat": 23.693744207600048,
+    "lon": -74.85940507719992
+  },
+  {
+    "name": "Black Point",
+    "key": "black point",
+    "lat": 24.015244858600056,
+    "lon": -76.34421953059993
+  },
+  {
+    "name": "San Salvador",
+    "key": "san salvador",
+    "lat": 24.073708400800058,
+    "lon": -74.47045650959993
+  },
+  {
+    "name": "Central Andros",
+    "key": "central andros",
+    "lat": 24.504915674259564,
+    "lon": -77.91149522494138
+  },
+  {
+    "name": "Mangrove Cay",
+    "key": "mangrove cay",
+    "lat": 24.07733117620454,
+    "lon": -77.81848439591143
+  },
+  {
+    "name": "South Andros",
+    "key": "south andros",
+    "lat": 23.986375230064453,
+    "lon": -77.68012447830526
+  },
+  {
+    "name": "Cat Island",
+    "key": "cat island",
+    "lat": 24.45437246300006,
+    "lon": -75.53671775481811
+  },
+  {
+    "name": "New Providence",
+    "key": "new providence",
+    "lat": 25.028111070000058,
+    "lon": -77.42431393159993
+  },
+  {
+    "name": "North Andros",
+    "key": "north andros",
+    "lat": 24.752800637151434,
+    "lon": -78.0966391412991
+  },
+  {
+    "name": "Central Eleuthera",
+    "key": "central eleuthera",
+    "lat": 25.15706322725913,
+    "lon": -76.2233103619232
+  },
+  {
+    "name": "North Eleuthera",
+    "key": "north eleuthera",
+    "lat": 25.376074107674675,
+    "lon": -76.48435441386951
+  },
+  {
+    "name": "South Eleuthera",
+    "key": "south eleuthera",
+    "lat": 24.950965652483266,
+    "lon": -76.16541915626543
+  },
+  {
+    "name": "Berry Islands",
+    "key": "berry islands",
+    "lat": 25.73651764520006,
+    "lon": -77.84308834539993
+  },
+  {
+    "name": "Moore's Island",
+    "key": "moore's island",
+    "lat": 26.310980536200056,
+    "lon": -77.55855058479992
+  },
+  {
+    "name": "City of Freeport",
+    "key": "city of freeport",
+    "lat": 26.528464939923445,
+    "lon": -78.61965744031009
+  },
+  {
+    "name": "West Grand Bahama",
+    "key": "west grand bahama",
+    "lat": 26.59692813518583,
+    "lon": -78.53617145312232
+  },
+  {
+    "name": "East Grand Bahama",
+    "key": "east grand bahama",
+    "lat": 26.686070360117057,
+    "lon": -78.25361304776739
+  },
+  {
+    "name": "Central Abaco",
+    "key": "central abaco",
+    "lat": 26.5094912781858,
+    "lon": -77.22277584547695
+  },
+  {
+    "name": "South Abaco",
+    "key": "south abaco",
+    "lat": 26.19626931944808,
+    "lon": -77.17436973488718
+  },
+  {
+    "name": "North Abaco",
+    "key": "north abaco",
+    "lat": 26.80523160571968,
+    "lon": -77.51950901150431
+  },
+  {
+    "name": "Bimini",
+    "key": "bimini",
+    "lat": 25.756415106200073,
+    "lon": -79.25813554599992
+  },
+  {
+    "name": "Ragged Island",
+    "key": "ragged island",
+    "lat": 22.193532619000052,
+    "lon": -75.72859453039993
+  },
+  {
+    "name": "Harbour Island",
+    "key": "harbour island",
+    "lat": 25.54601515632897,
+    "lon": -76.76940202074269
+  },
+  {
+    "name": "Spanish Wells",
+    "key": "spanish wells",
+    "lat": 25.524192589441636,
+    "lon": -76.8385133456785
+  }
+]

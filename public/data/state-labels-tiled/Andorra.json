@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Ordino",
+    "key": "ordino",
+    "lat": 42.60213732545946,
+    "lon": 1.5504300649229492
+  },
+  {
+    "name": "Canillo",
+    "key": "canillo",
+    "lat": 42.58280673365009,
+    "lon": 1.6457007411340967
+  },
+  {
+    "name": "Encamp",
+    "key": "encamp",
+    "lat": 42.530161577580074,
+    "lon": 1.6516884338225115
+  },
+  {
+    "name": "La Massana",
+    "key": "la massana",
+    "lat": 42.55938568309587,
+    "lon": 1.4798752030168154
+  },
+  {
+    "name": "Sant Julià de Lòria",
+    "key": "sant julià de lòria",
+    "lat": 42.49365781725567,
+    "lon": 1.491776200794617
+  },
+  {
+    "name": "Escaldes-Engordany",
+    "key": "escaldes-engordany",
+    "lat": 42.4951000761464,
+    "lon": 1.5884145264935217
+  },
+  {
+    "name": "Andorra la Vella",
+    "key": "andorra la vella",
+    "lat": 42.52082374524464,
+    "lon": 1.5247455181411311
+  }
+]

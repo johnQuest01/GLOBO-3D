@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Saint Patrick",
+    "key": "saint patrick",
+    "lat": 12.200630520272618,
+    "lon": -61.65585988652281
+  },
+  {
+    "name": "Saint David",
+    "key": "saint david",
+    "lat": 12.062006624499489,
+    "lon": -61.65212198722793
+  },
+  {
+    "name": "Saint Andrew",
+    "key": "saint andrew",
+    "lat": 12.136522499923833,
+    "lon": -61.64461729593943
+  },
+  {
+    "name": "Saint John",
+    "key": "saint john",
+    "lat": 12.134726429499878,
+    "lon": -61.713231150659155
+  },
+  {
+    "name": "Saint Peter",
+    "key": "saint peter",
+    "lat": 13.27554059191744,
+    "lon": -59.60509607843333
+  },
+  {
+    "name": "Saint Joseph",
+    "key": "saint joseph",
+    "lat": 13.21292541778675,
+    "lon": -59.54752963717237
+  },
+  {
+    "name": "Saint Paul",
+    "key": "saint paul",
+    "lat": 15.353548011356668,
+    "lon": -61.37306909263786
+  },
+  {
+    "name": "Saint George",
+    "key": "saint george",
+    "lat": 12.071263662592411,
+    "lon": -61.69597780071473
+  },
+  {
+    "name": "Saint Luke",
+    "key": "saint luke",
+    "lat": 15.246472511149634,
+    "lon": -61.36620584779139
+  },
+  {
+    "name": "Saint Mark",
+    "key": "saint mark",
+    "lat": 12.185798873659664,
+    "lon": -61.68618191844265
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Serravalle",
+    "key": "serravalle",
+    "lat": 43.963537421248176,
+    "lon": 12.464198189688773
+  },
+  {
+    "name": "Domagnano",
+    "key": "domagnano",
+    "lat": 43.953445195446,
+    "lon": 12.475660729347569
+  },
+  {
+    "name": "Faetano",
+    "key": "faetano",
+    "lat": 43.93300353218426,
+    "lon": 12.476278090834862
+  },
+  {
+    "name": "Montegiardino",
+    "key": "montegiardino",
+    "lat": 43.917270483054125,
+    "lon": 12.472120132944726
+  },
+  {
+    "name": "Fiorentino",
+    "key": "fiorentino",
+    "lat": 43.908416135462865,
+    "lon": 12.454114219537113
+  },
+  {
+    "name": "Chiesanuova",
+    "key": "chiesanuova",
+    "lat": 43.90072067685304,
+    "lon": 12.425744737499908
+  },
+  {
+    "name": "San Marino",
+    "key": "san marino",
+    "lat": 43.919909021334746,
+    "lon": 12.409979384167185
+  },
+  {
+    "name": "Acquaviva",
+    "key": "acquaviva",
+    "lat": 43.9383528526853,
+    "lon": 12.401490497474825
+  },
+  {
+    "name": "Borgo Maggiore",
+    "key": "borgo maggiore",
+    "lat": 43.94555169914872,
+    "lon": 12.436177606303605
+  }
+]

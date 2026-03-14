@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Ar Rayyān",
+    "key": "ar rayyān",
+    "lat": 25.139598011606747,
+    "lon": 51.12837465158109
+  },
+  {
+    "name": "Al Wakrah",
+    "key": "al wakrah",
+    "lat": 25.016569200542428,
+    "lon": 51.4569459825027
+  },
+  {
+    "name": "Ad Dawhah",
+    "key": "ad dawhah",
+    "lat": 25.316211411954168,
+    "lon": 51.526175733497794
+  },
+  {
+    "name": "Al Daayen",
+    "key": "al daayen",
+    "lat": 25.509928247411164,
+    "lon": 51.484189541536374
+  },
+  {
+    "name": "Al Khawr",
+    "key": "al khawr",
+    "lat": 25.77851929216842,
+    "lon": 51.28739817898459
+  },
+  {
+    "name": "Madinat ach Shamal",
+    "key": "madinat ach shamal",
+    "lat": 25.9783819615058,
+    "lon": 51.15866882889723
+  },
+  {
+    "name": "Umm Salal",
+    "key": "umm salal",
+    "lat": 25.485300187293785,
+    "lon": 51.34497955985877
+  }
+]

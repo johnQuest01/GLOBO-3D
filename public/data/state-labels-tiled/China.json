@@ -1,0 +1,194 @@
+[
+  {
+    "name": "Xinjiang",
+    "key": "xinjiang",
+    "lat": 40.80937398413397,
+    "lon": 84.06674065732078
+  },
+  {
+    "name": "Xizang",
+    "key": "xizang",
+    "lat": 31.31400259810871,
+    "lon": 89.19025573017525
+  },
+  {
+    "name": "Inner Mongol",
+    "key": "inner mongol",
+    "lat": 44.048344554521925,
+    "lon": 114.24852159640794
+  },
+  {
+    "name": "Gansu",
+    "key": "gansu",
+    "lat": 36.98062183954478,
+    "lon": 102.21087223309297
+  },
+  {
+    "name": "Yunnan",
+    "key": "yunnan",
+    "lat": 25.404941307696006,
+    "lon": 101.73452686340947
+  },
+  {
+    "name": "Heilongjiang",
+    "key": "heilongjiang",
+    "lat": 48.28216835590818,
+    "lon": 127.40798166559316
+  },
+  {
+    "name": "Jilin",
+    "key": "jilin",
+    "lat": 43.62047191933769,
+    "lon": 126.5695545800137
+  },
+  {
+    "name": "Liaoning",
+    "key": "liaoning",
+    "lat": 41.22621812253635,
+    "lon": 122.24499584291509
+  },
+  {
+    "name": "Guangxi",
+    "key": "guangxi",
+    "lat": 24.086793061590225,
+    "lon": 108.37969646316841
+  },
+  {
+    "name": "Guangdong",
+    "key": "guangdong",
+    "lat": 23.017565067970356,
+    "lon": 113.14248737809154
+  },
+  {
+    "name": "Hainan",
+    "key": "hainan",
+    "lat": 19.223927872687558,
+    "lon": 109.88746941415631
+  },
+  {
+    "name": "Fujian",
+    "key": "fujian",
+    "lat": 26.149083570693005,
+    "lon": 118.21361893172376
+  },
+  {
+    "name": "Zhejiang",
+    "key": "zhejiang",
+    "lat": 29.271181719295274,
+    "lon": 120.22965659231494
+  },
+  {
+    "name": "Shanghai",
+    "key": "shanghai",
+    "lat": 31.077274116239625,
+    "lon": 121.36956871304838
+  },
+  {
+    "name": "Jiangsu",
+    "key": "jiangsu",
+    "lat": 32.96307859755175,
+    "lon": 119.29771257783862
+  },
+  {
+    "name": "Shandong",
+    "key": "shandong",
+    "lat": 36.36662538663519,
+    "lon": 118.5245644596859
+  },
+  {
+    "name": "Hebei",
+    "key": "hebei",
+    "lat": 39.61296077175128,
+    "lon": 116.23460474024012
+  },
+  {
+    "name": "Tianjin",
+    "key": "tianjin",
+    "lat": 39.35434937640717,
+    "lon": 117.35275608954696
+  },
+  {
+    "name": "Paracel Islands",
+    "key": "paracel islands",
+    "lat": 15.780534165500072,
+    "lon": 111.20000247475004
+  },
+  {
+    "name": "Beijing",
+    "key": "beijing",
+    "lat": 40.129083731011505,
+    "lon": 116.41832584029025
+  },
+  {
+    "name": "Sichuan",
+    "key": "sichuan",
+    "lat": 30.539168357379726,
+    "lon": 102.93923639515627
+  },
+  {
+    "name": "Chongqing",
+    "key": "chongqing",
+    "lat": 30.040828152057557,
+    "lon": 107.95925675753325
+  },
+  {
+    "name": "Guizhou",
+    "key": "guizhou",
+    "lat": 26.853131564490774,
+    "lon": 106.78772861486985
+  },
+  {
+    "name": "Hunan",
+    "key": "hunan",
+    "lat": 27.273476044024175,
+    "lon": 111.59539354122983
+  },
+  {
+    "name": "Ningxia",
+    "key": "ningxia",
+    "lat": 37.3583965299486,
+    "lon": 106.19160921724603
+  },
+  {
+    "name": "Shaanxi",
+    "key": "shaanxi",
+    "lat": 35.2378337455466,
+    "lon": 108.72127480326454
+  },
+  {
+    "name": "Qinghai",
+    "key": "qinghai",
+    "lat": 35.14148283454014,
+    "lon": 96.39493512571796
+  },
+  {
+    "name": "Shanxi",
+    "key": "shanxi",
+    "lat": 37.96843274562836,
+    "lon": 112.50519102502874
+  },
+  {
+    "name": "Jiangxi",
+    "key": "jiangxi",
+    "lat": 27.538532882575765,
+    "lon": 115.7735306478424
+  },
+  {
+    "name": "Henan",
+    "key": "henan",
+    "lat": 33.85249471716876,
+    "lon": 114.03081324169528
+  },
+  {
+    "name": "Hubei",
+    "key": "hubei",
+    "lat": 30.963070533309857,
+    "lon": 111.92945361698833
+  },
+  {
+    "name": "Anhui",
+    "key": "anhui",
+    "lat": 31.86154133054903,
+    "lon": 117.23985657821305
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Jutiapa",
+    "key": "jutiapa",
+    "lat": 14.170955819621753,
+    "lon": -89.88152057745681
+  },
+  {
+    "name": "Chiquimula",
+    "key": "chiquimula",
+    "lat": 14.659699378411544,
+    "lon": -89.46010454583556
+  },
+  {
+    "name": "Petén",
+    "key": "petén",
+    "lat": 16.79716428555379,
+    "lon": -90.17092908608582
+  },
+  {
+    "name": "San Marcos",
+    "key": "san marcos",
+    "lat": 14.945491848407395,
+    "lon": -92.02320490697022
+  },
+  {
+    "name": "Huehuetenango",
+    "key": "huehuetenango",
+    "lat": 15.5164947302714,
+    "lon": -91.6040515541182
+  },
+  {
+    "name": "Quiché",
+    "key": "quiché",
+    "lat": 15.452631317156664,
+    "lon": -90.84499378654164
+  },
+  {
+    "name": "Alta Verapaz",
+    "key": "alta verapaz",
+    "lat": 15.637692694244667,
+    "lon": -90.17823226019487
+  },
+  {
+    "name": "Izabal",
+    "key": "izabal",
+    "lat": 15.549438201937308,
+    "lon": -89.0402173282723
+  },
+  {
+    "name": "Zacapa",
+    "key": "zacapa",
+    "lat": 15.0298973505076,
+    "lon": -89.52544283650714
+  },
+  {
+    "name": "Retalhuleu",
+    "key": "retalhuleu",
+    "lat": 14.45454574050903,
+    "lon": -91.76453042662337
+  },
+  {
+    "name": "Suchitepéquez",
+    "key": "suchitepéquez",
+    "lat": 14.409326537288612,
+    "lon": -91.41786206106096
+  },
+  {
+    "name": "Escuintla",
+    "key": "escuintla",
+    "lat": 14.19172514078777,
+    "lon": -90.9640544348744
+  },
+  {
+    "name": "Santa Rosa",
+    "key": "santa rosa",
+    "lat": 14.180544872264395,
+    "lon": -90.32082164504725
+  },
+  {
+    "name": "Chimaltenango",
+    "key": "chimaltenango",
+    "lat": 14.697665550615563,
+    "lon": -90.91426194010009
+  },
+  {
+    "name": "Sacatepéquez",
+    "key": "sacatepéquez",
+    "lat": 14.590625650753159,
+    "lon": -90.76469546862097
+  },
+  {
+    "name": "Guatemala",
+    "key": "guatemala",
+    "lat": 14.6246718069833,
+    "lon": -90.50734683573785
+  },
+  {
+    "name": "Jalapa",
+    "key": "jalapa",
+    "lat": 14.614979030807604,
+    "lon": -89.96445921487086
+  },
+  {
+    "name": "El Progreso",
+    "key": "el progreso",
+    "lat": 14.932441565338458,
+    "lon": -90.10366777213744
+  },
+  {
+    "name": "Sololá",
+    "key": "sololá",
+    "lat": 14.719848311750177,
+    "lon": -91.26737222195048
+  },
+  {
+    "name": "Quezaltenango",
+    "key": "quezaltenango",
+    "lat": 14.809103763720563,
+    "lon": -91.67341138090192
+  },
+  {
+    "name": "Baja Verapaz",
+    "key": "baja verapaz",
+    "lat": 15.127442582958816,
+    "lon": -90.45209181061357
+  },
+  {
+    "name": "Totonicapán",
+    "key": "totonicapán",
+    "lat": 15.048220459006965,
+    "lon": -91.4207493080841
+  }
+]

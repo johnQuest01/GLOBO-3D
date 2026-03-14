@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Rôtânôkiri",
+    "key": "rôtânôkiri",
+    "lat": 13.955153623142701,
+    "lon": 107.15035764545121
+  },
+  {
+    "name": "Môndól Kiri",
+    "key": "môndól kiri",
+    "lat": 12.803337532698382,
+    "lon": 106.97786841603896
+  },
+  {
+    "name": "Krâchéh",
+    "key": "krâchéh",
+    "lat": 12.58561505021317,
+    "lon": 106.30822118464826
+  },
+  {
+    "name": "Kâmpóng Cham",
+    "key": "kâmpóng cham",
+    "lat": 11.972498627964036,
+    "lon": 105.64577753282423
+  },
+  {
+    "name": "Svay Rieng",
+    "key": "svay rieng",
+    "lat": 11.213247138549379,
+    "lon": 105.8322992629096
+  },
+  {
+    "name": "Prey Vêng",
+    "key": "prey vêng",
+    "lat": 11.372841436987114,
+    "lon": 105.4648265842348
+  },
+  {
+    "name": "Kândal",
+    "key": "kândal",
+    "lat": 11.419172019425687,
+    "lon": 105.00029070363298
+  },
+  {
+    "name": "Takêv",
+    "key": "takêv",
+    "lat": 10.9183772439602,
+    "lon": 104.78191021712279
+  },
+  {
+    "name": "Kâmpôt",
+    "key": "kâmpôt",
+    "lat": 10.716559342915184,
+    "lon": 104.37937560616591
+  },
+  {
+    "name": "Otdar Mean Chey",
+    "key": "otdar mean chey",
+    "lat": 14.210485485176754,
+    "lon": 103.64728210747101
+  },
+  {
+    "name": "Preah Vihéar",
+    "key": "preah vihéar",
+    "lat": 13.85113288768333,
+    "lon": 105.0441964536737
+  },
+  {
+    "name": "Siemréab",
+    "key": "siemréab",
+    "lat": 13.73501566301165,
+    "lon": 104.15004209734332
+  },
+  {
+    "name": "Bântéay Méanchey",
+    "key": "bântéay méanchey",
+    "lat": 13.7652807124778,
+    "lon": 102.86763214194639
+  },
+  {
+    "name": "Kaôh Kong",
+    "key": "kaôh kong",
+    "lat": 11.380065338577163,
+    "lon": 103.41317971225085
+  },
+  {
+    "name": "Pouthisat",
+    "key": "pouthisat",
+    "lat": 12.385678525959628,
+    "lon": 103.55221157986695
+  },
+  {
+    "name": "Batdâmbâng",
+    "key": "batdâmbâng",
+    "lat": 12.970023659536936,
+    "lon": 103.02497096442457
+  },
+  {
+    "name": "Krong Pailin",
+    "key": "krong pailin",
+    "lat": 12.836484408008717,
+    "lon": 102.59310808089214
+  },
+  {
+    "name": "Stœng Trêng",
+    "key": "stœng trêng",
+    "lat": 13.868926824434176,
+    "lon": 106.16223771329693
+  },
+  {
+    "name": "Krong Preah Sihanouk",
+    "key": "krong preah sihanouk",
+    "lat": 10.690766669818299,
+    "lon": 103.76505605227126
+  },
+  {
+    "name": "Kep",
+    "key": "kep",
+    "lat": 10.502141899049956,
+    "lon": 104.37612473427448
+  },
+  {
+    "name": "Kâmpóng Chhnang",
+    "key": "kâmpóng chhnang",
+    "lat": 12.183531282906662,
+    "lon": 104.536205043014
+  },
+  {
+    "name": "Kâmpóng Thum",
+    "key": "kâmpóng thum",
+    "lat": 12.839353675305771,
+    "lon": 104.89416126997442
+  },
+  {
+    "name": "Kâmpóng Spœ",
+    "key": "kâmpóng spœ",
+    "lat": 11.628269863488391,
+    "lon": 104.28028120324613
+  },
+  {
+    "name": "Phnom Penh",
+    "key": "phnom penh",
+    "lat": 11.520754462228638,
+    "lon": 104.87204870010737
+  }
+]

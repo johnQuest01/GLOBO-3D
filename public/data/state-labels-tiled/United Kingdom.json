@@ -1,0 +1,1394 @@
+[
+  {
+    "name": "Derry",
+    "key": "derry",
+    "lat": 54.964448193767545,
+    "lon": -7.247757745114255
+  },
+  {
+    "name": "Strabane",
+    "key": "strabane",
+    "lat": 54.78075635065203,
+    "lon": -7.286991740753663
+  },
+  {
+    "name": "Fermanagh",
+    "key": "fermanagh",
+    "lat": 54.39219970938612,
+    "lon": -7.598285883663147
+  },
+  {
+    "name": "Dungannon",
+    "key": "dungannon",
+    "lat": 54.42909849497154,
+    "lon": -6.930836854631815
+  },
+  {
+    "name": "Armagh",
+    "key": "armagh",
+    "lat": 54.33896433588361,
+    "lon": -6.64348300457395
+  },
+  {
+    "name": "Newry and Mourne",
+    "key": "newry and mourne",
+    "lat": 54.154223901431415,
+    "lon": -6.310488869369333
+  },
+  {
+    "name": "Flintshire",
+    "key": "flintshire",
+    "lat": 53.21634767484148,
+    "lon": -3.158328613570619
+  },
+  {
+    "name": "Cheshire West and Chester",
+    "key": "cheshire west and chester",
+    "lat": 53.19648660394322,
+    "lon": -2.7740573177232553
+  },
+  {
+    "name": "Wrexham",
+    "key": "wrexham",
+    "lat": 52.98420712775311,
+    "lon": -3.062455102306089
+  },
+  {
+    "name": "Shropshire",
+    "key": "shropshire",
+    "lat": 52.690819511198086,
+    "lon": -2.7012410796944515
+  },
+  {
+    "name": "Powys",
+    "key": "powys",
+    "lat": 52.3018431272121,
+    "lon": -3.4221987099402145
+  },
+  {
+    "name": "Herefordshire",
+    "key": "herefordshire",
+    "lat": 52.12580781793774,
+    "lon": -2.7359364044988554
+  },
+  {
+    "name": "Monmouthshire",
+    "key": "monmouthshire",
+    "lat": 51.77523512127525,
+    "lon": -2.9326393261515236
+  },
+  {
+    "name": "Gloucestershire",
+    "key": "gloucestershire",
+    "lat": 51.7955510151679,
+    "lon": -2.1769892945992226
+  },
+  {
+    "name": "Scottish Borders",
+    "key": "scottish borders",
+    "lat": 55.609920268598785,
+    "lon": -2.7355620969494634
+  },
+  {
+    "name": "Northumberland",
+    "key": "northumberland",
+    "lat": 55.2410358618732,
+    "lon": -2.0871836848549847
+  },
+  {
+    "name": "Cumbria",
+    "key": "cumbria",
+    "lat": 54.67433727186193,
+    "lon": -2.7910407065921525
+  },
+  {
+    "name": "Dumfries and Galloway",
+    "key": "dumfries and galloway",
+    "lat": 55.090632471213276,
+    "lon": -3.903014591775975
+  },
+  {
+    "name": "Limavady",
+    "key": "limavady",
+    "lat": 54.96919171578205,
+    "lon": -6.9745151730657815
+  },
+  {
+    "name": "Coleraine",
+    "key": "coleraine",
+    "lat": 55.09399349014684,
+    "lon": -6.664809100857644
+  },
+  {
+    "name": "Moyle",
+    "key": "moyle",
+    "lat": 55.12609318990597,
+    "lon": -6.283423799931262
+  },
+  {
+    "name": "Larne",
+    "key": "larne",
+    "lat": 54.90609536289484,
+    "lon": -5.942024730811398
+  },
+  {
+    "name": "Carrickfergus",
+    "key": "carrickfergus",
+    "lat": 54.748146693095414,
+    "lon": -5.78782563155754
+  },
+  {
+    "name": "Newtownabbey",
+    "key": "newtownabbey",
+    "lat": 54.719107229272986,
+    "lon": -5.953292233848269
+  },
+  {
+    "name": "Belfast",
+    "key": "belfast",
+    "lat": 54.62434679080219,
+    "lon": -5.935724202509662
+  },
+  {
+    "name": "North Down",
+    "key": "north down",
+    "lat": 54.62961658449791,
+    "lon": -5.774139305988662
+  },
+  {
+    "name": "Ards",
+    "key": "ards",
+    "lat": 54.563637135273986,
+    "lon": -5.629593382603917
+  },
+  {
+    "name": "Down",
+    "key": "down",
+    "lat": 54.36991938357002,
+    "lon": -5.776521369098077
+  },
+  {
+    "name": "Clackmannanshire",
+    "key": "clackmannanshire",
+    "lat": 56.11473598204437,
+    "lon": -3.7570930244904615
+  },
+  {
+    "name": "Stirling",
+    "key": "stirling",
+    "lat": 56.19778789217972,
+    "lon": -4.182782918855393
+  },
+  {
+    "name": "Falkirk",
+    "key": "falkirk",
+    "lat": 56.00288245488245,
+    "lon": -3.760739321713932
+  },
+  {
+    "name": "West Lothian",
+    "key": "west lothian",
+    "lat": 55.89623393462292,
+    "lon": -3.5508398910192738
+  },
+  {
+    "name": "Edinburgh",
+    "key": "edinburgh",
+    "lat": 55.9138776244795,
+    "lon": -3.3466441309325203
+  },
+  {
+    "name": "Midlothian",
+    "key": "midlothian",
+    "lat": 55.86446182052941,
+    "lon": -3.0866023534692033
+  },
+  {
+    "name": "East Lothian",
+    "key": "east lothian",
+    "lat": 55.94580355354227,
+    "lon": -2.762374264997284
+  },
+  {
+    "name": "North Tyneside",
+    "key": "north tyneside",
+    "lat": 55.03810879880457,
+    "lon": -1.4926790036565651
+  },
+  {
+    "name": "South Tyneside",
+    "key": "south tyneside",
+    "lat": 54.9626865667472,
+    "lon": -1.455680663747927
+  },
+  {
+    "name": "Sunderland",
+    "key": "sunderland",
+    "lat": 54.90283453718892,
+    "lon": -1.432908192181567
+  },
+  {
+    "name": "Durham",
+    "key": "durham",
+    "lat": 54.700265886745804,
+    "lon": -1.7147938084776264
+  },
+  {
+    "name": "Hartlepool",
+    "key": "hartlepool",
+    "lat": 54.660822062858344,
+    "lon": -1.2566963571868366
+  },
+  {
+    "name": "Redcar and Cleveland",
+    "key": "redcar and cleveland",
+    "lat": 54.56842701773375,
+    "lon": -1.0935415103065538
+  },
+  {
+    "name": "North Yorkshire",
+    "key": "north yorkshire",
+    "lat": 54.16239053661673,
+    "lon": -1.3565580441167975
+  },
+  {
+    "name": "East Riding of Yorkshire",
+    "key": "east riding of yorkshire",
+    "lat": 53.806976737840166,
+    "lon": -0.4720231742147894
+  },
+  {
+    "name": "Kingston upon Hull",
+    "key": "kingston upon hull",
+    "lat": 53.74146810508458,
+    "lon": -0.36677552974860816
+  },
+  {
+    "name": "North Lincolnshire",
+    "key": "north lincolnshire",
+    "lat": 53.59524800602392,
+    "lon": -0.5811716845588126
+  },
+  {
+    "name": "North East Lincolnshire",
+    "key": "north east lincolnshire",
+    "lat": 53.57350974675544,
+    "lon": -0.1695631309092551
+  },
+  {
+    "name": "Lincolnshire",
+    "key": "lincolnshire",
+    "lat": 53.13994223561584,
+    "lon": -0.208423655873468
+  },
+  {
+    "name": "Norfolk",
+    "key": "norfolk",
+    "lat": 52.658289661579744,
+    "lon": 0.8698765979128301
+  },
+  {
+    "name": "Suffolk",
+    "key": "suffolk",
+    "lat": 52.24357388244545,
+    "lon": 1.0990736368535152
+  },
+  {
+    "name": "Essex",
+    "key": "essex",
+    "lat": 51.756250252525234,
+    "lon": 0.5401920758390762
+  },
+  {
+    "name": "Southend-on-Sea",
+    "key": "southend-on-sea",
+    "lat": 51.549064148244,
+    "lon": 0.7472481159686168
+  },
+  {
+    "name": "Thurrock",
+    "key": "thurrock",
+    "lat": 51.50122934251011,
+    "lon": 0.3743679511699914
+  },
+  {
+    "name": "Kent",
+    "key": "kent",
+    "lat": 51.272841872836686,
+    "lon": 0.5916583875554868
+  },
+  {
+    "name": "Medway",
+    "key": "medway",
+    "lat": 51.42621984438156,
+    "lon": 0.5355097524634672
+  },
+  {
+    "name": "East Sussex",
+    "key": "east sussex",
+    "lat": 50.94947827507469,
+    "lon": 0.29483771713617296
+  },
+  {
+    "name": "Brighton and Hove",
+    "key": "brighton and hove",
+    "lat": 50.82059138184586,
+    "lon": -0.07560909328698528
+  },
+  {
+    "name": "West Sussex",
+    "key": "west sussex",
+    "lat": 50.95083060739336,
+    "lon": -0.432682187432178
+  },
+  {
+    "name": "Hampshire",
+    "key": "hampshire",
+    "lat": 51.038814015058065,
+    "lon": -1.2152795206918625
+  },
+  {
+    "name": "Portsmouth",
+    "key": "portsmouth",
+    "lat": 50.83173248875006,
+    "lon": -1.0335180329999218
+  },
+  {
+    "name": "Southampton",
+    "key": "southampton",
+    "lat": 50.88679553877748,
+    "lon": -1.348789628768273
+  },
+  {
+    "name": "Dorset",
+    "key": "dorset",
+    "lat": 50.798055280625945,
+    "lon": -2.186742326903116
+  },
+  {
+    "name": "Bournemouth",
+    "key": "bournemouth",
+    "lat": 50.72809197746277,
+    "lon": -1.853058311691754
+  },
+  {
+    "name": "Poole",
+    "key": "poole",
+    "lat": 50.72679157846855,
+    "lon": -1.9351080862691816
+  },
+  {
+    "name": "Devon",
+    "key": "devon",
+    "lat": 50.68981560957979,
+    "lon": -3.7792938504900087
+  },
+  {
+    "name": "Torbay",
+    "key": "torbay",
+    "lat": 50.464119548933134,
+    "lon": -3.542987394429961
+  },
+  {
+    "name": "Plymouth",
+    "key": "plymouth",
+    "lat": 50.380254367196436,
+    "lon": -4.115193283105211
+  },
+  {
+    "name": "Cornwall",
+    "key": "cornwall",
+    "lat": 50.43943187992774,
+    "lon": -4.733649952136871
+  },
+  {
+    "name": "Somerset",
+    "key": "somerset",
+    "lat": 51.16282399604257,
+    "lon": -2.9726721822127837
+  },
+  {
+    "name": "North Somerset",
+    "key": "north somerset",
+    "lat": 51.36840405015122,
+    "lon": -2.811988306343887
+  },
+  {
+    "name": "Bristol",
+    "key": "bristol",
+    "lat": 51.46494067973923,
+    "lon": -2.658742505063619
+  },
+  {
+    "name": "South Gloucestershire",
+    "key": "south gloucestershire",
+    "lat": 51.52530311689235,
+    "lon": -2.494661831708719
+  },
+  {
+    "name": "Newport",
+    "key": "newport",
+    "lat": 51.568506794103236,
+    "lon": -2.961379428367953
+  },
+  {
+    "name": "Cardiff",
+    "key": "cardiff",
+    "lat": 51.50954522073533,
+    "lon": -3.1578356233653437
+  },
+  {
+    "name": "Vale of Glamorgan",
+    "key": "vale of glamorgan",
+    "lat": 51.45361743566273,
+    "lon": -3.329461924433796
+  },
+  {
+    "name": "Bridgend",
+    "key": "bridgend",
+    "lat": 51.505223377436906,
+    "lon": -3.5853899661140645
+  },
+  {
+    "name": "Neath Port Talbot",
+    "key": "neath port talbot",
+    "lat": 51.66115204013688,
+    "lon": -3.750950697998803
+  },
+  {
+    "name": "Swansea",
+    "key": "swansea",
+    "lat": 51.67024923334863,
+    "lon": -3.944316118207965
+  },
+  {
+    "name": "Carmarthenshire",
+    "key": "carmarthenshire",
+    "lat": 51.899935118810674,
+    "lon": -4.165634927509899
+  },
+  {
+    "name": "Pembrokeshire",
+    "key": "pembrokeshire",
+    "lat": 51.84688327304953,
+    "lon": -4.783402618580101
+  },
+  {
+    "name": "Ceredigion",
+    "key": "ceredigion",
+    "lat": 52.25924904787784,
+    "lon": -4.168135234413883
+  },
+  {
+    "name": "Gwynedd",
+    "key": "gwynedd",
+    "lat": 52.841789298905965,
+    "lon": -3.9713113813656524
+  },
+  {
+    "name": "Conwy",
+    "key": "conwy",
+    "lat": 53.16417930380315,
+    "lon": -3.791012088248702
+  },
+  {
+    "name": "Denbighshire",
+    "key": "denbighshire",
+    "lat": 53.09976521905919,
+    "lon": -3.374864019080894
+  },
+  {
+    "name": "Halton",
+    "key": "halton",
+    "lat": 53.338225150439015,
+    "lon": -3.0723539822923343
+  },
+  {
+    "name": "Halton",
+    "key": "halton",
+    "lat": 53.338225150439015,
+    "lon": -3.0723539822923343
+  },
+  {
+    "name": "Knowsley",
+    "key": "knowsley",
+    "lat": 53.40849573940666,
+    "lon": -2.842253698261594
+  },
+  {
+    "name": "Liverpool",
+    "key": "liverpool",
+    "lat": 53.409162055580275,
+    "lon": -2.933207715372797
+  },
+  {
+    "name": "Sefton",
+    "key": "sefton",
+    "lat": 53.54301352245615,
+    "lon": -3.0007178444312936
+  },
+  {
+    "name": "Lancashire",
+    "key": "lancashire",
+    "lat": 53.74805062299169,
+    "lon": -2.66610266473623
+  },
+  {
+    "name": "Blackpool",
+    "key": "blackpool",
+    "lat": 53.807843554281106,
+    "lon": -3.003659060409518
+  },
+  {
+    "name": "South Ayrshire",
+    "key": "south ayrshire",
+    "lat": 55.25080034704957,
+    "lon": -4.749403833427102
+  },
+  {
+    "name": "North Ayshire",
+    "key": "north ayshire",
+    "lat": 55.70861534768472,
+    "lon": -4.688737454052287
+  },
+  {
+    "name": "Inverclyde",
+    "key": "inverclyde",
+    "lat": 55.87939847913571,
+    "lon": -4.789041844070123
+  },
+  {
+    "name": "Renfrewshire",
+    "key": "renfrewshire",
+    "lat": 55.869769345009864,
+    "lon": -4.531848630760719
+  },
+  {
+    "name": "West Dunbartonshire",
+    "key": "west dunbartonshire",
+    "lat": 55.94507226845725,
+    "lon": -4.462598887629016
+  },
+  {
+    "name": "Argyll and Bute",
+    "key": "argyll and bute",
+    "lat": 56.02323362570977,
+    "lon": -5.184005307802806
+  },
+  {
+    "name": "Highland",
+    "key": "highland",
+    "lat": 57.547775221409076,
+    "lon": -4.7024848275480275
+  },
+  {
+    "name": "Moray",
+    "key": "moray",
+    "lat": 57.430681510096555,
+    "lon": -3.301341622140536
+  },
+  {
+    "name": "Aberdeenshire",
+    "key": "aberdeenshire",
+    "lat": 57.24980010707722,
+    "lon": -2.69843114066561
+  },
+  {
+    "name": "Aberdeen",
+    "key": "aberdeen",
+    "lat": 57.17108677816509,
+    "lon": -2.157758551733855
+  },
+  {
+    "name": "Angus",
+    "key": "angus",
+    "lat": 56.71109488352342,
+    "lon": -2.9140495694212576
+  },
+  {
+    "name": "Dundee",
+    "key": "dundee",
+    "lat": 56.467407679820084,
+    "lon": -2.9434184032749897
+  },
+  {
+    "name": "Perthshire and Kinross",
+    "key": "perthshire and kinross",
+    "lat": 56.51382012707542,
+    "lon": -3.7165367953137185
+  },
+  {
+    "name": "Fife",
+    "key": "fife",
+    "lat": 56.20602509735593,
+    "lon": -3.190724638681166
+  },
+  {
+    "name": "Isle of Wight",
+    "key": "isle of wight",
+    "lat": 50.69934316620005,
+    "lon": -1.256548631799933
+  },
+  {
+    "name": "Anglesey",
+    "key": "anglesey",
+    "lat": 53.30473460466673,
+    "lon": -4.323557095333257
+  },
+  {
+    "name": "Eilean Siar",
+    "key": "eilean siar",
+    "lat": 58.07943010733339,
+    "lon": -6.715691020083265
+  },
+  {
+    "name": "Orkney",
+    "key": "orkney",
+    "lat": 59.02094728614291,
+    "lon": -3.0635822071427907
+  },
+  {
+    "name": "Shetland Islands",
+    "key": "shetland islands",
+    "lat": 60.231291227444494,
+    "lon": -1.2985236393332684
+  },
+  {
+    "name": "Isles of Scilly",
+    "key": "isles of scilly",
+    "lat": 49.92684560775005,
+    "lon": -6.297739224499921
+  },
+  {
+    "name": "Caerphilly",
+    "key": "caerphilly",
+    "lat": 51.65403087030341,
+    "lon": -3.1791221276590775
+  },
+  {
+    "name": "Rhondda, Cynon, Taff",
+    "key": "rhondda, cynon, taff",
+    "lat": 51.63284353301511,
+    "lon": -3.3957077447041684
+  },
+  {
+    "name": "Blaenau Gwent",
+    "key": "blaenau gwent",
+    "lat": 51.77851939561359,
+    "lon": -3.1956133692815683
+  },
+  {
+    "name": "Torfaen",
+    "key": "torfaen",
+    "lat": 51.66684662553132,
+    "lon": -3.0536582097985616
+  },
+  {
+    "name": "Merthyr Tydfil",
+    "key": "merthyr tydfil",
+    "lat": 51.76125946737551,
+    "lon": -3.351146511452356
+  },
+  {
+    "name": "North Lanarkshire",
+    "key": "north lanarkshire",
+    "lat": 55.89523517046671,
+    "lon": -3.97929938378455
+  },
+  {
+    "name": "East Dunbartonshire",
+    "key": "east dunbartonshire",
+    "lat": 55.956708808264864,
+    "lon": -4.225963914503074
+  },
+  {
+    "name": "Glasgow",
+    "key": "glasgow",
+    "lat": 55.85210242120403,
+    "lon": -4.2723656591906956
+  },
+  {
+    "name": "East Renfrewshire",
+    "key": "east renfrewshire",
+    "lat": 55.76331062163786,
+    "lon": -4.400066121254507
+  },
+  {
+    "name": "East Ayrshire",
+    "key": "east ayrshire",
+    "lat": 55.499873644063406,
+    "lon": -4.340608079429336
+  },
+  {
+    "name": "South Lanarkshire",
+    "key": "south lanarkshire",
+    "lat": 55.60116935575615,
+    "lon": -3.899674614691719
+  },
+  {
+    "name": "Magherafelt",
+    "key": "magherafelt",
+    "lat": 54.817116581664884,
+    "lon": -6.726061095942839
+  },
+  {
+    "name": "Omagh",
+    "key": "omagh",
+    "lat": 54.59379687982212,
+    "lon": -7.272344145665796
+  },
+  {
+    "name": "Mid Ulster",
+    "key": "mid ulster",
+    "lat": 54.618277153767615,
+    "lon": -6.7260180323563175
+  },
+  {
+    "name": "Craigavon",
+    "key": "craigavon",
+    "lat": 54.493532707040195,
+    "lon": -6.422016654730539
+  },
+  {
+    "name": "Banbridge",
+    "key": "banbridge",
+    "lat": 54.3345132515353,
+    "lon": -6.221923048210111
+  },
+  {
+    "name": "Antrim",
+    "key": "antrim",
+    "lat": 54.67918859533987,
+    "lon": -6.293957841443728
+  },
+  {
+    "name": "Lisburn",
+    "key": "lisburn",
+    "lat": 54.50580216863516,
+    "lon": -6.0259684776631195
+  },
+  {
+    "name": "Ballymoney",
+    "key": "ballymoney",
+    "lat": 55.0051958277752,
+    "lon": -6.47599884012438
+  },
+  {
+    "name": "Ballymena",
+    "key": "ballymena",
+    "lat": 54.869585796347394,
+    "lon": -6.264850168086517
+  },
+  {
+    "name": "Castlereagh",
+    "key": "castlereagh",
+    "lat": 54.541150078913,
+    "lon": -5.83750206791611
+  },
+  {
+    "name": "Wandsworth",
+    "key": "wandsworth",
+    "lat": 51.45560075292952,
+    "lon": -0.16605299704817103
+  },
+  {
+    "name": "Merton",
+    "key": "merton",
+    "lat": 51.40806827782874,
+    "lon": -0.16513512483613604
+  },
+  {
+    "name": "Westminster",
+    "key": "westminster",
+    "lat": 51.50345435968092,
+    "lon": -0.15016618517132466
+  },
+  {
+    "name": "Kensington and Chelsea",
+    "key": "kensington and chelsea",
+    "lat": 51.500119076459185,
+    "lon": -0.18405300581657968
+  },
+  {
+    "name": "Hounslow",
+    "key": "hounslow",
+    "lat": 51.47284468633318,
+    "lon": -0.32404876668724114
+  },
+  {
+    "name": "Ealing",
+    "key": "ealing",
+    "lat": 51.517622314568136,
+    "lon": -0.3266412012804191
+  },
+  {
+    "name": "Hammersmith and Fulham",
+    "key": "hammersmith and fulham",
+    "lat": 51.492641681454124,
+    "lon": -0.21792137010372212
+  },
+  {
+    "name": "Stockton-on-Tees",
+    "key": "stockton-on-tees",
+    "lat": 54.55108179695876,
+    "lon": -1.3351806009611096
+  },
+  {
+    "name": "Darlington",
+    "key": "darlington",
+    "lat": 54.55303996472256,
+    "lon": -1.484735887226421
+  },
+  {
+    "name": "Middlesbrough",
+    "key": "middlesbrough",
+    "lat": 54.53530202896543,
+    "lon": -1.2169356957257804
+  },
+  {
+    "name": "Richmond upon Thames",
+    "key": "richmond upon thames",
+    "lat": 51.443905884099244,
+    "lon": -0.26624437093097225
+  },
+  {
+    "name": "City",
+    "key": "city",
+    "lat": 51.516657687652135,
+    "lon": -0.08302988652006131
+  },
+  {
+    "name": "Tower Hamlets",
+    "key": "tower hamlets",
+    "lat": 51.511076632630456,
+    "lon": -0.03674933481396655
+  },
+  {
+    "name": "Gateshead",
+    "key": "gateshead",
+    "lat": 54.92888773762897,
+    "lon": -1.6708106365516453
+  },
+  {
+    "name": "Newcastle upon Tyne",
+    "key": "newcastle upon tyne",
+    "lat": 55.015021981099515,
+    "lon": -1.6140698643927294
+  },
+  {
+    "name": "York",
+    "key": "york",
+    "lat": 53.93990167931902,
+    "lon": -1.0168833071988843
+  },
+  {
+    "name": "Merseyside",
+    "key": "merseyside",
+    "lat": 53.42891029682272,
+    "lon": -2.708316257039646
+  },
+  {
+    "name": "Enfield",
+    "key": "enfield",
+    "lat": 51.6468688091482,
+    "lon": -0.05850483697864206
+  },
+  {
+    "name": "Hertfordshire",
+    "key": "hertfordshire",
+    "lat": 51.78240877853459,
+    "lon": -0.22993658113140414
+  },
+  {
+    "name": "Barnet",
+    "key": "barnet",
+    "lat": 51.61537592384549,
+    "lon": -0.198457338049991
+  },
+  {
+    "name": "Waltham Forest",
+    "key": "waltham forest",
+    "lat": 51.593639576833546,
+    "lon": -0.010628744007046212
+  },
+  {
+    "name": "Redbridge",
+    "key": "redbridge",
+    "lat": 51.59276845994645,
+    "lon": 0.09590406626963954
+  },
+  {
+    "name": "Havering",
+    "key": "havering",
+    "lat": 51.560388868501455,
+    "lon": 0.1939730158419858
+  },
+  {
+    "name": "Cambridgeshire",
+    "key": "cambridgeshire",
+    "lat": 52.33809579727604,
+    "lon": -0.015078454143077482
+  },
+  {
+    "name": "Bexley",
+    "key": "bexley",
+    "lat": 51.470568462407456,
+    "lon": 0.16380505263249137
+  },
+  {
+    "name": "Sutton",
+    "key": "sutton",
+    "lat": 51.37058047151154,
+    "lon": -0.17884143712262812
+  },
+  {
+    "name": "Milton Keynes",
+    "key": "milton keynes",
+    "lat": 52.070112277659454,
+    "lon": -0.7497592164646676
+  },
+  {
+    "name": "Buckinghamshire",
+    "key": "buckinghamshire",
+    "lat": 51.72619502039155,
+    "lon": -0.7582527016623956
+  },
+  {
+    "name": "Hillingdon",
+    "key": "hillingdon",
+    "lat": 51.53253219564714,
+    "lon": -0.42288117408406833
+  },
+  {
+    "name": "Brent",
+    "key": "brent",
+    "lat": 51.54384195188739,
+    "lon": -0.22896905285094654
+  },
+  {
+    "name": "Luton",
+    "key": "luton",
+    "lat": 51.88515371357299,
+    "lon": -0.3895960148442441
+  },
+  {
+    "name": "Harrow",
+    "key": "harrow",
+    "lat": 51.58351837842039,
+    "lon": -0.32984513994126513
+  },
+  {
+    "name": "Central Bedfordshire",
+    "key": "central bedfordshire",
+    "lat": 51.98981282879898,
+    "lon": -0.4502515655573234
+  },
+  {
+    "name": "Bedford",
+    "key": "bedford",
+    "lat": 52.158810544970656,
+    "lon": -0.4845218218745894
+  },
+  {
+    "name": "Rutland",
+    "key": "rutland",
+    "lat": 52.66937458003281,
+    "lon": -0.6655714177267669
+  },
+  {
+    "name": "Nottinghamshire",
+    "key": "nottinghamshire",
+    "lat": 53.15408838429456,
+    "lon": -1.0086906053487128
+  },
+  {
+    "name": "Northamptonshire",
+    "key": "northamptonshire",
+    "lat": 52.288464275056235,
+    "lon": -0.8025756059580301
+  },
+  {
+    "name": "Camden",
+    "key": "camden",
+    "lat": 51.5350372723522,
+    "lon": -0.1364805429427065
+  },
+  {
+    "name": "Islington",
+    "key": "islington",
+    "lat": 51.539614081644515,
+    "lon": -0.10352303715844755
+  },
+  {
+    "name": "Peterborough",
+    "key": "peterborough",
+    "lat": 52.60319774082304,
+    "lon": -0.2581699282995714
+  },
+  {
+    "name": "Lambeth",
+    "key": "lambeth",
+    "lat": 51.445884660748476,
+    "lon": -0.1105723483976746
+  },
+  {
+    "name": "Southwark",
+    "key": "southwark",
+    "lat": 51.479947734457475,
+    "lon": -0.07190591925135388
+  },
+  {
+    "name": "Doncaster",
+    "key": "doncaster",
+    "lat": 53.556624407415455,
+    "lon": -1.1182258674922991
+  },
+  {
+    "name": "Croydon",
+    "key": "croydon",
+    "lat": 51.372842176824996,
+    "lon": -0.10275305830700177
+  },
+  {
+    "name": "Lewisham",
+    "key": "lewisham",
+    "lat": 51.45910736738605,
+    "lon": -0.02188590121339473
+  },
+  {
+    "name": "Haringey",
+    "key": "haringey",
+    "lat": 51.57615079567979,
+    "lon": -0.09931288438210524
+  },
+  {
+    "name": "Kingston upon Thames",
+    "key": "kingston upon thames",
+    "lat": 51.4016380072682,
+    "lon": -0.25264571762576227
+  },
+  {
+    "name": "Newham",
+    "key": "newham",
+    "lat": 51.52787762566614,
+    "lon": 0.030361740102210075
+  },
+  {
+    "name": "Greenwich",
+    "key": "greenwich",
+    "lat": 51.4805678516964,
+    "lon": 0.048411579502206745
+  },
+  {
+    "name": "Hackney",
+    "key": "hackney",
+    "lat": 51.54276782026439,
+    "lon": -0.05934116397782775
+  },
+  {
+    "name": "Barking and Dagenham",
+    "key": "barking and dagenham",
+    "lat": 51.54009295012952,
+    "lon": 0.12713385694193372
+  },
+  {
+    "name": "Leicestershire",
+    "key": "leicestershire",
+    "lat": 52.6882146997343,
+    "lon": -1.0864139471316807
+  },
+  {
+    "name": "Cheshire East",
+    "key": "cheshire east",
+    "lat": 53.220137969476305,
+    "lon": -2.3107023692881556
+  },
+  {
+    "name": "Derbyshire",
+    "key": "derbyshire",
+    "lat": 53.186124615617324,
+    "lon": -1.6663238304921573
+  },
+  {
+    "name": "Rotherham",
+    "key": "rotherham",
+    "lat": 53.36845254594821,
+    "lon": -1.302134895658914
+  },
+  {
+    "name": "Sheffield",
+    "key": "sheffield",
+    "lat": 53.38943704508353,
+    "lon": -1.5009041220775714
+  },
+  {
+    "name": "Stoke-on-Trent",
+    "key": "stoke-on-trent",
+    "lat": 53.04763572894571,
+    "lon": -2.1983874171855518
+  },
+  {
+    "name": "Telford and Wrekin",
+    "key": "telford and wrekin",
+    "lat": 52.75129205984067,
+    "lon": -2.437582118959631
+  },
+  {
+    "name": "Staffordshire",
+    "key": "staffordshire",
+    "lat": 52.79304218786094,
+    "lon": -2.046661720676162
+  },
+  {
+    "name": "Bromley",
+    "key": "bromley",
+    "lat": 51.39241893178825,
+    "lon": 0.03201620618295288
+  },
+  {
+    "name": "Worcestershire",
+    "key": "worcestershire",
+    "lat": 52.241019158407404,
+    "lon": -2.1340696375037758
+  },
+  {
+    "name": "Warwickshire",
+    "key": "warwickshire",
+    "lat": 52.35740554617017,
+    "lon": -1.6126906674991333
+  },
+  {
+    "name": "Oxfordshire",
+    "key": "oxfordshire",
+    "lat": 51.755670462398825,
+    "lon": -1.2671125177669489
+  },
+  {
+    "name": "Wigan",
+    "key": "wigan",
+    "lat": 53.50954020661521,
+    "lon": -2.6042990959765198
+  },
+  {
+    "name": "Stockport",
+    "key": "stockport",
+    "lat": 53.395505803589934,
+    "lon": -2.1051980911589907
+  },
+  {
+    "name": "Warrington",
+    "key": "warrington",
+    "lat": 53.39430901270075,
+    "lon": -2.5315550655638432
+  },
+  {
+    "name": "West Berkshire",
+    "key": "west berkshire",
+    "lat": 51.431524161810586,
+    "lon": -1.2857782074982853
+  },
+  {
+    "name": "Wokingham",
+    "key": "wokingham",
+    "lat": 51.435794371150784,
+    "lon": -0.9370371970090403
+  },
+  {
+    "name": "Bracknell Forest",
+    "key": "bracknell forest",
+    "lat": 51.369865645742934,
+    "lon": -0.78203110477167
+  },
+  {
+    "name": "Royal Borough of Windsor and Maidenhead",
+    "key": "royal borough of windsor and maidenhead",
+    "lat": 51.46868658931462,
+    "lon": -0.7035118184156867
+  },
+  {
+    "name": "Slough",
+    "key": "slough",
+    "lat": 51.472724107706384,
+    "lon": -0.5593789330913097
+  },
+  {
+    "name": "Reading",
+    "key": "reading",
+    "lat": 51.46120790444621,
+    "lon": -1.0450715760673859
+  },
+  {
+    "name": "Surrey",
+    "key": "surrey",
+    "lat": 51.31113734347675,
+    "lon": -0.3787310449228525
+  },
+  {
+    "name": "Blackburn with Darwen",
+    "key": "blackburn with darwen",
+    "lat": 53.647772223609195,
+    "lon": -2.398530239379056
+  },
+  {
+    "name": "Swindon",
+    "key": "swindon",
+    "lat": 51.59069709644382,
+    "lon": -1.686006978039605
+  },
+  {
+    "name": "Bath and North East Somerset",
+    "key": "bath and north east somerset",
+    "lat": 51.35197843244439,
+    "lon": -2.4554186088245973
+  },
+  {
+    "name": "Wiltshire",
+    "key": "wiltshire",
+    "lat": 51.33798125561043,
+    "lon": -1.9449317421461918
+  },
+  {
+    "name": "Calderdale",
+    "key": "calderdale",
+    "lat": 53.74803150919677,
+    "lon": -2.015576053941743
+  },
+  {
+    "name": "Kirklees",
+    "key": "kirklees",
+    "lat": 53.621996232839855,
+    "lon": -1.7918258354939287
+  },
+  {
+    "name": "Nottingham",
+    "key": "nottingham",
+    "lat": 52.91426919230935,
+    "lon": -1.1734267237443192
+  },
+  {
+    "name": "Leicester",
+    "key": "leicester",
+    "lat": 52.60427002646553,
+    "lon": -1.1239568749098652
+  },
+  {
+    "name": "Derby",
+    "key": "derby",
+    "lat": 52.881527004587554,
+    "lon": -1.4594867821293178
+  },
+  {
+    "name": "Leeds",
+    "key": "leeds",
+    "lat": 53.799369515790495,
+    "lon": -1.5341975151032539
+  },
+  {
+    "name": "Bradford",
+    "key": "bradford",
+    "lat": 53.835546910721334,
+    "lon": -1.7677519673394273
+  },
+  {
+    "name": "Wakefield",
+    "key": "wakefield",
+    "lat": 53.63155467166075,
+    "lon": -1.4438296992812145
+  },
+  {
+    "name": "Barnsley",
+    "key": "barnsley",
+    "lat": 53.506460522934766,
+    "lon": -1.538996381092407
+  },
+  {
+    "name": "Salford",
+    "key": "salford",
+    "lat": 53.48173362871825,
+    "lon": -2.4127472553244536
+  },
+  {
+    "name": "Bolton",
+    "key": "bolton",
+    "lat": 53.57861865852424,
+    "lon": -2.4663345003369366
+  },
+  {
+    "name": "Trafford",
+    "key": "trafford",
+    "lat": 53.41276033737963,
+    "lon": -2.36658104308068
+  },
+  {
+    "name": "Manchester",
+    "key": "manchester",
+    "lat": 17.991595946980283,
+    "lon": -77.47751691364357
+  },
+  {
+    "name": "Oldham",
+    "key": "oldham",
+    "lat": 53.52400207778364,
+    "lon": -2.071923722901488
+  },
+  {
+    "name": "Rochdale",
+    "key": "rochdale",
+    "lat": 53.607781514790766,
+    "lon": -2.1204539553429123
+  },
+  {
+    "name": "Tameside",
+    "key": "tameside",
+    "lat": 53.45269069901652,
+    "lon": -2.079327698734312
+  },
+  {
+    "name": "Bury",
+    "key": "bury",
+    "lat": 53.57223875684169,
+    "lon": -2.3126382512685786
+  },
+  {
+    "name": "Solihull",
+    "key": "solihull",
+    "lat": 52.42352108487014,
+    "lon": -1.691088089683592
+  },
+  {
+    "name": "Coventry",
+    "key": "coventry",
+    "lat": 52.389949774742284,
+    "lon": -1.5634752667501517
+  },
+  {
+    "name": "Birmingham",
+    "key": "birmingham",
+    "lat": 52.48415335149594,
+    "lon": -1.861648346394083
+  },
+  {
+    "name": "Sandwell",
+    "key": "sandwell",
+    "lat": 52.53870267269016,
+    "lon": -2.028195630084281
+  },
+  {
+    "name": "Dudley",
+    "key": "dudley",
+    "lat": 52.4971502086152,
+    "lon": -2.082176436843099
+  },
+  {
+    "name": "Walsall",
+    "key": "walsall",
+    "lat": 52.57517660407699,
+    "lon": -1.9841318235248422
+  },
+  {
+    "name": "Wolverhampton",
+    "key": "wolverhampton",
+    "lat": 52.58095614127287,
+    "lon": -2.0723592986227346
+  }
+]
