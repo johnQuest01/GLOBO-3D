@@ -17,6 +17,7 @@ import { useThree } from '@react-three/fiber';
 
 import { CountryLabelData } from '@/app/hooks/useLabelData';
 import StateLabels from '@/components/globe/canvas/StateLabels';
+import CityLabels from '@/components/globe/canvas/CityLabels';
 import { useGlobeTextures } from '@/app/hooks/useGlobeTextures';
 import Earth from './Earth';
 import CountryLabels from './CountryLabels';
@@ -220,6 +221,14 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
         {isHighResTextureActive && (
           <StateLabels
             visibleCountries={countriesInView}
+            cameraDistance={cameraDistance}
+            popupName={popupName}
+            openPopup={openPopup}
+          />
+        )}
+        {/* Nível Cidade: 4º tier hierárquico, aparece só no zoom máximo */}
+        {isHighResTextureActive && (
+          <CityLabels
             cameraDistance={cameraDistance}
             popupName={popupName}
             openPopup={openPopup}

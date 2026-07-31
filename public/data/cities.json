@@ -1,0 +1,842 @@
+[
+ {
+  "key": "São Paulo",
+  "name": "São Paulo",
+  "lat": -23.55,
+  "lon": -46.63,
+  "countryKey": "Brazil"
+ },
+ {
+  "key": "Rio de Janeiro",
+  "name": "Rio de Janeiro",
+  "lat": -22.91,
+  "lon": -43.17,
+  "countryKey": "Brazil"
+ },
+ {
+  "key": "Brasília",
+  "name": "Brasília",
+  "lat": -15.79,
+  "lon": -47.88,
+  "countryKey": "Brazil"
+ },
+ {
+  "key": "Salvador",
+  "name": "Salvador",
+  "lat": -12.97,
+  "lon": -38.51,
+  "countryKey": "Brazil"
+ },
+ {
+  "key": "Belo Horizonte",
+  "name": "Belo Horizonte",
+  "lat": -19.92,
+  "lon": -43.94,
+  "countryKey": "Brazil"
+ },
+ {
+  "key": "Fortaleza",
+  "name": "Fortaleza",
+  "lat": -3.73,
+  "lon": -38.52,
+  "countryKey": "Brazil"
+ },
+ {
+  "key": "Manaus",
+  "name": "Manaus",
+  "lat": -3.12,
+  "lon": -60.02,
+  "countryKey": "Brazil"
+ },
+ {
+  "key": "Curitiba",
+  "name": "Curitiba",
+  "lat": -25.43,
+  "lon": -49.27,
+  "countryKey": "Brazil"
+ },
+ {
+  "key": "Recife",
+  "name": "Recife",
+  "lat": -8.05,
+  "lon": -34.88,
+  "countryKey": "Brazil"
+ },
+ {
+  "key": "Porto Alegre",
+  "name": "Porto Alegre",
+  "lat": -30.03,
+  "lon": -51.23,
+  "countryKey": "Brazil"
+ },
+ {
+  "key": "Buenos Aires",
+  "name": "Buenos Aires",
+  "lat": -34.6,
+  "lon": -58.38,
+  "countryKey": "Argentina"
+ },
+ {
+  "key": "Córdoba",
+  "name": "Córdoba",
+  "lat": -31.42,
+  "lon": -64.18,
+  "countryKey": "Argentina"
+ },
+ {
+  "key": "Santiago",
+  "name": "Santiago",
+  "lat": -33.45,
+  "lon": -70.67,
+  "countryKey": "Chile"
+ },
+ {
+  "key": "Lima",
+  "name": "Lima",
+  "lat": -12.05,
+  "lon": -77.04,
+  "countryKey": "Peru"
+ },
+ {
+  "key": "Bogotá",
+  "name": "Bogotá",
+  "lat": 4.71,
+  "lon": -74.07,
+  "countryKey": "Colombia"
+ },
+ {
+  "key": "Medellín",
+  "name": "Medellín",
+  "lat": 6.24,
+  "lon": -75.58,
+  "countryKey": "Colombia"
+ },
+ {
+  "key": "Caracas",
+  "name": "Caracas",
+  "lat": 10.48,
+  "lon": -66.9,
+  "countryKey": "Venezuela"
+ },
+ {
+  "key": "Quito",
+  "name": "Quito",
+  "lat": -0.18,
+  "lon": -78.47,
+  "countryKey": "Ecuador"
+ },
+ {
+  "key": "Montevideo",
+  "name": "Montevideo",
+  "lat": -34.9,
+  "lon": -56.16,
+  "countryKey": "Uruguay"
+ },
+ {
+  "key": "La Paz",
+  "name": "La Paz",
+  "lat": -16.5,
+  "lon": -68.15,
+  "countryKey": "Bolivia"
+ },
+ {
+  "key": "Asunción",
+  "name": "Asunción",
+  "lat": -25.28,
+  "lon": -57.63,
+  "countryKey": "Paraguay"
+ },
+ {
+  "key": "Cidade do México",
+  "name": "Cidade do México",
+  "lat": 19.43,
+  "lon": -99.13,
+  "countryKey": "Mexico"
+ },
+ {
+  "key": "Guadalajara",
+  "name": "Guadalajara",
+  "lat": 20.67,
+  "lon": -103.35,
+  "countryKey": "Mexico"
+ },
+ {
+  "key": "Monterrey",
+  "name": "Monterrey",
+  "lat": 25.69,
+  "lon": -100.32,
+  "countryKey": "Mexico"
+ },
+ {
+  "key": "Nova York",
+  "name": "Nova York",
+  "lat": 40.71,
+  "lon": -74.01,
+  "countryKey": "United States of America"
+ },
+ {
+  "key": "Los Angeles",
+  "name": "Los Angeles",
+  "lat": 34.05,
+  "lon": -118.24,
+  "countryKey": "United States of America"
+ },
+ {
+  "key": "Chicago",
+  "name": "Chicago",
+  "lat": 41.88,
+  "lon": -87.63,
+  "countryKey": "United States of America"
+ },
+ {
+  "key": "Houston",
+  "name": "Houston",
+  "lat": 29.76,
+  "lon": -95.37,
+  "countryKey": "United States of America"
+ },
+ {
+  "key": "Miami",
+  "name": "Miami",
+  "lat": 25.76,
+  "lon": -80.19,
+  "countryKey": "United States of America"
+ },
+ {
+  "key": "San Francisco",
+  "name": "San Francisco",
+  "lat": 37.77,
+  "lon": -122.42,
+  "countryKey": "United States of America"
+ },
+ {
+  "key": "Washington",
+  "name": "Washington",
+  "lat": 38.9,
+  "lon": -77.04,
+  "countryKey": "United States of America"
+ },
+ {
+  "key": "Toronto",
+  "name": "Toronto",
+  "lat": 43.65,
+  "lon": -79.38,
+  "countryKey": "Canada"
+ },
+ {
+  "key": "Vancouver",
+  "name": "Vancouver",
+  "lat": 49.28,
+  "lon": -123.12,
+  "countryKey": "Canada"
+ },
+ {
+  "key": "Montreal",
+  "name": "Montreal",
+  "lat": 45.5,
+  "lon": -73.57,
+  "countryKey": "Canada"
+ },
+ {
+  "key": "Havana",
+  "name": "Havana",
+  "lat": 23.11,
+  "lon": -82.37,
+  "countryKey": "Cuba"
+ },
+ {
+  "key": "Cidade da Guatemala",
+  "name": "Cidade da Guatemala",
+  "lat": 14.63,
+  "lon": -90.51,
+  "countryKey": "Guatemala"
+ },
+ {
+  "key": "Panamá",
+  "name": "Panamá",
+  "lat": 8.98,
+  "lon": -79.52,
+  "countryKey": "Panama"
+ },
+ {
+  "key": "Londres",
+  "name": "Londres",
+  "lat": 51.51,
+  "lon": -0.13,
+  "countryKey": "United Kingdom"
+ },
+ {
+  "key": "Paris",
+  "name": "Paris",
+  "lat": 48.86,
+  "lon": 2.35,
+  "countryKey": "France"
+ },
+ {
+  "key": "Madri",
+  "name": "Madri",
+  "lat": 40.42,
+  "lon": -3.7,
+  "countryKey": "Spain"
+ },
+ {
+  "key": "Barcelona",
+  "name": "Barcelona",
+  "lat": 41.39,
+  "lon": 2.17,
+  "countryKey": "Spain"
+ },
+ {
+  "key": "Lisboa",
+  "name": "Lisboa",
+  "lat": 38.72,
+  "lon": -9.14,
+  "countryKey": "Portugal"
+ },
+ {
+  "key": "Porto",
+  "name": "Porto",
+  "lat": 41.15,
+  "lon": -8.61,
+  "countryKey": "Portugal"
+ },
+ {
+  "key": "Roma",
+  "name": "Roma",
+  "lat": 41.9,
+  "lon": 12.5,
+  "countryKey": "Italy"
+ },
+ {
+  "key": "Milão",
+  "name": "Milão",
+  "lat": 45.46,
+  "lon": 9.19,
+  "countryKey": "Italy"
+ },
+ {
+  "key": "Berlim",
+  "name": "Berlim",
+  "lat": 52.52,
+  "lon": 13.4,
+  "countryKey": "Germany"
+ },
+ {
+  "key": "Munique",
+  "name": "Munique",
+  "lat": 48.14,
+  "lon": 11.58,
+  "countryKey": "Germany"
+ },
+ {
+  "key": "Frankfurt",
+  "name": "Frankfurt",
+  "lat": 50.11,
+  "lon": 8.68,
+  "countryKey": "Germany"
+ },
+ {
+  "key": "Amsterdã",
+  "name": "Amsterdã",
+  "lat": 52.37,
+  "lon": 4.9,
+  "countryKey": "Netherlands"
+ },
+ {
+  "key": "Bruxelas",
+  "name": "Bruxelas",
+  "lat": 50.85,
+  "lon": 4.35,
+  "countryKey": "Belgium"
+ },
+ {
+  "key": "Viena",
+  "name": "Viena",
+  "lat": 48.21,
+  "lon": 16.37,
+  "countryKey": "Austria"
+ },
+ {
+  "key": "Zurique",
+  "name": "Zurique",
+  "lat": 47.37,
+  "lon": 8.54,
+  "countryKey": "Switzerland"
+ },
+ {
+  "key": "Genebra",
+  "name": "Genebra",
+  "lat": 46.2,
+  "lon": 6.14,
+  "countryKey": "Switzerland"
+ },
+ {
+  "key": "Praga",
+  "name": "Praga",
+  "lat": 50.08,
+  "lon": 14.44,
+  "countryKey": "Czechia"
+ },
+ {
+  "key": "Varsóvia",
+  "name": "Varsóvia",
+  "lat": 52.23,
+  "lon": 21.01,
+  "countryKey": "Poland"
+ },
+ {
+  "key": "Budapeste",
+  "name": "Budapeste",
+  "lat": 47.5,
+  "lon": 19.04,
+  "countryKey": "Hungary"
+ },
+ {
+  "key": "Estocolmo",
+  "name": "Estocolmo",
+  "lat": 59.33,
+  "lon": 18.07,
+  "countryKey": "Sweden"
+ },
+ {
+  "key": "Oslo",
+  "name": "Oslo",
+  "lat": 59.91,
+  "lon": 10.75,
+  "countryKey": "Norway"
+ },
+ {
+  "key": "Copenhague",
+  "name": "Copenhague",
+  "lat": 55.68,
+  "lon": 12.57,
+  "countryKey": "Denmark"
+ },
+ {
+  "key": "Helsinque",
+  "name": "Helsinque",
+  "lat": 60.17,
+  "lon": 24.94,
+  "countryKey": "Finland"
+ },
+ {
+  "key": "Dublin",
+  "name": "Dublin",
+  "lat": 53.35,
+  "lon": -6.26,
+  "countryKey": "Ireland"
+ },
+ {
+  "key": "Atenas",
+  "name": "Atenas",
+  "lat": 37.98,
+  "lon": 23.73,
+  "countryKey": "Greece"
+ },
+ {
+  "key": "Moscou",
+  "name": "Moscou",
+  "lat": 55.75,
+  "lon": 37.62,
+  "countryKey": "Russia"
+ },
+ {
+  "key": "São Petersburgo",
+  "name": "São Petersburgo",
+  "lat": 59.93,
+  "lon": 30.34,
+  "countryKey": "Russia"
+ },
+ {
+  "key": "Kiev",
+  "name": "Kiev",
+  "lat": 50.45,
+  "lon": 30.52,
+  "countryKey": "Ukraine"
+ },
+ {
+  "key": "Istambul",
+  "name": "Istambul",
+  "lat": 41.01,
+  "lon": 28.98,
+  "countryKey": "Turkey"
+ },
+ {
+  "key": "Bucareste",
+  "name": "Bucareste",
+  "lat": 44.43,
+  "lon": 26.1,
+  "countryKey": "Romania"
+ },
+ {
+  "key": "Cairo",
+  "name": "Cairo",
+  "lat": 30.04,
+  "lon": 31.24,
+  "countryKey": "Egypt"
+ },
+ {
+  "key": "Lagos",
+  "name": "Lagos",
+  "lat": 6.52,
+  "lon": 3.38,
+  "countryKey": "Nigeria"
+ },
+ {
+  "key": "Joanesburgo",
+  "name": "Joanesburgo",
+  "lat": -26.2,
+  "lon": 28.05,
+  "countryKey": "South Africa"
+ },
+ {
+  "key": "Cidade do Cabo",
+  "name": "Cidade do Cabo",
+  "lat": -33.92,
+  "lon": 18.42,
+  "countryKey": "South Africa"
+ },
+ {
+  "key": "Nairóbi",
+  "name": "Nairóbi",
+  "lat": -1.29,
+  "lon": 36.82,
+  "countryKey": "Kenya"
+ },
+ {
+  "key": "Casablanca",
+  "name": "Casablanca",
+  "lat": 33.57,
+  "lon": -7.59,
+  "countryKey": "Morocco"
+ },
+ {
+  "key": "Argel",
+  "name": "Argel",
+  "lat": 36.75,
+  "lon": 3.06,
+  "countryKey": "Algeria"
+ },
+ {
+  "key": "Túnis",
+  "name": "Túnis",
+  "lat": 36.81,
+  "lon": 10.18,
+  "countryKey": "Tunisia"
+ },
+ {
+  "key": "Acra",
+  "name": "Acra",
+  "lat": 5.6,
+  "lon": -0.19,
+  "countryKey": "Ghana"
+ },
+ {
+  "key": "Adis Abeba",
+  "name": "Adis Abeba",
+  "lat": 9.01,
+  "lon": 38.76,
+  "countryKey": "Ethiopia"
+ },
+ {
+  "key": "Dakar",
+  "name": "Dakar",
+  "lat": 14.72,
+  "lon": -17.47,
+  "countryKey": "Senegal"
+ },
+ {
+  "key": "Luanda",
+  "name": "Luanda",
+  "lat": -8.84,
+  "lon": 13.23,
+  "countryKey": "Angola"
+ },
+ {
+  "key": "Dar es Salaam",
+  "name": "Dar es Salaam",
+  "lat": -6.79,
+  "lon": 39.21,
+  "countryKey": "Tanzania"
+ },
+ {
+  "key": "Kinshasa",
+  "name": "Kinshasa",
+  "lat": -4.32,
+  "lon": 15.31,
+  "countryKey": "Democratic Republic of the Congo"
+ },
+ {
+  "key": "Dubai",
+  "name": "Dubai",
+  "lat": 25.2,
+  "lon": 55.27,
+  "countryKey": "United Arab Emirates"
+ },
+ {
+  "key": "Abu Dhabi",
+  "name": "Abu Dhabi",
+  "lat": 24.45,
+  "lon": 54.38,
+  "countryKey": "United Arab Emirates"
+ },
+ {
+  "key": "Doha",
+  "name": "Doha",
+  "lat": 25.29,
+  "lon": 51.53,
+  "countryKey": "Qatar"
+ },
+ {
+  "key": "Riade",
+  "name": "Riade",
+  "lat": 24.71,
+  "lon": 46.68,
+  "countryKey": "Saudi Arabia"
+ },
+ {
+  "key": "Jidá",
+  "name": "Jidá",
+  "lat": 21.49,
+  "lon": 39.19,
+  "countryKey": "Saudi Arabia"
+ },
+ {
+  "key": "Teerã",
+  "name": "Teerã",
+  "lat": 35.69,
+  "lon": 51.39,
+  "countryKey": "Iran"
+ },
+ {
+  "key": "Bagdá",
+  "name": "Bagdá",
+  "lat": 33.31,
+  "lon": 44.36,
+  "countryKey": "Iraq"
+ },
+ {
+  "key": "Jerusalém",
+  "name": "Jerusalém",
+  "lat": 31.77,
+  "lon": 35.21,
+  "countryKey": "Israel"
+ },
+ {
+  "key": "Tel Aviv",
+  "name": "Tel Aviv",
+  "lat": 32.09,
+  "lon": 34.78,
+  "countryKey": "Israel"
+ },
+ {
+  "key": "Beirute",
+  "name": "Beirute",
+  "lat": 33.89,
+  "lon": 35.5,
+  "countryKey": "Lebanon"
+ },
+ {
+  "key": "Amã",
+  "name": "Amã",
+  "lat": 31.95,
+  "lon": 35.93,
+  "countryKey": "Jordan"
+ },
+ {
+  "key": "Tóquio",
+  "name": "Tóquio",
+  "lat": 35.68,
+  "lon": 139.69,
+  "countryKey": "Japan"
+ },
+ {
+  "key": "Osaka",
+  "name": "Osaka",
+  "lat": 34.69,
+  "lon": 135.5,
+  "countryKey": "Japan"
+ },
+ {
+  "key": "Pequim",
+  "name": "Pequim",
+  "lat": 39.9,
+  "lon": 116.41,
+  "countryKey": "China"
+ },
+ {
+  "key": "Xangai",
+  "name": "Xangai",
+  "lat": 31.23,
+  "lon": 121.47,
+  "countryKey": "China"
+ },
+ {
+  "key": "Hong Kong",
+  "name": "Hong Kong",
+  "lat": 22.32,
+  "lon": 114.17,
+  "countryKey": "China"
+ },
+ {
+  "key": "Guangzhou",
+  "name": "Guangzhou",
+  "lat": 23.13,
+  "lon": 113.26,
+  "countryKey": "China"
+ },
+ {
+  "key": "Seul",
+  "name": "Seul",
+  "lat": 37.57,
+  "lon": 126.98,
+  "countryKey": "South Korea"
+ },
+ {
+  "key": "Nova Délhi",
+  "name": "Nova Délhi",
+  "lat": 28.61,
+  "lon": 77.21,
+  "countryKey": "India"
+ },
+ {
+  "key": "Mumbai",
+  "name": "Mumbai",
+  "lat": 19.08,
+  "lon": 72.88,
+  "countryKey": "India"
+ },
+ {
+  "key": "Bangalore",
+  "name": "Bangalore",
+  "lat": 12.97,
+  "lon": 77.59,
+  "countryKey": "India"
+ },
+ {
+  "key": "Calcutá",
+  "name": "Calcutá",
+  "lat": 22.57,
+  "lon": 88.36,
+  "countryKey": "India"
+ },
+ {
+  "key": "Bangkok",
+  "name": "Bangkok",
+  "lat": 13.76,
+  "lon": 100.5,
+  "countryKey": "Thailand"
+ },
+ {
+  "key": "Cingapura",
+  "name": "Cingapura",
+  "lat": 1.35,
+  "lon": 103.82,
+  "countryKey": "Singapore"
+ },
+ {
+  "key": "Jacarta",
+  "name": "Jacarta",
+  "lat": -6.21,
+  "lon": 106.85,
+  "countryKey": "Indonesia"
+ },
+ {
+  "key": "Kuala Lumpur",
+  "name": "Kuala Lumpur",
+  "lat": 3.14,
+  "lon": 101.69,
+  "countryKey": "Malaysia"
+ },
+ {
+  "key": "Manila",
+  "name": "Manila",
+  "lat": 14.6,
+  "lon": 120.98,
+  "countryKey": "Philippines"
+ },
+ {
+  "key": "Hanói",
+  "name": "Hanói",
+  "lat": 21.03,
+  "lon": 105.85,
+  "countryKey": "Vietnam"
+ },
+ {
+  "key": "Ho Chi Minh",
+  "name": "Ho Chi Minh",
+  "lat": 10.82,
+  "lon": 106.63,
+  "countryKey": "Vietnam"
+ },
+ {
+  "key": "Karachi",
+  "name": "Karachi",
+  "lat": 24.86,
+  "lon": 67.01,
+  "countryKey": "Pakistan"
+ },
+ {
+  "key": "Lahore",
+  "name": "Lahore",
+  "lat": 31.55,
+  "lon": 74.34,
+  "countryKey": "Pakistan"
+ },
+ {
+  "key": "Dhaka",
+  "name": "Dhaka",
+  "lat": 23.81,
+  "lon": 90.41,
+  "countryKey": "Bangladesh"
+ },
+ {
+  "key": "Taipé",
+  "name": "Taipé",
+  "lat": 25.03,
+  "lon": 121.57,
+  "countryKey": "Taiwan"
+ },
+ {
+  "key": "Sydney",
+  "name": "Sydney",
+  "lat": -33.87,
+  "lon": 151.21,
+  "countryKey": "Australia"
+ },
+ {
+  "key": "Melbourne",
+  "name": "Melbourne",
+  "lat": -37.81,
+  "lon": 144.96,
+  "countryKey": "Australia"
+ },
+ {
+  "key": "Brisbane",
+  "name": "Brisbane",
+  "lat": -27.47,
+  "lon": 153.03,
+  "countryKey": "Australia"
+ },
+ {
+  "key": "Perth",
+  "name": "Perth",
+  "lat": -31.95,
+  "lon": 115.86,
+  "countryKey": "Australia"
+ },
+ {
+  "key": "Auckland",
+  "name": "Auckland",
+  "lat": -36.85,
+  "lon": 174.76,
+  "countryKey": "New Zealand"
+ },
+ {
+  "key": "Wellington",
+  "name": "Wellington",
+  "lat": -41.29,
+  "lon": 174.78,
+  "countryKey": "New Zealand"
+ }
+]
