@@ -54,10 +54,40 @@ região no globo dos outros usuários. Teste abrindo o app em duas abas.
 
 | Arquivo | Papel |
 |---------|-------|
-| `lib/db/messages.ts` | Acesso ao Neon (server-only): ler/inserir mensagens |
-| `app/api/messages/route.ts` | Rotas GET/POST — a ponte segura navegador↔banco |
-| `app/hooks/useMessageSystem.ts` | Exibe local + envia (POST) + recebe (polling) |
+| `lib/db/messages.ts` · `news.ts` · `ads.ts` | Acesso ao Neon (server-only) |
+| `app/api/messages` · `news` · `ads` | Rotas — a ponte segura navegador↔banco |
+| `app/hooks/useMessageSystem.ts` | Mensagens: exibe local + envia + recebe (polling) |
+| `app/hooks/useRegionNews.ts` | Notícias reais mescladas ao popup de cada região |
+| `app/hooks/useDbAds.ts` + `components/globe/canvas/DbAds.tsx` | Anúncios no globo (zoom) |
 | `db/schema.sql` | Estrutura do banco |
+
+## Como adicionar conteúdo (SQL de exemplo)
+
+Rode no **SQL Editor** do Neon para testar as notícias e os anúncios.
+
+### Notícia por região
+O `region_key` deve bater com a chave do local (país como `Brazil`, estado em
+minúsculas como `são paulo`, ou o nome da cidade como `São Paulo`). A notícia
+aparece na aba **Notícias** do popup daquela região, na categoria escolhida.
+
+```sql
+insert into region_news (region_key, category, title, body, image_url) values
+('Brazil', 'local',
+ 'Nova linha de metrô inaugurada',
+ 'A cidade ganhou uma nova linha de metrô que liga a zona sul ao centro.\n\nO trajeto reduz o tempo de viagem em 40 minutos.',
+ 'https://images.unsplash.com/photo-1541959833400-049d37f98ccd?w=600');
+```
+
+### Anúncio (marketing no globo)
+Aparece como um marcador clicável quando o usuário dá zoom na região. Use
+`lat`/`lon` para posicionar (ou `region_key` como alternativa).
+
+```sql
+insert into ads (region_key, title, image_url, link_url, lat, lon, active) values
+('Brazil', 'Passagens em promoção',
+ 'https://placehold.co/100x64/1E293B/FBBF24?text=Voe+Barato',
+ 'https://exemplo.com', -23.55, -46.63, true);
+```
 
 Cada mensagem carrega um `client_id` de sessão, então a mensagem que **você**
 enviou não volta duplicada pelo polling.
@@ -69,7 +99,10 @@ As rotas aceitam envio público para facilitar os testes. Antes de produção:
 - Adicione **rate-limiting** e **moderação** de conteúdo.
 - Considere validar origem/CORS conforme o deploy.
 
-## Próximas fases (tabelas já criadas)
+## Status das funcionalidades
 
-- **`region_news`**: notícias reais por região para o painel de cada local.
-- **`ads`**: anúncios/marketing interativo exibidos ao dar zoom.
+- ✅ **`region_messages`**: rede social (mensagens que voam até a região).
+- ✅ **`region_news`**: notícias reais mescladas ao popup de cada local.
+- ✅ **`ads`**: anúncios/marketing interativo exibidos ao dar zoom.
+
+Todas com degradação graciosa: sem `DATABASE_URL`, o app funciona em modo local.

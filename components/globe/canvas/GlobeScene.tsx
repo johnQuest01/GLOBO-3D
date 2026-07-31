@@ -26,6 +26,7 @@ import Airplane from './Airplane';
 import MarketingFleet from './MarketingFleet';
 import LocationPin from './LocationPin';
 import Advertisements from './Advertisements';
+import DbAds from './DbAds';
 import { PinnedLocation, AdData, AnimationState, FlyingMessage } from '@/app/types/globe';
 import Missile from './Missile';
 import { latLonToVector3 } from '@/components/lib/utils';
@@ -273,6 +274,8 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
         {isHighResTextureActive && !isPopupOpen && (
           <Advertisements ads={activeAds} />
         )}
+        {/* Anúncios vindos do banco (marketing interativo no zoom) */}
+        {isHighResTextureActive && !isPopupOpen && <DbAds />}
       </Suspense>
 
       <OrbitControls

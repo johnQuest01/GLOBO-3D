@@ -20,6 +20,19 @@ import NewsTabContent, {
 } from './statePopup/NewsTabContent';
 // --- FIM DA MODIFICAÇÃO ---
 import SimpleTextTabContent from './statePopup/SimpleTextTabContent';
+import { useRegionNews } from '@/app/hooks/useRegionNews';
+
+// Categorias válidas de notícia (para mapear as do banco com segurança)
+const VALID_NEWS_CATEGORIES = new Set<NewsCategory>([
+  'local',
+  'science',
+  'business',
+  'entertainment',
+  'sports',
+  'health',
+]);
+const DB_NEWS_IMAGE_FALLBACK =
+  'https://placehold.co/600x400/1E293B/94A3B8?text=Not%C3%ADcia';
 
 // --- Tipos Auxiliares ---
 type VideoFormat = 'horizontal' | 'vertical';
@@ -84,6 +97,35 @@ const StatePopup: FC<PopupProps> = ({
   const [currentVideoFormat, setCurrentVideoFormat] =
     useState<VideoFormat>('horizontal');
 
+  // --- Notícias do banco (Neon) mescladas ao conteúdo estático ---
+  // Aditivo: sem backend, dbNews é [] e mergedContent === content.
+  const { news: dbNews } = useRegionNews(placeKey);
+  const mergedContent = useMemo<PlaceContent>(() => {
+    if (!dbNews || dbNews.length === 0) return content;
+    const mergedNews: NewsCategoryContent = {
+      ...(content.news as NewsCategoryContent),
+    };
+    for (const row of dbNews) {
+      const cat: NewsCategory = VALID_NEWS_CATEGORIES.has(
+        row.category as NewsCategory,
+      )
+        ? (row.category as NewsCategory)
+        : 'local';
+      const item: NewsItemContent = {
+        title: row.title,
+        imageUrl: row.image_url || DB_NEWS_IMAGE_FALLBACK,
+        imageCaption: '',
+        bodyText: row.body || '',
+      };
+      const existing = Array.isArray(mergedNews[cat])
+        ? [...(mergedNews[cat] as NewsItemContent[])]
+        : [];
+      existing.unshift(item); // notícias do banco aparecem primeiro
+      mergedNews[cat] = existing;
+    }
+    return { ...content, news: mergedNews };
+  }, [content, dbNews]);
+
   // --- Memos e Callbacks ---
   // ATUALIZADO: getVideoField agora busca 'natureVideo'
   const getVideoField = useCallback(
@@ -121,13 +163,13 @@ const StatePopup: FC<PopupProps> = ({
   // Notícias
   const newsCategories = useMemo(() => newsCategoriesConst, []);
   const currentNewsList = useMemo((): NewsItemContent[] | undefined => {
-    if (newsCategory === 'menu' || !content.news) return undefined;
+    if (newsCategory === 'menu' || !mergedContent.news) return undefined;
     const ck = newsCategory as NewsCategory;
-    const arts = (content.news as NewsCategoryContent)[ck];
+    const arts = (mergedContent.news as NewsCategoryContent)[ck];
     return Array.isArray(arts)
       ? arts.filter((a) => a && a.title && a.bodyText)
       : undefined;
-  }, [newsCategory, content.news]);
+  }, [newsCategory, mergedContent.news]);
   const currentNewsArticle = useMemo((): NewsItemContent | undefined => {
     if (
       selectedArticleIndex === null ||
@@ -208,7 +250,7 @@ const StatePopup: FC<PopupProps> = ({
             {activeTab === 'news' && isAdminNewsEnabled && (
               <NewsTabContent
                 name={name}
-                content={content}
+                content={mergedContent}
                 // --- INÍCIO DA MODIFICAÇÃO ---
                 placeKey={placeKey}
                 newsCategory={newsCategory}
