@@ -4,11 +4,6 @@ import { useState, useCallback, useRef, useEffect } from 'react';
 import * as THREE from 'three';
 import { FlyingMessage } from '@/app/types/globe';
 import { latLonToVector3, vector3ToLatLon } from '@/components/lib/utils';
-import { isSupabaseEnabled } from '@/lib/supabase/client';
-import {
-  insertRegionMessage,
-  subscribeToRegionMessages,
-} from '@/lib/supabase/regionMessages';
 
 export interface CameraState {
   position: THREE.Vector3;
@@ -16,6 +11,15 @@ export interface CameraState {
 }
 
 const SPHERE_RADIUS = 1.5;
+const POLL_INTERVAL_MS = 4000; // frequência do "tem mensagem nova?"
+
+interface ApiMessage {
+  client_id: string;
+  text: string;
+  lat: number;
+  lon: number;
+  created_at: string;
+}
 
 export function useMessageSystem() {
   const [isMessagePopupOpen, setIsMessagePopupOpen] = useState(false);
@@ -101,29 +105,88 @@ export function useMessageSystem() {
       // 1. Exibe localmente (comportamento original — sempre acontece)
       setFlyingMessages((prev) => [...prev, newMessage]);
 
-      // 2. Persiste + transmite para outros usuários (só se o backend estiver ligado)
-      if (isSupabaseEnabled) {
+      // 2. Persiste no backend (só tenta se ainda não sabemos que está desligado).
+      //    O servidor faz no-op se DATABASE_URL não estiver configurada.
+      if (backendEnabledRef.current !== false) {
         const { lat, lon } = vector3ToLatLon(targetPos);
-        insertRegionMessage({
-          client_id: clientIdRef.current,
-          text,
-          lat,
-          lon,
+        fetch('/api/messages', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            client_id: clientIdRef.current,
+            text,
+            lat,
+            lon,
+          }),
+        }).catch(() => {
+          /* offline / sem backend — segue só no modo local */
         });
       }
     },
     [],
   );
 
-  // Assina mensagens em tempo real de OUTROS usuários (rede social)
+  // Recebe mensagens de OUTROS usuários por polling (rede social).
+  // Robusto em serverless (Vercel/Neon): pergunta ao servidor a cada poucos
+  // segundos se há mensagens novas desde a última consulta.
+  const backendEnabledRef = useRef<boolean | null>(null);
+  const lastSinceRef = useRef<string | null>(null);
+  const primedRef = useRef(false);
+
   useEffect(() => {
-    if (!isSupabaseEnabled) return;
-    const unsubscribe = subscribeToRegionMessages((row) => {
-      // Ignora o eco da própria mensagem
-      if (row.client_id === clientIdRef.current) return;
-      spawnArrivingMessage(row.text, row.lat, row.lon);
-    });
-    return unsubscribe;
+    let cancelled = false;
+    let timer: ReturnType<typeof setInterval> | null = null;
+
+    async function poll() {
+      try {
+        const since = lastSinceRef.current;
+        const url = since
+          ? `/api/messages?since=${encodeURIComponent(since)}`
+          : '/api/messages';
+        const res = await fetch(url);
+        if (!res.ok) return;
+        const data: {
+          enabled: boolean;
+          messages: ApiMessage[];
+          serverTime: string;
+        } = await res.json();
+
+        if (cancelled) return;
+
+        // Backend desligado → para de pesquisar (fica só no modo local)
+        if (!data.enabled) {
+          backendEnabledRef.current = false;
+          if (timer) clearInterval(timer);
+          return;
+        }
+        backendEnabledRef.current = true;
+
+        // Avança o cursor pelo relógio do servidor (evita perder mensagens)
+        lastSinceRef.current = data.serverTime;
+
+        // Primeira consulta: só estabelece a linha de base (não re-exibe histórico)
+        if (!primedRef.current) {
+          primedRef.current = true;
+          return;
+        }
+
+        // Exibe as mensagens novas de outros usuários voando até a região
+        for (const m of data.messages) {
+          if (m.client_id === clientIdRef.current) continue; // ignora eco
+          spawnArrivingMessage(m.text, m.lat, m.lon);
+        }
+      } catch {
+        /* rede indisponível — tenta de novo no próximo tick */
+      }
+    }
+
+    poll(); // consulta inicial imediata (prime)
+    timer = setInterval(poll, POLL_INTERVAL_MS);
+
+    return () => {
+      cancelled = true;
+      if (timer) clearInterval(timer);
+    };
   }, [spawnArrivingMessage]);
 
   return {
