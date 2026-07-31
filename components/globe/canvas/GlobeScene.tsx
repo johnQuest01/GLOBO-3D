@@ -22,6 +22,7 @@ import Earth from './Earth';
 import CountryLabels from './CountryLabels';
 import Atmosphere from './AtmosphereGlow';
 import Airplane from './Airplane';
+import MarketingFleet from './MarketingFleet';
 import LocationPin from './LocationPin';
 import Advertisements from './Advertisements';
 import { PinnedLocation, AdData, AnimationState, FlyingMessage } from '@/app/types/globe';
@@ -236,6 +237,11 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
         {flightPath && animationState['airplane-travel'] && (
           <Airplane startVec={flightPath.start} endVec={flightPath.end} />
         )}
+
+        {/* Frota de marketing: vários aviões de companhias diferentes
+            voando continuamente entre grandes hubs. Só quando o globo
+            está interativo (popup fechado), para não competir com a UI. */}
+        {!isPopupOpen && <MarketingFleet />}
 
         {/* Mísseis: Apenas se popup fechado E animação ligada */}
         {!isPopupOpen && (
