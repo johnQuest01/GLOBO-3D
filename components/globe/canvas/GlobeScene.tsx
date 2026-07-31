@@ -93,10 +93,15 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
 
   const allProcessedCountryLabels = useMemo(() => {
     if (!countryLabels) return [];
-    return countryLabels.map((label) => ({
-      ...label,
-      position: latLonToVector3(label.lat, label.lon, SPHERE_RADIUS),
-    }));
+    return countryLabels.map((label) => {
+      const position = latLonToVector3(label.lat, label.lon, SPHERE_RADIUS);
+      return {
+        ...label,
+        position,
+        // Pré-computa a normal para evitar clonar/normalizar por frame de arraste
+        normal: position.clone().normalize(),
+      };
+    });
   }, [countryLabels]);
 
   const updateVisibleLabels = (camera: THREE.Camera) => {
@@ -109,10 +114,13 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
       return;
     }
 
+    // Normaliza a câmera UMA vez (antes era clonada/normalizada por rótulo)
+    const cameraDir = camera.position.clone().normalize();
+
     const sortedInView = allProcessedCountryLabels
       .map((label) => ({
         ...label,
-        dotProduct: label.position.clone().normalize().dot(camera.position.clone().normalize()),
+        dotProduct: label.normal.dot(cameraDir),
       }))
       .filter((label) => label.dotProduct > 0.1)
       .sort((a, b) => b.dotProduct - a.dotProduct);

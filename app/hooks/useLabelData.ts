@@ -38,6 +38,37 @@ const STATE_TILE_BASE_URL = '/data/state-labels-tiled/';
 const SPHERE_RADIUS = 1.5;
 
 /**
+ * Cache em memória para os "tiles" de estado.
+ * PROBLEMA ANTERIOR: cada vez que um país entrava no campo de visão (rotação/zoom),
+ * o JSON dele era baixado da rede E re-parseado — com `cache: 'no-store'` isso
+ * acontecia SEMPRE, causando travamentos ao navegar pelo globo.
+ * SOLUÇÃO: guardamos a Promise do resultado por país. Uma vez baixado/parseado,
+ * qualquer nova visita ao país é instantânea (sem rede, sem parse).
+ */
+const stateTileCache = new Map<string, Promise<StateLabelData[]>>();
+
+function fetchStateTile(countryKey: string): Promise<StateLabelData[]> {
+  const cached = stateTileCache.get(countryKey);
+  if (cached) return cached;
+
+  const url = `${STATE_TILE_BASE_URL}${encodeURIComponent(countryKey)}.json`;
+  const promise = fetch(url, { cache: 'force-cache' })
+    .then((res) => {
+      if (res.status === 404) return [] as StateLabelData[];
+      if (!res.ok) throw new Error(`Falha ao buscar ${url}: ${res.statusText}`);
+      return res.json() as Promise<StateLabelData[]>;
+    })
+    .catch(() => {
+      // Em caso de erro, remove do cache para permitir nova tentativa futura
+      stateTileCache.delete(countryKey);
+      return [] as StateLabelData[];
+    });
+
+  stateTileCache.set(countryKey, promise);
+  return promise;
+}
+
+/**
  * Hook para buscar os dados de rótulos de PAÍSES, aplicando a tradução dinâmica.
  * (Inalterado)
  */
@@ -53,7 +84,7 @@ export function useLabelData() {
     async function fetchData() {
       setIsLoadingRaw(true);
       try {
-        const countriesRes = await fetch(COUNTRIES_URL, { cache: 'no-store' });
+        const countriesRes = await fetch(COUNTRIES_URL, { cache: 'force-cache' });
 
         if (!countriesRes.ok) {
           throw new Error(
@@ -111,33 +142,24 @@ export function useTiledStateData(countryKey: string | null) {
       return;
     }
 
+    let cancelled = false;
     async function fetchStateData() {
       setIsLoading(true);
-      const STATE_TILE_URL = `${STATE_TILE_BASE_URL}${countryKey}.json`;
-
       try {
-        const statesRes = await fetch(STATE_TILE_URL, { cache: 'no-store' });
-        if (!statesRes.ok) {
-          if (statesRes.status === 404) {
-            // console.log(`Nenhum tile de estado para: ${countryKey}`);
-          } else {
-            throw new Error(
-              `Falha ao buscar ${STATE_TILE_URL}: ${statesRes.statusText}`
-            );
-          }
-        }
-
-        const statesData: StateLabelData[] = await statesRes.json();
-        setStateLabels(statesData);
-      } catch (error) {
-        setStateLabels([]);
-        // console.warn(`Falha ao carregar tile de estado para ${countryKey}:`, error.message);
+        // Usa o cache em memória (evita rede + parse repetidos)
+        const statesData = await fetchStateTile(countryKey!);
+        if (!cancelled) setStateLabels(statesData);
+      } catch {
+        if (!cancelled) setStateLabels([]);
       } finally {
-        setIsLoading(false);
+        if (!cancelled) setIsLoading(false);
       }
     }
 
     fetchStateData();
+    return () => {
+      cancelled = true;
+    };
   }, [countryKey]);
 
   return { stateLabels, isLoadingStateLabels: isLoading };
@@ -239,13 +261,8 @@ export function useCombinedStateData(
       setIsLoading(true);
       try {
         const fetchPromises = countriesToFetch.map((country) => { // <-- USA A LISTA FILTRADA
-          const STATE_TILE_URL = `${STATE_TILE_BASE_URL}${country.key}.json`;
-          return fetch(STATE_TILE_URL, { cache: 'no-store' })
-            .then((res) => {
-              if (res.status === 404) return [];
-              if (!res.ok) throw new Error(`Falha ao buscar ${country.key}`);
-              return res.json() as Promise<StateLabelData[]>;
-            })
+          // Usa o cache em memória compartilhado (sem rede/parse repetidos)
+          return fetchStateTile(country.key)
             .then((states) => {
               // (Lógica inalterada de adicionar 'countryKey')
               return states.map((state) => ({
