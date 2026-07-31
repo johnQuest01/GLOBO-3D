@@ -27,6 +27,29 @@ export const latLonToVector3 = (lat: number, lon: number, radius: number): THREE
 };
 
 /**
+ * Converte um vetor de posição 3D na esfera de volta para Latitude/Longitude.
+ * É a inversa exata de `latLonToVector3`.
+ *
+ * @param v Posição 3D na esfera
+ * @returns { lat, lon } em graus
+ */
+export const vector3ToLatLon = (v: THREE.Vector3): { lat: number; lon: number } => {
+  const radius = v.length() || 1;
+  const phi = Math.acos(THREE.MathUtils.clamp(v.y / radius, -1, 1));
+  const lat = 90 - phi * (180 / Math.PI);
+
+  // theta = (lon + 180); recuperado de x = -r sinφ cosθ, z = r sinφ sinθ
+  const theta = Math.atan2(v.z, -v.x);
+  let lon = theta * (180 / Math.PI) - 180;
+
+  // Normaliza para [-180, 180]
+  while (lon < -180) lon += 360;
+  while (lon > 180) lon -= 360;
+
+  return { lat, lon };
+};
+
+/**
  * Type guard para verificar se o conteúdo é de um país.
  * @param content O objeto de conteúdo a ser verificado.
  * @returns boolean Verdadeiro se for conteúdo de país.
