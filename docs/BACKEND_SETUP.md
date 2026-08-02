@@ -113,10 +113,39 @@ As rotas aceitam envio público para facilitar os testes. Antes de produção:
 - Adicione **rate-limiting** e **moderação** de conteúdo.
 - Considere validar origem/CORS conforme o deploy.
 
+## Autenticação real (Neon Auth / Stack Auth)
+
+O login atual é mock. Para ligar o **login de verdade** (com perfis de usuário),
+o projeto já vem integrado com o **Neon Auth** (motor: Stack Auth), com
+degradação graciosa: sem as chaves, o app segue com o login mock.
+
+### Passos
+1. No console do **Neon → Auth**, ative o Neon Auth e copie as 3 chaves:
+   - `NEXT_PUBLIC_STACK_PROJECT_ID`
+   - `NEXT_PUBLIC_STACK_PUBLISHABLE_CLIENT_KEY`
+   - `STACK_SECRET_SERVER_KEY`
+2. Copie também a **JWKS URL** (algo como
+   `https://<projeto>.neonauth.<regiao>.aws.neon.tech/neondb/auth/.well-known/jwks.json`)
+   para `NEON_AUTH_JWKS_URL`.
+3. Cole tudo no `.env.local` (veja `.env.example`) e reinicie.
+
+Com as chaves presentes:
+- as telas de login/cadastro ficam em **`/handler/sign-in`** e **`/handler/sign-up`**;
+- o servidor verifica os tokens via JWKS (`lib/auth/verify.ts`);
+- as mensagens enviadas passam a registrar o **autor** autenticado.
+
+| Arquivo | Papel |
+|---------|-------|
+| `lib/auth/config.ts` | Lê as variáveis e diz se a auth está ligada |
+| `lib/auth/stack.ts` | App do Stack Auth (só criado com as chaves) |
+| `lib/auth/verify.ts` | Verifica tokens do Neon Auth via JWKS (server) |
+| `app/handler/[...stack]/page.tsx` | Rotas de login/cadastro/callback |
+
 ## Status das funcionalidades
 
 - ✅ **`region_messages`**: rede social (mensagens que voam até a região).
 - ✅ **`region_news`**: notícias reais mescladas ao popup de cada local.
-- ✅ **`ads`**: anúncios/marketing interativo exibidos ao dar zoom.
+- ✅ **`ads`**: anúncios/marketing interativo exibidos ao dar zoom (segmentados).
+- ✅ **Neon Auth**: login real opcional (Stack Auth) + verificação por JWKS.
 
-Todas com degradação graciosa: sem `DATABASE_URL`, o app funciona em modo local.
+Todas com degradação graciosa: sem as variáveis, o app funciona em modo local.

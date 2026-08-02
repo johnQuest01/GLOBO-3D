@@ -8,6 +8,7 @@ import {
   getMessagesSince,
   insertMessage,
 } from '@/lib/db/messages';
+import { getUserFromRequest } from '@/lib/auth/verify';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -58,7 +59,16 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: false, error: 'invalid_coords' }, { status: 400 });
     }
 
-    await insertMessage({ client_id: clientId, text, lat, lon });
+    // Identidade opcional: se veio um token do Neon Auth, registra o autor.
+    const user = await getUserFromRequest(req);
+
+    await insertMessage({
+      client_id: clientId,
+      text,
+      lat,
+      lon,
+      author_name: user?.name ?? null,
+    });
     return NextResponse.json({ ok: true });
   } catch (err) {
     console.error('[api/messages POST] erro:', err);
