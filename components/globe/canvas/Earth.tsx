@@ -85,7 +85,24 @@ export default function Earth({
   // CORREÇÃO 2: Ref para evitar loop infinito de re-renderização
   const prevIsHighRes = useRef<boolean>(false);
 
-  useFrame(({ camera }, delta) => {
+  // Garante que as texturas LOD sejam enviadas à GPU ANTES do zoom,
+  // evitando o "stall" (travamento) no momento em que a textura de alta
+  // resolução (grande) aparece pela primeira vez durante a aproximação.
+  const prewarmDoneRef = useRef(false);
+
+  useFrame(({ camera, gl }, delta) => {
+    // Pré-aquece o upload das texturas para a GPU uma única vez
+    if (!prewarmDoneRef.current && areLodTexturesReady && lodTextures.length > 0) {
+      prewarmDoneRef.current = true;
+      for (const tex of lodTextures) {
+        try {
+          gl.initTexture(tex);
+        } catch {
+          // initTexture pode não existir em versões antigas — ignora com segurança
+        }
+      }
+    }
+
     // Se o globo não estiver interativo (popup aberto, UI travada), não processa LOD.
     // Isso reduz o trabalho por frame exatamente quando o usuário clica em um estado/país,
     // permitindo que o popup apareça mais rápido, especialmente em mobile.

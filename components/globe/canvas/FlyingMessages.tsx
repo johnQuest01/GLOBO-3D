@@ -25,6 +25,8 @@ const MessageItem = ({ message, onComplete }: { message: FlyingMessage; onComple
 
   // Estado para controlar o desenho da linha de rota
   const [linePoints, setLinePoints] = useState<THREE.Vector3[]>([]);
+  // Guarda o último índice desenhado para evitar setState a cada frame (60x/s)
+  const lastTrailIndexRef = useRef(-1);
 
   // 1. Calcula a Curva de Voo (Rota Geodésica - Estilo Avião)
   const curve = useMemo(() => {
@@ -36,7 +38,7 @@ const MessageItem = ({ message, onComplete }: { message: FlyingMessage; onComple
 
     // --- CÁLCULO DO PONTO MÉDIO (CRUZEIRO) ---
     // Calcula o vetor médio entre o início e o fim
-    let midVec = new THREE.Vector3().addVectors(start, end);
+    const midVec = new THREE.Vector3().addVectors(start, end);
     
     // Normaliza para obter a direção "para fora" do centro da Terra
     // Se start e end forem opostos (ex: polos opostos), midVec será zero.
@@ -109,9 +111,13 @@ const MessageItem = ({ message, onComplete }: { message: FlyingMessage; onComple
     const currentPos = curve.getPointAt(movementProgress);
     groupRef.current.position.copy(currentPos);
 
-    // Atualiza a linha de rota (rastro) para mostrar o caminho percorrido
+    // Atualiza a linha de rota (rastro) para mostrar o caminho percorrido.
+    // IMPORTANTE: só chama setState quando o índice do traço realmente muda,
+    // e não a cada frame. Isso reduz as re-renderizações do React de ~60/s
+    // para ~8/s (LINE_POINTS ao longo de DURATION), eliminando o travamento.
     const pointsIndex = Math.floor(movementProgress * LINE_POINTS);
-    if (pointsIndex > 0) {
+    if (pointsIndex > 0 && pointsIndex !== lastTrailIndexRef.current) {
+        lastTrailIndexRef.current = pointsIndex;
         setLinePoints(fullPathPoints.slice(0, pointsIndex + 1));
     }
 
@@ -142,7 +148,7 @@ const MessageItem = ({ message, onComplete }: { message: FlyingMessage; onComple
     }
 
     if (progress >= 1) {
-      onMessageComplete(message.id);
+      onComplete(message.id);
     }
   });
 
@@ -189,7 +195,6 @@ const MessageItem = ({ message, onComplete }: { message: FlyingMessage; onComple
                     textAlign="center"
                     outlineWidth={0.015}
                     outlineColor="#831843"
-                    depthTest={true}
                 >
                     {message.text}
                 </Text>

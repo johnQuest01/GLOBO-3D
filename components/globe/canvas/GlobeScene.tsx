@@ -17,13 +17,16 @@ import { useThree } from '@react-three/fiber';
 
 import { CountryLabelData } from '@/app/hooks/useLabelData';
 import StateLabels from '@/components/globe/canvas/StateLabels';
+import CityLabels from '@/components/globe/canvas/CityLabels';
 import { useGlobeTextures } from '@/app/hooks/useGlobeTextures';
 import Earth from './Earth';
 import CountryLabels from './CountryLabels';
 import Atmosphere from './AtmosphereGlow';
 import Airplane from './Airplane';
+import MarketingFleet from './MarketingFleet';
 import LocationPin from './LocationPin';
 import Advertisements from './Advertisements';
+import DbAds from './DbAds';
 import { PinnedLocation, AdData, AnimationState, FlyingMessage } from '@/app/types/globe';
 import Missile from './Missile';
 import { latLonToVector3 } from '@/components/lib/utils';
@@ -93,10 +96,15 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
 
   const allProcessedCountryLabels = useMemo(() => {
     if (!countryLabels) return [];
-    return countryLabels.map((label) => ({
-      ...label,
-      position: latLonToVector3(label.lat, label.lon, SPHERE_RADIUS),
-    }));
+    return countryLabels.map((label) => {
+      const position = latLonToVector3(label.lat, label.lon, SPHERE_RADIUS);
+      return {
+        ...label,
+        position,
+        // Pré-computa a normal para evitar clonar/normalizar por frame de arraste
+        normal: position.clone().normalize(),
+      };
+    });
   }, [countryLabels]);
 
   const updateVisibleLabels = (camera: THREE.Camera) => {
@@ -109,10 +117,13 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
       return;
     }
 
+    // Normaliza a câmera UMA vez (antes era clonada/normalizada por rótulo)
+    const cameraDir = camera.position.clone().normalize();
+
     const sortedInView = allProcessedCountryLabels
       .map((label) => ({
         ...label,
-        dotProduct: label.position.clone().normalize().dot(camera.position.clone().normalize()),
+        dotProduct: label.normal.dot(cameraDir),
       }))
       .filter((label) => label.dotProduct > 0.1)
       .sort((a, b) => b.dotProduct - a.dotProduct);
@@ -216,6 +227,14 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
             openPopup={openPopup}
           />
         )}
+        {/* Nível Cidade: 4º tier hierárquico, aparece só no zoom máximo */}
+        {isHighResTextureActive && (
+          <CityLabels
+            cameraDistance={cameraDistance}
+            popupName={popupName}
+            openPopup={openPopup}
+          />
+        )}
 
         {pinnedLocations.map((pin) => (
           <LocationPin key={pin.key} position={pin.position} name={pin.name} onInfoClick={() => openPopup(pin.key)} />
@@ -228,6 +247,11 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
         {flightPath && animationState['airplane-travel'] && (
           <Airplane startVec={flightPath.start} endVec={flightPath.end} />
         )}
+
+        {/* Frota de marketing: vários aviões de companhias diferentes
+            voando continuamente entre grandes hubs. Só quando o globo
+            está interativo (popup fechado), para não competir com a UI. */}
+        {!isPopupOpen && <MarketingFleet />}
 
         {/* Mísseis: Apenas se popup fechado E animação ligada */}
         {!isPopupOpen && (
@@ -250,6 +274,8 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
         {isHighResTextureActive && !isPopupOpen && (
           <Advertisements ads={activeAds} />
         )}
+        {/* Anúncios vindos do banco (marketing interativo no zoom) */}
+        {isHighResTextureActive && !isPopupOpen && <DbAds />}
       </Suspense>
 
       <OrbitControls
