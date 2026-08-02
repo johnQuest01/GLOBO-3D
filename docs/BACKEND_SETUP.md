@@ -78,16 +78,30 @@ insert into region_news (region_key, category, title, body, image_url) values
  'https://images.unsplash.com/photo-1541959833400-049d37f98ccd?w=600');
 ```
 
-### Anúncio (marketing no globo)
-Aparece como um marcador clicável quando o usuário dá zoom na região. Use
-`lat`/`lon` para posicionar (ou `region_key` como alternativa).
+### Anúncio SEGMENTADO (marketing no globo)
+Aparece como um marcador clicável quando o usuário dá zoom — **mas só para quem
+tem o nicho compatível**. Use `niches` para segmentar; deixe `'{}'` para um
+anúncio geral (aparece para todos). Posicione por `lat`/`lon` (ou `region_key`).
 
 ```sql
-insert into ads (region_key, title, image_url, link_url, lat, lon, active) values
+-- Anúncio de passagem: só aparece para quem curte VIAGEM ou LUXO
+insert into ads (region_key, title, image_url, link_url, lat, lon, niches, active) values
 ('Brazil', 'Passagens em promoção',
  'https://placehold.co/100x64/1E293B/FBBF24?text=Voe+Barato',
- 'https://exemplo.com', -23.55, -46.63, true);
+ 'https://exemplo.com', -23.55, -46.63, '{viagem,luxo}', true);
+
+-- Anúncio geral (sem nicho): aparece para todos
+insert into ads (title, image_url, link_url, lat, lon, niches, active) values
+('Chocolate Globo', 'https://placehold.co/100x64/1E293B/FBBF24?text=Choco',
+ 'https://exemplo.com', 48.85, 2.35, '{}', true);
 ```
+
+**Nichos válidos:** `viagem, luxo, gastronomia, aventura, praia, cultura,
+negocios, tecnologia, natureza, familia, esportes, compras, saude`.
+
+Os interesses do usuário são derivados automaticamente do comportamento dele
+(categorias de notícias salvas, locais de viagem salvos) — veja
+`app/hooks/useUserInterests.ts`. O match acontece em `lib/ads/targeting.ts`.
 
 Cada mensagem carrega um `client_id` de sessão, então a mensagem que **você**
 enviou não volta duplicada pelo polling.

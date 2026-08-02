@@ -5,6 +5,7 @@ import * as THREE from 'three';
 import { AdData } from '@/app/types/globe';
 import AdMarker from './AdMarker';
 import { useDbAds } from '@/app/hooks/useDbAds';
+import { useUserInterests } from '@/app/hooks/useUserInterests';
 import { useGeoMapping } from '@/app/hooks/useGeoMapping';
 import { latLonToVector3 } from '@/components/lib/utils';
 
@@ -18,7 +19,8 @@ const AD_IMAGE_FALLBACK =
  * Complementa o sistema de anúncios locais criados pelo usuário.
  */
 const DbAds: FC = () => {
-  const { ads } = useDbAds();
+  const { interests } = useUserInterests();
+  const { ads } = useDbAds(interests);
   const { keyToVector3, isLoading: isLoadingGeo } = useGeoMapping();
 
   const positioned = useMemo(() => {

@@ -47,6 +47,13 @@ create table if not exists ads (
   link_url    text,
   lat         double precision,
   lon         double precision,
+  niches      text[] not null default '{}',   -- nichos-alvo (segmentação)
   active      boolean not null default true,
   created_at  timestamptz not null default now()
 );
+
+-- Para bancos criados antes da segmentação: adiciona a coluna se faltar.
+alter table ads add column if not exists niches text[] not null default '{}';
+
+-- Índice GIN acelera o match por nicho (niches && interests)
+create index if not exists ads_niches_idx on ads using gin (niches);

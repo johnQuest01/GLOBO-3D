@@ -14,16 +14,26 @@ export interface DbAd {
 }
 
 /**
- * Carrega os anúncios ativos do banco (marketing interativo exibido no zoom).
+ * Carrega os anúncios ativos do banco JÁ SEGMENTADOS pelos interesses do
+ * usuário (marketing interativo exibido no zoom).
  * Degradação graciosa: sem backend, retorna lista vazia.
  */
-export function useDbAds(): { ads: DbAd[]; isLoading: boolean } {
+export function useDbAds(interests: string[] = []): {
+  ads: DbAd[];
+  isLoading: boolean;
+} {
   const [ads, setAds] = useState<DbAd[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
+  // Chave estável para os interesses (evita refetch desnecessário)
+  const interestsKey = [...interests].sort().join(',');
+
   useEffect(() => {
     let cancelled = false;
-    fetch('/api/ads')
+    const query = interestsKey
+      ? `?interests=${encodeURIComponent(interestsKey)}`
+      : '';
+    fetch(`/api/ads${query}`)
       .then((res) => (res.ok ? res.json() : { ads: [] }))
       .then((data: { ads?: DbAd[] }) => {
         if (!cancelled) setAds(Array.isArray(data.ads) ? data.ads : []);
@@ -37,7 +47,7 @@ export function useDbAds(): { ads: DbAd[]; isLoading: boolean } {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [interestsKey]);
 
   return { ads, isLoading };
 }
