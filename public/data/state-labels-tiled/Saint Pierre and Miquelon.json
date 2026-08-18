@@ -1,14 +1,20 @@
 [
   {
-    "name": "Saint-Pierre",
+    "name": "Saint-Pierre e Miquelon",
     "key": "saint-pierre",
-    "lat": 46.783376369400045,
-    "lon": -56.18043372299994
+    "lat": 46.7795,
+    "lon": -56.1918,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Miquelon-Langlade",
+    "name": "Miquelão-Langlade",
     "key": "miquelon-langlade",
-    "lat": 46.981350002000056,
-    "lon": -56.3078846236666
+    "lat": 47.0461,
+    "lon": -56.3418,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

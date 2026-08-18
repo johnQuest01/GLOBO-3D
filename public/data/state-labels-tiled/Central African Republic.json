@@ -2,103 +2,154 @@
   {
     "name": "Vakaga",
     "key": "vakaga",
-    "lat": 9.715139014553477,
-    "lon": 22.2942346564235
+    "lat": 9.8017,
+    "lon": 22.2437,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Haute-Kotto",
     "key": "haute-kotto",
-    "lat": 7.459496092379769,
-    "lon": 22.677417168979257
+    "lat": 7.48168,
+    "lon": 22.8492,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Haut-Mbomou",
     "key": "haut-mbomou",
-    "lat": 6.272141112941383,
-    "lon": 25.484795720340006
+    "lat": 6.15735,
+    "lon": 25.851,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Kémo",
     "key": "kémo",
-    "lat": 5.7288118769094325,
-    "lon": 19.350045302234975
+    "lat": 5.75536,
+    "lon": 19.3143,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Ouaka",
     "key": "ouaka",
-    "lat": 6.073288366083833,
-    "lon": 20.874342650313242
+    "lat": 5.99454,
+    "lon": 20.7064,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Basse-Kotto",
     "key": "basse-kotto",
-    "lat": 4.867846021038048,
-    "lon": 21.31391803517386
+    "lat": 5.00365,
+    "lon": 21.3019,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Mbomou",
     "key": "mbomou",
-    "lat": 5.376256354663683,
-    "lon": 23.37172418871775
+    "lat": 5.48563,
+    "lon": 23.4601,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Ombella-M'Poko",
     "key": "ombella-m'poko",
-    "lat": 4.996881642646069,
-    "lon": 18.066720865145015
+    "lat": 5.17659,
+    "lon": 17.802,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Bangui",
     "key": "bangui",
-    "lat": 4.374988021327923,
-    "lon": 18.55635603880333
+    "lat": 4.38332,
+    "lon": 18.5457,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Lobaye",
     "key": "lobaye",
-    "lat": 4.15219798409704,
-    "lon": 17.752750411797525
+    "lat": 4.07603,
+    "lon": 17.6819,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Bamingui-Bangoran",
     "key": "bamingui-bangoran",
-    "lat": 8.442332375482332,
-    "lon": 20.689936166121992
+    "lat": 8.21272,
+    "lon": 20.6318,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Ouham",
     "key": "ouham",
-    "lat": 6.93598746938204,
-    "lon": 17.99897508373518
+    "lat": 6.92835,
+    "lon": 17.8774,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Ouham-Pendé",
     "key": "ouham-pendé",
-    "lat": 6.73478394239387,
-    "lon": 16.157105471314
+    "lat": 6.67901,
+    "lon": 16.0108,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Sangha-Mbaéré",
     "key": "sangha-mbaéré",
-    "lat": 3.4683383189559445,
-    "lon": 16.40383681267555
+    "lat": 3.21418,
+    "lon": 16.3383,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Nana-Mambéré",
     "key": "nana-mambéré",
-    "lat": 5.798447926404651,
-    "lon": 15.322938798650126
+    "lat": 5.67426,
+    "lon": 15.4564,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Mambéré-Kadéï",
     "key": "mambéré-kadéï",
-    "lat": 4.559189773381244,
-    "lon": 16.011032571212485
+    "lat": 4.5324,
+    "lon": 15.8888,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Nana-Grébizi",
     "key": "nana-grébizi",
-    "lat": 7.366445921668857,
-    "lon": 19.26769448596942
+    "lat": 7.11882,
+    "lon": 19.4051,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   }
 ]

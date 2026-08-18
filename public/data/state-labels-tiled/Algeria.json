@@ -2,289 +2,433 @@
   {
     "name": "Adrar",
     "key": "adrar",
-    "lat": 24.63657598284731,
-    "lon": 0.5163695407558117
+    "lat": 25.7004,
+    "lon": -0.93557,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Tamanghasset",
     "key": "tamanghasset",
-    "lat": 24.92045555224451,
-    "lon": 5.467757218238734
+    "lat": 23.0089,
+    "lon": 6.39695,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Tindouf",
     "key": "tindouf",
-    "lat": 28.265887439333532,
-    "lon": -6.808118355215821
+    "lat": 27.4985,
+    "lon": -5.8285,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Béchar",
     "key": "béchar",
-    "lat": 30.468972259091593,
-    "lon": -2.9363149192363918
+    "lat": 30.1882,
+    "lon": -2.81838,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "El Tarf",
     "key": "el tarf",
-    "lat": 36.78210744279682,
-    "lon": 8.241606985708538
+    "lat": 36.7012,
+    "lon": 8.14597,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "El Oued",
     "key": "el oued",
-    "lat": 33.50089278489577,
-    "lon": 6.84269965814755
+    "lat": 33.1137,
+    "lon": 7.03557,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Tébessa",
     "key": "tébessa",
-    "lat": 35.03593942048255,
-    "lon": 7.842376625215294
+    "lat": 34.9437,
+    "lon": 7.78338,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Souk Ahras",
     "key": "souk ahras",
-    "lat": 36.17817658730579,
-    "lon": 7.9016825590819355
+    "lat": 36.1547,
+    "lon": 7.84211,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Ouargla",
     "key": "ouargla",
-    "lat": 31.011118213928587,
-    "lon": 5.898434165819168
+    "lat": 31.0014,
+    "lon": 6.2527,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Illizi",
     "key": "illizi",
-    "lat": 26.44336075154286,
-    "lon": 8.4344837321212
+    "lat": 26.8506,
+    "lon": 8.7628,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Naâma",
     "key": "naâma",
-    "lat": 33.303607296831544,
-    "lon": -0.8508932391457564
+    "lat": 33.1649,
+    "lon": -0.830564,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Tlemcen",
     "key": "tlemcen",
-    "lat": 34.71047177234726,
-    "lon": -1.5204728784207417
+    "lat": 34.7431,
+    "lon": -1.49045,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Annaba",
     "key": "annaba",
-    "lat": 36.885448586976665,
-    "lon": 7.502145197872487
+    "lat": 36.823,
+    "lon": 7.53073,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Skikda",
     "key": "skikda",
-    "lat": 36.82847805887385,
-    "lon": 6.744885267886586
+    "lat": 36.7555,
+    "lon": 6.81608,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Jijel",
     "key": "jijel",
-    "lat": 36.68238557231329,
-    "lon": 5.8419164792236105
+    "lat": 36.7106,
+    "lon": 5.95292,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Béjaïa",
+    "name": "Bugia",
     "key": "béjaïa",
-    "lat": 36.56097659043042,
-    "lon": 4.8817442621117
+    "lat": 36.6189,
+    "lon": 4.91591,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Tizi Ouzou",
     "key": "tizi ouzou",
-    "lat": 36.69761446079628,
-    "lon": 4.200863349584002
+    "lat": 36.6814,
+    "lon": 4.19086,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Boumerdès",
     "key": "boumerdès",
-    "lat": 36.74685122662326,
-    "lon": 3.5407601833130427
+    "lat": 36.7503,
+    "lon": 3.60632,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Alger",
+    "name": "Argel",
     "key": "alger",
-    "lat": 36.7535484479158,
-    "lon": 3.079588656963574
+    "lat": 36.7024,
+    "lon": 3.09806,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Tipaza",
+    "name": "Tipasa",
     "key": "tipaza",
-    "lat": 36.564797573184606,
-    "lon": 2.29440199104504
+    "lat": 36.527,
+    "lon": 2.34141,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Chlef",
     "key": "chlef",
-    "lat": 36.188640462084535,
-    "lon": 1.2448470120595212
+    "lat": 36.2337,
+    "lon": 1.21078,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Mostaganem",
     "key": "mostaganem",
-    "lat": 35.92767246480991,
-    "lon": 0.2222378878472616
+    "lat": 35.9631,
+    "lon": 0.313449,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Oran",
+    "name": "Orã",
     "key": "oran",
-    "lat": 35.62082042071663,
-    "lon": -0.6344604492621974
+    "lat": 35.5208,
+    "lon": -0.610009,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Aïn Témouchent",
     "key": "aïn témouchent",
-    "lat": 35.3454903972321,
-    "lon": -1.0696936578795317
+    "lat": 35.2708,
+    "lon": -0.995722,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Sétif",
     "key": "sétif",
-    "lat": 36.24118550817608,
-    "lon": 5.34265837679693
+    "lat": 36.0513,
+    "lon": 5.38428,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Bordj Bou Arréridj",
+    "name": "Bordj Bou Arreridj",
     "key": "bordj bou arréridj",
-    "lat": 36.140634982818185,
-    "lon": 4.685357781696265
+    "lat": 36.0966,
+    "lon": 4.66926,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Bouira",
     "key": "bouira",
-    "lat": 36.320646389579196,
-    "lon": 3.8282800363945513
+    "lat": 36.1884,
+    "lon": 3.84375,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Blida",
     "key": "blida",
-    "lat": 36.56627739114866,
-    "lon": 3.0983693782441946
+    "lat": 36.503,
+    "lon": 2.99331,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Tissemsilt",
     "key": "tissemsilt",
-    "lat": 35.77199733877043,
-    "lon": 1.7505594360048755
+    "lat": 35.7302,
+    "lon": 1.77868,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Aïn Defla",
     "key": "aïn defla",
-    "lat": 36.175267297212265,
-    "lon": 2.052696770924943
+    "lat": 36.1735,
+    "lon": 2.10714,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Relizane",
     "key": "relizane",
-    "lat": 35.8230075141069,
-    "lon": 0.9343412614186418
+    "lat": 35.8174,
+    "lon": 0.820498,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "El Bayadh",
     "key": "el bayadh",
-    "lat": 32.89657267318148,
-    "lon": 0.9676193639013424
+    "lat": 32.7753,
+    "lon": 0.971858,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Saïda",
     "key": "saïda",
-    "lat": 34.638889438147025,
-    "lon": 0.15825383518383282
+    "lat": 34.5917,
+    "lon": 0.178599,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Sidi Bel Abbès",
     "key": "sidi bel abbès",
-    "lat": 34.82275441087156,
-    "lon": -0.5442384183683299
+    "lat": 34.8335,
+    "lon": -0.586496,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Mascara",
     "key": "mascara",
-    "lat": 35.40585711390878,
-    "lon": 0.1448226491753129
+    "lat": 35.3625,
+    "lon": 0.167566,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ghardaïa",
+    "name": "Ghardaia",
     "key": "ghardaïa",
-    "lat": 31.45776243155762,
-    "lon": 3.228089663906863
+    "lat": 31.1547,
+    "lon": 3.11396,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Laghouat",
     "key": "laghouat",
-    "lat": 33.7068662244067,
-    "lon": 2.5953888823010685
+    "lat": 33.4521,
+    "lon": 2.75622,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Médéa",
     "key": "médéa",
-    "lat": 35.8911415300891,
-    "lon": 2.8577081533349062
+    "lat": 35.8958,
+    "lon": 2.76411,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Tiaret",
     "key": "tiaret",
-    "lat": 34.96698741320949,
-    "lon": 1.4669702489165535
+    "lat": 34.9048,
+    "lon": 1.55627,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "M'Sila",
     "key": "m'sila",
-    "lat": 35.380585768038735,
-    "lon": 4.391339552528318
+    "lat": 35.3592,
+    "lon": 4.37961,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Batna",
     "key": "batna",
-    "lat": 35.3687467586631,
-    "lon": 5.942128984033238
+    "lat": 35.5923,
+    "lon": 5.78213,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Khenchela",
     "key": "khenchela",
-    "lat": 35.01300773686041,
-    "lon": 6.983264523781586
+    "lat": 34.8896,
+    "lon": 7.02787,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Guelma",
     "key": "guelma",
-    "lat": 36.37243318789843,
-    "lon": 7.362147512683265
+    "lat": 36.4381,
+    "lon": 7.46291,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Constantine",
+    "name": "Constantina",
     "key": "constantine",
-    "lat": 36.343086175595595,
-    "lon": 6.707171887082009
+    "lat": 36.3731,
+    "lon": 6.68301,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Mila",
     "key": "mila",
-    "lat": 36.317237221199356,
-    "lon": 6.164616326510826
+    "lat": 36.2449,
+    "lon": 6.1311,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Oum el Bouaghi",
     "key": "oum el bouaghi",
-    "lat": 35.88592849192063,
-    "lon": 6.972370639878831
+    "lat": 35.891,
+    "lon": 7.00715,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Biskra",
     "key": "biskra",
-    "lat": 34.65791512647154,
-    "lon": 5.552979419657582
+    "lat": 34.7569,
+    "lon": 5.46698,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Djelfa",
     "key": "djelfa",
-    "lat": 34.42877449994321,
-    "lon": 3.376589547894309
+    "lat": 34.1508,
+    "lon": 3.70376,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   }
 ]

@@ -2,43 +2,64 @@
   {
     "name": "Ordino",
     "key": "ordino",
-    "lat": 42.60213732545946,
-    "lon": 1.5504300649229492
+    "lat": 42.6036,
+    "lon": 1.52437,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Canillo",
     "key": "canillo",
-    "lat": 42.58280673365009,
-    "lon": 1.6457007411340967
+    "lat": 42.5842,
+    "lon": 1.60543,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Encamp",
     "key": "encamp",
-    "lat": 42.530161577580074,
-    "lon": 1.6516884338225115
+    "lat": 42.5381,
+    "lon": 1.6441,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "La Massana",
     "key": "la massana",
-    "lat": 42.55938568309587,
-    "lon": 1.4798752030168154
+    "lat": 42.55,
+    "lon": 1.47083,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Sant Julià de Lòria",
     "key": "sant julià de lòria",
-    "lat": 42.49365781725567,
-    "lon": 1.491776200794617
+    "lat": 42.4511,
+    "lon": 1.47975,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Escaldes-Engordany",
     "key": "escaldes-engordany",
-    "lat": 42.4951000761464,
-    "lon": 1.5884145264935217
+    "lat": 42.495,
+    "lon": 1.59428,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Andorra la Vella",
+    "name": "Andorra-a-Velha",
     "key": "andorra la vella",
-    "lat": 42.52082374524464,
-    "lon": 1.5247455181411311
+    "lat": 42.5128,
+    "lon": 1.51066,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

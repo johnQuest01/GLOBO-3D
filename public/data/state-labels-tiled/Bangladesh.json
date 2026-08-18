@@ -2,43 +2,64 @@
   {
     "name": "Chittagong",
     "key": "chittagong",
-    "lat": 22.71639196907735,
-    "lon": 91.72718335412753
+    "lat": 22.4245,
+    "lon": 92.1333,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Sylhet",
     "key": "sylhet",
-    "lat": 24.67968258012591,
-    "lon": 91.62261285141248
+    "lat": 24.6452,
+    "lon": 91.7033,
+    "labelRank": 2,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Dhaka",
     "key": "dhaka",
-    "lat": 24.22150404120949,
-    "lon": 90.27356618852423
+    "lat": 24.1653,
+    "lon": 90.4053,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Rangpur",
     "key": "rangpur",
-    "lat": 25.852645659896925,
-    "lon": 88.97938211273693
+    "lat": 25.7571,
+    "lon": 89.112,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Rajshahi",
     "key": "rajshahi",
-    "lat": 24.58036692517039,
-    "lon": 89.03281472571095
+    "lat": 24.6664,
+    "lon": 89.0438,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Khulna",
     "key": "khulna",
-    "lat": 23.038072097162967,
-    "lon": 89.20947563670552
+    "lat": 22.9179,
+    "lon": 89.3708,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Barisal",
     "key": "barisal",
-    "lat": 22.4912755071839,
-    "lon": 90.25430748812035
+    "lat": 22.4351,
+    "lon": 90.2369,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   }
 ]

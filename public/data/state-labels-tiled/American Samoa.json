@@ -1,32 +1,47 @@
 [
   {
-    "name": "Western",
+    "name": "Ocidental",
     "key": "western",
-    "lat": -2.1421606680643306,
-    "lon": 29.29291803490095
+    "lat": -2.13156,
+    "lon": 29.2644,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Eastern",
+    "name": "Leste",
     "key": "eastern",
-    "lat": -13.276595798443843,
-    "lon": 32.03293192144825
+    "lat": -13.7617,
+    "lon": 31.8341,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Manu's",
+    "name": "Manus",
     "key": "manu's",
-    "lat": -14.238539320999934,
-    "lon": -169.4983007479999
+    "lat": -14.2338,
+    "lon": -169.493,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Rose Atoll",
+    "name": "Atol Rose",
     "key": "rose atoll",
-    "lat": -14.527601820749922,
-    "lon": -168.16417395749994
+    "lat": -14.525,
+    "lon": -168.166,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Swain's Island",
+    "name": "Ilha Swains",
     "key": "swain's island",
-    "lat": -11.056914971999948,
-    "lon": -171.07725989499994
+    "lat": -11.0577,
+    "lon": -171.08,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   }
 ]

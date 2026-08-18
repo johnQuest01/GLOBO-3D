@@ -1,8 +1,11 @@
 [
   {
-    "name": "Spratly Islands",
+    "name": "Ilhas Spratly",
     "key": "spratly islands",
-    "lat": 10.731095688750045,
-    "lon": 115.82353763100008
+    "lat": 8.26522,
+    "lon": 113.342,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

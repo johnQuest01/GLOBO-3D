@@ -1,8 +1,11 @@
 [
   {
-    "name": "Dhekelia",
+    "name": "Deceleia",
     "key": "dhekelia",
-    "lat": 34.995514333572416,
-    "lon": 33.79404698429287
+    "lat": 35.0123,
+    "lon": 33.7978,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

@@ -1,26 +1,38 @@
 [
   {
-    "name": "Iles Eparses de l'ocean Indien",
+    "name": "Ilhas Esparsas",
     "key": "iles eparses de l'ocean indien",
-    "lat": -22.335788669599925,
-    "lon": 40.35927168060007
+    "lat": -17.0638,
+    "lon": 42.7449,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Archipel des Kerguelen",
+    "name": "Arquipélago de Kerguelen",
     "key": "archipel des kerguelen",
-    "lat": -49.26843391941372,
-    "lon": 69.49486682237936
+    "lat": -49.3179,
+    "lon": 69.2725,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Archipel des Crozet",
+    "name": "Arquipélago Crozet",
     "key": "archipel des crozet",
-    "lat": -46.39391041419994,
-    "lon": 51.78668053460005
+    "lat": -46.3974,
+    "lon": 51.7536,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Iles Saint-Paul et Nouvelle-Amsterdam",
     "key": "iles saint-paul et nouvelle-amsterdam",
-    "lat": -37.855584405249914,
-    "lon": 77.53233890050006
+    "lat": -37.861,
+    "lon": 77.5353,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

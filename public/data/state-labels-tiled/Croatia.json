@@ -1,128 +1,191 @@
 [
   {
-    "name": "Medimurska",
+    "name": "Međimurje",
     "key": "medimurska",
-    "lat": 46.452078787646656,
-    "lon": 16.42944995156686
+    "lat": 46.398,
+    "lon": 16.5464,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Viroviticko-Podravska",
+    "name": "Virovitica-Podravina",
     "key": "viroviticko-podravska",
-    "lat": 45.77887967422144,
-    "lon": 17.568374303229938
+    "lat": 45.7303,
+    "lon": 17.6078,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Koprivničko-Križevačka",
+    "name": "Koprivnica-Križevci",
     "key": "koprivničko-križevačka",
-    "lat": 46.12754495916741,
-    "lon": 16.809348712224704
+    "lat": 46.1914,
+    "lon": 16.831,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Osjecko-Baranjska",
+    "name": "Osijek-Barânia",
     "key": "osjecko-baranjska",
-    "lat": 45.607694785390265,
-    "lon": 18.579961000891753
+    "lat": 45.4948,
+    "lon": 18.506,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Istarska",
+    "name": "Ístria",
     "key": "istarska",
-    "lat": 45.30829816555146,
-    "lon": 13.880624869244539
+    "lat": 45.1248,
+    "lon": 13.8682,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Dubrovacko-Neretvanska",
+    "name": "Dubrovnik-Neretva",
     "key": "dubrovacko-neretvanska",
-    "lat": 42.624528306375055,
-    "lon": 18.213651387125076
+    "lat": 42.761,
+    "lon": 16.8699,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Sisacko-Moslavacka",
+    "name": "Sisak-Moslavina",
     "key": "sisacko-moslavacka",
-    "lat": 45.35479404150898,
-    "lon": 16.356689843189482
+    "lat": 45.4687,
+    "lon": 16.4156,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Brodsko-Posavska",
+    "name": "Brod-Posavina",
     "key": "brodsko-posavska",
-    "lat": 45.18418234477705,
-    "lon": 17.9139153150269
+    "lat": 45.1454,
+    "lon": 17.8112,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Karlovacka",
+    "name": "Karlovac",
     "key": "karlovacka",
-    "lat": 45.296188135487895,
-    "lon": 15.461324771715775
+    "lat": 45.3396,
+    "lon": 15.4054,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Zadarska",
+    "name": "Zadar",
     "key": "zadarska",
-    "lat": 44.37542926110599,
-    "lon": 15.828470679619482
+    "lat": 44.2007,
+    "lon": 15.7536,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Vukovarsko-Srijemska",
+    "name": "Vukovar-Sírmia",
     "key": "vukovarsko-srijemska",
-    "lat": 45.13251961944338,
-    "lon": 18.878305737390455
+    "lat": 45.1467,
+    "lon": 18.9549,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Splitsko-Dalmatinska",
+    "name": "Split-Dalmácia",
     "key": "splitsko-dalmatinska",
-    "lat": 43.56426120809553,
-    "lon": 16.732920387447443
+    "lat": 43.5266,
+    "lon": 16.788,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Varaždinska",
+    "name": "Varaždin",
     "key": "varaždinska",
-    "lat": 46.2499205964542,
-    "lon": 16.20708056256789
+    "lat": 46.1918,
+    "lon": 16.3267,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Krapinsko-Zagorska",
+    "name": "Krapina-Zagorje",
     "key": "krapinsko-zagorska",
-    "lat": 46.1233302430732,
-    "lon": 15.870288428043981
+    "lat": 46.0883,
+    "lon": 15.9228,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Zagrebacka",
+    "name": "Zagreb",
     "key": "zagrebacka",
-    "lat": 45.776288464201905,
-    "lon": 15.947467837898774
+    "lat": 45.7203,
+    "lon": 15.5948,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Primorsko-Goranska",
+    "name": "Litoral-Serrano",
     "key": "primorsko-goranska",
-    "lat": 45.373682041888685,
-    "lon": 14.721319758041554
+    "lat": 45.3736,
+    "lon": 14.6925,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Šibensko-Kninska",
+    "name": "Šibenik-Knin",
     "key": "šibensko-kninska",
-    "lat": 43.75200007131404,
-    "lon": 16.036209605930246
+    "lat": 43.7911,
+    "lon": 16.0356,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Licko-Senjska",
+    "name": "Lika-Senj",
     "key": "licko-senjska",
-    "lat": 44.703747635868304,
-    "lon": 15.266065312853812
+    "lat": 44.7521,
+    "lon": 15.2031,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Bjelovarsko-bilogorska",
+    "name": "Bjelovar-Bilogora",
     "key": "bjelovarsko-bilogorska",
-    "lat": 45.76658230950096,
-    "lon": 16.979856262806276
+    "lat": 45.7207,
+    "lon": 16.9948,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Grad Zagreb",
+    "name": "Zagreb",
     "key": "grad zagreb",
-    "lat": 45.85691226918585,
-    "lon": 16.029761730069783
+    "lat": 45.8251,
+    "lon": 15.9958,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Brodsko-Posavska",
+    "name": "Požega-Eslavônia",
     "key": "brodsko-posavska",
-    "lat": 45.18418234477705,
-    "lon": 17.9139153150269
+    "lat": 45.1454,
+    "lon": 17.8112,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   }
 ]

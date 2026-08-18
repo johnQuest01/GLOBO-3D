@@ -2,205 +2,307 @@
   {
     "name": "Faranah",
     "key": "faranah",
-    "lat": 9.97142567365304,
-    "lon": -10.745215217972504
+    "lat": 9.98517,
+    "lon": -10.881,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Kindia",
     "key": "kindia",
-    "lat": 10.040873960027719,
-    "lon": -12.697484844519831
+    "lat": 10.0552,
+    "lon": -12.7298,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Mamou",
     "key": "mamou",
-    "lat": 10.584187146746402,
-    "lon": -11.821398881161235
+    "lat": 10.3442,
+    "lon": -11.8934,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Dabola",
+    "name": "Preeitura de Dabola",
     "key": "dabola",
-    "lat": 10.64985960485713,
-    "lon": -11.125033268546112
+    "lat": 10.7774,
+    "lon": -11.2004,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Forécariah",
     "key": "forécariah",
-    "lat": 9.435357453738387,
-    "lon": -13.044788323254494
+    "lat": 9.38543,
+    "lon": -13.0624,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Guéckédou",
+    "name": "Prefeitura de Guéckédou",
     "key": "guéckédou",
-    "lat": 8.738240104853293,
-    "lon": -10.323312836688391
+    "lat": 8.70329,
+    "lon": -10.2232,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Kankan",
     "key": "kankan",
-    "lat": 9.886640737389053,
-    "lon": -8.95902800786397
+    "lat": 10.1319,
+    "lon": -9.12624,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Mandiana",
+    "name": "Prefeitura de Mandiana",
     "key": "mandiana",
-    "lat": 10.768379465722127,
-    "lon": -8.606804416230387
+    "lat": 10.7221,
+    "lon": -8.66537,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Beyla",
     "key": "beyla",
-    "lat": 8.705370925978913,
-    "lon": -8.24146115956866
+    "lat": 8.81391,
+    "lon": -8.40726,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Lola",
     "key": "lola",
-    "lat": 7.843968954275405,
-    "lon": -8.312142368521796
+    "lat": 7.85522,
+    "lon": -8.33352,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Koundara",
     "key": "koundara",
-    "lat": 12.393013412479641,
-    "lon": -13.164382578868077
+    "lat": 12.3537,
+    "lon": -13.1823,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Mali",
+    "name": "Prefeitura de Mali",
     "key": "mali",
-    "lat": 12.08370122092468,
-    "lon": -12.07849853669389
+    "lat": 12.0218,
+    "lon": -12.1222,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Macenta",
     "key": "macenta",
-    "lat": 8.5272006596346,
-    "lon": -9.40433450360487
+    "lat": 8.54658,
+    "lon": -9.31986,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Yomou",
+    "name": "Prefeitura de Yomou",
     "key": "yomou",
-    "lat": 7.543962208783581,
-    "lon": -9.115933743203529
+    "lat": 7.61555,
+    "lon": -9.08019,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Nzérékoré",
     "key": "nzérékoré",
-    "lat": 7.970937245032829,
-    "lon": -8.71308707760655
+    "lat": 8.05075,
+    "lon": -8.73838,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Gaoual",
     "key": "gaoual",
-    "lat": 11.741323800364905,
-    "lon": -13.43705243560641
+    "lat": 11.7453,
+    "lon": -13.3943,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Boke",
+    "name": "Boké",
     "key": "boke",
-    "lat": 11.164825896427514,
-    "lon": -14.332139413020839
+    "lat": 11.1674,
+    "lon": -14.3088,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Siguiri",
     "key": "siguiri",
-    "lat": 11.765451042197759,
-    "lon": -9.351697879549528
+    "lat": 11.5701,
+    "lon": -9.3936,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Koubia",
     "key": "koubia",
-    "lat": 11.715420743652464,
-    "lon": -11.735709835616888
+    "lat": 11.6162,
+    "lon": -11.7074,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Tougué",
+    "name": "Prefeitura de Tougué",
     "key": "tougué",
-    "lat": 11.49877487560615,
-    "lon": -11.492747921828892
+    "lat": 11.4503,
+    "lon": -11.4677,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Dinguiraye",
+    "name": "Prefeitura de Dinguiraye",
     "key": "dinguiraye",
-    "lat": 11.584736592287776,
-    "lon": -10.685320747018599
+    "lat": 11.5609,
+    "lon": -10.6749,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Boffa",
+    "name": "Prefeitura de Boffa",
     "key": "boffa",
-    "lat": 10.337923315983446,
-    "lon": -13.968584581915483
+    "lat": 10.3994,
+    "lon": -14.0764,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Dubréka",
+    "name": "Prefeitura de Dubreka",
     "key": "dubréka",
-    "lat": 9.952471082775682,
-    "lon": -13.524563994280232
+    "lat": 10.1137,
+    "lon": -13.468,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Conakry",
+    "name": "Conacri",
     "key": "conakry",
-    "lat": 9.541927655517792,
-    "lon": -13.66872621226978
+    "lat": 9.5392,
+    "lon": -13.6847,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Coyah",
     "key": "coyah",
-    "lat": 9.72098961452906,
-    "lon": -13.31767933540801
+    "lat": 9.79103,
+    "lon": -13.3482,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Kissidougou",
     "key": "kissidougou",
-    "lat": 9.305114899438047,
-    "lon": -9.858974276916348
+    "lat": 9.25638,
+    "lon": -9.89138,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Kérouané",
     "key": "kérouané",
-    "lat": 9.299722449762005,
-    "lon": -8.958648803222783
+    "lat": 9.33012,
+    "lon": -8.90504,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Télimélé",
     "key": "télimélé",
-    "lat": 10.879378281612395,
-    "lon": -13.434383585364182
+    "lat": 10.9156,
+    "lon": -13.3113,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Lélouma",
+    "name": "Prefeitura de Lélouma",
     "key": "lélouma",
-    "lat": 11.32140039383809,
-    "lon": -12.738493186086677
+    "lat": 11.4687,
+    "lon": -12.6338,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Dalaba",
     "key": "dalaba",
-    "lat": 10.92229261077418,
-    "lon": -12.184547094084891
+    "lat": 10.8327,
+    "lon": -12.2144,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Labé",
     "key": "labé",
-    "lat": 11.38748560217878,
-    "lon": -12.308359686750148
+    "lat": 11.515,
+    "lon": -12.3404,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Pita",
     "key": "pita",
-    "lat": 11.009746190246965,
-    "lon": -12.545363376680996
+    "lat": 10.9341,
+    "lon": -12.62,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Kouroussa",
     "key": "kouroussa",
-    "lat": 10.538841818424578,
-    "lon": -10.177990732374637
+    "lat": 10.7221,
+    "lon": -10.0204,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Fria",
     "key": "fria",
-    "lat": 10.512075445425454,
-    "lon": -13.532072049585427
+    "lat": 10.4732,
+    "lon": -13.4957,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   }
 ]

@@ -1,104 +1,155 @@
 [
   {
-    "name": "Rio San Juan",
+    "name": "Río San Juan",
     "key": "rio san juan",
-    "lat": 11.136916066803954,
-    "lon": -84.37723385970281
+    "lat": 11.1691,
+    "lon": -84.5184,
+    "labelRank": 8,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Atlántico Norte",
     "key": "atlántico norte",
-    "lat": 14.021106845207578,
-    "lon": -84.41033224928589
+    "lat": 13.997,
+    "lon": -84.1501,
+    "labelRank": 8,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Jinotega",
     "key": "jinotega",
-    "lat": 13.746080496679793,
-    "lon": -85.52589233248688
+    "lat": 13.6975,
+    "lon": -85.5417,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Nueva Segovia",
     "key": "nueva segovia",
-    "lat": 13.706944862668758,
-    "lon": -86.17647652397635
+    "lat": 13.7183,
+    "lon": -86.2589,
+    "labelRank": 8,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Chinandega",
     "key": "chinandega",
-    "lat": 12.934718595099637,
-    "lon": -87.08071785921858
+    "lat": 12.7475,
+    "lon": -87.1702,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Madriz",
     "key": "madriz",
-    "lat": 13.39540313760387,
-    "lon": -86.50180329695479
+    "lat": 13.4963,
+    "lon": -86.412,
+    "labelRank": 8,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Rivas",
     "key": "rivas",
-    "lat": 11.295417979389352,
-    "lon": -85.56010863059008
+    "lat": 11.3524,
+    "lon": -85.7633,
+    "labelRank": 8,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Atlántico Sur",
     "key": "atlántico sur",
-    "lat": 12.237655450855884,
-    "lon": -84.16034507877909
+    "lat": 12.2265,
+    "lon": -84.2147,
+    "labelRank": 8,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "León",
     "key": "león",
-    "lat": 12.587479131699295,
-    "lon": -86.63550669142643
+    "lat": 12.4168,
+    "lon": -86.7187,
+    "labelRank": 8,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Managua",
+    "name": "Manágua",
     "key": "managua",
-    "lat": 12.167785906273009,
-    "lon": -86.29740594473009
+    "lat": 12.3035,
+    "lon": -86.2493,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Carazo",
     "key": "carazo",
-    "lat": 11.691578708833706,
-    "lon": -86.2349679386579
+    "lat": 11.7692,
+    "lon": -86.2874,
+    "labelRank": 8,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Matagalpa",
     "key": "matagalpa",
-    "lat": 12.964657789642652,
-    "lon": -85.47017124498521
+    "lat": 13.0242,
+    "lon": -85.4926,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Boaco",
     "key": "boaco",
-    "lat": 12.469604383495493,
-    "lon": -85.4613809339829
+    "lat": 12.524,
+    "lon": -85.4734,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Chontales",
     "key": "chontales",
-    "lat": 12.189013811392114,
-    "lon": -85.12973166177139
+    "lat": 12.0292,
+    "lon": -85.1156,
+    "labelRank": 8,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Estelí",
     "key": "estelí",
-    "lat": 13.141497911274564,
-    "lon": -86.37953247072193
+    "lat": 13.225,
+    "lon": -86.4072,
+    "labelRank": 8,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Granada",
     "key": "granada",
-    "lat": 11.955009609475884,
-    "lon": -85.86471204299636
+    "lat": 11.8736,
+    "lon": -85.9698,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Masaya",
     "key": "masaya",
-    "lat": 12.05390710417951,
-    "lon": -86.07132992243795
+    "lat": 11.9959,
+    "lon": -86.1227,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   }
 ]

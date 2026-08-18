@@ -1,8 +1,11 @@
 [
   {
-    "name": "Puerto Rico",
+    "name": "Porto Rico",
     "key": "puerto rico",
-    "lat": 18.236712690000065,
-    "lon": -66.4914815487142
+    "lat": 18.2448,
+    "lon": -66.4441,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

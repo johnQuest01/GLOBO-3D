@@ -1,8 +1,11 @@
 [
   {
-    "name": "Pitcairn Islands",
+    "name": "Ilhas Pitcairn",
     "key": "pitcairn islands",
-    "lat": -24.353922892833264,
-    "lon": -128.3208579851666
+    "lat": -25.0707,
+    "lon": -130.102,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

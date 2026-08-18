@@ -2,61 +2,91 @@
   {
     "name": "Sipaliwini",
     "key": "sipaliwini",
-    "lat": 3.7341920442604586,
-    "lon": -55.81537776514574
+    "lat": 3.53162,
+    "lon": -55.9918,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Nickerie",
     "key": "nickerie",
-    "lat": 5.594049397607869,
-    "lon": -56.91733638781727
+    "lat": 5.64956,
+    "lon": -56.8988,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Marowijne",
     "key": "marowijne",
-    "lat": 5.600323304085158,
-    "lon": -54.35961540494275
+    "lat": 5.57938,
+    "lon": -54.3667,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Coronie",
     "key": "coronie",
-    "lat": 5.638978703250672,
-    "lon": -56.31302932842945
+    "lat": 5.64121,
+    "lon": -56.2504,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Saramacca",
     "key": "saramacca",
-    "lat": 5.713887425746454,
-    "lon": -55.664957825665105
+    "lat": 5.70188,
+    "lon": -55.6138,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Wanica",
     "key": "wanica",
-    "lat": 5.807278998141101,
-    "lon": -55.21189680640987
+    "lat": 5.72606,
+    "lon": -55.1929,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Paramaribo",
     "key": "paramaribo",
-    "lat": 5.84808472304978,
-    "lon": -55.182988908502494
+    "lat": 5.84317,
+    "lon": -55.1707,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Commewijne",
     "key": "commewijne",
-    "lat": 5.766832980255163,
-    "lon": -54.94826416234234
+    "lat": 5.7072,
+    "lon": -54.8961,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Para",
     "key": "para",
-    "lat": 5.337735287496362,
-    "lon": -55.31655156677281
+    "lat": 5.49368,
+    "lon": -55.3042,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Brokopondo",
     "key": "brokopondo",
-    "lat": 4.750285295074043,
-    "lon": -55.113791240898045
+    "lat": 4.71274,
+    "lon": -55.1215,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   }
 ]

@@ -2,253 +2,379 @@
   {
     "name": "Satu Mare",
     "key": "satu mare",
-    "lat": 47.66734451311585,
-    "lon": 22.913640437168322
+    "lat": 47.6632,
+    "lon": 22.8986,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Arad",
     "key": "arad",
-    "lat": 46.259930532793604,
-    "lon": 21.750189432269583
+    "lat": 46.3019,
+    "lon": 21.7296,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Bihor",
     "key": "bihor",
-    "lat": 46.949359214076786,
-    "lon": 22.231736496106777
+    "lat": 47.0865,
+    "lon": 22.1155,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Timis",
+    "name": "Timiș",
     "key": "timis",
-    "lat": 45.78650166454612,
-    "lon": 21.281079350818427
+    "lat": 45.5963,
+    "lon": 21.393,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Mehedinti",
+    "name": "Mehedinți",
     "key": "mehedinti",
-    "lat": 44.57677026771452,
-    "lon": 22.679582772627718
+    "lat": 44.5837,
+    "lon": 22.9252,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Dolj",
     "key": "dolj",
-    "lat": 44.191661902920714,
-    "lon": 23.544570597132864
+    "lat": 44.219,
+    "lon": 23.5718,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Calarasi",
+    "name": "Călărași",
     "key": "calarasi",
-    "lat": 44.30303968814863,
-    "lon": 27.04743038641662
+    "lat": 44.3144,
+    "lon": 27.1514,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Teleorman",
     "key": "teleorman",
-    "lat": 44.01569935968692,
-    "lon": 25.2415122568803
+    "lat": 44.0831,
+    "lon": 25.1818,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Giurgiu",
     "key": "giurgiu",
-    "lat": 44.22361141529302,
-    "lon": 25.97748045217408
+    "lat": 44.1133,
+    "lon": 25.978,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Constanta",
+    "name": "Constança",
     "key": "constanta",
-    "lat": 44.237432189660026,
-    "lon": 28.029801236287437
+    "lat": 44.5099,
+    "lon": 28.4763,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Olt",
     "key": "olt",
-    "lat": 44.236189992815646,
-    "lon": 24.43896555734208
+    "lat": 44.3288,
+    "lon": 24.3781,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Caras-Severin",
+    "name": "Caraș-Severin",
     "key": "caras-severin",
-    "lat": 45.079719346155436,
-    "lon": 21.94918854848451
+    "lat": 45.0625,
+    "lon": 22.0247,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Botosani",
+    "name": "Botoșani",
     "key": "botosani",
-    "lat": 47.86287324717444,
-    "lon": 26.846645204406595
+    "lat": 47.868,
+    "lon": 26.7668,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Iasi",
+    "name": "Iași",
     "key": "iasi",
-    "lat": 47.14307873326157,
-    "lon": 27.362866491889953
+    "lat": 47.2053,
+    "lon": 27.3031,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Vaslui",
     "key": "vaslui",
-    "lat": 46.50899322768195,
-    "lon": 27.816756157312902
+    "lat": 46.5225,
+    "lon": 27.7259,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Galati",
+    "name": "Galați",
     "key": "galati",
-    "lat": 45.7802252771296,
-    "lon": 27.859142789312962
+    "lat": 45.7861,
+    "lon": 27.7329,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Suceava",
     "key": "suceava",
-    "lat": 47.47735035689355,
-    "lon": 25.586141623494978
+    "lat": 47.2144,
+    "lon": 25.8089,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Maramures",
+    "name": "Maramureș",
     "key": "maramures",
-    "lat": 47.67057366310331,
-    "lon": 24.006420299223468
+    "lat": 47.6435,
+    "lon": 23.9992,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Tulcea",
     "key": "tulcea",
-    "lat": 45.104489728123994,
-    "lon": 28.775337637641023
+    "lat": 45.0257,
+    "lon": 28.6227,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Cluj",
     "key": "cluj",
-    "lat": 46.88704609423043,
-    "lon": 23.543171653534678
+    "lat": 46.7479,
+    "lon": 23.5307,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Bistrita-Nasaud",
+    "name": "Bistrița-Năsăud",
     "key": "bistrita-nasaud",
-    "lat": 47.15459126883079,
-    "lon": 24.50707477478689
+    "lat": 47.1789,
+    "lon": 24.5132,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Salaj",
+    "name": "Sălaj",
     "key": "salaj",
-    "lat": 47.19631846789438,
-    "lon": 23.179232996748244
+    "lat": 47.1483,
+    "lon": 23.1615,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Dâmbovita",
+    "name": "Dâmbovița",
     "key": "dâmbovita",
-    "lat": 44.86747805957102,
-    "lon": 25.527010049255598
+    "lat": 44.8486,
+    "lon": 25.596,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Ilfov",
     "key": "ilfov",
-    "lat": 44.52008130570766,
-    "lon": 26.173270989554492
+    "lat": 44.6465,
+    "lon": 26.2137,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Arges",
+    "name": "Argeș",
     "key": "arges",
-    "lat": 45.005745890510426,
-    "lon": 24.93095290605175
+    "lat": 44.9867,
+    "lon": 24.8859,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Gorj",
     "key": "gorj",
-    "lat": 44.99521423343011,
-    "lon": 23.288387648331287
+    "lat": 44.9827,
+    "lon": 23.2029,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Hunedoara",
     "key": "hunedoara",
-    "lat": 45.733883033698554,
-    "lon": 22.928262495018117
+    "lat": 45.7435,
+    "lon": 22.9774,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Vâlcea",
     "key": "vâlcea",
-    "lat": 45.16379015258168,
-    "lon": 24.031140912952164
+    "lat": 45.0142,
+    "lon": 24.0601,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Prahova",
     "key": "prahova",
-    "lat": 45.1197803964267,
-    "lon": 25.99715254075713
+    "lat": 45.1133,
+    "lon": 26.0168,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Covasna",
     "key": "covasna",
-    "lat": 45.96114440820324,
-    "lon": 25.996496647617562
+    "lat": 45.8885,
+    "lon": 25.9665,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Vrancea",
     "key": "vrancea",
-    "lat": 45.845612799690926,
-    "lon": 27.048212416332433
+    "lat": 45.7963,
+    "lon": 26.9802,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Buzau",
+    "name": "Buzău",
     "key": "buzau",
-    "lat": 45.33692148378944,
-    "lon": 26.693773815309314
+    "lat": 45.2071,
+    "lon": 26.7347,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Brasov",
+    "name": "Brașov",
     "key": "brasov",
-    "lat": 45.70944464079282,
-    "lon": 25.388796301196553
+    "lat": 45.7729,
+    "lon": 25.3749,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Sibiu",
     "key": "sibiu",
-    "lat": 45.81027096487685,
-    "lon": 24.331740629732508
+    "lat": 45.9038,
+    "lon": 24.2957,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Mures",
+    "name": "Mureș",
     "key": "mures",
-    "lat": 46.593831103385845,
-    "lon": 24.691944571610986
+    "lat": 46.5856,
+    "lon": 24.6284,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Harghita",
     "key": "harghita",
-    "lat": 46.51703584524909,
-    "lon": 25.6090761333253
+    "lat": 46.6393,
+    "lon": 25.5853,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Neamt",
+    "name": "Neamț",
     "key": "neamt",
-    "lat": 46.90591515702945,
-    "lon": 26.45511212346688
+    "lat": 46.9704,
+    "lon": 26.4554,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Bacau",
+    "name": "Bacău",
     "key": "bacau",
-    "lat": 46.374078604762516,
-    "lon": 26.68355767184281
+    "lat": 46.4067,
+    "lon": 26.7643,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Alba",
     "key": "alba",
-    "lat": 46.15091512207204,
-    "lon": 23.346173322840556
+    "lat": 46.1478,
+    "lon": 23.5651,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Braila",
+    "name": "Brăila",
     "key": "braila",
-    "lat": 45.14496908897225,
-    "lon": 27.647442851026735
+    "lat": 45.1346,
+    "lon": 27.6204,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Ialomita",
+    "name": "Ialomița",
     "key": "ialomita",
-    "lat": 44.621126817568545,
-    "lon": 27.114999898606413
+    "lat": 44.6345,
+    "lon": 27.1899,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Bucharest",
+    "name": "Bucareste",
     "key": "bucharest",
-    "lat": 44.45277825970889,
-    "lon": 26.10109993863624
+    "lat": 44.467,
+    "lon": 26.0999,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   }
 ]

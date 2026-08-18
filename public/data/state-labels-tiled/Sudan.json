@@ -1,104 +1,155 @@
 [
   {
-    "name": "Central Darfur",
+    "name": "Darfur Central",
     "key": "central darfur",
-    "lat": 12.407274061345557,
-    "lon": 23.497240235951242
+    "lat": 12.1983,
+    "lon": 23.3467,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Southern Darfur",
+    "name": "Darfur do Sul",
     "key": "southern darfur",
-    "lat": 10.503389615538556,
-    "lon": 24.40706523062571
+    "lat": 11.3694,
+    "lon": 24.5964,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Gedarif",
+    "name": "Gadarife",
     "key": "gedarif",
-    "lat": 14.284366052813223,
-    "lon": 35.02146809344724
+    "lat": 14.0283,
+    "lon": 35.0351,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Blue Nile",
+    "name": "Nilo Azul",
     "key": "blue nile",
-    "lat": 11.099891989433214,
-    "lon": 34.21218164466351
+    "lat": 11.1657,
+    "lon": 34.1155,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Sennar",
     "key": "sennar",
-    "lat": 13.003986158651715,
-    "lon": 34.09296534845211
+    "lat": 13.21,
+    "lon": 34.252,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Northern",
+    "name": "Estado do Norte",
     "key": "northern",
-    "lat": 9.115785759791477,
-    "lon": -11.868718148726737
+    "lat": 9.14067,
+    "lon": -11.9468,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "River Nile",
+    "name": "Rio Nilo",
     "key": "river nile",
-    "lat": 18.53917583063262,
-    "lon": 33.675983653397296
+    "lat": 17.558,
+    "lon": 33.7623,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "North Darfur",
+    "name": "Darfur do Norte",
     "key": "north darfur",
-    "lat": 14.614341692859044,
-    "lon": 25.485023931540475
+    "lat": 16.4602,
+    "lon": 25.506,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Western Darfur",
+    "name": "Darfur Ocidental",
     "key": "western darfur",
-    "lat": 13.936733693962353,
-    "lon": 22.87054593399257
+    "lat": 14.2109,
+    "lon": 23.0863,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Red Sea",
+    "name": "Mar Vermelho",
     "key": "red sea",
-    "lat": 19.343278250560132,
-    "lon": 36.15759498292621
+    "lat": 19.5289,
+    "lon": 35.8873,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Kassala",
     "key": "kassala",
-    "lat": 15.942917727953601,
-    "lon": 35.776890991551255
+    "lat": 15.6265,
+    "lon": 35.5979,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "White Nile",
+    "name": "Nilo Branco",
     "key": "white nile",
-    "lat": 13.602721258190547,
-    "lon": 32.28124430375126
+    "lat": 13.5951,
+    "lon": 32.3633,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "South Kordufan",
+    "name": "Cordofão do Sul",
     "key": "south kordufan",
-    "lat": 11.314111488418076,
-    "lon": 29.899014570689793
+    "lat": 11.4504,
+    "lon": 29.83,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Eastern Darfur",
+    "name": "Darfur Este",
     "key": "eastern darfur",
-    "lat": 11.274819972768906,
-    "lon": 26.241236032972033
+    "lat": 11.0263,
+    "lon": 26.5295,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Gezira",
+    "name": "Al Jazirah",
     "key": "gezira",
-    "lat": 14.511631333990861,
-    "lon": 33.14811657081507
+    "lat": 14.6771,
+    "lon": 33.3362,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Khartoum",
+    "name": "Cartum",
     "key": "khartoum",
-    "lat": 15.814138910586246,
-    "lon": 33.03525730983297
+    "lat": 15.7338,
+    "lon": 32.9823,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "North Kordufan",
+    "name": "Cordofão do Norte",
     "key": "north kordufan",
-    "lat": 13.443874678445074,
-    "lon": 29.61827978444163
+    "lat": 14.5295,
+    "lon": 29.6122,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   }
 ]

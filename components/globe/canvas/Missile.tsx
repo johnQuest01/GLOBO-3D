@@ -33,7 +33,10 @@ const Missile: React.FC<MissileProps> = ({
   isAnimated = true,
 }) => {
   const missileRef = useRef<THREE.Group>(null!);
-  const [progress, setProgress] = useState(0);
+  // Progresso em ref, não em state. Os mísseis animam desde que o app abre;
+  // com setState por quadro, todo o app pagava um re-render de React a 60 fps
+  // o tempo inteiro, mesmo com o usuário parado olhando o globo.
+  const progressRef = useRef(0);
   const [showExplosion, setShowExplosion] = useState(false);
   const [isDelayed, setIsDelayed] = useState(true);
 
@@ -66,7 +69,7 @@ const Missile: React.FC<MissileProps> = ({
 
   const onExplosionComplete = () => {
     setShowExplosion(false);
-    setProgress(0);
+    progressRef.current = 0;
     const randomDelay = Math.random() * 5000 + 2000;
     setIsDelayed(true);
     setTimeout(() => setIsDelayed(false), randomDelay);
@@ -75,12 +78,12 @@ const Missile: React.FC<MissileProps> = ({
   useFrame((_, delta) => {
     if (!missileRef.current || !curve || showExplosion || isDelayed) return;
     if (!isAnimated) {
-      if (progress > 0) setProgress(0);
+      progressRef.current = 0;
       return;
     }
 
-    const newProgress = Math.min(progress + delta * FLIGHT_SPEED, 1.0);
-    setProgress(newProgress);
+    const newProgress = Math.min(progressRef.current + delta * FLIGHT_SPEED, 1.0);
+    progressRef.current = newProgress;
 
     const position = curve.getPointAt(newProgress);
     missileRef.current.position.copy(position);

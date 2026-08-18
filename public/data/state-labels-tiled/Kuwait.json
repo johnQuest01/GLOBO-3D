@@ -1,38 +1,56 @@
 [
   {
-    "name": "Al Jahrah",
+    "name": "Al Jahra",
     "key": "al jahrah",
-    "lat": 29.5079589081578,
-    "lon": 47.566439060016904
+    "lat": 29.7843,
+    "lon": 48.2027,
+    "labelRank": 8,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Al Ahmadi",
     "key": "al ahmadi",
-    "lat": 28.922728513932842,
-    "lon": 47.89152308757513
+    "lat": 28.8653,
+    "lon": 47.9393,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Mubarak Al-Kabeer",
     "key": "mubarak al-kabeer",
-    "lat": 29.26769366651998,
-    "lon": 48.067414051970914
+    "lat": 29.2535,
+    "lon": 48.0548,
+    "labelRank": 8,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Hawalli",
     "key": "hawalli",
-    "lat": 29.334891276016812,
-    "lon": 48.022210697762475
+    "lat": 29.3243,
+    "lon": 48.0306,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Al Asimah",
     "key": "al asimah",
-    "lat": 29.33117664792771,
-    "lon": 47.916396204930074
+    "lat": 29.4497,
+    "lon": 48.3318,
+    "labelRank": 8,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Al Farwaniyah",
     "key": "al farwaniyah",
-    "lat": 29.286774876059667,
-    "lon": 47.93440844174617
+    "lat": 29.2592,
+    "lon": 47.9381,
+    "labelRank": 8,
+    "minLabel": 8.7,
+    "maxLabel": 11
   }
 ]

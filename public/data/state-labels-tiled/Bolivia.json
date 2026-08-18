@@ -2,55 +2,82 @@
   {
     "name": "La Paz",
     "key": "la paz",
-    "lat": -15.41790553128906,
-    "lon": -68.28335718231673
+    "lat": -14.8335,
+    "lon": -68.2128,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Oruro",
     "key": "oruro",
-    "lat": -18.4643988124737,
-    "lon": -67.71322340728726
+    "lat": -18.7151,
+    "lon": -67.5984,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Potosí",
     "key": "potosí",
-    "lat": -20.263899425333232,
-    "lon": -66.6122186325749
+    "lat": -20.9033,
+    "lon": -66.7701,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Tarija",
     "key": "tarija",
-    "lat": -21.753990255651704,
-    "lon": -64.13970607712866
+    "lat": -21.5039,
+    "lon": -63.8005,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Santa Cruz",
     "key": "santa cruz",
-    "lat": -17.156570501962296,
-    "lon": -61.57560616508186
+    "lat": -16.5168,
+    "lon": -61.137,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Chuquisaca",
     "key": "chuquisaca",
-    "lat": -19.78771635257976,
-    "lon": -64.5302111375197
+    "lat": -20.0848,
+    "lon": -63.9529,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Pando",
     "key": "pando",
-    "lat": -10.902633625749104,
-    "lon": -67.08845898581092
+    "lat": -11.273,
+    "lon": -67.4319,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "El Beni",
+    "name": "Beni",
     "key": "el beni",
-    "lat": -13.286749188252378,
-    "lon": -65.257284822147
+    "lat": -14.0358,
+    "lon": -64.5806,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Cochabamba",
     "key": "cochabamba",
-    "lat": -17.26694631822367,
-    "lon": -65.61152274717516
+    "lat": -17.2884,
+    "lon": -65.6137,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   }
 ]

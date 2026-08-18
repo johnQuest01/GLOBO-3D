@@ -1,470 +1,704 @@
 [
   {
-    "name": "Qazax",
+    "name": "Qazakh",
     "key": "qazax",
-    "lat": 41.194173038323605,
-    "lon": 45.18359574800032
+    "lat": 41.0778,
+    "lon": 45.2004,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Ağstafa",
+    "name": "Agstafa",
     "key": "ağstafa",
-    "lat": 41.190323890005736,
-    "lon": 45.447724736568865
+    "lat": 41.1896,
+    "lon": 45.4341,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Tovuz",
     "key": "tovuz",
-    "lat": 40.93123112450717,
-    "lon": 45.76462979130069
+    "lat": 41.0669,
+    "lon": 45.8238,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Gədəbəy",
+    "name": "Gadabay",
     "key": "gədəbəy",
-    "lat": 40.5933778819561,
-    "lon": 45.665991694231664
+    "lat": 40.492,
+    "lon": 45.6429,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Daşkəsən",
+    "name": "Dashkasan",
     "key": "daşkəsən",
-    "lat": 40.4335526762156,
-    "lon": 45.99360259445475
+    "lat": 40.4837,
+    "lon": 46.0228,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Kəlbəcər",
+    "name": "Kalbajar",
     "key": "kəlbəcər",
-    "lat": 40.082081644710925,
-    "lon": 46.128278860908836
+    "lat": 40.0966,
+    "lon": 46.1688,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Lankaran",
     "key": "lankaran",
-    "lat": 39.67141372226082,
-    "lon": 46.3498787791165
+    "lat": 39.7717,
+    "lon": 46.3095,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Qubadli",
     "key": "qubadli",
-    "lat": 39.31774515474849,
-    "lon": 46.61627271013203
+    "lat": 39.3434,
+    "lon": 46.5917,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Zəngilan",
+    "name": "Zangilan",
     "key": "zəngilan",
-    "lat": 39.137707588660966,
-    "lon": 46.65173547841049
+    "lat": 39.0904,
+    "lon": 46.6305,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Şərur",
+    "name": "Sharur",
     "key": "şərur",
-    "lat": 39.6076109423371,
-    "lon": 45.014764411108516
+    "lat": 39.5929,
+    "lon": 45.0172,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Sədərək",
+    "name": "Sadarak",
     "key": "sədərək",
-    "lat": 39.68903395704027,
-    "lon": 44.8623869117353
+    "lat": 39.699,
+    "lon": 44.8638,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Kangarli",
     "key": "kangarli",
-    "lat": 39.46314011773986,
-    "lon": 45.186085936012766
+    "lat": 39.4039,
+    "lon": 45.1447,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Babək",
+    "name": "Babek",
     "key": "babək",
-    "lat": 39.300296367844766,
-    "lon": 45.3637619299145
+    "lat": 39.1871,
+    "lon": 45.3373,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Şahbuz",
+    "name": "Shakhbuz",
     "key": "şahbuz",
-    "lat": 39.45512597992404,
-    "lon": 45.57370780502726
+    "lat": 39.4227,
+    "lon": 45.5799,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Culfa",
+    "name": "Julfa",
     "key": "culfa",
-    "lat": 39.18325142832418,
-    "lon": 45.6670531977642
+    "lat": 39.136,
+    "lon": 45.6847,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Ordubad",
     "key": "ordubad",
-    "lat": 39.079858547678654,
-    "lon": 45.88575867061006
+    "lat": 39.0972,
+    "lon": 45.9272,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Balakən",
+    "name": "Balakan",
     "key": "balakən",
-    "lat": 41.74073600758493,
-    "lon": 46.4455828467488
+    "lat": 41.7393,
+    "lon": 46.4478,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Zaqatala",
     "key": "zaqatala",
-    "lat": 41.57730301756789,
-    "lon": 46.67942436933189
+    "lat": 41.5666,
+    "lon": 46.654,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Xaçmaz",
+    "name": "Khachmaz",
     "key": "xaçmaz",
-    "lat": 41.61104060004186,
-    "lon": 48.65101660292331
+    "lat": 41.5198,
+    "lon": 48.7701,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Qusar",
     "key": "qusar",
-    "lat": 41.46732437917877,
-    "lon": 48.2562119171229
+    "lat": 41.4005,
+    "lon": 48.1944,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Oğuz",
     "key": "oğuz",
-    "lat": 41.07213943930628,
-    "lon": 47.44234390518229
+    "lat": 41.04,
+    "lon": 47.4853,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Şəki",
+    "name": "Shaki",
     "key": "şəki",
-    "lat": 41.11351282522379,
-    "lon": 47.19364174166333
+    "lat": 41.0486,
+    "lon": 47.1565,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Qax",
+    "name": "Qakh",
     "key": "qax",
-    "lat": 41.27270384127216,
-    "lon": 46.88699970953197
+    "lat": 41.375,
+    "lon": 46.7976,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Qəbələ",
+    "name": "Qabala",
     "key": "qəbələ",
-    "lat": 40.95779444243955,
-    "lon": 47.76760488088051
+    "lat": 40.9578,
+    "lon": 47.7784,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Samux",
+    "name": "Samukh",
     "key": "samux",
-    "lat": 40.959765230091264,
-    "lon": 46.412356048839875
+    "lat": 40.8795,
+    "lon": 46.4234,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "İmişli",
+    "name": "Imishli",
     "key": "i̇mişli",
-    "lat": 39.84597195012998,
-    "lon": 48.0408164335546
+    "lat": 39.9121,
+    "lon": 48.0606,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Biləsuvar",
+    "name": "Bilasuvar",
     "key": "biləsuvar",
-    "lat": 39.50215124020818,
-    "lon": 48.452871939463265
+    "lat": 39.4604,
+    "lon": 48.3681,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Cəlilabad",
+    "name": "Jalilabad",
     "key": "cəlilabad",
-    "lat": 39.213995262507794,
-    "lon": 48.43298991081655
+    "lat": 39.1757,
+    "lon": 48.4338,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Yardımlı",
+    "name": "Yardymli",
     "key": "yardımlı",
-    "lat": 38.870688927729184,
-    "lon": 48.271929633757416
+    "lat": 38.866,
+    "lon": 48.269,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Lerik",
     "key": "lerik",
-    "lat": 38.71600335617868,
-    "lon": 48.445880102691724
+    "lat": 38.7139,
+    "lon": 48.4779,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Cəbrayıl",
+    "name": "Jabrayil",
     "key": "cəbrayıl",
-    "lat": 39.31797195970624,
-    "lon": 46.96630358059115
+    "lat": 39.2768,
+    "lon": 46.9823,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Füzuli",
+    "name": "Fizuli",
     "key": "füzuli",
-    "lat": 39.58091081099939,
-    "lon": 47.34782251870853
+    "lat": 39.5574,
+    "lon": 47.322,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Beyləqan",
+    "name": "Beylagan",
     "key": "beyləqan",
-    "lat": 39.8238629273422,
-    "lon": 47.69254400070505
+    "lat": 39.7591,
+    "lon": 47.6611,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Astara",
     "key": "astara",
-    "lat": 38.47978154851558,
-    "lon": 48.70041460542877
+    "lat": 38.4938,
+    "lon": 48.7049,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Dəvəçi",
+    "name": "Shabran",
     "key": "dəvəçi",
-    "lat": 41.12463729052178,
-    "lon": 48.867093441698565
+    "lat": 41.1969,
+    "lon": 48.9074,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Siyəzən",
+    "name": "Siazan",
     "key": "siyəzən",
-    "lat": 41.019351656301296,
-    "lon": 49.05500066528424
+    "lat": 41.0414,
+    "lon": 49.0973,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Xizı",
+    "name": "Khizi",
     "key": "xizı",
-    "lat": 40.756961467713026,
-    "lon": 49.22296074664364
+    "lat": 40.7249,
+    "lon": 49.154,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Sumqayıt",
+    "name": "Sumqayit",
     "key": "sumqayıt",
-    "lat": 40.62039417109558,
-    "lon": 49.589334551363685
+    "lat": 40.5841,
+    "lon": 49.5962,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Bakı",
+    "name": "Baku",
     "key": "bakı",
-    "lat": 40.253342418472705,
-    "lon": 49.67223061685542
+    "lat": 40.4447,
+    "lon": 50.0435,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Salyan",
     "key": "salyan",
-    "lat": 39.661481334759394,
-    "lon": 49.075748828825304
+    "lat": 39.7198,
+    "lon": 49.0495,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Neftçala",
+    "name": "Neftchala",
     "key": "neftçala",
-    "lat": 39.33576064181494,
-    "lon": 49.070700802568105
+    "lat": 39.3924,
+    "lon": 49.0585,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Lankaran",
+    "name": "Larkaran",
     "key": "lankaran",
-    "lat": 39.67141372226082,
-    "lon": 46.3498787791165
+    "lat": 39.7717,
+    "lon": 46.3095,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Masallı",
+    "name": "Masally",
     "key": "masallı",
-    "lat": 38.96095885755928,
-    "lon": 48.73416945862895
+    "lat": 38.9858,
+    "lon": 48.698,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Lankaran",
     "key": "lankaran",
-    "lat": 39.67141372226082,
-    "lon": 46.3498787791165
+    "lat": 39.7717,
+    "lon": 46.3095,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Naxçıvan",
+    "name": "Naquichevão",
     "key": "naxçıvan",
-    "lat": 39.22023167575121,
-    "lon": 45.45203738793509
+    "lat": 39.2127,
+    "lon": 45.4212,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Şuşa",
     "key": "şuşa",
-    "lat": 39.707892008721714,
-    "lon": 46.69979966001377
+    "lat": 39.7027,
+    "lon": 46.658,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Xocalı",
+    "name": "Khojali",
     "key": "xocalı",
-    "lat": 39.820983818948065,
-    "lon": 46.723762427593925
+    "lat": 39.8925,
+    "lon": 46.6804,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Şuşa",
+    "name": "Shusha",
     "key": "şuşa",
-    "lat": 39.707892008721714,
-    "lon": 46.69979966001377
+    "lat": 39.7027,
+    "lon": 46.658,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Ağdam",
+    "name": "Agdam",
     "key": "ağdam",
-    "lat": 40.01377934278856,
-    "lon": 46.96274620945458
+    "lat": 40.0455,
+    "lon": 46.9918,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Tərtər",
+    "name": "Tartar",
     "key": "tərtər",
-    "lat": 40.24910829461208,
-    "lon": 46.9175063638276
+    "lat": 40.2547,
+    "lon": 46.7929,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Goranboy",
     "key": "goranboy",
-    "lat": 40.559622319287314,
-    "lon": 46.59612071378171
+    "lat": 40.5463,
+    "lon": 46.645,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Xocavənd",
+    "name": "Khojavend",
     "key": "xocavənd",
-    "lat": 39.626822242629295,
-    "lon": 46.93160917152601
+    "lat": 39.6307,
+    "lon": 46.99,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Hajigabul",
     "key": "hajigabul",
-    "lat": 40.13278136442555,
-    "lon": 48.88449675588485
+    "lat": 40.1106,
+    "lon": 48.8984,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Abşeron",
+    "name": "Absheron",
     "key": "abşeron",
-    "lat": 40.33886020913132,
-    "lon": 49.23210812091802
+    "lat": 40.3278,
+    "lon": 49.3694,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Xanlar",
+    "name": "Goygol",
     "key": "xanlar",
-    "lat": 40.58414529241129,
-    "lon": 46.31107609872296
+    "lat": 40.4627,
+    "lon": 46.295,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Kürdəmir",
+    "name": "Kurdamir",
     "key": "kürdəmir",
-    "lat": 40.2789435392629,
-    "lon": 48.13992241818503
+    "lat": 40.2443,
+    "lon": 48.1586,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Zərdab",
+    "name": "Zardab",
     "key": "zərdab",
-    "lat": 40.24177914084465,
-    "lon": 47.73812007016508
+    "lat": 40.2395,
+    "lon": 47.6936,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Sabirabad",
     "key": "sabirabad",
-    "lat": 39.89212175843738,
-    "lon": 48.61575039389053
+    "lat": 39.8179,
+    "lon": 48.8122,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Shirvan",
     "key": "shirvan",
-    "lat": 39.9267105171766,
-    "lon": 48.905986769273966
+    "lat": 39.9474,
+    "lon": 48.9257,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Saatlı",
+    "name": "Saatly",
     "key": "saatlı",
-    "lat": 39.78496529302634,
-    "lon": 48.48008899322492
+    "lat": 39.7892,
+    "lon": 48.4591,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Bərdə",
+    "name": "Barda",
     "key": "bərdə",
-    "lat": 40.29231481573862,
-    "lon": 47.21573464326415
+    "lat": 40.3534,
+    "lon": 47.2467,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Şəmkir",
+    "name": "Shamkir",
     "key": "şəmkir",
-    "lat": 40.83377049062472,
-    "lon": 46.07759469436691
+    "lat": 40.8317,
+    "lon": 46.0161,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Ağsu",
+    "name": "Agsu",
     "key": "ağsu",
-    "lat": 40.51841858603889,
-    "lon": 48.40625499864924
+    "lat": 40.5091,
+    "lon": 48.3659,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Şamaxı",
+    "name": "Shamakhi",
     "key": "şamaxı",
-    "lat": 40.61765621779097,
-    "lon": 48.62336438602679
+    "lat": 40.3768,
+    "lon": 48.5986,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Quba",
     "key": "quba",
-    "lat": 41.15798936631618,
-    "lon": 48.480271152321784
+    "lat": 41.1847,
+    "lon": 48.3368,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Ucar",
+    "name": "Ujar",
     "key": "ucar",
-    "lat": 40.403279188533695,
-    "lon": 47.79138641430155
+    "lat": 40.3925,
+    "lon": 47.729,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Qobustan",
+    "name": "Gobustão",
     "key": "qobustan",
-    "lat": 40.47112173138278,
-    "lon": 48.868764973467584
+    "lat": 40.4977,
+    "lon": 48.9623,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "İsmayıllı",
+    "name": "Ismailli",
     "key": "i̇smayıllı",
-    "lat": 40.7271009386174,
-    "lon": 48.12551244464358
+    "lat": 40.7896,
+    "lon": 48.1125,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Yevlakh Rayon",
+    "name": "Yevlakh",
     "key": "yevlakh rayon",
-    "lat": 40.6587559859,
-    "lon": 46.960466704574735
+    "lat": 40.6958,
+    "lon": 46.9101,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Gəncə",
+    "name": "Ganja",
     "key": "gəncə",
-    "lat": 40.682949902855704,
-    "lon": 46.34750173939375
+    "lat": 40.6864,
+    "lon": 46.3206,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Mingəçevir",
+    "name": "Mingachevir",
     "key": "mingəçevir",
-    "lat": 40.75822307033842,
-    "lon": 46.96678989026621
+    "lat": 40.7508,
+    "lon": 46.9846,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Göyçay",
+    "name": "Goychay",
     "key": "göyçay",
-    "lat": 40.5619172228444,
-    "lon": 47.85145534491679
+    "lat": 40.569,
+    "lon": 47.8172,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Ağdaş",
+    "name": "Agdash",
     "key": "ağdaş",
-    "lat": 40.544692821591426,
-    "lon": 47.457496372022426
+    "lat": 40.568,
+    "lon": 47.4132,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Ağcabədi",
+    "name": "Aghjabadi",
     "key": "ağcabədi",
-    "lat": 39.97679907323679,
-    "lon": 47.36301776058843
+    "lat": 39.971,
+    "lon": 47.4145,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Stepanakert",
     "key": "stepanakert",
-    "lat": 39.828102306736035,
-    "lon": 46.7691108242651
+    "lat": 39.8285,
+    "lon": 46.7662,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Yevlakh",
     "key": "yevlakh",
-    "lat": 40.60076977568458,
-    "lon": 47.150955466661436
+    "lat": 40.6019,
+    "lon": 47.1503,
+    "labelRank": 7,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Naftalan",
     "key": "naftalan",
-    "lat": 40.503828935476974,
-    "lon": 46.82423854317419
+    "lat": 40.5077,
+    "lon": 46.8275,
+    "labelRank": 7,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Şəki",
+    "name": "Shaki",
     "key": "şəki",
-    "lat": 41.11351282522379,
-    "lon": 47.19364174166333
+    "lat": 41.0486,
+    "lon": 47.1565,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   }
 ]

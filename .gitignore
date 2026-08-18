@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# textura de conferencia das luzes (gerada por npm run assets:lights)
+public/textures/debug-night.webp

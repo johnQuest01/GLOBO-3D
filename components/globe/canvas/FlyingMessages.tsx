@@ -1,8 +1,8 @@
 'use client';
 
-import React, { useRef, useMemo, useState } from 'react';
+import React, { useRef, useMemo } from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
-import { Text, Billboard, RoundedBox, Line } from '@react-three/drei';
+import { Text, Billboard, RoundedBox } from '@react-three/drei';
 import * as THREE from 'three';
 import { FlyingMessage } from '@/app/types/globe';
 
@@ -23,8 +23,9 @@ const MessageItem = ({ message, onComplete }: { message: FlyingMessage; onComple
   const BLOCK_COLOR = "#be185d"; 
   const BLOCK_OPACITY = 0.9;
 
-  // Estado para controlar o desenho da linha de rota
-  const [linePoints, setLinePoints] = useState<THREE.Vector3[]>([]);
+  // O rastro é uma geometria só, criada uma vez; crescer o traço é mover o
+  // `drawRange`. Antes recriava o array e a geometria da linha a cada quadro.
+  const trailRef = useRef<THREE.BufferGeometry>(null);
 
   // 1. Calcula a Curva de Voo (Rota Geodésica - Estilo Avião)
   const curve = useMemo(() => {
@@ -36,7 +37,7 @@ const MessageItem = ({ message, onComplete }: { message: FlyingMessage; onComple
 
     // --- CÁLCULO DO PONTO MÉDIO (CRUZEIRO) ---
     // Calcula o vetor médio entre o início e o fim
-    let midVec = new THREE.Vector3().addVectors(start, end);
+    const midVec = new THREE.Vector3().addVectors(start, end);
     
     // Normaliza para obter a direção "para fora" do centro da Terra
     // Se start e end forem opostos (ex: polos opostos), midVec será zero.
@@ -78,9 +79,16 @@ const MessageItem = ({ message, onComplete }: { message: FlyingMessage; onComple
     );
   }, [message.startPosition, message.targetPosition]);
 
-  // Pré-calcula os pontos da linha para renderização (Rastro)
-  const fullPathPoints = useMemo(() => {
-      return curve.getSpacedPoints(LINE_POINTS);
+  // Pré-calcula o rastro UMA vez, já no formato que a GPU consome.
+  const trailPositions = useMemo(() => {
+      const pts = curve.getSpacedPoints(LINE_POINTS);
+      const arr = new Float32Array(pts.length * 3);
+      pts.forEach((p, i) => {
+          arr[i * 3] = p.x;
+          arr[i * 3 + 1] = p.y;
+          arr[i * 3 + 2] = p.z;
+      });
+      return arr;
   }, [curve]);
 
   // Distância inicial para escala
@@ -110,9 +118,9 @@ const MessageItem = ({ message, onComplete }: { message: FlyingMessage; onComple
     groupRef.current.position.copy(currentPos);
 
     // Atualiza a linha de rota (rastro) para mostrar o caminho percorrido
-    const pointsIndex = Math.floor(movementProgress * LINE_POINTS);
-    if (pointsIndex > 0) {
-        setLinePoints(fullPathPoints.slice(0, pointsIndex + 1));
+    if (trailRef.current) {
+        const drawn = Math.floor(movementProgress * LINE_POINTS) + 1;
+        trailRef.current.setDrawRange(0, Math.max(0, drawn));
     }
 
     // ESCALA
@@ -142,7 +150,7 @@ const MessageItem = ({ message, onComplete }: { message: FlyingMessage; onComple
     }
 
     if (progress >= 1) {
-      onMessageComplete(message.id);
+      onComplete(message.id);
     }
   });
 
@@ -153,15 +161,20 @@ const MessageItem = ({ message, onComplete }: { message: FlyingMessage; onComple
   return (
     <group>
         {/* Renderiza a Linha da Rota (Rastro) */}
-        {linePoints.length > 1 && (
-            <Line 
-                points={linePoints} 
-                color="#ec4899" // Pink Neon
-                lineWidth={2} 
-                transparent 
-                opacity={0.5} 
+        <line>
+            <bufferGeometry ref={trailRef}>
+                <bufferAttribute
+                    attach="attributes-position"
+                    args={[trailPositions, 3]}
+                />
+            </bufferGeometry>
+            <lineBasicMaterial
+                color="#ec4899"
+                transparent
+                opacity={0.5}
+                depthWrite={false}
             />
-        )}
+        </line>
 
         <group ref={groupRef} position={message.startPosition}>
         <Billboard follow={true} lockX={false} lockY={false} lockZ={false}>
@@ -189,7 +202,6 @@ const MessageItem = ({ message, onComplete }: { message: FlyingMessage; onComple
                     textAlign="center"
                     outlineWidth={0.015}
                     outlineColor="#831843"
-                    depthTest={true}
                 >
                     {message.text}
                 </Text>

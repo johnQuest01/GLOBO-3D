@@ -1,8 +1,11 @@
 [
   {
-    "name": "Sint Maarten",
+    "name": "São Martinho",
     "key": "sint maarten",
-    "lat": 18.04839682808787,
-    "lon": -63.08230573607205
+    "lat": 18.0401,
+    "lon": -63.0677,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

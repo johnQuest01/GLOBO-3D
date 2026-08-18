@@ -1,68 +1,101 @@
 [
   {
-    "name": "Southern Nations, Nationalities and Peoples",
+    "name": "das Nações",
     "key": "southern nations, nationalities and peoples",
-    "lat": 6.740868155025273,
-    "lon": 37.0052921779652
+    "lat": 6.21467,
+    "lon": 36.4494,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Somali",
     "key": "somali",
-    "lat": 7.440195716049364,
-    "lon": 42.17169023298844
+    "lat": 7.09365,
+    "lon": 43.5345,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Afar",
     "key": "afar",
-    "lat": 11.734565764821605,
-    "lon": 40.55360668810268
+    "lat": 12.1232,
+    "lon": 41.0236,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Amhara",
     "key": "amhara",
-    "lat": 11.429510647013352,
-    "lon": 38.05243429200362
+    "lat": 11.6981,
+    "lon": 37.7222,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Tigray",
+    "name": "Tigré",
     "key": "tigray",
-    "lat": 13.702062543443061,
-    "lon": 38.46467898395638
+    "lat": 14.1003,
+    "lon": 38.2158,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Benshangul-Gumaz",
+    "name": "Benishangul-Gumaz",
     "key": "benshangul-gumaz",
-    "lat": 10.564181995416249,
-    "lon": 35.49611128515595
+    "lat": 10.5396,
+    "lon": 35.6017,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Gambela Peoples",
+    "name": "Gambela",
     "key": "gambela peoples",
-    "lat": 7.789209761060805,
-    "lon": 34.156170189684055
+    "lat": 7.86869,
+    "lon": 34.1775,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Oromiya",
+    "name": "Oromia",
     "key": "oromiya",
-    "lat": 7.715761578441512,
-    "lon": 38.56439084222601
+    "lat": 7.55642,
+    "lon": 40.2242,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Dire Dawa",
     "key": "dire dawa",
-    "lat": 9.636314218026737,
-    "lon": 42.061638534490754
+    "lat": 9.56155,
+    "lon": 42.0364,
+    "labelRank": 9,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Addis Ababa",
+    "name": "Adis Abeba",
     "key": "addis ababa",
-    "lat": 8.996621710773326,
-    "lon": 38.79687082952515
+    "lat": 8.966,
+    "lon": 38.7815,
+    "labelRank": 9,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Harari People",
+    "name": "Harari",
     "key": "harari people",
-    "lat": 9.270752264825148,
-    "lon": 42.19235005041448
+    "lat": 9.29063,
+    "lon": 42.1676,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   }
 ]

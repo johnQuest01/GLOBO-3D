@@ -1,14 +1,20 @@
 [
   {
-    "name": "Kiribati",
+    "name": "Quiribati",
     "key": "kiribati",
-    "lat": 1.8075523942500524,
-    "lon": -157.30325273324993
+    "lat": -0.857764,
+    "lon": 169.546,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   },
   {
     "name": "",
     "key": "",
-    "lat": -70.85554371549992,
-    "lon": -2.7388250397499334
+    "lat": -83.0384,
+    "lon": -170.343,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

@@ -1,20 +1,29 @@
 [
   {
-    "name": "Moûhîlî",
+    "name": "Mohéli",
     "key": "moûhîlî",
-    "lat": -12.306471449999933,
-    "lon": 43.72219892650004
+    "lat": -12.3178,
+    "lon": 43.7462,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Andjouân",
+    "name": "Anjouan",
     "key": "andjouân",
-    "lat": -12.228448174799928,
-    "lon": 44.480267774200044
+    "lat": -12.226,
+    "lon": 44.4518,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Andjazîdja",
     "key": "andjazîdja",
-    "lat": -11.64820728957136,
-    "lon": 43.35617690742862
+    "lat": -11.6952,
+    "lon": 43.3378,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

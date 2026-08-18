@@ -1,200 +1,299 @@
 [
   {
-    "name": "Kalimantan Timur",
+    "name": "Kalimantan Oriental",
     "key": "kalimantan timur",
-    "lat": 1.0635870518330401,
-    "lon": 116.3306776060363
+    "lat": 1.28915,
+    "lon": 116.354,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
-    "name": "Nusa Tenggara Timur",
+    "name": "Sonda Oriental",
     "key": "nusa tenggara timur",
-    "lat": -8.55632243591885,
-    "lon": 121.51658578183792
+    "lat": -8.58443,
+    "lon": 120.689,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
-    "name": "Kalimantan Barat",
+    "name": "Kalimantan Ocidental",
     "key": "kalimantan barat",
-    "lat": -0.11129608299502232,
-    "lon": 111.0320003758916
+    "lat": -0.0636474,
+    "lon": 111.304,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
     "name": "Papua",
     "key": "papua",
-    "lat": -4.760538385269643,
-    "lon": 138.05029338872617
+    "lat": -4.10825,
+    "lon": 138.689,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
-    "name": "Jawa Timur",
+    "name": "Java Oriental",
     "key": "jawa timur",
-    "lat": -7.833926189857855,
-    "lon": 112.75570570037739
+    "lat": -7.88129,
+    "lon": 112.616,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
-    "name": "Maluku",
+    "name": "Molucas",
     "key": "maluku",
-    "lat": -3.2406743546469925,
-    "lon": 129.37044853414707
+    "lat": -8.24814,
+    "lon": 128.161,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
-    "name": "Nusa Tenggara Barat",
+    "name": "Sonda Ocidental",
     "key": "nusa tenggara barat",
-    "lat": -8.624166657720862,
-    "lon": 117.92795477053495
+    "lat": -8.57106,
+    "lon": 116.294,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
-    "name": "Sulawesi Selatan",
+    "name": "Celebes do Sul",
     "key": "sulawesi selatan",
-    "lat": -3.5399654813474903,
-    "lon": 120.24864856729555
+    "lat": -3.7444,
+    "lon": 119.99,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
-    "name": "Jawa Tengah",
+    "name": "Java Central",
     "key": "jawa tengah",
-    "lat": -7.286143608561724,
-    "lon": 110.16235576162667
+    "lat": -7.2901,
+    "lon": 109.896,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
-    "name": "Jawa Barat",
+    "name": "Java Ocidental",
     "key": "jawa barat",
-    "lat": -6.836901189686423,
-    "lon": 107.63179726415599
+    "lat": -6.90763,
+    "lon": 107.638,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
-    "name": "Jakarta Raya",
+    "name": "Jacarta",
     "key": "jakarta raya",
-    "lat": -6.178533725703375,
-    "lon": 106.83273863046911
+    "lat": -6.22462,
+    "lon": 106.837,
+    "labelRank": 9,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
     "name": "Banten",
     "key": "banten",
-    "lat": -6.435714678757581,
-    "lon": 106.25063150453143
+    "lat": -6.25794,
+    "lon": 106.167,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
     "name": "Yogyakarta",
     "key": "yogyakarta",
-    "lat": -7.905493859216676,
-    "lon": 110.51444061102481
+    "lat": -7.83533,
+    "lon": 110.443,
+    "labelRank": 7,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
-    "name": "Sulawesi Tenggara",
+    "name": "Celebes do Sudeste",
     "key": "sulawesi tenggara",
-    "lat": -3.798281035228347,
-    "lon": 121.91201555922287
+    "lat": -4.0746,
+    "lon": 122.119,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
-    "name": "Papua Barat",
+    "name": "Papua Ocidental",
     "key": "papua barat",
-    "lat": -2.4568893618472503,
-    "lon": 133.23524273331907
+    "lat": -1.32525,
+    "lon": 132.825,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
-    "name": "Sulawesi Tengah",
+    "name": "Celebes Central",
     "key": "sulawesi tengah",
-    "lat": -0.839470651699004,
-    "lon": 121.25420529518667
+    "lat": -1.30097,
+    "lon": 120.153,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
-    "name": "Maluku Utara",
+    "name": "Molucas do Norte",
     "key": "maluku utara",
-    "lat": 0.8090326054043193,
-    "lon": 128.02174259148944
+    "lat": -2.28945,
+    "lon": 125.976,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
-    "name": "Kepulauan Riau",
+    "name": "Ilhas Riau",
     "key": "kepulauan riau",
-    "lat": -0.17747703799993056,
-    "lon": 104.71026090233336
+    "lat": -0.142639,
+    "lon": 104.601,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
     "name": "Riau",
     "key": "riau",
-    "lat": 0.7377748652538281,
-    "lon": 101.54906521298422
+    "lat": 0.396892,
+    "lon": 101.745,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
     "name": "Gorontalo",
     "key": "gorontalo",
-    "lat": 0.7106143360580408,
-    "lon": 122.4490129429968
+    "lat": 0.760501,
+    "lon": 122.331,
+    "labelRank": 7,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
-    "name": "Sulawesi Utara",
+    "name": "Celebes do Norte",
     "key": "sulawesi utara",
-    "lat": 0.9690731029995503,
-    "lon": 124.21529508229325
+    "lat": 0.853039,
+    "lon": 124.446,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
-    "name": "Sulawesi Barat",
+    "name": "Celebes Ocidental",
     "key": "sulawesi barat",
-    "lat": -2.3549564457220926,
-    "lon": 119.36403631735377
+    "lat": -2.69615,
+    "lon": 119.316,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
     "name": "Jambi",
     "key": "jambi",
-    "lat": -1.711196902352165,
-    "lon": 102.7304645426833
+    "lat": -1.65497,
+    "lon": 102.823,
+    "labelRank": 6,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
-    "name": "Sumatera Selatan",
+    "name": "Sumatra do Sul",
     "key": "sumatera selatan",
-    "lat": -3.2111774697734026,
-    "lon": 104.19031245801511
+    "lat": -3.3824,
+    "lon": 104.073,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
     "name": "Lampung",
     "key": "lampung",
-    "lat": -4.985202599332158,
-    "lon": 104.86729364991268
+    "lat": -4.919,
+    "lon": 105.059,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
     "name": "Bengkulu",
     "key": "bengkulu",
-    "lat": -3.5024901974156153,
-    "lon": 102.420796731605
+    "lat": -3.48606,
+    "lon": 102.368,
+    "labelRank": 7,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
-    "name": "Sumatera Barat",
+    "name": "Sumatra Ocidental",
     "key": "sumatera barat",
-    "lat": -0.6961970361253165,
-    "lon": 100.56783317262014
+    "lat": -0.642611,
+    "lon": 100.611,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
-    "name": "Sumatera Utara",
+    "name": "Sumatra do Norte",
     "key": "sumatera utara",
-    "lat": 2.1772011658649433,
-    "lon": 99.17365134574129
+    "lat": 2.36304,
+    "lon": 99.2161,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
-    "name": "Aceh",
+    "name": "Achém",
     "key": "aceh",
-    "lat": 4.051791864759643,
-    "lon": 97.06355216489838
+    "lat": 4.41533,
+    "lon": 96.9956,
+    "labelRank": 6,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
-    "name": "Kalimantan Tengah",
+    "name": "Kalimantan Central",
     "key": "kalimantan tengah",
-    "lat": -1.6742871420646206,
-    "lon": 113.41511563620519
+    "lat": -1.84217,
+    "lon": 113.286,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
-    "name": "Kalimantan Selatan",
+    "name": "Kalimantan do Sul",
     "key": "kalimantan selatan",
-    "lat": -2.7271829446423355,
-    "lon": 115.53713959768892
+    "lat": -3.00713,
+    "lon": 115.451,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
     "name": "Bali",
     "key": "bali",
-    "lat": -8.321058852187427,
-    "lon": 115.10640506281254
+    "lat": -8.3412,
+    "lon": 115.179,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   },
   {
     "name": "Bangka-Belitung",
     "key": "bangka-belitung",
-    "lat": -2.2083813908063856,
-    "lon": 105.97113376480647
+    "lat": -2.95817,
+    "lon": 106.819,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 10.1
   }
 ]

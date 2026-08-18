@@ -1,68 +1,101 @@
 [
   {
-    "name": "Musandam",
+    "name": "Moçandão",
     "key": "musandam",
-    "lat": 25.91862174167869,
-    "lon": 56.232538351123644
+    "lat": 25.9744,
+    "lon": 56.2943,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Al Batnah North",
+    "name": "Batina Setentrional",
     "key": "al batnah north",
-    "lat": 24.334614203338663,
-    "lon": 56.622280598677676
+    "lat": 23.9794,
+    "lon": 56.8199,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Al Buraymi",
+    "name": "Al Buraimi",
     "key": "al buraymi",
-    "lat": 24.2448936069559,
-    "lon": 55.87348262101484
+    "lat": 24.3888,
+    "lon": 55.9933,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Al Dhahira",
+    "name": "Ad Dhahirah",
     "key": "al dhahira",
-    "lat": 23.209168242747307,
-    "lon": 55.925210844075494
+    "lat": 22.9127,
+    "lon": 55.9327,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Dhofar",
+    "name": "Zufar",
     "key": "dhofar",
-    "lat": 18.01411420525779,
-    "lon": 54.64614556736313
+    "lat": 18.4966,
+    "lon": 54.2927,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Al Wusta",
     "key": "al wusta",
-    "lat": 20.245695984974084,
-    "lon": 57.379948133925076
+    "lat": 20.4263,
+    "lon": 56.8705,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ash Sharqiyah South",
+    "name": "Ash Sharqiyah",
     "key": "ash sharqiyah south",
-    "lat": 21.611384591717478,
-    "lon": 59.068913274656836
+    "lat": 21.5958,
+    "lon": 58.9632,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ash Sharqiyah North",
+    "name": "Ash Sharqiyah Norte",
     "key": "ash sharqiyah north",
-    "lat": 22.58770158093782,
-    "lon": 58.878375487526604
+    "lat": 22.2943,
+    "lon": 58.565,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Muscat",
     "key": "muscat",
-    "lat": 23.30946582440366,
-    "lon": 58.59678652817357
+    "lat": 23.2505,
+    "lon": 58.6759,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Al Batnah South",
+    "name": "Al Batinah Sul",
     "key": "al batnah south",
-    "lat": 23.55787673599159,
-    "lon": 57.68618985329727
+    "lat": 23.4299,
+    "lon": 57.6472,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ad Dakhliyah",
+    "name": "Ad Dakhiliyah",
     "key": "ad dakhliyah",
-    "lat": 22.669616647474495,
-    "lon": 57.70802492646705
+    "lat": 22.474,
+    "lon": 57.3411,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   }
 ]

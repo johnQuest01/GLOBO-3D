@@ -2,85 +2,127 @@
   {
     "name": "Anetan",
     "key": "anetan",
-    "lat": -0.4953186090676218,
-    "lon": 166.93504831066633
+    "lat": -0.494702,
+    "lon": 166.936,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Ewa",
     "key": "ewa",
-    "lat": -0.49987875090235356,
-    "lon": 166.93169677370497
+    "lat": -0.502076,
+    "lon": 166.934,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Baiti",
     "key": "baiti",
-    "lat": -0.5038983242022802,
-    "lon": 166.92730968745826
+    "lat": -0.500672,
+    "lon": 166.925,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Uaboe",
     "key": "uaboe",
-    "lat": -0.5070916980456648,
-    "lon": 166.92378982580448
+    "lat": -0.506992,
+    "lon": 166.924,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Nibok",
     "key": "nibok",
-    "lat": -0.5150784882506212,
-    "lon": 166.92122580868758
+    "lat": -0.512961,
+    "lon": 166.921,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Denigomodu",
+    "name": "distritos de Nauru",
     "key": "denigomodu",
-    "lat": -0.5213321781190917,
-    "lon": 166.91230779709235
+    "lat": -0.520335,
+    "lon": 166.914,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Aiwo",
     "key": "aiwo",
-    "lat": -0.5316093063432887,
-    "lon": 166.91315250467846
+    "lat": -0.529816,
+    "lon": 166.913,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Boe",
     "key": "boe",
-    "lat": -0.5411855454060308,
-    "lon": 166.91654179858216
+    "lat": -0.538594,
+    "lon": 166.916,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Yaren",
     "key": "yaren",
-    "lat": -0.5444111603781641,
-    "lon": 166.92540373944112
+    "lat": -0.543159,
+    "lon": 166.925,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Meneng",
     "key": "meneng",
-    "lat": -0.5363260977640791,
-    "lon": 166.93996341308466
+    "lat": -0.539648,
+    "lon": 166.939,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Anibare",
     "key": "anibare",
-    "lat": -0.5180521996224275,
-    "lon": 166.9434091303051
+    "lat": -0.519984,
+    "lon": 166.947,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Ijuw",
     "key": "ijuw",
-    "lat": -0.5028676295362431,
-    "lon": 166.95188451764767
+    "lat": -0.504534,
+    "lon": 166.951,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Anabar",
     "key": "anabar",
-    "lat": -0.4957461311200717,
-    "lon": 166.94304726716805
+    "lat": -0.497511,
+    "lon": 166.944,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Buada",
     "key": "buada",
-    "lat": -0.5291691974005417,
-    "lon": 166.92603652287968
+    "lat": -0.527877,
+    "lon": 166.925,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   }
 ]

@@ -1,38 +1,56 @@
 [
   {
-    "name": "An Nabatiyah",
+    "name": "Nabatiye",
     "key": "an nabatiyah",
-    "lat": 33.293949694004326,
-    "lon": 35.5227744177545
+    "lat": 33.3303,
+    "lon": 35.5666,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "South Lebanon",
+    "name": "Líbano Meridional",
     "key": "south lebanon",
-    "lat": 33.35036748389977,
-    "lon": 35.38455759186807
+    "lat": 33.2661,
+    "lon": 35.2966,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Beqaa",
     "key": "beqaa",
-    "lat": 33.8233252484913,
-    "lon": 36.01156946851736
+    "lat": 34.0494,
+    "lon": 36.1086,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "North Lebanon",
+    "name": "Líbano Setentrional",
     "key": "north lebanon",
-    "lat": 34.471116149857174,
-    "lon": 36.06394860887452
+    "lat": 34.3933,
+    "lon": 36.0424,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Mount Lebanon",
+    "name": "Monte Líbano",
     "key": "mount lebanon",
-    "lat": 33.86793026803073,
-    "lon": 35.65084198428933
+    "lat": 33.9291,
+    "lon": 35.6942,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Beirut",
+    "name": "Beirute",
     "key": "beirut",
-    "lat": 33.884653434056005,
-    "lon": 35.49613844823223
+    "lat": 33.8849,
+    "lon": 35.5093,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   }
 ]

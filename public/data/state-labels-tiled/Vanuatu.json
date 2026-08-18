@@ -2,37 +2,55 @@
   {
     "name": "Tafea",
     "key": "tafea",
-    "lat": -18.84041571571421,
-    "lon": 169.18243016271435
+    "lat": -20.1892,
+    "lon": 169.818,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Shefa",
     "key": "shefa",
-    "lat": -17.676760116999933,
-    "lon": 168.4272450811429
+    "lat": -16.7385,
+    "lon": 168.301,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Malampa",
     "key": "malampa",
-    "lat": -16.257813910076855,
-    "lon": 167.46896719338463
+    "lat": -16.3765,
+    "lon": 167.494,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Sanma",
     "key": "sanma",
-    "lat": -15.224650431933265,
-    "lon": 166.88880727073337
+    "lat": -15.6781,
+    "lon": 167.155,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Penama",
     "key": "penama",
-    "lat": -15.40421314879992,
-    "lon": 167.84086347760007
+    "lat": -15.7575,
+    "lon": 168.195,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Torba",
     "key": "torba",
-    "lat": -13.82784596139993,
-    "lon": 167.46667727960005
+    "lat": -14.2328,
+    "lon": 167.5,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   }
 ]

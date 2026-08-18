@@ -1,20 +1,29 @@
 [
   {
-    "name": "Tristan da Cunha",
+    "name": "Arquipélago de Tristão da Cunha",
     "key": "tristan da cunha",
-    "lat": -40.347198174999924,
-    "lon": -9.95601152279994
+    "lat": -37.1226,
+    "lon": -12.2667,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Saint Helena",
+    "name": "Santa Helena",
     "key": "saint helena",
-    "lat": -15.951690362399926,
-    "lon": -5.728057420999937
+    "lat": -15.9317,
+    "lon": -5.70643,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Ascension",
+    "name": "Ilha de Ascensão",
     "key": "ascension",
-    "lat": -7.922194105999921,
-    "lon": -14.353433804499943
+    "lat": -7.91916,
+    "lon": -14.3701,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

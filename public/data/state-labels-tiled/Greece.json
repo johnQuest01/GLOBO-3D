@@ -1,86 +1,128 @@
 [
   {
-    "name": "Dytiki Makedonia",
+    "name": "Macedônia Ocidental",
     "key": "dytiki makedonia",
-    "lat": 40.40385972702122,
-    "lon": 21.401240480658142
+    "lat": 40.3834,
+    "lon": 21.4551,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ipeiros",
+    "name": "Epiro",
     "key": "ipeiros",
-    "lat": 39.69149034731902,
-    "lon": 20.73300296846043
+    "lat": 39.6365,
+    "lon": 20.6925,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kentriki Makedonia",
+    "name": "Macedônia Central",
     "key": "kentriki makedonia",
-    "lat": 40.64950286787836,
-    "lon": 23.00951245805373
+    "lat": 40.8836,
+    "lon": 22.8519,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Anatoliki Makedonia kai Thraki",
+    "name": "Macedônia Oriental e Trácia",
     "key": "anatoliki makedonia kai thraki",
-    "lat": 41.19506134096676,
-    "lon": 25.20544284150664
+    "lat": 41.1043,
+    "lon": 25.2076,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ayion Oros",
+    "name": "Monte Atos",
     "key": "ayion oros",
-    "lat": 40.28908791189174,
-    "lon": 24.149804674379173
+    "lat": 40.2922,
+    "lon": 24.1925,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Thessalia",
+    "name": "Tessália",
     "key": "thessalia",
-    "lat": 39.45867277322015,
-    "lon": 22.29930884346945
+    "lat": 39.5322,
+    "lon": 22.1914,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Stereá Elláda",
+    "name": "Grécia Central",
     "key": "stereá elláda",
-    "lat": 38.714021663361244,
-    "lon": 22.460598085800253
+    "lat": 38.6373,
+    "lon": 22.6102,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Attiki",
+    "name": "Attica",
     "key": "attiki",
-    "lat": 38.07481858058156,
-    "lon": 23.635591967599016
+    "lat": 38.0626,
+    "lon": 23.7997,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Peloponnisos",
+    "name": "de Peloponnes",
     "key": "peloponnisos",
-    "lat": 37.326307966580984,
-    "lon": 22.503193786698596
+    "lat": 37.3319,
+    "lon": 22.3501,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Dytiki Ellada",
+    "name": "Grécia Ocidental",
     "key": "dytiki ellada",
-    "lat": 37.842020803685145,
-    "lon": 21.762105440321292
+    "lat": 38.0299,
+    "lon": 21.7273,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kriti",
+    "name": "Creta",
     "key": "kriti",
-    "lat": 35.24872919777782,
-    "lon": 24.960158423518596
+    "lat": 35.1921,
+    "lon": 25.0652,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Notio Aigaio",
+    "name": "Egeu Meridional",
     "key": "notio aigaio",
-    "lat": 37.077093817000055,
-    "lon": 25.49820668500008
+    "lat": 37.0538,
+    "lon": 25.4867,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Voreio Aigaio",
+    "name": "Egeu Setentrional",
     "key": "voreio aigaio",
-    "lat": 38.41409943250006,
-    "lon": 26.02010135212508
+    "lat": 39.9531,
+    "lon": 25.2262,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ionioi Nisoi",
+    "name": "Ilhas Jónicas",
     "key": "ionioi nisoi",
-    "lat": 39.58295319212505,
-    "lon": 19.911143425625077
+    "lat": 38.2419,
+    "lon": 20.5554,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   }
 ]

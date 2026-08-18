@@ -2,7 +2,10 @@
   {
     "name": "Aruba",
     "key": "aruba",
-    "lat": 12.512713934200054,
-    "lon": -69.96405188699993
+    "lat": 12.5147,
+    "lon": -69.9689,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

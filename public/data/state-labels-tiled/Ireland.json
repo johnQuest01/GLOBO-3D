@@ -2,205 +2,307 @@
   {
     "name": "Donegal",
     "key": "donegal",
-    "lat": 54.93074347119691,
-    "lon": -7.87869275188775
+    "lat": 54.8924,
+    "lon": -8.02986,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Leitrim",
     "key": "leitrim",
-    "lat": 54.200209886520874,
-    "lon": -8.058833779153963
+    "lat": 54.0513,
+    "lon": -7.99465,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Cavan",
     "key": "cavan",
-    "lat": 54.037063275530976,
-    "lon": -7.479385481497784
+    "lat": 53.9623,
+    "lon": -7.27176,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Monaghan",
     "key": "monaghan",
-    "lat": 54.17096876174503,
-    "lon": -6.921265640157597
+    "lat": 54.2106,
+    "lon": -6.94174,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Louth",
     "key": "louth",
-    "lat": 53.92218118031522,
-    "lon": -6.393952438861053
+    "lat": 53.9259,
+    "lon": -6.48625,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Dublin",
     "key": "dublin",
-    "lat": 53.35188643856823,
-    "lon": -6.220054771115798
+    "lat": 53.3683,
+    "lon": -6.26188,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Dún Laoghaire–Rathdown",
     "key": "dún laoghaire–rathdown",
-    "lat": 53.27306685454391,
-    "lon": -6.201662851045194
+    "lat": 53.26,
+    "lon": -6.18788,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Wicklow",
     "key": "wicklow",
-    "lat": 52.99631057359717,
-    "lon": -6.3565737373599065
+    "lat": 52.9947,
+    "lon": -6.38849,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Wexford",
     "key": "wexford",
-    "lat": 52.50177277225204,
-    "lon": -6.5008923409646515
+    "lat": 52.4423,
+    "lon": -6.58517,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Kilkenny",
     "key": "kilkenny",
-    "lat": 52.515730010352385,
-    "lon": -7.222711742368985
+    "lat": 52.5758,
+    "lon": -7.2941,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Waterford",
     "key": "waterford",
-    "lat": 52.18978539408699,
-    "lon": -7.441518426486084
+    "lat": 52.199,
+    "lon": -7.59292,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Cork",
     "key": "cork",
-    "lat": 51.90521810982118,
-    "lon": -8.774548444693316
+    "lat": 51.9396,
+    "lon": -8.83835,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Cork",
     "key": "cork",
-    "lat": 51.90521810982118,
-    "lon": -8.774548444693316
+    "lat": 51.9396,
+    "lon": -8.83835,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Kerry",
     "key": "kerry",
-    "lat": 52.1062284605392,
-    "lon": -9.777920629705177
+    "lat": 52.1195,
+    "lon": -9.5547,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Limerick",
     "key": "limerick",
-    "lat": 52.49444677666047,
-    "lon": -8.683362391264419
+    "lat": 52.5242,
+    "lon": -8.75892,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Clare",
     "key": "clare",
-    "lat": 52.83133468518005,
-    "lon": -8.925766486413659
+    "lat": 52.8909,
+    "lon": -9.10704,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Galway",
     "key": "galway",
-    "lat": 53.36137349431102,
-    "lon": -8.986602296483147
+    "lat": 53.4045,
+    "lon": -8.61598,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Galway",
     "key": "galway",
-    "lat": 53.36137349431102,
-    "lon": -8.986602296483147
+    "lat": 53.4045,
+    "lon": -8.61598,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Mayo",
     "key": "mayo",
-    "lat": 53.848165632339274,
-    "lon": -9.37777619176989
+    "lat": 53.895,
+    "lon": -9.23048,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Sligo",
     "key": "sligo",
-    "lat": 54.15048290544689,
-    "lon": -8.694837558147
+    "lat": 54.1277,
+    "lon": -8.489,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Meath",
     "key": "meath",
-    "lat": 53.64684235686925,
-    "lon": -6.785078909344198
+    "lat": 53.6324,
+    "lon": -6.71387,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Fingal",
     "key": "fingal",
-    "lat": 53.473261117239126,
-    "lon": -6.270849858711196
+    "lat": 53.4927,
+    "lon": -6.2769,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Kildare",
     "key": "kildare",
-    "lat": 53.163719584241385,
-    "lon": -6.812072132772717
+    "lat": 53.1364,
+    "lon": -6.79999,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Carlow",
     "key": "carlow",
-    "lat": 52.78118859862488,
-    "lon": -6.8288024558186935
+    "lat": 52.715,
+    "lon": -6.79431,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Laoighis",
+    "name": "Laois",
     "key": "laoighis",
-    "lat": 52.94696346158536,
-    "lon": -7.277598176787179
+    "lat": 53.0116,
+    "lon": -7.32962,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "South Dublin",
+    "name": "Dublin do Sul",
     "key": "south dublin",
-    "lat": 53.283984238681626,
-    "lon": -6.385538783837812
+    "lat": 53.2831,
+    "lon": -6.40147,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Offaly",
     "key": "offaly",
-    "lat": 53.250064863980846,
-    "lon": -7.516752343231786
+    "lat": 53.2565,
+    "lon": -7.53214,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Westmeath",
     "key": "westmeath",
-    "lat": 53.569275723046154,
-    "lon": -7.428016526591439
+    "lat": 53.5252,
+    "lon": -7.4553,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Longford",
     "key": "longford",
-    "lat": 53.712963888586835,
-    "lon": -7.706541422848391
+    "lat": 53.7166,
+    "lon": -7.70239,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Roscommon",
     "key": "roscommon",
-    "lat": 53.659987670774335,
-    "lon": -8.243744513238703
+    "lat": 53.7738,
+    "lon": -8.21208,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "North Tipperary",
+    "name": "Tipperary",
     "key": "north tipperary",
-    "lat": 52.83711166159207,
-    "lon": -7.9446553428516244
+    "lat": 52.7597,
+    "lon": -7.97632,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "South Tipperary",
+    "name": "Tipperary",
     "key": "south tipperary",
-    "lat": 52.443309445702894,
-    "lon": -7.87637153070729
+    "lat": 52.4462,
+    "lon": -7.83145,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Waterford",
     "key": "waterford",
-    "lat": 52.18978539408699,
-    "lon": -7.441518426486084
+    "lat": 52.199,
+    "lon": -7.59292,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Limerick",
     "key": "limerick",
-    "lat": 52.49444677666047,
-    "lon": -8.683362391264419
+    "lat": 52.5242,
+    "lon": -8.75892,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   }
 ]

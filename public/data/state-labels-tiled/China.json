@@ -2,193 +2,289 @@
   {
     "name": "Xinjiang",
     "key": "xinjiang",
-    "lat": 40.80937398413397,
-    "lon": 84.06674065732078
+    "lat": 41.122,
+    "lon": 85.4253,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
-    "name": "Xizang",
+    "name": "do Tibete",
     "key": "xizang",
-    "lat": 31.31400259810871,
-    "lon": 89.19025573017525
+    "lat": 31.4515,
+    "lon": 88.4137,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
-    "name": "Inner Mongol",
+    "name": "Mongólia Interior",
     "key": "inner mongol",
-    "lat": 44.048344554521925,
-    "lon": 114.24852159640794
+    "lat": 41.5938,
+    "lon": 111.623,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Gansu",
     "key": "gansu",
-    "lat": 36.98062183954478,
-    "lon": 102.21087223309297
+    "lat": 38.7393,
+    "lon": 100.735,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Yunnan",
     "key": "yunnan",
-    "lat": 25.404941307696006,
-    "lon": 101.73452686340947
+    "lat": 24.4603,
+    "lon": 101.661,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Heilongjiang",
     "key": "heilongjiang",
-    "lat": 48.28216835590818,
-    "lon": 127.40798166559316
+    "lat": 46.8451,
+    "lon": 127.97,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Jilin",
     "key": "jilin",
-    "lat": 43.62047191933769,
-    "lon": 126.5695545800137
+    "lat": 43.2978,
+    "lon": 126.466,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Liaoning",
     "key": "liaoning",
-    "lat": 41.22621812253635,
-    "lon": 122.24499584291509
+    "lat": 41.386,
+    "lon": 123.07,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Guangxi",
     "key": "guangxi",
-    "lat": 24.086793061590225,
-    "lon": 108.37969646316841
+    "lat": 23.7451,
+    "lon": 108.756,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Guangdong",
     "key": "guangdong",
-    "lat": 23.017565067970356,
-    "lon": 113.14248737809154
+    "lat": 23.7924,
+    "lon": 113.72,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Hainan",
     "key": "hainan",
-    "lat": 19.223927872687558,
-    "lon": 109.88746941415631
+    "lat": 19.1865,
+    "lon": 109.825,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Fujian",
     "key": "fujian",
-    "lat": 26.149083570693005,
-    "lon": 118.21361893172376
+    "lat": 26.408,
+    "lon": 118.178,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Zhejiang",
     "key": "zhejiang",
-    "lat": 29.271181719295274,
-    "lon": 120.22965659231494
+    "lat": 29.1084,
+    "lon": 119.97,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
-    "name": "Shanghai",
+    "name": "Xangai",
     "key": "shanghai",
-    "lat": 31.077274116239625,
-    "lon": 121.36956871304838
+    "lat": 31.0909,
+    "lon": 121.409,
+    "labelRank": 7,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Jiangsu",
     "key": "jiangsu",
-    "lat": 32.96307859755175,
-    "lon": 119.29771257783862
+    "lat": 32.9844,
+    "lon": 119.942,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Shandong",
     "key": "shandong",
-    "lat": 36.36662538663519,
-    "lon": 118.5245644596859
+    "lat": 36.3271,
+    "lon": 118.114,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Hebei",
     "key": "hebei",
-    "lat": 39.61296077175128,
-    "lon": 116.23460474024012
+    "lat": 38.5205,
+    "lon": 115.314,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Tianjin",
     "key": "tianjin",
-    "lat": 39.35434937640717,
-    "lon": 117.35275608954696
+    "lat": 39.3708,
+    "lon": 117.347,
+    "labelRank": 7,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
-    "name": "Paracel Islands",
+    "name": "Ilhas Paracel",
     "key": "paracel islands",
-    "lat": 15.780534165500072,
-    "lon": 111.20000247475004
+    "lat": 15.7833,
+    "lon": 111.201,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   },
   {
-    "name": "Beijing",
+    "name": "Pequim",
     "key": "beijing",
-    "lat": 40.129083731011505,
-    "lon": 116.41832584029025
+    "lat": 39.9488,
+    "lon": 116.389,
+    "labelRank": 7,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
-    "name": "Sichuan",
+    "name": "Sujuão",
     "key": "sichuan",
-    "lat": 30.539168357379726,
-    "lon": 102.93923639515627
+    "lat": 30.5431,
+    "lon": 102.384,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Chongqing",
     "key": "chongqing",
-    "lat": 30.040828152057557,
-    "lon": 107.95925675753325
+    "lat": 30.0173,
+    "lon": 107.73,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Guizhou",
     "key": "guizhou",
-    "lat": 26.853131564490774,
-    "lon": 106.78772861486985
+    "lat": 26.8033,
+    "lon": 106.559,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Hunan",
     "key": "hunan",
-    "lat": 27.273476044024175,
-    "lon": 111.59539354122983
+    "lat": 27.6667,
+    "lon": 111.712,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Ningxia",
     "key": "ningxia",
-    "lat": 37.3583965299486,
-    "lon": 106.19160921724603
+    "lat": 37.1762,
+    "lon": 106.038,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Shaanxi",
     "key": "shaanxi",
-    "lat": 35.2378337455466,
-    "lon": 108.72127480326454
+    "lat": 33.7713,
+    "lon": 108.363,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Qinghai",
     "key": "qinghai",
-    "lat": 35.14148283454014,
-    "lon": 96.39493512571796
+    "lat": 35.2652,
+    "lon": 96.2377,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Shanxi",
     "key": "shanxi",
-    "lat": 37.96843274562836,
-    "lon": 112.50519102502874
+    "lat": 37.7586,
+    "lon": 112.389,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Jiangxi",
     "key": "jiangxi",
-    "lat": 27.538532882575765,
-    "lon": 115.7735306478424
+    "lat": 27.6397,
+    "lon": 116.017,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Henan",
     "key": "henan",
-    "lat": 33.85249471716876,
-    "lon": 114.03081324169528
+    "lat": 33.9055,
+    "lon": 113.484,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Hubei",
     "key": "hubei",
-    "lat": 30.963070533309857,
-    "lon": 111.92945361698833
+    "lat": 30.9857,
+    "lon": 112.264,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Anhui",
     "key": "anhui",
-    "lat": 31.86154133054903,
-    "lon": 117.23985657821305
+    "lat": 31.9537,
+    "lon": 117.253,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   }
 ]

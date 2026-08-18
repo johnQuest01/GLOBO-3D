@@ -2,85 +2,127 @@
   {
     "name": "Kédougou",
     "key": "kédougou",
-    "lat": 12.88462445338019,
-    "lon": -12.534417903197507
+    "lat": 12.842,
+    "lon": -12.1903,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Tambacounda",
     "key": "tambacounda",
-    "lat": 13.947268179890985,
-    "lon": -13.188222524160752
+    "lat": 13.9278,
+    "lon": -13.2878,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Kolda",
     "key": "kolda",
-    "lat": 13.085581735446967,
-    "lon": -14.295969491538628
+    "lat": 12.9574,
+    "lon": -14.422,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Sédhiou",
+    "name": "de Sédhiou",
     "key": "sédhiou",
-    "lat": 12.92604620274441,
-    "lon": -15.587936282184495
+    "lat": 12.8803,
+    "lon": -15.6151,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Ziguinchor",
     "key": "ziguinchor",
-    "lat": 12.866638621320366,
-    "lon": -16.305051810781215
+    "lat": 12.4818,
+    "lon": -16.3435,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Saint-Louis",
     "key": "saint-louis",
-    "lat": 16.21753970688247,
-    "lon": -15.207776189032675
+    "lat": 16.3051,
+    "lon": -14.9945,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Matam",
     "key": "matam",
-    "lat": 15.203418002608137,
-    "lon": -13.727860760780837
+    "lat": 15.4647,
+    "lon": -13.5063,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Kaffrine",
     "key": "kaffrine",
-    "lat": 14.158118943942869,
-    "lon": -15.129552716686867
+    "lat": 14.2364,
+    "lon": -15.2014,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Kaolack",
     "key": "kaolack",
-    "lat": 13.953409692808789,
-    "lon": -15.905375705444289
+    "lat": 13.8846,
+    "lon": -15.9845,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Fatick",
     "key": "fatick",
-    "lat": 14.417367745087574,
-    "lon": -16.166445801506036
+    "lat": 13.8699,
+    "lon": -16.4165,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Louga",
     "key": "louga",
-    "lat": 15.367105167104368,
-    "lon": -15.595985624143205
+    "lat": 15.4183,
+    "lon": -15.5162,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Thiès",
     "key": "thiès",
-    "lat": 14.887098500403297,
-    "lon": -16.697938566100632
+    "lat": 14.6931,
+    "lon": -16.8671,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Dakar",
     "key": "dakar",
-    "lat": 14.734811454816384,
-    "lon": -17.195845473387557
+    "lat": 14.7835,
+    "lon": -17.3327,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Diourbel",
     "key": "diourbel",
-    "lat": 14.758367740528788,
-    "lon": -15.986909219035233
+    "lat": 14.7509,
+    "lon": -16.1895,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   }
 ]

@@ -2,7 +2,10 @@
   {
     "name": "Tuvalu",
     "key": "tuvalu",
-    "lat": -8.530938409499939,
-    "lon": 179.20104007225004
+    "lat": -9.39381,
+    "lon": 179.903,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

@@ -2,61 +2,91 @@
   {
     "name": "Mahaica-Berbice",
     "key": "mahaica-berbice",
-    "lat": 3.7508325001895697,
-    "lon": -57.647102293419614
+    "lat": 2.56716,
+    "lon": -57.4923,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Pomeroon-Supenaam",
     "key": "pomeroon-supenaam",
-    "lat": 6.191620576216824,
-    "lon": -59.782974906230955
+    "lat": 6.18361,
+    "lon": -59.9838,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Potaro-Siparuni",
     "key": "potaro-siparuni",
-    "lat": 4.822572354953589,
-    "lon": -59.31245597366906
+    "lat": 4.93151,
+    "lon": -59.2238,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Upper Demerara-Berbice",
+    "name": "Alto Demerara-Berbice",
     "key": "upper demerara-berbice",
-    "lat": 2.998537213497364,
-    "lon": -59.05092328679061
+    "lat": 2.6693,
+    "lon": -58.9648,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Barima-Waini",
     "key": "barima-waini",
-    "lat": 7.64406193297714,
-    "lon": -59.819078015956386
+    "lat": 7.74233,
+    "lon": -59.7502,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Demerara-Mahaica",
     "key": "demerara-mahaica",
-    "lat": 6.490074713190961,
-    "lon": -58.3813561879756
+    "lat": 6.54128,
+    "lon": -58.3773,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Cuyuni-Mazaruni",
     "key": "cuyuni-mazaruni",
-    "lat": 7.209437340903862,
-    "lon": -58.84311025979646
+    "lat": 7.16881,
+    "lon": -58.8206,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Upper Takutu-Upper Essequibo",
+    "name": "Alto Takutu-Alto Essequibo",
     "key": "upper takutu-upper essequibo",
-    "lat": 5.620117579210426,
-    "lon": -58.32188445551466
+    "lat": 5.36479,
+    "lon": -58.2455,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "East Berbice-Corentyne",
+    "name": "Berbice Oriental-Corentyne",
     "key": "east berbice-corentyne",
-    "lat": 6.537263998827211,
-    "lon": -58.1171572743343
+    "lat": 6.56415,
+    "lon": -58.0942,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Essequibo Islands-West Demerara",
+    "name": "Mahaica-Berbice",
     "key": "essequibo islands-west demerara",
-    "lat": 6.210134826742528,
-    "lon": -57.824160753048794
+    "lat": 6.23705,
+    "lon": -57.8277,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   }
 ]

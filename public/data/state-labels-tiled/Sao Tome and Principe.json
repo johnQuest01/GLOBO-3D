@@ -2,13 +2,19 @@
   {
     "name": "São Tomé",
     "key": "são tomé",
-    "lat": 0.24915482914292397,
-    "lon": 6.61057143857151
+    "lat": 0.234574,
+    "lon": 6.61185,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Príncipe",
+    "name": "do Príncipe",
     "key": "príncipe",
-    "lat": 1.6353864604000705,
-    "lon": 7.417312045000074
+    "lat": 1.60769,
+    "lon": 7.39374,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

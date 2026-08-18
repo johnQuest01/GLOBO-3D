@@ -2,7 +2,10 @@
   {
     "name": "Curaçao",
     "key": "curaçao",
-    "lat": 12.197612819500058,
-    "lon": -68.96208655499991
+    "lat": 12.1558,
+    "lon": -68.955,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

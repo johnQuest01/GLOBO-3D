@@ -1,86 +1,128 @@
 [
   {
-    "name": "Groningen",
+    "name": "Groninga",
     "key": "groningen",
-    "lat": 53.20151417391359,
-    "lon": 6.702349851430483
+    "lat": 53.279,
+    "lon": 6.73067,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Drenthe",
+    "name": "Drente",
     "key": "drenthe",
-    "lat": 52.86281879242308,
-    "lon": 6.593170382356342
+    "lat": 52.9046,
+    "lon": 6.60064,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Overijssel",
+    "name": "Overissel",
     "key": "overijssel",
-    "lat": 52.50587142918209,
-    "lon": 6.394692547115826
+    "lat": 52.4311,
+    "lon": 6.41649,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Gelderland",
+    "name": "Guéldria",
     "key": "gelderland",
-    "lat": 52.03241223526167,
-    "lon": 5.89162109890858
+    "lat": 52.0635,
+    "lon": 5.96001,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Limburg",
+    "name": "Limburgo",
     "key": "limburg",
-    "lat": 51.23106428820857,
-    "lon": 5.883721407664115
+    "lat": 51.2248,
+    "lon": 5.93161,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Zeeland",
+    "name": "Zelândia",
     "key": "zeeland",
-    "lat": 51.45108411935135,
-    "lon": 3.97578631153161
+    "lat": 51.2837,
+    "lon": 3.78515,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Noord-Brabant",
+    "name": "Brabante do Norte",
     "key": "noord-brabant",
-    "lat": 51.55248232520652,
-    "lon": 4.979347388123749
+    "lat": 51.6008,
+    "lon": 5.16122,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Zuid-Holland",
+    "name": "Holanda do Sul",
     "key": "zuid-holland",
-    "lat": 51.908045616743394,
-    "lon": 4.520604002194566
+    "lat": 52.0075,
+    "lon": 4.52252,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Noord-Holland",
+    "name": "Holanda do Norte",
     "key": "noord-holland",
-    "lat": 52.510157723715295,
-    "lon": 4.9562563828942245
+    "lat": 52.5748,
+    "lon": 4.89736,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Friesland",
+    "name": "Frísia",
     "key": "friesland",
-    "lat": 53.09406775210286,
-    "lon": 5.843776353390424
+    "lat": 53.0792,
+    "lon": 5.77345,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "St. Eustatius",
+    "name": "Santo Eustáquio",
     "key": "st. eustatius",
-    "lat": 17.501087458000057,
-    "lon": -62.98010804799995
+    "lat": 17.4852,
+    "lon": -62.9719,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saba",
     "key": "saba",
-    "lat": 17.63230215060006,
-    "lon": -63.23805904879994
+    "lat": 17.6325,
+    "lon": -63.2371,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Flevoland",
+    "name": "Flevolândia",
     "key": "flevoland",
-    "lat": 52.56577510846173,
-    "lon": 5.53554812965155
+    "lat": 52.5508,
+    "lon": 5.55746,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Utrecht",
     "key": "utrecht",
-    "lat": 52.15182489487297,
-    "lon": 5.226492555696876
+    "lat": 52.0749,
+    "lon": 5.1938,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   }
 ]

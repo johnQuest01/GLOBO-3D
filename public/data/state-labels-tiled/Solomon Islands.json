@@ -1,62 +1,92 @@
 [
   {
-    "name": "Rennell and Bellona",
+    "name": "Rennell e Bellona",
     "key": "rennell and bellona",
-    "lat": -11.665622653999927,
-    "lon": 160.2891409296667
+    "lat": -11.6204,
+    "lon": 160.273,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Makira",
+    "name": "Makira-Ulawa",
     "key": "makira",
-    "lat": -10.586934774499928,
-    "lon": 161.90449737508337
+    "lat": -10.2782,
+    "lon": 161.744,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Temotu",
     "key": "temotu",
-    "lat": -10.750230313333267,
-    "lon": 165.95442168333338
+    "lat": -12.277,
+    "lon": 168.812,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Malaita",
     "key": "malaita",
-    "lat": -8.96984512449993,
-    "lon": 160.99504060728572
+    "lat": -9.75831,
+    "lon": 161.956,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Capital Territory (Honiara)",
+    "name": "Honiara",
     "key": "capital territory (honiara)",
-    "lat": -9.437260665207987,
-    "lon": 159.97239192340948
+    "lat": -9.44658,
+    "lon": 160.019,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Guadalcanal",
     "key": "guadalcanal",
-    "lat": -9.592484997114443,
-    "lon": 160.14619737128993
+    "lat": -9.61695,
+    "lon": 160.209,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Central",
     "key": "central",
-    "lat": -21.53938210084973,
-    "lon": 26.99743649044483
+    "lat": -21.8775,
+    "lon": 26.6144,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Western",
+    "name": "Ocidental",
     "key": "western",
-    "lat": -2.1421606680643306,
-    "lon": 29.29291803490095
+    "lat": -2.13156,
+    "lon": 29.2644,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Isabel",
     "key": "isabel",
-    "lat": -8.08020056216659,
-    "lon": 159.29357615125008
+    "lat": -8.44695,
+    "lon": 159.619,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Choiseul",
     "key": "choiseul",
-    "lat": 13.794248022978469,
-    "lon": -61.01369418117865
+    "lat": 13.7912,
+    "lon": -61.0296,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   }
 ]

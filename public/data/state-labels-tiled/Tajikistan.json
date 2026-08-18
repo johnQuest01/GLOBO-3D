@@ -1,32 +1,47 @@
 [
   {
-    "name": "Leninabad",
+    "name": "Khujand",
     "key": "leninabad",
-    "lat": 39.80536359220701,
-    "lon": 69.3193757431685
+    "lat": 39.6335,
+    "lon": 69.1609,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Tadzhikistan Territories",
+    "name": "Karotegin",
     "key": "tadzhikistan territories",
-    "lat": 38.869886650444464,
-    "lon": 70.13511190801015
+    "lat": 38.9773,
+    "lon": 70.1331,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Gorno-Badakhshan",
     "key": "gorno-badakhshan",
-    "lat": 38.19155334801296,
-    "lon": 72.6714900086422
+    "lat": 38.2492,
+    "lon": 72.7189,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Khatlon",
     "key": "khatlon",
-    "lat": 37.879410121513054,
-    "lon": 69.30538187170525
+    "lat": 37.8063,
+    "lon": 69.1055,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Dushanbe",
+    "name": "Duchambe",
     "key": "dushanbe",
-    "lat": 38.55687592754199,
-    "lon": 68.77671755858843
+    "lat": 38.5518,
+    "lon": 68.7695,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   }
 ]

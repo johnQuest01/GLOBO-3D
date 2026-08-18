@@ -1,8 +1,11 @@
 [
   {
-    "name": "Somaliland",
+    "name": "Somalilândia",
     "key": "somaliland",
-    "lat": 10.299110193150707,
-    "lon": 45.607615908224226
+    "lat": 9.63996,
+    "lon": 45.7932,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

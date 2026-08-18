@@ -2,193 +2,289 @@
   {
     "name": "Monte Cristi",
     "key": "monte cristi",
-    "lat": 19.710221852951015,
-    "lon": -71.48882388644999
+    "lat": 19.7302,
+    "lon": -71.4527,
+    "labelRank": 7,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Dajabón",
     "key": "dajabón",
-    "lat": 19.413000990229925,
-    "lon": -71.62931117666581
+    "lat": 19.4319,
+    "lon": -71.5952,
+    "labelRank": 7,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "La Estrelleta",
     "key": "la estrelleta",
-    "lat": 19.006226833669558,
-    "lon": -71.60908922961504
+    "lat": 19.037,
+    "lon": -71.65,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Independencia",
     "key": "independencia",
-    "lat": 18.477212592510554,
-    "lon": -71.67951661568044
+    "lat": 18.3759,
+    "lon": -71.6057,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Pedernales",
     "key": "pedernales",
-    "lat": 17.96659568931793,
-    "lon": -71.56514653701885
+    "lat": 17.9396,
+    "lon": -71.5201,
+    "labelRank": 7,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "La Altagracia",
     "key": "la altagracia",
-    "lat": 18.56317732845465,
-    "lon": -68.68400000026041
+    "lat": 18.608,
+    "lon": -68.6413,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "El Seybo",
+    "name": "El Seibo",
     "key": "el seybo",
-    "lat": 18.83917413130981,
-    "lon": -69.10322595246468
+    "lat": 18.7649,
+    "lon": -69.0568,
+    "labelRank": 7,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Hato Mayor",
     "key": "hato mayor",
-    "lat": 18.90025989134531,
-    "lon": -69.41113490967133
+    "lat": 18.981,
+    "lon": -69.403,
+    "labelRank": 7,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Samaná",
     "key": "samaná",
-    "lat": 19.204836147674246,
-    "lon": -69.60752228211933
+    "lat": 19.2717,
+    "lon": -69.4756,
+    "labelRank": 7,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "María Trinidad Sánchez",
     "key": "maría trinidad sánchez",
-    "lat": 19.437511358386914,
-    "lon": -69.98186084398893
+    "lat": 19.4682,
+    "lon": -69.9933,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Espaillat",
     "key": "espaillat",
-    "lat": 19.552347960251176,
-    "lon": -70.37799040707004
+    "lat": 19.5998,
+    "lon": -70.3537,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Puerto Plata",
     "key": "puerto plata",
-    "lat": 19.74633780840325,
-    "lon": -70.78368528186442
+    "lat": 19.7427,
+    "lon": -70.7972,
+    "labelRank": 7,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Barahona",
     "key": "barahona",
-    "lat": 18.178808619157195,
-    "lon": -71.16654433193496
+    "lat": 18.1674,
+    "lon": -71.1872,
+    "labelRank": 7,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Azua",
     "key": "azua",
-    "lat": 18.50613035961899,
-    "lon": -70.79626866370353
+    "lat": 18.5981,
+    "lon": -70.8169,
+    "labelRank": 7,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Peravia",
     "key": "peravia",
-    "lat": 18.331364558348927,
-    "lon": -70.35515747364416
+    "lat": 18.359,
+    "lon": -70.3799,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "San Cristóbal",
     "key": "san cristóbal",
-    "lat": 18.54467855384475,
-    "lon": -70.17962591670826
+    "lat": 18.5126,
+    "lon": -70.1914,
+    "labelRank": 7,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Santo Domingo",
     "key": "santo domingo",
-    "lat": 18.541583996928082,
-    "lon": -69.88834617573106
+    "lat": 18.5664,
+    "lon": -69.8427,
+    "labelRank": 7,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Distrito Nacional",
+    "name": "Nacional",
     "key": "distrito nacional",
-    "lat": 18.465696260540483,
-    "lon": -69.93427183494191
+    "lat": 18.4746,
+    "lon": -69.9376,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "San Pedro de Macorís",
     "key": "san pedro de macorís",
-    "lat": 18.531293867479473,
-    "lon": -69.32863438698931
+    "lat": 18.4796,
+    "lon": -69.3484,
+    "labelRank": 7,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "La Romana",
     "key": "la romana",
-    "lat": 18.485813000583107,
-    "lon": -68.96129235858206
+    "lat": 18.5221,
+    "lon": -68.9869,
+    "labelRank": 7,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Valverde",
     "key": "valverde",
-    "lat": 19.605233432476904,
-    "lon": -71.04930541970933
+    "lat": 19.5741,
+    "lon": -71.0242,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Santiago Rodríguez",
     "key": "santiago rodríguez",
-    "lat": 19.384337139584808,
-    "lon": -71.26799900483769
+    "lat": 19.3626,
+    "lon": -71.2919,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "La Vega",
     "key": "la vega",
-    "lat": 19.08889279001639,
-    "lon": -70.58046668143835
+    "lat": 19.0453,
+    "lon": -70.6836,
+    "labelRank": 7,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Hermanas",
+    "name": "Hermanas Mirabal",
     "key": "hermanas",
-    "lat": 19.40698110624305,
-    "lon": -70.34457668746414
+    "lat": 19.403,
+    "lon": -70.352,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Duarte",
     "key": "duarte",
-    "lat": 19.278179751644213,
-    "lon": -70.10785987041167
+    "lat": 19.1987,
+    "lon": -70.0202,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Santiago",
     "key": "santiago",
-    "lat": 19.36867164430593,
-    "lon": -70.85778179591814
+    "lat": 19.2636,
+    "lon": -70.8974,
+    "labelRank": 7,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Bahoruco",
     "key": "bahoruco",
-    "lat": 18.547923169547193,
-    "lon": -71.34060854462005
+    "lat": 18.5116,
+    "lon": -71.307,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "San Juan",
     "key": "san juan",
-    "lat": -30.803428553804434,
-    "lon": -68.99524925873227
+    "lat": -30.97,
+    "lon": -68.6612,
+    "labelRank": 7,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Monseñor Nouel",
     "key": "monseñor nouel",
-    "lat": 18.90458606151001,
-    "lon": -70.40469575650394
+    "lat": 18.9242,
+    "lon": -70.4081,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Sánchez Ramírez",
     "key": "sánchez ramírez",
-    "lat": 19.003115023168334,
-    "lon": -70.15477099711238
+    "lat": 19.0101,
+    "lon": -70.15,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "San José de Ocoa",
     "key": "san josé de ocoa",
-    "lat": 18.63743413235074,
-    "lon": -70.51476009758613
+    "lat": 18.6367,
+    "lon": -70.525,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Monte Plata",
     "key": "monte plata",
-    "lat": 18.822941450865816,
-    "lon": -69.87644542383148
+    "lat": 18.8533,
+    "lon": -69.816,
+    "labelRank": 7,
+    "minLabel": 10,
+    "maxLabel": 11
   }
 ]

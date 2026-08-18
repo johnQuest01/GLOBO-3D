@@ -1,8 +1,11 @@
 [
   {
-    "name": "Ashmore and Cartier Islands",
+    "name": "Ilhas Ashmore e Cartier",
     "key": "ashmore and cartier islands",
-    "lat": -12.431719659399892,
-    "lon": 123.58848717520009
+    "lat": -12.4325,
+    "lon": 123.586,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

@@ -138,13 +138,9 @@ const LoginScreen: React.FC = () => {
         break;
       case 'email':
         if (!value.trim()) error = 'Email é obrigatório.';
-        const emailPrefix = value.split('@')[0];
-        if (!/^[a-zA-Z0-9.]+$/.test(emailPrefix))
-          error = 'Caracteres inválidos antes do @gmail.com.';
-        else if (emailPrefix.length > 30)
-          error = 'Máximo de 30 caracteres antes do @gmail.com.';
-        else if (!value.endsWith('@gmail.com'))
-          error = 'Email deve terminar com @gmail.com';
+        else if (!/^[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value))
+          error = 'Digite um email válido (ex: nome@gmail.com).';
+        else if (value.length > 254) error = 'Email muito longo.';
         break;
       default:
         break;
@@ -157,18 +153,15 @@ const LoginScreen: React.FC = () => {
     let newValue = value;
 
     if (name === 'email') {
-      let emailPrefix = value.split('@')[0];
-      emailPrefix = emailPrefix.replace(/[^a-zA-Z0-9.]/g, '');
-      if (emailPrefix.length > 30) {
-        emailPrefix = emailPrefix.substring(0, 30);
+      newValue = value.replace(/[^a-zA-Z0-9.@_+-]/g, '').toLowerCase();
+      const atIndex = newValue.indexOf('@');
+      if (atIndex !== -1) {
+        const local = newValue.slice(0, atIndex);
+        const domain = newValue.slice(atIndex + 1).replace(/@/g, '');
+        newValue = `${local}@${domain}`;
       }
-      if (value.includes('@gmail.com')) {
-        newValue = emailPrefix + '@gmail.com';
-      } else {
-        newValue = emailPrefix;
-      }
-      if (value.length > 0 && !value.includes('@')) {
-        newValue = emailPrefix;
+      if (newValue.length > 254) {
+        newValue = newValue.substring(0, 254);
       }
     }
 
@@ -191,24 +184,8 @@ const LoginScreen: React.FC = () => {
       [name]: newValue,
     }));
 
-    if (name === 'email' && e.target === document.activeElement) {
-      const prefixError = validateField(name, newValue.split('@')[0]);
-      setErrors((prev) => ({ ...prev, [name]: prefixError }));
-    } else {
-      const error = validateField(name, newValue);
-      setErrors((prev) => ({ ...prev, [name]: error }));
-    }
-  };
-
-  const handleEmailBlur = (e: ChangeEvent<HTMLInputElement>) => {
-    let value = e.target.value;
-    if (value.length > 0 && !value.endsWith('@gmail.com')) {
-      value = value.split('@')[0] + '@gmail.com';
-      value = value.replace(/[^a-zA-Z0-9.@]/g, '');
-    }
-    setFormData((prev) => ({ ...prev, email: value }));
-    const error = validateField('email', value);
-    setErrors((prev) => ({ ...prev, email: error }));
+    const error = validateField(name, newValue);
+    setErrors((prev) => ({ ...prev, [name]: error }));
   };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -376,14 +353,15 @@ ${
             <div className="flex items-center border-b border-gray-600 focus-within:border-green-500 transition-colors">
               <IconMail />
               <input
-                type="text"
+                type="email"
                 name="email"
-                placeholder="Seu email"
+                placeholder="nome@gmail.com"
                 value={formData.email}
                 onChange={handleChange}
-                onBlur={handleEmailBlur}
+                autoComplete="email"
+                inputMode="email"
                 className="flex-1 bg-transparent text-white placeholder-gray-400 py-2 px-3 focus:outline-none text-base sm:text-lg"
-                maxLength={30 + '@gmail.com'.length}
+                maxLength={254}
               />
             </div>
             {errors.email && (

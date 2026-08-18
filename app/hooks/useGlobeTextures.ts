@@ -1,202 +1,166 @@
 // app/hooks/useGlobeTextures.ts
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
-// --- MUDANÇA 1: Importar useTexture (para JPG/PNG/WebP) ---
-import { useTexture } from '@react-three/drei';
-import { useThree } from '@react-three/fiber';
+import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import * as THREE from 'three';
-// Importa o KTX2Loader diretamente do three.js
-import { KTX2Loader } from 'three/examples/jsm/loaders/KTX2Loader.js';
 
-// --- Constantes de Configuração ---
-
-const CACHE_BUST = '?v=2.3';
-const TRANSCODER_PATH = '/basis/';
+const CACHE_BUST = '?v=3.0';
 
 /**
- * --- MUDANÇA 2: Caminho para o placeholder (WebP) ---
- * Este arquivo será gerado pelo 'scripts/preprocess-data.mjs'.
- */
-const PLACEHOLDER_PATH = `/textures/earth-placeholder.webp`;
-
-/**
- * Configuração do LOD (KTX2)
- * Carregado em segundo plano.
+ * Níveis de detalhe do lado dia. Todos saem da mesma fonte (earth-1.png,
+ * 16200x8100), então aproximar só deixa a imagem mais nítida — não muda a cor
+ * no meio do caminho. `maxDistance` é a distância de câmera em que cada nível
+ * assume.
  */
 const LOD_CONFIG = [
-  { maxDistance: 6.0, path: `/textures/earth-3.ktx2${CACHE_BUST}` }, // Baixa Res
-  { maxDistance: 3.5, path: `/textures/earth-2.ktx2${CACHE_BUST}` }, // Média Res
-  {
-    maxDistance: 2.0,
-    path: `/textures/earth-1-with-borders.ktx2${CACHE_BUST}`,
-  }, // Alta Res com Bordas
+  // Faixas: d >= 6 -> 2K | 2.95 <= d < 6 -> 4K | d < 2.95 -> 8K.
+  // A camera comeca em d = 3, que cai no 4K de proposito: nessa distancia a
+  // tela mostra ~65 graus de arco, e 4096px ja cobre isso pixel a pixel. O 8K
+  // so entra quando o usuario de fato aproxima.
+  { maxDistance: 6.0, path: `/textures/earth-day-2k.webp${CACHE_BUST}` },
+  { maxDistance: 2.95, path: `/textures/earth-day-4k.webp${CACHE_BUST}` },
+  { maxDistance: 2.0, path: `/textures/earth-day-8k.webp${CACHE_BUST}` },
 ];
 
 /**
- * Caminhos de fallback (PNG/WebP) para os mesmos níveis de LOD,
- * usados em dispositivos/navegadores que não suportam bem KTX2.
+ * Quantos níveis carregam sozinhos. Os dois primeiros somam 646 KB e cobrem o
+ * uso comum; o 8K (1,7 MB) só é buscado quando a câmera realmente aproxima —
+ * quem só gira o planeta nunca paga por ele.
  */
-const FALLBACK_LOD_PATHS = [
-  '/textures/earth-3.webp', // Baixa Res
-  '/textures/earth-2.webp', // Média Res
-  '/textures/earth-4.png',  // Alta Res aproximada
-];
+const EAGER_LEVELS = 2;
 
-/**
- * Aplica configurações padrão às texturas KTX2.
- */
-const processKtxTexture = (texture: THREE.Texture): THREE.Texture => {
-  texture.minFilter = THREE.LinearFilter;
-  texture.magFilter = THREE.LinearFilter;
-  texture.generateMipmaps = false;
-  // flipY e colorSpace já são tratados pelo KTX2Loader
-  return texture;
-};
-
-/**
- * Aplica configurações padrão às texturas fallback (PNG/WebP/JPG)
- * usadas quando o carregamento KTX2 falhar ou não for suportado.
- */
-const processFallbackTexture = (texture: THREE.Texture): THREE.Texture => {
+const applyTextureSettings = (texture: THREE.Texture): THREE.Texture => {
   texture.minFilter = THREE.LinearFilter;
   texture.magFilter = THREE.LinearFilter;
   texture.generateMipmaps = false;
   texture.colorSpace = THREE.SRGBColorSpace;
+  texture.anisotropy = 4;
   texture.needsUpdate = true;
   return texture;
 };
 
-/**
- * Processamento especial para o placeholder WebP/JPG/PNG
- * Precisamos definir manualmente o colorSpace.
- */
-const processPlaceholderTexture = (texture: THREE.Texture): THREE.Texture => {
-  texture.minFilter = THREE.LinearFilter;
-  texture.magFilter = THREE.LinearFilter;
-  texture.generateMipmaps = false;
-  texture.colorSpace = THREE.SRGBColorSpace; // Essencial para WebP/JPG/PNG
-  texture.needsUpdate = true;
-  return texture;
-};
+function loadTexture(
+  loader: THREE.TextureLoader,
+  path: string,
+): Promise<THREE.Texture> {
+  return new Promise((resolve, reject) => {
+    loader.load(path, (tex) => resolve(applyTextureSettings(tex)), undefined, reject);
+  });
+}
 
 /**
- * Hook customizado (OTIMIZADO) para carregar texturas da Terra
- * de forma PROGRESSIVA.
+ * Carrega as texturas da Terra em ordem de utilidade: primeiro o 2K (145 KB),
+ * que já deixa o globo apresentável, e só depois os níveis pesados. Enquanto o
+ * 4K/8K não chegam, os três níveis apontam para o 2K — nunca há buraco.
  */
 export function useGlobeTextures() {
-  // --- 1. Carregamento Rápido do Placeholder (com Suspense) ---
-  // --- MUDANÇA 3: Usar useTexture com o caminho .webp ---
-  const placeholder = useTexture(PLACEHOLDER_PATH) as THREE.Texture;
+  // Placeholder procedural: um azul liso enquanto nem o 2K chegou.
+  const placeholderTexture = useMemo(() => {
+    const size = 4;
+    const data = new Uint8Array(size * size * 4);
+    for (let i = 0; i < data.length; i += 4) {
+      data[i] = 20;
+      data[i + 1] = 60;
+      data[i + 2] = 120;
+      data[i + 3] = 255;
+    }
+    const texture = new THREE.DataTexture(
+      data,
+      size,
+      size,
+      THREE.RGBAFormat,
+    );
+    return applyTextureSettings(texture);
+  }, []);
 
-  const placeholderTexture = useMemo(
-    () => processPlaceholderTexture(placeholder),
-    [placeholder],
-  );
-
-  // --- 2. Estados para Carregamento em Segundo Plano ---
   const [lodTextures, setLodTextures] = useState<THREE.Texture[]>([]);
   const [areLodTexturesReady, setAreLodTexturesReady] = useState(false);
-  const { gl } = useThree();
+  const loadedRef = useRef<THREE.Texture[]>([]);
+  const mountedRef = useRef(true);
+  const requestedRef = useRef(new Set<number>());
 
-  // --- 3. Instancia o KTX2Loader manual ---
-  const ktx2Loader = useMemo(() => {
-    const loader = new KTX2Loader();
-    loader.setTranscoderPath(TRANSCODER_PATH);
-    loader.detectSupport(gl);
-    return loader;
-  }, [gl]);
+  /**
+   * Chamado pelo Earth quando o zoom passa a pedir um nível ainda não baixado.
+   * Cada nível é pedido uma vez só.
+   */
+  const requestLevel = useCallback((index: number) => {
+    if (index < EAGER_LEVELS || index >= LOD_CONFIG.length) return;
+    if (requestedRef.current.has(index)) return;
+    requestedRef.current.add(index);
 
-  // Extrai os caminhos do LOD config
-  const lodPaths = useMemo(() => LOD_CONFIG.map((lod) => lod.path), []);
+    loadTexture(new THREE.TextureLoader(), LOD_CONFIG[index].path)
+      .then((tex) => {
+        if (!mountedRef.current) {
+          tex.dispose();
+          return;
+        }
+        loadedRef.current.push(tex);
+        setLodTextures((prev) => {
+          const next = [...prev];
+          next[index] = tex;
+          return next;
+        });
+      })
+      .catch(() => {
+        requestedRef.current.delete(index);
+      });
+  }, []);
 
-  // --- 4. Efeito para Carregar LODs em Segundo Plano (KTX2 + Fallback PNG/WebP) ---
   useEffect(() => {
     let isMounted = true;
-    let ktx2Succeeded = false;
-    setAreLodTexturesReady(false);
+    const loader = new THREE.TextureLoader();
+    const loaded: THREE.Texture[] = [];
+    loadedRef.current = loaded;
 
-    // Função assíncrona para carregar todas as texturas KTX2
-    async function loadHighResTextures() {
-      console.log('Iniciando carregamento em segundo plano das texturas KTX2 LOD...');
+    async function load() {
       try {
-        const texturePromises = lodPaths.map((path) =>
-          ktx2Loader.loadAsync(path),
-        );
-        const loadedTextures = await Promise.all(texturePromises);
+        // 1. O nível mais leve primeiro: com ele o globo já está utilizável.
+        const base = await loadTexture(loader, LOD_CONFIG[0].path);
+        if (!isMounted) return;
+        loaded.push(base);
+        setLodTextures(LOD_CONFIG.map(() => base));
+        setAreLodTexturesReady(true);
 
-        if (isMounted) {
-          const processedTextures = loadedTextures.map(processKtxTexture);
-          setLodTextures(processedTextures);
-          setAreLodTexturesReady(true);
-          ktx2Succeeded = true;
-          console.log(
-            'Texturas KTX2 LOD carregadas e prontas para a troca!',
-          );
+        // 2. Nível intermediário: entra sozinho, é barato e cobre o zoom comum.
+        //    O 8K (1,7 MB) fica esperando o usuário realmente aproximar.
+        for (let index = 1; index < EAGER_LEVELS; index++) {
+          try {
+            const tex = await loadTexture(loader, LOD_CONFIG[index].path);
+            if (!isMounted) {
+              tex.dispose();
+              return;
+            }
+            loaded.push(tex);
+            setLodTextures((prev) => {
+              const next = [...prev];
+              next[index] = tex;
+              return next;
+            });
+          } catch {
+            console.warn(
+              `[GlobeTextures] Nível ${index} indisponível; mantendo o anterior.`,
+            );
+          }
         }
       } catch (error) {
-        console.error(
-          'Falha ao carregar texturas KTX2 LOD em segundo plano:',
-          error,
-        );
+        console.error('[GlobeTextures] Falha ao carregar a textura base:', error);
       }
     }
 
-    // Carregamento paralelo do fallback PNG/WebP.
-    async function loadFallbackTextures() {
-      console.log('Iniciando carregamento em segundo plano das texturas PNG/WebP LOD (fallback)...');
-      try {
-        const textureLoader = new THREE.TextureLoader();
-
-        const loadFallbackTexture = (path: string) =>
-          new Promise<THREE.Texture>((resolve, reject) => {
-            textureLoader.load(
-              path,
-              (tex) => resolve(processFallbackTexture(tex)),
-              undefined,
-              (err) => reject(err),
-            );
-          });
-
-        const loadedFallbackTextures = await Promise.all(
-          FALLBACK_LOD_PATHS.map((path) => loadFallbackTexture(path)),
-        );
-
-        if (!isMounted) return;
-
-        // Só aplica o fallback se o KTX2 ainda não tiver sido aplicado
-        if (!ktx2Succeeded) {
-          setLodTextures(loadedFallbackTextures);
-          setAreLodTexturesReady(true);
-          console.log(
-            'Texturas PNG/WebP LOD carregadas como fallback e prontas para a troca!',
-          );
-        } else {
-          console.log(
-            'Fallback PNG/WebP carregado, mas descartado porque KTX2 já foi aplicado com sucesso.',
-          );
-        }
-      } catch (fallbackError) {
-        console.error(
-          'Falha ao carregar texturas PNG/WebP LOD de fallback:',
-          fallbackError,
-        );
-      }
-    }
-
-    loadHighResTextures();
-    loadFallbackTextures();
+    load();
 
     return () => {
       isMounted = false;
+      mountedRef.current = false;
+      for (const texture of loadedRef.current) texture.dispose();
     };
-  }, [ktx2Loader, lodPaths]);
+  }, []);
 
-  // --- 5. Retorna os dados ---
   return {
-    placeholderTexture, // (THREE.Texture de um .webp)
-    lodTextures, // (Array de THREE.Texture de .ktx2)
+    placeholderTexture,
+    lodTextures,
     areLodTexturesReady,
     lodConfig: LOD_CONFIG,
+    requestLevel,
   };
 }

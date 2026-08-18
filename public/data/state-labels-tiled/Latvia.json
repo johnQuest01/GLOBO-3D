@@ -1,716 +1,1073 @@
 [
   {
-    "name": "Rujienas",
+    "name": "Valmiera",
     "key": "rujienas",
-    "lat": 57.93525377884226,
-    "lon": 25.31597302492827
+    "lat": 57.8851,
+    "lon": 25.2607,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Mazsalacas",
+    "name": "Valmiera",
     "key": "mazsalacas",
-    "lat": 57.95718373980767,
-    "lon": 25.042396526324165
+    "lat": 57.9137,
+    "lon": 25.0276,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Alojas",
+    "name": "Aloja",
     "key": "alojas",
-    "lat": 57.82210365978246,
-    "lon": 24.839875005576257
+    "lat": 57.8074,
+    "lon": 24.8231,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Nauksenu",
+    "name": "Valmiera",
     "key": "nauksenu",
-    "lat": 57.90701443028202,
-    "lon": 25.499521409593466
+    "lat": 57.926,
+    "lon": 25.4406,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Salacgrivas",
+    "name": "Salacgriva",
     "key": "salacgrivas",
-    "lat": 57.723746725831184,
-    "lon": 24.50167789330536
+    "lat": 57.746,
+    "lon": 24.41,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Apes",
+    "name": "Valmiera",
     "key": "apes",
-    "lat": 57.499529976576355,
-    "lon": 26.455759601567973
+    "lat": 57.4556,
+    "lon": 26.4999,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Valkas",
+    "name": "Valka",
     "key": "valkas",
-    "lat": 57.66253818395668,
-    "lon": 25.986150671578233
+    "lat": 57.6587,
+    "lon": 26.0635,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Aluksne",
     "key": "aluksne",
-    "lat": 57.38725913672569,
-    "lon": 27.126356454141362
+    "lat": 57.4151,
+    "lon": 27.1693,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Vilakas",
+    "name": "Vilaka",
     "key": "vilakas",
-    "lat": 57.21240115916834,
-    "lon": 27.643221042694993
+    "lat": 57.1775,
+    "lon": 27.6287,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Baltinavas",
+    "name": "Baltinava",
     "key": "baltinavas",
-    "lat": 56.955152554107066,
-    "lon": 27.644052231005627
+    "lat": 56.924,
+    "lon": 27.6041,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Karsavas",
+    "name": "Karsava",
     "key": "karsavas",
-    "lat": 56.780169493877025,
-    "lon": 27.5868319278012
+    "lat": 56.7645,
+    "lon": 27.6287,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Ciblas",
+    "name": "Cibla",
     "key": "ciblas",
-    "lat": 56.636466251024686,
-    "lon": 27.793104448971555
+    "lat": 56.6132,
+    "lon": 27.8618,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Ludzas",
+    "name": "Ludza",
     "key": "ludzas",
-    "lat": 56.38753804735103,
-    "lon": 27.863850546366034
+    "lat": 56.4059,
+    "lon": 27.796,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Zilupes",
     "key": "zilupes",
-    "lat": 56.28650743591017,
-    "lon": 28.11086926595845
+    "lat": 56.3391,
+    "lon": 28.1072,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Neretas",
+    "name": "Nereta",
     "key": "neretas",
-    "lat": 56.323777011484005,
-    "lon": 25.14623600590593
+    "lat": 56.3246,
+    "lon": 25.1056,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Viesites",
+    "name": "Viesite",
     "key": "viesites",
-    "lat": 56.27402743462301,
-    "lon": 25.523404896949096
+    "lat": 56.2901,
+    "lon": 25.5306,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Vecumnieku",
+    "name": "Vecumnieki",
     "key": "vecumnieku",
-    "lat": 56.52426107066823,
-    "lon": 24.69650555660398
+    "lat": 56.4823,
+    "lon": 24.6268,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Saldus",
     "key": "saldus",
-    "lat": 56.594070165513095,
-    "lon": 22.359111676918186
+    "lat": 56.6408,
+    "lon": 22.4024,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Rucavas",
+    "name": "Rucava",
     "key": "rucavas",
-    "lat": 56.23157546541946,
-    "lon": 21.264950356394717
+    "lat": 56.2259,
+    "lon": 21.2115,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Priekules",
+    "name": "Priekule",
     "key": "priekules",
-    "lat": 56.40787050802008,
-    "lon": 21.56811663704379
+    "lat": 56.4189,
+    "lon": 21.555,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Vainodes",
+    "name": "Vainode",
     "key": "vainodes",
-    "lat": 56.444194766943305,
-    "lon": 21.8749813695101
+    "lat": 56.432,
+    "lon": 21.8331,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Auces",
+    "name": "Auce",
     "key": "auces",
-    "lat": 56.47429242488404,
-    "lon": 22.930262930918072
+    "lat": 56.4782,
+    "lon": 22.9664,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Bauska",
     "key": "bauska",
-    "lat": 56.39247218139717,
-    "lon": 24.229436277677674
+    "lat": 56.4223,
+    "lon": 24.269,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Tervetes",
+    "name": "Tervete",
     "key": "tervetes",
-    "lat": 56.398721550663694,
-    "lon": 23.298506490494198
+    "lat": 56.425,
+    "lon": 23.314,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Jelgava",
     "key": "jelgava",
-    "lat": 56.60697641141864,
-    "lon": 23.64635346235472
+    "lat": 56.4939,
+    "lon": 23.6461,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Rundales",
+    "name": "Rundãle",
     "key": "rundales",
-    "lat": 56.39074578275953,
-    "lon": 23.989127047081155
+    "lat": 56.4087,
+    "lon": 23.9643,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Aknistes",
+    "name": "Akniste",
     "key": "aknistes",
-    "lat": 56.12565877057141,
-    "lon": 25.806071742312145
+    "lat": 56.1592,
+    "lon": 25.7883,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Ilukstes",
+    "name": "Ilukste",
     "key": "ilukstes",
-    "lat": 56.01292133043233,
-    "lon": 26.074513805667014
+    "lat": 55.9997,
+    "lon": 26.1768,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Daugavpils",
+    "name": "Dunaburgo",
     "key": "daugavpils",
-    "lat": 55.94562338255812,
-    "lon": 26.60944819758349
+    "lat": 56.043,
+    "lon": 26.589,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Dagdas",
+    "name": "Dagda",
     "key": "dagdas",
-    "lat": 56.145416953880805,
-    "lon": 27.75162339436663
+    "lat": 56.1183,
+    "lon": 27.6246,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Kraslavas",
+    "name": "Kraslava",
     "key": "kraslavas",
-    "lat": 55.94201386718351,
-    "lon": 27.387322617509415
+    "lat": 55.9319,
+    "lon": 27.3415,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Nicas",
+    "name": "Nica",
     "key": "nicas",
-    "lat": 56.38079886036439,
-    "lon": 21.045478048748418
+    "lat": 56.3535,
+    "lon": 21.0871,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Liepāja",
     "key": "liepāja",
-    "lat": 56.542481028966925,
-    "lon": 21.057419536576468
+    "lat": 56.5616,
+    "lon": 21.0399,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Grobinas",
+    "name": "Grobina",
     "key": "grobinas",
-    "lat": 56.51424942920637,
-    "lon": 21.156820278593024
+    "lat": 56.4778,
+    "lon": 21.2507,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Pavilostas",
+    "name": "Pavilosta",
     "key": "pavilostas",
-    "lat": 56.8047146015295,
-    "lon": 21.26506503256134
+    "lat": 56.8115,
+    "lon": 21.2474,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Ventspils",
     "key": "ventspils",
-    "lat": 57.254863154617325,
-    "lon": 21.746831988495583
+    "lat": 57.3367,
+    "lon": 21.8185,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Ventspils",
     "key": "ventspils",
-    "lat": 57.254863154617325,
-    "lon": 21.746831988495583
+    "lat": 57.3367,
+    "lon": 21.8185,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Dundagas",
+    "name": "Dundaga",
     "key": "dundagas",
-    "lat": 57.57670904209001,
-    "lon": 22.40302253409049
+    "lat": 57.5837,
+    "lon": 22.4057,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Rojas",
+    "name": "Roja",
     "key": "rojas",
-    "lat": 57.52660166204132,
-    "lon": 22.72819352363996
+    "lat": 57.4888,
+    "lon": 22.7688,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Talsi",
     "key": "talsi",
-    "lat": 57.29840299967887,
-    "lon": 22.685007625053963
+    "lat": 57.317,
+    "lon": 22.6192,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Mersraga",
+    "name": "Mersrags",
     "key": "mersraga",
-    "lat": 57.32226419679522,
-    "lon": 23.083231691489356
+    "lat": 57.3317,
+    "lon": 23.0567,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Engures",
+    "name": "Engure",
     "key": "engures",
-    "lat": 57.11712320934636,
-    "lon": 23.264002126083653
+    "lat": 57.0017,
+    "lon": 23.3222,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Jurmala",
+    "name": "Jūrmala",
     "key": "jurmala",
-    "lat": 56.97216895969294,
-    "lon": 23.667962263876472
+    "lat": 56.9608,
+    "lon": 23.7352,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Riga",
     "key": "riga",
-    "lat": 56.96618246910554,
-    "lon": 24.08478670656389
+    "lat": 56.9878,
+    "lon": 24.1235,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Carnikavas",
+    "name": "Carnikava",
     "key": "carnikavas",
-    "lat": 57.11231841569023,
-    "lon": 24.219228796304282
+    "lat": 57.1203,
+    "lon": 24.2464,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Saulkrastu",
+    "name": "Saulkrasti",
     "key": "saulkrastu",
-    "lat": 57.23476991903041,
-    "lon": 24.37484485176145
+    "lat": 57.2552,
+    "lon": 24.4305,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Limbaži",
+    "name": "Limbazi",
     "key": "limbaži",
-    "lat": 57.45250525708957,
-    "lon": 24.62283572170216
+    "lat": 57.5879,
+    "lon": 24.6925,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Smiltenes",
+    "name": "Valmiera",
     "key": "smiltenes",
-    "lat": 57.42124544682988,
-    "lon": 25.997547332883084
+    "lat": 57.4025,
+    "lon": 26.0091,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Balvu",
+    "name": "Balvi",
     "key": "balvu",
-    "lat": 57.00838467815321,
-    "lon": 27.26363080358298
+    "lat": 57.0151,
+    "lon": 27.4348,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Strencu",
+    "name": "Valmiera",
     "key": "strencu",
-    "lat": 57.62467889741316,
-    "lon": 25.739994506141528
+    "lat": 57.6356,
+    "lon": 25.7924,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Beverinas",
+    "name": "Valmiera",
     "key": "beverinas",
-    "lat": 57.509383226026465,
-    "lon": 25.576380618898984
+    "lat": 57.5293,
+    "lon": 25.592,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Burtnieku",
+    "name": "Valmiera",
     "key": "burtnieku",
-    "lat": 57.70628383930771,
-    "lon": 25.403341288309786
+    "lat": 57.6809,
+    "lon": 25.3393,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Kocenu",
+    "name": "Valmiera",
     "key": "kocenu",
-    "lat": 57.53610736811053,
-    "lon": 25.184698571706697
+    "lat": 57.5415,
+    "lon": 25.2116,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Rezeknes",
+    "name": "Rezekne",
     "key": "rezeknes",
-    "lat": 56.526583530028944,
-    "lon": 27.24587458433689
+    "lat": 56.3554,
+    "lon": 27.2633,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Vecpiebalgas",
+    "name": "Valmiera",
     "key": "vecpiebalgas",
-    "lat": 57.171930634770966,
-    "lon": 25.70698662856004
+    "lat": 57.108,
+    "lon": 25.7024,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Raunas",
+    "name": "Valmiera",
     "key": "raunas",
-    "lat": 57.24588523713396,
-    "lon": 25.93442610004446
+    "lat": 57.3411,
+    "lon": 25.641,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Priekulu",
+    "name": "Valmiera",
     "key": "priekulu",
-    "lat": 57.36778759936106,
-    "lon": 25.49918131002656
+    "lat": 57.3657,
+    "lon": 25.4447,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Pargaujas",
+    "name": "Valmiera",
     "key": "pargaujas",
-    "lat": 57.36282198687017,
-    "lon": 25.10804084264825
+    "lat": 57.3575,
+    "lon": 25.0767,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Krimuldas",
+    "name": "Krimulda",
     "key": "krimuldas",
-    "lat": 57.26615290798029,
-    "lon": 24.78903710091896
+    "lat": 57.2798,
+    "lon": 24.7863,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Gulbene",
     "key": "gulbene",
-    "lat": 57.18772817260991,
-    "lon": 26.513149472827028
+    "lat": 57.1723,
+    "lon": 26.5803,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Rugaju",
+    "name": "Rugaji",
     "key": "rugaju",
-    "lat": 56.97400871180402,
-    "lon": 27.081608792754423
+    "lat": 56.9853,
+    "lon": 27.1093,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Jaunpiebalgas",
+    "name": "Valmiera",
     "key": "jaunpiebalgas",
-    "lat": 57.1633401066206,
-    "lon": 25.9676764070605
+    "lat": 57.1448,
+    "lon": 26.0091,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Aglonas",
+    "name": "Aglona",
     "key": "aglonas",
-    "lat": 56.128806964719615,
-    "lon": 27.08201850539969
+    "lat": 56.0979,
+    "lon": 27.0929,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Riebinu",
+    "name": "Riebini",
     "key": "riebinu",
-    "lat": 56.39022953576443,
-    "lon": 26.783194239222755
+    "lat": 56.3637,
+    "lon": 26.8189,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Vilanu",
+    "name": "Viļāni",
     "key": "vilanu",
-    "lat": 56.567905985992425,
-    "lon": 26.833403340112046
+    "lat": 56.5518,
+    "lon": 26.8884,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Babites",
+    "name": "Babite",
     "key": "babites",
-    "lat": 56.91102268887453,
-    "lon": 23.782140200267147
+    "lat": 56.8913,
+    "lon": 23.7639,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Garkalnes",
+    "name": "Garkalne",
     "key": "garkalnes",
-    "lat": 57.02304410748526,
-    "lon": 24.35657335244966
+    "lat": 57.0221,
+    "lon": 24.3875,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Kekavas",
+    "name": "Kekava",
     "key": "kekavas",
-    "lat": 56.80064783293112,
-    "lon": 24.23966250282222
+    "lat": 56.8054,
+    "lon": 24.2628,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Marupes",
+    "name": "Marupe",
     "key": "marupes",
-    "lat": 56.89746877551356,
-    "lon": 23.951637482333922
+    "lat": 56.8913,
+    "lon": 23.9438,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Olaines",
+    "name": "Olaine",
     "key": "olaines",
-    "lat": 56.82135122046814,
-    "lon": 23.942562198543758
+    "lat": 56.789,
+    "lon": 23.9561,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Salaspils",
     "key": "salaspils",
-    "lat": 56.89898428094978,
-    "lon": 24.328894998755164
+    "lat": 56.8708,
+    "lon": 24.365,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Stopinu",
+    "name": "Stopini",
     "key": "stopinu",
-    "lat": 56.94015769825914,
-    "lon": 24.313375367958837
+    "lat": 56.9362,
+    "lon": 24.3323,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Sejas",
+    "name": "Município Seja",
     "key": "sejas",
-    "lat": 57.19245234814732,
-    "lon": 24.561916604267868
+    "lat": 57.198,
+    "lon": 24.5327,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Malpils",
+    "name": "Malpis",
     "key": "malpils",
-    "lat": 56.985594614150095,
-    "lon": 25.008703099368528
+    "lat": 57.0017,
+    "lon": 24.9581,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Siguldas",
+    "name": "Sigulda",
     "key": "siguldas",
-    "lat": 57.069197641408,
-    "lon": 24.940641471701547
+    "lat": 57.0998,
+    "lon": 24.8272,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Madona",
     "key": "madona",
-    "lat": 56.88364746365325,
-    "lon": 26.374499585681058
+    "lat": 56.805,
+    "lon": 26.2344,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Lubanas",
+    "name": "Valmiera",
     "key": "lubanas",
-    "lat": 56.906912700480724,
-    "lon": 26.870350400150823
+    "lat": 56.9362,
+    "lon": 26.7126,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Varaklanu",
+    "name": "Valmiera",
     "key": "varaklanu",
-    "lat": 56.63622899991838,
-    "lon": 26.65675678075081
+    "lat": 56.6336,
+    "lon": 26.643,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Amatas",
+    "name": "Valmiera",
     "key": "amatas",
-    "lat": 57.08054601438703,
-    "lon": 25.307603619311564
+    "lat": 57.0794,
+    "lon": 25.3384,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Erglu",
+    "name": "Valmiera",
     "key": "erglu",
-    "lat": 56.90853175052554,
-    "lon": 25.618547584546224
+    "lat": 56.8954,
+    "lon": 25.6656,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Cesvaines",
+    "name": "Valmiera",
     "key": "cesvaines",
-    "lat": 57.01411650135543,
-    "lon": 26.307541349253835
+    "lat": 57.0099,
+    "lon": 26.275,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Ogre",
     "key": "ogre",
-    "lat": 56.83906911699612,
-    "lon": 25.076108293737747
+    "lat": 56.8577,
+    "lon": 25.1269,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Ropazu",
+    "name": "Ropazi",
     "key": "ropazu",
-    "lat": 56.95906453090336,
-    "lon": 24.61736192191515
+    "lat": 56.9649,
+    "lon": 24.5818,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Ikskiles",
+    "name": "Ikšķile",
     "key": "ikskiles",
-    "lat": 56.84439671278804,
-    "lon": 24.534614757465068
+    "lat": 56.8545,
+    "lon": 24.5695,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Baldones",
+    "name": "Baldone",
     "key": "baldones",
-    "lat": 56.71622963174209,
-    "lon": 24.391131883979238
+    "lat": 56.7316,
+    "lon": 24.3555,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Keguma",
+    "name": "Kegums",
     "key": "keguma",
-    "lat": 56.70172570332852,
-    "lon": 24.739510195938777
+    "lat": 56.6541,
+    "lon": 24.729,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Iecavas",
+    "name": "Iecava",
     "key": "iecavas",
-    "lat": 56.62931211516195,
-    "lon": 24.23909564814562
+    "lat": 56.6132,
+    "lon": 24.2055,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Plavinu",
+    "name": "Plavinas",
     "key": "plavinu",
-    "lat": 56.6950707056057,
-    "lon": 25.71107256750211
+    "lat": 56.6868,
+    "lon": 25.731,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Kokneses",
+    "name": "Koknese",
     "key": "kokneses",
-    "lat": 56.71608038744987,
-    "lon": 25.461717111405545
+    "lat": 56.7031,
+    "lon": 25.4447,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Aizkraukles",
+    "name": "Aizkraukle",
     "key": "aizkraukles",
-    "lat": 56.6614578251385,
-    "lon": 25.233008683923607
+    "lat": 56.6459,
+    "lon": 25.228,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Skriveru",
+    "name": "Skriveri",
     "key": "skriveru",
-    "lat": 56.67222440348342,
-    "lon": 25.097280847183328
+    "lat": 56.6786,
+    "lon": 25.0971,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Lielvardes",
+    "name": "Lielvarde",
     "key": "lielvardes",
-    "lat": 56.722955917661444,
-    "lon": 24.988523576501837
+    "lat": 56.7332,
+    "lon": 24.9523,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Jaunjelgavas",
+    "name": "Jaunjelgava",
     "key": "jaunjelgavas",
-    "lat": 56.54012321131711,
-    "lon": 25.22025594233966
+    "lat": 56.5109,
+    "lon": 25.3016,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Preilu",
+    "name": "Preili",
     "key": "preilu",
-    "lat": 56.23289222019978,
-    "lon": 26.69084613119399
+    "lat": 56.2674,
+    "lon": 26.696,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Livanu",
+    "name": "Livani",
     "key": "livanu",
-    "lat": 56.335817728555305,
-    "lon": 26.379437217653454
+    "lat": 56.3841,
+    "lon": 26.324,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Varkavas",
+    "name": "Varkava",
     "key": "varkavas",
-    "lat": 56.19927550478569,
-    "lon": 26.47999418535835
+    "lat": 56.2165,
+    "lon": 26.5122,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Jekabpils",
+    "name": "Jēkabpils",
     "key": "jekabpils",
-    "lat": 56.28329588660495,
-    "lon": 26.005088652873553
+    "lat": 56.3227,
+    "lon": 25.9607,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Krustpils",
     "key": "krustpils",
-    "lat": 56.52667580812202,
-    "lon": 26.137007480370915
+    "lat": 56.5559,
+    "lon": 26.1972,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Salas",
+    "name": "Sala",
     "key": "salas",
-    "lat": 56.519049353744656,
-    "lon": 25.72276147714615
+    "lat": 56.4905,
+    "lon": 25.7187,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Aizputes",
+    "name": "Aizpute",
     "key": "aizputes",
-    "lat": 56.711472356688894,
-    "lon": 21.585547004715472
+    "lat": 56.7232,
+    "lon": 21.5943,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Kuldigas",
+    "name": "Kuldiga",
     "key": "kuldigas",
-    "lat": 56.926220288281804,
-    "lon": 21.886271385662056
+    "lat": 56.9626,
+    "lon": 21.9858,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Alsungas",
+    "name": "Alsunga",
     "key": "alsungas",
-    "lat": 56.958393828032726,
-    "lon": 21.53249765210495
+    "lat": 56.9915,
+    "lon": 21.5583,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Skrundas",
+    "name": "Skrunda",
     "key": "skrundas",
-    "lat": 56.64528219246205,
-    "lon": 21.943412912504463
+    "lat": 56.6446,
+    "lon": 21.9901,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Kandavas",
+    "name": "Kandava",
     "key": "kandavas",
-    "lat": 56.949724889791796,
-    "lon": 22.671555887194422
+    "lat": 56.9403,
+    "lon": 22.6964,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Tukums",
     "key": "tukums",
-    "lat": 56.974592455923215,
-    "lon": 23.219110667308037
+    "lat": 56.9505,
+    "lon": 23.0121,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Dobele",
     "key": "dobele",
-    "lat": 56.64057524219113,
-    "lon": 23.155705761461697
+    "lat": 56.6172,
+    "lon": 23.2005,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Jaunpils",
     "key": "jaunpils",
-    "lat": 56.75077804415139,
-    "lon": 22.901499585357566
+    "lat": 56.7686,
+    "lon": 22.9132,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Brocenu",
+    "name": "Broceni",
     "key": "brocenu",
-    "lat": 56.705157726922536,
-    "lon": 22.674606495992975
+    "lat": 56.7003,
+    "lon": 22.6412,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Ozolnieku",
+    "name": "Ozolnieki",
     "key": "ozolnieku",
-    "lat": 56.64807137034745,
-    "lon": 23.94031166519118
+    "lat": 56.6377,
+    "lon": 23.9479,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Jelgava",
     "key": "jelgava",
-    "lat": 56.60697641141864,
-    "lon": 23.64635346235472
+    "lat": 56.4939,
+    "lon": 23.6461,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Daugavpils",
     "key": "daugavpils",
-    "lat": 55.94562338255812,
-    "lon": 26.60944819758349
+    "lat": 56.043,
+    "lon": 26.589,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Rezekne",
     "key": "rezekne",
-    "lat": 56.50514473414212,
-    "lon": 27.329033426451474
+    "lat": 56.516,
+    "lon": 27.3335,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Durbes",
+    "name": "Durbe",
     "key": "durbes",
-    "lat": 56.63992292975937,
-    "lon": 21.36322179662859
+    "lat": 56.6142,
+    "lon": 21.4069,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Incukalna",
+    "name": "Inčukalns",
     "key": "incukalna",
-    "lat": 57.09142880894236,
-    "lon": 24.630051432327736
+    "lat": 57.0998,
+    "lon": 24.635,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Ādaži",
+    "name": "Adazi",
     "key": "ādaži",
-    "lat": 57.14322012396953,
-    "lon": 24.365216539451716
+    "lat": 57.108,
+    "lon": 24.3855,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Valmiera",
     "key": "valmiera",
-    "lat": 57.533349763430806,
-    "lon": 25.417402578491163
+    "lat": 57.5374,
+    "lon": 25.4161,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Cesu",
+    "name": "Cesis",
     "key": "cesu",
-    "lat": 57.258573366827406,
-    "lon": 25.36362155670945
+    "lat": 57.2396,
+    "lon": 25.4307,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Ligatnes",
+    "name": "Valmiera",
     "key": "ligatnes",
-    "lat": 57.21399227508341,
-    "lon": 25.02542568860464
+    "lat": 57.1775,
+    "lon": 25.0726,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Jekabpils",
+    "name": "Jēkabpils",
     "key": "jekabpils",
-    "lat": 56.28329588660495,
-    "lon": 26.005088652873553
+    "lat": 56.3227,
+    "lon": 25.9607,
+    "labelRank": 8,
+    "minLabel": 10,
+    "maxLabel": 11
   }
 ]

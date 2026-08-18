@@ -2,121 +2,181 @@
   {
     "name": "Évora",
     "key": "évora",
-    "lat": 38.59544255276798,
-    "lon": -7.855268416287042
+    "lat": 38.6036,
+    "lon": -7.88463,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Portalegre",
     "key": "portalegre",
-    "lat": 39.157586785250466,
-    "lon": -7.570883257776836
+    "lat": 39.2822,
+    "lon": -7.65389,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Viana do Castelo",
     "key": "viana do castelo",
-    "lat": 41.94597172495939,
-    "lon": -8.44763572550108
+    "lat": 41.9099,
+    "lon": -8.4986,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Castelo Branco",
     "key": "castelo branco",
-    "lat": 39.996141797128345,
-    "lon": -7.49395421563256
+    "lat": 39.9984,
+    "lon": -7.58224,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Guarda",
     "key": "guarda",
-    "lat": 40.630168132406595,
-    "lon": -7.250402523102595
+    "lat": 40.2918,
+    "lon": -7.31624,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Bragança",
     "key": "bragança",
-    "lat": 41.51017820197754,
-    "lon": -6.847703269572375
+    "lat": 41.5188,
+    "lon": -6.81935,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Vila Real",
     "key": "vila real",
-    "lat": 41.61536973354151,
-    "lon": -7.685914775439313
+    "lat": 41.5279,
+    "lon": -7.64533,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Braga",
     "key": "braga",
-    "lat": 41.59780664758556,
-    "lon": -8.231007689357057
+    "lat": 41.5663,
+    "lon": -8.31863,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Faro",
     "key": "faro",
-    "lat": 37.262408258692155,
-    "lon": -8.176603837858927
+    "lat": 37.1704,
+    "lon": -7.93895,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Beja",
     "key": "beja",
-    "lat": 37.91291702573079,
-    "lon": -7.886195674183264
+    "lat": 37.8511,
+    "lon": -7.88716,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Setúbal",
     "key": "setúbal",
-    "lat": 38.34848242196795,
-    "lon": -8.683275595938621
+    "lat": 38.2071,
+    "lon": -8.57318,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Lisboa",
     "key": "lisboa",
-    "lat": 38.99655745737835,
-    "lon": -9.135134964952583
+    "lat": 38.9835,
+    "lon": -9.13397,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Santarém",
     "key": "santarém",
-    "lat": 39.243205570948994,
-    "lon": -8.52112836252108
+    "lat": 39.291,
+    "lon": -8.40378,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Leiria",
     "key": "leiria",
-    "lat": 39.676446974727746,
-    "lon": -8.742847086184211
+    "lat": 39.7583,
+    "lon": -8.75857,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Coimbra",
     "key": "coimbra",
-    "lat": 40.19775482638455,
-    "lon": -8.379798060268438
+    "lat": 40.1645,
+    "lon": -8.32193,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Aveiro",
     "key": "aveiro",
-    "lat": 40.7342026479955,
-    "lon": -8.515199591343254
+    "lat": 40.6738,
+    "lon": -8.4394,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Porto",
     "key": "porto",
-    "lat": 41.21215677861218,
-    "lon": -8.368605454587904
+    "lat": 41.2118,
+    "lon": -8.33114,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Madeira",
+    "name": "da Madeira",
     "key": "madeira",
-    "lat": 32.73030562283339,
-    "lon": -16.978165927999935
+    "lat": 32.7427,
+    "lon": -16.9465,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Azores",
+    "name": "Açores",
     "key": "azores",
-    "lat": 37.799040897000054,
-    "lon": -25.41993451385708
+    "lat": 38.6351,
+    "lon": -28.0394,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Viseu",
     "key": "viseu",
-    "lat": 40.8392830906421,
-    "lon": -7.801367676555608
+    "lat": 40.8417,
+    "lon": -7.82745,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   }
 ]

@@ -1,74 +1,110 @@
 [
   {
-    "name": "Abkhazia",
+    "name": "Abecásia",
     "key": "abkhazia",
-    "lat": 43.142080143696425,
-    "lon": 41.09857917016345
+    "lat": 43.1479,
+    "lon": 41.0701,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Samegrelo-Zemo Svaneti",
     "key": "samegrelo-zemo svaneti",
-    "lat": 42.749353539250606,
-    "lon": 42.34183794655663
+    "lat": 42.5492,
+    "lon": 42.3632,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Shida Kartli",
     "key": "shida kartli",
-    "lat": 42.16285544180752,
-    "lon": 44.05934804716873
+    "lat": 42.1586,
+    "lon": 43.9997,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Racha-Lechkhumi-Kvemo Svaneti",
+    "name": "Racha-Lechkhumi e Kvemo Svaneti",
     "key": "racha-lechkhumi-kvemo svaneti",
-    "lat": 42.65003554524084,
-    "lon": 43.19210233674909
+    "lat": 42.6296,
+    "lon": 43.1304,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Mtskheta-Mtianeti",
     "key": "mtskheta-mtianeti",
-    "lat": 42.27885042869639,
-    "lon": 44.660826476441464
+    "lat": 42.2106,
+    "lon": 44.7435,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Kakheti",
     "key": "kakheti",
-    "lat": 41.72429951820495,
-    "lon": 45.876784742509024
+    "lat": 41.6527,
+    "lon": 45.8579,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Samtskhe-Javakheti",
     "key": "samtskhe-javakheti",
-    "lat": 41.515805515429555,
-    "lon": 43.38531807626461
+    "lat": 41.5149,
+    "lon": 43.2296,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ajaria",
+    "name": "Adjara",
     "key": "ajaria",
-    "lat": 41.59655687181826,
-    "lon": 42.08284113527281
+    "lat": 41.6552,
+    "lon": 42.0537,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Kvemo Kartli",
     "key": "kvemo kartli",
-    "lat": 41.50962637489234,
-    "lon": 44.559300071007456
+    "lat": 41.4755,
+    "lon": 44.5029,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Guria",
     "key": "guria",
-    "lat": 41.9519927318345,
-    "lon": 42.1787650298598
+    "lat": 41.9634,
+    "lon": 42.1824,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Tbilisi",
+    "name": "Tiblíssi",
     "key": "tbilisi",
-    "lat": 41.717944851498686,
-    "lon": 44.84248803057312
+    "lat": 41.7153,
+    "lon": 44.845,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Imereti",
     "key": "imereti",
-    "lat": 42.180969659622065,
-    "lon": 43.00068234505262
+    "lat": 42.093,
+    "lon": 42.9894,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   }
 ]

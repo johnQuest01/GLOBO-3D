@@ -1,122 +1,182 @@
 [
   {
-    "name": "Tashi Yangtse",
+    "name": "Trashiyangste",
     "key": "tashi yangtse",
-    "lat": 27.70576274879203,
-    "lon": 91.49947773682045
+    "lat": 27.676,
+    "lon": 91.5121,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Lhuntshi",
+    "name": "Lhuntse",
     "key": "lhuntshi",
-    "lat": 27.81680818505507,
-    "lon": 91.0817197177014
+    "lat": 27.6977,
+    "lon": 91.0822,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Bumthang",
     "key": "bumthang",
-    "lat": 27.705796328455296,
-    "lon": 90.7106090846919
+    "lat": 27.7219,
+    "lon": 90.7042,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ha",
+    "name": "Haa",
     "key": "ha",
-    "lat": 27.3458767962428,
-    "lon": 89.10954129202526
+    "lat": 27.3711,
+    "lon": 89.1233,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Samchi",
+    "name": "Samtse",
     "key": "samchi",
-    "lat": 27.04667288055851,
-    "lon": 89.03378490100042
+    "lat": 27.0219,
+    "lon": 89.0493,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Chhukha",
+    "name": "Chukha",
     "key": "chhukha",
-    "lat": 26.99054404952056,
-    "lon": 89.5494048246785
+    "lat": 27.0361,
+    "lon": 89.5247,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Geylegphug",
     "key": "geylegphug",
-    "lat": 26.886599690906305,
-    "lon": 90.28043433828542
+    "lat": 27.0503,
+    "lon": 90.3468,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Shemgang",
+    "name": "Zhemgang",
     "key": "shemgang",
-    "lat": 27.026986606796445,
-    "lon": 90.84829803300279
+    "lat": 27.0763,
+    "lon": 90.8505,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Samdrup Jongkhar",
     "key": "samdrup jongkhar",
-    "lat": 26.928812862296553,
-    "lon": 91.64707969779195
+    "lat": 26.9509,
+    "lon": 91.7328,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Tashigang",
+    "name": "Trashigang",
     "key": "tashigang",
-    "lat": 27.291294268632488,
-    "lon": 91.68592165588909
+    "lat": 27.2629,
+    "lon": 91.734,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Thimphu",
     "key": "thimphu",
-    "lat": 27.58847750057406,
-    "lon": 89.52475338585691
+    "lat": 27.4828,
+    "lon": 89.602,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Paro",
     "key": "paro",
-    "lat": 27.47944872435878,
-    "lon": 89.33927767955689
+    "lat": 27.4896,
+    "lon": 89.3837,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Gasa",
     "key": "gasa",
-    "lat": 28.01505567985884,
-    "lon": 89.88961264584009
+    "lat": 28.0641,
+    "lon": 89.9133,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Chirang",
+    "name": "Tsirang",
     "key": "chirang",
-    "lat": 27.039612302722723,
-    "lon": 90.15015808648361
+    "lat": 27.0316,
+    "lon": 90.1671,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Wangdi Phodrang",
+    "name": "Wangdue Phodrang",
     "key": "wangdi phodrang",
-    "lat": 27.476064105829686,
-    "lon": 90.1164674750328
+    "lat": 27.5206,
+    "lon": 90.0915,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Daga",
+    "name": "Dagana",
     "key": "daga",
-    "lat": 27.065893459715387,
-    "lon": 89.86392889020607
+    "lat": 27.0316,
+    "lon": 89.8444,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Punakha",
     "key": "punakha",
-    "lat": 27.68617141807647,
-    "lon": 89.85807796942271
+    "lat": 27.6756,
+    "lon": 89.8223,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Mongar",
     "key": "mongar",
-    "lat": 27.326588141209733,
-    "lon": 91.21836014218678
+    "lat": 27.1956,
+    "lon": 91.2014,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Tongsa",
+    "name": "Trongsa",
     "key": "tongsa",
-    "lat": 27.44024927986218,
-    "lon": 90.45766708599444
+    "lat": 27.4491,
+    "lon": 90.4811,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Pemagatsel",
+    "name": "Pemagatshel",
     "key": "pemagatsel",
-    "lat": 27.03744041580253,
-    "lon": 91.37006147663578
+    "lat": 26.9641,
+    "lon": 91.3405,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   }
 ]

@@ -2,205 +2,307 @@
   {
     "name": "Nariño",
     "key": "nariño",
-    "lat": 1.532334185449638,
-    "lon": -77.8168975673078
+    "lat": 1.60168,
+    "lon": -77.9777,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Putumayo",
     "key": "putumayo",
-    "lat": 0.44192699656785467,
-    "lon": -75.82613411650593
+    "lat": 0.420217,
+    "lon": -75.5514,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Chocó",
     "key": "chocó",
-    "lat": 6.491243682896451,
-    "lon": -76.9966209082854
+    "lat": 5.38283,
+    "lon": -76.7263,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Guainía",
     "key": "guainía",
-    "lat": 2.6355176119473733,
-    "lon": -68.55372357434618
+    "lat": 2.70535,
+    "lon": -68.8925,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Vaupés",
     "key": "vaupés",
-    "lat": 0.3675644995906931,
-    "lon": -70.33920501588366
+    "lat": 0.790971,
+    "lon": -70.5869,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Amazonas",
     "key": "amazonas",
-    "lat": -2.8576650622069177,
-    "lon": -64.80381048226928
+    "lat": -4.21774,
+    "lon": -63.7853,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "La Guajira",
+    "name": "Guajira",
     "key": "la guajira",
-    "lat": 11.46804547733101,
-    "lon": -72.41272281676605
+    "lat": 11.4245,
+    "lon": -72.6702,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Cesar",
     "key": "cesar",
-    "lat": 9.401180152868575,
-    "lon": -73.53342543335071
+    "lat": 9.84893,
+    "lon": -73.4339,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Norte de Santander",
     "key": "norte de santander",
-    "lat": 7.938997535656002,
-    "lon": -72.87427787571151
+    "lat": 8.086,
+    "lon": -72.8175,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Arauca",
     "key": "arauca",
-    "lat": 6.553480742550055,
-    "lon": -71.05570542786678
+    "lat": 6.64307,
+    "lon": -70.8913,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Boyacá",
     "key": "boyacá",
-    "lat": 5.894505657502385,
-    "lon": -73.21917691323367
+    "lat": 5.68515,
+    "lon": -72.933,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Vichada",
     "key": "vichada",
-    "lat": 4.771976264602896,
-    "lon": -68.99410463023708
+    "lat": 4.89224,
+    "lon": -69.2414,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Cauca",
     "key": "cauca",
-    "lat": 2.2779731755377464,
-    "lon": -76.89971013651697
+    "lat": 2.61609,
+    "lon": -77.277,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Valle del Cauca",
     "key": "valle del cauca",
-    "lat": 3.830037785196263,
-    "lon": -76.65394323665691
+    "lat": 3.58331,
+    "lon": -76.5923,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Antioquia",
     "key": "antioquia",
-    "lat": 7.08694638740297,
-    "lon": -75.794910423506
+    "lat": 6.70366,
+    "lon": -75.5071,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Córdoba",
     "key": "córdoba",
-    "lat": 8.475451076407174,
-    "lon": -75.76402998235396
+    "lat": 8.43894,
+    "lon": -75.6522,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Sucre",
     "key": "sucre",
-    "lat": 9.170493268927542,
-    "lon": -75.20659805136826
+    "lat": 9.01236,
+    "lon": -75.1319,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Bolívar",
     "key": "bolívar",
-    "lat": 6.13617472764037,
-    "lon": -63.58893110059461
+    "lat": 6.00608,
+    "lon": -63.8628,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Atlántico",
     "key": "atlántico",
-    "lat": 10.683697699484803,
-    "lon": -75.03124890692098
+    "lat": 10.6712,
+    "lon": -74.9941,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Magdalena",
     "key": "magdalena",
-    "lat": 10.1613909249454,
-    "lon": -74.2327652974966
+    "lat": 10.3731,
+    "lon": -74.3474,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "San Andrés y Providencia",
+    "name": "Santo André",
     "key": "san andrés y providencia",
-    "lat": 12.54988027560007,
-    "lon": -81.70711015539993
+    "lat": 12.5429,
+    "lon": -81.7049,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "",
     "key": "",
-    "lat": -70.85554371549992,
-    "lon": -2.7388250397499334
+    "lat": -83.0384,
+    "lon": -170.343,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   },
   {
     "name": "Caquetá",
     "key": "caquetá",
-    "lat": 0.9010651628313991,
-    "lon": -73.98193370630636
+    "lat": 0.615494,
+    "lon": -73.8097,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Huila",
     "key": "huila",
-    "lat": 2.6931087413437473,
-    "lon": -75.507483363427
+    "lat": 2.65469,
+    "lon": -75.5471,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Guaviare",
     "key": "guaviare",
-    "lat": 1.952703580162332,
-    "lon": -71.91833883075367
+    "lat": 1.85144,
+    "lon": -71.8348,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Caldas",
     "key": "caldas",
-    "lat": 5.393446582693629,
-    "lon": -75.318525643044
+    "lat": 5.29037,
+    "lon": -75.2793,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Casanare",
     "key": "casanare",
-    "lat": 5.502830131167141,
-    "lon": -71.76983952188411
+    "lat": 5.46249,
+    "lon": -71.4622,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Meta",
     "key": "meta",
-    "lat": 3.2848246160052135,
-    "lon": -73.30769659694637
+    "lat": 3.5302,
+    "lon": -72.9789,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Bogota",
+    "name": "Bogotá",
     "key": "bogota",
-    "lat": 4.17888329589167,
-    "lon": -74.21955980105112
+    "lat": 4.08564,
+    "lon": -74.2443,
+    "labelRank": 9,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Santander",
     "key": "santander",
-    "lat": 6.807792812274502,
-    "lon": -73.50930779904358
+    "lat": 6.85402,
+    "lon": -73.4981,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Tolima",
     "key": "tolima",
-    "lat": 3.984608308716788,
-    "lon": -75.2288701200503
+    "lat": 3.93749,
+    "lon": -75.2073,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Quindío",
     "key": "quindío",
-    "lat": 4.456348456436103,
-    "lon": -75.67621765796852
+    "lat": 4.47197,
+    "lon": -75.64,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Cundinamarca",
     "key": "cundinamarca",
-    "lat": 4.659600561370456,
-    "lon": -74.09790749240759
+    "lat": 5.11121,
+    "lon": -74.0613,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Risaralda",
     "key": "risaralda",
-    "lat": 5.119145209234009,
-    "lon": -75.80780049644575
+    "lat": 4.82682,
+    "lon": -75.6743,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   }
 ]

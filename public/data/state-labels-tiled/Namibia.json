@@ -2,79 +2,118 @@
   {
     "name": "Karas",
     "key": "karas",
-    "lat": -27.002199016330927,
-    "lon": 17.24175099504834
+    "lat": -27.0276,
+    "lon": 17.4903,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Kunene",
     "key": "kunene",
-    "lat": -19.016145771777094,
-    "lon": 14.049691960254725
+    "lat": -19.8757,
+    "lon": 13.9847,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Omusati",
     "key": "omusati",
-    "lat": -18.416779412241787,
-    "lon": 14.940037441964341
+    "lat": -18.3099,
+    "lon": 14.8918,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Ohangwena",
     "key": "ohangwena",
-    "lat": -17.59154990542705,
-    "lon": 16.471721083774955
+    "lat": -17.5789,
+    "lon": 16.7798,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Kavango",
     "key": "kavango",
-    "lat": -18.06945875197097,
-    "lon": 19.424693187775848
+    "lat": -18.5224,
+    "lon": 19.4968,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Caprivi",
     "key": "caprivi",
-    "lat": -17.91811952372689,
-    "lon": 23.518518383816232
+    "lat": -17.8491,
+    "lon": 23.1229,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Hardap",
     "key": "hardap",
-    "lat": -24.506434590522854,
-    "lon": 17.248017316188182
+    "lat": -24.5108,
+    "lon": 17.2167,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Otjozondjupa",
     "key": "otjozondjupa",
-    "lat": -20.634797217351682,
-    "lon": 17.476628008993583
+    "lat": -20.0032,
+    "lon": 18.2876,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Omaheke",
     "key": "omaheke",
-    "lat": -22.11771627730925,
-    "lon": 19.070459810421966
+    "lat": -22.0526,
+    "lon": 19.4738,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Erongo",
     "key": "erongo",
-    "lat": -22.135113903773433,
-    "lon": 15.32536977437495
+    "lat": -22.2166,
+    "lon": 15.0824,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Khomas",
     "key": "khomas",
-    "lat": -22.92228078413301,
-    "lon": 17.122922648497582
+    "lat": -22.7056,
+    "lon": 17.1204,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Oshana",
     "key": "oshana",
-    "lat": -18.461803032978597,
-    "lon": 15.739168857431812
+    "lat": -18.4961,
+    "lon": 15.662,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Oshikoto",
     "key": "oshikoto",
-    "lat": -18.85268125037734,
-    "lon": 16.921008685722946
+    "lat": -18.5381,
+    "lon": 17.0179,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   }
 ]

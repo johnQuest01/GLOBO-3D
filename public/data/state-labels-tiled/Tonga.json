@@ -2,31 +2,46 @@
   {
     "name": "Vava'u",
     "key": "vava'u",
-    "lat": -18.60790781079993,
-    "lon": -173.9891495429999
+    "lat": -18.6118,
+    "lon": -173.988,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Eua",
+    "name": "ʻEua",
     "key": "eua",
-    "lat": -21.356540622749918,
-    "lon": -174.9317622549999
+    "lat": -21.3672,
+    "lon": -174.941,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Tongatapu",
     "key": "tongatapu",
-    "lat": -21.162096178666598,
-    "lon": -175.1683989466666
+    "lat": -21.1718,
+    "lon": -175.155,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Ha'apai",
     "key": "ha'apai",
-    "lat": -19.74273853959994,
-    "lon": -175.0740697907999
+    "lat": -19.757,
+    "lon": -174.317,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Niuas",
     "key": "niuas",
-    "lat": -15.586399021499915,
-    "lon": -175.64702307824993
+    "lat": -15.9558,
+    "lon": -173.757,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

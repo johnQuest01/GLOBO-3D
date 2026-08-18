@@ -1,38 +1,56 @@
 [
   {
-    "name": "Ali Sabieh",
+    "name": "de Ali Sabieh",
     "key": "ali sabieh",
-    "lat": 11.2676762219054,
-    "lon": 42.884913611734234
+    "lat": 11.2107,
+    "lon": 42.8985,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Arta",
+    "name": "de Arta",
     "key": "arta",
-    "lat": 11.465344806059857,
-    "lon": 42.861203064365284
+    "lat": 11.4461,
+    "lon": 42.8032,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Dikhil",
+    "name": "de Dikhil",
     "key": "dikhil",
-    "lat": 11.318529237823416,
-    "lon": 42.167842356426924
+    "lat": 11.3884,
+    "lon": 42.2277,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Tadjourah",
+    "name": "de Tadjourah",
     "key": "tadjourah",
-    "lat": 11.962298440311985,
-    "lon": 42.52721483001652
+    "lat": 11.7972,
+    "lon": 42.5043,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Obock",
+    "name": "de Obock",
     "key": "obock",
-    "lat": 12.300779400743105,
-    "lon": 43.05504285522306
+    "lat": 12.2842,
+    "lon": 43.0464,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Djibouti",
     "key": "djibouti",
-    "lat": 11.567151521317442,
-    "lon": 43.017756635486094
+    "lat": 11.5524,
+    "lon": 43.037,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   }
 ]

@@ -2,7 +2,10 @@
   {
     "name": "Gibraltar",
     "key": "gibraltar",
-    "lat": 36.133294953600156,
-    "lon": -5.348971365833058
+    "lat": 36.1291,
+    "lon": -5.34595,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

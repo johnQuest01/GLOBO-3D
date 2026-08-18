@@ -1,110 +1,164 @@
 [
   {
-    "name": "Lapland",
+    "name": "Lapônia",
     "key": "lapland",
-    "lat": 67.74285580732388,
-    "lon": 25.97447728681279
+    "lat": 67.5811,
+    "lon": 26.5614,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Northern Ostrobothnia",
+    "name": "Ostrobótnia do Norte",
     "key": "northern ostrobothnia",
-    "lat": 65.16190848767994,
-    "lon": 26.96292727957807
+    "lat": 65.1599,
+    "lon": 26.2356,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Kainuu",
     "key": "kainuu",
-    "lat": 64.59464836639847,
-    "lon": 28.858245064040943
+    "lat": 64.5496,
+    "lon": 28.441,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "North Karelia",
+    "name": "Carélia do Norte",
     "key": "north karelia",
-    "lat": 62.947970584256325,
-    "lon": 29.69241692892771
+    "lat": 62.7879,
+    "lon": 29.9637,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "South Karelia",
+    "name": "Carélia do Sul",
     "key": "south karelia",
-    "lat": 61.30406057193052,
-    "lon": 28.593026075687103
+    "lat": 61.2148,
+    "lon": 28.5567,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Kymenlaakso",
     "key": "kymenlaakso",
-    "lat": 60.780414957507325,
-    "lon": 27.034324156468113
+    "lat": 60.4164,
+    "lon": 26.5799,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Uusimaa",
     "key": "uusimaa",
-    "lat": 60.37328044370765,
-    "lon": 24.839444759500708
+    "lat": 60.4179,
+    "lon": 24.8475,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Finland Proper",
+    "name": "Finlândia Própria",
     "key": "finland proper",
-    "lat": 60.64014134740144,
-    "lon": 22.61415197638749
+    "lat": 60.6134,
+    "lon": 22.7128,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Satakunta",
     "key": "satakunta",
-    "lat": 61.56147138992721,
-    "lon": 22.207302545715564
+    "lat": 61.4773,
+    "lon": 22.1012,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ostrobothnia",
+    "name": "Ostrobótnia",
     "key": "ostrobothnia",
-    "lat": 62.9969747557874,
-    "lon": 22.198493713824806
+    "lat": 63.0354,
+    "lon": 22.1482,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Central Ostrobothnia",
+    "name": "Ostrobótnia Central",
     "key": "central ostrobothnia",
-    "lat": 63.66734966945067,
-    "lon": 23.83770961338154
+    "lat": 63.6751,
+    "lon": 24.0097,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Northern Savonia",
+    "name": "Savônia do Norte",
     "key": "northern savonia",
-    "lat": 63.122767893098754,
-    "lon": 27.439511898269757
+    "lat": 63.1933,
+    "lon": 27.5702,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Southern Savonia",
+    "name": "Savônia do Sul",
     "key": "southern savonia",
-    "lat": 61.96584731877114,
-    "lon": 27.74538941043431
+    "lat": 61.8152,
+    "lon": 27.9693,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Central Finland",
+    "name": "Finlândia Central",
     "key": "central finland",
-    "lat": 62.46573025312367,
-    "lon": 25.50716809333282
+    "lat": 62.5246,
+    "lon": 25.3934,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Southern Ostrobothnia",
+    "name": "Ostrobótnia do Sul",
     "key": "southern ostrobothnia",
-    "lat": 62.71835408104262,
-    "lon": 23.002811434167008
+    "lat": 62.7521,
+    "lon": 23.1486,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Pirkanmaa",
     "key": "pirkanmaa",
-    "lat": 61.710365700468856,
-    "lon": 23.646569133228457
+    "lat": 61.6936,
+    "lon": 23.7573,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Tavastia Proper",
+    "name": "Tavastia Própria",
     "key": "tavastia proper",
-    "lat": 60.96754679384944,
-    "lon": 24.350620829707506
+    "lat": 60.9239,
+    "lon": 24.4224,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Päijät-Häme",
+    "name": "Päijänne Tavastia",
     "key": "päijät-häme",
-    "lat": 61.29068844175933,
-    "lon": 25.728784668759793
+    "lat": 61.2034,
+    "lon": 25.6876,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   }
 ]

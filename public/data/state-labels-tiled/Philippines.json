@@ -2,709 +2,1063 @@
   {
     "name": "Sulu",
     "key": "sulu",
-    "lat": 5.9828962258334,
-    "lon": 121.12102298266672
+    "lat": 5.53722,
+    "lon": 120.865,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Davao del Norte",
+    "name": "Davao do Norte",
     "key": "davao del norte",
-    "lat": 7.599485135582455,
-    "lon": 125.59496477463603
+    "lat": 7.45436,
+    "lon": 125.651,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Zamboanga Sibugay",
     "key": "zamboanga sibugay",
-    "lat": 7.712778896850446,
-    "lon": 122.76458279483829
+    "lat": 7.7136,
+    "lon": 122.926,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Palawan",
+    "name": "Palauã",
     "key": "palawan",
-    "lat": 9.023099429402043,
-    "lon": 117.90697777818669
+    "lat": 9.02764,
+    "lon": 117.912,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Surigao del Norte",
+    "name": "Ilhas de Dinagat",
     "key": "surigao del norte",
-    "lat": 9.55693702183571,
-    "lon": 125.59058155456998
+    "lat": 9.66326,
+    "lon": 125.959,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Surigao del Sur",
+    "name": "Surigao do Sul",
     "key": "surigao del sur",
-    "lat": 8.754816356331004,
-    "lon": 126.13359140062903
+    "lat": 8.80931,
+    "lon": 126.097,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Agusan del Norte",
+    "name": "Agusan do Norte",
     "key": "agusan del norte",
-    "lat": 8.830799682985107,
-    "lon": 125.40702277535331
+    "lat": 9.17346,
+    "lon": 125.56,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Butuan",
     "key": "butuan",
-    "lat": 8.931580897673475,
-    "lon": 125.54925864735003
+    "lat": 8.94346,
+    "lon": 125.542,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Misamis Oriental",
     "key": "misamis oriental",
-    "lat": 8.766043166956868,
-    "lon": 125.01439916833685
+    "lat": 8.74226,
+    "lon": 124.992,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Cagayan de Oro",
     "key": "cagayan de oro",
-    "lat": 8.445535256858497,
-    "lon": 124.64979475166663
+    "lat": 8.45874,
+    "lon": 124.693,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Iligan",
     "key": "iligan",
-    "lat": 8.211525793929507,
-    "lon": 124.39801087728716
+    "lat": 8.26296,
+    "lon": 124.396,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Lanao del Norte",
+    "name": "Lanao do Norte",
     "key": "lanao del norte",
-    "lat": 7.978685049852325,
-    "lon": 123.97047138342323
+    "lat": 8.0566,
+    "lon": 124.122,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Zamboanga del Sur",
+    "name": "Zamboanga do Sul",
     "key": "zamboanga del sur",
-    "lat": 7.835957164777903,
-    "lon": 123.36288072640082
+    "lat": 7.84487,
+    "lon": 123.309,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Misamis Occidental",
+    "name": "Misamis Ocidental",
     "key": "misamis occidental",
-    "lat": 8.345479030506638,
-    "lon": 123.67044411506004
+    "lat": 8.33846,
+    "lon": 123.717,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Zamboanga del Norte",
+    "name": "Zamboanga do Norte",
     "key": "zamboanga del norte",
-    "lat": 7.945732835236136,
-    "lon": 122.69744663206467
+    "lat": 8.02743,
+    "lon": 122.73,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Zamboanga",
+    "name": "Península de Zamboanga",
     "key": "zamboanga",
-    "lat": 7.235795373215521,
-    "lon": 122.19671074601528
+    "lat": 7.03966,
+    "lon": 122.055,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Lanao del Sur",
+    "name": "Lanao do Sul",
     "key": "lanao del sur",
-    "lat": 7.809692286694954,
-    "lon": 124.2904827550876
+    "lat": 7.90221,
+    "lon": 124.335,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Maguindanao",
     "key": "maguindanao",
-    "lat": 7.05938817024199,
-    "lon": 124.42522044586345
+    "lat": 6.98075,
+    "lon": 124.437,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Cotabato",
     "key": "cotabato",
-    "lat": 7.232261268215813,
-    "lon": 124.2346458696669
+    "lat": 7.22504,
+    "lon": 124.246,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Sultan Kudarat",
     "key": "sultan kudarat",
-    "lat": 6.511194304751481,
-    "lon": 124.57695828790767
+    "lat": 6.52568,
+    "lon": 124.382,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Sarangani",
     "key": "sarangani",
-    "lat": 6.023291103236994,
-    "lon": 125.30475158354456
+    "lat": 5.95631,
+    "lon": 125.303,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "General Santos",
     "key": "general santos",
-    "lat": 6.135107413530493,
-    "lon": 125.15169588241822
+    "lat": 6.13644,
+    "lon": 125.139,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Davao del Sur",
+    "name": "Davao do Sul",
     "key": "davao del sur",
-    "lat": 6.361550299710435,
-    "lon": 125.40794071499191
+    "lat": 6.34808,
+    "lon": 125.511,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Davao",
+    "name": "de Dávao",
     "key": "davao",
-    "lat": 7.289838643238556,
-    "lon": 125.4600349816388
+    "lat": 7.07729,
+    "lon": 125.587,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Compostela Valley",
+    "name": "Davao de Ouro",
     "key": "compostela valley",
-    "lat": 7.503951609585755,
-    "lon": 126.00457576415171
+    "lat": 7.52967,
+    "lon": 125.984,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Davao Oriental",
     "key": "davao oriental",
-    "lat": 7.33312347191242,
-    "lon": 126.27743942593081
+    "lat": 7.06305,
+    "lon": 126.286,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Southern Leyte",
+    "name": "Leyte do Sul",
     "key": "southern leyte",
-    "lat": 10.380771306655912,
-    "lon": 125.04923395224932
+    "lat": 10.0694,
+    "lon": 125.215,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Leyte",
     "key": "leyte",
-    "lat": 10.959727361308119,
-    "lon": 124.75259593418652
+    "lat": 10.9926,
+    "lon": 124.883,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Eastern Samar",
+    "name": "Samar Oriental",
     "key": "eastern samar",
-    "lat": 11.704325511347015,
-    "lon": 125.37002191620289
+    "lat": 10.7291,
+    "lon": 125.755,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Biliran",
     "key": "biliran",
-    "lat": 11.598985093200065,
-    "lon": 124.50451907640006
+    "lat": 11.5911,
+    "lon": 124.487,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Samar",
     "key": "samar",
-    "lat": 11.804534433265841,
-    "lon": 124.93924286868852
+    "lat": 11.8292,
+    "lon": 124.999,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Aurora",
     "key": "aurora",
-    "lat": 15.86124962016491,
-    "lon": 121.68341843940864
+    "lat": 16.1271,
+    "lon": 121.756,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Quezon",
     "key": "quezon",
-    "lat": 14.097355829886626,
-    "lon": 121.9033774874328
+    "lat": 13.8708,
+    "lon": 122.037,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Camarines Norte",
     "key": "camarines norte",
-    "lat": 14.135957007069521,
-    "lon": 122.66784537360421
+    "lat": 14.1942,
+    "lon": 122.699,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Camarines Sur",
+    "name": "Camarines Sul",
     "key": "camarines sur",
-    "lat": 13.723302915818413,
-    "lon": 123.24099123286615
+    "lat": 13.6733,
+    "lon": 123.365,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Albay",
     "key": "albay",
-    "lat": 13.21427901546065,
-    "lon": 123.62678898655602
+    "lat": 13.2254,
+    "lon": 123.563,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Sorsogon",
     "key": "sorsogon",
-    "lat": 12.885542941425252,
-    "lon": 123.89669603784509
+    "lat": 12.7377,
+    "lon": 124.001,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Lucena",
     "key": "lucena",
-    "lat": 13.930200501879483,
-    "lon": 121.58069444502728
+    "lat": 13.9241,
+    "lon": 121.576,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Batangas",
     "key": "batangas",
-    "lat": 13.897946677083766,
-    "lon": 121.06782675652767
+    "lat": 13.9268,
+    "lon": 121.076,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Cavite",
     "key": "cavite",
-    "lat": 14.298208105801145,
-    "lon": 120.89308189535035
+    "lat": 14.2563,
+    "lon": 120.836,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Las Pinas",
+    "name": "Las Piñas",
     "key": "las pinas",
-    "lat": 14.466417411856904,
-    "lon": 120.98843386349908
+    "lat": 14.4591,
+    "lon": 120.995,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Paranaque",
+    "name": "Parañaque",
     "key": "paranaque",
-    "lat": 14.492778039543202,
-    "lon": 121.01076990231586
+    "lat": 14.49,
+    "lon": 121.016,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Pasay",
     "key": "pasay",
-    "lat": 14.536306983233791,
-    "lon": 121.00531151952327
+    "lat": 14.5449,
+    "lon": 120.999,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Manila",
+    "name": "Grande Manila",
     "key": "manila",
-    "lat": 14.590813706458327,
-    "lon": 120.99841346826517
+    "lat": 14.5931,
+    "lon": 120.989,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Navotas",
     "key": "navotas",
-    "lat": 14.651385304472619,
-    "lon": 120.94847611708344
+    "lat": 14.6394,
+    "lon": 120.952,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Bulacan",
     "key": "bulacan",
-    "lat": 14.878381305254916,
-    "lon": 121.00703281363292
+    "lat": 14.9603,
+    "lon": 121.003,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Pampanga",
     "key": "pampanga",
-    "lat": 15.013912421069596,
-    "lon": 120.66148111344141
+    "lat": 15.0215,
+    "lon": 120.651,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Bataan",
     "key": "bataan",
-    "lat": 14.727975534088294,
-    "lon": 120.43789831660428
+    "lat": 14.6561,
+    "lon": 120.42,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Olongapo",
     "key": "olongapo",
-    "lat": 14.867973392535792,
-    "lon": 120.30170113359164
+    "lat": 14.8618,
+    "lon": 120.282,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Zambales",
     "key": "zambales",
-    "lat": 15.264744196171668,
-    "lon": 120.17166185195005
+    "lat": 15.0499,
+    "lon": 120.164,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Pangasinan",
     "key": "pangasinan",
-    "lat": 15.97605666574647,
-    "lon": 120.28459368953332
+    "lat": 15.8696,
+    "lon": 120.341,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Dagupan",
     "key": "dagupan",
-    "lat": 16.047607206664043,
-    "lon": 120.31582671783126
+    "lat": 16.0325,
+    "lon": 120.341,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "La Union",
     "key": "la union",
-    "lat": 16.527214816538702,
-    "lon": 120.42785638234552
+    "lat": 16.5569,
+    "lon": 120.436,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Ilocos Sur",
+    "name": "Ilocos Sul",
     "key": "ilocos sur",
-    "lat": 17.226966840797203,
-    "lon": 120.54708442727855
+    "lat": 16.9849,
+    "lon": 120.604,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Ilocos Norte",
     "key": "ilocos norte",
-    "lat": 18.1685690201529,
-    "lon": 120.7018485764574
+    "lat": 18.1995,
+    "lon": 120.71,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Cagayan",
     "key": "cagayan",
-    "lat": 18.194661961881334,
-    "lon": 121.63529204570061
+    "lat": 17.9242,
+    "lon": 121.641,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Isabela",
     "key": "isabela",
-    "lat": 16.998814568323052,
-    "lon": 121.96492021246553
+    "lat": 17.0036,
+    "lon": 121.932,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Tawi-Tawi",
     "key": "tawi-tawi",
-    "lat": 5.1942173755714895,
-    "lon": 120.08420425114294
+    "lat": 4.80751,
+    "lon": 119.835,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Basilan",
     "key": "basilan",
-    "lat": 6.571984187301543,
-    "lon": 122.05362964299297
+    "lat": 6.49955,
+    "lon": 122.059,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Camiguin",
     "key": "camiguin",
-    "lat": 9.165383205000069,
-    "lon": 124.73502037860005
+    "lat": 9.17353,
+    "lon": 124.722,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Siquijor",
     "key": "siquijor",
-    "lat": 9.177915757200049,
-    "lon": 123.63419030040004
+    "lat": 9.17807,
+    "lon": 123.597,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Bohol",
     "key": "bohol",
-    "lat": 9.871656879454603,
-    "lon": 124.23836584490913
+    "lat": 9.84875,
+    "lon": 124.248,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Guimaras",
     "key": "guimaras",
-    "lat": 10.594685505500061,
-    "lon": 122.6421411466667
+    "lat": 10.5577,
+    "lon": 122.61,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Bacolod",
     "key": "bacolod",
-    "lat": 10.650517552105004,
-    "lon": 122.98165404389542
+    "lat": 10.6592,
+    "lon": 122.986,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Negros Occidental",
+    "name": "Negros Ocidental",
     "key": "negros occidental",
-    "lat": 10.317997462815478,
-    "lon": 122.96705719024607
+    "lat": 10.4137,
+    "lon": 122.985,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Negros Oriental",
     "key": "negros oriental",
-    "lat": 9.730537262177137,
-    "lon": 123.12003978826814
+    "lat": 9.75662,
+    "lon": 123.032,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Cebu",
     "key": "cebu",
-    "lat": 10.316964695373361,
-    "lon": 123.91817224419455
+    "lat": 10.3024,
+    "lon": 123.899,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Mandaue",
     "key": "mandaue",
-    "lat": 10.366182776971629,
-    "lon": 123.95723064424085
+    "lat": 10.3358,
+    "lon": 123.933,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Cebu",
     "key": "cebu",
-    "lat": 10.316964695373361,
-    "lon": 123.91817224419455
+    "lat": 10.3024,
+    "lon": 123.899,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Puerto Princesa",
+    "name": "Porto Princesa",
     "key": "puerto princesa",
-    "lat": 9.880968826687795,
-    "lon": 118.73559182224695
+    "lat": 9.89211,
+    "lon": 118.673,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Tacloban",
     "key": "tacloban",
-    "lat": 11.275829739818874,
-    "lon": 124.98065793464559
+    "lat": 11.2439,
+    "lon": 124.98,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Ormoc",
     "key": "ormoc",
-    "lat": 11.042000265912009,
-    "lon": 124.57721547104093
+    "lat": 11.0197,
+    "lon": 124.572,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Aklan",
     "key": "aklan",
-    "lat": 11.629391732045061,
-    "lon": 122.19258748443052
+    "lat": 11.5611,
+    "lon": 122.223,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Antique",
     "key": "antique",
-    "lat": 11.19213262568324,
-    "lon": 122.09047061529176
+    "lat": 11.8476,
+    "lon": 121.469,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Iloilo",
     "key": "iloilo",
-    "lat": 10.9617272086863,
-    "lon": 122.5467397736262
+    "lat": 10.9681,
+    "lon": 122.59,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Iloilo",
     "key": "iloilo",
-    "lat": 10.9617272086863,
-    "lon": 122.5467397736262
+    "lat": 10.9681,
+    "lon": 122.59,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Capiz",
     "key": "capiz",
-    "lat": 11.374398598529954,
-    "lon": 122.56981637241768
+    "lat": 11.3673,
+    "lon": 122.633,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Romblon",
     "key": "romblon",
-    "lat": 12.536986937833396,
-    "lon": 122.07185577350008
+    "lat": 12.4045,
+    "lon": 122.555,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Northern Samar",
+    "name": "Samar do Norte",
     "key": "northern samar",
-    "lat": 12.367070380445131,
-    "lon": 124.80650061139858
+    "lat": 12.3786,
+    "lon": 124.812,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Masbate",
     "key": "masbate",
-    "lat": 12.139759707538518,
-    "lon": 123.63850094753852
+    "lat": 12.2276,
+    "lon": 123.611,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Mindoro Oriental",
+    "name": "Oriental Mindoro",
     "key": "mindoro oriental",
-    "lat": 13.02617398713497,
-    "lon": 121.21491959392661
+    "lat": 12.8526,
+    "lon": 121.36,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Mindoro Occidental",
+    "name": "Ocidental Mindoro",
     "key": "mindoro occidental",
-    "lat": 12.983751644559945,
-    "lon": 120.87655792215725
+    "lat": 12.6588,
+    "lon": 121.085,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Marinduque",
     "key": "marinduque",
-    "lat": 13.387791827000049,
-    "lon": 121.99102391271434
+    "lat": 13.3717,
+    "lon": 121.971,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Catanduanes",
     "key": "catanduanes",
-    "lat": 13.783718166142908,
-    "lon": 124.23836161757148
+    "lat": 13.8305,
+    "lon": 124.222,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Batanes",
     "key": "batanes",
-    "lat": 20.46246979380006,
-    "lon": 121.99800865980005
+    "lat": 21.1164,
+    "lon": 121.951,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Lapu-Lapu",
     "key": "lapu-lapu",
-    "lat": 10.292969208824868,
-    "lon": 123.9680591114205
+    "lat": 10.2992,
+    "lon": 123.959,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Agusan del Sur",
+    "name": "Agusan do Sul",
     "key": "agusan del sur",
-    "lat": 8.464174537167253,
-    "lon": 125.8199472365441
+    "lat": 8.57934,
+    "lon": 125.761,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Bukidnon",
     "key": "bukidnon",
-    "lat": 8.035578139498476,
-    "lon": 125.00084631658838
+    "lat": 7.99493,
+    "lon": 125.002,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Cotabato",
     "key": "cotabato",
-    "lat": 7.232261268215813,
-    "lon": 124.2346458696669
+    "lat": 7.22504,
+    "lon": 124.246,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "South Cotabato",
+    "name": "Cotabato do Sul",
     "key": "south cotabato",
-    "lat": 6.3407866709823555,
-    "lon": 124.81917476870773
+    "lat": 6.30746,
+    "lon": 124.808,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Muntinlupa",
     "key": "muntinlupa",
-    "lat": 14.412159460540664,
-    "lon": 121.04456829489088
+    "lat": 14.4253,
+    "lon": 121.053,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Caloocan",
     "key": "caloocan",
-    "lat": 14.645403860349878,
-    "lon": 120.9925397735417
+    "lat": 14.6402,
+    "lon": 120.99,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Malabon",
     "key": "malabon",
-    "lat": 14.675367022949729,
-    "lon": 120.95886664334087
+    "lat": 14.6593,
+    "lon": 120.964,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Valenzuela",
     "key": "valenzuela",
-    "lat": 14.701069859386479,
-    "lon": 121.00616793000592
+    "lat": 14.6939,
+    "lon": 120.991,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Quezon City",
+    "name": "Cidade Quezon",
     "key": "quezon city",
-    "lat": 14.66528752159274,
-    "lon": 121.07978701919193
+    "lat": 14.6711,
+    "lon": 121.067,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Nueva Ecija",
+    "name": "Nova Ecija",
     "key": "nueva ecija",
-    "lat": 15.628448362152167,
-    "lon": 120.98527852933775
+    "lat": 15.6863,
+    "lon": 120.998,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Laguna",
     "key": "laguna",
-    "lat": 14.267501928732552,
-    "lon": 121.27608935895978
+    "lat": 14.146,
+    "lon": 121.307,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Rizal",
     "key": "rizal",
-    "lat": 14.675033496398733,
-    "lon": 121.2629045097353
+    "lat": 14.6809,
+    "lon": 121.284,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Taguig",
     "key": "taguig",
-    "lat": 14.51017368295659,
-    "lon": 121.08588706020215
+    "lat": 14.518,
+    "lon": 121.062,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Marikina",
     "key": "marikina",
-    "lat": 14.63615916936017,
-    "lon": 121.11574236756618
+    "lat": 14.6291,
+    "lon": 121.116,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Pasig",
     "key": "pasig",
-    "lat": 14.573838441353473,
-    "lon": 121.09529253539716
+    "lat": 14.568,
+    "lon": 121.1,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Quirino",
     "key": "quirino",
-    "lat": 16.385554355673964,
-    "lon": 121.58427009446423
+    "lat": 16.2982,
+    "lon": 121.663,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Santiago",
     "key": "santiago",
-    "lat": 19.36867164430593,
-    "lon": -70.85778179591814
+    "lat": 19.2636,
+    "lon": -70.8974,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Nueva Vizcaya",
+    "name": "Nova Vizcaya",
     "key": "nueva vizcaya",
-    "lat": 16.29433707118123,
-    "lon": 121.21450413609813
+    "lat": 16.3729,
+    "lon": 121.101,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Benguet",
     "key": "benguet",
-    "lat": 16.543745022294928,
-    "lon": 120.69443175662022
+    "lat": 16.545,
+    "lon": 120.689,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Ifugao",
     "key": "ifugao",
-    "lat": 16.899288272208704,
-    "lon": 121.29859877859252
+    "lat": 16.8291,
+    "lon": 121.214,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Mountain Province",
+    "name": "da Montanha",
     "key": "mountain province",
-    "lat": 17.110687160945247,
-    "lon": 121.17686861832281
+    "lat": 17.0908,
+    "lon": 121.172,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Tarlac",
     "key": "tarlac",
-    "lat": 15.469753729950657,
-    "lon": 120.47308092660342
+    "lat": 15.4733,
+    "lon": 120.463,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Apayao",
     "key": "apayao",
-    "lat": 18.047266122133816,
-    "lon": 121.16433401168706
+    "lat": 18.1179,
+    "lon": 121.167,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Kalinga",
     "key": "kalinga",
-    "lat": 17.46398859337888,
-    "lon": 121.28558947168672
+    "lat": 17.4884,
+    "lon": 121.322,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Abra",
     "key": "abra",
-    "lat": 17.600867650750036,
-    "lon": 120.83797116793501
+    "lat": 17.5665,
+    "lon": 120.798,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Naga",
     "key": "naga",
-    "lat": 13.605119512730298,
-    "lon": 123.22537641778743
+    "lat": 13.6153,
+    "lon": 123.197,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Angeles",
     "key": "angeles",
-    "lat": 15.135595560806461,
-    "lon": 120.60563224399282
+    "lat": 15.1453,
+    "lon": 120.591,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Baguio",
     "key": "baguio",
-    "lat": 16.38653275260443,
-    "lon": 120.61972878161791
+    "lat": 16.4059,
+    "lon": 120.605,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Makati",
     "key": "makati",
-    "lat": 14.547838711415952,
-    "lon": 121.04561324115812
+    "lat": 14.5519,
+    "lon": 121.035,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Pateros",
     "key": "pateros",
-    "lat": 14.540115103329342,
-    "lon": 121.0817492429332
+    "lat": 14.543,
+    "lon": 121.083,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Mandaluyong City",
+    "name": "Cidade de Mandaluyong",
     "key": "mandaluyong city",
-    "lat": 14.580151450129307,
-    "lon": 121.04959066782504
+    "lat": 14.5766,
+    "lon": 121.052,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "San Juan",
     "key": "san juan",
-    "lat": -30.803428553804434,
-    "lon": -68.99524925873227
+    "lat": -30.97,
+    "lon": -68.6612,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   }
 ]

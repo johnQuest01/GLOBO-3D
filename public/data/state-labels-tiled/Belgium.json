@@ -1,68 +1,101 @@
 [
   {
-    "name": "West Flanders",
+    "name": "Flandres Ocidental",
     "key": "west flanders",
-    "lat": 50.99279533996243,
-    "lon": 3.0048060726231087
+    "lat": 51.0312,
+    "lon": 3.02202,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Hainaut",
     "key": "hainaut",
-    "lat": 50.40221374737941,
-    "lon": 3.95777106870668
+    "lat": 50.521,
+    "lon": 3.88925,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Namur",
     "key": "namur",
-    "lat": 50.18946251257218,
-    "lon": 4.827972865859067
+    "lat": 50.3244,
+    "lon": 4.88712,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Luxemburgo",
     "key": "luxembourg",
-    "lat": 49.92248003017552,
-    "lon": 5.488580380113445
+    "lat": 49.9637,
+    "lon": 5.50117,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Liege",
+    "name": "Liège",
     "key": "liege",
-    "lat": 50.51024187675308,
-    "lon": 5.716795765640917
+    "lat": 50.5794,
+    "lon": 5.67651,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "East Flanders",
+    "name": "Flandres Oriental",
     "key": "east flanders",
-    "lat": 51.077680583864066,
-    "lon": 3.8733400870173993
+    "lat": 50.9749,
+    "lon": 3.83186,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Antwerp",
+    "name": "Antuérpia",
     "key": "antwerp",
-    "lat": 51.24695682884344,
-    "lon": 4.716040047282545
+    "lat": 51.2485,
+    "lon": 4.72122,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Limburg",
+    "name": "Limburgo",
     "key": "limburg",
-    "lat": 51.23106428820857,
-    "lon": 5.883721407664115
+    "lat": 51.2248,
+    "lon": 5.93161,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Brussels",
+    "name": "de Bruxelas-Capital",
     "key": "brussels",
-    "lat": 50.82160616200006,
-    "lon": 4.389459392800075
+    "lat": 50.8332,
+    "lon": 4.36266,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Flemish Brabant",
+    "name": "Brabante Flamengo",
     "key": "flemish brabant",
-    "lat": 50.83099572628559,
-    "lon": 4.50382521607763
+    "lat": 50.8709,
+    "lon": 4.53709,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Walloon Brabant",
+    "name": "Brabante Valão",
     "key": "walloon brabant",
-    "lat": 50.66870889244146,
-    "lon": 4.525185645034892
+    "lat": 50.6416,
+    "lon": 4.55466,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   }
 ]

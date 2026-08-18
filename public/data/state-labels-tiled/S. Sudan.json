@@ -1,62 +1,92 @@
 [
   {
-    "name": "Eastern Equatoria",
+    "name": "Equatória Oriental",
     "key": "eastern equatoria",
-    "lat": 4.666050730376743,
-    "lon": 33.953127619122824
+    "lat": 4.79636,
+    "lon": 33.5351,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Western Bahr el Ghazal",
+    "name": "Bahr al-Ghazal Ocidental",
     "key": "western bahr el ghazal",
-    "lat": 8.375725148595153,
-    "lon": 25.950310816159675
+    "lat": 7.31134,
+    "lon": 26.3804,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Western Equatoria",
+    "name": "Equatória Ocidental",
     "key": "western equatoria",
-    "lat": 5.464820466989877,
-    "lon": 28.74944567984718
+    "lat": 5.41296,
+    "lon": 28.6169,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Central Equatoria",
+    "name": "Equatória Central",
     "key": "central equatoria",
-    "lat": 4.699855791145476,
-    "lon": 31.013779019920396
+    "lat": 4.68142,
+    "lon": 31.2854,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Upper Nile",
+    "name": "Alto Nilo",
     "key": "upper nile",
-    "lat": 9.881199796784713,
-    "lon": 32.81552620215162
+    "lat": 10.3577,
+    "lon": 32.5251,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Jonglei",
+    "name": "Juncáli",
     "key": "jonglei",
-    "lat": 7.789748102593632,
-    "lon": 32.24165704658115
+    "lat": 7.2461,
+    "lon": 32.5795,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Unity",
+    "name": "Unidade",
     "key": "unity",
-    "lat": 8.912374015344442,
-    "lon": 29.980691916498756
+    "lat": 8.99929,
+    "lon": 29.8883,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Northern Bahr el Ghazal",
+    "name": "Bahr al-Ghazal do Norte",
     "key": "northern bahr el ghazal",
-    "lat": 8.924275243382988,
-    "lon": 27.340822196756317
+    "lat": 8.90381,
+    "lon": 27.535,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Lakes",
+    "name": "Lagos",
     "key": "lakes",
-    "lat": 6.5376101638029995,
-    "lon": 30.02485099552701
+    "lat": 6.88023,
+    "lon": 30.1369,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Warrap",
+    "name": "Warab",
     "key": "warrap",
-    "lat": 7.955605666664167,
-    "lon": 28.646495737440308
+    "lat": 7.85589,
+    "lon": 28.6994,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   }
 ]

@@ -1,128 +1,191 @@
 [
   {
-    "name": "Herceg Novi",
+    "name": "Herceg-Novi",
     "key": "herceg novi",
-    "lat": 42.488433152751426,
-    "lon": 18.51823142896477
+    "lat": 42.4041,
+    "lon": 18.6027,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Rožaje",
     "key": "rožaje",
-    "lat": 42.8379957196422,
-    "lon": 20.245065011212755
+    "lat": 42.8615,
+    "lon": 20.2013,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Berane",
     "key": "berane",
-    "lat": 42.829650899418496,
-    "lon": 19.917462368847115
+    "lat": 42.8198,
+    "lon": 19.9003,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Plav",
     "key": "plav",
-    "lat": 42.62307510688584,
-    "lon": 19.96117797080758
+    "lat": 42.5985,
+    "lon": 19.9168,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Pljevlja",
     "key": "pljevlja",
-    "lat": 43.311863487298055,
-    "lon": 19.24895717569815
+    "lat": 43.3019,
+    "lon": 19.2264,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Bijelo Polje",
     "key": "bijelo polje",
-    "lat": 43.072816110174784,
-    "lon": 19.746723611644665
+    "lat": 43.0174,
+    "lon": 19.7579,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Žabljak",
     "key": "žabljak",
-    "lat": 43.16576965907486,
-    "lon": 19.13368335216334
+    "lat": 43.1148,
+    "lon": 19.2003,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Plužine",
+    "name": "Pluzine",
     "key": "plužine",
-    "lat": 43.1479567649814,
-    "lon": 18.861548424418526
+    "lat": 43.1483,
+    "lon": 18.8229,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Nikšic",
+    "name": "Niksic",
     "key": "nikšic",
-    "lat": 42.87344582504007,
-    "lon": 18.76014677951324
+    "lat": 42.8341,
+    "lon": 18.8259,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Kotor",
     "key": "kotor",
-    "lat": 42.48765447830736,
-    "lon": 18.658098905438102
+    "lat": 42.5415,
+    "lon": 18.65,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Andrijevica",
     "key": "andrijevica",
-    "lat": 42.67934264363629,
-    "lon": 19.748958794112045
+    "lat": 42.6933,
+    "lon": 19.7688,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Podgorica",
     "key": "podgorica",
-    "lat": 42.49713219958967,
-    "lon": 19.329419400786016
+    "lat": 42.4462,
+    "lon": 19.3069,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Bar",
     "key": "bar",
-    "lat": 42.186877589445054,
-    "lon": 19.15448499694823
+    "lat": 42.1416,
+    "lon": 19.1463,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Ulcinj",
     "key": "ulcinj",
-    "lat": 42.00463254265011,
-    "lon": 19.283304027238096
+    "lat": 42.0039,
+    "lon": 19.2564,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Budva",
     "key": "budva",
-    "lat": 42.25978454605006,
-    "lon": 18.889546769232084
+    "lat": 42.3039,
+    "lon": 18.8929,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Tivat",
     "key": "tivat",
-    "lat": 42.39937703635523,
-    "lon": 18.67527487591238
+    "lat": 42.3897,
+    "lon": 18.6898,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Mojkovac",
     "key": "mojkovac",
-    "lat": 42.97654696813054,
-    "lon": 19.488195835194617
+    "lat": 42.971,
+    "lon": 19.515,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Cetinje",
     "key": "cetinje",
-    "lat": 42.49292080338233,
-    "lon": 18.896407667719682
+    "lat": 42.4993,
+    "lon": 18.8954,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Šavnik",
     "key": "šavnik",
-    "lat": 42.984228454579494,
-    "lon": 19.156674296431618
+    "lat": 42.9571,
+    "lon": 19.1516,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Kolašin",
     "key": "kolašin",
-    "lat": 42.79516592074562,
-    "lon": 19.410771620139144
+    "lat": 42.7889,
+    "lon": 19.4394,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Danilovgrad",
     "key": "danilovgrad",
-    "lat": 42.63498189949504,
-    "lon": 19.140628763956272
+    "lat": 42.5936,
+    "lon": 19.1191,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   }
 ]

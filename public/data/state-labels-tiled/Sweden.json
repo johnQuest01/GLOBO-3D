@@ -2,127 +2,190 @@
   {
     "name": "Norrbotten",
     "key": "norrbotten",
-    "lat": 67.09289153444811,
-    "lon": 20.439218608854127
+    "lat": 66.837,
+    "lon": 20.4529,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Västerbotten",
     "key": "västerbotten",
-    "lat": 64.90343530112114,
-    "lon": 17.67196501641829
+    "lat": 64.7048,
+    "lon": 18.3726,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Jämtland",
+    "name": "da Jämtland",
     "key": "jämtland",
-    "lat": 63.17733178391771,
-    "lon": 14.262051131991617
+    "lat": 63.3306,
+    "lon": 14.4806,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Dalarna",
     "key": "dalarna",
-    "lat": 60.98993577104108,
-    "lon": 14.37162530138678
+    "lat": 60.814,
+    "lon": 14.4404,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Värmland",
+    "name": "da Värmland",
     "key": "värmland",
-    "lat": 59.84487079036343,
-    "lon": 12.98140030720141
+    "lat": 59.8068,
+    "lon": 13.0764,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Västra Götaland",
+    "name": "da Västra Götaland",
     "key": "västra götaland",
-    "lat": 58.3981862224106,
-    "lon": 12.663498417565032
+    "lat": 58.2428,
+    "lon": 12.8371,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Västernorrland",
     "key": "västernorrland",
-    "lat": 63.03480890833035,
-    "lon": 17.12361981231841
+    "lat": 62.9145,
+    "lon": 17.3697,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Gävleborg",
     "key": "gävleborg",
-    "lat": 61.475389196295424,
-    "lon": 16.17839970726208
+    "lat": 61.3691,
+    "lon": 16.5023,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Uppsala",
+    "name": "da Uppsala",
     "key": "uppsala",
-    "lat": 60.032084402010696,
-    "lon": 17.527023002278554
+    "lat": 60.1522,
+    "lon": 17.7896,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Stockholm",
+    "name": "Estocolmo",
     "key": "stockholm",
-    "lat": 59.50358893888882,
-    "lon": 18.108837570611392
+    "lat": 59.3659,
+    "lon": 17.8652,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Södermanland",
+    "name": "da Södermanland",
     "key": "södermanland",
-    "lat": 59.069933036834335,
-    "lon": 16.778081630792954
+    "lat": 59.0778,
+    "lon": 16.6334,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Östergötland",
+    "name": "da Östergötland",
     "key": "östergötland",
-    "lat": 58.33062175337386,
-    "lon": 15.818972851164931
+    "lat": 58.3655,
+    "lon": 15.7022,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kalmar",
+    "name": "da Kalmar",
     "key": "kalmar",
-    "lat": 57.36057192549459,
-    "lon": 16.075673205920854
+    "lat": 57.2764,
+    "lon": 16.0875,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Blekinge",
     "key": "blekinge",
-    "lat": 56.307325595436815,
-    "lon": 15.209215777510252
+    "lat": 56.2929,
+    "lon": 15.2163,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Skåne",
+    "name": "Escânia",
     "key": "skåne",
-    "lat": 55.98856063531603,
-    "lon": 13.654131001974115
+    "lat": 55.9073,
+    "lon": 13.5193,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Halland",
+    "name": "da Halland",
     "key": "halland",
-    "lat": 56.9366263397397,
-    "lon": 12.877924048997864
+    "lat": 56.9745,
+    "lon": 12.8007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Gotland",
     "key": "gotland",
-    "lat": 57.478509832900045,
-    "lon": 18.524807162400073
+    "lat": 57.4733,
+    "lon": 18.4826,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Västmanland",
     "key": "västmanland",
-    "lat": 59.81083204996436,
-    "lon": 16.418251302182153
+    "lat": 59.7979,
+    "lon": 16.4244,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Jönköping",
+    "name": "da Jönköping",
     "key": "jönköping",
-    "lat": 57.47503060176086,
-    "lon": 14.48385013190605
+    "lat": 57.5478,
+    "lon": 14.424,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Orebro",
+    "name": "Örebro",
     "key": "orebro",
-    "lat": 59.40169293660911,
-    "lon": 14.996033491088019
+    "lat": 59.3913,
+    "lon": 15.0594,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Kronoberg",
     "key": "kronoberg",
-    "lat": 56.81277788929247,
-    "lon": 14.499101419951069
+    "lat": 56.8265,
+    "lon": 14.5773,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   }
 ]

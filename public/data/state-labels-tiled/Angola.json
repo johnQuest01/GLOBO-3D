@@ -2,109 +2,163 @@
   {
     "name": "Cabinda",
     "key": "cabinda",
-    "lat": -4.991782183150951,
-    "lon": 12.44694958557927
+    "lat": -4.80148,
+    "lon": 12.543,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Cuando Cubango",
+    "name": "Cuando-Cubango",
     "key": "cuando cubango",
-    "lat": -15.888524894449183,
-    "lon": 19.351076129565215
+    "lat": -16.311,
+    "lon": 19.9218,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Moxico",
     "key": "moxico",
-    "lat": -12.587124837101271,
-    "lon": 21.0497064598739
+    "lat": -13.281,
+    "lon": 21.0033,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Namibe",
     "key": "namibe",
-    "lat": -15.385548459273094,
-    "lon": 12.813973727759421
+    "lat": -15.8249,
+    "lon": 12.6525,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Cunene",
     "key": "cunene",
-    "lat": -16.30908971705987,
-    "lon": 15.225454714021167
+    "lat": -16.6271,
+    "lon": 15.281,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Zaire",
     "key": "zaire",
-    "lat": -6.603254010700003,
-    "lon": 13.725484875845407
+    "lat": -6.78301,
+    "lon": 13.6096,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Uíge",
     "key": "uíge",
-    "lat": -7.343162682062513,
-    "lon": 15.47507627670373
+    "lat": -6.95896,
+    "lon": 15.4475,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Lunda Norte",
     "key": "lunda norte",
-    "lat": -8.521968719615193,
-    "lon": 19.483740706647307
+    "lat": -8.4722,
+    "lon": 19.6268,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Malanje",
     "key": "malanje",
-    "lat": -9.533992868951744,
-    "lon": 16.93609489786166
+    "lat": -9.14742,
+    "lon": 16.9731,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Lunda Sul",
     "key": "lunda sul",
-    "lat": -10.147357471338733,
-    "lon": 20.69442056898379
+    "lat": -10.2341,
+    "lon": 20.3821,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Cuanza Sul",
     "key": "cuanza sul",
-    "lat": -10.822899730979728,
-    "lon": 14.984077177780955
+    "lat": -10.9232,
+    "lon": 15.0504,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Benguela",
     "key": "benguela",
-    "lat": -13.004691702689657,
-    "lon": 13.921309220838985
+    "lat": -12.7993,
+    "lon": 13.8119,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Bengo",
     "key": "bengo",
-    "lat": -8.98775566912462,
-    "lon": 13.948864544542815
+    "lat": -8.99949,
+    "lon": 13.907,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Luanda",
     "key": "luanda",
-    "lat": -8.974320527871866,
-    "lon": 13.344746456329988
+    "lat": -8.95941,
+    "lon": 13.3166,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Bié",
     "key": "bié",
-    "lat": -12.132223571443756,
-    "lon": 17.33606164526563
+    "lat": -12.7997,
+    "lon": 17.4921,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Cuanza Norte",
     "key": "cuanza norte",
-    "lat": -8.807451147349637,
-    "lon": 15.000047533837195
+    "lat": -9.6988,
+    "lon": 14.9458,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Huíla",
     "key": "huíla",
-    "lat": -14.716555951530484,
-    "lon": 14.896142560577974
+    "lat": -14.7348,
+    "lon": 14.9844,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Huambo",
     "key": "huambo",
-    "lat": -12.4643786461576,
-    "lon": 15.76181456627102
+    "lat": -12.5587,
+    "lon": 15.6947,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   }
 ]

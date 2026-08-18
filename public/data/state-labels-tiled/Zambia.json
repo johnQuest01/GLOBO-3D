@@ -2,61 +2,91 @@
   {
     "name": "Muchinga",
     "key": "muchinga",
-    "lat": -11.301266622620657,
-    "lon": 31.797880977334344
+    "lat": -11.3701,
+    "lon": 32.0234,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Eastern",
+    "name": "Oriental",
     "key": "eastern",
-    "lat": -13.276595798443843,
-    "lon": 32.03293192144825
+    "lat": -13.7617,
+    "lon": 31.8341,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Northern",
+    "name": "Norte",
     "key": "northern",
-    "lat": 9.115785759791477,
-    "lon": -11.868718148726737
+    "lat": 9.14067,
+    "lon": -11.9468,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Lusaka",
+    "name": "Lusaca",
     "key": "lusaka",
-    "lat": -15.400620812512319,
-    "lon": 29.174716173824443
+    "lat": -15.4426,
+    "lon": 29.0846,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Southern",
+    "name": "Sul",
     "key": "southern",
-    "lat": 7.871403323031413,
-    "lon": -11.970108022157978
+    "lat": 7.85416,
+    "lon": -12.0512,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Western",
+    "name": "Ocidental",
     "key": "western",
-    "lat": -2.1421606680643306,
-    "lon": 29.29291803490095
+    "lat": -2.13156,
+    "lon": 29.2644,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "North-Western",
+    "name": "Noroeste",
     "key": "north-western",
-    "lat": -12.745192839853356,
-    "lon": 25.21732728995634
+    "lat": -12.7303,
+    "lon": 24.7847,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Luapula",
     "key": "luapula",
-    "lat": -10.486921920959471,
-    "lon": 29.277290108956144
+    "lat": -11.6471,
+    "lon": 29.4045,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Copperbelt",
     "key": "copperbelt",
-    "lat": -13.049339093000944,
-    "lon": 27.73889456625138
+    "lat": -13.1044,
+    "lon": 27.9272,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Central",
     "key": "central",
-    "lat": -21.53938210084973,
-    "lon": 26.99743649044483
+    "lat": -21.8775,
+    "lon": 26.6144,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   }
 ]

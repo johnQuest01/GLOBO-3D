@@ -1,146 +1,218 @@
 [
   {
-    "name": "Rôtânôkiri",
+    "name": "Ratanakiri",
     "key": "rôtânôkiri",
-    "lat": 13.955153623142701,
-    "lon": 107.15035764545121
+    "lat": 13.2418,
+    "lon": 107.082,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Môndól Kiri",
+    "name": "Mondul Kiri",
     "key": "môndól kiri",
-    "lat": 12.803337532698382,
-    "lon": 106.97786841603896
+    "lat": 12.6284,
+    "lon": 106.961,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Krâchéh",
+    "name": "Kratié",
     "key": "krâchéh",
-    "lat": 12.58561505021317,
-    "lon": 106.30822118464826
+    "lat": 12.66,
+    "lon": 106.184,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Kâmpóng Cham",
+    "name": "Kampong Cham",
     "key": "kâmpóng cham",
-    "lat": 11.972498627964036,
-    "lon": 105.64577753282423
+    "lat": 12.1206,
+    "lon": 105.629,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Svay Rieng",
     "key": "svay rieng",
-    "lat": 11.213247138549379,
-    "lon": 105.8322992629096
+    "lat": 11.0416,
+    "lon": 105.888,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Prey Vêng",
+    "name": "Prey Veng",
     "key": "prey vêng",
-    "lat": 11.372841436987114,
-    "lon": 105.4648265842348
+    "lat": 11.3561,
+    "lon": 105.473,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kândal",
+    "name": "Kandal",
     "key": "kândal",
-    "lat": 11.419172019425687,
-    "lon": 105.00029070363298
+    "lat": 11.5453,
+    "lon": 104.973,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Takêv",
+    "name": "Takéo",
     "key": "takêv",
-    "lat": 10.9183772439602,
-    "lon": 104.78191021712279
+    "lat": 10.9346,
+    "lon": 104.751,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kâmpôt",
+    "name": "Kampot",
     "key": "kâmpôt",
-    "lat": 10.716559342915184,
-    "lon": 104.37937560616591
+    "lat": 10.8503,
+    "lon": 104.328,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Otdar Mean Chey",
+    "name": "Oddar Mean Cheay",
     "key": "otdar mean chey",
-    "lat": 14.210485485176754,
-    "lon": 103.64728210747101
+    "lat": 14.1712,
+    "lon": 103.55,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Preah Vihéar",
+    "name": "Preah Vihear",
     "key": "preah vihéar",
-    "lat": 13.85113288768333,
-    "lon": 105.0441964536737
+    "lat": 13.728,
+    "lon": 105.125,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Siemréab",
+    "name": "Siem Reap",
     "key": "siemréab",
-    "lat": 13.73501566301165,
-    "lon": 104.15004209734332
+    "lat": 13.5711,
+    "lon": 104.043,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Bântéay Méanchey",
+    "name": "Banteay Meanchey",
     "key": "bântéay méanchey",
-    "lat": 13.7652807124778,
-    "lon": 102.86763214194639
+    "lat": 13.7359,
+    "lon": 102.873,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Kaôh Kong",
+    "name": "Koh Kong",
     "key": "kaôh kong",
-    "lat": 11.380065338577163,
-    "lon": 103.41317971225085
+    "lat": 11.5609,
+    "lon": 103.466,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Pouthisat",
+    "name": "Pursat",
     "key": "pouthisat",
-    "lat": 12.385678525959628,
-    "lon": 103.55221157986695
+    "lat": 12.3391,
+    "lon": 103.549,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Batdâmbâng",
+    "name": "Battambang",
     "key": "batdâmbâng",
-    "lat": 12.970023659536936,
-    "lon": 103.02497096442457
+    "lat": 12.9675,
+    "lon": 103.068,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Krong Pailin",
+    "name": "Pailin",
     "key": "krong pailin",
-    "lat": 12.836484408008717,
-    "lon": 102.59310808089214
+    "lat": 12.8901,
+    "lon": 102.611,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Stœng Trêng",
+    "name": "Stung Treng",
     "key": "stœng trêng",
-    "lat": 13.868926824434176,
-    "lon": 106.16223771329693
+    "lat": 13.6662,
+    "lon": 106.095,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Krong Preah Sihanouk",
+    "name": "Sihanoukville",
     "key": "krong preah sihanouk",
-    "lat": 10.690766669818299,
-    "lon": 103.76505605227126
+    "lat": 10.4854,
+    "lon": 103.775,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Kep",
+    "name": "Keb",
     "key": "kep",
-    "lat": 10.502141899049956,
-    "lon": 104.37612473427448
+    "lat": 10.5308,
+    "lon": 104.346,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Kâmpóng Chhnang",
+    "name": "Kampong Chhnang",
     "key": "kâmpóng chhnang",
-    "lat": 12.183531282906662,
-    "lon": 104.536205043014
+    "lat": 12.1624,
+    "lon": 104.548,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Kâmpóng Thum",
+    "name": "Kampong Thom",
     "key": "kâmpóng thum",
-    "lat": 12.839353675305771,
-    "lon": 104.89416126997442
+    "lat": 12.6883,
+    "lon": 104.972,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Kâmpóng Spœ",
+    "name": "Kampong Speu",
     "key": "kâmpóng spœ",
-    "lat": 11.628269863488391,
-    "lon": 104.28028120324613
+    "lat": 11.5221,
+    "lon": 104.282,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Phnom Penh",
     "key": "phnom penh",
-    "lat": 11.520754462228638,
-    "lon": 104.87204870010737
+    "lat": 11.5733,
+    "lon": 104.874,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   }
 ]

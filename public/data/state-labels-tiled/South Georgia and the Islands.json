@@ -1,8 +1,11 @@
 [
   {
-    "name": "South Georgia and the South Sandwich Islands",
+    "name": "Ilhas Geórgia do Sul e Sandwich do Sul",
     "key": "south georgia and the south sandwich islands",
-    "lat": -54.43834943366658,
-    "lon": -36.5463516918666
+    "lat": -59.4548,
+    "lon": -27.1942,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

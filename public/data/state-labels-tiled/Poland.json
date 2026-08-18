@@ -1,98 +1,146 @@
 [
   {
-    "name": "Silesian",
+    "name": "Silésia",
     "key": "silesian",
-    "lat": 50.168983264588235,
-    "lon": 19.03870054574125
+    "lat": 50.1978,
+    "lon": 18.9924,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Lesser Poland",
+    "name": "Pequena Polónia",
     "key": "lesser poland",
-    "lat": 49.81750372568868,
-    "lon": 20.449997452665087
+    "lat": 49.8761,
+    "lon": 20.3133,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Subcarpathian",
+    "name": "Subcarpácia",
     "key": "subcarpathian",
-    "lat": 50.00239205496604,
-    "lon": 22.189014354398378
+    "lat": 49.8555,
+    "lon": 22.4341,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Lower Silesian",
+    "name": "Baixa Silésia",
     "key": "lower silesian",
-    "lat": 51.01656505717899,
-    "lon": 16.11830500820692
+    "lat": 51.0127,
+    "lon": 16.4623,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Opole",
+    "name": "Voivodia de Opole",
     "key": "opole",
-    "lat": 50.51350518950082,
-    "lon": 17.733034591871768
+    "lat": 50.5498,
+    "lon": 17.7998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Podlachian",
+    "name": "Podláquia",
     "key": "podlachian",
-    "lat": 53.35233686215588,
-    "lon": 22.830034666999083
+    "lat": 53.3396,
+    "lon": 22.7225,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Warmian-Masurian",
+    "name": "Vármia-Masúria",
     "key": "warmian-masurian",
-    "lat": 53.84136185587609,
-    "lon": 20.934898943884455
+    "lat": 53.8526,
+    "lon": 20.9711,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Lubusz",
+    "name": "Lubúsquia",
     "key": "lubusz",
-    "lat": 52.16995012698851,
-    "lon": 15.401530596186673
+    "lat": 52.2372,
+    "lon": 15.4552,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "West Pomeranian",
+    "name": "Pomerânia Ocidental",
     "key": "west pomeranian",
-    "lat": 53.48012735845794,
-    "lon": 15.496937919375407
+    "lat": 53.5878,
+    "lon": 15.5906,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Lublin",
+    "name": "Voivodia de Lublin",
     "key": "lublin",
-    "lat": 51.262651038416145,
-    "lon": 22.92398468367923
+    "lat": 51.2088,
+    "lon": 22.8943,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Pomeranian",
+    "name": "Pomerânia",
     "key": "pomeranian",
-    "lat": 54.073503594465684,
-    "lon": 18.301901852830973
+    "lat": 54.26,
+    "lon": 18.272,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Masovian",
+    "name": "Mazóvia",
     "key": "masovian",
-    "lat": 52.24014108959709,
-    "lon": 21.277127984353978
+    "lat": 52.2269,
+    "lon": 21.1915,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Łódź",
+    "name": "Voivodia de Łódź",
     "key": "łódź",
-    "lat": 51.56264205661892,
-    "lon": 19.383524264599778
+    "lat": 51.6355,
+    "lon": 19.3642,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kuyavian-Pomeranian",
+    "name": "Cujávia-Pomerânia",
     "key": "kuyavian-pomeranian",
-    "lat": 53.08211802069162,
-    "lon": 18.468985536069003
+    "lat": 53.0334,
+    "lon": 18.5227,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Greater Poland",
+    "name": "Grande Polónia",
     "key": "greater poland",
-    "lat": 52.32514162294466,
-    "lon": 17.361186499514467
+    "lat": 52.1454,
+    "lon": 17.4521,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Świętokrzyskie",
+    "name": "Voivodia de Santa Cruz",
     "key": "świętokrzyskie",
-    "lat": 50.76013874400255,
-    "lon": 20.839069451551826
+    "lat": 50.701,
+    "lon": 20.7951,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   }
 ]

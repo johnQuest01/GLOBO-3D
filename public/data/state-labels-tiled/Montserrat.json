@@ -2,19 +2,28 @@
   {
     "name": "Saint Peter",
     "key": "saint peter",
-    "lat": 13.27554059191744,
-    "lon": -59.60509607843333
+    "lat": 13.2679,
+    "lon": -59.6109,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint Anthony",
     "key": "saint anthony",
-    "lat": 16.731875463044382,
-    "lon": -62.17891588006143
+    "lat": 16.7048,
+    "lon": -62.1886,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Saint Georges",
+    "name": "Saint George",
     "key": "saint georges",
-    "lat": 16.75333472517677,
-    "lon": -62.16987137260797
+    "lat": 16.7442,
+    "lon": -62.1671,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

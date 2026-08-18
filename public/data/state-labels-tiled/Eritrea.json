@@ -1,38 +1,56 @@
 [
   {
-    "name": "Debubawi Keyih Bahri",
+    "name": "Debub-Keih-Bahri",
     "key": "debubawi keyih bahri",
-    "lat": 13.561173572562614,
-    "lon": 41.83150481967811
+    "lat": 13.5712,
+    "lon": 41.7389,
+    "labelRank": 6,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Debub",
     "key": "debub",
-    "lat": 15.88827173105282,
-    "lon": 39.28038167489188
+    "lat": 15.6179,
+    "lon": 40.1691,
+    "labelRank": 6,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Semenawi Keyih Bahri",
+    "name": "Semien-Keih-Bahri",
     "key": "semenawi keyih bahri",
-    "lat": 16.4360653787587,
-    "lon": 37.856132854449264
+    "lat": 16.6263,
+    "lon": 37.9175,
+    "labelRank": 6,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Gash Barka",
+    "name": "Gash-Barka",
     "key": "gash barka",
-    "lat": 15.240095374710636,
-    "lon": 37.45175364769069
+    "lat": 15.0297,
+    "lon": 37.6058,
+    "labelRank": 6,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Maekel",
     "key": "maekel",
-    "lat": 14.761983275780903,
-    "lon": 38.8262408522486
+    "lat": 14.858,
+    "lon": 38.9679,
+    "labelRank": 6,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Anseba",
     "key": "anseba",
-    "lat": 15.303676750067657,
-    "lon": 39.00335016696233
+    "lat": 15.2792,
+    "lon": 39.0563,
+    "labelRank": 6,
+    "minLabel": 8.7,
+    "maxLabel": 11
   }
 ]

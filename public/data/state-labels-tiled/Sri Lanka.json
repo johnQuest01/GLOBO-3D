@@ -1,152 +1,227 @@
 [
   {
-    "name": "Trikuṇāmalaya",
+    "name": "Trincomalee",
     "key": "trikuṇāmalaya",
-    "lat": 8.62725896930018,
-    "lon": 81.05371456672395
+    "lat": 8.56202,
+    "lon": 81.0848,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Mulativ",
+    "name": "Mullaittivu",
     "key": "mulativ",
-    "lat": 9.172403696526738,
-    "lon": 80.54722945862424
+    "lat": 9.24043,
+    "lon": 80.5667,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Yāpanaya",
+    "name": "Jaffna",
     "key": "yāpanaya",
-    "lat": 9.69505463283258,
-    "lon": 80.13542124302653
+    "lat": 9.50669,
+    "lon": 79.6933,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kilinŏchchi",
+    "name": "Kilinochchi",
     "key": "kilinŏchchi",
-    "lat": 9.328600891494043,
-    "lon": 80.25006269659158
+    "lat": 9.38429,
+    "lon": 80.3341,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Mannārama",
+    "name": "Mannar",
     "key": "mannārama",
-    "lat": 8.8616223310193,
-    "lon": 80.09742731878123
+    "lat": 8.84371,
+    "lon": 80.0854,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Puttalama",
+    "name": "Puttalam",
     "key": "puttalama",
-    "lat": 7.94023284059812,
-    "lon": 79.92024102851539
+    "lat": 7.94944,
+    "lon": 79.9111,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Gampaha",
     "key": "gampaha",
-    "lat": 7.122801983185472,
-    "lon": 80.01981767974985
+    "lat": 7.12599,
+    "lon": 80.0106,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Kŏḷamba",
     "key": "kŏḷamba",
-    "lat": 6.8533327599798355,
-    "lon": 80.04423413561321
+    "lat": 6.85989,
+    "lon": 80.0349,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kaḷutara",
+    "name": "Kulatra",
     "key": "kaḷutara",
-    "lat": 6.587419302918818,
-    "lon": 80.11270559083388
+    "lat": 6.58989,
+    "lon": 80.1374,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Gālla",
+    "name": "Galle",
     "key": "gālla",
-    "lat": 6.211399199350171,
-    "lon": 80.2865146130757
+    "lat": 6.19513,
+    "lon": 80.2387,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Mātara",
+    "name": "Matara",
     "key": "mātara",
-    "lat": 6.136320217321815,
-    "lon": 80.57036883974747
+    "lat": 6.16548,
+    "lon": 80.5542,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Hambantŏṭa",
+    "name": "Hambantota",
     "key": "hambantŏṭa",
-    "lat": 6.301442520777162,
-    "lon": 81.15594493196848
+    "lat": 6.2704,
+    "lon": 81.1619,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ampāra",
+    "name": "Ampara",
     "key": "ampāra",
-    "lat": 7.313524353253797,
-    "lon": 81.46988164715566
+    "lat": 7.1632,
+    "lon": 81.7242,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Maḍakalapuva",
     "key": "maḍakalapuva",
-    "lat": 7.854329792895642,
-    "lon": 81.49000944697681
+    "lat": 7.85079,
+    "lon": 81.4613,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Ratnapura",
     "key": "ratnapura",
-    "lat": 6.619976942102187,
-    "lon": 80.57713542406054
+    "lat": 6.57933,
+    "lon": 80.5623,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Mŏṇarāgala",
     "key": "mŏṇarāgala",
-    "lat": 6.78403066668191,
-    "lon": 81.22678741510708
+    "lat": 6.7224,
+    "lon": 81.3431,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kægalla",
+    "name": "Kegalle",
     "key": "kægalla",
-    "lat": 7.051288255398657,
-    "lon": 80.31956285998797
+    "lat": 7.08797,
+    "lon": 80.3478,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Badulla",
     "key": "badulla",
-    "lat": 7.144238367007018,
-    "lon": 81.06495979655733
+    "lat": 7.05184,
+    "lon": 81.0255,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Mātale",
+    "name": "Matale",
     "key": "mātale",
-    "lat": 7.7158407149520185,
-    "lon": 80.74706648148289
+    "lat": 7.60919,
+    "lon": 80.7391,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Pŏḷŏnnaruva",
+    "name": "Polonnaruwa",
     "key": "pŏḷŏnnaruva",
-    "lat": 7.984957164610675,
-    "lon": 81.0278026748766
+    "lat": 7.99997,
+    "lon": 81.048,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kuruṇægala",
+    "name": "Kurunegala",
     "key": "kuruṇægala",
-    "lat": 7.6214015383503035,
-    "lon": 80.25644844574683
+    "lat": 7.71298,
+    "lon": 80.2369,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Anurādhapura",
     "key": "anurādhapura",
-    "lat": 8.405172024014684,
-    "lon": 80.50753588254992
+    "lat": 8.29198,
+    "lon": 80.4711,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Nuvara Ĕliya",
+    "name": "Nuwara Eliya",
     "key": "nuvara ĕliya",
-    "lat": 6.979540696805702,
-    "lon": 80.71275849802623
+    "lat": 6.93625,
+    "lon": 80.6991,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Vavuniyāva",
     "key": "vavuniyāva",
-    "lat": 8.83918828527478,
-    "lon": 80.52620375881457
+    "lat": 8.89756,
+    "lon": 80.479,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Mahanuvara",
+    "name": "Cândia",
     "key": "mahanuvara",
-    "lat": 7.24890010689985,
-    "lon": 80.68227598007059
+    "lat": 7.30186,
+    "lon": 80.718,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   }
 ]

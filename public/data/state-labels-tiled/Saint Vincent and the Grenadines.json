@@ -1,38 +1,56 @@
 [
   {
-    "name": "Grenadines",
+    "name": "Granadinas",
     "key": "grenadines",
-    "lat": 13.020799058000051,
-    "lon": -61.21592159749993
+    "lat": 13.0161,
+    "lon": -61.229,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Saint Andrew",
+    "name": "Santo André",
     "key": "saint andrew",
-    "lat": 12.136522499923833,
-    "lon": -61.64461729593943
+    "lat": 12.1224,
+    "lon": -61.6329,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Saint George",
+    "name": "São Jorge",
     "key": "saint george",
-    "lat": 12.071263662592411,
-    "lon": -61.69597780071473
+    "lat": 12.0681,
+    "lon": -61.7226,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Charlotte",
+    "name": "Charlottr",
     "key": "charlotte",
-    "lat": 13.27943931364289,
-    "lon": -61.17623075576696
+    "lat": 13.2825,
+    "lon": -61.1475,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Saint David",
+    "name": "São David",
     "key": "saint david",
-    "lat": 12.062006624499489,
-    "lon": -61.65212198722793
+    "lat": 12.055,
+    "lon": -61.6617,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Saint Patrick",
+    "name": "São Patrício",
     "key": "saint patrick",
-    "lat": 12.200630520272618,
-    "lon": -61.65585988652281
+    "lat": 12.2147,
+    "lon": -61.6342,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

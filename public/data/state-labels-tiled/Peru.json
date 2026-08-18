@@ -2,157 +2,235 @@
   {
     "name": "Tacna",
     "key": "tacna",
-    "lat": -17.550547022366114,
-    "lon": -70.23774657987073
+    "lat": -17.5742,
+    "lon": -70.3423,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Madre de Dios",
+    "name": "Madre de Deus",
     "key": "madre de dios",
-    "lat": -11.893755601516647,
-    "lon": -70.81528237542356
+    "lat": -11.8726,
+    "lon": -70.6831,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Loreto",
     "key": "loreto",
-    "lat": -4.381168666894582,
-    "lon": -74.10517213218262
+    "lat": -4.27471,
+    "lon": -73.8868,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Amazonas",
     "key": "amazonas",
-    "lat": -2.8576650622069177,
-    "lon": -64.80381048226928
+    "lat": -4.21774,
+    "lon": -63.7853,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Cajamarca",
     "key": "cajamarca",
-    "lat": -6.289024453857881,
-    "lon": -78.82368450580165
+    "lat": -6.81775,
+    "lon": -78.6091,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Tumbes",
     "key": "tumbes",
-    "lat": -3.832682093025271,
-    "lon": -80.53485519500019
+    "lat": -3.88493,
+    "lon": -80.6135,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Piura",
     "key": "piura",
-    "lat": -5.149784473052023,
-    "lon": -80.29207977660484
+    "lat": -5.09955,
+    "lon": -80.2868,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Ucayali",
     "key": "ucayali",
-    "lat": -9.533367235468702,
-    "lon": -73.47402525685906
+    "lat": -9.99816,
+    "lon": -73.2493,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Puno",
     "key": "puno",
-    "lat": -15.116980632764525,
-    "lon": -69.89851204811637
+    "lat": -15.1677,
+    "lon": -69.9802,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Moquegua",
     "key": "moquegua",
-    "lat": -16.868246166589266,
-    "lon": -70.82379101863796
+    "lat": -16.6807,
+    "lon": -70.7546,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Arequipa",
     "key": "arequipa",
-    "lat": -15.790248452973112,
-    "lon": -72.63743910080538
+    "lat": -15.8757,
+    "lon": -72.4209,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Ica",
     "key": "ica",
-    "lat": -14.234315336385775,
-    "lon": -75.50127077996461
+    "lat": -14.2257,
+    "lon": -75.6773,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Lima",
     "key": "lima",
-    "lat": -11.807918364740381,
-    "lon": -76.63247705021111
+    "lat": -11.0602,
+    "lon": -77.0756,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Lima Province",
+    "name": "Lima",
     "key": "lima province",
-    "lat": -12.073904191112376,
-    "lon": -76.91331471978904
+    "lat": -12.1124,
+    "lon": -76.9236,
+    "labelRank": 9,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Callao",
     "key": "callao",
-    "lat": -12.058379242742287,
-    "lon": -77.13613359346085
+    "lat": -12.0859,
+    "lon": -77.2248,
+    "labelRank": 9,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Áncash",
+    "name": "Ancash",
     "key": "áncash",
-    "lat": -9.389459949126746,
-    "lon": -77.68681314767299
+    "lat": -9.53996,
+    "lon": -77.6571,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "La Libertad",
+    "name": "Liberdade",
     "key": "la libertad",
-    "lat": -7.9015861330851545,
-    "lon": -78.31827618768897
+    "lat": -8.21334,
+    "lon": -78.2813,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Lambayeque",
     "key": "lambayeque",
-    "lat": -6.42542954329595,
-    "lon": -79.69394346523221
+    "lat": -6.2514,
+    "lon": -79.8994,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Cusco",
     "key": "cusco",
-    "lat": -13.238366195343648,
-    "lon": -72.10071088156442
+    "lat": -13.1633,
+    "lon": -72.2479,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Ayacucho",
     "key": "ayacucho",
-    "lat": -13.976636821290459,
-    "lon": -74.0519982644865
+    "lat": -13.9245,
+    "lon": -73.9838,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Apurímac",
     "key": "apurímac",
-    "lat": -14.04627766611933,
-    "lon": -73.053788046395
+    "lat": -14.0317,
+    "lon": -72.9662,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Huancavelica",
     "key": "huancavelica",
-    "lat": -12.951147149165358,
-    "lon": -74.99063353644291
+    "lat": -13.0523,
+    "lon": -75.0416,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "San Martín",
     "key": "san martín",
-    "lat": -7.001491562961738,
-    "lon": -76.67893215401922
+    "lat": -7.30853,
+    "lon": -76.6238,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Huánuco",
     "key": "huánuco",
-    "lat": -9.285532134462443,
-    "lon": -75.99767038852761
+    "lat": -9.59203,
+    "lon": -75.9161,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Pasco",
     "key": "pasco",
-    "lat": -10.410348664871893,
-    "lon": -75.45274742768713
+    "lat": -10.3457,
+    "lon": -75.4586,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Junín",
     "key": "junín",
-    "lat": -11.578582063091744,
-    "lon": -74.84048916969942
+    "lat": -11.3744,
+    "lon": -74.9642,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   }
 ]

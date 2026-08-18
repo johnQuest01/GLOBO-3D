@@ -2,73 +2,109 @@
   {
     "name": "Bocas del Toro",
     "key": "bocas del toro",
-    "lat": 9.17970856283516,
-    "lon": -82.46671156435083
+    "lat": 9.20739,
+    "lon": -82.6597,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Chiriquí",
     "key": "chiriquí",
-    "lat": 8.432086178133103,
-    "lon": -82.38300307876378
+    "lat": 8.30824,
+    "lon": -82.0992,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Kuna Yala",
     "key": "kuna yala",
-    "lat": 9.115034902401092,
-    "lon": -78.28673892316041
+    "lat": 9.28269,
+    "lon": -78.3273,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Emberá",
     "key": "emberá",
-    "lat": 8.44282478788626,
-    "lon": -77.58650701465393
+    "lat": 7.86013,
+    "lon": -78.1396,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Darién",
     "key": "darién",
-    "lat": 8.252450063867949,
-    "lon": -77.93589457019495
+    "lat": 7.90194,
+    "lon": -77.7067,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Panama",
+    "name": "Panamá",
     "key": "panama",
-    "lat": 8.936060120283182,
-    "lon": -79.12643003255582
+    "lat": 9.08628,
+    "lon": -78.9283,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Coclé",
     "key": "coclé",
-    "lat": 8.552408386005842,
-    "lon": -80.4008138022784
+    "lat": 8.57708,
+    "lon": -80.4314,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Veraguas",
     "key": "veraguas",
-    "lat": 8.06693472105985,
-    "lon": -81.02685277459597
+    "lat": 8.22553,
+    "lon": -81.1447,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Colón",
     "key": "colón",
-    "lat": 9.168272137247815,
-    "lon": -79.94074738673636
+    "lat": 9.17018,
+    "lon": -79.9683,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ngöbe Buglé",
+    "name": "Ngöbe-Buglé",
     "key": "ngöbe buglé",
-    "lat": 8.704389645075333,
-    "lon": -81.8273217776871
+    "lat": 8.68,
+    "lon": -81.7558,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Los Santos",
     "key": "los santos",
-    "lat": 7.579576026012293,
-    "lon": -80.41227317351725
+    "lat": 7.58403,
+    "lon": -80.3927,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Herrera",
     "key": "herrera",
-    "lat": 7.88507013221053,
-    "lon": -80.67393107644871
+    "lat": 7.85632,
+    "lon": -80.6613,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   }
 ]

@@ -1,8 +1,11 @@
 [
   {
-    "name": "St. Martin",
+    "name": "São Martinho",
     "key": "st. martin",
-    "lat": 18.062760141425677,
-    "lon": -63.03994760589417
+    "lat": 18.0799,
+    "lon": -63.078,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

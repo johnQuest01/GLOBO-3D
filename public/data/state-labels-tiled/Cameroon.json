@@ -1,62 +1,92 @@
 [
   {
-    "name": "Sud",
+    "name": "Sul",
     "key": "sud",
-    "lat": 2.865612024625075,
-    "lon": 11.628807145834315
+    "lat": 2.79256,
+    "lon": 11.731,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Extrême-Nord",
+    "name": "Extremo Norte",
     "key": "extrême-nord",
-    "lat": 11.347962712103667,
-    "lon": 14.49974512560859
+    "lat": 10.7227,
+    "lon": 14.5367,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Nord",
+    "name": "Norte",
     "key": "nord",
-    "lat": 50.468463806111586,
-    "lon": 3.19449772928748
+    "lat": 50.403,
+    "lon": 3.22709,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Adamaoua",
+    "name": "Adamawa",
     "key": "adamaoua",
-    "lat": 6.943588620604317,
-    "lon": 12.94707038757664
+    "lat": 6.80472,
+    "lon": 13.217,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Nord-Ouest",
+    "name": "Noroeste",
     "key": "nord-ouest",
-    "lat": 6.378028168688776,
-    "lon": 10.38252668609778
+    "lat": 6.34548,
+    "lon": 10.4002,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Sud-Ouest",
+    "name": "Sudoeste",
     "key": "sud-ouest",
-    "lat": 5.1977111522069075,
-    "lon": 9.346779875770181
+    "lat": 5.12818,
+    "lon": 9.24481,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Est",
+    "name": "Leste",
     "key": "est",
-    "lat": 3.701982507260089,
-    "lon": 14.31929865258744
+    "lat": 3.78379,
+    "lon": 14.1674,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Littoral",
+    "name": "Litoral",
     "key": "littoral",
-    "lat": 4.292579628455538,
-    "lon": 10.09551182441873
+    "lat": 4.1938,
+    "lon": 10.0932,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ouest",
+    "name": "Oeste",
     "key": "ouest",
-    "lat": 18.58276102369957,
-    "lon": -72.35518145008773
+    "lat": 18.5501,
+    "lon": -72.2399,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Centre",
+    "name": "Centro",
     "key": "centre",
-    "lat": 19.029409277167364,
-    "lon": -71.94160876035906
+    "lat": 19.029,
+    "lon": -72.0025,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   }
 ]

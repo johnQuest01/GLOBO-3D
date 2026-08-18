@@ -2,67 +2,100 @@
   {
     "name": "Équateur",
     "key": "équateur",
-    "lat": 0.8508474739130505,
-    "lon": 20.93274658752588
+    "lat": 1.21836,
+    "lon": 20.4731,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Bandundu",
     "key": "bandundu",
-    "lat": -4.487916551517084,
-    "lon": 18.41213424656742
+    "lat": -4.61778,
+    "lon": 18.4474,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Kinshasa City",
+    "name": "Kinshasa",
     "key": "kinshasa city",
-    "lat": -4.44504759050527,
-    "lon": 15.795098491492789
+    "lat": -4.49522,
+    "lon": 15.8492,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Bas-Congo",
+    "name": "Congo Central",
     "key": "bas-congo",
-    "lat": -5.064371979196256,
-    "lon": 14.294818033289614
+    "lat": -5.31907,
+    "lon": 14.2052,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Orientale",
     "key": "orientale",
-    "lat": 2.038919282843193,
-    "lon": 26.26908268138175
+    "lat": 2.40438,
+    "lon": 26.785,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Sud-Kivu",
     "key": "sud-kivu",
-    "lat": -3.1390480233012266,
-    "lon": 28.372976607785414
+    "lat": -3.10474,
+    "lon": 28.1159,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Katanga",
     "key": "katanga",
-    "lat": -9.552041984696967,
-    "lon": 26.083143287383823
+    "lat": -8.48374,
+    "lon": 26.2512,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Nord-Kivu",
     "key": "nord-kivu",
-    "lat": -0.48652154913119605,
-    "lon": 28.68310312445438
+    "lat": -0.659128,
+    "lon": 28.5939,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Kasaï-Occidental",
+    "name": "Kasaï Ocidental",
     "key": "kasaï-occidental",
-    "lat": -5.243609996370799,
-    "lon": 21.71318400408327
+    "lat": -4.87578,
+    "lon": 21.7144,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Kasaï-Oriental",
     "key": "kasaï-oriental",
-    "lat": -4.780097862299242,
-    "lon": 23.888382972541574
+    "lat": -4.40511,
+    "lon": 24.0842,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Maniema",
     "key": "maniema",
-    "lat": -2.3326228733524124,
-    "lon": 26.383073552934977
+    "lat": -3.26017,
+    "lon": 26.0336,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   }
 ]

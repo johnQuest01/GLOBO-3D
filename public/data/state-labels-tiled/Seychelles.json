@@ -1,158 +1,236 @@
 [
   {
-    "name": "Outer Islands",
+    "name": "Ilhas Exteriores",
     "key": "outer islands",
-    "lat": -9.391351007249924,
-    "lon": 46.44149824300007
+    "lat": -9.73919,
+    "lon": 46.4946,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "La Digue and Inner Islands",
+    "name": "La Digue",
     "key": "la digue and inner islands",
-    "lat": -4.479115492399944,
-    "lon": 55.24678795660005
+    "lat": -4.35949,
+    "lon": 55.8393,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Grand'Anse",
+    "name": "Grand'Anse Praslin",
     "key": "grand'anse",
-    "lat": 18.470867666708806,
-    "lon": -74.14013569797123
+    "lat": 18.5137,
+    "lon": -74.1273,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Anse Boileau",
     "key": "anse boileau",
-    "lat": -4.713639834796278,
-    "lon": 55.49564330814927
+    "lat": -4.71357,
+    "lon": 55.4923,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Baie Lazare",
     "key": "baie lazare",
-    "lat": -4.7599813228081285,
-    "lon": 55.49853938475398
+    "lat": -4.75461,
+    "lon": 55.4918,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Takamaka",
+    "name": "Anse Takamaka",
     "key": "takamaka",
-    "lat": -4.7720084997750245,
-    "lon": 55.51359302081419
+    "lat": -4.79065,
+    "lon": 55.5173,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Anse Royale",
     "key": "anse royale",
-    "lat": -4.745666647213249,
-    "lon": 55.517428155690574
+    "lat": -4.7456,
+    "lon": 55.5118,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Au Cap",
+    "name": "Au cap",
     "key": "au cap",
-    "lat": -4.699236287807276,
-    "lon": 55.5154586350657
+    "lat": -4.70356,
+    "lon": 55.5138,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Anse aux Pins",
+    "name": "Anse-aux-Pins",
     "key": "anse aux pins",
-    "lat": -4.681555170210285,
-    "lon": 55.518731257836365
+    "lat": -4.68304,
+    "lon": 55.5208,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Pointe La Rue",
+    "name": "Point da Rua",
     "key": "pointe la rue",
-    "lat": -4.672473557259258,
-    "lon": 55.515536664861166
+    "lat": -4.67403,
+    "lon": 55.5163,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Cascade",
     "key": "cascade",
-    "lat": -4.66727625781017,
-    "lon": 55.497281271703
+    "lat": -4.66702,
+    "lon": 55.4988,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Roche Caïman",
+    "name": "Roche Caiman",
     "key": "roche caïman",
-    "lat": -4.647472904293929,
-    "lon": 55.48156192672051
+    "lat": -4.6495,
+    "lon": 55.4828,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Plaisance",
     "key": "plaisance",
-    "lat": -4.646743889525131,
-    "lon": 55.470760888143424
+    "lat": -4.65451,
+    "lon": 55.4693,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Mont Fleuri",
+    "name": "Monte Fleuri",
     "key": "mont fleuri",
-    "lat": -4.633305819249911,
-    "lon": 55.4643071529118
+    "lat": -4.63449,
+    "lon": 55.4633,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Bel Air",
     "key": "bel air",
-    "lat": -4.631108455869218,
-    "lon": 55.45488441190538
+    "lat": -4.63198,
+    "lon": 55.4483,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "English River",
+    "name": "La Riviere Anglaise",
     "key": "english river",
-    "lat": -4.608097748667581,
-    "lon": 55.45335841400928
+    "lat": -4.60746,
+    "lon": 55.4533,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Anse Etoile",
     "key": "anse etoile",
-    "lat": -4.586557837274843,
-    "lon": 55.45382864304766
+    "lat": -4.58794,
+    "lon": 55.4543,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Glacis",
     "key": "glacis",
-    "lat": -4.5830466142942825,
-    "lon": 55.4424941458045
+    "lat": -4.56942,
+    "lon": 55.4433,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Beau Vallon",
     "key": "beau vallon",
-    "lat": -4.606119428239931,
-    "lon": 55.43044138371566
+    "lat": -4.60295,
+    "lon": 55.4317,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Bel Ombre",
     "key": "bel ombre",
-    "lat": -4.622745773357666,
-    "lon": 55.401725331990306
+    "lat": -4.62448,
+    "lon": 55.4092,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Port Glaud",
     "key": "port glaud",
-    "lat": -4.649131580784914,
-    "lon": 55.43402993416209
+    "lat": -4.65351,
+    "lon": 55.4262,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Baie Sainte Anne",
+    "name": "Baie Ste. Anne",
     "key": "baie sainte anne",
-    "lat": -4.315039092337125,
-    "lon": 55.72202824946794
+    "lat": -4.32918,
+    "lon": 55.76,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Grand'Anse Praslin",
     "key": "grand'anse praslin",
-    "lat": -4.336800435661407,
-    "lon": 55.73789181200731
+    "lat": -4.34469,
+    "lon": 55.7435,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Mont Buxton",
     "key": "mont buxton",
-    "lat": -4.613847596664272,
-    "lon": 55.441292320708996
+    "lat": -4.61246,
+    "lon": 55.4428,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Saint Louis",
+    "name": "São Luís",
     "key": "saint louis",
-    "lat": -4.622781785311167,
-    "lon": 55.43679229930515
+    "lat": -4.62247,
+    "lon": 55.4388,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Les Mamelles",
     "key": "les mamelles",
-    "lat": -4.659722040180031,
-    "lon": 55.48043335669403
+    "lat": -4.65751,
+    "lon": 55.4808,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

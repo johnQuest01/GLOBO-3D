@@ -2,127 +2,190 @@
   {
     "name": "Troms",
     "key": "troms",
-    "lat": 69.32488687218311,
-    "lon": 20.356822683350053
+    "lat": 68.9053,
+    "lon": 19.0835,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Nordland",
     "key": "nordland",
-    "lat": 66.75905362569691,
-    "lon": 14.881886223030158
+    "lat": 66.7347,
+    "lon": 14.7203,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Nord-Trøndelag",
     "key": "nord-trøndelag",
-    "lat": 64.1679806786462,
-    "lon": 11.957299285489832
+    "lat": 64.2773,
+    "lon": 12.2637,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Sør-Trøndelag",
     "key": "sør-trøndelag",
-    "lat": 62.94954127308332,
-    "lon": 10.414964755295063
+    "lat": 62.9613,
+    "lon": 10.6956,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Hedmark",
     "key": "hedmark",
-    "lat": 61.40628824621512,
-    "lon": 11.322933958176904
+    "lat": 61.5285,
+    "lon": 11.2721,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Akershus",
     "key": "akershus",
-    "lat": 60.023197964771924,
-    "lon": 11.238719267819086
+    "lat": 60.1365,
+    "lon": 11.2222,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Østfold",
     "key": "østfold",
-    "lat": 59.44900889747512,
-    "lon": 11.404353713145243
+    "lat": 59.4065,
+    "lon": 11.2074,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Finnmark",
     "key": "finnmark",
-    "lat": 69.93833149216373,
-    "lon": 26.435584334033255
+    "lat": 69.5648,
+    "lon": 24.4789,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Oslo",
     "key": "oslo",
-    "lat": 59.96692012513035,
-    "lon": 10.658025787200001
+    "lat": 60.0237,
+    "lon": 10.6419,
+    "labelRank": 9,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Buskerud",
     "key": "buskerud",
-    "lat": 60.23823151401213,
-    "lon": 9.172229415829634
+    "lat": 60.4253,
+    "lon": 9.04573,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Vestfold",
     "key": "vestfold",
-    "lat": 59.42031100684879,
-    "lon": 10.108036593479573
+    "lat": 59.3146,
+    "lon": 10.1269,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Telemark",
     "key": "telemark",
-    "lat": 59.46937224462372,
-    "lon": 8.473349056556911
+    "lat": 59.5476,
+    "lon": 8.48804,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Aust-Agder",
     "key": "aust-agder",
-    "lat": 58.9723335458463,
-    "lon": 7.844441131861904
+    "lat": 58.6698,
+    "lon": 8.14878,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Vest-Agder",
     "key": "vest-agder",
-    "lat": 58.46300972783208,
-    "lon": 7.308919603113422
+    "lat": 58.4481,
+    "lon": 7.30897,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Rogaland",
     "key": "rogaland",
-    "lat": 59.158913567712254,
-    "lon": 6.163522938062222
+    "lat": 59.1585,
+    "lon": 6.41809,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Hordaland",
     "key": "hordaland",
-    "lat": 60.296568882324934,
-    "lon": 6.163673541287516
+    "lat": 60.1134,
+    "lon": 6.89657,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Sogn og Fjordane",
     "key": "sogn og fjordane",
-    "lat": 61.38288457155801,
-    "lon": 6.452063847609778
+    "lat": 61.5538,
+    "lon": 6.43282,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Møre og Romsdal",
     "key": "møre og romsdal",
-    "lat": 62.521906889772296,
-    "lon": 7.447934912541706
+    "lat": 62.5471,
+    "lon": 8.35107,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Svalbard",
     "key": "svalbard",
-    "lat": 78.46411354476194,
-    "lon": 15.916390511238173
+    "lat": 78.8124,
+    "lon": 18.069,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Bouvet Island",
+    "name": "Ilha Bouvet",
     "key": "bouvet island",
-    "lat": -54.413702081399926,
-    "lon": 3.4220320976000833
+    "lat": -54.4151,
+    "lon": 3.41677,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Oppland",
     "key": "oppland",
-    "lat": 61.360878602253486,
-    "lon": 9.485119409155349
+    "lat": 61.5731,
+    "lon": 9.24644,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   }
 ]

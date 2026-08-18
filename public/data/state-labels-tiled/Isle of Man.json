@@ -1,8 +1,11 @@
 [
   {
-    "name": "Isle of Man",
+    "name": "Ilha de Man",
     "key": "isle of man",
-    "lat": 54.187153767500064,
-    "lon": -4.576554599833277
+    "lat": 54.2274,
+    "lon": -4.53251,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

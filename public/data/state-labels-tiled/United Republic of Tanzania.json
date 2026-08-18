@@ -2,181 +2,271 @@
   {
     "name": "Mbeya",
     "key": "mbeya",
-    "lat": -8.400188030267529,
-    "lon": 33.31479483719388
+    "lat": -8.29695,
+    "lon": 33.5281,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Njombe",
+    "name": "de Njombe",
     "key": "njombe",
-    "lat": -9.464224661113201,
-    "lon": 34.77281676511424
+    "lat": -9.39902,
+    "lon": 34.8871,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Ruvuma",
     "key": "ruvuma",
-    "lat": -10.561043179955368,
-    "lon": 36.130501906846845
+    "lat": -10.7136,
+    "lon": 36.3365,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Kigoma",
     "key": "kigoma",
-    "lat": -4.761458670064265,
-    "lon": 30.44264009297888
+    "lat": -4.41836,
+    "lon": 30.4057,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Katavi",
     "key": "katavi",
-    "lat": -6.436078460626091,
-    "lon": 31.224341197165185
+    "lat": -6.4277,
+    "lon": 31.3404,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Rukwa",
     "key": "rukwa",
-    "lat": -8.130288652806144,
-    "lon": 31.522700076928867
+    "lat": -7.8958,
+    "lon": 31.3337,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Kagera",
     "key": "kagera",
-    "lat": -2.022715524049666,
-    "lon": 31.068718640386216
+    "lat": -1.77904,
+    "lon": 31.2578,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Mtwara",
     "key": "mtwara",
-    "lat": -10.715076072280324,
-    "lon": 39.21927638303088
+    "lat": -10.814,
+    "lon": 39.2212,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Mara",
     "key": "mara",
-    "lat": -1.7460959687436106,
-    "lon": 33.957202064805855
+    "lat": -1.58906,
+    "lon": 34.0227,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Arusha",
     "key": "arusha",
-    "lat": -3.1234787730357123,
-    "lon": 35.87341390867466
+    "lat": -3.02634,
+    "lon": 36.0865,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Kilimanjaro",
     "key": "kilimanjaro",
-    "lat": -3.6277190813729887,
-    "lon": 37.53332533718413
+    "lat": -4.01115,
+    "lon": 37.6511,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Tanga",
     "key": "tanga",
-    "lat": -5.383630124892515,
-    "lon": 38.05884617564479
+    "lat": -5.18525,
+    "lon": 38.1412,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Lindi",
     "key": "lindi",
-    "lat": -9.408470237902627,
-    "lon": 38.55659939632336
+    "lat": -9.44338,
+    "lon": 38.4234,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Pwani",
     "key": "pwani",
-    "lat": -7.128910226708984,
-    "lon": 38.615460124058
+    "lat": -7.86726,
+    "lon": 39.7491,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Dar-Es-Salaam",
+    "name": "Dar es Salaam",
     "key": "dar-es-salaam",
-    "lat": -6.870023777016405,
-    "lon": 39.306034823945765
+    "lat": -6.89289,
+    "lon": 39.2857,
+    "labelRank": 9,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Zanzibar South and Central",
+    "name": "Zanzibar Central/South",
     "key": "zanzibar south and central",
-    "lat": -6.211084973608288,
-    "lon": 39.42226749901399
+    "lat": -6.2741,
+    "lon": 39.4241,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kaskazini-Unguja",
+    "name": "Zanzibar North",
     "key": "kaskazini-unguja",
-    "lat": -5.969929659026729,
-    "lon": 39.2678075134641
+    "lat": -5.84474,
+    "lon": 39.2294,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Zanzibar West",
+    "name": "Zanzibar Urban/West",
     "key": "zanzibar west",
-    "lat": -6.143365247732445,
-    "lon": 39.25306152148842
+    "lat": -6.1537,
+    "lon": 39.2425,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kusini-Pemba",
+    "name": "Pemba Sul",
     "key": "kusini-pemba",
-    "lat": -5.269452915117708,
-    "lon": 39.77869544296624
+    "lat": -5.34982,
+    "lon": 39.7495,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kaskazini-Pemba",
+    "name": "Pemba Norte",
     "key": "kaskazini-pemba",
-    "lat": -5.082373396558824,
-    "lon": 39.76482503328316
+    "lat": -5.05108,
+    "lon": 39.777,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Morogoro",
     "key": "morogoro",
-    "lat": -7.892144476062115,
-    "lon": 36.929453641337076
+    "lat": -8.69673,
+    "lon": 36.922,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Dodoma",
     "key": "dodoma",
-    "lat": -5.853633691566012,
-    "lon": 35.96357388587246
+    "lat": -5.73233,
+    "lon": 35.9608,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Manyara",
     "key": "manyara",
-    "lat": -4.580529228094352,
-    "lon": 36.532549215538545
+    "lat": -4.88783,
+    "lon": 36.4591,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Singida",
     "key": "singida",
-    "lat": -5.761110333883897,
-    "lon": 34.50698781999324
+    "lat": -5.59564,
+    "lon": 34.4149,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Tabora",
     "key": "tabora",
-    "lat": -5.2012112150927505,
-    "lon": 32.782314431376236
+    "lat": -6.82145,
+    "lon": 32.6595,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Iringa",
     "key": "iringa",
-    "lat": -7.845201631001639,
-    "lon": 35.36307615980202
+    "lat": -7.83931,
+    "lon": 35.5453,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Mwanza",
     "key": "mwanza",
-    "lat": -15.710941271472507,
-    "lon": 34.52556154992558
+    "lat": -15.6394,
+    "lon": 34.5126,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Simiyu",
+    "name": "de Simiyu",
     "key": "simiyu",
-    "lat": -2.8823766629704823,
-    "lon": 34.25261064826278
+    "lat": -2.96688,
+    "lon": 34.2172,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Geita",
     "key": "geita",
-    "lat": -3.1915150598692694,
-    "lon": 31.67369477792307
+    "lat": -3.09999,
+    "lon": 31.6968,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Shinyanga",
     "key": "shinyanga",
-    "lat": -3.7847929284259134,
-    "lon": 32.95529731744222
+    "lat": -3.65098,
+    "lon": 33.2015,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   }
 ]

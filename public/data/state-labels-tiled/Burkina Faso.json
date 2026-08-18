@@ -2,271 +2,406 @@
   {
     "name": "Tapoa",
     "key": "tapoa",
-    "lat": 12.136927811264817,
-    "lon": 1.7455204803549962
+    "lat": 12.0191,
+    "lon": 1.79465,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Kompienga",
     "key": "kompienga",
-    "lat": 11.371116743310631,
-    "lon": 0.910510239293491
+    "lat": 11.4519,
+    "lon": 0.898878,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Léraba",
     "key": "léraba",
-    "lat": 10.641409369756266,
-    "lon": -5.251073112038033
+    "lat": 10.5879,
+    "lon": -5.2352,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Komoé",
+    "name": "Comoé",
     "key": "komoé",
-    "lat": 10.339672766003634,
-    "lon": -4.458363265657696
+    "lat": 10.2156,
+    "lon": -4.41757,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Poni",
     "key": "poni",
-    "lat": 10.226502288688794,
-    "lon": -3.399712529621868
+    "lat": 10.251,
+    "lon": -3.34011,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Noumbiel",
     "key": "noumbiel",
-    "lat": 9.803807737286558,
-    "lon": -2.9345165360343404
+    "lat": 10.251,
+    "lon": -3.34011,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Oudalan",
     "key": "oudalan",
-    "lat": 14.660352806376206,
-    "lon": -0.3160165045871466
+    "lat": 14.5769,
+    "lon": -0.411597,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Soum",
     "key": "soum",
-    "lat": 14.18014088284943,
-    "lon": -1.344992132645711
+    "lat": 14.2352,
+    "lon": -1.31801,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Loroum",
     "key": "loroum",
-    "lat": 13.968751235831519,
-    "lon": -2.16877470972958
+    "lat": 13.8724,
+    "lon": -2.07087,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Yatenga",
     "key": "yatenga",
-    "lat": 13.580247243474366,
-    "lon": -2.366487596187959
+    "lat": 13.6813,
+    "lon": -2.32529,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Sourou",
     "key": "sourou",
-    "lat": 13.253044447971671,
-    "lon": -2.994878924123893
+    "lat": 13.2875,
+    "lon": -2.95968,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Kossi",
     "key": "kossi",
-    "lat": 12.89530381682602,
-    "lon": -3.839792348407485
+    "lat": 12.9587,
+    "lon": -3.88894,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Banwa",
     "key": "banwa",
-    "lat": 12.305917011291887,
-    "lon": -4.199714806099019
+    "lat": 12.1648,
+    "lon": -4.10849,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Houet",
     "key": "houet",
-    "lat": 11.407291570191175,
-    "lon": -4.317956790077254
+    "lat": 11.3355,
+    "lon": -4.18998,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Kénédougou",
     "key": "kénédougou",
-    "lat": 11.405352325351833,
-    "lon": -4.994959032521711
+    "lat": 11.4128,
+    "lon": -5.02728,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Séno",
     "key": "séno",
-    "lat": 13.95288310043393,
-    "lon": -0.11400405080875231
+    "lat": 13.8673,
+    "lon": -0.07114,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Yagha",
     "key": "yagha",
-    "lat": 13.405490515467752,
-    "lon": 0.6008701554078011
+    "lat": 13.3228,
+    "lon": 0.664784,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Komondjari",
     "key": "komondjari",
-    "lat": 12.780062875820096,
-    "lon": 0.7869116140060441
+    "lat": 12.6971,
+    "lon": 0.775979,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Koulpélogo",
     "key": "koulpélogo",
-    "lat": 11.383146569840129,
-    "lon": 0.19595283481910739
+    "lat": 11.4079,
+    "lon": 0.204257,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Boulgou",
     "key": "boulgou",
-    "lat": 11.516271961179575,
-    "lon": -0.39459518468243254
+    "lat": 11.4767,
+    "lon": -0.43666,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Nahouri",
     "key": "nahouri",
-    "lat": 11.176496294046272,
-    "lon": -1.2158045197301206
+    "lat": 11.2028,
+    "lon": -1.16782,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Sissili",
     "key": "sissili",
-    "lat": 11.387893994188993,
-    "lon": -2.157221726479157
+    "lat": 11.1806,
+    "lon": -2.10887,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Ioba",
     "key": "ioba",
-    "lat": 11.05451170843207,
-    "lon": -2.956993111889644
+    "lat": 11.0116,
+    "lon": -2.96967,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Balé",
     "key": "balé",
-    "lat": 11.694591804857362,
-    "lon": -3.068167048034001
+    "lat": 11.8279,
+    "lon": -3.06879,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Sanguié",
     "key": "sanguié",
-    "lat": 12.23281272613166,
-    "lon": -2.5993842924669277
+    "lat": 12.2508,
+    "lon": -2.57298,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Tuy",
     "key": "tuy",
-    "lat": 11.42739495846055,
-    "lon": -3.458604781385557
+    "lat": 11.3659,
+    "lon": -3.40955,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Bougouriba",
     "key": "bougouriba",
-    "lat": 10.895717678328175,
-    "lon": -3.3811035738254316
+    "lat": 10.8979,
+    "lon": -3.42349,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Mou Houn",
+    "name": "Mouhoun",
     "key": "mou houn",
-    "lat": 12.201470233377057,
-    "lon": -3.353851987828982
+    "lat": 12.3486,
+    "lon": -3.38675,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Kouritenga",
     "key": "kouritenga",
-    "lat": 12.166708143406076,
-    "lon": -0.30900403494826684
+    "lat": 12.1587,
+    "lon": -0.291527,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Ganzourgou",
     "key": "ganzourgou",
-    "lat": 12.246607443784743,
-    "lon": -0.7381374016947362
+    "lat": 12.2052,
+    "lon": -0.768604,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Zoundwéogo",
     "key": "zoundwéogo",
-    "lat": 11.610372923494687,
-    "lon": -0.9230289684506068
+    "lat": 11.5711,
+    "lon": -0.940234,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Ziro",
     "key": "ziro",
-    "lat": 11.594746213317071,
-    "lon": -1.8835401405650412
+    "lat": 11.6131,
+    "lon": -1.83187,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Boulkiemdé",
     "key": "boulkiemdé",
-    "lat": 12.332132109256792,
-    "lon": -2.127966038806921
+    "lat": 12.3143,
+    "lon": -2.13572,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Kadiogo",
     "key": "kadiogo",
-    "lat": 12.308559949921733,
-    "lon": -1.4830426225589917
+    "lat": 12.3267,
+    "lon": -1.4662,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Oubritenga",
     "key": "oubritenga",
-    "lat": 12.579906128750537,
-    "lon": -1.2811252068985002
+    "lat": 12.6477,
+    "lon": -1.28565,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Gourma",
     "key": "gourma",
-    "lat": 12.131088267445573,
-    "lon": 0.5759869074817812
+    "lat": 12.0677,
+    "lon": 0.610382,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Gnagna",
     "key": "gnagna",
-    "lat": 12.901460883070419,
-    "lon": 0.018500768395732677
+    "lat": 12.9057,
+    "lon": 0.115257,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Bazéga",
     "key": "bazéga",
-    "lat": 11.977680060250858,
-    "lon": -1.4678450760608501
+    "lat": 11.9332,
+    "lon": -1.46488,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Kourwéogo",
     "key": "kourwéogo",
-    "lat": 12.58853027252327,
-    "lon": -1.8223419941877
+    "lat": 12.3933,
+    "lon": -1.8367,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Nayala",
     "key": "nayala",
-    "lat": 12.70426523249822,
-    "lon": -2.9863528862329645
+    "lat": 12.6594,
+    "lon": -3.03318,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Passoré",
     "key": "passoré",
-    "lat": 12.890238937829338,
-    "lon": -2.1751588606507988
+    "lat": 12.8734,
+    "lon": -2.10662,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Zondoma",
     "key": "zondoma",
-    "lat": 13.136506437594727,
-    "lon": -2.399413436580837
+    "lat": 13.1939,
+    "lon": -2.38127,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Namentenga",
     "key": "namentenga",
-    "lat": 13.116982883710985,
-    "lon": -0.45840386433109426
+    "lat": 13.1697,
+    "lon": -0.504021,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Sanmatenga",
     "key": "sanmatenga",
-    "lat": 13.232274946945516,
-    "lon": -1.03968983938602
+    "lat": 13.227,
+    "lon": -1.08045,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Bam",
     "key": "bam",
-    "lat": 13.410558855271647,
-    "lon": -1.5669698094326918
+    "lat": 13.4455,
+    "lon": -1.57778,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   }
 ]

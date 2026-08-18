@@ -2,505 +2,757 @@
   {
     "name": "Struga",
     "key": "struga",
-    "lat": 41.29078298857067,
-    "lon": 20.599069813540748
+    "lat": 41.1813,
+    "lon": 20.602,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Centar župa",
+    "name": "Município Central de Zupa",
     "key": "centar župa",
-    "lat": 41.42490971145913,
-    "lon": 20.559512601835266
+    "lat": 41.4644,
+    "lon": 20.5799,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Debar",
     "key": "debar",
-    "lat": 41.47550742352874,
-    "lon": 20.5983131321953
+    "lat": 41.541,
+    "lon": 20.5863,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Mavrovo and Rostusa",
+    "name": "Mavroso e Rostusa",
     "key": "mavrovo and rostusa",
-    "lat": 41.64367261558443,
-    "lon": 20.69279437620235
+    "lat": 41.6315,
+    "lon": 20.6986,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Gostivar",
     "key": "gostivar",
-    "lat": 41.773975535526134,
-    "lon": 20.78973687935653
+    "lat": 41.7855,
+    "lon": 20.8095,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Vevčani",
     "key": "vevčani",
-    "lat": 41.22906812532062,
-    "lon": 20.536753547414907
+    "lat": 41.2362,
+    "lon": 20.5689,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Ohrid",
     "key": "ohrid",
-    "lat": 41.0970939478684,
-    "lon": 20.832991578012034
+    "lat": 41.0273,
+    "lon": 20.8501,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Debarca",
     "key": "debarca",
-    "lat": 41.23442596916256,
-    "lon": 20.791664668442063
+    "lat": 41.3337,
+    "lon": 20.8594,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Resen",
     "key": "resen",
-    "lat": 40.99903572759353,
-    "lon": 21.015946833398743
+    "lat": 41.027,
+    "lon": 21.0472,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Novo Selo",
     "key": "novo selo",
-    "lat": 41.40768417999121,
-    "lon": 22.86977967876761
+    "lat": 41.4278,
+    "lon": 22.8701,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Dojran",
     "key": "dojran",
-    "lat": 41.248133344403286,
-    "lon": 22.676899551598012
+    "lat": 41.2492,
+    "lon": 22.6539,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Valandovo",
     "key": "valandovo",
-    "lat": 41.32943935714818,
-    "lon": 22.55402267024754
+    "lat": 41.2911,
+    "lon": 22.5432,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Strumitsa",
+    "name": "Strumica",
     "key": "strumitsa",
-    "lat": 41.38864151213157,
-    "lon": 22.663429264151574
+    "lat": 41.3841,
+    "lon": 22.6211,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Bogdanci",
     "key": "bogdanci",
-    "lat": 41.18650670418757,
-    "lon": 22.594402298177194
+    "lat": 41.1772,
+    "lon": 22.5841,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Gevgelija",
     "key": "gevgelija",
-    "lat": 41.21762258577461,
-    "lon": 22.41833893757473
+    "lat": 41.243,
+    "lon": 22.3973,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Kavadartsi",
+    "name": "Kavadarci",
     "key": "kavadartsi",
-    "lat": 41.31053046446494,
-    "lon": 22.035647541835004
+    "lat": 41.3234,
+    "lon": 22.0373,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Novaci",
     "key": "novaci",
-    "lat": 41.00822455836664,
-    "lon": 21.657603212118527
+    "lat": 41.0253,
+    "lon": 21.6586,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Prilep",
     "key": "prilep",
-    "lat": 41.23934356618878,
-    "lon": 21.68703107822803
+    "lat": 41.2806,
+    "lon": 21.6444,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Bitola",
     "key": "bitola",
-    "lat": 41.04383044337023,
-    "lon": 21.30775238033057
+    "lat": 41.0402,
+    "lon": 21.2925,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Lipkovo",
     "key": "lipkovo",
-    "lat": 42.1765659187776,
-    "lon": 21.535309960185565
+    "lat": 42.1401,
+    "lon": 21.579,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Čučer Sandevo",
+    "name": "Município Cucer-Sandevo",
     "key": "čučer sandevo",
-    "lat": 42.11023318761379,
-    "lon": 21.40488557037312
+    "lat": 42.1353,
+    "lon": 21.3885,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Gjorče Petrov",
     "key": "gjorče petrov",
-    "lat": 42.06138171213958,
-    "lon": 21.31303777972446
+    "lat": 42.064,
+    "lon": 21.3002,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Saraj",
     "key": "saraj",
-    "lat": 42.01493970901463,
-    "lon": 21.254046557516883
+    "lat": 41.975,
+    "lon": 21.2491,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Jegunovce",
     "key": "jegunovce",
-    "lat": 42.095256029945496,
-    "lon": 21.095205795772728
+    "lat": 42.0311,
+    "lon": 21.129,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Tearce",
     "key": "tearce",
-    "lat": 42.11195438750332,
-    "lon": 20.984969241755
+    "lat": 42.082,
+    "lon": 21.0174,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Tetovo",
+    "name": "Município Tetovo",
     "key": "tetovo",
-    "lat": 42.01843914692728,
-    "lon": 20.908031647426803
+    "lat": 42.0484,
+    "lon": 20.8947,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Bogovinje",
     "key": "bogovinje",
-    "lat": 41.917312311701515,
-    "lon": 20.831956558145976
+    "lat": 41.945,
+    "lon": 20.869,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Vrapcište",
+    "name": "Vrapčište",
     "key": "vrapcište",
-    "lat": 41.87026301885156,
-    "lon": 20.816804101500747
+    "lat": 41.8584,
+    "lon": 20.8349,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Kriva Palanka",
     "key": "kriva palanka",
-    "lat": 42.20132253627519,
-    "lon": 22.32886584455792
+    "lat": 42.2421,
+    "lon": 22.2641,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Rankovce",
     "key": "rankovce",
-    "lat": 42.24489222185349,
-    "lon": 22.109752946353353
+    "lat": 42.1895,
+    "lon": 22.1049,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Staro Nagoričane",
     "key": "staro nagoričane",
-    "lat": 42.22701795139354,
-    "lon": 21.925883049437736
+    "lat": 42.2098,
+    "lon": 21.8853,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Kumanovo",
     "key": "kumanovo",
-    "lat": 42.09822933623134,
-    "lon": 21.750141843789415
+    "lat": 42.0293,
+    "lon": 21.7923,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Delčevo",
+    "name": "Delcevo",
     "key": "delčevo",
-    "lat": 41.94505758416873,
-    "lon": 22.717138251971587
+    "lat": 41.9187,
+    "lon": 22.7429,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Makedonska Kamenica",
+    "name": "Makedonska Kamencia kommune",
     "key": "makedonska kamenica",
-    "lat": 42.06736220694264,
-    "lon": 22.530270786389007
+    "lat": 42.0394,
+    "lon": 22.5221,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Berovo",
     "key": "berovo",
-    "lat": 41.65788518746326,
-    "lon": 22.798080151873176
+    "lat": 41.6344,
+    "lon": 22.8027,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Pehčevo",
+    "name": "Pehcevo",
     "key": "pehčevo",
-    "lat": 41.802235831718235,
-    "lon": 22.87680495353574
+    "lat": 41.7917,
+    "lon": 22.8833,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Želino",
+    "name": "Zelino",
     "key": "želino",
-    "lat": 41.919508775509556,
-    "lon": 21.12064694856923
+    "lat": 41.9157,
+    "lon": 21.1277,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Brvenica",
     "key": "brvenica",
-    "lat": 41.8852842127248,
-    "lon": 21.02356907940662
+    "lat": 41.8465,
+    "lon": 21.066,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Brod",
+    "name": "Makedonski Brod",
     "key": "brod",
-    "lat": 41.65435700124957,
-    "lon": 21.206824781963096
+    "lat": 41.6303,
+    "lon": 21.2133,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Oslomej",
     "key": "oslomej",
-    "lat": 41.592263461589454,
-    "lon": 21.027481723752526
+    "lat": 41.5771,
+    "lon": 21.0347,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Sopište",
+    "name": "Sopiste",
     "key": "sopište",
-    "lat": 41.869185619633114,
-    "lon": 21.32825147871025
+    "lat": 41.8337,
+    "lon": 21.332,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Karpoš",
     "key": "karpoš",
-    "lat": 41.98029461450484,
-    "lon": 21.39230585203343
+    "lat": 41.9774,
+    "lon": 21.3888,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Šuto Orizari",
     "key": "šuto orizari",
-    "lat": 42.036103725806285,
-    "lon": 21.409861484469914
+    "lat": 42.0341,
+    "lon": 21.4069,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Butel",
     "key": "butel",
-    "lat": 42.04464971577424,
-    "lon": 21.435945163775777
+    "lat": 42.0738,
+    "lon": 21.4665,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Čair",
     "key": "čair",
-    "lat": 41.99155433516441,
-    "lon": 21.438257684194753
+    "lat": 41.9946,
+    "lon": 21.4367,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Centar",
     "key": "centar",
-    "lat": 41.97583608714568,
-    "lon": 21.433224399126697
+    "lat": 41.9752,
+    "lon": 21.4226,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Zajas",
     "key": "zajas",
-    "lat": 41.59989865419951,
-    "lon": 20.923525967199613
+    "lat": 41.6012,
+    "lon": 20.8849,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Dolneni",
     "key": "dolneni",
-    "lat": 41.471258789061835,
-    "lon": 21.388596632178814
+    "lat": 41.4684,
+    "lon": 21.4307,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Krivogaštani",
+    "name": "Krivogachtani",
     "key": "krivogaštani",
-    "lat": 41.31720445426214,
-    "lon": 21.36600369631351
+    "lat": 41.3012,
+    "lon": 21.3682,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Mogila",
     "key": "mogila",
-    "lat": 41.200711134311376,
-    "lon": 21.40120568199661
+    "lat": 41.147,
+    "lon": 21.4512,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Čaška",
+    "name": "Caska",
     "key": "čaška",
-    "lat": 41.576540045856405,
-    "lon": 21.59718338370618
+    "lat": 41.5807,
+    "lon": 21.5939,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Rosoman",
     "key": "rosoman",
-    "lat": 41.491297186715784,
-    "lon": 21.88055626835709
+    "lat": 41.477,
+    "lon": 21.8972,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Negotino",
     "key": "negotino",
-    "lat": 41.513468591302434,
-    "lon": 22.08670093876871
+    "lat": 41.3722,
+    "lon": 22.1394,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Drugovo",
     "key": "drugovo",
-    "lat": 41.45925478438077,
-    "lon": 20.89836815758939
+    "lat": 41.4293,
+    "lon": 20.9119,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Gazi Baba",
     "key": "gazi baba",
-    "lat": 41.98820685036583,
-    "lon": 21.515238342975138
+    "lat": 42.0259,
+    "lon": 21.5136,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Kruševo",
+    "name": "Krusevo",
     "key": "kruševo",
-    "lat": 41.35894580520472,
-    "lon": 21.248461631599
+    "lat": 41.3734,
+    "lon": 21.2328,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Demir Hisar",
     "key": "demir hisar",
-    "lat": 41.267924331956614,
-    "lon": 21.098795200166908
+    "lat": 41.2587,
+    "lon": 21.1238,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Aerodrom",
     "key": "aerodrom",
-    "lat": 41.959286709464045,
-    "lon": 21.47365603999422
+    "lat": 41.9517,
+    "lon": 21.4932,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Studeničani",
+    "name": "Studenicani",
     "key": "studeničani",
-    "lat": 41.83352435960149,
-    "lon": 21.462659295490077
+    "lat": 41.8317,
+    "lon": 21.4592,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Kisela Voda",
     "key": "kisela voda",
-    "lat": 41.94031715231471,
-    "lon": 21.45360558438019
+    "lat": 41.9346,
+    "lon": 21.4817,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Probištip",
+    "name": "Probistip",
     "key": "probištip",
-    "lat": 41.928452489704895,
-    "lon": 22.192091331278466
+    "lat": 41.9372,
+    "lon": 22.174,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Češinovo-Obleševo",
+    "name": "Cesinoco-Oblesevo",
     "key": "češinovo-obleševo",
-    "lat": 41.876922227718616,
-    "lon": 22.296944288907774
+    "lat": 41.8644,
+    "lon": 22.2896,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Aračinovo",
+    "name": "Aracinovo",
     "key": "aračinovo",
-    "lat": 42.02888194422633,
-    "lon": 21.571634555750144
+    "lat": 42.0185,
+    "lon": 21.5862,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Zelenikovo",
     "key": "zelenikovo",
-    "lat": 41.78885525174845,
-    "lon": 21.55013715994196
+    "lat": 41.8091,
+    "lon": 21.5518,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Kičevo",
+    "name": "Kicevo",
     "key": "kičevo",
-    "lat": 41.51892857545336,
-    "lon": 20.96247277224062
+    "lat": 41.517,
+    "lon": 20.9511,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Plasnica",
     "key": "plasnica",
-    "lat": 41.43172976307807,
-    "lon": 21.134265903328764
+    "lat": 41.4424,
+    "lon": 21.1173,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Vraneštica",
+    "name": "Vranestica",
     "key": "vraneštica",
-    "lat": 41.485909057257146,
-    "lon": 21.050960049666532
+    "lat": 41.4746,
+    "lon": 21.015,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Skopje",
     "key": "skopje",
-    "lat": 41.91150538812565,
-    "lon": 21.655427890809506
+    "lat": 41.8999,
+    "lon": 21.6898,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Lozovo",
     "key": "lozovo",
-    "lat": 41.755746161496155,
-    "lon": 21.906890577677995
+    "lat": 41.7258,
+    "lon": 21.915,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Sveti Nikole",
+    "name": "Sveki Nikole",
     "key": "sveti nikole",
-    "lat": 41.8776993119112,
-    "lon": 21.95028069411122
+    "lat": 41.8778,
+    "lon": 21.9509,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Gradsko",
+    "name": "Glarus",
     "key": "gradsko",
-    "lat": 41.60345571545175,
-    "lon": 21.91280236169675
+    "lat": 41.5864,
+    "lon": 21.9019,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Kratovo",
     "key": "kratovo",
-    "lat": 42.06595655486358,
-    "lon": 22.150475192900814
+    "lat": 42.0592,
+    "lon": 22.138,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Ilinden",
     "key": "ilinden",
-    "lat": 41.9700948351685,
-    "lon": 21.605203566311538
+    "lat": 41.9758,
+    "lon": 21.6093,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Karbinci",
     "key": "karbinci",
-    "lat": 41.791383521257465,
-    "lon": 22.32240268306235
+    "lat": 41.7659,
+    "lon": 22.2847,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Štip",
+    "name": "Stip",
     "key": "štip",
-    "lat": 41.69947311063553,
-    "lon": 22.152539666202614
+    "lat": 41.6824,
+    "lon": 22.1689,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Kočani",
+    "name": "Kocani",
     "key": "kočani",
-    "lat": 41.972257493888215,
-    "lon": 22.365332879433815
+    "lat": 41.9798,
+    "lon": 22.3869,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Zrnovci",
     "key": "zrnovci",
-    "lat": 41.82889415166375,
-    "lon": 22.397217237985114
+    "lat": 41.8224,
+    "lon": 22.4027,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Veles",
     "key": "veles",
-    "lat": 41.765863668873216,
-    "lon": 21.722293502871405
+    "lat": 41.7213,
+    "lon": 21.7157,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Demir Kapija",
     "key": "demir kapija",
-    "lat": 41.406077582664274,
-    "lon": 22.27224639905206
+    "lat": 41.3739,
+    "lon": 22.2161,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Vinica",
     "key": "vinica",
-    "lat": 41.832627773765225,
-    "lon": 22.524173313322727
+    "lat": 41.8652,
+    "lon": 22.5742,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Bosilovo",
     "key": "bosilovo",
-    "lat": 41.494733670002844,
-    "lon": 22.78094575358366
+    "lat": 41.4665,
+    "lon": 22.7665,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Radoviš",
+    "name": "Radovis",
     "key": "radoviš",
-    "lat": 41.66613184575091,
-    "lon": 22.475071474540332
+    "lat": 41.6365,
+    "lon": 22.4679,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Vasilevo",
     "key": "vasilevo",
-    "lat": 41.51950304492954,
-    "lon": 22.592192417296218
+    "lat": 41.5436,
+    "lon": 22.6159,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Konče",
+    "name": "Konce",
     "key": "konče",
-    "lat": 41.49569743515098,
-    "lon": 22.371534051068096
+    "lat": 41.5123,
+    "lon": 22.384,
+    "labelRank": 10,
+    "minLabel": 10,
+    "maxLabel": 11
   }
 ]

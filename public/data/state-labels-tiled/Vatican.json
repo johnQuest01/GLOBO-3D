@@ -1,8 +1,11 @@
 [
   {
-    "name": "Vatican",
+    "name": "Vaticano",
     "key": "vatican",
-    "lat": 41.90349190280007,
-    "lon": 12.453358905600117
+    "lat": 41.9034,
+    "lon": 12.4534,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

@@ -2,73 +2,109 @@
   {
     "name": "Likouala",
     "key": "likouala",
-    "lat": 1.790185109195311,
-    "lon": 17.424656828185086
+    "lat": 1.45488,
+    "lon": 17.5344,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Cuvette",
     "key": "cuvette",
-    "lat": -0.7313150036718771,
-    "lon": 15.786967492987541
+    "lat": -0.393114,
+    "lon": 15.9548,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Plateaux",
     "key": "plateaux",
-    "lat": -2.16342280465689,
-    "lon": 15.266755448461064
+    "lat": -2.04221,
+    "lon": 15.3777,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Pool",
     "key": "pool",
-    "lat": -3.6856169925038045,
-    "lon": 14.883539975685729
+    "lat": -3.71115,
+    "lon": 15.0436,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Brazzaville",
+    "name": "Brazavile",
     "key": "brazzaville",
-    "lat": -3.92517341874699,
-    "lon": 15.436577733680592
+    "lat": -4.06879,
+    "lon": 15.3319,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Bouenza",
     "key": "bouenza",
-    "lat": -4.019270236328697,
-    "lon": 13.588553109068398
+    "lat": -4.36333,
+    "lon": 13.491,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Niari",
     "key": "niari",
-    "lat": -3.285318881402848,
-    "lon": 12.549624913763708
+    "lat": -2.97914,
+    "lon": 12.3646,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Kouilou",
     "key": "kouilou",
-    "lat": -4.275019671558214,
-    "lon": 11.986077370718329
+    "lat": -4.3684,
+    "lon": 11.9549,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Sangha",
     "key": "sangha",
-    "lat": 1.5074143799621604,
-    "lon": 15.289619216218417
+    "lat": 1.12682,
+    "lon": 15.7466,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Cuvette-Ouest",
     "key": "cuvette-ouest",
-    "lat": 0.1585736250015728,
-    "lon": 14.626832242465804
+    "lat": 0.0348606,
+    "lon": 14.558,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Lékoumou",
     "key": "lékoumou",
-    "lat": -3.0542688407889926,
-    "lon": 13.477347105149912
+    "lat": -3.2378,
+    "lon": 13.4727,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Pointe Noire",
+    "name": "Pointe-Noire",
     "key": "pointe noire",
-    "lat": -4.798449089878882,
-    "lon": 11.878098093667003
+    "lat": -4.80537,
+    "lon": 11.859,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   }
 ]

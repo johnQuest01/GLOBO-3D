@@ -1,68 +1,101 @@
 [
   {
-    "name": "Kangwŏn-do",
+    "name": "Kangwon",
     "key": "kangwŏn-do",
-    "lat": 38.74474410876271,
-    "lon": 127.38891707090166
+    "lat": 38.7273,
+    "lon": 127.521,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Hwanghae-bukto",
+    "name": "Hwanghae Norte",
     "key": "hwanghae-bukto",
-    "lat": 38.590779466829645,
-    "lon": 126.38422874791671
+    "lat": 38.5962,
+    "lon": 126.297,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Hamgyŏng-bukto",
+    "name": "Hamgyong Norte",
     "key": "hamgyŏng-bukto",
-    "lat": 41.892524190310134,
-    "lon": 129.57884290963148
+    "lat": 41.8666,
+    "lon": 129.417,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Rasŏn",
+    "name": "Rason",
     "key": "rasŏn",
-    "lat": 42.41116337843724,
-    "lon": 130.44892463143293
+    "lat": 42.3414,
+    "lon": 130.373,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Ryanggang",
     "key": "ryanggang",
-    "lat": 41.368434068546804,
-    "lon": 128.1069762730096
+    "lat": 40.9611,
+    "lon": 127.875,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Chagang-do",
+    "name": "Chagang",
     "key": "chagang-do",
-    "lat": 40.7656853800599,
-    "lon": 126.39450584538652
+    "lat": 40.6548,
+    "lon": 126.404,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "P'yŏngan-bukto",
+    "name": "Pyongan Norte",
     "key": "p'yŏngan-bukto",
-    "lat": 40.02774324133951,
-    "lon": 125.44761801584328
+    "lat": 39.5177,
+    "lon": 124.698,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "P'yŏngan-namdo",
+    "name": "Pyongan Sul",
     "key": "p'yŏngan-namdo",
-    "lat": 39.41026218240425,
-    "lon": 126.22286513820072
+    "lat": 39.5005,
+    "lon": 126.158,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Hwanghae-namdo",
+    "name": "Hwanghae Sul",
     "key": "hwanghae-namdo",
-    "lat": 38.1420097209475,
-    "lon": 125.62236967478137
+    "lat": 37.7337,
+    "lon": 125.279,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Hamgyŏng-namdo",
+    "name": "Hamgyong Sul",
     "key": "hamgyŏng-namdo",
-    "lat": 40.264901146526526,
-    "lon": 127.80824809343922
+    "lat": 40.234,
+    "lon": 127.922,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "P'yŏngyang",
+    "name": "Pyongyang",
     "key": "p'yŏngyang",
-    "lat": 38.975556091878566,
-    "lon": 126.01089675057686
+    "lat": 38.9808,
+    "lon": 125.955,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   }
 ]

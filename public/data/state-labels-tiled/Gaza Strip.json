@@ -1,8 +1,11 @@
 [
   {
-    "name": "Gaza Strip",
+    "name": "Faixa de Gaza",
     "key": "gaza strip",
-    "lat": 31.437439509847394,
-    "lon": 34.38906644539151
+    "lat": 31.4263,
+    "lon": 34.3654,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

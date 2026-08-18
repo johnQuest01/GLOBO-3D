@@ -1,8 +1,11 @@
 [
   {
-    "name": "Heard Island and McDonald Islands",
+    "name": "Ilha Heard e Ilhas McDonald",
     "key": "heard island and mcdonald islands",
-    "lat": -53.09117603959993,
-    "lon": 73.56734459740008
+    "lat": -53.1036,
+    "lon": 73.5247,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

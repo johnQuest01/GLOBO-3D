@@ -2,25 +2,37 @@
   {
     "name": "Rota",
     "key": "rota",
-    "lat": 14.15508657425005,
-    "lon": 145.18803958425005
+    "lat": 14.1465,
+    "lon": 145.205,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Tinian",
     "key": "tinian",
-    "lat": 15.014504299000066,
-    "lon": 145.62947024820002
+    "lat": 14.9995,
+    "lon": 145.622,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Saipan",
+    "name": "Saipã",
     "key": "saipan",
-    "lat": 15.218603827000052,
-    "lon": 145.75318444100006
+    "lat": 15.1921,
+    "lon": 145.744,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Northern Islands",
+    "name": "Ilhas Marianas do Norte",
     "key": "northern islands",
-    "lat": 18.142427457250065,
-    "lon": 145.77934287350004
+    "lat": 16.3573,
+    "lon": 145.674,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

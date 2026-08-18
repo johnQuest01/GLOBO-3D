@@ -1,50 +1,74 @@
 [
   {
-    "name": "Northern Areas",
+    "name": "Gilgit-Baltistão",
     "key": "northern areas",
-    "lat": 35.81540174512305,
-    "lon": 74.89029672996564
+    "lat": 35.7864,
+    "lon": 74.9848,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 10.5
   },
   {
-    "name": "K.P.",
+    "name": "Khyber Pakhtunkhwa",
     "key": "k.p.",
-    "lat": 34.27724626740509,
-    "lon": 71.97974004632232
+    "lat": 34.9407,
+    "lon": 72.6402,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 10.5
   },
   {
-    "name": "F.A.T.A.",
+    "name": "Território Federal das Áreas Tribais",
     "key": "f.a.t.a.",
-    "lat": 33.270994497559016,
-    "lon": 70.56379087966228
+    "lat": 32.6148,
+    "lon": 69.8985,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 10.5
   },
   {
-    "name": "Baluchistan",
+    "name": "Baluchistão",
     "key": "baluchistan",
-    "lat": 28.320520473072648,
-    "lon": 65.80137043784781
+    "lat": 27.5194,
+    "lon": 65.5512,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 10.5
   },
   {
     "name": "Punjab",
     "key": "punjab",
-    "lat": 31.154740112847083,
-    "lon": 72.1296987515127
+    "lat": 31.3589,
+    "lon": 72.3449,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 10.5
   },
   {
     "name": "Sind",
     "key": "sind",
-    "lat": 25.907484391215117,
-    "lon": 68.93824098661837
+    "lat": 26.3734,
+    "lon": 68.8685,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 10.5
   },
   {
-    "name": "Azad Kashmir",
+    "name": "Caxemira Livre",
     "key": "azad kashmir",
-    "lat": 34.129440809268,
-    "lon": 74.14246107271582
+    "lat": 33.868,
+    "lon": 73.8036,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 10.5
   },
   {
-    "name": "F.C.T.",
+    "name": "Território da Capital Islamabad",
     "key": "f.c.t.",
-    "lat": 33.688533148585904,
-    "lon": 73.09684093622019
+    "lat": 33.7011,
+    "lon": 73.0628,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 10.5
   }
 ]

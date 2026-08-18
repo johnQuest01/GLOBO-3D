@@ -1,50 +1,74 @@
 [
   {
-    "name": "Žilinský",
+    "name": "Žilina",
     "key": "žilinský",
-    "lat": 49.24651899865787,
-    "lon": 19.193823995801807
+    "lat": 49.1656,
+    "lon": 19.2076,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Prešov",
     "key": "prešov",
-    "lat": 49.11465628897906,
-    "lon": 21.057220829566713
+    "lat": 49.1426,
+    "lon": 21.2037,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Košický",
+    "name": "Košice",
     "key": "košický",
-    "lat": 48.73024952283376,
-    "lon": 21.312156530810885
+    "lat": 48.6623,
+    "lon": 21.2753,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Bratislavský",
+    "name": "Bratislava",
     "key": "bratislavský",
-    "lat": 48.23389372707883,
-    "lon": 17.205814116733443
+    "lat": 48.2935,
+    "lon": 17.1882,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Trnavský",
+    "name": "Trnava",
     "key": "trnavský",
-    "lat": 48.40416242825898,
-    "lon": 17.489143825857166
+    "lat": 48.3422,
+    "lon": 17.6989,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Trenciansky",
+    "name": "Trenčín",
     "key": "trenciansky",
-    "lat": 48.859776381621515,
-    "lon": 18.158745817093312
+    "lat": 48.8824,
+    "lon": 18.0952,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Banskobystrický",
+    "name": "Banská Bystrica",
     "key": "banskobystrický",
-    "lat": 48.47318459226018,
-    "lon": 19.489446059122855
+    "lat": 48.5213,
+    "lon": 19.477,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Nitriansky",
+    "name": "Nitra",
     "key": "nitriansky",
-    "lat": 48.17918850202554,
-    "lon": 18.37207263079833
+    "lat": 48.1443,
+    "lon": 18.3966,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   }
 ]

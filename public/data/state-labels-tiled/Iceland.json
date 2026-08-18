@@ -2,55 +2,82 @@
   {
     "name": "Austurland",
     "key": "austurland",
-    "lat": 64.97818628358989,
-    "lon": -15.313144602199479
+    "lat": 65.4363,
+    "lon": -15.2246,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Suðurland",
     "key": "suðurland",
-    "lat": 64.09882005109338,
-    "lon": -19.526184280474105
+    "lat": 64.0187,
+    "lon": -18.5336,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Suðurnes",
     "key": "suðurnes",
-    "lat": 63.92270984133732,
-    "lon": -22.16383231328618
+    "lat": 63.9429,
+    "lon": -22.1206,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Reykjavík",
     "key": "reykjavík",
-    "lat": 64.12506450476165,
-    "lon": -21.86897793327851
+    "lat": 64.0828,
+    "lon": -21.8646,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Höfuðborgarsvæði",
     "key": "höfuðborgarsvæði",
-    "lat": 64.20978968759209,
-    "lon": -21.618581318088204
+    "lat": 64.2277,
+    "lon": -21.536,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Vesturland",
     "key": "vesturland",
-    "lat": 64.83618342668312,
-    "lon": -21.86957311903284
+    "lat": 64.8183,
+    "lon": -21.357,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Vestfirðir",
     "key": "vestfirðir",
-    "lat": 65.74987033452791,
-    "lon": -22.324148575178423
+    "lat": 65.7068,
+    "lon": -22.1562,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Norðurland vestra",
+    "name": "Norðurland Vestra",
     "key": "norðurland vestra",
-    "lat": 65.48225108314095,
-    "lon": -19.81778233766791
+    "lat": 65.1515,
+    "lon": -19.7011,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Norðurland eystra",
+    "name": "Norðurland Eystra",
     "key": "norðurland eystra",
-    "lat": 65.78097124799345,
-    "lon": -16.96560322308867
+    "lat": 65.3752,
+    "lon": -17.1782,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 11
   }
 ]

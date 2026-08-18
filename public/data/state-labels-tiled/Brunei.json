@@ -2,25 +2,37 @@
   {
     "name": "Temburong",
     "key": "temburong",
-    "lat": 4.633414401000078,
-    "lon": 115.16751673125007
+    "lat": 4.60249,
+    "lon": 115.191,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Brunei and Muara",
+    "name": "Brunei e Muara",
     "key": "brunei and muara",
-    "lat": 4.892313579800063,
-    "lon": 114.90491317320004
+    "lat": 4.90214,
+    "lon": 114.92,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Tutong",
     "key": "tutong",
-    "lat": 4.602996329085228,
-    "lon": 114.70977342870017
+    "lat": 4.64496,
+    "lon": 114.671,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Belait",
     "key": "belait",
-    "lat": 4.410023935690618,
-    "lon": 114.40458404853648
+    "lat": 4.45555,
+    "lon": 114.408,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   }
 ]

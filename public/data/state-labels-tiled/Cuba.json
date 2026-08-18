@@ -2,97 +2,145 @@
   {
     "name": "Guantánamo",
     "key": "guantánamo",
-    "lat": 20.153329532536766,
-    "lon": -74.9430890273015
+    "lat": 20.2358,
+    "lon": -74.8112,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Camagüey",
     "key": "camagüey",
-    "lat": 21.384442028800866,
-    "lon": -77.81346574827948
+    "lat": 21.3675,
+    "lon": -77.9304,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Ciego de Ávila",
     "key": "ciego de ávila",
-    "lat": 21.979494511436567,
-    "lon": -78.69904599435408
+    "lat": 21.9626,
+    "lon": -78.6388,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Holguín",
     "key": "holguín",
-    "lat": 20.740635064142175,
-    "lon": -75.72598007383752
+    "lat": 20.808,
+    "lon": -76.1892,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Isla de la Juventud",
+    "name": "Ilha da Juventude",
     "key": "isla de la juventud",
-    "lat": 21.65676956211117,
-    "lon": -82.81857029688882
+    "lat": 21.6754,
+    "lon": -82.8148,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Sancti Spíritus",
     "key": "sancti spíritus",
-    "lat": 21.98330332852459,
-    "lon": -79.45753052016842
+    "lat": 21.9618,
+    "lon": -79.3804,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Villa Clara",
     "key": "villa clara",
-    "lat": 22.54739214687996,
-    "lon": -80.12835303378478
+    "lat": 22.601,
+    "lon": -79.9527,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Matanzas",
     "key": "matanzas",
-    "lat": 22.601144068605638,
-    "lon": -81.23182321887907
+    "lat": 22.6152,
+    "lon": -81.186,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Las Tunas",
     "key": "las tunas",
-    "lat": 21.03367743352441,
-    "lon": -77.05295604217183
+    "lat": 21.0299,
+    "lon": -77.0723,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Mayabeque",
     "key": "mayabeque",
-    "lat": 22.87951132573166,
-    "lon": -82.03262518041942
+    "lat": 22.8761,
+    "lon": -82.0296,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ciudad de la Habana",
+    "name": "Havana",
     "key": "ciudad de la habana",
-    "lat": 23.06868040324154,
-    "lon": -82.37836695419675
+    "lat": 23.0737,
+    "lon": -82.3075,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Artemisa",
     "key": "artemisa",
-    "lat": 22.864150498176762,
-    "lon": -82.72076605670313
+    "lat": 22.8546,
+    "lon": -82.6903,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Pinar del Río",
     "key": "pinar del río",
-    "lat": 22.40899015833647,
-    "lon": -83.68008279889595
+    "lat": 22.4952,
+    "lon": -83.674,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Cienfuegos",
     "key": "cienfuegos",
-    "lat": 22.185526255757924,
-    "lon": -80.4145754195205
+    "lat": 22.3253,
+    "lon": -80.4831,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Granma",
     "key": "granma",
-    "lat": 20.277089520236572,
-    "lon": -77.00058629328277
+    "lat": 20.3212,
+    "lon": -76.8386,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Santiago de Cuba",
     "key": "santiago de cuba",
-    "lat": 20.13711338854586,
-    "lon": -75.99709757604379
+    "lat": 20.1959,
+    "lon": -76.2117,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   }
 ]

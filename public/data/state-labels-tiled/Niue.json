@@ -1,8 +1,11 @@
 [
   {
-    "name": "Niue",
+    "name": "Niuê",
     "key": "niue",
-    "lat": -19.04148528459991,
-    "lon": -169.86917883999993
+    "lat": -19.0467,
+    "lon": -169.866,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

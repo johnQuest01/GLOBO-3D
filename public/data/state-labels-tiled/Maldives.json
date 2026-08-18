@@ -2,127 +2,190 @@
   {
     "name": "Addu",
     "key": "addu",
-    "lat": -0.6124976539999352,
-    "lon": 73.10253339920007
+    "lat": -0.624137,
+    "lon": 73.1092,
+    "labelRank": 20,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Gnaviyani",
+    "name": "Gnaviyani Atoll",
     "key": "gnaviyani",
-    "lat": -0.28840504349993523,
-    "lon": 73.43710371200007
+    "lat": -0.28897,
+    "lon": 73.4348,
+    "labelRank": 20,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Gaafu Dhaalu",
+    "name": "Gaafu Dhaalu Atoll",
     "key": "gaafu dhaalu",
-    "lat": 0.223008531000076,
-    "lon": 73.09854170000004
+    "lat": 0.22176,
+    "lon": 73.106,
+    "labelRank": 20,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Gaafu Alifu",
+    "name": "Gaafu Alif Atoll",
     "key": "gaafu alifu",
-    "lat": 0.38596222500007116,
-    "lon": 73.51050865975006
+    "lat": 0.764412,
+    "lon": 73.3741,
+    "labelRank": 20,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Alifu Dhaalu",
+    "name": "Alif Dhaal Atoll",
     "key": "alifu dhaalu",
-    "lat": 3.549424546500063,
-    "lon": 72.92212975375004
+    "lat": 3.77293,
+    "lon": 72.9528,
+    "labelRank": 20,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Kaafu",
+    "name": "Kaafu Atoll",
     "key": "kaafu",
-    "lat": 3.9390831565000752,
-    "lon": 73.47346032000006
+    "lat": 4.35708,
+    "lon": 73.6135,
+    "labelRank": 20,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Alifu Alifu",
+    "name": "Alif Alif Atoll",
     "key": "alifu alifu",
-    "lat": 4.432572739750057,
-    "lon": 72.95337975350003
+    "lat": 4.26451,
+    "lon": 72.9528,
+    "labelRank": 20,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Baa",
+    "name": "Baa Atoll",
     "key": "baa",
-    "lat": 4.891270249200057,
-    "lon": 72.97421308680006
+    "lat": 4.88218,
+    "lon": 72.9751,
+    "labelRank": 20,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Lhaviyani",
+    "name": "Lhaviyani Atoll",
     "key": "lhaviyani",
-    "lat": 5.407896226000071,
-    "lon": 73.63122806100004
+    "lat": 5.2748,
+    "lon": 73.5816,
+    "labelRank": 20,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Raa",
+    "name": "Raa Atoll",
     "key": "raa",
-    "lat": 5.964585679500061,
-    "lon": 72.92982018325003
+    "lat": 5.80628,
+    "lon": 72.9751,
+    "labelRank": 20,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Shaviyani",
+    "name": "Shaviyani Atoll",
     "key": "shaviyani",
-    "lat": 6.235785223250048,
-    "lon": 73.24091637475006
+    "lat": 6.28509,
+    "lon": 73.2145,
+    "labelRank": 20,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Laamu",
+    "name": "Atol Laamu",
     "key": "laamu",
-    "lat": 1.915866061166734,
-    "lon": 73.54855390716672
+    "lat": 1.83216,
+    "lon": 73.5114,
+    "labelRank": 20,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Thaa",
     "key": "thaa",
-    "lat": 2.419973048800057,
-    "lon": 73.35823001400006
+    "lat": 2.19286,
+    "lon": 73.1252,
+    "labelRank": 20,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Dhaalu",
+    "name": "Dhaalu Atoll",
     "key": "dhaalu",
-    "lat": 2.7416751162500645,
-    "lon": 73.02621504000005
+    "lat": 2.67806,
+    "lon": 72.9017,
+    "labelRank": 20,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Meemu",
+    "name": "Meemu Atoll",
     "key": "meemu",
-    "lat": 2.7825218770000673,
-    "lon": 73.39507897220005
+    "lat": 2.94938,
+    "lon": 73.5688,
+    "labelRank": 20,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Faafu",
+    "name": "Faafu Atoll",
     "key": "faafu",
-    "lat": 3.1073977725000645,
-    "lon": 72.97816002675006
+    "lat": 3.30689,
+    "lon": 72.8315,
+    "labelRank": 20,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Vaavu",
+    "name": "Vaavu Atoll",
     "key": "vaavu",
-    "lat": 3.449214992500046,
-    "lon": 73.74919681100006
+    "lat": 3.49522,
+    "lon": 73.5082,
+    "labelRank": 20,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Malé",
     "key": "malé",
-    "lat": 4.213922737200656,
-    "lon": 73.53564587062807
+    "lat": 4.17219,
+    "lon": 73.5188,
+    "labelRank": 20,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Noonu",
+    "name": "Noonu Atoll",
     "key": "noonu",
-    "lat": 5.728023585750051,
-    "lon": 73.38723798925007
+    "lat": 5.78713,
+    "lon": 73.3837,
+    "labelRank": 20,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Haa Dhaalu",
+    "name": "Haa Dhaalu Atoll",
     "key": "haa dhaalu",
-    "lat": 6.766026108600056,
-    "lon": 73.15326582120005
+    "lat": 6.62205,
+    "lon": 73.0473,
+    "labelRank": 20,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Haa Alifu",
+    "name": "Haa Alif Atoll",
     "key": "haa alifu",
-    "lat": 6.906642970600069,
-    "lon": 73.20855553460005
+    "lat": 7.02774,
+    "lon": 72.9797,
+    "labelRank": 20,
+    "minLabel": 10,
+    "maxLabel": 11
   }
 ]

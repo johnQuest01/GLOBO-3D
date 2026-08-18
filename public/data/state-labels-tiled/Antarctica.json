@@ -1,14 +1,20 @@
 [
   {
-    "name": "Antarctica",
+    "name": "Antártida",
     "key": "antarctica",
-    "lat": -78.62827077501336,
-    "lon": 1.5936242714786895
+    "lat": -81.6905,
+    "lon": 0.238256,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "",
     "key": "",
-    "lat": -70.85554371549992,
-    "lon": -2.7388250397499334
+    "lat": -83.0384,
+    "lon": -170.343,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

@@ -2,85 +2,127 @@
   {
     "name": "Saint Paul Charlestown",
     "key": "saint paul charlestown",
-    "lat": 17.13571155412186,
-    "lon": -62.612031737793785
+    "lat": 17.135,
+    "lon": -62.6162,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint John Figtree",
     "key": "saint john figtree",
-    "lat": 17.118722153271968,
-    "lon": -62.58291896485771
+    "lat": 17.1162,
+    "lon": -62.5949,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint George Gingerland",
     "key": "saint george gingerland",
-    "lat": 17.13070366844887,
-    "lon": -62.55456901549046
+    "lat": 17.1301,
+    "lon": -62.5571,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint James Windward",
     "key": "saint james windward",
-    "lat": 17.16553704597908,
-    "lon": -62.5851686505504
+    "lat": 17.1782,
+    "lon": -62.5718,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint Thomas Lowland",
     "key": "saint thomas lowland",
-    "lat": 17.1540029491314,
-    "lon": -62.610978641343834
+    "lat": 17.1597,
+    "lon": -62.6064,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Saint Paul Capesterre",
+    "name": "Saint Paul Capisterre",
     "key": "saint paul capesterre",
-    "lat": 17.38441640660255,
-    "lon": -62.835807073989116
+    "lat": 17.3911,
+    "lon": -62.8337,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint Anne Sandy Point",
     "key": "saint anne sandy point",
-    "lat": 17.351857450335565,
-    "lon": -62.8318707372919
+    "lat": 17.3574,
+    "lon": -62.8369,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint Thomas Middle Island",
     "key": "saint thomas middle island",
-    "lat": 17.328962134235866,
-    "lon": -62.78740254145481
+    "lat": 17.3279,
+    "lon": -62.7943,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Trinity Palmetto Point",
     "key": "trinity palmetto point",
-    "lat": 17.31322326320164,
-    "lon": -62.74164565744032
+    "lat": 17.3074,
+    "lon": -62.7483,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint George Basseterre",
     "key": "saint george basseterre",
-    "lat": 17.302300292499165,
-    "lon": -62.70511167851756
+    "lat": 17.2836,
+    "lon": -62.6868,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint Peter Basseterre",
     "key": "saint peter basseterre",
-    "lat": 17.32634000798858,
-    "lon": -62.712161111206534
+    "lat": 17.3221,
+    "lon": -62.7065,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint Mary Cayon",
     "key": "saint mary cayon",
-    "lat": 17.346450152905017,
-    "lon": -62.72962513691632
+    "lat": 17.3459,
+    "lon": -62.7286,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Christ Church Nichola Town",
     "key": "christ church nichola town",
-    "lat": 17.358420139535543,
-    "lon": -62.759438060951815
+    "lat": 17.364,
+    "lon": -62.7582,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Saint John Capesterre",
+    "name": "Saint John Capisterre",
     "key": "saint john capesterre",
-    "lat": 17.38475191207888,
-    "lon": -62.80184468614617
+    "lat": 17.382,
+    "lon": -62.7967,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

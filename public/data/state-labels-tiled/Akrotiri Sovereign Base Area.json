@@ -1,8 +1,11 @@
 [
   {
-    "name": "Akrotiri",
+    "name": "Acrotíri",
     "key": "akrotiri",
-    "lat": 34.65575559450008,
-    "lon": 32.90605863764624
+    "lat": 34.6003,
+    "lon": 32.9713,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

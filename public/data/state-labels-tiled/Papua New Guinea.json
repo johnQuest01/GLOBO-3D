@@ -2,121 +2,181 @@
   {
     "name": "Sandaun",
     "key": "sandaun",
-    "lat": -3.929217491811464,
-    "lon": 141.9702441364022
+    "lat": -3.45778,
+    "lon": 141.741,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Western",
+    "name": "Ocidental",
     "key": "western",
-    "lat": -2.1421606680643306,
-    "lon": 29.29291803490095
+    "lat": -2.13156,
+    "lon": 29.2644,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "East Sepik",
     "key": "east sepik",
-    "lat": -4.196372983205148,
-    "lon": 143.02904689339735
+    "lat": -4.25081,
+    "lon": 143.391,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Madang",
     "key": "madang",
-    "lat": -5.193370970568302,
-    "lon": 145.25472812453202
+    "lat": -5.08973,
+    "lon": 145.086,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Morobe",
     "key": "morobe",
-    "lat": -6.932456585706632,
-    "lon": 146.98977779448455
+    "lat": -6.3992,
+    "lon": 146.83,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Northern",
+    "name": "Oro",
     "key": "northern",
-    "lat": 9.115785759791477,
-    "lon": -11.868718148726737
+    "lat": 9.14067,
+    "lon": -11.9468,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Milne Bay",
     "key": "milne bay",
-    "lat": -10.095909621198919,
-    "lon": 149.91807527868968
+    "lat": -11.581,
+    "lon": 153.487,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Central",
     "key": "central",
-    "lat": -21.53938210084973,
-    "lon": 26.99743649044483
+    "lat": -21.8775,
+    "lon": 26.6144,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "National Capital District",
+    "name": "Port Moresby",
     "key": "national capital district",
-    "lat": -9.476315528246827,
-    "lon": 147.2115897322495
+    "lat": -9.4476,
+    "lon": 147.174,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Gulf",
     "key": "gulf",
-    "lat": -7.701708796038395,
-    "lon": 145.2010033953868
+    "lat": -7.21915,
+    "lon": 144.812,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "North Solomons",
+    "name": "Bougainville",
     "key": "north solomons",
-    "lat": -6.280275160799931,
-    "lon": 155.34318688235004
+    "lat": -5.23625,
+    "lon": 154.632,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "West New Britain",
+    "name": "Nova Bretanha Ocidental",
     "key": "west new britain",
-    "lat": -5.683270316524591,
-    "lon": 149.9961059810995
+    "lat": -5.91003,
+    "lon": 149.813,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "East New Britain",
+    "name": "Nova Bretanha Oriental",
     "key": "east new britain",
-    "lat": -5.109172147470005,
-    "lon": 151.64235541729218
+    "lat": -5.65441,
+    "lon": 151.507,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "New Ireland",
+    "name": "Nova Irlanda",
     "key": "new ireland",
-    "lat": -3.6628360837240694,
-    "lon": 152.189848189207
+    "lat": -2.51821,
+    "lon": 150.25,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Manus",
     "key": "manus",
-    "lat": -2.0589820292999264,
-    "lon": 147.07317955830007
+    "lat": -2.30166,
+    "lon": 147.806,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Chimbu",
+    "name": "Simbu",
     "key": "chimbu",
-    "lat": -6.290793999618396,
-    "lon": 144.95965347707624
+    "lat": -6.27374,
+    "lon": 144.894,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Enga",
     "key": "enga",
-    "lat": -5.430517698589178,
-    "lon": 143.6020703217504
+    "lat": -5.48883,
+    "lon": 143.505,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Western Highlands",
     "key": "western highlands",
-    "lat": -5.813093715673032,
-    "lon": 144.45295298736104
+    "lat": -5.77031,
+    "lon": 144.404,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Southern Highlands",
     "key": "southern highlands",
-    "lat": -5.867606933135204,
-    "lon": 143.0594061361668
+    "lat": -6.38625,
+    "lon": 143.446,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Eastern Highlands",
     "key": "eastern highlands",
-    "lat": -6.3849329564644615,
-    "lon": 145.5187894827221
+    "lat": -6.4841,
+    "lon": 145.557,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   }
 ]

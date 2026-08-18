@@ -2,409 +2,613 @@
   {
     "name": "Kalkara",
     "key": "kalkara",
-    "lat": 35.890779296362886,
-    "lon": 14.531109152077953
+    "lat": 35.8871,
+    "lon": 14.5351,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Valletta",
+    "name": "Valeta",
     "key": "valletta",
-    "lat": 35.89599019569175,
-    "lon": 14.513379523688142
+    "lat": 35.8948,
+    "lon": 14.511,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Sliema",
     "key": "sliema",
-    "lat": 35.91107218547205,
-    "lon": 14.506954371248375
+    "lat": 35.9083,
+    "lon": 14.4992,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "San Giljan",
+    "name": "St. Julian's",
     "key": "san giljan",
-    "lat": 35.91843076438954,
-    "lon": 14.49440542432751
+    "lat": 35.9126,
+    "lon": 14.4897,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Pembroke",
     "key": "pembroke",
-    "lat": 32.293982382778104,
-    "lon": -64.78727044390327
+    "lat": 32.2995,
+    "lon": -64.7997,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Naxxar",
     "key": "naxxar",
-    "lat": 35.930357297890104,
-    "lon": 14.446393016543816
+    "lat": 35.9289,
+    "lon": 14.4379,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "San Pawl il-Bahar",
+    "name": "St. Paul's Bay",
     "key": "san pawl il-bahar",
-    "lat": 35.94384628300608,
-    "lon": 14.408785846792659
+    "lat": 35.9405,
+    "lon": 14.4042,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Mellieħa",
     "key": "mellieħa",
-    "lat": 35.93882139793318,
-    "lon": 14.365332847649832
+    "lat": 35.9558,
+    "lon": 14.3578,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Mġarr",
     "key": "mġarr",
-    "lat": 35.91261568292408,
-    "lon": 14.367905705163812
+    "lat": 35.9148,
+    "lon": 14.3658,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Rabat",
     "key": "rabat",
-    "lat": 35.88082736118062,
-    "lon": 14.393136841192932
+    "lat": 35.8833,
+    "lon": 14.3774,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Dingli",
     "key": "dingli",
-    "lat": 35.8509334532579,
-    "lon": 14.385442296463175
+    "lat": 35.859,
+    "lon": 14.3868,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Siġġiewi",
     "key": "siġġiewi",
-    "lat": 35.84646005249621,
-    "lon": 14.433655992636536
+    "lat": 35.8474,
+    "lon": 14.4252,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Qrendi",
     "key": "qrendi",
-    "lat": 35.82643348295777,
-    "lon": 14.450719127556798
+    "lat": 35.8312,
+    "lon": 14.4531,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Żurrieq",
     "key": "żurrieq",
-    "lat": 35.8255601925557,
-    "lon": 14.486106850847326
+    "lat": 35.823,
+    "lon": 14.4822,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Birżebbuġa",
     "key": "birżebbuġa",
-    "lat": 35.827408651530504,
-    "lon": 14.522463608632142
+    "lat": 35.8281,
+    "lon": 14.5236,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Marsaxlokk",
     "key": "marsaxlokk",
-    "lat": 35.84042987951447,
-    "lon": 14.545009704722288
+    "lat": 35.8393,
+    "lon": 14.5457,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Marsaskala",
     "key": "marsaskala",
-    "lat": 35.85887543297388,
-    "lon": 14.555773990370216
+    "lat": 35.8544,
+    "lon": 14.5538,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Żabbar",
     "key": "żabbar",
-    "lat": 35.87459597792851,
-    "lon": 14.542191144913517
+    "lat": 35.8718,
+    "lon": 14.5397,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Xgħajra",
     "key": "xgħajra",
-    "lat": 35.88552278077124,
-    "lon": 14.54806087821618
+    "lat": 35.8816,
+    "lon": 14.5457,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "San Lawrenz",
+    "name": "Saint Lawrence",
     "key": "san lawrenz",
-    "lat": 36.0438651443815,
-    "lon": 14.196269377151832
+    "lat": 36.0471,
+    "lon": 14.1971,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Kerċem",
     "key": "kerċem",
-    "lat": 36.03703915401733,
-    "lon": 14.218072149014322
+    "lat": 36.0361,
+    "lon": 14.2145,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Munxar",
     "key": "munxar",
-    "lat": 36.02382737241227,
-    "lon": 14.232112523730692
+    "lat": 36.0251,
+    "lon": 14.2276,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Sannat",
     "key": "sannat",
-    "lat": 36.01884807475513,
-    "lon": 14.25847029426518
+    "lat": 36.0201,
+    "lon": 14.2514,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Għajnsielem",
     "key": "għajnsielem",
-    "lat": 36.024833446516844,
-    "lon": 14.287195042959445
+    "lat": 36.0251,
+    "lon": 14.2853,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Qala",
     "key": "qala",
-    "lat": 36.03696264865855,
-    "lon": 14.309490096116443
+    "lat": 36.0332,
+    "lon": 14.3163,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Nadur",
     "key": "nadur",
-    "lat": 36.047798079547064,
-    "lon": 14.295244502689048
+    "lat": 36.0451,
+    "lon": 14.2978,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Xagħra",
     "key": "xagħra",
-    "lat": 36.053856249915775,
-    "lon": 14.269902618981833
+    "lat": 36.0506,
+    "lon": 14.272,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Żebbuġ",
     "key": "żebbuġ",
-    "lat": 36.06231549232084,
-    "lon": 14.245823319082401
+    "lat": 36.0625,
+    "lon": 14.2488,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Għasri",
     "key": "għasri",
-    "lat": 36.06026861924122,
-    "lon": 14.224386844603913
+    "lat": 36.0625,
+    "lon": 14.2247,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Għarb",
     "key": "għarb",
-    "lat": 36.06062031214466,
-    "lon": 14.20216061822847
+    "lat": 36.0622,
+    "lon": 14.2058,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Victoria",
     "key": "victoria",
-    "lat": -36.991631856163835,
-    "lon": 144.88743421914128
+    "lat": -37.0082,
+    "lon": 144.75,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Fontana, Gozo",
+    "name": "Fontana",
     "key": "fontana, gozo",
-    "lat": 36.0321190524323,
-    "lon": 14.238479923309797
+    "lat": 36.0332,
+    "lon": 14.2398,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Xewkija",
     "key": "xewkija",
-    "lat": 36.02891399220124,
-    "lon": 14.253436872014024
+    "lat": 36.03,
+    "lon": 14.2656,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Mosta",
     "key": "mosta",
-    "lat": 35.905358669938074,
-    "lon": 14.417280040898302
+    "lat": 35.9076,
+    "lon": 14.4209,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Lija",
     "key": "lija",
-    "lat": 35.89941337207944,
-    "lon": 14.44110349727857
+    "lat": 35.8992,
+    "lon": 14.4412,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Attard",
     "key": "attard",
-    "lat": 35.88997885134289,
-    "lon": 14.430814281353983
+    "lat": 35.8878,
+    "lon": 14.4318,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Mtarfa",
     "key": "mtarfa",
-    "lat": 35.884669878811835,
-    "lon": 14.406882814115562
+    "lat": 35.8869,
+    "lon": 14.4049,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Mdina",
     "key": "mdina",
-    "lat": 35.88171131837261,
-    "lon": 14.407178670159482
+    "lat": 35.8818,
+    "lon": 14.4085,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Żebbuġ",
     "key": "żebbuġ",
-    "lat": 36.06231549232084,
-    "lon": 14.245823319082401
+    "lat": 36.0625,
+    "lon": 14.2488,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Qormi",
     "key": "qormi",
-    "lat": 35.87462720947812,
-    "lon": 14.469176949656477
+    "lat": 35.8753,
+    "lon": 14.4684,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Swieqi",
     "key": "swieqi",
-    "lat": 35.92184912293865,
-    "lon": 14.467089520664842
+    "lat": 35.917,
+    "lon": 14.4698,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Għargħur",
     "key": "għargħur",
-    "lat": 35.91517263826663,
-    "lon": 14.456704973215926
+    "lat": 35.9188,
+    "lon": 14.4553,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "San Ġwann",
     "key": "san ġwann",
-    "lat": 35.90634781325097,
-    "lon": 14.474886779913447
+    "lat": 35.905,
+    "lon": 14.4756,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Iklin",
     "key": "iklin",
-    "lat": 35.905823586803365,
-    "lon": 14.453839396085536
+    "lat": 35.9054,
+    "lon": 14.4549,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Birkirkara",
     "key": "birkirkara",
-    "lat": 35.89470135308496,
-    "lon": 14.463686532978524
+    "lat": 35.8934,
+    "lon": 14.4662,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Balzan",
     "key": "balzan",
-    "lat": 35.89700707613564,
-    "lon": 14.451083708246529
+    "lat": 35.8952,
+    "lon": 14.4524,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Santa Venera",
     "key": "santa venera",
-    "lat": 35.88520623627877,
-    "lon": 14.47781785992628
+    "lat": 35.8865,
+    "lon": 14.4781,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Ħamrun",
     "key": "ħamrun",
-    "lat": 35.8821386152049,
-    "lon": 14.487778593557238
+    "lat": 35.8818,
+    "lon": 14.4868,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Marsa",
     "key": "marsa",
-    "lat": 35.874545599899484,
-    "lon": 14.489193451216787
+    "lat": 35.8716,
+    "lon": 14.4926,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Luqa",
     "key": "luqa",
-    "lat": 35.84946300861093,
-    "lon": 14.487059804266542
+    "lat": 35.8563,
+    "lon": 14.4831,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Mqabba",
     "key": "mqabba",
-    "lat": 35.841376276443974,
-    "lon": 14.463342010775174
+    "lat": 35.8426,
+    "lon": 14.4666,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Kirkop",
     "key": "kirkop",
-    "lat": 35.83854592041788,
-    "lon": 14.482385278637674
+    "lat": 35.8409,
+    "lon": 14.4836,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Safi",
     "key": "safi",
-    "lat": 35.834300386153885,
-    "lon": 14.490388184816851
+    "lat": 35.8323,
+    "lon": 14.4902,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Għaxaq",
     "key": "għaxaq",
-    "lat": 35.8440636357157,
-    "lon": 14.514759327418503
+    "lat": 35.8418,
+    "lon": 14.515,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Żejtun",
     "key": "żejtun",
-    "lat": 35.85404877728637,
-    "lon": 14.527592083664842
+    "lat": 35.8539,
+    "lon": 14.5324,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Fgura",
     "key": "fgura",
-    "lat": 35.86815124913082,
-    "lon": 14.519258804650102
+    "lat": 35.8694,
+    "lon": 14.5196,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Tarxien",
     "key": "tarxien",
-    "lat": 35.8599658983575,
-    "lon": 14.509446245747617
+    "lat": 35.8616,
+    "lon": 14.5088,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Santa Luċija",
     "key": "santa luċija",
-    "lat": 35.853871263987614,
-    "lon": 14.503746085953082
+    "lat": 35.8531,
+    "lon": 14.5028,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Gudja",
     "key": "gudja",
-    "lat": 35.846948232424964,
-    "lon": 14.504367383622835
+    "lat": 35.8447,
+    "lon": 14.5019,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Paola",
     "key": "paola",
-    "lat": 35.872391852651866,
-    "lon": 14.505144005541418
+    "lat": 35.8727,
+    "lon": 14.505,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Gżira",
     "key": "gżira",
-    "lat": 35.900236964464334,
-    "lon": 14.496058410510086
+    "lat": 35.9025,
+    "lon": 14.4908,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Floriana",
     "key": "floriana",
-    "lat": 35.888384490526796,
-    "lon": 14.5012620493291
+    "lat": 35.888,
+    "lon": 14.503,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Ta' Xbiex",
     "key": "ta' xbiex",
-    "lat": 35.89443135772096,
-    "lon": 14.495941576962185
+    "lat": 35.8945,
+    "lon": 14.4945,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Isla",
+    "name": "Senglea",
     "key": "isla",
-    "lat": 35.88699065279636,
-    "lon": 14.513355322290275
+    "lat": 35.8864,
+    "lon": 14.5149,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Cospicua",
     "key": "cospicua",
-    "lat": 35.87982456530142,
-    "lon": 14.522344748661217
+    "lat": 35.88,
+    "lon": 14.5207,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Pietà",
     "key": "pietà",
-    "lat": 35.890319981441976,
-    "lon": 14.493645944664603
+    "lat": 35.8891,
+    "lon": 14.4927,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Msida",
     "key": "msida",
-    "lat": 35.893283398695594,
-    "lon": 14.483433823083894
+    "lat": 35.8949,
+    "lon": 14.4825,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Birgu",
     "key": "birgu",
-    "lat": 35.8882318328128,
-    "lon": 14.521340540813299
+    "lat": 35.8871,
+    "lon": 14.526,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

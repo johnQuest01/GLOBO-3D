@@ -1,8 +1,11 @@
 [
   {
-    "name": "Norfolk Island",
+    "name": "Ilha Norfolk",
     "key": "norfolk island",
-    "lat": -29.031752211599915,
-    "lon": 167.96125735780004
+    "lat": -29.033,
+    "lon": 167.954,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   }
 ]

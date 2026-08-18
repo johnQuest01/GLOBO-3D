@@ -2,283 +2,424 @@
   {
     "name": "Kagoshima",
     "key": "kagoshima",
-    "lat": 31.619406300877515,
-    "lon": 130.65495959009615
+    "lat": 29.4572,
+    "lon": 129.601,
+    "labelRank": 2,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Ōita",
+    "name": "Oita",
     "key": "ōita",
-    "lat": 33.237860989421215,
-    "lon": 131.43066091100494
+    "lat": 33.2006,
+    "lon": 131.449,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Fukuoka",
     "key": "fukuoka",
-    "lat": 33.43256932261351,
-    "lon": 130.62697314138785
+    "lat": 33.4906,
+    "lon": 130.616,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Saga",
     "key": "saga",
-    "lat": 33.278336113880364,
-    "lon": 130.07773679610253
+    "lat": 33.0097,
+    "lon": 130.147,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Nagasaki",
     "key": "nagasaki",
-    "lat": 33.00030211376382,
-    "lon": 129.91961229839237
+    "lat": 32.6745,
+    "lon": 128.755,
+    "labelRank": 2,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Kumamoto",
     "key": "kumamoto",
-    "lat": 32.60531816517024,
-    "lon": 130.7605745402183
+    "lat": 32.588,
+    "lon": 130.834,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Miyazaki",
     "key": "miyazaki",
-    "lat": 32.20169670483881,
-    "lon": 131.3128656122588
+    "lat": 32.0981,
+    "lon": 131.286,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Tokushima",
     "key": "tokushima",
-    "lat": 33.8976508055555,
-    "lon": 134.1866563591304
+    "lat": 33.8546,
+    "lon": 134.2,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Kagawa",
     "key": "kagawa",
-    "lat": 34.15596019008043,
-    "lon": 133.87251409882745
+    "lat": 34.2162,
+    "lon": 134.001,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Ehime",
     "key": "ehime",
-    "lat": 33.55409459016358,
-    "lon": 132.90229565992553
+    "lat": 33.8141,
+    "lon": 132.916,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Kōchi",
+    "name": "Kochi",
     "key": "kōchi",
-    "lat": 33.36115289699697,
-    "lon": 133.4510556741426
+    "lat": 33.6129,
+    "lon": 133.442,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Shimane",
     "key": "shimane",
-    "lat": 34.99187384222184,
-    "lon": 132.48110720054513
+    "lat": 35.0972,
+    "lon": 132.603,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Yamaguchi",
     "key": "yamaguchi",
-    "lat": 34.265102452285646,
-    "lon": 131.66100395311022
+    "lat": 34.2154,
+    "lon": 131.645,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Tottori",
     "key": "tottori",
-    "lat": 35.33685545814023,
-    "lon": 133.69565963208055
+    "lat": 35.3657,
+    "lon": 133.819,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Hyōgo",
     "key": "hyōgo",
-    "lat": 35.15387258960086,
-    "lon": 134.7763885880268
+    "lat": 35.063,
+    "lon": 134.837,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Kyōto",
+    "name": "Quioto",
     "key": "kyōto",
-    "lat": 35.23158272988747,
-    "lon": 135.46096516874337
+    "lat": 35.2117,
+    "lon": 135.451,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Fukui",
     "key": "fukui",
-    "lat": 35.77345374059972,
-    "lon": 136.08125779468247
+    "lat": 35.9297,
+    "lon": 136.316,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Ishikawa",
     "key": "ishikawa",
-    "lat": 36.78330083938465,
-    "lon": 136.76910211575674
+    "lat": 36.5654,
+    "lon": 136.677,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Toyama",
     "key": "toyama",
-    "lat": 36.68803876017475,
-    "lon": 137.2177838334137
+    "lat": 36.596,
+    "lon": 137.246,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Niigata",
     "key": "niigata",
-    "lat": 37.45959085107672,
-    "lon": 138.87761669861806
+    "lat": 37.5471,
+    "lon": 139.005,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Yamagata",
     "key": "yamagata",
-    "lat": 38.39571059993299,
-    "lon": 140.0309803561665
+    "lat": 38.4024,
+    "lon": 140.084,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Akita",
     "key": "akita",
-    "lat": 39.72607001089274,
-    "lon": 140.38299156101075
+    "lat": 39.7318,
+    "lon": 140.334,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Aomori",
     "key": "aomori",
-    "lat": 40.830600988498055,
-    "lon": 140.8648932400686
+    "lat": 40.6385,
+    "lon": 140.769,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Iwate",
     "key": "iwate",
-    "lat": 39.6104004665994,
-    "lon": 141.37411019669162
+    "lat": 39.5715,
+    "lon": 141.364,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Miyagi",
     "key": "miyagi",
-    "lat": 38.53266094038212,
-    "lon": 141.035746231387
+    "lat": 38.5307,
+    "lon": 140.972,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Fukushima",
     "key": "fukushima",
-    "lat": 37.40695815966902,
-    "lon": 140.16003573082276
+    "lat": 37.4153,
+    "lon": 140.099,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Ibaraki",
     "key": "ibaraki",
-    "lat": 36.35391051284771,
-    "lon": 140.2869860273476
+    "lat": 36.2773,
+    "lon": 140.257,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Chiba",
     "key": "chiba",
-    "lat": 35.55084324433717,
-    "lon": 140.19173311428227
+    "lat": 35.489,
+    "lon": 140.318,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Tokyo",
+    "name": "Tóquio",
     "key": "tokyo",
-    "lat": 35.69450799957178,
-    "lon": 139.5016408056513
+    "lat": 35.6578,
+    "lon": 139.407,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Kanagawa",
     "key": "kanagawa",
-    "lat": 35.409196801548006,
-    "lon": 139.31414469510392
+    "lat": 35.4378,
+    "lon": 139.344,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Shizuoka",
     "key": "shizuoka",
-    "lat": 35.081164149439545,
-    "lon": 138.44019432944074
+    "lat": 35.0359,
+    "lon": 138.306,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Aichi",
     "key": "aichi",
-    "lat": 35.07510150370958,
-    "lon": 137.2492668536593
+    "lat": 34.9973,
+    "lon": 137.214,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Mie",
     "key": "mie",
-    "lat": 34.57138778277962,
-    "lon": 136.34043724325295
+    "lat": 34.5679,
+    "lon": 136.386,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Wakayama",
     "key": "wakayama",
-    "lat": 33.91987027562493,
-    "lon": 135.5279934841784
+    "lat": 33.93,
+    "lon": 135.401,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Ōsaka",
+    "name": "Osaka",
     "key": "ōsaka",
-    "lat": 34.58639069627937,
-    "lon": 135.41089286421126
+    "lat": 34.5993,
+    "lon": 135.519,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Okayama",
     "key": "okayama",
-    "lat": 34.9476276201194,
-    "lon": 133.90774582711774
+    "lat": 34.8521,
+    "lon": 133.831,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Hiroshima",
     "key": "hiroshima",
-    "lat": 34.52816847823304,
-    "lon": 132.7860986860489
+    "lat": 34.6067,
+    "lon": 132.853,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Hokkaidō",
+    "name": "Hokkaido",
     "key": "hokkaidō",
-    "lat": 43.108552459662405,
-    "lon": 142.3297919666884
+    "lat": 43.37,
+    "lon": 142.805,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Okinawa",
     "key": "okinawa",
-    "lat": 26.583929754625053,
-    "lon": 128.05750573000003
+    "lat": 24.3349,
+    "lon": 123.802,
+    "labelRank": 2,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Gunma",
     "key": "gunma",
-    "lat": 36.50026251679116,
-    "lon": 139.06057087391505
+    "lat": 36.5592,
+    "lon": 139.025,
+    "labelRank": 2,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Nagano",
     "key": "nagano",
-    "lat": 36.17191558824377,
-    "lon": 138.08011990774747
+    "lat": 36.0666,
+    "lon": 138.019,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Tochigi",
     "key": "tochigi",
-    "lat": 36.62576213233795,
-    "lon": 139.73569179548278
+    "lat": 36.6593,
+    "lon": 139.786,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Gifu",
     "key": "gifu",
-    "lat": 35.803444156455974,
-    "lon": 137.03208243375724
+    "lat": 35.8522,
+    "lon": 136.941,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Shiga",
     "key": "shiga",
-    "lat": 35.17677896353546,
-    "lon": 136.1342135821482
+    "lat": 35.1832,
+    "lon": 136.093,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Saitama",
     "key": "saitama",
-    "lat": 35.96470230379135,
-    "lon": 139.3434679583872
+    "lat": 36.0173,
+    "lon": 139.287,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Yamanashi",
     "key": "yamanashi",
-    "lat": 35.592007402063686,
-    "lon": 138.58114940315363
+    "lat": 35.6149,
+    "lon": 138.645,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Nara",
     "key": "nara",
-    "lat": 34.370286539771975,
-    "lon": 135.87443886390238
+    "lat": 34.2815,
+    "lon": 135.877,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   }
 ]

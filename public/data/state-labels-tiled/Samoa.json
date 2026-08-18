@@ -2,67 +2,100 @@
   {
     "name": "Gaga'emauga",
     "key": "gaga'emauga",
-    "lat": -13.576632226989318,
-    "lon": -172.34552915157988
+    "lat": -13.9658,
+    "lon": -171.861,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Gaga'ifomauga",
     "key": "gaga'ifomauga",
-    "lat": -13.562723950104242,
-    "lon": -172.54481226460973
+    "lat": -13.5461,
+    "lon": -172.467,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Vaisigano",
     "key": "vaisigano",
-    "lat": -13.58880092416203,
-    "lon": -172.6694393244362
+    "lat": -13.5561,
+    "lon": -172.701,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Satupa'itea",
     "key": "satupa'itea",
-    "lat": -13.720507853149382,
-    "lon": -172.34596237790214
+    "lat": -13.6365,
+    "lon": -172.635,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Palauli",
     "key": "palauli",
-    "lat": -13.710480017810815,
-    "lon": -172.46072346554698
+    "lat": -13.7195,
+    "lon": -172.454,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Fa'asaleleaga",
     "key": "fa'asaleleaga",
-    "lat": -13.651920818350868,
-    "lon": -172.2300153882486
+    "lat": -13.6516,
+    "lon": -172.243,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Atua",
     "key": "atua",
-    "lat": -13.947141266866247,
-    "lon": -171.56394624904053
+    "lat": -14.0212,
+    "lon": -171.592,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Va'a-o-Fonoti",
     "key": "va'a-o-fonoti",
-    "lat": -13.950752586087972,
-    "lon": -171.53636872588595
+    "lat": -13.9633,
+    "lon": -171.549,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Tuamasaga",
     "key": "tuamasaga",
-    "lat": -13.889131806331282,
-    "lon": -171.78275642690042
+    "lat": -13.9415,
+    "lon": -171.752,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "A'ana",
     "key": "a'ana",
-    "lat": -13.887736548322657,
-    "lon": -171.9345548480767
+    "lat": -13.9005,
+    "lon": -171.919,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Aiga-i-le-Tai",
     "key": "aiga-i-le-tai",
-    "lat": -13.857354547097666,
-    "lon": -172.028990926295
+    "lat": -13.8904,
+    "lon": -172.039,
+    "labelRank": 20,
+    "minLabel": 9,
+    "maxLabel": 11
   }
 ]

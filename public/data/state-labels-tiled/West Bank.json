@@ -1,8 +1,11 @@
 [
   {
-    "name": "West Bank",
+    "name": "Cisjordânia",
     "key": "west bank",
-    "lat": 31.94183021136059,
-    "lon": 35.229193499233276
+    "lat": 32.003,
+    "lon": 35.2918,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

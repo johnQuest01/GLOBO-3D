@@ -2,79 +2,118 @@
   {
     "name": "Nugaal",
     "key": "nugaal",
-    "lat": 8.318361719476462,
-    "lon": 49.20670606591234
+    "lat": 8.46102,
+    "lon": 48.849,
+    "labelRank": 5,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Mudug",
     "key": "mudug",
-    "lat": 6.260007398016695,
-    "lon": 48.25369778254384
+    "lat": 5.51036,
+    "lon": 48.1009,
+    "labelRank": 5,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Galguduud",
     "key": "galguduud",
-    "lat": 5.004620457761705,
-    "lon": 46.628971837412465
+    "lat": 5.09616,
+    "lon": 46.6795,
+    "labelRank": 5,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Hiiraan",
     "key": "hiiraan",
-    "lat": 4.340974663800606,
-    "lon": 45.55774842277141
+    "lat": 4.36813,
+    "lon": 45.4984,
+    "labelRank": 5,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Bakool",
     "key": "bakool",
-    "lat": 4.004698709214872,
-    "lon": 43.975483932008885
+    "lat": 4.40611,
+    "lon": 43.835,
+    "labelRank": 5,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Gedo",
     "key": "gedo",
-    "lat": 3.2292103134884758,
-    "lon": 42.189584090083905
+    "lat": 3.05384,
+    "lon": 42.0524,
+    "labelRank": 5,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Bari",
     "key": "bari",
-    "lat": 10.188936014125451,
-    "lon": 50.20425381342741
+    "lat": 9.95583,
+    "lon": 50.1777,
+    "labelRank": 5,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Jubbada Hoose",
     "key": "jubbada hoose",
-    "lat": -0.37353000042958984,
-    "lon": 41.9079038789928
+    "lat": 0.0078977,
+    "lon": 41.8088,
+    "labelRank": 5,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Jubbada Dhexe",
     "key": "jubbada dhexe",
-    "lat": 1.1364000038544182,
-    "lon": 42.634298913682336
+    "lat": 1.55342,
+    "lon": 42.4706,
+    "labelRank": 5,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Shabeellaha Hoose",
     "key": "shabeellaha hoose",
-    "lat": 2.0925054684348527,
-    "lon": 44.550235574077185
+    "lat": 1.63602,
+    "lon": 44.185,
+    "labelRank": 5,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Banaadir",
     "key": "banaadir",
-    "lat": 2.1258298276936785,
-    "lon": 45.4668702389568
+    "lat": 2.12409,
+    "lon": 45.436,
+    "labelRank": 5,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Shabeellaha Dhexe",
     "key": "shabeellaha dhexe",
-    "lat": 2.9633853685572302,
-    "lon": 45.89695128550935
+    "lat": 3.00561,
+    "lon": 46.0549,
+    "labelRank": 5,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Bay",
     "key": "bay",
-    "lat": 2.954041283078743,
-    "lon": 43.73907640604674
+    "lat": 2.67209,
+    "lon": 43.545,
+    "labelRank": 5,
+    "minLabel": 7,
+    "maxLabel": 11
   }
 ]

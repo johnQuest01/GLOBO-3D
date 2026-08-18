@@ -1,8 +1,11 @@
 [
   {
-    "name": "Monaco",
+    "name": "Monaco-Ville",
     "key": "monaco",
-    "lat": 43.74323922966734,
-    "lon": 7.411906724813047
+    "lat": 43.7461,
+    "lon": 7.39979,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

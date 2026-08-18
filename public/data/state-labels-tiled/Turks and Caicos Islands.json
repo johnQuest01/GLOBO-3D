@@ -1,38 +1,56 @@
 [
   {
-    "name": "Providenciales and West Caicos",
+    "name": "Providenciais e Caicos do Oeste",
     "key": "providenciales and west caicos",
-    "lat": 21.806128241000053,
-    "lon": -72.3005264962499
+    "lat": 21.7987,
+    "lon": -72.2861,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "South Caicos and East Caicos",
+    "name": "Caicos do Sul e Caicos do Leste",
     "key": "south caicos and east caicos",
-    "lat": 21.697723700200072,
-    "lon": -71.48400631439992
+    "lat": 21.7034,
+    "lon": -71.4782,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Middle Caicos",
+    "name": "Caicos Central",
     "key": "middle caicos",
-    "lat": 21.80448368266674,
-    "lon": -71.74431989899993
+    "lat": 21.8196,
+    "lon": -71.7669,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "North Caicos",
+    "name": "Caicos do Norte",
     "key": "north caicos",
-    "lat": 21.906042792000065,
-    "lon": -71.96458899624993
+    "lat": 21.8916,
+    "lon": -71.9298,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Grand Turk",
+    "name": "Grande Turca",
     "key": "grand turk",
-    "lat": 21.481075344000047,
-    "lon": -71.14037024649993
+    "lat": 21.4725,
+    "lon": -71.137,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Salt Cay",
     "key": "salt cay",
-    "lat": 21.328550523000068,
-    "lon": -71.20901445199993
+    "lat": 21.3295,
+    "lon": -71.2072,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

@@ -2,115 +2,172 @@
   {
     "name": "Paysandú",
     "key": "paysandú",
-    "lat": -32.10865089275034,
-    "lon": -57.450853762767856
+    "lat": -32.0933,
+    "lon": -57.224,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Artigas",
     "key": "artigas",
-    "lat": -30.552116081884495,
-    "lon": -57.08573398870685
+    "lat": -30.5719,
+    "lon": -56.9399,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Salto",
     "key": "salto",
-    "lat": -31.3025446263341,
-    "lon": -56.9976489920504
+    "lat": -31.4398,
+    "lon": -57.0428,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Rivera",
     "key": "rivera",
-    "lat": -31.48666220956756,
-    "lon": -55.32068204503812
+    "lat": -31.4683,
+    "lon": -55.3279,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Rocha",
     "key": "rocha",
-    "lat": -33.89540575970896,
-    "lon": -53.9005334190756
+    "lat": -33.9106,
+    "lon": -53.9584,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Treinta y Tres",
     "key": "treinta y tres",
-    "lat": -33.050641846134,
-    "lon": -54.22880003773573
+    "lat": -33.1021,
+    "lon": -54.1659,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Cerro Largo",
     "key": "cerro largo",
-    "lat": -32.46624040280788,
-    "lon": -54.38320669448242
+    "lat": -32.2963,
+    "lon": -54.2281,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Maldonado",
     "key": "maldonado",
-    "lat": -34.6103560418496,
-    "lon": -54.91552517370641
+    "lat": -34.6885,
+    "lon": -54.9671,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Canelones",
     "key": "canelones",
-    "lat": -34.55864867269659,
-    "lon": -55.960137202020256
+    "lat": -34.5473,
+    "lon": -55.9228,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Montevideo",
+    "name": "Montevidéu",
     "key": "montevideo",
-    "lat": -34.82168913516839,
-    "lon": -56.21065425774171
+    "lat": -34.8267,
+    "lon": -56.2283,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "San José",
     "key": "san josé",
-    "lat": -34.351996036360084,
-    "lon": -56.692003671966404
+    "lat": -34.3117,
+    "lon": -56.7651,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Colonia",
     "key": "colonia",
-    "lat": -34.09118849953008,
-    "lon": -57.64530317432468
+    "lat": -34.1954,
+    "lon": -57.6787,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Soriano",
     "key": "soriano",
-    "lat": -33.544297685465175,
-    "lon": -57.752282003358324
+    "lat": -33.4821,
+    "lon": -57.7585,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Río Negro",
     "key": "río negro",
-    "lat": -40.17789375449912,
-    "lon": -67.6244845749424
+    "lat": -40.1261,
+    "lon": -67.3641,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Tacuarembó",
     "key": "tacuarembó",
-    "lat": -32.12296189783997,
-    "lon": -55.801708505909474
+    "lat": -32.1061,
+    "lon": -55.6607,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Durazno",
     "key": "durazno",
-    "lat": -32.95185021876712,
-    "lon": -56.00808742950035
+    "lat": -33.1016,
+    "lon": -56.0945,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Flores",
     "key": "flores",
-    "lat": -33.56802087022412,
-    "lon": -56.91145975257267
+    "lat": -33.5902,
+    "lon": -56.8849,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Florida",
     "key": "florida",
-    "lat": 28.82122225722675,
-    "lon": -83.15898237029486
+    "lat": 28.1568,
+    "lon": -81.6228,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Lavalleja",
     "key": "lavalleja",
-    "lat": -33.83938423838014,
-    "lon": -54.96309497489436
+    "lat": -33.8788,
+    "lon": -54.8724,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   }
 ]

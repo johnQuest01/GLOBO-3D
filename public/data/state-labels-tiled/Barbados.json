@@ -2,67 +2,100 @@
   {
     "name": "Saint Joseph",
     "key": "saint joseph",
-    "lat": 13.21292541778675,
-    "lon": -59.54752963717237
+    "lat": 13.2118,
+    "lon": -59.5495,
+    "labelRank": 10,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint Andrew",
     "key": "saint andrew",
-    "lat": 12.136522499923833,
-    "lon": -61.64461729593943
+    "lat": 12.1224,
+    "lon": -61.6329,
+    "labelRank": 10,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint Peter",
     "key": "saint peter",
-    "lat": 13.27554059191744,
-    "lon": -59.60509607843333
+    "lat": 13.2679,
+    "lon": -59.6109,
+    "labelRank": 10,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint Lucy",
     "key": "saint lucy",
-    "lat": 13.297518166966757,
-    "lon": -59.628172925699516
+    "lat": 13.3177,
+    "lon": -59.615,
+    "labelRank": 10,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint James",
     "key": "saint james",
-    "lat": 13.188462540935056,
-    "lon": -59.6250307104392
+    "lat": 13.192,
+    "lon": -59.6259,
+    "labelRank": 10,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint Michael",
     "key": "saint michael",
-    "lat": 13.121604071612238,
-    "lon": -59.601633889920784
+    "lat": 13.118,
+    "lon": -59.6047,
+    "labelRank": 10,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Christ Church",
     "key": "christ church",
-    "lat": 13.09894589436642,
-    "lon": -59.52707989920975
+    "lat": 13.0873,
+    "lon": -59.538,
+    "labelRank": 10,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint Philip",
     "key": "saint philip",
-    "lat": 13.146952386641818,
-    "lon": -59.486592137723036
+    "lat": 13.1368,
+    "lon": -59.47,
+    "labelRank": 10,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint John",
     "key": "saint john",
-    "lat": 12.134726429499878,
-    "lon": -61.713231150659155
+    "lat": 12.1446,
+    "lon": -61.7094,
+    "labelRank": 10,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint George",
     "key": "saint george",
-    "lat": 12.071263662592411,
-    "lon": -61.69597780071473
+    "lat": 12.0681,
+    "lon": -61.7226,
+    "labelRank": 10,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint Thomas",
     "key": "saint thomas",
-    "lat": 18.337291879400063,
-    "lon": -64.89426966739993
+    "lat": 18.3543,
+    "lon": -64.9263,
+    "labelRank": 10,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

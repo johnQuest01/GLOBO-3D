@@ -1,32 +1,47 @@
 [
   {
-    "name": "Eastern",
+    "name": "Oriental",
     "key": "eastern",
-    "lat": -13.276595798443843,
-    "lon": 32.03293192144825
+    "lat": -13.7617,
+    "lon": 31.8341,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Southern",
+    "name": "Sul",
     "key": "southern",
-    "lat": 7.871403323031413,
-    "lon": -11.970108022157978
+    "lat": 7.85416,
+    "lon": -12.0512,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Western",
+    "name": "Oeste",
     "key": "western",
-    "lat": -2.1421606680643306,
-    "lon": 29.29291803490095
+    "lat": -2.13156,
+    "lon": 29.2644,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Northern",
+    "name": "Norte",
     "key": "northern",
-    "lat": 9.115785759791477,
-    "lon": -11.868718148726737
+    "lat": 9.14067,
+    "lon": -11.9468,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kigali City",
+    "name": "Kigali",
     "key": "kigali city",
-    "lat": -1.9367866149603212,
-    "lon": 30.1110282647426
+    "lat": -1.92643,
+    "lon": 30.1253,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   }
 ]

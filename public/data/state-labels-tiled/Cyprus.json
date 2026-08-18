@@ -2,31 +2,46 @@
   {
     "name": "Larnaca",
     "key": "larnaca",
-    "lat": 34.923970423579156,
-    "lon": 33.47801605990342
+    "lat": 34.9728,
+    "lon": 33.8678,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Famagusta",
     "key": "famagusta",
-    "lat": 35.033032957708976,
-    "lon": 33.910190956697214
+    "lat": 35.0164,
+    "lon": 33.9489,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Nicosia",
+    "name": "Nicósia",
     "key": "nicosia",
-    "lat": 35.07053680122009,
-    "lon": 33.00712929409393
+    "lat": 35.0214,
+    "lon": 33.043,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Limassol",
     "key": "limassol",
-    "lat": 34.74980940667311,
-    "lon": 32.90716250920073
+    "lat": 34.7755,
+    "lon": 32.9674,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Paphos",
+    "name": "Pafos",
     "key": "paphos",
-    "lat": 34.86834343010691,
-    "lon": 32.53320726496866
+    "lat": 34.9307,
+    "lon": 32.5276,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   }
 ]

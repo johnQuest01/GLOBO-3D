@@ -1,50 +1,74 @@
 [
   {
-    "name": "Ysyk-Köl",
+    "name": "Issyk-Kul",
     "key": "ysyk-köl",
-    "lat": 42.11614325456103,
-    "lon": 77.96860094030976
+    "lat": 42.0387,
+    "lon": 77.9472,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Naryn",
     "key": "naryn",
-    "lat": 41.404137001882,
-    "lon": 75.82211030157609
+    "lat": 41.3438,
+    "lon": 75.9766,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Osh",
     "key": "osh",
-    "lat": 40.05214822748448,
-    "lon": 72.92115461011417
+    "lat": 40.1122,
+    "lon": 73.177,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Chuy",
     "key": "chuy",
-    "lat": 42.607619227391766,
-    "lon": 74.84077652937384
+    "lat": 42.6512,
+    "lon": 75.1456,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Talas",
     "key": "talas",
-    "lat": 42.41995230819848,
-    "lon": 72.24364943793118
+    "lat": 42.4795,
+    "lon": 72.2727,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Jalal-Abad",
     "key": "jalal-abad",
-    "lat": 41.51350887574263,
-    "lon": 72.39632911853619
+    "lat": 41.5886,
+    "lon": 72.4506,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Batken",
     "key": "batken",
-    "lat": 39.839992296147344,
-    "lon": 70.95460228773425
+    "lat": 39.7902,
+    "lon": 70.8882,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Bishkek",
+    "name": "Bisqueque",
     "key": "bishkek",
-    "lat": 42.85489870870841,
-    "lon": 74.61336852395819
+    "lat": 42.8424,
+    "lon": 74.5877,
+    "labelRank": 9,
+    "minLabel": 6.7,
+    "maxLabel": 11
   }
 ]

@@ -1,50 +1,74 @@
 [
   {
-    "name": "Rift Valley",
+    "name": "Vale do Rift",
     "key": "rift valley",
-    "lat": 0.8562260467331546,
-    "lon": 36.11635605520404
+    "lat": 1.15655,
+    "lon": 36.0169,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Eastern",
+    "name": "Oriental",
     "key": "eastern",
-    "lat": -13.276595798443843,
-    "lon": 32.03293192144825
+    "lat": -13.7617,
+    "lon": 31.8341,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "North-Eastern",
+    "name": "Nordeste",
     "key": "north-eastern",
-    "lat": 1.2018767422314525,
-    "lon": 39.99390400195094
+    "lat": 1.01482,
+    "lon": 40.2748,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Coast",
+    "name": "Costa",
     "key": "coast",
-    "lat": -2.275991368487084,
-    "lon": 39.497188898498095
+    "lat": -2.51514,
+    "lon": 39.5816,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Nyanza",
     "key": "nyanza",
-    "lat": -0.43820335971484586,
-    "lon": 34.62439880955656
+    "lat": -0.511452,
+    "lon": 34.4239,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Western",
+    "name": "Ocidental",
     "key": "western",
-    "lat": -2.1421606680643306,
-    "lon": 29.29291803490095
+    "lat": -2.13156,
+    "lon": 29.2644,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Nairobi",
+    "name": "Nairóbi",
     "key": "nairobi",
-    "lat": -1.2742716065993704,
-    "lon": 36.93197174135276
+    "lat": -1.29384,
+    "lon": 36.9039,
+    "labelRank": 9,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Central",
     "key": "central",
-    "lat": -21.53938210084973,
-    "lon": 26.99743649044483
+    "lat": -21.8775,
+    "lon": 26.6144,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   }
 ]

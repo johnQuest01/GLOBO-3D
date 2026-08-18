@@ -1,50 +1,74 @@
 [
   {
-    "name": "Johnston Atoll",
+    "name": "Atol Johnston",
     "key": "johnston atoll",
-    "lat": 16.72884756050007,
-    "lon": -169.53851274324992
+    "lat": 16.7273,
+    "lon": -169.538,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Jarvis Island",
+    "name": "Ilha Jarvis",
     "key": "jarvis island",
-    "lat": -0.3791317685999275,
-    "lon": -160.02121334559993
+    "lat": -0.380268,
+    "lon": -160.018,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Baker Island",
+    "name": "Ilha Baker",
     "key": "baker island",
-    "lat": 0.19520701700007237,
-    "lon": -176.48196367099993
+    "lat": 0.194931,
+    "lon": -176.479,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Howland Island",
+    "name": "Ilha Howland",
     "key": "howland island",
-    "lat": 0.7964439965000594,
-    "lon": -176.63723710874993
+    "lat": 0.80217,
+    "lon": -176.638,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Wake Atoll",
+    "name": "Ilha Wake",
     "key": "wake atoll",
-    "lat": 19.281327622500058,
-    "lon": 166.63030032675005
+    "lat": 19.2863,
+    "lon": 166.643,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Midway Islands",
+    "name": "Atol Midway",
     "key": "midway islands",
-    "lat": 28.211004950250057,
-    "lon": -177.3663732577499
+    "lat": 28.206,
+    "lon": -177.376,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Navassa Island",
+    "name": "Ilha de Navassa",
     "key": "navassa island",
-    "lat": 18.408815822400072,
-    "lon": -75.01532141819993
+    "lat": 18.4043,
+    "lon": -75.011,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Palmyra Atoll",
+    "name": "Atol Palmyra",
     "key": "palmyra atoll",
-    "lat": 5.880666408200113,
-    "lon": -162.07225501219992
+    "lat": 5.88359,
+    "lon": -162.076,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

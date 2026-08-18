@@ -2,7 +2,10 @@
   {
     "name": "Guam",
     "key": "guam",
-    "lat": 13.53640371300006,
-    "lon": 144.82850996180005
+    "lat": 13.4733,
+    "lon": 144.789,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

@@ -2,199 +2,298 @@
   {
     "name": "Sonora",
     "key": "sonora",
-    "lat": 29.328568198754056,
-    "lon": -111.07602339870378
+    "lat": 29.5293,
+    "lon": -110.485,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Baja California",
     "key": "baja california",
-    "lat": 30.339836537976087,
-    "lon": -114.89636975045534
+    "lat": 30.3399,
+    "lon": -115.209,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Chihuahua",
     "key": "chihuahua",
-    "lat": 28.25797964901298,
-    "lon": -106.66351976022851
+    "lat": 28.973,
+    "lon": -106.232,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Coahuila",
+    "name": "Coahuila de Zaragoza",
     "key": "coahuila",
-    "lat": 26.7352245384897,
-    "lon": -101.62339164982072
+    "lat": 27.4473,
+    "lon": -101.885,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Tamaulipas",
     "key": "tamaulipas",
-    "lat": 25.098094475959,
-    "lon": -98.87157018088078
+    "lat": 24.0808,
+    "lon": -98.5197,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Nuevo León",
     "key": "nuevo león",
-    "lat": 25.80671128276499,
-    "lon": -99.95081183387484
+    "lat": 25.6178,
+    "lon": -99.8307,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Quintana Roo",
     "key": "quintana roo",
-    "lat": 19.61631043874946,
-    "lon": -88.09759394331172
+    "lat": 19.3861,
+    "lon": -88.344,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Campeche",
     "key": "campeche",
-    "lat": 18.93908134413152,
-    "lon": -90.58420783963652
+    "lat": 18.6624,
+    "lon": -90.2807,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Tabasco",
     "key": "tabasco",
-    "lat": 17.89163078198438,
-    "lon": -92.5007074433016
+    "lat": 18.1252,
+    "lon": -92.8274,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Chiapas",
     "key": "chiapas",
-    "lat": 16.543062146492026,
-    "lon": -92.4584712716971
+    "lat": 16.527,
+    "lon": -92.581,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Colima",
     "key": "colima",
-    "lat": 19.155217192695073,
-    "lon": -103.97392902648618
+    "lat": 19.1325,
+    "lon": -103.915,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Nayarit",
     "key": "nayarit",
-    "lat": 21.892597516148975,
-    "lon": -104.9111995692453
+    "lat": 21.7934,
+    "lon": -104.824,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Baja California Sur",
     "key": "baja california sur",
-    "lat": 25.782128752432907,
-    "lon": -111.99501562538046
+    "lat": 25.0656,
+    "lon": -111.452,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Sinaloa",
     "key": "sinaloa",
-    "lat": 24.72380147126045,
-    "lon": -107.23973208127607
+    "lat": 25.6041,
+    "lon": -108.001,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Yucatán",
+    "name": "Iucatão",
     "key": "yucatán",
-    "lat": 20.678030312954043,
-    "lon": -88.95601236379648
+    "lat": 20.663,
+    "lon": -88.9836,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Veracruz",
     "key": "veracruz",
-    "lat": 19.78526140038875,
-    "lon": -96.87416057367217
+    "lat": 19.0926,
+    "lon": -96.5953,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Jalisco",
     "key": "jalisco",
-    "lat": 20.881738819056057,
-    "lon": -103.47380546508552
+    "lat": 20.3026,
+    "lon": -103.602,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Michoacán",
     "key": "michoacán",
-    "lat": 19.275711749803712,
-    "lon": -101.85491065507661
+    "lat": 19.2458,
+    "lon": -101.936,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Guerrero",
     "key": "guerrero",
-    "lat": 17.791593942201864,
-    "lon": -99.97045009488222
+    "lat": 17.7608,
+    "lon": -100.091,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Oaxaca",
     "key": "oaxaca",
-    "lat": 17.14484285734085,
-    "lon": -96.39823610973785
+    "lat": 16.94,
+    "lon": -96.2087,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "",
     "key": "",
-    "lat": -70.85554371549992,
-    "lon": -2.7388250397499334
+    "lat": -83.0384,
+    "lon": -170.343,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   },
   {
     "name": "México",
     "key": "méxico",
-    "lat": 19.35908443578949,
-    "lon": -99.48776090607521
+    "lat": 19.3275,
+    "lon": -99.7416,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Puebla",
     "key": "puebla",
-    "lat": 19.1369271177877,
-    "lon": -97.81256611233619
+    "lat": 18.549,
+    "lon": -97.8889,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Morelos",
     "key": "morelos",
-    "lat": 18.78282669742538,
-    "lon": -99.00562763648746
+    "lat": 18.742,
+    "lon": -99.0785,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Querétaro",
     "key": "querétaro",
-    "lat": 20.89824925385996,
-    "lon": -99.76548629432102
+    "lat": 20.7392,
+    "lon": -99.9663,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Hidalgo",
     "key": "hidalgo",
-    "lat": 20.502162084667006,
-    "lon": -98.77019891315386
+    "lat": 20.5354,
+    "lon": -98.9221,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Guanajuato",
     "key": "guanajuato",
-    "lat": 20.869593033691537,
-    "lon": -100.9780856257827
+    "lat": 20.8141,
+    "lon": -100.904,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "San Luis Potosí",
     "key": "san luis potosí",
-    "lat": 22.4230574914837,
-    "lon": -100.25159271252312
+    "lat": 22.4465,
+    "lon": -100.324,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Zacatecas",
     "key": "zacatecas",
-    "lat": 22.91761626322805,
-    "lon": -102.700133713008
+    "lat": 23.3785,
+    "lon": -102.579,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Aguascalientes",
     "key": "aguascalientes",
-    "lat": 21.960806539298027,
-    "lon": -102.28909969763139
+    "lat": 22.0375,
+    "lon": -102.351,
+    "labelRank": 9,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Durango",
     "key": "durango",
-    "lat": 24.734776310304433,
-    "lon": -104.82103314075513
+    "lat": 24.566,
+    "lon": -104.808,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Tlaxcala",
     "key": "tlaxcala",
-    "lat": 19.440370161106983,
-    "lon": -98.15703241300953
+    "lat": 19.3956,
+    "lon": -98.161,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Distrito Federal",
+    "name": "Cidade do México",
     "key": "distrito federal",
-    "lat": -15.81514546034473,
-    "lon": -47.66668120481125
+    "lat": -15.7665,
+    "lon": -47.7902,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   }
 ]

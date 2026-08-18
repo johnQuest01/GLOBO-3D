@@ -1,0 +1,15 @@
+---
+description: LOD dos nomes no globo 3D — visão, zoom e anti-colisão
+alwaysApply: true
+---
+
+# Nomes no globo (LOD)
+
+Uma fila só para país + estado + cidade. Colisão de retângulo na tela; se encostar, some o de menor prioridade.
+
+- Longe: países (Ucrânia, Rússia, África visíveis)
+- Zoom: estados/províncias entram; países cedem espaço
+- Mais zoom: cidades entram por rank; outros nomes saem
+- Em São Paulo: mais zoom = mais cidades locais, as que não cabem somem
+
+Tamanho estável na tela. Só busca tiles da área na câmera. Clique no nome abre notícias daquele local.

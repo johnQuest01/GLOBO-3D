@@ -1,38 +1,56 @@
 [
   {
-    "name": "Kommuneqarfik Sermersooq",
+    "name": "Sermersooq",
     "key": "kommuneqarfik sermersooq",
-    "lat": 66.365205654519,
-    "lon": -37.74636465588601
+    "lat": 64.0596,
+    "lon": -44.037,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Nationalparken",
+    "name": "Parque Nacional do Nordeste da Gronelândia",
     "key": "nationalparken",
-    "lat": 78.1163041565098,
-    "lon": -29.15209834279401
+    "lat": 77.0582,
+    "lon": -33.4567,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Qaasuitsup Kommunia",
+    "name": "Qaasuitsup",
     "key": "qaasuitsup kommunia",
-    "lat": 73.72477756248557,
-    "lon": -57.72961272831276
+    "lat": 74.5573,
+    "lon": -49.3311,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Pituffik",
     "key": "pituffik",
-    "lat": 76.47258688689863,
-    "lon": -68.54338460687235
+    "lat": 76.4432,
+    "lon": -68.3611,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Qeqqata Kommunia",
+    "name": "Qeqqata",
     "key": "qeqqata kommunia",
-    "lat": 66.1303961157854,
-    "lon": -51.183874684080486
+    "lat": 66.5487,
+    "lon": -47.3782,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Kommune Kujalleq",
+    "name": "Kujalleq",
     "key": "kommune kujalleq",
-    "lat": 61.15771789255379,
-    "lon": -44.36729172101406
+    "lat": 61.5451,
+    "lon": -44.296,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   }
 ]

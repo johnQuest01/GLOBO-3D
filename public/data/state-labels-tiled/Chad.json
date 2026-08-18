@@ -2,133 +2,199 @@
   {
     "name": "Lac",
     "key": "lac",
-    "lat": 13.642845198749495,
-    "lon": 14.58606784439027
+    "lat": 13.431,
+    "lon": 14.6744,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Sila",
     "key": "sila",
-    "lat": 12.220245214462716,
-    "lon": 21.474711890579044
+    "lat": 12.2336,
+    "lon": 21.1347,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Salamat",
+    "name": "de Salamat",
     "key": "salamat",
-    "lat": 10.871738084204365,
-    "lon": 20.41861824915267
+    "lat": 10.5811,
+    "lon": 20.6054,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Moyen-Chari",
     "key": "moyen-chari",
-    "lat": 9.459504389845602,
-    "lon": 18.630928576666545
+    "lat": 9.0852,
+    "lon": 18.4827,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Mandoul",
     "key": "mandoul",
-    "lat": 8.797410981350286,
-    "lon": 17.631463272697555
+    "lat": 8.67832,
+    "lon": 17.5493,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Logone Oriental",
+    "name": "de Logone Oriental",
     "key": "logone oriental",
-    "lat": 8.159846016078177,
-    "lon": 16.290223289972335
+    "lat": 8.12559,
+    "lon": 16.23,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Hadjer-Lamis",
     "key": "hadjer-lamis",
-    "lat": 12.616428734375573,
-    "lon": 16.057289443509728
+    "lat": 12.7695,
+    "lon": 15.8235,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Chari-Baguirmi",
+    "name": "de Chari-Baguirmi",
     "key": "chari-baguirmi",
-    "lat": 11.29890093842093,
-    "lon": 16.02621008927116
+    "lat": 11.468,
+    "lon": 16.2095,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Ville de N'Djamena",
+    "name": "Jamena",
     "key": "ville de n'djamena",
-    "lat": 12.092931296465121,
-    "lon": 15.064586830318365
+    "lat": 12.1413,
+    "lon": 15.0579,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Mayo-Kebbi Est",
     "key": "mayo-kebbi est",
-    "lat": 10.185333185483097,
-    "lon": 15.515163238984822
+    "lat": 9.71626,
+    "lon": 15.4373,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Mayo-Kebbi Ouest",
     "key": "mayo-kebbi ouest",
-    "lat": 9.269792282682568,
-    "lon": 14.868976959414578
+    "lat": 9.26179,
+    "lon": 14.7357,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Ennedi",
     "key": "ennedi",
-    "lat": 17.128363208442348,
-    "lon": 21.948163981623726
+    "lat": 18.1286,
+    "lon": 22.1045,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Borkou",
     "key": "borkou",
-    "lat": 18.100937629226298,
-    "lon": 18.827387357069853
+    "lat": 18.8249,
+    "lon": 19.4819,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Tibesti",
+    "name": "de Tibesti",
     "key": "tibesti",
-    "lat": 20.92261825936424,
-    "lon": 16.796298588347263
+    "lat": 21.4716,
+    "lon": 16.6178,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Kanem",
     "key": "kanem",
-    "lat": 14.484200266273497,
-    "lon": 14.983377688431085
+    "lat": 15.2641,
+    "lon": 15.8001,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Ouaddaï",
     "key": "ouaddaï",
-    "lat": 13.531181990297423,
-    "lon": 21.142107104099413
+    "lat": 13.4714,
+    "lon": 21.1068,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Wadi Fira",
     "key": "wadi fira",
-    "lat": 15.084330762453435,
-    "lon": 21.811152702334958
+    "lat": 15.0457,
+    "lon": 21.5596,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Barh El Gazel",
     "key": "barh el gazel",
-    "lat": 14.030776960874391,
-    "lon": 16.545865378557092
+    "lat": 14.5304,
+    "lon": 16.9496,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Tandjilé",
     "key": "tandjilé",
-    "lat": 9.521991774647542,
-    "lon": 16.547719633594824
+    "lat": 9.67051,
+    "lon": 16.4994,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Logone Occidental",
+    "name": "Ocidental de Logone",
     "key": "logone occidental",
-    "lat": 8.78617977570607,
-    "lon": 15.895218764034714
+    "lat": 8.77035,
+    "lon": 15.9306,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Guéra",
+    "name": "de Guera",
     "key": "guéra",
-    "lat": 11.424347051544403,
-    "lon": 18.732518700076014
+    "lat": 11.3122,
+    "lon": 18.0946,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Batha",
     "key": "batha",
-    "lat": 13.851952609000694,
-    "lon": 18.62270719217816
+    "lat": 14.0823,
+    "lon": 18.6222,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   }
 ]

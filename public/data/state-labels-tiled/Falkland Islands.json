@@ -1,8 +1,11 @@
 [
   {
-    "name": "Falkland Islands",
+    "name": "Ilhas Falkland",
     "key": "falkland islands",
-    "lat": -51.75604463210521,
-    "lon": -60.17260109210522
+    "lat": -51.8593,
+    "lon": -59.1944,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

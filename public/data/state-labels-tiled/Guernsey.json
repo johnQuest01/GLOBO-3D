@@ -2,7 +2,10 @@
   {
     "name": "Sark",
     "key": "sark",
-    "lat": 49.463578599000044,
-    "lon": -2.5909724602499296
+    "lat": 49.4309,
+    "lon": -2.36628,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

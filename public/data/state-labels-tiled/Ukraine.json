@@ -1,152 +1,227 @@
 [
   {
-    "name": "Chernihiv",
+    "name": "Chernigov",
     "key": "chernihiv",
-    "lat": 51.384817040601355,
-    "lon": 32.078325982690444
+    "lat": 51.2597,
+    "lon": 32.0287,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Volyn",
+    "name": "Volínia",
     "key": "volyn",
-    "lat": 51.09808427511423,
-    "lon": 24.84283949612568
+    "lat": 51.1247,
+    "lon": 24.8444,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Rivne",
     "key": "rivne",
-    "lat": 50.88679952699568,
-    "lon": 26.19378229684168
+    "lat": 51.048,
+    "lon": 26.3841,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Zhytomyr",
+    "name": "Jitomir",
     "key": "zhytomyr",
-    "lat": 50.62098942707864,
-    "lon": 28.55714275802965
+    "lat": 50.6898,
+    "lon": 28.4643,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Kiev",
     "key": "kiev",
-    "lat": 50.366921339567355,
-    "lon": 30.486230983635632
+    "lat": 50.0894,
+    "lon": 31.0214,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Transcarpathia",
+    "name": "da Transcarpátia",
     "key": "transcarpathia",
-    "lat": 48.37626151766708,
-    "lon": 23.185292102365008
+    "lat": 48.3634,
+    "lon": 23.3868,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Chernivtsi",
     "key": "chernivtsi",
-    "lat": 48.2647238059973,
-    "lon": 26.083281298208433
+    "lat": 48.2892,
+    "lon": 26.2156,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ivano-Frankivs'k",
+    "name": "Ivano-Frankivsk",
     "key": "ivano-frankivs'k",
-    "lat": 48.60762810245399,
-    "lon": 24.71366625086608
+    "lat": 48.665,
+    "lon": 24.6363,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Odessa",
     "key": "odessa",
-    "lat": 46.57584528499445,
-    "lon": 29.59249508920879
+    "lat": 46.0315,
+    "lon": 29.7568,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Vinnytsya",
+    "name": "Vinnytsia",
     "key": "vinnytsya",
-    "lat": 48.86052824674227,
-    "lon": 28.67273464908593
+    "lat": 48.9623,
+    "lon": 28.7233,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "L'viv",
+    "name": "Lviv",
     "key": "l'viv",
-    "lat": 49.73750332073699,
-    "lon": 24.099226329190415
+    "lat": 49.8152,
+    "lon": 24.0372,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Sumy",
+    "name": "Sumi",
     "key": "sumy",
-    "lat": 51.25206226861606,
-    "lon": 34.12650083065027
+    "lat": 50.8153,
+    "lon": 34.3159,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Kharkiv",
     "key": "kharkiv",
-    "lat": 49.603522084852074,
-    "lon": 36.30787665144223
+    "lat": 49.4655,
+    "lon": 36.4612,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Luhans'k",
+    "name": "Lugansk",
     "key": "luhans'k",
-    "lat": 49.03232326094922,
-    "lon": 39.05367307029235
+    "lat": 48.9084,
+    "lon": 39.0033,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Donets'k",
+    "name": "Donetsk",
     "key": "donets'k",
-    "lat": 47.987299458762116,
-    "lon": 37.639473659964864
+    "lat": 48.145,
+    "lon": 37.7933,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Kherson",
     "key": "kherson",
-    "lat": 46.54122146791564,
-    "lon": 33.557288840745045
+    "lat": 46.6964,
+    "lon": 33.5787,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Zaporizhzhya",
+    "name": "Zaporíjia",
     "key": "zaporizhzhya",
-    "lat": 47.22931349587376,
-    "lon": 35.695925673395045
+    "lat": 47.3346,
+    "lon": 35.7123,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Mykolayiv",
+    "name": "Mikolaiv",
     "key": "mykolayiv",
-    "lat": 47.471137277201905,
-    "lon": 31.902528980655493
+    "lat": 47.0902,
+    "lon": 31.6498,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Poltava",
     "key": "poltava",
-    "lat": 49.74517802323571,
-    "lon": 33.7939021805783
+    "lat": 49.6978,
+    "lon": 33.7723,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Khmel'nyts'kyy",
+    "name": "Khmelnitski",
     "key": "khmel'nyts'kyy",
-    "lat": 49.50487449263871,
-    "lon": 27.005922638800858
+    "lat": 49.5537,
+    "lon": 27.0187,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ternopil'",
+    "name": "Ternopil",
     "key": "ternopil'",
-    "lat": 49.42912990382197,
-    "lon": 25.689769196114568
+    "lat": 49.4739,
+    "lon": 25.5438,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Dnipropetrovs'k",
+    "name": "Dnipropetrovsk",
     "key": "dnipropetrovs'k",
-    "lat": 48.284023243236184,
-    "lon": 35.03761868860739
+    "lat": 48.6313,
+    "lon": 34.9555,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Cherkasy",
+    "name": "Tcherkássi",
     "key": "cherkasy",
-    "lat": 49.312238866210095,
-    "lon": 31.43131240982807
+    "lat": 49.1506,
+    "lon": 31.2241,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kirovohrad",
+    "name": "Kirovogrado",
     "key": "kirovohrad",
-    "lat": 48.48996838596299,
-    "lon": 31.99776685706248
+    "lat": 48.4261,
+    "lon": 31.8288,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kiev City",
+    "name": "Kiev",
     "key": "kiev city",
-    "lat": 50.39216109944088,
-    "lon": 30.575684981633717
+    "lat": 50.383,
+    "lon": 30.5277,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   }
 ]

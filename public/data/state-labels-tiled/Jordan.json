@@ -1,74 +1,110 @@
 [
   {
-    "name": "Irbid",
+    "name": "Governorado de Irbid",
     "key": "irbid",
-    "lat": 32.48550872882635,
-    "lon": 35.769292072864545
+    "lat": 32.5559,
+    "lon": 35.8195,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Madaba",
     "key": "madaba",
-    "lat": 31.532906078208466,
-    "lon": 35.61222197264526
+    "lat": 31.5852,
+    "lon": 35.6722,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Karak",
     "key": "karak",
-    "lat": 31.109403086966537,
-    "lon": 35.6937919766135
+    "lat": 31.1753,
+    "lon": 35.7693,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Tafilah",
     "key": "tafilah",
-    "lat": 30.766564648975468,
-    "lon": 35.58467552248479
+    "lat": 30.7879,
+    "lon": 35.6436,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Aqaba",
+    "name": "Governorado de Aqaba",
     "key": "aqaba",
-    "lat": 29.967019389554327,
-    "lon": 35.28490192810587
+    "lat": 29.6276,
+    "lon": 35.3449,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Balqa",
     "key": "balqa",
-    "lat": 31.95798857514472,
-    "lon": 35.65510878880109
+    "lat": 31.8345,
+    "lon": 35.7216,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Mafraq",
     "key": "mafraq",
-    "lat": 32.35478340856003,
-    "lon": 37.52391365878235
+    "lat": 32.2481,
+    "lon": 37.6195,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ma`an",
+    "name": "Governadoria Maan",
     "key": "ma`an",
-    "lat": 30.353429547091515,
-    "lon": 36.36493494652277
+    "lat": 30.492,
+    "lon": 36.6401,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Amman",
+    "name": "Amã",
     "key": "amman",
-    "lat": 31.659403136062835,
-    "lon": 36.313845286089595
+    "lat": 31.6211,
+    "lon": 36.4418,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Zarqa",
+    "name": "Governorado de Zarqa",
     "key": "zarqa",
-    "lat": 31.914083917276773,
-    "lon": 36.53981761260828
+    "lat": 31.8095,
+    "lon": 36.8284,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ajlun",
+    "name": "Governorato de Ajloun",
     "key": "ajlun",
-    "lat": 32.26540382237847,
-    "lon": 35.737901645644406
+    "lat": 32.2932,
+    "lon": 35.761,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Jarash",
+    "name": "Governorado de Gérasa",
     "key": "jarash",
-    "lat": 32.21492025431625,
-    "lon": 35.86645538360904
+    "lat": 32.2186,
+    "lon": 35.856,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   }
 ]

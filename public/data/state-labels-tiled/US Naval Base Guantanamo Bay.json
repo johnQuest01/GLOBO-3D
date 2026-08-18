@@ -1,8 +1,11 @@
 [
   {
-    "name": "Guantanamo Bay USNB",
+    "name": "Base Naval da Baía de Guantánamo",
     "key": "guantanamo bay usnb",
-    "lat": 19.919930457342396,
-    "lon": -75.12285626873135
+    "lat": 19.9347,
+    "lon": -75.1964,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

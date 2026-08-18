@@ -1,56 +1,83 @@
 [
   {
-    "name": "Fujayrah",
+    "name": "Al Fujayrah",
     "key": "fujayrah",
-    "lat": 25.39151537411951,
-    "lon": 56.13114922559155
+    "lat": 25.4752,
+    "lon": 56.2221,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Sharjah",
     "key": "sharjah",
-    "lat": 25.207399586269354,
-    "lon": 55.72711728336443
+    "lat": 25.172,
+    "lon": 55.7788,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ras Al Khaymah",
+    "name": "Ras al-Khaimah",
     "key": "ras al khaymah",
-    "lat": 25.051207887104155,
-    "lon": 56.14489993085456
+    "lat": 25.6964,
+    "lon": 55.9791,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Dubay",
+    "name": "Dubai",
     "key": "dubay",
-    "lat": 25.011159035880546,
-    "lon": 55.366623057355426
+    "lat": 24.9508,
+    "lon": 55.3436,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Neutral Zone",
+    "name": "Zona Neutra",
     "key": "neutral zone",
-    "lat": 24.929390544319222,
-    "lon": 56.295796290077796
+    "lat": 24.925,
+    "lon": 56.2932,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Neutral Zone",
+    "name": "Zona Neutra",
     "key": "neutral zone",
-    "lat": 24.929390544319222,
-    "lon": 56.295796290077796
+    "lat": 24.925,
+    "lon": 56.2932,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Abu Dhabi",
+    "name": "Emirados Abu Dhabi",
     "key": "abu dhabi",
-    "lat": 23.984657241360303,
-    "lon": 54.3146683188787
+    "lat": 23.5238,
+    "lon": 54.0817,
+    "labelRank": 6,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Umm Al Qaywayn",
+    "name": "Umm al Qaywayn",
     "key": "umm al qaywayn",
-    "lat": 25.49027833405022,
-    "lon": 55.68204154286003
+    "lat": 25.5218,
+    "lon": 55.7217,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Ajman",
     "key": "ajman",
-    "lat": 25.404393371659282,
-    "lon": 55.51416064342269
+    "lat": 25.3971,
+    "lon": 55.5411,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   }
 ]

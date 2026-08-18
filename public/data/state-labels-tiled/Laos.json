@@ -1,104 +1,155 @@
 [
   {
-    "name": "Phôngsali",
+    "name": "Phongsali",
     "key": "phôngsali",
-    "lat": 21.731656624915477,
-    "lon": 102.21476597898585
+    "lat": 21.6153,
+    "lon": 102.245,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Oudômxai",
+    "name": "Oudomxai",
     "key": "oudômxai",
-    "lat": 20.47058410886499,
-    "lon": 101.69107481437302
+    "lat": 20.161,
+    "lon": 101.548,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Louang Namtha",
+    "name": "Luang Namtha",
     "key": "louang namtha",
-    "lat": 20.94251461919996,
-    "lon": 101.14703712177466
+    "lat": 20.9099,
+    "lon": 101.148,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Bokeo",
     "key": "bokeo",
-    "lat": 20.327486804110535,
-    "lon": 100.68218415174633
+    "lat": 20.3044,
+    "lon": 100.672,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Xaignabouri",
+    "name": "Sayaburi",
     "key": "xaignabouri",
-    "lat": 18.967056866656478,
-    "lon": 101.23269202889718
+    "lat": 17.7502,
+    "lon": 101.143,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Bolikhamxai",
+    "name": "Borikhamxai",
     "key": "bolikhamxai",
-    "lat": 18.44195883342595,
-    "lon": 104.02957917378353
+    "lat": 18.538,
+    "lon": 104.039,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Khammouan",
+    "name": "Khammouane",
     "key": "khammouan",
-    "lat": 17.514220991850973,
-    "lon": 105.28521575754125
+    "lat": 17.6151,
+    "lon": 105.343,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Savannakhét",
+    "name": "Savannakhet",
     "key": "savannakhét",
-    "lat": 16.622468576949366,
-    "lon": 105.75621436890276
+    "lat": 16.4937,
+    "lon": 105.771,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Saravan",
+    "name": "Saravane",
     "key": "saravan",
-    "lat": 15.891100686126855,
-    "lon": 106.23641338928775
+    "lat": 15.7614,
+    "lon": 106.248,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Vientiane [prefecture]",
+    "name": "Vientiane",
     "key": "vientiane [prefecture]",
-    "lat": 18.125909617555692,
-    "lon": 102.51975105430692
+    "lat": 18.103,
+    "lon": 102.563,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Vientiane",
     "key": "vientiane",
-    "lat": 18.662960553825563,
-    "lon": 102.53755192793255
+    "lat": 18.9186,
+    "lon": 102.156,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Champasak",
+    "name": "Champassak",
     "key": "champasak",
-    "lat": 14.746794526682935,
-    "lon": 105.99766580164719
+    "lat": 14.1093,
+    "lon": 106.003,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Louangphrabang",
+    "name": "Luang Prabang",
     "key": "louangphrabang",
-    "lat": 20.087511605975905,
-    "lon": 102.47148295775892
+    "lat": 20.0788,
+    "lon": 102.549,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Houaphan",
+    "name": "Houaphanh",
     "key": "houaphan",
-    "lat": 20.24716599900897,
-    "lon": 104.11242931215453
+    "lat": 20.3729,
+    "lon": 104.039,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Xiangkhoang",
+    "name": "Xieng Khouang",
     "key": "xiangkhoang",
-    "lat": 19.453180503965488,
-    "lon": 103.68414872964522
+    "lat": 19.5113,
+    "lon": 103.46,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Xékong",
+    "name": "Sekong",
     "key": "xékong",
-    "lat": 15.600037280372419,
-    "lon": 107.0516851806017
+    "lat": 15.6414,
+    "lon": 106.982,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Attapu",
+    "name": "Attapeu",
     "key": "attapu",
-    "lat": 14.81625135684139,
-    "lon": 106.85660555171043
+    "lat": 14.7848,
+    "lon": 106.866,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   }
 ]

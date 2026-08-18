@@ -2,7 +2,10 @@
   {
     "name": "Jersey",
     "key": "jersey",
-    "lat": 49.22361074420005,
-    "lon": -2.120114712799932
+    "lat": 49.2298,
+    "lon": -2.12454,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

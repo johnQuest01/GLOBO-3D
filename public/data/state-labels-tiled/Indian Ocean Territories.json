@@ -1,14 +1,20 @@
 [
   {
-    "name": "Cocos (Keeling) Islands",
+    "name": "Ilhas Cocos",
     "key": "cocos (keeling) islands",
-    "lat": -12.167502536799935,
-    "lon": 96.83944746190005
+    "lat": -12.1915,
+    "lon": 96.905,
+    "labelRank": 3,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
-    "name": "Christmas Island",
+    "name": "Ilha Christmas",
     "key": "christmas island",
-    "lat": -10.474908135749928,
-    "lon": 105.68358401775004
+    "lat": -10.4913,
+    "lon": 105.648,
+    "labelRank": 3,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   }
 ]

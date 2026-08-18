@@ -1,62 +1,92 @@
 [
   {
-    "name": "Matabeleland North",
+    "name": "Matabelelândia Norte",
     "key": "matabeleland north",
-    "lat": -18.76269278320645,
-    "lon": 27.519540749164147
+    "lat": -18.7582,
+    "lon": 27.2215,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Matabeleland South",
+    "name": "Matabeleland Sul",
     "key": "matabeleland south",
-    "lat": -20.922352619416294,
-    "lon": 28.83842109410996
+    "lat": -20.8913,
+    "lon": 28.8871,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Masvingo",
     "key": "masvingo",
-    "lat": -20.682258973408864,
-    "lon": 30.97763371312678
+    "lat": -20.7844,
+    "lon": 31.0875,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Mashonaland West",
+    "name": "Mashonaland Oeste",
     "key": "mashonaland west",
-    "lat": -17.13399702488015,
-    "lon": 29.660788424758803
+    "lat": -17.0176,
+    "lon": 29.5025,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Mashonaland Central",
     "key": "mashonaland central",
-    "lat": -16.62584356158476,
-    "lon": 31.15220513651804
+    "lat": -16.8822,
+    "lon": 31.3922,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Mashonaland East",
+    "name": "Mashonaland Este",
     "key": "mashonaland east",
-    "lat": -17.978364128006337,
-    "lon": 31.709388968154233
+    "lat": -18.2141,
+    "lon": 31.666,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Manicaland",
     "key": "manicaland",
-    "lat": -19.170230476482153,
-    "lon": 32.41552449303908
+    "lat": -18.9399,
+    "lon": 32.1206,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Midlands",
     "key": "midlands",
-    "lat": -19.060741687395634,
-    "lon": 29.521433546654176
+    "lat": -19.0828,
+    "lon": 29.4323,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Harare",
     "key": "harare",
-    "lat": -17.80223531894768,
-    "lon": 31.07433248378566
+    "lat": -17.8928,
+    "lon": 31.0506,
+    "labelRank": 9,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Bulawayo",
     "key": "bulawayo",
-    "lat": -20.160422865472867,
-    "lon": 28.531984897984643
+    "lat": -20.1393,
+    "lon": 28.5463,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   }
 ]

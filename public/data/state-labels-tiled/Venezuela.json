@@ -2,157 +2,235 @@
   {
     "name": "Delta Amacuro",
     "key": "delta amacuro",
-    "lat": 8.811662918048587,
-    "lon": -61.30721574488302
+    "lat": 8.78915,
+    "lon": -61.5863,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Bolívar",
     "key": "bolívar",
-    "lat": 6.13617472764037,
-    "lon": -63.58893110059461
+    "lat": 6.00608,
+    "lon": -63.8628,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Amazonas",
     "key": "amazonas",
-    "lat": -2.8576650622069177,
-    "lon": -64.80381048226928
+    "lat": -4.21774,
+    "lon": -63.7853,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Zulia",
     "key": "zulia",
-    "lat": 9.92746440897056,
-    "lon": -72.16631715813081
+    "lat": 9.58469,
+    "lon": -72.5482,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Táchira",
     "key": "táchira",
-    "lat": 7.961644406569949,
-    "lon": -72.01354242448905
+    "lat": 7.85734,
+    "lon": -72.0039,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Apure",
     "key": "apure",
-    "lat": 7.177594125712055,
-    "lon": -69.43490576316206
+    "lat": 7.0405,
+    "lon": -68.55,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Mérida",
     "key": "mérida",
-    "lat": 8.57906453373793,
-    "lon": -71.30753460971242
+    "lat": 8.49098,
+    "lon": -71.2398,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Trujillo",
     "key": "trujillo",
-    "lat": 9.404717097964035,
-    "lon": -70.50775810624245
+    "lat": 9.49508,
+    "lon": -70.5519,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Falcón",
     "key": "falcón",
-    "lat": 11.18680674160633,
-    "lon": -69.79208668003109
+    "lat": 11.0897,
+    "lon": -69.7604,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Yaracuy",
     "key": "yaracuy",
-    "lat": 10.290058378382334,
-    "lon": -68.70073899094827
+    "lat": 10.3466,
+    "lon": -68.7447,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Carabobo",
     "key": "carabobo",
-    "lat": 10.200884165662558,
-    "lon": -68.02455874847895
+    "lat": 10.1548,
+    "lon": -67.9745,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Aragua",
     "key": "aragua",
-    "lat": 10.033075366781903,
-    "lon": -67.19823370530601
+    "lat": 10.1618,
+    "lon": -67.3252,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Vargas",
     "key": "vargas",
-    "lat": 10.527948971588271,
-    "lon": -67.02063521074611
+    "lat": 10.5818,
+    "lon": -66.8566,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Miranda",
     "key": "miranda",
-    "lat": 10.278926844634563,
-    "lon": -66.43693451699733
+    "lat": 10.2616,
+    "lon": -66.3229,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Anzoátegui",
     "key": "anzoátegui",
-    "lat": 9.044381655120093,
-    "lon": -64.4246322583607
+    "lat": 9.05586,
+    "lon": -64.1949,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Sucre",
     "key": "sucre",
-    "lat": 9.170493268927542,
-    "lon": -75.20659805136826
+    "lat": 9.01236,
+    "lon": -75.1319,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Monagas",
     "key": "monagas",
-    "lat": 9.427813519832984,
-    "lon": -63.053359289893834
+    "lat": 9.50395,
+    "lon": -63.0869,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Nueva Esparta",
     "key": "nueva esparta",
-    "lat": 11.019128914272782,
-    "lon": -64.05600116499994
+    "lat": 10.9719,
+    "lon": -63.9689,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Dependencias Federales",
+    "name": "Dependências Federais",
     "key": "dependencias federales",
-    "lat": 10.938755601200047,
-    "lon": -65.28357499899994
+    "lat": 10.9337,
+    "lon": -65.3067,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "",
     "key": "",
-    "lat": -70.85554371549992,
-    "lon": -2.7388250397499334
+    "lat": -83.0384,
+    "lon": -170.343,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   },
   {
     "name": "Guárico",
     "key": "guárico",
-    "lat": 8.975648725373672,
-    "lon": -66.43532234373892
+    "lat": 8.7237,
+    "lon": -66.4794,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Cojedes",
     "key": "cojedes",
-    "lat": 9.400547959892421,
-    "lon": -68.36328521996093
+    "lat": 9.30182,
+    "lon": -68.3738,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Distrito Capital",
+    "name": "Capital",
     "key": "distrito capital",
-    "lat": 10.486746086612593,
-    "lon": -66.97563934308121
+    "lat": 10.4857,
+    "lon": -66.964,
+    "labelRank": 9,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Barinas",
     "key": "barinas",
-    "lat": 8.149676745041988,
-    "lon": -69.73160430485103
+    "lat": 8.22379,
+    "lon": -69.9798,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Lara",
     "key": "lara",
-    "lat": 10.003926087128026,
-    "lon": -69.71272818966597
+    "lat": 10.1552,
+    "lon": -69.8053,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Portuguesa",
     "key": "portuguesa",
-    "lat": 9.102627837242379,
-    "lon": -69.34081528132829
+    "lat": 9.15625,
+    "lon": -69.3776,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   }
 ]

@@ -1,8 +1,11 @@
 [
   {
-    "name": "Coral Sea Islands",
+    "name": "Ilhas do Mar de Coral",
     "key": "coral sea islands",
-    "lat": -16.135288181499888,
-    "lon": 150.0063175790001
+    "lat": -17.6554,
+    "lon": 148.43,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

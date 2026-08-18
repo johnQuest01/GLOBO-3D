@@ -2,67 +2,100 @@
   {
     "name": "Mangaia",
     "key": "mangaia",
-    "lat": -21.90066904099993,
-    "lon": -157.9279679027499
+    "lat": -21.9367,
+    "lon": -157.909,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Mitiaro",
     "key": "mitiaro",
-    "lat": -19.79851653424994,
-    "lon": -157.7159622877499
+    "lat": -19.8389,
+    "lon": -157.707,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Penrhyn",
     "key": "penrhyn",
-    "lat": -8.971742445999917,
-    "lon": -157.96074785019994
+    "lat": -8.99614,
+    "lon": -157.956,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Rarotonga",
     "key": "rarotonga",
-    "lat": -21.214548435399934,
-    "lon": -159.7829483717999
+    "lat": -21.2088,
+    "lon": -159.789,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Mauke",
     "key": "mauke",
-    "lat": -20.15736256324992,
-    "lon": -157.3287349112499
+    "lat": -20.1852,
+    "lon": -157.312,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Atiu",
     "key": "atiu",
-    "lat": -19.994256280249942,
-    "lon": -158.09801184824994
+    "lat": -20.0232,
+    "lon": -158.089,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Aitutaki",
     "key": "aitutaki",
-    "lat": -19.257384651857073,
-    "lon": -158.93959364685705
+    "lat": -19.2709,
+    "lon": -158.892,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Pukapuka",
     "key": "pukapuka",
-    "lat": -10.88319264124992,
-    "lon": -165.8187149729999
+    "lat": -10.9163,
+    "lon": -165.802,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Manihiki",
     "key": "manihiki",
-    "lat": -10.391981703499923,
-    "lon": -160.97262529224992
+    "lat": -10.4098,
+    "lon": -160.963,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Rakahanga",
     "key": "rakahanga",
-    "lat": -10.037794691749923,
-    "lon": -161.0847061839999
+    "lat": -10.0641,
+    "lon": -161.065,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Palmerston",
     "key": "palmerston",
-    "lat": -18.851413669749917,
-    "lon": -159.7872513499999
+    "lat": -18.8968,
+    "lon": -159.771,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

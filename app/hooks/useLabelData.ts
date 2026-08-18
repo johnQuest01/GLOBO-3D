@@ -4,10 +4,21 @@
 import { useState, useEffect, useMemo } from 'react';
 import { latLonToVector3 } from '@/components/lib/utils';
 import * as THREE from 'three';
-import { useGlobeTranslations } from './useGlobeTranslations'; // Importa o novo hook de tradução
+import { useGlobeTranslations } from './useGlobeTranslations';
+import { SPHERE_RADIUS } from '@/app/lib/globeLabels';
+
+/**
+ * Metadados cartográficos que vêm do Natural Earth (via preprocess-data.mjs):
+ * quem é importante e em que faixa de zoom o nome deve existir.
+ */
+export interface LabelRanking {
+  labelRank: number;
+  minLabel: number;
+  maxLabel: number;
+}
 
 // --- ATUALIZADO: Interface agora inclui o continente ---
-export interface CountryLabelData {
+export interface CountryLabelData extends LabelRanking {
   name: string; // Nome traduzido (ex: "Brasil")
   key: string; // Chave original (ex: "Brazil")
   lat: number;
@@ -15,16 +26,20 @@ export interface CountryLabelData {
   continent: string; // (ex: "South America", "Africa")
 }
 
+export interface ContinentLabelData extends LabelRanking {
+  name: string;
+  key: string;
+  lat: number;
+  lon: number;
+}
+
 // Interface para os dados dos "tiles" de estado
-export interface StateLabelData {
+export interface StateLabelData extends LabelRanking {
   name: string; // Nome traduzido (ex: "São Paulo")
   key: string; // Chave original (ex: "são paulo")
   lat: number;
   lon: number;
 }
-
-// Tipo interno para estados com posição 3D processada
-export type StateLabelWithPosition = StateLabelData & { position: THREE.Vector3 };
 
 // Tipos de suporte para useCombinedStateData
 type StateLabelDataWithCountry = StateLabelData & { countryKey: string };
@@ -32,19 +47,57 @@ export type ProcessedStateLabel = StateLabelDataWithCountry & {
   position: THREE.Vector3;
 };
 
-// URL dos países
+export interface CityLabelData {
+  name: string;
+  key: string;
+  lat: number;
+  lon: number;
+  countryKey: string;
+  rank?: number;
+}
+
+export type ProcessedCityLabel = CityLabelData & { position: THREE.Vector3 };
+
+const CITIES_URL = '/data/city-labels.json';
 const COUNTRIES_URL = '/data/country-labels.json';
+const CONTINENTS_URL = '/data/continent-labels.json';
 const STATE_TILE_BASE_URL = '/data/state-labels-tiled/';
-const SPHERE_RADIUS = 1.5;
+
+/** Valores usados quando o JSON ainda não tem os metadados do Natural Earth. */
+const COUNTRY_RANKING_FALLBACK: LabelRanking = {
+  labelRank: 4,
+  minLabel: 2.5,
+  maxLabel: 7,
+};
+const STATE_RANKING_FALLBACK: LabelRanking = {
+  labelRank: 5,
+  minLabel: 4.2,
+  maxLabel: 9,
+};
+
+function withRanking<T extends Partial<LabelRanking>>(
+  item: T,
+  fallback: LabelRanking,
+): T & LabelRanking {
+  return {
+    ...item,
+    labelRank: item.labelRank ?? fallback.labelRank,
+    minLabel: item.minLabel ?? fallback.minLabel,
+    maxLabel: item.maxLabel ?? fallback.maxLabel,
+  };
+}
 
 /**
- * Hook para buscar os dados de rótulos de PAÍSES, aplicando a tradução dinâmica.
- * (Inalterado)
+ * Hook para buscar os dados de rótulos de CONTINENTES e PAÍSES, aplicando a
+ * tradução dinâmica.
  */
 export function useLabelData() {
   const [countryLabels, setCountryLabels] = useState<CountryLabelData[]>([]);
+  const [continentLabels, setContinentLabels] = useState<ContinentLabelData[]>(
+    [],
+  );
   const [isLoadingRaw, setIsLoadingRaw] = useState(true);
-  
+
   // Usa o novo hook de tradução
   const { translate, isLoadingTranslations } = useGlobeTranslations();
 
@@ -53,7 +106,11 @@ export function useLabelData() {
     async function fetchData() {
       setIsLoadingRaw(true);
       try {
-        const countriesRes = await fetch(COUNTRIES_URL, { cache: 'no-store' });
+        // Sem 'no-store': são artefatos de build, podem ficar no cache do navegador.
+        const [countriesRes, continentsRes] = await Promise.all([
+          fetch(COUNTRIES_URL),
+          fetch(CONTINENTS_URL),
+        ]);
 
         if (!countriesRes.ok) {
           throw new Error(
@@ -62,7 +119,17 @@ export function useLabelData() {
         }
 
         const countriesData: CountryLabelData[] = await countriesRes.json();
-        setCountryLabels(countriesData);
+        setCountryLabels(
+          countriesData.map((label) =>
+            withRanking(label, COUNTRY_RANKING_FALLBACK),
+          ),
+        );
+
+        if (continentsRes.ok) {
+          const continentsData: ContinentLabelData[] =
+            await continentsRes.json();
+          setContinentLabels(continentsData);
+        }
       } catch (error) {
         console.error(
           'Falha ao carregar dados dos rótulos (labels):',
@@ -87,93 +154,62 @@ export function useLabelData() {
 
       return {
         ...label,
-        name: translatedName, // <-- Nome traduzido (ou fallback para o original)
+        // Mantém o nome já traduzido no preprocess quando não há tradução manual.
+        name: translatedName === label.key ? label.name : translatedName,
       };
     });
   }, [countryLabels, translate, isLoadingRaw, isLoadingTranslations]); // Depende dos dados brutos e da função de tradução
 
+  const translatedContinentLabels = useMemo(() => {
+    if (isLoadingRaw || isLoadingTranslations) return [];
+
+    return continentLabels.map((label) => {
+      const translatedName = translate(label.key);
+      return {
+        ...label,
+        name: translatedName === label.key ? label.name : translatedName,
+      };
+    });
+  }, [continentLabels, translate, isLoadingRaw, isLoadingTranslations]);
+
   return {
     countryLabels: translatedCountryLabels, // Retorna os labels traduzidos
+    continentLabels: translatedContinentLabels,
     isLoadingLabels: isLoadingRaw || isLoadingTranslations // O estado de carregamento combinado
   };
 }
 
 /**
- * (Inalterado) Hook para buscar os "tiles" de estados dinamicamente.
+ * Cada tile de país é buscado uma única vez por sessão; girar o globo de volta
+ * não dispara rede novamente.
  */
-export function useTiledStateData(countryKey: string | null) {
-  const [stateLabels, setStateLabels] = useState<StateLabelData[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
+const stateTileCache = new Map<string, Promise<StateLabelDataWithCountry[]>>();
 
-  useEffect(() => {
-    if (!countryKey) {
-      setStateLabels([]);
-      return;
-    }
+function loadStateTile(countryKey: string): Promise<StateLabelDataWithCountry[]> {
+  const cached = stateTileCache.get(countryKey);
+  if (cached) return cached;
 
-    async function fetchStateData() {
-      setIsLoading(true);
-      const STATE_TILE_URL = `${STATE_TILE_BASE_URL}${countryKey}.json`;
+  const request = fetch(`${STATE_TILE_BASE_URL}${encodeURIComponent(countryKey)}.json`)
+    .then((res) => (res.ok ? (res.json() as Promise<StateLabelData[]>) : []))
+    .then((states) =>
+      states.map((state) => ({
+        ...withRanking(state, STATE_RANKING_FALLBACK),
+        countryKey,
+      })),
+    )
+    .catch(() => [] as StateLabelDataWithCountry[]);
 
-      try {
-        const statesRes = await fetch(STATE_TILE_URL, { cache: 'no-store' });
-        if (!statesRes.ok) {
-          if (statesRes.status === 404) {
-            // console.log(`Nenhum tile de estado para: ${countryKey}`);
-          } else {
-            throw new Error(
-              `Falha ao buscar ${STATE_TILE_URL}: ${statesRes.statusText}`
-            );
-          }
-        }
-
-        const statesData: StateLabelData[] = await statesRes.json();
-        setStateLabels(statesData);
-      } catch (error) {
-        setStateLabels([]);
-        // console.warn(`Falha ao carregar tile de estado para ${countryKey}:`, error.message);
-      } finally {
-        setIsLoading(false);
-      }
-    }
-
-    fetchStateData();
-  }, [countryKey]);
-
-  return { stateLabels, isLoadingStateLabels: isLoading };
+  stateTileCache.set(countryKey, request);
+  return request;
 }
 
-
-// --- INÍCIO DA LÓGICA DE OCULTAÇÃO SELETIVA ---
-
 /**
- * (REMOVIDO DO FILTRO ATIVO, POIS 'StateLabels.tsx' JÁ FAZ ISSO)
- * Lista de bloqueio estática para países específicos (pela 'key' em inglês).
- */
-// const STATE_BLOCKLIST = new Set(['Russia', 'Ukraine', 'China', 'Japan']);
-
-/**
- * --- CORREÇÃO (BUG 3) ---
- * Chaves de "países" que na verdade são continentes.
- * Alterado de 'south-america' (minúsculo) para 'South America' (como está no GeoJSON/content.json)
- */
-const CONTINENT_KEYS = new Set([
-  'South America',
-  'North America',
-  'Europe',
-  'Africa',
-  'Asia',
-  'Oceania',
-  'Antarctica'
-]);
-
-/**
- * Hook que busca TODOS os dados de estados para os países VISÍVEIS (e NÃO BLOQUEADOS)
- * e os combina em um único array mestre.
+ * Busca tiles de estado só dos países visíveis, e só quando o zoom pede a
+ * camada de estados. Nunca o mundo inteiro.
  */
 export function useCombinedStateData(
-  // A 'CountryLabelData' agora inclui 'continent'
-  visibleCountries: (CountryLabelData & { position: THREE.Vector3 })[]
+  visibleCountryKeys: string[],
+  enabled = true,
 ): {
   combinedStates: ProcessedStateLabel[];
   isLoading: boolean;
@@ -182,101 +218,40 @@ export function useCombinedStateData(
     StateLabelDataWithCountry[]
   >([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [prevCountryKeys, setPrevCountryKeys] = useState<string>('');
 
-  // 1. Filtra os países visíveis ANTES de fazer a busca
-  const countriesToFetch = useMemo(() => {
-    return visibleCountries.filter(country => {
-      // Regra 1: Ignora os "países" que são continentes
-      // (Usa a 'key' corrigida, ex: "South America")
-      if (CONTINENT_KEYS.has(country.key)) {
-        return false;
-      }
-
-      // --- FILTROS REMOVIDOS ---
-      // A lógica de quais países DEVEM mostrar estados (Brazil, USA)
-      // já está sendo tratada no componente 'StateLabels.tsx'.
-      // Manter filtros aqui (como bloquear a África) e
-      // filtros lá (como permitir o Brasil) é redundante e causa bugs.
-      // O trabalho deste hook é apenas buscar dados para países que *não* são continentes.
-
-      // [REMOVIDO] Regra 2: Ignora países da lista de bloqueio estática
-      // if (STATE_BLOCKLIST.has(country.key)) {
-      //   return false;
-      // }
-
-      // [REMOVIDO] Regra 3: Ignora todos os países do continente Africano
-      // if (country.continent === 'Africa') {
-      //   return false;
-      // }
-
-      // Se passou por tudo (ou seja, NÃO é um continente), busca os estados
-      return true;
-    });
-  }, [visibleCountries]);
-
-  // 2. Gera a chave de memoização baseada APENAS nos países filtrados
   const countryKeys = useMemo(
-    () => countriesToFetch.map((c) => c.key).sort().join(','),
-    [countriesToFetch]
+    () => (enabled ? [...visibleCountryKeys].sort().join(',') : ''),
+    [visibleCountryKeys, enabled],
   );
 
   useEffect(() => {
-    // Só re-busca se a lista de países filtrados mudar
-    if (countryKeys === prevCountryKeys) {
-      return;
-    }
-
-    setPrevCountryKeys(countryKeys);
-
-    // 3. Usa a lista filtrada (countriesToFetch)
-    if (countriesToFetch.length === 0) {
+    if (!countryKeys) {
       setCombinedStates([]);
       return;
     }
 
-    async function fetchAllStateData() {
-      setIsLoading(true);
-      try {
-        const fetchPromises = countriesToFetch.map((country) => { // <-- USA A LISTA FILTRADA
-          const STATE_TILE_URL = `${STATE_TILE_BASE_URL}${country.key}.json`;
-          return fetch(STATE_TILE_URL, { cache: 'no-store' })
-            .then((res) => {
-              if (res.status === 404) return [];
-              if (!res.ok) throw new Error(`Falha ao buscar ${country.key}`);
-              return res.json() as Promise<StateLabelData[]>;
-            })
-            .then((states) => {
-              // (Lógica inalterada de adicionar 'countryKey')
-              return states.map((state) => ({
-                ...state,
-                countryKey: country.key,
-              }));
-            })
-            .catch(() => {
-              return [];
-            });
-        });
+    let cancelled = false;
+    setIsLoading(true);
 
-        const allStateArrays = (await Promise.all(
-          fetchPromises
-        )) as StateLabelDataWithCountry[][];
-
-        const flatStates = allStateArrays.flat();
-        setCombinedStates(flatStates);
-
-      } catch (error) {
+    Promise.all(countryKeys.split(',').map(loadStateTile))
+      .then((tiles) => {
+        if (cancelled) return;
+        setCombinedStates(tiles.flat());
+      })
+      .catch((error) => {
+        if (cancelled) return;
         console.error('Falha ao combinar dados de estados:', error);
         setCombinedStates([]);
-      } finally {
-        setIsLoading(false);
-      }
-    }
+      })
+      .finally(() => {
+        if (!cancelled) setIsLoading(false);
+      });
 
-    fetchAllStateData();
-  }, [countryKeys, countriesToFetch, prevCountryKeys]); // <-- Dependência atualizada
+    return () => {
+      cancelled = true;
+    };
+  }, [countryKeys]);
 
-  // (Lógica de processamento para Vector3 inalterada)
   const processedStates: ProcessedStateLabel[] = useMemo(() => {
     return combinedStates.map((label) => ({
       ...label,
@@ -285,4 +260,49 @@ export function useCombinedStateData(
   }, [combinedStates]);
 
   return { combinedStates: processedStates, isLoading };
+}
+
+export function useCityLabelData(enabled = false): {
+  cityLabels: ProcessedCityLabel[];
+  isLoadingCities: boolean;
+} {
+  const [cityLabels, setCityLabels] = useState<CityLabelData[]>([]);
+  const [isLoadingCities, setIsLoadingCities] = useState(false);
+  const [hasLoaded, setHasLoaded] = useState(false);
+
+  useEffect(() => {
+    if (!enabled || hasLoaded) return;
+
+    async function fetchCities() {
+      setIsLoadingCities(true);
+      try {
+        const res = await fetch(CITIES_URL);
+        if (!res.ok) {
+          setCityLabels([]);
+          return;
+        }
+        const data: CityLabelData[] = await res.json();
+        setCityLabels(data);
+        setHasLoaded(true);
+      } catch (error) {
+        console.error('Falha ao carregar cidades:', error);
+        setCityLabels([]);
+      } finally {
+        setIsLoadingCities(false);
+      }
+    }
+
+    fetchCities();
+  }, [enabled, hasLoaded]);
+
+  const processedCities = useMemo(
+    () =>
+      cityLabels.map((label) => ({
+        ...label,
+        position: latLonToVector3(label.lat, label.lon, SPHERE_RADIUS),
+      })),
+    [cityLabels],
+  );
+
+  return { cityLabels: processedCities, isLoadingCities };
 }

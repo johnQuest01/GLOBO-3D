@@ -1,110 +1,164 @@
 [
   {
-    "name": "North",
+    "name": "Norte",
     "key": "north",
-    "lat": 22.52399064301964,
-    "lon": 114.18328251654356
+    "lat": 22.5063,
+    "lon": 114.148,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Islands",
     "key": "islands",
-    "lat": 22.290261286365876,
-    "lon": 113.96852511112445
+    "lat": 22.2597,
+    "lon": 113.954,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Southern",
+    "name": "Sul",
     "key": "southern",
-    "lat": 7.871403323031413,
-    "lon": -11.970108022157978
+    "lat": 7.85416,
+    "lon": -12.0512,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Central and Western",
+    "name": "Distrito Central e Ocidental",
     "key": "central and western",
-    "lat": 22.27015475459696,
-    "lon": 114.13832602623881
+    "lat": 22.2741,
+    "lon": 114.144,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Wan Chai",
     "key": "wan chai",
-    "lat": 22.271140693626695,
-    "lon": 114.17231228495818
+    "lat": 22.2699,
+    "lon": 114.178,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Eastern",
+    "name": "Leste",
     "key": "eastern",
-    "lat": -13.276595798443843,
-    "lon": 32.03293192144825
+    "lat": -13.7617,
+    "lon": 31.8341,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Tsuen Wan",
     "key": "tsuen wan",
-    "lat": 22.377752636548685,
-    "lon": 114.10569603156561
+    "lat": 22.3869,
+    "lon": 114.12,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Tai Po",
     "key": "tai po",
-    "lat": 22.457756767505888,
-    "lon": 114.21973971315003
+    "lat": 22.4447,
+    "lon": 114.154,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Sha Tin",
     "key": "sha tin",
-    "lat": 22.385074923922684,
-    "lon": 114.19726957535997
+    "lat": 22.3807,
+    "lon": 114.2,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Sai Kung",
     "key": "sai kung",
-    "lat": 22.377169410027903,
-    "lon": 114.28107798460776
+    "lat": 22.3463,
+    "lon": 114.249,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Kwun Tong",
     "key": "kwun tong",
-    "lat": 22.31011288060872,
-    "lon": 114.2275670870476
+    "lat": 22.3159,
+    "lon": 114.225,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Kowloon City",
+    "name": "Cidade de Kowloon",
     "key": "kowloon city",
-    "lat": 22.323226993973442,
-    "lon": 114.19088506006884
+    "lat": 22.3268,
+    "lon": 114.19,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Yau Tsim Mong",
     "key": "yau tsim mong",
-    "lat": 22.30686764526071,
-    "lon": 114.17197509907194
+    "lat": 22.3128,
+    "lon": 114.169,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Sham Shui Po",
     "key": "sham shui po",
-    "lat": 22.331034047205204,
-    "lon": 114.16159388771042
+    "lat": 22.3331,
+    "lon": 114.164,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Kwai Tsing",
     "key": "kwai tsing",
-    "lat": 22.34603181254584,
-    "lon": 114.14277201785532
+    "lat": 22.351,
+    "lon": 114.14,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Tuen Mun",
     "key": "tuen mun",
-    "lat": 22.3774389910474,
-    "lon": 114.00446598636353
+    "lat": 22.3846,
+    "lon": 113.991,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Yuen Long",
     "key": "yuen long",
-    "lat": 22.439782442339055,
-    "lon": 114.04666543386594
+    "lat": 22.4415,
+    "lon": 114.058,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Wong Tai Sin",
     "key": "wong tai sin",
-    "lat": 22.34385854489592,
-    "lon": 114.20670240181433
+    "lat": 22.3432,
+    "lon": 114.215,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

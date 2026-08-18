@@ -2,163 +2,244 @@
   {
     "name": "Rio Grande do Sul",
     "key": "rio grande do sul",
-    "lat": -30.153199558333487,
-    "lon": -53.25455847870274
+    "lat": -29.7277,
+    "lon": -53.656,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Roraima",
     "key": "roraima",
-    "lat": 2.49245759944284,
-    "lon": -61.794106243741105
+    "lat": 1.93803,
+    "lon": -61.3325,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Pará",
     "key": "pará",
-    "lat": -2.3350180899593105,
-    "lon": -52.65959160880838
+    "lat": -4.44313,
+    "lon": -52.6491,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Acre",
     "key": "acre",
-    "lat": -9.612033493293943,
-    "lon": -70.83911521566198
+    "lat": -8.9285,
+    "lon": -70.2976,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Amapá",
     "key": "amapá",
-    "lat": 1.513542948480184,
-    "lon": -52.37435445798343
+    "lat": 1.41157,
+    "lon": -51.6842,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Mato Grosso do Sul",
     "key": "mato grosso do sul",
-    "lat": -20.4422262164256,
-    "lon": -54.86884462358447
+    "lat": -20.6756,
+    "lon": -54.5502,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Paraná",
     "key": "paraná",
-    "lat": -24.728190322972118,
-    "lon": -51.47999419480559
+    "lat": -24.6618,
+    "lon": -51.3228,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Santa Catarina",
     "key": "santa catarina",
-    "lat": -27.14274934267312,
-    "lon": -50.9362790079829
+    "lat": -27.0392,
+    "lon": -51.1586,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Amazonas",
     "key": "amazonas",
-    "lat": -2.8576650622069177,
-    "lon": -64.80381048226928
+    "lat": -4.21774,
+    "lon": -63.7853,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Rondônia",
     "key": "rondônia",
-    "lat": -10.60610130214494,
-    "lon": -63.335969612817294
+    "lat": -10.9712,
+    "lon": -63.1439,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Mato Grosso",
     "key": "mato grosso",
-    "lat": -13.357759735923764,
-    "lon": -56.19962381182115
+    "lat": -13.3926,
+    "lon": -55.9235,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Maranhão",
     "key": "maranhão",
-    "lat": -5.381911552366737,
-    "lon": -45.48510660832836
+    "lat": -5.01897,
+    "lon": -45.389,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Piauí",
     "key": "piauí",
-    "lat": -7.222599513397343,
-    "lon": -42.946126161677405
+    "lat": -8.08698,
+    "lon": -43.1974,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Ceará",
     "key": "ceará",
-    "lat": -5.253498343080372,
-    "lon": -39.59908034845174
+    "lat": -5.37602,
+    "lon": -39.3429,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Rio Grande do Norte",
     "key": "rio grande do norte",
-    "lat": -5.976395836256734,
-    "lon": -36.8610994697404
+    "lat": -5.66157,
+    "lon": -36.5472,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Paraíba",
     "key": "paraíba",
-    "lat": -7.146735127830362,
-    "lon": -36.856789478022826
+    "lat": -7.34234,
+    "lon": -36.2726,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Pernambuco",
     "key": "pernambuco",
-    "lat": -8.285358067333851,
-    "lon": -38.101968229512
+    "lat": -8.47283,
+    "lon": -37.2958,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Alagoas",
     "key": "alagoas",
-    "lat": -9.460682051427916,
-    "lon": -36.60470402374332
+    "lat": -9.77391,
+    "lon": -36.6917,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Sergipe",
     "key": "sergipe",
-    "lat": -10.569597947561961,
-    "lon": -37.458687577807105
+    "lat": -10.5918,
+    "lon": -37.3836,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Bahia",
     "key": "bahia",
-    "lat": -12.459100802092221,
-    "lon": -41.79396478681005
+    "lat": -12.3651,
+    "lon": -41.8027,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Espírito Santo",
     "key": "espírito santo",
-    "lat": -19.578264713493983,
-    "lon": -40.84503095143581
+    "lat": -19.6916,
+    "lon": -40.5436,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Rio de Janeiro",
     "key": "rio de janeiro",
-    "lat": -22.276924168024415,
-    "lon": -43.00609774696197
+    "lat": -22.4049,
+    "lon": -43.1152,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "São Paulo",
     "key": "são paulo",
     "lat": -22.4,
-    "lon": -48.6
+    "lon": -48.6,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Goiás",
     "key": "goiás",
-    "lat": -15.623098991574798,
-    "lon": -49.100081489442786
+    "lat": -15.863,
+    "lon": -49.5786,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
-    "name": "Distrito Federal",
+    "name": "Federal",
     "key": "distrito federal",
-    "lat": -15.81514546034473,
-    "lon": -47.66668120481125
+    "lat": -15.7665,
+    "lon": -47.7902,
+    "labelRank": 7,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Minas Gerais",
     "key": "minas gerais",
-    "lat": -18.456156090779718,
-    "lon": -45.195930853844565
+    "lat": -18.5895,
+    "lon": -44.4808,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   },
   {
     "name": "Tocantins",
     "key": "tocantins",
-    "lat": -9.548420124661343,
-    "lon": -48.0968051102069
+    "lat": -10.223,
+    "lon": -48.2502,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 8.5
   }
 ]

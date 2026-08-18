@@ -1,8 +1,11 @@
 [
   {
-    "name": "Saint Barthélemy",
+    "name": "Coletividade de São Bartolomeu",
     "key": "saint barthélemy",
-    "lat": 17.90111928925006,
-    "lon": -62.831695116499915
+    "lat": 17.9017,
+    "lon": -62.8288,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

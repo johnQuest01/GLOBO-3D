@@ -1,8 +1,8 @@
 'use client';
 
-import React, { useRef, useMemo, useState, useEffect } from 'react';
+import React, { useRef, useMemo, useEffect } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Line, useGLTF, Html } from '@react-three/drei';
+import { useGLTF, Billboard, Text, RoundedBox } from '@react-three/drei';
 import * as THREE from 'three';
 
 interface AirplaneProps {
@@ -13,7 +13,8 @@ interface AirplaneProps {
 
 const SPHERE_RADIUS = 1.5;
 const FLIGHT_SPEED = 0.05;
-const LINE_POINTS = 200;
+/** Pontos do rastro. A geometria é criada UMA vez com todos eles. */
+const LINE_POINTS = 220;
 const LOOP_DELAY_DURATION = 1.5;
 
 const stylishAirplaneMaterial = new THREE.MeshStandardMaterial({
@@ -24,13 +25,8 @@ const stylishAirplaneMaterial = new THREE.MeshStandardMaterial({
   emissiveIntensity: 0.3,
 });
 
-/**
- * Componente que carrega o modelo 3D do avião.
- */
 const AirplaneModel: React.FC = () => {
-  // --- CORREÇÃO: Removido o sufixo '-draco' para corresponder ao seu arquivo ---
   const { scene } = useGLTF('/models/airplane.glb');
-  
   const model = useMemo(() => scene.clone(), [scene]);
 
   useEffect(() => {
@@ -44,8 +40,52 @@ const AirplaneModel: React.FC = () => {
   return <primitive object={model} />;
 };
 
-// --- CORREÇÃO: Preload do caminho correto ---
 useGLTF.preload('/models/airplane.glb');
+
+/**
+ * Rota de círculo máximo — a mesma que a aviação comercial voa.
+ *
+ * Entre dois aeroportos, o caminho mais curto sobre a esfera é o arco de
+ * círculo máximo, e é por isso que um voo São Paulo–Tóquio passa perto do
+ * Ártico em vez de seguir reto no mapa plano. A interpolação é feita por
+ * quaternion (rotação constante em torno do eixo comum), o que dá o arco exato
+ * — a curva Catmull-Rom que havia aqui antes passava pelos pontos certos mas
+ * saía do círculo máximo no meio do caminho.
+ *
+ * A altitude segue um seno: sobe, cruza no teto e desce.
+ */
+function makeGreatCircleRoute(start: THREE.Vector3, end: THREE.Vector3) {
+  const from = start.clone().normalize();
+  const to = end.clone().normalize();
+
+  // Antípodas não definem um plano: qualquer perpendicular serve de desempate.
+  let axisQuaternion: THREE.Quaternion;
+  if (from.dot(to) < -0.9999) {
+    const fallback =
+      Math.abs(from.y) > 0.9
+        ? new THREE.Vector3(1, 0, 0)
+        : new THREE.Vector3(0, 1, 0);
+    const axis = new THREE.Vector3().crossVectors(from, fallback).normalize();
+    axisQuaternion = new THREE.Quaternion().setFromAxisAngle(axis, Math.PI);
+  } else {
+    axisQuaternion = new THREE.Quaternion().setFromUnitVectors(from, to);
+  }
+
+  // Distância angular: define o teto de cruzeiro, como numa rota real.
+  const angle = from.angleTo(to);
+  const cruiseAltitude = 0.06 + (angle / Math.PI) * 0.30;
+
+  const identity = new THREE.Quaternion();
+  const step = new THREE.Quaternion();
+
+  return function pointAt(t: number, target: THREE.Vector3): THREE.Vector3 {
+    step.slerpQuaternions(identity, axisQuaternion, t);
+    target.copy(from).applyQuaternion(step);
+
+    const altitude = cruiseAltitude * Math.sin(Math.PI * t);
+    return target.multiplyScalar(SPHERE_RADIUS + altitude);
+  };
+}
 
 const Airplane: React.FC<AirplaneProps> = ({
   startVec,
@@ -53,85 +93,82 @@ const Airplane: React.FC<AirplaneProps> = ({
   onFlightComplete,
 }) => {
   const airplaneRef = useRef<THREE.Group>(null!);
-  const [progress, setProgress] = useState(0);
-  const [linePoints, setLinePoints] = useState<THREE.Vector3[]>([]);
-  const [delayTimer, setDelayTimer] = useState(0);
+  const labelRef = useRef<THREE.Group>(null!);
 
-  // 1. Calcula a curva (o arco)
-  const curve = useMemo(() => {
-    const distance = startVec.distanceTo(endVec);
-    const altitude = distance * 0.15 + 0.1;
-    let midVec = new THREE.Vector3()
-      .addVectors(startVec, endVec)
-      .multiplyScalar(0.5);
-    if (midVec.length() < 0.1) {
-      let up = new THREE.Vector3(0, 1, 0);
-      if (Math.abs(startVec.y / SPHERE_RADIUS) > 0.9) {
-        up = new THREE.Vector3(1, 0, 0);
-      }
-      midVec = new THREE.Vector3().crossVectors(startVec, up).normalize();
+  // Progresso em ref, não em state: animar com setState provocava um
+  // re-render de React a cada quadro, que era o gargalo da viagem.
+  const progressRef = useRef(0);
+  const delayRef = useRef(0);
+  const completedRef = useRef(false);
+
+  const pointAt = useMemo(
+    () => makeGreatCircleRoute(startVec, endVec),
+    [startVec, endVec],
+  );
+
+  /**
+   * O rastro é UMA geometria com todos os pontos, criada uma vez. Crescer o
+   * traço é só mover o `drawRange` — sem realocar array nem reconstruir
+   * geometria a cada quadro, que era o que travava.
+   */
+  const trailGeometry = useMemo(() => {
+    const positions = new Float32Array((LINE_POINTS + 1) * 3);
+    const point = new THREE.Vector3();
+
+    for (let i = 0; i <= LINE_POINTS; i++) {
+      pointAt(i / LINE_POINTS, point);
+      positions[i * 3] = point.x;
+      positions[i * 3 + 1] = point.y;
+      positions[i * 3 + 2] = point.z;
     }
-    const midPoint = midVec
-      .normalize()
-      .multiplyScalar(SPHERE_RADIUS + altitude);
-    const startClimbFraction = 0.1;
-    const startClimbAltitudeRatio = 0.2;
-    const startClimbPoint = new THREE.Vector3()
-      .lerpVectors(startVec, midPoint, startClimbFraction)
-      .normalize()
-      .multiplyScalar(SPHERE_RADIUS + altitude * startClimbAltitudeRatio);
-    const endDescentFraction = 0.1;
-    const endDescentAltitudeRatio = 0.2;
-    const endDescentPoint = new THREE.Vector3()
-      .lerpVectors(endVec, midPoint, endDescentFraction)
-      .normalize()
-      .multiplyScalar(SPHERE_RADIUS + altitude * endDescentAltitudeRatio);
 
-    return new THREE.CatmullRomCurve3(
-      [startVec, startClimbPoint, midPoint, endDescentPoint, endVec],
-      false,
-      'catmullrom',
-      0.5,
-    );
-  }, [startVec, endVec]);
+    const geometry = new THREE.BufferGeometry();
+    geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    geometry.setDrawRange(0, 0);
+    return geometry;
+  }, [pointAt]);
 
-  const points = useMemo(() => {
-    return curve.getSpacedPoints(LINE_POINTS);
-  }, [curve]);
+  useEffect(() => () => trailGeometry.dispose(), [trailGeometry]);
 
-  // 4. Anima o avião, a linha E O LOOP
-  useFrame((_, delta) => {
-    if (!airplaneRef.current || !curve) return;
+  const position = useMemo(() => new THREE.Vector3(), []);
+  const tangent = useMemo(() => new THREE.Vector3(), []);
 
-    if (progress >= 1.0) {
-      const newTimer = delayTimer + delta;
-      setDelayTimer(newTimer);
+  useFrame(({ camera }, delta) => {
+    if (!airplaneRef.current) return;
 
-      if (newTimer > LOOP_DELAY_DURATION) {
-        setProgress(0);
-        setDelayTimer(0);
-        setLinePoints([]); 
+    if (progressRef.current >= 1) {
+      delayRef.current += delta;
+      if (delayRef.current > LOOP_DELAY_DURATION) {
+        progressRef.current = 0;
+        delayRef.current = 0;
+        completedRef.current = false;
+        trailGeometry.setDrawRange(0, 0);
       }
       return;
     }
 
-    const newProgress = Math.min(progress + delta * FLIGHT_SPEED, 1.0);
-    const position = curve.getPointAt(newProgress);
+    progressRef.current = Math.min(progressRef.current + delta * FLIGHT_SPEED, 1);
+    const t = progressRef.current;
+
+    pointAt(t, position);
     airplaneRef.current.position.copy(position);
 
-    const tangentProgress = Math.min(newProgress + 0.001, 1.0);
-    const tangentPosition = curve.getPointAt(tangentProgress);
+    // Aponta o nariz para onde a rota segue.
+    pointAt(Math.min(t + 0.002, 1), tangent);
+    airplaneRef.current.up.copy(position).normalize();
+    airplaneRef.current.lookAt(tangent);
 
-    const up = position.clone().normalize();
-    airplaneRef.current.up.copy(up);
-    airplaneRef.current.lookAt(tangentPosition);
+    trailGeometry.setDrawRange(0, Math.ceil(t * LINE_POINTS) + 1);
 
-    setProgress(newProgress);
+    // Etiqueta com tamanho constante em tela, como os rótulos do globo.
+    if (labelRef.current) {
+      labelRef.current.scale.setScalar(
+        camera.position.distanceTo(position) * 0.055,
+      );
+    }
 
-    const pointsToDraw = Math.ceil(newProgress * LINE_POINTS);
-    setLinePoints(points.slice(0, pointsToDraw));
-
-    if (newProgress >= 1.0) {
+    if (t >= 1 && !completedRef.current) {
+      completedRef.current = true;
       onFlightComplete?.();
     }
   });
@@ -142,15 +179,42 @@ const Airplane: React.FC<AirplaneProps> = ({
         <group rotation={[0, Math.PI, 0]} scale={0.12}>
           <AirplaneModel />
         </group>
-        <Html position={[0, 0.05, -0.2]} center occlude>
-          <div className="bg-white text-red-600 border border-black px-2 py-0.5 rounded-md text-sm font-bold select-none">
-            GOL
-          </div>
-        </Html>
+
+        {/* O mesmo card branco de antes, agora desenhado na GPU em vez de
+            <Html occlude> — que fazia raycast contra a cena e sincronizava um
+            elemento do DOM a cada quadro. Acompanha o avião e mantém tamanho
+            constante em tela. */}
+        <group ref={labelRef} position={[0, 0.05, 0]}>
+          <Billboard>
+            <RoundedBox args={[1.5, 0.62, 0.02]} radius={0.14} smoothness={3}>
+              <meshBasicMaterial color="#ffffff" depthTest={false} toneMapped={false} />
+            </RoundedBox>
+            <Text
+              position={[0, 0, 0.02]}
+              fontSize={0.4}
+              color="#dc2626"
+              anchorX="center"
+              anchorY="middle"
+              renderOrder={12}
+            >
+              GOL
+              <meshBasicMaterial color="#dc2626" depthTest={false} toneMapped={false} />
+            </Text>
+          </Billboard>
+        </group>
       </group>
-      {linePoints.length > 1 && (
-        <Line points={linePoints} color="#00FFFF" lineWidth={2} transparent opacity={0.7} />
-      )}
+
+      <line
+        // @ts-expect-error -- three.js aceita geometry como prop nativa aqui
+        geometry={trailGeometry}
+      >
+        <lineBasicMaterial
+          color="#00FFFF"
+          transparent
+          opacity={0.65}
+          depthWrite={false}
+        />
+      </line>
     </group>
   );
 };

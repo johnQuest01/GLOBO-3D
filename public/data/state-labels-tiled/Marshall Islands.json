@@ -1,14 +1,20 @@
 [
   {
-    "name": "Railik Chain",
+    "name": "Cadeia Railik",
     "key": "railik chain",
-    "lat": 5.879969042538523,
-    "lon": 169.64423512215387
+    "lat": 7.59556,
+    "lon": 168.959,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Ratak Chain",
+    "name": "Cadeia Ratak",
     "key": "ratak chain",
-    "lat": 7.090243502500073,
-    "lon": 171.32284589916674
+    "lat": 9.45915,
+    "lon": 170.243,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

@@ -1,98 +1,146 @@
 [
   {
-    "name": "Tunapuna/Piarco",
+    "name": "Tunapuna Piarco",
     "key": "tunapuna/piarco",
-    "lat": 10.692403679686047,
-    "lon": -61.331889002318455
+    "lat": 10.6903,
+    "lon": -61.3254,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "San Juan-Laventille",
     "key": "san juan-laventille",
-    "lat": 10.680083575507375,
-    "lon": -61.45505812174632
+    "lat": 10.613,
+    "lon": -61.4498,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Diego Martin",
     "key": "diego martin",
-    "lat": 10.691144205406218,
-    "lon": -61.52491980487022
+    "lat": 10.7128,
+    "lon": -61.5778,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Port of Spain",
     "key": "port of spain",
-    "lat": 10.653543714277259,
-    "lon": -61.51297628165996
+    "lat": 10.6647,
+    "lon": -61.5204,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Chaguanas",
     "key": "chaguanas",
-    "lat": 10.543026028108693,
-    "lon": -61.43310847278367
+    "lat": 10.5359,
+    "lon": -61.4134,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Couva-Tabaquite-Talparo",
+    "name": "Couva Tabaquite Talparo",
     "key": "couva-tabaquite-talparo",
-    "lat": 10.42156015618874,
-    "lon": -61.357281986544365
+    "lat": 10.4519,
+    "lon": -61.3425,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "San Fernando",
     "key": "san fernando",
-    "lat": 10.2754773519195,
-    "lon": -61.461762144112654
+    "lat": 10.2772,
+    "lon": -61.4589,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Penal-Debe",
+    "name": "de Penal Debe",
     "key": "penal-debe",
-    "lat": 10.18850132456618,
-    "lon": -61.476036110526366
+    "lat": 10.1459,
+    "lon": -61.4269,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Siparia",
     "key": "siparia",
-    "lat": 10.157217175188261,
-    "lon": -61.61701324066265
+    "lat": 10.118,
+    "lon": -61.6987,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Point Fortin",
     "key": "point fortin",
-    "lat": 10.172214463297777,
-    "lon": -61.681299964604406
+    "lat": 10.1669,
+    "lon": -61.6685,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Princes Town",
+    "name": "Corporação Regional Princes Town",
     "key": "princes town",
-    "lat": 10.183231911171289,
-    "lon": -61.30788603421765
+    "lat": 10.2039,
+    "lon": -61.3096,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Rio Claro-Mayaro",
+    "name": "de Rio Claro Mayaro",
     "key": "rio claro-mayaro",
-    "lat": 10.322880186607936,
-    "lon": -61.09852758369571
+    "lat": 10.2814,
+    "lon": -61.1024,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Sangre Grande",
     "key": "sangre grande",
-    "lat": 10.664023069856,
-    "lon": -61.11420567022269
+    "lat": 10.6838,
+    "lon": -61.1277,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Eastern Tobago",
+    "name": "Tobago",
     "key": "eastern tobago",
-    "lat": 11.286056457843426,
-    "lon": -60.60252749402192
+    "lat": 11.2899,
+    "lon": -60.6001,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
-    "name": "Western Tobago",
+    "name": "Tobago",
     "key": "western tobago",
-    "lat": 11.21523806052175,
-    "lon": -60.70932728841092
+    "lat": 11.1959,
+    "lon": -60.7709,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Arima",
     "key": "arima",
-    "lat": 10.619662176967882,
-    "lon": -61.27489514815257
+    "lat": 10.6284,
+    "lon": -61.2804,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   }
 ]

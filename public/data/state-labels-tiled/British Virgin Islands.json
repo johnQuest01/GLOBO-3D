@@ -1,8 +1,11 @@
 [
   {
-    "name": "British Virgin Islands",
+    "name": "Ilhas Virgens Britânicas",
     "key": "british virgin islands",
-    "lat": 18.424370592400077,
-    "lon": -64.61510948279992
+    "lat": 18.3536,
+    "lon": -64.5854,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

@@ -1,98 +1,146 @@
 [
   {
-    "name": "Arica y Parinacota",
+    "name": "de Arica e Parinacota",
     "key": "arica y parinacota",
-    "lat": -18.318050879616955,
-    "lon": -69.60924572345313
+    "lat": -18.3207,
+    "lon": -69.6804,
+    "labelRank": 7,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Tarapacá",
+    "name": "de Tarapacá",
     "key": "tarapacá",
-    "lat": -20.24293258382885,
-    "lon": -69.3668268379914
+    "lat": -20.2427,
+    "lon": -69.3683,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Antofagasta",
+    "name": "de Antofagasta",
     "key": "antofagasta",
-    "lat": -23.519223218535544,
-    "lon": -69.27768944359612
+    "lat": -23.3178,
+    "lon": -68.8739,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Atacama",
+    "name": "de Atacama",
     "key": "atacama",
-    "lat": -27.497699553849433,
-    "lon": -69.93963388358982
+    "lat": -27.4469,
+    "lon": -69.9123,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Coquimbo",
+    "name": "de Coquimbo",
     "key": "coquimbo",
-    "lat": -30.500499247996157,
-    "lon": -70.82596293466499
+    "lat": -30.5838,
+    "lon": -70.7749,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Región Metropolitana de Santiago",
+    "name": "Metropolitana de Santiago",
     "key": "región metropolitana de santiago",
-    "lat": -33.61986135617519,
-    "lon": -70.53282323240805
+    "lat": -33.4568,
+    "lon": -70.7527,
+    "labelRank": 7,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Valparaíso",
+    "name": "de Valparaíso",
     "key": "valparaíso",
-    "lat": -32.85861179670103,
-    "lon": -71.06172821752901
+    "lat": -32.4884,
+    "lon": -70.936,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Maule",
+    "name": "de Maule",
     "key": "maule",
-    "lat": -35.647629120742856,
-    "lon": -71.38860863177554
+    "lat": -35.6067,
+    "lon": -71.5811,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Libertador General Bernardo O'Higgins",
+    "name": "de O'Higgins",
     "key": "libertador general bernardo o'higgins",
-    "lat": -34.4318063246988,
-    "lon": -70.96237357960426
+    "lat": -34.5255,
+    "lon": -71.0756,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Ñuble",
     "key": "ñuble",
-    "lat": -36.58527335818877,
-    "lon": -71.96162767575767
+    "lat": -36.619326948,
+    "lon": -72.068431307,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "La Araucanía",
+    "name": "da Araucanía",
     "key": "la araucanía",
-    "lat": -38.64933002732109,
-    "lon": -72.10652784091708
+    "lat": -38.738,
+    "lon": -72.3806,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Bío-Bío",
+    "name": "de Bío-Bío",
     "key": "bío-bío",
-    "lat": -37.501125282125145,
-    "lon": -72.4534289178316
+    "lat": -36.9791,
+    "lon": -72.3475,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Los Ríos",
+    "name": "de Los Rios",
     "key": "los ríos",
-    "lat": -39.97567740329849,
-    "lon": -72.53651998041863
+    "lat": -40.1186,
+    "lon": -72.6829,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Los Lagos",
+    "name": "de Los Lagos",
     "key": "los lagos",
-    "lat": -42.20439954388788,
-    "lon": -72.59247063565455
+    "lat": -41.0592,
+    "lon": -72.9043,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Aisén del General Carlos Ibáñez del Campo",
+    "name": "Aisén",
     "key": "aisén del general carlos ibáñez del campo",
-    "lat": -46.29795930471688,
-    "lon": -73.2506237677341
+    "lat": -46.8716,
+    "lon": -73.3899,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Magallanes y Antártica Chilena",
+    "name": "Magalhães e Antártica Chilena",
     "key": "magallanes y antártica chilena",
-    "lat": -51.83035250431384,
-    "lon": -72.50847039437981
+    "lat": -53.4723,
+    "lon": -71.3975,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   }
 ]

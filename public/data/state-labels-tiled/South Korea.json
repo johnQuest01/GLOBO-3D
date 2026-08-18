@@ -2,103 +2,154 @@
   {
     "name": "Gangwon",
     "key": "gangwon",
-    "lat": 37.58295692735088,
-    "lon": 128.3120524363326
+    "lat": 37.7951,
+    "lon": 128.22,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Gyeonggi",
     "key": "gyeonggi",
-    "lat": 37.56601436358581,
-    "lon": 127.09074236254216
+    "lat": 37.2562,
+    "lon": 127.205,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "South Chungcheong",
+    "name": "Chungcheong do Sul",
     "key": "south chungcheong",
-    "lat": 36.45274830971126,
-    "lon": 126.97469393596931
+    "lat": 36.4602,
+    "lon": 126.874,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Incheon",
     "key": "incheon",
-    "lat": 37.43721957086725,
-    "lon": 126.68713477519748
+    "lat": 37.4983,
+    "lon": 126.507,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "North Jeolla",
+    "name": "Jeolla do Norte",
     "key": "north jeolla",
-    "lat": 35.68779540625073,
-    "lon": 127.16244193081022
+    "lat": 35.679,
+    "lon": 127.081,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "South Jeolla",
+    "name": "Jeolla do Sul",
     "key": "south jeolla",
-    "lat": 34.861116993895315,
-    "lon": 127.07840816253156
+    "lat": 34.8166,
+    "lon": 126.884,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "South Gyeongsang",
+    "name": "Gyeongsang do Sul",
     "key": "south gyeongsang",
-    "lat": 35.33080440064005,
-    "lon": 128.4095181446562
+    "lat": 35.3192,
+    "lon": 128.217,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Busan",
     "key": "busan",
-    "lat": 35.18285784519797,
-    "lon": 129.11361468956318
+    "lat": 35.1928,
+    "lon": 129.082,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Ulsan",
     "key": "ulsan",
-    "lat": 35.53746025680018,
-    "lon": 129.2589922340143
+    "lat": 35.4997,
+    "lon": 129.232,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "North Gyeongsang",
+    "name": "Gyeongsang do Norte",
     "key": "north gyeongsang",
-    "lat": 36.32484400241496,
-    "lon": 128.70535242325653
+    "lat": 36.3396,
+    "lon": 128.708,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Jeju",
     "key": "jeju",
-    "lat": 33.41062557012507,
-    "lon": 126.59726260712506
+    "lat": 33.3741,
+    "lon": 126.557,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Seoul",
+    "name": "Seul",
     "key": "seoul",
-    "lat": 37.537648763179845,
-    "lon": 127.03150231333105
+    "lat": 37.5408,
+    "lon": 126.994,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Daejeon",
     "key": "daejeon",
-    "lat": 36.39985169713809,
-    "lon": 127.31788211292908
+    "lat": 36.3563,
+    "lon": 127.401,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Sejong",
+    "name": "Cidade de Sejong",
     "key": "sejong",
-    "lat": 36.563269401618705,
-    "lon": 127.2092296410636
+    "lat": 36.4974,
+    "lon": 127.229,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "North Chungcheong",
+    "name": "Chungcheong do Norte",
     "key": "north chungcheong",
-    "lat": 36.67988218997771,
-    "lon": 127.81656875884111
+    "lat": 36.7476,
+    "lon": 127.668,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Gwangju",
     "key": "gwangju",
-    "lat": 35.20931887512596,
-    "lon": 126.92214464733756
+    "lat": 35.1989,
+    "lon": 126.929,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Daegu",
     "key": "daegu",
-    "lat": 35.8801142781514,
-    "lon": 128.66254832044856
+    "lat": 35.9034,
+    "lon": 128.631,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   }
 ]

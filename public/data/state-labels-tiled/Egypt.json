@@ -1,164 +1,245 @@
 [
   {
-    "name": "Shamal Sina'",
+    "name": "Sinai do Norte",
     "key": "shamal sina'",
-    "lat": 30.536572707891928,
-    "lon": 33.71954026564462
+    "lat": 30.5071,
+    "lon": 33.6723,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Aswan",
+    "name": "Assuão",
     "key": "aswan",
-    "lat": 23.33130548245543,
-    "lon": 32.44393720623112
+    "lat": 22.6543,
+    "lon": 32.2794,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Al Bahr al Ahmar",
+    "name": "Mar Vermelho",
     "key": "al bahr al ahmar",
-    "lat": 25.445354393219365,
-    "lon": 33.113030459844026
+    "lat": 25.2164,
+    "lon": 33.7267,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Matruh",
     "key": "matruh",
-    "lat": 30.330375280475945,
-    "lon": 26.80578428222502
+    "lat": 29.6121,
+    "lon": 27.5083,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Al Wadi at Jadid",
+    "name": "Vale Novo",
     "key": "al wadi at jadid",
-    "lat": 24.457934152461043,
-    "lon": 30.613938210634444
+    "lat": 24.8314,
+    "lon": 28.9556,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "As Suways",
+    "name": "Suez",
     "key": "as suways",
-    "lat": 29.724437774127924,
-    "lon": 32.42535465336038
+    "lat": 29.6098,
+    "lon": 32.1523,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Janub Sina'",
+    "name": "Sinai do Sul",
     "key": "janub sina'",
-    "lat": 28.971919698242534,
-    "lon": 33.829206979997515
+    "lat": 28.925,
+    "lon": 33.7687,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Bur Sa`id",
+    "name": "Porto Said",
     "key": "bur sa`id",
-    "lat": 31.18055672757355,
-    "lon": 32.360021150577246
+    "lat": 31.1245,
+    "lon": 32.4293,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ad Daqahliyah",
+    "name": "Dakahlia",
     "key": "ad daqahliyah",
-    "lat": 31.085729528895005,
-    "lon": 31.491691940962305
+    "lat": 31.0304,
+    "lon": 31.4929,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ash Sharqiyah",
+    "name": "Xarqia",
     "key": "ash sharqiyah",
-    "lat": 24.986617988941163,
-    "lon": 49.21119485601391
+    "lat": 22.9875,
+    "lon": 50.1714,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Al Isma`iliyah",
+    "name": "Ismaília",
     "key": "al isma`iliyah",
-    "lat": 30.630069981862672,
-    "lon": 32.24314234943411
+    "lat": 30.6765,
+    "lon": 32.2811,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Dumyat",
+    "name": "Damieta",
     "key": "dumyat",
-    "lat": 31.40959248287621,
-    "lon": 31.882118207823865
+    "lat": 31.4067,
+    "lon": 31.7285,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kafr ash Shaykh",
+    "name": "Kafr el-Sheikh",
     "key": "kafr ash shaykh",
-    "lat": 31.308741125685632,
-    "lon": 30.888001911810242
+    "lat": 31.2075,
+    "lon": 30.853,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Al Buhayrah",
+    "name": "Al-Buhaira",
     "key": "al buhayrah",
-    "lat": 30.795133889546968,
-    "lon": 30.26584049297044
+    "lat": 30.5945,
+    "lon": 30.2522,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Al Iskandariyah",
+    "name": "Alexandria",
     "key": "al iskandariyah",
-    "lat": 30.91815972033614,
-    "lon": 29.84958476553656
+    "lat": 30.8251,
+    "lon": 29.754,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Al Qahirah",
+    "name": "Cairo",
     "key": "al qahirah",
-    "lat": 30.09381084969094,
-    "lon": 31.592360828989044
+    "lat": 29.9801,
+    "lon": 31.5788,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Al Jizah",
+    "name": "Guizé",
     "key": "al jizah",
-    "lat": 29.175348763663536,
-    "lon": 30.106815836749185
+    "lat": 29.3499,
+    "lon": 29.7204,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Al Minya",
+    "name": "Minya",
     "key": "al minya",
-    "lat": 28.102033380336216,
-    "lon": 30.111123004854022
+    "lat": 28.2141,
+    "lon": 30.1604,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Al Fayyum",
+    "name": "Faium",
     "key": "al fayyum",
-    "lat": 29.37537264662033,
-    "lon": 30.710859653460226
+    "lat": 29.2965,
+    "lon": 30.4584,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Bani Suwayf",
+    "name": "Beni Suef",
     "key": "bani suwayf",
-    "lat": 29.05160774040488,
-    "lon": 30.749631619278787
+    "lat": 28.8948,
+    "lon": 30.5041,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Al Minufiyah",
+    "name": "Monufia",
     "key": "al minufiyah",
-    "lat": 30.42056093124197,
-    "lon": 30.98411773734368
+    "lat": 30.5076,
+    "lon": 31.0029,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Al Qalyubiyah",
+    "name": "Qaliubia",
     "key": "al qalyubiyah",
-    "lat": 30.330244360043704,
-    "lon": 31.330085187608574
+    "lat": 30.2725,
+    "lon": 31.325,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Al Gharbiyah",
+    "name": "Garbia",
     "key": "al gharbiyah",
-    "lat": 30.839207499376574,
-    "lon": 31.047804633876734
+    "lat": 30.8504,
+    "lon": 31.0287,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Suhaj",
+    "name": "Sohag",
     "key": "suhaj",
-    "lat": 26.48506680332666,
-    "lon": 31.841071145871215
+    "lat": 26.5104,
+    "lon": 31.8037,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Qina",
     "key": "qina",
-    "lat": 25.861048397440573,
-    "lon": 32.52881845475287
+    "lat": 26.1216,
+    "lon": 32.4417,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Asyut",
+    "name": "Assiut",
     "key": "asyut",
-    "lat": 27.245514278885846,
-    "lon": 31.10504489518074
+    "lat": 27.2223,
+    "lon": 31.1431,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Luxor",
     "key": "luxor",
-    "lat": 25.70089790561383,
-    "lon": 32.64935106266138
+    "lat": 25.705,
+    "lon": 32.6501,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   }
 ]

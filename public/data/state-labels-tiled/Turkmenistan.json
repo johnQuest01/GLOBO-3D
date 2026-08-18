@@ -1,32 +1,47 @@
 [
   {
-    "name": "Chardzhou",
+    "name": "Lebap",
     "key": "chardzhou",
-    "lat": 38.86424959740301,
-    "lon": 63.60987069328621
+    "lat": 38.6421,
+    "lon": 63.4465,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Mary",
     "key": "mary",
-    "lat": 36.926679673822555,
-    "lon": 62.36510530082344
+    "lat": 36.7994,
+    "lon": 62.5938,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Ahal",
     "key": "ahal",
-    "lat": 38.00155485471209,
-    "lon": 59.58514378820764
+    "lat": 38.8103,
+    "lon": 59.0838,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Balkan",
     "key": "balkan",
-    "lat": 40.1253846857574,
-    "lon": 54.52594658803764
+    "lat": 39.7244,
+    "lon": 55.2571,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Tashauz",
+    "name": "Daşoguz",
     "key": "tashauz",
-    "lat": 41.20136439146678,
-    "lon": 58.78800642833784
+    "lat": 41.3981,
+    "lon": 58.769,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   }
 ]

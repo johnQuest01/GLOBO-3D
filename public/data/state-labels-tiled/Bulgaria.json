@@ -2,169 +2,253 @@
   {
     "name": "Burgas",
     "key": "burgas",
-    "lat": 42.47065874372688,
-    "lon": 27.423826881123492
+    "lat": 42.5385,
+    "lon": 27.2597,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Yambol",
     "key": "yambol",
-    "lat": 42.20684257718573,
-    "lon": 26.635317608830356
+    "lat": 42.2935,
+    "lon": 26.6096,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Haskovo",
     "key": "haskovo",
-    "lat": 41.87628733258896,
-    "lon": 25.97484378873027
+    "lat": 41.8489,
+    "lon": 25.8816,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Vidin",
     "key": "vidin",
-    "lat": 43.82158844131939,
-    "lon": 22.69444829739455
+    "lat": 43.8092,
+    "lon": 22.7008,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Pernik",
     "key": "pernik",
-    "lat": 42.64764171013207,
-    "lon": 22.80618561767599
+    "lat": 42.6064,
+    "lon": 22.8519,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Sofia",
+    "name": "Sófia",
     "key": "sofia",
-    "lat": 42.70982366143281,
-    "lon": 23.5646182459686
+    "lat": 42.288,
+    "lon": 23.606,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Montana",
     "key": "montana",
-    "lat": 43.45839115008204,
-    "lon": 23.20350116919131
+    "lat": 43.487,
+    "lon": 23.1788,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Kyustendil",
     "key": "kyustendil",
-    "lat": 42.30152534412989,
-    "lon": 22.783955270570154
+    "lat": 42.2381,
+    "lon": 22.9371,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Blagoevgrad",
     "key": "blagoevgrad",
-    "lat": 41.674078542163706,
-    "lon": 23.365508399447705
+    "lat": 41.743,
+    "lon": 23.5213,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Silistra",
     "key": "silistra",
-    "lat": 43.94768383219577,
-    "lon": 27.047846707776696
+    "lat": 43.9352,
+    "lon": 27.0072,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Ruse",
     "key": "ruse",
-    "lat": 43.66601717765611,
-    "lon": 25.971527404294438
+    "lat": 43.6211,
+    "lon": 25.9305,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Dobrich",
     "key": "dobrich",
-    "lat": 43.67474389581221,
-    "lon": 27.903844714780238
+    "lat": 43.6874,
+    "lon": 27.9018,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Vratsa",
     "key": "vratsa",
-    "lat": 43.416143534946485,
-    "lon": 23.823582984130077
+    "lat": 43.4325,
+    "lon": 23.832,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Pleven",
     "key": "pleven",
-    "lat": 43.49315233622101,
-    "lon": 24.60389961180919
+    "lat": 43.4953,
+    "lon": 24.6181,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Veliko Tarnovo",
     "key": "veliko tarnovo",
-    "lat": 43.25328127427453,
-    "lon": 25.597975434008525
+    "lat": 42.8079,
+    "lon": 25.6222,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Kardzhali",
     "key": "kardzhali",
-    "lat": 41.532185362923606,
-    "lon": 25.634445123283236
+    "lat": 41.5377,
+    "lon": 25.5852,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Smolyan",
     "key": "smolyan",
-    "lat": 41.6378510138198,
-    "lon": 24.606221178322837
+    "lat": 41.6644,
+    "lon": 24.6089,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Varna",
     "key": "varna",
-    "lat": 43.209885575343144,
-    "lon": 27.611641285757425
+    "lat": 43.2097,
+    "lon": 27.5827,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Plovdiv",
     "key": "plovdiv",
-    "lat": 42.35500473133325,
-    "lon": 24.812837807268977
+    "lat": 42.3061,
+    "lon": 24.8449,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Stara Zagora",
     "key": "stara zagora",
-    "lat": 42.40366982930503,
-    "lon": 25.5366091362438
+    "lat": 42.4759,
+    "lon": 25.5689,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Sliven",
     "key": "sliven",
-    "lat": 42.67536603774318,
-    "lon": 26.21655874701162
+    "lat": 42.7164,
+    "lon": 26.2373,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Shumen",
     "key": "shumen",
-    "lat": 43.30684657468464,
-    "lon": 26.93812869625731
+    "lat": 43.2942,
+    "lon": 26.9857,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Razgrad",
     "key": "razgrad",
-    "lat": 43.65237199563107,
-    "lon": 26.609817986640753
+    "lat": 43.6291,
+    "lon": 26.5873,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Targovishte",
     "key": "targovishte",
-    "lat": 43.20968411595416,
-    "lon": 26.303817715465176
+    "lat": 43.2251,
+    "lon": 26.3637,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Gabrovo",
     "key": "gabrovo",
-    "lat": 42.90795912990081,
-    "lon": 25.186927154546343
+    "lat": 42.9256,
+    "lon": 25.2475,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Pazardzhik",
     "key": "pazardzhik",
-    "lat": 42.2280450676757,
-    "lon": 24.17766842338402
+    "lat": 42.192,
+    "lon": 24.1391,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Lovech",
     "key": "lovech",
-    "lat": 43.01087465326761,
-    "lon": 24.56843483861564
+    "lat": 43.0037,
+    "lon": 24.5374,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Grad Sofiya",
+    "name": "Província da Cidade de Sófia",
     "key": "grad sofiya",
-    "lat": 42.63897964609377,
-    "lon": 23.375521003291656
+    "lat": 42.679,
+    "lon": 23.357,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   }
 ]

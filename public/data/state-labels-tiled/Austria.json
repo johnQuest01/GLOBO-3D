@@ -1,56 +1,83 @@
 [
   {
-    "name": "Niederösterreich",
+    "name": "Baixa Áustria",
     "key": "niederösterreich",
-    "lat": 48.29351650193814,
-    "lon": 15.66988124750528
+    "lat": 48.2477,
+    "lon": 15.7448,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Oberösterreich",
+    "name": "Alta Áustria",
     "key": "oberösterreich",
-    "lat": 48.16357616862308,
-    "lon": 13.976301934875384
+    "lat": 48.2377,
+    "lon": 13.856,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Burgenland",
     "key": "burgenland",
-    "lat": 47.493476373014936,
-    "lon": 16.508637178007373
+    "lat": 47.4281,
+    "lon": 16.3584,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Vorarlberg",
     "key": "vorarlberg",
-    "lat": 47.213060805283654,
-    "lon": 9.684567301271327
+    "lat": 47.2617,
+    "lon": 9.87375,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Tirol",
     "key": "tirol",
-    "lat": 47.215385571273096,
-    "lon": 11.308799663583558
+    "lat": 47.2082,
+    "lon": 11.38,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Salzburg",
+    "name": "Salzburgo",
     "key": "salzburg",
-    "lat": 47.402235377293934,
-    "lon": 12.976858393092735
+    "lat": 47.2534,
+    "lon": 13.0106,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kärnten",
+    "name": "Caríntia",
     "key": "kärnten",
-    "lat": 46.70864338397379,
-    "lon": 13.991401442565609
+    "lat": 46.7201,
+    "lon": 13.8695,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Steiermark",
+    "name": "Estíria",
     "key": "steiermark",
-    "lat": 47.11119854938219,
-    "lon": 15.033503022857907
+    "lat": 47.3901,
+    "lon": 14.8565,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Wien",
+    "name": "Viena",
     "key": "wien",
-    "lat": 48.22186827262266,
-    "lon": 16.39148562991786
+    "lat": 48.2247,
+    "lon": 16.3798,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   }
 ]

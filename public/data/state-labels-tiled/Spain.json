@@ -1,8 +1,11 @@
 [
   {
-    "name": "Valencia",
+    "name": "Valência",
     "key": "valencia",
-    "lat": 39.40468778798319,
-    "lon": -0.7751200304373015
+    "lat": 39.3003,
+    "lon": -0.712245,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   }
 ]

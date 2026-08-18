@@ -2,25 +2,37 @@
   {
     "name": "Kosrae",
     "key": "kosrae",
-    "lat": 5.331040757200083,
-    "lon": 163.00119876420004
+    "lat": 5.35641,
+    "lon": 162.927,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Pohnpei",
     "key": "pohnpei",
-    "lat": 6.874375718200076,
-    "lon": 158.23868248780005
+    "lat": 6.86579,
+    "lon": 158.163,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Chuuk",
     "key": "chuuk",
-    "lat": 7.372886460400059,
-    "lon": 151.61887454520004
+    "lat": 7.44003,
+    "lon": 151.839,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Yap",
     "key": "yap",
-    "lat": 9.547284246800052,
-    "lon": 138.16684003980006
+    "lat": 9.58101,
+    "lon": 138.114,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

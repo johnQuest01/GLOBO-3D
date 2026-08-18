@@ -2,73 +2,109 @@
   {
     "name": "Alibori",
     "key": "alibori",
-    "lat": 11.415226537196332,
-    "lon": 2.9618370578368043
+    "lat": 11.4305,
+    "lon": 2.92598,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Borgou",
     "key": "borgou",
-    "lat": 9.752343056576025,
-    "lon": 2.8102883122065823
+    "lat": 9.80668,
+    "lon": 2.90363,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Plateau",
     "key": "plateau",
-    "lat": 7.154171799570105,
-    "lon": 2.6606377719869294
+    "lat": 7.15213,
+    "lon": 2.60483,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Collines",
     "key": "collines",
-    "lat": 8.114934764456661,
-    "lon": 2.2340834778790595
+    "lat": 8.00513,
+    "lon": 2.17251,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ouémé",
+    "name": "Oueme",
     "key": "ouémé",
-    "lat": 6.596137070284511,
-    "lon": 2.572839060294963
+    "lat": 6.59423,
+    "lon": 2.55171,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Atakora",
     "key": "atakora",
-    "lat": 10.734533508131094,
-    "lon": 1.6022118335560478
+    "lat": 10.7035,
+    "lon": 1.55782,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Donga",
     "key": "donga",
-    "lat": 9.306734040240586,
-    "lon": 1.844601095570603
+    "lat": 9.31506,
+    "lon": 1.77142,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Zou",
     "key": "zou",
-    "lat": 7.312080651939391,
-    "lon": 2.0300624961783478
+    "lat": 7.22681,
+    "lon": 2.09135,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Kouffo",
     "key": "kouffo",
-    "lat": 7.02350210432862,
-    "lon": 1.7736455191634235
+    "lat": 6.98499,
+    "lon": 1.81235,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Mono",
     "key": "mono",
-    "lat": 6.526472963338922,
-    "lon": 1.7702690283583125
+    "lat": 6.48568,
+    "lon": 1.79465,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Atlantique",
     "key": "atlantique",
-    "lat": 6.568682237218095,
-    "lon": 2.2282708627519154
+    "lat": 6.61657,
+    "lon": 2.22263,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Littoral",
     "key": "littoral",
-    "lat": 4.292579628455538,
-    "lon": 10.09551182441873
+    "lat": 4.1938,
+    "lon": 10.0932,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   }
 ]

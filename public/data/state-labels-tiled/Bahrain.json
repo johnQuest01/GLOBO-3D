@@ -1,32 +1,47 @@
 [
   {
-    "name": "Al Manāmah",
+    "name": "da Capital",
     "key": "al manāmah",
-    "lat": 26.23019033407583,
-    "lon": 50.53652998141747
+    "lat": 26.2204,
+    "lon": 50.5777,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Ash Shamālīyah",
+    "name": "Norte",
     "key": "ash shamālīyah",
-    "lat": 26.13223109312013,
-    "lon": 50.512360110855866
+    "lat": 26.1624,
+    "lon": 50.4868,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Al Janūbīyah",
+    "name": "Sul",
     "key": "al janūbīyah",
-    "lat": 26.034770775184892,
-    "lon": 50.55199110160913
+    "lat": 25.9688,
+    "lon": 50.5622,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Al Wusţá",
+    "name": "Central",
     "key": "al wusţá",
-    "lat": 26.15332917872615,
-    "lon": 50.56099664196985
+    "lat": 26.1373,
+    "lon": 50.5738,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Al Muḩarraq",
+    "name": "Muharraq",
     "key": "al muḩarraq",
-    "lat": 26.26296523287804,
-    "lon": 50.62376241384845
+    "lat": 26.261,
+    "lon": 50.6376,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

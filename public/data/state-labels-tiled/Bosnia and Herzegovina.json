@@ -2,109 +2,163 @@
   {
     "name": "Herzegovina-Neretva",
     "key": "herzegovina-neretva",
-    "lat": 43.31124606953376,
-    "lon": 17.869094136651203
+    "lat": 43.3226,
+    "lon": 17.8878,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Trebinje",
     "key": "trebinje",
-    "lat": 42.90564165598385,
-    "lon": 18.39776487258832
+    "lat": 43.1037,
+    "lon": 18.3391,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Foča",
     "key": "foča",
-    "lat": 43.55944241810679,
-    "lon": 18.93130260023296
+    "lat": 43.4443,
+    "lon": 18.7352,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Banja Luka",
     "key": "banja luka",
-    "lat": 44.68838043413998,
-    "lon": 17.12837681166526
+    "lat": 44.8146,
+    "lon": 17.2619,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Una-Sana",
+    "name": "Una Sana",
     "key": "una-sana",
-    "lat": 44.7959230384441,
-    "lon": 16.274988839362535
+    "lat": 44.6409,
+    "lon": 16.299,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Doboj",
     "key": "doboj",
-    "lat": 44.90333400319334,
-    "lon": 18.218214675071145
+    "lat": 44.9307,
+    "lon": 18.0675,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Posavina",
     "key": "posavina",
-    "lat": 45.008127910359505,
-    "lon": 18.618064225637447
+    "lat": 45.06,
+    "lon": 18.2977,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Brčko Distrikt",
+    "name": "Brčko",
     "key": "brčko distrikt",
-    "lat": 44.84953674402512,
-    "lon": 18.830031185638884
+    "lat": 44.8305,
+    "lon": 18.854,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Bijeljina",
     "key": "bijeljina",
-    "lat": 44.74212284634355,
-    "lon": 19.03886036006422
+    "lat": 44.7513,
+    "lon": 19.1471,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "West Bosnia",
+    "name": "Bósnia Ocidental",
     "key": "west bosnia",
-    "lat": 43.99014632642872,
-    "lon": 16.8221937228111
+    "lat": 43.9773,
+    "lon": 16.8584,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "West Herzegovina",
+    "name": "Oeste Herzegovina",
     "key": "west herzegovina",
-    "lat": 43.379655727620644,
-    "lon": 17.445631364332584
+    "lat": 43.3908,
+    "lon": 17.4063,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Vlasenica",
     "key": "vlasenica",
-    "lat": 44.24529705413257,
-    "lon": 19.10985198753513
+    "lat": 44.1968,
+    "lon": 19.0758,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Central Bosnia",
+    "name": "Bósnia",
     "key": "central bosnia",
-    "lat": 44.11913920288732,
-    "lon": 17.551489684390862
+    "lat": 44.1028,
+    "lon": 17.6547,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Zenica-Doboj",
     "key": "zenica-doboj",
-    "lat": 44.329127568078064,
-    "lon": 18.20000708553542
+    "lat": 44.2843,
+    "lon": 18.2479,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Tuzla",
+    "name": "Tuzla Canton",
     "key": "tuzla",
-    "lat": 44.558397927415214,
-    "lon": 18.599562344849684
+    "lat": 44.5325,
+    "lon": 18.5549,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Sarajevo-romanija",
     "key": "sarajevo-romanija",
-    "lat": 43.89131386735811,
-    "lon": 18.797827477348182
+    "lat": 43.9275,
+    "lon": 18.751,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Sarajevo",
+    "name": "Saraievo",
     "key": "sarajevo",
-    "lat": 43.81001711270286,
-    "lon": 18.383320297800363
+    "lat": 43.7991,
+    "lon": 18.3077,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Bosnian Podrinje",
+    "name": "Bosna-Podrinje kanton",
     "key": "bosnian podrinje",
-    "lat": 43.68401297724598,
-    "lon": 18.729183539616685
+    "lat": 43.6774,
+    "lon": 18.8198,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   }
 ]

@@ -1,20 +1,29 @@
 [
   {
-    "name": "Saint Croix",
+    "name": "Santa Cruz",
     "key": "saint croix",
-    "lat": 17.746242580250055,
-    "lon": -64.69170081299994
+    "lat": 17.735,
+    "lon": -64.7798,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint John",
     "key": "saint john",
-    "lat": 12.134726429499878,
-    "lon": -61.713231150659155
+    "lat": 12.1446,
+    "lon": -61.7094,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint Thomas",
     "key": "saint thomas",
-    "lat": 18.337291879400063,
-    "lon": -64.89426966739993
+    "lat": 18.3543,
+    "lon": -64.9263,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

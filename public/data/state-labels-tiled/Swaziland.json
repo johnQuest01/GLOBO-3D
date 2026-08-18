@@ -2,25 +2,37 @@
   {
     "name": "Lubombo",
     "key": "lubombo",
-    "lat": -26.455216130636778,
-    "lon": 31.82184961207137
+    "lat": -26.5247,
+    "lon": 31.8026,
+    "labelRank": 8,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Hhohho",
     "key": "hhohho",
-    "lat": -26.080202536924418,
-    "lon": 31.35436773611893
+    "lat": -26.0265,
+    "lon": 31.322,
+    "labelRank": 8,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Manzini",
     "key": "manzini",
-    "lat": -26.488356016493885,
-    "lon": 31.227173862527483
+    "lat": -26.6342,
+    "lon": 31.2402,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Shiselweni",
+    "name": "Shishelweni",
     "key": "shiselweni",
-    "lat": -27.071463094007044,
-    "lon": 31.415488783434373
+    "lat": -27.0243,
+    "lon": 31.4265,
+    "labelRank": 8,
+    "minLabel": 8.7,
+    "maxLabel": 11
   }
 ]

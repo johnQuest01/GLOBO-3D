@@ -1,8 +1,11 @@
 [
   {
-    "name": "Cayman Islands",
+    "name": "Ilhas Caimão",
     "key": "cayman islands",
-    "lat": 19.33560843740006,
-    "lon": -81.19941568919992
+    "lat": 19.3167,
+    "lon": -81.2592,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

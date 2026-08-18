@@ -2,91 +2,136 @@
   {
     "name": "East End",
     "key": "east end",
-    "lat": 18.264271283306126,
-    "lon": -63.00270024909052
+    "lat": 18.2622,
+    "lon": -62.9852,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Stoney Ground",
     "key": "stoney ground",
-    "lat": 18.25310389622567,
-    "lon": -63.02515276563502
+    "lat": 18.2387,
+    "lon": -63.0368,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "North Side",
     "key": "north side",
-    "lat": 18.249339551325413,
-    "lon": -63.048342018748194
+    "lat": 18.2606,
+    "lon": -63.033,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "The Valley",
     "key": "the valley",
-    "lat": 18.233817997488178,
-    "lon": -63.05763239278101
+    "lat": 18.2321,
+    "lon": -63.052,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "North Hill",
     "key": "north hill",
-    "lat": 18.224237295403782,
-    "lon": -63.068772020512064
+    "lat": 18.2243,
+    "lon": -63.074,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Sandy Ground",
     "key": "sandy ground",
-    "lat": 18.216794259001144,
-    "lon": -63.08705264867373
+    "lat": 18.2192,
+    "lon": -63.0814,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "South Hill",
     "key": "south hill",
-    "lat": 18.206200580429847,
-    "lon": -63.09862891440074
+    "lat": 18.2083,
+    "lon": -63.0881,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "West End",
     "key": "west end",
-    "lat": 18.188496451582978,
-    "lon": -63.13211442613319
+    "lat": 18.1865,
+    "lon": -63.1384,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Blowing Point",
     "key": "blowing point",
-    "lat": 18.202433138563322,
-    "lon": -63.07411594751362
+    "lat": 18.1889,
+    "lon": -63.0943,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "The Farrington",
     "key": "the farrington",
-    "lat": 18.216454463560495,
-    "lon": -63.0465858713111
+    "lat": 18.2173,
+    "lon": -63.0439,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Sandy Hill",
     "key": "sandy hill",
-    "lat": 18.233890857605598,
-    "lon": -63.01312908011778
+    "lat": 18.2301,
+    "lon": -63.0151,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Island Harbour",
     "key": "island harbour",
-    "lat": 18.272066680405924,
-    "lon": -63.00232381474763
+    "lat": 18.2705,
+    "lon": -63.0028,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "",
     "key": "",
-    "lat": -70.85554371549992,
-    "lon": -2.7388250397499334
+    "lat": -83.0384,
+    "lon": -170.343,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   },
   {
     "name": "George Hill",
     "key": "george hill",
-    "lat": 18.213975474188757,
-    "lon": -63.066975169493475
+    "lat": 18.2089,
+    "lon": -63.066,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "The Quarter",
     "key": "the quarter",
-    "lat": 18.229995100313623,
-    "lon": -63.03776711861762
+    "lat": 18.2299,
+    "lon": -63.04,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

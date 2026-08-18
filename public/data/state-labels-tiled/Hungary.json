@@ -2,259 +2,388 @@
   {
     "name": "Szabolcs-Szatmár-Bereg",
     "key": "szabolcs-szatmár-bereg",
-    "lat": 47.97800116617791,
-    "lon": 22.101829093729346
+    "lat": 47.9535,
+    "lon": 22.182,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Békés",
     "key": "békés",
-    "lat": 46.73490933160089,
-    "lon": 21.006747671749313
+    "lat": 46.592,
+    "lon": 20.8362,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Hajdú-Bihar",
     "key": "hajdú-bihar",
-    "lat": 47.54356655389467,
-    "lon": 21.489652224971497
+    "lat": 47.2906,
+    "lon": 21.3746,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Csongrád",
+    "name": "Csongrád-Csanád",
     "key": "csongrád",
-    "lat": 46.45261795349356,
-    "lon": 20.10824960800066
+    "lat": 46.5997,
+    "lon": 20.1413,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Gyor-Moson-Sopron",
+    "name": "Győr-Moson-Sopron",
     "key": "gyor-moson-sopron",
-    "lat": 47.65815237130966,
-    "lon": 17.1321232878528
+    "lat": 47.7217,
+    "lon": 17.1682,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Sopron",
     "key": "sopron",
-    "lat": 47.693626404602085,
-    "lon": 16.65027124167907
+    "lat": 47.6911,
+    "lon": 16.6001,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Vas",
     "key": "vas",
-    "lat": 47.037115641785896,
-    "lon": 16.555573953536058
+    "lat": 47.1693,
+    "lon": 16.814,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Bács-Kiskun",
     "key": "bács-kiskun",
-    "lat": 46.5968625146696,
-    "lon": 19.395572348421293
+    "lat": 46.6096,
+    "lon": 19.4699,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Szeged",
     "key": "szeged",
-    "lat": 46.213075395482385,
-    "lon": 20.141223901121776
+    "lat": 46.2689,
+    "lon": 20.1431,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Zala",
     "key": "zala",
-    "lat": 46.59471941028062,
-    "lon": 16.83737067498952
+    "lat": 46.6712,
+    "lon": 16.7964,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Somogy",
     "key": "somogy",
-    "lat": 46.42806366259424,
-    "lon": 17.594017620897972
+    "lat": 46.3623,
+    "lon": 17.5491,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Baranya",
     "key": "baranya",
-    "lat": 46.049423098424015,
-    "lon": 18.20040080108128
+    "lat": 45.9602,
+    "lon": 17.9611,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Borsod-Abaúj-Zemplén",
     "key": "borsod-abaúj-zemplén",
-    "lat": 48.16295129308033,
-    "lon": 20.96417035171478
+    "lat": 48.2104,
+    "lon": 21.0983,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Nógrád",
     "key": "nógrád",
-    "lat": 48.02762937651779,
-    "lon": 19.600507249298165
+    "lat": 47.9662,
+    "lon": 19.5146,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Salgótarján",
     "key": "salgótarján",
-    "lat": 48.120596641134796,
-    "lon": 19.806848999689578
+    "lat": 48.1057,
+    "lon": 19.7907,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Komárom-Esztergom",
     "key": "komárom-esztergom",
-    "lat": 47.610156297340765,
-    "lon": 18.41518061827746
+    "lat": 47.6697,
+    "lon": 18.2244,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Pest",
     "key": "pest",
-    "lat": 47.45413035378114,
-    "lon": 19.259111681879922
+    "lat": 47.4344,
+    "lon": 19.4435,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Jász-Nagykun-Szolnok",
     "key": "jász-nagykun-szolnok",
-    "lat": 47.28650837591679,
-    "lon": 20.378181090424963
+    "lat": 47.2052,
+    "lon": 20.5204,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Fejér",
     "key": "fejér",
-    "lat": 47.13288144352377,
-    "lon": 18.562321783073813
+    "lat": 46.989,
+    "lon": 18.6516,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Veszprém",
     "key": "veszprém",
-    "lat": 47.07665799776836,
-    "lon": 17.626648332190477
+    "lat": 47.1365,
+    "lon": 17.6638,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Tolna",
     "key": "tolna",
-    "lat": 46.54373717661687,
-    "lon": 18.568012984086927
+    "lat": 46.5078,
+    "lon": 18.5198,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Szolnok",
     "key": "szolnok",
-    "lat": 47.20762726183863,
-    "lon": 20.124932562887448
+    "lat": 47.206,
+    "lon": 20.168,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Budapest",
+    "name": "Budapeste",
     "key": "budapest",
-    "lat": 47.45282920429004,
-    "lon": 19.048702543002232
+    "lat": 47.4757,
+    "lon": 19.1282,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Érd",
     "key": "érd",
-    "lat": 47.36765695818205,
-    "lon": 18.916404198454984
+    "lat": 47.3677,
+    "lon": 18.893,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Heves",
     "key": "heves",
-    "lat": 47.8338695728375,
-    "lon": 20.256412668289993
+    "lat": 47.8614,
+    "lon": 20.1774,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Eger",
     "key": "eger",
-    "lat": 47.933889054875955,
-    "lon": 20.37840033524727
+    "lat": 47.9316,
+    "lon": 20.3836,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Miskolc",
     "key": "miskolc",
-    "lat": 48.10789726596032,
-    "lon": 20.64836428371328
+    "lat": 48.1181,
+    "lon": 20.7319,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Hódmezôvásárhely",
+    "name": "Hódmezővásárhely",
     "key": "hódmezôvásárhely",
-    "lat": 46.39880948367072,
-    "lon": 20.408415865699624
+    "lat": 46.3767,
+    "lon": 20.3919,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Dunaújváros",
     "key": "dunaújváros",
-    "lat": 46.953601046925755,
-    "lon": 18.919801605659558
+    "lat": 46.9489,
+    "lon": 18.8971,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Kecskemét",
     "key": "kecskemét",
-    "lat": 46.94996602575145,
-    "lon": 19.663857226809547
+    "lat": 46.9282,
+    "lon": 19.6684,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Tatabánya",
     "key": "tatabánya",
-    "lat": 47.55853607388067,
-    "lon": 18.4538322136857
+    "lat": 47.5667,
+    "lon": 18.4452,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Gyôr",
+    "name": "Győr",
     "key": "gyôr",
-    "lat": 47.6817706443797,
-    "lon": 17.683780333335687
+    "lat": 47.6621,
+    "lon": 17.6657,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Szombathely",
     "key": "szombathely",
-    "lat": 47.23343533876986,
-    "lon": 16.619476655882956
+    "lat": 47.2308,
+    "lon": 16.625,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Zalaegerszeg",
     "key": "zalaegerszeg",
-    "lat": 46.83497300197743,
-    "lon": 16.8218579956
+    "lat": 46.8452,
+    "lon": 16.8447,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Nagykanizsa",
     "key": "nagykanizsa",
-    "lat": 46.45261229242333,
-    "lon": 17.0045457590795
+    "lat": 46.4513,
+    "lon": 16.9898,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Veszprém",
     "key": "veszprém",
-    "lat": 47.07665799776836,
-    "lon": 17.626648332190477
+    "lat": 47.1365,
+    "lon": 17.6638,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Kaposvár",
     "key": "kaposvár",
-    "lat": 46.36308222548428,
-    "lon": 17.776637247091266
+    "lat": 46.356,
+    "lon": 17.7984,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Pécs",
     "key": "pécs",
-    "lat": 46.08075712458162,
-    "lon": 18.288176413450707
+    "lat": 46.0699,
+    "lon": 18.2337,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Szekszárd",
     "key": "szekszárd",
-    "lat": 46.36126037582566,
-    "lon": 18.72108412311378
+    "lat": 46.356,
+    "lon": 18.6981,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Székesfehérvár",
     "key": "székesfehérvár",
-    "lat": 47.19347562811771,
-    "lon": 18.46607104927948
+    "lat": 47.1977,
+    "lon": 18.4618,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Békéscsaba",
     "key": "békéscsaba",
-    "lat": 46.72684706204226,
-    "lon": 21.119807029930463
+    "lat": 46.7499,
+    "lon": 21.0968,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Debrecen",
     "key": "debrecen",
-    "lat": 47.55086838792573,
-    "lon": 21.597266526748786
+    "lat": 47.5252,
+    "lon": 21.6192,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Nyíregyháza",
     "key": "nyíregyháza",
-    "lat": 47.944980564901115,
-    "lon": 21.763841766684173
+    "lat": 47.9357,
+    "lon": 21.7602,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   }
 ]

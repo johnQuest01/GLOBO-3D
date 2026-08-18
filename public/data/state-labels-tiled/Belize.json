@@ -2,37 +2,55 @@
   {
     "name": "Cayo",
     "key": "cayo",
-    "lat": 16.925253603377826,
-    "lon": -88.90616728378075
+    "lat": 16.9902,
+    "lon": -88.8833,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Orange Walk",
     "key": "orange walk",
-    "lat": 17.773447078708845,
-    "lon": -88.79485824238306
+    "lat": 17.7122,
+    "lon": -88.8552,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Corozal",
     "key": "corozal",
-    "lat": 18.275494289889405,
-    "lon": -88.312272193525
+    "lat": 18.1667,
+    "lon": -88.3492,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Toledo",
     "key": "toledo",
-    "lat": 16.298244724064574,
-    "lon": -88.84355665556343
+    "lat": 16.3761,
+    "lon": -88.8117,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Stann Creek",
     "key": "stann creek",
-    "lat": 16.844995981881244,
-    "lon": -88.44254640400366
+    "lat": 16.809,
+    "lon": -88.4963,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Belize",
     "key": "belize",
-    "lat": 17.593760691837183,
-    "lon": -88.41380341198602
+    "lat": 17.5367,
+    "lon": -88.4189,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   }
 ]

@@ -2,145 +2,217 @@
   {
     "name": "Entre Ríos",
     "key": "entre ríos",
-    "lat": -32.09560014326176,
-    "lon": -59.00573570055498
+    "lat": -32.0275,
+    "lon": -59.2824,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Salta",
     "key": "salta",
-    "lat": -24.03176484901078,
-    "lon": -65.31622703136767
+    "lat": -25.0203,
+    "lon": -64.4715,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Jujuy",
     "key": "jujuy",
-    "lat": -23.391280191452367,
-    "lon": -65.73382308200357
+    "lat": -23.1764,
+    "lon": -65.7054,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Formosa",
     "key": "formosa",
-    "lat": -24.80626664015859,
-    "lon": -60.01231408071787
+    "lat": -24.9146,
+    "lon": -59.9494,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Misiones",
     "key": "misiones",
-    "lat": -26.91501039019598,
-    "lon": -54.7680316365963
+    "lat": -27.1262,
+    "lon": -54.8406,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Chaco",
     "key": "chaco",
-    "lat": -26.02125969828005,
-    "lon": -60.234080605066744
+    "lat": -26.509,
+    "lon": -60.8752,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Corrientes",
     "key": "corrientes",
-    "lat": -28.803954081632384,
-    "lon": -57.71433284592264
+    "lat": -28.8387,
+    "lon": -57.6482,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Catamarca",
     "key": "catamarca",
-    "lat": -27.503233835452328,
-    "lon": -66.84813465740206
+    "lat": -26.7709,
+    "lon": -67.0086,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "La Rioja",
+    "name": "Rioja",
     "key": "la rioja",
-    "lat": -29.449735136535566,
-    "lon": -67.59200527042259
+    "lat": -29.3762,
+    "lon": -67.5283,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "San Juan",
     "key": "san juan",
-    "lat": -30.803428553804434,
-    "lon": -68.99524925873227
+    "lat": -30.97,
+    "lon": -68.6612,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Mendoza",
     "key": "mendoza",
-    "lat": -34.425399227403204,
-    "lon": -68.98813208561523
+    "lat": -34.8484,
+    "lon": -68.5423,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Neuquén",
     "key": "neuquén",
-    "lat": -38.60309890110334,
-    "lon": -70.45169303547885
+    "lat": -38.3579,
+    "lon": -69.9833,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Chubut",
     "key": "chubut",
-    "lat": -43.72123866399887,
-    "lon": -68.10309956821621
+    "lat": -43.9995,
+    "lon": -67.8642,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Río Negro",
     "key": "río negro",
-    "lat": -40.17789375449912,
-    "lon": -67.6244845749424
+    "lat": -40.1261,
+    "lon": -67.3641,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Santa Cruz",
     "key": "santa cruz",
-    "lat": -17.156570501962296,
-    "lon": -61.57560616508186
+    "lat": -16.5168,
+    "lon": -61.137,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Tierra del Fuego",
+    "name": "Terra do Fogo",
     "key": "tierra del fuego",
-    "lat": -54.226979965250415,
-    "lon": -67.36747759883369
+    "lat": -54.3887,
+    "lon": -67.5329,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Buenos Aires",
     "key": "buenos aires",
-    "lat": -36.90338446169005,
-    "lon": -60.27190708579739
+    "lat": -36.6734,
+    "lon": -60.1133,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Ciudad de Buenos Aires",
+    "name": "Buenos Aires",
     "key": "ciudad de buenos aires",
-    "lat": -34.63712592062474,
-    "lon": -58.44980340568263
+    "lat": -34.6202,
+    "lon": -58.4527,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Santa Fe",
+    "name": "Santa Fé",
     "key": "santa fe",
-    "lat": -31.02617823641647,
-    "lon": -60.69886542200162
+    "lat": -30.7764,
+    "lon": -60.8593,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Tucumán",
     "key": "tucumán",
-    "lat": -27.023394507329222,
-    "lon": -65.30410454403231
+    "lat": -26.9711,
+    "lon": -65.3387,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Santiago del Estero",
     "key": "santiago del estero",
-    "lat": -27.86140557653114,
-    "lon": -63.924952743049644
+    "lat": -27.6882,
+    "lon": -63.445,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "San Luis",
     "key": "san luis",
-    "lat": -33.36231045543376,
-    "lon": -66.2567147906139
+    "lat": -33.9469,
+    "lon": -66.135,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "La Pampa",
     "key": "la pampa",
-    "lat": -37.56273704721695,
-    "lon": -65.96794546852853
+    "lat": -37.3861,
+    "lon": -65.8386,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Córdoba",
+    "name": "Córdova",
     "key": "córdoba",
-    "lat": 8.475451076407174,
-    "lon": -75.76402998235396
+    "lat": 8.43894,
+    "lon": -75.6522,
+    "labelRank": 3,
+    "minLabel": 6,
+    "maxLabel": 11
   }
 ]

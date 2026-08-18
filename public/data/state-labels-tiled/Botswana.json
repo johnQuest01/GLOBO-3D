@@ -1,92 +1,137 @@
 [
   {
-    "name": "North-West",
+    "name": "Noroeste",
     "key": "north-west",
-    "lat": -18.86842610736866,
-    "lon": 23.991668432197063
+    "lat": -19.6141,
+    "lon": 23.4709,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Central",
     "key": "central",
-    "lat": -21.53938210084973,
-    "lon": 26.99743649044483
+    "lat": -21.8775,
+    "lon": 26.6144,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "North-East",
+    "name": "Nordeste",
     "key": "north-east",
-    "lat": -21.02298484769733,
-    "lon": 27.57342876216082
+    "lat": -20.9374,
+    "lon": 27.4487,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Kgatleng",
     "key": "kgatleng",
-    "lat": -24.188540667379343,
-    "lon": 26.410398849664077
+    "lat": -24.2001,
+    "lon": 26.4263,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "South-East",
+    "name": "Sudeste",
     "key": "south-east",
-    "lat": -24.909872546364696,
-    "lon": 25.825852253284566
+    "lat": -24.9869,
+    "lon": 25.7446,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Southern",
+    "name": "Sul",
     "key": "southern",
-    "lat": 7.871403323031413,
-    "lon": -11.970108022157978
+    "lat": 7.85416,
+    "lon": -12.0512,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Kgalagadi",
     "key": "kgalagadi",
-    "lat": -25.4046343390142,
-    "lon": 22.177227736372352
+    "lat": -24.8361,
+    "lon": 22.2402,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Ghanzi",
     "key": "ghanzi",
-    "lat": -22.41640895135692,
-    "lon": 22.049627478504565
+    "lat": -22.1555,
+    "lon": 22.7086,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Kweneng",
     "key": "kweneng",
-    "lat": -23.825782236660892,
-    "lon": 24.864407308100766
+    "lat": -23.8665,
+    "lon": 24.4879,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Gaborone",
     "key": "gaborone",
-    "lat": -24.60381205296388,
-    "lon": 25.922367997964706
+    "lat": -24.6239,
+    "lon": 25.9171,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Jwaneng",
     "key": "jwaneng",
-    "lat": -24.549317809669173,
-    "lon": 24.71023132163816
+    "lat": -24.5774,
+    "lon": 24.7253,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Francistown",
     "key": "francistown",
-    "lat": -21.183281214231656,
-    "lon": 27.5176142908918
+    "lat": -21.1678,
+    "lon": 27.5038,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Lobatse",
     "key": "lobatse",
-    "lat": -25.203606759384446,
-    "lon": 25.689492858108895
+    "lat": -25.2144,
+    "lon": 25.6842,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Selebi-Phikwe",
     "key": "selebi-phikwe",
-    "lat": -21.97955923861798,
-    "lon": 27.84445315111701
+    "lat": -21.9728,
+    "lon": 27.8625,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Sowa",
     "key": "sowa",
-    "lat": -20.573895205139603,
-    "lon": 26.21959604184384
+    "lat": -20.5752,
+    "lon": 26.1919,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   }
 ]

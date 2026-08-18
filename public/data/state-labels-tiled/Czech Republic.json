@@ -1,86 +1,128 @@
 [
   {
-    "name": "Ústecký",
+    "name": "Ústí nad Labem",
     "key": "ústecký",
-    "lat": 50.53574348489795,
-    "lon": 13.8866794603092
+    "lat": 50.4996,
+    "lon": 13.8424,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Liberecký",
+    "name": "Liberec",
     "key": "liberecký",
-    "lat": 50.737049767959626,
-    "lon": 14.915439059923733
+    "lat": 50.7339,
+    "lon": 14.9186,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Karlovarský",
+    "name": "Karlovy Vary",
     "key": "karlovarský",
-    "lat": 50.23078122713266,
-    "lon": 12.719108903258418
+    "lat": 50.1601,
+    "lon": 12.7286,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Plzeňský",
+    "name": "Plzeň-Ciudad",
     "key": "plzeňský",
-    "lat": 49.639179577576506,
-    "lon": 13.225064112189214
+    "lat": 49.6458,
+    "lon": 13.2001,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Jihočeský",
+    "name": "Boêmia do Sul",
     "key": "jihočeský",
-    "lat": 49.04150423140032,
-    "lon": 14.565954169607627
+    "lat": 49.0726,
+    "lon": 14.5598,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Královéhradecký",
+    "name": "Hradec Králové",
     "key": "královéhradecký",
-    "lat": 50.41461303893874,
-    "lon": 15.807646882987743
+    "lat": 50.3723,
+    "lon": 15.8838,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Olomoucký",
+    "name": "Olomouc",
     "key": "olomoucký",
-    "lat": 49.89396378549898,
-    "lon": 17.09276889557297
+    "lat": 49.6928,
+    "lon": 17.1244,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Pardubický",
+    "name": "Pardubice",
     "key": "pardubický",
-    "lat": 49.960666086480956,
-    "lon": 16.330995230311085
+    "lat": 49.8651,
+    "lon": 16.2784,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Moravskoslezský",
+    "name": "Morávia-Silésia",
     "key": "moravskoslezský",
-    "lat": 49.82533328662021,
-    "lon": 17.98307117535904
+    "lat": 49.7687,
+    "lon": 17.9683,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Jihomoravský",
+    "name": "Morávia do Sul",
     "key": "jihomoravský",
-    "lat": 49.032146440691676,
-    "lon": 16.56089790614201
+    "lat": 49.1054,
+    "lon": 16.7484,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Zlínský",
+    "name": "Zlín",
     "key": "zlínský",
-    "lat": 49.229624691518964,
-    "lon": 17.919691028237963
+    "lat": 49.1837,
+    "lon": 17.7745,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Vysočina",
     "key": "vysočina",
-    "lat": 49.4095374868655,
-    "lon": 15.642971565105624
+    "lat": 49.4088,
+    "lon": 15.7721,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Středočeský",
+    "name": "Boémia Central",
     "key": "středočeský",
-    "lat": 49.99152373952894,
-    "lon": 14.652161761659956
+    "lat": 49.7498,
+    "lon": 14.4559,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Prague",
+    "name": "Praga",
     "key": "prague",
-    "lat": 50.05117349765876,
-    "lon": 14.478486657583167
+    "lat": 50.0647,
+    "lon": 14.4487,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   }
 ]

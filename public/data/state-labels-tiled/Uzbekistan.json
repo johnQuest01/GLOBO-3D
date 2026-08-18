@@ -1,86 +1,128 @@
 [
   {
-    "name": "Ferghana",
+    "name": "Fergana",
     "key": "ferghana",
-    "lat": 40.4414935595772,
-    "lon": 71.48466740052987
+    "lat": 39.9347,
+    "lon": 71.7275,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Tashkent",
     "key": "tashkent",
-    "lat": 41.33402525388882,
-    "lon": 69.94317670137187
+    "lat": 41.247,
+    "lon": 69.9511,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Namangan",
     "key": "namangan",
-    "lat": 41.127970536441076,
-    "lon": 71.22468021418574
+    "lat": 40.8746,
+    "lon": 71.2964,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Andijon",
+    "name": "Andijan",
     "key": "andijon",
-    "lat": 40.729839204279685,
-    "lon": 72.46281671816718
+    "lat": 40.4491,
+    "lon": 72.3651,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Sirdaryo",
     "key": "sirdaryo",
-    "lat": 40.463349664406394,
-    "lon": 68.6256786659243
+    "lat": 39.9519,
+    "lon": 68.8037,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Jizzakh",
     "key": "jizzakh",
-    "lat": 40.291515954544494,
-    "lon": 67.72306609676573
+    "lat": 40.3905,
+    "lon": 67.6556,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Samarkand",
+    "name": "Samarcanda",
     "key": "samarkand",
-    "lat": 39.79785160543763,
-    "lon": 66.45776149185016
+    "lat": 39.9926,
+    "lon": 66.3126,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Kashkadarya",
+    "name": "Qashqadaryo",
     "key": "kashkadarya",
-    "lat": 38.94188604028323,
-    "lon": 66.28471743494278
+    "lat": 38.7774,
+    "lon": 66.0231,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Surkhandarya",
+    "name": "Surxondaryo",
     "key": "surkhandarya",
-    "lat": 38.18115756351699,
-    "lon": 67.48383834630238
+    "lat": 37.9835,
+    "lon": 67.4269,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Karakalpakstan",
+    "name": "Caracalpaquistão",
     "key": "karakalpakstan",
-    "lat": 42.491708208522965,
-    "lon": 59.48246430997482
+    "lat": 43.8529,
+    "lon": 59.2233,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Navoi",
+    "name": "Navoiy",
     "key": "navoi",
-    "lat": 41.29751199160923,
-    "lon": 64.80201563070119
+    "lat": 42.1726,
+    "lon": 64.2722,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Khorezm",
+    "name": "Khorazm",
     "key": "khorezm",
-    "lat": 41.33128461335633,
-    "lon": 61.12761693501658
+    "lat": 41.2489,
+    "lon": 61.2481,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Bukhoro",
+    "name": "Bukhara",
     "key": "bukhoro",
-    "lat": 40.341459539862086,
-    "lon": 63.79485425206118
+    "lat": 39.946,
+    "lon": 63.7729,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Tashkent",
+    "name": "Tasquente",
     "key": "tashkent",
-    "lat": 41.33402525388882,
-    "lon": 69.94317670137187
+    "lat": 41.247,
+    "lon": 69.9511,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   }
 ]

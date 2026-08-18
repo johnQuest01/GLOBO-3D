@@ -2,79 +2,118 @@
   {
     "name": "Ash Sharqiyah",
     "key": "ash sharqiyah",
-    "lat": 24.986617988941163,
-    "lon": 49.21119485601391
+    "lat": 22.9875,
+    "lon": 50.1714,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Al Hudud ash Shamaliyah",
     "key": "al hudud ash shamaliyah",
-    "lat": 29.523822366044552,
-    "lon": 42.23320282310945
+    "lat": 29.227,
+    "lon": 43.3124,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Al Jawf",
     "key": "al jawf",
-    "lat": 29.616101349703758,
-    "lon": 38.2756490791632
+    "lat": 29.5589,
+    "lon": 38.3651,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Najran",
     "key": "najran",
-    "lat": 18.1664400377956,
-    "lon": 45.18536533843265
+    "lat": 18.2931,
+    "lon": 45.6917,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "`Asir",
+    "name": "'Asir",
     "key": "`asir",
-    "lat": 19.155077848658923,
-    "lon": 42.795322605987124
+    "lat": 19.3484,
+    "lon": 42.9503,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Jizan",
     "key": "jizan",
-    "lat": 17.394043768894527,
-    "lon": 42.62508827997426
+    "lat": 17.3028,
+    "lon": 42.726,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Tabuk",
     "key": "tabuk",
-    "lat": 27.0469159679653,
-    "lon": 37.35295956290198
+    "lat": 27.9146,
+    "lon": 36.8014,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Al Madinah",
     "key": "al madinah",
-    "lat": 24.999994577562138,
-    "lon": 39.30045505890643
+    "lat": 24.9279,
+    "lon": 39.4378,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Makkah",
+    "name": "Meca",
     "key": "makkah",
-    "lat": 21.124086023045603,
-    "lon": 41.1908908301195
+    "lat": 21.4348,
+    "lon": 40.2542,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Ar Riyad",
     "key": "ar riyad",
-    "lat": 24.201752349163556,
-    "lon": 44.55196691803082
+    "lat": 23.3432,
+    "lon": 45.1404,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Al Quassim",
+    "name": "Al Qasim",
     "key": "al quassim",
-    "lat": 25.92944276204729,
-    "lon": 43.1789777993288
+    "lat": 25.9478,
+    "lon": 43.2716,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Ha'il",
     "key": "ha'il",
-    "lat": 27.261369743550627,
-    "lon": 41.82420072663221
+    "lat": 27.2652,
+    "lon": 41.7076,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Al Bahah",
     "key": "al bahah",
-    "lat": 20.203525324676836,
-    "lon": 41.49019234345899
+    "lat": 20.1605,
+    "lon": 41.4165,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   }
 ]

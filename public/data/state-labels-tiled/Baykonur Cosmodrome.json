@@ -1,8 +1,11 @@
 [
   {
-    "name": "Baykonur lease in Qyzylorda",
+    "name": "Baikonur",
     "key": "baykonur lease in qyzylorda",
-    "lat": 45.926828657071496,
-    "lon": 63.36774258285725
+    "lat": 45.9632,
+    "lon": 63.3524,
+    "labelRank": 6,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

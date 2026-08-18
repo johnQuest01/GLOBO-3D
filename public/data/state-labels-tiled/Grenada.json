@@ -2,43 +2,64 @@
   {
     "name": "Saint George",
     "key": "saint george",
-    "lat": 12.071263662592411,
-    "lon": -61.69597780071473
+    "lat": 12.0681,
+    "lon": -61.7226,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint David",
     "key": "saint david",
-    "lat": 12.062006624499489,
-    "lon": -61.65212198722793
+    "lat": 12.055,
+    "lon": -61.6617,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint Andrew",
     "key": "saint andrew",
-    "lat": 12.136522499923833,
-    "lon": -61.64461729593943
+    "lat": 12.1224,
+    "lon": -61.6329,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint Patrick",
     "key": "saint patrick",
-    "lat": 12.200630520272618,
-    "lon": -61.65585988652281
+    "lat": 12.2147,
+    "lon": -61.6342,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint Mark",
     "key": "saint mark",
-    "lat": 12.185798873659664,
-    "lon": -61.68618191844265
+    "lat": 12.189,
+    "lon": -61.6749,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint John",
     "key": "saint john",
-    "lat": 12.134726429499878,
-    "lon": -61.713231150659155
+    "lat": 12.1446,
+    "lon": -61.7094,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Carriacou and Petite Martinique",
+    "name": "Carriacou e Petite Martinique",
     "key": "carriacou and petite martinique",
-    "lat": 12.482961330200055,
-    "lon": -61.437692837399936
+    "lat": 12.4733,
+    "lon": -61.4461,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

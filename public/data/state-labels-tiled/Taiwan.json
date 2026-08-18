@@ -2,127 +2,190 @@
   {
     "name": "Taoyuan",
     "key": "taoyuan",
-    "lat": 24.847753854350078,
-    "lon": 121.23611455875107
+    "lat": 24.961,
+    "lon": 121.227,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Hsinchu",
     "key": "hsinchu",
-    "lat": 24.67625505217281,
-    "lon": 121.15669070796412
+    "lat": 24.6748,
+    "lon": 121.163,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Hsinchu City",
+    "name": "Hsinchu",
     "key": "hsinchu city",
-    "lat": 24.765990992253094,
-    "lon": 120.90507652875124
+    "lat": 24.7757,
+    "lon": 120.959,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Miaoli",
     "key": "miaoli",
-    "lat": 24.501560778663663,
-    "lon": 120.90680571518462
+    "lat": 24.5253,
+    "lon": 120.942,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Taichung City",
+    "name": "Cidade de Taichung",
     "key": "taichung city",
-    "lat": 24.263110511102727,
-    "lon": 120.96105775405053
+    "lat": 24.238,
+    "lon": 120.966,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Changhua",
     "key": "changhua",
-    "lat": 23.935803941317015,
-    "lon": 120.45558866066433
+    "lat": 24.0016,
+    "lon": 120.464,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Yunlin",
     "key": "yunlin",
-    "lat": 23.64193540175511,
-    "lon": 120.40921792041904
+    "lat": 23.7253,
+    "lon": 120.427,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Chiayi",
     "key": "chiayi",
-    "lat": 23.450239350242153,
-    "lon": 120.46405590449679
+    "lat": 23.4465,
+    "lon": 120.26,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Tainan City",
+    "name": "Tainan",
     "key": "tainan city",
-    "lat": 23.140500749940195,
-    "lon": 120.30174112816502
+    "lat": 23.0464,
+    "lon": 120.182,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kaohsiung City",
+    "name": "Kaohsiung",
     "key": "kaohsiung city",
-    "lat": 22.986142984781115,
-    "lon": 120.62200125000042
+    "lat": 23.0157,
+    "lon": 120.609,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Pingtung",
     "key": "pingtung",
-    "lat": 22.431926937306063,
-    "lon": 120.71776215051834
+    "lat": 22.5344,
+    "lon": 120.661,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Taitung",
     "key": "taitung",
-    "lat": 22.87151476955368,
-    "lon": 121.05539145322155
+    "lat": 22.0499,
+    "lon": 121.54,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Hualien",
     "key": "hualien",
-    "lat": 23.85488459406685,
-    "lon": 121.39582371077701
+    "lat": 23.7743,
+    "lon": 121.381,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Yilan",
     "key": "yilan",
-    "lat": 24.64350231945187,
-    "lon": 121.68711519264346
+    "lat": 24.5913,
+    "lon": 121.644,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "New Taipei City",
+    "name": "Novo Taipé",
     "key": "new taipei city",
-    "lat": 25.078720328821316,
-    "lon": 121.62949900878532
+    "lat": 24.911,
+    "lon": 121.646,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Keelung City",
+    "name": "Keelung",
     "key": "keelung city",
-    "lat": 25.13956230681604,
-    "lon": 121.69234868189157
+    "lat": 25.1131,
+    "lon": 121.704,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Kinmen",
     "key": "kinmen",
-    "lat": 24.479924968200056,
-    "lon": 118.41193275340007
+    "lat": 24.454,
+    "lon": 118.368,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Penghu",
     "key": "penghu",
-    "lat": 23.58606598525006,
-    "lon": 119.61257978625005
+    "lat": 23.5724,
+    "lon": 119.597,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Nantou",
     "key": "nantou",
-    "lat": 23.856378770683705,
-    "lon": 120.99573980782584
+    "lat": 23.7977,
+    "lon": 120.988,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Taipei City",
+    "name": "Taipé",
     "key": "taipei city",
-    "lat": 25.058326077146727,
-    "lon": 121.57751997298833
+    "lat": 25.0904,
+    "lon": 121.559,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Chiayi City",
+    "name": "Chiayi",
     "key": "chiayi city",
-    "lat": 23.470815741128533,
-    "lon": 120.4347990253797
+    "lat": 23.4822,
+    "lon": 120.441,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   }
 ]

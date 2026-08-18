@@ -1,62 +1,92 @@
 [
   {
-    "name": "Utenos",
+    "name": "Utena",
     "key": "utenos",
-    "lat": 55.48421000599861,
-    "lon": 25.652353279250434
+    "lat": 55.5267,
+    "lon": 25.622,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Vilniaus",
+    "name": "Vilnius",
     "key": "vilniaus",
-    "lat": 54.88818642058791,
-    "lon": 25.330441550452264
+    "lat": 54.7338,
+    "lon": 25.1588,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Alytaus",
+    "name": "Alytus",
     "key": "alytaus",
-    "lat": 54.22970711656492,
-    "lon": 24.130207176027653
+    "lat": 54.2544,
+    "lon": 24.167,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Panevezio",
+    "name": "Panevėžys",
     "key": "panevezio",
-    "lat": 55.900352159169785,
-    "lon": 24.85613379928602
+    "lat": 56.0725,
+    "lon": 24.9143,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Telšiai",
     "key": "telšiai",
-    "lat": 56.02853096361466,
-    "lon": 22.176095260140148
+    "lat": 56.0398,
+    "lon": 22.1086,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Klaipedos",
+    "name": "Klaipėda",
     "key": "klaipedos",
-    "lat": 55.81752109261403,
-    "lon": 21.572755486272584
+    "lat": 55.6254,
+    "lon": 21.3879,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Šiauliai",
     "key": "šiauliai",
-    "lat": 55.99758411700257,
-    "lon": 23.30115214572676
+    "lat": 55.9585,
+    "lon": 23.2677,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Marijampoles",
+    "name": "Marijampolė",
     "key": "marijampoles",
-    "lat": 54.63244466099544,
-    "lon": 23.13736682424929
+    "lat": 54.6829,
+    "lon": 23.1751,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Taurages",
+    "name": "Tauragė",
     "key": "taurages",
-    "lat": 55.29966767557199,
-    "lon": 22.594354856007055
+    "lat": 55.2657,
+    "lon": 22.6458,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Kauno",
+    "name": "Kaunas",
     "key": "kauno",
-    "lat": 55.091217401618906,
-    "lon": 23.89126410144283
+    "lat": 55.0673,
+    "lon": 23.9879,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   }
 ]

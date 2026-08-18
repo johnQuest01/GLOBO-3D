@@ -1,608 +1,911 @@
 [
   {
-    "name": "Guyane française",
+    "name": "Guiana Francesa",
     "key": "guyane française",
-    "lat": 3.7357130661334073,
-    "lon": -53.43042500222215
+    "lat": 3.85831,
+    "lon": -53.1324,
+    "labelRank": 5,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Nord",
+    "name": "Norte",
     "key": "nord",
-    "lat": 50.468463806111586,
-    "lon": 3.19449772928748
+    "lat": 50.403,
+    "lon": 3.22709,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Ardennes",
+    "name": "Ardenas",
     "key": "ardennes",
-    "lat": 49.63408456577736,
-    "lon": 4.652026837679077
+    "lat": 49.5403,
+    "lon": 4.62417,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Aisne",
     "key": "aisne",
-    "lat": 49.53549761730697,
-    "lon": 3.609131875432007
+    "lat": 49.5667,
+    "lon": 3.51554,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Meuse",
     "key": "meuse",
-    "lat": 49.088113250443776,
-    "lon": 5.373346770960224
+    "lat": 48.9505,
+    "lon": 5.50884,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Meurthe-et-Moselle",
     "key": "meurthe-et-moselle",
-    "lat": 48.93899092856712,
-    "lon": 6.111475487646419
+    "lat": 48.7055,
+    "lon": 6.27603,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Moselle",
+    "name": "Mosela",
     "key": "moselle",
-    "lat": 49.05327537395288,
-    "lon": 6.801141345044198
+    "lat": 49.0845,
+    "lon": 6.51862,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Alpes-Maritimes",
+    "name": "Alpes Marítimos",
     "key": "alpes-maritimes",
-    "lat": 43.91829761516312,
-    "lon": 7.190264350747291
+    "lat": 43.8699,
+    "lon": 7.18651,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Alpes-de-Haute-Provence",
+    "name": "Alpes da Alta Provença",
     "key": "alpes-de-haute-provence",
-    "lat": 44.15102018705066,
-    "lon": 6.316629846130801
+    "lat": 44.0454,
+    "lon": 6.24822,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Hautes-Alpes",
+    "name": "Altos Alpes",
     "key": "hautes-alpes",
-    "lat": 44.660742866577934,
-    "lon": 6.263788273270107
+    "lat": 44.6732,
+    "lon": 6.37648,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Savoie",
+    "name": "Saboia",
     "key": "savoie",
-    "lat": 45.495979699360504,
-    "lon": 6.422703424088778
+    "lat": 45.4832,
+    "lon": 6.47098,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Haute-Savoie",
+    "name": "Alta Saboia",
     "key": "haute-savoie",
-    "lat": 46.05914735663921,
-    "lon": 6.415517487894535
+    "lat": 46.0502,
+    "lon": 6.51823,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Pyrénées-Atlantiques",
+    "name": "Pirineus Atlânticos",
     "key": "pyrénées-atlantiques",
-    "lat": 43.279236871476385,
-    "lon": -0.9431326249668036
+    "lat": 43.259,
+    "lon": -0.74999,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Haute-Garonne",
+    "name": "Alta Garona",
     "key": "haute-garonne",
-    "lat": 43.205894394114885,
-    "lon": 1.0530413060164048
+    "lat": 43.5457,
+    "lon": 1.41673,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Hautes-Pyrénées",
+    "name": "Altos Pirenéus",
     "key": "hautes-pyrénées",
-    "lat": 43.03800834379333,
-    "lon": 0.14221514866670937
+    "lat": 43.0599,
+    "lon": 0.13923,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Ariège",
     "key": "ariège",
-    "lat": 42.89586813042189,
-    "lon": 1.4887184934640898
+    "lat": 42.9046,
+    "lon": 1.53654,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Pyrénées-Orientales",
+    "name": "Pirenéus Orientais",
     "key": "pyrénées-orientales",
-    "lat": 42.58937042214943,
-    "lon": 2.3334939351207695
+    "lat": 42.5738,
+    "lon": 2.54908,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Bas-Rhin",
+    "name": "Baixo Reno",
     "key": "bas-rhin",
-    "lat": 48.72671091641774,
-    "lon": 7.507243333840022
+    "lat": 48.6179,
+    "lon": 7.56628,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Haute-Rhin",
+    "name": "Alto Reno",
     "key": "haute-rhin",
-    "lat": 47.714215497426885,
-    "lon": 7.361866775421182
+    "lat": 47.886,
+    "lon": 7.25359,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Territoire de Belfort",
+    "name": "Território de Belfort",
     "key": "territoire de belfort",
-    "lat": 47.622267141697264,
-    "lon": 6.930019148357328
+    "lat": 47.6568,
+    "lon": 6.93675,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Doubs",
     "key": "doubs",
-    "lat": 47.07558074135702,
-    "lon": 6.372496269999385
+    "lat": 47.1584,
+    "lon": 6.31895,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Ain",
     "key": "ain",
-    "lat": 46.15532271669022,
-    "lon": 5.540339295022905
+    "lat": 46.084,
+    "lon": 5.37744,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Jura",
     "key": "jura",
-    "lat": 47.346176755563754,
-    "lon": 7.237140901390104
+    "lat": 47.3636,
+    "lon": 7.19817,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Var",
     "key": "var",
-    "lat": 43.48619773517044,
-    "lon": 6.279168968584979
+    "lat": 43.4095,
+    "lon": 6.27103,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Bouches-du-Rhône",
+    "name": "Bocas do Ródano",
     "key": "bouches-du-rhône",
-    "lat": 43.497632920712,
-    "lon": 5.090194553434765
+    "lat": 43.5324,
+    "lon": 5.40444,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Gard",
     "key": "gard",
-    "lat": 43.977275755654325,
-    "lon": 4.007187238369046
+    "lat": 43.9914,
+    "lon": 4.18939,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Hérault",
     "key": "hérault",
-    "lat": 43.56999159727932,
-    "lon": 3.302070776724284
+    "lat": 43.5524,
+    "lon": 3.27316,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Aude",
     "key": "aude",
-    "lat": 43.09664364674215,
-    "lon": 2.4705923518138806
+    "lat": 43.1004,
+    "lon": 2.48157,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Landes",
     "key": "landes",
-    "lat": 43.96693822188158,
-    "lon": -0.7336672684181718
+    "lat": 43.9644,
+    "lon": -0.792307,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Gironde",
+    "name": "Gironda",
     "key": "gironde",
-    "lat": 44.827424584388396,
-    "lon": -0.5283365370607062
+    "lat": 44.7339,
+    "lon": -0.515546,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Charente-Maritime",
     "key": "charente-maritime",
-    "lat": 45.707017580338835,
-    "lon": -0.6008585275381305
+    "lat": 45.8441,
+    "lon": -0.714301,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Vendée",
+    "name": "Vendeia",
     "key": "vendée",
-    "lat": 46.64295599894675,
-    "lon": -1.2946924609593775
+    "lat": 46.6893,
+    "lon": -1.31827,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Loire-Atlantique",
     "key": "loire-atlantique",
-    "lat": 47.348529407948305,
-    "lon": -1.6535272577869538
+    "lat": 47.3637,
+    "lon": -1.6025,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Morbihan",
     "key": "morbihan",
-    "lat": 47.82664817178615,
-    "lon": -2.840603393901432
+    "lat": 47.8699,
+    "lon": -2.89359,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Finistère",
     "key": "finistère",
-    "lat": 48.1577355904296,
-    "lon": -4.004956880779424
+    "lat": 48.3309,
+    "lon": -3.92644,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Côtes-d'Armor",
     "key": "côtes-d'armor",
-    "lat": 48.45174837500713,
-    "lon": -2.785919245243921
+    "lat": 48.4383,
+    "lon": -2.93239,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Ille-et-Vilaine",
     "key": "ille-et-vilaine",
-    "lat": 48.16722340357559,
-    "lon": -1.6447306596976659
+    "lat": 48.1428,
+    "lon": -1.65623,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Manche",
+    "name": "Mancha",
     "key": "manche",
-    "lat": 48.99839214287667,
-    "lon": -1.3071388554655896
+    "lat": 49.1637,
+    "lon": -1.34727,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Calvados",
     "key": "calvados",
-    "lat": 49.09702161815133,
-    "lon": -0.4995615845563574
+    "lat": 49.0601,
+    "lon": -0.288724,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Eure",
     "key": "eure",
-    "lat": 49.15725982884432,
-    "lon": 0.9398710970752868
+    "lat": 49.0414,
+    "lon": 0.92951,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Seine-Maritime",
+    "name": "Sena Marítimo",
     "key": "seine-maritime",
-    "lat": 49.616441988129964,
-    "lon": 0.964730961440031
+    "lat": 49.5936,
+    "lon": 1.1513,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Somme",
     "key": "somme",
-    "lat": 49.9442700625137,
-    "lon": 2.278441302232853
+    "lat": 49.8757,
+    "lon": 2.36029,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Pas-de-Calais",
     "key": "pas-de-calais",
-    "lat": 50.477771118210846,
-    "lon": 2.326155747360687
+    "lat": 50.4661,
+    "lon": 2.3614,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Martinique",
+    "name": "Martinica",
     "key": "martinique",
-    "lat": 14.646628118750058,
-    "lon": -61.00460262774994
+    "lat": 14.7245,
+    "lon": -61.064,
+    "labelRank": 4,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Guadeloupe",
+    "name": "Guadalupe",
     "key": "guadeloupe",
-    "lat": 16.201381740500057,
-    "lon": -61.64589731883327
+    "lat": 16.1881,
+    "lon": -61.6822,
+    "labelRank": 20,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "La Réunion",
+    "name": "Reunião",
     "key": "la réunion",
-    "lat": -21.11046314909992,
-    "lon": 55.596958855100056
+    "lat": -21.1155,
+    "lon": 55.5405,
+    "labelRank": 20,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Mayotte",
     "key": "mayotte",
-    "lat": -12.809307550199913,
-    "lon": 45.16670983180008
+    "lat": -12.7767,
+    "lon": 45.2769,
+    "labelRank": 20,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Haute-Corse",
+    "name": "Alta Córsega",
     "key": "haute-corse",
-    "lat": 42.31131016998311,
-    "lon": 9.120321896183814
+    "lat": 42.3996,
+    "lon": 9.2309,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Corse-du-Sud",
+    "name": "Córsega do Sul",
     "key": "corse-du-sud",
-    "lat": 41.924399474255125,
-    "lon": 8.955633858135304
+    "lat": 41.8449,
+    "lon": 9.02252,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Gers",
     "key": "gers",
-    "lat": 43.66392808290216,
-    "lon": 0.46501013729549
+    "lat": 43.6809,
+    "lon": 0.537496,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Haute-Vienne",
     "key": "haute-vienne",
-    "lat": 45.9263852137466,
-    "lon": 1.2580072493950334
+    "lat": 45.8465,
+    "lon": 1.21857,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Corrèze",
     "key": "corrèze",
-    "lat": 45.3761671296785,
-    "lon": 1.9037629820144581
+    "lat": 45.355,
+    "lon": 1.90105,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Tarn-et-Garonne",
     "key": "tarn-et-garonne",
-    "lat": 44.16051937772092,
-    "lon": 1.353573136990668
+    "lat": 44.0657,
+    "lon": 1.23277,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Tarn",
     "key": "tarn",
-    "lat": 43.81074032394963,
-    "lon": 2.2806989556779627
+    "lat": 43.8024,
+    "lon": 2.13731,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Isère",
     "key": "isère",
-    "lat": 45.2633699139131,
-    "lon": 5.487942405585722
+    "lat": 45.2478,
+    "lon": 5.4175,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Drôme",
     "key": "drôme",
-    "lat": 44.65828115519399,
-    "lon": 5.314095029590506
+    "lat": 44.7407,
+    "lon": 5.13443,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Aveyron",
     "key": "aveyron",
-    "lat": 44.280942167287165,
-    "lon": 2.707020960054254
+    "lat": 44.2884,
+    "lon": 2.66383,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Lot",
     "key": "lot",
-    "lat": 44.649568574815575,
-    "lon": 1.632482847690974
+    "lat": 44.6327,
+    "lon": 1.61079,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Indre-et-Loire",
     "key": "indre-et-loire",
-    "lat": 47.18887703134989,
-    "lon": 0.8610393907481182
+    "lat": 47.2903,
+    "lon": 0.713649,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Indre",
     "key": "indre",
-    "lat": 46.828766859902636,
-    "lon": 1.5388821785696762
+    "lat": 46.8003,
+    "lon": 1.61636,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Loir-et-Cher",
     "key": "loir-et-cher",
-    "lat": 47.6018057654132,
-    "lon": 1.4194497526723562
+    "lat": 47.5484,
+    "lon": 1.59234,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Creuse",
     "key": "creuse",
-    "lat": 46.02795397551907,
-    "lon": 2.034933008527981
+    "lat": 46.0705,
+    "lon": 2.04281,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Mayenne",
     "key": "mayenne",
-    "lat": 48.15270937156023,
-    "lon": -0.6607812447386588
+    "lat": 48.1562,
+    "lon": -0.635312,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Sarthe",
     "key": "sarthe",
-    "lat": 48.011471329138494,
-    "lon": 0.2477895908369381
+    "lat": 47.9682,
+    "lon": 0.170679,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Vaucluse",
     "key": "vaucluse",
-    "lat": 44.016744966182216,
-    "lon": 5.22827565120032
+    "lat": 43.9981,
+    "lon": 5.21543,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Haute-Marne",
     "key": "haute-marne",
-    "lat": 48.16775108167338,
-    "lon": 5.179272072216769
+    "lat": 48.1552,
+    "lon": 5.24076,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Marne",
     "key": "marne",
-    "lat": 48.897600957300135,
-    "lon": 4.214317551868063
+    "lat": 49.022,
+    "lon": 4.26395,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Dordogne",
+    "name": "Dordonha",
     "key": "dordogne",
-    "lat": 45.09912074686781,
-    "lon": 0.6431095442414945
+    "lat": 45.1592,
+    "lon": 0.780505,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Rhône",
+    "name": "Ródano",
     "key": "rhône",
-    "lat": 45.939464695839014,
-    "lon": 4.655673172378993
+    "lat": 45.841,
+    "lon": 4.64841,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Vosges",
     "key": "vosges",
-    "lat": 48.22271421983535,
-    "lon": 6.421226792132732
+    "lat": 48.2445,
+    "lon": 6.67053,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Ardèche",
     "key": "ardèche",
-    "lat": 44.81281140929765,
-    "lon": 4.4945870032518735
+    "lat": 44.8014,
+    "lon": 4.4999,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Loire",
     "key": "loire",
-    "lat": 45.775468180164985,
-    "lon": 4.212238774789093
+    "lat": 45.706,
+    "lon": 4.16239,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Puy-de-Dôme",
     "key": "puy-de-dôme",
-    "lat": 45.71668104519405,
-    "lon": 3.156116350988798
+    "lat": 45.8135,
+    "lon": 3.26844,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Allier",
     "key": "allier",
-    "lat": 46.37520574656221,
-    "lon": 3.196395450946438
+    "lat": 46.408,
+    "lon": 3.18698,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Loiret",
     "key": "loiret",
-    "lat": 47.912448220309095,
-    "lon": 2.347005885363305
+    "lat": 47.9007,
+    "lon": 2.19238,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Maine-et-Loire",
     "key": "maine-et-loire",
-    "lat": 47.400933104310866,
-    "lon": -0.7116366125817242
+    "lat": 47.3771,
+    "lon": -0.527847,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Aube",
     "key": "aube",
-    "lat": 48.37606614593586,
-    "lon": 4.231979073825187
+    "lat": 48.3125,
+    "lon": 4.16252,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Paris",
     "key": "paris",
-    "lat": 48.8696497227065,
-    "lon": 2.3346444990943667
+    "lat": 48.8594,
+    "lon": 2.34347,
+    "labelRank": 3,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Hauts-de-Seine",
+    "name": "Altos do Sena",
     "key": "hauts-de-seine",
-    "lat": 48.85502622341003,
-    "lon": 2.268988189167885
+    "lat": 48.8557,
+    "lon": 2.19706,
+    "labelRank": 3,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Seine-Saint-Denis",
     "key": "seine-saint-denis",
-    "lat": 48.90614398140959,
-    "lon": 2.411827495292679
+    "lat": 48.9289,
+    "lon": 2.51916,
+    "labelRank": 3,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Val-d'Oise",
     "key": "val-d'oise",
-    "lat": 49.06787007332702,
-    "lon": 2.156613172160157
+    "lat": 49.0754,
+    "lon": 2.23366,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Yvelines",
     "key": "yvelines",
-    "lat": 48.85034343160405,
-    "lon": 1.8784737350747998
+    "lat": 48.8191,
+    "lon": 1.90058,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Charente",
     "key": "charente",
-    "lat": 45.7353046091968,
-    "lon": 0.13090961736729495
+    "lat": 45.6998,
+    "lon": 0.154828,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Cher",
     "key": "cher",
-    "lat": 47.06266909104483,
-    "lon": 2.3816462212482823
+    "lat": 47.1356,
+    "lon": 2.51907,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Eure-et-Loir",
     "key": "eure-et-loir",
-    "lat": 48.345960418373885,
-    "lon": 1.2625647754263896
+    "lat": 48.3564,
+    "lon": 1.36704,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Haute-Loire",
     "key": "haute-loire",
-    "lat": 45.14913667491759,
-    "lon": 3.720795148384525
+    "lat": 45.1254,
+    "lon": 3.72362,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Cantal",
     "key": "cantal",
-    "lat": 45.049247339273265,
-    "lon": 2.7797179100135243
+    "lat": 45.1592,
+    "lon": 2.74821,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Lot-et-Garonne",
+    "name": "Lot e Garona",
     "key": "lot-et-garonne",
-    "lat": 44.351954982789145,
-    "lon": 0.4272078434965833
+    "lat": 44.3829,
+    "lon": 0.449742,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Lozère",
     "key": "lozère",
-    "lat": 44.49417480820081,
-    "lon": 3.541134931212097
+    "lat": 44.4909,
+    "lon": 3.54811,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Nièvre",
     "key": "nièvre",
-    "lat": 47.136779125256396,
-    "lon": 3.4891991823463777
+    "lat": 47.1505,
+    "lon": 3.56837,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Côte-d'Or",
+    "name": "Côte-d’Or",
     "key": "côte-d'or",
-    "lat": 47.42884659619344,
-    "lon": 4.740560047388268
+    "lat": 47.4003,
+    "lon": 4.76991,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Oise",
     "key": "oise",
-    "lat": 49.44075994376931,
-    "lon": 2.3982203430943514
+    "lat": 49.3967,
+    "lon": 2.64323,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Orne",
     "key": "orne",
-    "lat": 48.58104959260459,
-    "lon": 0.01271404996342369
+    "lat": 48.6533,
+    "lon": 0.0632139,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Haute-Saône",
     "key": "haute-saône",
-    "lat": 47.649052953718325,
-    "lon": 6.039820857534032
+    "lat": 47.6973,
+    "lon": 6.16722,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Saône-et-Loire",
     "key": "saône-et-loire",
-    "lat": 46.59808339450802,
-    "lon": 4.467616150702284
+    "lat": 46.6789,
+    "lon": 4.5138,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Deux-Sèvres",
     "key": "deux-sèvres",
-    "lat": 46.5598849700653,
-    "lon": -0.37208482260648956
+    "lat": 46.5681,
+    "lon": -0.300826,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Vienne",
     "key": "vienne",
-    "lat": 46.57302949247331,
-    "lon": 0.5049696114708695
+    "lat": 46.5338,
+    "lon": 0.412746,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Yonne",
     "key": "yonne",
-    "lat": 47.786687385061796,
-    "lon": 3.501281270502455
+    "lat": 47.7715,
+    "lon": 3.64262,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Essonne",
     "key": "essonne",
-    "lat": 48.555566616156376,
-    "lon": 2.248067448034283
+    "lat": 48.5629,
+    "lon": 2.29588,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Seien-et-Marne",
+    "name": "Sena e Marne",
     "key": "seien-et-marne",
-    "lat": 48.62745934721483,
-    "lon": 2.8820787509148644
+    "lat": 48.5515,
+    "lon": 2.84201,
+    "labelRank": 3,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Val-de-Marne",
     "key": "val-de-marne",
-    "lat": 48.79727594572827,
-    "lon": 2.4606133659141185
+    "lat": 48.7752,
+    "lon": 2.5155,
+    "labelRank": 3,
+    "minLabel": 9,
+    "maxLabel": 11
   }
 ]

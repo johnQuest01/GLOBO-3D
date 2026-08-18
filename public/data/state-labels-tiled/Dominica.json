@@ -2,61 +2,91 @@
   {
     "name": "Saint Patrick",
     "key": "saint patrick",
-    "lat": 12.200630520272618,
-    "lon": -61.65585988652281
+    "lat": 12.2147,
+    "lon": -61.6342,
+    "labelRank": 10,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint David",
     "key": "saint david",
-    "lat": 12.062006624499489,
-    "lon": -61.65212198722793
+    "lat": 12.055,
+    "lon": -61.6617,
+    "labelRank": 10,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint Andrew",
     "key": "saint andrew",
-    "lat": 12.136522499923833,
-    "lon": -61.64461729593943
+    "lat": 12.1224,
+    "lon": -61.6329,
+    "labelRank": 10,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint John",
     "key": "saint john",
-    "lat": 12.134726429499878,
-    "lon": -61.713231150659155
+    "lat": 12.1446,
+    "lon": -61.7094,
+    "labelRank": 10,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint Peter",
     "key": "saint peter",
-    "lat": 13.27554059191744,
-    "lon": -59.60509607843333
+    "lat": 13.2679,
+    "lon": -59.6109,
+    "labelRank": 10,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint Joseph",
     "key": "saint joseph",
-    "lat": 13.21292541778675,
-    "lon": -59.54752963717237
+    "lat": 13.2118,
+    "lon": -59.5495,
+    "labelRank": 10,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint Paul",
     "key": "saint paul",
-    "lat": 15.353548011356668,
-    "lon": -61.37306909263786
+    "lat": 15.3529,
+    "lon": -61.3717,
+    "labelRank": 10,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint George",
     "key": "saint george",
-    "lat": 12.071263662592411,
-    "lon": -61.69597780071473
+    "lat": 12.0681,
+    "lon": -61.7226,
+    "labelRank": 10,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint Luke",
     "key": "saint luke",
-    "lat": 15.246472511149634,
-    "lon": -61.36620584779139
+    "lat": 15.2483,
+    "lon": -61.3644,
+    "labelRank": 10,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Saint Mark",
     "key": "saint mark",
-    "lat": 12.185798873659664,
-    "lon": -61.68618191844265
+    "lat": 12.189,
+    "lon": -61.6749,
+    "labelRank": 10,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

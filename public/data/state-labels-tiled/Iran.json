@@ -1,188 +1,281 @@
 [
   {
-    "name": "West Azarbaijan",
+    "name": "Azerbaijão Ocidental",
     "key": "west azarbaijan",
-    "lat": 37.75840081498615,
-    "lon": 45.33752410150497
+    "lat": 36.6666,
+    "lon": 45.6734,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "East Azarbaijan",
+    "name": "Azerbaijão Oriental",
     "key": "east azarbaijan",
-    "lat": 38.05071956550511,
-    "lon": 46.72206828046534
+    "lat": 37.8501,
+    "lon": 46.7723,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Ardebil",
+    "name": "Ardabil",
     "key": "ardebil",
-    "lat": 38.556990479027974,
-    "lon": 47.826293996550696
+    "lat": 38.9113,
+    "lon": 47.7241,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Gilan",
     "key": "gilan",
-    "lat": 37.43855523959421,
-    "lon": 49.303269996817036
+    "lat": 37.0503,
+    "lon": 49.5162,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Kordestan",
+    "name": "Curdistão",
     "key": "kordestan",
-    "lat": 35.71560740757269,
-    "lon": 46.98024237970941
+    "lat": 35.5778,
+    "lon": 46.8636,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Kermanshah",
     "key": "kermanshah",
-    "lat": 34.49767190795102,
-    "lon": 46.63029931186284
+    "lat": 34.2796,
+    "lon": 46.6893,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Ilam",
     "key": "ilam",
-    "lat": 33.293206026941064,
-    "lon": 46.84351996464694
+    "lat": 33.2369,
+    "lon": 46.8116,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Khuzestan",
+    "name": "Khuzistão",
     "key": "khuzestan",
-    "lat": 31.309427475808583,
-    "lon": 49.08234723688596
+    "lat": 31.3484,
+    "lon": 48.7558,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "North Khorasan",
+    "name": "Coração do Norte",
     "key": "north khorasan",
-    "lat": 37.42364921340075,
-    "lon": 57.11644862552477
+    "lat": 37.5789,
+    "lon": 57.0475,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Golestan",
     "key": "golestan",
-    "lat": 37.30122473479639,
-    "lon": 55.04140586242717
+    "lat": 37.312,
+    "lon": 55.0042,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Razavi Khorasan",
+    "name": "Coração Razavi",
     "key": "razavi khorasan",
-    "lat": 35.579835200636175,
-    "lon": 58.546270334812114
+    "lat": 35.584,
+    "lon": 58.7976,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "South Khorasan",
+    "name": "Coração do Sul",
     "key": "south khorasan",
-    "lat": 32.628805957004694,
-    "lon": 59.70497744913
+    "lat": 32.4563,
+    "lon": 59.489,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Sistan and Baluchestan",
+    "name": "Sistan e Baluchistão",
     "key": "sistan and baluchestan",
-    "lat": 27.79498890208904,
-    "lon": 60.889217663378986
+    "lat": 27.4268,
+    "lon": 61.0471,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Bushehr",
     "key": "bushehr",
-    "lat": 28.758306602606204,
-    "lon": 51.379603156625535
+    "lat": 28.8273,
+    "lon": 51.4225,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Hormozgan",
     "key": "hormozgan",
-    "lat": 27.09436908713363,
-    "lon": 56.18019124359986
+    "lat": 27.6455,
+    "lon": 56.2505,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Mazandaran",
     "key": "mazandaran",
-    "lat": 36.41225272957698,
-    "lon": 52.29172201077206
+    "lat": 36.231,
+    "lon": 52.2123,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Semnan",
     "key": "semnan",
-    "lat": 35.745145126321496,
-    "lon": 54.537787713507136
+    "lat": 35.4243,
+    "lon": 54.4381,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Zanjan",
     "key": "zanjan",
-    "lat": 36.4213297747402,
-    "lon": 48.48622067585258
+    "lat": 36.3989,
+    "lon": 48.2959,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Qazvin",
     "key": "qazvin",
-    "lat": 36.14782661954284,
-    "lon": 49.63454178238734
+    "lat": 36.0552,
+    "lon": 49.6996,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Markazi",
     "key": "markazi",
-    "lat": 34.4709956560089,
-    "lon": 49.87161258332509
+    "lat": 34.5595,
+    "lon": 49.964,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Esfahan",
+    "name": "Ispaão",
     "key": "esfahan",
-    "lat": 32.76328318259144,
-    "lon": 51.698719558244036
+    "lat": 32.9837,
+    "lon": 52.4195,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Chahar Mahall and Bakhtiari",
+    "name": "Chahar Mahaal e Bakhtiari",
     "key": "chahar mahall and bakhtiari",
-    "lat": 31.953628312023895,
-    "lon": 50.62150121753021
+    "lat": 31.9975,
+    "lon": 50.5298,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Kohgiluyeh and Buyer Ahmad",
+    "name": "Kohkiluyeh e Buyer Ahmad",
     "key": "kohgiluyeh and buyer ahmad",
-    "lat": 30.789872421057975,
-    "lon": 50.83132930949131
+    "lat": 30.6977,
+    "lon": 50.7947,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Fars",
     "key": "fars",
-    "lat": 29.32633821664571,
-    "lon": 53.092405030004315
+    "lat": 29.4007,
+    "lon": 53.0793,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Kerman",
     "key": "kerman",
-    "lat": 28.793450088847532,
-    "lon": 57.216390075149285
+    "lat": 30.1234,
+    "lon": 56.9567,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Hamadan",
+    "name": "Hamadã",
     "key": "hamadan",
-    "lat": 34.94747721099538,
-    "lon": 48.58936370289074
+    "lat": 34.8342,
+    "lon": 48.5738,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Lorestan",
+    "name": "Lorestão",
     "key": "lorestan",
-    "lat": 33.52911584286657,
-    "lon": 48.60267874971399
+    "lat": 33.5323,
+    "lon": 48.4141,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Yazd",
     "key": "yazd",
-    "lat": 32.555160898831396,
-    "lon": 55.71665977028715
+    "lat": 32.7074,
+    "lon": 55.5242,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Qom",
     "key": "qom",
-    "lat": 34.61372460203505,
-    "lon": 50.98249268879179
+    "lat": 34.6662,
+    "lon": 50.978,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Tehran",
+    "name": "Teerão",
     "key": "tehran",
-    "lat": 35.55590326483578,
-    "lon": 51.81097928866321
+    "lat": 35.5146,
+    "lon": 51.6548,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Alborz",
     "key": "alborz",
-    "lat": 35.99709409194734,
-    "lon": 50.772147901811344
+    "lat": 35.9651,
+    "lon": 50.7848,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   }
 ]

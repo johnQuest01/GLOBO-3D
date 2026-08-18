@@ -1,92 +1,137 @@
 [
   {
-    "name": "Viljandi",
+    "name": "Viljandimaa",
     "key": "viljandi",
-    "lat": 58.27561071216068,
-    "lon": 25.447094263528943
+    "lat": 58.3005,
+    "lon": 25.5603,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Pärnu",
+    "name": "Pärnumaa",
     "key": "pärnu",
-    "lat": 58.33819766914824,
-    "lon": 24.600023684923062
+    "lat": 58.1294,
+    "lon": 23.9802,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Valga",
+    "name": "Valgamaa",
     "key": "valga",
-    "lat": 57.913285170529576,
-    "lon": 26.13539817939406
+    "lat": 57.9402,
+    "lon": 26.0733,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Võru",
+    "name": "Võrumaa",
     "key": "võru",
-    "lat": 57.7209928211462,
-    "lon": 26.843868893152262
+    "lat": 57.7735,
+    "lon": 26.9602,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Ida-Viru",
+    "name": "Ida-Virumaa",
     "key": "ida-viru",
-    "lat": 59.24592620450779,
-    "lon": 27.425309754608023
+    "lat": 59.1333,
+    "lon": 27.4446,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Põlva",
+    "name": "Põlvamaa",
     "key": "põlva",
-    "lat": 58.05125997543601,
-    "lon": 27.190089439233418
+    "lat": 58.0905,
+    "lon": 27.1696,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Tartu",
+    "name": "Tartumaa",
     "key": "tartu",
-    "lat": 58.40370657708862,
-    "lon": 26.799655242785303
+    "lat": 58.3727,
+    "lon": 26.7967,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Jõgeva",
+    "name": "Jõgevamaa",
     "key": "jõgeva",
-    "lat": 58.72917498595692,
-    "lon": 26.732612667569757
+    "lat": 58.7313,
+    "lon": 26.5975,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Lääne",
+    "name": "Läänemaa",
     "key": "lääne",
-    "lat": 58.85555022327849,
-    "lon": 23.770707693987546
+    "lat": 59.0075,
+    "lon": 23.2541,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Harju",
+    "name": "Harjumaa",
     "key": "harju",
-    "lat": 59.24891876397681,
-    "lon": 24.682172617195537
+    "lat": 59.3206,
+    "lon": 25.1734,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Lääne-Viru",
+    "name": "Lääne-Virumaa",
     "key": "lääne-viru",
-    "lat": 59.24358639350077,
-    "lon": 26.20102713944193
+    "lat": 59.229,
+    "lon": 26.3773,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Saare",
     "key": "saare",
-    "lat": 58.36438629770005,
-    "lon": 22.495127800400063
+    "lat": 57.8027,
+    "lon": 23.2464,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Hiiu",
+    "name": "Hiiumaa",
     "key": "hiiu",
-    "lat": 58.88545505242862,
-    "lon": 22.63545053114294
+    "lat": 58.8594,
+    "lon": 22.5428,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Rapla",
+    "name": "Raplamaa",
     "key": "rapla",
-    "lat": 58.89371346913763,
-    "lon": 24.57354669471508
+    "lat": 58.9829,
+    "lon": 24.6953,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Järva",
+    "name": "Järvamaa",
     "key": "järva",
-    "lat": 58.91011466820735,
-    "lon": 25.703475375937828
+    "lat": 58.9729,
+    "lon": 25.6829,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 11
   }
 ]

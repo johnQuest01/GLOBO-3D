@@ -1,56 +1,83 @@
 [
   {
-    "name": "Gabú",
+    "name": "Gabu",
     "key": "gabú",
-    "lat": 12.10067762124534,
-    "lon": -14.036696568630013
+    "lat": 12.1569,
+    "lon": -14.1098,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Tombali",
     "key": "tombali",
-    "lat": 11.375073030767739,
-    "lon": -14.924979207147617
+    "lat": 11.2932,
+    "lon": -14.9293,
+    "labelRank": 8,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Bafatá",
     "key": "bafatá",
-    "lat": 12.131889343106318,
-    "lon": -14.78633442730029
+    "lat": 12.1429,
+    "lon": -14.707,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Oio",
     "key": "oio",
-    "lat": 12.241491521274124,
-    "lon": -15.296179879132719
+    "lat": 12.2794,
+    "lon": -15.3013,
+    "labelRank": 8,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Cacheu",
     "key": "cacheu",
-    "lat": 12.246225245944705,
-    "lon": -15.966667549283207
+    "lat": 12.19,
+    "lon": -16.0628,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Biombo",
     "key": "biombo",
-    "lat": 11.887998773421359,
-    "lon": -15.751881577533467
+    "lat": 11.8108,
+    "lon": -15.7839,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Bissau",
     "key": "bissau",
-    "lat": 11.89170153249616,
-    "lon": -15.598009201112301
+    "lat": 11.8919,
+    "lon": -15.6119,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Quinara",
     "key": "quinara",
-    "lat": 11.637396299747667,
-    "lon": -15.248671541755694
+    "lat": 11.5576,
+    "lon": -15.1905,
+    "labelRank": 8,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Bolama",
     "key": "bolama",
-    "lat": 11.088926499400054,
-    "lon": -16.106434699599937
+    "lat": 11.5187,
+    "lon": -15.962,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   }
 ]

@@ -2,205 +2,307 @@
   {
     "name": "Badakhshan",
     "key": "badakhshan",
-    "lat": 37.039105328945475,
-    "lon": 71.85696215330725
+    "lat": 36.781,
+    "lon": 70.8036,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Takhar",
     "key": "takhar",
-    "lat": 36.64178138564332,
-    "lon": 69.79361688939856
+    "lat": 36.8335,
+    "lon": 69.8124,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kunduz",
+    "name": "Konduz",
     "key": "kunduz",
-    "lat": 36.772727433306855,
-    "lon": 68.8396596106729
+    "lat": 36.9043,
+    "lon": 68.682,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Balkh",
     "key": "balkh",
-    "lat": 36.62295215629785,
-    "lon": 67.1065287141009
+    "lat": 36.6851,
+    "lon": 67.2185,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Jawzjan",
+    "name": "Jowzjan",
     "key": "jawzjan",
-    "lat": 36.714774066259,
-    "lon": 65.78738159675989
+    "lat": 36.8971,
+    "lon": 65.9617,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Faryab",
     "key": "faryab",
-    "lat": 36.14143986806049,
-    "lon": 64.98083635098959
+    "lat": 35.8043,
+    "lon": 64.7678,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Badghis",
     "key": "badghis",
-    "lat": 35.186349908038544,
-    "lon": 63.79208696149731
+    "lat": 35.2699,
+    "lon": 63.8495,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Hirat",
+    "name": "Herat",
     "key": "hirat",
-    "lat": 34.19658911457547,
-    "lon": 62.360646857134434
+    "lat": 34.1551,
+    "lon": 62.4845,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Nimroz",
+    "name": "Nimruz",
     "key": "nimroz",
-    "lat": 31.051035950347693,
-    "lon": 62.53138948281174
+    "lat": 30.7528,
+    "lon": 62.2069,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Farah",
     "key": "farah",
-    "lat": 32.70927513040633,
-    "lon": 62.55860688177342
+    "lat": 32.5314,
+    "lon": 62.6498,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Kunar",
     "key": "kunar",
-    "lat": 35.00251086148817,
-    "lon": 71.1238935590591
+    "lat": 34.9013,
+    "lon": 71.1061,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Nuristan",
+    "name": "Nuristão",
     "key": "nuristan",
-    "lat": 35.4130700365022,
-    "lon": 70.70227052605615
+    "lat": 35.2898,
+    "lon": 70.7567,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Nangarhar",
     "key": "nangarhar",
-    "lat": 34.310290311722554,
-    "lon": 70.34405466963462
+    "lat": 34.2153,
+    "lon": 70.3027,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Khost",
     "key": "khost",
-    "lat": 33.353245543028024,
-    "lon": 69.80308816459731
+    "lat": 33.363,
+    "lon": 69.8211,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Paktya",
+    "name": "Paktia",
     "key": "paktya",
-    "lat": 33.660877861486846,
-    "lon": 69.43076023235676
+    "lat": 33.575,
+    "lon": 69.3826,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Paktika",
     "key": "paktika",
-    "lat": 32.47456998309801,
-    "lon": 68.72242404197557
+    "lat": 32.5106,
+    "lon": 68.651,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Zabul",
+    "name": "Zabol",
     "key": "zabul",
-    "lat": 32.23124087754114,
-    "lon": 67.13282648298932
+    "lat": 32.4033,
+    "lon": 67.1401,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Kandahar",
     "key": "kandahar",
-    "lat": 31.38161634125965,
-    "lon": 66.23490745836267
+    "lat": 31.135,
+    "lon": 65.7163,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Hilmand",
+    "name": "Helmand",
     "key": "hilmand",
-    "lat": 31.55818237406197,
-    "lon": 64.18308578872248
+    "lat": 30.9278,
+    "lon": 63.9824,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Uruzgan",
+    "name": "Oruzgan",
     "key": "uruzgan",
-    "lat": 32.878670437326804,
-    "lon": 66.18061606625443
+    "lat": 32.807,
+    "lon": 66.0947,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Ghazni",
     "key": "ghazni",
-    "lat": 33.184041978660076,
-    "lon": 67.72915676111559
+    "lat": 33.4079,
+    "lon": 67.8006,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Parwan",
     "key": "parwan",
-    "lat": 35.47724604267071,
-    "lon": 69.85049645361269
+    "lat": 35.3368,
+    "lon": 69.7587,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kabul",
+    "name": "Cabul",
     "key": "kabul",
-    "lat": 34.58430063374369,
-    "lon": 69.41470910015659
+    "lat": 34.4949,
+    "lon": 69.3846,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Laghman",
     "key": "laghman",
-    "lat": 34.79428649910262,
-    "lon": 70.16737633660863
+    "lat": 34.7273,
+    "lon": 70.2085,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Logar",
     "key": "logar",
-    "lat": 34.04035469754248,
-    "lon": 69.29881501138487
+    "lat": 34.0857,
+    "lon": 69.3047,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kapisa",
+    "name": "Capisa",
     "key": "kapisa",
-    "lat": 34.91644786254243,
-    "lon": 69.63275545738934
+    "lat": 34.9748,
+    "lon": 69.6626,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Wardak",
+    "name": "Maydan-Wardak",
     "key": "wardak",
-    "lat": 34.36308555204228,
-    "lon": 68.20739261250759
+    "lat": 34.4269,
+    "lon": 68.1087,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Bamyan",
+    "name": "Bamiyan",
     "key": "bamyan",
-    "lat": 34.72076346881762,
-    "lon": 67.2648073597649
+    "lat": 34.9693,
+    "lon": 67.2365,
+    "labelRank": 9,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Parwan",
     "key": "parwan",
-    "lat": 35.47724604267071,
-    "lon": 69.85049645361269
+    "lat": 35.3368,
+    "lon": 69.7587,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Sari Pul",
+    "name": "Sar-e Pol",
     "key": "sari pul",
-    "lat": 35.71750340965784,
-    "lon": 66.1776357030188
+    "lat": 35.7062,
+    "lon": 66.2158,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ghor",
+    "name": "Ghowr",
     "key": "ghor",
-    "lat": 34.24505226101471,
-    "lon": 64.88122035670429
+    "lat": 34.002,
+    "lon": 64.9224,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Baghlan",
     "key": "baghlan",
-    "lat": 35.79152906543658,
-    "lon": 68.88083821122088
+    "lat": 35.8588,
+    "lon": 68.9831,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
     "name": "Samangan",
     "key": "samangan",
-    "lat": 36.03799305510435,
-    "lon": 67.69078153702449
+    "lat": 36.0506,
+    "lon": 67.683,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   },
   {
-    "name": "Uruzgan",
+    "name": "Oruzgan",
     "key": "uruzgan",
-    "lat": 32.878670437326804,
-    "lon": 66.18061606625443
+    "lat": 32.807,
+    "lon": 66.0947,
+    "labelRank": 5,
+    "minLabel": 6.7,
+    "maxLabel": 11
   }
 ]

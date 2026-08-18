@@ -1,68 +1,101 @@
 [
   {
-    "name": "Western Australia",
+    "name": "Austrália Ocidental",
     "key": "western australia",
-    "lat": -23.873379756833714,
-    "lon": 120.49596378875837
+    "lat": -25.8483,
+    "lon": 121.646,
+    "labelRank": 2,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   },
   {
-    "name": "Northern Territory",
+    "name": "Território do Norte",
     "key": "northern territory",
-    "lat": -14.742616466773859,
-    "lon": 133.455218512597
+    "lat": -20.1026,
+    "lon": 133.78,
+    "labelRank": 2,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   },
   {
-    "name": "South Australia",
+    "name": "Austrália Meridional",
     "key": "south australia",
-    "lat": -33.068881346731246,
-    "lon": 136.5796257401076
+    "lat": -29.6504,
+    "lon": 135.783,
+    "labelRank": 2,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   },
   {
     "name": "Queensland",
     "key": "queensland",
-    "lat": -20.089241771802044,
-    "lon": 146.0014076491018
+    "lat": -23.1364,
+    "lon": 144.778,
+    "labelRank": 2,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   },
   {
-    "name": "New South Wales",
+    "name": "Nova Gales do Sul",
     "key": "new south wales",
-    "lat": -32.604541402460434,
-    "lon": 148.673114223552
+    "lat": -32.4751,
+    "lon": 146.781,
+    "labelRank": 2,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   },
   {
-    "name": "Jervis Bay Territory",
+    "name": "Território da Baía Jervis",
     "key": "jervis bay territory",
-    "lat": -35.151760105436864,
-    "lon": 150.69501597539403
+    "lat": -35.1532,
+    "lon": 150.692,
+    "labelRank": 2,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   },
   {
-    "name": "Victoria",
+    "name": "Vitória",
     "key": "victoria",
-    "lat": -36.991631856163835,
-    "lon": 144.88743421914128
+    "lat": -37.0082,
+    "lon": 144.75,
+    "labelRank": 2,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   },
   {
-    "name": "Tasmania",
+    "name": "Tasmânia",
     "key": "tasmania",
-    "lat": -42.1375020931272,
-    "lon": 146.79439833780006
+    "lat": -42.1383,
+    "lon": 146.603,
+    "labelRank": 2,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   },
   {
-    "name": "Macquarie Island",
+    "name": "Ilha Macquarie",
     "key": "macquarie island",
-    "lat": -54.59430103959993,
-    "lon": 158.89346764420003
+    "lat": -54.5929,
+    "lon": 158.898,
+    "labelRank": 20,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   },
   {
-    "name": "Lord Howe Island",
+    "name": "Ilha de Lord Howe",
     "key": "lord howe island",
-    "lat": -31.548811537499923,
-    "lon": 159.0740157397501
+    "lat": -31.586,
+    "lon": 159.076,
+    "labelRank": 3,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Australian Capital Territory",
+    "name": "Território da Capital Australiana",
     "key": "australian capital territory",
-    "lat": -35.478482465166366,
-    "lon": 149.06444920167834
+    "lat": -35.4618,
+    "lon": 148.983,
+    "labelRank": 9,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   }
 ]

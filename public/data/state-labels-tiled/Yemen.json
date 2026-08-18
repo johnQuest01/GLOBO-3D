@@ -1,128 +1,191 @@
 [
   {
-    "name": "Hadramawt",
+    "name": "Hadramaute",
     "key": "hadramawt",
-    "lat": 16.202605055448743,
-    "lon": 49.42852141950324
+    "lat": 16.3779,
+    "lon": 48.9133,
+    "labelRank": 6,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Al Mahrah",
+    "name": "Al Mahra",
     "key": "al mahrah",
-    "lat": 16.52557478951992,
-    "lon": 51.34581055615966
+    "lat": 16.8785,
+    "lon": 51.6413,
+    "labelRank": 6,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Sa`dah",
+    "name": "Sadá",
     "key": "sa`dah",
-    "lat": 17.06734444046166,
-    "lon": 43.84722709114428
+    "lat": 16.9876,
+    "lon": 44.0404,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Hajjah",
     "key": "hajjah",
-    "lat": 16.12966681641968,
-    "lon": 43.294916829368105
+    "lat": 16.1813,
+    "lon": 43.1804,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Al Jawf",
     "key": "al jawf",
-    "lat": 29.616101349703758,
-    "lon": 38.2756490791632
+    "lat": 29.5589,
+    "lon": 38.3651,
+    "labelRank": 6,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Al Hudaydah",
     "key": "al hudaydah",
-    "lat": 14.699064280506066,
-    "lon": 43.29514887221452
+    "lat": 14.928,
+    "lon": 43.2214,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ta`izz",
+    "name": "Ta'izz",
     "key": "ta`izz",
-    "lat": 13.408958447941075,
-    "lon": 43.85971062722714
+    "lat": 13.4282,
+    "lon": 43.7305,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Lahij",
     "key": "lahij",
-    "lat": 13.21216018999656,
-    "lon": 44.575919312646015
+    "lat": 13.1832,
+    "lon": 44.6561,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "`Adan",
+    "name": "Áden",
     "key": "`adan",
-    "lat": 12.808614140733198,
-    "lon": 44.72611764890896
+    "lat": 12.8087,
+    "lon": 44.7544,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Abyan",
     "key": "abyan",
-    "lat": 13.659824816030456,
-    "lon": 46.08855516142473
+    "lat": 13.8269,
+    "lon": 46.2119,
+    "labelRank": 6,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Shabwah",
+    "name": "Chabua",
     "key": "shabwah",
-    "lat": 14.498842757518911,
-    "lon": 47.203068123133725
+    "lat": 14.8965,
+    "lon": 47.0989,
+    "labelRank": 6,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Ma'rib",
     "key": "ma'rib",
-    "lat": 15.377104087875338,
-    "lon": 45.37348714372467
+    "lat": 15.5368,
+    "lon": 45.7376,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Sana'a",
+    "name": "Sana",
     "key": "sana'a",
-    "lat": 15.314241162566255,
-    "lon": 44.439127638463056
+    "lat": 15.2262,
+    "lon": 44.368,
+    "labelRank": 6,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Raymah",
     "key": "raymah",
-    "lat": 14.653457302462522,
-    "lon": 43.69897126650072
+    "lat": 14.6655,
+    "lon": 43.758,
+    "labelRank": 6,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Al Bayda'",
     "key": "al bayda'",
-    "lat": 14.347193331441861,
-    "lon": 45.29161127399325
+    "lat": 14.2903,
+    "lon": 45.3371,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Amran",
+    "name": "'Amran",
     "key": "amran",
-    "lat": 16.11398802118022,
-    "lon": 44.041221980709814
+    "lat": 16.0938,
+    "lon": 44.0107,
+    "labelRank": 6,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Al Dali'",
+    "name": "Ad Dali'",
     "key": "al dali'",
-    "lat": 13.853080396289398,
-    "lon": 44.79342125842277
+    "lat": 13.8965,
+    "lon": 44.7937,
+    "labelRank": 6,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Ibb",
     "key": "ibb",
-    "lat": 14.076981600413376,
-    "lon": 44.13910165501021
+    "lat": 14.0543,
+    "lon": 44.2012,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Al Mahwit",
     "key": "al mahwit",
-    "lat": 15.354193482534088,
-    "lon": 43.630870654448024
+    "lat": 15.38,
+    "lon": 43.649,
+    "labelRank": 6,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Dhamar",
     "key": "dhamar",
-    "lat": 14.534419701022005,
-    "lon": 44.110904778787024
+    "lat": 14.6805,
+    "lon": 44.2001,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Amanat Al Asimah",
+    "name": "Sana",
     "key": "amanat al asimah",
-    "lat": 15.492644825098566,
-    "lon": 44.27222288900012
+    "lat": 15.3494,
+    "lon": 44.2115,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   }
 ]

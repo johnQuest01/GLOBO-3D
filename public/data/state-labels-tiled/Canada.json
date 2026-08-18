@@ -1,80 +1,119 @@
 [
   {
-    "name": "British Columbia",
+    "name": "Colúmbia Britânica",
     "key": "british columbia",
-    "lat": 53.89033583278011,
-    "lon": -125.84621662013237
+    "lat": 54.6943,
+    "lon": -124.662,
+    "labelRank": 2,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   },
   {
     "name": "Alberta",
     "key": "alberta",
-    "lat": 53.474480458498654,
-    "lon": -115.4688483853324
+    "lat": 55.2816,
+    "lon": -115,
+    "labelRank": 2,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   },
   {
     "name": "Saskatchewan",
     "key": "saskatchewan",
-    "lat": 54.327270134105774,
-    "lon": -105.9613763376474
+    "lat": 54.4965,
+    "lon": -105.682,
+    "labelRank": 2,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   },
   {
     "name": "Manitoba",
     "key": "manitoba",
-    "lat": 55.59386455031432,
-    "lon": -95.97277388575206
+    "lat": 54.85,
+    "lon": -97.3828,
+    "labelRank": 2,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   },
   {
-    "name": "Ontario",
+    "name": "Ontário",
     "key": "ontario",
-    "lat": 48.47449794391101,
-    "lon": -83.77233583665402
+    "lat": 50.5244,
+    "lon": -84.7943,
+    "labelRank": 2,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   },
   {
-    "name": "Québec",
+    "name": "Quebeque",
     "key": "québec",
-    "lat": 54.453256948816694,
-    "lon": -69.59264044151212
+    "lat": 52.2593,
+    "lon": -73.7168,
+    "labelRank": 2,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   },
   {
-    "name": "New Brunswick",
+    "name": "Novo Brunswick",
     "key": "new brunswick",
-    "lat": 46.62886285450201,
-    "lon": -66.33398761955084
+    "lat": 46.5822,
+    "lon": -66.4558,
+    "labelRank": 2,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   },
   {
     "name": "Yukon",
     "key": "yukon",
-    "lat": 63.89949977649795,
-    "lon": -133.05122475425082
+    "lat": 63.6088,
+    "lon": -135.7,
+    "labelRank": 2,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   },
   {
     "name": "Nunavut",
     "key": "nunavut",
-    "lat": 68.0269939539972,
-    "lon": -73.5955099813473
+    "lat": 64.3853,
+    "lon": -97.1443,
+    "labelRank": 2,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   },
   {
-    "name": "Newfoundland and Labrador",
+    "name": "Terra Nova e Labrador",
     "key": "newfoundland and labrador",
-    "lat": 55.18755644377996,
-    "lon": -62.659972544710115
+    "lat": 48.6598,
+    "lon": -56.2169,
+    "labelRank": 2,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   },
   {
-    "name": "Nova Scotia",
+    "name": "Nova Escócia",
     "key": "nova scotia",
-    "lat": 44.95529475080229,
-    "lon": -63.95772654618597
+    "lat": 45.2293,
+    "lon": -62.8113,
+    "labelRank": 2,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   },
   {
-    "name": "Northwest Territories",
+    "name": "Territórios do Noroeste",
     "key": "northwest territories",
-    "lat": 66.09860514580205,
-    "lon": -126.12421618821953
+    "lat": 64.0831,
+    "lon": -119.942,
+    "labelRank": 2,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   },
   {
-    "name": "Prince Edward Island",
+    "name": "Ilha do Príncipe Eduardo",
     "key": "prince edward island",
-    "lat": 46.43534908581486,
-    "lon": -63.27039773485178
+    "lat": 46.3417,
+    "lon": -63.3862,
+    "labelRank": 2,
+    "minLabel": 3.5,
+    "maxLabel": 7.5
   }
 ]

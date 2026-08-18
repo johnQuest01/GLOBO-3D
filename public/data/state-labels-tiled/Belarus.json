@@ -1,44 +1,65 @@
 [
   {
-    "name": "Gomel",
+    "name": "Voblast de Homiel",
     "key": "gomel",
-    "lat": 52.261522277525586,
-    "lon": 29.51374423401494
+    "lat": 52.1969,
+    "lon": 29.5189,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Brest",
     "key": "brest",
-    "lat": 52.32760245061471,
-    "lon": 25.433379019303636
+    "lat": 52.4289,
+    "lon": 25.3826,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Vitebsk",
+    "name": "Voblast de Viciebsk",
     "key": "vitebsk",
-    "lat": 55.21203372003013,
-    "lon": 28.798268847678965
+    "lat": 55.3073,
+    "lon": 28.6747,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Grodno",
+    "name": "Hrodna",
     "key": "grodno",
-    "lat": 53.888747384019915,
-    "lon": 25.396939948016154
+    "lat": 53.4855,
+    "lon": 25.0839,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Mogilev",
+    "name": "Voblast de Mahilou",
     "key": "mogilev",
-    "lat": 53.52294196335269,
-    "lon": 30.34322023333357
+    "lat": 53.8241,
+    "lon": 30.4041,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
+  },
+  {
+    "name": "Voblast de Minsk",
+    "key": "minsk",
+    "lat": 53.1945,
+    "lon": 27.4703,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Minsk",
-    "key": "minsk",
-    "lat": 53.71059179902758,
-    "lon": 27.633451585330896
-  },
-  {
-    "name": "City of Minsk",
     "key": "city of minsk",
-    "lat": 53.88628189307489,
-    "lon": 27.600194263614355
+    "lat": 53.9005,
+    "lon": 27.6424,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   }
 ]

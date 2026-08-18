@@ -2,91 +2,136 @@
   {
     "name": "Grand Cape Mount",
     "key": "grand cape mount",
-    "lat": 7.048506154272985,
-    "lon": -11.067981578850874
+    "lat": 7.09577,
+    "lon": -10.9953,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Gbapolu",
+    "name": "Gbarpolu",
     "key": "gbapolu",
-    "lat": 7.446955983979453,
-    "lon": -10.385496868988325
+    "lat": 7.51706,
+    "lon": -10.1841,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Lofa",
     "key": "lofa",
-    "lat": 7.935580049490862,
-    "lon": -9.924555806347547
+    "lat": 8.12994,
+    "lon": -9.87553,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Nimba",
     "key": "nimba",
-    "lat": 6.82527674095478,
-    "lon": -8.813226346974583
+    "lat": 6.8643,
+    "lon": -8.73626,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Grand Gedeh",
     "key": "grand gedeh",
-    "lat": 5.978866668798159,
-    "lon": -8.225699345099375
+    "lat": 5.87286,
+    "lon": -8.16416,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "River Gee",
     "key": "river gee",
-    "lat": 5.206249976101504,
-    "lon": -7.813165946934949
+    "lat": 5.29303,
+    "lon": -7.91438,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Maryland",
     "key": "maryland",
-    "lat": 4.713677258734834,
-    "lon": -7.767946994882839
+    "lat": 4.64403,
+    "lon": -7.69738,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Bong",
     "key": "bong",
-    "lat": 6.966380012128314,
-    "lon": -9.68271479616163
+    "lat": 6.99958,
+    "lon": -9.80604,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Bomi",
     "key": "bomi",
-    "lat": 6.6804999099867866,
-    "lon": -10.75991941293324
+    "lat": 6.75329,
+    "lon": -10.7753,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Montserrado",
     "key": "montserrado",
-    "lat": 6.5028034598461435,
-    "lon": -10.601230843726167
+    "lat": 6.43188,
+    "lon": -10.5806,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Margibi",
     "key": "margibi",
-    "lat": 6.452533723645287,
-    "lon": -10.262181404656527
+    "lat": 6.62708,
+    "lon": -10.1783,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Grand Bassa",
     "key": "grand bassa",
-    "lat": 6.233364536708749,
-    "lon": -9.714651407802984
+    "lat": 6.11786,
+    "lon": -9.72887,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "River Cess",
     "key": "river cess",
-    "lat": 5.799105456705289,
-    "lon": -9.39462994527387
+    "lat": 5.82919,
+    "lon": -9.39724,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Sinoe",
     "key": "sinoe",
-    "lat": 5.377999496541946,
-    "lon": -8.793843338675734
+    "lat": 5.39111,
+    "lon": -8.86819,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Grand Kru",
     "key": "grand kru",
-    "lat": 4.7835060294125675,
-    "lon": -8.167181160971724
+    "lat": 4.87073,
+    "lon": -8.25622,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   }
 ]

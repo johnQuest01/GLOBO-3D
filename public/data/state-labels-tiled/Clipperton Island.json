@@ -1,8 +1,11 @@
 [
   {
-    "name": "Clipperton Island",
+    "name": "Ilha de Clipperton",
     "key": "clipperton island",
-    "lat": 10.298712469750058,
-    "lon": -109.21921749599994
+    "lat": 10.2973,
+    "lon": -109.222,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

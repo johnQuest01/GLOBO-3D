@@ -2,73 +2,109 @@
   {
     "name": "Dibër",
     "key": "dibër",
-    "lat": 41.58053923047331,
-    "lon": 20.259908040299273
+    "lat": 41.608,
+    "lon": 20.1772,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Kukës",
     "key": "kukës",
-    "lat": 42.162858210464144,
-    "lon": 20.267969092495186
+    "lat": 42.0902,
+    "lon": 20.1933,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Korçë",
     "key": "korçë",
-    "lat": 40.707662273355254,
-    "lon": 20.66140224152431
+    "lat": 40.6138,
+    "lon": 20.6648,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Elbasan",
     "key": "elbasan",
-    "lat": 41.04437073813081,
-    "lon": 20.276047244466476
+    "lat": 41.0299,
+    "lon": 20.1358,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Gjirokastër",
     "key": "gjirokastër",
-    "lat": 40.202319893207736,
-    "lon": 20.262938040025357
+    "lat": 40.1927,
+    "lon": 20.1868,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Vlorë",
     "key": "vlorë",
-    "lat": 40.07318105762482,
-    "lon": 19.890610000026534
+    "lat": 40.1908,
+    "lon": 19.7946,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Shkodër",
     "key": "shkodër",
-    "lat": 42.20055677261849,
-    "lon": 19.743296041716366
+    "lat": 42.2144,
+    "lon": 19.7573,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Fier",
     "key": "fier",
-    "lat": 40.752742903529956,
-    "lon": 19.653183119248702
+    "lat": 40.8112,
+    "lon": 19.6047,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
-    "name": "Tiranë",
+    "name": "Tirana",
     "key": "tiranë",
-    "lat": 41.23600149978539,
-    "lon": 19.740383180940565
+    "lat": 41.1326,
+    "lon": 19.8383,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Durrës",
     "key": "durrës",
-    "lat": 41.41005129919608,
-    "lon": 19.6274372923768
+    "lat": 41.5152,
+    "lon": 19.6522,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Lezhë",
     "key": "lezhë",
-    "lat": 41.76184982478392,
-    "lon": 19.862674648612195
+    "lat": 41.824,
+    "lon": 19.8649,
+    "labelRank": 9,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Berat",
     "key": "berat",
-    "lat": 40.628898491771956,
-    "lon": 20.127984517771253
+    "lat": 40.6441,
+    "lon": 20.0865,
+    "labelRank": 7,
+    "minLabel": 9,
+    "maxLabel": 11
   }
 ]

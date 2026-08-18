@@ -1,8 +1,11 @@
 [
   {
-    "name": "Kashmir",
+    "name": "Caxemira",
     "key": "kashmir",
-    "lat": 35.4039851105715,
-    "lon": 77.26490337742867
+    "lat": 35.3792,
+    "lon": 77.2889,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

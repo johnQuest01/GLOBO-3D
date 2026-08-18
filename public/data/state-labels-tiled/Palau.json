@@ -2,97 +2,145 @@
   {
     "name": "Peleliu",
     "key": "peleliu",
-    "lat": 7.044511216500055,
-    "lon": 134.26465905050006
+    "lat": 7.02649,
+    "lon": 134.259,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Koror",
     "key": "koror",
-    "lat": 7.277199611600065,
-    "lon": 134.44743899800008
+    "lat": 7.26579,
+    "lon": 134.446,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Ngeremlengui",
     "key": "ngeremlengui",
-    "lat": 7.53059570573853,
-    "lon": 134.57240446615043
+    "lat": 7.53794,
+    "lon": 134.575,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Ngatpang",
     "key": "ngatpang",
-    "lat": 7.47239077137616,
-    "lon": 134.52997284756242
+    "lat": 7.47929,
+    "lon": 134.552,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Aimeliik",
     "key": "aimeliik",
-    "lat": 7.427564479156853,
-    "lon": 134.51858895394602
+    "lat": 7.43236,
+    "lon": 134.533,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Airai",
     "key": "airai",
-    "lat": 7.419606602994547,
-    "lon": 134.5661909059375
+    "lat": 7.39952,
+    "lon": 134.571,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Ngchesar",
     "key": "ngchesar",
-    "lat": 7.4695812770996115,
-    "lon": 134.59862337882996
+    "lat": 7.46286,
+    "lon": 134.597,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Melekeok",
     "key": "melekeok",
-    "lat": 7.5209085183207325,
-    "lon": 134.61642677453924
+    "lat": 7.51682,
+    "lon": 134.613,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Ngiwal",
     "key": "ngiwal",
-    "lat": 7.571325886055594,
-    "lon": 134.63224745331394
+    "lat": 7.57313,
+    "lon": 134.636,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Ngaraard",
     "key": "ngaraard",
-    "lat": 7.645530442902925,
-    "lon": 134.64338008262266
+    "lat": 7.65055,
+    "lon": 134.65,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Ngarchelong",
     "key": "ngarchelong",
-    "lat": 7.699720454432682,
-    "lon": 134.63949600589163
+    "lat": 7.70686,
+    "lon": 134.641,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Ngardmau",
     "key": "ngardmau",
-    "lat": 7.591964505256186,
-    "lon": 134.59215150156416
+    "lat": 7.60128,
+    "lon": 134.597,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Hatobohei",
+    "name": "Hatohobei",
     "key": "hatobohei",
-    "lat": 3.0414248718000523,
-    "lon": 131.15733483180006
+    "lat": 2.96318,
+    "lon": 131.794,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Sonsorol",
+    "name": "Sonsoral",
     "key": "sonsorol",
-    "lat": 5.298976955250083,
-    "lon": 132.22034752675006
+    "lat": 5.28876,
+    "lon": 132.204,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Angaur",
     "key": "angaur",
-    "lat": 6.903225002000056,
-    "lon": 134.15731855575007
+    "lat": 6.91388,
+    "lon": 134.158,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Kayangel",
     "key": "kayangel",
-    "lat": 8.082066045247839,
-    "lon": 134.71152346138518
+    "lat": 8.0705,
+    "lon": 134.711,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

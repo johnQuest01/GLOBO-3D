@@ -2,85 +2,127 @@
   {
     "name": "Ahuachapán",
     "key": "ahuachapán",
-    "lat": 13.832827667935268,
-    "lon": -89.9269820756963
+    "lat": 13.8657,
+    "lon": -89.9057,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Santa Ana",
     "key": "santa ana",
-    "lat": 14.146104799740753,
-    "lon": -89.53275756822846
+    "lat": 14.1024,
+    "lon": -89.5013,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Chalatenango",
     "key": "chalatenango",
-    "lat": 14.178987278697946,
-    "lon": -89.1336321259187
+    "lat": 14.1895,
+    "lon": -89.0591,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Cabañas",
     "key": "cabañas",
-    "lat": 13.889453007591303,
-    "lon": -88.71111069928574
+    "lat": 13.9079,
+    "lon": -88.7326,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Morazán",
     "key": "morazán",
-    "lat": 13.810365780126526,
-    "lon": -88.11619669476262
+    "lat": 13.7736,
+    "lon": -88.1055,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "San Miguel",
     "key": "san miguel",
-    "lat": 13.584243385735512,
-    "lon": -88.26328105912049
+    "lat": 13.4882,
+    "lon": -88.1953,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "La Unión",
     "key": "la unión",
-    "lat": 13.570875464167008,
-    "lon": -87.8846635130094
+    "lat": 13.302,
+    "lon": -87.9301,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Sonsonate",
     "key": "sonsonate",
-    "lat": 13.673767771608185,
-    "lon": -89.69612015789156
+    "lat": 13.7165,
+    "lon": -89.6937,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "La Libertad",
     "key": "la libertad",
-    "lat": -7.9015861330851545,
-    "lon": -78.31827618768897
+    "lat": -8.21334,
+    "lon": -78.2813,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "La Paz",
     "key": "la paz",
-    "lat": -15.41790553128906,
-    "lon": -68.28335718231673
+    "lat": -14.8335,
+    "lon": -68.2128,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "San Vicente",
     "key": "san vicente",
-    "lat": 13.524998110160546,
-    "lon": -88.74616085516048
+    "lat": 13.6291,
+    "lon": -88.6917,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Usulután",
     "key": "usulután",
-    "lat": 13.348978902473949,
-    "lon": -88.44418481911191
+    "lat": 13.4104,
+    "lon": -88.5293,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "Cuscatlán",
     "key": "cuscatlán",
-    "lat": 13.861560548567951,
-    "lon": -88.98811570938497
+    "lat": 13.8166,
+    "lon": -89.0055,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   },
   {
     "name": "San Salvador",
     "key": "san salvador",
-    "lat": 24.073708400800058,
-    "lon": -74.47045650959993
+    "lat": 24.0513,
+    "lon": -74.4785,
+    "labelRank": 9,
+    "minLabel": 10,
+    "maxLabel": 11
   }
 ]

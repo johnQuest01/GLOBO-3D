@@ -2,55 +2,82 @@
   {
     "name": "Kayes",
     "key": "kayes",
-    "lat": 13.820340578933683,
-    "lon": -10.291858058238615
+    "lat": 13.7959,
+    "lon": -10.1984,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Timbuktu",
+    "name": "Tombouctou",
     "key": "timbuktu",
-    "lat": 18.352065247590936,
-    "lon": -3.1194251300255647
+    "lat": 19.9073,
+    "lon": -3.295,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Gao",
     "key": "gao",
-    "lat": 16.41850943469371,
-    "lon": 1.2417197460365892
+    "lat": 16.4482,
+    "lon": 1.2641,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Mopti",
     "key": "mopti",
-    "lat": 14.55712732730763,
-    "lon": -3.53785862037548
+    "lat": 14.7873,
+    "lon": -3.21795,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Ségou",
     "key": "ségou",
-    "lat": 13.75481426665738,
-    "lon": -5.540694347426511
+    "lat": 13.5852,
+    "lon": -5.51952,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Sikasso",
     "key": "sikasso",
-    "lat": 11.511740306724544,
-    "lon": -6.459216337004243
+    "lat": 11.155,
+    "lon": -6.54441,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Koulikoro",
     "key": "koulikoro",
-    "lat": 13.226736940116531,
-    "lon": -7.706870955173143
+    "lat": 13.7514,
+    "lon": -7.54325,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Kidal",
     "key": "kidal",
-    "lat": 19.665175860875962,
-    "lon": 1.508242241361268
+    "lat": 19.4258,
+    "lon": 1.09427,
+    "labelRank": 4,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Bamako",
     "key": "bamako",
-    "lat": 12.603547049276893,
-    "lon": -8.00007666640504
+    "lat": 12.643,
+    "lon": -8.01917,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   }
 ]

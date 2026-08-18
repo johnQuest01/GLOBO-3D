@@ -2,67 +2,100 @@
   {
     "name": "Triesen",
     "key": "triesen",
-    "lat": 47.08574525524007,
-    "lon": 9.554376005898613
+    "lat": 47.1001,
+    "lon": 9.5266,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Schaan",
     "key": "schaan",
-    "lat": 47.17519237458277,
-    "lon": 9.531039133234058
+    "lat": 47.1819,
+    "lon": 9.51381,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Triesenberg",
     "key": "triesenberg",
-    "lat": 47.116353817217714,
-    "lon": 9.557664004775697
+    "lat": 47.1284,
+    "lon": 9.54858,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Balzers",
     "key": "balzers",
-    "lat": 47.06741392195845,
-    "lon": 9.511538028075737
+    "lat": 47.0701,
+    "lon": 9.50603,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Planken",
     "key": "planken",
-    "lat": 47.16066765181281,
-    "lon": 9.556564624284604
+    "lat": 47.1875,
+    "lon": 9.5494,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Eschen",
     "key": "eschen",
-    "lat": 47.209751236680994,
-    "lon": 9.539036171799347
+    "lat": 47.2058,
+    "lon": 9.53383,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Mauren",
     "key": "mauren",
-    "lat": 47.226629574612346,
-    "lon": 9.540131039703269
+    "lat": 47.2214,
+    "lon": 9.53828,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Schellenberg",
     "key": "schellenberg",
-    "lat": 47.240609493183854,
-    "lon": 9.532856001905222
+    "lat": 47.242,
+    "lon": 9.53828,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Ruggell",
     "key": "ruggell",
-    "lat": 47.2426159159052,
-    "lon": 9.517693846404336
+    "lat": 47.2458,
+    "lon": 9.51882,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Vaduz",
     "key": "vaduz",
-    "lat": 47.095698739405265,
-    "lon": 9.580636158881608
+    "lat": 47.1469,
+    "lon": 9.51826,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Gamprin",
     "key": "gamprin",
-    "lat": 47.208433534657765,
-    "lon": 9.502732286843273
+    "lat": 47.2052,
+    "lon": 9.50213,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

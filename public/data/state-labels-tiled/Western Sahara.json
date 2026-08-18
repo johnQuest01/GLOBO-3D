@@ -1,8 +1,11 @@
 [
   {
-    "name": "Western Sahara",
+    "name": "Sara Ocidental",
     "key": "western sahara",
-    "lat": 24.4679631333191,
-    "lon": -12.362052859492676
+    "lat": 23.813,
+    "lon": -12.8924,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

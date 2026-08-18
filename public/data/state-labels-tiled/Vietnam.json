@@ -2,379 +2,568 @@
   {
     "name": "Kon Tum",
     "key": "kon tum",
-    "lat": 14.729737018116571,
-    "lon": 107.88669722533467
+    "lat": 14.7451,
+    "lon": 107.969,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Đắk Nông",
+    "name": "Dak Nong",
     "key": "đắk nông",
-    "lat": 12.212326116557433,
-    "lon": 107.68862165824221
+    "lat": 12.1425,
+    "lon": 107.66,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Đắk Lắk",
+    "name": "Dac Lac",
     "key": "đắk lắk",
-    "lat": 12.710616849669906,
-    "lon": 108.2288194063625
+    "lat": 12.7691,
+    "lon": 108.133,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Gia Lai",
     "key": "gia lai",
-    "lat": 13.756865966464135,
-    "lon": 108.24048887552262
+    "lat": 13.8493,
+    "lon": 108.156,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Bình Phước",
+    "name": "Binh Phuoc",
     "key": "bình phước",
-    "lat": 11.816416915497056,
-    "lon": 106.94348117513675
+    "lat": 11.6805,
+    "lon": 106.897,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Tây Ninh",
+    "name": "Tay Ninh",
     "key": "tây ninh",
-    "lat": 11.457351449894796,
-    "lon": 106.1713606480553
+    "lat": 11.4121,
+    "lon": 106.14,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Long An",
     "key": "long an",
-    "lat": 10.76407795692353,
-    "lon": 106.15908050255716
+    "lat": 10.6869,
+    "lon": 106.134,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ðong Tháp",
+    "name": "Dong Thap",
     "key": "ðong tháp",
-    "lat": 10.721700784590245,
-    "lon": 105.5560745468595
+    "lat": 10.6644,
+    "lon": 105.586,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "An Giang",
     "key": "an giang",
-    "lat": 10.591912636864802,
-    "lon": 105.14483378162682
+    "lat": 10.5736,
+    "lon": 105.154,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Kiên Giang",
+    "name": "Kien Giang",
     "key": "kiên giang",
-    "lat": 10.027087811225366,
-    "lon": 105.00663451529799
+    "lat": 9.85962,
+    "lon": 105.284,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Điện Biên",
+    "name": "Dien Bien",
     "key": "điện biên",
-    "lat": 21.76231296592942,
-    "lon": 102.89357768005229
+    "lat": 21.7487,
+    "lon": 103.226,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Son La",
     "key": "son la",
-    "lat": 21.157667200014522,
-    "lon": 104.09738280812414
+    "lat": 21.3011,
+    "lon": 104.159,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Thanh Hóa",
+    "name": "Thanh Hoa",
     "key": "thanh hóa",
-    "lat": 20.091323903908915,
-    "lon": 105.24214339580307
+    "lat": 20.0917,
+    "lon": 105.215,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Nghệ An",
+    "name": "Nghe An",
     "key": "nghệ an",
-    "lat": 19.31634536493628,
-    "lon": 104.96149592377672
+    "lat": 19.3548,
+    "lon": 104.827,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Ha Tinh",
     "key": "ha tinh",
-    "lat": 18.241471879414767,
-    "lon": 105.75959776441411
+    "lat": 18.3563,
+    "lon": 105.799,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Quảng Bình",
+    "name": "Quang Binh",
     "key": "quảng bình",
-    "lat": 17.596192305928874,
-    "lon": 106.22138607814084
+    "lat": 17.4691,
+    "lon": 106.357,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Quảng Trị",
+    "name": "Quang Tri",
     "key": "quảng trị",
-    "lat": 16.6954350580222,
-    "lon": 106.88502538136918
+    "lat": 16.7204,
+    "lon": 106.973,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Thừa Thiên - Huế",
+    "name": "Thua Thien-Hue",
     "key": "thừa thiên - huế",
-    "lat": 16.26015776638035,
-    "lon": 107.59680185056529
+    "lat": 16.312,
+    "lon": 107.634,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Quàng Nam",
+    "name": "Quang Nam",
     "key": "quàng nam",
-    "lat": 15.644107265251177,
-    "lon": 107.93727939972773
+    "lat": 15.6535,
+    "lon": 107.955,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Hà Giang",
+    "name": "Ha Giang",
     "key": "hà giang",
-    "lat": 22.769880425436085,
-    "lon": 105.05338358776055
+    "lat": 22.7655,
+    "lon": 104.965,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Cao Bằng",
+    "name": "Cao Bang",
     "key": "cao bằng",
-    "lat": 22.754694231564155,
-    "lon": 106.04057035903456
+    "lat": 22.7595,
+    "lon": 106.047,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Lào Cai",
+    "name": "Lao Cai",
     "key": "lào cai",
-    "lat": 22.303733240220257,
-    "lon": 104.01069677813675
+    "lat": 22.3559,
+    "lon": 104.096,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Lai Chau",
     "key": "lai chau",
-    "lat": 22.399299125849428,
-    "lon": 103.18427157321247
+    "lat": 22.3502,
+    "lon": 103.255,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Lạng Sơn",
+    "name": "Lang Son",
     "key": "lạng sơn",
-    "lat": 21.82512768471129,
-    "lon": 106.6134559307023
+    "lat": 21.7826,
+    "lon": 106.724,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Quảng Ninh",
+    "name": "Quang Ninh",
     "key": "quảng ninh",
-    "lat": 21.267158810692642,
-    "lon": 107.15843053323525
+    "lat": 21.223,
+    "lon": 107.181,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Sóc Trăng",
+    "name": "Soc Trang",
     "key": "sóc trăng",
-    "lat": 9.57364387939349,
-    "lon": 105.8725276783377
+    "lat": 9.5614,
+    "lon": 105.9,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Tiền Giang",
+    "name": "Tien Giang",
     "key": "tiền giang",
-    "lat": 10.40156159079951,
-    "lon": 106.36381376932185
+    "lat": 10.4581,
+    "lon": 106.217,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Bà Rịa - Vũng Tàu",
+    "name": "Ba Ria-Vung Tau",
     "key": "bà rịa - vũng tàu",
-    "lat": 10.599245911536766,
-    "lon": 107.23554058535038
+    "lat": 10.3969,
+    "lon": 107.143,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Hồ Chí Minh city",
+    "name": "Cidade de Ho Chi Minh",
     "key": "hồ chí minh city",
-    "lat": 10.80051207312672,
-    "lon": 106.69678383951391
+    "lat": 10.409,
+    "lon": 106.926,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Khánh Hòa",
+    "name": "Khanh Hoa",
     "key": "khánh hòa",
-    "lat": 12.415555615435787,
-    "lon": 108.99789885523275
+    "lat": 12.6049,
+    "lon": 109.359,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Cà Mau",
     "key": "cà mau",
-    "lat": 9.029407819389595,
-    "lon": 105.08309928418605
+    "lat": 9.05545,
+    "lon": 105.073,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Bạc Liêu",
+    "name": "Bac Lieu",
     "key": "bạc liêu",
-    "lat": 9.360440816068712,
-    "lon": 105.55016879640861
+    "lat": 9.33941,
+    "lon": 105.573,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Hau Giang",
     "key": "hau giang",
-    "lat": 9.861763504360114,
-    "lon": 105.62368565616657
+    "lat": 9.84353,
+    "lon": 105.663,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Vĩnh Long",
+    "name": "Vinh Long",
     "key": "vĩnh long",
-    "lat": 10.089952999365348,
-    "lon": 105.9700055164943
+    "lat": 10.1042,
+    "lon": 105.969,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Trà Vinh",
+    "name": "Tra Vinh",
     "key": "trà vinh",
-    "lat": 9.818373751946083,
-    "lon": 106.30184091564792
+    "lat": 9.82817,
+    "lon": 106.289,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Bến Tre",
+    "name": "Ben Tre",
     "key": "bến tre",
-    "lat": 10.163165594526964,
-    "lon": 106.44473534434906
+    "lat": 10.171,
+    "lon": 106.496,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Đông Nam Bộ",
+    "name": "Sudeste",
     "key": "đông nam bộ",
-    "lat": 10.943449082985943,
-    "lon": 107.18046880073064
+    "lat": 11.1258,
+    "lon": 107.178,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Bình Thuận",
+    "name": "Binh Thuan",
     "key": "bình thuận",
-    "lat": 11.129262520156548,
-    "lon": 108.16010109763461
+    "lat": 11.1284,
+    "lon": 108.232,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Ninh Thuận",
+    "name": "Ninh Thuan",
     "key": "ninh thuận",
-    "lat": 11.742343217081043,
-    "lon": 108.93721993853543
+    "lat": 11.6242,
+    "lon": 108.925,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Phú Yên",
+    "name": "Phu Yen",
     "key": "phú yên",
-    "lat": 13.211699403192284,
-    "lon": 109.0973116642688
+    "lat": 13.1647,
+    "lon": 109.064,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Bình Định",
+    "name": "Binh Dinh",
     "key": "bình định",
-    "lat": 14.172377282133425,
-    "lon": 108.93757031185007
+    "lat": 14.1075,
+    "lon": 108.971,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Quảng Ngãi",
+    "name": "Quang Ngai",
     "key": "quảng ngãi",
-    "lat": 14.99754049305687,
-    "lon": 108.67394959000436
+    "lat": 14.9971,
+    "lon": 108.686,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Đà Nẵng",
+    "name": "Da Nang",
     "key": "đà nẵng",
-    "lat": 16.111561852372763,
-    "lon": 108.07916594506946
+    "lat": 16.0912,
+    "lon": 108.102,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Ninh Bình",
+    "name": "Ninh Binh",
     "key": "ninh bình",
-    "lat": 20.201332935796472,
-    "lon": 105.92065937502905
+    "lat": 20.2722,
+    "lon": 105.852,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Nam Định",
+    "name": "Nam Dinh",
     "key": "nam định",
-    "lat": 20.2858633893732,
-    "lon": 106.23071967931114
+    "lat": 20.2343,
+    "lon": 106.254,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Thái Bình",
+    "name": "Thai Binh",
     "key": "thái bình",
-    "lat": 20.52840320640189,
-    "lon": 106.39708155474754
+    "lat": 20.5303,
+    "lon": 106.371,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Hải Phòng",
+    "name": "Haiphong",
     "key": "hải phòng",
-    "lat": 20.83714836753785,
-    "lon": 106.61630791550917
+    "lat": 20.79,
+    "lon": 106.635,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Hòa Bình",
+    "name": "Hoa Binh",
     "key": "hòa bình",
-    "lat": 20.696454001786027,
-    "lon": 105.34438101839864
+    "lat": 20.7292,
+    "lon": 105.34,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Tuyên Quang",
+    "name": "Tuyen Quang",
     "key": "tuyên quang",
-    "lat": 22.107381522264415,
-    "lon": 105.29757376023957
+    "lat": 22.131,
+    "lon": 105.229,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Yên Bái",
+    "name": "Yen Bai",
     "key": "yên bái",
-    "lat": 21.773465245666642,
-    "lon": 104.52607879358563
+    "lat": 21.7484,
+    "lon": 104.512,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Vĩnh Phúc",
+    "name": "Vinh Phuc",
     "key": "vĩnh phúc",
-    "lat": 21.33048378578558,
-    "lon": 105.53396618255573
+    "lat": 21.3455,
+    "lon": 105.549,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Phú Thọ",
+    "name": "Phu Tho",
     "key": "phú thọ",
-    "lat": 21.327960728529774,
-    "lon": 105.15950247328549
+    "lat": 21.3127,
+    "lon": 105.143,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Ha Noi",
+    "name": "Hanói",
     "key": "ha noi",
-    "lat": 20.979953759032423,
-    "lon": 105.72674980177767
+    "lat": 21.1306,
+    "lon": 105.872,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Đông Bắc",
+    "name": "Nordeste",
     "key": "đông bắc",
-    "lat": 22.263376522446038,
-    "lon": 105.81563322353814
+    "lat": 22.1476,
+    "lon": 105.874,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Đồng Bằng Sông Hồng",
+    "name": "Delta do Rio Vermelho",
     "key": "đồng bằng sông hồng",
-    "lat": 20.809884276937808,
-    "lon": 106.08470164066814
+    "lat": 20.8085,
+    "lon": 106.076,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Bắc Ninh",
+    "name": "Bac Ninh",
     "key": "bắc ninh",
-    "lat": 21.07274875396609,
-    "lon": 106.11255769820772
+    "lat": 21.098,
+    "lon": 106.117,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Bắc Giang",
+    "name": "Bac Giang",
     "key": "bắc giang",
-    "lat": 21.340641224548573,
-    "lon": 106.52153605702195
+    "lat": 21.3512,
+    "lon": 106.493,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Thái Nguyên",
     "key": "thái nguyên",
-    "lat": 21.681166151196905,
-    "lon": 105.84357079500613
+    "lat": 21.5812,
+    "lon": 105.887,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Hải Dương",
+    "name": "Hai Duong",
     "key": "hải dương",
-    "lat": 20.961997770562473,
-    "lon": 106.36077906520167
+    "lat": 20.9613,
+    "lon": 106.364,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Hà Nam",
     "key": "hà nam",
-    "lat": 20.514194602598813,
-    "lon": 105.96906126886243
+    "lat": 20.5569,
+    "lon": 105.985,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Bình Dương",
+    "name": "Binh Duong",
     "key": "bình dương",
-    "lat": 11.174184746528814,
-    "lon": 106.6282774191925
+    "lat": 11.1382,
+    "lon": 106.659,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Lâm Đồng",
+    "name": "Lam Dong",
     "key": "lâm đồng",
-    "lat": 11.797660239682148,
-    "lon": 108.10506463808792
+    "lat": 11.5362,
+    "lon": 108,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Can Tho",
     "key": "can tho",
-    "lat": 10.197466586925927,
-    "lon": 105.57076127834776
+    "lat": 10.2421,
+    "lon": 105.685,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   }
 ]

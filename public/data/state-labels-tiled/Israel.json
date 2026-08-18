@@ -1,38 +1,56 @@
 [
   {
-    "name": "HaDarom",
+    "name": "Sul",
     "key": "hadarom",
-    "lat": 30.961462366062072,
-    "lon": 34.89168540264179
+    "lat": 30.935,
+    "lon": 34.8419,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "HaZafon",
+    "name": "Norte",
     "key": "hazafon",
-    "lat": 32.85001717464353,
-    "lon": 35.45574125995163
+    "lat": 32.8235,
+    "lon": 35.4202,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Haifa",
     "key": "haifa",
-    "lat": 32.621681220973095,
-    "lon": 35.06544348368294
+    "lat": 32.5523,
+    "lon": 34.9727,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "HaMerkaz",
+    "name": "Central",
     "key": "hamerkaz",
-    "lat": 32.09024076046819,
-    "lon": 34.88814713857703
+    "lat": 31.9068,
+    "lon": 34.8491,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Jerusalem",
+    "name": "Jerusalém",
     "key": "jerusalem",
-    "lat": 31.71996227529446,
-    "lon": 34.97632389032655
+    "lat": 31.7397,
+    "lon": 35.0176,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Tel Aviv",
     "key": "tel aviv",
-    "lat": 32.054809913082366,
-    "lon": 34.770190273466895
+    "lat": 32.0966,
+    "lon": 34.8091,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   }
 ]

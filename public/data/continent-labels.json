@@ -1,0 +1,56 @@
+[
+  {
+    "name": "África",
+    "key": "Africa",
+    "lat": 5,
+    "lon": 20,
+    "labelRank": 1,
+    "minLabel": 0,
+    "maxLabel": 3.6
+  },
+  {
+    "name": "Europa",
+    "key": "Europe",
+    "lat": 50,
+    "lon": 15,
+    "labelRank": 1,
+    "minLabel": 0,
+    "maxLabel": 3.6
+  },
+  {
+    "name": "Ásia",
+    "key": "Asia",
+    "lat": 40,
+    "lon": 90,
+    "labelRank": 1,
+    "minLabel": 0,
+    "maxLabel": 3.6
+  },
+  {
+    "name": "América do Norte",
+    "key": "North America",
+    "lat": 45,
+    "lon": -95,
+    "labelRank": 1,
+    "minLabel": 0,
+    "maxLabel": 3.6
+  },
+  {
+    "name": "América do Sul",
+    "key": "South America",
+    "lat": -15,
+    "lon": -55,
+    "labelRank": 1,
+    "minLabel": 0,
+    "maxLabel": 3.6
+  },
+  {
+    "name": "Oceania",
+    "key": "Oceania",
+    "lat": -25,
+    "lon": 135,
+    "labelRank": 1,
+    "minLabel": 0,
+    "maxLabel": 3.6
+  }
+]

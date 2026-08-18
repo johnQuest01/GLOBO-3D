@@ -2,133 +2,199 @@
   {
     "name": "Brava",
     "key": "brava",
-    "lat": 14.868076890200053,
-    "lon": -24.717917446999923
+    "lat": 14.851,
+    "lon": -24.7204,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Santa Catarina do Fogo",
     "key": "santa catarina do fogo",
-    "lat": 14.937515725165092,
-    "lon": -24.318800724398045
+    "lat": 14.9241,
+    "lon": -24.3301,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Mosteiros",
     "key": "mosteiros",
-    "lat": 14.98744854958149,
-    "lon": -24.383725528245307
+    "lat": 15.0008,
+    "lon": -24.3541,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "São Filipe",
     "key": "são filipe",
-    "lat": 14.920604815676839,
-    "lon": -24.395911698418033
+    "lat": 14.9241,
+    "lon": -24.4403,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Tarrafal",
     "key": "tarrafal",
-    "lat": 15.195522862017754,
-    "lon": -23.720555294980187
+    "lat": 15.2355,
+    "lon": -23.717,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Santa Catarina",
     "key": "santa catarina",
-    "lat": -27.14274934267312,
-    "lon": -50.9362790079829
+    "lat": -27.0392,
+    "lon": -51.1586,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Ribeira Grande de Santiago",
     "key": "ribeira grande de santiago",
-    "lat": 14.976618657477909,
-    "lon": -23.59934158924599
+    "lat": 14.9768,
+    "lon": -23.6404,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Praia",
     "key": "praia",
-    "lat": 14.953946272181987,
-    "lon": -23.511577883691466
+    "lat": 14.9529,
+    "lon": -23.5159,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "São Domingos",
     "key": "são domingos",
-    "lat": 15.022241713501744,
-    "lon": -23.521248310899797
+    "lat": 15.0152,
+    "lon": -23.5254,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Santa Cruz",
     "key": "santa cruz",
-    "lat": -17.156570501962296,
-    "lon": -61.57560616508186
+    "lat": -16.5168,
+    "lon": -61.137,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "São Miguel",
     "key": "são miguel",
-    "lat": 15.189091734955323,
-    "lon": -23.64324739798579
+    "lat": 15.178,
+    "lon": -23.6356,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Maio",
     "key": "maio",
-    "lat": 15.253664455400052,
-    "lon": -23.173988410399943
+    "lat": 15.2115,
+    "lon": -23.1806,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Boa Vista",
     "key": "boa vista",
-    "lat": 16.1085811763334,
-    "lon": -22.792368130666585
+    "lat": 16.1024,
+    "lon": -22.807,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
-    "name": "Ribeira Brava",
+    "name": "concelho de Ribeira Brava",
     "key": "ribeira brava",
-    "lat": 16.610360943535703,
-    "lon": -24.32589272749076
+    "lat": 16.6197,
+    "lon": -24.287,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Tarrafal de São Nicolau",
     "key": "tarrafal de são nicolau",
-    "lat": 16.563803902285684,
-    "lon": -24.336307738878297
+    "lat": 16.6006,
+    "lon": -24.3493,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Sal",
     "key": "sal",
-    "lat": 16.70794301975006,
-    "lon": -22.93606523374993
+    "lat": 16.7251,
+    "lon": -22.9363,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "São Vicente",
     "key": "são vicente",
-    "lat": 16.869354559200065,
-    "lon": -24.979147915999942
+    "lat": 16.8449,
+    "lon": -24.972,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Ribeira Grande",
     "key": "ribeira grande",
-    "lat": 17.14569898558499,
-    "lon": -25.138431137033933
+    "lat": 17.1418,
+    "lon": -25.1204,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Porto Novo",
     "key": "porto novo",
-    "lat": 17.05137906690724,
-    "lon": -25.156435053778132
+    "lat": 17.0173,
+    "lon": -25.2258,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "Paul",
     "key": "paul",
-    "lat": 17.12056836127026,
-    "lon": -25.027848798353325
+    "lat": 17.1179,
+    "lon": -25.0151,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "São Salvador do Mundo",
     "key": "são salvador do mundo",
-    "lat": 15.07467447025059,
-    "lon": -23.611620232827477
+    "lat": 15.0678,
+    "lon": -23.6164,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   },
   {
     "name": "São Lourenço dos Órgãos",
     "key": "são lourenço dos órgãos",
-    "lat": 15.046865089852009,
-    "lon": -23.585335648821136
+    "lat": 15.0439,
+    "lon": -23.5781,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

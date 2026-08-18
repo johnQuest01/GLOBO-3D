@@ -2,223 +2,334 @@
   {
     "name": "Kebbi",
     "key": "kebbi",
-    "lat": 11.599938096544799,
-    "lon": 4.693915577527708
+    "lat": 11.7712,
+    "lon": 4.06548,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Niger",
+    "name": "Níger",
     "key": "niger",
-    "lat": 10.085022089696517,
-    "lon": 5.447608822702965
+    "lat": 9.95553,
+    "lon": 5.45494,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Kwara",
     "key": "kwara",
-    "lat": 8.953880522613279,
-    "lon": 4.379325510995258
+    "lat": 8.80445,
+    "lon": 4.46906,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Ogun",
     "key": "ogun",
-    "lat": 7.0669354565337,
-    "lon": 3.4767908988985687
+    "lat": 7.01845,
+    "lon": 3.29255,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Oyo",
     "key": "oyo",
-    "lat": 8.102373844798894,
-    "lon": 3.6314047433622743
+    "lat": 8.18969,
+    "lon": 3.61681,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Lagos",
     "key": "lagos",
-    "lat": 6.490262224590975,
-    "lon": 3.4108924966825365
+    "lat": 6.43313,
+    "lon": 3.52478,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Borno",
     "key": "borno",
-    "lat": 11.682106093567418,
-    "lon": 13.008330311961705
+    "lat": 12.0019,
+    "lon": 13.1533,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Adamawa",
     "key": "adamawa",
-    "lat": 9.425659332526513,
-    "lon": 12.56998221950546
+    "lat": 9.47906,
+    "lon": 12.5768,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Taraba",
     "key": "taraba",
-    "lat": 7.821452674271067,
-    "lon": 10.653829751727503
+    "lat": 7.93608,
+    "lon": 10.5428,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Benue",
     "key": "benue",
-    "lat": 7.237049753843055,
-    "lon": 8.603134918656938
+    "lat": 7.48719,
+    "lon": 8.70736,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Cross River",
     "key": "cross river",
-    "lat": 5.899534929026131,
-    "lon": 8.624934674481993
+    "lat": 5.93762,
+    "lon": 8.67873,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Sokoto",
     "key": "sokoto",
-    "lat": 12.912236191065046,
-    "lon": 5.276947076331379
+    "lat": 13.0603,
+    "lon": 5.4366,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Zamfara",
     "key": "zamfara",
-    "lat": 12.091373432526014,
-    "lon": 6.223021162322065
+    "lat": 12.0084,
+    "lon": 6.12834,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Yobe",
     "key": "yobe",
-    "lat": 12.118909136901344,
-    "lon": 11.382463593605179
+    "lat": 12.3156,
+    "lon": 11.5881,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Katsina",
     "key": "katsina",
-    "lat": 12.256293030775748,
-    "lon": 7.717461097529548
+    "lat": 12.5056,
+    "lon": 7.58609,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Jigawa",
     "key": "jigawa",
-    "lat": 12.114580507293525,
-    "lon": 9.514322354170266
+    "lat": 12.0714,
+    "lon": 9.36225,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Ondo",
     "key": "ondo",
-    "lat": 6.923552331400104,
-    "lon": 5.20696112853266
+    "lat": 7.1444,
+    "lon": 5.19165,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Delta",
     "key": "delta",
-    "lat": 5.680010007935218,
-    "lon": 5.8673818728505145
+    "lat": 5.44265,
+    "lon": 5.88195,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Bayelsa",
     "key": "bayelsa",
-    "lat": 4.875633251277711,
-    "lon": 6.185797560136574
+    "lat": 4.73907,
+    "lon": 5.97421,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Rivers",
+    "name": "Rios",
     "key": "rivers",
-    "lat": 4.990542359477239,
-    "lon": 6.925254535193292
+    "lat": 4.9979,
+    "lon": 6.81969,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Akwa Ibom",
     "key": "akwa ibom",
-    "lat": 4.970574668523427,
-    "lon": 7.858694827974385
+    "lat": 4.89926,
+    "lon": 7.90963,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Abia",
     "key": "abia",
-    "lat": 5.419452225217276,
-    "lon": 7.5006775984378615
+    "lat": 5.57402,
+    "lon": 7.56019,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Ebonyi",
     "key": "ebonyi",
-    "lat": 6.278798347444712,
-    "lon": 7.936568552039142
+    "lat": 6.32648,
+    "lon": 7.98254,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Anambra",
     "key": "anambra",
-    "lat": 6.193026689024215,
-    "lon": 6.928258345090292
+    "lat": 6.30827,
+    "lon": 6.98472,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Edo",
     "key": "edo",
-    "lat": 6.693143491143703,
-    "lon": 5.923417412264395
+    "lat": 6.52416,
+    "lon": 5.84934,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Bauchi",
     "key": "bauchi",
-    "lat": 10.801283898767387,
-    "lon": 9.963085354367657
+    "lat": 10.4101,
+    "lon": 9.88584,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Plateau",
     "key": "plateau",
-    "lat": 7.154171799570105,
-    "lon": 2.6606377719869294
+    "lat": 7.15213,
+    "lon": 2.60483,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Nassarawa",
+    "name": "Nasarawa",
     "key": "nassarawa",
-    "lat": 8.532441801601701,
-    "lon": 8.364953762190972
+    "lat": 8.50412,
+    "lon": 8.27694,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Gombe",
     "key": "gombe",
-    "lat": 10.403183142662895,
-    "lon": 11.230034959920447
+    "lat": 10.4342,
+    "lon": 11.2421,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Enugu",
     "key": "enugu",
-    "lat": 6.5542169595164825,
-    "lon": 7.440522204464726
+    "lat": 6.55396,
+    "lon": 7.38408,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Kogi",
     "key": "kogi",
-    "lat": 7.748989728558968,
-    "lon": 6.619832758277599
+    "lat": 7.78485,
+    "lon": 6.6142,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Osun",
     "key": "osun",
-    "lat": 7.508289399479043,
-    "lon": 4.520887446669747
+    "lat": 7.47613,
+    "lon": 4.54911,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Imo",
     "key": "imo",
-    "lat": 5.5822004933580684,
-    "lon": 6.953586256275689
+    "lat": 5.55004,
+    "lon": 7.01557,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Ekiti",
     "key": "ekiti",
-    "lat": 7.760673895943539,
-    "lon": 5.3830757449096875
+    "lat": 7.67104,
+    "lon": 5.35929,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Kaduna",
     "key": "kaduna",
-    "lat": 10.362391998511914,
-    "lon": 7.5904254676484735
+    "lat": 10.3294,
+    "lon": 7.43906,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Kano",
     "key": "kano",
-    "lat": 11.599160764003496,
-    "lon": 8.547021999411182
+    "lat": 11.7323,
+    "lon": 8.54146,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
-    "name": "Federal Capital Territory",
+    "name": "Território da Capital Federal",
     "key": "federal capital territory",
-    "lat": 8.850745171392532,
-    "lon": 7.163735358699834
+    "lat": 8.78852,
+    "lon": 7.18889,
+    "labelRank": 3,
+    "minLabel": 6.6,
+    "maxLabel": 11
   }
 ]

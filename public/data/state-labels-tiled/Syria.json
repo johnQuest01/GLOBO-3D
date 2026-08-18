@@ -2,91 +2,136 @@
   {
     "name": "UNDOF",
     "key": "undof",
-    "lat": 33.0891663112368,
-    "lon": 35.828482425438416
+    "lat": 33.1509,
+    "lon": 35.8621,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   },
   {
-    "name": "Homs (Hims)",
+    "name": "Homs",
     "key": "homs (hims)",
-    "lat": 34.53348377100494,
-    "lon": 37.58043124732844
+    "lat": 34.1503,
+    "lon": 38.1425,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Tartus",
     "key": "tartus",
-    "lat": 34.9006978597064,
-    "lon": 36.084528851109724
+    "lat": 34.9274,
+    "lon": 36.0901,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Rif Dimashq",
     "key": "rif dimashq",
-    "lat": 33.52982047712801,
-    "lon": 36.79281912015025
+    "lat": 33.5286,
+    "lon": 37.0728,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Hasaka (Al Haksa)",
+    "name": "Al-Hasakah",
     "key": "hasaka (al haksa)",
-    "lat": 36.61633455765219,
-    "lon": 41.15691891372136
+    "lat": 36.3536,
+    "lon": 40.9092,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Ar Raqqah",
+    "name": "Ar-Raqqah",
     "key": "ar raqqah",
-    "lat": 36.1734083947702,
-    "lon": 38.84838971730041
+    "lat": 36.0067,
+    "lon": 38.9127,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Aleppo",
+    "name": "Alepo",
     "key": "aleppo",
-    "lat": 36.256337831460435,
-    "lon": 37.669902586847215
+    "lat": 36.1054,
+    "lon": 37.601,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Idlib",
     "key": "idlib",
-    "lat": 35.86083013569795,
-    "lon": 36.63983840591075
+    "lat": 35.8528,
+    "lon": 36.6829,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Lattakia",
+    "name": "Latakia",
     "key": "lattakia",
-    "lat": 35.60305309399605,
-    "lon": 36.0361000189197
+    "lat": 35.5494,
+    "lon": 36.0061,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "As Suwayda'",
+    "name": "As-Suwayda",
     "key": "as suwayda'",
-    "lat": 32.799618897677846,
-    "lon": 36.80947679308142
+    "lat": 32.7577,
+    "lon": 36.9153,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Dar`a",
+    "name": "Dara",
     "key": "dar`a",
-    "lat": 32.81053047993215,
-    "lon": 36.20472680575695
+    "lat": 32.8686,
+    "lon": 36.1698,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Dayr Az Zawr",
+    "name": "Deir ez-Zor",
     "key": "dayr az zawr",
-    "lat": 35.31169276736812,
-    "lon": 40.409790692209356
+    "lat": 35.0736,
+    "lon": 40.275,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Quneitra",
     "key": "quneitra",
-    "lat": 33.040220169943744,
-    "lon": 35.890924153598434
+    "lat": 33.053,
+    "lon": 35.9145,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Hamah",
+    "name": "Hama",
     "key": "hamah",
-    "lat": 35.24372961491439,
-    "lon": 37.16205840592067
+    "lat": 35.2352,
+    "lon": 37.22,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Damascus",
+    "name": "Damasco",
     "key": "damascus",
-    "lat": 33.5036803434231,
-    "lon": 36.30148601249445
+    "lat": 33.5101,
+    "lon": 36.2897,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   }
 ]

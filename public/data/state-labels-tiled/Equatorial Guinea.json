@@ -2,43 +2,64 @@
   {
     "name": "Litoral",
     "key": "litoral",
-    "lat": 1.5756890098107845,
-    "lon": 9.863601681389403
+    "lat": 1.30717,
+    "lon": 9.7992,
+    "labelRank": 8,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Kié-Ntem",
     "key": "kié-ntem",
-    "lat": 1.974620036185739,
-    "lon": 10.789853333224906
+    "lat": 2.04853,
+    "lon": 10.8707,
+    "labelRank": 8,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Centro Sur",
     "key": "centro sur",
-    "lat": 1.5789931826392254,
-    "lon": 10.374388357022273
+    "lat": 1.46235,
+    "lon": 10.4494,
+    "labelRank": 8,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Wele-Nzás",
+    "name": "Wele-Nzas",
     "key": "wele-nzás",
-    "lat": 1.5798504349841653,
-    "lon": 10.923648061081298
+    "lat": 1.33965,
+    "lon": 10.9267,
+    "labelRank": 8,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Annobón",
     "key": "annobón",
-    "lat": -1.4399390605999316,
-    "lon": 5.630088738000086
+    "lat": -1.44699,
+    "lon": 5.62933,
+    "labelRank": 8,
+    "minLabel": 9,
+    "maxLabel": 11
   },
   {
     "name": "Bioko Norte",
     "key": "bioko norte",
-    "lat": 3.656000003810141,
-    "lon": 8.783299557694003
+    "lat": 3.66783,
+    "lon": 8.79508,
+    "labelRank": 8,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Bioko Sur",
     "key": "bioko sur",
-    "lat": 3.4377801741329663,
-    "lon": 8.648031488868904
+    "lat": 3.42557,
+    "lon": 8.64291,
+    "labelRank": 8,
+    "minLabel": 8.7,
+    "maxLabel": 11
   }
 ]

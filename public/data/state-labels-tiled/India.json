@@ -1,218 +1,326 @@
 [
   {
-    "name": "Ladakh",
+    "name": "Ladaque",
     "key": "ladakh",
-    "lat": 33.916306014621895,
-    "lon": 77.5961278234274
+    "lat": 34.0255867581,
+    "lon": 77.4806135651,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Arunachal Pradesh",
     "key": "arunachal pradesh",
-    "lat": 27.909212497318176,
-    "lon": 94.82798274374169
+    "lat": 28.4056,
+    "lon": 94.4673,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
-    "name": "Sikkim",
+    "name": "Siquim",
     "key": "sikkim",
-    "lat": 27.537277146038424,
-    "lon": 88.49975121302074
+    "lat": 27.5709,
+    "lon": 88.4482,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
-    "name": "West Bengal",
+    "name": "Bengala Ocidental",
     "key": "west bengal",
-    "lat": 24.431258649469832,
-    "lon": 88.15343705119201
+    "lat": 23.0523,
+    "lon": 87.7289,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Assam",
     "key": "assam",
-    "lat": 26.16552808078782,
-    "lon": 92.6078457751474
+    "lat": 26.3302,
+    "lon": 92.9929,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Uttarakhand",
     "key": "uttarakhand",
-    "lat": 30.077913127877455,
-    "lon": 79.12977465082348
+    "lat": 30.0576,
+    "lon": 79.2841,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Nagaland",
     "key": "nagaland",
-    "lat": 26.02891366426642,
-    "lon": 94.40872937050025
+    "lat": 26.1094,
+    "lon": 94.5664,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Manipur",
     "key": "manipur",
-    "lat": 24.866586852737303,
-    "lon": 93.96344186749977
+    "lat": 24.7442,
+    "lon": 93.8457,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Mizoram",
     "key": "mizoram",
-    "lat": 23.343862291675062,
-    "lon": 92.79883118611002
+    "lat": 23.2037,
+    "lon": 92.8409,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Tripura",
     "key": "tripura",
-    "lat": 23.775246527274394,
-    "lon": 91.81261020215055
+    "lat": 23.8519,
+    "lon": 91.7031,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Meghalaya",
     "key": "meghalaya",
-    "lat": 25.553549668857574,
-    "lon": 91.39542934290253
+    "lat": 25.4804,
+    "lon": 91.3031,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Punjab",
     "key": "punjab",
-    "lat": 31.154740112847083,
-    "lon": 72.1296987515127
+    "lat": 31.3589,
+    "lon": 72.3449,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
-    "name": "Rajasthan",
+    "name": "Rajastão",
     "key": "rajasthan",
-    "lat": 26.102210579113713,
-    "lon": 74.43842272952422
+    "lat": 26.7468,
+    "lon": 73.8556,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
-    "name": "Gujarat",
+    "name": "Gujarate",
     "key": "gujarat",
-    "lat": 22.479763216113305,
-    "lon": 71.85702912405235
+    "lat": 22.7501,
+    "lon": 71.3013,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Himachal Pradesh",
     "key": "himachal pradesh",
-    "lat": 31.894563929180112,
-    "lon": 77.28314031185197
+    "lat": 31.6755,
+    "lon": 77.2875,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
-    "name": "Jammu and Kashmir",
+    "name": "Jammu e Caxemira",
     "key": "jammu and kashmir",
-    "lat": 33.48298854602475,
-    "lon": 75.03173202609595
+    "lat": 33.9658,
+    "lon": 76.6395,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Bihar",
     "key": "bihar",
-    "lat": 25.785511954156053,
-    "lon": 85.58366943039911
+    "lat": 25.6853,
+    "lon": 85.8134,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Uttar Pradesh",
     "key": "uttar pradesh",
-    "lat": 26.66125499606325,
-    "lon": 80.36632062625937
+    "lat": 26.7201,
+    "lon": 80.9966,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
-    "name": "Andhra Pradesh",
+    "name": "Andra Pradexe",
     "key": "andhra pradesh",
-    "lat": 15.862310665533554,
-    "lon": 80.0646638900732
+    "lat": 16.4854,
+    "lon": 79.208,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
-    "name": "Odisha",
+    "name": "Orissa",
     "key": "odisha",
-    "lat": 20.322006471681654,
-    "lon": 84.24441650857507
+    "lat": 20.625,
+    "lon": 84.4341,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
-    "name": "Dadra and Nagar Haveli and Daman and Diu",
+    "name": "Dadrá e Nagar Aveli e Damão e Diu",
     "key": "dadra and nagar haveli and daman and diu",
-    "lat": 20.158119581553432,
-    "lon": 73.03727868041673
+    "lat": 20.1841,
+    "lon": 73.029,
+    "labelRank": 9,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Maharashtra",
     "key": "maharashtra",
-    "lat": 19.492722930631643,
-    "lon": 76.53492666823603
+    "lat": 19.4723,
+    "lon": 75.4647,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Goa",
     "key": "goa",
-    "lat": 15.359020348513168,
-    "lon": 74.0207091172068
+    "lat": 15.3133,
+    "lon": 73.9951,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
-    "name": "Karnataka",
+    "name": "Carnataca",
     "key": "karnataka",
-    "lat": 14.883153978276932,
-    "lon": 76.47746450069869
+    "lat": 14.3681,
+    "lon": 75.667,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Kerala",
     "key": "kerala",
-    "lat": 10.732988761899207,
-    "lon": 76.28422905878207
+    "lat": 10.3666,
+    "lon": 76.5237,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Puducherry",
     "key": "puducherry",
-    "lat": 12.061897975882426,
-    "lon": 75.26593834781409
+    "lat": 10.9224,
+    "lon": 79.7758,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Tamil Nadu",
     "key": "tamil nadu",
-    "lat": 11.099594739703614,
-    "lon": 78.2524312226182
+    "lat": 11.0159,
+    "lon": 78.2704,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
-    "name": "Lakshadweep",
+    "name": "Laquedivas",
     "key": "lakshadweep",
-    "lat": 8.281382554200059,
-    "lon": 73.05956464940007
+    "lat": 11.2249,
+    "lon": 72.7811,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
-    "name": "Andaman and Nicobar",
+    "name": "Andamão e Nicobar",
     "key": "andaman and nicobar",
-    "lat": 12.569419309739185,
-    "lon": 92.83102284126092
+    "lat": 6.83654,
+    "lon": 93.7895,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Jharkhand",
     "key": "jharkhand",
-    "lat": 23.65086463909062,
-    "lon": 85.56044983251964
+    "lat": 23.5221,
+    "lon": 85.0584,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
-    "name": "Delhi",
+    "name": "Deli",
     "key": "delhi",
-    "lat": 28.665032140520836,
-    "lon": 77.11742584312813
+    "lat": 28.69,
+    "lon": 77.0856,
+    "labelRank": 9,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Chandigarh",
     "key": "chandigarh",
-    "lat": 30.743555284628666,
-    "lon": 76.78715831902117
+    "lat": 30.7452,
+    "lon": 76.7605,
+    "labelRank": 9,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Madhya Pradesh",
     "key": "madhya pradesh",
-    "lat": 23.80969232632842,
-    "lon": 78.12147508596051
+    "lat": 22.9404,
+    "lon": 78.4214,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Chhattisgarh",
     "key": "chhattisgarh",
-    "lat": 21.24037444495628,
-    "lon": 81.97288682307453
+    "lat": 21.8044,
+    "lon": 82.3069,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Haryana",
     "key": "haryana",
-    "lat": 29.271978242223618,
-    "lon": 76.39574512040556
+    "lat": 29.1003,
+    "lon": 76.271,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Telangana",
     "key": "telangana",
-    "lat": 17.74850099214069,
-    "lon": 79.21925294512533
+    "lat": 17.4273126817,
+    "lon": 78.468441094,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   }
 ]

@@ -2,1240 +2,1771 @@
   {
     "name": "Fiji",
     "key": "Fiji",
-    "lat": -17.742965555555557,
-    "lon": 178.01839333333336,
-    "continent": "Oceania"
+    "lat": -17.826099,
+    "lon": 177.975427,
+    "continent": "Oceania",
+    "labelRank": 6,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Tanzania",
+    "name": "Tanzânia",
     "key": "Tanzania",
-    "lat": -6.544286533889697,
-    "lon": 34.314079963746515,
-    "continent": "Africa"
+    "lat": -6.051866,
+    "lon": 34.959183,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "W. Sahara",
+    "name": "Sara Ocidental",
     "key": "W. Sahara",
-    "lat": 24.77770810015795,
-    "lon": -12.02739525423547,
-    "continent": "Africa"
+    "lat": 23.967592,
+    "lon": -12.630304,
+    "continent": "Africa",
+    "labelRank": 7,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Canadá",
     "key": "Canada",
     "lat": 56,
     "lon": -106,
-    "continent": "North America"
+    "continent": "North America",
+    "labelRank": 2,
+    "minLabel": 1.7,
+    "maxLabel": 5.7
   },
   {
     "name": "Estados Unidos",
     "key": "United States of America",
     "lat": 39,
     "lon": -98,
-    "continent": "North America"
+    "continent": "North America",
+    "labelRank": 2,
+    "minLabel": 1.7,
+    "maxLabel": 5.7
   },
   {
-    "name": "Kazakhstan",
+    "name": "Cazaquistão",
     "key": "Kazakhstan",
-    "lat": 47.263796393265906,
-    "lon": 65.25235870435695,
-    "continent": "Asia"
+    "lat": 49.054149,
+    "lon": 68.685548,
+    "continent": "Asia",
+    "labelRank": 3,
+    "minLabel": 2.7,
+    "maxLabel": 7
   },
   {
-    "name": "Uzbekistan",
+    "name": "Uzbequistão",
     "key": "Uzbekistan",
-    "lat": 41.15264678868667,
-    "lon": 65.28922639500692,
-    "continent": "Asia"
+    "lat": 41.693603,
+    "lon": 64.005429,
+    "continent": "Asia",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Papua New Guinea",
+    "name": "Papua-Nova Guiné",
     "key": "Papua New Guinea",
-    "lat": -7.77174145219306,
-    "lon": 146.21341856600498,
-    "continent": "Oceania"
+    "lat": -5.695285,
+    "lon": 143.910216,
+    "continent": "Oceania",
+    "labelRank": 2,
+    "minLabel": 2.5,
+    "maxLabel": 7.5
   },
   {
-    "name": "Indonesia",
+    "name": "Indonésia",
     "key": "Indonesia",
-    "lat": -2.039124719973774,
-    "lon": 121.59253829241577,
-    "continent": "Asia"
+    "lat": -0.954404,
+    "lon": 101.892949,
+    "continent": "Asia",
+    "labelRank": 2,
+    "minLabel": 1.7,
+    "maxLabel": 6.7
   },
   {
     "name": "Argentina",
     "key": "Argentina",
-    "lat": -37.016766807613394,
-    "lon": -65.0851765500259,
-    "continent": "South America"
+    "lat": -33.501159,
+    "lon": -64.173331,
+    "continent": "South America",
+    "labelRank": 2,
+    "minLabel": 2,
+    "maxLabel": 7
   },
   {
     "name": "Chile",
     "key": "Chile",
-    "lat": -38.11559671977272,
-    "lon": -71.44843503334778,
-    "continent": "South America"
+    "lat": -38.151771,
+    "lon": -72.318871,
+    "continent": "South America",
+    "labelRank": 2,
+    "minLabel": 1.7,
+    "maxLabel": 6.7
   },
   {
-    "name": "Dem. Rep. Congo",
+    "name": "República Democrática do Congo",
     "key": "Dem. Rep. Congo",
-    "lat": -3.813813268169074,
-    "lon": 23.12693294699391,
-    "continent": "Africa"
+    "lat": -1.858167,
+    "lon": 23.458829,
+    "continent": "Africa",
+    "labelRank": 2,
+    "minLabel": 2,
+    "maxLabel": 7
   },
   {
-    "name": "Somalia",
+    "name": "Somália",
     "key": "Somalia",
-    "lat": 6.553593113664309,
-    "lon": 46.89733992825374,
-    "continent": "Africa"
+    "lat": 3.568925,
+    "lon": 45.19238,
+    "continent": "Africa",
+    "labelRank": 6,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Kenya",
+    "name": "Quénia",
     "key": "Kenya",
-    "lat": 1.114469571605086,
-    "lon": 37.82372143513078,
-    "continent": "Africa"
+    "lat": 0.549043,
+    "lon": 37.907632,
+    "continent": "Africa",
+    "labelRank": 2,
+    "minLabel": 1.7,
+    "maxLabel": 6.7
   },
   {
-    "name": "Sudan",
+    "name": "Sudão",
     "key": "Sudan",
-    "lat": 12.807976761186724,
-    "lon": 29.33744082805221,
-    "continent": "Africa"
+    "lat": 16.330746,
+    "lon": 29.260657,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 2.5,
+    "maxLabel": 8
   },
   {
-    "name": "Chad",
+    "name": "Chade",
     "key": "Chad",
-    "lat": 12.995734766170797,
-    "lon": 17.99555675356704,
-    "continent": "Africa"
+    "lat": 15.142959,
+    "lon": 18.645041,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
     "name": "Haiti",
     "key": "Haiti",
-    "lat": 18.83961325198578,
-    "lon": -72.70254706974123,
-    "continent": "North America"
+    "lat": 19.263784,
+    "lon": -72.224051,
+    "continent": "North America",
+    "labelRank": 5,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Dominican Rep.",
+    "name": "República Dominicana",
     "key": "Dominican Rep.",
-    "lat": 18.725987093733313,
-    "lon": -70.49342071272487,
-    "continent": "North America"
+    "lat": 19.104137,
+    "lon": -70.653998,
+    "continent": "North America",
+    "labelRank": 5,
+    "minLabel": 4.5,
+    "maxLabel": 9.5
   },
   {
     "name": "Rússia",
     "key": "Russia",
     "lat": 60,
     "lon": 90,
-    "continent": "Europe"
+    "continent": "Europe",
+    "labelRank": 2,
+    "minLabel": 1.7,
+    "maxLabel": 5.2
   },
   {
     "name": "Bahamas",
     "key": "Bahamas",
-    "lat": 24.532767500000006,
-    "lon": -77.94611625000002,
-    "continent": "North America"
+    "lat": 26.401789,
+    "lon": -77.146688,
+    "continent": "North America",
+    "labelRank": 4,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Falkland Is.",
+    "name": "Ilhas Malvinas",
     "key": "Falkland Is.",
-    "lat": -51.735,
-    "lon": -59.585,
-    "continent": "South America"
+    "lat": -51.608913,
+    "lon": -58.738602,
+    "continent": "South America",
+    "labelRank": 5,
+    "minLabel": 4.5,
+    "maxLabel": 9
   },
   {
-    "name": "Norway",
+    "name": "Noruega",
     "key": "Norway",
-    "lat": 66.23183396477916,
-    "lon": 18.086298971934408,
-    "continent": "Europe"
+    "lat": 61.357092,
+    "lon": 9.679975,
+    "continent": "Europe",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 7
   },
   {
-    "name": "Greenland",
+    "name": "Groenlândia",
     "key": "Greenland",
-    "lat": 74.1476317573278,
-    "lon": -41.031455909090916,
-    "continent": "North America"
+    "lat": 74.319387,
+    "lon": -39.335251,
+    "continent": "North America",
+    "labelRank": 3,
+    "minLabel": 1.7,
+    "maxLabel": 6.7
   },
   {
-    "name": "Fr. S. Antarctic Lands",
+    "name": "Terras Austrais e Antárticas Francesas",
     "key": "Fr. S. Antarctic Lands",
-    "lat": -49.118611111111115,
-    "lon": 69.46083333333334,
-    "continent": "Seven seas (open ocean)"
+    "lat": -49.303721,
+    "lon": 69.122136,
+    "continent": "Seven seas (open ocean)",
+    "labelRank": 6,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
     "name": "Timor-Leste",
     "key": "Timor-Leste",
-    "lat": -8.74553587295265,
-    "lon": 125.90554332156553,
-    "continent": "Asia"
+    "lat": -8.803705,
+    "lon": 125.854679,
+    "continent": "Asia",
+    "labelRank": 5,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
     "name": "África do Sul",
     "key": "South Africa",
-    "lat": -28.60390004829149,
-    "lon": 24.719575011263476,
-    "continent": "Africa"
+    "lat": -29.708776,
+    "lon": 23.665734,
+    "continent": "Africa",
+    "labelRank": 2,
+    "minLabel": 1.7,
+    "maxLabel": 6.7
   },
   {
-    "name": "Lesotho",
+    "name": "Lesoto",
     "key": "Lesotho",
-    "lat": -29.584757175415277,
-    "lon": 28.370332404636926,
-    "continent": "Africa"
+    "lat": -29.480158,
+    "lon": 28.246639,
+    "continent": "Africa",
+    "labelRank": 6,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
     "name": "México",
     "key": "Mexico",
-    "lat": 23.874573248851174,
-    "lon": -103.13076274890818,
-    "continent": "North America"
+    "lat": 23.919988,
+    "lon": -102.289448,
+    "continent": "North America",
+    "labelRank": 2,
+    "minLabel": 2,
+    "maxLabel": 6.7
   },
   {
-    "name": "Uruguay",
+    "name": "Uruguai",
     "key": "Uruguay",
-    "lat": -32.69753629016608,
-    "lon": -56.13862763414361,
-    "continent": "South America"
+    "lat": -32.961127,
+    "lon": -55.966942,
+    "continent": "South America",
+    "labelRank": 4,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
     "name": "Brasil",
     "key": "Brazil",
     "lat": -14.23,
     "lon": -51.92,
-    "continent": "South America"
+    "continent": "South America",
+    "labelRank": 2,
+    "minLabel": 1.7,
+    "maxLabel": 5.7
   },
   {
-    "name": "Bolivia",
+    "name": "Bolívia",
     "key": "Bolivia",
-    "lat": -16.33658822326809,
-    "lon": -64.13008908756797,
-    "continent": "South America"
+    "lat": -16.666015,
+    "lon": -64.593433,
+    "continent": "South America",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 7.5
   },
   {
     "name": "Peru",
     "key": "Peru",
     "lat": -9.19,
     "lon": -75.01,
-    "continent": "South America"
+    "continent": "South America",
+    "labelRank": 2,
+    "minLabel": 2,
+    "maxLabel": 7
   },
   {
-    "name": "Colombia",
+    "name": "Colômbia",
     "key": "Colombia",
-    "lat": 4.490703465183281,
-    "lon": -72.65296162585078,
-    "continent": "South America"
+    "lat": 3.373111,
+    "lon": -73.174347,
+    "continent": "South America",
+    "labelRank": 2,
+    "minLabel": 3,
+    "maxLabel": 7
   },
   {
-    "name": "Panama",
+    "name": "Panamá",
     "key": "Panama",
-    "lat": 8.936060120283182,
-    "lon": -79.12643003255582,
-    "continent": "North America"
+    "lat": 9.08628,
+    "lon": -78.9283,
+    "continent": "North America",
+    "labelRank": 4,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
     "name": "Costa Rica",
     "key": "Costa Rica",
-    "lat": 9.822146256952653,
-    "lon": -84.16182833076695,
-    "continent": "North America"
+    "lat": 10.0651,
+    "lon": -84.077922,
+    "continent": "North America",
+    "labelRank": 5,
+    "minLabel": 2.5,
+    "maxLabel": 8
   },
   {
-    "name": "Nicaragua",
+    "name": "Nicarágua",
     "key": "Nicaragua",
-    "lat": 13.078829305311787,
-    "lon": -84.97791375712254,
-    "continent": "North America"
+    "lat": 12.670697,
+    "lon": -85.069347,
+    "continent": "North America",
+    "labelRank": 5,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
     "name": "Honduras",
     "key": "Honduras",
-    "lat": 14.746302263010199,
-    "lon": -86.30799800946173,
-    "continent": "North America"
+    "lat": 14.794801,
+    "lon": -86.887604,
+    "continent": "North America",
+    "labelRank": 5,
+    "minLabel": 4.5,
+    "maxLabel": 9.5
   },
   {
     "name": "El Salvador",
     "key": "El Salvador",
-    "lat": 13.85463526046814,
-    "lon": -88.91992219720488,
-    "continent": "North America"
+    "lat": 13.685371,
+    "lon": -88.890124,
+    "continent": "North America",
+    "labelRank": 6,
+    "minLabel": 5,
+    "maxLabel": 10
   },
   {
     "name": "Guatemala",
     "key": "Guatemala",
-    "lat": 14.6246718069833,
-    "lon": -90.50734683573785,
-    "continent": "North America"
+    "lat": 14.6006,
+    "lon": -90.4872,
+    "continent": "North America",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
     "name": "Belize",
     "key": "Belize",
-    "lat": 17.593760691837183,
-    "lon": -88.41380341198602,
-    "continent": "North America"
+    "lat": 17.5367,
+    "lon": -88.4189,
+    "continent": "North America",
+    "labelRank": 6,
+    "minLabel": 5,
+    "maxLabel": 10
   },
   {
     "name": "Venezuela",
     "key": "Venezuela",
-    "lat": 7.213489061339578,
-    "lon": -66.85159615261934,
-    "continent": "South America"
+    "lat": 7.182476,
+    "lon": -64.599381,
+    "continent": "South America",
+    "labelRank": 3,
+    "minLabel": 2.5,
+    "maxLabel": 7.5
   },
   {
-    "name": "Guyana",
+    "name": "Guiana",
     "key": "Guyana",
-    "lat": 4.481521338311496,
-    "lon": -58.898341244122534,
-    "continent": "South America"
+    "lat": 5.124317,
+    "lon": -58.942643,
+    "continent": "South America",
+    "labelRank": 4,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
     "name": "Suriname",
     "key": "Suriname",
-    "lat": 3.6974152537292855,
-    "lon": -55.87038861912923,
-    "continent": "South America"
+    "lat": 4.143987,
+    "lon": -55.91094,
+    "continent": "South America",
+    "labelRank": 4,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
     "name": "França",
     "key": "France",
-    "lat": 47.00465488679433,
-    "lon": 3.300000589452805,
-    "continent": "Europe"
+    "lat": 46.696113,
+    "lon": 2.552275,
+    "continent": "Europe",
+    "labelRank": 2,
+    "minLabel": 1.7,
+    "maxLabel": 6.7
   },
   {
-    "name": "Ecuador",
+    "name": "Equador",
     "key": "Ecuador",
-    "lat": -1.6370143231984393,
-    "lon": -78.70452251707455,
-    "continent": "South America"
+    "lat": -1.259076,
+    "lon": -78.188375,
+    "continent": "South America",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Puerto Rico",
+    "name": "Porto Rico",
     "key": "Puerto Rico",
-    "lat": 18.236712690000065,
-    "lon": -66.4914815487142,
-    "continent": "North America"
+    "lat": 18.2448,
+    "lon": -66.4441,
+    "continent": "North America",
+    "labelRank": 5,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
     "name": "Jamaica",
     "key": "Jamaica",
-    "lat": 18.187741456108697,
-    "lon": -77.34805218632026,
-    "continent": "North America"
+    "lat": 18.137124,
+    "lon": -77.318767,
+    "continent": "North America",
+    "labelRank": 4,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
     "name": "Cuba",
     "key": "Cuba",
-    "lat": 21.722816740301816,
-    "lon": -79.73309492326949,
-    "continent": "North America"
+    "lat": 21.334024,
+    "lon": -77.975855,
+    "continent": "North America",
+    "labelRank": 3,
+    "minLabel": 2.7,
+    "maxLabel": 8
   },
   {
-    "name": "Zimbabwe",
+    "name": "Zimbábue",
     "key": "Zimbabwe",
-    "lat": -18.870222967091866,
-    "lon": 29.658726653993973,
-    "continent": "Africa"
+    "lat": -18.91164,
+    "lon": 29.925444,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 2.5,
+    "maxLabel": 8
   },
   {
-    "name": "Botswana",
+    "name": "Botsuana",
     "key": "Botswana",
-    "lat": -22.47665874602486,
-    "lon": 24.471325778916018,
-    "continent": "Africa"
+    "lat": -22.102634,
+    "lon": 24.179216,
+    "continent": "Africa",
+    "labelRank": 4,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Namibia",
+    "name": "Namíbia",
     "key": "Namibia",
-    "lat": -21.560888240058247,
-    "lon": 17.928476615256447,
-    "continent": "Africa"
+    "lat": -20.575298,
+    "lon": 17.108166,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 7.5
   },
   {
     "name": "Senegal",
     "key": "Senegal",
-    "lat": 13.877521812758708,
-    "lon": -14.591478736732068,
-    "continent": "Africa"
+    "lat": 15.138125,
+    "lon": -14.778586,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 2.7,
+    "maxLabel": 8
   },
   {
     "name": "Mali",
     "key": "Mali",
-    "lat": 12.08370122092468,
-    "lon": -12.07849853669389,
-    "continent": "Africa"
+    "lat": 12.0218,
+    "lon": -12.1222,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 7
   },
   {
-    "name": "Mauritania",
+    "name": "Mauritânia",
     "key": "Mauritania",
-    "lat": 18.8313791898375,
-    "lon": -12.424930098864953,
-    "continent": "Africa"
+    "lat": 19.587062,
+    "lon": -9.740299,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Benin",
+    "name": "Benim",
     "key": "Benin",
-    "lat": 9.808400067580854,
-    "lon": 2.3272526220891585,
-    "continent": "Africa"
+    "lat": 10.324775,
+    "lon": 2.352018,
+    "continent": "Africa",
+    "labelRank": 5,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Niger",
+    "name": "Níger",
     "key": "Niger",
-    "lat": 10.085022089696517,
-    "lon": 5.447608822702965,
-    "continent": "Africa"
+    "lat": 9.95553,
+    "lon": 5.45494,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
     "name": "Nigéria",
     "key": "Nigeria",
-    "lat": 9.731548338672049,
-    "lon": 8.348453445456459,
-    "continent": "Africa"
+    "lat": 9.439799,
+    "lon": 7.50322,
+    "continent": "Africa",
+    "labelRank": 2,
+    "minLabel": 1.7,
+    "maxLabel": 6.7
   },
   {
-    "name": "Cameroon",
+    "name": "Camarões",
     "key": "Cameroon",
-    "lat": 6.9062958713781715,
-    "lon": 13.168611650878622,
-    "continent": "Africa"
+    "lat": 4.585041,
+    "lon": 12.473488,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
     "name": "Togo",
     "key": "Togo",
-    "lat": 8.884753793934067,
-    "lon": 0.8697443611355521,
-    "continent": "Africa"
+    "lat": 8.80722,
+    "lon": 1.058113,
+    "continent": "Africa",
+    "labelRank": 6,
+    "minLabel": 5,
+    "maxLabel": 10
   },
   {
-    "name": "Ghana",
+    "name": "Gana",
     "key": "Ghana",
-    "lat": 8.290339756702384,
-    "lon": -0.9706184309839273,
-    "continent": "Africa"
+    "lat": 7.717639,
+    "lon": -1.036941,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 2.7,
+    "maxLabel": 8
   },
   {
-    "name": "Côte d'Ivoire",
+    "name": "Costa do Marfim",
     "key": "Côte d'Ivoire",
-    "lat": 7.944610876457284,
-    "lon": -6.3455317633834305,
-    "continent": "Africa"
+    "lat": 7.49139,
+    "lon": -5.568618,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 2.5,
+    "maxLabel": 8
   },
   {
-    "name": "Guinea",
+    "name": "Guiné",
     "key": "Guinea",
-    "lat": 10.418830212556315,
-    "lon": -10.98455543809244,
-    "continent": "Africa"
+    "lat": 10.618516,
+    "lon": -10.016402,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Guinea-Bissau",
+    "name": "Guiné-Bissau",
     "key": "Guinea-Bissau",
-    "lat": 11.979001209054038,
-    "lon": -15.213983548485396,
-    "continent": "Africa"
+    "lat": 12.163712,
+    "lon": -14.52413,
+    "continent": "Africa",
+    "labelRank": 6,
+    "minLabel": 5,
+    "maxLabel": 10
   },
   {
-    "name": "Liberia",
+    "name": "Libéria",
     "key": "Liberia",
-    "lat": 6.753908091355769,
-    "lon": -9.142703710241157,
-    "continent": "Africa"
+    "lat": 6.447177,
+    "lon": -9.460379,
+    "continent": "Africa",
+    "labelRank": 4,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Sierra Leone",
+    "name": "Serra Leoa",
     "key": "Sierra Leone",
-    "lat": 8.603354665187895,
-    "lon": -11.7022388371141,
-    "continent": "Africa"
+    "lat": 8.617449,
+    "lon": -11.763677,
+    "continent": "Africa",
+    "labelRank": 4,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
     "name": "Burkina Faso",
     "key": "Burkina Faso",
-    "lat": 12.111433573699845,
-    "lon": -1.9164335147049927,
-    "continent": "Africa"
+    "lat": 12.673048,
+    "lon": -1.36388,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Central African Rep.",
+    "name": "República Centro-Africana",
     "key": "Central African Rep.",
-    "lat": 6.294242274755564,
-    "lon": 20.703062916233986,
-    "continent": "Africa"
+    "lat": 6.989681,
+    "lon": 20.906897,
+    "continent": "Africa",
+    "labelRank": 4,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Congo",
+    "name": "República do Congo",
     "key": "Congo",
-    "lat": -0.9202093004866175,
-    "lon": 14.927109475681762,
-    "continent": "Africa"
+    "lat": 0.142331,
+    "lon": 15.9005,
+    "continent": "Africa",
+    "labelRank": 4,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Gabon",
+    "name": "Gabão",
     "key": "Gabon",
-    "lat": -0.33748013081742784,
-    "lon": 11.891373548391703,
-    "continent": "Africa"
+    "lat": -0.437739,
+    "lon": 11.835939,
+    "continent": "Africa",
+    "labelRank": 4,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Eq. Guinea",
+    "name": "Guiné Equatorial",
     "key": "Eq. Guinea",
-    "lat": 1.5893385162086904,
-    "lon": 10.069804314828474,
-    "continent": "Africa"
+    "lat": 2.333,
+    "lon": 8.9902,
+    "continent": "Africa",
+    "labelRank": 4,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Zambia",
+    "name": "Zâmbia",
     "key": "Zambia",
-    "lat": -12.834840611247376,
-    "lon": 27.97799614182303,
-    "continent": "Africa"
+    "lat": -14.660804,
+    "lon": 26.395298,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
     "name": "Malawi",
     "key": "Malawi",
-    "lat": -12.914037991878851,
-    "lon": 34.062624421207964,
-    "continent": "Africa"
+    "lat": -13.386737,
+    "lon": 33.608082,
+    "continent": "Africa",
+    "labelRank": 6,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Mozambique",
+    "name": "Moçambique",
     "key": "Mozambique",
-    "lat": -17.72030225241265,
-    "lon": 35.003523564831205,
-    "continent": "Africa"
+    "lat": -13.94323,
+    "lon": 37.83789,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "eSwatini",
+    "name": "Essuatíni",
     "key": "eSwatini",
-    "lat": -26.4202521890153,
-    "lon": 31.437017819589606,
-    "continent": "Africa"
+    "lat": -26.533676,
+    "lon": 31.467264,
+    "continent": "Africa",
+    "labelRank": 4,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
     "name": "Angola",
     "key": "Angola",
     "lat": -11.2,
     "lon": 17.87,
-    "continent": "Africa"
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 7
   },
   {
     "name": "Burundi",
     "key": "Burundi",
-    "lat": -3.233810154070347,
-    "lon": 30.042267132459628,
-    "continent": "Africa"
+    "lat": -3.332836,
+    "lon": 29.917086,
+    "continent": "Africa",
+    "labelRank": 6,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
     "name": "Israel",
     "key": "Israel",
-    "lat": 31.995640201899985,
-    "lon": 35.11451181921474,
-    "continent": "Asia"
+    "lat": 30.911148,
+    "lon": 34.847915,
+    "continent": "Asia",
+    "labelRank": 4,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
     "name": "Líbano",
     "key": "Lebanon",
-    "lat": 33.798193356768905,
-    "lon": 35.85166966027962,
-    "continent": "Asia"
+    "lat": 34.133368,
+    "lon": 35.992892,
+    "continent": "Asia",
+    "labelRank": 5,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Madagascar",
+    "name": "Madagáscar",
     "key": "Madagascar",
-    "lat": -17.971485126314818,
-    "lon": 46.989215089051406,
-    "continent": "Africa"
+    "lat": -18.628288,
+    "lon": 46.704241,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 2.7,
+    "maxLabel": 7
   },
   {
     "name": "Palestina",
     "key": "Palestine",
-    "lat": 31.80870186797991,
-    "lon": 35.24093513813518,
-    "continent": "Asia"
+    "lat": 32.047431,
+    "lon": 35.291341,
+    "continent": "Asia",
+    "labelRank": 5,
+    "minLabel": 4.5,
+    "maxLabel": 9.5
   },
   {
-    "name": "Gambia",
+    "name": "Gâmbia",
     "key": "Gambia",
-    "lat": 13.501525999907644,
-    "lon": -15.287184744721209,
-    "continent": "Africa"
+    "lat": 13.641721,
+    "lon": -14.998318,
+    "continent": "Africa",
+    "labelRank": 6,
+    "minLabel": 5,
+    "maxLabel": 10
   },
   {
-    "name": "Tunisia",
+    "name": "Tunísia",
     "key": "Tunisia",
-    "lat": 34.016760342585286,
-    "lon": 9.841517840743212,
-    "continent": "Africa"
+    "lat": 33.687263,
+    "lon": 9.007881,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Algeria",
+    "name": "Argélia",
     "key": "Algeria",
-    "lat": 29.665780193432095,
-    "lon": 3.016263862273785,
-    "continent": "Africa"
+    "lat": 27.397406,
+    "lon": 2.808241,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 2.5,
+    "maxLabel": 7
   },
   {
     "name": "Jordânia",
     "key": "Jordan",
-    "lat": 31.132471025639713,
-    "lon": 36.650725024912866,
-    "continent": "Asia"
+    "lat": 30.805025,
+    "lon": 36.375991,
+    "continent": "Asia",
+    "labelRank": 4,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "United Arab Emirates",
+    "name": "Emirados Árabes Unidos",
     "key": "United Arab Emirates",
-    "lat": 24.19537921987858,
-    "lon": 54.24340117224949,
-    "continent": "Asia"
+    "lat": 23.466285,
+    "lon": 54.547256,
+    "continent": "Asia",
+    "labelRank": 4,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Qatar",
+    "name": "Catar",
     "key": "Qatar",
-    "lat": 25.25710923467101,
-    "lon": 51.15130478518957,
-    "continent": "Asia"
+    "lat": 25.237383,
+    "lon": 51.143509,
+    "continent": "Asia",
+    "labelRank": 5,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
     "name": "Kuwait",
     "key": "Kuwait",
-    "lat": 29.336788438427202,
-    "lon": 47.742474670881954,
-    "continent": "Asia"
+    "lat": 29.413628,
+    "lon": 47.313999,
+    "continent": "Asia",
+    "labelRank": 6,
+    "minLabel": 5,
+    "maxLabel": 10
   },
   {
-    "name": "Iraq",
+    "name": "Iraque",
     "key": "Iraq",
-    "lat": 33.438604994189596,
-    "lon": 44.39874177645148,
-    "continent": "Asia"
+    "lat": 33.09403,
+    "lon": 43.26181,
+    "continent": "Asia",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 7.5
   },
   {
-    "name": "Oman",
+    "name": "Omã",
     "key": "Oman",
-    "lat": 20.860025331217543,
-    "lon": 56.56636622947396,
-    "continent": "Asia"
+    "lat": 22.120427,
+    "lon": 57.336553,
+    "continent": "Asia",
+    "labelRank": 4,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
     "name": "Vanuatu",
     "key": "Vanuatu",
-    "lat": -15.377909321470794,
-    "lon": 166.89203715585762,
-    "continent": "Oceania"
+    "lat": -15.37153,
+    "lon": 166.908762,
+    "continent": "Oceania",
+    "labelRank": 4,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Cambodia",
+    "name": "Camboja",
     "key": "Cambodia",
-    "lat": 12.641262446957994,
-    "lon": 104.89517603127703,
-    "continent": "Asia"
+    "lat": 12.647584,
+    "lon": 104.50487,
+    "continent": "Asia",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Thailand",
+    "name": "Tailândia",
     "key": "Thailand",
-    "lat": 13.180763117673692,
-    "lon": 100.66150984090703,
-    "continent": "Asia"
+    "lat": 15.45974,
+    "lon": 101.073198,
+    "continent": "Asia",
+    "labelRank": 3,
+    "minLabel": 2.7,
+    "maxLabel": 8
   },
   {
     "name": "Laos",
     "key": "Laos",
-    "lat": 18.28362764758731,
-    "lon": 103.69295620366371,
-    "continent": "Asia"
+    "lat": 19.431821,
+    "lon": 102.533912,
+    "continent": "Asia",
+    "labelRank": 4,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
     "name": "Myanmar",
     "key": "Myanmar",
-    "lat": 20.000519997053352,
-    "lon": 97.15338879364597,
-    "continent": "Asia"
+    "lat": 21.573855,
+    "lon": 95.804497,
+    "continent": "Asia",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Vietnam",
+    "name": "Vietname",
     "key": "Vietnam",
-    "lat": 16.7053243067035,
-    "lon": 105.93873177030495,
-    "continent": "Asia"
+    "lat": 21.715416,
+    "lon": 105.387292,
+    "continent": "Asia",
+    "labelRank": 2,
+    "minLabel": 2,
+    "maxLabel": 7
   },
   {
-    "name": "North Korea",
+    "name": "Coreia do Norte",
     "key": "North Korea",
-    "lat": 39.942979122057984,
-    "lon": 127.40434046045972,
-    "continent": "Asia"
+    "lat": 39.885252,
+    "lon": 126.444516,
+    "continent": "Asia",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "South Korea",
+    "name": "Coreia do Sul",
     "key": "South Korea",
-    "lat": 36.7165066273616,
-    "lon": 127.46743381690857,
-    "continent": "Asia"
+    "lat": 36.384924,
+    "lon": 128.129504,
+    "continent": "Asia",
+    "labelRank": 2,
+    "minLabel": 2.5,
+    "maxLabel": 7
   },
   {
-    "name": "Mongolia",
+    "name": "Mongólia",
     "key": "Mongolia",
-    "lat": 47.20451453054017,
-    "lon": 104.58542655414976,
-    "continent": "Asia"
+    "lat": 45.997488,
+    "lon": 104.150405,
+    "continent": "Asia",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 7
   },
   {
     "name": "Índia",
     "key": "India",
-    "lat": 23.965686545897018,
-    "lon": 83.5882051910369,
-    "continent": "Asia"
+    "lat": 22.686852,
+    "lon": 79.358105,
+    "continent": "Asia",
+    "labelRank": 2,
+    "minLabel": 1.7,
+    "maxLabel": 6.7
   },
   {
     "name": "Bangladesh",
     "key": "Bangladesh",
-    "lat": 23.398933824145637,
-    "lon": 90.61132082403013,
-    "continent": "Asia"
+    "lat": 24.214956,
+    "lon": 89.684963,
+    "continent": "Asia",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Bhutan",
+    "name": "Butão",
     "key": "Bhutan",
-    "lat": 27.46778703617613,
-    "lon": 90.61513240259059,
-    "continent": "Asia"
+    "lat": 27.536685,
+    "lon": 90.040294,
+    "continent": "Asia",
+    "labelRank": 5,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
     "name": "Nepal",
     "key": "Nepal",
-    "lat": 28.209141281776407,
-    "lon": 84.55865384665952,
-    "continent": "Asia"
+    "lat": 28.297925,
+    "lon": 83.639914,
+    "continent": "Asia",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Pakistan",
+    "name": "Paquistão",
     "key": "Pakistan",
-    "lat": 30.79038579813847,
-    "lon": 69.44356334087091,
-    "continent": "Asia"
+    "lat": 29.328389,
+    "lon": 68.545632,
+    "continent": "Asia",
+    "labelRank": 2,
+    "minLabel": 2.7,
+    "maxLabel": 7
   },
   {
-    "name": "Afghanistan",
+    "name": "Afeganistão",
     "key": "Afghanistan",
-    "lat": 34.828475476704945,
-    "lon": 67.76801112575714,
-    "continent": "Asia"
+    "lat": 34.164262,
+    "lon": 66.496586,
+    "continent": "Asia",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 7
   },
   {
-    "name": "Tajikistan",
+    "name": "Tajiquistão",
     "key": "Tajikistan",
-    "lat": 38.512878620636485,
-    "lon": 70.78717968425964,
-    "continent": "Asia"
+    "lat": 38.199835,
+    "lon": 72.587276,
+    "continent": "Asia",
+    "labelRank": 4,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Kyrgyzstan",
+    "name": "Quirguistão",
     "key": "Kyrgyzstan",
-    "lat": 41.36375089313491,
-    "lon": 73.97675917231999,
-    "continent": "Asia"
+    "lat": 41.66854,
+    "lon": 74.532637,
+    "continent": "Asia",
+    "labelRank": 4,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Turkmenistan",
+    "name": "Turquemenistão",
     "key": "Turkmenistan",
-    "lat": 39.330052037250695,
-    "lon": 58.45692163966276,
-    "continent": "Asia"
+    "lat": 39.855246,
+    "lon": 58.676647,
+    "continent": "Asia",
+    "labelRank": 4,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Iran",
+    "name": "Irão",
     "key": "Iran",
-    "lat": 33.354020420092496,
-    "lon": 53.231849484592935,
-    "continent": "Asia"
+    "lat": 32.166225,
+    "lon": 54.931495,
+    "continent": "Asia",
+    "labelRank": 2,
+    "minLabel": 2.5,
+    "maxLabel": 6.7
   },
   {
     "name": "Síria",
     "key": "Syria",
-    "lat": 35.14620702207313,
-    "lon": 37.95019842120447,
-    "continent": "Asia"
+    "lat": 35.006636,
+    "lon": 38.277783,
+    "continent": "Asia",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Armenia",
+    "name": "Arménia",
     "key": "Armenia",
-    "lat": 39.94548585668253,
-    "lon": 45.31039228697465,
-    "continent": "Asia"
+    "lat": 40.459077,
+    "lon": 44.800564,
+    "continent": "Asia",
+    "labelRank": 6,
+    "minLabel": 5,
+    "maxLabel": 10
   },
   {
-    "name": "Sweden",
+    "name": "Suécia",
     "key": "Sweden",
-    "lat": 62.73938847009565,
-    "lon": 16.563280053379835,
-    "continent": "Europe"
+    "lat": 65.85918,
+    "lon": 19.01705,
+    "continent": "Europe",
+    "labelRank": 3,
+    "minLabel": 2,
+    "maxLabel": 7
   },
   {
-    "name": "Belarus",
+    "name": "Bielorrússia",
     "key": "Belarus",
-    "lat": 53.34756871858299,
-    "lon": 28.300338139428543,
-    "continent": "Europe"
+    "lat": 53.821888,
+    "lon": 28.417701,
+    "continent": "Europe",
+    "labelRank": 4,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
     "name": "Ucrânia",
     "key": "Ukraine",
-    "lat": 48.686981186909485,
-    "lon": 30.45089038352593,
-    "continent": "Europe"
+    "lat": 49.724739,
+    "lon": 32.140865,
+    "continent": "Europe",
+    "labelRank": 3,
+    "minLabel": 2.7,
+    "maxLabel": 7
   },
   {
-    "name": "Poland",
+    "name": "Polónia",
     "key": "Poland",
-    "lat": 51.744799949295185,
-    "lon": 19.475697028624772,
-    "continent": "Europe"
+    "lat": 51.990316,
+    "lon": 19.490468,
+    "continent": "Europe",
+    "labelRank": 3,
+    "minLabel": 2.5,
+    "maxLabel": 7
   },
   {
-    "name": "Austria",
+    "name": "Áustria",
     "key": "Austria",
-    "lat": 47.64469880919829,
-    "lon": 13.484573184053136,
-    "continent": "Europe"
+    "lat": 47.518859,
+    "lon": 14.130515,
+    "continent": "Europe",
+    "labelRank": 4,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Hungary",
+    "name": "Hungria",
     "key": "Hungary",
-    "lat": 47.41615630426087,
-    "lon": 19.231928762074265,
-    "continent": "Europe"
+    "lat": 47.086841,
+    "lon": 19.447867,
+    "continent": "Europe",
+    "labelRank": 5,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Moldova",
+    "name": "Moldávia",
     "key": "Moldova",
-    "lat": 47.04663959560404,
-    "lon": 28.470352139337837,
-    "continent": "Europe"
+    "lat": 47.434999,
+    "lon": 28.487904,
+    "continent": "Europe",
+    "labelRank": 6,
+    "minLabel": 5,
+    "maxLabel": 10
   },
   {
-    "name": "Romania",
+    "name": "Roménia",
     "key": "Romania",
-    "lat": 45.85676198992558,
-    "lon": 25.188283660961975,
-    "continent": "Europe"
+    "lat": 45.733237,
+    "lon": 24.972624,
+    "continent": "Europe",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Lithuania",
+    "name": "Lituânia",
     "key": "Lithuania",
-    "lat": 55.200951592998884,
-    "lon": 24.01655264016524,
-    "continent": "Europe"
+    "lat": 55.103703,
+    "lon": 24.089932,
+    "continent": "Europe",
+    "labelRank": 5,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Latvia",
+    "name": "Letónia",
     "key": "Latvia",
-    "lat": 56.85766555997136,
-    "lon": 24.94021212220921,
-    "continent": "Europe"
+    "lat": 57.066872,
+    "lon": 25.458723,
+    "continent": "Europe",
+    "labelRank": 5,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Estonia",
+    "name": "Estónia",
     "key": "Estonia",
-    "lat": 58.697071288106564,
-    "lon": 26.142054039535186,
-    "continent": "Europe"
+    "lat": 58.724865,
+    "lon": 25.867126,
+    "continent": "Europe",
+    "labelRank": 6,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
     "name": "Alemanha",
     "key": "Germany",
-    "lat": 51.04436702303161,
-    "lon": 10.69112609778714,
-    "continent": "Europe"
+    "lat": 50.961733,
+    "lon": 9.678348,
+    "continent": "Europe",
+    "labelRank": 2,
+    "minLabel": 1.7,
+    "maxLabel": 6.7
   },
   {
-    "name": "Bulgaria",
+    "name": "Bulgária",
     "key": "Bulgaria",
-    "lat": 42.89366120052572,
-    "lon": 24.68732108502272,
-    "continent": "Europe"
+    "lat": 42.508785,
+    "lon": 25.15709,
+    "continent": "Europe",
+    "labelRank": 4,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Greece",
+    "name": "Grécia",
     "key": "Greece",
-    "lat": 39.79631364375165,
-    "lon": 23.13811129302312,
-    "continent": "Europe"
+    "lat": 39.492763,
+    "lon": 21.72568,
+    "continent": "Europe",
+    "labelRank": 3,
+    "minLabel": 2.7,
+    "maxLabel": 8
   },
   {
-    "name": "Turkey",
+    "name": "Turquia",
     "key": "Turkey",
-    "lat": 38.3781432584151,
-    "lon": 36.90125640933359,
-    "continent": "Asia"
+    "lat": 39.345388,
+    "lon": 34.508268,
+    "continent": "Asia",
+    "labelRank": 2,
+    "minLabel": 2,
+    "maxLabel": 7
   },
   {
-    "name": "Albania",
+    "name": "Albânia",
     "key": "Albania",
-    "lat": 41.28046204017739,
-    "lon": 20.116781129214605,
-    "continent": "Europe"
+    "lat": 40.654855,
+    "lon": 20.11384,
+    "continent": "Europe",
+    "labelRank": 6,
+    "minLabel": 5,
+    "maxLabel": 10
   },
   {
     "name": "Croácia",
     "key": "Croatia",
-    "lat": 44.84539928661109,
-    "lon": 16.431294552188987,
-    "continent": "Europe"
+    "lat": 45.805799,
+    "lon": 16.37241,
+    "continent": "Europe",
+    "labelRank": 6,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
     "name": "Suíça",
     "key": "Switzerland",
-    "lat": 46.796854263217654,
-    "lon": 8.306507551719198,
-    "continent": "Europe"
+    "lat": 46.719114,
+    "lon": 7.463965,
+    "continent": "Europe",
+    "labelRank": 4,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
     "name": "Luxemburgo",
     "key": "Luxembourg",
-    "lat": 49.92248003017552,
-    "lon": 5.488580380113445,
-    "continent": "Europe"
+    "lat": 49.9637,
+    "lon": 5.50117,
+    "continent": "Europe",
+    "labelRank": 6,
+    "minLabel": 5.7,
+    "maxLabel": 10
   },
   {
     "name": "Bélgica",
     "key": "Belgium",
-    "lat": 50.715869305701716,
-    "lon": 4.432619235661098,
-    "continent": "Europe"
+    "lat": 50.785392,
+    "lon": 4.800448,
+    "continent": "Europe",
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Netherlands",
+    "name": "Países Baixos",
     "key": "Netherlands",
-    "lat": 52.10253550520834,
-    "lon": 5.489893619860956,
-    "continent": "Europe"
+    "lat": 52.422211,
+    "lon": 5.61144,
+    "continent": "Europe",
+    "labelRank": 5,
+    "minLabel": 4,
+    "maxLabel": 10
   },
   {
     "name": "Portugal",
     "key": "Portugal",
-    "lat": 39.764078520687576,
-    "lon": -8.038668314367241,
-    "continent": "Europe"
+    "lat": 39.606675,
+    "lon": -8.271754,
+    "continent": "Europe",
+    "labelRank": 2,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
     "name": "Espanha",
     "key": "Spain",
-    "lat": 40.17528428887778,
-    "lon": -4.450721437278488,
-    "continent": "Europe"
+    "lat": 40.090953,
+    "lon": -3.464718,
+    "continent": "Europe",
+    "labelRank": 2,
+    "minLabel": 2,
+    "maxLabel": 7
   },
   {
-    "name": "Ireland",
+    "name": "República da Irlanda",
     "key": "Ireland",
-    "lat": 53.53152310774475,
-    "lon": -7.7233234865998845,
-    "continent": "Europe"
+    "lat": 53.078726,
+    "lon": -7.798588,
+    "continent": "Europe",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "New Caledonia",
+    "name": "Nova Caledónia",
     "key": "New Caledonia",
-    "lat": -21.17765753470657,
-    "lon": 165.5116580000957,
-    "continent": "Oceania"
+    "lat": -21.064697,
+    "lon": 165.084004,
+    "continent": "Oceania",
+    "labelRank": 3,
+    "minLabel": 4.6,
+    "maxLabel": 8
   },
   {
-    "name": "Solomon Is.",
+    "name": "Ilhas Salomão",
     "key": "Solomon Is.",
-    "lat": -7.898506949272388,
-    "lon": 159.13148382207987,
-    "continent": "Oceania"
+    "lat": -8.029548,
+    "lon": 159.170468,
+    "continent": "Oceania",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "New Zealand",
+    "name": "Nova Zelândia",
     "key": "New Zealand",
-    "lat": -38.197151381178884,
-    "lon": 175.48133425210403,
-    "continent": "Oceania"
+    "lat": -39.759,
+    "lon": 172.787,
+    "continent": "Oceania",
+    "labelRank": 2,
+    "minLabel": 2,
+    "maxLabel": 6.7
   },
   {
     "name": "Austrália",
     "key": "Australia",
     "lat": -25,
     "lon": 133,
-    "continent": "Oceania"
+    "continent": "Oceania",
+    "labelRank": 2,
+    "minLabel": 1.7,
+    "maxLabel": 5.7
   },
   {
     "name": "Sri Lanka",
     "key": "Sri Lanka",
-    "lat": 7.631441473822145,
-    "lon": 80.86381904492937,
-    "continent": "Asia"
+    "lat": 7.581097,
+    "lon": 80.704823,
+    "continent": "Asia",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
     "name": "China",
     "key": "China",
-    "lat": 37.306994858531695,
-    "lon": 105.66841288127803,
-    "continent": "Asia"
+    "lat": 32.498178,
+    "lon": 106.337289,
+    "continent": "Asia",
+    "labelRank": 2,
+    "minLabel": 1.7,
+    "maxLabel": 5.7
   },
   {
     "name": "Taiwan",
     "key": "Taiwan",
-    "lat": 23.861400571290137,
-    "lon": 121.10506531968525,
-    "continent": "Asia"
+    "lat": 23.652408,
+    "lon": 120.868204,
+    "continent": "Asia",
+    "labelRank": 3,
+    "minLabel": 4.5,
+    "maxLabel": 8
   },
   {
     "name": "Itália",
     "key": "Italy",
-    "lat": 43.08665779858716,
-    "lon": 12.626575666046081,
-    "continent": "Europe"
+    "lat": 44.732482,
+    "lon": 11.076907,
+    "continent": "Europe",
+    "labelRank": 2,
+    "minLabel": 2,
+    "maxLabel": 7
   },
   {
-    "name": "Denmark",
+    "name": "Dinamarca",
     "key": "Denmark",
-    "lat": 56.27796051698551,
-    "lon": 9.622694080813366,
-    "continent": "Europe"
+    "lat": 55.966965,
+    "lon": 9.018163,
+    "continent": "Europe",
+    "labelRank": 4,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
     "name": "Reino Unido",
     "key": "United Kingdom",
-    "lat": 53.89674201422315,
-    "lon": -3.0846018183171373,
-    "continent": "Europe"
+    "lat": 54.402739,
+    "lon": -2.116346,
+    "continent": "Europe",
+    "labelRank": 2,
+    "minLabel": 1.7,
+    "maxLabel": 6.7
   },
   {
-    "name": "Iceland",
+    "name": "Islândia",
     "key": "Iceland",
-    "lat": 65.27802873398113,
-    "lon": -19.265977413397614,
-    "continent": "Europe"
+    "lat": 64.779286,
+    "lon": -18.673711,
+    "continent": "Europe",
+    "labelRank": 3,
+    "minLabel": 2,
+    "maxLabel": 7
   },
   {
-    "name": "Azerbaijan",
+    "name": "Azerbaijão",
     "key": "Azerbaijan",
-    "lat": 40.37340895879181,
-    "lon": 47.405682649494516,
-    "continent": "Asia"
+    "lat": 40.402387,
+    "lon": 47.210994,
+    "continent": "Asia",
+    "labelRank": 5,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Georgia",
+    "name": "Geórgia",
     "key": "Georgia",
-    "lat": 32.344118260359096,
-    "lon": -82.71912442878983,
-    "continent": "Asia"
+    "lat": 32.8547,
+    "lon": -83.4078,
+    "continent": "Asia",
+    "labelRank": 5,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Philippines",
+    "name": "Filipinas",
     "key": "Philippines",
-    "lat": 15.369240719976444,
-    "lon": 121.81593937189636,
-    "continent": "Asia"
+    "lat": 11.198,
+    "lon": 122.465,
+    "continent": "Asia",
+    "labelRank": 2,
+    "minLabel": 2.5,
+    "maxLabel": 7
   },
   {
-    "name": "Malaysia",
+    "name": "Malásia",
     "key": "Malaysia",
-    "lat": 3.6786828156120057,
-    "lon": 114.76792654392132,
-    "continent": "Asia"
+    "lat": 2.528667,
+    "lon": 113.83708,
+    "continent": "Asia",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
     "name": "Brunei",
     "key": "Brunei",
-    "lat": 4.743644873468796,
-    "lon": 114.99846418666749,
-    "continent": "Asia"
+    "lat": 4.448298,
+    "lon": 114.551943,
+    "continent": "Asia",
+    "labelRank": 6,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
     "name": "Eslovênia",
     "key": "Slovenia",
-    "lat": 46.107082627947435,
-    "lon": 14.995377909683235,
-    "continent": "Europe"
+    "lat": 46.06076,
+    "lon": 14.915312,
+    "continent": "Europe",
+    "labelRank": 6,
+    "minLabel": 5,
+    "maxLabel": 10
   },
   {
-    "name": "Finland",
+    "name": "Finlândia",
     "key": "Finland",
-    "lat": 65.22839810358025,
-    "lon": 25.88675196818583,
-    "continent": "Europe"
+    "lat": 63.252361,
+    "lon": 27.276449,
+    "continent": "Europe",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Slovakia",
+    "name": "Eslováquia",
     "key": "Slovakia",
-    "lat": 48.7638408288636,
-    "lon": 19.35183738975511,
-    "continent": "Europe"
+    "lat": 48.734044,
+    "lon": 19.049868,
+    "continent": "Europe",
+    "labelRank": 6,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
     "name": "Chéquia",
     "key": "Czechia",
-    "lat": 49.778659183486646,
-    "lon": 15.848031167995181,
-    "continent": "Europe"
+    "lat": 49.882364,
+    "lon": 15.377555,
+    "continent": "Europe",
+    "labelRank": 5,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Eritrea",
+    "name": "Eritreia",
     "key": "Eritrea",
-    "lat": 14.712020657571582,
-    "lon": 39.58833816970491,
-    "continent": "Africa"
+    "lat": 15.787401,
+    "lon": 38.285566,
+    "continent": "Africa",
+    "labelRank": 4,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
     "name": "Japão",
     "key": "Japan",
     "lat": 36.2,
     "lon": 138.25,
-    "continent": "Asia"
+    "continent": "Asia",
+    "labelRank": 2,
+    "minLabel": 1.7,
+    "maxLabel": 7
   },
   {
-    "name": "Paraguay",
+    "name": "Paraguai",
     "key": "Paraguay",
-    "lat": -23.301975686181652,
-    "lon": -57.56991794465535,
-    "continent": "South America"
+    "lat": -21.674509,
+    "lon": -60.146394,
+    "continent": "South America",
+    "labelRank": 4,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Yemen",
+    "name": "Iémen",
     "key": "Yemen",
-    "lat": 15.51189292408597,
-    "lon": 46.47150417181891,
-    "continent": "Asia"
+    "lat": 15.328226,
+    "lon": 45.874383,
+    "continent": "Asia",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Saudi Arabia",
+    "name": "Arábia Saudita",
     "key": "Saudi Arabia",
-    "lat": 24.04020401125843,
-    "lon": 43.59399494595902,
-    "continent": "Asia"
+    "lat": 23.806908,
+    "lon": 44.6996,
+    "continent": "Asia",
+    "labelRank": 2,
+    "minLabel": 1.7,
+    "maxLabel": 7
   },
   {
-    "name": "Antarctica",
+    "name": "Antártida",
     "key": "Antarctica",
-    "lat": -78.62827077501336,
-    "lon": 1.5936242714786895,
-    "continent": "Antarctica"
+    "lat": -81.6905,
+    "lon": 0.238256,
+    "continent": "Antarctica",
+    "labelRank": 4,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "N. Cyprus",
+    "name": "República Turca do Chipre do Norte",
     "key": "N. Cyprus",
-    "lat": 35.17730726271001,
-    "lon": 33.42654725010256,
-    "continent": "Asia"
+    "lat": 35.216071,
+    "lon": 33.692434,
+    "continent": "Asia",
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 10
   },
   {
     "name": "Chipre",
     "key": "Cyprus",
-    "lat": 35.02459974487356,
-    "lon": 33.24416583293332,
-    "continent": "Asia"
+    "lat": 34.913329,
+    "lon": 33.084182,
+    "continent": "Asia",
+    "labelRank": 5,
+    "minLabel": 4.5,
+    "maxLabel": 9.5
   },
   {
-    "name": "Morocco",
+    "name": "Marrocos",
     "key": "Morocco",
-    "lat": 28.76984335812825,
-    "lon": -9.425936349142768,
-    "continent": "Africa"
+    "lat": 31.650723,
+    "lon": -7.187296,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 2.7,
+    "maxLabel": 8
   },
   {
     "name": "Egito",
     "key": "Egypt",
-    "lat": 28.175055968116666,
-    "lon": 31.69790109166886,
-    "continent": "Africa"
+    "lat": 26.186173,
+    "lon": 29.445837,
+    "continent": "Africa",
+    "labelRank": 2,
+    "minLabel": 1.7,
+    "maxLabel": 6.7
   },
   {
-    "name": "Libya",
+    "name": "Líbia",
     "key": "Libya",
-    "lat": 28.47683414828998,
-    "lon": 16.638207721172076,
-    "continent": "Africa"
+    "lat": 26.638944,
+    "lon": 18.011015,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Ethiopia",
+    "name": "Etiópia",
     "key": "Ethiopia",
-    "lat": 8.983416974390158,
-    "lon": 39.2091576018003,
-    "continent": "Africa"
+    "lat": 8.032795,
+    "lon": 39.0886,
+    "continent": "Africa",
+    "labelRank": 2,
+    "minLabel": 2,
+    "maxLabel": 7
   },
   {
     "name": "Djibouti",
     "key": "Djibouti",
-    "lat": 11.567151521317442,
-    "lon": 43.017756635486094,
-    "continent": "Africa"
+    "lat": 11.5524,
+    "lon": 43.037,
+    "continent": "Africa",
+    "labelRank": 5,
+    "minLabel": 4,
+    "maxLabel": 9
   },
   {
-    "name": "Somaliland",
+    "name": "Somalilândia",
     "key": "Somaliland",
-    "lat": 10.299110193150707,
-    "lon": 45.607615908224226,
-    "continent": "Africa"
+    "lat": 9.63996,
+    "lon": 45.7932,
+    "continent": "Africa",
+    "labelRank": 5,
+    "minLabel": 4.5,
+    "maxLabel": 9
   },
   {
     "name": "Uganda",
     "key": "Uganda",
-    "lat": 1.3389631630131444,
-    "lon": 31.951231798434637,
-    "continent": "Africa"
+    "lat": 1.972589,
+    "lon": 32.948555,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Rwanda",
+    "name": "Ruanda",
     "key": "Rwanda",
-    "lat": -2.0071987440533627,
-    "lon": 29.92947457320802,
-    "continent": "Africa"
+    "lat": -1.897196,
+    "lon": 30.103894,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   },
   {
-    "name": "Bosnia and Herz.",
+    "name": "Bósnia e Herzegovina",
     "key": "Bosnia and Herz.",
-    "lat": 44.18504011599276,
-    "lon": 17.92135662727215,
-    "continent": "Europe"
+    "lat": 44.091051,
+    "lon": 18.06841,
+    "continent": "Europe",
+    "labelRank": 5,
+    "minLabel": 4.5,
+    "maxLabel": 6.8
   },
   {
-    "name": "North Macedonia",
+    "name": "Macedónia do Norte",
     "key": "North Macedonia",
-    "lat": 41.683540408995064,
-    "lon": 21.626566460487435,
-    "continent": "Europe"
+    "lat": 41.558223,
+    "lon": 21.555839,
+    "continent": "Europe",
+    "labelRank": 6,
+    "minLabel": 5,
+    "maxLabel": 10
   },
   {
-    "name": "Serbia",
+    "name": "Sérvia",
     "key": "Serbia",
-    "lat": 43.894671901462395,
-    "lon": 20.85544647584182,
-    "continent": "Europe"
+    "lat": 44.189919,
+    "lon": 20.787989,
+    "continent": "Europe",
+    "labelRank": 5,
+    "minLabel": 4,
+    "maxLabel": 7
   },
   {
     "name": "Montenegro",
     "key": "Montenegro",
-    "lat": 42.741404384107284,
-    "lon": 19.446579219260975,
-    "continent": "Europe"
+    "lat": 42.803101,
+    "lon": 19.143727,
+    "continent": "Europe",
+    "labelRank": 6,
+    "minLabel": 5,
+    "maxLabel": 10
   },
   {
     "name": "Kosovo",
     "key": "Kosovo",
-    "lat": 42.54599413064024,
-    "lon": 20.957034218711673,
-    "continent": "Europe"
+    "lat": 42.593587,
+    "lon": 20.860719,
+    "continent": "Europe",
+    "labelRank": 6,
+    "minLabel": 5,
+    "maxLabel": 10
   },
   {
-    "name": "Trinidad and Tobago",
+    "name": "Trinidad e Tobago",
     "key": "Trinidad and Tobago",
-    "lat": 10.478750000000002,
-    "lon": -61.459375,
-    "continent": "North America"
+    "lat": 10.9989,
+    "lon": -60.9184,
+    "continent": "North America",
+    "labelRank": 5,
+    "minLabel": 4.5,
+    "maxLabel": 9.5
   },
   {
-    "name": "S. Sudan",
+    "name": "Sudão do Sul",
     "key": "S. Sudan",
-    "lat": 8.0097725335214,
-    "lon": 30.092555156449862,
-    "continent": "Africa"
+    "lat": 7.230477,
+    "lon": 30.390151,
+    "continent": "Africa",
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 8
   }
 ]

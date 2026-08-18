@@ -2,37 +2,55 @@
   {
     "name": "Central River",
     "key": "central river",
-    "lat": 13.629308041650841,
-    "lon": -15.03346855560697
+    "lat": 13.637,
+    "lon": -14.9804,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "North Bank",
     "key": "north bank",
-    "lat": 13.520877035416046,
-    "lon": -15.806652705757607
+    "lat": 13.5236,
+    "lon": -15.9799,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Upper River",
     "key": "upper river",
-    "lat": 13.41116451613117,
-    "lon": -14.233780382165946
+    "lat": 13.3797,
+    "lon": -14.1857,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Lower River",
     "key": "lower river",
-    "lat": 13.421220842121576,
-    "lon": -15.567483641429511
+    "lat": 13.4062,
+    "lon": -15.7046,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "West Coast",
+    "name": "Western",
     "key": "west coast",
-    "lat": 13.263897488937568,
-    "lon": -16.378015429087608
+    "lat": 13.2212,
+    "lon": -16.3138,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Banjul",
     "key": "banjul",
-    "lat": 13.422796942500057,
-    "lon": -16.70005245674993
+    "lat": 13.4063,
+    "lon": -16.6831,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   }
 ]

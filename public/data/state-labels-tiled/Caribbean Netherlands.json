@@ -2,7 +2,10 @@
   {
     "name": "Bonaire",
     "key": "bonaire",
-    "lat": 12.244110418800062,
-    "lon": -68.30861568939994
+    "lat": 12.2314,
+    "lon": -68.3029,
+    "labelRank": 20,
+    "minLabel": 11,
+    "maxLabel": 11
   }
 ]

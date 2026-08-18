@@ -1,98 +1,146 @@
 [
   {
-    "name": "Sabah",
+    "name": "Sabá",
     "key": "sabah",
-    "lat": 5.439484818767832,
-    "lon": 117.18457864291447
+    "lat": 5.31115,
+    "lon": 117.095,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Perlis",
     "key": "perlis",
-    "lat": 6.539010572269008,
-    "lon": 100.24976356243708
+    "lat": 6.52169,
+    "lon": 100.253,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Kedah",
+    "name": "Quedá",
     "key": "kedah",
-    "lat": 5.858680968742558,
-    "lon": 100.63830190390303
+    "lat": 5.80958,
+    "lon": 100.647,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Kelantan",
     "key": "kelantan",
-    "lat": 5.36579543504571,
-    "lon": 102.06283140463695
+    "lat": 5.40349,
+    "lon": 102.005,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Perak",
     "key": "perak",
-    "lat": 4.825402301203064,
-    "lon": 101.12187908666486
+    "lat": 4.74737,
+    "lon": 101.059,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Sarawak",
     "key": "sarawak",
-    "lat": 2.7760977089386234,
-    "lon": 113.36922742857058
+    "lat": 2.44952,
+    "lon": 113.344,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Pulau Pinang",
+    "name": "Penang",
     "key": "pulau pinang",
-    "lat": 5.277580453049775,
-    "lon": 100.45550925902873
+    "lat": 5.36839,
+    "lon": 100.261,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Selangor",
     "key": "selangor",
-    "lat": 3.298222327026168,
-    "lon": 101.44370840905303
+    "lat": 3.3078,
+    "lon": 101.428,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Negeri Sembilan",
     "key": "negeri sembilan",
-    "lat": 2.6826742388535845,
-    "lon": 102.12244271086001
+    "lat": 2.70857,
+    "lon": 102.149,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
-    "name": "Melaka",
+    "name": "Malaca",
     "key": "melaka",
-    "lat": 2.3181026086636436,
-    "lon": 102.35509168042137
+    "lat": 2.32162,
+    "lon": 102.293,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Johor",
     "key": "johor",
-    "lat": 2.1386893112040593,
-    "lon": 103.43487107704284
+    "lat": 2.00649,
+    "lon": 103.412,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Pahang",
     "key": "pahang",
-    "lat": 3.820478333224885,
-    "lon": 102.63936151923545
+    "lat": 3.84557,
+    "lon": 102.491,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Terengganu",
     "key": "terengganu",
-    "lat": 4.87993955072809,
-    "lon": 102.87346237274532
+    "lat": 4.94214,
+    "lon": 103.013,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Labuan",
     "key": "labuan",
-    "lat": 5.3267845720000535,
-    "lon": 115.22128339940006
+    "lat": 5.32524,
+    "lon": 115.222,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Kuala Lumpur",
     "key": "kuala lumpur",
-    "lat": 3.1600193141000545,
-    "lon": 101.70985411961189
+    "lat": 3.13836,
+    "lon": 101.698,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Putrajaya",
     "key": "putrajaya",
-    "lat": 2.9108626881125588,
-    "lon": 101.69179579039339
+    "lat": 2.93814,
+    "lon": 101.706,
+    "labelRank": 6,
+    "minLabel": 7,
+    "maxLabel": 11
   }
 ]

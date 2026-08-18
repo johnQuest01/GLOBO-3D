@@ -1,44 +1,65 @@
 [
   {
-    "name": "Ar Rayyān",
+    "name": "Al Rayyan",
     "key": "ar rayyān",
-    "lat": 25.139598011606747,
-    "lon": 51.12837465158109
+    "lat": 25.1648,
+    "lon": 51.1605,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Al Wakrah",
+    "name": "Al-Wakrah",
     "key": "al wakrah",
-    "lat": 25.016569200542428,
-    "lon": 51.4569459825027
+    "lat": 24.9661,
+    "lon": 51.4743,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Ad Dawhah",
+    "name": "Doha",
     "key": "ad dawhah",
-    "lat": 25.316211411954168,
-    "lon": 51.526175733497794
+    "lat": 25.2686,
+    "lon": 51.5282,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Al Daayen",
     "key": "al daayen",
-    "lat": 25.509928247411164,
-    "lon": 51.484189541536374
+    "lat": 25.4579,
+    "lon": 51.4671,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Al Khawr",
+    "name": "Al Khor",
     "key": "al khawr",
-    "lat": 25.77851929216842,
-    "lon": 51.28739817898459
+    "lat": 25.7512,
+    "lon": 51.4212,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Madinat ach Shamal",
+    "name": "Madinat ash Shamal",
     "key": "madinat ach shamal",
-    "lat": 25.9783819615058,
-    "lon": 51.15866882889723
+    "lat": 26.0095,
+    "lon": 51.1832,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Umm Salal",
     "key": "umm salal",
-    "lat": 25.485300187293785,
-    "lon": 51.34497955985877
+    "lat": 25.4594,
+    "lon": 51.3552,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   }
 ]

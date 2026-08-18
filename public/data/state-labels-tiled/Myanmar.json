@@ -1,86 +1,128 @@
 [
   {
-    "name": "Rakhine",
+    "name": "Arracão",
     "key": "rakhine",
-    "lat": 19.669422428498116,
-    "lon": 93.71443551278709
+    "lat": 20.2747,
+    "lon": 93.6396,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Chin",
     "key": "chin",
-    "lat": 22.239492438017905,
-    "lon": 93.53670565726989
+    "lat": 21.9262,
+    "lon": 93.3727,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Kachin",
     "key": "kachin",
-    "lat": 26.11443783581366,
-    "lon": 97.3505568637462
+    "lat": 25.7926,
+    "lon": 97.2978,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Sagaing",
     "key": "sagaing",
-    "lat": 24.59035032182388,
-    "lon": 95.54764503822156
+    "lat": 23.7031,
+    "lon": 95.1821,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Shan",
     "key": "shan",
-    "lat": 21.533532068771137,
-    "lon": 98.22053314743118
+    "lat": 21.5185,
+    "lon": 98.1593,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Kayah",
     "key": "kayah",
-    "lat": 19.29448306948241,
-    "lon": 97.43068476338384
+    "lat": 19.2658,
+    "lon": 97.3526,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Kayin",
     "key": "kayin",
-    "lat": 17.464127798402398,
-    "lon": 97.65641943977428
+    "lat": 17.3996,
+    "lon": 97.651,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Mon",
     "key": "mon",
-    "lat": 15.683373306946768,
-    "lon": 97.87330780303711
+    "lat": 16.3045,
+    "lon": 97.8062,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Tanintharyi",
     "key": "tanintharyi",
-    "lat": 12.576763611605688,
-    "lon": 98.67207053083959
+    "lat": 13.6116,
+    "lon": 98.7746,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Ayeyarwady",
     "key": "ayeyarwady",
-    "lat": 16.86623030992161,
-    "lon": 95.0661773042183
+    "lat": 16.7457,
+    "lon": 95.1083,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Yangon",
     "key": "yangon",
-    "lat": 16.89680657100921,
-    "lon": 96.24526985144927
+    "lat": 17.1117,
+    "lon": 96.111,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Bago",
     "key": "bago",
-    "lat": 18.240608928080373,
-    "lon": 96.22255966262388
+    "lat": 18.518,
+    "lon": 96.1485,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Magway",
     "key": "magway",
-    "lat": 20.43375305131939,
-    "lon": 94.81309834452723
+    "lat": 19.6473,
+    "lon": 94.8807,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   },
   {
     "name": "Mandalay",
     "key": "mandalay",
-    "lat": 21.3432873830227,
-    "lon": 96.03947756764303
+    "lat": 20.6284,
+    "lon": 96.0614,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 11
   }
 ]

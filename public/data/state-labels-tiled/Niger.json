@@ -2,49 +2,73 @@
   {
     "name": "Tahoua",
     "key": "tahoua",
-    "lat": 15.755834984769246,
-    "lon": 5.193679580054351
+    "lat": 15.6002,
+    "lon": 5.27361,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Dosso",
     "key": "dosso",
-    "lat": 13.184039253752822,
-    "lon": 3.5560155923161707
+    "lat": 12.8124,
+    "lon": 3.55023,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Diffa",
     "key": "diffa",
-    "lat": 14.589636712169575,
-    "lon": 12.780508935288022
+    "lat": 15.7652,
+    "lon": 13.0899,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Maradi",
     "key": "maradi",
-    "lat": 14.024861915107953,
-    "lon": 7.3565967509328765
+    "lat": 14.1148,
+    "lon": 7.41198,
+    "labelRank": 7,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Zinder",
     "key": "zinder",
-    "lat": 14.436216395508415,
-    "lon": 9.408619698146502
+    "lat": 14.5314,
+    "lon": 9.66231,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Tillabéri",
     "key": "tillabéri",
-    "lat": 13.784695851373161,
-    "lon": 2.233486170300631
+    "lat": 13.8777,
+    "lon": 2.19539,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Agadez",
     "key": "agadez",
-    "lat": 18.823890642842052,
-    "lon": 9.673140480024246
+    "lat": 19.4523,
+    "lon": 10.0991,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   },
   {
     "name": "Niamey",
     "key": "niamey",
-    "lat": 13.541203944356539,
-    "lon": 2.123934860555361
+    "lat": 13.562,
+    "lon": 2.12167,
+    "labelRank": 6,
+    "minLabel": 6.6,
+    "maxLabel": 11
   }
 ]

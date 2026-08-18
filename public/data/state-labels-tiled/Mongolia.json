@@ -2,133 +2,199 @@
   {
     "name": "Dornod",
     "key": "dornod",
-    "lat": 48.04881500982756,
-    "lon": 115.90667560012905
+    "lat": 48.7766,
+    "lon": 114.261,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Bayan-Ölgiy",
     "key": "bayan-ölgiy",
-    "lat": 48.416352978232624,
-    "lon": 89.95012109423335
+    "lat": 48.8811,
+    "lon": 89.8127,
+    "labelRank": 7,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Hovd",
+    "name": "Khovd",
     "key": "hovd",
-    "lat": 46.97093495525049,
-    "lon": 92.23589506002928
+    "lat": 46.8037,
+    "lon": 92.4584,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Sühbaatar",
+    "name": "Sükhbaatar",
     "key": "sühbaatar",
-    "lat": 46.25971274964019,
-    "lon": 113.59324172309599
+    "lat": 46.1847,
+    "lon": 113.904,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Dornogovi",
+    "name": "Dornogovĭ",
     "key": "dornogovi",
-    "lat": 44.954192269728054,
-    "lon": 109.60665869773763
+    "lat": 44.4088,
+    "lon": 109.825,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Govi-Altay",
     "key": "govi-altay",
-    "lat": 45.57008483742282,
-    "lon": 95.60154943318598
+    "lat": 45.4627,
+    "lon": 95.7776,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Bayanhongor",
+    "name": "Bayankhongor",
     "key": "bayanhongor",
-    "lat": 45.58422055119476,
-    "lon": 99.56576840552727
+    "lat": 45.8317,
+    "lon": 99.6955,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Ömnögovi",
+    "name": "Ömnögovĭ",
     "key": "ömnögovi",
-    "lat": 43.53829525078621,
-    "lon": 103.99347890816792
+    "lat": 43.4636,
+    "lon": 103.762,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Hövsgöl",
+    "name": "Khövsgöl",
     "key": "hövsgöl",
-    "lat": 50.09700472071302,
-    "lon": 99.71854238105324
+    "lat": 50.1456,
+    "lon": 99.8205,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Bulgan",
     "key": "bulgan",
-    "lat": 49.00852300020273,
-    "lon": 103.39410939457385
+    "lat": 49.0014,
+    "lon": 103.196,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Uvs",
     "key": "uvs",
-    "lat": 49.59067330133063,
-    "lon": 92.94312803471192
+    "lat": 49.6911,
+    "lon": 92.8431,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Selenge",
     "key": "selenge",
-    "lat": 49.40003250237355,
-    "lon": 106.44573579853349
+    "lat": 48.8536,
+    "lon": 106.46,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Dzavhan",
+    "name": "Zavkhan",
     "key": "dzavhan",
-    "lat": 48.482018830158395,
-    "lon": 96.41647890417431
+    "lat": 48.615,
+    "lon": 96.1728,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Hentiy",
+    "name": "Khentiy",
     "key": "hentiy",
-    "lat": 47.70298708283599,
-    "lon": 110.38825499998886
+    "lat": 47.7116,
+    "lon": 110.542,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Darhan-Uul",
     "key": "darhan-uul",
-    "lat": 49.432361384220485,
-    "lon": 106.25934829541605
+    "lat": 49.3586,
+    "lon": 106.306,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Töv",
     "key": "töv",
-    "lat": 47.70640275073133,
-    "lon": 106.56371288450197
+    "lat": 47.1533,
+    "lon": 106.554,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Arhangay",
+    "name": "Arkhangay",
     "key": "arhangay",
-    "lat": 47.81224029460389,
-    "lon": 100.93919889159886
+    "lat": 48.0061,
+    "lon": 100.92,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Orhon",
     "key": "orhon",
-    "lat": 49.04225599667402,
-    "lon": 104.33820310163465
+    "lat": 49.0077,
+    "lon": 104.286,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Dundgovi",
+    "name": "Dundgovĭ",
     "key": "dundgovi",
-    "lat": 45.61275907084465,
-    "lon": 106.29024153465735
+    "lat": 45.4132,
+    "lon": 106.116,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Övörhangay",
+    "name": "Övörkhangay",
     "key": "övörhangay",
-    "lat": 46.0974911524734,
-    "lon": 102.88911646199978
+    "lat": 45.7785,
+    "lon": 102.857,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Govĭ-Sümber",
+    "name": "Govĭsümber",
     "key": "govĭ-sümber",
-    "lat": 47.779082207527836,
-    "lon": 108.36368398068112
+    "lat": 47.74,
+    "lon": 108.346,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Ulaanbaatar",
+    "name": "Ulan Bator",
     "key": "ulaanbaatar",
-    "lat": 47.92506580517002,
-    "lon": 107.0207244285804
+    "lat": 47.9597,
+    "lon": 106.967,
+    "labelRank": 9,
+    "minLabel": 6,
+    "maxLabel": 11
   }
 ]

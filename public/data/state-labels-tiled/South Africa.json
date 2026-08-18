@@ -1,56 +1,83 @@
 [
   {
-    "name": "Northern Cape",
+    "name": "Cabo Setentrional",
     "key": "northern cape",
-    "lat": -29.23837900192879,
-    "lon": 21.235166027107134
+    "lat": -29.7437,
+    "lon": 20.9961,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "KwaZulu-Natal",
     "key": "kwazulu-natal",
-    "lat": -28.67455080716736,
-    "lon": 30.41275014771613
+    "lat": -28.7468,
+    "lon": 30.8231,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
-    "name": "Free State",
+    "name": "Estado Livre",
     "key": "free state",
-    "lat": -28.562051238827426,
-    "lon": 27.31895023993104
+    "lat": -28.5815,
+    "lon": 26.4914,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
-    "name": "Eastern Cape",
+    "name": "Cabo Oriental",
     "key": "eastern cape",
-    "lat": -31.883329110087985,
-    "lon": 26.30843140060466
+    "lat": -32.0622,
+    "lon": 26.6417,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Limpopo",
     "key": "limpopo",
-    "lat": -23.981950434983446,
-    "lon": 29.314625631832797
+    "lat": -23.5859,
+    "lon": 29.1301,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
-    "name": "North West",
+    "name": "Noroeste",
     "key": "north west",
-    "lat": -26.326116127887293,
-    "lon": 25.40426365208857
+    "lat": -26.3999,
+    "lon": 25.7403,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Mpumalanga",
     "key": "mpumalanga",
-    "lat": -25.793445751362103,
-    "lon": 30.107659530968082
+    "lat": -25.9893,
+    "lon": 30.1421,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
-    "name": "Western Cape",
+    "name": "Cabo Ocidental",
     "key": "western cape",
-    "lat": -32.83252942695119,
-    "lon": 20.830276364018403
+    "lat": -33.5035,
+    "lon": 20.9745,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   },
   {
     "name": "Gauteng",
     "key": "gauteng",
-    "lat": -25.983285260895467,
-    "lon": 28.21039357294827
+    "lat": -26.1682,
+    "lon": 28.2074,
+    "labelRank": 2,
+    "minLabel": 4.6,
+    "maxLabel": 10.1
   }
 ]

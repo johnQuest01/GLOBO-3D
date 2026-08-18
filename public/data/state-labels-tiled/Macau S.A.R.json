@@ -2,7 +2,10 @@
   {
     "name": "Macau",
     "key": "macau",
-    "lat": 22.14319896040006,
-    "lon": 113.55303795680007
+    "lat": 22.1349,
+    "lon": 113.56,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

@@ -35,10 +35,9 @@ export const useGlobeStateAndHandlers = () => {
   const { animationState, ...animControls } = useAnimationControls();
   const { addSavedSpot } = useSavedVacationSpots();
 
-  // --- INÍCIO DA CORREÇÃO ---
-  // 'stateLabels' foi removido. O 'useLabelData' agora só retorna 'countryLabels'.
-  const { countryLabels, isLoadingLabels } = useLabelData();
-  // --- FIM DA CORREÇÃO ---
+  // Continentes e países vêm prontos daqui; estados e cidades são carregados
+  // sob demanda pelo próprio GlobeLabels, conforme o zoom pede a camada.
+  const { countryLabels, continentLabels, isLoadingLabels } = useLabelData();
 
   // ... (O resto dos seus states e handlers permanece o mesmo) ...
   // States
@@ -461,12 +460,9 @@ export const useGlobeStateAndHandlers = () => {
       animControls,
       rawContentData,
       translations,
-      // --- INÍCIO DA CORREÇÃO ---
-      // Passa apenas os dados dos países
       countryLabels,
-      // stateLabels, // REMOVIDO
+      continentLabels,
       isLoadingLabels,
-      // --- FIM DA CORREÇÃO ---
     },
   };
 };

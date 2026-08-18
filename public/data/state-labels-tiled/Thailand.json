@@ -2,463 +2,694 @@
   {
     "name": "Surin",
     "key": "surin",
-    "lat": 14.956612029561603,
-    "lon": 103.60668518802999
+    "lat": 14.9355,
+    "lon": 103.588,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Si Sa Ket",
     "key": "si sa ket",
-    "lat": 14.87159032201697,
-    "lon": 104.3823018455121
+    "lat": 14.8248,
+    "lon": 104.418,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Ubon Ratchathani",
     "key": "ubon ratchathani",
-    "lat": 15.143029671304717,
-    "lon": 105.1189418609304
+    "lat": 15.0137,
+    "lon": 105.016,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Sa Kaeo",
     "key": "sa kaeo",
-    "lat": 13.75005091579415,
-    "lon": 102.38951375502718
+    "lat": 13.8589,
+    "lon": 102.384,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Buri Ram",
     "key": "buri ram",
-    "lat": 15.006920897581345,
-    "lon": 102.97985248910106
+    "lat": 14.699,
+    "lon": 102.971,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Trat",
     "key": "trat",
-    "lat": 12.159033346216471,
-    "lon": 102.65392199628079
+    "lat": 12.3925,
+    "lon": 102.541,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Chanthaburi",
     "key": "chanthaburi",
-    "lat": 12.86949582875324,
-    "lon": 102.12369437205962
+    "lat": 12.8117,
+    "lon": 102.139,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Satun",
     "key": "satun",
-    "lat": 6.8642552241977555,
-    "lon": 99.97564408106767
+    "lat": 6.85827,
+    "lon": 99.9633,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Songkhla",
     "key": "songkhla",
-    "lat": 6.815593431331468,
-    "lon": 100.56080483899855
+    "lat": 6.81212,
+    "lon": 100.568,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Yala",
     "key": "yala",
-    "lat": 6.2159229822625,
-    "lon": 101.19700569748312
+    "lat": 6.14264,
+    "lon": 101.218,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Narathiwat",
     "key": "narathiwat",
-    "lat": 6.154895198055013,
-    "lon": 101.72702072665847
+    "lat": 6.17758,
+    "lon": 101.727,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Chiang Rai",
     "key": "chiang rai",
-    "lat": 19.780815418371276,
-    "lon": 99.84911109032286
+    "lat": 19.9607,
+    "lon": 99.9059,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Chiang Mai",
     "key": "chiang mai",
-    "lat": 18.779211517992167,
-    "lon": 98.76026945496041
+    "lat": 18.8368,
+    "lon": 98.6967,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Mae Hong Son",
     "key": "mae hong son",
-    "lat": 18.738217376448556,
-    "lon": 98.00034362132706
+    "lat": 18.4043,
+    "lon": 97.8911,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Tak",
     "key": "tak",
-    "lat": 16.683020439851788,
-    "lon": 98.70532102472954
+    "lat": 17.0043,
+    "lon": 98.8441,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Kanchanaburi",
     "key": "kanchanaburi",
-    "lat": 14.732651288692002,
-    "lon": 99.05009200914844
+    "lat": 14.3317,
+    "lon": 99.2969,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Prachuap Khiri Khan",
     "key": "prachuap khiri khan",
-    "lat": 11.936491305231945,
-    "lon": 99.59043975774068
+    "lat": 12.3053,
+    "lon": 99.7274,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Phetchaburi",
     "key": "phetchaburi",
-    "lat": 12.948341292047683,
-    "lon": 99.62166128520933
+    "lat": 12.8727,
+    "lon": 99.5964,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Ratchaburi",
     "key": "ratchaburi",
-    "lat": 13.50661715372163,
-    "lon": 99.62637926025104
+    "lat": 13.4964,
+    "lon": 99.6128,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Chumphon",
     "key": "chumphon",
-    "lat": 10.379650276276099,
-    "lon": 99.02364819648103
+    "lat": 10.3809,
+    "lon": 99.0755,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Ranong",
     "key": "ranong",
-    "lat": 10.02658981724808,
-    "lon": 98.72356094854719
+    "lat": 9.51717,
+    "lon": 98.58,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Phayao",
     "key": "phayao",
-    "lat": 19.30706596750509,
-    "lon": 100.2067501257019
+    "lat": 19.1866,
+    "lon": 100.16,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Nan",
     "key": "nan",
-    "lat": 18.842215019147563,
-    "lon": 100.82007759252001
+    "lat": 18.8264,
+    "lon": 100.837,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Uttaradit",
     "key": "uttaradit",
-    "lat": 17.7875137716792,
-    "lon": 100.51780343269665
+    "lat": 17.7188,
+    "lon": 100.531,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Phitsanulok",
     "key": "phitsanulok",
-    "lat": 17.02424975420936,
-    "lon": 100.50728268388558
+    "lat": 16.9748,
+    "lon": 100.49,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Loei",
     "key": "loei",
-    "lat": 17.48465217093207,
-    "lon": 101.59280807357695
+    "lat": 17.4099,
+    "lon": 101.517,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Bueng Kan",
+    "name": "Bungkan",
     "key": "bueng kan",
-    "lat": 18.14135541966102,
-    "lon": 103.66091243032301
+    "lat": 18.1565,
+    "lon": 103.752,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Nong Khai",
     "key": "nong khai",
-    "lat": 17.997284738149563,
-    "lon": 102.90546584012021
+    "lat": 17.7553,
+    "lon": 102.754,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Nakhon Phanom",
     "key": "nakhon phanom",
-    "lat": 17.397186525244415,
-    "lon": 104.38697030861901
+    "lat": 17.2227,
+    "lon": 104.628,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Mukdahan",
     "key": "mukdahan",
-    "lat": 16.554592653064297,
-    "lon": 104.50827798449956
+    "lat": 16.5636,
+    "lon": 104.531,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Amnat Charoen",
     "key": "amnat charoen",
-    "lat": 15.920690704848449,
-    "lon": 104.75594241759374
+    "lat": 15.8583,
+    "lon": 104.766,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Phangnga",
     "key": "phangnga",
-    "lat": 8.70911548224081,
-    "lon": 98.4562007563745
+    "lat": 8.57678,
+    "lon": 98.394,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Krabi",
     "key": "krabi",
-    "lat": 8.180075773316279,
-    "lon": 99.02901799280968
+    "lat": 8.1333,
+    "lon": 98.984,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Trang",
     "key": "trang",
-    "lat": 7.491924661776762,
-    "lon": 99.6727332377342
+    "lat": 7.56967,
+    "lon": 99.6467,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Pattani",
     "key": "pattani",
-    "lat": 6.727696063888711,
-    "lon": 101.340191108669
+    "lat": 6.7391,
+    "lon": 101.381,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Phatthalung",
     "key": "phatthalung",
-    "lat": 7.553189296910481,
-    "lon": 100.08114136245733
+    "lat": 7.47276,
+    "lon": 100.062,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Nakhon Si Thammarat",
     "key": "nakhon si thammarat",
-    "lat": 8.428581976616972,
-    "lon": 99.76029072449666
+    "lat": 8.37448,
+    "lon": 99.7819,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Surat Thani",
     "key": "surat thani",
-    "lat": 9.01844502741484,
-    "lon": 99.09436729451596
+    "lat": 9.0048,
+    "lon": 99.0107,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Samut Songkhram",
     "key": "samut songkhram",
-    "lat": 13.414339741418729,
-    "lon": 99.99230146644682
+    "lat": 13.4036,
+    "lon": 99.9736,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Samut Sakhon",
     "key": "samut sakhon",
-    "lat": 13.561483401792817,
-    "lon": 100.23601425022123
+    "lat": 13.5655,
+    "lon": 100.225,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
-    "name": "Bangkok Metropolis",
+    "name": "Banguecoque",
     "key": "bangkok metropolis",
-    "lat": 13.731371985337217,
-    "lon": 100.58590213043456
+    "lat": 13.793,
+    "lon": 100.626,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Samut Prakan",
     "key": "samut prakan",
-    "lat": 13.58345594612718,
-    "lon": 100.72648031637306
+    "lat": 13.606,
+    "lon": 100.704,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Chachoengsao",
     "key": "chachoengsao",
-    "lat": 13.65279636696229,
-    "lon": 101.26196579563812
+    "lat": 13.6342,
+    "lon": 101.419,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Chon Buri",
     "key": "chon buri",
-    "lat": 13.060997849506947,
-    "lon": 101.14554394315434
+    "lat": 13.2988,
+    "lon": 101.278,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Rayong",
     "key": "rayong",
-    "lat": 12.850751850357009,
-    "lon": 101.36390512717101
+    "lat": 12.8125,
+    "lon": 101.402,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Phuket",
     "key": "phuket",
-    "lat": 7.991026108600056,
-    "lon": 98.36498457120004
+    "lat": 7.97108,
+    "lon": 98.3472,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Khon Kaen",
     "key": "khon kaen",
-    "lat": 16.409779408232378,
-    "lon": 102.55909611842323
+    "lat": 16.5762,
+    "lon": 102.683,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Sakon Nakhon",
     "key": "sakon nakhon",
-    "lat": 17.430392021860015,
-    "lon": 103.80578820196392
+    "lat": 17.3577,
+    "lon": 103.845,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Suphan Buri",
     "key": "suphan buri",
-    "lat": 14.68131994255629,
-    "lon": 99.88546160271076
+    "lat": 14.4298,
+    "lon": 100.034,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Sing Buri",
     "key": "sing buri",
-    "lat": 14.949597218094263,
-    "lon": 100.31258687892414
+    "lat": 14.9746,
+    "lon": 100.343,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Chai Nat",
     "key": "chai nat",
-    "lat": 15.120957687454997,
-    "lon": 99.99719539097757
+    "lat": 15.1055,
+    "lon": 100.013,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Ang Thong",
     "key": "ang thong",
-    "lat": 14.607418030489132,
-    "lon": 100.33488895050748
+    "lat": 14.6335,
+    "lon": 100.357,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Saraburi",
     "key": "saraburi",
-    "lat": 14.566853166893976,
-    "lon": 100.9496675652674
+    "lat": 14.4914,
+    "lon": 100.909,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Nakhon Ratchasima",
     "key": "nakhon ratchasima",
-    "lat": 14.96044412370642,
-    "lon": 102.08291474057731
+    "lat": 14.8923,
+    "lon": 102.103,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Nakhon Nayok",
     "key": "nakhon nayok",
-    "lat": 14.252409665473666,
-    "lon": 101.20206176540177
+    "lat": 14.2249,
+    "lon": 101.21,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Pathum Thani",
     "key": "pathum thani",
-    "lat": 14.067071906023624,
-    "lon": 100.6952287131046
+    "lat": 14.034,
+    "lon": 100.625,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Uthai Thani",
     "key": "uthai thani",
-    "lat": 15.33402830027109,
-    "lon": 99.50927907025705
+    "lat": 15.27,
+    "lon": 99.5275,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Kalasin",
     "key": "kalasin",
-    "lat": 16.640711767597143,
-    "lon": 103.55956632067648
+    "lat": 16.6224,
+    "lon": 103.679,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Roi Et",
     "key": "roi et",
-    "lat": 15.93864722066412,
-    "lon": 103.82833389119608
+    "lat": 15.9601,
+    "lon": 103.827,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Maha Sarakham",
     "key": "maha sarakham",
-    "lat": 16.003817418533767,
-    "lon": 103.23720601655492
+    "lat": 15.9151,
+    "lon": 103.188,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Nong Bua Lam Phu",
     "key": "nong bua lam phu",
-    "lat": 17.200907752116056,
-    "lon": 102.28517473065422
+    "lat": 17.2392,
+    "lon": 102.311,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Lop Buri",
     "key": "lop buri",
-    "lat": 15.021014252605656,
-    "lon": 100.9443780185307
+    "lat": 15.1147,
+    "lon": 100.944,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Udon Thani",
     "key": "udon thani",
-    "lat": 17.375803868774945,
-    "lon": 102.9231196722814
+    "lat": 17.4511,
+    "lon": 102.882,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Phra Nakhon Si Ayutthaya",
     "key": "phra nakhon si ayutthaya",
-    "lat": 14.364287515087504,
-    "lon": 100.45328363215694
+    "lat": 14.402,
+    "lon": 100.522,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Nonthaburi",
     "key": "nonthaburi",
-    "lat": 13.99011536332084,
-    "lon": 100.37287758799275
+    "lat": 13.8933,
+    "lon": 100.407,
+    "labelRank": 9,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Nakhon Pathom",
     "key": "nakhon pathom",
-    "lat": 13.9392442220432,
-    "lon": 100.13502604246786
+    "lat": 13.917,
+    "lon": 100.072,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Kamphaeng Phet",
     "key": "kamphaeng phet",
-    "lat": 16.34386666174644,
-    "lon": 99.54552840753935
+    "lat": 16.4009,
+    "lon": 99.5098,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Lampang",
     "key": "lampang",
-    "lat": 18.32935282661164,
-    "lon": 99.49071722215803
+    "lat": 18.6296,
+    "lon": 99.5707,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Sukhothai",
     "key": "sukhothai",
-    "lat": 17.199215041383894,
-    "lon": 99.72715934210134
+    "lat": 17.2435,
+    "lon": 99.7009,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Nakhon Sawan",
     "key": "nakhon sawan",
-    "lat": 15.654838039835656,
-    "lon": 99.98820830291086
+    "lat": 15.6943,
+    "lon": 100.25,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Phetchabun",
     "key": "phetchabun",
-    "lat": 16.21857556550558,
-    "lon": 101.18731641625871
+    "lat": 16.2589,
+    "lon": 101.21,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Phichit",
     "key": "phichit",
-    "lat": 16.27264615197332,
-    "lon": 100.43301818916306
+    "lat": 16.2321,
+    "lon": 100.374,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Chaiyaphum",
     "key": "chaiyaphum",
-    "lat": 15.982857247273218,
-    "lon": 101.83533765154317
+    "lat": 16.0138,
+    "lon": 101.877,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Phrae",
     "key": "phrae",
-    "lat": 18.216477915059425,
-    "lon": 100.00525237127844
+    "lat": 18.0577,
+    "lon": 99.9263,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Lamphun",
     "key": "lamphun",
-    "lat": 18.174353214928907,
-    "lon": 98.96865020824046
+    "lat": 18.1333,
+    "lon": 98.9979,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Prachin Buri",
     "key": "prachin buri",
-    "lat": 14.076251901610203,
-    "lon": 101.5497017508101
+    "lat": 14.1081,
+    "lon": 101.594,
+    "labelRank": 7,
+    "minLabel": 8.7,
+    "maxLabel": 11
   },
   {
     "name": "Yasothon",
     "key": "yasothon",
-    "lat": 15.83584967282413,
-    "lon": 104.34389776232183
+    "lat": 16.0225,
+    "lon": 104.324,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   }
 ]

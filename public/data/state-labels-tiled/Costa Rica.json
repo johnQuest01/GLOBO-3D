@@ -2,43 +2,64 @@
   {
     "name": "Alajuela",
     "key": "alajuela",
-    "lat": 10.504275218535568,
-    "lon": -84.70712981366911
+    "lat": 10.7527,
+    "lon": -84.7995,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Guanacaste",
     "key": "guanacaste",
-    "lat": 10.471803451527935,
-    "lon": -85.36118833242072
+    "lat": 10.3333,
+    "lon": -85.3552,
+    "labelRank": 8,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Limón",
     "key": "limón",
-    "lat": 9.947851954060665,
-    "lon": -83.33737204609899
+    "lat": 9.7018,
+    "lon": -83.1486,
+    "labelRank": 8,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Puntarenas",
     "key": "puntarenas",
-    "lat": 9.186145081548501,
-    "lon": -83.78537320307238
+    "lat": 8.93419,
+    "lon": -83.2294,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Heredia",
     "key": "heredia",
-    "lat": 10.438627837485463,
-    "lon": -83.97375102055189
+    "lat": 10.4626,
+    "lon": -83.9527,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "San José",
     "key": "san josé",
-    "lat": -34.351996036360084,
-    "lon": -56.692003671966404
+    "lat": -34.3117,
+    "lon": -56.7651,
+    "labelRank": 8,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Cartago",
     "key": "cartago",
-    "lat": 9.854644273305455,
-    "lon": -83.71087029056781
+    "lat": 9.78411,
+    "lon": -83.6991,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   }
 ]

@@ -1,98 +1,146 @@
 [
   {
-    "name": "East Kazakhstan",
+    "name": "Cazaquistão Oriental",
     "key": "east kazakhstan",
-    "lat": 48.893269717424964,
-    "lon": 81.81321781312695
+    "lat": 48.3405,
+    "lon": 81.9768,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Almaty",
     "key": "almaty",
-    "lat": 44.78030035323575,
-    "lon": 78.49177310738173
+    "lat": 45.0707,
+    "lon": 78.2246,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Zhambyl",
+    "name": "Jambyl",
     "key": "zhambyl",
-    "lat": 43.623441977123974,
-    "lon": 72.91640658616436
+    "lat": 44.3152,
+    "lon": 72.4888,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "South Kazakhstan",
+    "name": "Cazaquistão do Sul",
     "key": "south kazakhstan",
-    "lat": 42.845708848772894,
-    "lon": 68.52179813629807
+    "lat": 42.7187,
+    "lon": 68.7533,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Mangghystau",
     "key": "mangghystau",
-    "lat": 44.021075668077245,
-    "lon": 52.96160162535413
+    "lat": 44.0351,
+    "lon": 53.8538,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Qyzylorda",
     "key": "qyzylorda",
-    "lat": 45.0829042178514,
-    "lon": 64.24028130607653
+    "lat": 44.6012,
+    "lon": 63.6151,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Aqtöbe",
     "key": "aqtöbe",
-    "lat": 49.10290889719999,
-    "lon": 58.76526058430454
+    "lat": 48.0288,
+    "lon": 58.9373,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "North Kazakhstan",
+    "name": "Cazaquistão do Norte",
     "key": "north kazakhstan",
-    "lat": 53.72304273550585,
-    "lon": 70.01548326831173
+    "lat": 54.4528,
+    "lon": 69.0682,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Qostanay",
     "key": "qostanay",
-    "lat": 51.746867851015544,
-    "lon": 63.97779110672116
+    "lat": 51.2854,
+    "lon": 64.1291,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Pavlodar",
     "key": "pavlodar",
-    "lat": 51.916154725683796,
-    "lon": 75.9534197196249
+    "lat": 52.2076,
+    "lon": 76.3751,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "West Kazakhstan",
+    "name": "Cazaquistão Ocidental",
     "key": "west kazakhstan",
-    "lat": 50.11753738345984,
-    "lon": 50.90357857121253
+    "lat": 49.8909,
+    "lon": 50.5145,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Atyrau",
     "key": "atyrau",
-    "lat": 47.43258817813031,
-    "lon": 51.78829692750635
+    "lat": 47.7744,
+    "lon": 51.7585,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Aqmola",
     "key": "aqmola",
-    "lat": 51.68939162029039,
-    "lon": 69.85190399696985
+    "lat": 51.928,
+    "lon": 69.8519,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
     "name": "Qaraghandy",
     "key": "qaraghandy",
-    "lat": 49.19788118771307,
-    "lon": 71.83372073036132
+    "lat": 48.0823,
+    "lon": 70.1925,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Almaty City",
+    "name": "Almaty",
     "key": "almaty city",
-    "lat": 43.27989876667472,
-    "lon": 76.93353750679047
+    "lat": 43.2709,
+    "lon": 76.9424,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 11
   },
   {
-    "name": "Astana",
+    "name": "Nur-Sultã",
     "key": "astana",
-    "lat": 51.10604597339293,
-    "lon": 71.4432793240815
+    "lat": 51.1503,
+    "lon": 71.4538,
+    "labelRank": 4,
+    "minLabel": 6,
+    "maxLabel": 11
   }
 ]

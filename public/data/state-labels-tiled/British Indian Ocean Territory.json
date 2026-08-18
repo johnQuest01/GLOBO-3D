@@ -1,8 +1,11 @@
 [
   {
-    "name": "British Indian Ocean Territory",
+    "name": "Território Britânico do Oceano Índico",
     "key": "british indian ocean territory",
-    "lat": -7.359416056916601,
-    "lon": 72.43244469500006
+    "lat": -5.28054,
+    "lon": 71.7425,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

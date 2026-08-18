@@ -1,134 +1,200 @@
 [
   {
-    "name": "Ghadamis",
+    "name": "Gadamés",
     "key": "ghadamis",
-    "lat": 30.376244976166657,
-    "lon": 10.922349582418065
+    "lat": 30.3343,
+    "lon": 10.6245,
+    "labelRank": 4,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "An Nuqat al Khams",
     "key": "an nuqat al khams",
-    "lat": 32.69625701486472,
-    "lon": 11.839555528123475
+    "lat": 32.6661,
+    "lon": 12.0109,
+    "labelRank": 4,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Al Kufrah",
     "key": "al kufrah",
-    "lat": 23.21858521405221,
-    "lon": 22.61944527558072
+    "lat": 23.7231,
+    "lon": 22.0744,
+    "labelRank": 4,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Murzuq",
     "key": "murzuq",
-    "lat": 24.994002478537205,
-    "lon": 15.314263682139757
+    "lat": 24.9977,
+    "lon": 15.2592,
+    "labelRank": 4,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Al Butnan",
     "key": "al butnan",
-    "lat": 30.698719539680308,
-    "lon": 24.18178619374951
+    "lat": 30.069,
+    "lon": 24.0559,
+    "labelRank": 4,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Ajdabiya",
     "key": "ajdabiya",
-    "lat": 29.472347139114305,
-    "lon": 21.27740581580296
+    "lat": 29.0419,
+    "lon": 21.74,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Ash Shati'",
     "key": "ash shati'",
-    "lat": 28.115521753550382,
-    "lon": 12.903686691516409
+    "lat": 27.8732,
+    "lon": 12.8352,
+    "labelRank": 4,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Ghat",
     "key": "ghat",
-    "lat": 26.05445652565677,
-    "lon": 10.498067296646326
+    "lat": 25.9201,
+    "lon": 10.4298,
+    "labelRank": 4,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Surt",
     "key": "surt",
-    "lat": 29.9834651244723,
-    "lon": 17.431210248186915
+    "lat": 30.2021,
+    "lon": 17.4523,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Misratah",
+    "name": "Misurata",
     "key": "misratah",
-    "lat": 31.02699353856234,
-    "lon": 15.022322326357564
+    "lat": 32.2151,
+    "lon": 15.0186,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Al Marqab",
     "key": "al marqab",
-    "lat": 32.32664119086812,
-    "lon": 13.924253130288193
+    "lat": 32.5351,
+    "lon": 14.1357,
+    "labelRank": 4,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Tajura' wa an Nawahi al Arba",
+    "name": "Tajura e Arba",
     "key": "tajura' wa an nawahi al arba",
-    "lat": 32.655439027784816,
-    "lon": 13.36637487883174
+    "lat": 32.6867,
+    "lon": 13.5154,
+    "labelRank": 4,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Az Zawiyah",
     "key": "az zawiyah",
-    "lat": 32.5510272102491,
-    "lon": 12.633497349001669
+    "lat": 32.4551,
+    "lon": 12.4868,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Al Qubbah",
+    "name": "Guba",
     "key": "al qubbah",
-    "lat": 31.97924825803657,
-    "lon": 22.50730414557483
+    "lat": 31.8165,
+    "lon": 22.5845,
+    "labelRank": 4,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Al Jabal al Akhdar",
     "key": "al jabal al akhdar",
-    "lat": 32.10232825454362,
-    "lon": 21.7114066600705
+    "lat": 32.0068,
+    "lon": 21.7222,
+    "labelRank": 4,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Al Marj",
     "key": "al marj",
-    "lat": 31.976535180367154,
-    "lon": 21.15764860246385
+    "lat": 32.1682,
+    "lon": 21.0132,
+    "labelRank": 4,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Benghazi",
+    "name": "Bengasi",
     "key": "benghazi",
-    "lat": 31.597547407004456,
-    "lon": 20.516191402952597
+    "lat": 31.2887,
+    "lon": 20.6182,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Al Jifarah",
     "key": "al jifarah",
-    "lat": 32.4516542967084,
-    "lon": 13.086364373616934
+    "lat": 32.4889,
+    "lon": 13.0352,
+    "labelRank": 4,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Mizdah",
+    "name": "Mizda",
     "key": "mizdah",
-    "lat": 30.321786867272216,
-    "lon": 13.088101581244239
+    "lat": 30.6105,
+    "lon": 13.2861,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Al Jufrah",
     "key": "al jufrah",
-    "lat": 28.13285245082993,
-    "lon": 16.588952761377488
+    "lat": 27.9396,
+    "lon": 17.299,
+    "labelRank": 4,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Sabha",
     "key": "sabha",
-    "lat": 27.10593731172004,
-    "lon": 14.973376668548399
+    "lat": 27.2371,
+    "lon": 15.1065,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Wadi al Hayaa",
+    "name": "Wadi Al Hayat",
     "key": "wadi al hayaa",
-    "lat": 26.381560292923155,
-    "lon": 12.878734257405045
+    "lat": 26.3564,
+    "lon": 12.679,
+    "labelRank": 4,
+    "minLabel": 7.7,
+    "maxLabel": 11
   }
 ]

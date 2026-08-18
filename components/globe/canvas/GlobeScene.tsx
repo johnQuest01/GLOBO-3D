@@ -6,21 +6,19 @@ import {
   Dispatch,
   SetStateAction,
   useMemo,
-  useState,
   useRef,
-  useEffect,
 } from 'react';
 import { OrbitControls } from '@react-three/drei';
 import { OrbitControls as OrbitControlsImpl } from 'three-stdlib';
 import * as THREE from 'three';
-import { useThree } from '@react-three/fiber';
 
-import { CountryLabelData } from '@/app/hooks/useLabelData';
-import StateLabels from '@/components/globe/canvas/StateLabels';
+import { ContinentLabelData, CountryLabelData } from '@/app/hooks/useLabelData';
+import GlobeLabels from '@/components/globe/canvas/GlobeLabels';
 import { useGlobeTextures } from '@/app/hooks/useGlobeTextures';
 import Earth from './Earth';
-import CountryLabels from './CountryLabels';
 import Atmosphere from './AtmosphereGlow';
+import GlobeBorders from './GlobeBorders';
+import CityLights from './CityLights';
 import Airplane from './Airplane';
 import LocationPin from './LocationPin';
 import Advertisements from './Advertisements';
@@ -28,6 +26,7 @@ import { PinnedLocation, AdData, AnimationState, FlyingMessage } from '@/app/typ
 import Missile from './Missile';
 import { latLonToVector3 } from '@/components/lib/utils';
 import FlyingMessages from './FlyingMessages';
+import type { GlobeMode } from '@/components/globe/ui/GlobeModeToggle';
 
 interface GlobeSceneProps {
   isPopupOpen: boolean;
@@ -42,23 +41,18 @@ interface GlobeSceneProps {
   isHighResTextureActive: boolean;
   activeAds: AdData[];
   countryLabels: CountryLabelData[];
+  continentLabels: ContinentLabelData[];
   isLoadingLabels: boolean;
   flyingMessages: FlyingMessage[];
   onMessageComplete: (id: string) => void;
+  globeMode: GlobeMode;
 }
-
-type CountryLabelWithPosition = CountryLabelData & { position: THREE.Vector3 };
 
 const SPHERE_RADIUS = 1.5;
 const COORDS = {
   kiev: { lat: 50.45, lon: 30.52 },
   moscow: { lat: 55.75, lon: 37.61 },
 };
-const COUNTRY_VISIBILITY_THRESHOLD = 3.5;
-const COUNTRY_VISIBLE_COUNT = 5;
-const CONTINENT_KEYS = new Set([
-  'south-america', 'north-america', 'europe', 'africa', 'asia', 'oceania', 'antarctica'
-]);
 
 const GlobeScene: FC<GlobeSceneProps> = (props) => {
   const {
@@ -73,73 +67,22 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
     isHighResTextureActive,
     activeAds,
     countryLabels,
+    continentLabels,
     isLoadingLabels,
     flyingMessages,
     onMessageComplete,
+    globeMode,
   } = props;
 
   const controlsRef = useRef<OrbitControlsImpl>(null);
-  const { camera } = useThree();
-  const [top5CountryLabels, setTop5CountryLabels] = useState<CountryLabelWithPosition[]>([]);
-  const [countriesInView, setCountriesInView] = useState<CountryLabelWithPosition[]>([]);
-  const [cameraDistance, setCameraDistance] = useState(3);
 
   const {
     placeholderTexture,
     lodTextures,
     areLodTexturesReady,
     lodConfig,
+    requestLevel,
   } = useGlobeTextures();
-
-  const allProcessedCountryLabels = useMemo(() => {
-    if (!countryLabels) return [];
-    return countryLabels.map((label) => ({
-      ...label,
-      position: latLonToVector3(label.lat, label.lon, SPHERE_RADIUS),
-    }));
-  }, [countryLabels]);
-
-  const updateVisibleLabels = (camera: THREE.Camera) => {
-    const distance = camera.position.length();
-    setCameraDistance(distance);
-
-    if (isPopupOpen) {
-      if (top5CountryLabels.length > 0) setTop5CountryLabels([]);
-      if (countriesInView.length > 0) setCountriesInView([]);
-      return;
-    }
-
-    const sortedInView = allProcessedCountryLabels
-      .map((label) => ({
-        ...label,
-        dotProduct: label.position.clone().normalize().dot(camera.position.clone().normalize()),
-      }))
-      .filter((label) => label.dotProduct > 0.1)
-      .sort((a, b) => b.dotProduct - a.dotProduct);
-
-    setCountriesInView(sortedInView);
-
-    const visibleNow = sortedInView.filter(label => {
-      if (CONTINENT_KEYS.has(label.key)) {
-        return distance < COUNTRY_VISIBILITY_THRESHOLD && distance > 1.9;
-      }
-      return distance < COUNTRY_VISIBILITY_THRESHOLD;
-    });
-
-    setTop5CountryLabels(visibleNow.slice(0, COUNTRY_VISIBLE_COUNT));
-  };
-
-  useEffect(() => {
-    if (!isLoadingLabels && controlsRef.current) {
-      updateVisibleLabels(camera);
-    }
-  }, [isLoadingLabels, camera, allProcessedCountryLabels]);
-
-  useEffect(() => {
-    if (!isPopupOpen && controlsRef.current) {
-      updateVisibleLabels(camera);
-    }
-  }, [isPopupOpen]);
 
   const missilePaths = useMemo(() => {
     const kievVec = latLonToVector3(COORDS.kiev.lat, COORDS.kiev.lon, SPHERE_RADIUS);
@@ -170,20 +113,25 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
           areLodTexturesReady={areLodTexturesReady}
           isInteractive={isInteractive}
           onLODChange={setIsHighResTextureActive}
-        />
-        
-        {/* --- AQUI ESTÁ O BLOCO DE MENSAGENS --- */}
-        {/* Ele renderiza independente das outras condições de animação */}
-        <FlyingMessages 
-            messages={flyingMessages} 
-            onMessageComplete={onMessageComplete} 
+          requestLevel={requestLevel}
+          mode={globeMode}
         />
 
-        <CountryLabels visibleLabels={top5CountryLabels} openPopup={openPopup} />
-        <StateLabels
-          visibleCountries={countriesInView}
-          cameraDistance={cameraDistance}
+        <CityLights mode={globeMode} isPopupOpen={isPopupOpen} />
+
+        <GlobeBorders isPopupOpen={isPopupOpen} />
+
+        <FlyingMessages
+          messages={flyingMessages}
+          onMessageComplete={onMessageComplete}
+        />
+
+        <GlobeLabels
+          countryLabels={countryLabels}
+          continentLabels={continentLabels}
+          isLoadingLabels={isLoadingLabels}
           popupName={popupName}
+          isPopupOpen={isPopupOpen}
           openPopup={openPopup}
         />
 
@@ -194,12 +142,10 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
           <LocationPin key={tourismPin.key} position={tourismPin.position} name={tourismPin.name} onInfoClick={() => openPopup(tourismPin.key)} />
         )}
 
-        {/* Avião: Verifica se há rota E se a animação está ligada */}
         {flightPath && animationState['airplane-travel'] && (
           <Airplane startVec={flightPath.start} endVec={flightPath.end} />
         )}
 
-        {/* Mísseis: Apenas se popup fechado E animação ligada */}
         {!isPopupOpen && (
           <>
             <Missile
@@ -232,11 +178,6 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
         enableDamping={true}
         dampingFactor={0.02}
         rotateSpeed={0.5}
-        onEnd={() => {
-          if (controlsRef.current?.object) {
-            updateVisibleLabels(controlsRef.current.object as THREE.Camera);
-          }
-        }}
       />
     </>
   );

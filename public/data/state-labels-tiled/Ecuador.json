@@ -2,145 +2,217 @@
   {
     "name": "Esmeraldas",
     "key": "esmeraldas",
-    "lat": 0.6807062791400587,
-    "lon": -79.18100738685983
+    "lat": 1.29253,
+    "lon": -78.9448,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Carchi",
     "key": "carchi",
-    "lat": 0.7807121760160272,
-    "lon": -78.08607824533175
+    "lat": 0.686611,
+    "lon": -78.0243,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Sucumbios",
+    "name": "Sucumbíos",
     "key": "sucumbios",
-    "lat": 0.04523275392869109,
-    "lon": -76.59932766268668
+    "lat": -0.085516,
+    "lon": -76.6135,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Orellana",
     "key": "orellana",
-    "lat": -0.7351454682142408,
-    "lon": -76.53419001359026
+    "lat": -0.875888,
+    "lon": -76.4248,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Pastaza",
     "key": "pastaza",
-    "lat": -1.5963113958796455,
-    "lon": -77.0902085139792
+    "lat": -1.84655,
+    "lon": -76.8768,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Morona Santiago",
+    "name": "Morona-Santiago",
     "key": "morona santiago",
-    "lat": -2.457721381702298,
-    "lon": -78.06039379615477
+    "lat": -2.4505,
+    "lon": -77.8071,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Zamora Chinchipe",
+    "name": "Zamora-Chinchipe",
     "key": "zamora chinchipe",
-    "lat": -4.188282779639595,
-    "lon": -78.94791810788952
+    "lat": -3.93679,
+    "lon": -78.8595,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Loja",
     "key": "loja",
-    "lat": -4.0573750038561744,
-    "lon": -79.689630241672
+    "lat": -4.15948,
+    "lon": -79.8079,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "El Oro",
     "key": "el oro",
-    "lat": -3.4543969490136455,
-    "lon": -79.85092026138929
+    "lat": -3.43657,
+    "lon": -79.8552,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Guayas",
     "key": "guayas",
-    "lat": -1.9873796451040049,
-    "lon": -79.87904324800886
+    "lat": -1.98384,
+    "lon": -79.8608,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Galápagos",
     "key": "galápagos",
-    "lat": -0.5029752656665999,
-    "lon": -91.2033607882777
+    "lat": -1.36804,
+    "lon": -89.685,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Santa Elena",
     "key": "santa elena",
-    "lat": -2.1099213850468534,
-    "lon": -80.5905562826373
+    "lat": -2.15487,
+    "lon": -80.5772,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Manabi",
+    "name": "Manabí",
     "key": "manabi",
-    "lat": -0.7816954213946119,
-    "lon": -80.15599142042973
+    "lat": -0.727203,
+    "lon": -80.1619,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Azuay",
     "key": "azuay",
-    "lat": -2.9636947564396867,
-    "lon": -79.17778311369518
+    "lat": -3.15279,
+    "lon": -79.0909,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Cañar",
     "key": "cañar",
-    "lat": -2.5096591628900704,
-    "lon": -78.98230364908164
+    "lat": -2.54413,
+    "lon": -78.9978,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Napo",
     "key": "napo",
-    "lat": -1.26677226011355,
-    "lon": -78.50842533291733
+    "lat": -1.2733,
+    "lon": -78.5209,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Tungurahua",
     "key": "tungurahua",
-    "lat": -0.6469766950684328,
-    "lon": -77.71232116434794
+    "lat": -0.624499,
+    "lon": -77.7382,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Chimborazo",
     "key": "chimborazo",
-    "lat": -1.9628353052239191,
-    "lon": -78.74305630138844
+    "lat": -1.88915,
+    "lon": -78.7417,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Bolivar",
+    "name": "Bolívar",
     "key": "bolivar",
-    "lat": -1.62584934277296,
-    "lon": -79.117203719576
+    "lat": -1.67621,
+    "lon": -79.1205,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Imbabura",
     "key": "imbabura",
-    "lat": 0.43480294225196936,
-    "lon": -78.3498560701515
+    "lat": 0.55271,
+    "lon": -78.4124,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Cotopaxi",
     "key": "cotopaxi",
-    "lat": -0.8552077308949281,
-    "lon": -78.86065156018562
+    "lat": -0.813335,
+    "lon": -78.8554,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
-    "name": "Los Rios",
+    "name": "Los Ríos",
     "key": "los rios",
-    "lat": -1.3303692449113964,
-    "lon": -79.41571550170237
+    "lat": -1.22191,
+    "lon": -79.4787,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Pichincha",
     "key": "pichincha",
-    "lat": -0.09909371706504286,
-    "lon": -78.5664304525715
+    "lat": -0.087133,
+    "lon": -78.5045,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   },
   {
     "name": "Santo Domingo de los Tsáchilas",
     "key": "santo domingo de los tsáchilas",
-    "lat": -0.25514417842581383,
-    "lon": -79.21163398242234
+    "lat": -0.34834,
+    "lon": -79.2525,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 11
   }
 ]

@@ -2,85 +2,127 @@
   {
     "name": "Karnali",
     "key": "karnali",
-    "lat": 29.455717622142416,
-    "lon": 82.34684833500842
+    "lat": 29.474,
+    "lon": 82.4637,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Mahakali",
     "key": "mahakali",
-    "lat": 29.44105088789356,
-    "lon": 80.55101010648532
+    "lat": 29.5205,
+    "lon": 80.5573,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Seti",
     "key": "seti",
-    "lat": 29.348406896687795,
-    "lon": 81.2081848503044
+    "lat": 29.312,
+    "lon": 81.163,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Dhawalagiri",
+    "name": "Dhaulagiri",
     "key": "dhawalagiri",
-    "lat": 28.67527966882907,
-    "lon": 83.63228128121278
+    "lat": 28.4801,
+    "lon": 83.5602,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Gandaki",
     "key": "gandaki",
-    "lat": 28.371936875607453,
-    "lon": 84.34923394351543
+    "lat": 28.3293,
+    "lon": 84.3034,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Bagmati",
     "key": "bagmati",
-    "lat": 27.91781986265694,
-    "lon": 85.35593779646842
+    "lat": 27.8491,
+    "lon": 85.3494,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Janakpur",
     "key": "janakpur",
-    "lat": 27.231954887916714,
-    "lon": 86.01143882398962
+    "lat": 27.179,
+    "lon": 85.9718,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Sagarmatha",
     "key": "sagarmatha",
-    "lat": 27.272766570770624,
-    "lon": 86.63614197332694
+    "lat": 27.2719,
+    "lon": 86.6607,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Bhojpur",
     "key": "bhojpur",
-    "lat": 27.126231483478385,
-    "lon": 87.31512445810978
+    "lat": 27.0937,
+    "lon": 87.3229,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Mechi",
     "key": "mechi",
-    "lat": 27.192881666887153,
-    "lon": 87.84933515973621
+    "lat": 27.1587,
+    "lon": 87.8075,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Narayani",
     "key": "narayani",
-    "lat": 27.385209553760234,
-    "lon": 84.759951365784
+    "lat": 27.3731,
+    "lon": 84.7202,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Lumbini",
     "key": "lumbini",
-    "lat": 27.70757191938434,
-    "lon": 83.59843647419204
+    "lat": 27.695,
+    "lon": 83.55,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Rapti",
     "key": "rapti",
-    "lat": 28.321202752160048,
-    "lon": 82.53060555222424
+    "lat": 28.3268,
+    "lon": 82.5518,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Bheri",
     "key": "bheri",
-    "lat": 28.535674604025417,
-    "lon": 81.77573331597611
+    "lat": 28.4501,
+    "lon": 81.7802,
+    "labelRank": 6,
+    "minLabel": 7.7,
+    "maxLabel": 11
   }
 ]

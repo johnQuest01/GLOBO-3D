@@ -1,8 +1,11 @@
 [
   {
-    "name": "Eysturoyar",
+    "name": "Eysturoy",
     "key": "eysturoyar",
-    "lat": 62.10574643216672,
-    "lon": -6.984120246499923
+    "lat": 62.1385,
+    "lon": -6.95941,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 11
   }
 ]

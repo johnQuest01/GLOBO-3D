@@ -1,8 +1,11 @@
 [
   {
-    "name": "Northern Cyprus",
+    "name": "Chipre do Norte",
     "key": "northern cyprus",
-    "lat": 35.23997333193601,
-    "lon": 33.5643407909399
+    "lat": 35.1975,
+    "lon": 33.6025,
+    "labelRank": 20,
+    "minLabel": 18,
+    "maxLabel": 18
   }
 ]

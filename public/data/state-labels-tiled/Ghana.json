@@ -1,62 +1,92 @@
 [
   {
-    "name": "Upper East",
+    "name": "Alto Oriental",
     "key": "upper east",
-    "lat": 10.77419162490531,
-    "lon": -0.838402151426284
+    "lat": 10.8183,
+    "lon": -0.779779,
+    "labelRank": 5,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Northern",
+    "name": "Norte",
     "key": "northern",
-    "lat": 9.115785759791477,
-    "lon": -11.868718148726737
+    "lat": 9.14067,
+    "lon": -11.9468,
+    "labelRank": 5,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Volta",
+    "name": "do Volta",
     "key": "volta",
-    "lat": 7.258176749140705,
-    "lon": 0.3905767259747574
+    "lat": 7.33855,
+    "lon": 0.396325,
+    "labelRank": 5,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Brong Ahafo",
+    "name": "Brong-Ahafo",
     "key": "brong ahafo",
-    "lat": 7.681425279572198,
-    "lon": -1.6549963764935898
+    "lat": 8.16555,
+    "lon": -1.42805,
+    "labelRank": 5,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Western",
+    "name": "Ocidental",
     "key": "western",
-    "lat": -2.1421606680643306,
-    "lon": 29.29291803490095
+    "lat": -2.13156,
+    "lon": 29.2644,
+    "labelRank": 5,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Upper West",
+    "name": "Alto Ocidental",
     "key": "upper west",
-    "lat": 10.38646560026486,
-    "lon": -2.0984135842642986
+    "lat": 10.404,
+    "lon": -2.14449,
+    "labelRank": 5,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Central",
     "key": "central",
-    "lat": -21.53938210084973,
-    "lon": 26.99743649044483
+    "lat": -21.8775,
+    "lon": 26.6144,
+    "labelRank": 5,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Greater Accra",
+    "name": "Grande Acra",
     "key": "greater accra",
-    "lat": 5.80950682093638,
-    "lon": 0.16831419130664443
+    "lat": 5.83921,
+    "lon": 0.105309,
+    "labelRank": 9,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
     "name": "Ashanti",
     "key": "ashanti",
-    "lat": 6.871010499672309,
-    "lon": -1.48328571718461
+    "lat": 6.75219,
+    "lon": -1.3296,
+    "labelRank": 5,
+    "minLabel": 7.7,
+    "maxLabel": 11
   },
   {
-    "name": "Eastern",
+    "name": "Oriental",
     "key": "eastern",
-    "lat": -13.276595798443843,
-    "lon": 32.03293192144825
+    "lat": -13.7617,
+    "lon": 31.8341,
+    "labelRank": 5,
+    "minLabel": 7.7,
+    "maxLabel": 11
   }
 ]
