@@ -10,6 +10,7 @@
     "assets:borders": "node scripts/preprocess-data.mjs borders",
     "assets:textures": "node scripts/preprocess-data.mjs textures",
     "assets:lights": "node scripts/preprocess-data.mjs lights",
+    "db:apply": "node scripts/db-apply.mjs db/schema-behavior.sql",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
