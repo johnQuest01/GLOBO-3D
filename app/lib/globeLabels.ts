@@ -173,7 +173,7 @@ function layerRamp(layer: LabelLayer, zoom: number): number {
 }
 
 /** Bônus para quem já estava na tela — evita nome piscando durante o giro. */
-export const STICKY_BONUS = 14;
+export const STICKY_BONUS = 22;
 
 export function labelScore(
   feature: LabelFeature,
@@ -240,7 +240,7 @@ export function labelWorldScale(
 
 /** Quantos nomes cabem confortavelmente nesta tela. */
 export function maxLabelsForViewport(width: number, height: number): number {
-  return THREE.MathUtils.clamp(Math.round((width * height) / 24000), 10, 70);
+  return THREE.MathUtils.clamp(Math.round((width * height) / 17000), 12, 90);
 }
 
 /**
@@ -249,31 +249,36 @@ export function maxLabelsForViewport(width: number, height: number): number {
  * botão, o nome cede o lugar para o próximo da fila.
  */
 export function uiBlockedRects(width: number, height: number): ScreenRect[] {
-  const railWidth = Math.min(92, Math.max(74, width * 0.12));
-  const titleWidth = Math.min(320, width * 0.6);
-  const adWidth = Math.min(272, width * 0.55);
+  // Cada retângulo cobre só o que é realmente opaco. Generosidade aqui sai
+  // caro: medido, a versão anterior reservava metade da tela e os nomes
+  // desapareciam em áreas que, para quem olha, estão vazias.
+  const railWidth = Math.min(80, Math.max(66, width * 0.1));
+  const titleWidth = Math.min(268, width * 0.52);
+  const adWidth = Math.min(252, width * 0.5);
 
   return [
-    // Título do topo mais o seletor de modo logo abaixo dele. O meio do
-    // cabeçalho fica livre de propósito.
-    { x: 0, y: 0, width: titleWidth, height: 126 },
+    // Título do topo
+    { x: 0, y: 0, width: titleWidth, height: 58 },
+    // Seletor Padrão/Relógio, logo abaixo — a faixa entre ele e o título fica
+    // livre, em vez de virar um bloco só.
+    { x: 0, y: 62, width: Math.min(210, width * 0.42), height: 44 },
     // Botão de menu, no canto superior direito
-    { x: width - railWidth, y: 0, width: railWidth, height: 70 },
+    { x: width - railWidth, y: 0, width: railWidth, height: 62 },
     // Coluna de botões à direita
     {
       x: width - railWidth,
-      y: 60,
+      y: 66,
       width: railWidth,
-      height: Math.max(0, height - 130),
+      height: Math.max(0, height - 128),
     },
     // Rodapé (créditos, botão "Férias" e cadeado)
-    { x: 0, y: height - 70, width, height: 70 },
+    { x: 0, y: height - 58, width, height: 58 },
     // Faixa do anúncio (canto inferior direito)
     {
       x: width - adWidth,
-      y: height - 150,
+      y: height - 128,
       width: adWidth,
-      height: 80,
+      height: 62,
     },
   ];
 }
@@ -333,11 +338,13 @@ export function placeLabels(
   const cameraDistance = camera.position.length();
   if (cameraDistance <= SPHERE_RADIUS) return [];
 
-  // Horizonte real da esfera, encolhido 8% para o nome não colar na borda.
+  // Horizonte real da esfera. O encolhimento é mínimo, só para o nome não
+  // nascer exatamente na silhueta: com 8% de corte, medido, 43 nomes por quadro
+  // eram descartados aqui — e era o que fazia um nome sumir ao arrastar pouco.
   const horizonAngle = Math.acos(
     Math.min(1, SPHERE_RADIUS / cameraDistance),
   );
-  const minDot = Math.cos(horizonAngle * 0.92);
+  const minDot = Math.cos(horizonAngle * 0.985);
 
   const cameraDirection = camera.position.clone().normalize();
   const viewportShortSide = Math.min(width, height);

@@ -49,6 +49,21 @@ import {
 } from '@/app/types/globe';
 
 
+/**
+ * Abertura da camera, em graus.
+ *
+ * NAO aumente isto para tentar ver mais nomes — foi medido e faz o contrario.
+ * O nivel de detalhe dos rotulos vem do `viewZoom()`, que mede QUANTOS GRAUS de
+ * globo cabem na altura da tela. Abrir a lente faz caber mais graus, entao o
+ * app se comporta como se voce tivesse afastado: passa a mostrar menos nomes e
+ * mais grossos. Em 58 graus, os nomes colocados cairam de 8 para 2.
+ *
+ * Para ver mais nomes, os controles certos estao em app/lib/globeLabels.ts:
+ * `uiBlockedRects` (area reservada a interface), o fator do horizonte em
+ * `placeLabels` e `maxLabelsForViewport`.
+ */
+const CAMERA_FOV = 50;
+
 const useAllNews = (
   rawContentData: ReturnType<typeof usePopupContent>['rawContentData'],
   translations: ReturnType<typeof usePopupContent>['translations'],
@@ -232,7 +247,7 @@ export default function GlobeCanvas() {
     >
       <Canvas
         dpr={[1, 2]}
-        camera={{ position: [0, 0, 3], fov: 50, near: 0.1, far: 1000 }}
+        camera={{ position: [0, 0, 3], fov: CAMERA_FOV, near: 0.1, far: 1000 }}
         gl={{
           powerPreference: 'high-performance',
           antialias: true,
