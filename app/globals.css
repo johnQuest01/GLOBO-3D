@@ -24,7 +24,8 @@
 
 /* --- INÍCIO DA CORREÇÃO: Layout Mobile (h-screen/100vh fix) --- */
 html,body {
-  height: 100%; /* Garante que ambos ocupem 100% da viewport */
+  height: 100%; /* Reserva para navegadores sem dvh */
+  height: 100dvh; /* No celular, desconta a barra do navegador quando ela aparece */
   overflow: hidden; /* Impede que o body role */
   overscroll-behavior: none; /* Desativa o "puxar para atualizar" no mobile */
 }

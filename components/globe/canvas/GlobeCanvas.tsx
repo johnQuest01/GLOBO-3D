@@ -193,7 +193,7 @@ export default function GlobeCanvas() {
 
   return (
     <div
-      className="w-full h-screen bg-black relative"
+      className="w-full h-screen h-[100dvh] bg-black relative"
       style={{ overscrollBehavior: 'none' }}
     >
       <Canvas
@@ -239,7 +239,11 @@ export default function GlobeCanvas() {
         </Suspense>
       </Canvas>
 
-      <div className="absolute top-0 left-0 w-full h-full z-10 pointer-events-none">
+      {/* A camada da interface para acima da area segura do celular, entao
+          tudo que e ancorado embaixo (rodape, cadeado, limpar pinos e a coluna
+          de botoes) sobe junto e deixa de ficar sob a barra do navegador. O
+          canvas do globo e irmao disto e segue ocupando a tela inteira. */}
+      <div className="absolute top-0 left-0 w-full z-10 pointer-events-none h-full h-[calc(100%-env(safe-area-inset-bottom))]">
         <div className="pointer-events-auto">
           <AppHeader
             isVisible={states.isMainUiVisible}

@@ -25,6 +25,10 @@ export const viewport: Viewport = {
   initialScale: 1.0,
   maximumScale: 1.0,
   userScalable: false,
+  // Sem 'cover' o navegador nao expoe as areas seguras, e todo
+  // env(safe-area-inset-*) volta zero — os botoes de baixo acabam embaixo da
+  // barra do proprio navegador no celular.
+  viewportFit: 'cover',
 };
 
 export default function RootLayout({
