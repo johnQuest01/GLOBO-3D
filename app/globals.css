@@ -29,6 +29,38 @@ html,body {
   overflow: hidden; /* Impede que o body role */
   overscroll-behavior: none; /* Desativa o "puxar para atualizar" no mobile */
 }
+
+/*
+ * Altura da tela util, numa regra so.
+ *
+ * Nao usar duas classes utilitarias concorrentes (`h-screen h-[100dvh]`): elas
+ * tem a mesma especificidade e quem vence e a que sai depois na folha de
+ * estilo, nao a ordem escrita no atributo. Se o 100vh vencesse, no celular ele
+ * mede a viewport GRANDE (como se a barra do navegador estivesse escondida) e o
+ * rodape nasce abaixo da area visivel — foi o que aconteceu.
+ *
+ * Aqui as duas declaracoes estao na mesma regra: a segunda simplesmente
+ * substitui a primeira onde `dvh` existe.
+ */
+.app-viewport {
+  height: 100vh;
+  height: 100dvh;
+}
+
+/*
+ * Camada da interface: para acima da area segura (indicador de home, barra de
+ * gestos), para que tudo ancorado embaixo continue alcancavel pelo dedo.
+ */
+.ui-safe-layer {
+  height: 100%;
+  /*
+   * O `max` garante uma folga minima mesmo quando o env volta zero — ha
+   * navegadores cuja barra inferior sobrepoe o conteudo sem entrar no calculo
+   * da area segura. 12px nao muda nada no desktop e evita que o botao fique
+   * colado (ou por baixo) da borda no celular.
+   */
+  height: calc(100% - max(env(safe-area-inset-bottom, 0px), 12px));
+}
 /* --- FIM DA CORREÇÃO: Layout Mobile (h-screen/100vh fix) --- */
 
 @media (prefers-color-scheme: dark) {
