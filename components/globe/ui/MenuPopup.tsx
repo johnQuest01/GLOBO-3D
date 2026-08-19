@@ -8,6 +8,9 @@ interface MenuPopupProps {
   onMyNewsClick: () => void;
   onMyTouristSitesClick: () => void;
   onMyVacationSpotsClick: () => void; // <-- O handler disto será mudado no GlobeCanvas
+  onAdminClick: () => void;
+  isAdmin: boolean;
+  onAdminExit: () => void;
 }
 
 const MenuButton: FC<{
@@ -31,6 +34,9 @@ const MenuPopup: FC<MenuPopupProps> = ({
   onMyNewsClick,
   onMyTouristSitesClick,
   onMyVacationSpotsClick, // <-- Este botão agora abre a *lista* de locais
+  onAdminClick,
+  isAdmin,
+  onAdminExit,
 }) => {
   if (!isOpen) return null;
 
@@ -54,6 +60,13 @@ const MenuPopup: FC<MenuPopupProps> = ({
             <MenuButton onClick={onMyVacationSpotsClick}>
               Meus Locais de Férias
             </MenuButton>
+
+            <div className="my-2 border-t border-white/10" />
+            {isAdmin ? (
+              <MenuButton onClick={onAdminExit}>Sair do modo administrador</MenuButton>
+            ) : (
+              <MenuButton onClick={onAdminClick}>Administrador</MenuButton>
+            )}
           </div>
           <div className="p-4 flex justify-end border-t border-gray-700 bg-gray-900 rounded-b-xl">
             <button

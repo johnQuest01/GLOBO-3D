@@ -26,6 +26,7 @@ import TourismPopup from '@/components/globe/ui/TourismPopup';
 import MyVacationSpotsPopup from '@/components/globe/ui/MyVacationSpotsPopup';
 import MessageInputPopup from '@/components/globe/ui/MessageInputPopup';
 import GlobeModeToggle, { GlobeMode } from '@/components/globe/ui/GlobeModeToggle';
+import AdminLoginPopup from '@/components/globe/ui/AdminLoginPopup';
 
 import AppHeader from '@/components/layout/AppHeader';
 import AppFooter from '@/components/layout/AppFooter';
@@ -46,7 +47,6 @@ import {
   CountryContent,
 } from '@/app/types/globe';
 
-const IS_DEVELOPMENT = process.env.NODE_ENV === 'development';
 
 const useAllNews = (
   rawContentData: ReturnType<typeof usePopupContent>['rawContentData'],
@@ -129,6 +129,24 @@ export default function GlobeCanvas() {
   const handleGlobeModeChange = (next: GlobeMode) => {
     setGlobeMode(next);
     localStorage.setItem('globeMode', next);
+  };
+
+  // Sessão de administrador. Fica em sessionStorage (e não localStorage) para
+  // acabar quando a aba fecha — o painel não é para ficar aberto por descuido.
+  const [isAdmin, setIsAdmin] = useState(false);
+  const [isAdminLoginOpen, setIsAdminLoginOpen] = useState(false);
+  useEffect(() => {
+    if (sessionStorage.getItem('globeAdmin') === '1') setIsAdmin(true);
+  }, []);
+  const handleAdminSuccess = () => {
+    setIsAdmin(true);
+    sessionStorage.setItem('globeAdmin', '1');
+    setIsAdminLoginOpen(false);
+    handlers.handleOpenAdminAnimPopup();
+  };
+  const handleAdminExit = () => {
+    setIsAdmin(false);
+    sessionStorage.removeItem('globeAdmin');
   };
 
   const cameraStateRef = useRef({
@@ -229,7 +247,7 @@ export default function GlobeCanvas() {
           />
           <AppFooter
             isVisible={states.isMainUiVisible}
-            onVacationClick={handlers.handleOpenTourismPopup}
+            onVacationClick={handlers.handleOpenVacationPopup}
           />
         </div>
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
@@ -290,7 +308,7 @@ export default function GlobeCanvas() {
             }
             className="bottom-4 left-4 pointer-events-auto"
           />
-          {IS_DEVELOPMENT && (
+          {isAdmin && (
             <>
               <button
                 onClick={() => setters.setIsAdminNewsEnabled((prev) => !prev)}
@@ -409,6 +427,15 @@ export default function GlobeCanvas() {
                   onMyNewsClick={handlers.handleOpenMyNews}
                   onMyTouristSitesClick={handlers.handleOpenMyTouristSites}
                   onMyVacationSpotsClick={handlers.handleOpenMyVacationSpots}
+                  isAdmin={isAdmin}
+                  onAdminClick={() => {
+                    handlers.handleCloseMenuPopup();
+                    setIsAdminLoginOpen(true);
+                  }}
+                  onAdminExit={() => {
+                    handleAdminExit();
+                    handlers.handleCloseMenuPopup();
+                  }}
                 />
               )}
               {states.isMyNewsPopupOpen && (
@@ -441,6 +468,12 @@ export default function GlobeCanvas() {
             </div>
           )}
           
+          <AdminLoginPopup
+            isOpen={isAdminLoginOpen}
+            onClose={() => setIsAdminLoginOpen(false)}
+            onSuccess={handleAdminSuccess}
+          />
+
           {isMessagePopupOpen && (
             <div className="absolute top-0 left-0 w-full h-full z-[120] pointer-events-auto">
               <MessageInputPopup
