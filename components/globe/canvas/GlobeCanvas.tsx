@@ -28,6 +28,7 @@ import MyVacationSpotsPopup from '@/components/globe/ui/MyVacationSpotsPopup';
 import MessageInputPopup from '@/components/globe/ui/MessageInputPopup';
 import GlobeModeToggle, { GlobeMode } from '@/components/globe/ui/GlobeModeToggle';
 import AdminLoginPopup from '@/components/globe/ui/AdminLoginPopup';
+import GlobeClock from '@/components/globe/ui/GlobeClock';
 
 import AppHeader from '@/components/layout/AppHeader';
 import AppFooter from '@/components/layout/AppFooter';
@@ -312,6 +313,12 @@ export default function GlobeCanvas() {
             onChange={handleGlobeModeChange}
             isVisible={states.isMainUiVisible}
             className="top-[4.5rem] left-4 pointer-events-auto"
+          />
+          {/* Relogio so no modo Relogio: e ele que explica de onde vem a
+              posicao do terminador. */}
+          <GlobeClock
+            isVisible={states.isMainUiVisible && globeMode === 'relogio'}
+            className="top-[7.5rem] left-4 pointer-events-none"
           />
           <LockControl
             isVisible={states.isUiVisible}

@@ -9,6 +9,7 @@ import {
   useRef,
 } from 'react';
 import { OrbitControls } from '@react-three/drei';
+import { useFrame } from '@react-three/fiber';
 import { OrbitControls as OrbitControlsImpl } from 'three-stdlib';
 import * as THREE from 'three';
 
@@ -27,6 +28,10 @@ import Missile from './Missile';
 import { latLonToVector3 } from '@/components/lib/utils';
 import FlyingMessages from './FlyingMessages';
 import type { GlobeMode } from '@/components/globe/ui/GlobeModeToggle';
+import {
+  EARTH_DEGREES_PER_SECOND,
+  ROTATION_SPEED_MULTIPLIER,
+} from '@/app/lib/globeDayNight';
 
 interface GlobeSceneProps {
   isPopupOpen: boolean;
@@ -49,6 +54,9 @@ interface GlobeSceneProps {
 }
 
 const SPHERE_RADIUS = 1.5;
+
+/** Eixo de rotação do planeta. */
+const EIXO_DA_TERRA = new THREE.Vector3(0, 1, 0);
 const COORDS = {
   kiev: { lat: 50.45, lon: 30.52 },
   moscow: { lat: 55.75, lon: 37.61 },
@@ -94,6 +102,34 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
   }, []);
 
   const isInteractive = !isPopupOpen;
+
+  /**
+   * Giro da Terra no modo Relógio.
+   *
+   * A camera e que orbita, nao o globo: visualmente e o mesmo movimento
+   * relativo, mas o mundo continua parado — e rotulos, fronteiras, luzes e
+   * pinos dependem disso, por estarem em coordenadas de mundo.
+   *
+   * Duas tentativas anteriores falharam pelo mesmo motivo, e vale registrar:
+   * tanto o `autoRotate` do OrbitControls quanto o `setAzimuthalAngle` passam
+   * pelo amortecimento. Com dampingFactor 0.02, so 2% do passo entra por
+   * quadro, e como o passo seguinte e calculado a partir do angulo ja
+   * amortecido, o giro nunca acumula: medido, saiam 1,19 graus onde eram
+   * esperados 30.
+   *
+   * Girar o vetor de posicao resolve porque o `update()` do OrbitControls
+   * deriva o angulo esferico DA POSICAO da camera a cada chamada — ele aceita
+   * a posicao nova em vez de brigar com ela. A prioridade -2 garante que isto
+   * rode antes do update (que o drei registra em -1).
+   */
+  useFrame(({ camera }, delta) => {
+    if (globeMode !== 'relogio' || !isInteractive) return;
+
+    const passo = THREE.MathUtils.degToRad(
+      EARTH_DEGREES_PER_SECOND * ROTATION_SPEED_MULTIPLIER * delta,
+    );
+    camera.position.applyAxisAngle(EIXO_DA_TERRA, passo);
+  }, -2);
 
   if (!placeholderTexture) {
     return null;

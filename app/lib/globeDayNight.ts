@@ -61,3 +61,23 @@ export const SUN_UPDATE_INTERVAL_MS = 60000;
 
 /** Velocidade do fade ao trocar de modo (evita o corte seco). */
 export const MODE_FADE_SPEED = 1.8;
+
+/**
+ * Rotação da Terra: 360° em 24 h = 0,004167°/s.
+ *
+ * Quem gira é a CÂMERA, não o globo. Visualmente dá no mesmo (é movimento
+ * relativo), mas mantém o mundo parado — e todo o resto do app depende disso:
+ * rótulos, fronteiras, luzes e pinos são posicionados em coordenadas de mundo.
+ * Girar o globo obrigaria a transformar cada uma dessas posições a cada quadro.
+ */
+export const EARTH_DEGREES_PER_SECOND = 360 / 86400;
+
+/**
+ * Multiplicador da rotação.
+ *
+ * Em 1 o giro é o da Terra de verdade — e é honesto avisar: 15° por HORA é
+ * imperceptível numa visita de alguns minutos. Quem torna o "ao vivo" visível é
+ * o relógio na tela, não o movimento. Suba para 60 e cada minuto passa a valer
+ * uma hora, se quiser ver o terminador andando.
+ */
+export const ROTATION_SPEED_MULTIPLIER = 1;
