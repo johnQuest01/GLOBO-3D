@@ -35,11 +35,18 @@ interface LocationPinProps {
 /** Altura do pino em pixels de tela. */
 const PIN_PX = 17;
 
-/** Cores do pino e do card. */
+/** Cores do pino e do card. O azul e o mesmo bg-blue-600 do card antigo. */
 const PIN_COLOR = '#ff0000';
 const PIN_EMISSIVE = '#cc0000';
 const CARD_COLOR = '#2563eb';
-const CARD_HOVER = '#3b82f6';
+const CARD_HOVER = '#1d4ed8';
+
+/**
+ * O card precisa vencer tudo o que e desenhado depois dele. As fronteiras usam
+ * renderOrder 1 e 2, as luzes das cidades 3 — sem uma ordem alta aqui, elas
+ * pintavam por cima e o card parecia translucido.
+ */
+const CARD_RENDER_ORDER = 20;
 
 // Geometrias e materiais compartilhados por TODOS os pinos: sem isto, cada
 // pino alocaria os seus e o custo cresceria junto com a quantidade.
@@ -118,36 +125,55 @@ const LocationPin: FC<LocationPinProps> = ({ position, name, onInfoClick }) => {
       <group quaternion={quaternion}>
         <mesh geometry={coneGeometry} material={pinMaterial} />
         <mesh geometry={ballGeometry} material={pinMaterial} position={[0, 0.5, 0]} />
+
+        {/*
+          Dentro do grupo rotacionado, entao o card assenta sobre a cabeca do
+          pino seguindo a normal da superficie — e nao no eixo Y do mundo, que
+          o deixava deslocado. O Billboard ainda o mantem de frente para a
+          camera; so a posicao vem da rotacao do pino.
+        */}
+        <Billboard position={[0, 1.3, 0]}>
+          <group
+            onClick={handleClick}
+            onPointerOver={handleOver}
+            onPointerOut={handleOut}
+          >
+            <RoundedBox
+              args={[cardWidth, 1, 0.02]}
+              radius={0.22}
+              smoothness={3}
+              renderOrder={CARD_RENDER_ORDER}
+            >
+              <meshBasicMaterial
+                ref={cardMaterialRef}
+                color={CARD_COLOR}
+                depthTest={false}
+                depthWrite={false}
+                transparent={false}
+                toneMapped={false}
+              />
+            </RoundedBox>
+            <Text
+              position={[0, 0, 0.04]}
+              fontSize={0.62}
+              color="#ffffff"
+              anchorX="center"
+              anchorY="middle"
+              renderOrder={CARD_RENDER_ORDER + 1}
+            >
+              {name}
+              <meshBasicMaterial
+                color="#ffffff"
+                depthTest={false}
+                depthWrite={false}
+                transparent={false}
+                toneMapped={false}
+              />
+            </Text>
+          </group>
+        </Billboard>
       </group>
 
-      {/* O card fica sempre de frente para a câmera, acima do pino. */}
-      <Billboard position={[0, 1.35, 0]}>
-        <group
-          onClick={handleClick}
-          onPointerOver={handleOver}
-          onPointerOut={handleOut}
-        >
-          <RoundedBox args={[cardWidth, 1, 0.02]} radius={0.22} smoothness={3}>
-            <meshBasicMaterial
-              ref={cardMaterialRef}
-              color={CARD_COLOR}
-              depthTest={false}
-              toneMapped={false}
-            />
-          </RoundedBox>
-          <Text
-            position={[0, 0, 0.03]}
-            fontSize={0.62}
-            color="#ffffff"
-            anchorX="center"
-            anchorY="middle"
-            renderOrder={14}
-          >
-            {name}
-            <meshBasicMaterial color="#ffffff" depthTest={false} toneMapped={false} />
-          </Text>
-        </group>
-      </Billboard>
     </group>
   );
 };
