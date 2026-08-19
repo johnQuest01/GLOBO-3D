@@ -1,9 +1,10 @@
 'use client';
 
 import React, { useRef, useMemo, useEffect } from 'react';
-import { useFrame } from '@react-three/fiber';
+import { useFrame, useThree } from '@react-three/fiber';
 import { useGLTF, Billboard, Text, RoundedBox } from '@react-three/drei';
 import * as THREE from 'three';
+import { labelWorldScale } from '@/app/lib/globeLabels';
 
 interface AirplaneProps {
   startVec: THREE.Vector3;
@@ -16,6 +17,19 @@ const FLIGHT_SPEED = 0.05;
 /** Pontos do rastro. A geometria é criada UMA vez com todos eles. */
 const LINE_POINTS = 220;
 const LOOP_DELAY_DURATION = 1.5;
+
+/**
+ * Altura do texto do card em pixels de tela. O card acompanha o aviao mas nao
+ * cresce com o zoom — o mesmo tratamento que os rotulos do globo recebem.
+ */
+const CARD_TEXT_PX = 12;
+
+/**
+ * Deslocamento do card em relacao ao aviao, nas unidades do grupo do aviao
+ * (que o `lookAt` ja orientou na direcao do voo). O -Z coloca o card adiantado
+ * sobre a propria linha da rota, e nao em cima da fuselagem.
+ */
+const CARD_OFFSET: [number, number, number] = [0, 0.05, -0.2];
 
 const stylishAirplaneMaterial = new THREE.MeshStandardMaterial({
   color: 'white',
@@ -94,6 +108,7 @@ const Airplane: React.FC<AirplaneProps> = ({
 }) => {
   const airplaneRef = useRef<THREE.Group>(null!);
   const labelRef = useRef<THREE.Group>(null!);
+  const { size } = useThree();
 
   // Progresso em ref, não em state: animar com setState provocava um
   // re-render de React a cada quadro, que era o gargalo da viagem.
@@ -160,10 +175,16 @@ const Airplane: React.FC<AirplaneProps> = ({
 
     trailGeometry.setDrawRange(0, Math.ceil(t * LINE_POINTS) + 1);
 
-    // Etiqueta com tamanho constante em tela, como os rótulos do globo.
+    // Card com tamanho constante em tela, pela mesma conta dos rótulos.
     if (labelRef.current) {
+      const perspective = camera as THREE.PerspectiveCamera;
       labelRef.current.scale.setScalar(
-        camera.position.distanceTo(position) * 0.055,
+        labelWorldScale(
+          perspective.position.distanceTo(position),
+          CARD_TEXT_PX,
+          perspective.fov ?? 50,
+          size.height,
+        ),
       );
     }
 
@@ -184,14 +205,16 @@ const Airplane: React.FC<AirplaneProps> = ({
             <Html occlude> — que fazia raycast contra a cena e sincronizava um
             elemento do DOM a cada quadro. Acompanha o avião e mantém tamanho
             constante em tela. */}
-        <group ref={labelRef} position={[0, 0.05, 0]}>
+        <group ref={labelRef} position={CARD_OFFSET}>
           <Billboard>
-            <RoundedBox args={[1.5, 0.62, 0.02]} radius={0.14} smoothness={3}>
+            {/* Medidas em múltiplos da altura do texto (fontSize 1), para o
+                card manter a proporção seja qual for o tamanho em tela. */}
+            <RoundedBox args={[2.6, 1.5, 0.02]} radius={0.32} smoothness={3}>
               <meshBasicMaterial color="#ffffff" depthTest={false} toneMapped={false} />
             </RoundedBox>
             <Text
-              position={[0, 0, 0.02]}
-              fontSize={0.4}
+              position={[0, 0, 0.03]}
+              fontSize={1}
               color="#dc2626"
               anchorX="center"
               anchorY="middle"
