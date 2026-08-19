@@ -9,6 +9,7 @@ import { usePopupContent } from '@/app/hooks/usePopupContent';
 import { useFlightLocations } from '@/app/hooks/useFlightLocations';
 import { useAnimationControls } from '@/app/hooks/useAnimationControls';
 import { useSavedVacationSpots } from '@/app/hooks/useSavedVacationSpots';
+import { useBehaviorTracker } from '@/app/hooks/useBehaviorTracker';
 // --- INÍCIO DA CORREÇÃO ---
 // Agora importamos apenas 'useLabelData'
 import { useLabelData } from '@/app/hooks/useLabelData';
@@ -34,6 +35,7 @@ export const useGlobeStateAndHandlers = () => {
     useFlightLocations();
   const { animationState, ...animControls } = useAnimationControls();
   const { addSavedSpot } = useSavedVacationSpots();
+  const { track } = useBehaviorTracker();
 
   // Continentes e países vêm prontos daqui; estados e cidades são carregados
   // sob demanda pelo próprio GlobeLabels, conforme o zoom pede a camada.
@@ -84,6 +86,7 @@ export const useGlobeStateAndHandlers = () => {
           position: position,
         };
         setTourismPin(newPin);
+        track({ kind: 'tourism_view', regionKey: loc.key });
       } else {
         console.warn(
           `[handleShowTourismPinOnGlobe] Location key "${locationKey}" not found in flightLocations.`
@@ -92,7 +95,7 @@ export const useGlobeStateAndHandlers = () => {
       }
       setIsTourismPopupOpen(false);
     },
-    [flightLocations]
+    [flightLocations, track]
   );
   
   const handleOpenSavedSpotOnGlobe = useCallback(
@@ -156,10 +159,12 @@ export const useGlobeStateAndHandlers = () => {
         );
         const endVec = latLonToVector3(toLoc.lat, toLoc.lon, SPHERE_RADIUS);
         setFlightPath({ start: startVec, end: endVec });
+        // Plano de viagem e o sinal mais forte de interesse por um destino.
+        track({ kind: 'trip_plan', regionKey: toLoc.key });
         setIsTravelPopupOpen(false);
       }
     },
-    [flightLocations]
+    [flightLocations, track]
   );
 
   const handleOpenBaggagePopup = () => {
@@ -189,10 +194,12 @@ export const useGlobeStateAndHandlers = () => {
         };
         setPinnedLocations((prevPins) => [...prevPins, newPin]);
         addSavedSpot(loc.key, loc.name);
+        // Marcar um lugar exige intencao: pesa muito mais que uma visita.
+        track({ kind: 'pin_add', regionKey: loc.key });
         setIsVacationPopupOpen(false);
       }
     },
-    [flightLocations, pinnedLocations, addSavedSpot]
+    [flightLocations, pinnedLocations, addSavedSpot, track]
   );
   const handleClearPins = () => {
     setPinnedLocations([]);

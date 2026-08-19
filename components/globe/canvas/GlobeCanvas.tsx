@@ -8,6 +8,7 @@ import { useGlobeStateAndHandlers } from '@/app/hooks/useGlobeStateAndHandlers';
 import { usePopupContent } from '@/app/hooks/usePopupContent';
 import { useMessageSystem } from '@/app/hooks/useMessageSystem';
 import { useGeoMapping } from '@/app/hooks/useGeoMapping';
+import { useBehaviorTracker } from '@/app/hooks/useBehaviorTracker';
 
 import GlobeScene from './GlobeScene';
 import StatePopup from '@/components/globe/ui/StatePopup';
@@ -118,6 +119,39 @@ export default function GlobeCanvas() {
   } = useMessageSystem();
 
   const { keyToVector3 } = useGeoMapping();
+
+  // Coletor do algoritmo de comportamento. Nada aqui roda por quadro: os
+  // eventos vao para uma fila e sao descarregados em lote.
+  const { track, startDwell, endDwell } = useBehaviorTracker();
+
+  /**
+   * Um local aberto conta duas vezes para o algoritmo: o interesse em abrir, e
+   * o tempo que a pessoa ficou lendo. O segundo vale mais — abrir por engano e
+   * fechar em um segundo nao e sinal de nada.
+   */
+  const abertoRef = useRef<string | null>(null);
+  useEffect(() => {
+    const atual = states.popupNameKey;
+    const anterior = abertoRef.current;
+    if (atual === anterior) return;
+
+    if (anterior) endDwell(`local:${anterior}`, { regionKey: anterior });
+    if (atual) {
+      startDwell(`local:${atual}`);
+      track({ kind: 'region_view', regionKey: atual });
+    }
+    abertoRef.current = atual;
+  }, [states.popupNameKey, track, startDwell, endDwell]);
+
+  /** Categoria de noticia escolhida: sinal direto de assunto preferido. */
+  useEffect(() => {
+    if (!states.popupNameKey || !states.newsCategory) return;
+    track({
+      kind: 'news_open',
+      regionKey: states.popupNameKey,
+      topic: states.newsCategory,
+    });
+  }, [states.popupNameKey, states.newsCategory, track]);
 
   // Modo do globo. Fica no localStorage para o usuário não ter que reescolher
   // a cada visita.
@@ -251,7 +285,10 @@ export default function GlobeCanvas() {
           />
           <AppFooter
             isVisible={states.isMainUiVisible}
-            onVacationClick={handlers.handleOpenVacationPopup}
+            onVacationClick={() => {
+              track({ kind: 'search' });
+              handlers.handleOpenVacationPopup();
+            }}
           />
         </div>
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
