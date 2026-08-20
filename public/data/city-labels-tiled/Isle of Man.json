@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Douglas",
+    "key": "douglas",
+    "lat": 54.149122,
+    "lon": -4.480269,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

@@ -1,0 +1,155 @@
+[
+  {
+    "name": "Catmandu",
+    "key": "catmandu",
+    "lat": 27.718638,
+    "lon": 85.314696,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Patan",
+    "key": "patan",
+    "lat": 27.666618,
+    "lon": 85.333334,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hetauda",
+    "key": "hetauda",
+    "lat": 27.416684,
+    "lon": 85.033352,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pokhara",
+    "key": "pokhara",
+    "lat": 28.204201,
+    "lon": 84.00558,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Biratnagar",
+    "key": "biratnagar",
+    "lat": 26.483744,
+    "lon": 87.283344,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Birganj",
+    "key": "birganj",
+    "lat": 27.000405,
+    "lon": 84.866592,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dhangadhi",
+    "key": "dhangadhi",
+    "lat": 28.694997,
+    "lon": 80.593003,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nepalgunj",
+    "key": "nepalgunj",
+    "lat": 28.050341,
+    "lon": 81.616661,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Siddharthanagar",
+    "key": "siddharthanagar",
+    "lat": 27.533304,
+    "lon": 83.3833,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rajbiraj",
+    "key": "rajbiraj",
+    "lat": 26.533296,
+    "lon": 86.733298,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baglung",
+    "key": "baglung",
+    "lat": 28.266696,
+    "lon": 83.583298,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dadeldhura",
+    "key": "dadeldhura",
+    "lat": 29.300004,
+    "lon": 80.600004,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ilam",
+    "key": "ilam (nepal)",
+    "lat": 26.908002,
+    "lon": 87.926005,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salyan",
+    "key": "salyan city",
+    "lat": 28.35,
+    "lon": 82.183303,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ramechhap",
+    "key": "ramechhap",
+    "lat": 27.325998,
+    "lon": 86.086999,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bhimfedi",
+    "key": "bhimfedi",
+    "lat": 27.550998,
+    "lon": 85.130002,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jumla",
+    "key": "jumla",
+    "lat": 29.25,
+    "lon": 82.216702,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

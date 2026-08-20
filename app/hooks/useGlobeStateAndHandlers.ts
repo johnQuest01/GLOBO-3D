@@ -68,7 +68,10 @@ export const useGlobeStateAndHandlers = () => {
   >(null);
   const [isAdvertisePopupOpen, setIsAdvertisePopupOpen] = useState(false);
   const [activeAds, setActiveAds] = useState<AdData[]>([]);
-  const [isHighResTextureActive, setIsHighResTextureActive] = useState(false);
+  // Câmera perto o bastante para o globo mostrar o que só faz sentido de
+  // perto — hoje, os anúncios. Vinha do nível de LOD da textura, que não
+  // existe mais desde que o globo passou a usar uma imagem só com mipmaps.
+  const [isZoomedIn, setIsZoomedIn] = useState(false);
   const [isUiVisible, setIsUiVisible] = useState(true);
   const [isAdminAnimOpen, setIsAdminAnimOpen] = useState(false);
   const [isTourismPopupOpen, setIsTourismPopupOpen] = useState(false);
@@ -405,7 +408,7 @@ export const useGlobeStateAndHandlers = () => {
       selectedArticleIndex,
       isAdvertisePopupOpen,
       activeAds,
-      isHighResTextureActive,
+      isZoomedIn,
       isUiVisible,
       isAdminAnimOpen,
       isAnyPopupOpen,
@@ -420,7 +423,7 @@ export const useGlobeStateAndHandlers = () => {
       setIsAdminNewsEnabled,
       setNewsCategory,
       setSelectedArticleIndex,
-      setIsHighResTextureActive,
+      setIsZoomedIn,
     },
     handlers: {
       closeAllPopups,

@@ -1,0 +1,191 @@
+[
+  {
+    "name": "Alepo",
+    "key": "alepo",
+    "lat": 36.231917,
+    "lon": 37.168074,
+    "labelRank": 2,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Damasco",
+    "key": "damasco",
+    "lat": 33.50198,
+    "lon": 36.29805,
+    "labelRank": 2,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Homs",
+    "key": "homs",
+    "lat": 34.731905,
+    "lon": 36.718076,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lataquia",
+    "key": "lataquia",
+    "lat": 35.539987,
+    "lon": 35.779976,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Douma",
+    "key": "douma",
+    "lat": 33.583336,
+    "lon": 36.39999,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hama",
+    "key": "hama",
+    "lat": 35.150347,
+    "lon": 36.729996,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Deir ez-Zor",
+    "key": "deir ez-zor",
+    "lat": 35.330387,
+    "lon": 40.129995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Raqqa",
+    "key": "raqqa",
+    "lat": 35.930377,
+    "lon": 39.019985,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tartus",
+    "key": "tartus city",
+    "lat": 34.884634,
+    "lon": 35.886584,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Daraa",
+    "key": "daraa",
+    "lat": 32.625,
+    "lon": 36.105004,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Idlib",
+    "key": "idlib city",
+    "lat": 35.929705,
+    "lon": 36.631655,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al Hasakah",
+    "key": "al hasakah",
+    "lat": 36.483289,
+    "lon": 40.750008,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Manbij",
+    "key": "manbij",
+    "lat": 36.526645,
+    "lon": 37.956329,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al-Qamishli",
+    "key": "al-qamishli",
+    "lat": 37.030025,
+    "lon": 41.229979,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Madinat ath Thawrah",
+    "key": "madinat ath thawrah",
+    "lat": 35.836661,
+    "lon": 38.548076,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Abu Camal",
+    "key": "abu camal",
+    "lat": 34.450415,
+    "lon": 40.918629,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "As-Suwayda",
+    "key": "as-suwayda",
+    "lat": 32.700419,
+    "lon": 36.566595,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tadmor",
+    "key": "tadmor",
+    "lat": 34.550409,
+    "lon": 38.283337,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "An-Nabek",
+    "key": "an-nabek",
+    "lat": 34.017031,
+    "lon": 36.733303,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Azaz",
+    "key": "azaz",
+    "lat": 36.588786,
+    "lon": 37.044085,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quneitra",
+    "key": "quneitra city",
+    "lat": 33.125664,
+    "lon": 35.823591,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

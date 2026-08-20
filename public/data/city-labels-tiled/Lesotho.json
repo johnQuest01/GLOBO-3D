@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Maseru",
+    "key": "maseru city",
+    "lat": -29.316674,
+    "lon": 27.483273,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mafeteng",
+    "key": "mafeteng city",
+    "lat": -29.816644,
+    "lon": 27.250006,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hlotse",
+    "key": "hlotse",
+    "lat": -28.878003,
+    "lon": 28.055998,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mohale's Hoek",
+    "key": "mohale's hoek city",
+    "lat": -30.159,
+    "lon": 27.479997,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quthing",
+    "key": "quthing city",
+    "lat": -30.411,
+    "lon": 27.716005,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Butha-Buthe",
+    "key": "butha-buthe city",
+    "lat": -28.749996,
+    "lon": 28.250002,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mokhotlong",
+    "key": "mokhotlong city",
+    "lat": -29.291004,
+    "lon": 29.078001,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Teyateyaneng",
+    "key": "teyateyaneng",
+    "lat": -29.152998,
+    "lon": 27.753003,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  }
+]

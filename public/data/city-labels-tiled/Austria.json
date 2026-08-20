@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Viena",
+    "key": "viena",
+    "lat": 48.201961,
+    "lon": 16.364693,
+    "labelRank": 1,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Linz",
+    "key": "linz",
+    "lat": 48.319233,
+    "lon": 14.288781,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Graz",
+    "key": "graz",
+    "lat": 47.077758,
+    "lon": 15.410005,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salzburgo",
+    "key": "salzburgo",
+    "lat": 47.810478,
+    "lon": 13.04002,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Innsbruck",
+    "key": "innsbruck",
+    "lat": 47.280407,
+    "lon": 11.409991,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Klagenfurt",
+    "key": "klagenfurt",
+    "lat": 46.620344,
+    "lon": 14.31002,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wiener Neustadt",
+    "key": "wiener neustadt",
+    "lat": 47.815982,
+    "lon": 16.249954,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bregenz",
+    "key": "bregenz",
+    "lat": 47.516697,
+    "lon": 9.766702,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Eisenstadt",
+    "key": "eisenstadt",
+    "lat": 47.833299,
+    "lon": 16.533297,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

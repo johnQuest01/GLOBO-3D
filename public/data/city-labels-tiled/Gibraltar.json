@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Gibraltar",
+    "key": "gibraltar city",
+    "lat": 36.128342,
+    "lon": -5.346014,
+    "labelRank": 6,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  }
+]

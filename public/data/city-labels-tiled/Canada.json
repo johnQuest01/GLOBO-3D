@@ -1,0 +1,2306 @@
+[
+  {
+    "name": "Toronto",
+    "key": "toronto",
+    "lat": 43.65,
+    "lon": -79.38,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vancouver",
+    "key": "vancouver",
+    "lat": 49.28,
+    "lon": -123.12,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Toronto",
+    "key": "toronto city",
+    "lat": 43.664645,
+    "lon": -79.389459,
+    "labelRank": 1,
+    "minLabel": 2.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Montreal",
+    "key": "montreal",
+    "lat": 45.501945,
+    "lon": -73.585243,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ottawa",
+    "key": "ottawa",
+    "lat": 45.418643,
+    "lon": -75.701961,
+    "labelRank": 3,
+    "minLabel": 3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Calgary",
+    "key": "calgary",
+    "lat": 51.084938,
+    "lon": -114.081944,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Edmonton",
+    "key": "edmonton",
+    "lat": 53.551971,
+    "lon": -113.501928,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hamilton",
+    "key": "hamilton city",
+    "lat": 43.249981,
+    "lon": -79.829996,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Winnipeg",
+    "key": "winnipeg",
+    "lat": 49.882987,
+    "lon": -97.165992,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quebec",
+    "key": "quebec",
+    "lat": 46.839969,
+    "lon": -71.24561,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oshawa",
+    "key": "oshawa",
+    "lat": 43.879995,
+    "lon": -78.849978,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kitchener",
+    "key": "kitchener",
+    "lat": 43.449995,
+    "lon": -80.500007,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Halifax",
+    "key": "halifax",
+    "lat": 44.650025,
+    "lon": -63.600004,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "London",
+    "key": "london city",
+    "lat": 42.969999,
+    "lon": -81.249987,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Windsor",
+    "key": "windsor",
+    "lat": 42.315457,
+    "lon": -83.036852,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vitória",
+    "key": "vitória (canada)",
+    "lat": 48.433283,
+    "lon": -123.350001,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saskatoon",
+    "key": "saskatoon",
+    "lat": 52.170031,
+    "lon": -106.669985,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barrie",
+    "key": "barrie",
+    "lat": 44.383762,
+    "lon": -79.700004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Regina",
+    "key": "regina",
+    "lat": 50.450033,
+    "lon": -104.61701,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sudbury",
+    "key": "sudbury",
+    "lat": 46.49999,
+    "lon": -80.966645,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Abbotsford",
+    "key": "abbotsford",
+    "lat": 49.050377,
+    "lon": -122.299987,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sarnia",
+    "key": "sarnia",
+    "lat": 42.96664,
+    "lon": -82.399968,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sherbrooke",
+    "key": "sherbrooke",
+    "lat": 45.400005,
+    "lon": -71.899989,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "St. John's",
+    "key": "st. john's",
+    "lat": 47.584988,
+    "lon": -52.681007,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kelowna",
+    "key": "kelowna",
+    "lat": 49.899989,
+    "lon": -119.483312,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trois-Rivières",
+    "key": "trois-rivières",
+    "lat": 46.349973,
+    "lon": -72.549949,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kingston",
+    "key": "kingston (canada)",
+    "lat": 44.23372,
+    "lon": -76.483301,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Thunder Bay",
+    "key": "thunder bay",
+    "lat": 48.44615,
+    "lon": -89.274975,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moncton",
+    "key": "moncton",
+    "lat": 46.083349,
+    "lon": -64.766678,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saint John",
+    "key": "saint john city",
+    "lat": 45.267042,
+    "lon": -66.076675,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nanaimo",
+    "key": "nanaimo",
+    "lat": 49.14602,
+    "lon": -123.934291,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Peterborough",
+    "key": "peterborough (canada)",
+    "lat": 44.299969,
+    "lon": -78.333265,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saint-Jérôme",
+    "key": "saint-jérôme",
+    "lat": 45.76665,
+    "lon": -73.99999,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Red Deer",
+    "key": "red deer",
+    "lat": 52.26664,
+    "lon": -113.800041,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lethbridge",
+    "key": "lethbridge",
+    "lat": 49.700492,
+    "lon": -112.833278,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kamloops",
+    "key": "kamloops",
+    "lat": 50.666661,
+    "lon": -120.333286,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Prince George",
+    "key": "prince george",
+    "lat": 53.916669,
+    "lon": -122.766651,
+    "labelRank": 6,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Medicine Hat",
+    "key": "medicine hat",
+    "lat": 50.033314,
+    "lon": -110.683332,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Drummondville",
+    "key": "drummondville",
+    "lat": 45.883335,
+    "lon": -72.483364,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chicoutimi",
+    "key": "chicoutimi",
+    "lat": 48.433309,
+    "lon": -71.066706,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fredericton",
+    "key": "fredericton",
+    "lat": 45.949998,
+    "lon": -66.633308,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chilliwack",
+    "key": "chilliwack",
+    "lat": 49.166649,
+    "lon": -121.949983,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "North Bay",
+    "key": "north bay",
+    "lat": 46.300002,
+    "lon": -79.449993,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shawinigan",
+    "key": "shawinigan",
+    "lat": 46.550374,
+    "lon": -72.733323,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cornwall",
+    "key": "cornwall city",
+    "lat": 45.017057,
+    "lon": -74.73333,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Joliette",
+    "key": "joliette",
+    "lat": 46.033326,
+    "lon": -73.433306,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Belleville",
+    "key": "belleville city",
+    "lat": 44.16667,
+    "lon": -77.383349,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Charlottetown",
+    "key": "charlottetown",
+    "lat": 46.249282,
+    "lon": -63.131325,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Victoriaville",
+    "key": "victoriaville",
+    "lat": 46.050405,
+    "lon": -71.966677,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Grande Prairie",
+    "key": "grande prairie",
+    "lat": 55.166644,
+    "lon": -118.799994,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Penticton",
+    "key": "penticton",
+    "lat": 49.500375,
+    "lon": -119.58328,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sydney",
+    "key": "sydney city",
+    "lat": 46.066114,
+    "lon": -60.179981,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Orillia",
+    "key": "orillia",
+    "lat": 44.599977,
+    "lon": -79.416662,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rimouski",
+    "key": "rimouski",
+    "lat": 48.433748,
+    "lon": -68.516681,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Timmins",
+    "key": "timmins",
+    "lat": 48.466588,
+    "lon": -81.333315,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Prince Albert",
+    "key": "prince albert",
+    "lat": 53.20002,
+    "lon": -105.74999,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Campbell River",
+    "key": "campbell river",
+    "lat": 50.017088,
+    "lon": -125.249988,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Courtenay",
+    "key": "courtenay",
+    "lat": 49.683336,
+    "lon": -124.999978,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Orangeville",
+    "key": "orangeville",
+    "lat": 43.917073,
+    "lon": -80.083339,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moose Jaw",
+    "key": "moose jaw",
+    "lat": 50.399984,
+    "lon": -105.550002,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brandon",
+    "key": "brandon",
+    "lat": 49.833275,
+    "lon": -99.949982,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brockville",
+    "key": "brockville",
+    "lat": 44.58928,
+    "lon": -75.695313,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saint-Georges",
+    "key": "saint-georges",
+    "lat": 46.117145,
+    "lon": -70.666653,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sept-Îles",
+    "key": "sept-îles",
+    "lat": 50.316088,
+    "lon": -66.360017,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rouyn-Noranda",
+    "key": "rouyn-noranda",
+    "lat": 48.250012,
+    "lon": -79.033248,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Whitehorse",
+    "key": "whitehorse",
+    "lat": 60.716719,
+    "lon": -135.049984,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Owen Sound",
+    "key": "owen sound",
+    "lat": 44.565234,
+    "lon": -80.944661,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fort McMurray",
+    "key": "fort mcmurray",
+    "lat": 56.733319,
+    "lon": -111.383315,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Corner Brook",
+    "key": "corner brook",
+    "lat": 48.949995,
+    "lon": -57.933348,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Val-d'Or",
+    "key": "val-d'or",
+    "lat": 48.116635,
+    "lon": -77.766633,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nova Glasgow",
+    "key": "nova glasgow",
+    "lat": 45.583276,
+    "lon": -62.633319,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Terrace",
+    "key": "terrace",
+    "lat": 54.499992,
+    "lon": -128.583325,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "North Battleford",
+    "key": "north battleford",
+    "lat": 52.766636,
+    "lon": -108.283349,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yellowknife",
+    "key": "yellowknife",
+    "lat": 62.442014,
+    "lon": -114.396981,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fort St. John",
+    "key": "fort st. john",
+    "lat": 56.249989,
+    "lon": -120.833281,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cranbrook",
+    "key": "cranbrook",
+    "lat": 49.516679,
+    "lon": -115.766665,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Edmundston",
+    "key": "edmundston",
+    "lat": 47.379419,
+    "lon": -68.333281,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rivière-du-Loup",
+    "key": "rivière-du-loup",
+    "lat": 47.833294,
+    "lon": -69.533312,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Camrose",
+    "key": "camrose",
+    "lat": 53.016698,
+    "lon": -112.816639,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pembroke",
+    "key": "pembroke city",
+    "lat": 45.850262,
+    "lon": -77.116647,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yorkton",
+    "key": "yorkton",
+    "lat": 51.217066,
+    "lon": -102.466547,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Swift Current",
+    "key": "swift current",
+    "lat": 50.283738,
+    "lon": -107.766611,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Prince Rupert",
+    "key": "prince rupert",
+    "lat": 54.31667,
+    "lon": -130.329988,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Williams Lake",
+    "key": "williams lake",
+    "lat": 52.11665,
+    "lon": -122.149997,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brooks",
+    "key": "brooks",
+    "lat": 50.567054,
+    "lon": -111.900002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quesnel",
+    "key": "quesnel",
+    "lat": 52.983677,
+    "lon": -122.483284,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Thompson",
+    "key": "thompson",
+    "lat": 55.749942,
+    "lon": -97.866621,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dolbeau-Mistassini",
+    "key": "dolbeau-mistassini",
+    "lat": 48.86659,
+    "lon": -72.233328,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Powell River",
+    "key": "powell river",
+    "lat": 49.883711,
+    "lon": -124.549979,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wetaskiwin",
+    "key": "wetaskiwin",
+    "lat": 52.966572,
+    "lon": -113.383297,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nelson",
+    "key": "nelson (canada)",
+    "lat": 49.483658,
+    "lon": -117.283291,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mont-Laurier",
+    "key": "mont-laurier",
+    "lat": 46.550374,
+    "lon": -75.500028,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kenora",
+    "key": "kenora",
+    "lat": 49.76669,
+    "lon": -94.466648,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dawson Creek",
+    "key": "dawson creek",
+    "lat": 55.766969,
+    "lon": -120.233266,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Amos",
+    "key": "amos",
+    "lat": 48.566634,
+    "lon": -78.116664,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baie-Comeau",
+    "key": "baie-comeau",
+    "lat": 49.222666,
+    "lon": -68.157995,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Labrador City",
+    "key": "labrador city",
+    "lat": 52.941431,
+    "lon": -66.915875,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hinton",
+    "key": "hinton",
+    "lat": 53.399982,
+    "lon": -117.58335,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Selkirk",
+    "key": "selkirk",
+    "lat": 50.150025,
+    "lon": -96.883322,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Steinbach",
+    "key": "steinbach",
+    "lat": 49.517092,
+    "lon": -96.683308,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Weyburn",
+    "key": "weyburn",
+    "lat": 49.666567,
+    "lon": -103.850003,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Amherst",
+    "key": "amherst",
+    "lat": 45.816569,
+    "lon": -64.216582,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kapuskasing",
+    "key": "kapuskasing",
+    "lat": 49.416685,
+    "lon": -82.433325,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dauphin",
+    "key": "dauphin city",
+    "lat": 51.150016,
+    "lon": -100.04995,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dryden",
+    "key": "dryden",
+    "lat": 49.78333,
+    "lon": -92.833336,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Revelstoke",
+    "key": "revelstoke",
+    "lat": 51.000464,
+    "lon": -118.18334,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Happy Valley-Goose Bay",
+    "key": "happy valley-goose bay",
+    "lat": 53.299988,
+    "lon": -60.299999,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Banff",
+    "key": "banff",
+    "lat": 51.177999,
+    "lon": -115.571923,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yarmouth",
+    "key": "yarmouth",
+    "lat": 43.830795,
+    "lon": -66.112581,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "La Sarre",
+    "key": "la sarre",
+    "lat": 48.800005,
+    "lon": -79.200034,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Parry Sound",
+    "key": "parry sound",
+    "lat": 45.333704,
+    "lon": -80.033007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Stephenville",
+    "key": "stephenville",
+    "lat": 48.550407,
+    "lon": -58.566565,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Antigonish",
+    "key": "antigonish",
+    "lat": 45.626917,
+    "lon": -61.99819,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Flin Flon",
+    "key": "flin flon",
+    "lat": 54.766591,
+    "lon": -101.883301,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fort Nelson",
+    "key": "fort nelson",
+    "lat": 58.803878,
+    "lon": -122.686543,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Smithers",
+    "key": "smithers",
+    "lat": 54.766591,
+    "lon": -127.16659,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Iqaluit",
+    "key": "iqaluit",
+    "lat": 63.750459,
+    "lon": -68.500192,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bathurst",
+    "key": "bathurst city",
+    "lat": 47.599974,
+    "lon": -65.649983,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "The Pas",
+    "key": "the pas",
+    "lat": 53.816623,
+    "lon": -101.233315,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Norway House",
+    "key": "norway house",
+    "lat": 53.966588,
+    "lon": -97.83329,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Meadow Lake",
+    "key": "meadow lake",
+    "lat": 54.130118,
+    "lon": -108.434736,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vegreville",
+    "key": "vegreville",
+    "lat": 53.499976,
+    "lon": -112.049967,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Stettler",
+    "key": "stettler",
+    "lat": 52.332967,
+    "lon": -112.683288,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Peace River",
+    "key": "peace river",
+    "lat": 56.233323,
+    "lon": -117.283291,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Temiskaming Shores",
+    "key": "temiskaming shores",
+    "lat": 47.500006,
+    "lon": -79.666647,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hearst",
+    "key": "hearst",
+    "lat": 49.700492,
+    "lon": -83.666583,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Creston",
+    "key": "creston",
+    "lat": 49.09996,
+    "lon": -116.516697,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Marathon",
+    "key": "marathon",
+    "lat": 48.750395,
+    "lon": -86.366651,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sioux Lookout",
+    "key": "sioux lookout",
+    "lat": 50.262964,
+    "lon": -91.916648,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cochrane",
+    "key": "cochrane city",
+    "lat": 49.067017,
+    "lon": -81.016564,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kindersley",
+    "key": "kindersley",
+    "lat": 51.466974,
+    "lon": -109.133298,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Liverpool",
+    "key": "liverpool (canada)",
+    "lat": 44.039959,
+    "lon": -64.720014,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Melville",
+    "key": "melville",
+    "lat": 50.933311,
+    "lon": -102.799989,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Channel-Port aux Basques",
+    "key": "channel-port aux basques",
+    "lat": 47.567005,
+    "lon": -59.150044,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Deer Lake",
+    "key": "deer lake",
+    "lat": 49.1744,
+    "lon": -57.426919,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saint-Augustin",
+    "key": "saint-augustin",
+    "lat": 51.24231,
+    "lon": -58.646999,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Digby",
+    "key": "digby",
+    "lat": 44.622585,
+    "lon": -65.760493,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jasper",
+    "key": "jasper",
+    "lat": 52.883321,
+    "lon": -118.083371,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hay River",
+    "key": "hay river",
+    "lat": 60.814276,
+    "lon": -115.78834,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Windsor",
+    "key": "windsor city",
+    "lat": 44.980599,
+    "lon": -64.12912,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "La Ronge",
+    "key": "la ronge",
+    "lat": 55.100007,
+    "lon": -105.300017,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Deer Lake",
+    "key": "deer lake city",
+    "lat": 52.617033,
+    "lon": -94.066594,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gaspé",
+    "key": "gaspé",
+    "lat": 48.837315,
+    "lon": -64.493361,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Atikokan",
+    "key": "atikokan",
+    "lat": 48.750395,
+    "lon": -91.616589,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gander",
+    "key": "gander",
+    "lat": 48.949995,
+    "lon": -54.549988,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fort Chipewyan",
+    "key": "fort chipewyan",
+    "lat": 58.717099,
+    "lon": -111.149996,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shelburne",
+    "key": "shelburne",
+    "lat": 43.765609,
+    "lon": -65.319357,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Inuvik",
+    "key": "inuvik",
+    "lat": 68.349974,
+    "lon": -133.699989,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lac La Biche",
+    "key": "lac la biche",
+    "lat": 54.77194,
+    "lon": -111.964701,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lillooet",
+    "key": "lillooet",
+    "lat": 50.683714,
+    "lon": -121.933266,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Port Burwell",
+    "key": "port burwell",
+    "lat": 60.266462,
+    "lon": -64.741098,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chapleau",
+    "key": "chapleau",
+    "lat": 47.833707,
+    "lon": -83.40001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mistissini",
+    "key": "mistissini",
+    "lat": 50.417063,
+    "lon": -73.866587,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Burns Lake",
+    "key": "burns lake",
+    "lat": 54.217012,
+    "lon": -125.766598,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gimli",
+    "key": "gimli",
+    "lat": 50.633303,
+    "lon": -96.999981,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Athabasca",
+    "key": "athabasca",
+    "lat": 54.717033,
+    "lon": -113.266585,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nelson House",
+    "key": "nelson house",
+    "lat": 55.800456,
+    "lon": -98.850023,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rankin Inlet",
+    "key": "rankin inlet",
+    "lat": 62.816668,
+    "lon": -92.09532,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Port Hardy",
+    "key": "port hardy",
+    "lat": 50.717071,
+    "lon": -127.49998,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Biggar",
+    "key": "biggar",
+    "lat": 52.0504,
+    "lon": -107.98329,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wiarton",
+    "key": "wiarton",
+    "lat": 44.733689,
+    "lon": -81.133301,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wawa",
+    "key": "wawa",
+    "lat": 48.000415,
+    "lon": -84.783337,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baía de Hudson",
+    "key": "baía de hudson",
+    "lat": 52.850429,
+    "lon": -102.383296,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Matagami",
+    "key": "matagami",
+    "lat": 49.750386,
+    "lon": -77.633282,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arviat",
+    "key": "arviat",
+    "lat": 61.108592,
+    "lon": -94.058607,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Attawapiskat",
+    "key": "attawapiskat",
+    "lat": 52.916627,
+    "lon": -82.433325,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Red Lake",
+    "key": "red lake",
+    "lat": 51.033692,
+    "lon": -93.833301,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moosonee",
+    "key": "moosonee",
+    "lat": 51.280602,
+    "lon": -80.657981,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tofino",
+    "key": "tofino",
+    "lat": 49.098616,
+    "lon": -125.862124,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Igloolik",
+    "key": "igloolik",
+    "lat": 69.256535,
+    "lon": -81.793592,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Inukjuak",
+    "key": "inukjuak",
+    "lat": 58.470009,
+    "lon": -78.135991,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Little Current",
+    "key": "little current",
+    "lat": 45.967025,
+    "lon": -81.93333,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baker Lake",
+    "key": "baker lake",
+    "lat": 64.31699,
+    "lon": -96.016656,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pond Inlet",
+    "key": "pond inlet",
+    "lat": 72.684981,
+    "lon": -78.000056,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cap-Chat",
+    "key": "cap-chat",
+    "lat": 49.09996,
+    "lon": -66.683305,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cambridge Bay",
+    "key": "cambridge bay",
+    "lat": 69.116956,
+    "lon": -105.033315,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Thessalon",
+    "key": "thessalon",
+    "lat": 46.249979,
+    "lon": -83.550001,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bella Bella",
+    "key": "bella bella",
+    "lat": 52.148405,
+    "lon": -128.117281,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cobalto",
+    "key": "cobalto",
+    "lat": 47.383708,
+    "lon": -79.683312,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cape Dorset",
+    "key": "cape dorset",
+    "lat": 64.31252,
+    "lon": -76.538579,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pangnirtung",
+    "key": "pangnirtung",
+    "lat": 66.133313,
+    "lon": -65.750028,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dawson City",
+    "key": "dawson city",
+    "lat": 64.066644,
+    "lon": -139.416669,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kugluktuk",
+    "key": "kugluktuk",
+    "lat": 67.798663,
+    "lon": -115.12535,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Geraldton",
+    "key": "geraldton city",
+    "lat": 49.722406,
+    "lon": -86.941871,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gillam",
+    "key": "gillam",
+    "lat": 56.349983,
+    "lon": -94.699967,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kuujjuaq",
+    "key": "kuujjuaq",
+    "lat": 58.100005,
+    "lon": -68.399996,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lago Louise",
+    "key": "lago louise",
+    "lat": 51.433694,
+    "lon": -116.183281,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kuujjuarapik",
+    "key": "kuujjuarapik",
+    "lat": 55.281495,
+    "lon": -77.765832,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nipigon",
+    "key": "nipigon",
+    "lat": 49.017046,
+    "lon": -88.249973,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nain",
+    "key": "nain",
+    "lat": 56.547351,
+    "lon": -61.686045,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gjoa Haven",
+    "key": "gjoa haven",
+    "lat": 68.63329,
+    "lon": -95.916662,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fort McPherson",
+    "key": "fort mcpherson",
+    "lat": 67.491525,
+    "lon": -134.894981,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Argentia",
+    "key": "argentia",
+    "lat": 47.300432,
+    "lon": -53.989997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Norman Wells",
+    "key": "norman wells",
+    "lat": 65.283727,
+    "lon": -126.849968,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Churchill",
+    "key": "churchill",
+    "lat": 58.765985,
+    "lon": -94.165994,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Repulse Bay",
+    "key": "repulse bay",
+    "lat": 66.529467,
+    "lon": -86.282935,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tuktoyaktuk",
+    "key": "tuktoyaktuk",
+    "lat": 69.454775,
+    "lon": -133.049201,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rio Berens",
+    "key": "rio berens",
+    "lat": 52.366557,
+    "lon": -97.033313,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shamattawa",
+    "key": "shamattawa",
+    "lat": 55.850375,
+    "lon": -92.083279,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baddeck",
+    "key": "baddeck",
+    "lat": 46.099988,
+    "lon": -60.753977,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Coral Harbour",
+    "key": "coral harbour",
+    "lat": 64.15377,
+    "lon": -83.176587,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "LaScie",
+    "key": "lascie",
+    "lat": 49.967013,
+    "lon": -55.583,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Watson Lake",
+    "key": "watson lake",
+    "lat": 60.062306,
+    "lon": -128.711692,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Taloyoak",
+    "key": "taloyoak",
+    "lat": 69.533313,
+    "lon": -93.53332,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Natashquan",
+    "key": "natashquan",
+    "lat": 50.191341,
+    "lon": -61.810656,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Buchans",
+    "key": "buchans",
+    "lat": 48.817032,
+    "lon": -56.866591,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hall Beach",
+    "key": "hall beach",
+    "lat": 68.767467,
+    "lon": -81.236083,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arctic Bay",
+    "key": "arctic bay",
+    "lat": 73.033306,
+    "lon": -85.166621,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fort Good Hope",
+    "key": "fort good hope",
+    "lat": 66.266613,
+    "lon": -128.633322,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mingan",
+    "key": "mingan",
+    "lat": 50.301759,
+    "lon": -64.017265,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kangirsuk",
+    "key": "kangirsuk",
+    "lat": 60.024823,
+    "lon": -69.999097,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sandspit",
+    "key": "sandspit",
+    "lat": 53.240405,
+    "lon": -131.833281,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Deline",
+    "key": "deline",
+    "lat": 65.183346,
+    "lon": -123.416663,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fort Smith",
+    "key": "fort smith city",
+    "lat": 60.000019,
+    "lon": -111.883336,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cartwright",
+    "key": "cartwright",
+    "lat": 53.701407,
+    "lon": -57.012141,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ulukhaktok",
+    "key": "ulukhaktok",
+    "lat": 70.733368,
+    "lon": -117.749981,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lynn Lake",
+    "key": "lynn lake",
+    "lat": 56.85003,
+    "lon": -101.049967,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Schefferville",
+    "key": "schefferville",
+    "lat": 54.8,
+    "lon": -66.816656,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trout River",
+    "key": "trout river",
+    "lat": 49.483658,
+    "lon": -58.116644,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Forteau",
+    "key": "forteau",
+    "lat": 51.450385,
+    "lon": -56.949997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fort Resolution",
+    "key": "fort resolution",
+    "lat": 61.166588,
+    "lon": -113.682994,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hopedale",
+    "key": "hopedale",
+    "lat": 55.44996,
+    "lon": -60.216671,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pukatawagan",
+    "key": "pukatawagan",
+    "lat": 55.733276,
+    "lon": -101.316617,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trepassey",
+    "key": "trepassey",
+    "lat": 46.736978,
+    "lon": -53.363291,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kimmirut",
+    "key": "kimmirut",
+    "lat": 62.850026,
+    "lon": -69.883316,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chesterfield Inlet",
+    "key": "chesterfield inlet",
+    "lat": 63.33829,
+    "lon": -90.700082,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Eastmain",
+    "key": "eastmain",
+    "lat": 52.233335,
+    "lon": -78.516691,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dease Lake",
+    "key": "dease lake",
+    "lat": 58.450346,
+    "lon": -130.033288,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Paulatuk",
+    "key": "paulatuk",
+    "lat": 69.383322,
+    "lon": -123.983321,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chevery",
+    "key": "chevery",
+    "lat": 50.481323,
+    "lon": -59.609783,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fort Simpson",
+    "key": "fort simpson",
+    "lat": 61.849983,
+    "lon": -121.333276,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brochet",
+    "key": "brochet",
+    "lat": 57.883223,
+    "lon": -101.666596,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cat Lake",
+    "key": "cat lake",
+    "lat": 51.717036,
+    "lon": -91.799989,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Radisson",
+    "key": "radisson",
+    "lat": 53.783628,
+    "lon": -77.616565,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Port-Menier",
+    "key": "port-menier",
+    "lat": 49.822578,
+    "lon": -64.347995,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Resolute",
+    "key": "resolute",
+    "lat": 74.683334,
+    "lon": -94.900006,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "St. Anthony",
+    "key": "st. anthony",
+    "lat": 51.383749,
+    "lon": -55.59995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Meander River",
+    "key": "meander river",
+    "lat": 59.033282,
+    "lon": -117.682982,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Port Hope Simpson",
+    "key": "port hope simpson",
+    "lat": 52.533291,
+    "lon": -56.300011,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oxford House",
+    "key": "oxford house",
+    "lat": 54.950404,
+    "lon": -95.266599,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tsiigehtchic",
+    "key": "tsiigehtchic",
+    "lat": 67.433286,
+    "lon": -133.749986,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ivujivik",
+    "key": "ivujivik",
+    "lat": 62.416641,
+    "lon": -77.899984,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Stony Rapids",
+    "key": "stony rapids",
+    "lat": 59.266575,
+    "lon": -105.833266,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alert",
+    "key": "alert",
+    "lat": 82.483323,
+    "lon": -62.249984,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Primeira Nação de Fort Severn",
+    "key": "primeira nação de fort severn",
+    "lat": 55.983339,
+    "lon": -87.649984,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rigolet",
+    "key": "rigolet",
+    "lat": 54.176601,
+    "lon": -58.447322,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Neskantaga",
+    "key": "neskantaga",
+    "lat": 52.216644,
+    "lon": -87.883329,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salluit",
+    "key": "salluit",
+    "lat": 62.182598,
+    "lon": -75.659501,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lutselk'e",
+    "key": "lutselk'e",
+    "lat": 62.400053,
+    "lon": -110.733329,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Churchill Falls",
+    "key": "churchill falls",
+    "lat": 53.526409,
+    "lon": -63.980679,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uranium City",
+    "key": "uranium city",
+    "lat": 59.566557,
+    "lon": -108.616585,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Burwash Landing",
+    "key": "burwash landing",
+    "lat": 61.350375,
+    "lon": -139,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Grise Fiord",
+    "key": "grise fiord",
+    "lat": 76.441651,
+    "lon": -82.949986,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lago Island",
+    "key": "lago island",
+    "lat": 53.966588,
+    "lon": -94.766578,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Big Beaver House",
+    "key": "big beaver house",
+    "lat": 52.949984,
+    "lon": -89.883284,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ennadai",
+    "key": "ennadai",
+    "lat": 61.133283,
+    "lon": -100.883336,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  }
+]

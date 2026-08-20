@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Cidade da Guatemala",
+    "key": "cidade da guatemala",
+    "lat": 14.623081,
+    "lon": -90.528911,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quetzaltenango",
+    "key": "quetzaltenango",
+    "lat": 14.829959,
+    "lon": -91.520006,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "El Progreso",
+    "key": "el progreso city",
+    "lat": 14.922294,
+    "lon": -90.016208,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Luis",
+    "key": "san luis (guatemala)",
+    "lat": 16.200005,
+    "lon": -89.440004,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Escuintla",
+    "key": "escuintla (guatemala)",
+    "lat": 14.300405,
+    "lon": -90.779999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huehuetenango",
+    "key": "huehuetenango city",
+    "lat": 15.320394,
+    "lon": -91.469983,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chimaltenango",
+    "key": "chimaltenango city",
+    "lat": 14.661999,
+    "lon": -90.819998,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Totonicapán",
+    "key": "totonicapán city",
+    "lat": 14.913999,
+    "lon": -91.358001,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cobán",
+    "key": "cobán",
+    "lat": 15.469998,
+    "lon": -90.379998,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mazatenango",
+    "key": "mazatenango",
+    "lat": 14.530365,
+    "lon": -91.50998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto Barrios",
+    "key": "puerto barrios",
+    "lat": 15.717495,
+    "lon": -88.592652,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jutiapa",
+    "key": "jutiapa city",
+    "lat": 14.289992,
+    "lon": -89.900001,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jalapa",
+    "key": "jalapa city",
+    "lat": 14.633001,
+    "lon": -89.989002,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sololá",
+    "key": "sololá city",
+    "lat": 14.772996,
+    "lon": -91.182996,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chiquimula",
+    "key": "chiquimula city",
+    "lat": 14.796999,
+    "lon": -89.543997,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salamá",
+    "key": "salamá",
+    "lat": 15.102999,
+    "lon": -90.314001,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Antigua Guatemala",
+    "key": "antigua guatemala",
+    "lat": 14.566698,
+    "lon": -90.733302,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Flores",
+    "key": "flores city",
+    "lat": 16.933681,
+    "lon": -89.883284,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Retalhuleu",
+    "key": "retalhuleu city",
+    "lat": 14.537097,
+    "lon": -91.677014,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zacapa",
+    "key": "zacapa city",
+    "lat": 14.972004,
+    "lon": -89.529003,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Marcos",
+    "key": "san marcos (guatemala)",
+    "lat": 14.966001,
+    "lon": -91.799999,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Cruz del Quiché",
+    "key": "santa cruz del quiché",
+    "lat": 15.033303,
+    "lon": -91.133298,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto San José",
+    "key": "puerto san josé",
+    "lat": 13.93973,
+    "lon": -90.820032,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cuilapa",
+    "key": "cuilapa",
+    "lat": 14.279004,
+    "lon": -90.297999,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Livingston",
+    "key": "livingston",
+    "lat": 15.830654,
+    "lon": -88.756235,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "La Libertad",
+    "key": "la libertad city",
+    "lat": 16.780434,
+    "lon": -90.119988,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

@@ -1,7 +1,7 @@
 // components/globe/canvas/Earth.tsx
 'use client';
 
-import React, { useState, useRef, useMemo } from 'react';
+import React, { useMemo, useRef } from 'react';
 import * as THREE from 'three';
 import { useFrame, extend } from '@react-three/fiber';
 import { shaderMaterial } from '@react-three/drei';
@@ -16,19 +16,18 @@ import {
 } from '@/app/lib/globeDayNight';
 
 /**
- * Material do globo. Faz duas misturas ao mesmo tempo:
+ * Material do globo: UMA textura, e a mistura dia -> noite conforme o ângulo
+ * entre a superfície e o Sol.
  *
- * 1. Crossfade entre dois níveis de LOD do lado dia (uTexture1 -> uTexture2),
- *    para a troca de nitidez não aparecer como um "pulo".
- * 2. Dia -> noite conforme o ângulo entre a superfície e o Sol. O lado escuro
- *    mostra as luzes das cidades, e a passagem entre os dois é suave como o
- *    crepúsculo de verdade, não uma linha dura.
+ * Antes havia duas amostragens por pixel, porque o material fazia crossfade
+ * entre dois níveis de LOD (`uTexture1` -> `uTexture2`). Isso acabou: com os
+ * mipmaps vindo dentro do KTX2, quem escolhe o nível de detalhe é a GPU, por
+ * pixel. Sobrou uma amostragem — em tela de celular, uma busca de textura a
+ * menos por pixel a cada quadro não é pouca coisa.
  */
-const CrossfadeMaterialImpl = shaderMaterial(
+const GlobeMaterialImpl = shaderMaterial(
   {
-    uBlendFactor: 0.0,
-    uTexture1: new THREE.Texture(),
-    uTexture2: new THREE.Texture(),
+    uTexture: new THREE.Texture(),
     uSunDirection: new THREE.Vector3(1, 0, 0),
     uClockMode: 0.0,
     uZoomDaylight: 1.0,
@@ -46,9 +45,7 @@ const CrossfadeMaterialImpl = shaderMaterial(
   `,
   // Fragment Shader
   `
-    uniform float uBlendFactor;
-    uniform sampler2D uTexture1;
-    uniform sampler2D uTexture2;
+    uniform sampler2D uTexture;
     uniform vec3 uSunDirection;
     uniform float uClockMode;
     uniform float uZoomDaylight;
@@ -58,7 +55,7 @@ const CrossfadeMaterialImpl = shaderMaterial(
     varying vec3 vNormal;
 
     void main() {
-      vec4 day = mix(texture2D(uTexture1, vUv), texture2D(uTexture2, vUv), uBlendFactor);
+      vec4 day = texture2D(uTexture, vUv);
 
       // MODO RELOGIO: cada ponto decide sozinho se e dia ou noite, pelo angulo
       // com o Sol. Crepusculo estreito, porque na Terra real o dia vai claro
@@ -84,13 +81,11 @@ const CrossfadeMaterialImpl = shaderMaterial(
     }
   `
 );
-extend({ CrossfadeMaterial: CrossfadeMaterialImpl });
+extend({ GlobeMaterial: GlobeMaterialImpl });
 
 // --- Tipagem ---
-interface CrossfadeMaterialUniforms {
-  uBlendFactor?: number;
-  uTexture1?: THREE.Texture;
-  uTexture2?: THREE.Texture;
+interface GlobeMaterialUniforms {
+  uTexture?: THREE.Texture;
   uSunDirection?: THREE.Vector3;
   uClockMode?: number;
   uZoomDaylight?: number;
@@ -98,7 +93,7 @@ interface CrossfadeMaterialUniforms {
 }
 declare module '@react-three/fiber' {
   interface ThreeElements {
-    crossfadeMaterial: CrossfadeMaterialUniforms & {
+    globeMaterial: GlobeMaterialUniforms & {
       key?: string | number | null;
       ref?: React.Ref<THREE.ShaderMaterial>;
     } & Partial<THREE.Material>;
@@ -106,38 +101,35 @@ declare module '@react-three/fiber' {
 }
 
 interface EarthProps {
+  /** Azul liso de 4x4 pixels, enquanto a textura de verdade não chegou. */
   placeholderTexture: THREE.Texture;
-  lodTextures: THREE.Texture[];
-  lodConfig: { maxDistance: number; path: string }[];
-  areLodTexturesReady: boolean;
+  dayTexture: THREE.Texture | null;
   isInteractive: boolean;
-  onLODChange: (isHighRes: boolean) => void;
-  /** Avisa o carregador que o zoom já justifica baixar este nível. */
-  requestLevel: (index: number) => void;
+  /** Avisa quando a câmera está perto o bastante para os anúncios aparecerem. */
+  onZoomedInChange: (isZoomedIn: boolean) => void;
   mode: GlobeMode;
 }
 
 const SPHERE_RADIUS = 1.5;
-const TRANSITION_SPEED = 2.0;
+
+/**
+ * Distância da câmera a partir da qual se considera que o usuário "entrou" no
+ * globo. Era o degrau em que a antiga escada de LOD trocava para o nível mais
+ * pesado; virou um limiar explícito, que é o que ele sempre foi de fato.
+ */
+const ZOOMED_IN_DISTANCE = 2.95;
 
 export default function Earth({
   placeholderTexture,
-  lodTextures,
-  lodConfig,
-  areLodTexturesReady,
+  dayTexture,
   isInteractive,
-  onLODChange,
-  requestLevel,
+  onZoomedInChange,
   mode,
 }: EarthProps) {
   const materialRef = useRef<THREE.ShaderMaterial>(null!);
   const meshRef = useRef<THREE.Mesh>(null!);
 
-  const [activeLodIndex, setActiveLodIndex] = useState(0);
-  const [targetLodIndex, setTargetLodIndex] = useState(0);
-  const [isUsingPlaceholder, setIsUsingPlaceholder] = useState(true);
-
-  const prevIsHighRes = useRef<boolean>(false);
+  const prevIsZoomedIn = useRef(false);
 
   // O Sol anda ~0.004°/s: recalcular a cada minuto é mais que suficiente.
   const sunDirection = useMemo(() => sunDirectionForDate(new Date()), []);
@@ -153,6 +145,10 @@ export default function Earth({
       sunDirection.copy(sunDirectionForDate(new Date()));
     }
     materialRef.current.uniforms.uSunDirection.value = sunDirection;
+
+    // A textura entra assim que chega, sem crossfade: não há dois níveis para
+    // conciliar, só a bola azul dando lugar ao planeta.
+    materialRef.current.uniforms.uTexture.value = dayTexture ?? placeholderTexture;
 
     const distance = camera.position.length();
 
@@ -170,73 +166,23 @@ export default function Earth({
           : Math.max(modeTarget, clock.value - step);
     }
 
-    // Popup aberto: nada de recalcular LOD, o quadro é do popup.
+    // Popup aberto: o quadro é do popup, não do globo.
     if (!isInteractive) return;
-    let newTargetIndex = lodConfig.findIndex((lod) => distance >= lod.maxDistance);
-    if (newTargetIndex === -1) {
-      newTargetIndex = lodConfig.length - 1;
-    }
 
-    // Só agora sabemos que o usuário chegou perto o bastante para o nível
-    // pesado valer a pena. Enquanto ele não chega, o anterior segue no lugar.
-    requestLevel(newTargetIndex);
-
-    const isHighRes = newTargetIndex === lodConfig.length - 1;
-    if (isHighRes !== prevIsHighRes.current) {
-      prevIsHighRes.current = isHighRes;
-      onLODChange(isHighRes);
-    }
-
-    const uniform = materialRef.current.uniforms.uBlendFactor;
-
-    if (isUsingPlaceholder) {
-      if (!areLodTexturesReady || lodTextures.length === 0) {
-        materialRef.current.uniforms.uTexture1.value = placeholderTexture;
-        materialRef.current.uniforms.uTexture2.value = placeholderTexture;
-        uniform.value = 0.0;
-        return;
-      }
-
-      materialRef.current.uniforms.uTexture1.value = placeholderTexture;
-      materialRef.current.uniforms.uTexture2.value = lodTextures[newTargetIndex];
-
-      uniform.value = Math.min(uniform.value + delta * TRANSITION_SPEED, 1.0);
-
-      if (uniform.value >= 1.0) {
-        setIsUsingPlaceholder(false);
-        setActiveLodIndex(newTargetIndex);
-        setTargetLodIndex(newTargetIndex);
-        uniform.value = 0.0;
-      }
-    } else {
-      if (newTargetIndex !== targetLodIndex) {
-        setTargetLodIndex(newTargetIndex);
-      }
-
-      materialRef.current.uniforms.uTexture1.value = lodTextures[activeLodIndex];
-      materialRef.current.uniforms.uTexture2.value = lodTextures[targetLodIndex];
-
-      if (activeLodIndex !== targetLodIndex) {
-        uniform.value = Math.min(uniform.value + delta * TRANSITION_SPEED, 1.0);
-        if (uniform.value >= 1.0) {
-          setActiveLodIndex(targetLodIndex);
-          uniform.value = 0.0;
-        }
-      } else {
-        uniform.value = 0.0;
-      }
+    const isZoomedIn = distance < ZOOMED_IN_DISTANCE;
+    if (isZoomedIn !== prevIsZoomedIn.current) {
+      prevIsZoomedIn.current = isZoomedIn;
+      onZoomedInChange(isZoomedIn);
     }
   });
 
   return (
     <mesh ref={meshRef}>
       <sphereGeometry args={[SPHERE_RADIUS, 128, 128]} />
-      <crossfadeMaterial
+      <globeMaterial
         ref={materialRef}
-        key="custom-material"
-        uniforms-uTexture1-value={placeholderTexture}
-        uniforms-uTexture2-value={placeholderTexture}
-        uniforms-uBlendFactor-value={0.0}
+        key="globe-material"
+        uniforms-uTexture-value={placeholderTexture}
         uniforms-uClockMode-value={0.0}
         uniforms-uZoomDaylight-value={1.0}
         toneMapped={false}

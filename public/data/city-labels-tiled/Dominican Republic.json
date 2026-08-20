@@ -1,0 +1,281 @@
+[
+  {
+    "name": "Santo Domingo",
+    "key": "santo domingo city",
+    "lat": 18.470745,
+    "lon": -69.929742,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santiago de los Caballeros",
+    "key": "santiago de los caballeros",
+    "lat": 19.50001,
+    "lon": -70.670012,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Pedro de Macorís",
+    "key": "san pedro de macorís city",
+    "lat": 18.450358,
+    "lon": -69.299967,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "La Romana",
+    "key": "la romana city",
+    "lat": 18.417001,
+    "lon": -68.966602,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Concepción de la Vega",
+    "key": "concepción de la vega",
+    "lat": 19.216591,
+    "lon": -70.516585,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Cristóbal",
+    "key": "san cristóbal (dominican republic)",
+    "lat": 18.415998,
+    "lon": -70.109,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Francisco de Macorís",
+    "key": "san francisco de macorís",
+    "lat": 19.299996,
+    "lon": -70.250012,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Higüey",
+    "key": "higüey",
+    "lat": 18.615996,
+    "lon": -68.707998,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto Plata",
+    "key": "puerto plata city",
+    "lat": 19.790217,
+    "lon": -70.690247,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Cruz de Barahona",
+    "key": "santa cruz de barahona",
+    "lat": 18.200374,
+    "lon": -71.099986,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bonao",
+    "key": "bonao",
+    "lat": 18.942003,
+    "lon": -70.408998,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Juan de la Maguana",
+    "key": "san juan de la maguana",
+    "lat": 18.808949,
+    "lon": -71.230942,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baní",
+    "key": "baní",
+    "lat": 18.279999,
+    "lon": -70.331003,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moca",
+    "key": "moca",
+    "lat": 19.396998,
+    "lon": -70.523001,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Azua de Compostela",
+    "key": "azua de compostela",
+    "lat": 18.453996,
+    "lon": -70.729002,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mao",
+    "key": "mao",
+    "lat": 19.551996,
+    "lon": -71.074997,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salcedo",
+    "key": "salcedo",
+    "lat": 19.383003,
+    "lon": -70.416702,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Comendador",
+    "key": "comendador",
+    "lat": 18.875997,
+    "lon": -71.706996,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cotuí",
+    "key": "cotuí",
+    "lat": 19.059003,
+    "lon": -70.152003,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hato Mayor del Rey",
+    "key": "hato mayor del rey",
+    "lat": 18.764001,
+    "lon": -69.256997,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nagua",
+    "key": "nagua",
+    "lat": 19.376001,
+    "lon": -69.847002,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Neiba",
+    "key": "neiba",
+    "lat": 18.466611,
+    "lon": -71.416633,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Cruz de El Seibo",
+    "key": "santa cruz de el seibo",
+    "lat": 18.764001,
+    "lon": -69.035004,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Fernando de Monte Cristi",
+    "key": "san fernando de monte cristi",
+    "lat": 19.86699,
+    "lon": -71.65003,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dajabón",
+    "key": "dajabón city",
+    "lat": 19.548,
+    "lon": -71.704998,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Ignacio de Sabaneta",
+    "key": "san ignacio de sabaneta",
+    "lat": 19.504998,
+    "lon": -71.344988,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Monte Plata",
+    "key": "monte plata city",
+    "lat": 18.807003,
+    "lon": -69.784002,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Samaná",
+    "key": "samaná city",
+    "lat": 19.212003,
+    "lon": -69.332004,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pedernales",
+    "key": "pedernales city",
+    "lat": 18.037998,
+    "lon": -71.740998,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jimaní",
+    "key": "jimaní",
+    "lat": 18.493002,
+    "lon": -71.850995,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bávaro",
+    "key": "bávaro",
+    "lat": 18.717009,
+    "lon": -68.449967,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

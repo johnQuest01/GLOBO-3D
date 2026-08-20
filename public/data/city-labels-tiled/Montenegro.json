@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Podgorica",
+    "key": "podgorica city",
+    "lat": 42.465972,
+    "lon": 19.266307,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  }
+]

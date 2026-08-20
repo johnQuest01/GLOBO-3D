@@ -1,0 +1,191 @@
+[
+  {
+    "name": "Helsínquia",
+    "key": "helsínquia",
+    "lat": 60.163804,
+    "lon": 24.932457,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tampere",
+    "key": "tampere",
+    "lat": 61.500005,
+    "lon": 23.750013,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Turku",
+    "key": "turku",
+    "lat": 60.453867,
+    "lon": 22.254962,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oulu",
+    "key": "oulu",
+    "lat": 64.999998,
+    "lon": 25.470011,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lahti",
+    "key": "lahti",
+    "lat": 60.99386,
+    "lon": 25.664934,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jyväskylä",
+    "key": "jyväskylä",
+    "lat": 62.260346,
+    "lon": 25.749994,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kuopio",
+    "key": "kuopio",
+    "lat": 62.894286,
+    "lon": 27.69494,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pori",
+    "key": "pori",
+    "lat": 61.478895,
+    "lon": 21.774939,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lappeenranta",
+    "key": "lappeenranta",
+    "lat": 61.067059,
+    "lon": 28.183334,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vaasa",
+    "key": "vaasa",
+    "lat": 63.099984,
+    "lon": 21.600015,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Joensuu",
+    "key": "joensuu",
+    "lat": 62.599989,
+    "lon": 29.766648,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hämeenlinna",
+    "key": "hämeenlinna",
+    "lat": 60.996996,
+    "lon": 24.471999,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kokkola",
+    "key": "kokkola",
+    "lat": 63.833299,
+    "lon": 23.116666,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mikkeli",
+    "key": "mikkeli",
+    "lat": 61.689996,
+    "lon": 27.285003,
+    "labelRank": 10,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rovaniemi",
+    "key": "rovaniemi",
+    "lat": 66.500035,
+    "lon": 25.715939,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kouvola",
+    "key": "kouvola",
+    "lat": 60.876,
+    "lon": 26.709004,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Savonlinna",
+    "key": "savonlinna",
+    "lat": 61.866623,
+    "lon": 28.883343,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kemi",
+    "key": "kemi",
+    "lat": 65.733312,
+    "lon": 24.581693,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Porvoo",
+    "key": "porvoo",
+    "lat": 60.400356,
+    "lon": 25.66602,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sodankylä",
+    "key": "sodankylä",
+    "lat": 67.417059,
+    "lon": 26.600019,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kemijärvi",
+    "key": "kemijärvi",
+    "lat": 66.666666,
+    "lon": 27.416662,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  }
+]

@@ -1,0 +1,299 @@
+[
+  {
+    "name": "Cabul",
+    "key": "cabul",
+    "lat": 34.518636,
+    "lon": 69.181314,
+    "labelRank": 1,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kandahar",
+    "key": "kandahar city",
+    "lat": 31.61002,
+    "lon": 65.694946,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jalalabad",
+    "key": "jalalabad",
+    "lat": 34.441527,
+    "lon": 70.436104,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Herat",
+    "key": "herat",
+    "lat": 34.330009,
+    "lon": 62.169993,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mazar-e Sharif",
+    "key": "mazar-e sharif",
+    "lat": 36.699994,
+    "lon": 67.100028,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Konduz",
+    "key": "konduz",
+    "lat": 36.727951,
+    "lon": 68.87253,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baghlan",
+    "key": "baghlan city",
+    "lat": 36.13933,
+    "lon": 68.699259,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lashkar Gah",
+    "key": "lashkar gah",
+    "lat": 31.582998,
+    "lon": 64.36,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Meymaneh",
+    "key": "meymaneh",
+    "lat": 35.930222,
+    "lon": 64.770093,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Balkh",
+    "key": "balkh city",
+    "lat": 36.75012,
+    "lon": 66.89973,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gázni",
+    "key": "gázni",
+    "lat": 33.563312,
+    "lon": 68.417829,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gardiz",
+    "key": "gardiz",
+    "lat": 33.600054,
+    "lon": 69.214628,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sheberghan",
+    "key": "sheberghan",
+    "lat": 36.657981,
+    "lon": 65.738302,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Farah",
+    "key": "farah city",
+    "lat": 32.39173,
+    "lon": 62.096819,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Andkhvoy",
+    "key": "andkhvoy",
+    "lat": 36.931659,
+    "lon": 65.101494,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Feyzabad",
+    "key": "feyzabad",
+    "lat": 37.129761,
+    "lon": 70.579247,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Taloqan",
+    "key": "taloqan",
+    "lat": 36.729999,
+    "lon": 69.540004,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bamiyan",
+    "key": "bamiyan",
+    "lat": 34.813337,
+    "lon": 67.822732,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pol-e Khomri",
+    "key": "pol-e khomri",
+    "lat": 35.951073,
+    "lon": 68.701119,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Charikar",
+    "key": "charikar",
+    "lat": 35.018262,
+    "lon": 69.167912,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zaranj",
+    "key": "zaranj",
+    "lat": 31.112001,
+    "lon": 61.886997,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Asadabad",
+    "key": "asadabad",
+    "lat": 34.866,
+    "lon": 71.150005,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maydan Shahr",
+    "key": "maydan shahr",
+    "lat": 34.450002,
+    "lon": 68.799997,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Samangan",
+    "key": "samangan city",
+    "lat": 36.261,
+    "lon": 68.040001,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baraki Barak",
+    "key": "baraki barak",
+    "lat": 33.966702,
+    "lon": 68.966703,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karukh",
+    "key": "karukh",
+    "lat": 34.48677,
+    "lon": 62.591776,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mehtar Lam",
+    "key": "mehtar lam",
+    "lat": 34.65,
+    "lon": 70.166701,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chaghcharan",
+    "key": "chaghcharan",
+    "lat": 34.516701,
+    "lon": 65.250001,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zareh Sharan",
+    "key": "zareh sharan",
+    "lat": 32.85,
+    "lon": 68.416704,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qalat",
+    "key": "qalat",
+    "lat": 32.112263,
+    "lon": 66.886759,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tarin Kowt",
+    "key": "tarin kowt",
+    "lat": 32.633298,
+    "lon": 65.866699,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mahmud-e Raqi",
+    "key": "mahmud-e raqi",
+    "lat": 35.016696,
+    "lon": 69.333301,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qal'eh-ye Now",
+    "key": "qal'eh-ye now",
+    "lat": 34.983,
+    "lon": 63.1333,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

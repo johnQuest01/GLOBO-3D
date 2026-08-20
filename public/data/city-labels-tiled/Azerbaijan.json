@@ -1,0 +1,155 @@
+[
+  {
+    "name": "Baku",
+    "key": "baku",
+    "lat": 40.397218,
+    "lon": 49.860271,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ganja",
+    "key": "ganja",
+    "lat": 40.684996,
+    "lon": 46.350028,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sumqayit",
+    "key": "sumqayit",
+    "lat": 40.580015,
+    "lon": 49.629983,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Naquichevão",
+    "key": "naquichevão",
+    "lat": 39.20922,
+    "lon": 45.412205,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shirvan",
+    "key": "shirvan city",
+    "lat": 39.932303,
+    "lon": 48.920259,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shaki",
+    "key": "shaki",
+    "lat": 41.192329,
+    "lon": 47.170547,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lankaran",
+    "key": "lankaran city",
+    "lat": 38.754003,
+    "lon": 48.851064,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Stepanakert",
+    "key": "stepanakert city",
+    "lat": 39.815643,
+    "lon": 46.751968,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yevlakh",
+    "key": "yevlakh city",
+    "lat": 40.617196,
+    "lon": 47.150031,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kapan",
+    "key": "kapan",
+    "lat": 39.201521,
+    "lon": 46.414986,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Goychay",
+    "key": "goychay",
+    "lat": 40.653422,
+    "lon": 47.74059,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tovuz",
+    "key": "tovuz city",
+    "lat": 40.992222,
+    "lon": 45.628889,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qabala",
+    "key": "qabala",
+    "lat": 40.981389,
+    "lon": 47.845833,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gadabay",
+    "key": "gadabay",
+    "lat": 40.565556,
+    "lon": 45.816111,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Goranboy",
+    "key": "goranboy city",
+    "lat": 40.610278,
+    "lon": 46.789722,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oğuz",
+    "key": "oğuz city",
+    "lat": 41.070833,
+    "lon": 47.458333,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ağdam",
+    "key": "ağdam city",
+    "lat": 40.905278,
+    "lon": 45.556389,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

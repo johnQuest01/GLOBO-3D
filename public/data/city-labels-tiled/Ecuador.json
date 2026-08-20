@@ -1,0 +1,335 @@
+[
+  {
+    "name": "Guaiaquil",
+    "key": "guaiaquil",
+    "lat": -2.218088,
+    "lon": -79.921988,
+    "labelRank": 2,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quito",
+    "key": "quito",
+    "lat": -0.213042,
+    "lon": -78.501997,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cuenca",
+    "key": "cuenca",
+    "lat": -2.899992,
+    "lon": -78.999995,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ambato",
+    "key": "ambato",
+    "lat": -1.269601,
+    "lon": -78.619992,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Portoviejo",
+    "key": "portoviejo",
+    "lat": -1.060001,
+    "lon": -80.459983,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Machala",
+    "key": "machala",
+    "lat": -3.260022,
+    "lon": -79.959988,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Manta",
+    "key": "manta",
+    "lat": -0.980006,
+    "lon": -80.729967,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sangolquí",
+    "key": "sangolquí",
+    "lat": -0.310021,
+    "lon": -78.45995,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Esmeraldas",
+    "key": "esmeraldas city",
+    "lat": 0.93042,
+    "lon": -79.66998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Riobamba",
+    "key": "riobamba",
+    "lat": -1.670041,
+    "lon": -78.650042,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ibarra",
+    "key": "ibarra",
+    "lat": 0.360377,
+    "lon": -78.129996,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Loja",
+    "key": "loja city",
+    "lat": -3.990003,
+    "lon": -79.210008,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Milagro",
+    "key": "milagro",
+    "lat": -2.179623,
+    "lon": -79.599984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Latacunga",
+    "key": "latacunga",
+    "lat": -0.92957,
+    "lon": -78.609967,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tulcán",
+    "key": "tulcán",
+    "lat": 0.821997,
+    "lon": -77.732,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Babahoyo",
+    "key": "babahoyo",
+    "lat": -1.799594,
+    "lon": -79.540014,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Azogues",
+    "key": "azogues",
+    "lat": -2.740002,
+    "lon": -78.84003,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chone",
+    "key": "chone",
+    "lat": -0.689585,
+    "lon": -80.090006,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salinas",
+    "key": "salinas city",
+    "lat": -2.200035,
+    "lon": -80.980003,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jipijapa",
+    "key": "jipijapa",
+    "lat": -1.349596,
+    "lon": -80.580002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tena",
+    "key": "tena",
+    "lat": -0.979593,
+    "lon": -77.80999,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cayambe",
+    "key": "cayambe",
+    "lat": 0.05037,
+    "lon": -78.159994,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guaranda",
+    "key": "guaranda",
+    "lat": -1.609994,
+    "lon": -79.01002,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puyo",
+    "key": "puyo",
+    "lat": -1.483002,
+    "lon": -77.986998,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Macas",
+    "key": "macas",
+    "lat": -2.309589,
+    "lon": -78.119997,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Lorenzo",
+    "key": "san lorenzo city",
+    "lat": 1.270399,
+    "lon": -78.860055,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Piñas",
+    "key": "piñas",
+    "lat": -3.670023,
+    "lon": -79.649981,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Gabriel",
+    "key": "san gabriel",
+    "lat": 0.609974,
+    "lon": -77.84004,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zamora",
+    "key": "zamora",
+    "lat": -4.069585,
+    "lon": -78.969997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alausí",
+    "key": "alausí",
+    "lat": -2.189958,
+    "lon": -78.849978,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Muisne",
+    "key": "muisne",
+    "lat": 0.609974,
+    "lon": -80.02001,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Macará",
+    "key": "macará",
+    "lat": -4.379592,
+    "lon": -79.949988,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Valdez",
+    "key": "valdez",
+    "lat": 1.267104,
+    "lon": -78.985499,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Cruz",
+    "key": "santa cruz (ecuador)",
+    "lat": -0.533315,
+    "lon": -90.35,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto Baquerizo Moreno",
+    "key": "puerto baquerizo moreno",
+    "lat": -0.900011,
+    "lon": -89.599968,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto Villamil",
+    "key": "puerto villamil",
+    "lat": -0.933342,
+    "lon": -91.016651,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yaupi",
+    "key": "yaupi",
+    "lat": -2.85431,
+    "lon": -77.936339,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  }
+]

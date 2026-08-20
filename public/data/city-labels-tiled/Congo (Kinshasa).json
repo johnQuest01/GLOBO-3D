@@ -1,0 +1,785 @@
+[
+  {
+    "name": "Lubumbashi",
+    "key": "lubumbashi",
+    "lat": -11.678079,
+    "lon": 27.478072,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mbuji-Mayi",
+    "key": "mbuji-mayi",
+    "lat": -6.148081,
+    "lon": 23.59805,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kananga",
+    "key": "kananga",
+    "lat": -5.888096,
+    "lon": 22.398072,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kikwit",
+    "key": "kikwit",
+    "lat": -5.030043,
+    "lon": 18.850002,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kisangani",
+    "key": "kisangani",
+    "lat": 0.520006,
+    "lon": 25.22,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bukavu",
+    "key": "bukavu",
+    "lat": -2.50999,
+    "lon": 28.840038,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Likasi",
+    "key": "likasi",
+    "lat": -10.970042,
+    "lon": 26.780009,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kolwezi",
+    "key": "kolwezi",
+    "lat": -10.716724,
+    "lon": 25.47244,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Beni",
+    "key": "beni",
+    "lat": 0.490447,
+    "lon": 29.450026,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Butembo",
+    "key": "butembo",
+    "lat": 0.130004,
+    "lon": 29.280011,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mbandaka",
+    "key": "mbandaka",
+    "lat": 0.040035,
+    "lon": 18.260012,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tshikapa",
+    "key": "tshikapa",
+    "lat": -6.409959,
+    "lon": 20.770039,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kindu",
+    "key": "kindu",
+    "lat": -2.963916,
+    "lon": 25.909984,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Matadi",
+    "key": "matadi",
+    "lat": -5.81661,
+    "lon": 13.450021,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kalemie",
+    "key": "kalemie",
+    "lat": -5.933295,
+    "lon": 29.200016,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gemena",
+    "key": "gemena",
+    "lat": 3.260019,
+    "lon": 19.769997,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mbanza-Ngungu",
+    "key": "mbanza-ngungu",
+    "lat": -5.249616,
+    "lon": 14.860013,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mwene-Ditu",
+    "key": "mwene-ditu",
+    "lat": -7,
+    "lon": 23.440006,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Boma",
+    "key": "boma",
+    "lat": -5.829994,
+    "lon": 13.049994,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uvira",
+    "key": "uvira",
+    "lat": -3.369989,
+    "lon": 29.14002,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bumba",
+    "key": "bumba",
+    "lat": 2.189981,
+    "lon": 22.459962,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Isiro",
+    "key": "isiro",
+    "lat": 2.759972,
+    "lon": 27.620009,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gandajika",
+    "key": "gandajika",
+    "lat": -6.739603,
+    "lon": 23.960026,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moanda",
+    "key": "moanda",
+    "lat": -5.922909,
+    "lon": 12.354997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wamba",
+    "key": "wamba",
+    "lat": 2.140424,
+    "lon": 27.98996,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Goma",
+    "key": "goma",
+    "lat": -1.678799,
+    "lon": 29.221787,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kamina",
+    "key": "kamina",
+    "lat": -8.730024,
+    "lon": 25.009987,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bandundu",
+    "key": "bandundu city",
+    "lat": -3.309993,
+    "lon": 17.379962,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kipushi",
+    "key": "kipushi",
+    "lat": -11.759607,
+    "lon": 27.250006,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ilebo",
+    "key": "ilebo",
+    "lat": -4.319596,
+    "lon": 20.609997,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kongolo",
+    "key": "kongolo",
+    "lat": -5.379479,
+    "lon": 26.979996,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bunia",
+    "key": "bunia",
+    "lat": 1.560407,
+    "lon": 30.240004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lisala",
+    "key": "lisala",
+    "lat": 2.14001,
+    "lon": 21.509994,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lodja",
+    "key": "lodja",
+    "lat": -3.532144,
+    "lon": 23.591414,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Binga",
+    "key": "binga",
+    "lat": 2.383406,
+    "lon": 20.419983,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kasongo",
+    "key": "kasongo",
+    "lat": -4.450027,
+    "lon": 26.660016,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kabinda",
+    "key": "kabinda",
+    "lat": -6.129614,
+    "lon": 24.479994,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aketi",
+    "key": "aketi",
+    "lat": 2.740464,
+    "lon": 23.779985,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Basankusu",
+    "key": "basankusu",
+    "lat": 1.233709,
+    "lon": 19.800021,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mweka",
+    "key": "mweka",
+    "lat": -4.839615,
+    "lon": 21.569991,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gbadolite",
+    "key": "gbadolite",
+    "lat": 4.29037,
+    "lon": 21.019947,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kahemba",
+    "key": "kahemba",
+    "lat": -7.282929,
+    "lon": 19.000018,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bulungu",
+    "key": "bulungu",
+    "lat": -4.549607,
+    "lon": 18.599991,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Manono",
+    "key": "manono",
+    "lat": -7.300034,
+    "lon": 27.449993,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Buta",
+    "key": "buta",
+    "lat": 2.819994,
+    "lon": 24.74003,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Basoko",
+    "key": "basoko",
+    "lat": 1.240427,
+    "lon": 23.590022,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lubao",
+    "key": "lubao",
+    "lat": -5.389556,
+    "lon": 25.749994,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lusambo",
+    "key": "lusambo",
+    "lat": -4.969582,
+    "lon": 23.430032,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Inongo",
+    "key": "inongo",
+    "lat": -1.939999,
+    "lon": 18.28001,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tshela",
+    "key": "tshela",
+    "lat": -4.969582,
+    "lon": 12.930001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bukama",
+    "key": "bukama",
+    "lat": -9.209581,
+    "lon": 25.840014,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mangai",
+    "key": "mangai",
+    "lat": -4.039613,
+    "lon": 19.530012,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kampene",
+    "key": "kampene",
+    "lat": -3.599536,
+    "lon": 26.670041,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kambove",
+    "key": "kambove",
+    "lat": -10.869583,
+    "lon": 26.600019,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kaniama",
+    "key": "kaniama",
+    "lat": -7.56963,
+    "lon": 24.170039,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yangambi",
+    "key": "yangambi",
+    "lat": 0.770378,
+    "lon": 24.430023,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Luebo",
+    "key": "luebo",
+    "lat": -5.349507,
+    "lon": 21.41,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Businga",
+    "key": "businga",
+    "lat": 3.340376,
+    "lon": 20.869982,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mushie",
+    "key": "mushie",
+    "lat": -3.019623,
+    "lon": 16.920042,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Boende",
+    "key": "boende",
+    "lat": -0.219587,
+    "lon": 20.860008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kabalo",
+    "key": "kabalo",
+    "lat": -6.049619,
+    "lon": 26.910026,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kasangulu",
+    "key": "kasangulu",
+    "lat": -4.57958,
+    "lon": 15.179993,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bolobo",
+    "key": "bolobo",
+    "lat": -2.159521,
+    "lon": 16.23998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Libenge",
+    "key": "libenge",
+    "lat": 3.660434,
+    "lon": 18.61999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Watsa",
+    "key": "watsa",
+    "lat": 3.040007,
+    "lon": 29.52997,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bondo",
+    "key": "bondo",
+    "lat": 3.80996,
+    "lon": 23.670018,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Demba",
+    "key": "demba",
+    "lat": -5.5096,
+    "lon": 22.259974,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kasongo-Lunda",
+    "key": "kasongo-lunda",
+    "lat": -6.479619,
+    "lon": 16.82997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zongo",
+    "key": "zongo",
+    "lat": 4.330342,
+    "lon": 18.615029,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nyunzu",
+    "key": "nyunzu",
+    "lat": -5.949573,
+    "lon": 28.016677,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bosobolo",
+    "key": "bosobolo",
+    "lat": 4.190376,
+    "lon": 19.880016,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Casaji",
+    "key": "casaji",
+    "lat": -10.366203,
+    "lon": 23.449979,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kimpese",
+    "key": "kimpese",
+    "lat": -5.549598,
+    "lon": 14.43332,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moba",
+    "key": "moba",
+    "lat": -7.059583,
+    "lon": 29.719984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dilolo",
+    "key": "dilolo",
+    "lat": -10.69962,
+    "lon": 22.333303,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bongandanga",
+    "key": "bongandanga",
+    "lat": 1.510359,
+    "lon": 21.050022,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mongbwalu",
+    "key": "mongbwalu",
+    "lat": 1.950435,
+    "lon": 30.033298,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mwenga",
+    "key": "mwenga",
+    "lat": -3.038227,
+    "lon": 28.432517,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lubutu",
+    "key": "lubutu",
+    "lat": -0.732889,
+    "lon": 26.583328,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Buluko",
+    "key": "buluko",
+    "lat": -0.756999,
+    "lon": 28.528002,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Luanza",
+    "key": "luanza",
+    "lat": -8.699587,
+    "lon": 28.699995,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dibaya",
+    "key": "dibaya",
+    "lat": -6.509539,
+    "lon": 22.870015,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ikela",
+    "key": "ikela",
+    "lat": -1.182939,
+    "lon": 23.266579,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kenge",
+    "key": "kenge",
+    "lat": -4.82959,
+    "lon": 16.89994,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kalima",
+    "key": "kalima",
+    "lat": -2.509577,
+    "lon": 26.430004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lusanga",
+    "key": "lusanga",
+    "lat": -5.582929,
+    "lon": 16.516656,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bafwasende",
+    "key": "bafwasende",
+    "lat": 1.083847,
+    "lon": 27.266594,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

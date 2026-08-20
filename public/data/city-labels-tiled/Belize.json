@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Belize",
+    "key": "belize city",
+    "lat": 17.498711,
+    "lon": -88.188374,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Orange Walk",
+    "key": "orange walk city",
+    "lat": 18.090432,
+    "lon": -88.55998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Ignacio",
+    "key": "san ignacio",
+    "lat": 17.155998,
+    "lon": -89.061003,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Belmopan",
+    "key": "belmopan",
+    "lat": 17.252033,
+    "lon": -88.767073,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dangriga",
+    "key": "dangriga",
+    "lat": 16.970035,
+    "lon": -88.22,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Corozal",
+    "key": "corozal city",
+    "lat": 18.397998,
+    "lon": -88.388001,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Punta Gorda",
+    "key": "punta gorda",
+    "lat": 16.100347,
+    "lon": -88.810016,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

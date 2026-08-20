@@ -2,8 +2,8 @@
   {
     "name": "Oriental",
     "key": "eastern",
-    "lat": -13.7617,
-    "lon": 31.8341,
+    "lat": -1.69059,
+    "lon": 30.4223,
     "labelRank": 9,
     "minLabel": 8.7,
     "maxLabel": 11
@@ -11,8 +11,8 @@
   {
     "name": "Sul",
     "key": "southern",
-    "lat": 7.85416,
-    "lon": -12.0512,
+    "lat": -2.38388,
+    "lon": 29.6424,
     "labelRank": 9,
     "minLabel": 8.7,
     "maxLabel": 11
@@ -29,8 +29,8 @@
   {
     "name": "Norte",
     "key": "northern",
-    "lat": 9.14067,
-    "lon": -11.9468,
+    "lat": -1.61148,
+    "lon": 29.8587,
     "labelRank": 9,
     "minLabel": 8.7,
     "maxLabel": 11

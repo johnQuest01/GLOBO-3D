@@ -1,0 +1,227 @@
+[
+  {
+    "name": "Taipé",
+    "key": "taipé",
+    "lat": 25.035833,
+    "lon": 121.568333,
+    "labelRank": 1,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Novo Taipé",
+    "key": "novo taipé",
+    "lat": 25.012778,
+    "lon": 121.465,
+    "labelRank": 5,
+    "minLabel": 5.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kaohsiung",
+    "key": "kaohsiung",
+    "lat": 22.633307,
+    "lon": 120.266602,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Taichung",
+    "key": "taichung",
+    "lat": 24.152078,
+    "lon": 120.681667,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tainan",
+    "key": "tainan",
+    "lat": 23.000003,
+    "lon": 120.200043,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhongli",
+    "key": "zhongli",
+    "lat": 24.965025,
+    "lon": 121.216776,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Changhua",
+    "key": "changhua city",
+    "lat": 24.0734,
+    "lon": 120.513409,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hsinchu",
+    "key": "hsinchu (taiwan)",
+    "lat": 24.816791,
+    "lon": 120.976739,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pingtung",
+    "key": "pingtung city",
+    "lat": 22.681702,
+    "lon": 120.481679,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Taoyuan",
+    "key": "taoyuan city",
+    "lat": 24.988889,
+    "lon": 121.311111,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Keelung",
+    "key": "keelung",
+    "lat": 25.133258,
+    "lon": 121.733282,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chiayi",
+    "key": "chiayi (taiwan)",
+    "lat": 23.475452,
+    "lon": 120.435067,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hualien",
+    "key": "hualien city",
+    "lat": 23.983742,
+    "lon": 121.600009,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pingzhen",
+    "key": "pingzhen",
+    "lat": 24.943889,
+    "lon": 121.216111,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhubei",
+    "key": "zhubei",
+    "lat": 24.833333,
+    "lon": 121.011944,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yangmei",
+    "key": "yangmei",
+    "lat": 24.916667,
+    "lon": 121.15,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Taitung",
+    "key": "taitung city",
+    "lat": 22.755393,
+    "lon": 121.140037,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bade",
+    "key": "bade",
+    "lat": 24.9575,
+    "lon": 121.298889,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nantou",
+    "key": "nantou city",
+    "lat": 23.916667,
+    "lon": 120.683333,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yilan",
+    "key": "yilan city",
+    "lat": 24.75,
+    "lon": 121.75,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Miao Li",
+    "key": "miao li",
+    "lat": 24.57,
+    "lon": 120.82,
+    "labelRank": 7,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Douliu",
+    "key": "douliu",
+    "lat": 23.7075,
+    "lon": 120.543889,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Magong",
+    "key": "magong",
+    "lat": 23.566667,
+    "lon": 119.583333,
+    "labelRank": 5,
+    "minLabel": 5.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puzi",
+    "key": "puzi",
+    "lat": 23.461111,
+    "lon": 120.241944,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Taibao",
+    "key": "taibao",
+    "lat": 23.45,
+    "lon": 120.333333,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  }
+]

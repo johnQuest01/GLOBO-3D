@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Kinshasa",
+    "key": "kinshasa",
+    "lat": -4.32,
+    "lon": 15.31,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  }
+]

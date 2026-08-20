@@ -1,12 +1,21 @@
 # Entradas de build — usadas só pelo scripts/preprocess-data.mjs na sua máquina.
-# Os arquivos que o navegador realmente baixa (earth-day-*.webp, earth-night-2k.webp,
-# borders-*.json, state-labels-tiled/) são gerados a partir daqui e ficam versionados.
+# O que o navegador realmente baixa (earth-day-*.ktx2, borders-*.json,
+# state-labels-tiled/, city-lights.bin) é gerado a partir daqui e fica versionado.
 public/textures/earth-1.png
 public/textures/earth-1-with-borders.png
 public/textures/earth-2.png
 public/textures/earth-3.png
 public/textures/earth-4.png
-public/textures/*.ktx2
+# Copias da fonte em KTX2, de uma tentativa anterior: nao sao entregues.
+# (A textura que o navegador baixa e a earth-day-*.ktx2, que fica de fora desta lista.)
+public/textures/earth-1-with-borders.ktx2
+public/textures/earth-2.ktx2
+public/textures/earth-3.ktx2
+public/textures/earth-placeholder.ktx2
+# WebP da escada antiga de LOD, substituida por uma textura unica com mipmaps.
+public/textures/earth-day-2k.webp
+public/textures/earth-day-4k.webp
+public/textures/earth-day-8k.webp
 public/textures/earth-1-with-borders.webp
 public/textures/earth-2.webp
 public/textures/earth-3.webp
@@ -14,6 +23,10 @@ public/textures/earth-placeholder.webp
 public/data/states.geojson
 public/data/countries.geojson
 public/data/all-labels.json
+# Fonte das cidades (19 MB) e a lista curada do projeto: as duas viram
+# city-labels-tiled/, que e o que o navegador baixa.
+public/data/ne_10m_populated_places.geojson
+public/data/city-labels.json
 ne_110m_admin_0_countries
 img
 

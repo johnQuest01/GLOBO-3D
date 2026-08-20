@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Tel Aviv",
+    "key": "tel aviv city",
+    "lat": 32.081937,
+    "lon": 34.768066,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jerusalém",
+    "key": "jerusalém",
+    "lat": 31.778408,
+    "lon": 35.206626,
+    "labelRank": 3,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Haifa",
+    "key": "haifa city",
+    "lat": 32.822357,
+    "lon": 34.978079,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bersebá",
+    "key": "bersebá",
+    "lat": 31.250016,
+    "lon": 34.830008,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nazaré",
+    "key": "nazaré",
+    "lat": 32.703984,
+    "lon": 35.295509,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ramla",
+    "key": "ramla",
+    "lat": 31.9167,
+    "lon": 34.866703,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  }
+]

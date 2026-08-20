@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Jaffna",
+    "key": "jaffna",
+    "lat": 9.675002,
+    "lon": 80.005028,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Colombo",
+    "key": "colombo",
+    "lat": 6.931966,
+    "lon": 79.857751,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moratuwa",
+    "key": "moratuwa",
+    "lat": 6.780399,
+    "lon": 79.880023,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Batticaloa",
+    "key": "batticaloa",
+    "lat": 7.717008,
+    "lon": 81.700015,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Anuradhapura",
+    "key": "anuradhapura",
+    "lat": 8.349993,
+    "lon": 80.3833,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kotte",
+    "key": "kotte",
+    "lat": 6.900004,
+    "lon": 79.949993,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kandy",
+    "key": "kandy",
+    "lat": 7.279981,
+    "lon": 80.670001,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trincomalee",
+    "key": "trincomalee",
+    "lat": 8.568999,
+    "lon": 81.233002,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kilinochchi",
+    "key": "kilinochchi",
+    "lat": 9.40042,
+    "lon": 80.39994,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Galle",
+    "key": "galle",
+    "lat": 6.030005,
+    "lon": 80.240001,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Matara",
+    "key": "matara",
+    "lat": 5.948977,
+    "lon": 80.542773,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ratnapura",
+    "key": "ratnapura city",
+    "lat": 6.693003,
+    "lon": 80.386003,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Badulla",
+    "key": "badulla city",
+    "lat": 6.983694,
+    "lon": 81.049926,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Putalão",
+    "key": "putalão",
+    "lat": 8.033004,
+    "lon": 79.826004,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

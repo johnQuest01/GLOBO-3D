@@ -47,18 +47,16 @@ export type ProcessedStateLabel = StateLabelDataWithCountry & {
   position: THREE.Vector3;
 };
 
-export interface CityLabelData {
+export interface CityLabelData extends LabelRanking {
   name: string;
   key: string;
   lat: number;
   lon: number;
-  countryKey: string;
-  rank?: number;
 }
 
 export type ProcessedCityLabel = CityLabelData & { position: THREE.Vector3 };
 
-const CITIES_URL = '/data/city-labels.json';
+const CITY_TILE_BASE_URL = '/data/city-labels-tiled/';
 const COUNTRIES_URL = '/data/country-labels.json';
 const CONTINENTS_URL = '/data/continent-labels.json';
 const STATE_TILE_BASE_URL = '/data/state-labels-tiled/';
@@ -262,38 +260,70 @@ export function useCombinedStateData(
   return { combinedStates: processedStates, isLoading };
 }
 
-export function useCityLabelData(enabled = false): {
+/** Cada tile de cidade é buscado uma única vez por sessão. */
+const cityTileCache = new Map<string, Promise<CityLabelData[]>>();
+
+function loadCityTile(countryKey: string): Promise<CityLabelData[]> {
+  const cached = cityTileCache.get(countryKey);
+  if (cached) return cached;
+
+  const request = fetch(`${CITY_TILE_BASE_URL}${encodeURIComponent(countryKey)}.json`)
+    .then((res) => (res.ok ? (res.json() as Promise<CityLabelData[]>) : []))
+    .catch(() => [] as CityLabelData[]);
+
+  cityTileCache.set(countryKey, request);
+  return request;
+}
+
+/**
+ * Cidades dos países visíveis, e só quando o zoom já chegou na camada delas.
+ *
+ * São 7.342 cidades no mundo. Num zoom de cidade a tela mostra um punhado de
+ * países, então baixar o mundo inteiro para ler "Sete Lagoas" seria cobrar do
+ * celular uma conta que ele não vai usar. Mesmo fatiamento dos estados, e de
+ * propósito: os dois usam a MESMA lista de países visíveis.
+ */
+export function useCityLabelData(
+  visibleCountryKeys: string[],
+  enabled = false,
+): {
   cityLabels: ProcessedCityLabel[];
   isLoadingCities: boolean;
 } {
   const [cityLabels, setCityLabels] = useState<CityLabelData[]>([]);
   const [isLoadingCities, setIsLoadingCities] = useState(false);
-  const [hasLoaded, setHasLoaded] = useState(false);
+
+  const countryKeys = useMemo(
+    () => (enabled ? [...visibleCountryKeys].sort().join(',') : ''),
+    [visibleCountryKeys, enabled],
+  );
 
   useEffect(() => {
-    if (!enabled || hasLoaded) return;
-
-    async function fetchCities() {
-      setIsLoadingCities(true);
-      try {
-        const res = await fetch(CITIES_URL);
-        if (!res.ok) {
-          setCityLabels([]);
-          return;
-        }
-        const data: CityLabelData[] = await res.json();
-        setCityLabels(data);
-        setHasLoaded(true);
-      } catch (error) {
-        console.error('Falha ao carregar cidades:', error);
-        setCityLabels([]);
-      } finally {
-        setIsLoadingCities(false);
-      }
+    if (!countryKeys) {
+      setCityLabels([]);
+      return;
     }
 
-    fetchCities();
-  }, [enabled, hasLoaded]);
+    let cancelled = false;
+    setIsLoadingCities(true);
+
+    Promise.all(countryKeys.split(',').map(loadCityTile))
+      .then((tiles) => {
+        if (!cancelled) setCityLabels(tiles.flat());
+      })
+      .catch((error) => {
+        if (cancelled) return;
+        console.error('Falha ao carregar cidades:', error);
+        setCityLabels([]);
+      })
+      .finally(() => {
+        if (!cancelled) setIsLoadingCities(false);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [countryKeys]);
 
   const processedCities = useMemo(
     () =>

@@ -47,8 +47,8 @@
   {
     "name": "Amazonas",
     "key": "amazonas",
-    "lat": -4.21774,
-    "lon": -63.7853,
+    "lat": -1.26032,
+    "lon": -71.9171,
     "labelRank": 5,
     "minLabel": 6.7,
     "maxLabel": 11
@@ -155,8 +155,8 @@
   {
     "name": "Bolívar",
     "key": "bolívar",
-    "lat": 6.00608,
-    "lon": -63.8628,
+    "lat": 8.57823,
+    "lon": -74.1807,
     "labelRank": 5,
     "minLabel": 6.7,
     "maxLabel": 11
@@ -191,8 +191,8 @@
   {
     "name": "",
     "key": "",
-    "lat": -83.0384,
-    "lon": -170.343,
+    "lat": 3.97794,
+    "lon": -81.5928,
     "labelRank": 20,
     "minLabel": 18,
     "maxLabel": 18

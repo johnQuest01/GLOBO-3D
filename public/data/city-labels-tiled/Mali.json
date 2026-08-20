@@ -1,0 +1,272 @@
+[
+  {
+    "name": "Bamako",
+    "key": "bamako city",
+    "lat": 12.65196,
+    "lon": -8.001985,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sikasso",
+    "key": "sikasso city",
+    "lat": 11.320406,
+    "lon": -5.68,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ségou",
+    "key": "ségou city",
+    "lat": 13.439992,
+    "lon": -6.260016,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gao",
+    "key": "gao city",
+    "lat": 16.26659,
+    "lon": -0.050008,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mopti",
+    "key": "mopti city",
+    "lat": 14.48998,
+    "lon": -4.18004,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Koutiala",
+    "key": "koutiala",
+    "lat": 12.390418,
+    "lon": -5.469987,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kayes",
+    "key": "kayes city",
+    "lat": 14.449982,
+    "lon": -11.44001,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tombuctu",
+    "key": "tombuctu",
+    "lat": 16.766585,
+    "lon": -3.016596,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kati",
+    "key": "kati",
+    "lat": 12.750422,
+    "lon": -8.080008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Markala",
+    "key": "markala",
+    "lat": 13.670366,
+    "lon": -6.06995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kita",
+    "key": "kita",
+    "lat": 13.050404,
+    "lon": -9.483308,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San",
+    "key": "san",
+    "lat": 13.300414,
+    "lon": -4.900047,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bougouni",
+    "key": "bougouni",
+    "lat": 11.420426,
+    "lon": -7.489967,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Djenné",
+    "key": "djenné",
+    "lat": 13.89999,
+    "lon": -4.549991,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Banamba",
+    "key": "banamba",
+    "lat": 13.550399,
+    "lon": -7.449995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bourem",
+    "key": "bourem",
+    "lat": 16.900375,
+    "lon": -0.349989,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bafoulabé",
+    "key": "bafoulabé",
+    "lat": 13.800384,
+    "lon": -10.820022,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Koulikoro",
+    "key": "koulikoro city",
+    "lat": 12.883308,
+    "lon": -7.549989,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nara",
+    "key": "nara city",
+    "lat": 15.180015,
+    "lon": -7.27998,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kangaba",
+    "key": "kangaba",
+    "lat": 11.94042,
+    "lon": -8.440012,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nioro du Sahel",
+    "key": "nioro du sahel",
+    "lat": 15.230426,
+    "lon": -9.589968,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ménaka",
+    "key": "ménaka",
+    "lat": 15.916663,
+    "lon": 2.399998,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aguel'hoc",
+    "key": "aguel'hoc",
+    "lat": 19.454871,
+    "lon": 0.856371,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Goundam",
+    "key": "goundam",
+    "lat": 16.416994,
+    "lon": -3.666583,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tessalit",
+    "key": "tessalit",
+    "lat": 20.201388,
+    "lon": 1.088812,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sokolo",
+    "key": "sokolo",
+    "lat": 14.733738,
+    "lon": -6.133305,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Araouane",
+    "key": "araouane",
+    "lat": 18.900021,
+    "lon": -3.52995,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Taoudenni",
+    "key": "taoudenni",
+    "lat": 22.666587,
+    "lon": -3.983359,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yélimané",
+    "key": "yélimané",
+    "lat": 15.133713,
+    "lon": -10.566627,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Satadougou",
+    "key": "satadougou",
+    "lat": 12.616993,
+    "lon": -11.406601,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Luxemburgo",
+    "key": "luxemburgo",
+    "lat": 49.61166,
+    "lon": 6.130003,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Diekirch",
+    "key": "diekirch city",
+    "lat": 49.883301,
+    "lon": 6.166702,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Grevenmacher",
+    "key": "grevenmacher city",
+    "lat": 49.679753,
+    "lon": 6.425599,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

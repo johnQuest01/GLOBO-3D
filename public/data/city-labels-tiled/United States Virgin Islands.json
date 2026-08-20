@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Christiansted",
+    "key": "christiansted",
+    "lat": 17.750375,
+    "lon": -64.749986,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

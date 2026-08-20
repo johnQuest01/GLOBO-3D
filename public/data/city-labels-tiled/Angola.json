@@ -1,0 +1,443 @@
+[
+  {
+    "name": "Luanda",
+    "key": "luanda",
+    "lat": -8.84,
+    "lon": 13.23,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huambo",
+    "key": "huambo city",
+    "lat": -12.74804,
+    "lon": 15.758064,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lobito",
+    "key": "lobito",
+    "lat": -12.370009,
+    "lon": 13.54123,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Benguela",
+    "key": "benguela city",
+    "lat": -12.578264,
+    "lon": 13.407233,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moçâmedes",
+    "key": "moçâmedes",
+    "lat": -15.190043,
+    "lon": 12.160022,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Malanje",
+    "key": "malanje city",
+    "lat": -9.54,
+    "lon": 16.340026,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lubango",
+    "key": "lubango",
+    "lat": -14.910008,
+    "lon": 13.490019,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cuíto",
+    "key": "cuíto",
+    "lat": -12.380034,
+    "lon": 16.939989,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cabinda",
+    "key": "cabinda city",
+    "lat": -5.559623,
+    "lon": 12.189995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Capenda-Camulemba",
+    "key": "capenda-camulemba",
+    "lat": -9.419594,
+    "lon": 18.430027,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Soyo",
+    "key": "soyo",
+    "lat": -6.129614,
+    "lon": 12.369984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "M'Banza Kongo",
+    "key": "m'banza kongo",
+    "lat": -6.269606,
+    "lon": 14.239999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uíge",
+    "key": "uíge city",
+    "lat": -7.620014,
+    "lon": 15.049975,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saurimo",
+    "key": "saurimo",
+    "lat": -9.65958,
+    "lon": 20.390011,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tômbua",
+    "key": "tômbua",
+    "lat": -15.800032,
+    "lon": 11.859989,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sumbe",
+    "key": "sumbe",
+    "lat": -11.210028,
+    "lon": 13.849997,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lucapa",
+    "key": "lucapa",
+    "lat": -8.419604,
+    "lon": 20.740015,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mavinga",
+    "key": "mavinga",
+    "lat": -15.789541,
+    "lon": 20.360039,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Caxito",
+    "key": "caxito",
+    "lat": -8.579542,
+    "lon": 13.659982,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Luena",
+    "key": "luena",
+    "lat": -11.790044,
+    "lon": 19.900015,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "N'Zeto",
+    "key": "n'zeto",
+    "lat": -7.229599,
+    "lon": 12.860031,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Camacupa",
+    "key": "camacupa",
+    "lat": -12.019591,
+    "lon": 17.469983,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Luau",
+    "key": "luau",
+    "lat": -10.709541,
+    "lon": 22.230002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ambriz",
+    "key": "ambriz",
+    "lat": -7.854987,
+    "lon": 13.125028,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Menongue",
+    "key": "menongue",
+    "lat": -14.666612,
+    "lon": 17.699994,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ambaca",
+    "key": "ambaca",
+    "lat": -8.189592,
+    "lon": 15.370007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uaco Cungo",
+    "key": "uaco cungo",
+    "lat": -11.359528,
+    "lon": 15.119997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dundo",
+    "key": "dundo",
+    "lat": -7.380029,
+    "lon": 20.829984,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Songo",
+    "key": "songo",
+    "lat": -7.349591,
+    "lon": 14.849987,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ondjiva",
+    "key": "ondjiva",
+    "lat": -17.069618,
+    "lon": 15.730037,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quibala",
+    "key": "quibala",
+    "lat": -10.729592,
+    "lon": 14.979954,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "N'dalatando",
+    "key": "n'dalatando",
+    "lat": -9.29955,
+    "lon": 14.909984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cubal",
+    "key": "cubal",
+    "lat": -13.03958,
+    "lon": 14.239999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dondo",
+    "key": "dondo city",
+    "lat": -9.690017,
+    "lon": 14.430013,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Muconda",
+    "key": "muconda",
+    "lat": -10.599626,
+    "lon": 21.31998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chibemba",
+    "key": "chibemba",
+    "lat": -15.749595,
+    "lon": 14.080008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chibia",
+    "key": "chibia",
+    "lat": -15.18963,
+    "lon": 13.690007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cangombe",
+    "key": "cangombe",
+    "lat": -13.699592,
+    "lon": 19.860018,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cacolo",
+    "key": "cacolo",
+    "lat": -10.149627,
+    "lon": 19.260002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Calulo",
+    "key": "calulo",
+    "lat": -9.999611,
+    "lon": 14.90001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Calucinga",
+    "key": "calucinga",
+    "lat": -11.319582,
+    "lon": 16.199983,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chitado",
+    "key": "chitado",
+    "lat": -17.319629,
+    "lon": 13.920018,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xangongo",
+    "key": "xangongo",
+    "lat": -16.740026,
+    "lon": 14.96998,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cazombo",
+    "key": "cazombo",
+    "lat": -11.889573,
+    "lon": 22.900039,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quipungo",
+    "key": "quipungo",
+    "lat": -14.829548,
+    "lon": 14.550006,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Luiana",
+    "key": "luiana",
+    "lat": -17.369548,
+    "lon": 22.999981,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cuito Cuanavale",
+    "key": "cuito cuanavale",
+    "lat": -15.159606,
+    "lon": 19.169982,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mucusso",
+    "key": "mucusso",
+    "lat": -18.019534,
+    "lon": 21.429999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lumbala-Ngimbo",
+    "key": "lumbala-ngimbo",
+    "lat": -14.099619,
+    "lon": 21.440024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

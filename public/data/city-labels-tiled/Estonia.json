@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Tallinn",
+    "key": "tallinn",
+    "lat": 59.433877,
+    "lon": 24.728041,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tartu",
+    "key": "tartu city",
+    "lat": 58.383941,
+    "lon": 26.709884,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Narva",
+    "key": "narva",
+    "lat": 59.377628,
+    "lon": 28.160286,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kohtla-Järve",
+    "key": "kohtla-järve",
+    "lat": 59.399978,
+    "lon": 27.283337,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pärnu",
+    "key": "pärnu city",
+    "lat": 58.374743,
+    "lon": 24.513583,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Viljandi",
+    "key": "viljandi city",
+    "lat": 58.363889,
+    "lon": 25.59,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Haapsalu",
+    "key": "haapsalu",
+    "lat": 58.943056,
+    "lon": 23.541389,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

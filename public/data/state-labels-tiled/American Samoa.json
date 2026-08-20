@@ -2,8 +2,8 @@
   {
     "name": "Ocidental",
     "key": "western",
-    "lat": -2.13156,
-    "lon": 29.2644,
+    "lat": -14.3241,
+    "lon": -170.768,
     "labelRank": 20,
     "minLabel": 9,
     "maxLabel": 11
@@ -11,8 +11,8 @@
   {
     "name": "Leste",
     "key": "eastern",
-    "lat": -13.7617,
-    "lon": 31.8341,
+    "lat": -14.272,
+    "lon": -170.639,
     "labelRank": 20,
     "minLabel": 9,
     "maxLabel": 11

@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Mariehamn",
+    "key": "mariehamn city",
+    "lat": 60.096996,
+    "lon": 19.949005,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

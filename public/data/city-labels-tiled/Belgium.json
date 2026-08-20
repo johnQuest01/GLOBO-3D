@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Bruxelas",
+    "key": "bruxelas",
+    "lat": 50.835263,
+    "lon": 4.331371,
+    "labelRank": 2,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Antuérpia",
+    "key": "antuérpia",
+    "lat": 51.222319,
+    "lon": 4.413071,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Liège",
+    "key": "liège",
+    "lat": 50.629996,
+    "lon": 5.580011,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gante",
+    "key": "gante",
+    "lat": 51.029998,
+    "lon": 3.700022,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Charleroi",
+    "key": "charleroi",
+    "lat": 50.420397,
+    "lon": 4.450002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bruges",
+    "key": "bruges",
+    "lat": 51.220374,
+    "lon": 3.230025,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Namur",
+    "key": "namur city",
+    "lat": 50.470394,
+    "lon": 4.870028,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mons",
+    "key": "mons",
+    "lat": 50.445999,
+    "lon": 3.939004,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hasselt",
+    "key": "hasselt",
+    "lat": 50.928838,
+    "lon": 5.338536,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arlon",
+    "key": "arlon",
+    "lat": 49.683303,
+    "lon": 5.8167,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  }
+]

@@ -1,0 +1,245 @@
+[
+  {
+    "name": "Pyongyang",
+    "key": "pyongyang",
+    "lat": 39.021385,
+    "lon": 125.752745,
+    "labelRank": 2,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nampo",
+    "key": "nampo",
+    "lat": 38.768867,
+    "lon": 125.450488,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hamhung",
+    "key": "hamhung",
+    "lat": 39.912002,
+    "lon": 127.543488,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chongjin",
+    "key": "chongjin",
+    "lat": 41.784619,
+    "lon": 129.79,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sunchon",
+    "key": "sunchon",
+    "lat": 39.4236,
+    "lon": 125.938969,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kaesong",
+    "key": "kaesong",
+    "lat": 37.963999,
+    "lon": 126.564409,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wonsan",
+    "key": "wonsan",
+    "lat": 39.160489,
+    "lon": 127.430816,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kanggye",
+    "key": "kanggye",
+    "lat": 40.973221,
+    "lon": 126.603218,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sinŭiju",
+    "key": "sinŭiju",
+    "lat": 40.085859,
+    "lon": 124.421284,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hyesan",
+    "key": "hyesan",
+    "lat": 41.39273,
+    "lon": 128.192733,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Haeju",
+    "key": "haeju",
+    "lat": 38.039421,
+    "lon": 125.714383,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kimchaek",
+    "key": "kimchaek",
+    "lat": 40.672309,
+    "lon": 129.202749,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Manpo",
+    "key": "manpo",
+    "lat": 41.145433,
+    "lon": 126.295846,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sariwon",
+    "key": "sariwon",
+    "lat": 38.507004,
+    "lon": 125.762005,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chongju",
+    "key": "chongju",
+    "lat": 39.681285,
+    "lon": 125.216326,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kilchu",
+    "key": "kilchu",
+    "lat": 40.960431,
+    "lon": 129.320416,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Musan",
+    "key": "musan",
+    "lat": 42.230431,
+    "lon": 129.230396,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Munchon",
+    "key": "munchon",
+    "lat": 39.381303,
+    "lon": 127.251705,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ongjin",
+    "key": "ongjin",
+    "lat": 37.937102,
+    "lon": 125.357092,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pyongyang",
+    "key": "pyongyang city",
+    "lat": 38.33669,
+    "lon": 126.386642,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rason",
+    "key": "rason",
+    "lat": 42.337686,
+    "lon": 130.402727,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Changyŏn",
+    "key": "changyŏn",
+    "lat": 38.251734,
+    "lon": 125.102069,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Anbyŏn",
+    "key": "anbyŏn",
+    "lat": 39.028172,
+    "lon": 127.518562,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sin-ni",
+    "key": "sin-ni",
+    "lat": 39.488004,
+    "lon": 125.463997,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ch'osan",
+    "key": "ch'osan",
+    "lat": 40.825478,
+    "lon": 125.800838,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kimhyonggwon",
+    "key": "kimhyonggwon",
+    "lat": 40.81752,
+    "lon": 128.155319,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Taedong",
+    "key": "taedong",
+    "lat": 40.617093,
+    "lon": 125.45011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

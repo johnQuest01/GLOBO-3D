@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Manzini",
+    "key": "manzini city",
+    "lat": -26.495001,
+    "lon": 31.388005,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mebabane",
+    "key": "mebabane",
+    "lat": -26.316651,
+    "lon": 31.133335,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lobamba",
+    "key": "lobamba",
+    "lat": -26.466667,
+    "lon": 31.199997,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Siteki",
+    "key": "siteki",
+    "lat": -26.454996,
+    "lon": 31.951999,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Piggs Peak",
+    "key": "piggs peak",
+    "lat": -25.961004,
+    "lon": 31.247001,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Golela",
+    "key": "golela",
+    "lat": -27.296178,
+    "lon": 31.900006,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hlatikulu",
+    "key": "hlatikulu",
+    "lat": -26.960815,
+    "lon": 31.310137,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Dakar",
+    "key": "dakar",
+    "lat": 14.72,
+    "lon": -17.47,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Thiès",
+    "key": "thiès city",
+    "lat": 14.8104,
+    "lon": -16.930011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kaolack",
+    "key": "kaolack city",
+    "lat": 14.149975,
+    "lon": -16.10001,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ziguinchor",
+    "key": "ziguinchor city",
+    "lat": 12.589992,
+    "lon": -16.289998,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Diourbel",
+    "key": "diourbel city",
+    "lat": 14.660383,
+    "lon": -16.240001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tambacounda",
+    "key": "tambacounda city",
+    "lat": 13.780359,
+    "lon": -13.680028,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Louga",
+    "key": "louga city",
+    "lat": 15.610377,
+    "lon": -16.250001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kolda",
+    "key": "kolda city",
+    "lat": 12.910438,
+    "lon": -14.950028,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Região de Fatick",
+    "key": "região de fatick",
+    "lat": 14.344002,
+    "lon": -16.416,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kaédi",
+    "key": "kaédi",
+    "lat": 16.150008,
+    "lon": -13.499988,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kédougou",
+    "key": "kédougou city",
+    "lat": 12.560434,
+    "lon": -12.179991,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

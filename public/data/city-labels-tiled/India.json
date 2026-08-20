@@ -1,0 +1,1928 @@
+[
+  {
+    "name": "Mumbai",
+    "key": "mumbai",
+    "lat": 19.08,
+    "lon": 72.88,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Délhi",
+    "key": "delhi",
+    "lat": 28.61,
+    "lon": 77.21,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Deli",
+    "key": "deli",
+    "lat": 28.671939,
+    "lon": 77.228058,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Calcutá",
+    "key": "calcutá",
+    "lat": 22.569579,
+    "lon": 88.369126,
+    "labelRank": 0,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chennai",
+    "key": "chennai",
+    "lat": 13.091934,
+    "lon": 80.278053,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bangalore",
+    "key": "bangalore",
+    "lat": 12.971941,
+    "lon": 77.558064,
+    "labelRank": 1,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hyderabad",
+    "key": "hyderabad",
+    "lat": 17.401929,
+    "lon": 78.478008,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Amaravati",
+    "key": "amaravati",
+    "lat": 16.533658,
+    "lon": 80.52432,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ahmedabad",
+    "key": "ahmedabad",
+    "lat": 23.031999,
+    "lon": 72.578058,
+    "labelRank": 2,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Haora",
+    "key": "haora",
+    "lat": 22.584698,
+    "lon": 88.318516,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pune",
+    "key": "pune",
+    "lat": 18.516394,
+    "lon": 73.851892,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Surate",
+    "key": "surate",
+    "lat": 21.20193,
+    "lon": 72.838094,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kanpur",
+    "key": "kanpur",
+    "lat": 26.461945,
+    "lon": 80.31805,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jaipur",
+    "key": "jaipur",
+    "lat": 26.923079,
+    "lon": 75.808042,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lucknow",
+    "key": "lucknow",
+    "lat": 26.856985,
+    "lon": 80.913053,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nagpur",
+    "key": "nagpur",
+    "lat": 21.171906,
+    "lon": 79.088048,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Patna",
+    "key": "patna",
+    "lat": 25.626905,
+    "lon": 85.128093,
+    "labelRank": 2,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Indore",
+    "key": "indore",
+    "lat": 22.717005,
+    "lon": 75.863077,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vadodara",
+    "key": "vadodara",
+    "lat": 22.311965,
+    "lon": 73.178073,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bhopal",
+    "key": "bhopal",
+    "lat": 23.251934,
+    "lon": 77.408047,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Coimbatore",
+    "key": "coimbatore",
+    "lat": 11.001906,
+    "lon": 76.948075,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ludhiana",
+    "key": "ludhiana",
+    "lat": 30.929708,
+    "lon": 75.870312,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Agra",
+    "key": "agra",
+    "lat": 27.172366,
+    "lon": 78.013075,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kalyan",
+    "key": "kalyan",
+    "lat": 19.250232,
+    "lon": 73.160175,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vishakhapatnam",
+    "key": "vishakhapatnam",
+    "lat": 17.682903,
+    "lon": 83.219848,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cochim",
+    "key": "cochim",
+    "lat": 10.016953,
+    "lon": 76.22197,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nashik",
+    "key": "nashik",
+    "lat": 20.002365,
+    "lon": 73.778036,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Meerut",
+    "key": "meerut",
+    "lat": 29.002358,
+    "lon": 77.698055,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Faridabad",
+    "key": "faridabad",
+    "lat": 28.435279,
+    "lon": 77.314721,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Varanasi",
+    "key": "varanasi",
+    "lat": 25.331936,
+    "lon": 82.998094,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ghaziabad",
+    "key": "ghaziabad",
+    "lat": 28.662327,
+    "lon": 77.406445,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Asansol",
+    "key": "asansol",
+    "lat": 23.685279,
+    "lon": 86.981387,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jamshedpur",
+    "key": "jamshedpur",
+    "lat": 22.789481,
+    "lon": 86.195573,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Madurai",
+    "key": "madurai",
+    "lat": 9.921972,
+    "lon": 78.118081,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jabalpur",
+    "key": "jabalpur",
+    "lat": 23.177003,
+    "lon": 79.953112,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rajkot",
+    "key": "rajkot",
+    "lat": 22.311965,
+    "lon": 70.798063,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dhanbad",
+    "key": "dhanbad",
+    "lat": 23.802339,
+    "lon": 86.41804,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Amritsar",
+    "key": "amritsar",
+    "lat": 31.641938,
+    "lon": 74.868047,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Warangal",
+    "key": "warangal",
+    "lat": 18.009998,
+    "lon": 79.57999,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Prayagraj",
+    "key": "prayagraj",
+    "lat": 25.456941,
+    "lon": 81.838061,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Srinagar",
+    "key": "srinagar",
+    "lat": 34.069474,
+    "lon": 74.828309,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vijayawada",
+    "key": "vijayawada",
+    "lat": 16.521905,
+    "lon": 80.628057,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aurangabad",
+    "key": "aurangabad",
+    "lat": 19.861686,
+    "lon": 75.328948,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bhilai",
+    "key": "bhilai",
+    "lat": 21.211262,
+    "lon": 81.372213,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sholapur",
+    "key": "sholapur",
+    "lat": 17.672352,
+    "lon": 75.898062,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ranchi",
+    "key": "ranchi",
+    "lat": 23.371952,
+    "lon": 85.32808,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jodhpur",
+    "key": "jodhpur",
+    "lat": 26.293712,
+    "lon": 73.014827,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guwahati",
+    "key": "guwahati",
+    "lat": 26.161963,
+    "lon": 91.768049,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chandigarh",
+    "key": "chandigarh city",
+    "lat": 30.721943,
+    "lon": 76.77806,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gwalior",
+    "key": "gwalior",
+    "lat": 26.200035,
+    "lon": 78.169197,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Thiruvananthapuram",
+    "key": "thiruvananthapuram",
+    "lat": 8.515521,
+    "lon": 76.925191,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Calecute",
+    "key": "calecute",
+    "lat": 11.252382,
+    "lon": 75.768044,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tiruchirappalli",
+    "key": "tiruchirappalli",
+    "lat": 10.800541,
+    "lon": 78.687512,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hubli",
+    "key": "hubli",
+    "lat": 15.361924,
+    "lon": 75.12307,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mysore",
+    "key": "mysore",
+    "lat": 12.31193,
+    "lon": 76.658067,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Raipur",
+    "key": "raipur",
+    "lat": 21.23694,
+    "lon": 81.633061,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salem",
+    "key": "salem",
+    "lat": 11.671943,
+    "lon": 78.178129,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jalandhar",
+    "key": "jalandhar",
+    "lat": 31.336866,
+    "lon": 75.567074,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bhubaneswar",
+    "key": "bhubaneswar",
+    "lat": 20.272374,
+    "lon": 85.825414,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kota",
+    "key": "kota",
+    "lat": 25.181945,
+    "lon": 75.833053,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jhansi",
+    "key": "jhansi",
+    "lat": 25.452954,
+    "lon": 78.557468,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bareli",
+    "key": "bareli",
+    "lat": 28.347333,
+    "lon": 79.418054,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aligarh",
+    "key": "aligarh",
+    "lat": 27.894157,
+    "lon": 78.059842,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bhiwandi",
+    "key": "bhiwandi",
+    "lat": 19.351965,
+    "lon": 73.12805,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jammu",
+    "key": "jammu",
+    "lat": 32.713733,
+    "lon": 74.844793,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moradabad",
+    "key": "moradabad",
+    "lat": 28.843737,
+    "lon": 78.754838,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mangalore",
+    "key": "mangalore",
+    "lat": 12.900025,
+    "lon": 74.849994,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kolhapur",
+    "key": "kolhapur",
+    "lat": 16.7,
+    "lon": 74.220007,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Amravati",
+    "key": "amravati",
+    "lat": 20.925616,
+    "lon": 77.78181,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dehradun",
+    "key": "dehradun",
+    "lat": 30.320409,
+    "lon": 78.050006,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Malegaon",
+    "key": "malegaon",
+    "lat": 20.560359,
+    "lon": 74.525001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nellore",
+    "key": "nellore",
+    "lat": 14.439983,
+    "lon": 79.989939,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gorakhpur",
+    "key": "gorakhpur",
+    "lat": 26.750394,
+    "lon": 83.380016,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shivamogga",
+    "key": "shivamogga",
+    "lat": 13.930376,
+    "lon": 75.560028,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tiruppur",
+    "key": "tiruppur",
+    "lat": 11.080421,
+    "lon": 77.329998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rourkela",
+    "key": "rourkela",
+    "lat": 22.230412,
+    "lon": 84.829954,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nanded",
+    "key": "nanded",
+    "lat": 19.197259,
+    "lon": 77.308337,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Belgaum",
+    "key": "belgaum",
+    "lat": 15.865012,
+    "lon": 74.505002,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sangli",
+    "key": "sangli",
+    "lat": 16.860404,
+    "lon": 74.575024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chandrapur",
+    "key": "chandrapur",
+    "lat": 19.969981,
+    "lon": 79.300007,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ajmer",
+    "key": "ajmer",
+    "lat": 26.449999,
+    "lon": 74.639981,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cuttack",
+    "key": "cuttack",
+    "lat": 20.470002,
+    "lon": 85.889941,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bikaner",
+    "key": "bikaner",
+    "lat": 28.015083,
+    "lon": 73.332243,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bhavnagar",
+    "key": "bhavnagar",
+    "lat": 21.778424,
+    "lon": 72.129954,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hisar",
+    "key": "hisar",
+    "lat": 29.169988,
+    "lon": 75.725031,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bilaspur",
+    "key": "bilaspur",
+    "lat": 22.09042,
+    "lon": 82.159987,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tirunelveli",
+    "key": "tirunelveli",
+    "lat": 8.730409,
+    "lon": 77.689976,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guntur",
+    "key": "guntur",
+    "lat": 16.329997,
+    "lon": 80.450014,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shiliguri",
+    "key": "shiliguri",
+    "lat": 26.720422,
+    "lon": 88.455004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ujjain",
+    "key": "ujjain",
+    "lat": 23.190405,
+    "lon": 75.79004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Davangere",
+    "key": "davangere",
+    "lat": 14.470007,
+    "lon": 75.920006,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Akola",
+    "key": "akola",
+    "lat": 20.709988,
+    "lon": 77.010018,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saharanpur",
+    "key": "saharanpur",
+    "lat": 29.970017,
+    "lon": 77.550036,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gulbarga",
+    "key": "gulbarga",
+    "lat": 17.34996,
+    "lon": 76.820003,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bhatpara",
+    "key": "bhatpara",
+    "lat": 22.852821,
+    "lon": 88.413626,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dhule",
+    "key": "dhule",
+    "lat": 20.899976,
+    "lon": 74.769999,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Udaipur",
+    "key": "udaipur",
+    "lat": 24.599983,
+    "lon": 73.730011,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bellary",
+    "key": "bellary",
+    "lat": 15.150043,
+    "lon": 76.915036,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Thoothukudi",
+    "key": "thoothukudi",
+    "lat": 8.7978,
+    "lon": 78.131797,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kurnool",
+    "key": "kurnool",
+    "lat": 15.830001,
+    "lon": 78.030007,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gaya",
+    "key": "gaya",
+    "lat": 24.799971,
+    "lon": 85.000021,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sikar",
+    "key": "sikar",
+    "lat": 27.610394,
+    "lon": 75.140002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tumkur",
+    "key": "tumkur",
+    "lat": 13.329973,
+    "lon": 77.100038,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Coulão",
+    "key": "coulão",
+    "lat": 8.900373,
+    "lon": 76.569993,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ahmadnagar",
+    "key": "ahmadnagar",
+    "lat": 19.082031,
+    "lon": 74.745774,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bhilwara",
+    "key": "bhilwara",
+    "lat": 25.350428,
+    "lon": 74.63502,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nizamabad",
+    "key": "nizamabad",
+    "lat": 18.670396,
+    "lon": 78.100028,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Parbhani",
+    "key": "parbhani",
+    "lat": 19.270386,
+    "lon": 76.760007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shillong",
+    "key": "shillong",
+    "lat": 25.570492,
+    "lon": 91.880014,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Latur",
+    "key": "latur",
+    "lat": 18.400413,
+    "lon": 76.569993,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rajapalayam",
+    "key": "rajapalayam",
+    "lat": 9.420393,
+    "lon": 77.580009,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bhagalpur",
+    "key": "bhagalpur",
+    "lat": 25.229996,
+    "lon": 86.980003,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Muzaffarnagar",
+    "key": "muzaffarnagar",
+    "lat": 29.485008,
+    "lon": 77.69504,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Muzaffarpur",
+    "key": "muzaffarpur",
+    "lat": 26.120433,
+    "lon": 85.379946,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mathura",
+    "key": "mathura",
+    "lat": 27.499987,
+    "lon": 77.670029,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Patiala",
+    "key": "patiala",
+    "lat": 30.320409,
+    "lon": 76.384991,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sagar",
+    "key": "sagar",
+    "lat": 23.85039,
+    "lon": 78.750015,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Berhampur",
+    "key": "berhampur",
+    "lat": 19.319995,
+    "lon": 84.799981,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shahjahanpur",
+    "key": "shahjahanpur",
+    "lat": 27.880377,
+    "lon": 79.905034,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rohtak",
+    "key": "rohtak",
+    "lat": 28.900005,
+    "lon": 76.580018,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sambalpur",
+    "key": "sambalpur",
+    "lat": 21.470406,
+    "lon": 83.970058,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ratlam",
+    "key": "ratlam",
+    "lat": 23.350395,
+    "lon": 75.029983,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Firozabad",
+    "key": "firozabad",
+    "lat": 27.149982,
+    "lon": 78.394946,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rajahmundry",
+    "key": "rajahmundry",
+    "lat": 17.030342,
+    "lon": 81.789984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barddhaman",
+    "key": "barddhaman",
+    "lat": 23.250375,
+    "lon": 87.864962,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bidar",
+    "key": "bidar",
+    "lat": 17.922923,
+    "lon": 77.517532,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rampur",
+    "key": "rampur",
+    "lat": 28.815359,
+    "lon": 79.024985,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kakinada",
+    "key": "kakinada",
+    "lat": 16.967477,
+    "lon": 82.237502,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Panipat",
+    "key": "panipat",
+    "lat": 29.400413,
+    "lon": 76.969968,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Khammam",
+    "key": "khammam",
+    "lat": 17.28043,
+    "lon": 80.160058,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bhuj",
+    "key": "bhuj",
+    "lat": 23.233827,
+    "lon": 69.673591,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karimnagar",
+    "key": "karimnagar",
+    "lat": 18.460435,
+    "lon": 79.109993,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tirupati",
+    "key": "tirupati",
+    "lat": 13.650419,
+    "lon": 79.42,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hospet",
+    "key": "hospet",
+    "lat": 15.280397,
+    "lon": 76.375017,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mandya",
+    "key": "mandya",
+    "lat": 12.570381,
+    "lon": 76.919997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alwar",
+    "key": "alwar",
+    "lat": 27.545359,
+    "lon": 76.604926,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aizawl",
+    "key": "aizawl",
+    "lat": 23.710399,
+    "lon": 92.720015,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bijapur",
+    "key": "bijapur",
+    "lat": 16.835418,
+    "lon": 75.709993,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Imphal",
+    "key": "imphal",
+    "lat": 24.799971,
+    "lon": 93.950017,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Etawah",
+    "key": "etawah",
+    "lat": 26.785457,
+    "lon": 79.01496,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Raichur",
+    "key": "raichur",
+    "lat": 16.210366,
+    "lon": 77.355009,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pathankot",
+    "key": "pathankot",
+    "lat": 32.270342,
+    "lon": 75.720019,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chirala",
+    "key": "chirala",
+    "lat": 15.860413,
+    "lon": 80.339995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sonipat",
+    "key": "sonipat",
+    "lat": 28.999999,
+    "lon": 77.019991,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mirzapur",
+    "key": "mirzapur",
+    "lat": 25.145376,
+    "lon": 82.569988,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hapur",
+    "key": "hapur",
+    "lat": 28.743658,
+    "lon": 77.762788,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Porbandar",
+    "key": "porbandar",
+    "lat": 21.669981,
+    "lon": 69.67,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bharatpur",
+    "key": "bharatpur",
+    "lat": 27.209374,
+    "lon": 77.507411,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puducherry",
+    "key": "puducherry city",
+    "lat": 11.934994,
+    "lon": 79.83,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karnal",
+    "key": "karnal",
+    "lat": 29.680448,
+    "lon": 76.969968,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nagercoil",
+    "key": "nagercoil",
+    "lat": 8.180365,
+    "lon": 77.429992,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Thanjavur",
+    "key": "thanjavur",
+    "lat": 10.770414,
+    "lon": 79.150042,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pali",
+    "key": "pali",
+    "lat": 25.790375,
+    "lon": 73.329932,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Agartala",
+    "key": "agartala",
+    "lat": 23.835404,
+    "lon": 91.279999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ongole",
+    "key": "ongole",
+    "lat": 15.505577,
+    "lon": 80.057707,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puri",
+    "key": "puri",
+    "lat": 19.82043,
+    "lon": 85.900018,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dindigul",
+    "key": "dindigul",
+    "lat": 10.359908,
+    "lon": 77.978285,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Haldia",
+    "key": "haldia",
+    "lat": 22.02567,
+    "lon": 88.058335,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bulandshahr",
+    "key": "bulandshahr",
+    "lat": 28.41037,
+    "lon": 77.848416,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Purnia",
+    "key": "purnia",
+    "lat": 25.785414,
+    "lon": 87.479973,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Proddatur",
+    "key": "proddatur",
+    "lat": 14.750429,
+    "lon": 78.570026,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gurgaon",
+    "key": "gurgaon",
+    "lat": 28.450006,
+    "lon": 77.019991,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Burhanpur",
+    "key": "burhanpur",
+    "lat": 21.28452,
+    "lon": 76.172406,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gandhinagar",
+    "key": "gandhinagar",
+    "lat": 23.218994,
+    "lon": 72.643556,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Masulipatão",
+    "key": "masulipatão",
+    "lat": 16.200418,
+    "lon": 81.179996,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bhiwani",
+    "key": "bhiwani",
+    "lat": 28.81001,
+    "lon": 76.125007,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nandyal",
+    "key": "nandyal",
+    "lat": 15.464097,
+    "lon": 78.486638,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bhusawal",
+    "key": "bhusawal",
+    "lat": 21.019995,
+    "lon": 75.830038,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bahraich",
+    "key": "bahraich",
+    "lat": 27.567427,
+    "lon": 81.606114,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tonk",
+    "key": "tonk",
+    "lat": 26.150457,
+    "lon": 75.79004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sirsa",
+    "key": "sirsa",
+    "lat": 29.490382,
+    "lon": 75.029983,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vizianagaram",
+    "key": "vizianagaram",
+    "lat": 18.110992,
+    "lon": 83.401372,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vellore",
+    "key": "vellore",
+    "lat": 12.920386,
+    "lon": 79.150042,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alappuzha",
+    "key": "alappuzha",
+    "lat": 9.500414,
+    "lon": 76.370005,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shimla",
+    "key": "shimla",
+    "lat": 31.100026,
+    "lon": 77.166597,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Midnapore",
+    "key": "midnapore",
+    "lat": 22.399723,
+    "lon": 87.333872,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hindupur",
+    "key": "hindupur",
+    "lat": 13.780359,
+    "lon": 77.489988,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baramulla",
+    "key": "baramulla",
+    "lat": 34.200431,
+    "lon": 74.350025,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fatehpur",
+    "key": "fatehpur",
+    "lat": 25.88037,
+    "lon": 80.800019,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dibrugarh",
+    "key": "dibrugarh",
+    "lat": 27.483321,
+    "lon": 94.899985,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sitapur",
+    "key": "sitapur",
+    "lat": 27.551591,
+    "lon": 80.683242,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Navsari",
+    "key": "navsari",
+    "lat": 20.850393,
+    "lon": 72.920034,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Budaun",
+    "key": "budaun",
+    "lat": 28.030006,
+    "lon": 79.089994,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cuddalore",
+    "key": "cuddalore",
+    "lat": 11.720407,
+    "lon": 79.770004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hoshiarpur",
+    "key": "hoshiarpur",
+    "lat": 31.519974,
+    "lon": 75.980003,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kanchipuram",
+    "key": "kanchipuram",
+    "lat": 12.833724,
+    "lon": 79.716674,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Faizabad",
+    "key": "faizabad",
+    "lat": 26.750394,
+    "lon": 82.170013,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Silchar",
+    "key": "silchar",
+    "lat": 24.790411,
+    "lon": 92.790036,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ambala",
+    "key": "ambala",
+    "lat": 30.377311,
+    "lon": 76.791822,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Krishnanagar",
+    "key": "krishnanagar",
+    "lat": 23.380342,
+    "lon": 88.530038,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kolar",
+    "key": "kolar",
+    "lat": 13.133706,
+    "lon": 78.13336,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kumbakonam",
+    "key": "kumbakonam",
+    "lat": 10.951296,
+    "lon": 79.387528,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tiruvannaamalai",
+    "key": "tiruvannaamalai",
+    "lat": 12.260374,
+    "lon": 79.099967,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pilibhit",
+    "key": "pilibhit",
+    "lat": 28.639995,
+    "lon": 79.810002,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Abohar",
+    "key": "abohar",
+    "lat": 30.126338,
+    "lon": 74.182342,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Port Blair",
+    "key": "port blair",
+    "lat": 11.667026,
+    "lon": 92.735983,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alipurduar",
+    "key": "alipurduar",
+    "lat": 26.483744,
+    "lon": 89.566667,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hathras",
+    "key": "hathras",
+    "lat": 27.599981,
+    "lon": 78.050006,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Valparai",
+    "key": "valparai",
+    "lat": 10.320415,
+    "lon": 76.969968,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aurangabad",
+    "key": "aurangabad city",
+    "lat": 24.770412,
+    "lon": 84.380007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kohima",
+    "key": "kohima",
+    "lat": 25.666998,
+    "lon": 94.11657,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gangtok",
+    "key": "gangtok",
+    "lat": 27.33333,
+    "lon": 88.616647,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karur",
+    "key": "karur",
+    "lat": 10.950377,
+    "lon": 78.083337,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jorhat",
+    "key": "jorhat",
+    "lat": 26.749981,
+    "lon": 94.216667,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pangim",
+    "key": "pangim",
+    "lat": 15.491997,
+    "lon": 73.818001,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sopore",
+    "key": "sopore",
+    "lat": 34.299959,
+    "lon": 74.466658,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tezpur",
+    "key": "tezpur",
+    "lat": 26.633761,
+    "lon": 92.80001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Itanagar",
+    "key": "itanagar",
+    "lat": 27.100399,
+    "lon": 93.616601,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Damão",
+    "key": "damão",
+    "lat": 20.417008,
+    "lon": 72.850013,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Leh",
+    "key": "leh",
+    "lat": 34.161559,
+    "lon": 77.572291,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Silvassa",
+    "key": "silvassa",
+    "lat": 20.266578,
+    "lon": 73.016618,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Diu",
+    "key": "diu",
+    "lat": 20.719673,
+    "lon": 70.990395,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dispur",
+    "key": "dispur",
+    "lat": 26.144023,
+    "lon": 91.766636,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kavaratti",
+    "key": "kavaratti",
+    "lat": 10.562573,
+    "lon": 72.636867,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  }
+]

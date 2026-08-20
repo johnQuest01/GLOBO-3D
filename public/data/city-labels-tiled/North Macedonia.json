@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Skopje",
+    "key": "skopje city",
+    "lat": 42.000006,
+    "lon": 21.433461,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tetovo",
+    "key": "tetovo city",
+    "lat": 42.00923,
+    "lon": 20.970079,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bitola",
+    "key": "bitola city",
+    "lat": 41.039057,
+    "lon": 21.339514,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

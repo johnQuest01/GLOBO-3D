@@ -1,0 +1,452 @@
+[
+  {
+    "name": "Caracas",
+    "key": "caracas",
+    "lat": 10.48,
+    "lon": -66.9,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maracaibo",
+    "key": "maracaibo",
+    "lat": 10.731923,
+    "lon": -71.661924,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Valencia",
+    "key": "valencia city",
+    "lat": 10.231927,
+    "lon": -67.981967,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barquisimeto",
+    "key": "barquisimeto",
+    "lat": 10.051938,
+    "lon": -69.301913,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maracay",
+    "key": "maracay",
+    "lat": 10.248826,
+    "lon": -67.597753,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ciudad Guayana",
+    "key": "ciudad guayana",
+    "lat": 8.370017,
+    "lon": -62.619987,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barcelona",
+    "key": "barcelona city",
+    "lat": 10.130375,
+    "lon": -64.720014,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto la Cruz",
+    "key": "puerto la cruz",
+    "lat": 10.169959,
+    "lon": -64.680016,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cabimas",
+    "key": "cabimas",
+    "lat": 10.429995,
+    "lon": -71.44999,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Cristóbal",
+    "key": "san cristóbal city",
+    "lat": 7.770003,
+    "lon": -72.249967,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maturín",
+    "key": "maturín",
+    "lat": 9.749959,
+    "lon": -63.170031,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mérida",
+    "key": "mérida (venezuela)",
+    "lat": 8.56952,
+    "lon": -71.182522,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ciudad Bolívar",
+    "key": "ciudad bolívar",
+    "lat": 8.099982,
+    "lon": -63.600004,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cumaná",
+    "key": "cumaná",
+    "lat": 10.449994,
+    "lon": -64.180021,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maiquetía",
+    "key": "maiquetía",
+    "lat": 10.600398,
+    "lon": -66.96998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Los Teques",
+    "key": "los teques",
+    "lat": 10.41997,
+    "lon": -67.020028,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barinas",
+    "key": "barinas city",
+    "lat": 8.599978,
+    "lon": -70.250012,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Acarigua",
+    "key": "acarigua",
+    "lat": 9.580383,
+    "lon": -69.200024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Punto Fijo",
+    "key": "punto fijo",
+    "lat": 11.719994,
+    "lon": -70.210014,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "El Tigre",
+    "key": "el tigre",
+    "lat": 8.890348,
+    "lon": -64.260016,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Porlamar",
+    "key": "porlamar",
+    "lat": 10.960376,
+    "lon": -63.849989,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Coro",
+    "key": "coro",
+    "lat": 11.420012,
+    "lon": -69.679995,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Valera",
+    "key": "valera",
+    "lat": 9.319959,
+    "lon": -70.620015,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto Cabello",
+    "key": "puerto cabello",
+    "lat": 10.459714,
+    "lon": -68.006529,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ocumare del Tuy",
+    "key": "ocumare del tuy",
+    "lat": 10.119988,
+    "lon": -66.779991,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guanare",
+    "key": "guanare",
+    "lat": 9.049976,
+    "lon": -69.750017,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Carora",
+    "key": "carora",
+    "lat": 10.189984,
+    "lon": -70.079997,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Carúpano",
+    "key": "carúpano",
+    "lat": 10.670006,
+    "lon": -63.230001,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Fernando de Apure",
+    "key": "san fernando de apure",
+    "lat": 7.899995,
+    "lon": -67.469949,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Anaco",
+    "key": "anaco",
+    "lat": 9.440004,
+    "lon": -64.460004,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Calabozo",
+    "key": "calabozo",
+    "lat": 8.930397,
+    "lon": -67.439977,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Carlos del Zulia",
+    "key": "san carlos del zulia",
+    "lat": 9.010392,
+    "lon": -71.919988,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Valle De La Pascua",
+    "key": "valle de la pascua",
+    "lat": 9.209992,
+    "lon": -66.019986,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Juan de Los Morros",
+    "key": "san juan de los morros",
+    "lat": 9.900999,
+    "lon": -67.354002,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Carlos",
+    "key": "san carlos",
+    "lat": 9.657999,
+    "lon": -68.589998,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Felipe",
+    "key": "san felipe",
+    "lat": 10.335996,
+    "lon": -68.745996,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Machiques",
+    "key": "machiques",
+    "lat": 10.070431,
+    "lon": -72.549949,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Upata",
+    "key": "upata",
+    "lat": 8.020426,
+    "lon": -62.41,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto Ayacucho",
+    "key": "puerto ayacucho",
+    "lat": 5.663904,
+    "lon": -67.623609,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tucupita",
+    "key": "tucupita",
+    "lat": 9.060492,
+    "lon": -62.059995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trujillo",
+    "key": "trujillo (venezuela)",
+    "lat": 9.380395,
+    "lon": -70.44,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zaraza",
+    "key": "zaraza",
+    "lat": 9.340398,
+    "lon": -65.320003,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Altagracia de Orituco",
+    "key": "altagracia de orituco",
+    "lat": 9.850418,
+    "lon": -66.37999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "La Asunción",
+    "key": "la asunción",
+    "lat": 11.033334,
+    "lon": -63.883331,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Rita",
+    "key": "santa rita",
+    "lat": 10.531827,
+    "lon": -71.503949,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guasdualito",
+    "key": "guasdualito",
+    "lat": 7.239983,
+    "lon": -70.739982,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chaguaramas",
+    "key": "chaguaramas",
+    "lat": 9.33597,
+    "lon": -66.25448,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "El Dorado",
+    "key": "el dorado city",
+    "lat": 6.733296,
+    "lon": -61.633329,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "El Manteco",
+    "key": "el manteco",
+    "lat": 7.35039,
+    "lon": -62.533325,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "La Esmeralda",
+    "key": "la esmeralda",
+    "lat": 3.173823,
+    "lon": -65.546604,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Niamey",
+    "key": "niamey city",
+    "lat": 13.518652,
+    "lon": 2.11471,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maradi",
+    "key": "maradi city",
+    "lat": 13.491643,
+    "lon": 7.096404,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zinder",
+    "key": "zinder city",
+    "lat": 13.799996,
+    "lon": 8.983317,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Agadèz",
+    "key": "agadèz",
+    "lat": 16.995873,
+    "lon": 7.98281,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tahoua",
+    "key": "tahoua city",
+    "lat": 14.899981,
+    "lon": 5.259927,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arlit",
+    "key": "arlit",
+    "lat": 18.736339,
+    "lon": 7.389005,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Birni Konni",
+    "key": "birni konni",
+    "lat": 13.790436,
+    "lon": 5.259927,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dosso",
+    "key": "dosso city",
+    "lat": 13.050016,
+    "lon": 3.200001,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gaya",
+    "key": "gaya city",
+    "lat": 11.888175,
+    "lon": 3.446652,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Diffa",
+    "key": "diffa city",
+    "lat": 13.317054,
+    "lon": 12.608884,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ayourou",
+    "key": "ayourou",
+    "lat": 14.7318,
+    "lon": 0.919468,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Madaoua",
+    "key": "madaoua",
+    "lat": 14.076181,
+    "lon": 5.958592,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tillabéri",
+    "key": "tillabéri city",
+    "lat": 14.212038,
+    "lon": 1.453079,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "N'guigmi",
+    "key": "n'guigmi",
+    "lat": 14.253173,
+    "lon": 13.110817,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gouré",
+    "key": "gouré",
+    "lat": 13.987401,
+    "lon": 10.270008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Djado",
+    "key": "djado",
+    "lat": 21.014982,
+    "lon": 12.307507,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  }
+]

@@ -1,0 +1,461 @@
+[
+  {
+    "name": "Kiev",
+    "key": "kyiv",
+    "lat": 50.45,
+    "lon": 30.52,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kharkiv",
+    "key": "kharkiv",
+    "lat": 49.99,
+    "lon": 36.23,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Odessa",
+    "key": "odessa",
+    "lat": 46.48,
+    "lon": 30.73,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dnipro",
+    "key": "dnipro",
+    "lat": 48.46,
+    "lon": 35.04,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lviv",
+    "key": "lviv",
+    "lat": 49.84,
+    "lon": 24.03,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Donetsk",
+    "key": "donetsk",
+    "lat": 48.02,
+    "lon": 37.8,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zaporizhzhia",
+    "key": "zaporizhzhia",
+    "lat": 47.84,
+    "lon": 35.14,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kiev",
+    "key": "kiev (ukraine)",
+    "lat": 50.435313,
+    "lon": 30.514682,
+    "labelRank": 1,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zaporizhzhya",
+    "key": "zaporizhzhya city",
+    "lat": 47.859243,
+    "lon": 35.174863,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kryvyi Rih",
+    "key": "kryvyi rih",
+    "lat": 47.928326,
+    "lon": 33.344983,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mykolaiv",
+    "key": "mykolaiv",
+    "lat": 46.967739,
+    "lon": 31.984342,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mariupol",
+    "key": "mariupol",
+    "lat": 47.096181,
+    "lon": 37.556198,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lugansk",
+    "key": "lugansk",
+    "lat": 48.56976,
+    "lon": 39.334384,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Khmelnytskyi",
+    "key": "khmelnytskyi",
+    "lat": 49.424928,
+    "lon": 27.001545,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gorlovka",
+    "key": "gorlovka",
+    "lat": 48.299647,
+    "lon": 38.054669,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Makeevka",
+    "key": "makeevka",
+    "lat": 48.029664,
+    "lon": 37.974622,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vinnytsia",
+    "key": "vinnytsia",
+    "lat": 49.225379,
+    "lon": 28.481558,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kherson",
+    "key": "kherson city",
+    "lat": 46.632537,
+    "lon": 32.600665,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Poltava",
+    "key": "poltava city",
+    "lat": 49.57404,
+    "lon": 34.570282,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chernigov",
+    "key": "chernigov",
+    "lat": 51.50493,
+    "lon": 31.301541,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chernivtsi",
+    "key": "chernivtsi city",
+    "lat": 48.305306,
+    "lon": 25.92156,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tcherkássi",
+    "key": "tcherkássi",
+    "lat": 49.43472,
+    "lon": 32.0709,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sumy",
+    "key": "sumy city",
+    "lat": 50.924293,
+    "lon": 34.780864,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jitomir",
+    "key": "jitomir",
+    "lat": 50.245575,
+    "lon": 28.662167,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rivne",
+    "key": "rivne city",
+    "lat": 50.616586,
+    "lon": 26.252806,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kropivnitskiy",
+    "key": "kropivnitskiy",
+    "lat": 48.504054,
+    "lon": 32.260294,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ternopil",
+    "key": "ternopil",
+    "lat": 49.53598,
+    "lon": 25.582149,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ivano-Frankivsk",
+    "key": "ivano-frankivsk",
+    "lat": 48.934751,
+    "lon": 24.709385,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kremenchuk",
+    "key": "kremenchuk",
+    "lat": 49.083527,
+    "lon": 33.429628,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lutsk",
+    "key": "lutsk",
+    "lat": 50.747198,
+    "lon": 25.333378,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bila Tserkva",
+    "key": "bila tserkva",
+    "lat": 49.774312,
+    "lon": 30.130915,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kramatorsk",
+    "key": "kramatorsk",
+    "lat": 48.719363,
+    "lon": 37.534391,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Melitópol",
+    "key": "melitópol",
+    "lat": 46.837825,
+    "lon": 35.377468,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uzhhorod",
+    "key": "uzhhorod",
+    "lat": 48.629989,
+    "lon": 22.250001,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nikopol",
+    "key": "nikopol",
+    "lat": 47.566591,
+    "lon": 34.40621,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lysychansk",
+    "key": "lysychansk",
+    "lat": 48.920411,
+    "lon": 38.42736,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Drohobych",
+    "key": "drohobych",
+    "lat": 49.344364,
+    "lon": 23.499382,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Berdyansk",
+    "key": "berdyansk",
+    "lat": 46.756822,
+    "lon": 36.78684,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nizhyn",
+    "key": "nizhyn",
+    "lat": 51.054079,
+    "lon": 31.890291,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kamianets-Podilskyi",
+    "key": "kamianets-podilskyi",
+    "lat": 48.684301,
+    "lon": 26.580899,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Konotop",
+    "key": "konotop",
+    "lat": 51.242388,
+    "lon": 33.209022,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shostka",
+    "key": "shostka",
+    "lat": 51.873409,
+    "lon": 33.479651,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brovary",
+    "key": "brovary",
+    "lat": 50.49432,
+    "lon": 30.780901,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uman",
+    "key": "uman",
+    "lat": 48.754297,
+    "lon": 30.21091,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Izmail",
+    "key": "izmail",
+    "lat": 45.350344,
+    "lon": 28.837351,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kupiansk",
+    "key": "kupiansk",
+    "lat": 49.721783,
+    "lon": 37.598056,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Korosten",
+    "key": "korosten",
+    "lat": 50.950416,
+    "lon": 28.650024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kovel",
+    "key": "kovel",
+    "lat": 51.217066,
+    "lon": 24.71662,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chornomorsk",
+    "key": "chornomorsk",
+    "lat": 46.300002,
+    "lon": 30.666593,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Voznesensk",
+    "key": "voznesensk",
+    "lat": 47.550365,
+    "lon": 31.333322,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chernobyl",
+    "key": "chernobyl",
+    "lat": 51.389407,
+    "lon": 30.098876,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  }
+]

@@ -1,0 +1,524 @@
+[
+  {
+    "name": "Berlim",
+    "key": "berlin",
+    "lat": 52.52,
+    "lon": 13.41,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Estugarda",
+    "key": "estugarda",
+    "lat": 48.77998,
+    "lon": 9.199996,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Frankfurt",
+    "key": "frankfurt",
+    "lat": 50.099977,
+    "lon": 8.675015,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mannheim",
+    "key": "mannheim",
+    "lat": 49.500375,
+    "lon": 8.470015,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hamburgo",
+    "key": "hamburgo",
+    "lat": 53.551971,
+    "lon": 9.998053,
+    "labelRank": 2,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Essen",
+    "key": "essen",
+    "lat": 51.449998,
+    "lon": 7.016615,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Duisburgo",
+    "key": "duisburgo",
+    "lat": 51.429973,
+    "lon": 6.750017,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Munique",
+    "key": "munique",
+    "lat": 48.131888,
+    "lon": 11.573048,
+    "labelRank": 2,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Düsseldorf",
+    "key": "düsseldorf",
+    "lat": 51.220374,
+    "lon": 6.779989,
+    "labelRank": 7,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Colónia",
+    "key": "colónia",
+    "lat": 50.93195,
+    "lon": 6.948059,
+    "labelRank": 6,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wuppertal",
+    "key": "wuppertal",
+    "lat": 51.25001,
+    "lon": 7.169991,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saarbrücken",
+    "key": "saarbrücken",
+    "lat": 49.25039,
+    "lon": 6.970003,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nuremberga",
+    "key": "nuremberga",
+    "lat": 49.449991,
+    "lon": 11.079985,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bremen",
+    "key": "bremen city",
+    "lat": 53.080002,
+    "lon": 8.800021,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hanover",
+    "key": "hanover city",
+    "lat": 52.36697,
+    "lon": 9.716657,
+    "labelRank": 7,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bona",
+    "key": "bona",
+    "lat": 50.720456,
+    "lon": 7.080022,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dresden",
+    "key": "dresden",
+    "lat": 51.049971,
+    "lon": 13.750003,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wiesbaden",
+    "key": "wiesbaden",
+    "lat": 50.080391,
+    "lon": 8.250028,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dortmund",
+    "key": "dortmund",
+    "lat": 51.529967,
+    "lon": 7.450026,
+    "labelRank": 8,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Leipzig",
+    "key": "leipzig",
+    "lat": 51.335405,
+    "lon": 12.409981,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Heidelberg",
+    "key": "heidelberg",
+    "lat": 49.419992,
+    "lon": 8.699975,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karlsruhe",
+    "key": "karlsruhe",
+    "lat": 48.999992,
+    "lon": 8.399993,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Augsburgo",
+    "key": "augsburgo",
+    "lat": 48.350006,
+    "lon": 10.899996,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bielefeld",
+    "key": "bielefeld",
+    "lat": 52.029988,
+    "lon": 8.530011,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Coblença",
+    "key": "coblença",
+    "lat": 50.350478,
+    "lon": 7.599991,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chemnitz",
+    "key": "chemnitz",
+    "lat": 50.829984,
+    "lon": 12.919976,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kassel",
+    "key": "kassel",
+    "lat": 51.300007,
+    "lon": 9.50003,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Münster",
+    "key": "münster",
+    "lat": 51.970405,
+    "lon": 7.620041,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kiel",
+    "key": "kiel",
+    "lat": 54.33039,
+    "lon": 10.130017,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Freiburg im Breisgau",
+    "key": "freiburg im breisgau",
+    "lat": 48.000415,
+    "lon": 7.869948,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brunsvique",
+    "key": "brunsvique",
+    "lat": 52.249975,
+    "lon": 10.50002,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fürth",
+    "key": "fürth",
+    "lat": 49.470015,
+    "lon": 10.99999,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lübeck",
+    "key": "lübeck",
+    "lat": 53.870393,
+    "lon": 10.669984,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Osnabrück",
+    "key": "osnabrück",
+    "lat": 52.280438,
+    "lon": 8.049989,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Magdeburgo",
+    "key": "magdeburgo",
+    "lat": 52.130421,
+    "lon": 11.620004,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Potsdam",
+    "key": "potsdam",
+    "lat": 52.400405,
+    "lon": 13.069993,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Erfurt",
+    "key": "erfurt",
+    "lat": 50.970053,
+    "lon": 11.029962,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rostock",
+    "key": "rostock",
+    "lat": 54.07038,
+    "lon": 12.149997,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mainz",
+    "key": "mainz",
+    "lat": 49.982473,
+    "lon": 8.273219,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ulm",
+    "key": "ulm",
+    "lat": 48.400391,
+    "lon": 9.999999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wurtzburgo",
+    "key": "wurtzburgo",
+    "lat": 49.800434,
+    "lon": 9.950028,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oldemburgo",
+    "key": "oldemburgo",
+    "lat": 53.129999,
+    "lon": 8.220004,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ratisbona",
+    "key": "ratisbona",
+    "lat": 49.020404,
+    "lon": 12.120025,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ingolstadt",
+    "key": "ingolstadt",
+    "lat": 48.77042,
+    "lon": 11.449988,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Göttingen",
+    "key": "göttingen",
+    "lat": 51.520433,
+    "lon": 9.920004,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bremerhaven",
+    "key": "bremerhaven",
+    "lat": 53.550438,
+    "lon": 8.579982,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cottbus",
+    "key": "cottbus",
+    "lat": 51.770418,
+    "lon": 14.329967,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jena",
+    "key": "jena",
+    "lat": 50.930443,
+    "lon": 11.580006,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gera",
+    "key": "gera",
+    "lat": 50.870369,
+    "lon": 12.070002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Flensburg",
+    "key": "flensburg",
+    "lat": 54.783748,
+    "lon": 9.433315,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Schwerin",
+    "key": "schwerin",
+    "lat": 53.633304,
+    "lon": 11.416699,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rosenheim",
+    "key": "rosenheim",
+    "lat": 47.850347,
+    "lon": 12.133306,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gießen",
+    "key": "gießen",
+    "lat": 50.58372,
+    "lon": 8.650004,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Stralsund",
+    "key": "stralsund",
+    "lat": 54.300418,
+    "lon": 13.100017,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Coburgo",
+    "key": "coburgo",
+    "lat": 50.266607,
+    "lon": 10.966607,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hof",
+    "key": "hof",
+    "lat": 50.317044,
+    "lon": 11.916678,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Emden",
+    "key": "emden",
+    "lat": 53.366677,
+    "lon": 7.216655,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Passau",
+    "key": "passau",
+    "lat": 48.575462,
+    "lon": 13.441179,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

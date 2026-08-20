@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Havana",
+    "key": "havana",
+    "lat": 23.133905,
+    "lon": -82.366128,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santiago de Cuba",
+    "key": "santiago de cuba city",
+    "lat": 20.025017,
+    "lon": -75.821326,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Camagüey",
+    "key": "camagüey city",
+    "lat": 21.380825,
+    "lon": -77.916934,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Holguín",
+    "key": "holguín city",
+    "lat": 20.887238,
+    "lon": -76.263056,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guantánamo",
+    "key": "guantánamo city",
+    "lat": 20.145294,
+    "lon": -75.206144,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Clara",
+    "key": "santa clara",
+    "lat": 22.400014,
+    "lon": -79.966654,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Las Tunas",
+    "key": "las tunas city",
+    "lat": 20.960128,
+    "lon": -76.954383,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bayamo",
+    "key": "bayamo",
+    "lat": 20.379543,
+    "lon": -76.643291,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pinar del Río",
+    "key": "pinar del río city",
+    "lat": 22.417506,
+    "lon": -83.69808,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cienfuegos",
+    "key": "cienfuegos city",
+    "lat": 22.144448,
+    "lon": -80.440294,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Matanzas",
+    "key": "matanzas city",
+    "lat": 23.041525,
+    "lon": -81.577486,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ciego de Ávila",
+    "key": "ciego de ávila city",
+    "lat": 21.839996,
+    "lon": -78.761947,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Manzanillo",
+    "key": "manzanillo",
+    "lat": 20.343757,
+    "lon": -77.116647,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sancti Spíritus",
+    "key": "sancti spíritus city",
+    "lat": 21.930146,
+    "lon": -79.4425,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Palma Soriano",
+    "key": "palma soriano",
+    "lat": 20.217227,
+    "lon": -75.998808,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guines",
+    "key": "guines",
+    "lat": 22.836137,
+    "lon": -82.028027,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Artemisa",
+    "key": "artemisa city",
+    "lat": 22.813399,
+    "lon": -82.761884,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Morón",
+    "key": "morón",
+    "lat": 22.109851,
+    "lon": -78.627485,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Colón",
+    "key": "colón (cuba)",
+    "lat": 22.719581,
+    "lon": -80.905796,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sagua la Grande",
+    "key": "sagua la grande",
+    "lat": 22.809033,
+    "lon": -80.071092,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Placetas",
+    "key": "placetas",
+    "lat": 22.315807,
+    "lon": -79.655485,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nuevitas",
+    "key": "nuevitas",
+    "lat": 21.545647,
+    "lon": -77.264442,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Banes",
+    "key": "banes",
+    "lat": 20.962918,
+    "lon": -75.718593,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Antonio de los Baños",
+    "key": "san antonio de los baños",
+    "lat": 22.891121,
+    "lon": -82.499083,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Caibarién",
+    "key": "caibarién",
+    "lat": 22.515795,
+    "lon": -79.47224,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nueva Gerona",
+    "key": "nueva gerona",
+    "lat": 21.883715,
+    "lon": -82.799995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

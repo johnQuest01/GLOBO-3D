@@ -11,8 +11,8 @@
   {
     "name": "Saint Andrew",
     "key": "saint andrew",
-    "lat": 12.1224,
-    "lon": -61.6329,
+    "lat": 13.2551,
+    "lon": -59.5759,
     "labelRank": 10,
     "minLabel": 11,
     "maxLabel": 11
@@ -74,8 +74,8 @@
   {
     "name": "Saint John",
     "key": "saint john",
-    "lat": 12.1446,
-    "lon": -61.7094,
+    "lat": 13.1795,
+    "lon": -59.5039,
     "labelRank": 10,
     "minLabel": 11,
     "maxLabel": 11
@@ -83,8 +83,8 @@
   {
     "name": "Saint George",
     "key": "saint george",
-    "lat": 12.0681,
-    "lon": -61.7226,
+    "lat": 13.1489,
+    "lon": -59.5479,
     "labelRank": 10,
     "minLabel": 11,
     "maxLabel": 11
@@ -92,8 +92,8 @@
   {
     "name": "Saint Thomas",
     "key": "saint thomas",
-    "lat": 18.3543,
-    "lon": -64.9263,
+    "lat": 13.1877,
+    "lon": -59.5898,
     "labelRank": 10,
     "minLabel": 11,
     "maxLabel": 11

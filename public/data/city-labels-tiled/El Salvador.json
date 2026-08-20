@@ -1,0 +1,128 @@
+[
+  {
+    "name": "San Salvador",
+    "key": "san salvador city",
+    "lat": 13.70328,
+    "lon": -89.215576,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Ana",
+    "key": "santa ana (el salvador)",
+    "lat": 13.99461,
+    "lon": -89.559764,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Miguel de la Frontera",
+    "key": "san miguel de la frontera",
+    "lat": 13.483349,
+    "lon": -88.183336,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sonsonate",
+    "key": "sonsonate city",
+    "lat": 13.719975,
+    "lon": -89.729986,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Tecla",
+    "key": "santa tecla",
+    "lat": 13.673997,
+    "lon": -89.289998,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Usulután",
+    "key": "usulután city",
+    "lat": 13.346001,
+    "lon": -88.432002,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cojutepeque",
+    "key": "cojutepeque",
+    "lat": 13.716702,
+    "lon": -88.933302,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zacatecoluca",
+    "key": "zacatecoluca",
+    "lat": 13.508001,
+    "lon": -88.867998,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Vicente",
+    "key": "san vicente city",
+    "lat": 13.641003,
+    "lon": -88.785,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ahuachapán",
+    "key": "ahuachapán city",
+    "lat": 13.919004,
+    "lon": -89.845001,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chalatenango",
+    "key": "chalatenango city",
+    "lat": 14.009527,
+    "lon": -88.906737,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sensuntepeque",
+    "key": "sensuntepeque",
+    "lat": 13.880043,
+    "lon": -88.630001,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "La Unión",
+    "key": "la unión city",
+    "lat": 13.331997,
+    "lon": -87.839,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Francisco Gotera",
+    "key": "san francisco gotera",
+    "lat": 13.699998,
+    "lon": -88.1,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  }
+]

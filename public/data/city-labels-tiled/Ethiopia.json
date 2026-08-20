@@ -1,0 +1,308 @@
+[
+  {
+    "name": "Adis Abeba",
+    "key": "addis ababa",
+    "lat": 9.03,
+    "lon": 38.74,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nazret",
+    "key": "nazret",
+    "lat": 8.549981,
+    "lon": 39.269996,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dire Dawa",
+    "key": "dire dawa city",
+    "lat": 9.589995,
+    "lon": 41.860018,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bahir Dar",
+    "key": "bahir dar",
+    "lat": 11.600053,
+    "lon": 37.383289,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dessie",
+    "key": "dessie",
+    "lat": 11.129978,
+    "lon": 39.630025,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Harar",
+    "key": "harar",
+    "lat": 9.319959,
+    "lon": 42.150026,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gondar",
+    "key": "gondar",
+    "lat": 12.610043,
+    "lon": 37.460028,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Awassa",
+    "key": "awassa",
+    "lat": 7.059996,
+    "lon": 38.476999,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jima",
+    "key": "jima",
+    "lat": 7.679982,
+    "lon": 36.830041,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Waliso",
+    "key": "waliso",
+    "lat": 8.530421,
+    "lon": 37.970023,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shashemane",
+    "key": "shashemane",
+    "lat": 7.200399,
+    "lon": 38.590037,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Adigrat",
+    "key": "adigrat",
+    "lat": 14.280432,
+    "lon": 39.469983,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mek'ele",
+    "key": "mek'ele",
+    "lat": 13.499989,
+    "lon": 39.469983,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hosaena",
+    "key": "hosaena",
+    "lat": 7.550378,
+    "lon": 37.850031,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Asella",
+    "key": "asella",
+    "lat": 7.950405,
+    "lon": 39.139926,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gode",
+    "key": "gode",
+    "lat": 5.95001,
+    "lon": 43.449999,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nekemte",
+    "key": "nekemte",
+    "lat": 9.090464,
+    "lon": 36.530008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Debre Markos",
+    "key": "debre markos",
+    "lat": 10.339975,
+    "lon": 37.720013,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arba Minch",
+    "key": "arba minch",
+    "lat": 6.040005,
+    "lon": 37.549997,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sodo",
+    "key": "sodo",
+    "lat": 6.900004,
+    "lon": 37.749985,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Debre Berhan",
+    "key": "debre berhan",
+    "lat": 9.680377,
+    "lon": 39.530031,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Djidjiga",
+    "key": "djidjiga",
+    "lat": 9.350423,
+    "lon": 42.789987,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aksum",
+    "key": "aksum",
+    "lat": 14.130415,
+    "lon": 38.720003,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dilla",
+    "key": "dilla",
+    "lat": 6.410421,
+    "lon": 38.310002,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ambo",
+    "key": "ambo",
+    "lat": 8.980394,
+    "lon": 37.850031,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Irgalem",
+    "key": "irgalem",
+    "lat": 6.750426,
+    "lon": 38.409996,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Goba",
+    "key": "goba",
+    "lat": 7.010023,
+    "lon": 39.970004,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gimbi",
+    "key": "gimbi",
+    "lat": 9.167023,
+    "lon": 35.833306,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Asosa",
+    "key": "asosa",
+    "lat": 10.066994,
+    "lon": 34.533334,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dembi Dolo",
+    "key": "dembi dolo",
+    "lat": 8.533729,
+    "lon": 34.799984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bati",
+    "key": "bati",
+    "lat": 11.183748,
+    "lon": 40.016565,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dolobay",
+    "key": "dolobay",
+    "lat": 4.183348,
+    "lon": 42.083312,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Negele Boran",
+    "key": "negele boran",
+    "lat": 5.316612,
+    "lon": 39.58331,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gore",
+    "key": "gore city",
+    "lat": 8.148996,
+    "lon": 35.537005,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

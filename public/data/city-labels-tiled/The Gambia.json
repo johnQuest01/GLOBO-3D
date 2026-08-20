@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Brikama",
+    "key": "brikama",
+    "lat": 13.280364,
+    "lon": -16.65995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Banjul",
+    "key": "banjul city",
+    "lat": 13.453876,
+    "lon": -16.591701,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mansa Konko",
+    "key": "mansa konko",
+    "lat": 13.454894,
+    "lon": -15.543324,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Basse Santa Su",
+    "key": "basse santa su",
+    "lat": 13.310001,
+    "lon": -14.222997,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bansang",
+    "key": "bansang",
+    "lat": 13.433636,
+    "lon": -14.650021,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Janjanbureh",
+    "key": "janjanbureh",
+    "lat": 13.551003,
+    "lon": -14.767001,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kerewan",
+    "key": "kerewan",
+    "lat": 13.493997,
+    "lon": -16.094997,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

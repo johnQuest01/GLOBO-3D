@@ -1,0 +1,290 @@
+[
+  {
+    "name": "George Town",
+    "key": "george town",
+    "lat": 5.413613,
+    "lon": 100.329368,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kuala Lumpur",
+    "key": "kuala lumpur city",
+    "lat": 3.139797,
+    "lon": 101.688699,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Klang",
+    "key": "klang",
+    "lat": 3.043281,
+    "lon": 101.447059,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Johor Bahru",
+    "key": "johor bahru",
+    "lat": 1.481971,
+    "lon": 103.728094,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Butterworth",
+    "key": "butterworth",
+    "lat": 5.417071,
+    "lon": 100.400011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Malaca",
+    "key": "malaca",
+    "lat": 2.206414,
+    "lon": 102.246461,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ipoh",
+    "key": "ipoh",
+    "lat": 4.599989,
+    "lon": 101.064983,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kuching",
+    "key": "kuching",
+    "lat": 1.52997,
+    "lon": 110.329999,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kota Kinabalu",
+    "key": "kota kinabalu",
+    "lat": 5.979983,
+    "lon": 116.110008,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kota Bharu",
+    "key": "kota bharu",
+    "lat": 6.119974,
+    "lon": 102.229977,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shah Alam",
+    "key": "shah alam",
+    "lat": 3.066696,
+    "lon": 101.549998,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sandakan",
+    "key": "sandakan",
+    "lat": 5.842962,
+    "lon": 118.107974,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Seremban",
+    "key": "seremban",
+    "lat": 2.710492,
+    "lon": 101.94002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kuantan",
+    "key": "kuantan",
+    "lat": 3.829959,
+    "lon": 103.320039,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sungai Petani",
+    "key": "sungai petani",
+    "lat": 5.649718,
+    "lon": 100.479334,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kuala Terenggan",
+    "key": "kuala terenggan",
+    "lat": 5.33041,
+    "lon": 103.12,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alor Setar",
+    "key": "alor setar",
+    "lat": 6.113308,
+    "lon": 100.372933,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tawau",
+    "key": "tawau",
+    "lat": 4.270965,
+    "lon": 117.895997,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Taiping",
+    "key": "taiping",
+    "lat": 4.86496,
+    "lon": 100.719991,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Miri",
+    "key": "miri",
+    "lat": 4.399924,
+    "lon": 113.984505,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sibu",
+    "key": "sibu",
+    "lat": 2.302972,
+    "lon": 111.843033,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Batu Pahat",
+    "key": "batu pahat",
+    "lat": 1.850364,
+    "lon": 102.933345,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Muar",
+    "key": "muar",
+    "lat": 2.033738,
+    "lon": 102.566597,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kluang",
+    "key": "kluang",
+    "lat": 2.038311,
+    "lon": 103.317869,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bintulu",
+    "key": "bintulu",
+    "lat": 3.166408,
+    "lon": 113.035984,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lahad Datu",
+    "key": "lahad datu",
+    "lat": 5.046396,
+    "lon": 118.33597,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Teluk Intan",
+    "key": "teluk intan",
+    "lat": 4.01186,
+    "lon": 101.031445,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chukai",
+    "key": "chukai",
+    "lat": 4.233242,
+    "lon": 103.447887,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Putrajaya",
+    "key": "putrajaya city",
+    "lat": 2.932515,
+    "lon": 101.695037,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kangar",
+    "key": "kangar",
+    "lat": 6.433002,
+    "lon": 100.189999,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Raub",
+    "key": "raub",
+    "lat": 3.7927,
+    "lon": 101.8423,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kuala Lipis",
+    "key": "kuala lipis",
+    "lat": 4.184001,
+    "lon": 102.042001,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  }
+]

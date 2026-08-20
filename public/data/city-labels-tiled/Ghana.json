@@ -1,0 +1,155 @@
+[
+  {
+    "name": "Acra",
+    "key": "accra",
+    "lat": 5.6,
+    "lon": -0.19,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kumasi",
+    "key": "kumasi",
+    "lat": 6.691937,
+    "lon": -1.63196,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tamale",
+    "key": "tamale",
+    "lat": 9.40042,
+    "lon": -0.839985,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sekondi-Takoradi",
+    "key": "sekondi-takoradi",
+    "lat": 4.943276,
+    "lon": -1.704015,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tema",
+    "key": "tema",
+    "lat": 5.640365,
+    "lon": 0.010015,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Obuasi",
+    "key": "obuasi",
+    "lat": 6.190409,
+    "lon": -1.659987,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Koforidua",
+    "key": "koforidua",
+    "lat": 6.090415,
+    "lon": -0.260021,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cabo Corso",
+    "key": "cabo corso",
+    "lat": 5.110372,
+    "lon": -1.249986,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ho",
+    "key": "ho",
+    "lat": 6.60041,
+    "lon": 0.469986,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bolgatanga",
+    "key": "bolgatanga",
+    "lat": 10.790387,
+    "lon": -0.849985,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wa",
+    "key": "wa",
+    "lat": 10.060405,
+    "lon": -2.500013,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bawku",
+    "key": "bawku",
+    "lat": 11.060396,
+    "lon": -0.239996,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sunyani",
+    "key": "sunyani",
+    "lat": 7.335999,
+    "lon": -2.336003,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nkawkaw",
+    "key": "nkawkaw",
+    "lat": 6.550465,
+    "lon": -0.780015,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Berekum",
+    "key": "berekum",
+    "lat": 7.450384,
+    "lon": -2.590008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Winneba",
+    "key": "winneba",
+    "lat": 5.350434,
+    "lon": -0.63005,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yendi",
+    "key": "yendi",
+    "lat": 9.433725,
+    "lon": -0.01665,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

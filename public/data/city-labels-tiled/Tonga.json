@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Nuku'alofa",
+    "key": "nuku'alofa",
+    "lat": -21.138512,
+    "lon": -175.220564,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Neiafu",
+    "key": "neiafu",
+    "lat": -18.649573,
+    "lon": -173.983293,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

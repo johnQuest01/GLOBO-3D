@@ -1,0 +1,443 @@
+[
+  {
+    "name": "Madri",
+    "key": "madrid",
+    "lat": 40.42,
+    "lon": -3.7,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barcelona",
+    "key": "barcelona",
+    "lat": 41.39,
+    "lon": 2.17,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sevilha",
+    "key": "sevilha",
+    "lat": 37.405015,
+    "lon": -5.980007,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bilbau",
+    "key": "bilbau",
+    "lat": 43.249981,
+    "lon": -2.929987,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Valência",
+    "key": "valência",
+    "lat": 39.486963,
+    "lon": -0.401958,
+    "labelRank": 3,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saragoça",
+    "key": "saragoça",
+    "lat": 41.650002,
+    "lon": -0.889982,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Málaga",
+    "key": "málaga",
+    "lat": 36.720406,
+    "lon": -4.419999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Múrcia",
+    "key": "múrcia",
+    "lat": 37.979993,
+    "lon": -1.129968,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Granada",
+    "key": "granada city",
+    "lat": 37.164978,
+    "lon": -3.585011,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vigo",
+    "key": "vigo",
+    "lat": 42.220019,
+    "lon": -8.729995,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Las Palmas",
+    "key": "las palmas",
+    "lat": 28.099976,
+    "lon": -15.429999,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Palma de Maiorca",
+    "key": "palma de maiorca",
+    "lat": 39.574263,
+    "lon": 2.654246,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Corunha",
+    "key": "corunha",
+    "lat": 43.329977,
+    "lon": -8.419988,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Sebastián",
+    "key": "san sebastián",
+    "lat": 43.320391,
+    "lon": -1.979993,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Cruz de Tenerife",
+    "key": "santa cruz de tenerife",
+    "lat": 28.469979,
+    "lon": -16.250001,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gijón",
+    "key": "gijón",
+    "lat": 43.530016,
+    "lon": -5.67,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Valladolid",
+    "key": "valladolid",
+    "lat": 41.650002,
+    "lon": -4.750031,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Córdova",
+    "key": "córdova city",
+    "lat": 37.879999,
+    "lon": -4.770004,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alicante",
+    "key": "alicante",
+    "lat": 38.35122,
+    "lon": -0.483641,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cádis",
+    "key": "cádis",
+    "lat": 36.524829,
+    "lon": -6.286141,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pamplona",
+    "key": "pamplona",
+    "lat": 42.820008,
+    "lon": -1.649987,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oviedo",
+    "key": "oviedo",
+    "lat": 43.350492,
+    "lon": -5.829991,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vitoria-Gasteiz",
+    "key": "vitoria-gasteiz",
+    "lat": 42.84998,
+    "lon": -2.669977,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santander",
+    "key": "santander city",
+    "lat": 43.380465,
+    "lon": -3.799985,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cartagena",
+    "key": "cartagena",
+    "lat": 37.60043,
+    "lon": -0.980028,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Marbella",
+    "key": "marbella",
+    "lat": 36.51662,
+    "lon": -4.88333,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mataró",
+    "key": "mataró",
+    "lat": 41.539957,
+    "lon": 2.450021,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Castelló de la Plana",
+    "key": "castelló de la plana",
+    "lat": 39.970414,
+    "lon": -0.050008,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Almeria",
+    "key": "almeria",
+    "lat": 36.830348,
+    "lon": -2.429991,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Burgos",
+    "key": "burgos",
+    "lat": 42.350398,
+    "lon": -3.679967,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salamanca",
+    "key": "salamanca city",
+    "lat": 40.970405,
+    "lon": -5.67,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Albacete",
+    "key": "albacete",
+    "lat": 39.000344,
+    "lon": -1.87,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huelva",
+    "key": "huelva",
+    "lat": 37.250374,
+    "lon": -6.929949,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Logroño",
+    "key": "logroño",
+    "lat": 42.470365,
+    "lon": -2.429991,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Melilla",
+    "key": "melilla",
+    "lat": 35.300002,
+    "lon": -2.950011,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Badajoz",
+    "key": "badajoz",
+    "lat": 38.880429,
+    "lon": -6.969973,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Leão",
+    "key": "leão",
+    "lat": 42.579971,
+    "lon": -5.570007,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tarragona",
+    "key": "tarragona",
+    "lat": 41.12037,
+    "lon": 1.249991,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ourense",
+    "key": "ourense",
+    "lat": 42.32996,
+    "lon": -7.869995,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jaén",
+    "key": "jaén",
+    "lat": 37.770393,
+    "lon": -3.799985,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Algeciras",
+    "key": "algeciras",
+    "lat": 36.131882,
+    "lon": -5.45266,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santiago de Compostela",
+    "key": "santiago de compostela",
+    "lat": 42.882898,
+    "lon": -8.541091,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lorca",
+    "key": "lorca",
+    "lat": 37.688564,
+    "lon": -1.698512,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ceuta",
+    "key": "ceuta",
+    "lat": 35.888984,
+    "lon": -5.306999,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Toledo",
+    "key": "toledo (spain)",
+    "lat": 39.867036,
+    "lon": -4.016716,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guadalajara",
+    "key": "guadalajara city",
+    "lat": 40.633707,
+    "lon": -3.166587,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Linares",
+    "key": "linares city",
+    "lat": 38.08332,
+    "lon": -3.633355,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arrecife",
+    "key": "arrecife",
+    "lat": 28.969049,
+    "lon": -13.537833,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mérida",
+    "key": "mérida (spain)",
+    "lat": 38.912004,
+    "lon": -6.337998,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

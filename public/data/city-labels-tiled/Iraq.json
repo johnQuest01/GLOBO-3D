@@ -1,0 +1,245 @@
+[
+  {
+    "name": "Bagdade",
+    "key": "bagdade",
+    "lat": 33.340594,
+    "lon": 44.391923,
+    "labelRank": 1,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mossul",
+    "key": "mossul",
+    "lat": 36.346948,
+    "lon": 43.143059,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dohuk",
+    "key": "dohuk",
+    "lat": 36.8667,
+    "lon": 43.000003,
+    "labelRank": 9,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arbil",
+    "key": "arbil city",
+    "lat": 36.18099,
+    "lon": 44.006675,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baçorá",
+    "key": "baçorá",
+    "lat": 30.51547,
+    "lon": 47.811611,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "As-Sulaymaniyah",
+    "key": "as-sulaymaniyah city",
+    "lat": 35.561278,
+    "lon": 45.43086,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "An-Najaf",
+    "key": "an-najaf city",
+    "lat": 32.000332,
+    "lon": 44.335371,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kirkuk",
+    "key": "kirkuk",
+    "lat": 35.472239,
+    "lon": 44.392267,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al-Hillah",
+    "key": "al-hillah city",
+    "lat": 32.472138,
+    "lon": 44.421722,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karbala",
+    "key": "karbala",
+    "lat": 32.61492,
+    "lon": 44.024486,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nassíria",
+    "key": "nassíria",
+    "lat": 31.042949,
+    "lon": 46.267553,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Diwaniya",
+    "key": "diwaniya",
+    "lat": 31.988938,
+    "lon": 44.923966,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Amara",
+    "key": "amara",
+    "lat": 31.841608,
+    "lon": 47.151168,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kut",
+    "key": "kut",
+    "lat": 32.490716,
+    "lon": 45.83037,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baquba",
+    "key": "baquba",
+    "lat": 33.747642,
+    "lon": 44.657263,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ramadi",
+    "key": "ramadi",
+    "lat": 33.420013,
+    "lon": 43.299982,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Az Zubayr",
+    "key": "az zubayr",
+    "lat": 30.389164,
+    "lon": 47.707982,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Falluja",
+    "key": "falluja",
+    "lat": 33.347666,
+    "lon": 43.777266,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Samawa",
+    "key": "samawa",
+    "lat": 31.309858,
+    "lon": 45.280275,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ash Shatrah",
+    "key": "ash shatrah",
+    "lat": 31.417525,
+    "lon": 46.177222,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Samarra",
+    "key": "samarra",
+    "lat": 34.193997,
+    "lon": 43.875001,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tal Afar",
+    "key": "tal afar",
+    "lat": 36.375982,
+    "lon": 42.44975,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zakho",
+    "key": "zakho",
+    "lat": 37.14454,
+    "lon": 42.687203,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Musayyib",
+    "key": "musayyib",
+    "lat": 32.778631,
+    "lon": 44.289999,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tikrit",
+    "key": "tikrit",
+    "lat": 34.597047,
+    "lon": 43.676962,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mandali",
+    "key": "mandali",
+    "lat": 33.743611,
+    "lon": 45.546357,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ar-Rutba",
+    "key": "ar-rutba",
+    "lat": 33.03846,
+    "lon": 40.284455,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  }
+]

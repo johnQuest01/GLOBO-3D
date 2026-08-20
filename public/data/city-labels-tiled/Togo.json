@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Lomé",
+    "key": "lomé",
+    "lat": 6.133883,
+    "lon": 1.220811,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sokodé",
+    "key": "sokodé",
+    "lat": 8.990471,
+    "lon": 1.149997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kpalimé",
+    "key": "kpalimé",
+    "lat": 6.900391,
+    "lon": 0.630028,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Atakpamé",
+    "key": "atakpamé",
+    "lat": 7.530043,
+    "lon": 1.120024,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bassar",
+    "key": "bassar",
+    "lat": 9.261,
+    "lon": 0.789004,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mango",
+    "key": "mango",
+    "lat": 10.35956,
+    "lon": 0.470813,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sotouboua",
+    "key": "sotouboua",
+    "lat": 8.557002,
+    "lon": 0.984997,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

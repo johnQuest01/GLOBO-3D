@@ -1,0 +1,272 @@
+[
+  {
+    "name": "Atenas",
+    "key": "atenas",
+    "lat": 37.985272,
+    "lon": 23.731375,
+    "labelRank": 1,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salonica",
+    "key": "salonica",
+    "lat": 40.698052,
+    "lon": 22.883055,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pireu",
+    "key": "pireu",
+    "lat": 37.950021,
+    "lon": 23.69999,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pátras",
+    "key": "pátras",
+    "lat": 38.230004,
+    "lon": 21.729981,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Heraclião",
+    "key": "heraclião",
+    "lat": 35.325013,
+    "lon": 25.130497,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lárissa",
+    "key": "lárissa",
+    "lat": 39.630409,
+    "lon": 22.420016,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vólos",
+    "key": "vólos",
+    "lat": 39.36996,
+    "lon": 22.95001,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Janina",
+    "key": "janina",
+    "lat": 39.6679,
+    "lon": 20.850861,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chania",
+    "key": "chania",
+    "lat": 35.512211,
+    "lon": 24.015578,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Agrinio",
+    "key": "agrinio",
+    "lat": 38.621763,
+    "lon": 21.407727,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cálcis",
+    "key": "cálcis",
+    "lat": 38.463995,
+    "lon": 23.612398,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kalamata",
+    "key": "kalamata",
+    "lat": 37.038914,
+    "lon": 22.114195,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cavala",
+    "key": "cavala",
+    "lat": 40.941211,
+    "lon": 24.40176,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rodes",
+    "key": "rodes",
+    "lat": 36.441224,
+    "lon": 28.222504,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Serres",
+    "key": "serres",
+    "lat": 41.085979,
+    "lon": 23.549715,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Katerini",
+    "key": "katerini",
+    "lat": 40.272334,
+    "lon": 22.502492,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alexandrópolis",
+    "key": "alexandrópolis",
+    "lat": 40.848619,
+    "lon": 25.87441,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xanti",
+    "key": "xanti",
+    "lat": 41.14179,
+    "lon": 24.883587,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lamía",
+    "key": "lamía",
+    "lat": 38.898999,
+    "lon": 22.434004,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Komotini",
+    "key": "komotini",
+    "lat": 41.133303,
+    "lon": 25.416703,
+    "labelRank": 10,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Corfu",
+    "key": "corfu",
+    "lat": 39.615423,
+    "lon": 19.914743,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mitilene",
+    "key": "mitilene",
+    "lat": 39.110415,
+    "lon": 26.554648,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trípoli",
+    "key": "trípoli (greece)",
+    "lat": 37.509143,
+    "lon": 22.379399,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quios",
+    "key": "quios",
+    "lat": 38.368109,
+    "lon": 26.13581,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pyrgos",
+    "key": "pyrgos",
+    "lat": 37.683732,
+    "lon": 21.449998,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cós",
+    "key": "cós",
+    "lat": 36.893729,
+    "lon": 27.288815,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Esparta",
+    "key": "esparta",
+    "lat": 37.073718,
+    "lon": 22.42968,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hermópolis",
+    "key": "hermópolis",
+    "lat": 37.450413,
+    "lon": 24.9333,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Siteía",
+    "key": "siteía",
+    "lat": 35.200421,
+    "lon": 26.098551,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Polígiros",
+    "key": "polígiros",
+    "lat": 40.381002,
+    "lon": 23.453001,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

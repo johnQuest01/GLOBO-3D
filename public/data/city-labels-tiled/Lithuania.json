@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Vilnius",
+    "key": "vilnius",
+    "lat": 54.683366,
+    "lon": 25.316635,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kaunas",
+    "key": "kaunas",
+    "lat": 54.950404,
+    "lon": 23.880031,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Klaipėda",
+    "key": "klaipėda",
+    "lat": 55.720409,
+    "lon": 21.119941,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Šiauliai",
+    "key": "šiauliai city",
+    "lat": 55.938639,
+    "lon": 23.325026,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Panevėžys",
+    "key": "panevėžys",
+    "lat": 55.74002,
+    "lon": 24.370026,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

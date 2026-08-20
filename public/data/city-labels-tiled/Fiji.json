@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Suva",
+    "key": "suva",
+    "lat": -18.133016,
+    "lon": 178.441707,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lautoka",
+    "key": "lautoka",
+    "lat": -17.616097,
+    "lon": 177.466625,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nadi",
+    "key": "nadi",
+    "lat": -17.7996,
+    "lon": 177.416602,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Labasa",
+    "key": "labasa",
+    "lat": -16.416583,
+    "lon": 179.383304,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  }
+]

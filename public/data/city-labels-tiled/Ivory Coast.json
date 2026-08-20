@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Abidjan",
+    "key": "abidjan",
+    "lat": 5.36,
+    "lon": -4.01,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Abidjan",
+    "key": "abidjan city",
+    "lat": 5.323126,
+    "lon": -4.020207,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bouaké",
+    "key": "bouaké",
+    "lat": 7.689982,
+    "lon": -5.030014,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Daloa",
+    "key": "daloa",
+    "lat": 6.889979,
+    "lon": -6.450005,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "San-Pédro",
+    "key": "san-pédro",
+    "lat": 4.770418,
+    "lon": -6.639967,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yamoussoukro",
+    "key": "yamoussoukro",
+    "lat": 6.818381,
+    "lon": -5.275503,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Korhogo",
+    "key": "korhogo",
+    "lat": 9.459977,
+    "lon": -5.639951,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Man",
+    "key": "man",
+    "lat": 7.400413,
+    "lon": -7.549989,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Divo",
+    "key": "divo",
+    "lat": 5.839002,
+    "lon": -5.360004,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gagnoa",
+    "key": "gagnoa",
+    "lat": 6.150411,
+    "lon": -5.879988,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Soubré",
+    "key": "soubré",
+    "lat": 5.790407,
+    "lon": -6.610021,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Abengourou",
+    "key": "abengourou",
+    "lat": 6.730376,
+    "lon": -3.490004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Agboville",
+    "key": "agboville",
+    "lat": 5.940347,
+    "lon": -4.280034,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Grand-Bassam",
+    "key": "grand-bassam",
+    "lat": 5.200392,
+    "lon": -3.749988,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dabou",
+    "key": "dabou",
+    "lat": 5.320359,
+    "lon": -4.389949,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dimbokro",
+    "key": "dimbokro",
+    "lat": 6.650458,
+    "lon": -4.710007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ferquessedugu",
+    "key": "ferquessedugu",
+    "lat": 9.600407,
+    "lon": -5.200029,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bouaflé",
+    "key": "bouaflé",
+    "lat": 6.977997,
+    "lon": -5.748002,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bondoukou",
+    "key": "bondoukou",
+    "lat": 8.030426,
+    "lon": -2.800021,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Séguéla",
+    "key": "séguéla",
+    "lat": 7.950405,
+    "lon": -6.670017,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Odienné",
+    "key": "odienné",
+    "lat": 9.510413,
+    "lon": -7.580013,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guiglo",
+    "key": "guiglo",
+    "lat": 6.550465,
+    "lon": -7.489967,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Toumodi",
+    "key": "toumodi",
+    "lat": 6.552,
+    "lon": -5.019002,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sassandra",
+    "key": "sassandra",
+    "lat": 4.950381,
+    "lon": -6.083283,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aboisso",
+    "key": "aboisso",
+    "lat": 5.466699,
+    "lon": -3.200003,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Touba",
+    "key": "touba",
+    "lat": 8.28,
+    "lon": -7.684001,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

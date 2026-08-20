@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Díli",
+    "key": "díli",
+    "lat": -8.559388,
+    "lon": 125.579456,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  }
+]

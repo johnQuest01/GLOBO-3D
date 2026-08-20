@@ -1,0 +1,173 @@
+[
+  {
+    "name": "Phnom Penh",
+    "key": "phnom penh city",
+    "lat": 11.551976,
+    "lon": 104.914689,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Battambang",
+    "key": "battambang",
+    "lat": 13.100013,
+    "lon": 103.200047,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Siem Reap",
+    "key": "siem reap",
+    "lat": 13.366638,
+    "lon": 103.850033,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kampong Cham",
+    "key": "kampong cham",
+    "lat": 12.000442,
+    "lon": 105.450039,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kampong Chhnang",
+    "key": "kampong chhnang",
+    "lat": 12.250478,
+    "lon": 104.666624,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Prey Veng",
+    "key": "prey veng",
+    "lat": 11.484,
+    "lon": 105.324004,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pursat",
+    "key": "pursat",
+    "lat": 12.533691,
+    "lon": 103.916696,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sisophon",
+    "key": "sisophon",
+    "lat": 13.583756,
+    "lon": 102.983316,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kampot",
+    "key": "kampot",
+    "lat": 10.61709,
+    "lon": 104.183346,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kampong Speu",
+    "key": "kampong speu",
+    "lat": 11.451996,
+    "lon": 104.518999,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Koh Kong",
+    "key": "koh kong",
+    "lat": 11.617539,
+    "lon": 102.984933,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Stung Treng",
+    "key": "stung treng",
+    "lat": 13.523004,
+    "lon": 105.974002,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Phnum Tbeng Mean Chey",
+    "key": "phnum tbeng mean chey",
+    "lat": 13.816701,
+    "lon": 104.966704,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Svay Rieng",
+    "key": "svay rieng city",
+    "lat": 11.079999,
+    "lon": 105.801004,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kratié",
+    "key": "kratié",
+    "lat": 12.468996,
+    "lon": 106.023997,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kampong Thom",
+    "key": "kampong thom",
+    "lat": 12.711996,
+    "lon": 104.888998,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lumphat",
+    "key": "lumphat",
+    "lat": 13.507002,
+    "lon": 106.981003,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Takéo",
+    "key": "takéo",
+    "lat": 10.98376,
+    "lon": 104.783309,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sen Monorom",
+    "key": "sen monorom",
+    "lat": 12.449997,
+    "lon": 107.2,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  }
+]

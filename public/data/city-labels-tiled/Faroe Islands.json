@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Tórshavn",
+    "key": "tórshavn",
+    "lat": 62.030024,
+    "lon": -6.820034,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Klaksvík",
+    "key": "klaksvík",
+    "lat": 62.237478,
+    "lon": -6.539011,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  }
+]

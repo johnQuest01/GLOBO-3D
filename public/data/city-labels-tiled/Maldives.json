@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Malé",
+    "key": "malé city",
+    "lat": 4.172037,
+    "lon": 73.508901,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Stanley",
+    "key": "stanley",
+    "lat": -51.700011,
+    "lon": -57.849968,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baía Fox",
+    "key": "baía fox",
+    "lat": -51.95059,
+    "lon": -60.086963,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  }
+]

@@ -1,0 +1,2018 @@
+[
+  {
+    "name": "Sydney",
+    "key": "sydney",
+    "lat": -33.87,
+    "lon": 151.21,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Melbourne",
+    "key": "melbourne",
+    "lat": -37.81,
+    "lon": 144.96,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brisbane",
+    "key": "brisbane",
+    "lat": -27.453085,
+    "lon": 153.033147,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Perth",
+    "key": "perth",
+    "lat": -31.953069,
+    "lon": 115.838053,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Adelaide",
+    "key": "adelaide",
+    "lat": -34.933042,
+    "lon": 138.598059,
+    "labelRank": 3,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Newcastle",
+    "key": "newcastle",
+    "lat": -32.929508,
+    "lon": 151.770249,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gold Coast",
+    "key": "gold coast",
+    "lat": -28.081504,
+    "lon": 153.448246,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cranbourne",
+    "key": "cranbourne",
+    "lat": -38.099601,
+    "lon": 145.283369,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Camberra",
+    "key": "camberra",
+    "lat": -35.283029,
+    "lon": 149.129026,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wollongong",
+    "key": "wollongong",
+    "lat": -34.415381,
+    "lon": 150.890004,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Geelong",
+    "key": "geelong",
+    "lat": -38.167495,
+    "lon": 144.395634,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cairns",
+    "key": "cairns",
+    "lat": -16.88784,
+    "lon": 145.763331,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Townsville",
+    "key": "townsville",
+    "lat": -19.24995,
+    "lon": 146.769997,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Albury",
+    "key": "albury",
+    "lat": -36.060035,
+    "lon": 146.920014,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nowra",
+    "key": "nowra",
+    "lat": -34.882846,
+    "lon": 150.600048,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Darwin",
+    "key": "darwin",
+    "lat": -12.425354,
+    "lon": 130.850039,
+    "labelRank": 3,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Toowoomba",
+    "key": "toowoomba",
+    "lat": -27.564533,
+    "lon": 151.95552,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ballarat",
+    "key": "ballarat",
+    "lat": -37.559582,
+    "lon": 143.840047,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bendigo",
+    "key": "bendigo",
+    "lat": -36.759993,
+    "lon": 144.28002,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hobart",
+    "key": "hobart",
+    "lat": -42.850009,
+    "lon": 147.29503,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mackay",
+    "key": "mackay",
+    "lat": -21.143892,
+    "lon": 149.150007,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mandurah",
+    "key": "mandurah",
+    "lat": -32.523483,
+    "lon": 115.747057,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Launceston",
+    "key": "launceston",
+    "lat": -41.449836,
+    "lon": 147.130182,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sunshine Coast",
+    "key": "sunshine coast",
+    "lat": -26.679988,
+    "lon": 153.050027,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rockhampton",
+    "key": "rockhampton",
+    "lat": -23.363911,
+    "lon": 150.520001,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Coffs Harbour",
+    "key": "coffs harbour",
+    "lat": -30.307053,
+    "lon": 153.112297,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wagga Wagga",
+    "key": "wagga wagga",
+    "lat": -35.12216,
+    "lon": 147.339988,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bundaberg",
+    "key": "bundaberg",
+    "lat": -24.879064,
+    "lon": 152.350897,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Port Macquarie",
+    "key": "port macquarie",
+    "lat": -31.44502,
+    "lon": 152.918666,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mildura",
+    "key": "mildura",
+    "lat": -34.185008,
+    "lon": 142.151364,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Taree",
+    "key": "taree",
+    "lat": -31.897602,
+    "lon": 152.461846,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Orange",
+    "key": "orange",
+    "lat": -33.279998,
+    "lon": 149.099984,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Caloundra",
+    "key": "caloundra",
+    "lat": -26.800032,
+    "lon": 153.13333,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tamworth",
+    "key": "tamworth",
+    "lat": -31.102612,
+    "lon": 150.917134,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kalgoorlie",
+    "key": "kalgoorlie",
+    "lat": -30.735399,
+    "lon": 121.460018,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shepparton",
+    "key": "shepparton",
+    "lat": -36.37459,
+    "lon": 145.391373,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mount Isa",
+    "key": "mount isa",
+    "lat": -20.723865,
+    "lon": 139.490028,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tweed Heads",
+    "key": "tweed heads",
+    "lat": -28.182583,
+    "lon": 153.546638,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Queanbeyan",
+    "key": "queanbeyan",
+    "lat": -35.3546,
+    "lon": 149.211347,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Melton",
+    "key": "melton",
+    "lat": -37.689548,
+    "lon": 144.570028,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dubbo",
+    "key": "dubbo",
+    "lat": -32.259957,
+    "lon": 148.597327,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Caboolture",
+    "key": "caboolture",
+    "lat": -27.082961,
+    "lon": 152.949982,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lismore",
+    "key": "lismore",
+    "lat": -28.816653,
+    "lon": 153.293113,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gladstone",
+    "key": "gladstone",
+    "lat": -23.853339,
+    "lon": 151.246726,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Warrnambool",
+    "key": "warrnambool",
+    "lat": -38.379997,
+    "lon": 142.470001,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sunbury",
+    "key": "sunbury",
+    "lat": -37.569607,
+    "lon": 144.710019,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alice Springs",
+    "key": "alice springs",
+    "lat": -23.700996,
+    "lon": 133.880034,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Geraldton",
+    "key": "geraldton",
+    "lat": -28.76663,
+    "lon": 114.599971,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bunbury",
+    "key": "bunbury",
+    "lat": -33.344284,
+    "lon": 115.650243,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Albany",
+    "key": "albany (australia)",
+    "lat": -35.016947,
+    "lon": 117.891605,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hervey Bay",
+    "key": "hervey bay",
+    "lat": -25.288703,
+    "lon": 152.840944,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mount Gambier",
+    "key": "mount gambier",
+    "lat": -37.831348,
+    "lon": 140.765041,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Armidale",
+    "key": "armidale",
+    "lat": -30.512312,
+    "lon": 151.667476,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Whyalla",
+    "key": "whyalla",
+    "lat": -33.025027,
+    "lon": 137.561412,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sale",
+    "key": "sale",
+    "lat": -38.109574,
+    "lon": 147.060005,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Katoomba",
+    "key": "katoomba",
+    "lat": -33.706949,
+    "lon": 150.320013,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Goulburn",
+    "key": "goulburn",
+    "lat": -34.749573,
+    "lon": 149.710179,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maryborough",
+    "key": "maryborough",
+    "lat": -25.549101,
+    "lon": 152.7209,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kwinana",
+    "key": "kwinana",
+    "lat": -32.23939,
+    "lon": 115.770236,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Burnie",
+    "key": "burnie",
+    "lat": -41.066603,
+    "lon": 145.916664,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Echuca",
+    "key": "echuca",
+    "lat": -36.129592,
+    "lon": 144.750017,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Devonport",
+    "key": "devonport",
+    "lat": -41.192668,
+    "lon": 146.331102,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Roebourne",
+    "key": "roebourne",
+    "lat": -20.782932,
+    "lon": 117.133305,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maitland",
+    "key": "maitland",
+    "lat": -32.720963,
+    "lon": 151.555028,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Traralgon",
+    "key": "traralgon",
+    "lat": -38.199595,
+    "lon": 146.530012,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Murray Bridge",
+    "key": "murray bridge",
+    "lat": -35.129601,
+    "lon": 139.260016,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Forster",
+    "key": "forster",
+    "lat": -32.19314,
+    "lon": 152.526648,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Broken Hill",
+    "key": "broken hill",
+    "lat": -31.94995,
+    "lon": 141.433114,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karratha",
+    "key": "karratha",
+    "lat": -20.730377,
+    "lon": 116.870013,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gawler",
+    "key": "gawler",
+    "lat": -34.607359,
+    "lon": 138.726354,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Griffith",
+    "key": "griffith",
+    "lat": -34.290014,
+    "lon": 146.040016,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kingston",
+    "key": "kingston (australia)",
+    "lat": -42.991137,
+    "lon": 147.308414,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Port Hedland",
+    "key": "port hedland",
+    "lat": -20.310402,
+    "lon": 118.606032,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ballina",
+    "key": "ballina",
+    "lat": -28.861353,
+    "lon": 153.56798,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wangaratta",
+    "key": "wangaratta",
+    "lat": -36.360017,
+    "lon": 146.3,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Port Augusta",
+    "key": "port augusta",
+    "lat": -32.490021,
+    "lon": 137.77003,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Richmond",
+    "key": "richmond (australia)",
+    "lat": -33.599514,
+    "lon": 150.739987,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Singleton",
+    "key": "singleton",
+    "lat": -32.569499,
+    "lon": 151.160013,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bongaree",
+    "key": "bongaree",
+    "lat": -27.078723,
+    "lon": 153.1509,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Port Lincoln",
+    "key": "port lincoln",
+    "lat": -34.733243,
+    "lon": 135.86658,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Broome",
+    "key": "broome",
+    "lat": -17.961771,
+    "lon": 122.230768,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Horsham",
+    "key": "horsham",
+    "lat": -36.709608,
+    "lon": 142.190018,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Port Pirie",
+    "key": "port pirie",
+    "lat": -33.191063,
+    "lon": 137.990016,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Warwick",
+    "key": "warwick city",
+    "lat": -28.229247,
+    "lon": 152.020323,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kempsey",
+    "key": "kempsey",
+    "lat": -31.087367,
+    "lon": 152.822031,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Portland",
+    "key": "portland (australia)",
+    "lat": -38.34,
+    "lon": 141.590003,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gympie",
+    "key": "gympie",
+    "lat": -26.188597,
+    "lon": 152.670929,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Muswellbrook",
+    "key": "muswellbrook",
+    "lat": -32.269569,
+    "lon": 150.890004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Parkes",
+    "key": "parkes",
+    "lat": -33.129568,
+    "lon": 148.170015,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lithgow",
+    "key": "lithgow",
+    "lat": -33.496109,
+    "lon": 150.152788,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bairnsdale",
+    "key": "bairnsdale",
+    "lat": -37.829591,
+    "lon": 147.609997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bowen",
+    "key": "bowen",
+    "lat": -20.001326,
+    "lon": 148.208669,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yeppoon",
+    "key": "yeppoon",
+    "lat": -23.132918,
+    "lon": 150.756731,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Batemans Bay",
+    "key": "batemans bay",
+    "lat": -35.689619,
+    "lon": 150.207307,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kiama",
+    "key": "kiama",
+    "lat": -34.709575,
+    "lon": 150.840033,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Busselton",
+    "key": "busselton",
+    "lat": -33.65641,
+    "lon": 115.348659,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Innisfail",
+    "key": "innisfail",
+    "lat": -17.531347,
+    "lon": 146.038672,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Katherine",
+    "key": "katherine",
+    "lat": -14.466625,
+    "lon": 132.266593,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moranbah",
+    "key": "moranbah",
+    "lat": -22.001565,
+    "lon": 148.038033,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Grafton",
+    "key": "grafton",
+    "lat": -29.711999,
+    "lon": 152.937683,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dalby",
+    "key": "dalby",
+    "lat": -27.193858,
+    "lon": 151.265743,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Charters Towers",
+    "key": "charters towers",
+    "lat": -20.080907,
+    "lon": 146.258711,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Emerald",
+    "key": "emerald",
+    "lat": -23.512223,
+    "lon": 148.167328,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Swan Hill",
+    "key": "swan hill",
+    "lat": -35.339614,
+    "lon": 143.540013,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ulladulla",
+    "key": "ulladulla",
+    "lat": -35.349536,
+    "lon": 150.47003,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Colac",
+    "key": "colac",
+    "lat": -38.339534,
+    "lon": 143.580011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ayr",
+    "key": "ayr city",
+    "lat": -19.570241,
+    "lon": 147.399468,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hamilton",
+    "key": "hamilton (australia)",
+    "lat": -37.7312,
+    "lon": 142.023414,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kingaroy",
+    "key": "kingaroy",
+    "lat": -26.538963,
+    "lon": 151.840592,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Inverell",
+    "key": "inverell",
+    "lat": -29.766776,
+    "lon": 151.112574,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moree",
+    "key": "moree",
+    "lat": -29.469895,
+    "lon": 149.830069,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Deniliquin",
+    "key": "deniliquin",
+    "lat": -35.529577,
+    "lon": 144.950005,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Esperance",
+    "key": "esperance",
+    "lat": -33.857307,
+    "lon": 121.888897,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Victor Harbor",
+    "key": "victor harbor",
+    "lat": -35.559601,
+    "lon": 138.617316,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Young",
+    "key": "young",
+    "lat": -34.3096,
+    "lon": 148.290008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Carnarvon",
+    "key": "carnarvon",
+    "lat": -24.899838,
+    "lon": 113.650107,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Leeton",
+    "key": "leeton",
+    "lat": -34.544934,
+    "lon": 146.397307,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gunnedah",
+    "key": "gunnedah",
+    "lat": -30.987012,
+    "lon": 150.26229,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Narrabri",
+    "key": "narrabri",
+    "lat": -30.33191,
+    "lon": 149.787436,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maryborough",
+    "key": "maryborough city",
+    "lat": -37.049587,
+    "lon": 143.729976,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Stawell",
+    "key": "stawell",
+    "lat": -37.059613,
+    "lon": 142.760009,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Atherton",
+    "key": "atherton",
+    "lat": -17.270278,
+    "lon": 145.469353,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cowra",
+    "key": "cowra",
+    "lat": -33.829629,
+    "lon": 148.68001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Byron Bay",
+    "key": "byron bay",
+    "lat": -28.656508,
+    "lon": 153.612887,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tumut",
+    "key": "tumut",
+    "lat": -35.30959,
+    "lon": 148.220038,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cooma",
+    "key": "cooma",
+    "lat": -36.239559,
+    "lon": 149.120035,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Merimbula",
+    "key": "merimbula",
+    "lat": -36.899622,
+    "lon": 149.900039,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Biloela",
+    "key": "biloela",
+    "lat": -24.393564,
+    "lon": 150.496075,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ingham",
+    "key": "ingham",
+    "lat": -18.649573,
+    "lon": 146.166623,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bathurst",
+    "key": "bathurst",
+    "lat": -33.419628,
+    "lon": 149.570033,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ararat",
+    "key": "ararat city",
+    "lat": -37.279547,
+    "lon": 142.909974,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wonthaggi",
+    "key": "wonthaggi",
+    "lat": -38.609492,
+    "lon": 145.590017,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Northam",
+    "key": "northam",
+    "lat": -31.656583,
+    "lon": 116.653386,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kununurra",
+    "key": "kununurra",
+    "lat": -15.766597,
+    "lon": 128.73332,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Roma",
+    "key": "roma city",
+    "lat": -26.559375,
+    "lon": 148.790701,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mudgee",
+    "key": "mudgee",
+    "lat": -32.589601,
+    "lon": 149.58011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Newman",
+    "key": "newman",
+    "lat": -23.366598,
+    "lon": 119.733301,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "McMinns Lagoon",
+    "key": "mcminns lagoon",
+    "lat": -12.532893,
+    "lon": 131.050026,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Forbes",
+    "key": "forbes",
+    "lat": -33.389604,
+    "lon": 148.019998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Berri",
+    "key": "berri",
+    "lat": -34.282935,
+    "lon": 140.600038,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cobram",
+    "key": "cobram",
+    "lat": -35.91963,
+    "lon": 145.650014,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Scone",
+    "key": "scone",
+    "lat": -32.079606,
+    "lon": 150.85011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Goondiwindi",
+    "key": "goondiwindi",
+    "lat": -28.554809,
+    "lon": 150.325284,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Manjimup",
+    "key": "manjimup",
+    "lat": -34.233325,
+    "lon": 116.150006,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Narrogin",
+    "key": "narrogin",
+    "lat": -32.932888,
+    "lon": 117.166636,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Smithton",
+    "key": "smithton",
+    "lat": -40.832922,
+    "lon": 145.116661,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Proserpine",
+    "key": "proserpine",
+    "lat": -20.416236,
+    "lon": 148.583478,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Katanning",
+    "key": "katanning",
+    "lat": -33.699559,
+    "lon": 117.550075,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tennant Creek",
+    "key": "tennant creek",
+    "lat": -19.650029,
+    "lon": 134.200015,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Seymour",
+    "key": "seymour",
+    "lat": -37.034239,
+    "lon": 145.127307,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Derby",
+    "key": "derby city",
+    "lat": -17.311816,
+    "lon": 123.642151,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Clare",
+    "key": "clare city",
+    "lat": -33.832884,
+    "lon": 138.600005,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Central Coast",
+    "key": "central coast",
+    "lat": -33.420042,
+    "lon": 151.300005,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Port Douglas",
+    "key": "port douglas",
+    "lat": -16.484588,
+    "lon": 145.458722,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Longreach",
+    "key": "longreach",
+    "lat": -23.449591,
+    "lon": 144.250048,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Weipa",
+    "key": "weipa",
+    "lat": -12.666631,
+    "lon": 141.866627,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wallaroo",
+    "key": "wallaroo",
+    "lat": -33.932878,
+    "lon": 137.633294,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tom Price",
+    "key": "tom price",
+    "lat": -22.693461,
+    "lon": 117.793058,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Merredin",
+    "key": "merredin",
+    "lat": -31.482847,
+    "lon": 118.266672,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bordertown",
+    "key": "bordertown",
+    "lat": -36.316195,
+    "lon": 140.766643,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bourke",
+    "key": "bourke",
+    "lat": -30.1,
+    "lon": 145.933333,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Scottsdale",
+    "key": "scottsdale city",
+    "lat": -41.149492,
+    "lon": 147.51667,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Queenstown",
+    "key": "queenstown (australia)",
+    "lat": -42.082924,
+    "lon": 145.55002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Charleville",
+    "key": "charleville",
+    "lat": -26.400005,
+    "lon": 146.250029,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yamba",
+    "key": "yamba",
+    "lat": -29.422991,
+    "lon": 153.353312,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tumby Bay",
+    "key": "tumby bay",
+    "lat": -34.382928,
+    "lon": 136.083311,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mount Barker",
+    "key": "mount barker",
+    "lat": -34.632784,
+    "lon": 117.666606,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Peterborough",
+    "key": "peterborough (australia)",
+    "lat": -32.966167,
+    "lon": 138.833324,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wagin",
+    "key": "wagin",
+    "lat": -33.299584,
+    "lon": 117.349984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ceduna",
+    "key": "ceduna",
+    "lat": -32.099135,
+    "lon": 133.662267,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kalbarri",
+    "key": "kalbarri",
+    "lat": -27.666181,
+    "lon": 114.166664,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Penola",
+    "key": "penola",
+    "lat": -37.382952,
+    "lon": 140.816665,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Meningie",
+    "key": "meningie",
+    "lat": -35.699541,
+    "lon": 139.333345,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gingin",
+    "key": "gingin",
+    "lat": -31.349574,
+    "lon": 115.900047,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ouyen",
+    "key": "ouyen",
+    "lat": -35.066194,
+    "lon": 142.316677,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Port Denison",
+    "key": "port denison",
+    "lat": -29.282826,
+    "lon": 114.916644,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Halls Creek",
+    "key": "halls creek",
+    "lat": -18.222685,
+    "lon": 127.671245,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cloncurry",
+    "key": "cloncurry",
+    "lat": -20.699991,
+    "lon": 140.499992,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Winton",
+    "key": "winton",
+    "lat": -22.399629,
+    "lon": 143.033274,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oatlands",
+    "key": "oatlands",
+    "lat": -42.299603,
+    "lon": 147.366602,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ravensthorpe",
+    "key": "ravensthorpe",
+    "lat": -33.582874,
+    "lon": 120.033334,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Exmouth",
+    "key": "exmouth",
+    "lat": -21.9311,
+    "lon": 114.123347,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barcaldine",
+    "key": "barcaldine",
+    "lat": -23.566173,
+    "lon": 145.283369,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Streaky Bay",
+    "key": "streaky bay",
+    "lat": -32.811872,
+    "lon": 134.21493,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Norseman",
+    "key": "norseman",
+    "lat": -32.200013,
+    "lon": 121.766614,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yulara",
+    "key": "yulara",
+    "lat": -25.240541,
+    "lon": 130.988893,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Georgetown",
+    "key": "georgetown city",
+    "lat": -18.300034,
+    "lon": 143.533296,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wyndham",
+    "key": "wyndham",
+    "lat": -15.594525,
+    "lon": 128.224323,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pannawonica",
+    "key": "pannawonica",
+    "lat": -21.636575,
+    "lon": 116.325034,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pine Creek",
+    "key": "pine creek",
+    "lat": -13.816173,
+    "lon": 131.816698,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Meekatharra",
+    "key": "meekatharra",
+    "lat": -26.599993,
+    "lon": 118.4833,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kimba",
+    "key": "kimba",
+    "lat": -33.149619,
+    "lon": 136.433367,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Boulia",
+    "key": "boulia",
+    "lat": -22.899598,
+    "lon": 139.900029,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Onslow",
+    "key": "onslow",
+    "lat": -21.657594,
+    "lon": 115.096296,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quilpie",
+    "key": "quilpie",
+    "lat": -26.616633,
+    "lon": 144.250048,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cowell",
+    "key": "cowell",
+    "lat": -33.682868,
+    "lon": 136.916645,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Andamooka",
+    "key": "andamooka",
+    "lat": -30.430973,
+    "lon": 137.16557,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Eidsvold",
+    "key": "eidsvold",
+    "lat": -25.366218,
+    "lon": 151.133348,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Woomera",
+    "key": "woomera",
+    "lat": -31.149586,
+    "lon": 136.800011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wilcannia",
+    "key": "wilcannia",
+    "lat": -31.566201,
+    "lon": 143.38333,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mount Magnet",
+    "key": "mount magnet",
+    "lat": -28.066208,
+    "lon": 117.816674,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hughenden",
+    "key": "hughenden",
+    "lat": -20.850008,
+    "lon": 144.200025,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kaltukatjara",
+    "key": "kaltukatjara",
+    "lat": -25.788414,
+    "lon": 128.997335,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Laverton",
+    "key": "laverton",
+    "lat": -28.627001,
+    "lon": 122.404043,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Richmond",
+    "key": "richmond (queensland, australia)",
+    "lat": -20.716269,
+    "lon": 143.13332,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Birdsville",
+    "key": "birdsville",
+    "lat": -25.899622,
+    "lon": 139.366625,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ivanhoe",
+    "key": "ivanhoe",
+    "lat": -32.899608,
+    "lon": 144.300019,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Morawa",
+    "key": "morawa",
+    "lat": -29.216267,
+    "lon": 116.000041,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Theodore",
+    "key": "theodore",
+    "lat": -24.949499,
+    "lon": 150.083335,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Adelaide River",
+    "key": "adelaide river",
+    "lat": -13.249541,
+    "lon": 131.099998,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Leonora",
+    "key": "leonora",
+    "lat": -28.881507,
+    "lon": 121.328036,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kingston",
+    "key": "kingston (south australia, australia)",
+    "lat": -36.832805,
+    "lon": 139.850058,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Thargomindah",
+    "key": "thargomindah",
+    "lat": -27.999959,
+    "lon": 143.816689,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Burketown",
+    "key": "burketown",
+    "lat": -17.71609,
+    "lon": 139.566612,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Three Springs",
+    "key": "three springs",
+    "lat": -29.533302,
+    "lon": 115.749978,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Southern Cross",
+    "key": "southern cross",
+    "lat": -31.216145,
+    "lon": 119.316686,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Camooweal",
+    "key": "camooweal",
+    "lat": -19.916731,
+    "lon": 138.116675,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bicheno",
+    "key": "bicheno",
+    "lat": -41.878388,
+    "lon": 148.288612,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karumba",
+    "key": "karumba",
+    "lat": -17.48334,
+    "lon": 140.833409,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Windorah",
+    "key": "windorah",
+    "lat": -25.433242,
+    "lon": 142.650197,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bedourie",
+    "key": "bedourie",
+    "lat": -24.349587,
+    "lon": 139.466619,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kingoonya",
+    "key": "kingoonya",
+    "lat": -30.899575,
+    "lon": 135.3,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Newcastle Waters",
+    "key": "newcastle waters",
+    "lat": -17.552793,
+    "lon": 133.467243,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Erldunda",
+    "key": "erldunda",
+    "lat": -25.233306,
+    "lon": 133.199973,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  }
+]

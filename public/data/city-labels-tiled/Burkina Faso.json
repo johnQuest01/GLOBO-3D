@@ -1,0 +1,290 @@
+[
+  {
+    "name": "Ouagadougou",
+    "key": "ouagadougou",
+    "lat": 12.372262,
+    "lon": -1.52667,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bobo Dioulasso",
+    "key": "bobo dioulasso",
+    "lat": 11.179975,
+    "lon": -4.289981,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Koudougou",
+    "key": "koudougou",
+    "lat": 12.250478,
+    "lon": -2.369995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ouahigouya",
+    "key": "ouahigouya",
+    "lat": 13.570424,
+    "lon": -2.419992,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Banfora",
+    "key": "banfora",
+    "lat": 10.630448,
+    "lon": -4.760004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dédougou",
+    "key": "dédougou",
+    "lat": 12.455001,
+    "lon": -3.464,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kaya",
+    "key": "kaya",
+    "lat": 13.090375,
+    "lon": -1.090047,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tenkodogo",
+    "key": "tenkodogo",
+    "lat": 11.780404,
+    "lon": -0.369704,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dori",
+    "key": "dori",
+    "lat": 14.033997,
+    "lon": -0.027998,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Réo",
+    "key": "réo",
+    "lat": 12.333492,
+    "lon": -2.466944,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fada N'Gourma",
+    "key": "fada n'gourma",
+    "lat": 12.054996,
+    "lon": 0.360999,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Koupéla",
+    "key": "koupéla",
+    "lat": 12.177,
+    "lon": -0.356003,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kombissiri",
+    "key": "kombissiri",
+    "lat": 12.063996,
+    "lon": -1.333997,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nouna",
+    "key": "nouna",
+    "lat": 12.728997,
+    "lon": -3.86,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gaoua",
+    "key": "gaoua",
+    "lat": 10.324998,
+    "lon": -3.174002,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Léo",
+    "key": "léo",
+    "lat": 11.094003,
+    "lon": -2.097999,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Diapaga",
+    "key": "diapaga",
+    "lat": 12.077001,
+    "lon": 1.796005,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zorgo",
+    "key": "zorgo",
+    "lat": 12.242997,
+    "lon": -0.611,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yako",
+    "key": "yako",
+    "lat": 12.953997,
+    "lon": -2.262996,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Djibo",
+    "key": "djibo",
+    "lat": 14.099004,
+    "lon": -1.627001,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Orodara",
+    "key": "orodara",
+    "lat": 10.973997,
+    "lon": -4.907997,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pô",
+    "key": "pô",
+    "lat": 11.169,
+    "lon": -1.134999,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tougan",
+    "key": "tougan",
+    "lat": 13.068999,
+    "lon": -3.069998,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Boulsa",
+    "key": "boulsa",
+    "lat": 12.656997,
+    "lon": -0.568998,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Manga",
+    "key": "manga",
+    "lat": 11.662002,
+    "lon": -1.064996,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Diébougou",
+    "key": "diébougou",
+    "lat": 10.952001,
+    "lon": -3.248,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ziniaré",
+    "key": "ziniaré",
+    "lat": 12.576996,
+    "lon": -1.293002,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Solenzo",
+    "key": "solenzo",
+    "lat": 12.183333,
+    "lon": -4.083333,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bogandé",
+    "key": "bogandé",
+    "lat": 12.969,
+    "lon": -0.137996,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gorom-Gorom",
+    "key": "gorom-gorom",
+    "lat": 14.450004,
+    "lon": -0.233297,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sapouy",
+    "key": "sapouy",
+    "lat": 11.554444,
+    "lon": -1.773611,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sebba",
+    "key": "sebba",
+    "lat": 13.436412,
+    "lon": 0.530443,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "name": "Jamena",
+    "key": "jamena",
+    "lat": 12.115042,
+    "lon": 15.047202,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bongor",
+    "key": "bongor",
+    "lat": 10.285947,
+    "lon": 15.387164,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sarh",
+    "key": "sarh",
+    "lat": 9.14997,
+    "lon": 18.39003,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Abéché",
+    "key": "abéché",
+    "lat": 13.839994,
+    "lon": 20.829984,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moundou",
+    "key": "moundou",
+    "lat": 8.549981,
+    "lon": 16.090015,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kelo",
+    "key": "kelo",
+    "lat": 9.317066,
+    "lon": 15.800007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pala",
+    "key": "pala",
+    "lat": 9.350423,
+    "lon": 14.966621,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Am Timan",
+    "key": "am timan",
+    "lat": 11.033292,
+    "lon": 20.283299,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Doba",
+    "key": "doba",
+    "lat": 8.65044,
+    "lon": 16.85002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mongo",
+    "key": "mongo",
+    "lat": 12.183738,
+    "lon": 18.699985,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ati",
+    "key": "ati",
+    "lat": 13.21706,
+    "lon": 18.333289,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Laï",
+    "key": "laï",
+    "lat": 9.395001,
+    "lon": 16.305004,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oum Hadjer",
+    "key": "oum hadjer",
+    "lat": 13.300414,
+    "lon": 19.683336,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mao",
+    "key": "mao city",
+    "lat": 14.119434,
+    "lon": 15.313318,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Faya-Largeau",
+    "key": "faya-largeau",
+    "lat": 17.91667,
+    "lon": 19.116704,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Biltine",
+    "key": "biltine",
+    "lat": 14.533259,
+    "lon": 20.916697,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bol",
+    "key": "bol",
+    "lat": 13.458958,
+    "lon": 14.714698,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fada",
+    "key": "fada",
+    "lat": 17.184725,
+    "lon": 21.590248,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zouar",
+    "key": "zouar",
+    "lat": 20.458737,
+    "lon": 16.527766,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

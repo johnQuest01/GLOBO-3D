@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Willemstad",
+    "key": "willemstad",
+    "lat": 12.11229,
+    "lon": -68.872356,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

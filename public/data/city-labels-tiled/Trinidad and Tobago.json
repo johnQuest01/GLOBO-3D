@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Port of Spain",
+    "key": "port of spain city",
+    "lat": 10.651997,
+    "lon": -61.517031,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Fernando",
+    "key": "san fernando city",
+    "lat": 10.280462,
+    "lon": -61.459377,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

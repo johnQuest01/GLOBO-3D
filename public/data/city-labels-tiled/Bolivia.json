@@ -1,0 +1,623 @@
+[
+  {
+    "name": "Santa Cruz de la Sierra",
+    "key": "santa cruz de la sierra",
+    "lat": -17.751972,
+    "lon": -63.227942,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "La Paz",
+    "key": "la paz city",
+    "lat": -16.496028,
+    "lon": -68.151931,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cochabamba",
+    "key": "cochabamba city",
+    "lat": -17.410011,
+    "lon": -66.169977,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oruro",
+    "key": "oruro city",
+    "lat": -17.97995,
+    "lon": -67.129996,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Ana",
+    "key": "santa ana city",
+    "lat": -13.760001,
+    "lon": -65.579961,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quillacollo",
+    "key": "quillacollo",
+    "lat": -17.399986,
+    "lon": -66.279996,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sucre",
+    "key": "sucre city",
+    "lat": -19.040971,
+    "lon": -65.259516,
+    "labelRank": 3,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Potosí",
+    "key": "potosí city",
+    "lat": -19.569569,
+    "lon": -65.750028,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tarija",
+    "key": "tarija city",
+    "lat": -21.516685,
+    "lon": -64.749986,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Montero",
+    "key": "montero",
+    "lat": -17.349601,
+    "lon": -63.260025,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trinidad",
+    "key": "trinidad",
+    "lat": -14.833372,
+    "lon": -64.899977,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Riberalta",
+    "key": "riberalta",
+    "lat": -10.983013,
+    "lon": -66.100007,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cobija",
+    "key": "cobija",
+    "lat": -11.02052,
+    "lon": -68.768827,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Villazón",
+    "key": "villazón",
+    "lat": -22.079597,
+    "lon": -65.599986,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bermejo",
+    "key": "bermejo",
+    "lat": -22.729583,
+    "lon": -64.349985,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guayaramerín",
+    "key": "guayaramerín",
+    "lat": -10.829999,
+    "lon": -65.409997,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Viacha",
+    "key": "viacha",
+    "lat": -16.650006,
+    "lon": -68.29995,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tupiza",
+    "key": "tupiza",
+    "lat": -21.439584,
+    "lon": -65.720004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Llallagua",
+    "key": "llallagua",
+    "lat": -18.420027,
+    "lon": -66.64,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Camiri",
+    "key": "camiri",
+    "lat": -20.050005,
+    "lon": -63.519984,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Punata",
+    "key": "punata",
+    "lat": -17.550002,
+    "lon": -65.839971,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Ignacio de Velasco",
+    "key": "san ignacio de velasco",
+    "lat": -16.369609,
+    "lon": -60.960011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto Suárez",
+    "key": "puerto suárez",
+    "lat": -18.949555,
+    "lon": -57.849968,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Borja",
+    "key": "san borja",
+    "lat": -14.819626,
+    "lon": -66.849961,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Villamontes",
+    "key": "villamontes",
+    "lat": -21.24957,
+    "lon": -63.500011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cliza",
+    "key": "cliza",
+    "lat": -17.59,
+    "lon": -65.929991,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ascensión",
+    "key": "ascensión",
+    "lat": -15.699573,
+    "lon": -63.079985,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uyuni",
+    "key": "uyuni",
+    "lat": -20.460006,
+    "lon": -66.829988,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rurrenabaque",
+    "key": "rurrenabaque",
+    "lat": -14.46001,
+    "lon": -67.559995,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Portachuelo",
+    "key": "portachuelo",
+    "lat": -17.36004,
+    "lon": -63.400017,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto Quijarro",
+    "key": "puerto quijarro",
+    "lat": -17.779601,
+    "lon": -57.770024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Roboré",
+    "key": "roboré",
+    "lat": -18.329541,
+    "lon": -59.75998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San José de Chiquitos",
+    "key": "san josé de chiquitos",
+    "lat": -17.850036,
+    "lon": -60.779996,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Challapata",
+    "key": "challapata",
+    "lat": -18.899584,
+    "lon": -66.779991,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Achacachi",
+    "key": "achacachi",
+    "lat": -16.083322,
+    "lon": -68.666569,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vallegrande",
+    "key": "vallegrande",
+    "lat": -18.489583,
+    "lon": -64.109999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aiquile",
+    "key": "aiquile",
+    "lat": -18.18955,
+    "lon": -65.180011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Reyes",
+    "key": "reyes",
+    "lat": -14.30958,
+    "lon": -67.370007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Ramón",
+    "key": "san ramón city",
+    "lat": -13.289591,
+    "lon": -64.709988,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Carlos",
+    "key": "san carlos (bolivia)",
+    "lat": -17.399986,
+    "lon": -63.729997,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Matías",
+    "key": "san matías",
+    "lat": -16.359997,
+    "lon": -58.420011,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Betanzos",
+    "key": "betanzos",
+    "lat": -19.559957,
+    "lon": -65.450021,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uncía",
+    "key": "uncía",
+    "lat": -18.469998,
+    "lon": -66.57003,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Camargo",
+    "key": "camargo",
+    "lat": -20.639581,
+    "lon": -65.209984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Javier",
+    "key": "san javier",
+    "lat": -16.289614,
+    "lon": -62.50002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Apolo",
+    "key": "apolo",
+    "lat": -14.719581,
+    "lon": -68.419995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quime",
+    "key": "quime",
+    "lat": -16.980011,
+    "lon": -67.220016,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Magdalena",
+    "key": "magdalena city",
+    "lat": -13.260083,
+    "lon": -64.052768,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Charagua",
+    "key": "charagua",
+    "lat": -19.799581,
+    "lon": -63.21995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Lorenzo",
+    "key": "san lorenzo (bolivia)",
+    "lat": -21.479943,
+    "lon": -64.770011,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Samaipata",
+    "key": "samaipata",
+    "lat": -18.180042,
+    "lon": -63.77002,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Padilla",
+    "key": "padilla",
+    "lat": -19.299611,
+    "lon": -64.309961,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Entre Ríos",
+    "key": "entre ríos city",
+    "lat": -21.530018,
+    "lon": -64.189994,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tarabuco",
+    "key": "tarabuco",
+    "lat": -19.180032,
+    "lon": -64.91995,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baures",
+    "key": "baures",
+    "lat": -13.580012,
+    "lon": -63.580057,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Coroico",
+    "key": "coroico",
+    "lat": -16.18962,
+    "lon": -67.720011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sorata",
+    "key": "sorata",
+    "lat": -15.790007,
+    "lon": -68.660057,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Coro Coro",
+    "key": "coro coro",
+    "lat": -17.169612,
+    "lon": -68.449967,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto Villarroel",
+    "key": "puerto villarroel",
+    "lat": -16.870044,
+    "lon": -64.78001,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Rafael",
+    "key": "san rafael city",
+    "lat": -16.779507,
+    "lon": -60.67995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto Acosta",
+    "key": "puerto acosta",
+    "lat": -15.499585,
+    "lon": -69.166667,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sica Sica",
+    "key": "sica sica",
+    "lat": -17.330016,
+    "lon": -67.729985,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cuevo",
+    "key": "cuevo",
+    "lat": -20.450032,
+    "lon": -63.529983,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sabaya",
+    "key": "sabaya",
+    "lat": -19.016269,
+    "lon": -68.383278,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Llica",
+    "key": "llica",
+    "lat": -19.849604,
+    "lon": -68.250031,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Charaña",
+    "key": "charaña",
+    "lat": -17.599612,
+    "lon": -69.466597,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Piso Firme",
+    "key": "piso firme",
+    "lat": -13.682952,
+    "lon": -61.866622,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Villa Martin",
+    "key": "villa martin",
+    "lat": -20.76655,
+    "lon": -67.783341,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto Heath",
+    "key": "puerto heath",
+    "lat": -12.499613,
+    "lon": -68.666569,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

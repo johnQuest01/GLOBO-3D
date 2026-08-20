@@ -1,0 +1,623 @@
+[
+  {
+    "name": "Tóquio",
+    "key": "tokyo",
+    "lat": 35.68,
+    "lon": 139.69,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Osaka",
+    "key": "osaka",
+    "lat": 34.691095,
+    "lon": 135.503754,
+    "labelRank": 1,
+    "minLabel": 3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yokohama",
+    "key": "yokohama",
+    "lat": 35.430656,
+    "lon": 139.602021,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nagoia",
+    "key": "nagoia",
+    "lat": 35.156943,
+    "lon": 136.913046,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fukuoka",
+    "key": "fukuoka city",
+    "lat": 33.596961,
+    "lon": 130.408068,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sapporo",
+    "key": "sapporo",
+    "lat": 43.076925,
+    "lon": 141.338099,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sendai",
+    "key": "sendai",
+    "lat": 38.268441,
+    "lon": 140.869667,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hiroshima",
+    "key": "hiroshima city",
+    "lat": 34.389781,
+    "lon": 132.440967,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quioto",
+    "key": "quioto",
+    "lat": 35.031938,
+    "lon": 135.748052,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kōbe",
+    "key": "kōbe",
+    "lat": 34.679988,
+    "lon": 135.169982,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kawasaki",
+    "key": "kawasaki",
+    "lat": 35.529988,
+    "lon": 139.705002,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kitakyushu",
+    "key": "kitakyushu",
+    "lat": 33.870399,
+    "lon": 130.820015,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hamamatsu",
+    "key": "hamamatsu",
+    "lat": 34.718073,
+    "lon": 137.732719,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Naha",
+    "key": "naha",
+    "lat": 26.207172,
+    "lon": 127.672972,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Okayama",
+    "key": "okayama city",
+    "lat": 34.67203,
+    "lon": 133.917087,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kumamoto",
+    "key": "kumamoto city",
+    "lat": 32.800929,
+    "lon": 130.700642,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shizuoka",
+    "key": "shizuoka city",
+    "lat": 34.985835,
+    "lon": 138.385393,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Utsunomiya",
+    "key": "utsunomiya",
+    "lat": 36.549977,
+    "lon": 139.870005,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nagano",
+    "key": "nagano city",
+    "lat": 36.649997,
+    "lon": 138.170005,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hachioji",
+    "key": "hachioji",
+    "lat": 35.657706,
+    "lon": 139.326059,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Niigata",
+    "key": "niigata city",
+    "lat": 37.919997,
+    "lon": 139.04003,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kagoshima",
+    "key": "kagoshima city",
+    "lat": 31.585965,
+    "lon": 130.561064,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kanazawa",
+    "key": "kanazawa",
+    "lat": 36.560002,
+    "lon": 136.640021,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ōtsu",
+    "key": "ōtsu",
+    "lat": 35.006402,
+    "lon": 135.867407,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Matsuyama",
+    "key": "matsuyama",
+    "lat": 33.845543,
+    "lon": 132.765839,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tsu",
+    "key": "tsu",
+    "lat": 34.717066,
+    "lon": 136.51667,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oita",
+    "key": "oita",
+    "lat": 33.243228,
+    "lon": 131.5979,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tokushima",
+    "key": "tokushima city",
+    "lat": 34.067389,
+    "lon": 134.5525,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wakayama",
+    "key": "wakayama city",
+    "lat": 34.223117,
+    "lon": 135.167708,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nagasaki",
+    "key": "nagasaki city",
+    "lat": 32.764988,
+    "lon": 129.885033,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gifu",
+    "key": "gifu city",
+    "lat": 35.423095,
+    "lon": 136.762753,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Iwaki",
+    "key": "iwaki",
+    "lat": 37.055347,
+    "lon": 140.890046,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Asahikawa",
+    "key": "asahikawa",
+    "lat": 43.755015,
+    "lon": 142.379981,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mito",
+    "key": "mito",
+    "lat": 36.370427,
+    "lon": 140.480045,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maebashi",
+    "key": "maebashi",
+    "lat": 36.3927,
+    "lon": 139.072689,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Koriyama",
+    "key": "koriyama",
+    "lat": 37.409976,
+    "lon": 140.38,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kawagoe",
+    "key": "kawagoe",
+    "lat": 35.91769,
+    "lon": 139.491062,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kochi",
+    "key": "kochi",
+    "lat": 33.562433,
+    "lon": 133.537523,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Takamatsu",
+    "key": "takamatsu",
+    "lat": 34.344737,
+    "lon": 134.044779,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Toyama",
+    "key": "toyama city",
+    "lat": 36.699994,
+    "lon": 137.230011,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Miyazaki",
+    "key": "miyazaki city",
+    "lat": 31.918244,
+    "lon": 131.418376,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Akita",
+    "key": "akita city",
+    "lat": 39.709991,
+    "lon": 140.089991,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hakodate",
+    "key": "hakodate",
+    "lat": 41.79498,
+    "lon": 140.739978,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aomori",
+    "key": "aomori city",
+    "lat": 40.825039,
+    "lon": 140.710005,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Morioka",
+    "key": "morioka",
+    "lat": 39.720016,
+    "lon": 141.130031,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fukushima",
+    "key": "fukushima city",
+    "lat": 37.740008,
+    "lon": 140.47002,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yamagata",
+    "key": "yamagata city",
+    "lat": 38.270492,
+    "lon": 140.320003,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fukui",
+    "key": "fukui city",
+    "lat": 36.07042,
+    "lon": 136.220047,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shimonoseki",
+    "key": "shimonoseki",
+    "lat": 33.965432,
+    "lon": 130.945433,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hachinohe",
+    "key": "hachinohe",
+    "lat": 40.509994,
+    "lon": 141.540032,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sasebo",
+    "key": "sasebo",
+    "lat": 33.163129,
+    "lon": 129.717705,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Matsumoto",
+    "key": "matsumoto",
+    "lat": 36.240435,
+    "lon": 137.970018,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kushiro",
+    "key": "kushiro",
+    "lat": 42.974959,
+    "lon": 144.374691,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kōfu",
+    "key": "kōfu",
+    "lat": 35.650394,
+    "lon": 138.583313,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kure",
+    "key": "kure",
+    "lat": 34.25097,
+    "lon": 132.565593,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nagaoka",
+    "key": "nagaoka",
+    "lat": 37.450413,
+    "lon": 138.860041,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hirosaki",
+    "key": "hirosaki",
+    "lat": 40.56999,
+    "lon": 140.47002,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tomakomai",
+    "key": "tomakomai",
+    "lat": 42.650406,
+    "lon": 141.550006,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Obihiro",
+    "key": "obihiro",
+    "lat": 42.930414,
+    "lon": 143.17001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Takaoka",
+    "key": "takaoka",
+    "lat": 36.670021,
+    "lon": 136.999999,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Matsue",
+    "key": "matsue",
+    "lat": 35.466994,
+    "lon": 133.066647,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Muroran",
+    "key": "muroran",
+    "lat": 42.349959,
+    "lon": 140.980015,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tottori",
+    "key": "tottori city",
+    "lat": 35.500377,
+    "lon": 134.233295,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Otaru",
+    "key": "otaru",
+    "lat": 43.188719,
+    "lon": 140.978309,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kitami",
+    "key": "kitami",
+    "lat": 43.850358,
+    "lon": 143.899991,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sakata",
+    "key": "sakata",
+    "lat": 38.920039,
+    "lon": 139.850058,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tsuruoka",
+    "key": "tsuruoka",
+    "lat": 38.700414,
+    "lon": 139.830214,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maizuru",
+    "key": "maizuru",
+    "lat": 35.450406,
+    "lon": 135.333331,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kanoya",
+    "key": "kanoya",
+    "lat": 31.383316,
+    "lon": 130.850039,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

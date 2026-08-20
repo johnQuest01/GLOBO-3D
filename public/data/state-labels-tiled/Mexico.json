@@ -182,8 +182,8 @@
   {
     "name": "",
     "key": "",
-    "lat": -83.0384,
-    "lon": -170.343,
+    "lat": 22.3858,
+    "lon": -89.6633,
     "labelRank": 20,
     "minLabel": 18,
     "maxLabel": 18
@@ -290,8 +290,8 @@
   {
     "name": "Cidade do México",
     "key": "distrito federal",
-    "lat": -15.7665,
-    "lon": -47.7902,
+    "lat": 19.3266,
+    "lon": -99.1369,
     "labelRank": 4,
     "minLabel": 6.6,
     "maxLabel": 11

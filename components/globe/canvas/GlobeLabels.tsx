@@ -11,7 +11,6 @@ import {
 } from '@/app/hooks/useLabelData';
 import {
   CITY_LAYER_ZOOM,
-  cityZoomRange,
   LabelFeature,
   maxLabelsForViewport,
   PlacedLabel,
@@ -41,6 +40,16 @@ interface GlobeLabelsProps {
   popupName: string | null;
   isPopupOpen: boolean;
   openPopup: (name: string) => void;
+  /**
+   * Lugares que já estão marcados com pino. O nome deles sai do globo enquanto
+   * o pino está lá — quem diz o nome passa a ser o card azul do pino, e dois
+   * rótulos do mesmo lugar no mesmo ponto era o que ficava sujo. Tirar o pino
+   * devolve o nome ao globo, porque ele volta a ser candidato normal.
+   *
+   * Como efeito colateral bem-vindo, o espaço que o nome ocupava fica livre
+   * para o próximo da fila.
+   */
+  pinnedKeys: Set<string>;
 }
 
 /** Um rótulo na tela; `active: false` significa que está saindo (fade out). */
@@ -56,6 +65,7 @@ const GlobeLabels: FC<GlobeLabelsProps> = ({
   popupName,
   isPopupOpen,
   openPopup,
+  pinnedKeys,
 }) => {
   const { camera, size } = useThree();
   const [rendered, setRendered] = useState<RenderedLabel[]>([]);
@@ -101,8 +111,10 @@ const GlobeLabels: FC<GlobeLabelsProps> = ({
   const statesEnabled = !isPopupOpen && zoom >= STATE_LAYER_ZOOM;
   const citiesEnabled = !isPopupOpen && zoom >= CITY_LAYER_ZOOM;
 
+  // Estados e cidades saem dos MESMOS países visíveis: é a mesma pergunta
+  // ("o que está de frente para a câmera"), feita uma vez só.
   const { combinedStates } = useCombinedStateData(tileCountryKeys, statesEnabled);
-  const { cityLabels } = useCityLabelData(citiesEnabled);
+  const { cityLabels } = useCityLabelData(tileCountryKeys, citiesEnabled);
 
   const stateFeatures = useMemo<LabelFeature[]>(
     () =>
@@ -121,26 +133,27 @@ const GlobeLabels: FC<GlobeLabelsProps> = ({
 
   const cityFeatures = useMemo<LabelFeature[]>(
     () =>
-      cityLabels.map((city) => {
-        const { minLabel, maxLabel } = cityZoomRange(city.rank ?? 3);
-        return {
-          id: `city:${city.key}`,
-          popupKey: city.key,
-          name: city.name,
-          layer: 'city',
-          position: city.position,
-          labelRank: Math.min(6, (city.rank ?? 3) + 1),
-          minLabel,
-          maxLabel,
-        };
-      }),
+      cityLabels.map((city) => ({
+        id: `city:${city.key}`,
+        popupKey: city.key,
+        name: city.name,
+        layer: 'city',
+        position: city.position,
+        // Importância e faixa de zoom vêm prontas do tile: para as cidades do
+        // Natural Earth são o SCALERANK e o MIN_ZOOM dele; para as curadas do
+        // projeto, a tabela de rank aplicada na geração.
+        labelRank: city.labelRank,
+        minLabel: city.minLabel,
+        maxLabel: city.maxLabel,
+      })),
     [cityLabels],
   );
 
-  const features = useMemo(
-    () => [...baseFeatures, ...stateFeatures, ...cityFeatures],
-    [baseFeatures, stateFeatures, cityFeatures],
-  );
+  const features = useMemo(() => {
+    const todos = [...baseFeatures, ...stateFeatures, ...cityFeatures];
+    if (pinnedKeys.size === 0) return todos;
+    return todos.filter((feature) => !pinnedKeys.has(feature.popupKey));
+  }, [baseFeatures, stateFeatures, cityFeatures, pinnedKeys]);
 
   const blockedRects = useMemo(
     () => uiBlockedRects(size.width, size.height),
@@ -276,6 +289,8 @@ const GlobeLabels: FC<GlobeLabelsProps> = ({
           position={placed.feature.position}
           displayName={placed.feature.name}
           fontPx={placed.fontPx}
+          offsetEmX={placed.offsetEmX}
+          offsetEmY={placed.offsetEmY}
           layer={placed.feature.layer}
           visible={active}
           onClick={() => openPopup(placed.feature.popupKey)}

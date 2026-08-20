@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Túnis",
+    "key": "tunis",
+    "lat": 36.81,
+    "lon": 10.18,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sfax",
+    "key": "sfax city",
+    "lat": 34.750035,
+    "lon": 10.720007,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sousse",
+    "key": "sousse city",
+    "lat": 35.829995,
+    "lon": 10.625026,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gabès",
+    "key": "gabès city",
+    "lat": 33.900423,
+    "lon": 10.099993,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zarzis",
+    "key": "zarzis",
+    "lat": 33.510395,
+    "lon": 11.099984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kairouan",
+    "key": "kairouan city",
+    "lat": 35.680392,
+    "lon": 10.099993,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bizerta",
+    "key": "bizerta",
+    "lat": 37.290423,
+    "lon": 9.854995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gafsa",
+    "key": "gafsa city",
+    "lat": 34.420443,
+    "lon": 8.780022,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nabeul",
+    "key": "nabeul city",
+    "lat": 36.460344,
+    "lon": 10.730032,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ariana",
+    "key": "ariana",
+    "lat": 36.866673,
+    "lon": 10.199998,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kasserine",
+    "key": "kasserine",
+    "lat": 35.180397,
+    "lon": 8.829993,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kasserine",
+    "key": "kasserine city",
+    "lat": 35.216703,
+    "lon": 8.716698,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Monastir",
+    "key": "monastir city",
+    "lat": 35.730702,
+    "lon": 10.767295,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tataouine",
+    "key": "tataouine city",
+    "lat": 33.000003,
+    "lon": 10.466704,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Médenine",
+    "key": "médenine city",
+    "lat": 33.399999,
+    "lon": 10.4167,
+    "labelRank": 10,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Béja",
+    "key": "béja city",
+    "lat": 36.730405,
+    "lon": 9.190023,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jendouba",
+    "key": "jendouba city",
+    "lat": 36.500004,
+    "lon": 8.749999,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "El Kef",
+    "key": "el kef",
+    "lat": 36.182635,
+    "lon": 8.714755,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mahdia",
+    "key": "mahdia city",
+    "lat": 35.483913,
+    "lon": 11.040877,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sidi Bouzid",
+    "key": "sidi bouzid",
+    "lat": 35.016696,
+    "lon": 9.500004,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tozeur",
+    "key": "tozeur city",
+    "lat": 33.930421,
+    "lon": 8.129984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Siliana",
+    "key": "siliana city",
+    "lat": 36.083304,
+    "lon": 9.383302,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kebili",
+    "key": "kebili city",
+    "lat": 33.689997,
+    "lon": 8.971003,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ben Gardane",
+    "key": "ben gardane",
+    "lat": 33.140392,
+    "lon": 11.220028,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zaghouan",
+    "key": "zaghouan city",
+    "lat": 36.399996,
+    "lon": 10.146997,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dehiba",
+    "key": "dehiba",
+    "lat": 32.01705,
+    "lon": 10.700008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

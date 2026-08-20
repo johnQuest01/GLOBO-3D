@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Casablanca",
+    "key": "casablanca",
+    "lat": 33.57,
+    "lon": -7.59,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rabat",
+    "key": "rabat city",
+    "lat": 34.025307,
+    "lon": -6.836408,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fez",
+    "key": "fez",
+    "lat": 34.056545,
+    "lon": -5.002323,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Marraquexe",
+    "key": "marraquexe",
+    "lat": 31.631939,
+    "lon": -8.001933,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Agadir",
+    "key": "agadir",
+    "lat": 30.439988,
+    "lon": -9.620044,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tânger",
+    "key": "tânger",
+    "lat": 35.775925,
+    "lon": -5.806198,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Meknès",
+    "key": "meknès",
+    "lat": 33.900423,
+    "lon": -5.559981,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kenitra",
+    "key": "kenitra",
+    "lat": 34.2704,
+    "lon": -6.579997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oujda",
+    "key": "oujda",
+    "lat": 34.690013,
+    "lon": -1.909972,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Safim",
+    "key": "safim",
+    "lat": 32.319977,
+    "lon": -9.239989,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alcácer-Quibir",
+    "key": "alcácer-quibir",
+    "lat": 35.020381,
+    "lon": -5.909986,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Errachidia",
+    "key": "errachidia",
+    "lat": 31.940413,
+    "lon": -4.449972,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Taza",
+    "key": "taza",
+    "lat": 34.220378,
+    "lon": -4.019972,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "El Aaiún",
+    "key": "el aaiún",
+    "lat": 27.149982,
+    "lon": -13.200006,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "El Jadida",
+    "key": "el jadida",
+    "lat": 33.260359,
+    "lon": -8.509982,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Settat",
+    "key": "settat",
+    "lat": 33.010426,
+    "lon": -7.620011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Larache",
+    "key": "larache",
+    "lat": 35.200421,
+    "lon": -6.160022,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guelmim",
+    "key": "guelmim",
+    "lat": 28.979974,
+    "lon": -10.070016,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dakhla",
+    "key": "dakhla",
+    "lat": 23.714056,
+    "lon": -15.936811,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ouezzane",
+    "key": "ouezzane",
+    "lat": 34.810342,
+    "lon": -5.570007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tan-Tan",
+    "key": "tan-tan",
+    "lat": 28.430395,
+    "lon": -11.100031,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tiznit",
+    "key": "tiznit",
+    "lat": 29.71042,
+    "lon": -9.739985,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Smara",
+    "key": "smara",
+    "lat": 26.733289,
+    "lon": -11.683329,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bir Anzarane",
+    "key": "bir anzarane",
+    "lat": 23.883748,
+    "lon": -14.53331,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lamsid",
+    "key": "lamsid",
+    "lat": 26.548187,
+    "lon": -13.848192,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Deroua",
+    "key": "deroua",
+    "lat": 27.462909,
+    "lon": -12.992189,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "name": "Monróvia",
+    "key": "monróvia",
+    "lat": 6.314582,
+    "lon": -10.79966,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Buchanan",
+    "key": "buchanan",
+    "lat": 5.916085,
+    "lon": -10.052472,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gbarnga",
+    "key": "gbarnga",
+    "lat": 7.010411,
+    "lon": -9.49,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kakata",
+    "key": "kakata",
+    "lat": 6.525999,
+    "lon": -10.349001,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Harper",
+    "key": "harper",
+    "lat": 4.375378,
+    "lon": -7.716981,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Voinjama",
+    "key": "voinjama",
+    "lat": 8.416701,
+    "lon": -9.749996,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zwedru",
+    "key": "zwedru",
+    "lat": 6.07039,
+    "lon": -8.130005,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Robertsport",
+    "key": "robertsport",
+    "lat": 6.75332,
+    "lon": -11.368593,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sanniquellie",
+    "key": "sanniquellie",
+    "lat": 7.371,
+    "lon": -8.684999,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Greenville",
+    "key": "greenville (liberia)",
+    "lat": 5.011127,
+    "lon": -9.038813,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bensonville",
+    "key": "bensonville",
+    "lat": 6.433299,
+    "lon": -10.600001,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barclayville",
+    "key": "barclayville",
+    "lat": 4.674103,
+    "lon": -8.231595,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "River Cess",
+    "key": "river cess city",
+    "lat": 5.464998,
+    "lon": -9.577997,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

@@ -1,0 +1,506 @@
+[
+  {
+    "name": "Roma",
+    "key": "rome",
+    "lat": 41.9,
+    "lon": 12.5,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Milão",
+    "key": "milan",
+    "lat": 45.46,
+    "lon": 9.19,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nápoles",
+    "key": "nápoles",
+    "lat": 40.841971,
+    "lon": 14.243066,
+    "labelRank": 2,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Turim",
+    "key": "turim",
+    "lat": 45.072333,
+    "lon": 7.668015,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Florença",
+    "key": "florença",
+    "lat": 43.780001,
+    "lon": 11.25,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salerno",
+    "key": "salerno city",
+    "lat": 40.680397,
+    "lon": 14.769941,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Palermo",
+    "key": "palermo city",
+    "lat": 38.126969,
+    "lon": 13.348081,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Catânia",
+    "key": "catânia",
+    "lat": 37.499971,
+    "lon": 15.079999,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Génova",
+    "key": "génova",
+    "lat": 44.409988,
+    "lon": 8.930039,
+    "labelRank": 6,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bari",
+    "key": "bari city",
+    "lat": 41.11422,
+    "lon": 16.872758,
+    "labelRank": 7,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bolonha",
+    "key": "bolonha",
+    "lat": 44.500422,
+    "lon": 11.340021,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Verona",
+    "key": "verona city",
+    "lat": 45.44039,
+    "lon": 10.990016,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pescara",
+    "key": "pescara city",
+    "lat": 42.45543,
+    "lon": 14.218656,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cagliari",
+    "key": "cagliari city",
+    "lat": 39.222398,
+    "lon": 9.103981,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Veneza",
+    "key": "veneza",
+    "lat": 45.438659,
+    "lon": 12.334999,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Messina",
+    "key": "messina city",
+    "lat": 38.200471,
+    "lon": 15.549996,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Caserta",
+    "key": "caserta city",
+    "lat": 41.05996,
+    "lon": 14.337357,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Como",
+    "key": "como city",
+    "lat": 45.810006,
+    "lon": 9.080004,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trieste",
+    "key": "trieste city",
+    "lat": 45.650378,
+    "lon": 13.800026,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pisa",
+    "key": "pisa city",
+    "lat": 43.72047,
+    "lon": 10.400026,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tarento",
+    "key": "tarento",
+    "lat": 40.508392,
+    "lon": 17.229997,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bérgamo",
+    "key": "bérgamo",
+    "lat": 45.7004,
+    "lon": 9.669993,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Reggio di Calabria",
+    "key": "reggio di calabria",
+    "lat": 38.114998,
+    "lon": 15.64136,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Treviso",
+    "key": "treviso city",
+    "lat": 45.670015,
+    "lon": 12.240018,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Módena",
+    "key": "módena",
+    "lat": 44.650025,
+    "lon": 10.919995,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Parma",
+    "key": "parma city",
+    "lat": 44.810429,
+    "lon": 10.320031,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lecce",
+    "key": "lecce city",
+    "lat": 40.36039,
+    "lon": 18.149993,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Livorno",
+    "key": "livorno city",
+    "lat": 43.551134,
+    "lon": 10.302275,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Foggia",
+    "key": "foggia city",
+    "lat": 41.460478,
+    "lon": 15.55997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Perúgia",
+    "key": "perúgia",
+    "lat": 43.110378,
+    "lon": 12.389983,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ravena",
+    "key": "ravena",
+    "lat": 44.420375,
+    "lon": 12.220019,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ferrara",
+    "key": "ferrara city",
+    "lat": 44.850426,
+    "lon": 11.609927,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Siracusa",
+    "key": "siracusa city",
+    "lat": 37.070359,
+    "lon": 15.28996,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sassari",
+    "key": "sassari city",
+    "lat": 40.730006,
+    "lon": 8.570009,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Udine",
+    "key": "udine city",
+    "lat": 46.070016,
+    "lon": 13.240008,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barletta",
+    "key": "barletta",
+    "lat": 41.319996,
+    "lon": 16.270004,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trento",
+    "key": "trento city",
+    "lat": 46.080429,
+    "lon": 11.119983,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brindisi",
+    "key": "brindisi city",
+    "lat": 40.640347,
+    "lon": 17.930006,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Novara",
+    "key": "novara city",
+    "lat": 45.450002,
+    "lon": 8.61998,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ancona",
+    "key": "ancona city",
+    "lat": 43.600374,
+    "lon": 13.499941,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bolzano",
+    "key": "bolzano",
+    "lat": 46.500429,
+    "lon": 11.360019,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Catanzaro",
+    "key": "catanzaro city",
+    "lat": 38.900376,
+    "lon": 16.60001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arezzo",
+    "key": "arezzo city",
+    "lat": 43.461726,
+    "lon": 11.874975,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Marsala",
+    "key": "marsala",
+    "lat": 37.805404,
+    "lon": 12.438662,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Asti",
+    "key": "asti city",
+    "lat": 44.929982,
+    "lon": 8.209979,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Potenza",
+    "key": "potenza city",
+    "lat": 40.642002,
+    "lon": 15.798996,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ragusa",
+    "key": "ragusa city",
+    "lat": 36.930031,
+    "lon": 14.729995,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Áquila",
+    "key": "áquila",
+    "lat": 42.350398,
+    "lon": 13.390025,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Benevento",
+    "key": "benevento city",
+    "lat": 41.133702,
+    "lon": 14.749993,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Civitavecchia",
+    "key": "civitavecchia",
+    "lat": 42.100413,
+    "lon": 11.799993,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Crotone",
+    "key": "crotone",
+    "lat": 39.083337,
+    "lon": 17.123337,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Siena",
+    "key": "siena city",
+    "lat": 43.317032,
+    "lon": 11.349994,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Campobasso",
+    "key": "campobasso city",
+    "lat": 41.562999,
+    "lon": 14.655997,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Olbia",
+    "key": "olbia",
+    "lat": 40.914285,
+    "lon": 9.515072,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aosta",
+    "key": "aosta",
+    "lat": 45.737001,
+    "lon": 7.315003,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vibo Valentia",
+    "key": "vibo valentia city",
+    "lat": 38.666592,
+    "lon": 16.10004,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

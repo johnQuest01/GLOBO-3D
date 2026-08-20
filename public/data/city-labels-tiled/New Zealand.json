@@ -1,0 +1,443 @@
+[
+  {
+    "name": "Auckland",
+    "key": "auckland city",
+    "lat": -36.848055,
+    "lon": 174.763027,
+    "labelRank": 1,
+    "minLabel": 3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wellington",
+    "key": "wellington city",
+    "lat": -41.292068,
+    "lon": 174.777201,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Manukau",
+    "key": "manukau",
+    "lat": -36.99997,
+    "lon": 174.884971,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Christchurch",
+    "key": "christchurch",
+    "lat": -43.535022,
+    "lon": 172.630023,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Waitakere",
+    "key": "waitakere",
+    "lat": -36.852449,
+    "lon": 174.554279,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "North Shore",
+    "key": "north shore",
+    "lat": -36.791269,
+    "lon": 174.775839,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hamilton",
+    "key": "hamilton (new zealand)",
+    "lat": -37.778269,
+    "lon": 175.289578,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tauranga",
+    "key": "tauranga",
+    "lat": -37.696416,
+    "lon": 176.153629,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dunedin",
+    "key": "dunedin",
+    "lat": -45.885423,
+    "lon": 170.491016,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lower Hutt",
+    "key": "lower hutt",
+    "lat": -41.203745,
+    "lon": 174.912312,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Palmerston North",
+    "key": "palmerston north",
+    "lat": -40.352691,
+    "lon": 175.607211,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hastings",
+    "key": "hastings",
+    "lat": -39.638203,
+    "lon": 176.8368,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nelson",
+    "key": "nelson",
+    "lat": -41.292592,
+    "lon": 173.247448,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Napier",
+    "key": "napier",
+    "lat": -39.490001,
+    "lon": 176.926451,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rotorua",
+    "key": "rotorua",
+    "lat": -38.131738,
+    "lon": 176.248263,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "New Plymouth",
+    "key": "new plymouth",
+    "lat": -39.055639,
+    "lon": 174.074813,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Porirua",
+    "key": "porirua",
+    "lat": -41.121892,
+    "lon": 174.852353,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Whangarei",
+    "key": "whangarei",
+    "lat": -35.725571,
+    "lon": 174.322971,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Invercargill",
+    "key": "invercargill",
+    "lat": -46.409437,
+    "lon": 168.365006,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Whanganui",
+    "key": "whanganui",
+    "lat": -39.932626,
+    "lon": 175.0393,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Upper Hutt",
+    "key": "upper hutt",
+    "lat": -41.135477,
+    "lon": 175.029041,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gisborne",
+    "key": "gisborne",
+    "lat": -38.663333,
+    "lon": 178.018081,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Blenheim",
+    "key": "blenheim",
+    "lat": -41.513517,
+    "lon": 173.954958,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Timaru",
+    "key": "timaru",
+    "lat": -44.397154,
+    "lon": 171.242469,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pukekohe",
+    "key": "pukekohe",
+    "lat": -37.201492,
+    "lon": 174.903307,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Paraparaumu",
+    "key": "paraparaumu",
+    "lat": -40.903442,
+    "lon": 174.998931,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Taupo",
+    "key": "taupo",
+    "lat": -38.693011,
+    "lon": 176.077053,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Masterton",
+    "key": "masterton",
+    "lat": -40.94392,
+    "lon": 175.645646,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Levin",
+    "key": "levin",
+    "lat": -40.612361,
+    "lon": 175.277246,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Whakatāne",
+    "key": "whakatāne",
+    "lat": -37.957386,
+    "lon": 176.982758,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ashburton",
+    "key": "ashburton",
+    "lat": -43.898269,
+    "lon": 171.748642,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Queenstown",
+    "key": "queenstown city",
+    "lat": -45.022672,
+    "lon": 168.725081,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cambridge",
+    "key": "cambridge city",
+    "lat": -37.889428,
+    "lon": 175.470273,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tokoroa",
+    "key": "tokoroa",
+    "lat": -38.224515,
+    "lon": 175.870471,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oamaru",
+    "key": "oamaru",
+    "lat": -45.109197,
+    "lon": 170.99479,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hāwera",
+    "key": "hāwera",
+    "lat": -39.579467,
+    "lon": 174.277975,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kaiapoi",
+    "key": "kaiapoi",
+    "lat": -43.381311,
+    "lon": 172.651036,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Greymouth",
+    "key": "greymouth",
+    "lat": -42.471645,
+    "lon": 171.223143,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gore",
+    "key": "gore",
+    "lat": -46.094682,
+    "lon": 168.960381,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Thames",
+    "key": "thames",
+    "lat": -37.138424,
+    "lon": 175.585316,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kerikeri",
+    "key": "kerikeri",
+    "lat": -35.228481,
+    "lon": 173.950671,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kaitaia",
+    "key": "kaitaia",
+    "lat": -35.109926,
+    "lon": 173.272685,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Westport",
+    "key": "westport",
+    "lat": -41.763842,
+    "lon": 171.602792,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tūrangi",
+    "key": "tūrangi",
+    "lat": -38.988888,
+    "lon": 175.814241,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hokitika",
+    "key": "hokitika",
+    "lat": -42.707239,
+    "lon": 171.009954,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Picton",
+    "key": "picton",
+    "lat": -41.280523,
+    "lon": 174.016556,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kaikoura",
+    "key": "kaikoura",
+    "lat": -42.401181,
+    "lon": 173.689686,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Te Anau",
+    "key": "te anau",
+    "lat": -45.407365,
+    "lon": 167.758458,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oban",
+    "key": "oban",
+    "lat": -46.88765,
+    "lon": 168.166594,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

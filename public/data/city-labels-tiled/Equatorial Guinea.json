@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Bata",
+    "key": "bata",
+    "lat": 1.870001,
+    "lon": 9.769987,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Malabo",
+    "key": "malabo",
+    "lat": 3.750015,
+    "lon": 8.783278,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Luba",
+    "key": "luba",
+    "lat": 3.449997,
+    "lon": 8.55,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Evinayong",
+    "key": "evinayong",
+    "lat": 1.449999,
+    "lon": 10.566703,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mongomo",
+    "key": "mongomo",
+    "lat": 1.633684,
+    "lon": 11.31656,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Calatrava",
+    "key": "calatrava",
+    "lat": 1.116403,
+    "lon": 9.418588,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

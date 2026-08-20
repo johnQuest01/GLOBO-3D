@@ -1,0 +1,335 @@
+[
+  {
+    "name": "Assunção",
+    "key": "assunção",
+    "lat": -25.290671,
+    "lon": -57.625834,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Lorenzo",
+    "key": "san lorenzo",
+    "lat": -25.340018,
+    "lon": -57.52004,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Encarnación",
+    "key": "encarnación",
+    "lat": -27.347185,
+    "lon": -55.873919,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ciudad del Este",
+    "key": "ciudad del este",
+    "lat": -25.5167,
+    "lon": -54.616057,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pedro Juan Caballero",
+    "key": "pedro juan caballero",
+    "lat": -22.544581,
+    "lon": -55.759992,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Coronel Oviedo",
+    "key": "coronel oviedo",
+    "lat": -25.449985,
+    "lon": -56.439951,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Concepción",
+    "key": "concepción (paraguay)",
+    "lat": -23.406389,
+    "lon": -57.434412,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Villarrica",
+    "key": "villarrica",
+    "lat": -25.750019,
+    "lon": -56.43331,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Itá",
+    "key": "itá",
+    "lat": -25.50962,
+    "lon": -57.360024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ypacaraí",
+    "key": "ypacaraí",
+    "lat": -25.409988,
+    "lon": -57.279977,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pilar",
+    "key": "pilar",
+    "lat": -26.869485,
+    "lon": -58.299992,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Caacupé",
+    "key": "caacupé",
+    "lat": -25.387002,
+    "lon": -57.14,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Paraguarí",
+    "key": "paraguarí city",
+    "lat": -25.620001,
+    "lon": -57.16001,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bella Vista Norte",
+    "key": "bella vista norte",
+    "lat": -22.12962,
+    "lon": -56.519997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Horqueta",
+    "key": "horqueta",
+    "lat": -23.339623,
+    "lon": -57.050017,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Villa Hayes",
+    "key": "villa hayes",
+    "lat": -25.090007,
+    "lon": -57.529987,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Coronel Bogado",
+    "key": "coronel bogado",
+    "lat": -27.170035,
+    "lon": -56.25004,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Belén",
+    "key": "belén",
+    "lat": -23.469486,
+    "lon": -57.239979,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Filadelfia",
+    "key": "filadelfia",
+    "lat": -22.339994,
+    "lon": -60.02999,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Pedro del Ycuamandiyú",
+    "key": "san pedro del ycuamandiyú",
+    "lat": -24.089965,
+    "lon": -57.079989,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Juan Bautista",
+    "key": "san juan bautista",
+    "lat": -26.679988,
+    "lon": -57.150011,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Caazapá",
+    "key": "caazapá city",
+    "lat": -26.200017,
+    "lon": -56.380006,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hohenau",
+    "key": "hohenau",
+    "lat": -27.089778,
+    "lon": -55.646576,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto del Rosario",
+    "key": "puerto del rosario",
+    "lat": -24.419609,
+    "lon": -57.100014,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "La Victoria",
+    "key": "la victoria",
+    "lat": -22.28961,
+    "lon": -57.939988,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arroyos y Esteros",
+    "key": "arroyos y esteros",
+    "lat": -25.049958,
+    "lon": -57.089988,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Abaí",
+    "key": "abaí",
+    "lat": -26.029588,
+    "lon": -55.940007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Villa Ygatimí",
+    "key": "villa ygatimí",
+    "lat": -24.125302,
+    "lon": -55.643151,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mariscal José Félix Estigarribia",
+    "key": "mariscal josé félix estigarribia",
+    "lat": -22.030002,
+    "lon": -60.609995,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fuerte Olimpo",
+    "key": "fuerte olimpo",
+    "lat": -21.069581,
+    "lon": -57.899991,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pozo Colorado",
+    "key": "pozo colorado",
+    "lat": -23.430005,
+    "lon": -58.859984,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ñacunday",
+    "key": "ñacunday",
+    "lat": -26.020028,
+    "lon": -54.769949,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mayor Pablo Lagerenza",
+    "key": "mayor pablo lagerenza",
+    "lat": -19.916111,
+    "lon": -60.783277,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "General Eugenio Alejandrino Garay",
+    "key": "general eugenio alejandrino garay",
+    "lat": -20.51995,
+    "lon": -62.209986,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ypehú",
+    "key": "ypehú",
+    "lat": -23.910028,
+    "lon": -55.459985,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto Pinasco",
+    "key": "puerto pinasco",
+    "lat": -22.640028,
+    "lon": -57.789997,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fortín Falcón",
+    "key": "fortín falcón",
+    "lat": -23.050287,
+    "lon": -59.849949,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

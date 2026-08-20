@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Hong Kong",
+    "key": "hong kong",
+    "lat": 22.306927,
+    "lon": 114.183064,
+    "labelRank": 0,
+    "minLabel": 3,
+    "maxLabel": 24
+  }
+]

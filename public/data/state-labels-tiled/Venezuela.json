@@ -20,8 +20,8 @@
   {
     "name": "Amazonas",
     "key": "amazonas",
-    "lat": -4.21774,
-    "lon": -63.7853,
+    "lat": 3.36185,
+    "lon": -65.6187,
     "labelRank": 6,
     "minLabel": 6.7,
     "maxLabel": 11
@@ -137,8 +137,8 @@
   {
     "name": "Sucre",
     "key": "sucre",
-    "lat": 9.01236,
-    "lon": -75.1319,
+    "lat": 10.4729,
+    "lon": -63.3542,
     "labelRank": 6,
     "minLabel": 6.7,
     "maxLabel": 11
@@ -173,8 +173,8 @@
   {
     "name": "",
     "key": "",
-    "lat": -83.0384,
-    "lon": -170.343,
+    "lat": 15.699,
+    "lon": -63.6388,
     "labelRank": 20,
     "minLabel": 18,
     "maxLabel": 18

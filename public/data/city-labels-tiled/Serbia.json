@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Belgrado",
+    "key": "belgrado",
+    "lat": 44.820591,
+    "lon": 20.466045,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Niš",
+    "key": "niš",
+    "lat": 43.330416,
+    "lon": 21.899996,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Novi Sad",
+    "key": "novi sad",
+    "lat": 45.250376,
+    "lon": 19.849941,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kragujevac",
+    "key": "kragujevac",
+    "lat": 44.01996,
+    "lon": 20.920004,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Čačak",
+    "key": "čačak",
+    "lat": 43.889736,
+    "lon": 20.330118,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Subotica",
+    "key": "subotica",
+    "lat": 46.070016,
+    "lon": 19.680028,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zrenjanin",
+    "key": "zrenjanin",
+    "lat": 45.378637,
+    "lon": 20.399468,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

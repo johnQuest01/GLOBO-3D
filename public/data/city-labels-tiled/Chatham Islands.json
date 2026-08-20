@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Waitangi",
+    "key": "waitangi",
+    "lat": -44.032665,
+    "lon": -176.350754,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

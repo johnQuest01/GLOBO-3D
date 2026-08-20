@@ -1,0 +1,281 @@
+[
+  {
+    "name": "Cartum",
+    "key": "khartoum",
+    "lat": 15.5,
+    "lon": 32.56,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cartum",
+    "key": "cartum",
+    "lat": 15.590024,
+    "lon": 32.532233,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Omdurman",
+    "key": "omdurman",
+    "lat": 15.616681,
+    "lon": 32.480022,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Porto Sudão",
+    "key": "porto sudão",
+    "lat": 19.615791,
+    "lon": 37.216426,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kassala",
+    "key": "kassala city",
+    "lat": 15.459972,
+    "lon": 36.390016,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al-Ubayyid",
+    "key": "al-ubayyid",
+    "lat": 13.18329,
+    "lon": 30.216698,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Niala",
+    "key": "niala",
+    "lat": 12.059973,
+    "lon": 24.889995,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kosti",
+    "key": "kosti",
+    "lat": 13.169983,
+    "lon": 32.660011,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wad Madani",
+    "key": "wad madani",
+    "lat": 14.399959,
+    "lon": 33.52001,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al-Fashir",
+    "key": "al-fashir",
+    "lat": 13.629981,
+    "lon": 25.350018,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al Qadarif",
+    "key": "al qadarif",
+    "lat": 14.039981,
+    "lon": 35.38,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shendi",
+    "key": "shendi",
+    "lat": 16.680492,
+    "lon": 33.420017,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ad-Damazin",
+    "key": "ad-damazin",
+    "lat": 11.770404,
+    "lon": 34.349986,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kaduqli",
+    "key": "kaduqli",
+    "lat": 11.00996,
+    "lon": 29.700037,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Atbara",
+    "key": "atbara",
+    "lat": 17.70999,
+    "lon": 33.979982,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Geneina",
+    "key": "geneina",
+    "lat": 13.450017,
+    "lon": 22.440015,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "El Manaqil",
+    "key": "el manaqil",
+    "lat": 14.250382,
+    "lon": 32.979992,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sennar",
+    "key": "sennar city",
+    "lat": 13.54996,
+    "lon": 33.600006,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "En Nahud",
+    "key": "en nahud",
+    "lat": 12.690426,
+    "lon": 28.420012,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ad-Dāmar",
+    "key": "ad-dāmar",
+    "lat": 17.589972,
+    "lon": 33.959984,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ed Dueim",
+    "key": "ed dueim",
+    "lat": 13.990398,
+    "lon": 32.299982,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tokar",
+    "key": "tokar",
+    "lat": 18.433331,
+    "lon": 37.733293,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Umm Ruwaba",
+    "key": "umm ruwaba",
+    "lat": 12.910438,
+    "lon": 31.199997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Berber",
+    "key": "berber",
+    "lat": 18.017026,
+    "lon": 33.98329,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dongola",
+    "key": "dongola",
+    "lat": 19.166594,
+    "lon": 30.483297,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Haiya",
+    "key": "haiya",
+    "lat": 18.336231,
+    "lon": 36.384177,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Muglad",
+    "key": "muglad",
+    "lat": 11.033731,
+    "lon": 27.733335,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Babanusa",
+    "key": "babanusa",
+    "lat": 11.333351,
+    "lon": 27.799998,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wadi Halfa",
+    "key": "wadi halfa",
+    "lat": 21.800025,
+    "lon": 31.349962,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Merowe",
+    "key": "merowe",
+    "lat": 18.483302,
+    "lon": 31.816652,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kerma",
+    "key": "kerma",
+    "lat": 19.633697,
+    "lon": 30.416582,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

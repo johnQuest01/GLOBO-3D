@@ -1,0 +1,749 @@
+[
+  {
+    "name": "Istambul",
+    "key": "istanbul",
+    "lat": 41.01,
+    "lon": 28.98,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ancara",
+    "key": "ancara",
+    "lat": 39.929184,
+    "lon": 32.862446,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Esmirna",
+    "key": "esmirna",
+    "lat": 38.438096,
+    "lon": 27.149848,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bursa",
+    "key": "bursa city",
+    "lat": 40.201933,
+    "lon": 29.068052,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Adana",
+    "key": "adana city",
+    "lat": 36.996935,
+    "lon": 35.318058,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gaziantep",
+    "key": "gaziantep city",
+    "lat": 37.07693,
+    "lon": 37.383048,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cónia",
+    "key": "cónia",
+    "lat": 37.876958,
+    "lon": 32.473064,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tarso",
+    "key": "tarso",
+    "lat": 36.920394,
+    "lon": 34.879979,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Antália",
+    "key": "antália",
+    "lat": 36.891928,
+    "lon": 30.69803,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trebizonda",
+    "key": "trebizonda",
+    "lat": 40.979991,
+    "lon": 39.719994,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Diyarbakır",
+    "key": "diyarbakır",
+    "lat": 37.920436,
+    "lon": 40.23004,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mersin",
+    "key": "mersin city",
+    "lat": 36.799988,
+    "lon": 34.619995,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Samsun",
+    "key": "samsun city",
+    "lat": 41.279998,
+    "lon": 36.343663,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kayseri",
+    "key": "kayseri city",
+    "lat": 38.73496,
+    "lon": 35.49002,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Eskişehir",
+    "key": "eskişehir",
+    "lat": 39.794999,
+    "lon": 30.529961,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "İzmit",
+    "key": "i̇zmit",
+    "lat": 40.776024,
+    "lon": 29.930617,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Malatya",
+    "key": "malatya city",
+    "lat": 38.370434,
+    "lon": 38.300029,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Şanlıurfa",
+    "key": "şanlıurfa",
+    "lat": 37.169991,
+    "lon": 38.794986,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Erzurum",
+    "key": "erzurum city",
+    "lat": 39.920392,
+    "lon": 41.290027,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kahramanmaraş",
+    "key": "kahramanmaraş",
+    "lat": 37.60999,
+    "lon": 36.945021,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Denizli",
+    "key": "denizli city",
+    "lat": 37.770393,
+    "lon": 29.080023,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Van",
+    "key": "van city",
+    "lat": 38.49544,
+    "lon": 43.399976,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Batman",
+    "key": "batman city",
+    "lat": 37.890412,
+    "lon": 41.140011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "İskenderun",
+    "key": "i̇skenderun",
+    "lat": 36.580414,
+    "lon": 36.17003,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Adapazarı",
+    "key": "adapazarı",
+    "lat": 40.766661,
+    "lon": 30.400002,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rize",
+    "key": "rize city",
+    "lat": 41.020841,
+    "lon": 40.521857,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Elazığ",
+    "key": "elazığ",
+    "lat": 38.679976,
+    "lon": 39.229998,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sivas",
+    "key": "sivas city",
+    "lat": 39.745415,
+    "lon": 37.03499,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Balıkesir",
+    "key": "balıkesir",
+    "lat": 39.650382,
+    "lon": 27.890018,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Adapazarı",
+    "key": "adapazarı city",
+    "lat": 40.799976,
+    "lon": 30.415032,
+    "labelRank": 6,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Manisa",
+    "key": "manisa city",
+    "lat": 38.630393,
+    "lon": 27.439968,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Adıyaman",
+    "key": "adıyaman",
+    "lat": 37.770393,
+    "lon": 38.279927,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kırıkkale",
+    "key": "kırıkkale",
+    "lat": 39.85037,
+    "lon": 33.529984,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aidim",
+    "key": "aidim",
+    "lat": 37.849975,
+    "lon": 27.850021,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kütahya",
+    "key": "kütahya city",
+    "lat": 39.420009,
+    "lon": 29.929997,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Çorum",
+    "key": "çorum city",
+    "lat": 40.519993,
+    "lon": 34.950001,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Isparta",
+    "key": "isparta city",
+    "lat": 37.76998,
+    "lon": 30.529961,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Afyonkarahisar",
+    "key": "afyonkarahisar city",
+    "lat": 38.750385,
+    "lon": 30.550011,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zonguldak",
+    "key": "zonguldak",
+    "lat": 41.430377,
+    "lon": 31.780013,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ordu",
+    "key": "ordu city",
+    "lat": 41.000429,
+    "lon": 37.869926,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Antakya",
+    "key": "antakya",
+    "lat": 36.233334,
+    "lon": 36.116677,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uşak",
+    "key": "uşak",
+    "lat": 38.680364,
+    "lon": 29.420002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nusaybin",
+    "key": "nusaybin",
+    "lat": 37.074984,
+    "lon": 41.218352,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tokat",
+    "key": "tokat city",
+    "lat": 40.305996,
+    "lon": 36.563004,
+    "labelRank": 10,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Erzincan",
+    "key": "erzincan city",
+    "lat": 39.75265,
+    "lon": 39.492773,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karabük",
+    "key": "karabük city",
+    "lat": 41.200003,
+    "lon": 32.600015,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Edirne",
+    "key": "edirne city",
+    "lat": 41.67044,
+    "lon": 26.569996,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tekirdağ",
+    "key": "tekirdağ",
+    "lat": 40.990869,
+    "lon": 27.50999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karaman",
+    "key": "karaman city",
+    "lat": 37.18154,
+    "lon": 33.215016,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Siirt",
+    "key": "siirt city",
+    "lat": 37.944,
+    "lon": 41.932999,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Giresun",
+    "key": "giresun city",
+    "lat": 40.913001,
+    "lon": 38.390005,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bafra",
+    "key": "bafra",
+    "lat": 41.568172,
+    "lon": 35.906893,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bolu",
+    "key": "bolu city",
+    "lat": 40.736259,
+    "lon": 31.606122,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kırşehir",
+    "key": "kırşehir",
+    "lat": 39.141999,
+    "lon": 34.171003,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Samandağ",
+    "key": "samandağ",
+    "lat": 36.117058,
+    "lon": 35.9333,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Polatlı",
+    "key": "polatlı",
+    "lat": 39.584159,
+    "lon": 32.147226,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ereğli",
+    "key": "ereğli",
+    "lat": 37.506275,
+    "lon": 34.051658,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Niğde",
+    "key": "niğde",
+    "lat": 37.976004,
+    "lon": 34.694002,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lüleburgaz",
+    "key": "lüleburgaz",
+    "lat": 41.406657,
+    "lon": 27.355219,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yozgat",
+    "key": "yozgat city",
+    "lat": 39.817998,
+    "lon": 34.814997,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ağrı",
+    "key": "ağrı",
+    "lat": 39.719835,
+    "lon": 43.051315,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Çanakkale",
+    "key": "çanakkale city",
+    "lat": 40.145933,
+    "lon": 26.406388,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Amasya",
+    "key": "amasya city",
+    "lat": 40.65368,
+    "lon": 35.833048,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Muş",
+    "key": "muş",
+    "lat": 38.749016,
+    "lon": 41.49694,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kilis",
+    "key": "kilis city",
+    "lat": 36.720406,
+    "lon": 37.119997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bingöl",
+    "key": "bingöl city",
+    "lat": 38.885004,
+    "lon": 40.498003,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hakkâri",
+    "key": "hakkâri",
+    "lat": 37.574436,
+    "lon": 43.740834,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kars",
+    "key": "kars city",
+    "lat": 40.608463,
+    "lon": 43.097462,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Soke",
+    "key": "soke",
+    "lat": 37.751221,
+    "lon": 27.410254,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nevşehir",
+    "key": "nevşehir",
+    "lat": 38.624004,
+    "lon": 34.723999,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tatvan",
+    "key": "tatvan",
+    "lat": 38.506576,
+    "lon": 42.281595,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Çankırı",
+    "key": "çankırı",
+    "lat": 40.607001,
+    "lon": 33.621004,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mardin",
+    "key": "mardin city",
+    "lat": 37.311507,
+    "lon": 40.742722,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kastamonu",
+    "key": "kastamonu city",
+    "lat": 41.389002,
+    "lon": 33.783003,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Burdur",
+    "key": "burdur city",
+    "lat": 37.71666,
+    "lon": 30.283335,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bitlis",
+    "key": "bitlis city",
+    "lat": 38.394,
+    "lon": 42.122998,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kırklareli",
+    "key": "kırklareli",
+    "lat": 41.742999,
+    "lon": 27.226,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Muğla",
+    "key": "muğla",
+    "lat": 37.21637,
+    "lon": 28.363891,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bilecik",
+    "key": "bilecik city",
+    "lat": 40.149999,
+    "lon": 29.982997,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sinop",
+    "key": "sinop city",
+    "lat": 42.022998,
+    "lon": 35.153002,
+    "labelRank": 10,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Artvin",
+    "key": "artvin city",
+    "lat": 41.183001,
+    "lon": 41.817996,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gümüşhane",
+    "key": "gümüşhane",
+    "lat": 40.464,
+    "lon": 39.484,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tunceli",
+    "key": "tunceli city",
+    "lat": 39.1167,
+    "lon": 39.533302,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

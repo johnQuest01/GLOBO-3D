@@ -2,8 +2,8 @@
   {
     "name": "Saint Paul",
     "key": "saint paul",
-    "lat": 15.3529,
-    "lon": -61.3717,
+    "lat": 17.0352,
+    "lon": -61.7671,
     "labelRank": 20,
     "minLabel": 11,
     "maxLabel": 11
@@ -11,8 +11,8 @@
   {
     "name": "Saint Philip",
     "key": "saint philip",
-    "lat": 13.1368,
-    "lon": -59.47,
+    "lat": 17.0601,
+    "lon": -61.7021,
     "labelRank": 20,
     "minLabel": 11,
     "maxLabel": 11
@@ -20,8 +20,8 @@
   {
     "name": "Saint Peter",
     "key": "saint peter",
-    "lat": 13.2679,
-    "lon": -59.6109,
+    "lat": 17.0935,
+    "lon": -61.7404,
     "labelRank": 20,
     "minLabel": 11,
     "maxLabel": 11
@@ -29,8 +29,8 @@
   {
     "name": "Saint George",
     "key": "saint george",
-    "lat": 12.0681,
-    "lon": -61.7226,
+    "lat": 17.1084,
+    "lon": -61.7804,
     "labelRank": 20,
     "minLabel": 11,
     "maxLabel": 11
@@ -38,8 +38,8 @@
   {
     "name": "Saint John",
     "key": "saint john",
-    "lat": 12.1446,
-    "lon": -61.7094,
+    "lat": 17.1101,
+    "lon": -61.8237,
     "labelRank": 20,
     "minLabel": 11,
     "maxLabel": 11

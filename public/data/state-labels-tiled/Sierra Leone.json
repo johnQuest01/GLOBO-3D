@@ -11,8 +11,8 @@
   {
     "name": "Eastern",
     "key": "eastern",
-    "lat": -13.7617,
-    "lon": 31.8341,
+    "lat": 8.27415,
+    "lon": -10.9314,
     "labelRank": 7,
     "minLabel": 7.7,
     "maxLabel": 11
@@ -29,8 +29,8 @@
   {
     "name": "Western Area",
     "key": "western",
-    "lat": -2.13156,
-    "lon": 29.2644,
+    "lat": 8.31041,
+    "lon": -13.0935,
     "labelRank": 7,
     "minLabel": 8,
     "maxLabel": 11

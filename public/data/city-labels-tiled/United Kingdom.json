@@ -1,0 +1,515 @@
+[
+  {
+    "name": "Londres",
+    "key": "london",
+    "lat": 51.51,
+    "lon": -0.13,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Birmingham",
+    "key": "birmingham city",
+    "lat": 52.47692,
+    "lon": -1.921943,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Manchester",
+    "key": "manchester city",
+    "lat": 53.47532,
+    "lon": -2.248685,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Leeds",
+    "key": "leeds city",
+    "lat": 53.790017,
+    "lon": -1.551348,
+    "labelRank": 6,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sheffield",
+    "key": "sheffield city",
+    "lat": 53.366677,
+    "lon": -1.499997,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Glasgow",
+    "key": "glasgow city",
+    "lat": 55.86227,
+    "lon": -4.239101,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Newcastle upon Tyne",
+    "key": "newcastle upon tyne city",
+    "lat": 54.989742,
+    "lon": -1.611625,
+    "labelRank": 6,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cardiff",
+    "key": "cardiff city",
+    "lat": 51.482619,
+    "lon": -3.167598,
+    "labelRank": 6,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nottingham",
+    "key": "nottingham city",
+    "lat": 52.941084,
+    "lon": -1.165706,
+    "labelRank": 7,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Liverpool",
+    "key": "liverpool city",
+    "lat": 53.405068,
+    "lon": -2.961934,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Southend-on-Sea",
+    "key": "southend-on-sea city",
+    "lat": 51.550018,
+    "lon": 0.719997,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bristol",
+    "key": "bristol city",
+    "lat": 51.449998,
+    "lon": -2.583315,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Edimburgo",
+    "key": "edimburgo",
+    "lat": 55.948328,
+    "lon": -3.219091,
+    "labelRank": 6,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brighton",
+    "key": "brighton",
+    "lat": 50.830346,
+    "lon": -0.169974,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bradford",
+    "key": "bradford city",
+    "lat": 53.791675,
+    "lon": -1.754465,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Leicester",
+    "key": "leicester city",
+    "lat": 52.629977,
+    "lon": -1.133249,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sunderland",
+    "key": "sunderland city",
+    "lat": 54.903407,
+    "lon": -1.379882,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Belfast",
+    "key": "belfast city",
+    "lat": 54.594245,
+    "lon": -5.928178,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Portsmouth",
+    "key": "portsmouth city",
+    "lat": 50.800348,
+    "lon": -1.080022,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bournemouth",
+    "key": "bournemouth city",
+    "lat": 50.72999,
+    "lon": -1.90005,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Middlesbrough",
+    "key": "middlesbrough city",
+    "lat": 54.580375,
+    "lon": -1.230013,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Stoke-on-Trent",
+    "key": "stoke-on-trent city",
+    "lat": 53.000368,
+    "lon": -2.180007,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Coventry",
+    "key": "coventry city",
+    "lat": 52.400741,
+    "lon": -1.502675,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Southampton",
+    "key": "southampton city",
+    "lat": 50.900031,
+    "lon": -1.399977,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Reading",
+    "key": "reading city",
+    "lat": 51.469971,
+    "lon": -0.980028,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kingston upon Hull",
+    "key": "kingston upon hull city",
+    "lat": 53.750426,
+    "lon": -0.329991,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Swansea",
+    "key": "swansea city",
+    "lat": 51.629987,
+    "lon": -3.950002,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Blackpool",
+    "key": "blackpool city",
+    "lat": 53.830395,
+    "lon": -3.050005,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Plymouth",
+    "key": "plymouth city",
+    "lat": 50.385386,
+    "lon": -4.159989,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Luton",
+    "key": "luton city",
+    "lat": 51.880359,
+    "lon": -0.420011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oxford",
+    "key": "oxford",
+    "lat": 51.751828,
+    "lon": -1.248076,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Norwich",
+    "key": "norwich",
+    "lat": 52.630365,
+    "lon": 1.300013,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aberdeen",
+    "key": "aberdeen city",
+    "lat": 57.145133,
+    "lon": -2.10505,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Iorque",
+    "key": "iorque",
+    "lat": 53.951168,
+    "lon": -1.072104,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dundee",
+    "key": "dundee city",
+    "lat": 56.470389,
+    "lon": -3.000008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ipswich",
+    "key": "ipswich",
+    "lat": 52.070347,
+    "lon": 1.169995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Peterborough",
+    "key": "peterborough city",
+    "lat": 52.567187,
+    "lon": -0.248404,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cambridge",
+    "key": "cambridge",
+    "lat": 52.200391,
+    "lon": 0.116623,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Exeter",
+    "key": "exeter",
+    "lat": 50.700405,
+    "lon": -3.52995,
+    "labelRank": 7,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bath",
+    "key": "bath",
+    "lat": 51.383749,
+    "lon": -2.350022,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chester",
+    "key": "chester",
+    "lat": 53.186325,
+    "lon": -2.902965,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Londonderry/Derry",
+    "key": "londonderry/derry",
+    "lat": 55.000375,
+    "lon": -7.333284,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Greenock",
+    "key": "greenock",
+    "lat": 55.93329,
+    "lon": -4.750031,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Carlisle",
+    "key": "carlisle",
+    "lat": 54.879995,
+    "lon": -2.929987,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Scarborough",
+    "key": "scarborough",
+    "lat": 54.280394,
+    "lon": -0.429984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ayr",
+    "key": "ayr",
+    "lat": 55.4504,
+    "lon": -4.61668,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Inverness",
+    "key": "inverness",
+    "lat": 57.467124,
+    "lon": -4.233266,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Perth",
+    "key": "perth city",
+    "lat": 56.392609,
+    "lon": -3.436375,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dover",
+    "key": "dover city",
+    "lat": 51.133712,
+    "lon": 1.300013,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dumfries",
+    "key": "dumfries",
+    "lat": 55.06709,
+    "lon": -3.550001,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Omagh",
+    "key": "omagh city",
+    "lat": 54.600012,
+    "lon": -7.300004,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Penzance",
+    "key": "penzance",
+    "lat": 50.133722,
+    "lon": -5.550034,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lisburn",
+    "key": "lisburn city",
+    "lat": 54.51034,
+    "lon": -6.047723,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fort William",
+    "key": "fort william",
+    "lat": 56.816478,
+    "lon": -5.112076,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kirkwall",
+    "key": "kirkwall",
+    "lat": 58.966981,
+    "lon": -2.950011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wick",
+    "key": "wick",
+    "lat": 58.433293,
+    "lon": -3.083362,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lerwick",
+    "key": "lerwick",
+    "lat": 60.150035,
+    "lon": -1.149992,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  }
+]

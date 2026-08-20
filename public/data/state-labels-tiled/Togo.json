@@ -20,8 +20,8 @@
   {
     "name": "Centro",
     "key": "centre",
-    "lat": 19.029,
-    "lon": -72.0025,
+    "lat": 8.5878,
+    "lon": 1.00462,
     "labelRank": 6,
     "minLabel": 7.7,
     "maxLabel": 11
@@ -29,8 +29,8 @@
   {
     "name": "Plateaux",
     "key": "plateaux",
-    "lat": -2.04221,
-    "lon": 15.3777,
+    "lat": 7.38285,
+    "lon": 1.05973,
     "labelRank": 6,
     "minLabel": 7.7,
     "maxLabel": 11

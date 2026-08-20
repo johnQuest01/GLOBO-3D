@@ -1,0 +1,659 @@
+[
+  {
+    "name": "Bogotá",
+    "key": "bogotá",
+    "lat": 4.71,
+    "lon": -74.07,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bogotá",
+    "key": "bogotá city",
+    "lat": 4.598369,
+    "lon": -74.08529,
+    "labelRank": 0,
+    "minLabel": 2.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Medellín",
+    "key": "medellín",
+    "lat": 6.276949,
+    "lon": -75.576956,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cáli",
+    "key": "cáli",
+    "lat": 3.401905,
+    "lon": -76.501912,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barranquilla",
+    "key": "barranquilla",
+    "lat": 10.961934,
+    "lon": -74.801913,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bucaramanga",
+    "key": "bucaramanga",
+    "lat": 7.132039,
+    "lon": -73.127829,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cartagena das Índias",
+    "key": "cartagena das índias",
+    "lat": 10.401684,
+    "lon": -75.516339,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cúcuta",
+    "key": "cúcuta",
+    "lat": 7.920019,
+    "lon": -72.519977,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Soledad",
+    "key": "soledad",
+    "lat": 10.920017,
+    "lon": -74.769994,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pereira",
+    "key": "pereira",
+    "lat": 4.81039,
+    "lon": -75.679991,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bello",
+    "key": "bello",
+    "lat": 6.329987,
+    "lon": -75.569997,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Marta",
+    "key": "santa marta",
+    "lat": 11.247206,
+    "lon": -74.201657,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ibagué",
+    "key": "ibagué",
+    "lat": 4.438914,
+    "lon": -75.232214,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pasto",
+    "key": "pasto",
+    "lat": 1.213607,
+    "lon": -77.281107,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Manizales",
+    "key": "manizales",
+    "lat": 5.059987,
+    "lon": -75.52,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Villavicêncio",
+    "key": "villavicêncio",
+    "lat": 4.153324,
+    "lon": -73.634999,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Neiva",
+    "key": "neiva",
+    "lat": 2.931047,
+    "lon": -75.330245,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Armênia",
+    "key": "armênia",
+    "lat": 4.534283,
+    "lon": -75.681128,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Valledupar",
+    "key": "valledupar",
+    "lat": 10.479992,
+    "lon": -73.25001,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Montería",
+    "key": "montería",
+    "lat": 8.757539,
+    "lon": -75.890004,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sincelejo",
+    "key": "sincelejo",
+    "lat": 9.290427,
+    "lon": -75.379957,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Popayán",
+    "key": "popayán",
+    "lat": 2.419993,
+    "lon": -76.610011,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Buenaventura",
+    "key": "buenaventura",
+    "lat": 3.872402,
+    "lon": -77.050453,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barrancabermeja",
+    "key": "barrancabermeja",
+    "lat": 7.089992,
+    "lon": -73.849999,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tuluá",
+    "key": "tuluá",
+    "lat": 4.090382,
+    "lon": -76.21001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tunja",
+    "key": "tunja",
+    "lat": 5.550448,
+    "lon": -73.370028,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cartago",
+    "key": "cartago (colombia)",
+    "lat": 4.74998,
+    "lon": -75.910028,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Riohacha",
+    "key": "riohacha",
+    "lat": 11.540341,
+    "lon": -72.909979,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ciénaga",
+    "key": "ciénaga",
+    "lat": 11.010399,
+    "lon": -74.25,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Florencia",
+    "key": "florencia",
+    "lat": 1.610404,
+    "lon": -75.619994,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Girardot",
+    "key": "girardot",
+    "lat": 4.310007,
+    "lon": -74.809992,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sogamoso",
+    "key": "sogamoso",
+    "lat": 5.719998,
+    "lon": -72.940003,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ipiales",
+    "key": "ipiales",
+    "lat": 0.830374,
+    "lon": -77.65,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Duitama",
+    "key": "duitama",
+    "lat": 5.830457,
+    "lon": -73.02005,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Magangue",
+    "key": "magangue",
+    "lat": 9.229991,
+    "lon": -74.740022,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quibdó",
+    "key": "quibdó",
+    "lat": 5.690414,
+    "lon": -76.660008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tumaco",
+    "key": "tumaco",
+    "lat": 1.809979,
+    "lon": -78.80998,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ocaña",
+    "key": "ocaña",
+    "lat": 8.240413,
+    "lon": -73.350004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arauca",
+    "key": "arauca city",
+    "lat": 7.090664,
+    "lon": -70.761635,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sabanalarga",
+    "key": "sabanalarga",
+    "lat": 10.639982,
+    "lon": -74.919985,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yopal",
+    "key": "yopal",
+    "lat": 5.346999,
+    "lon": -72.405999,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "El Carmen de Bolívar",
+    "key": "el carmen de bolívar",
+    "lat": 9.720374,
+    "lon": -75.129998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Leticia",
+    "key": "leticia",
+    "lat": -4.201207,
+    "lon": -69.955261,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Andrés",
+    "key": "san andrés",
+    "lat": 12.562137,
+    "lon": -81.690327,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Garzón",
+    "key": "garzón",
+    "lat": 2.210393,
+    "lon": -75.649967,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "El Banco",
+    "key": "el banco",
+    "lat": 9.000341,
+    "lon": -73.980017,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chiquinquirá",
+    "key": "chiquinquirá",
+    "lat": 5.620392,
+    "lon": -73.819949,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pamplona",
+    "key": "pamplona city",
+    "lat": 7.390387,
+    "lon": -72.66002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Cruz de Lorica",
+    "key": "santa cruz de lorica",
+    "lat": 9.241851,
+    "lon": -75.816003,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Turbo",
+    "key": "turbo",
+    "lat": 8.10037,
+    "lon": -76.739978,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arjona",
+    "key": "arjona",
+    "lat": 10.260031,
+    "lon": -75.349985,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Honda",
+    "key": "honda",
+    "lat": 5.190341,
+    "lon": -74.749996,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yarumal",
+    "key": "yarumal",
+    "lat": 7.03059,
+    "lon": -75.590487,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto Berrío",
+    "key": "puerto berrío",
+    "lat": 6.480443,
+    "lon": -74.420016,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tuquerres",
+    "key": "tuquerres",
+    "lat": 1.089997,
+    "lon": -77.61995,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tame",
+    "key": "tame",
+    "lat": 6.460341,
+    "lon": -71.740025,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tolú",
+    "key": "tolú",
+    "lat": 9.535838,
+    "lon": -75.572039,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Socorro",
+    "key": "socorro",
+    "lat": 6.460341,
+    "lon": -73.269983,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ayapel",
+    "key": "ayapel",
+    "lat": 8.330407,
+    "lon": -75.150023,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Campoalegre",
+    "key": "campoalegre",
+    "lat": 2.690002,
+    "lon": -75.330012,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San José del Guaviare",
+    "key": "san josé del guaviare",
+    "lat": 2.569984,
+    "lon": -72.639995,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mocoa",
+    "key": "mocoa",
+    "lat": 1.149993,
+    "lon": -76.629984,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sonsón",
+    "key": "sonsón",
+    "lat": 5.716614,
+    "lon": -75.316628,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto López",
+    "key": "puerto lópez",
+    "lat": 4.089995,
+    "lon": -72.960027,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Martín",
+    "key": "san martín (colombia)",
+    "lat": 3.690406,
+    "lon": -73.689983,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guapí",
+    "key": "guapí",
+    "lat": 2.560398,
+    "lon": -77.859987,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto Carreño",
+    "key": "puerto carreño",
+    "lat": 6.185035,
+    "lon": -67.493023,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto Inírida",
+    "key": "puerto inírida",
+    "lat": 3.85404,
+    "lon": -67.906098,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mitú",
+    "key": "mitú",
+    "lat": 1.198311,
+    "lon": -70.173608,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Orocue",
+    "key": "orocue",
+    "lat": 4.794551,
+    "lon": -71.340023,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nuquí",
+    "key": "nuquí",
+    "lat": 5.68518,
+    "lon": -77.274548,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Juradó",
+    "key": "juradó",
+    "lat": 7.121747,
+    "lon": -77.756401,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Vicente de Caguán",
+    "key": "san vicente de caguán",
+    "lat": 2.109486,
+    "lon": -74.770317,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

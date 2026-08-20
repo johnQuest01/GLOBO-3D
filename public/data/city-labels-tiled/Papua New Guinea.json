@@ -1,0 +1,209 @@
+[
+  {
+    "name": "Port Moresby",
+    "key": "port moresby",
+    "lat": -9.464708,
+    "lon": 147.192504,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lae",
+    "key": "lae",
+    "lat": -6.732988,
+    "lon": 146.990035,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Madang",
+    "key": "madang city",
+    "lat": -5.224812,
+    "lon": 145.785251,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mount Hagen",
+    "key": "mount hagen",
+    "lat": -5.863222,
+    "lon": 144.21682,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arawa",
+    "key": "arawa",
+    "lat": -6.228,
+    "lon": 155.565991,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Goroka",
+    "key": "goroka",
+    "lat": -6.083312,
+    "lon": 145.385482,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Popondetta",
+    "key": "popondetta",
+    "lat": -8.769195,
+    "lon": 148.248408,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mendi",
+    "key": "mendi",
+    "lat": -6.144394,
+    "lon": 143.645227,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wewak",
+    "key": "wewak",
+    "lat": -3.553492,
+    "lon": 143.6367,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kavieng",
+    "key": "kavieng",
+    "lat": -2.581284,
+    "lon": 150.812976,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kimbe",
+    "key": "kimbe",
+    "lat": -5.550003,
+    "lon": 150.143014,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Daru",
+    "key": "daru",
+    "lat": -9.109152,
+    "lon": 143.233723,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alotau",
+    "key": "alotau",
+    "lat": -10.302073,
+    "lon": 150.459074,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vanimo",
+    "key": "vanimo",
+    "lat": -2.690001,
+    "lon": 141.303997,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kundiawa",
+    "key": "kundiawa",
+    "lat": -6.022998,
+    "lon": 144.960013,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rabaul",
+    "key": "rabaul",
+    "lat": -4.20549,
+    "lon": 152.143431,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kieta",
+    "key": "kieta",
+    "lat": -6.216276,
+    "lon": 155.633332,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lorengau",
+    "key": "lorengau",
+    "lat": -2.032002,
+    "lon": 147.279997,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kerema",
+    "key": "kerema",
+    "lat": -7.927002,
+    "lon": 145.837999,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wabag",
+    "key": "wabag",
+    "lat": -5.49,
+    "lon": 143.718004,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sohano",
+    "key": "sohano",
+    "lat": -5.429742,
+    "lon": 154.671137,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hoskins",
+    "key": "hoskins",
+    "lat": -5.474615,
+    "lon": 150.409982,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Abau",
+    "key": "abau",
+    "lat": -10.042605,
+    "lon": 148.56503,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  }
+]

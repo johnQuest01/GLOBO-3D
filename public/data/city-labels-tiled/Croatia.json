@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Zagreb",
+    "key": "zagreb",
+    "lat": 45.800007,
+    "lon": 15.999995,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Split",
+    "key": "split",
+    "lat": 43.520404,
+    "lon": 16.469992,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rijeka",
+    "key": "rijeka",
+    "lat": 45.329984,
+    "lon": 14.450012,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Slavonski Brod",
+    "key": "slavonski brod",
+    "lat": 45.160278,
+    "lon": 18.015582,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Osijek",
+    "key": "osijek",
+    "lat": 45.550384,
+    "lon": 18.680038,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zadar",
+    "key": "zadar",
+    "lat": 44.120135,
+    "lon": 15.262262,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pula",
+    "key": "pula",
+    "lat": 44.86872,
+    "lon": 13.848085,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karlovac",
+    "key": "karlovac",
+    "lat": 45.487209,
+    "lon": 15.547774,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Šibenik",
+    "key": "šibenik",
+    "lat": 43.727222,
+    "lon": 15.905833,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dubrovnik",
+    "key": "dubrovnik",
+    "lat": 42.660948,
+    "lon": 18.091392,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  }
+]

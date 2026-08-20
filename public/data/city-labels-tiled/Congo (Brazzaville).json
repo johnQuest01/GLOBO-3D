@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Pointe-Noire",
+    "key": "pointe-noire",
+    "lat": -4.770007,
+    "lon": 11.880039,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dolisie",
+    "key": "dolisie",
+    "lat": -4.179604,
+    "lon": 12.670017,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kayes",
+    "key": "kayes (congo (brazzaville))",
+    "lat": -4.180017,
+    "lon": 13.280006,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Owando",
+    "key": "owando",
+    "lat": -0.479623,
+    "lon": 15.92,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mossendjo",
+    "key": "mossendjo",
+    "lat": -2.939628,
+    "lon": 12.719988,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ouésso",
+    "key": "ouésso",
+    "lat": 1.609991,
+    "lon": 16.050017,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sibiti",
+    "key": "sibiti",
+    "lat": -3.689608,
+    "lon": 13.350027,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Madingou",
+    "key": "madingou",
+    "lat": -4.164003,
+    "lon": 13.554001,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gamboma",
+    "key": "gamboma",
+    "lat": -1.879486,
+    "lon": 15.85003,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Impfondo",
+    "key": "impfondo",
+    "lat": 1.640377,
+    "lon": 18.040025,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kinkala",
+    "key": "kinkala",
+    "lat": -4.356,
+    "lon": 14.761999,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moloundou",
+    "key": "moloundou",
+    "lat": 2.033738,
+    "lon": 15.216683,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Makoua",
+    "key": "makoua",
+    "lat": -0.009574,
+    "lon": 15.640017,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ewo",
+    "key": "ewo",
+    "lat": -0.879599,
+    "lon": 14.820015,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sembé",
+    "key": "sembé",
+    "lat": 1.640377,
+    "lon": 14.58003,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Djambala",
+    "key": "djambala",
+    "lat": -2.539601,
+    "lon": 14.749993,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

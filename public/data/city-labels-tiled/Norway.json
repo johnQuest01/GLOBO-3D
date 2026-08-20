@@ -1,0 +1,308 @@
+[
+  {
+    "name": "Oslo",
+    "key": "oslo city",
+    "lat": 59.918636,
+    "lon": 10.748033,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bergen",
+    "key": "bergen",
+    "lat": 60.391002,
+    "lon": 5.324522,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Stavanger",
+    "key": "stavanger",
+    "lat": 58.970004,
+    "lon": 5.680004,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trondheim",
+    "key": "trondheim",
+    "lat": 63.416657,
+    "lon": 10.416666,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bærum",
+    "key": "bærum",
+    "lat": 59.913486,
+    "lon": 11.347236,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Drammen",
+    "key": "drammen",
+    "lat": 59.738481,
+    "lon": 10.199232,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Skien",
+    "key": "skien",
+    "lat": 59.19999,
+    "lon": 9.600024,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kristiansand",
+    "key": "kristiansand",
+    "lat": 58.14562,
+    "lon": 7.974984,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tromsø",
+    "key": "tromsø",
+    "lat": 69.635076,
+    "lon": 18.992025,
+    "labelRank": 3,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ålesund",
+    "key": "ålesund",
+    "lat": 62.459799,
+    "lon": 6.26328,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sandnes",
+    "key": "sandnes",
+    "lat": 58.845412,
+    "lon": 5.69003,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Haugesund",
+    "key": "haugesund",
+    "lat": 59.411915,
+    "lon": 5.277497,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tønsberg",
+    "key": "tønsberg",
+    "lat": 59.264001,
+    "lon": 10.421001,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moss",
+    "key": "moss",
+    "lat": 59.436978,
+    "lon": 10.669157,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bodø",
+    "key": "bodø",
+    "lat": 67.276435,
+    "lon": 14.429285,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arendal",
+    "key": "arendal",
+    "lat": 58.464756,
+    "lon": 8.766001,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hamar",
+    "key": "hamar",
+    "lat": 60.820002,
+    "lon": 11.069002,
+    "labelRank": 10,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gjøvik",
+    "key": "gjøvik",
+    "lat": 60.800021,
+    "lon": 10.700008,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mo i Rana",
+    "key": "mo i rana",
+    "lat": 66.31661,
+    "lon": 14.16667,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Narvik",
+    "key": "narvik",
+    "lat": 68.38315,
+    "lon": 17.289993,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lillehammer",
+    "key": "lillehammer",
+    "lat": 61.133283,
+    "lon": 10.50002,
+    "labelRank": 6,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Harstad",
+    "key": "harstad",
+    "lat": 68.787906,
+    "lon": 16.51557,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Molde",
+    "key": "molde",
+    "lat": 62.7483,
+    "lon": 7.183324,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alta",
+    "key": "alta",
+    "lat": 69.966645,
+    "lon": 23.241671,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Steinkjer",
+    "key": "steinkjer",
+    "lat": 64.01706,
+    "lon": 11.500011,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hammerfest",
+    "key": "hammerfest",
+    "lat": 70.66128,
+    "lon": 23.688001,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Namsos",
+    "key": "namsos",
+    "lat": 64.483311,
+    "lon": 11.500011,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vossevangen",
+    "key": "vossevangen",
+    "lat": 60.630003,
+    "lon": 6.441003,
+    "labelRank": 10,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vadsø",
+    "key": "vadsø",
+    "lat": 70.096597,
+    "lon": 29.765749,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Svolvær",
+    "key": "svolvær",
+    "lat": 68.233289,
+    "lon": 14.566697,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Finnsnes",
+    "key": "finnsnes",
+    "lat": 69.240617,
+    "lon": 18.008606,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kirkenes",
+    "key": "kirkenes",
+    "lat": 69.725006,
+    "lon": 30.051643,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rørvik",
+    "key": "rørvik",
+    "lat": 64.868016,
+    "lon": 11.2053,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Leikanger",
+    "key": "leikanger",
+    "lat": 61.183296,
+    "lon": 6.85,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

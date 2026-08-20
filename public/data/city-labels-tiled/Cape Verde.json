@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Praia",
+    "key": "praia city",
+    "lat": 14.916698,
+    "lon": -23.516689,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mindelo",
+    "key": "mindelo",
+    "lat": 16.883761,
+    "lon": -25.000009,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

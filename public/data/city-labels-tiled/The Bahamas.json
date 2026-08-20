@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Nassau",
+    "key": "nassau",
+    "lat": 25.08339,
+    "lon": -77.350044,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Freeport",
+    "key": "freeport city",
+    "lat": 26.533276,
+    "lon": -78.700013,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  }
+]

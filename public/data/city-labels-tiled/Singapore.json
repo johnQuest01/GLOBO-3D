@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Singapura",
+    "key": "singapura",
+    "lat": 1.294979,
+    "lon": 103.853875,
+    "labelRank": 0,
+    "minLabel": 2.1,
+    "maxLabel": 24
+  }
+]

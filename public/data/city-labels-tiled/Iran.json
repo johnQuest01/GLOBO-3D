@@ -1,0 +1,569 @@
+[
+  {
+    "name": "Teerão",
+    "key": "teerão",
+    "lat": 35.673889,
+    "lon": 51.422398,
+    "labelRank": 1,
+    "minLabel": 3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Meshed",
+    "key": "meshed",
+    "lat": 36.271966,
+    "lon": 59.568051,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Isfahan",
+    "key": "isfahan",
+    "lat": 32.701951,
+    "lon": 51.698092,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karaj",
+    "key": "karaj",
+    "lat": 35.802305,
+    "lon": 50.968059,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tabriz",
+    "key": "tabriz",
+    "lat": 38.088237,
+    "lon": 46.2993,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xiraz",
+    "key": "xiraz",
+    "lat": 29.631906,
+    "lon": 52.568065,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ahvaz",
+    "key": "ahvaz",
+    "lat": 31.281934,
+    "lon": 48.718067,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qom",
+    "key": "qom city",
+    "lat": 34.651961,
+    "lon": 50.94806,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kermanshah",
+    "key": "kermanshah city",
+    "lat": 34.381952,
+    "lon": 47.058065,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zahedan",
+    "key": "zahedan",
+    "lat": 29.499994,
+    "lon": 60.830023,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Resht",
+    "key": "resht",
+    "lat": 37.299983,
+    "lon": 49.629983,
+    "labelRank": 6,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kerman",
+    "key": "kerman city",
+    "lat": 30.299997,
+    "lon": 57.080019,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Urmia",
+    "key": "urmia",
+    "lat": 37.529995,
+    "lon": 44.999982,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hamadã",
+    "key": "hamadã",
+    "lat": 34.796027,
+    "lon": 48.515013,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arak",
+    "key": "arak",
+    "lat": 34.080412,
+    "lon": 49.700005,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yazd",
+    "key": "yazd city",
+    "lat": 31.920053,
+    "lon": 54.370004,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qazvin",
+    "key": "qazvin city",
+    "lat": 36.27002,
+    "lon": 49.999986,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bandar Abbas",
+    "key": "bandar abbas",
+    "lat": 27.20406,
+    "lon": 56.272135,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Khomeini-Shahr",
+    "key": "khomeini-shahr",
+    "lat": 32.700419,
+    "lon": 51.469974,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ardabil",
+    "key": "ardabil",
+    "lat": 38.250003,
+    "lon": 48.300039,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Corramabade",
+    "key": "corramabade",
+    "lat": 33.480423,
+    "lon": 48.35001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Abadan",
+    "key": "abadan",
+    "lat": 30.330744,
+    "lon": 48.279678,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zanjan",
+    "key": "zanjan city",
+    "lat": 36.670021,
+    "lon": 48.500026,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sanandaj",
+    "key": "sanandaj",
+    "lat": 35.300002,
+    "lon": 47.020013,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Birjand",
+    "key": "birjand",
+    "lat": 32.88002,
+    "lon": 59.219941,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dezful",
+    "key": "dezful",
+    "lat": 32.380387,
+    "lon": 48.470002,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gorgan",
+    "key": "gorgan",
+    "lat": 36.830348,
+    "lon": 54.480023,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sari",
+    "key": "sari",
+    "lat": 36.55039,
+    "lon": 53.100004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Borujerd",
+    "key": "borujerd",
+    "lat": 33.919957,
+    "lon": 48.800008,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kashan",
+    "key": "kashan",
+    "lat": 33.980418,
+    "lon": 51.579993,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zabol",
+    "key": "zabol",
+    "lat": 31.021451,
+    "lon": 61.481456,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sabzevar",
+    "key": "sabzevar",
+    "lat": 36.220023,
+    "lon": 57.630012,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nishapur",
+    "key": "nishapur",
+    "lat": 36.220023,
+    "lon": 58.820017,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Amol",
+    "key": "amol",
+    "lat": 36.471325,
+    "lon": 52.363305,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bojnord",
+    "key": "bojnord",
+    "lat": 37.469998,
+    "lon": 57.320005,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Choi",
+    "key": "choi",
+    "lat": 38.530399,
+    "lon": 44.970009,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Varamin",
+    "key": "varamin",
+    "lat": 35.31659,
+    "lon": 51.646604,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Malayer",
+    "key": "malayer",
+    "lat": 34.319984,
+    "lon": 48.849979,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saveh",
+    "key": "saveh",
+    "lat": 35.021827,
+    "lon": 50.331439,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sirjan",
+    "key": "sirjan",
+    "lat": 29.46997,
+    "lon": 55.730024,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bushehr",
+    "key": "bushehr city",
+    "lat": 28.919978,
+    "lon": 50.830013,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mahabad",
+    "key": "mahabad",
+    "lat": 36.770377,
+    "lon": 45.720041,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gonbad-e Qabus",
+    "key": "gonbad-e qabus",
+    "lat": 37.251821,
+    "lon": 55.171454,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kashmar",
+    "key": "kashmar",
+    "lat": 35.18143,
+    "lon": 58.45146,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Masjed Soleyman",
+    "key": "masjed soleyman",
+    "lat": 31.979998,
+    "lon": 49.299926,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ilam",
+    "key": "ilam city",
+    "lat": 33.630414,
+    "lon": 46.430024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maragha",
+    "key": "maragha",
+    "lat": 37.420389,
+    "lon": 46.220011,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quchan",
+    "key": "quchan",
+    "lat": 37.111829,
+    "lon": 58.501483,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shahrud",
+    "key": "shahrud",
+    "lat": 36.422879,
+    "lon": 54.962888,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shahrekord",
+    "key": "shahrekord",
+    "lat": 32.320998,
+    "lon": 50.853997,
+    "labelRank": 9,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Marvdasht",
+    "key": "marvdasht",
+    "lat": 29.801448,
+    "lon": 52.821468,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Semnan",
+    "key": "semnan city",
+    "lat": 35.554792,
+    "lon": 53.374302,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fasa",
+    "key": "fasa",
+    "lat": 28.971835,
+    "lon": 53.671494,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qomsheh",
+    "key": "qomsheh",
+    "lat": 32.011494,
+    "lon": 51.859718,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Torbat-e-Jam",
+    "key": "torbat-e-jam",
+    "lat": 35.22334,
+    "lon": 60.612879,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ahar",
+    "key": "ahar",
+    "lat": 38.482908,
+    "lon": 47.062905,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bam",
+    "key": "bam city",
+    "lat": 29.107692,
+    "lon": 58.361957,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yasuj",
+    "key": "yasuj",
+    "lat": 30.659004,
+    "lon": 51.594004,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Behbahan",
+    "key": "behbahan",
+    "lat": 30.581814,
+    "lon": 50.261469,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chābahār",
+    "key": "chābahār",
+    "lat": 25.300405,
+    "lon": 60.629932,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bījār",
+    "key": "bījār",
+    "lat": 35.874075,
+    "lon": 47.593674,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qasr-e Shirin",
+    "key": "qasr-e shirin",
+    "lat": 34.512375,
+    "lon": 45.577207,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yazdan",
+    "key": "yazdan",
+    "lat": 33.506493,
+    "lon": 60.893792,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  }
+]

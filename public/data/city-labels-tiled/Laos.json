@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Vienciana",
+    "key": "vienciana",
+    "lat": 17.966693,
+    "lon": 102.59998,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Luang Prabang",
+    "key": "luang prabang",
+    "lat": 19.884534,
+    "lon": 102.14161,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pakxe",
+    "key": "pakxe",
+    "lat": 15.12206,
+    "lon": 105.818337,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Savannakhet",
+    "key": "savannakhet",
+    "lat": 16.537581,
+    "lon": 104.772974,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Thakhek",
+    "key": "thakhek",
+    "lat": 17.411197,
+    "lon": 104.836123,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xam Neua",
+    "key": "xam neua",
+    "lat": 20.416698,
+    "lon": 104.033305,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Phonsavan",
+    "key": "phonsavan",
+    "lat": 19.451896,
+    "lon": 103.195997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sayaburi",
+    "key": "sayaburi",
+    "lat": 19.250464,
+    "lon": 101.750058,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Champassak",
+    "key": "champassak",
+    "lat": 14.8833,
+    "lon": 105.866704,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ban Houayxay",
+    "key": "ban houayxay",
+    "lat": 20.2775,
+    "lon": 100.412778,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Phongsali",
+    "key": "phongsali",
+    "lat": 21.683304,
+    "lon": 102.099997,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salavan",
+    "key": "salavan",
+    "lat": 15.715998,
+    "lon": 106.426999,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Attapeu",
+    "key": "attapeu",
+    "lat": 14.807997,
+    "lon": 106.839,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Luang Namtha",
+    "key": "luang namtha",
+    "lat": 20.950002,
+    "lon": 101.416699,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

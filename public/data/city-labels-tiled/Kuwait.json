@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Kuwait",
+    "key": "kuwait city",
+    "lat": 29.371664,
+    "lon": 47.976355,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al Jahra",
+    "key": "al jahra",
+    "lat": 29.337471,
+    "lon": 47.658062,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hawalli",
+    "key": "hawalli city",
+    "lat": 29.33334,
+    "lon": 47.999998,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al Ahmadi",
+    "key": "al ahmadi city",
+    "lat": 29.076945,
+    "lon": 48.083773,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

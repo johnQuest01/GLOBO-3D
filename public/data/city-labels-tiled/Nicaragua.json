@@ -1,0 +1,173 @@
+[
+  {
+    "name": "Manágua",
+    "key": "manágua",
+    "lat": 12.154962,
+    "lon": -86.270437,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "León",
+    "key": "león (nicaragua)",
+    "lat": 12.435557,
+    "lon": -86.879436,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chinandega",
+    "key": "chinandega city",
+    "lat": 12.630378,
+    "lon": -87.130041,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Masaya",
+    "key": "masaya city",
+    "lat": 11.969001,
+    "lon": -86.094999,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Matagalpa",
+    "key": "matagalpa city",
+    "lat": 12.917079,
+    "lon": -85.916653,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Estelí",
+    "key": "estelí city",
+    "lat": 13.089988,
+    "lon": -86.359985,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Granada",
+    "key": "granada (nicaragua)",
+    "lat": 11.933728,
+    "lon": -85.949984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Juigalpa",
+    "key": "juigalpa",
+    "lat": 12.109996,
+    "lon": -85.379967,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jinotega",
+    "key": "jinotega city",
+    "lat": 13.091004,
+    "lon": -86.000004,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bluefields",
+    "key": "bluefields",
+    "lat": 11.999977,
+    "lon": -83.764949,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bilwi",
+    "key": "bilwi",
+    "lat": 14.033341,
+    "lon": -83.383371,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ocotal",
+    "key": "ocotal",
+    "lat": 13.629996,
+    "lon": -86.472999,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rivas",
+    "key": "rivas city",
+    "lat": 11.440373,
+    "lon": -85.819992,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jinotepe",
+    "key": "jinotepe",
+    "lat": 11.845998,
+    "lon": -86.194997,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Boaco",
+    "key": "boaco city",
+    "lat": 12.469974,
+    "lon": -85.660002,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Somoto",
+    "key": "somoto",
+    "lat": 13.475997,
+    "lon": -86.582997,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Carlos",
+    "key": "san carlos city",
+    "lat": 11.189359,
+    "lon": -84.775859,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Juan del Sur",
+    "key": "san juan del sur",
+    "lat": 11.249997,
+    "lon": -85.860041,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Juan de Nicarágua",
+    "key": "san juan de nicarágua",
+    "lat": 10.920405,
+    "lon": -83.699992,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

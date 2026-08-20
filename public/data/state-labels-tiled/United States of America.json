@@ -20,8 +20,8 @@
   {
     "name": "Montana",
     "key": "montana",
-    "lat": 43.487,
-    "lon": 23.1788,
+    "lat": 46.9965,
+    "lon": -110.044,
     "labelRank": 0,
     "minLabel": 3.5,
     "maxLabel": 7.5
@@ -236,8 +236,8 @@
   {
     "name": "Maryland",
     "key": "maryland",
-    "lat": 4.64403,
-    "lon": -7.69738,
+    "lat": 39.3874,
+    "lon": -77.0454,
     "labelRank": 0,
     "minLabel": 3.5,
     "maxLabel": 7.5

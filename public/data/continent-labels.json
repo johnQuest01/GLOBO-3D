@@ -47,8 +47,8 @@
   {
     "name": "Oceania",
     "key": "Oceania",
-    "lat": -25,
-    "lon": 135,
+    "lat": -14,
+    "lon": 165,
     "labelRank": 1,
     "minLabel": 0,
     "maxLabel": 3.6

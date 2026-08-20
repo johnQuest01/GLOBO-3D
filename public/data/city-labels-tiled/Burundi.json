@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Bujumbura",
+    "key": "bujumbura",
+    "lat": -3.376087,
+    "lon": 29.360006,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Muyinga",
+    "key": "muyinga city",
+    "lat": -2.852347,
+    "lon": 30.31726,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ruyigi",
+    "key": "ruyigi city",
+    "lat": -3.481002,
+    "lon": 30.243997,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gitega",
+    "key": "gitega city",
+    "lat": -3.426007,
+    "lon": 29.843594,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ngozi",
+    "key": "ngozi city",
+    "lat": -2.912004,
+    "lon": 29.825002,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rutana",
+    "key": "rutana city",
+    "lat": -3.931002,
+    "lon": 29.993005,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bururi",
+    "key": "bururi city",
+    "lat": -3.950729,
+    "lon": 29.61658,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Makamba",
+    "key": "makamba city",
+    "lat": -4.133304,
+    "lon": 29.8,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kayanza",
+    "key": "kayanza city",
+    "lat": -2.899998,
+    "lon": 29.566702,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Muramvya",
+    "key": "muramvya city",
+    "lat": -3.260997,
+    "lon": 29.611999,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bubanza",
+    "key": "bubanza city",
+    "lat": -3.083301,
+    "lon": 29.366703,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karuzi",
+    "key": "karuzi city",
+    "lat": -3.099996,
+    "lon": 30.162996,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cankuzo",
+    "key": "cankuzo city",
+    "lat": -3.166704,
+    "lon": 30.516697,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kirundo",
+    "key": "kirundo city",
+    "lat": -2.584722,
+    "lon": 30.097222,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  }
+]

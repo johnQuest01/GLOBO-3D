@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Roseau",
+    "key": "roseau",
+    "lat": 15.301016,
+    "lon": -61.387013,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  }
+]

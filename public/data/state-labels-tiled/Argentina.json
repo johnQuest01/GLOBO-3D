@@ -128,8 +128,8 @@
   {
     "name": "Santa Cruz",
     "key": "santa cruz",
-    "lat": -16.5168,
-    "lon": -61.137,
+    "lat": -49.0428,
+    "lon": -69.6596,
     "labelRank": 3,
     "minLabel": 6,
     "maxLabel": 11
@@ -209,8 +209,8 @@
   {
     "name": "Córdova",
     "key": "córdoba",
-    "lat": 8.43894,
-    "lon": -75.6522,
+    "lat": -32.3275,
+    "lon": -63.7501,
     "labelRank": 3,
     "minLabel": 6,
     "maxLabel": 11

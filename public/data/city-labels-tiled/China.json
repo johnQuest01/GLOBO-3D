@@ -1,0 +1,3611 @@
+[
+  {
+    "name": "Pequim",
+    "key": "beijing",
+    "lat": 39.9,
+    "lon": 116.4,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xangai",
+    "key": "shanghai",
+    "lat": 31.23,
+    "lon": 121.47,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xangai",
+    "key": "xangai",
+    "lat": 31.218398,
+    "lon": 121.434559,
+    "labelRank": 0,
+    "minLabel": 2,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cantão",
+    "key": "cantão",
+    "lat": 23.124723,
+    "lon": 113.261785,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shenzhen",
+    "key": "shenzhen",
+    "lat": 22.548097,
+    "lon": 114.061154,
+    "labelRank": 2,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wuhan",
+    "key": "wuhan",
+    "lat": 30.581977,
+    "lon": 114.268071,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tianjin",
+    "key": "tianjin city",
+    "lat": 39.082772,
+    "lon": 117.196607,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chongqing",
+    "key": "chongqing city",
+    "lat": 29.566923,
+    "lon": 106.593036,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shenyang",
+    "key": "shenyang",
+    "lat": 41.806925,
+    "lon": 123.448028,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dongguan",
+    "key": "dongguan",
+    "lat": 23.021537,
+    "lon": 113.750474,
+    "labelRank": 2,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chengdu",
+    "key": "chengdu",
+    "lat": 30.671946,
+    "lon": 104.068074,
+    "labelRank": 1,
+    "minLabel": 3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xian",
+    "key": "xian",
+    "lat": 34.276971,
+    "lon": 108.89305,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hechi",
+    "key": "hechi",
+    "lat": 24.695252,
+    "lon": 108.083,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nanquim",
+    "key": "nanquim",
+    "lat": 32.051965,
+    "lon": 118.778029,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guiyang",
+    "key": "guiyang",
+    "lat": 26.581989,
+    "lon": 106.718093,
+    "labelRank": 2,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Harbin",
+    "key": "harbin",
+    "lat": 45.75193,
+    "lon": 126.648039,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ürümqi",
+    "key": "ürümqi",
+    "lat": 43.806958,
+    "lon": 87.57306,
+    "labelRank": 1,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhangzhou",
+    "key": "zhangzhou",
+    "lat": 24.520375,
+    "lon": 117.670016,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Changchun",
+    "key": "changchun",
+    "lat": 43.866954,
+    "lon": 125.338042,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dalian",
+    "key": "dalian",
+    "lat": 38.924784,
+    "lon": 121.627885,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zibo",
+    "key": "zibo",
+    "lat": 36.821365,
+    "lon": 117.99646,
+    "labelRank": 2,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hangzhou",
+    "key": "hangzhou",
+    "lat": 30.25192,
+    "lon": 120.168073,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kunming",
+    "key": "kunming",
+    "lat": 25.042859,
+    "lon": 102.69744,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Taiyuan",
+    "key": "taiyuan",
+    "lat": 37.876958,
+    "lon": 112.543112,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qingdao",
+    "key": "qingdao",
+    "lat": 36.091925,
+    "lon": 120.328063,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jinan",
+    "key": "jinan",
+    "lat": 36.676928,
+    "lon": 116.993073,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhengzhou",
+    "key": "zhengzhou",
+    "lat": 34.756942,
+    "lon": 113.663147,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fucheu",
+    "key": "fucheu",
+    "lat": 26.081942,
+    "lon": 119.2981,
+    "labelRank": 2,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Changsha",
+    "key": "changsha",
+    "lat": 28.201916,
+    "lon": 112.968047,
+    "labelRank": 2,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xiangtan",
+    "key": "xiangtan",
+    "lat": 27.850431,
+    "lon": 112.900023,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lanzhou",
+    "key": "lanzhou",
+    "lat": 36.057974,
+    "lon": 103.790054,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xiamen",
+    "key": "xiamen",
+    "lat": 24.451938,
+    "lon": 118.078071,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lianshan",
+    "key": "lianshan",
+    "lat": 40.752287,
+    "lon": 120.828033,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shijiazhuang",
+    "key": "shijiazhuang",
+    "lat": 38.05196,
+    "lon": 114.478032,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jilin",
+    "key": "jilin city",
+    "lat": 43.851917,
+    "lon": 126.548097,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wenzhou",
+    "key": "wenzhou",
+    "lat": 28.021927,
+    "lon": 120.648147,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nanchang",
+    "key": "nanchang",
+    "lat": 28.681938,
+    "lon": 115.87805,
+    "labelRank": 2,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nanchong",
+    "key": "nanchong",
+    "lat": 30.782378,
+    "lon": 106.128051,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nanning",
+    "key": "nanning",
+    "lat": 22.821934,
+    "lon": 108.318099,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zaoshuang",
+    "key": "zaoshuang",
+    "lat": 34.881947,
+    "lon": 117.568077,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yantai",
+    "key": "yantai",
+    "lat": 37.532354,
+    "lon": 121.398075,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xuzhou",
+    "key": "xuzhou",
+    "lat": 34.281958,
+    "lon": 117.178074,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Linyi",
+    "key": "linyi",
+    "lat": 35.081935,
+    "lon": 118.32803,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Haikou",
+    "key": "haikou",
+    "lat": 20.050002,
+    "lon": 110.320026,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baotou",
+    "key": "baotou",
+    "lat": 40.654153,
+    "lon": 109.820074,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hefei",
+    "key": "hefei",
+    "lat": 31.851977,
+    "lon": 117.278068,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sucheu",
+    "key": "sucheu",
+    "lat": 33.638057,
+    "lon": 116.976943,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nanyang",
+    "key": "nanyang",
+    "lat": 33.002346,
+    "lon": 112.528074,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ningbo",
+    "key": "ningbo",
+    "lat": 29.881917,
+    "lon": 121.548092,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tangshan",
+    "key": "tangshan",
+    "lat": 39.626283,
+    "lon": 118.192431,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Datong",
+    "key": "datong",
+    "lat": 40.081966,
+    "lon": 113.298053,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shuyang",
+    "key": "shuyang",
+    "lat": 34.129866,
+    "lon": 118.77336,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shangqiu",
+    "key": "shangqiu",
+    "lat": 34.412942,
+    "lon": 115.64961,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wuxi",
+    "key": "wuxi",
+    "lat": 31.581942,
+    "lon": 120.298039,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hohhot",
+    "key": "hohhot",
+    "lat": 40.821921,
+    "lon": 111.65805,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Luoyang",
+    "key": "luoyang",
+    "lat": 34.64377,
+    "lon": 112.444471,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jingmen",
+    "key": "jingmen",
+    "lat": 30.651999,
+    "lon": 113.158061,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Daqing",
+    "key": "daqing",
+    "lat": 46.581905,
+    "lon": 124.998062,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lu'an",
+    "key": "lu'an",
+    "lat": 31.752293,
+    "lon": 116.478065,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wanzhou",
+    "key": "wanzhou",
+    "lat": 30.819991,
+    "lon": 108.400039,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Suzhou",
+    "key": "suzhou",
+    "lat": 31.302424,
+    "lon": 120.618071,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qiqihar",
+    "key": "qiqihar",
+    "lat": 47.346923,
+    "lon": 123.988046,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Anshan",
+    "key": "anshan",
+    "lat": 41.116967,
+    "lon": 122.938085,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Handan",
+    "key": "handan",
+    "lat": 36.581921,
+    "lon": 114.478032,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tai'an",
+    "key": "tai'an",
+    "lat": 36.201944,
+    "lon": 117.11813,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shantou",
+    "key": "shantou",
+    "lat": 23.371952,
+    "lon": 116.66808,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhanjiang",
+    "key": "zhanjiang",
+    "lat": 21.20193,
+    "lon": 110.378076,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xiantao",
+    "key": "xiantao",
+    "lat": 30.372352,
+    "lon": 113.438096,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Weifang",
+    "key": "weifang",
+    "lat": 36.702285,
+    "lon": 119.155626,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xinyang",
+    "key": "xinyang",
+    "lat": 32.132322,
+    "lon": 114.068032,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Luzhou",
+    "key": "luzhou",
+    "lat": 28.881926,
+    "lon": 105.378071,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ganzhou",
+    "key": "ganzhou",
+    "lat": 25.91998,
+    "lon": 114.950027,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Liuzhou",
+    "key": "liuzhou",
+    "lat": 24.320777,
+    "lon": 109.413529,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fushun",
+    "key": "fushun",
+    "lat": 41.867335,
+    "lon": 123.868054,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Changde",
+    "key": "changde",
+    "lat": 29.031943,
+    "lon": 111.6781,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Neijiang",
+    "key": "neijiang",
+    "lat": 29.582323,
+    "lon": 105.048066,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quanzhou",
+    "key": "quanzhou",
+    "lat": 24.901962,
+    "lon": 118.578041,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huainan",
+    "key": "huainan",
+    "lat": 32.63193,
+    "lon": 116.978035,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Suining",
+    "key": "suining",
+    "lat": 30.535279,
+    "lon": 105.531387,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mianyang",
+    "key": "mianyang",
+    "lat": 31.464828,
+    "lon": 104.689993,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maanshan",
+    "key": "maanshan",
+    "lat": 31.672564,
+    "lon": 118.485148,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yiyang",
+    "key": "yiyang",
+    "lat": 28.602356,
+    "lon": 112.328086,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Heze",
+    "key": "heze",
+    "lat": 35.231926,
+    "lon": 115.448103,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Changzhou",
+    "key": "changzhou",
+    "lat": 31.78193,
+    "lon": 119.968033,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chifeng",
+    "key": "chifeng",
+    "lat": 42.271961,
+    "lon": 118.948044,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huai’an",
+    "key": "huai’an",
+    "lat": 33.585165,
+    "lon": 119.065967,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mudanjiang",
+    "key": "mudanjiang",
+    "lat": 44.576963,
+    "lon": 129.588066,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huzhou",
+    "key": "huzhou",
+    "lat": 30.872321,
+    "lon": 120.098051,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tianshui",
+    "key": "tianshui",
+    "lat": 34.601964,
+    "lon": 105.918038,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Liupanshui",
+    "key": "liupanshui",
+    "lat": 26.596381,
+    "lon": 104.831386,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chaozhou",
+    "key": "chaozhou",
+    "lat": 21.920405,
+    "lon": 110.870018,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jining",
+    "key": "jining",
+    "lat": 35.402355,
+    "lon": 116.548087,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Leshan",
+    "key": "leshan",
+    "lat": 29.569042,
+    "lon": 103.731402,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shangrao",
+    "key": "shangrao",
+    "lat": 28.470393,
+    "lon": 117.969998,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yulin",
+    "key": "yulin",
+    "lat": 22.63192,
+    "lon": 110.148064,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xianyang",
+    "key": "xianyang",
+    "lat": 34.347501,
+    "lon": 108.712776,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baoding",
+    "key": "baoding",
+    "lat": 38.85834,
+    "lon": 115.468897,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zigong",
+    "key": "zigong",
+    "lat": 29.401946,
+    "lon": 104.778056,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ankang",
+    "key": "ankang",
+    "lat": 32.679981,
+    "lon": 109.020002,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jinhua",
+    "key": "jinhua",
+    "lat": 29.120043,
+    "lon": 119.649999,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhuzhou",
+    "key": "zhuzhou",
+    "lat": 27.831938,
+    "lon": 113.148088,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xiangyang",
+    "key": "xiangyang",
+    "lat": 32.021941,
+    "lon": 112.128098,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhucheng",
+    "key": "zhucheng",
+    "lat": 35.989959,
+    "lon": 119.380093,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xining",
+    "key": "xining",
+    "lat": 36.621944,
+    "lon": 101.768059,
+    "labelRank": 3,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhangjiakou",
+    "key": "zhangjiakou",
+    "lat": 40.805255,
+    "lon": 114.852027,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhuhai",
+    "key": "zhuhai",
+    "lat": 22.27889,
+    "lon": 113.565832,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jiamusi",
+    "key": "jiamusi",
+    "lat": 46.831967,
+    "lon": 130.348072,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hengyang",
+    "key": "hengyang",
+    "lat": 26.881971,
+    "lon": 112.58807,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Benxi",
+    "key": "benxi",
+    "lat": 41.332329,
+    "lon": 123.748061,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qinhuangdao",
+    "key": "qinhuangdao",
+    "lat": 39.932311,
+    "lon": 119.618081,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yongzhou",
+    "key": "yongzhou",
+    "lat": 26.41792,
+    "lon": 111.609135,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baoshan",
+    "key": "baoshan",
+    "lat": 25.119977,
+    "lon": 99.15001,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yinchuan",
+    "key": "yinchuan",
+    "lat": 38.46992,
+    "lon": 106.271092,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jiaxing",
+    "key": "jiaxing",
+    "lat": 30.772353,
+    "lon": 120.748037,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guilin",
+    "key": "guilin",
+    "lat": 25.281939,
+    "lon": 110.278082,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yichun",
+    "key": "yichun",
+    "lat": 27.835279,
+    "lon": 114.398054,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yangquan",
+    "key": "yangquan",
+    "lat": 37.869974,
+    "lon": 113.570008,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jixi",
+    "key": "jixi",
+    "lat": 45.301906,
+    "lon": 130.968085,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xinyi",
+    "key": "xinyi",
+    "lat": 34.380006,
+    "lon": 118.350026,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pingxiang",
+    "key": "pingxiang",
+    "lat": 27.621951,
+    "lon": 113.848097,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jinzhou",
+    "key": "jinzhou",
+    "lat": 41.122316,
+    "lon": 121.098094,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nantong",
+    "key": "nantong",
+    "lat": 31.982269,
+    "lon": 120.924587,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Foshan",
+    "key": "foshan",
+    "lat": 23.010477,
+    "lon": 113.113576,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huaibei",
+    "key": "huaibei",
+    "lat": 33.952314,
+    "lon": 116.748075,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xinyu",
+    "key": "xinyu",
+    "lat": 27.801966,
+    "lon": 114.928031,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xinxiang",
+    "key": "xinxiang",
+    "lat": 35.301575,
+    "lon": 113.908926,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yibin",
+    "key": "yibin",
+    "lat": 28.771933,
+    "lon": 104.568095,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bengbu",
+    "key": "bengbu",
+    "lat": 32.951936,
+    "lon": 117.328091,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Anyang",
+    "key": "anyang",
+    "lat": 36.081926,
+    "lon": 114.348066,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tongliao",
+    "key": "tongliao",
+    "lat": 43.621905,
+    "lon": 122.268048,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yichang",
+    "key": "yichang",
+    "lat": 30.701918,
+    "lon": 111.278073,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yangjiang",
+    "key": "yangjiang",
+    "lat": 21.850409,
+    "lon": 111.970002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kaifeng",
+    "key": "kaifeng",
+    "lat": 34.793814,
+    "lon": 114.354819,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dandong",
+    "key": "dandong",
+    "lat": 40.145554,
+    "lon": 124.391639,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xuanzhou",
+    "key": "xuanzhou",
+    "lat": 30.954446,
+    "lon": 118.753332,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rizhao",
+    "key": "rizhao",
+    "lat": 35.430381,
+    "lon": 119.450011,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jiaozuo",
+    "key": "jiaozuo",
+    "lat": 35.200691,
+    "lon": 113.259553,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhenjiang",
+    "key": "zhenjiang",
+    "lat": 32.17573,
+    "lon": 119.430481,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yarkand",
+    "key": "yarkand",
+    "lat": 38.426142,
+    "lon": 77.250003,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Anshun",
+    "key": "anshun",
+    "lat": 26.252345,
+    "lon": 105.928063,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zunyi",
+    "key": "zunyi",
+    "lat": 27.701972,
+    "lon": 106.918081,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pingdingshan",
+    "key": "pingdingshan",
+    "lat": 33.732353,
+    "lon": 113.298053,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yuci",
+    "key": "yuci",
+    "lat": 37.682345,
+    "lon": 112.728062,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yancheng",
+    "key": "yancheng",
+    "lat": 33.337877,
+    "lon": 120.16752,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Linfen",
+    "key": "linfen",
+    "lat": 36.082287,
+    "lon": 111.518058,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yueyang",
+    "key": "yueyang",
+    "lat": 29.381999,
+    "lon": 113.098065,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xingyi",
+    "key": "xingyi",
+    "lat": 25.092364,
+    "lon": 104.888075,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wuhu",
+    "key": "wuhu",
+    "lat": 31.352369,
+    "lon": 118.368028,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Langfang",
+    "key": "langfang",
+    "lat": 39.52231,
+    "lon": 116.678053,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhaotong",
+    "key": "zhaotong",
+    "lat": 27.322331,
+    "lon": 103.718069,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lingyuan",
+    "key": "lingyuan",
+    "lat": 41.241946,
+    "lon": 119.399165,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baoji",
+    "key": "baoji",
+    "lat": 34.380006,
+    "lon": 107.149986,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yingkou",
+    "key": "yingkou",
+    "lat": 40.672292,
+    "lon": 122.278073,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Liaoyang",
+    "key": "liaoyang",
+    "lat": 41.281944,
+    "lon": 123.17807,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shaoxing",
+    "key": "shaoxing",
+    "lat": 30.002323,
+    "lon": 120.5681,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yichun",
+    "key": "yichun city",
+    "lat": 47.701888,
+    "lon": 128.898031,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fuyang",
+    "key": "fuyang",
+    "lat": 30.055279,
+    "lon": 119.949999,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shiyan",
+    "key": "shiyan",
+    "lat": 32.570039,
+    "lon": 110.779997,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fuxin",
+    "key": "fuxin",
+    "lat": 42.012417,
+    "lon": 121.658059,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jincheng",
+    "key": "jincheng",
+    "lat": 35.500377,
+    "lon": 112.830002,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hegang",
+    "key": "hegang",
+    "lat": 47.346627,
+    "lon": 130.296732,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Beihai",
+    "key": "beihai",
+    "lat": 21.480406,
+    "lon": 109.100048,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shaoguan",
+    "key": "shaoguan",
+    "lat": 24.799971,
+    "lon": 113.579982,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lianyungang",
+    "key": "lianyungang",
+    "lat": 34.587014,
+    "lon": 119.226193,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qingyuan",
+    "key": "qingyuan",
+    "lat": 23.7004,
+    "lon": 113.030093,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Changzhi",
+    "key": "changzhi",
+    "lat": 36.183875,
+    "lon": 113.105282,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aksu",
+    "key": "aksu",
+    "lat": 41.150006,
+    "lon": 80.250026,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huangshi",
+    "key": "huangshi",
+    "lat": 30.220002,
+    "lon": 115.099992,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puyang",
+    "key": "puyang",
+    "lat": 35.700391,
+    "lon": 114.98,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhanyi",
+    "key": "zhanyi",
+    "lat": 25.600465,
+    "lon": 103.81665,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Turpan",
+    "key": "turpan",
+    "lat": 42.935375,
+    "lon": 89.165038,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shihezi",
+    "key": "shihezi",
+    "lat": 44.299969,
+    "lon": 86.029932,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhuozhou",
+    "key": "zhuozhou",
+    "lat": 39.540053,
+    "lon": 115.789976,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Changping",
+    "key": "changping",
+    "lat": 40.224766,
+    "lon": 116.194396,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Korla",
+    "key": "korla",
+    "lat": 41.729997,
+    "lon": 86.150028,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Taizhou",
+    "key": "taizhou",
+    "lat": 32.490406,
+    "lon": 119.900009,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xingtai",
+    "key": "xingtai",
+    "lat": 37.049972,
+    "lon": 114.500029,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Anqing",
+    "key": "anqing",
+    "lat": 30.499959,
+    "lon": 117.050002,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kumul",
+    "key": "kumul",
+    "lat": 42.826984,
+    "lon": 93.515005,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shuozhou",
+    "key": "shuozhou",
+    "lat": 39.300378,
+    "lon": 112.420001,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tongling",
+    "key": "tongling",
+    "lat": 30.950448,
+    "lon": 117.780035,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Weihai",
+    "key": "weihai",
+    "lat": 37.499971,
+    "lon": 122.099978,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Siping",
+    "key": "siping",
+    "lat": 43.170012,
+    "lon": 124.330023,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jiujiang",
+    "key": "jiujiang",
+    "lat": 29.72998,
+    "lon": 115.980042,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kuldja",
+    "key": "kuldja",
+    "lat": 43.900019,
+    "lon": 81.350011,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yangzhou",
+    "key": "yangzhou",
+    "lat": 32.399998,
+    "lon": 119.430012,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Linxia",
+    "key": "linxia",
+    "lat": 35.600009,
+    "lon": 103.200047,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jiangmen",
+    "key": "jiangmen",
+    "lat": 22.58039,
+    "lon": 113.080012,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cangzhou",
+    "key": "cangzhou",
+    "lat": 38.320386,
+    "lon": 116.870013,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ji'an",
+    "key": "ji'an",
+    "lat": 27.130423,
+    "lon": 114.999998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jingzhou",
+    "key": "jingzhou",
+    "lat": 30.320021,
+    "lon": 112.229986,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kashgar",
+    "key": "kashgar",
+    "lat": 39.476336,
+    "lon": 75.969926,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Liaoyuan",
+    "key": "liaoyuan",
+    "lat": 42.899977,
+    "lon": 125.129974,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shuangyashan",
+    "key": "shuangyashan",
+    "lat": 46.670419,
+    "lon": 131.350008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Songyuan",
+    "key": "songyuan",
+    "lat": 45.18038,
+    "lon": 124.820019,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wuwei",
+    "key": "wuwei",
+    "lat": 37.928007,
+    "lon": 102.641011,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yanji",
+    "key": "yanji",
+    "lat": 42.882304,
+    "lon": 129.512756,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhaoqing",
+    "key": "zhaoqing",
+    "lat": 23.050413,
+    "lon": 112.450025,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jiaojiang",
+    "key": "jiaojiang",
+    "lat": 28.680406,
+    "lon": 121.449992,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kuqa",
+    "key": "kuqa",
+    "lat": 41.727749,
+    "lon": 82.936374,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chaoyang",
+    "key": "chaoyang",
+    "lat": 41.550421,
+    "lon": 120.419978,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Panzhihua",
+    "key": "panzhihua",
+    "lat": 26.549993,
+    "lon": 101.730007,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jingdezhen",
+    "key": "jingdezhen",
+    "lat": 29.270421,
+    "lon": 117.18002,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hengshui",
+    "key": "hengshui",
+    "lat": 37.719983,
+    "lon": 115.700007,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qitaihe",
+    "key": "qitaihe",
+    "lat": 45.767852,
+    "lon": 131.00906,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chengde",
+    "key": "chengde",
+    "lat": 40.96038,
+    "lon": 117.93,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xuchang",
+    "key": "xuchang",
+    "lat": 34.02039,
+    "lon": 113.820019,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wuzhou",
+    "key": "wuzhou",
+    "lat": 23.480025,
+    "lon": 111.320016,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guangyuan",
+    "key": "guangyuan",
+    "lat": 32.429996,
+    "lon": 105.870013,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chaozhou",
+    "key": "chaozhou city",
+    "lat": 23.680039,
+    "lon": 116.630028,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Luohe",
+    "key": "luohe",
+    "lat": 33.570004,
+    "lon": 114.02998,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Meizhou",
+    "key": "meizhou",
+    "lat": 24.300492,
+    "lon": 116.119982,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xuanhua",
+    "key": "xuanhua",
+    "lat": 40.594407,
+    "lon": 115.024338,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hotan",
+    "key": "hotan",
+    "lat": 37.099711,
+    "lon": 79.926945,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jingmen",
+    "key": "jingmen city",
+    "lat": 31.03141,
+    "lon": 112.201034,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yuxi",
+    "key": "yuxi",
+    "lat": 24.379996,
+    "lon": 102.570008,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baicheng",
+    "key": "baicheng",
+    "lat": 45.620018,
+    "lon": 122.820038,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xichang",
+    "key": "xichang",
+    "lat": 27.880015,
+    "lon": 102.299998,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dezhou",
+    "key": "dezhou",
+    "lat": 37.450413,
+    "lon": 116.300022,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhoukou",
+    "key": "zhoukou",
+    "lat": 33.630414,
+    "lon": 114.630047,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Putian",
+    "key": "putian",
+    "lat": 25.430346,
+    "lon": 119.020011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quzhou",
+    "key": "quzhou",
+    "lat": 28.97044,
+    "lon": 118.869995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Longyan",
+    "key": "longyan",
+    "lat": 25.073515,
+    "lon": 116.995048,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sanya",
+    "key": "sanya",
+    "lat": 18.259104,
+    "lon": 109.504032,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wafangdian",
+    "key": "wafangdian",
+    "lat": 39.625913,
+    "lon": 121.995954,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Longxi",
+    "key": "longxi",
+    "lat": 35.002721,
+    "lon": 104.671479,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yumen",
+    "key": "yumen",
+    "lat": 39.830035,
+    "lon": 97.729993,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yan",
+    "key": "yan",
+    "lat": 29.98043,
+    "lon": 103.080002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tieling",
+    "key": "tieling",
+    "lat": 42.300375,
+    "lon": 123.819977,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hangu",
+    "key": "hangu",
+    "lat": 39.231958,
+    "lon": 117.776986,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Heyuan",
+    "key": "heyuan",
+    "lat": 23.730424,
+    "lon": 114.680018,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baishan",
+    "key": "baishan",
+    "lat": 41.900012,
+    "lon": 126.429998,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chenzhou",
+    "key": "chenzhou",
+    "lat": 25.800427,
+    "lon": 113.030093,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ninde",
+    "key": "ninde",
+    "lat": 26.680373,
+    "lon": 119.530058,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mengzi City",
+    "key": "mengzi city",
+    "lat": 23.361945,
+    "lon": 103.406132,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hulan Ergi",
+    "key": "hulan ergi",
+    "lat": 47.209972,
+    "lon": 123.610015,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huizhou",
+    "key": "huizhou",
+    "lat": 23.079972,
+    "lon": 114.399983,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tongchuan",
+    "key": "tongchuan",
+    "lat": 35.079989,
+    "lon": 109.029975,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jining",
+    "key": "jining city",
+    "lat": 41.029988,
+    "lon": 113.080012,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xinzhou",
+    "key": "xinzhou",
+    "lat": 38.410432,
+    "lon": 112.719983,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jinshi",
+    "key": "jinshi",
+    "lat": 29.632105,
+    "lon": 111.851715,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhuanghe",
+    "key": "zhuanghe",
+    "lat": 39.682292,
+    "lon": 122.96189,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karamay",
+    "key": "karamay",
+    "lat": 45.589942,
+    "lon": 84.859926,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chuxiong",
+    "key": "chuxiong",
+    "lat": 25.036416,
+    "lon": 101.545574,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Suihua",
+    "key": "suihua",
+    "lat": 46.630421,
+    "lon": 126.979991,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Linhai",
+    "key": "linhai",
+    "lat": 28.850008,
+    "lon": 121.119986,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Laiyang",
+    "key": "laiyang",
+    "lat": 36.968401,
+    "lon": 120.708435,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qinzhou",
+    "key": "qinzhou",
+    "lat": 21.950429,
+    "lon": 108.619974,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hebi",
+    "key": "hebi",
+    "lat": 35.950375,
+    "lon": 114.220046,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ulanhot",
+    "key": "ulanhot",
+    "lat": 46.080016,
+    "lon": 122.080031,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Linchuan",
+    "key": "linchuan",
+    "lat": 27.970346,
+    "lon": 116.360019,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhicheng",
+    "key": "zhicheng",
+    "lat": 30.300436,
+    "lon": 111.500005,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shishou",
+    "key": "shishou",
+    "lat": 29.700395,
+    "lon": 112.400002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hailar",
+    "key": "hailar",
+    "lat": 49.19998,
+    "lon": 119.700022,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhangye",
+    "key": "zhangye",
+    "lat": 38.929987,
+    "lon": 100.450034,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Beipião",
+    "key": "beipião",
+    "lat": 41.810018,
+    "lon": 120.760008,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Liaocheng",
+    "key": "liaocheng",
+    "lat": 36.430424,
+    "lon": 115.970017,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hancheng",
+    "key": "hancheng",
+    "lat": 35.47043,
+    "lon": 110.429993,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lassa",
+    "key": "lassa",
+    "lat": 29.645024,
+    "lon": 91.10001,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wuhai",
+    "key": "wuhai",
+    "lat": 39.664696,
+    "lon": 106.812229,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nanping",
+    "key": "nanping",
+    "lat": 26.630376,
+    "lon": 118.169986,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sanming",
+    "key": "sanming",
+    "lat": 26.229987,
+    "lon": 117.580048,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pingliang",
+    "key": "pingliang",
+    "lat": 35.530375,
+    "lon": 106.680093,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jiutai",
+    "key": "jiutai",
+    "lat": 44.144733,
+    "lon": 125.844349,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chibi",
+    "key": "chibi",
+    "lat": 29.72042,
+    "lon": 113.880015,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lianzhou",
+    "key": "lianzhou",
+    "lat": 24.781522,
+    "lon": 112.382535,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huangyan",
+    "key": "huangyan",
+    "lat": 28.65002,
+    "lon": 121.250004,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dunhua",
+    "key": "dunhua",
+    "lat": 43.350492,
+    "lon": 128.220018,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Anda",
+    "key": "anda",
+    "lat": 46.399996,
+    "lon": 125.32004,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhaodong",
+    "key": "zhaodong",
+    "lat": 46.080429,
+    "lon": 125.98,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baicheng",
+    "key": "baicheng city",
+    "lat": 23.899716,
+    "lon": 106.613327,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lishui",
+    "key": "lishui",
+    "lat": 28.45042,
+    "lon": 119.900009,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Weinan",
+    "key": "weinan",
+    "lat": 34.500438,
+    "lon": 109.500076,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fuyang",
+    "key": "fuyang city",
+    "lat": 32.900407,
+    "lon": 115.82,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Simao",
+    "key": "simao",
+    "lat": 22.780688,
+    "lon": 100.978167,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cidade de Xiaogan",
+    "key": "cidade de xiaogan",
+    "lat": 30.920398,
+    "lon": 113.900014,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cidade de Dali",
+    "key": "cidade de dali",
+    "lat": 25.593731,
+    "lon": 100.250319,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yulin",
+    "key": "yulin city",
+    "lat": 38.283308,
+    "lon": 109.733291,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bei’an",
+    "key": "bei’an",
+    "lat": 48.246263,
+    "lon": 126.528604,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guangshui",
+    "key": "guangshui",
+    "lat": 31.620381,
+    "lon": 114.000008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dingzhou",
+    "key": "dingzhou",
+    "lat": 38.500427,
+    "lon": 114.999998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wenshan City",
+    "key": "wenshan city",
+    "lat": 23.372358,
+    "lon": 104.249698,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Deyang",
+    "key": "deyang",
+    "lat": 31.133331,
+    "lon": 104.399974,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gejiu",
+    "key": "gejiu",
+    "lat": 23.37998,
+    "lon": 103.150076,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jiayuguan",
+    "key": "jiayuguan",
+    "lat": 39.82001,
+    "lon": 98.299984,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hanzhong",
+    "key": "hanzhong",
+    "lat": 33.129979,
+    "lon": 107.029994,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jinchang",
+    "key": "jinchang",
+    "lat": 38.495698,
+    "lon": 102.173908,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Altay",
+    "key": "altay city",
+    "lat": 47.866599,
+    "lon": 88.116626,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jieshou",
+    "key": "jieshou",
+    "lat": 33.250437,
+    "lon": 115.350003,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nong'an",
+    "key": "nong'an",
+    "lat": 44.4304,
+    "lon": 125.170075,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dunhuang",
+    "key": "dunhuang",
+    "lat": 40.142678,
+    "lon": 94.662015,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhalantun",
+    "key": "zhalantun",
+    "lat": 48.000002,
+    "lon": 122.719992,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shizuishan",
+    "key": "shizuishan",
+    "lat": 39.233276,
+    "lon": 106.769028,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yunyang",
+    "key": "yunyang",
+    "lat": 32.808164,
+    "lon": 110.813639,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shuangcheng",
+    "key": "shuangcheng",
+    "lat": 45.350344,
+    "lon": 126.279982,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Macheng",
+    "key": "macheng",
+    "lat": 31.179995,
+    "lon": 115.030022,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tengchong",
+    "key": "tengchong",
+    "lat": 25.033316,
+    "lon": 98.466589,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Laiwu",
+    "key": "laiwu",
+    "lat": 36.200412,
+    "lon": 117.660043,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jiaohe",
+    "key": "jiaohe",
+    "lat": 43.716284,
+    "lon": 127.345963,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nancha",
+    "key": "nancha",
+    "lat": 47.136359,
+    "lon": 129.285948,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xilinhot",
+    "key": "xilinhot",
+    "lat": 43.944332,
+    "lon": 116.044327,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huanghua",
+    "key": "huanghua",
+    "lat": 38.370434,
+    "lon": 117.330037,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tongren",
+    "key": "tongren",
+    "lat": 27.680415,
+    "lon": 109.130021,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huanren",
+    "key": "huanren",
+    "lat": 41.256331,
+    "lon": 125.345982,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Taonan",
+    "key": "taonan",
+    "lat": 45.330423,
+    "lon": 122.78004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yakeshi",
+    "key": "yakeshi",
+    "lat": 49.280414,
+    "lon": 120.730036,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Binzhou",
+    "key": "binzhou",
+    "lat": 37.38045,
+    "lon": 117.984443,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhijiang",
+    "key": "zhijiang",
+    "lat": 27.440946,
+    "lon": 109.678049,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shaowu",
+    "key": "shaowu",
+    "lat": 27.300387,
+    "lon": 117.500001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Linqing",
+    "key": "linqing",
+    "lat": 36.850398,
+    "lon": 115.680008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hailun",
+    "key": "hailun",
+    "lat": 47.450423,
+    "lon": 126.93002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dali",
+    "key": "dali",
+    "lat": 34.795252,
+    "lon": 109.937775,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tieli",
+    "key": "tieli",
+    "lat": 46.950376,
+    "lon": 128.050003,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Heihe",
+    "key": "heihe",
+    "lat": 50.250019,
+    "lon": 127.446009,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nehe",
+    "key": "nehe",
+    "lat": 48.489998,
+    "lon": 124.880015,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Golmud",
+    "key": "golmud",
+    "lat": 36.416626,
+    "lon": 94.883345,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Longjiang",
+    "key": "longjiang",
+    "lat": 47.340404,
+    "lon": 123.180016,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Houma",
+    "key": "houma",
+    "lat": 35.619982,
+    "lon": 111.209997,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chamdo",
+    "key": "chamdo",
+    "lat": 31.140938,
+    "lon": 97.180939,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tumen",
+    "key": "tumen",
+    "lat": 42.969999,
+    "lon": 129.820076,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fengzhen",
+    "key": "fengzhen",
+    "lat": 40.4547,
+    "lon": 113.144349,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shangzhi",
+    "key": "shangzhi",
+    "lat": 45.22043,
+    "lon": 127.970008,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Boli",
+    "key": "boli",
+    "lat": 45.756366,
+    "lon": 130.575947,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yishui",
+    "key": "yishui",
+    "lat": 35.790437,
+    "lon": 118.619984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Manzhouli",
+    "key": "manzhouli",
+    "lat": 49.599981,
+    "lon": 117.429979,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Da'an",
+    "key": "da'an",
+    "lat": 45.499999,
+    "lon": 124.299999,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fu'an",
+    "key": "fu'an",
+    "lat": 27.070426,
+    "lon": 119.620026,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Danjiangkou",
+    "key": "danjiangkou",
+    "lat": 32.520016,
+    "lon": 111.500005,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pingdu",
+    "key": "pingdu",
+    "lat": 36.790376,
+    "lon": 119.940007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fujin",
+    "key": "fujin",
+    "lat": 47.270382,
+    "lon": 132.019993,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wangqing",
+    "key": "wangqing",
+    "lat": 43.324783,
+    "lon": 129.734344,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Changting",
+    "key": "changting",
+    "lat": 25.866986,
+    "lon": 116.316662,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mishan",
+    "key": "mishan",
+    "lat": 45.550384,
+    "lon": 131.880002,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nenjiang",
+    "key": "nenjiang",
+    "lat": 49.179981,
+    "lon": 125.23002,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Panshi",
+    "key": "panshi",
+    "lat": 42.942636,
+    "lon": 126.056119,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Helong",
+    "key": "helong",
+    "lat": 42.534754,
+    "lon": 129.004363,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Linjiang",
+    "key": "linjiang",
+    "lat": 41.836347,
+    "lon": 126.935962,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nangong",
+    "key": "nangong",
+    "lat": 37.370392,
+    "lon": 115.370002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Koktokay",
+    "key": "koktokay",
+    "lat": 46.991123,
+    "lon": 89.530218,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xigazê",
+    "key": "xigazê",
+    "lat": 29.250009,
+    "lon": 88.88335,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shulan",
+    "key": "shulan",
+    "lat": 44.40911,
+    "lon": 126.948726,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pingyi",
+    "key": "pingyi",
+    "lat": 35.510428,
+    "lon": 117.620045,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Linkou",
+    "key": "linkou",
+    "lat": 45.281899,
+    "lon": 130.251884,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jiexiu",
+    "key": "jiexiu",
+    "lat": 37.040025,
+    "lon": 111.899981,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tailai",
+    "key": "tailai",
+    "lat": 46.390358,
+    "lon": 123.409976,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shanxian",
+    "key": "shanxian",
+    "lat": 34.79042,
+    "lon": 116.079984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lanxi",
+    "key": "lanxi",
+    "lat": 46.266361,
+    "lon": 126.275951,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Keshan",
+    "key": "keshan",
+    "lat": 48.026331,
+    "lon": 125.86595,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Anlu",
+    "key": "anlu",
+    "lat": 31.269989,
+    "lon": 113.670002,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baiquan",
+    "key": "baiquan",
+    "lat": 47.601835,
+    "lon": 126.081854,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rongzhag",
+    "key": "rongzhag",
+    "lat": 30.950448,
+    "lon": 101.916663,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Liuhe",
+    "key": "liuhe",
+    "lat": 42.278852,
+    "lon": 125.717329,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Minxian",
+    "key": "minxian",
+    "lat": 34.436178,
+    "lon": 104.03059,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huinan",
+    "key": "huinan",
+    "lat": 42.62294,
+    "lon": 126.26143,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qiemo",
+    "key": "qiemo",
+    "lat": 38.133756,
+    "lon": 85.533321,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qinggang",
+    "key": "qinggang",
+    "lat": 46.69003,
+    "lon": 126.100044,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fengcheng",
+    "key": "fengcheng",
+    "lat": 28.200409,
+    "lon": 115.770029,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Langzhong",
+    "key": "langzhong",
+    "lat": 31.57594,
+    "lon": 105.965563,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dengzhou",
+    "key": "dengzhou",
+    "lat": 32.680368,
+    "lon": 112.080022,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gānnán",
+    "key": "gānnán",
+    "lat": 47.920368,
+    "lon": 123.510021,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Suiling",
+    "key": "suiling",
+    "lat": 47.245991,
+    "lon": 127.105978,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alxa Zuoqi",
+    "key": "alxa zuoqi",
+    "lat": 38.83901,
+    "lon": 105.66863,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Changling",
+    "key": "changling",
+    "lat": 44.269997,
+    "lon": 123.989992,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xinqing",
+    "key": "xinqing",
+    "lat": 48.236344,
+    "lon": 129.505935,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ning'an",
+    "key": "ning'an",
+    "lat": 44.331337,
+    "lon": 129.465937,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qing'an",
+    "key": "qing'an",
+    "lat": 46.871854,
+    "lon": 127.511844,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bairin Zuoqi",
+    "key": "bairin zuoqi",
+    "lat": 43.983709,
+    "lon": 119.183361,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tacheng",
+    "key": "tacheng",
+    "lat": 46.750026,
+    "lon": 82.950017,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fengjie",
+    "key": "fengjie",
+    "lat": 31.050442,
+    "lon": 109.516664,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yishan",
+    "key": "yishan",
+    "lat": 24.500377,
+    "lon": 108.66669,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shaoyang",
+    "key": "shaoyang",
+    "lat": 26.999992,
+    "lon": 111.200075,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Genhe",
+    "key": "genhe",
+    "lat": 50.78332,
+    "lon": 121.516655,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hulín",
+    "key": "hulín",
+    "lat": 45.769027,
+    "lon": 132.992233,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oroqen Zizhiqi",
+    "key": "oroqen zizhiqi",
+    "lat": 50.566667,
+    "lon": 123.716676,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hanggin Houqi",
+    "key": "hanggin houqi",
+    "lat": 40.8847,
+    "lon": 107.140013,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yi'an",
+    "key": "yi'an",
+    "lat": 47.880397,
+    "lon": 125.29999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arxan",
+    "key": "arxan",
+    "lat": 47.183307,
+    "lon": 119.96662,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cidade de Pingxiang",
+    "key": "cidade de pingxiang",
+    "lat": 22.097371,
+    "lon": 106.756677,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wuyuan",
+    "key": "wuyuan",
+    "lat": 41.089622,
+    "lon": 108.272192,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bayan Obo",
+    "key": "bayan obo",
+    "lat": 41.767643,
+    "lon": 109.971106,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tonghua",
+    "key": "tonghua",
+    "lat": 41.679974,
+    "lon": 125.749988,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ang'angxi",
+    "key": "ang'angxi",
+    "lat": 47.160053,
+    "lon": 123.80003,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wuchuan",
+    "key": "wuchuan",
+    "lat": 41.095514,
+    "lon": 111.440836,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gyêgumdo",
+    "key": "gyêgumdo",
+    "lat": 32.997718,
+    "lon": 97.00674,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Erenhot",
+    "key": "erenhot",
+    "lat": 43.661558,
+    "lon": 111.965455,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yitulihe",
+    "key": "yitulihe",
+    "lat": 50.651623,
+    "lon": 121.516655,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xanadu",
+    "key": "xanadu",
+    "lat": 41.549439,
+    "lon": 113.533886,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cidade Antiga de Lijiang",
+    "key": "cidade antiga de lijiang",
+    "lat": 26.800004,
+    "lon": 100.266582,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Anxi",
+    "key": "anxi",
+    "lat": 40.500434,
+    "lon": 95.799982,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bugt",
+    "key": "bugt",
+    "lat": 48.783804,
+    "lon": 121.933374,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gyantsé",
+    "key": "gyantsé",
+    "lat": 28.950002,
+    "lon": 89.63333,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gar",
+    "key": "gar",
+    "lat": 32.200398,
+    "lon": 79.983324,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guide",
+    "key": "guide",
+    "lat": 36.045098,
+    "lon": 101.424186,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zixing",
+    "key": "zixing",
+    "lat": 25.969977,
+    "lon": 113.400044,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huize",
+    "key": "huize",
+    "lat": 26.350419,
+    "lon": 103.416674,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kailu",
+    "key": "kailu",
+    "lat": 43.583734,
+    "lon": 121.199982,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nagqu",
+    "key": "nagqu",
+    "lat": 31.480002,
+    "lon": 92.05003,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fulin",
+    "key": "fulin",
+    "lat": 29.350003,
+    "lon": 102.716717,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Linxi",
+    "key": "linxi",
+    "lat": 43.517071,
+    "lon": 118.033302,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nyingchi",
+    "key": "nyingchi",
+    "lat": 29.650744,
+    "lon": 94.36651,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dulan",
+    "key": "dulan",
+    "lat": 36.16659,
+    "lon": 98.266601,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  }
+]

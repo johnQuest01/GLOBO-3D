@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Daca",
+    "key": "daca",
+    "lat": 23.725006,
+    "lon": 90.406634,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chittagong",
+    "key": "chittagong city",
+    "lat": 22.331938,
+    "lon": 91.798022,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Khulna",
+    "key": "khulna city",
+    "lat": 22.841933,
+    "lon": 89.558055,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rajshahi",
+    "key": "rajshahi city",
+    "lat": 24.37693,
+    "lon": 88.603074,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cumilla",
+    "key": "cumilla",
+    "lat": 23.470414,
+    "lon": 91.16998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mymensingh",
+    "key": "mymensingh",
+    "lat": 24.750413,
+    "lon": 90.380002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rangpur",
+    "key": "rangpur city",
+    "lat": 25.750016,
+    "lon": 89.280018,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jessore",
+    "key": "jessore",
+    "lat": 23.170432,
+    "lon": 89.199971,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sylhet",
+    "key": "sylhet city",
+    "lat": 24.903556,
+    "lon": 91.873606,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saidpur",
+    "key": "saidpur",
+    "lat": 25.800427,
+    "lon": 88.999983,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Narayanganj",
+    "key": "narayanganj",
+    "lat": 23.620404,
+    "lon": 90.499995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barisal",
+    "key": "barisal city",
+    "lat": 22.700409,
+    "lon": 90.37499,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tangail",
+    "key": "tangail",
+    "lat": 24.249979,
+    "lon": 89.92003,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jamalpur",
+    "key": "jamalpur",
+    "lat": 24.90043,
+    "lon": 89.950003,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nawabganj",
+    "key": "nawabganj",
+    "lat": 24.580398,
+    "lon": 88.349997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pabna",
+    "key": "pabna",
+    "lat": 24.000381,
+    "lon": 89.249994,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

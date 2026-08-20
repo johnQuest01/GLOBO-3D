@@ -1,0 +1,173 @@
+[
+  {
+    "name": "Tegucigalpa",
+    "key": "tegucigalpa",
+    "lat": 14.103991,
+    "lon": -87.219475,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Pedro Sula",
+    "key": "san pedro sula",
+    "lat": 15.500022,
+    "lon": -88.029986,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "La Ceiba",
+    "key": "la ceiba",
+    "lat": 15.763106,
+    "lon": -86.796987,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Choluteca",
+    "key": "choluteca city",
+    "lat": 13.300673,
+    "lon": -87.190813,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Comayagua",
+    "key": "comayagua city",
+    "lat": 14.460395,
+    "lon": -87.649984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nacaome",
+    "key": "nacaome",
+    "lat": 13.529987,
+    "lon": -87.489968,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Juticalpa",
+    "key": "juticalpa",
+    "lat": 14.670408,
+    "lon": -86.229967,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Rosa de Copán",
+    "key": "santa rosa de copán",
+    "lat": 14.769989,
+    "lon": -88.779992,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "La Paz",
+    "key": "la paz (honduras)",
+    "lat": 14.319999,
+    "lon": -87.684003,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yoro",
+    "key": "yoro city",
+    "lat": 15.129829,
+    "lon": -87.128502,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Bárbara",
+    "key": "santa bárbara (honduras)",
+    "lat": 14.919003,
+    "lon": -88.236,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trujillo",
+    "key": "trujillo (honduras)",
+    "lat": 15.910358,
+    "lon": -85.960009,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nueva Ocotepeque",
+    "key": "nueva ocotepeque",
+    "lat": 14.436999,
+    "lon": -89.181999,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gracias",
+    "key": "gracias",
+    "lat": 14.583303,
+    "lon": -88.583301,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Roatán",
+    "key": "roatán",
+    "lat": 16.329996,
+    "lon": -86.518998,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "La Esperanza",
+    "key": "la esperanza",
+    "lat": 14.333004,
+    "lon": -88.166699,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto Lempira",
+    "key": "puerto lempira",
+    "lat": 15.262026,
+    "lon": -83.771642,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brus Laguna",
+    "key": "brus laguna",
+    "lat": 15.75042,
+    "lon": -84.479996,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yuscarán",
+    "key": "yuscarán",
+    "lat": 13.943997,
+    "lon": -86.850999,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  }
+]

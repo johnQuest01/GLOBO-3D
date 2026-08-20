@@ -1,0 +1,380 @@
+[
+  {
+    "name": "Cairo",
+    "key": "cairo",
+    "lat": 30.04,
+    "lon": 31.24,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alexandria",
+    "key": "alexandria",
+    "lat": 31.2,
+    "lon": 29.92,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cairo",
+    "key": "cairo city",
+    "lat": 30.051906,
+    "lon": 31.248022,
+    "labelRank": 0,
+    "minLabel": 1.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ismaília",
+    "key": "ismaília",
+    "lat": 30.590341,
+    "lon": 32.259984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Porto Said",
+    "key": "porto said",
+    "lat": 31.25999,
+    "lon": 32.290008,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Luxor",
+    "key": "luxor city",
+    "lat": 25.700019,
+    "lon": 32.650038,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Almançora",
+    "key": "almançora",
+    "lat": 31.050442,
+    "lon": 31.380038,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sohag",
+    "key": "sohag",
+    "lat": 26.550407,
+    "lon": 31.700018,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Suez",
+    "key": "suez",
+    "lat": 30.004976,
+    "lon": 32.549941,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Damanhur",
+    "key": "damanhur",
+    "lat": 31.050442,
+    "lon": 30.470016,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Minya",
+    "key": "minya",
+    "lat": 28.090003,
+    "lon": 30.749999,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Beni Suef",
+    "key": "beni suef",
+    "lat": 29.080381,
+    "lon": 31.09003,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Assiut",
+    "key": "assiut",
+    "lat": 27.18998,
+    "lon": 31.179947,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tanta",
+    "key": "tanta",
+    "lat": 30.790432,
+    "lon": 31.000009,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Faium",
+    "key": "faium",
+    "lat": 29.310031,
+    "lon": 30.839967,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Assuão",
+    "key": "assuão",
+    "lat": 24.087508,
+    "lon": 32.898911,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kom Ombo",
+    "key": "kom ombo",
+    "lat": 24.469991,
+    "lon": 32.95002,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qina",
+    "key": "qina city",
+    "lat": 26.150457,
+    "lon": 32.720008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Damieta",
+    "key": "damieta",
+    "lat": 31.420393,
+    "lon": 31.820011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zagazig",
+    "key": "zagazig",
+    "lat": 30.583332,
+    "lon": 31.51666,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mallawi",
+    "key": "mallawi",
+    "lat": 27.730412,
+    "lon": 30.839967,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Roseta",
+    "key": "roseta",
+    "lat": 31.460391,
+    "lon": 30.390021,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xibin El Kom",
+    "key": "xibin el kom",
+    "lat": 30.554482,
+    "lon": 31.006953,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alarixe",
+    "key": "alarixe",
+    "lat": 31.124882,
+    "lon": 33.800562,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Banha",
+    "key": "banha",
+    "lat": 30.466665,
+    "lon": 31.183336,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hurghada",
+    "key": "hurghada",
+    "lat": 27.230003,
+    "lon": 33.830017,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Samalut",
+    "key": "samalut",
+    "lat": 28.300429,
+    "lon": 30.710001,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kafr el-Sheikh",
+    "key": "kafr el-sheikh",
+    "lat": 31.109004,
+    "lon": 30.935998,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Girga",
+    "key": "girga",
+    "lat": 26.330368,
+    "lon": 31.880007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Marsa Matruh",
+    "key": "marsa matruh",
+    "lat": 31.350424,
+    "lon": 27.230007,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Esna",
+    "key": "esna",
+    "lat": 25.290406,
+    "lon": 32.549941,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Beni Mazar",
+    "key": "beni mazar",
+    "lat": 28.490392,
+    "lon": 30.809995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "El Kharga",
+    "key": "el kharga",
+    "lat": 25.440009,
+    "lon": 30.550011,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Safaga",
+    "key": "safaga",
+    "lat": 26.733729,
+    "lon": 33.933319,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "El-Tor",
+    "key": "el-tor",
+    "lat": 28.239389,
+    "lon": 33.614797,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oásis de Siuá",
+    "key": "oásis de siuá",
+    "lat": 29.200012,
+    "lon": 25.516675,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "El Dabaa",
+    "key": "el dabaa",
+    "lat": 31.033776,
+    "lon": 28.433293,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "El Alamein",
+    "key": "el alamein",
+    "lat": 30.817071,
+    "lon": 28.949954,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sallum",
+    "key": "sallum",
+    "lat": 31.566974,
+    "lon": 25.15003,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oásis de Farafra",
+    "key": "oásis de farafra",
+    "lat": 27.067145,
+    "lon": 27.966551,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al Qasr",
+    "key": "al qasr",
+    "lat": 25.700433,
+    "lon": 28.883291,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Berenice",
+    "key": "berenice",
+    "lat": 23.945992,
+    "lon": 35.48418,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  }
+]

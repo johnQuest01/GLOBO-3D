@@ -1,0 +1,218 @@
+[
+  {
+    "name": "Lisboa",
+    "key": "lisbon",
+    "lat": 38.72,
+    "lon": -9.14,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Porto",
+    "key": "porto city",
+    "lat": 41.151952,
+    "lon": -8.621947,
+    "labelRank": 6,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Braga",
+    "key": "braga city",
+    "lat": 41.554994,
+    "lon": -8.421331,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Funchal",
+    "key": "funchal",
+    "lat": 32.649983,
+    "lon": -16.88004,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Setúbal",
+    "key": "setúbal city",
+    "lat": 38.529959,
+    "lon": -8.90001,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Coimbra",
+    "key": "coimbra city",
+    "lat": 40.200374,
+    "lon": -8.41668,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ponta Delgada",
+    "key": "ponta delgada",
+    "lat": 37.748302,
+    "lon": -25.666584,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Portimão",
+    "key": "portimão",
+    "lat": 37.13374,
+    "lon": -8.533314,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Évora",
+    "key": "évora city",
+    "lat": 38.559996,
+    "lon": -7.905996,
+    "labelRank": 10,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aveiro",
+    "key": "aveiro city",
+    "lat": 40.641003,
+    "lon": -8.650998,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Leiria",
+    "key": "leiria city",
+    "lat": 39.738996,
+    "lon": -8.804996,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Faro",
+    "key": "faro city",
+    "lat": 37.01708,
+    "lon": -7.933273,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Beja",
+    "key": "beja city",
+    "lat": 38.014002,
+    "lon": -7.863002,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bragança",
+    "key": "bragança (portugal)",
+    "lat": 41.807997,
+    "lon": -6.755003,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Castelo Branco",
+    "key": "castelo branco city",
+    "lat": 39.810996,
+    "lon": -7.488,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guarda",
+    "key": "guarda city",
+    "lat": 40.541004,
+    "lon": -7.262001,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santarém",
+    "key": "santarém (portugal)",
+    "lat": 39.231,
+    "lon": -8.682003,
+    "labelRank": 10,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Viseu",
+    "key": "viseu city",
+    "lat": 40.656996,
+    "lon": -7.91,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Covilhã",
+    "key": "covilhã",
+    "lat": 40.283341,
+    "lon": -7.499992,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vila Real",
+    "key": "vila real city",
+    "lat": 41.293998,
+    "lon": -7.737003,
+    "labelRank": 10,
+    "minLabel": 7.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Portalegre",
+    "key": "portalegre city",
+    "lat": 39.290004,
+    "lon": -7.423001,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Viana do Castelo",
+    "key": "viana do castelo city",
+    "lat": 41.696235,
+    "lon": -8.844138,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Angra do Heroísmo",
+    "key": "angra do heroísmo",
+    "lat": 38.650391,
+    "lon": -27.21667,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Horta",
+    "key": "horta",
+    "lat": 38.534656,
+    "lon": -28.644757,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

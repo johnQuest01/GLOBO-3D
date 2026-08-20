@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Valeta",
+    "key": "valeta",
+    "lat": 35.899732,
+    "lon": 14.514711,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  }
+]

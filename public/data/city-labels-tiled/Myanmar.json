@@ -1,0 +1,335 @@
+[
+  {
+    "name": "Yangon",
+    "key": "yangon city",
+    "lat": 16.7853,
+    "lon": 96.164732,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mandalay",
+    "key": "mandalay city",
+    "lat": 21.971934,
+    "lon": 96.083083,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Naypyidaw",
+    "key": "naypyidaw",
+    "lat": 19.768503,
+    "lon": 96.116673,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moulmein",
+    "key": "moulmein",
+    "lat": 16.500426,
+    "lon": 97.670048,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pegu",
+    "key": "pegu",
+    "lat": 17.320014,
+    "lon": 96.514977,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Myeik",
+    "key": "myeik",
+    "lat": 12.454083,
+    "lon": 98.61149,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pathein",
+    "key": "pathein",
+    "lat": 16.770409,
+    "lon": 94.749968,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Monywa",
+    "key": "monywa",
+    "lat": 22.104993,
+    "lon": 95.149996,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hinthada",
+    "key": "hinthada",
+    "lat": 17.648263,
+    "lon": 95.467857,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sittwe",
+    "key": "sittwe",
+    "lat": 20.139997,
+    "lon": 92.880005,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Letpadan",
+    "key": "letpadan",
+    "lat": 17.781898,
+    "lon": 95.741484,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Myingyan",
+    "key": "myingyan",
+    "lat": 21.461828,
+    "lon": 95.391428,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Taunggyi",
+    "key": "taunggyi",
+    "lat": 20.781999,
+    "lon": 97.038001,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mudon",
+    "key": "mudon",
+    "lat": 16.261836,
+    "lon": 97.721466,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dawei",
+    "key": "dawei",
+    "lat": 14.097962,
+    "lon": 98.194978,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Myitkyina",
+    "key": "myitkyina",
+    "lat": 25.359627,
+    "lon": 97.392753,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Prome",
+    "key": "prome",
+    "lat": 18.81646,
+    "lon": 95.211439,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pakokku",
+    "key": "pakokku",
+    "lat": 21.332043,
+    "lon": 95.08664,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maguai",
+    "key": "maguai",
+    "lat": 20.144544,
+    "lon": 94.91957,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yenangyaung",
+    "key": "yenangyaung",
+    "lat": 20.46145,
+    "lon": 94.880968,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Taungû",
+    "key": "taungû",
+    "lat": 18.948287,
+    "lon": 96.417928,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chauk",
+    "key": "chauk",
+    "lat": 20.908477,
+    "lon": 94.823039,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shwebo",
+    "key": "shwebo",
+    "lat": 22.578272,
+    "lon": 95.692856,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sagaing",
+    "key": "sagaing city",
+    "lat": 21.879999,
+    "lon": 95.961997,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pyapon",
+    "key": "pyapon",
+    "lat": 16.293255,
+    "lon": 95.682883,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aunglan",
+    "key": "aunglan",
+    "lat": 19.378312,
+    "lon": 95.227924,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Thongwa",
+    "key": "thongwa",
+    "lat": 16.7547,
+    "lon": 96.519318,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ye",
+    "key": "ye",
+    "lat": 15.253267,
+    "lon": 97.867866,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hpa-An",
+    "key": "hpa-an",
+    "lat": 16.849998,
+    "lon": 97.616701,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Namtu",
+    "key": "namtu",
+    "lat": 23.083745,
+    "lon": 97.399987,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wakema",
+    "key": "wakema",
+    "lat": 16.613287,
+    "lon": 95.182862,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pyu",
+    "key": "pyu",
+    "lat": 18.477876,
+    "lon": 96.437876,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yandoon",
+    "key": "yandoon",
+    "lat": 17.043287,
+    "lon": 95.642885,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hakha",
+    "key": "hakha",
+    "lat": 22.650003,
+    "lon": 93.616705,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Loikaw",
+    "key": "loikaw",
+    "lat": 19.665,
+    "lon": 97.206004,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kyaukpyu",
+    "key": "kyaukpyu",
+    "lat": 19.429013,
+    "lon": 93.549404,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Labutta",
+    "key": "labutta",
+    "lat": 16.161893,
+    "lon": 94.701444,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

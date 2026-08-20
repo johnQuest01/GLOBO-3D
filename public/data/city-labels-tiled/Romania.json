@@ -1,0 +1,371 @@
+[
+  {
+    "name": "Bucareste",
+    "key": "bucareste",
+    "lat": 44.435318,
+    "lon": 26.098001,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Iași",
+    "key": "iași",
+    "lat": 47.168347,
+    "lon": 27.574947,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cluj-Napoca",
+    "key": "cluj-napoca",
+    "lat": 46.788422,
+    "lon": 23.598446,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Timișoara",
+    "key": "timișoara",
+    "lat": 45.758821,
+    "lon": 21.223448,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Galați",
+    "key": "galați",
+    "lat": 45.455893,
+    "lon": 28.045874,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brașov",
+    "key": "brașov",
+    "lat": 45.647535,
+    "lon": 25.60716,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Craiova",
+    "key": "craiova",
+    "lat": 44.326272,
+    "lon": 23.825874,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Constança",
+    "key": "constança",
+    "lat": 44.202662,
+    "lon": 28.609974,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ploiești",
+    "key": "ploiești",
+    "lat": 44.946906,
+    "lon": 26.036488,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oradea",
+    "key": "oradea",
+    "lat": 47.049982,
+    "lon": 21.919995,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brăila",
+    "key": "brăila",
+    "lat": 45.291996,
+    "lon": 27.969003,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bacău",
+    "key": "bacău",
+    "lat": 46.578435,
+    "lon": 26.919638,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pitești",
+    "key": "pitești",
+    "lat": 44.856318,
+    "lon": 24.875835,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arad",
+    "key": "arad city",
+    "lat": 46.17001,
+    "lon": 21.31998,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sibiu",
+    "key": "sibiu city",
+    "lat": 45.797113,
+    "lon": 24.137121,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Târgu Mureș",
+    "key": "târgu mureș",
+    "lat": 46.558203,
+    "lon": 24.557819,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baia Mare",
+    "key": "baia mare",
+    "lat": 47.659454,
+    "lon": 23.579067,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Buzău",
+    "key": "buzău",
+    "lat": 45.156506,
+    "lon": 26.806518,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Botoșani",
+    "key": "botoșani",
+    "lat": 47.748415,
+    "lon": 26.659654,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Satu Mare",
+    "key": "satu mare city",
+    "lat": 47.791998,
+    "lon": 22.885002,
+    "labelRank": 10,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Râmnicu Vâlcea",
+    "key": "râmnicu vâlcea",
+    "lat": 45.109998,
+    "lon": 24.382999,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Drobeta-Turnu Severin",
+    "key": "drobeta-turnu severin",
+    "lat": 44.645891,
+    "lon": 22.665893,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Suceava",
+    "key": "suceava city",
+    "lat": 47.637698,
+    "lon": 26.259317,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Focșani",
+    "key": "focșani",
+    "lat": 45.696551,
+    "lon": 27.186547,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Piatra Neamț",
+    "key": "piatra neamț",
+    "lat": 46.940004,
+    "lon": 26.382997,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Târgu Jiu",
+    "key": "târgu jiu",
+    "lat": 45.045,
+    "lon": 23.274001,
+    "labelRank": 10,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tulcea",
+    "key": "tulcea city",
+    "lat": 45.199346,
+    "lon": 28.796681,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Târgoviște",
+    "key": "târgoviște",
+    "lat": 44.937999,
+    "lon": 25.459003,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Reșița",
+    "key": "reșița",
+    "lat": 45.296962,
+    "lon": 21.886509,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bistrița",
+    "key": "bistrița",
+    "lat": 47.138004,
+    "lon": 24.513004,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Slatina",
+    "key": "slatina",
+    "lat": 44.434998,
+    "lon": 24.371002,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Călărași",
+    "key": "călărași city",
+    "lat": 44.20628,
+    "lon": 27.325918,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vaslui",
+    "key": "vaslui city",
+    "lat": 46.633329,
+    "lon": 27.733339,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Giurgiu",
+    "key": "giurgiu city",
+    "lat": 43.901807,
+    "lon": 25.966325,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Deva",
+    "key": "deva",
+    "lat": 45.883323,
+    "lon": 22.916674,
+    "labelRank": 10,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alba Iulia",
+    "key": "alba iulia",
+    "lat": 46.077003,
+    "lon": 23.580001,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zalău",
+    "key": "zalău",
+    "lat": 47.175003,
+    "lon": 23.063005,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sfântu Gheorghe",
+    "key": "sfântu gheorghe",
+    "lat": 45.867996,
+    "lon": 25.793001,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Slobozia",
+    "key": "slobozia",
+    "lat": 44.569998,
+    "lon": 27.381997,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alexandria",
+    "key": "alexandria (romania)",
+    "lat": 43.97437,
+    "lon": 25.329885,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Miercurea Ciuc",
+    "key": "miercurea ciuc",
+    "lat": 46.360998,
+    "lon": 25.524,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  }
+]

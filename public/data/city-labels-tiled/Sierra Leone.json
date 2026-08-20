@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Freetown",
+    "key": "freetown",
+    "lat": 8.471957,
+    "lon": -13.236162,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bo",
+    "key": "bo",
+    "lat": 7.970016,
+    "lon": -11.740018,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kenema",
+    "key": "kenema",
+    "lat": 7.880409,
+    "lon": -11.189974,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Makeni",
+    "key": "makeni",
+    "lat": 8.880426,
+    "lon": -12.049973,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Koidu",
+    "key": "koidu",
+    "lat": 8.440478,
+    "lon": -10.849994,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

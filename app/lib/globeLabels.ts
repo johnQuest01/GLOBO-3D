@@ -43,6 +43,14 @@ export interface PlacedLabel {
   feature: LabelFeature;
   /** Altura do texto em pixels de tela (o rótulo tem tamanho fixo em tela). */
   fontPx: number;
+  /**
+   * Deslocamento do texto em relação ao ponto do lugar, em múltiplos do
+   * fontSize ("em"). Quase sempre zero; vira diferente de zero quando o ponto
+   * exato já estava ocupado e o nome coube ao lado ou embaixo (ver
+   * PLACEMENT_OFFSETS).
+   */
+  offsetEmX: number;
+  offsetEmY: number;
 }
 
 export interface ScreenRect {
@@ -162,18 +170,48 @@ function clamp01(value: number): number {
 function layerRamp(layer: LabelLayer, zoom: number): number {
   switch (layer) {
     case 'continent':
-      return 46 * clamp01((3.6 - zoom) / 1.2);
+      // Estreito de proposito. O anterior (46 ate o zoom 3.6) fazia o
+      // continente ganhar do pais no MESMO ponto: medido, "America do Sul"
+      // derrubava "Brasil" e "Oceania" derrubava "Australia" na vista de
+      // mundo. Continente e o degrau de quando quase nenhum pais cabe; a
+      // partir do zoom ~2.2 quem manda e o pais.
+      return 34 * clamp01((2.9 - zoom) / 1.0);
     case 'country':
       return 40 * clamp01((5.6 - zoom) / 2.2);
     case 'state':
-      return 32 * clamp01((zoom - 3.2) / 1.6);
+      return 34 * clamp01((zoom - 3.0) / 1.4);
     case 'city':
-      return 38 * clamp01((zoom - 4.4) / 1.6);
+      return 40 * clamp01((zoom - 4.0) / 1.4);
   }
 }
 
 /** Bônus para quem já estava na tela — evita nome piscando durante o giro. */
 export const STICKY_BONUS = 22;
+
+/**
+ * Folga sobre o MIN_LABEL do Natural Earth, por camada.
+ *
+ * O MIN_LABEL foi feito para mapa impresso, onde o nome precisa caber com
+ * folga tipográfica. Aqui a disputa por espaço já é resolvida em pixel, então
+ * a faixa pode abrir antes sem virar bagunça: quem não couber é descartado na
+ * colisão, não na tabela.
+ *
+ * Medido na vista de mundo (zoom 2,74): a faixa de zoom sozinha descartava 311
+ * dos 369 nomes candidatos — Uruguai, Guiana, Suriname e Panamá ficavam de
+ * fora com a tela vazia ao lado. Esta folga é o que devolve esses nomes.
+ */
+const MIN_LABEL_BONUS: Record<LabelLayer, number> = {
+  continent: 0,
+  country: 0.7,
+  state: 0.5,
+  // Cidade não usa o Natural Earth: a faixa dela sai de `cityZoomRange`.
+  city: 0,
+};
+
+/** MIN_LABEL do dado já com a folga da camada aplicada. */
+export function effectiveMinLabel(feature: LabelFeature): number {
+  return feature.minLabel - MIN_LABEL_BONUS[feature.layer];
+}
 
 export function labelScore(
   feature: LabelFeature,
@@ -181,7 +219,7 @@ export function labelScore(
   wasVisible: boolean,
 ): number {
   const importance = (10 - feature.labelRank) * 8;
-  const entering = clamp01((zoom - feature.minLabel) / 0.6);
+  const entering = clamp01((zoom - effectiveMinLabel(feature)) / 0.6);
   const leaving = clamp01((feature.maxLabel - zoom) / 0.6);
 
   return (
@@ -238,9 +276,17 @@ export function labelWorldScale(
   return (fontPx * 2 * depth * tanHalfFov) / Math.max(1, viewportHeightPx);
 }
 
-/** Quantos nomes cabem confortavelmente nesta tela. */
+/**
+ * Quantos nomes cabem confortavelmente nesta tela.
+ *
+ * O divisor é a área média que um nome ocupa com o respiro dele. Em 17000 o
+ * teto ficava em 54 nomes no desktop, mas as vistas reais colocavam de 10 a 32
+ * — ou seja, o teto nem era o limite. Em 12000 ele deixa de ser o gargalo em
+ * qualquer vista, e quem passa a decidir é a colisão em pixel, que é o critério
+ * certo. No celular sobe de 18 para 25, que é o ganho que se enxerga.
+ */
 export function maxLabelsForViewport(width: number, height: number): number {
-  return THREE.MathUtils.clamp(Math.round((width * height) / 17000), 12, 90);
+  return THREE.MathUtils.clamp(Math.round((width * height) / 12000), 16, 120);
 }
 
 /**
@@ -318,10 +364,36 @@ export interface PlacementOptions {
   blockedRects: ScreenRect[];
 }
 
-const HORIZONTAL_GAP_PX = 7;
-const VERTICAL_GAP_PX = 5;
+const HORIZONTAL_GAP_PX = 5;
+const VERTICAL_GAP_PX = 4;
 /** Quem já está na tela cede um pouco da própria folga para não sair à toa. */
 const STICKY_GAP_FACTOR = 0.75;
+
+/**
+ * Posições que um nome tenta, em ordem, quando o ponto exato já está tomado.
+ * São pares (x, y) em "quantos passos" para o lado e para baixo/cima.
+ *
+ * É o que os mapas fazem: o nome de uma área não precisa nascer exatamente no
+ * centroide dela — pode assentar logo abaixo ou ao lado e continuar lendo como
+ * o nome daquela mancha. Medido, era a colisão no ponto exato que derrubava
+ * "Goiás" (contra "Brasil"), "Espírito Santo" (contra "Minas Gerais"),
+ * "Sergipe" (contra "Bahia") e "Uruguai" (contra "Argentina").
+ *
+ * CIDADE NÃO ENTRA NESSA. O ponto de uma cidade é o lugar dela, não um centro
+ * aproximado de mancha: deslocar o texto passaria a apontar para o município
+ * vizinho. Cidade só é colocada no ponto exato — se não couber, fica de fora.
+ */
+const AREA_OFFSETS: readonly (readonly [number, number])[] = [
+  [0, 0],
+  [0, 1],
+  [0, -1],
+  [1, 0],
+  [-1, 0],
+];
+const POINT_OFFSETS: readonly (readonly [number, number])[] = [[0, 0]];
+
+/** Passo vertical do deslocamento, em múltiplos da altura do texto. */
+const OFFSET_STEP_Y = 1.15;
 
 /**
  * Escolhe, em ordem de prioridade, os nomes que cabem na tela sem se tocar.
@@ -376,8 +448,8 @@ export function placeLabels(
     projected.copy(feature.position).project(camera);
     if (projected.z > 1) continue;
 
-    const centerX = (projected.x * 0.5 + 0.5) * width;
-    const centerY = (1 - (projected.y * 0.5 + 0.5)) * height;
+    const anchorX = (projected.x * 0.5 + 0.5) * width;
+    const anchorY = (1 - (projected.y * 0.5 + 0.5)) * height;
 
     const fontPx = labelFontPx(feature, viewportShortSide);
     const sticky = visibleIds.has(feature.id);
@@ -386,38 +458,59 @@ export function placeLabels(
     const textHalfWidth = (textEmWidth(feature.name) * fontPx) / 2;
     const textHalfHeight = fontPx / 2;
 
-    // Caixa do texto: é ela que precisa caber na tela e ficar longe da interface.
-    const textBox: Box = {
-      left: centerX - textHalfWidth,
-      right: centerX + textHalfWidth,
-      top: centerY - textHalfHeight,
-      bottom: centerY + textHalfHeight,
-    };
+    const offsets = feature.layer === 'city' ? POINT_OFFSETS : AREA_OFFSETS;
+    const stepX = textHalfWidth + HORIZONTAL_GAP_PX * 2;
+    const stepY = fontPx * OFFSET_STEP_Y;
 
-    // O nome tem que caber inteiro na tela (nada de texto cortado na borda).
-    if (
-      textBox.left < 2 ||
-      textBox.right > width - 2 ||
-      textBox.top < 2 ||
-      textBox.bottom > height - 2
-    ) {
-      continue;
+    for (const [passoX, passoY] of offsets) {
+      const deslocX = passoX * stepX;
+      const deslocY = passoY * stepY;
+      const centerX = anchorX + deslocX;
+      const centerY = anchorY + deslocY;
+
+      // Caixa do texto: é ela que precisa caber na tela e ficar longe da
+      // interface.
+      const textBox: Box = {
+        left: centerX - textHalfWidth,
+        right: centerX + textHalfWidth,
+        top: centerY - textHalfHeight,
+        bottom: centerY + textHalfHeight,
+      };
+
+      // O nome tem que caber inteiro na tela (nada de texto cortado na borda).
+      if (
+        textBox.left < 2 ||
+        textBox.right > width - 2 ||
+        textBox.top < 2 ||
+        textBox.bottom > height - 2
+      ) {
+        continue;
+      }
+
+      if (blockedRects.some((rect) => boxHitsRect(textBox, rect))) continue;
+
+      // Caixa de colisão: o texto mais a folga que separa um nome do outro.
+      const box: Box = {
+        left: textBox.left - HORIZONTAL_GAP_PX * gapFactor,
+        right: textBox.right + HORIZONTAL_GAP_PX * gapFactor,
+        top: textBox.top - VERTICAL_GAP_PX * gapFactor,
+        bottom: textBox.bottom + VERTICAL_GAP_PX * gapFactor,
+      };
+
+      if (boxes.some((other) => boxesOverlap(box, other))) continue;
+
+      boxes.push(box);
+      placed.push({
+        feature,
+        fontPx,
+        // Em "em": é assim que o rótulo aplica o deslocamento, já que ele é
+        // desenhado com fontSize 1 e escalado para medir `fontPx` na tela.
+        offsetEmX: deslocX / fontPx,
+        // Tela cresce para baixo, mundo cresce para cima.
+        offsetEmY: -deslocY / fontPx,
+      });
+      break;
     }
-
-    if (blockedRects.some((rect) => boxHitsRect(textBox, rect))) continue;
-
-    // Caixa de colisão: o texto mais a folga que separa um nome do outro.
-    const box: Box = {
-      left: textBox.left - HORIZONTAL_GAP_PX * gapFactor,
-      right: textBox.right + HORIZONTAL_GAP_PX * gapFactor,
-      top: textBox.top - VERTICAL_GAP_PX * gapFactor,
-      bottom: textBox.bottom + VERTICAL_GAP_PX * gapFactor,
-    };
-
-    if (boxes.some((other) => boxesOverlap(box, other))) continue;
-
-    boxes.push(box);
-    placed.push({ feature, fontPx });
   }
 
   return placed;
@@ -456,11 +549,12 @@ export function pickVisibleCountries<T extends { position: THREE.Vector3 }>(
 /** Menor `minLabel` que um estado costuma ter no Natural Earth. */
 export const STATE_LAYER_ZOOM = 3.2;
 /** Zoom a partir do qual as cidades começam a valer a pena. */
-export const CITY_LAYER_ZOOM = 4.4;
+export const CITY_LAYER_ZOOM = 4.1;
 
-/** Faixa de zoom de uma cidade, derivada do "rank" editorial (1 = maior). */
-export function cityZoomRange(rank: number): { minLabel: number; maxLabel: number } {
-  const safeRank = THREE.MathUtils.clamp(Math.round(rank) || 3, 1, 5);
-  const minLabel = [4.6, 5.3, 5.8, 6.2, 6.6][safeRank - 1];
-  return { minLabel, maxLabel: 24 };
-}
+/**
+ * A faixa de zoom de cada cidade NÃO é calculada aqui: vem pronta no tile
+ * (`city-labels-tiled/`), gerado pelo preprocess. Para as cidades do Natural
+ * Earth ela é o MIN_ZOOM do próprio dado; para as curadas do projeto, a tabela
+ * `CURATED_MIN_LABEL` do script. É o mesmo tratamento que país e estado já
+ * recebiam — a tabela de "rank" que existia aqui era a exceção.
+ */

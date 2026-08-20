@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Honiara",
+    "key": "honiara",
+    "lat": -9.437994,
+    "lon": 159.949766,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gizo",
+    "key": "gizo",
+    "lat": -8.099623,
+    "lon": 156.835016,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lata",
+    "key": "lata",
+    "lat": -10.738018,
+    "lon": 165.856735,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  }
+]

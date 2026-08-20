@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Copenhaga",
+    "key": "copenhaga",
+    "lat": 55.68051,
+    "lon": 12.56154,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aarhus",
+    "key": "aarhus",
+    "lat": 56.157204,
+    "lon": 10.210684,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Odense",
+    "key": "odense",
+    "lat": 55.400377,
+    "lon": 10.383335,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aalborg",
+    "key": "aalborg",
+    "lat": 57.033714,
+    "lon": 9.916593,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Esbjerg",
+    "key": "esbjerg",
+    "lat": 55.467039,
+    "lon": 8.450016,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vejle",
+    "key": "vejle",
+    "lat": 55.709001,
+    "lon": 9.534997,
+    "labelRank": 10,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Roskilde",
+    "key": "roskilde",
+    "lat": 55.649974,
+    "lon": 12.083334,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Viborg",
+    "key": "viborg",
+    "lat": 56.433337,
+    "lon": 9.399984,
+    "labelRank": 8,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Svendborg",
+    "key": "svendborg",
+    "lat": 55.070423,
+    "lon": 10.616654,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hillerød",
+    "key": "hillerød",
+    "lat": 55.933299,
+    "lon": 12.316698,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Frederikshavn",
+    "key": "frederikshavn",
+    "lat": 57.433689,
+    "lon": 10.5333,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sorø",
+    "key": "sorø",
+    "lat": 55.432998,
+    "lon": 11.566702,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

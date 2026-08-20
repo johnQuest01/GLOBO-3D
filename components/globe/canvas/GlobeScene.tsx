@@ -42,8 +42,9 @@ interface GlobeSceneProps {
   pinnedLocations: PinnedLocation[];
   tourismPin: PinnedLocation | null;
   animationState: AnimationState;
-  setIsHighResTextureActive: Dispatch<SetStateAction<boolean>>;
-  isHighResTextureActive: boolean;
+  /** Liga/desliga o que só aparece com a câmera perto (hoje, os anúncios). */
+  setIsZoomedIn: Dispatch<SetStateAction<boolean>>;
+  isZoomedIn: boolean;
   activeAds: AdData[];
   countryLabels: CountryLabelData[];
   continentLabels: ContinentLabelData[];
@@ -71,8 +72,8 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
     pinnedLocations,
     tourismPin,
     animationState,
-    setIsHighResTextureActive,
-    isHighResTextureActive,
+    setIsZoomedIn,
+    isZoomedIn,
     activeAds,
     countryLabels,
     continentLabels,
@@ -84,13 +85,7 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
 
   const controlsRef = useRef<OrbitControlsImpl>(null);
 
-  const {
-    placeholderTexture,
-    lodTextures,
-    areLodTexturesReady,
-    lodConfig,
-    requestLevel,
-  } = useGlobeTextures();
+  const { placeholderTexture, dayTexture } = useGlobeTextures();
 
   const missilePaths = useMemo(() => {
     const kievVec = latLonToVector3(COORDS.kiev.lat, COORDS.kiev.lon, SPHERE_RADIUS);
@@ -102,6 +97,16 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
   }, []);
 
   const isInteractive = !isPopupOpen;
+
+  /**
+   * Chaves dos lugares que estão com pino. Vai para os rótulos, que escondem o
+   * nome desses lugares enquanto o card azul do pino estiver na tela.
+   */
+  const pinnedKeys = useMemo(() => {
+    const keys = new Set(pinnedLocations.map((pin) => pin.key));
+    if (tourismPin) keys.add(tourismPin.key);
+    return keys;
+  }, [pinnedLocations, tourismPin]);
 
   /**
    * Giro da Terra no modo Relógio.
@@ -144,12 +149,9 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
         <Atmosphere />
         <Earth
           placeholderTexture={placeholderTexture}
-          lodTextures={lodTextures}
-          lodConfig={lodConfig}
-          areLodTexturesReady={areLodTexturesReady}
+          dayTexture={dayTexture}
           isInteractive={isInteractive}
-          onLODChange={setIsHighResTextureActive}
-          requestLevel={requestLevel}
+          onZoomedInChange={setIsZoomedIn}
           mode={globeMode}
         />
 
@@ -169,6 +171,7 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
           popupName={popupName}
           isPopupOpen={isPopupOpen}
           openPopup={openPopup}
+          pinnedKeys={pinnedKeys}
         />
 
         {pinnedLocations.map((pin) => (
@@ -199,7 +202,7 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
           </>
         )}
 
-        {isHighResTextureActive && !isPopupOpen && (
+        {isZoomedIn && !isPopupOpen && (
           <Advertisements ads={activeAds} />
         )}
       </Suspense>

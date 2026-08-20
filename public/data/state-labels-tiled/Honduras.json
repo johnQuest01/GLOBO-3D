@@ -29,8 +29,8 @@
   {
     "name": "La Paz",
     "key": "la paz",
-    "lat": -14.8335,
-    "lon": -68.2128,
+    "lat": 14.138,
+    "lon": -87.9144,
     "labelRank": 9,
     "minLabel": 8,
     "maxLabel": 11
@@ -110,8 +110,8 @@
   {
     "name": "Colón",
     "key": "colón",
-    "lat": 9.17018,
-    "lon": -79.9683,
+    "lat": 15.7786,
+    "lon": -85.7236,
     "labelRank": 7,
     "minLabel": 8,
     "maxLabel": 11

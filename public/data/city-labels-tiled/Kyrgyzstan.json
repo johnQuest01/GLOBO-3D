@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Bisqueque",
+    "key": "bisqueque",
+    "lat": 42.875025,
+    "lon": 74.583258,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Osh",
+    "key": "osh city",
+    "lat": 40.540405,
+    "lon": 72.790017,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jalal-Abad",
+    "key": "jalal-abad city",
+    "lat": 40.942887,
+    "lon": 73.00251,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tokmok",
+    "key": "tokmok",
+    "lat": 42.829878,
+    "lon": 75.284593,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kara-Balta",
+    "key": "kara-balta",
+    "lat": 42.830627,
+    "lon": 73.88566,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karakol",
+    "key": "karakol",
+    "lat": 42.492043,
+    "lon": 78.38182,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Naryn",
+    "key": "naryn city",
+    "lat": 41.426346,
+    "lon": 75.991062,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Balykchy",
+    "key": "balykchy",
+    "lat": 42.456025,
+    "lon": 76.185365,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Talas",
+    "key": "talas city",
+    "lat": 42.518372,
+    "lon": 72.242918,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Toktogul",
+    "key": "toktogul",
+    "lat": 41.882571,
+    "lon": 72.937191,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Taşkomur",
+    "key": "taşkomur",
+    "lat": 41.341855,
+    "lon": 72.231446,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cholpon-Ata",
+    "key": "cholpon-ata",
+    "lat": 42.651336,
+    "lon": 77.081073,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "At-Bashi",
+    "key": "at-bashi",
+    "lat": 41.172486,
+    "lon": 75.79681,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kök-Janggak",
+    "key": "kök-janggak",
+    "lat": 41.030711,
+    "lon": 73.205754,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

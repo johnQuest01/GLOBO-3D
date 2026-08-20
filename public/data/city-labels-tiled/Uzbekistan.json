@@ -1,0 +1,263 @@
+[
+  {
+    "name": "Tasquente",
+    "key": "tasquente",
+    "lat": 41.303828,
+    "lon": 69.268823,
+    "labelRank": 1,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fergana",
+    "key": "fergana",
+    "lat": 40.389975,
+    "lon": 71.780001,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Namangan",
+    "key": "namangan city",
+    "lat": 41.000016,
+    "lon": 71.669982,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Samarcanda",
+    "key": "samarcanda",
+    "lat": 39.670019,
+    "lon": 66.944999,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Andijon",
+    "key": "andijon city",
+    "lat": 40.790002,
+    "lon": 72.339967,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shahrisabz",
+    "key": "shahrisabz",
+    "lat": 39.061788,
+    "lon": 66.831466,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qarshi",
+    "key": "qarshi",
+    "lat": 38.87043,
+    "lon": 65.800004,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kokand",
+    "key": "kokand",
+    "lat": 40.540405,
+    "lon": 70.94,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bucara",
+    "key": "bucara",
+    "lat": 39.780012,
+    "lon": 64.43001,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kattakurgan",
+    "key": "kattakurgan",
+    "lat": 39.900703,
+    "lon": 66.260751,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jizaque",
+    "key": "jizaque",
+    "lat": 40.10038,
+    "lon": 67.830009,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nukus",
+    "key": "nukus",
+    "lat": 42.470003,
+    "lon": 59.615007,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Denov",
+    "key": "denov",
+    "lat": 38.277158,
+    "lon": 67.887163,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Navoiy",
+    "key": "navoiy",
+    "lat": 40.110406,
+    "lon": 65.354967,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Angren",
+    "key": "angren",
+    "lat": 41.030375,
+    "lon": 70.154932,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Iskandar",
+    "key": "iskandar",
+    "lat": 41.550731,
+    "lon": 69.680749,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Termez",
+    "key": "termez",
+    "lat": 37.232933,
+    "lon": 67.272937,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chirchiq",
+    "key": "chirchiq",
+    "lat": 41.454975,
+    "lon": 69.559981,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Urgench",
+    "key": "urgench",
+    "lat": 41.559981,
+    "lon": 60.640009,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Khiva",
+    "key": "khiva",
+    "lat": 41.391129,
+    "lon": 60.355737,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Olmaliq",
+    "key": "olmaliq",
+    "lat": 40.850438,
+    "lon": 69.595018,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kogon",
+    "key": "kogon",
+    "lat": 39.721075,
+    "lon": 64.545765,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Urgut",
+    "key": "urgut",
+    "lat": 39.400707,
+    "lon": 67.26069,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gulistão",
+    "key": "gulistão",
+    "lat": 40.495731,
+    "lon": 68.790726,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zarafshan",
+    "key": "zarafshan",
+    "lat": 41.582228,
+    "lon": 64.201807,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xoʻjayli",
+    "key": "xoʻjayli",
+    "lat": 42.40471,
+    "lon": 59.451658,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qoʻngʻirot",
+    "key": "qoʻngʻirot",
+    "lat": 43.070406,
+    "lon": 58.900012,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chimbay",
+    "key": "chimbay",
+    "lat": 42.931138,
+    "lon": 59.77076,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moynaq",
+    "key": "moynaq",
+    "lat": 43.768322,
+    "lon": 59.0214,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  }
+]

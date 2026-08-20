@@ -276,8 +276,8 @@ export default function GlobeCanvas() {
             pinnedLocations={states.pinnedLocations}
             tourismPin={states.tourismPin}
             animationState={externalData.animationState}
-            setIsHighResTextureActive={setters.setIsHighResTextureActive}
-            isHighResTextureActive={states.isHighResTextureActive}
+            setIsZoomedIn={setters.setIsZoomedIn}
+            isZoomedIn={states.isZoomedIn}
             activeAds={states.activeAds}
             countryLabels={externalData.countryLabels}
             continentLabels={externalData.continentLabels}
@@ -318,7 +318,7 @@ export default function GlobeCanvas() {
               posicao do terminador. */}
           <GlobeClock
             isVisible={states.isMainUiVisible && globeMode === 'relogio'}
-            className="top-[7.5rem] left-4 pointer-events-none"
+            className="top-[4.5rem] left-1/2 -translate-x-1/2 pointer-events-none"
           />
           <LockControl
             isVisible={states.isUiVisible}

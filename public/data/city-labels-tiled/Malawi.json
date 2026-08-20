@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Lilongwe",
+    "key": "lilongwe city",
+    "lat": -13.983295,
+    "lon": 33.783302,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Blantyre",
+    "key": "blantyre city",
+    "lat": -15.790007,
+    "lon": 34.989947,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mzuzu",
+    "key": "mzuzu",
+    "lat": -11.459987,
+    "lon": 34.01998,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mangochi",
+    "key": "mangochi city",
+    "lat": -14.459597,
+    "lon": 35.269981,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zomba",
+    "key": "zomba city",
+    "lat": -15.390031,
+    "lon": 35.310031,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salima",
+    "key": "salima city",
+    "lat": -13.782946,
+    "lon": 34.433288,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nkhotakota",
+    "key": "nkhotakota city",
+    "lat": -12.91628,
+    "lon": 34.300015,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karonga",
+    "key": "karonga",
+    "lat": -9.932896,
+    "lon": 33.933319,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chiromo",
+    "key": "chiromo",
+    "lat": -16.550012,
+    "lon": 35.133245,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nkhata Bay",
+    "key": "nkhata bay city",
+    "lat": -11.599616,
+    "lon": 34.300015,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nsanje",
+    "key": "nsanje city",
+    "lat": -16.916667,
+    "lon": 35.266667,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mzimba",
+    "key": "mzimba city",
+    "lat": -11.9,
+    "lon": 33.6,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mchinji",
+    "key": "mchinji city",
+    "lat": -13.8,
+    "lon": 32.9,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mulanje",
+    "key": "mulanje city",
+    "lat": -16.033333,
+    "lon": 35.5,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dedza",
+    "key": "dedza city",
+    "lat": -14.366667,
+    "lon": 34.333333,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chitipa",
+    "key": "chitipa city",
+    "lat": -9.716217,
+    "lon": 33.266641,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mwanza",
+    "key": "mwanza (malawi)",
+    "lat": -15.616667,
+    "lon": 34.516667,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ntcheu",
+    "key": "ntcheu city",
+    "lat": -14.816667,
+    "lon": 34.633333,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chiradzulu",
+    "key": "chiradzulu city",
+    "lat": -15.7,
+    "lon": 35.183333,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Machinga",
+    "key": "machinga city",
+    "lat": -15.176186,
+    "lon": 35.301665,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

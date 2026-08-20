@@ -1,0 +1,641 @@
+[
+  {
+    "name": "Paris",
+    "key": "paris",
+    "lat": 48.86,
+    "lon": 2.35,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lyon",
+    "key": "lyon",
+    "lat": 45.771954,
+    "lon": 4.828085,
+    "labelRank": 3,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Marselha",
+    "key": "marselha",
+    "lat": 43.291925,
+    "lon": 5.373064,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lille",
+    "key": "lille",
+    "lat": 50.651915,
+    "lon": 3.078062,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nice",
+    "key": "nice",
+    "lat": 43.716964,
+    "lon": 7.263078,
+    "labelRank": 6,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Toulouse",
+    "key": "toulouse",
+    "lat": 43.621905,
+    "lon": 1.447981,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bordéus",
+    "key": "bordéus",
+    "lat": 44.851959,
+    "lon": -0.596959,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ruão",
+    "key": "ruão",
+    "lat": 49.430405,
+    "lon": 1.079975,
+    "labelRank": 7,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Estrasburgo",
+    "key": "estrasburgo",
+    "lat": 48.579966,
+    "lon": 7.750007,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nantes",
+    "key": "nantes",
+    "lat": 47.210386,
+    "lon": -1.590017,
+    "labelRank": 7,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Metz",
+    "key": "metz",
+    "lat": 49.120347,
+    "lon": 6.180026,
+    "labelRank": 7,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Grenoble",
+    "key": "grenoble",
+    "lat": 45.18038,
+    "lon": 5.720002,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Toulon",
+    "key": "toulon",
+    "lat": 43.134186,
+    "lon": 5.918822,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Montpellier",
+    "key": "montpellier",
+    "lat": 43.610399,
+    "lon": 3.869986,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nancy",
+    "key": "nancy",
+    "lat": 48.683681,
+    "lon": 6.200024,
+    "labelRank": 7,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saint-Étienne",
+    "key": "saint-étienne",
+    "lat": 45.430391,
+    "lon": 4.380032,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fort-de-France",
+    "key": "fort-de-france",
+    "lat": 14.610412,
+    "lon": -61.080029,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Melun",
+    "key": "melun",
+    "lat": 48.533302,
+    "lon": 2.666648,
+    "labelRank": 8,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Le Havre",
+    "key": "le havre",
+    "lat": 49.504974,
+    "lon": 0.10497,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tours",
+    "key": "tours",
+    "lat": 47.380375,
+    "lon": 0.699947,
+    "labelRank": 7,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Clermont-Ferrand",
+    "key": "clermont-ferrand",
+    "lat": 45.779982,
+    "lon": 3.080008,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Orleães",
+    "key": "orleães",
+    "lat": 47.900421,
+    "lon": 1.900028,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mulhouse",
+    "key": "mulhouse",
+    "lat": 47.750405,
+    "lon": 7.34998,
+    "labelRank": 7,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rennes",
+    "key": "rennes",
+    "lat": 48.100021,
+    "lon": -1.670012,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Reims",
+    "key": "reims",
+    "lat": 49.25039,
+    "lon": 4.029976,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Caen",
+    "key": "caen",
+    "lat": 49.183754,
+    "lon": -0.349989,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saint-Denis",
+    "key": "saint-denis",
+    "lat": -20.878895,
+    "lon": 55.448078,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Angers",
+    "key": "angers",
+    "lat": 47.480007,
+    "lon": -0.53003,
+    "labelRank": 8,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dijon",
+    "key": "dijon",
+    "lat": 47.330404,
+    "lon": 5.030018,
+    "labelRank": 7,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nîmes",
+    "key": "nîmes",
+    "lat": 43.830385,
+    "lon": 4.350008,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Limoges",
+    "key": "limoges",
+    "lat": 45.829979,
+    "lon": 1.249991,
+    "labelRank": 6,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aix-en-Provence",
+    "key": "aix-en-provence",
+    "lat": 43.519991,
+    "lon": 5.449993,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Perpinhã",
+    "key": "perpinhã",
+    "lat": 42.699989,
+    "lon": 2.899967,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pointe-à-Pitre",
+    "key": "pointe-à-pitre",
+    "lat": 16.241475,
+    "lon": -61.532999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Biarritz",
+    "key": "biarritz",
+    "lat": 43.473275,
+    "lon": -1.561595,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brest",
+    "key": "brest (france)",
+    "lat": 48.390443,
+    "lon": -4.495008,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Le Mans",
+    "key": "le mans",
+    "lat": 48.004391,
+    "lon": 0.202582,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Amiens",
+    "key": "amiens",
+    "lat": 49.900377,
+    "lon": 2.300004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Besançon",
+    "key": "besançon",
+    "lat": 47.229997,
+    "lon": 6.030009,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Annecy",
+    "key": "annecy",
+    "lat": 45.899975,
+    "lon": 6.11667,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Calais",
+    "key": "calais",
+    "lat": 50.950416,
+    "lon": 1.833314,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Poitiers",
+    "key": "poitiers",
+    "lat": 46.583292,
+    "lon": 0.333276,
+    "labelRank": 8,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Versalhes",
+    "key": "versalhes",
+    "lat": 48.80047,
+    "lon": 2.133348,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lorient",
+    "key": "lorient",
+    "lat": 47.750405,
+    "lon": -3.366575,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Béziers",
+    "key": "béziers",
+    "lat": 43.350492,
+    "lon": 3.209974,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "La Rochelle",
+    "key": "la rochelle",
+    "lat": 46.166651,
+    "lon": -1.149992,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Roanne",
+    "key": "roanne",
+    "lat": 46.033326,
+    "lon": 4.066666,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bourges",
+    "key": "bourges",
+    "lat": 47.083727,
+    "lon": 2.399998,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arras",
+    "key": "arras",
+    "lat": 50.283325,
+    "lon": 2.783334,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Troyes",
+    "key": "troyes",
+    "lat": 48.340394,
+    "lon": 4.083358,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Caiena",
+    "key": "caiena",
+    "lat": 4.932992,
+    "lon": -52.330021,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cherbourg-Octeville",
+    "key": "cherbourg-octeville",
+    "lat": 49.650392,
+    "lon": -1.649987,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Agen",
+    "key": "agen",
+    "lat": 44.200414,
+    "lon": 0.633336,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brive-la-Gaillarde",
+    "key": "brive-la-gaillarde",
+    "lat": 45.150408,
+    "lon": 1.533332,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tarbes",
+    "key": "tarbes",
+    "lat": 43.23329,
+    "lon": 0.083344,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ajaccio",
+    "key": "ajaccio",
+    "lat": 41.927065,
+    "lon": 8.728294,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saint-Brieuc",
+    "key": "saint-brieuc",
+    "lat": 48.516663,
+    "lon": -2.783303,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nevers",
+    "key": "nevers",
+    "lat": 46.983733,
+    "lon": 3.166669,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vichy",
+    "key": "vichy",
+    "lat": 46.117145,
+    "lon": 3.41668,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dieppe",
+    "key": "dieppe",
+    "lat": 49.933734,
+    "lon": 1.083334,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Auxerre",
+    "key": "auxerre",
+    "lat": 47.800427,
+    "lon": 3.566593,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bastia",
+    "key": "bastia",
+    "lat": 42.703167,
+    "lon": 9.450007,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saint-Benoît",
+    "key": "saint-benoît",
+    "lat": -21.033511,
+    "lon": 55.712816,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dzaoudzi",
+    "key": "dzaoudzi",
+    "lat": -12.787089,
+    "lon": 45.275004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saint-Laurent-du-Maroni",
+    "key": "saint-laurent-du-maroni",
+    "lat": 5.497624,
+    "lon": -54.032535,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kourou",
+    "key": "kourou",
+    "lat": 5.159981,
+    "lon": -52.649949,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sinnamary",
+    "key": "sinnamary",
+    "lat": 5.380019,
+    "lon": -52.959982,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "São Jorge do Oiapoque",
+    "key": "são jorge do oiapoque",
+    "lat": 3.910471,
+    "lon": -51.810001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Roura",
+    "key": "roura",
+    "lat": 4.729981,
+    "lon": -52.330021,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Iracoubo",
+    "key": "iracoubo",
+    "lat": 5.480427,
+    "lon": -53.219992,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Basse-Terre",
+    "key": "basse-terre",
+    "lat": 16.01041,
+    "lon": -61.705484,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

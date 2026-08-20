@@ -1,0 +1,290 @@
+[
+  {
+    "name": "Montevidéu",
+    "key": "montevidéu",
+    "lat": -34.905376,
+    "lon": -56.186823,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rivera",
+    "key": "rivera city",
+    "lat": -30.899575,
+    "lon": -55.560004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Punta del Este",
+    "key": "punta del este",
+    "lat": -34.969973,
+    "lon": -54.94999,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salto",
+    "key": "salto city",
+    "lat": -31.390346,
+    "lon": -57.968694,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Paysandú",
+    "key": "paysandú city",
+    "lat": -32.329979,
+    "lon": -58.07998,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Melo",
+    "key": "melo",
+    "lat": -32.359486,
+    "lon": -54.179985,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maldonado",
+    "key": "maldonado city",
+    "lat": -34.910028,
+    "lon": -54.959989,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tacuarembó",
+    "key": "tacuarembó city",
+    "lat": -31.709965,
+    "lon": -55.980004,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mercedes",
+    "key": "mercedes city",
+    "lat": -33.259535,
+    "lon": -58.029983,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Artigas",
+    "key": "artigas city",
+    "lat": -30.415987,
+    "lon": -56.48602,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Minas",
+    "key": "minas",
+    "lat": -34.370009,
+    "lon": -55.230024,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San José de Mayo",
+    "key": "san josé de mayo",
+    "lat": -34.349959,
+    "lon": -56.709986,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Durazno",
+    "key": "durazno city",
+    "lat": -33.410016,
+    "lon": -56.51005,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Florida",
+    "key": "florida city",
+    "lat": -34.099002,
+    "lon": -56.214998,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Treinta y Tres",
+    "key": "treinta y tres city",
+    "lat": -33.230027,
+    "lon": -54.380025,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rocha",
+    "key": "rocha city",
+    "lat": -34.482974,
+    "lon": -54.333025,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fray Bentos",
+    "key": "fray bentos",
+    "lat": -33.138999,
+    "lon": -58.303998,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bella Unión",
+    "key": "bella unión",
+    "lat": -30.259614,
+    "lon": -57.599957,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Colónia do Sacramento",
+    "key": "colónia do sacramento",
+    "lat": -34.469788,
+    "lon": -57.836116,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trinidad",
+    "key": "trinidad city",
+    "lat": -33.543999,
+    "lon": -56.900997,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Canelones",
+    "key": "canelones city",
+    "lat": -34.538004,
+    "lon": -56.284002,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Carmelo",
+    "key": "carmelo",
+    "lat": -33.989619,
+    "lon": -58.299992,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Lucia",
+    "key": "santa lucia",
+    "lat": -34.470003,
+    "lon": -56.399979,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Paso de los Toros",
+    "key": "paso de los toros",
+    "lat": -32.810001,
+    "lon": -56.51005,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Castillos",
+    "key": "castillos",
+    "lat": -34.169608,
+    "lon": -53.829981,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tranqueras",
+    "key": "tranqueras",
+    "lat": -31.200022,
+    "lon": -55.749967,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lascano",
+    "key": "lascano",
+    "lat": -33.669587,
+    "lon": -54.20001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vergara",
+    "key": "vergara",
+    "lat": -32.929994,
+    "lon": -53.949999,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "La Paloma",
+    "key": "la paloma",
+    "lat": -34.669991,
+    "lon": -54.169986,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aiguá",
+    "key": "aiguá",
+    "lat": -34.199994,
+    "lon": -54.750002,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baltasar Brum",
+    "key": "baltasar brum",
+    "lat": -30.730025,
+    "lon": -57.319974,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "José Batlle y Ordóñez",
+    "key": "josé batlle y ordóñez",
+    "lat": -33.470013,
+    "lon": -55.120005,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

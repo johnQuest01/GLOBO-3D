@@ -1,0 +1,119 @@
+[
+  {
+    "name": "San José",
+    "key": "san josé city",
+    "lat": 9.930371,
+    "lon": -84.078814,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alajuela",
+    "key": "alajuela city",
+    "lat": 10.02002,
+    "lon": -84.230037,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cartago",
+    "key": "cartago city",
+    "lat": 9.869978,
+    "lon": -83.929978,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto Limón",
+    "key": "puerto limón",
+    "lat": 10.000021,
+    "lon": -83.03334,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puntarenas",
+    "key": "puntarenas city",
+    "lat": 9.970164,
+    "lon": -84.83359,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Liberia",
+    "key": "liberia city",
+    "lat": 10.633755,
+    "lon": -85.433323,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quesada",
+    "key": "quesada",
+    "lat": 10.330492,
+    "lon": -84.439973,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Heredia",
+    "key": "heredia city",
+    "lat": 9.991998,
+    "lon": -84.120002,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cañas",
+    "key": "cañas",
+    "lat": 10.429995,
+    "lon": -85.10001,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Golfito",
+    "key": "golfito",
+    "lat": 8.650026,
+    "lon": -83.149974,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "La Cruz",
+    "key": "la cruz city",
+    "lat": 11.070421,
+    "lon": -85.630004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ciudad Cortés",
+    "key": "ciudad cortés",
+    "lat": 8.960369,
+    "lon": -83.530002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sixaola",
+    "key": "sixaola",
+    "lat": 9.520387,
+    "lon": -82.61998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

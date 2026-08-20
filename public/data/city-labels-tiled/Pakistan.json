@@ -1,0 +1,371 @@
+[
+  {
+    "name": "Carachi",
+    "key": "carachi",
+    "lat": 24.871938,
+    "lon": 66.988063,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lahore",
+    "key": "lahore",
+    "lat": 31.561917,
+    "lon": 74.348079,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Faisalabad",
+    "key": "faisalabad",
+    "lat": 31.411927,
+    "lon": 73.108051,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saidū Sharīf",
+    "key": "saidū sharīf",
+    "lat": 34.750035,
+    "lon": 72.349992,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rawalpindi",
+    "key": "rawalpindi",
+    "lat": 33.591002,
+    "lon": 73.067502,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Multan",
+    "key": "multan",
+    "lat": 30.201923,
+    "lon": 71.453062,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gujranwala",
+    "key": "gujranwala",
+    "lat": 32.162372,
+    "lon": 74.183076,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hyderabad",
+    "key": "hyderabad city",
+    "lat": 25.381933,
+    "lon": 68.373043,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Peshawar",
+    "key": "peshawar",
+    "lat": 34.006962,
+    "lon": 71.533057,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Abbottabad",
+    "key": "abbottabad",
+    "lat": 34.149503,
+    "lon": 73.199501,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Islamabad",
+    "key": "islamabad",
+    "lat": 33.689368,
+    "lon": 73.08063,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quetta",
+    "key": "quetta",
+    "lat": 30.221947,
+    "lon": 67.023048,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bannu",
+    "key": "bannu",
+    "lat": 32.98898,
+    "lon": 70.598574,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bahawalpur",
+    "key": "bahawalpur",
+    "lat": 29.389975,
+    "lon": 71.674994,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sargodha",
+    "key": "sargodha",
+    "lat": 32.085366,
+    "lon": 72.674985,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sialkot",
+    "key": "sialkot",
+    "lat": 32.520016,
+    "lon": 74.560038,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sukkur",
+    "key": "sukkur",
+    "lat": 27.713566,
+    "lon": 68.848552,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Larkana",
+    "key": "larkana",
+    "lat": 27.561766,
+    "lon": 68.206782,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shekhupura",
+    "key": "shekhupura",
+    "lat": 31.719988,
+    "lon": 73.989995,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mirpur Khas",
+    "key": "mirpur khas",
+    "lat": 25.531786,
+    "lon": 69.011798,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rahim Yar Khan",
+    "key": "rahim yar khan",
+    "lat": 28.420241,
+    "lon": 70.295182,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kohat",
+    "key": "kohat",
+    "lat": 33.602689,
+    "lon": 71.432683,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jhang",
+    "key": "jhang",
+    "lat": 31.280376,
+    "lon": 72.32498,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gujrat",
+    "key": "gujrat",
+    "lat": 32.579987,
+    "lon": 74.080015,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mardan",
+    "key": "mardan",
+    "lat": 34.200043,
+    "lon": 72.039985,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kasur",
+    "key": "kasur",
+    "lat": 31.125373,
+    "lon": 74.455031,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dera Ghazi Khan",
+    "key": "dera ghazi khan",
+    "lat": 30.060399,
+    "lon": 70.635058,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sahiwal",
+    "key": "sahiwal",
+    "lat": 30.671731,
+    "lon": 73.111806,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nawabshah",
+    "key": "nawabshah",
+    "lat": 26.245438,
+    "lon": 68.4,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Okara",
+    "key": "okara",
+    "lat": 30.810405,
+    "lon": 73.450028,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gilgit",
+    "key": "gilgit",
+    "lat": 35.917096,
+    "lon": 74.300002,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chiniot",
+    "key": "chiniot",
+    "lat": 31.719988,
+    "lon": 72.979979,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sadiqabad",
+    "key": "sadiqabad",
+    "lat": 28.300636,
+    "lon": 70.130231,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Turbat",
+    "key": "turbat",
+    "lat": 25.991784,
+    "lon": 63.071798,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dera Ismail Khan",
+    "key": "dera ismail khan",
+    "lat": 31.828999,
+    "lon": 70.898556,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chaman",
+    "key": "chaman",
+    "lat": 30.925049,
+    "lon": 66.446321,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhob",
+    "key": "zhob",
+    "lat": 31.348977,
+    "lon": 69.438593,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mansehra",
+    "key": "mansehra",
+    "lat": 34.341791,
+    "lon": 73.196814,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Parachinar",
+    "key": "parachinar",
+    "lat": 33.899183,
+    "lon": 70.100827,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gwadar",
+    "key": "gwadar",
+    "lat": 25.138968,
+    "lon": 62.328588,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kundian",
+    "key": "kundian",
+    "lat": 32.452191,
+    "lon": 71.471802,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "name": "Sófia",
+    "key": "sófia",
+    "lat": 42.685295,
+    "lon": 23.314708,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Plovdiv",
+    "key": "plovdiv city",
+    "lat": 42.153976,
+    "lon": 24.753982,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Varna",
+    "key": "varna city",
+    "lat": 43.215643,
+    "lon": 27.895289,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Burgas",
+    "key": "burgas city",
+    "lat": 42.5146,
+    "lon": 27.474643,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ruse",
+    "key": "ruse city",
+    "lat": 43.853691,
+    "lon": 25.973339,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Stara Zagora",
+    "key": "stara zagora city",
+    "lat": 42.423133,
+    "lon": 25.622715,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pleven",
+    "key": "pleven city",
+    "lat": 43.423769,
+    "lon": 24.613371,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sliven",
+    "key": "sliven city",
+    "lat": 42.67937,
+    "lon": 26.33001,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dobrich",
+    "key": "dobrich city",
+    "lat": 43.585051,
+    "lon": 27.839996,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shumen",
+    "key": "shumen city",
+    "lat": 43.270006,
+    "lon": 26.929353,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pernik",
+    "key": "pernik city",
+    "lat": 42.609995,
+    "lon": 23.022718,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Haskovo",
+    "key": "haskovo city",
+    "lat": 41.943782,
+    "lon": 25.563287,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vratsa",
+    "key": "vratsa city",
+    "lat": 43.209984,
+    "lon": 23.562531,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Veliko Tarnovo",
+    "key": "veliko tarnovo city",
+    "lat": 43.086245,
+    "lon": 25.655529,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kyustendil",
+    "key": "kyustendil city",
+    "lat": 42.284278,
+    "lon": 22.691111,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Montana",
+    "key": "montana city",
+    "lat": 43.414002,
+    "lon": 23.237002,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lovech",
+    "key": "lovech city",
+    "lat": 43.137999,
+    "lon": 24.719005,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Razgrad",
+    "key": "razgrad city",
+    "lat": 43.533999,
+    "lon": 26.535997,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

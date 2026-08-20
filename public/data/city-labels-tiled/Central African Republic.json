@@ -1,0 +1,191 @@
+[
+  {
+    "name": "Bangui",
+    "key": "bangui city",
+    "lat": 4.366644,
+    "lon": 18.558288,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mbaiki",
+    "key": "mbaiki",
+    "lat": 3.870421,
+    "lon": 17.999976,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bossangoa",
+    "key": "bossangoa",
+    "lat": 6.483724,
+    "lon": 17.449984,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bambari",
+    "key": "bambari",
+    "lat": 5.76196,
+    "lon": 20.667203,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Berbérati",
+    "key": "berbérati",
+    "lat": 4.249959,
+    "lon": 15.780008,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kaga Bandoro",
+    "key": "kaga bandoro",
+    "lat": 6.980387,
+    "lon": 19.180007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bozoum",
+    "key": "bozoum",
+    "lat": 6.31699,
+    "lon": 16.38333,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Carnot",
+    "key": "carnot",
+    "lat": 4.93369,
+    "lon": 15.866618,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bouar",
+    "key": "bouar",
+    "lat": 5.95001,
+    "lon": 15.599967,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sibut",
+    "key": "sibut",
+    "lat": 5.73377,
+    "lon": 19.083321,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bangassou",
+    "key": "bangassou",
+    "lat": 4.733754,
+    "lon": 22.816633,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bria",
+    "key": "bria",
+    "lat": 6.533308,
+    "lon": 21.983299,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nola",
+    "key": "nola",
+    "lat": 3.533698,
+    "lon": 16.066606,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zemio",
+    "key": "zemio",
+    "lat": 5.033658,
+    "lon": 25.133287,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mobaye",
+    "key": "mobaye",
+    "lat": 4.32,
+    "lon": 21.179997,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Obo",
+    "key": "obo",
+    "lat": 5.399992,
+    "lon": 26.500026,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ndele",
+    "key": "ndele",
+    "lat": 8.409137,
+    "lon": 20.653044,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Birão",
+    "key": "birão",
+    "lat": 10.283699,
+    "lon": 22.783302,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bossembélé",
+    "key": "bossembélé",
+    "lat": 5.267003,
+    "lon": 17.650023,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ouadda",
+    "key": "ouadda",
+    "lat": 8.06709,
+    "lon": 22.400018,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yakossi",
+    "key": "yakossi",
+    "lat": 5.617007,
+    "lon": 23.316654,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

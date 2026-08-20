@@ -1,0 +1,362 @@
+[
+  {
+    "name": "Estação McMurdo",
+    "key": "estação mcmurdo",
+    "lat": -77.732282,
+    "lon": 166.869416,
+    "labelRank": 7,
+    "minLabel": 3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Esperanza",
+    "key": "base esperanza",
+    "lat": -63.375329,
+    "lon": -57.025902,
+    "labelRank": 7,
+    "minLabel": 3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Casey",
+    "key": "base casey",
+    "lat": -66.286086,
+    "lon": 110.536214,
+    "labelRank": 7,
+    "minLabel": 3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Estação Polo Sul Amundsen-Scott",
+    "key": "estação polo sul amundsen-scott",
+    "lat": -90,
+    "lon": 176.994452,
+    "labelRank": 7,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Estação Mirny",
+    "key": "estação mirny",
+    "lat": -66.57553,
+    "lon": 93.006288,
+    "labelRank": 7,
+    "minLabel": 3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Marambio",
+    "key": "base marambio",
+    "lat": -64.232889,
+    "lon": -56.650015,
+    "labelRank": 7,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Presidente Eduardo Frei Montalva",
+    "key": "base presidente eduardo frei montalva",
+    "lat": -62.182744,
+    "lon": -58.907652,
+    "labelRank": 7,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Rothera",
+    "key": "base rothera",
+    "lat": -67.564776,
+    "lon": -68.123541,
+    "labelRank": 7,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Dumont d'Urville",
+    "key": "base dumont d'urville",
+    "lat": -66.775051,
+    "lon": 139.963684,
+    "labelRank": 7,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Belgrano II",
+    "key": "base belgrano ii",
+    "lat": -77.866321,
+    "lon": -34.616683,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Estação Rei Sejong",
+    "key": "estação rei sejong",
+    "lat": -62.224853,
+    "lon": -58.771599,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Scott",
+    "key": "base scott",
+    "lat": -77.846938,
+    "lon": 166.749102,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Estação Zucchelli",
+    "key": "estação zucchelli",
+    "lat": -74.619193,
+    "lon": 164.219027,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Davis",
+    "key": "base davis",
+    "lat": -68.777674,
+    "lon": 78.140735,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Novolazarevskaya",
+    "key": "base novolazarevskaya",
+    "lat": -71.301235,
+    "lon": -11.850213,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Estação Halley",
+    "key": "estação halley",
+    "lat": -76.092263,
+    "lon": -26.474157,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Estação Maitri",
+    "key": "estação maitri",
+    "lat": -70.78218,
+    "lon": 11.730458,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Artigas",
+    "key": "base artigas",
+    "lat": -62.173887,
+    "lon": -58.863864,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jubany",
+    "key": "jubany",
+    "lat": -62.224144,
+    "lon": -58.650476,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Estação Antártica Zhongshan",
+    "key": "estação antártica zhongshan",
+    "lat": -69.434063,
+    "lon": 76.339298,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Mawson",
+    "key": "base mawson",
+    "lat": -67.61452,
+    "lon": 62.875001,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Estação Showa",
+    "key": "estação showa",
+    "lat": -69.030393,
+    "lon": 39.746083,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Palmer",
+    "key": "base palmer",
+    "lat": -64.762413,
+    "lon": -64.046876,
+    "labelRank": 7,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Orcadas",
+    "key": "base orcadas",
+    "lat": -60.732896,
+    "lon": -44.733301,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Troll",
+    "key": "base troll",
+    "lat": -72.01629,
+    "lon": 2.533323,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base General Bernardo O'Higgins",
+    "key": "base general bernardo o'higgins",
+    "lat": -63.328418,
+    "lon": -57.889593,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Capitão Arturo Prat",
+    "key": "base capitão arturo prat",
+    "lat": -62.499507,
+    "lon": -59.683318,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Estação Antártica da Grande Muralha",
+    "key": "estação antártica da grande muralha",
+    "lat": -62.21632,
+    "lon": -58.966696,
+    "labelRank": 7,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Neumayer III",
+    "key": "base neumayer iii",
+    "lat": -70.890397,
+    "lon": -7.838438,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Sobral",
+    "key": "base sobral",
+    "lat": -81.179085,
+    "lon": -40.501531,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Concordia",
+    "key": "base concordia",
+    "lat": -74.666309,
+    "lon": 124.167036,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Estação Vostok",
+    "key": "estação vostok",
+    "lat": -78.466284,
+    "lon": 106.800034,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Professor Julio Escudero",
+    "key": "base professor julio escudero",
+    "lat": -62.194963,
+    "lon": -58.952666,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base San Martín",
+    "key": "base san martín",
+    "lat": -68.116322,
+    "lon": -67.099998,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Aboa",
+    "key": "base aboa",
+    "lat": -75.049594,
+    "lon": -13.416711,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Wasa",
+    "key": "base wasa",
+    "lat": -73.049612,
+    "lon": -13.416711,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Base Svea",
+    "key": "base svea",
+    "lat": -74.582904,
+    "lon": -11.21669,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Estação de pesquisa Signy",
+    "key": "estação de pesquisa signy",
+    "lat": -60.631308,
+    "lon": -45.600703,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ilha Elefante",
+    "key": "ilha elefante",
+    "lat": -61.999589,
+    "lon": -57.999985,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ilha de Pedro I",
+    "key": "ilha de pedro i",
+    "lat": -68.795161,
+    "lon": -90.584203,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  }
+]

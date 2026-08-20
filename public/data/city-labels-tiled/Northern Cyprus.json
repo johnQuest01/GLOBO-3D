@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Famagusta",
+    "key": "famagusta city",
+    "lat": 35.125025,
+    "lon": 33.95001,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cirénia",
+    "key": "cirénia",
+    "lat": 35.325999,
+    "lon": 33.333004,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  }
+]

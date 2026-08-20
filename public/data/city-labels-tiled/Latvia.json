@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Riga",
+    "key": "riga city",
+    "lat": 56.950024,
+    "lon": 24.099965,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Daugavpils",
+    "key": "daugavpils city",
+    "lat": 55.87996,
+    "lon": 26.509999,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Liepāja",
+    "key": "liepāja city",
+    "lat": 56.509973,
+    "lon": 21.010025,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jelgava",
+    "key": "jelgava city",
+    "lat": 56.652704,
+    "lon": 23.712806,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ventspils",
+    "key": "ventspils city",
+    "lat": 57.389868,
+    "lon": 21.560585,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rezekne",
+    "key": "rezekne city",
+    "lat": 56.500025,
+    "lon": 27.316565,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

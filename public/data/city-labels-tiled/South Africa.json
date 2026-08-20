@@ -1,0 +1,659 @@
+[
+  {
+    "name": "Joanesburgo",
+    "key": "johannesburg",
+    "lat": -26.2,
+    "lon": 28.05,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cidade do Cabo",
+    "key": "cape town",
+    "lat": -33.92,
+    "lon": 18.42,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Durban",
+    "key": "durban",
+    "lat": -29.86,
+    "lon": 31.02,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Joanesburgo",
+    "key": "joanesburgo",
+    "lat": -26.168099,
+    "lon": 28.028064,
+    "labelRank": 1,
+    "minLabel": 3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Benoni",
+    "key": "benoni",
+    "lat": -26.147635,
+    "lon": 28.327994,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pretória",
+    "key": "pretória",
+    "lat": -25.704975,
+    "lon": 28.227483,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vereeniging",
+    "key": "vereeniging",
+    "lat": -26.647656,
+    "lon": 27.958042,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Porto Elizabeth",
+    "key": "porto elizabeth",
+    "lat": -33.968088,
+    "lon": 25.598083,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pietermaritzburg",
+    "key": "pietermaritzburg",
+    "lat": -29.610042,
+    "lon": 30.390021,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bloemfontein",
+    "key": "bloemfontein",
+    "lat": -29.119994,
+    "lon": 26.229913,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Welkom",
+    "key": "welkom",
+    "lat": -27.969987,
+    "lon": 26.729986,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nelspruit",
+    "key": "nelspruit",
+    "lat": -25.469622,
+    "lon": 30.98001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "East London",
+    "key": "east london",
+    "lat": -32.970043,
+    "lon": 27.87002,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Thohoyandou",
+    "key": "thohoyandou",
+    "lat": -22.950035,
+    "lon": 30.480041,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Springs",
+    "key": "springs",
+    "lat": -26.269573,
+    "lon": 28.430037,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uitenhage",
+    "key": "uitenhage",
+    "lat": -33.759607,
+    "lon": 25.390016,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Polokwane",
+    "key": "polokwane",
+    "lat": -23.890029,
+    "lon": 29.450026,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Paarl",
+    "key": "paarl",
+    "lat": -33.699559,
+    "lon": 18.960021,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Klerksdorp",
+    "key": "klerksdorp",
+    "lat": -26.880027,
+    "lon": 26.620018,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "George",
+    "key": "george",
+    "lat": -33.950035,
+    "lon": 22.45004,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rustemburgo",
+    "key": "rustemburgo",
+    "lat": -25.650025,
+    "lon": 27.240032,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kimberley",
+    "key": "kimberley",
+    "lat": -28.746838,
+    "lon": 24.770002,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bisho",
+    "key": "bisho",
+    "lat": -32.869997,
+    "lon": 27.389997,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Middelburg",
+    "key": "middelburg",
+    "lat": -25.759631,
+    "lon": 29.470025,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vryheid",
+    "key": "vryheid",
+    "lat": -27.760025,
+    "lon": 30.789996,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mthatha",
+    "key": "mthatha",
+    "lat": -31.579999,
+    "lon": 28.790015,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Worcester",
+    "key": "worcester city",
+    "lat": -33.640028,
+    "lon": 19.43994,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Potchefstroom",
+    "key": "potchefstroom",
+    "lat": -26.699573,
+    "lon": 27.099989,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brits",
+    "key": "brits",
+    "lat": -25.629613,
+    "lon": 27.779999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Queenstown",
+    "key": "queenstown",
+    "lat": -31.899618,
+    "lon": 26.880002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mmabatho",
+    "key": "mmabatho",
+    "lat": -25.830014,
+    "lon": 25.610002,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kroonstad",
+    "key": "kroonstad",
+    "lat": -27.660031,
+    "lon": 27.210008,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bethal",
+    "key": "bethal",
+    "lat": -26.469613,
+    "lon": 29.450026,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Grahamstown",
+    "key": "grahamstown",
+    "lat": -33.299584,
+    "lon": 26.520024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bethlehem",
+    "key": "bethlehem",
+    "lat": -28.219584,
+    "lon": 28.299967,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oudtshoorn",
+    "key": "oudtshoorn",
+    "lat": -33.580032,
+    "lon": 22.190004,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Standerton",
+    "key": "standerton",
+    "lat": -26.939507,
+    "lon": 29.240013,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Upington",
+    "key": "upington",
+    "lat": -28.460034,
+    "lon": 21.230011,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saldanha",
+    "key": "saldanha",
+    "lat": -33.010041,
+    "lon": 17.930006,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tzaneen",
+    "key": "tzaneen",
+    "lat": -23.819542,
+    "lon": 30.169982,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Knysna",
+    "key": "knysna",
+    "lat": -34.032924,
+    "lon": 23.033312,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Graaff-Reinet",
+    "key": "graaff-reinet",
+    "lat": -32.300007,
+    "lon": 24.540042,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Port Shepstone",
+    "key": "port shepstone",
+    "lat": -30.719535,
+    "lon": 30.459991,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vryburg",
+    "key": "vryburg",
+    "lat": -26.960022,
+    "lon": 24.730004,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ladysmith",
+    "key": "ladysmith",
+    "lat": -28.549486,
+    "lon": 29.780032,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Beaufort West",
+    "key": "beaufort west",
+    "lat": -32.349616,
+    "lon": 22.569981,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aliwal North",
+    "key": "aliwal north",
+    "lat": -30.689562,
+    "lon": 26.710039,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Volksrust",
+    "key": "volksrust",
+    "lat": -27.359585,
+    "lon": 29.89,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lebowakgomo",
+    "key": "lebowakgomo",
+    "lat": -24.199622,
+    "lon": 29.499997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cradock",
+    "key": "cradock",
+    "lat": -32.199548,
+    "lon": 25.610002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "De Aar",
+    "key": "de aar",
+    "lat": -30.649978,
+    "lon": 24.000023,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qacha's Nek",
+    "key": "qacha's nek city",
+    "lat": -30.117267,
+    "lon": 28.701999,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hermanus",
+    "key": "hermanus",
+    "lat": -34.409593,
+    "lon": 19.229927,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ulundi",
+    "key": "ulundi",
+    "lat": -28.329603,
+    "lon": 31.41001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Komatipoort",
+    "key": "komatipoort",
+    "lat": -25.409574,
+    "lon": 31.940004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Musina",
+    "key": "musina",
+    "lat": -22.339994,
+    "lon": 30.029991,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Middelburg",
+    "key": "middelburg city",
+    "lat": -31.500004,
+    "lon": 25.009987,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Port Alfred",
+    "key": "port alfred",
+    "lat": -33.599514,
+    "lon": 26.880002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bloemhof",
+    "key": "bloemhof",
+    "lat": -27.649593,
+    "lon": 25.590004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mossel Bay",
+    "key": "mossel bay",
+    "lat": -34.170021,
+    "lon": 22.130008,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bredasdorp",
+    "key": "bredasdorp",
+    "lat": -34.529534,
+    "lon": 20.029981,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Swellendam",
+    "key": "swellendam",
+    "lat": -34.019591,
+    "lon": 20.430008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Colesberg",
+    "key": "colesberg",
+    "lat": -30.719535,
+    "lon": 25.100008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brandfort",
+    "key": "brandfort",
+    "lat": -28.699554,
+    "lon": 26.470002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Prieska",
+    "key": "prieska",
+    "lat": -29.659547,
+    "lon": 22.730023,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Springbok",
+    "key": "springbok",
+    "lat": -29.66673,
+    "lon": 17.883291,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kuruman",
+    "key": "kuruman",
+    "lat": -27.449553,
+    "lon": 23.420007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Port St Johns",
+    "key": "port st johns",
+    "lat": -31.627851,
+    "lon": 29.528316,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Carnarvon",
+    "key": "carnarvon city",
+    "lat": -30.949598,
+    "lon": 22.133315,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pofadder",
+    "key": "pofadder",
+    "lat": -29.132913,
+    "lon": 19.383354,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vanrhynsdorp",
+    "key": "vanrhynsdorp",
+    "lat": -31.616637,
+    "lon": 18.733316,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alexander Bay",
+    "key": "alexander bay",
+    "lat": -28.608345,
+    "lon": 16.503323,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ubomba",
+    "key": "ubomba",
+    "lat": -27.566084,
+    "lon": 32.083302,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Papeete",
+    "key": "papeete",
+    "lat": -17.533363,
+    "lon": -149.566669,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  }
+]

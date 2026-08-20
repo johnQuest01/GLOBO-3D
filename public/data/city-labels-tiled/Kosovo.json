@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Pristina",
+    "key": "pristina",
+    "lat": 42.66671,
+    "lon": 21.165984,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Prizren",
+    "key": "prizren city",
+    "lat": 42.22932,
+    "lon": 20.750092,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Peć",
+    "key": "peć city",
+    "lat": 42.660328,
+    "lon": 20.310739,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  }
+]

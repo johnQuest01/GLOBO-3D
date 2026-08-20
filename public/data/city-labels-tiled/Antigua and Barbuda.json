@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Saint John's",
+    "key": "saint john's",
+    "lat": 17.118036,
+    "lon": -61.850034,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  }
+]

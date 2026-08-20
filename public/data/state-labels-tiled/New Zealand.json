@@ -101,8 +101,8 @@
   {
     "name": "Costa Oeste",
     "key": "west coast",
-    "lat": 13.2212,
-    "lon": -16.3138,
+    "lat": -43.362,
+    "lon": 170.402,
     "labelRank": 6,
     "minLabel": 7,
     "maxLabel": 11

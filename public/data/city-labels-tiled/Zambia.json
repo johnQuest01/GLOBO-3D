@@ -1,0 +1,308 @@
+[
+  {
+    "name": "Lusaca",
+    "key": "lusaca",
+    "lat": -15.414698,
+    "lon": 28.281382,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kitwe",
+    "key": "kitwe",
+    "lat": -12.810033,
+    "lon": 28.220024,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ndola",
+    "key": "ndola",
+    "lat": -12.999944,
+    "lon": 28.650024,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kasama",
+    "key": "kasama",
+    "lat": -10.199598,
+    "lon": 31.179947,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kabwe",
+    "key": "kabwe",
+    "lat": -14.440011,
+    "lon": 28.449984,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chingola",
+    "key": "chingola",
+    "lat": -12.539611,
+    "lon": 27.850021,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Livingstone",
+    "key": "livingstone",
+    "lat": -17.860009,
+    "lon": 25.860013,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mufulira",
+    "key": "mufulira",
+    "lat": -12.549997,
+    "lon": 28.25997,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Luanshya",
+    "key": "luanshya",
+    "lat": -13.133321,
+    "lon": 28.400013,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chipata",
+    "key": "chipata",
+    "lat": -13.62957,
+    "lon": 32.640013,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chililabombwe",
+    "key": "chililabombwe",
+    "lat": -12.369595,
+    "lon": 27.819997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Solwezi",
+    "key": "solwezi",
+    "lat": -12.179581,
+    "lon": 26.39998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mazabuka",
+    "key": "mazabuka",
+    "lat": -15.860028,
+    "lon": 27.76,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mongu",
+    "key": "mongu",
+    "lat": -15.279598,
+    "lon": 23.120025,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kafue",
+    "key": "kafue",
+    "lat": -15.780033,
+    "lon": 28.180026,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Choma",
+    "key": "choma",
+    "lat": -16.809479,
+    "lon": 26.970023,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mansa",
+    "key": "mansa",
+    "lat": -11.200002,
+    "lon": 28.890009,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kapiri Mposhi",
+    "key": "kapiri mposhi",
+    "lat": -13.969601,
+    "lon": 28.659997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mpika",
+    "key": "mpika",
+    "lat": -11.830042,
+    "lon": 31.459981,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nchelenge",
+    "key": "nchelenge",
+    "lat": -9.349573,
+    "lon": 28.730019,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kawambwa",
+    "key": "kawambwa",
+    "lat": -9.779521,
+    "lon": 29.080023,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mbala",
+    "key": "mbala",
+    "lat": -8.840043,
+    "lon": 31.370013,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sesheke",
+    "key": "sesheke",
+    "lat": -17.469542,
+    "lon": 24.300005,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mumbwa",
+    "key": "mumbwa",
+    "lat": -14.979617,
+    "lon": 27.070017,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kaoma",
+    "key": "kaoma",
+    "lat": -14.779629,
+    "lon": 24.799974,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chinsali",
+    "key": "chinsali",
+    "lat": -10.549603,
+    "lon": 32.059996,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mwinilunga",
+    "key": "mwinilunga",
+    "lat": -11.739556,
+    "lon": 24.439996,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lundazi",
+    "key": "lundazi",
+    "lat": -12.289548,
+    "lon": 33.170006,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Senanga",
+    "key": "senanga",
+    "lat": -16.119599,
+    "lon": 23.270042,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kalabo",
+    "key": "kalabo",
+    "lat": -14.98959,
+    "lon": 22.68,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zambezi",
+    "key": "zambezi",
+    "lat": -13.540015,
+    "lon": 23.109948,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kasempa",
+    "key": "kasempa",
+    "lat": -13.459606,
+    "lon": 25.820015,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lukulu",
+    "key": "lukulu",
+    "lat": -14.389575,
+    "lon": 23.240018,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nyimba",
+    "key": "nyimba",
+    "lat": -14.549514,
+    "lon": 30.809995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

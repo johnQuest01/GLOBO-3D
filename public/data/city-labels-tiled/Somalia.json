@@ -1,0 +1,227 @@
+[
+  {
+    "name": "Mogadíscio",
+    "key": "mogadíscio",
+    "lat": 2.068627,
+    "lon": 45.364732,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kismayo",
+    "key": "kismayo",
+    "lat": -0.356633,
+    "lon": 42.518324,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jamaame",
+    "key": "jamaame",
+    "lat": 0.072178,
+    "lon": 42.750558,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baidoa",
+    "key": "baidoa",
+    "lat": 3.119976,
+    "lon": 43.649986,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jowhar",
+    "key": "jowhar",
+    "lat": 2.767,
+    "lon": 45.516591,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Beledweyne",
+    "key": "beledweyne",
+    "lat": 4.739981,
+    "lon": 45.200021,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gaalkacyo",
+    "key": "gaalkacyo",
+    "lat": 6.76996,
+    "lon": 47.430014,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mandera",
+    "key": "mandera",
+    "lat": 3.940443,
+    "lon": 41.860018,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bosaso",
+    "key": "bosaso",
+    "lat": 11.280021,
+    "lon": 49.179985,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Luuq",
+    "key": "luuq",
+    "lat": 3.800477,
+    "lon": 42.550002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Buurhakaba",
+    "key": "buurhakaba",
+    "lat": 2.783718,
+    "lon": 44.083293,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Eyl",
+    "key": "eyl",
+    "lat": 7.983349,
+    "lon": 49.833278,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bandar Beyla",
+    "key": "bandar beyla",
+    "lat": 9.483309,
+    "lon": 50.816681,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Garbahaarey",
+    "key": "garbahaarey",
+    "lat": 3.327003,
+    "lon": 42.227002,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ferfer",
+    "key": "ferfer",
+    "lat": 5.085412,
+    "lon": 45.165036,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Burgabo",
+    "key": "burgabo",
+    "lat": -1.20087,
+    "lon": 41.85196,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Garoowe",
+    "key": "garoowe",
+    "lat": 8.39999,
+    "lon": 48.500026,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Merca",
+    "key": "merca",
+    "lat": 1.719949,
+    "lon": 44.768896,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xuddur",
+    "key": "xuddur",
+    "lat": 4.183299,
+    "lon": 43.866703,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bu'aale",
+    "key": "bu'aale",
+    "lat": 1.083303,
+    "lon": 42.583303,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qardho",
+    "key": "qardho",
+    "lat": 9.500414,
+    "lon": 49.165981,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mareeg",
+    "key": "mareeg",
+    "lat": 3.766578,
+    "lon": 47.299996,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Caluula",
+    "key": "caluula",
+    "lat": 11.966956,
+    "lon": 50.750018,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dusa Mareb",
+    "key": "dusa mareb",
+    "lat": 5.531982,
+    "lon": 46.382174,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hurdiyo",
+    "key": "hurdiyo",
+    "lat": 10.582027,
+    "lon": 51.123329,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

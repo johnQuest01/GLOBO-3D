@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Nouakchott",
+    "key": "nouakchott city",
+    "lat": 18.086427,
+    "lon": -15.97534,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saint-Louis",
+    "key": "saint-louis city",
+    "lat": 16.01999,
+    "lon": -16.510011,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Néma",
+    "key": "néma",
+    "lat": 16.617059,
+    "lon": -7.250007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nouadhibou",
+    "key": "nouadhibou",
+    "lat": 20.900002,
+    "lon": -17.056024,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kiffa",
+    "key": "kiffa",
+    "lat": 16.619979,
+    "lon": -11.399987,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zouérat",
+    "key": "zouérat",
+    "lat": 22.730381,
+    "lon": -12.483306,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rosso",
+    "key": "rosso",
+    "lat": 16.524016,
+    "lon": -15.812663,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Atar",
+    "key": "atar",
+    "lat": 20.51664,
+    "lon": -13.049989,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tidjikja",
+    "key": "tidjikja",
+    "lat": 18.550016,
+    "lon": -11.416601,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Boutilimit",
+    "key": "boutilimit",
+    "lat": 17.550387,
+    "lon": -14.700044,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Boghé",
+    "key": "boghé",
+    "lat": 16.590394,
+    "lon": -14.269967,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aleg",
+    "key": "aleg",
+    "lat": 17.057997,
+    "lon": -13.908996,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fderîck",
+    "key": "fderîck",
+    "lat": 22.679001,
+    "lon": -12.707,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ayoun el Atrous",
+    "key": "ayoun el atrous",
+    "lat": 16.666591,
+    "lon": -9.616659,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sélibaby",
+    "key": "sélibaby",
+    "lat": 15.167019,
+    "lon": -12.183324,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Akjoujt",
+    "key": "akjoujt",
+    "lat": 19.746999,
+    "lon": -14.390999,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Timbedra",
+    "key": "timbedra",
+    "lat": 16.250415,
+    "lon": -8.166618,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chegga",
+    "key": "chegga",
+    "lat": 25.3804,
+    "lon": -5.779968,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Magta-Lahjar",
+    "key": "magta-lahjar",
+    "lat": 17.000395,
+    "lon": -13.499988,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bir Moghrein",
+    "key": "bir moghrein",
+    "lat": 25.233303,
+    "lon": -11.583309,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  }
+]

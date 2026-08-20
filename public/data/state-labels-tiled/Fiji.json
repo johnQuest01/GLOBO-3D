@@ -2,8 +2,8 @@
   {
     "name": "Divisão do Leste",
     "key": "eastern",
-    "lat": -13.7617,
-    "lon": 31.8341,
+    "lat": -20.6657,
+    "lon": -178.72,
     "labelRank": 7,
     "minLabel": 8,
     "maxLabel": 11
@@ -11,8 +11,8 @@
   {
     "name": "Divisão do Oeste",
     "key": "western",
-    "lat": -2.13156,
-    "lon": 29.2644,
+    "lat": -21.6878,
+    "lon": 174.61,
     "labelRank": 7,
     "minLabel": 8,
     "maxLabel": 11
@@ -20,8 +20,8 @@
   {
     "name": "Divisão Central",
     "key": "central",
-    "lat": -21.8775,
-    "lon": 26.6144,
+    "lat": -18.3823,
+    "lon": 178.132,
     "labelRank": 7,
     "minLabel": 8,
     "maxLabel": 11
@@ -29,8 +29,8 @@
   {
     "name": "Divisão do Norte",
     "key": "northern",
-    "lat": 9.14067,
-    "lon": -11.9468,
+    "lat": -16.8107,
+    "lon": 178.308,
     "labelRank": 7,
     "minLabel": 8,
     "maxLabel": 11

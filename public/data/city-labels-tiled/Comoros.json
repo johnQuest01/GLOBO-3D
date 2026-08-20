@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Moroni",
+    "key": "moroni",
+    "lat": -11.704158,
+    "lon": 43.240244,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  }
+]

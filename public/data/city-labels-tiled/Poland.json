@@ -1,0 +1,218 @@
+[
+  {
+    "name": "Katowice",
+    "key": "katowice",
+    "lat": 50.26038,
+    "lon": 19.020017,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Varsóvia",
+    "key": "varsóvia",
+    "lat": 52.230872,
+    "lon": 21.005347,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Łódź",
+    "key": "łódź city",
+    "lat": 51.767797,
+    "lon": 19.458229,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cracóvia",
+    "key": "cracóvia",
+    "lat": 50.061925,
+    "lon": 19.958066,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gdańsk",
+    "key": "gdańsk",
+    "lat": 54.359975,
+    "lon": 18.64004,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bytom",
+    "key": "bytom",
+    "lat": 50.350039,
+    "lon": 18.909998,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wrocław",
+    "key": "wrocław",
+    "lat": 51.110432,
+    "lon": 17.030009,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Poznań",
+    "key": "poznań",
+    "lat": 52.405753,
+    "lon": 16.89994,
+    "labelRank": 7,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gliwice",
+    "key": "gliwice",
+    "lat": 50.330376,
+    "lon": 18.670013,
+    "labelRank": 7,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Estetino",
+    "key": "estetino",
+    "lat": 53.420394,
+    "lon": 14.530007,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bydgoszcz",
+    "key": "bydgoszcz",
+    "lat": 53.120413,
+    "lon": 18.010001,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lublin",
+    "key": "lublin city",
+    "lat": 51.250398,
+    "lon": 22.57272,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gdynia",
+    "key": "gdynia",
+    "lat": 54.520379,
+    "lon": 18.530021,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Białystok",
+    "key": "białystok",
+    "lat": 53.131696,
+    "lon": 23.182319,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rzeszów",
+    "key": "rzeszów",
+    "lat": 50.028655,
+    "lon": 21.995992,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kielce",
+    "key": "kielce",
+    "lat": 50.890394,
+    "lon": 20.66002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Olsztyn",
+    "key": "olsztyn",
+    "lat": 53.772584,
+    "lon": 20.485564,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Opole",
+    "key": "opole city",
+    "lat": 50.68498,
+    "lon": 17.93135,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Elbląg",
+    "key": "elbląg",
+    "lat": 54.153919,
+    "lon": 19.403193,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zielona Góra",
+    "key": "zielona góra",
+    "lat": 51.950406,
+    "lon": 15.500025,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Koszalin",
+    "key": "koszalin",
+    "lat": 54.2,
+    "lon": 16.183333,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Grudziądz",
+    "key": "grudziądz",
+    "lat": 53.480391,
+    "lon": 18.750008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Inowrocław",
+    "key": "inowrocław",
+    "lat": 52.779942,
+    "lon": 18.249986,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ełk",
+    "key": "ełk",
+    "lat": 53.833702,
+    "lon": 22.349995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

@@ -1,0 +1,281 @@
+[
+  {
+    "name": "Riade",
+    "key": "riade",
+    "lat": 24.634497,
+    "lon": 46.720487,
+    "labelRank": 0,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jidá",
+    "key": "jidá",
+    "lat": 21.518835,
+    "lon": 39.217252,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dammam",
+    "key": "dammam",
+    "lat": 26.430138,
+    "lon": 50.097724,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Meca",
+    "key": "meca",
+    "lat": 21.431967,
+    "lon": 39.818094,
+    "labelRank": 2,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Medina",
+    "key": "medina",
+    "lat": 24.501935,
+    "lon": 39.578057,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ta’if",
+    "key": "ta’if",
+    "lat": 21.262228,
+    "lon": 40.382279,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al Hufuf",
+    "key": "al hufuf",
+    "lat": 25.348749,
+    "lon": 49.585593,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al-Hillah",
+    "key": "al-hillah",
+    "lat": 23.489456,
+    "lon": 46.75636,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tabuk",
+    "key": "tabuk city",
+    "lat": 28.383835,
+    "lon": 36.554967,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Buraydah",
+    "key": "buraydah",
+    "lat": 26.366387,
+    "lon": 43.962836,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ha'il",
+    "key": "ha'il city",
+    "lat": 27.523577,
+    "lon": 41.70008,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Najrã",
+    "key": "najrã",
+    "lat": 17.50654,
+    "lon": 44.131559,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al-Qaṭīf",
+    "key": "al-qaṭīf",
+    "lat": 26.519633,
+    "lon": 50.01151,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al Mubarraz",
+    "key": "al mubarraz",
+    "lat": 25.429054,
+    "lon": 49.565905,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al-Kharj",
+    "key": "al-kharj",
+    "lat": 24.155566,
+    "lon": 47.312037,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Iambo",
+    "key": "iambo",
+    "lat": 24.094277,
+    "lon": 38.049295,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hafar al-Batin",
+    "key": "hafar al-batin",
+    "lat": 28.433651,
+    "lon": 45.960078,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jubail",
+    "key": "jubail",
+    "lat": 27.004642,
+    "lon": 49.646003,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arar",
+    "key": "arar",
+    "lat": 30.990006,
+    "lon": 41.02069,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Abha",
+    "key": "abha",
+    "lat": 18.230087,
+    "lon": 42.500134,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sacaca",
+    "key": "sacaca",
+    "lat": 29.999997,
+    "lon": 40.133305,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jizan",
+    "key": "jizan city",
+    "lat": 16.906551,
+    "lon": 42.556565,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dhahran",
+    "key": "dhahran",
+    "lat": 26.29143,
+    "lon": 50.158323,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qal`at Bishah",
+    "key": "qal`at bishah",
+    "lat": 20.008687,
+    "lon": 42.598681,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rafha",
+    "key": "rafha",
+    "lat": 29.620219,
+    "lon": 43.494802,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al Wajh",
+    "key": "al wajh",
+    "lat": 26.232416,
+    "lon": 36.463552,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "As Sulayyil",
+    "key": "as sulayyil",
+    "lat": 20.462251,
+    "lon": 45.572246,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dumat al-Jandal",
+    "key": "dumat al-jandal",
+    "lat": 29.815298,
+    "lon": 39.866393,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "An Nabk",
+    "key": "an nabk",
+    "lat": 31.333302,
+    "lon": 37.333297,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "al-Quwayʿiyah",
+    "key": "al-quwayʿiyah",
+    "lat": 24.07371,
+    "lon": 45.280636,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al Qunfudhah",
+    "key": "al qunfudhah",
+    "lat": 19.126364,
+    "lon": 41.078877,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  }
+]

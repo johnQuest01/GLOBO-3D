@@ -2,8 +2,8 @@
   {
     "name": "Saint Patrick",
     "key": "saint patrick",
-    "lat": 12.2147,
-    "lon": -61.6342,
+    "lat": 15.2768,
+    "lon": -61.3052,
     "labelRank": 10,
     "minLabel": 11,
     "maxLabel": 11
@@ -11,8 +11,8 @@
   {
     "name": "Saint David",
     "key": "saint david",
-    "lat": 12.055,
-    "lon": -61.6617,
+    "lat": 15.3956,
+    "lon": -61.2919,
     "labelRank": 10,
     "minLabel": 11,
     "maxLabel": 11
@@ -20,8 +20,8 @@
   {
     "name": "Saint Andrew",
     "key": "saint andrew",
-    "lat": 12.1224,
-    "lon": -61.6329,
+    "lat": 15.5378,
+    "lon": -61.3589,
     "labelRank": 10,
     "minLabel": 11,
     "maxLabel": 11
@@ -29,8 +29,8 @@
   {
     "name": "Saint John",
     "key": "saint john",
-    "lat": 12.1446,
-    "lon": -61.7094,
+    "lat": 15.5767,
+    "lon": -61.4483,
     "labelRank": 10,
     "minLabel": 11,
     "maxLabel": 11
@@ -38,8 +38,8 @@
   {
     "name": "Saint Peter",
     "key": "saint peter",
-    "lat": 13.2679,
-    "lon": -59.6109,
+    "lat": 15.4986,
+    "lon": -61.4448,
     "labelRank": 10,
     "minLabel": 11,
     "maxLabel": 11
@@ -47,8 +47,8 @@
   {
     "name": "Saint Joseph",
     "key": "saint joseph",
-    "lat": 13.2118,
-    "lon": -59.5495,
+    "lat": 15.4355,
+    "lon": -61.3863,
     "labelRank": 10,
     "minLabel": 11,
     "maxLabel": 11
@@ -65,8 +65,8 @@
   {
     "name": "Saint George",
     "key": "saint george",
-    "lat": 12.0681,
-    "lon": -61.7226,
+    "lat": 15.3,
+    "lon": -61.3489,
     "labelRank": 10,
     "minLabel": 11,
     "maxLabel": 11
@@ -83,8 +83,8 @@
   {
     "name": "Saint Mark",
     "key": "saint mark",
-    "lat": 12.189,
-    "lon": -61.6749,
+    "lat": 15.2217,
+    "lon": -61.3612,
     "labelRank": 10,
     "minLabel": 11,
     "maxLabel": 11

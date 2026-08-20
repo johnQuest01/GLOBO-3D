@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Sarajevo",
+    "key": "sarajevo city",
+    "lat": 43.850022,
+    "lon": 18.383002,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Banja Luka",
+    "key": "banja luka city",
+    "lat": 44.780405,
+    "lon": 17.179974,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zenica",
+    "key": "zenica",
+    "lat": 44.219974,
+    "lon": 17.919981,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mostar",
+    "key": "mostar",
+    "lat": 43.350492,
+    "lon": 17.820039,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tuzla",
+    "key": "tuzla city",
+    "lat": 44.550471,
+    "lon": 18.680038,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Prijedor",
+    "key": "prijedor",
+    "lat": 44.980393,
+    "lon": 16.700004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

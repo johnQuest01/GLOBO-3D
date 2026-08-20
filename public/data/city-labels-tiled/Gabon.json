@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Libreville",
+    "key": "libreville",
+    "lat": 0.385389,
+    "lon": 9.457965,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Port-Gentil",
+    "key": "port-gentil",
+    "lat": -0.720022,
+    "lon": 8.780022,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oyem",
+    "key": "oyem",
+    "lat": 1.616631,
+    "lon": 11.583313,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Franceville",
+    "key": "franceville",
+    "lat": -1.633299,
+    "lon": 13.583295,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moanda",
+    "key": "moanda city",
+    "lat": -1.5655,
+    "lon": 13.20001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mouila",
+    "key": "mouila",
+    "lat": -1.866154,
+    "lon": 11.016681,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lambaréné",
+    "key": "lambaréné",
+    "lat": -0.69961,
+    "lon": 10.216627,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ebebiyín",
+    "key": "ebebiyín",
+    "lat": 2.152998,
+    "lon": 11.330002,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tchibanga",
+    "key": "tchibanga",
+    "lat": -2.921483,
+    "lon": 10.997289,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bitam",
+    "key": "bitam",
+    "lat": 2.083657,
+    "lon": 11.483371,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Makokou",
+    "key": "makokou",
+    "lat": 0.567083,
+    "lon": 12.866594,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Koulamoutou",
+    "key": "koulamoutou",
+    "lat": -1.132917,
+    "lon": 12.48331,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gamba",
+    "key": "gamba",
+    "lat": -2.650033,
+    "lon": 9.999999,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Okondja",
+    "key": "okondja",
+    "lat": -0.656775,
+    "lon": 13.679547,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ndendé",
+    "key": "ndendé",
+    "lat": -2.382918,
+    "lon": 11.383274,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mitzic",
+    "key": "mitzic",
+    "lat": 0.78371,
+    "lon": 11.566622,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mayumba",
+    "key": "mayumba",
+    "lat": -3.416602,
+    "lon": 10.650037,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mékambo",
+    "key": "mékambo",
+    "lat": 1.017081,
+    "lon": 13.933299,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Omboué",
+    "key": "omboué",
+    "lat": -1.566223,
+    "lon": 9.249967,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bifoun",
+    "key": "bifoun",
+    "lat": -0.332914,
+    "lon": 10.383232,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

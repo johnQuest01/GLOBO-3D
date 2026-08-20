@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Nicósia",
+    "key": "nicósia",
+    "lat": 35.166677,
+    "lon": 33.366635,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Limassol",
+    "key": "limassol city",
+    "lat": 34.675414,
+    "lon": 33.033322,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Larnaca",
+    "key": "larnaca city",
+    "lat": 34.917003,
+    "lon": 33.635998,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pafos",
+    "key": "pafos",
+    "lat": 34.755915,
+    "lon": 32.422457,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

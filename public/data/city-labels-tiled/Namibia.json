@@ -1,0 +1,245 @@
+[
+  {
+    "name": "Windhoek",
+    "key": "windhoek",
+    "lat": -22.570006,
+    "lon": 17.083546,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rundu",
+    "key": "rundu",
+    "lat": -17.920006,
+    "lon": 19.749947,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Walvis Bay",
+    "key": "walvis bay",
+    "lat": -22.957528,
+    "lon": 14.505306,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Swakopmund",
+    "key": "swakopmund",
+    "lat": -22.668863,
+    "lon": 14.53502,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rehoboth",
+    "key": "rehoboth",
+    "lat": -23.319573,
+    "lon": 17.080032,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ongwediva",
+    "key": "ongwediva",
+    "lat": -17.780014,
+    "lon": 15.770034,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Katima Mulilo",
+    "key": "katima mulilo",
+    "lat": -17.499618,
+    "lon": 24.260007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Otjiwarongo",
+    "key": "otjiwarongo",
+    "lat": -20.459541,
+    "lon": 16.640007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Grootfontein",
+    "key": "grootfontein",
+    "lat": -19.566623,
+    "lon": 18.116558,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Okahandja",
+    "key": "okahandja",
+    "lat": -21.979603,
+    "lon": 16.910017,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Keetmanshoop",
+    "key": "keetmanshoop",
+    "lat": -26.573896,
+    "lon": 18.129994,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gobabis",
+    "key": "gobabis",
+    "lat": -22.455,
+    "lon": 18.963,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lüderitz",
+    "key": "lüderitz",
+    "lat": -26.648,
+    "lon": 15.159426,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tsumeb",
+    "key": "tsumeb",
+    "lat": -19.240029,
+    "lon": 17.71002,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mariental",
+    "key": "mariental",
+    "lat": -24.619597,
+    "lon": 17.959927,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oshikango",
+    "key": "oshikango",
+    "lat": -17.399521,
+    "lon": 15.880002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Omaruru",
+    "key": "omaruru",
+    "lat": -21.436002,
+    "lon": 15.950997,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bethanie",
+    "key": "bethanie",
+    "lat": -26.499534,
+    "lon": 17.150002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Usakos",
+    "key": "usakos",
+    "lat": -21.99955,
+    "lon": 15.58002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oranjemund",
+    "key": "oranjemund",
+    "lat": -28.549486,
+    "lon": 16.429994,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karibib",
+    "key": "karibib",
+    "lat": -21.939003,
+    "lon": 15.852996,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Outjo",
+    "key": "outjo",
+    "lat": -20.109536,
+    "lon": 16.140038,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karasburg",
+    "key": "karasburg",
+    "lat": -28.019596,
+    "lon": 18.739982,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Opuwo",
+    "key": "opuwo",
+    "lat": -18.059584,
+    "lon": 13.820024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Otavi",
+    "key": "otavi",
+    "lat": -19.639998,
+    "lon": 17.342001,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maltahöhe",
+    "key": "maltahöhe",
+    "lat": -24.839997,
+    "lon": 16.939989,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cuangar",
+    "key": "cuangar",
+    "lat": -17.609534,
+    "lon": 18.61999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

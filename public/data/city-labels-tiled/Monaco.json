@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Mónaco",
+    "key": "mónaco",
+    "lat": 43.739646,
+    "lon": 7.406913,
+    "labelRank": 6,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  }
+]

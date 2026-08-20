@@ -16,6 +16,13 @@ interface LabelItemProps {
   displayName: string;
   /** Altura do texto em pixels de tela (constante em qualquer zoom). */
   fontPx: number;
+  /**
+   * Deslocamento do texto em relação ao ponto do lugar, em múltiplos do
+   * fontSize. Vem do motor de colocação: quando o ponto exato já estava
+   * ocupado, o nome foi aceito ao lado ou abaixo dele.
+   */
+  offsetEmX?: number;
+  offsetEmY?: number;
   layer?: LabelLayer;
   /** `false` inicia o fade out; o pai remove o rótulo depois da animação. */
   visible?: boolean;
@@ -41,6 +48,8 @@ const LabelItem: FC<LabelItemProps> = ({
   position,
   displayName,
   fontPx,
+  offsetEmX = 0,
+  offsetEmY = 0,
   layer = 'country',
   visible = true,
   onClick,
@@ -122,7 +131,13 @@ const LabelItem: FC<LabelItemProps> = ({
   return (
     <group ref={scaleRef} position={textPosition}>
       <Billboard>
+        {/* O deslocamento é aplicado DENTRO do billboard, então ele é sempre
+            para o lado/para cima na tela — e não numa direção do mundo, que
+            mudaria de sentido conforme o globo gira. Como o grupo de fora já
+            está escalado para o texto medir `fontPx`, uma unidade aqui é
+            exatamente uma altura de texto. */}
         <Text
+          position={[offsetEmX, offsetEmY, 0]}
           fontSize={1}
           color={mainColor}
           anchorX="center"

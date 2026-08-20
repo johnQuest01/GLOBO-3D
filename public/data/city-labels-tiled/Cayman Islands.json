@@ -1,0 +1,11 @@
+[
+  {
+    "name": "George Town",
+    "key": "george town city",
+    "lat": 19.294748,
+    "lon": -81.37157,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

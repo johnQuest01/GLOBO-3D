@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Manama",
+    "key": "manama",
+    "lat": 26.236136,
+    "lon": 50.583052,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  }
+]

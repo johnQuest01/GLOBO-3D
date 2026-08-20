@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Dublin",
+    "key": "dublin city",
+    "lat": 53.346731,
+    "lon": -6.25698,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cork",
+    "key": "cork city",
+    "lat": 51.892838,
+    "lon": -8.46511,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Limerick",
+    "key": "limerick city",
+    "lat": 52.664704,
+    "lon": -8.62305,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Galway",
+    "key": "galway city",
+    "lat": 53.272393,
+    "lon": -9.048812,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Waterford",
+    "key": "waterford city",
+    "lat": 52.258295,
+    "lon": -7.111928,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dundalk",
+    "key": "dundalk",
+    "lat": 53.999796,
+    "lon": -6.395592,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Drogheda",
+    "key": "drogheda",
+    "lat": 53.708887,
+    "lon": -6.350462,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tralee",
+    "key": "tralee",
+    "lat": 52.266692,
+    "lon": -9.716653,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kilkenny",
+    "key": "kilkenny city",
+    "lat": 52.65455,
+    "lon": -7.252255,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sligo",
+    "key": "sligo city",
+    "lat": 54.267061,
+    "lon": -8.483317,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Killarney",
+    "key": "killarney",
+    "lat": 52.0504,
+    "lon": -9.516665,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shannon",
+    "key": "shannon",
+    "lat": 52.703849,
+    "lon": -8.864147,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Monaghan",
+    "key": "monaghan city",
+    "lat": 54.25,
+    "lon": -6.966667,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Roscommon",
+    "key": "roscommon city",
+    "lat": 53.633333,
+    "lon": -8.183333,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Donegal",
+    "key": "donegal city",
+    "lat": 54.650009,
+    "lon": -8.116673,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

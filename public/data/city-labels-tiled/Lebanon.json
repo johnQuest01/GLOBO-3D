@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Beirute",
+    "key": "beirute",
+    "lat": 33.873921,
+    "lon": 35.507762,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trípoli",
+    "key": "trípoli city",
+    "lat": 34.438267,
+    "lon": 35.831661,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sídon",
+    "key": "sídon",
+    "lat": 33.563028,
+    "lon": 35.368787,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nabatiye",
+    "key": "nabatiye",
+    "lat": 33.383304,
+    "lon": 35.450002,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zahlé",
+    "key": "zahlé",
+    "lat": 33.850116,
+    "lon": 35.904154,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baabda",
+    "key": "baabda",
+    "lat": 33.833304,
+    "lon": 35.533296,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  }
+]

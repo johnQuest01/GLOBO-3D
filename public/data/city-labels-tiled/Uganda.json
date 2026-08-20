@@ -1,0 +1,389 @@
+[
+  {
+    "name": "Kampala",
+    "key": "kampala",
+    "lat": 0.35,
+    "lon": 32.58,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mbale",
+    "key": "mbale city",
+    "lat": 1.09041,
+    "lon": 34.169997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jinja",
+    "key": "jinja city",
+    "lat": 0.440424,
+    "lon": 33.199927,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arua",
+    "key": "arua city",
+    "lat": 3.02037,
+    "lon": 30.900015,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Entebbe",
+    "key": "entebbe",
+    "lat": 0.060395,
+    "lon": 32.460024,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tororo",
+    "key": "tororo city",
+    "lat": 0.710382,
+    "lon": 34.169997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gulu",
+    "key": "gulu city",
+    "lat": 2.779997,
+    "lon": 32.280034,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lira",
+    "key": "lira city",
+    "lat": 2.26039,
+    "lon": 32.890023,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mbarara",
+    "key": "mbarara city",
+    "lat": -0.599616,
+    "lon": 30.650005,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bombo",
+    "key": "bombo",
+    "lat": 0.583299,
+    "lon": 32.533299,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kasese",
+    "key": "kasese city",
+    "lat": 0.171078,
+    "lon": 30.081379,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Masaka",
+    "key": "masaka city",
+    "lat": -0.329607,
+    "lon": 31.729991,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kitgum",
+    "key": "kitgum city",
+    "lat": 3.300404,
+    "lon": 32.870024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Busia",
+    "key": "busia city",
+    "lat": 0.454444,
+    "lon": 34.075833,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Iganga",
+    "key": "iganga city",
+    "lat": 0.609167,
+    "lon": 33.468611,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kabale",
+    "key": "kabale city",
+    "lat": -1.249602,
+    "lon": 29.979968,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fort Portal",
+    "key": "fort portal",
+    "lat": 0.671004,
+    "lon": 30.275002,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mityana",
+    "key": "mityana city",
+    "lat": 0.400427,
+    "lon": 32.050023,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Adjumani",
+    "key": "adjumani city",
+    "lat": 3.361389,
+    "lon": 31.809722,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Masindi",
+    "key": "masindi city",
+    "lat": 1.674444,
+    "lon": 31.715,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pallisa",
+    "key": "pallisa city",
+    "lat": 1.145,
+    "lon": 33.709444,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nebbi",
+    "key": "nebbi city",
+    "lat": 2.475833,
+    "lon": 31.1025,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moyo",
+    "key": "moyo city",
+    "lat": 3.650409,
+    "lon": 31.720017,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kayunga",
+    "key": "kayunga city",
+    "lat": 0.7025,
+    "lon": 32.888611,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mubende",
+    "key": "mubende city",
+    "lat": 0.590441,
+    "lon": 31.370013,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pakwach",
+    "key": "pakwach",
+    "lat": 2.470378,
+    "lon": 31.47998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ntungamo",
+    "key": "ntungamo city",
+    "lat": -0.879444,
+    "lon": 30.264167,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kiboga",
+    "key": "kiboga city",
+    "lat": 0.916111,
+    "lon": 31.774167,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sironko",
+    "key": "sironko city",
+    "lat": 1.25,
+    "lon": 34.3,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kumi",
+    "key": "kumi city",
+    "lat": 1.460833,
+    "lon": 33.936111,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kisoro",
+    "key": "kisoro city",
+    "lat": -1.353889,
+    "lon": 29.698333,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kamuli",
+    "key": "kamuli city",
+    "lat": 0.947222,
+    "lon": 33.119722,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mpigi",
+    "key": "mpigi city",
+    "lat": 0.225,
+    "lon": 32.313611,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Katakwi",
+    "key": "katakwi city",
+    "lat": 1.891111,
+    "lon": 33.966111,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Masindi Port",
+    "key": "masindi port",
+    "lat": 1.700399,
+    "lon": 32.069918,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nakasongola",
+    "key": "nakasongola city",
+    "lat": 1.308889,
+    "lon": 32.456389,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kalangala",
+    "key": "kalangala city",
+    "lat": -0.308889,
+    "lon": 32.225,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kibale",
+    "key": "kibale city",
+    "lat": 0.8,
+    "lon": 31.066667,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kaberamaido",
+    "key": "kaberamaido city",
+    "lat": 1.738889,
+    "lon": 33.159444,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Katwe",
+    "key": "katwe",
+    "lat": -0.129619,
+    "lon": 29.920024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kaabong",
+    "key": "kaabong city",
+    "lat": 3.520391,
+    "lon": 34.120026,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Soroti",
+    "key": "soroti city",
+    "lat": 1.710398,
+    "lon": 33.600006,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moroto",
+    "key": "moroto city",
+    "lat": 2.540348,
+    "lon": 34.639994,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

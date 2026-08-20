@@ -20,8 +20,8 @@
   {
     "name": "Sul",
     "key": "southern",
-    "lat": 7.85416,
-    "lon": -12.0512,
+    "lat": 22.2402,
+    "lon": 114.204,
     "labelRank": 20,
     "minLabel": 11,
     "maxLabel": 11
@@ -47,8 +47,8 @@
   {
     "name": "Leste",
     "key": "eastern",
-    "lat": -13.7617,
-    "lon": 31.8341,
+    "lat": 22.2706,
+    "lon": 114.213,
     "labelRank": 20,
     "minLabel": 11,
     "maxLabel": 11

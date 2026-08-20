@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Praga",
+    "key": "praga",
+    "lat": 50.086967,
+    "lon": 14.422939,
+    "labelRank": 2,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ostrava",
+    "key": "ostrava",
+    "lat": 49.830355,
+    "lon": 18.249986,
+    "labelRank": 7,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brno",
+    "key": "brno",
+    "lat": 49.200393,
+    "lon": 16.609983,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Plzeň",
+    "key": "plzeň",
+    "lat": 49.740438,
+    "lon": 13.360001,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zlín",
+    "key": "zlín",
+    "lat": 49.230418,
+    "lon": 17.650023,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pardubice",
+    "key": "pardubice",
+    "lat": 50.04042,
+    "lon": 15.760009,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Liberec",
+    "key": "liberec",
+    "lat": 50.79996,
+    "lon": 15.079999,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Olomouc",
+    "key": "olomouc",
+    "lat": 49.586661,
+    "lon": 17.256796,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "České Budějovice",
+    "key": "české budějovice",
+    "lat": 48.980019,
+    "lon": 14.460037,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hradec Králové",
+    "key": "hradec králové",
+    "lat": 50.205996,
+    "lon": 15.812001,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ústí nad Labem",
+    "key": "ústí nad labem",
+    "lat": 50.662998,
+    "lon": 14.081005,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jihlava",
+    "key": "jihlava",
+    "lat": 49.400381,
+    "lon": 15.583328,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

@@ -1,0 +1,812 @@
+[
+  {
+    "name": "Lima",
+    "key": "lima city",
+    "lat": -12.05,
+    "lon": -77.04,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lima",
+    "key": "lima (peru)",
+    "lat": -12.046067,
+    "lon": -77.052008,
+    "labelRank": 1,
+    "minLabel": 3,
+    "maxLabel": 24
+  },
+  {
+    "name": "El Callao",
+    "key": "el callao",
+    "lat": -12.070027,
+    "lon": -77.134967,
+    "labelRank": 6,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arequipa",
+    "key": "arequipa city",
+    "lat": -16.418048,
+    "lon": -71.531957,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trujillo",
+    "key": "trujillo city",
+    "lat": -8.120035,
+    "lon": -79.019968,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chiclayo",
+    "key": "chiclayo",
+    "lat": -6.762909,
+    "lon": -79.836585,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Iquitos",
+    "key": "iquitos",
+    "lat": -3.750018,
+    "lon": -73.25001,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huancayo",
+    "key": "huancayo",
+    "lat": -12.08,
+    "lon": -75.20002,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Piura",
+    "key": "piura city",
+    "lat": -5.210032,
+    "lon": -80.629973,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cusco",
+    "key": "cusco city",
+    "lat": -13.525028,
+    "lon": -71.972155,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chimbote",
+    "key": "chimbote",
+    "lat": -9.070003,
+    "lon": -78.569995,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pucallpa",
+    "key": "pucallpa",
+    "lat": -8.368909,
+    "lon": -74.534996,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tacna",
+    "key": "tacna city",
+    "lat": -18.000001,
+    "lon": -70.250012,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ica",
+    "key": "ica city",
+    "lat": -14.067993,
+    "lon": -75.725492,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Juliaca",
+    "key": "juliaca",
+    "lat": -15.499998,
+    "lon": -70.139967,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ayacucho",
+    "key": "ayacucho city",
+    "lat": -13.175024,
+    "lon": -74.219951,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sullana",
+    "key": "sullana",
+    "lat": -4.889587,
+    "lon": -80.679996,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huánuco",
+    "key": "huánuco city",
+    "lat": -9.920029,
+    "lon": -76.240008,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chincha Alta",
+    "key": "chincha alta",
+    "lat": -13.419609,
+    "lon": -76.139988,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cajamarca",
+    "key": "cajamarca city",
+    "lat": -7.150017,
+    "lon": -78.530023,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cerro de Pasco",
+    "key": "cerro de pasco",
+    "lat": -10.690008,
+    "lon": -76.269981,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puno",
+    "key": "puno city",
+    "lat": -15.83295,
+    "lon": -70.033307,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tumbes",
+    "key": "tumbes city",
+    "lat": -3.570029,
+    "lon": -80.459983,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Talara",
+    "key": "talara",
+    "lat": -4.579993,
+    "lon": -81.279985,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chosica",
+    "key": "chosica",
+    "lat": -11.930035,
+    "lon": -76.710005,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huaraz",
+    "key": "huaraz",
+    "lat": -9.530027,
+    "lon": -77.530007,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pisco",
+    "key": "pisco",
+    "lat": -13.71003,
+    "lon": -76.219984,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huacho",
+    "key": "huacho",
+    "lat": -11.110034,
+    "lon": -77.61995,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chulucanas",
+    "key": "chulucanas",
+    "lat": -5.089574,
+    "lon": -80.170001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto Maldonado",
+    "key": "puerto maldonado",
+    "lat": -12.60002,
+    "lon": -69.183333,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Paita",
+    "key": "paita",
+    "lat": -5.089988,
+    "lon": -81.12002,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Abancay",
+    "key": "abancay",
+    "lat": -13.639595,
+    "lon": -72.890006,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moquegua",
+    "key": "moquegua city",
+    "lat": -17.189973,
+    "lon": -70.939996,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ilo",
+    "key": "ilo",
+    "lat": -17.640023,
+    "lon": -71.340023,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tingo María",
+    "key": "tingo maría",
+    "lat": -9.289628,
+    "lon": -75.989998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jaén",
+    "key": "jaén city",
+    "lat": -5.709588,
+    "lon": -78.80998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tarma",
+    "key": "tarma",
+    "lat": -11.410015,
+    "lon": -75.729988,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ferreñafe",
+    "key": "ferreñafe",
+    "lat": -6.629997,
+    "lon": -79.800023,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mollendo",
+    "key": "mollendo",
+    "lat": -17.020009,
+    "lon": -72.019982,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moyobamba",
+    "key": "moyobamba",
+    "lat": -6.049619,
+    "lon": -76.966656,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huancavelica",
+    "key": "huancavelica city",
+    "lat": -12.790035,
+    "lon": -74.990007,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huaura",
+    "key": "huaura",
+    "lat": -11.060011,
+    "lon": -77.599977,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pacasmayo",
+    "key": "pacasmayo",
+    "lat": -7.400648,
+    "lon": -79.570606,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Juanjuí",
+    "key": "juanjuí",
+    "lat": -7.169602,
+    "lon": -76.739978,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sicuani",
+    "key": "sicuani",
+    "lat": -14.289581,
+    "lon": -71.229978,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "La Oroya",
+    "key": "la oroya",
+    "lat": -11.520035,
+    "lon": -75.940001,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pativilca",
+    "key": "pativilca",
+    "lat": -10.69962,
+    "lon": -77.799991,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huamachuco",
+    "key": "huamachuco",
+    "lat": -7.810028,
+    "lon": -78.049949,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Casma",
+    "key": "casma",
+    "lat": -9.440007,
+    "lon": -78.209991,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tocache",
+    "key": "tocache",
+    "lat": -8.179618,
+    "lon": -76.520017,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chancay",
+    "key": "chancay",
+    "lat": -11.559619,
+    "lon": -77.269971,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chachapoyas",
+    "key": "chachapoyas",
+    "lat": -6.229608,
+    "lon": -77.870012,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nazca",
+    "key": "nazca",
+    "lat": -14.830013,
+    "lon": -74.94001,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sechura",
+    "key": "sechura",
+    "lat": -5.559623,
+    "lon": -80.819987,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jauja",
+    "key": "jauja",
+    "lat": -11.799604,
+    "lon": -75.500028,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Camaná",
+    "key": "camaná",
+    "lat": -16.61962,
+    "lon": -72.71999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ayaviri",
+    "key": "ayaviri",
+    "lat": -14.879571,
+    "lon": -70.599991,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Contamana",
+    "key": "contamana",
+    "lat": -7.340031,
+    "lon": -75.019979,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huanta",
+    "key": "huanta",
+    "lat": -12.949611,
+    "lon": -74.25,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Requena",
+    "key": "requena",
+    "lat": -5.069627,
+    "lon": -73.909995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Huarmey",
+    "key": "huarmey",
+    "lat": -10.069581,
+    "lon": -78.159994,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ilave",
+    "key": "ilave",
+    "lat": -16.079601,
+    "lon": -69.669996,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pimentel",
+    "key": "pimentel",
+    "lat": -6.829623,
+    "lon": -79.92999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Satipo",
+    "key": "satipo",
+    "lat": -11.259999,
+    "lon": -74.690025,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Junín",
+    "key": "junín (peru)",
+    "lat": -11.149618,
+    "lon": -76.010022,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Ramón",
+    "key": "san ramón",
+    "lat": -11.129619,
+    "lon": -75.340011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chota",
+    "key": "chota",
+    "lat": -6.549589,
+    "lon": -78.650042,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lamas",
+    "key": "lamas",
+    "lat": -6.430009,
+    "lon": -76.520017,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Motupe",
+    "key": "motupe",
+    "lat": -6.150026,
+    "lon": -79.710003,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cajabamba",
+    "key": "cajabamba",
+    "lat": -7.619601,
+    "lon": -78.040002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chilca",
+    "key": "chilca",
+    "lat": -12.519612,
+    "lon": -76.739978,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puquio",
+    "key": "puquio",
+    "lat": -14.699995,
+    "lon": -74.129982,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santiago",
+    "key": "santiago (peru)",
+    "lat": -14.189587,
+    "lon": -75.739961,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Otuzco",
+    "key": "otuzco",
+    "lat": -7.899997,
+    "lon": -78.569995,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salaverry",
+    "key": "salaverry",
+    "lat": -8.220029,
+    "lon": -78.989995,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Olmos",
+    "key": "olmos",
+    "lat": -5.979598,
+    "lon": -79.749975,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Putina",
+    "key": "putina",
+    "lat": -15.470026,
+    "lon": -69.429985,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Urubamba",
+    "key": "urubamba",
+    "lat": -13.304215,
+    "lon": -72.116617,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Coracora",
+    "key": "coracora",
+    "lat": -15.019614,
+    "lon": -73.789977,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Desaguadero",
+    "key": "desaguadero",
+    "lat": -16.564584,
+    "lon": -69.044995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "São Tomás",
+    "key": "são tomás",
+    "lat": -14.46001,
+    "lon": -72.080004,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Caballococha",
+    "key": "caballococha",
+    "lat": -3.916261,
+    "lon": -70.508342,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nauta",
+    "key": "nauta",
+    "lat": -4.570019,
+    "lon": -73.780029,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tarapoto",
+    "key": "tarapoto",
+    "lat": -6.509953,
+    "lon": -76.479968,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tournavista",
+    "key": "tournavista",
+    "lat": -8.932182,
+    "lon": -74.705218,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nuevo Rocafuerte",
+    "key": "nuevo rocafuerte",
+    "lat": -0.932929,
+    "lon": -75.399982,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puca Urco",
+    "key": "puca urco",
+    "lat": -2.332792,
+    "lon": -71.91668,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Andoas",
+    "key": "andoas",
+    "lat": -2.902059,
+    "lon": -76.402479,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Soldado Bartra",
+    "key": "soldado bartra",
+    "lat": -2.51614,
+    "lon": -75.7666,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Güeppi",
+    "key": "güeppi",
+    "lat": -0.116596,
+    "lon": -75.229967,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  }
+]

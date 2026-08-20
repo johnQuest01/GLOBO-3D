@@ -2,8 +2,8 @@
   {
     "name": "Norte",
     "key": "nord",
-    "lat": 50.403,
-    "lon": 3.22709,
+    "lat": -21.0082,
+    "lon": 165.058,
     "labelRank": 5,
     "minLabel": 6.7,
     "maxLabel": 11
@@ -11,8 +11,8 @@
   {
     "name": "Sud",
     "key": "sud",
-    "lat": 2.79256,
-    "lon": 11.731,
+    "lat": -22.608,
+    "lon": 167.487,
     "labelRank": 5,
     "minLabel": 6.7,
     "maxLabel": 11

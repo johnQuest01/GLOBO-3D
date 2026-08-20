@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Gaborone",
+    "key": "gaborone city",
+    "lat": -24.646314,
+    "lon": 25.911948,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Francistown",
+    "key": "francistown city",
+    "lat": -21.17004,
+    "lon": 27.500016,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lobatse",
+    "key": "lobatse city",
+    "lat": -25.219612,
+    "lon": 25.680024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Molepolole",
+    "key": "molepolole",
+    "lat": -24.399972,
+    "lon": 25.510009,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mahalapye",
+    "key": "mahalapye",
+    "lat": -23.1,
+    "lon": 26.820006,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maun",
+    "key": "maun",
+    "lat": -19.989595,
+    "lon": 23.420007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Serowe",
+    "key": "serowe",
+    "lat": -22.390017,
+    "lon": 26.710039,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kanye",
+    "key": "kanye",
+    "lat": -24.969601,
+    "lon": 25.339993,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mochudi",
+    "key": "mochudi",
+    "lat": -24.377004,
+    "lon": 26.152003,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Palapye",
+    "key": "palapye",
+    "lat": -22.559619,
+    "lon": 27.130013,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tshabong",
+    "key": "tshabong",
+    "lat": -26.009486,
+    "lon": 22.400018,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kasane",
+    "key": "kasane",
+    "lat": -17.809573,
+    "lon": 25.15003,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ghanzi",
+    "key": "ghanzi city",
+    "lat": -21.69962,
+    "lon": 21.639961,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nata",
+    "key": "nata",
+    "lat": -20.209478,
+    "lon": 26.190019,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mopipi",
+    "key": "mopipi",
+    "lat": -21.179548,
+    "lon": 24.880021,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lehututu",
+    "key": "lehututu",
+    "lat": -23.969611,
+    "lon": 21.870024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nokaneng",
+    "key": "nokaneng",
+    "lat": -19.669615,
+    "lon": 22.27,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lokgwabe",
+    "key": "lokgwabe",
+    "lat": -24.169598,
+    "lon": 21.830026,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tsao",
+    "key": "tsao",
+    "lat": -20.159611,
+    "lon": 22.459962,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mohembo West",
+    "key": "mohembo west",
+    "lat": -18.299569,
+    "lon": 21.800002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

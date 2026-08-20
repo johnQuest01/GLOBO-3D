@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Erevan",
+    "key": "erevan city",
+    "lat": 40.183097,
+    "lon": 44.511606,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gyumri",
+    "key": "gyumri",
+    "lat": 40.789434,
+    "lon": 43.847494,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vanadzor",
+    "key": "vanadzor",
+    "lat": 40.812766,
+    "lon": 44.488282,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gavar",
+    "key": "gavar",
+    "lat": 40.358889,
+    "lon": 45.126667,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Artaxata",
+    "key": "artaxata",
+    "lat": 39.953889,
+    "lon": 44.550556,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Achtarak",
+    "key": "achtarak",
+    "lat": 40.301667,
+    "lon": 44.359167,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ijevan",
+    "key": "ijevan",
+    "lat": 40.875556,
+    "lon": 45.149167,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yeghegnadzor",
+    "key": "yeghegnadzor",
+    "lat": 39.761111,
+    "lon": 45.333333,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  }
+]

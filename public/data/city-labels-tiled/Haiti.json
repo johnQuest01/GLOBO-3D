@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Porto Príncipe",
+    "key": "porto príncipe",
+    "lat": 18.54297,
+    "lon": -72.33798,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cabo Haitiano",
+    "key": "cabo haitiano",
+    "lat": 19.759222,
+    "lon": -72.212516,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Les Cayes",
+    "key": "les cayes",
+    "lat": 18.200374,
+    "lon": -73.749979,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gonaïves",
+    "key": "gonaïves",
+    "lat": 19.450426,
+    "lon": -72.683249,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Porto-da-Paz",
+    "key": "porto-da-paz",
+    "lat": 19.93176,
+    "lon": -72.829485,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jacmel",
+    "key": "jacmel",
+    "lat": 18.234999,
+    "lon": -72.537003,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jeremias",
+    "key": "jeremias",
+    "lat": 18.633935,
+    "lon": -74.118425,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hinche",
+    "key": "hinche",
+    "lat": 19.143,
+    "lon": -72.003996,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Forte Liberdade",
+    "key": "forte liberdade",
+    "lat": 19.665567,
+    "lon": -71.84484,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  }
+]

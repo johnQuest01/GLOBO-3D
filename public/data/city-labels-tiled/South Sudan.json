@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Yei",
+    "key": "yei",
+    "lat": 4.090382,
+    "lon": 30.680029,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Malakal",
+    "key": "malakal",
+    "lat": 9.536897,
+    "lon": 31.65599,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wau",
+    "key": "wau",
+    "lat": 7.699981,
+    "lon": 27.98996,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Juba",
+    "key": "juba",
+    "lat": 4.829975,
+    "lon": 31.580026,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gogrial",
+    "key": "gogrial",
+    "lat": 8.533729,
+    "lon": 28.116671,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aweil",
+    "key": "aweil",
+    "lat": 8.766557,
+    "lon": 27.400022,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yambio",
+    "key": "yambio",
+    "lat": 4.570534,
+    "lon": 28.416343,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rumbek",
+    "key": "rumbek",
+    "lat": 6.80001,
+    "lon": 29.683294,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bor",
+    "key": "bor",
+    "lat": 6.207204,
+    "lon": 31.559148,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maridi",
+    "key": "maridi",
+    "lat": 4.915112,
+    "lon": 29.47695,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bentiu",
+    "key": "bentiu",
+    "lat": 9.233333,
+    "lon": 29.833333,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kapoeta",
+    "key": "kapoeta",
+    "lat": 4.772123,
+    "lon": 33.590239,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Melut",
+    "key": "melut",
+    "lat": 10.43369,
+    "lon": 32.200039,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nasir",
+    "key": "nasir",
+    "lat": 8.600391,
+    "lon": 33.066601,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nimule",
+    "key": "nimule",
+    "lat": 3.599999,
+    "lon": 32.050023,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  }
+]

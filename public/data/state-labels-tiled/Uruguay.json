@@ -119,8 +119,8 @@
   {
     "name": "Río Negro",
     "key": "río negro",
-    "lat": -40.1261,
-    "lon": -67.3641,
+    "lat": -32.7441,
+    "lon": -57.4891,
     "labelRank": 6,
     "minLabel": 8,
     "maxLabel": 11
@@ -155,8 +155,8 @@
   {
     "name": "Florida",
     "key": "florida",
-    "lat": 28.1568,
-    "lon": -81.6228,
+    "lat": -33.835,
+    "lon": -55.812,
     "labelRank": 7,
     "minLabel": 8,
     "maxLabel": 11

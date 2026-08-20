@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Sana",
+    "key": "sana",
+    "lat": 15.356679,
+    "lon": 44.204648,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Áden",
+    "key": "áden",
+    "lat": 12.779723,
+    "lon": 45.00949,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al Hudaydah",
+    "key": "al hudaydah city",
+    "lat": 14.799891,
+    "lon": 42.951029,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ta'izz",
+    "key": "ta'izz",
+    "lat": 13.606398,
+    "lon": 44.037474,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al Mukalla",
+    "key": "al mukalla",
+    "lat": 14.541165,
+    "lon": 49.125931,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ibb",
+    "key": "ibb city",
+    "lat": 13.975851,
+    "lon": 44.170885,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hajjah",
+    "key": "hajjah city",
+    "lat": 15.691741,
+    "lon": 43.602134,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dhamar",
+    "key": "dhamar city",
+    "lat": 14.557469,
+    "lon": 44.387461,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cidade Histórica de Zabid",
+    "key": "cidade histórica de zabid",
+    "lat": 14.195088,
+    "lon": 43.315537,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sadah",
+    "key": "sadah",
+    "lat": 16.939779,
+    "lon": 43.849768,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Seiune",
+    "key": "seiune",
+    "lat": 15.942992,
+    "lon": 48.787347,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lahij",
+    "key": "lahij city",
+    "lat": 13.058181,
+    "lon": 44.883761,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ash Shihr",
+    "key": "ash shihr",
+    "lat": 14.759317,
+    "lon": 49.609158,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rada'a",
+    "key": "rada'a",
+    "lat": 14.429493,
+    "lon": 44.8341,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al Bayda'",
+    "key": "al bayda' city",
+    "lat": 13.978998,
+    "lon": 45.574003,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ataq",
+    "key": "ataq",
+    "lat": 14.550003,
+    "lon": 46.800001,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al Ghaydah",
+    "key": "al ghaydah",
+    "lat": 16.239408,
+    "lon": 52.163782,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ma'rib",
+    "key": "ma'rib city",
+    "lat": 15.420996,
+    "lon": 45.333999,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hadibu",
+    "key": "hadibu",
+    "lat": 12.651875,
+    "lon": 54.023927,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sayḩūt al Ghamīrah",
+    "key": "sayḩūt al ghamīrah",
+    "lat": 15.210504,
+    "lon": 51.24544,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  }
+]

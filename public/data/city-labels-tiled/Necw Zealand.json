@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Wanaka",
+    "key": "wanaka",
+    "lat": -44.698014,
+    "lon": 169.144852,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Tiblíssi",
+    "key": "tiblíssi",
+    "lat": 41.726956,
+    "lon": 44.78885,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kutaisi",
+    "key": "kutaisi",
+    "lat": 42.249991,
+    "lon": 42.729991,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rustavi",
+    "key": "rustavi",
+    "lat": 41.570368,
+    "lon": 45.050004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Batumi",
+    "key": "batumi",
+    "lat": 41.600005,
+    "lon": 41.630007,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sukhumi",
+    "key": "sukhumi",
+    "lat": 43.020021,
+    "lon": 41.020018,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Poti",
+    "key": "poti",
+    "lat": 42.155656,
+    "lon": 41.671606,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tskhinvali",
+    "key": "tskhinvali",
+    "lat": 42.232498,
+    "lon": 43.975031,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

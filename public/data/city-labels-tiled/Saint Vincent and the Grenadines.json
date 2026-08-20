@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Kingstown",
+    "key": "kingstown",
+    "lat": 13.155756,
+    "lon": -61.220236,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  }
+]

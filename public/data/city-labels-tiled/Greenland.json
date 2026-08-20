@@ -1,0 +1,200 @@
+[
+  {
+    "name": "Nuuk",
+    "key": "nuuk",
+    "lat": 64.198281,
+    "lon": -51.732659,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sisimiut",
+    "key": "sisimiut",
+    "lat": 66.950008,
+    "lon": -53.666606,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ilulissat",
+    "key": "ilulissat",
+    "lat": 69.216665,
+    "lon": -51.099967,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qaqortoq",
+    "key": "qaqortoq",
+    "lat": 60.72891,
+    "lon": -46.036412,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Paamiut",
+    "key": "paamiut",
+    "lat": 62.004102,
+    "lon": -49.63507,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tasiilaq",
+    "key": "tasiilaq",
+    "lat": 65.601869,
+    "lon": -37.633737,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qasigiannguit",
+    "key": "qasigiannguit",
+    "lat": 68.81927,
+    "lon": -51.178519,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uummannaq",
+    "key": "uummannaq",
+    "lat": 70.675023,
+    "lon": -52.122934,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Upernavik",
+    "key": "upernavik",
+    "lat": 72.709367,
+    "lon": -56.141675,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qaanaaq",
+    "key": "qaanaaq",
+    "lat": 77.46655,
+    "lon": -69.22964,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kangerlussuaq",
+    "key": "kangerlussuaq",
+    "lat": 67.014122,
+    "lon": -50.709909,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ittoqqortoormiit",
+    "key": "ittoqqortoormiit",
+    "lat": 70.483358,
+    "lon": -21.966654,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kullorsuaq",
+    "key": "kullorsuaq",
+    "lat": 74.578063,
+    "lon": -57.224986,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kulusuk",
+    "key": "kulusuk",
+    "lat": 65.566578,
+    "lon": -37.183322,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tasiusaq",
+    "key": "tasiusaq",
+    "lat": 73.369002,
+    "lon": -56.059814,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nuussuaq",
+    "key": "nuussuaq",
+    "lat": 74.120969,
+    "lon": -57.06736,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kangersuatsiaq",
+    "key": "kangersuatsiaq",
+    "lat": 72.37964,
+    "lon": -55.549119,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Narsarsuaq",
+    "key": "narsarsuaq",
+    "lat": 61.166588,
+    "lon": -45.416618,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Savissivik",
+    "key": "savissivik",
+    "lat": 76.019476,
+    "lon": -65.112481,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Timmiarmiut",
+    "key": "timmiarmiut",
+    "lat": 62.533275,
+    "lon": -42.21671,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nord",
+    "key": "nord city",
+    "lat": 81.716626,
+    "lon": -17.800035,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qeqertarsuaq",
+    "key": "qeqertarsuaq",
+    "lat": 69.244164,
+    "lon": -53.565238,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  }
+]

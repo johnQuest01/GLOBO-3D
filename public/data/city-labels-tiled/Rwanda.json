@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Kigali",
+    "key": "kigali",
+    "lat": -1.951644,
+    "lon": 30.058586,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nyanza",
+    "key": "nyanza city",
+    "lat": -2.349587,
+    "lon": 29.740035,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gitarama",
+    "key": "gitarama",
+    "lat": -2.069604,
+    "lon": 29.759982,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ruhengeri",
+    "key": "ruhengeri",
+    "lat": -1.499613,
+    "lon": 29.630015,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gisenyi",
+    "key": "gisenyi",
+    "lat": -1.684666,
+    "lon": 29.262906,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Butare",
+    "key": "butare",
+    "lat": -2.589624,
+    "lon": 29.730009,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Byumba",
+    "key": "byumba",
+    "lat": -1.579556,
+    "lon": 30.060015,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kibuye",
+    "key": "kibuye",
+    "lat": -2.050002,
+    "lon": 29.35,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kibungo",
+    "key": "kibungo",
+    "lat": -2.166696,
+    "lon": 30.533302,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cyangugu",
+    "key": "cyangugu",
+    "lat": -2.479605,
+    "lon": 28.899983,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gikongoro",
+    "key": "gikongoro",
+    "lat": -2.483298,
+    "lon": 29.566702,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  }
+]

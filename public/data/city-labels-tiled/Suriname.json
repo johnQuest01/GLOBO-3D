@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Paramaribo",
+    "key": "paramaribo city",
+    "lat": 5.83503,
+    "lon": -55.167031,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cottica",
+    "key": "cottica",
+    "lat": 3.850009,
+    "lon": -54.233289,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nieuw Nickerie",
+    "key": "nieuw nickerie",
+    "lat": 5.950424,
+    "lon": -56.989995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brokopondo",
+    "key": "brokopondo city",
+    "lat": 5.040376,
+    "lon": -55.020011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moengo",
+    "key": "moengo",
+    "lat": 5.630004,
+    "lon": -54.409997,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nieuw Amsterdam",
+    "key": "nieuw amsterdam",
+    "lat": 5.909987,
+    "lon": -55.070008,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brownsweg",
+    "key": "brownsweg",
+    "lat": 5.020015,
+    "lon": -55.169951,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Groningen",
+    "key": "groningen city",
+    "lat": 5.796999,
+    "lon": -55.481003,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Onverwacht",
+    "key": "onverwacht",
+    "lat": 5.599998,
+    "lon": -55.199996,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Totness",
+    "key": "totness",
+    "lat": 5.890427,
+    "lon": -56.319984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

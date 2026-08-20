@@ -1,0 +1,308 @@
+[
+  {
+    "name": "Maputo",
+    "key": "maputo city",
+    "lat": -25.953332,
+    "lon": 32.587217,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Matola",
+    "key": "matola",
+    "lat": -25.969592,
+    "lon": 32.460024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Beira",
+    "key": "beira",
+    "lat": -19.820045,
+    "lon": 34.870006,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nampula",
+    "key": "nampula city",
+    "lat": -15.136041,
+    "lon": 39.293043,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chimoio",
+    "key": "chimoio",
+    "lat": -19.120036,
+    "lon": 33.470039,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nacala Porto",
+    "key": "nacala porto",
+    "lat": -14.518611,
+    "lon": 40.715024,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quelimane",
+    "key": "quelimane",
+    "lat": -17.880008,
+    "lon": 36.889986,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tete",
+    "key": "tete city",
+    "lat": -16.170035,
+    "lon": 33.580007,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xai-Xai",
+    "key": "xai-xai",
+    "lat": -25.039984,
+    "lon": 33.640003,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maxixe",
+    "key": "maxixe",
+    "lat": -23.866023,
+    "lon": 35.388551,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Inhambane",
+    "key": "inhambane city",
+    "lat": -23.85804,
+    "lon": 35.339818,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pemba",
+    "key": "pemba",
+    "lat": -12.983046,
+    "lon": 40.532347,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lichinga",
+    "key": "lichinga",
+    "lat": -13.300029,
+    "lon": 35.240009,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dondo",
+    "key": "dondo",
+    "lat": -19.619592,
+    "lon": 34.730014,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cuamba",
+    "key": "cuamba",
+    "lat": -14.789602,
+    "lon": 36.539981,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Montepuez",
+    "key": "montepuez",
+    "lat": -13.119575,
+    "lon": 39.000038,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mocuba",
+    "key": "mocuba",
+    "lat": -16.84958,
+    "lon": 38.260031,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Angoche",
+    "key": "angoche",
+    "lat": -16.230031,
+    "lon": 39.910008,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ilha de Moçambique",
+    "key": "ilha de moçambique",
+    "lat": -15.039899,
+    "lon": 40.682184,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moatize",
+    "key": "moatize",
+    "lat": -16.099548,
+    "lon": 33.95001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mocímboa da Praia",
+    "key": "mocímboa da praia",
+    "lat": -11.319582,
+    "lon": 40.349981,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Macia",
+    "key": "macia",
+    "lat": -25.019521,
+    "lon": 33.090011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Marrupa",
+    "key": "marrupa",
+    "lat": -13.198382,
+    "lon": 37.499458,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nicoadala",
+    "key": "nicoadala",
+    "lat": -17.607673,
+    "lon": 36.819706,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Manica",
+    "key": "manica city",
+    "lat": -18.969606,
+    "lon": 32.879998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ligonha",
+    "key": "ligonha",
+    "lat": -15.175677,
+    "lon": 37.740011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Luangwa",
+    "key": "luangwa",
+    "lat": -15.619578,
+    "lon": 30.41002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quissico",
+    "key": "quissico",
+    "lat": -24.725689,
+    "lon": 34.765981,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Massangena",
+    "key": "massangena",
+    "lat": -21.537304,
+    "lon": 32.956376,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Panda",
+    "key": "panda",
+    "lat": -24.062887,
+    "lon": 34.730273,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chiramba",
+    "key": "chiramba",
+    "lat": -16.89211,
+    "lon": 34.655859,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Espungabera",
+    "key": "espungabera",
+    "lat": -20.450135,
+    "lon": 32.77003,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mapai",
+    "key": "mapai",
+    "lat": -22.842651,
+    "lon": 31.963051,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vilanculos",
+    "key": "vilanculos",
+    "lat": -21.99955,
+    "lon": 35.316593,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

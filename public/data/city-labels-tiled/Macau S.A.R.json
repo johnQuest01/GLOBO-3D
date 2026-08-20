@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Macau",
+    "key": "macau city",
+    "lat": 22.189135,
+    "lon": 113.544375,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  }
+]

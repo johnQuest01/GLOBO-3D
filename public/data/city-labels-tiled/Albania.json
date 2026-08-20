@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Tirana",
+    "key": "tirana",
+    "lat": 41.327541,
+    "lon": 19.818883,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Elbasan",
+    "key": "elbasan city",
+    "lat": 41.121507,
+    "lon": 20.083828,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shkodër",
+    "key": "shkodër city",
+    "lat": 42.068452,
+    "lon": 19.51885,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Durrës",
+    "key": "durrës city",
+    "lat": 41.3178,
+    "lon": 19.448208,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vlorë",
+    "key": "vlorë city",
+    "lat": 40.47736,
+    "lon": 19.498231,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fier",
+    "key": "fier city",
+    "lat": 40.730004,
+    "lon": 19.573003,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Korçë",
+    "key": "korçë city",
+    "lat": 40.616676,
+    "lon": 20.766663,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Berat",
+    "key": "berat city",
+    "lat": 40.709997,
+    "lon": 19.972,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lushnjë",
+    "key": "lushnjë",
+    "lat": 40.940001,
+    "lon": 19.716003,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pogradec",
+    "key": "pogradec",
+    "lat": 40.899996,
+    "lon": 20.664001,
+    "labelRank": 10,
+    "minLabel": 7.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gjirokastër",
+    "key": "gjirokastër city",
+    "lat": 40.078998,
+    "lon": 20.149003,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Krujë",
+    "key": "krujë",
+    "lat": 41.518998,
+    "lon": 19.797004,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lezhë",
+    "key": "lezhë city",
+    "lat": 41.787999,
+    "lon": 19.654003,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kukës",
+    "key": "kukës city",
+    "lat": 42.083001,
+    "lon": 20.433996,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Burrel",
+    "key": "burrel",
+    "lat": 41.625999,
+    "lon": 20.016001,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sarandë",
+    "key": "sarandë",
+    "lat": 39.877002,
+    "lon": 19.999999,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Peshkopi",
+    "key": "peshkopi",
+    "lat": 41.683302,
+    "lon": 20.433304,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Çorovodë",
+    "key": "çorovodë",
+    "lat": 40.516704,
+    "lon": 20.233297,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Librazhd",
+    "key": "librazhd",
+    "lat": 41.200002,
+    "lon": 20.366704,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tepelenë",
+    "key": "tepelenë",
+    "lat": 40.283298,
+    "lon": 20.033299,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gramsh",
+    "key": "gramsh",
+    "lat": 40.866696,
+    "lon": 20.199997,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Përmet",
+    "key": "përmet",
+    "lat": 40.233996,
+    "lon": 20.351998,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rrëshen",
+    "key": "rrëshen",
+    "lat": 41.783301,
+    "lon": 19.816705,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bajram Curri",
+    "key": "bajram curri",
+    "lat": 42.3333,
+    "lon": 20.083303,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ersekë",
+    "key": "ersekë",
+    "lat": 40.333302,
+    "lon": 20.683297,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pukë",
+    "key": "pukë",
+    "lat": 42.033303,
+    "lon": 19.883305,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  }
+]

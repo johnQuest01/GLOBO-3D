@@ -920,8 +920,8 @@
   {
     "name": "Santiago",
     "key": "santiago",
-    "lat": 19.2636,
-    "lon": -70.8974,
+    "lat": 16.7428,
+    "lon": 121.511,
     "labelRank": 7,
     "minLabel": 8,
     "maxLabel": 11
@@ -1055,8 +1055,8 @@
   {
     "name": "San Juan",
     "key": "san juan",
-    "lat": -30.97,
-    "lon": -68.6612,
+    "lat": 14.5975,
+    "lon": 121.044,
     "labelRank": 9,
     "minLabel": 8,
     "maxLabel": 11

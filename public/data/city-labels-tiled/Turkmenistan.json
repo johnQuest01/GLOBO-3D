@@ -1,0 +1,119 @@
+[
+  {
+    "name": "Asgabate",
+    "key": "asgabate",
+    "lat": 37.949995,
+    "lon": 58.383299,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Türkmenabat",
+    "key": "türkmenabat",
+    "lat": 39.110002,
+    "lon": 63.580036,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Daşoguz",
+    "key": "daşoguz",
+    "lat": 41.83999,
+    "lon": 59.96496,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mary",
+    "key": "mary city",
+    "lat": 37.600016,
+    "lon": 61.833321,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Balkanabat",
+    "key": "balkanabat",
+    "lat": 39.51238,
+    "lon": 54.36494,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Turkmenbachi",
+    "key": "turkmenbachi",
+    "lat": 40.023047,
+    "lon": 52.969676,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tejen",
+    "key": "tejen",
+    "lat": 37.378609,
+    "lon": 60.496038,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Serdar",
+    "key": "serdar",
+    "lat": 38.97554,
+    "lon": 56.277795,
+    "labelRank": 8,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Büzmeýin",
+    "key": "büzmeýin",
+    "lat": 38.051668,
+    "lon": 58.210028,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kaka",
+    "key": "kaka",
+    "lat": 37.350342,
+    "lon": 59.600021,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Atamyrat",
+    "key": "atamyrat",
+    "lat": 37.824809,
+    "lon": 65.199731,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kunya-Urgench",
+    "key": "kunya-urgench",
+    "lat": 42.316654,
+    "lon": 59.166662,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cheleken",
+    "key": "cheleken",
+    "lat": 39.436155,
+    "lon": 53.122591,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

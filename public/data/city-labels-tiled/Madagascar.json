@@ -1,0 +1,254 @@
+[
+  {
+    "name": "Antananarivo",
+    "key": "antananarivo",
+    "lat": -18.914691,
+    "lon": 47.514678,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Antsirabe",
+    "key": "antsirabe",
+    "lat": -19.850017,
+    "lon": 47.033294,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Toamasina",
+    "key": "toamasina",
+    "lat": -18.181798,
+    "lon": 49.404984,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fianarantsoa",
+    "key": "fianarantsoa",
+    "lat": -21.433331,
+    "lon": 47.083265,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mahajanga",
+    "key": "mahajanga",
+    "lat": -15.670014,
+    "lon": 46.345016,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Toliara",
+    "key": "toliara",
+    "lat": -23.356831,
+    "lon": 43.689984,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Antsiranana",
+    "key": "antsiranana",
+    "lat": -12.276502,
+    "lon": 49.311526,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Antalaha",
+    "key": "antalaha",
+    "lat": -14.883344,
+    "lon": 50.283328,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sambava",
+    "key": "sambava",
+    "lat": -14.266172,
+    "lon": 50.166591,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ambatondrazaka",
+    "key": "ambatondrazaka",
+    "lat": -17.832879,
+    "lon": 48.416672,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maroantsetra",
+    "key": "maroantsetra",
+    "lat": -15.433336,
+    "lon": 49.733336,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Morondava",
+    "key": "morondava",
+    "lat": -20.283272,
+    "lon": 44.283333,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Marovoay",
+    "key": "marovoay",
+    "lat": -16.099548,
+    "lon": 46.633319,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ambanja",
+    "key": "ambanja",
+    "lat": -13.6829,
+    "lon": 48.450004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mananjary",
+    "key": "mananjary",
+    "lat": -21.216652,
+    "lon": 48.333318,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Farafangana",
+    "key": "farafangana",
+    "lat": -22.816606,
+    "lon": 47.833245,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Andoany",
+    "key": "andoany",
+    "lat": -13.400023,
+    "lon": 48.266604,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Antsohihy",
+    "key": "antsohihy",
+    "lat": -14.866084,
+    "lon": 47.983365,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Miandrivazo",
+    "key": "miandrivazo",
+    "lat": -19.516187,
+    "lon": 45.46662,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ihosy",
+    "key": "ihosy",
+    "lat": -22.399629,
+    "lon": 46.116658,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tolanaro",
+    "key": "tolanaro",
+    "lat": -25.026807,
+    "lon": 46.990041,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Morombe",
+    "key": "morombe",
+    "lat": -21.739138,
+    "lon": 43.365678,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mandritsara",
+    "key": "mandritsara",
+    "lat": -15.832846,
+    "lon": 48.816648,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maintirano",
+    "key": "maintirano",
+    "lat": -18.066612,
+    "lon": 44.016683,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bekily",
+    "key": "bekily",
+    "lat": -24.216159,
+    "lon": 45.316603,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Manja",
+    "key": "manja",
+    "lat": -21.432918,
+    "lon": 44.333252,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Besalampy",
+    "key": "besalampy",
+    "lat": -16.749534,
+    "lon": 44.483321,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Androka",
+    "key": "androka",
+    "lat": -25.021946,
+    "lon": 44.074947,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  }
+]

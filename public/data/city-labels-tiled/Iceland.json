@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Reykjavík",
+    "key": "reykjavík city",
+    "lat": 64.143459,
+    "lon": -21.936546,
+    "labelRank": 3,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Akureyri",
+    "key": "akureyri",
+    "lat": 65.666572,
+    "lon": -18.100017,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Keflavík",
+    "key": "keflavík",
+    "lat": 64.016647,
+    "lon": -22.566592,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Selfoss",
+    "key": "selfoss",
+    "lat": 63.933422,
+    "lon": -20.996946,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sauðárkrókur",
+    "key": "sauðárkrókur",
+    "lat": 65.746412,
+    "lon": -19.638993,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ísafjörður",
+    "key": "ísafjörður",
+    "lat": 66.083316,
+    "lon": -23.149967,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Egilsstaðir",
+    "key": "egilsstaðir",
+    "lat": 65.267423,
+    "lon": -14.394998,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Borgarnes",
+    "key": "borgarnes",
+    "lat": 64.569503,
+    "lon": -21.862322,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Höfn",
+    "key": "höfn",
+    "lat": 64.272315,
+    "lon": -15.213859,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  }
+]

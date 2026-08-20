@@ -20,8 +20,8 @@
   {
     "name": "Central",
     "key": "central",
-    "lat": -21.8775,
-    "lon": 26.6144,
+    "lat": -25.6711,
+    "lon": -57.5265,
     "labelRank": 5,
     "minLabel": 6.7,
     "maxLabel": 11
@@ -65,8 +65,8 @@
   {
     "name": "Misiones",
     "key": "misiones",
-    "lat": -27.1262,
-    "lon": -54.8406,
+    "lat": -26.9861,
+    "lon": -57.1187,
     "labelRank": 5,
     "minLabel": 6.7,
     "maxLabel": 11

@@ -1,0 +1,1424 @@
+[
+  {
+    "name": "Buenos Aires",
+    "key": "buenos aires city",
+    "lat": -34.6,
+    "lon": -58.38,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Córdova",
+    "key": "córdova",
+    "lat": -31.398012,
+    "lon": -64.18424,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rosário",
+    "key": "rosário",
+    "lat": -32.949184,
+    "lon": -60.668253,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mendoza",
+    "key": "mendoza city",
+    "lat": -32.881384,
+    "lon": -68.818557,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Miguel de Tucumán",
+    "key": "san miguel de tucumán",
+    "lat": -26.814054,
+    "lon": -65.21857,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "La Plata",
+    "key": "la plata",
+    "lat": -34.923321,
+    "lon": -57.954436,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mar del Plata",
+    "key": "mar del plata",
+    "lat": -38.00002,
+    "lon": -57.579984,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salta",
+    "key": "salta city",
+    "lat": -24.783359,
+    "lon": -65.416638,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Fé",
+    "key": "santa fé",
+    "lat": -31.623872,
+    "lon": -60.690001,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Juan",
+    "key": "san juan (argentina)",
+    "lat": -31.550026,
+    "lon": -68.519988,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Luis",
+    "key": "san luis city",
+    "lat": -33.299997,
+    "lon": -66.350018,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Resistência",
+    "key": "resistência",
+    "lat": -27.459992,
+    "lon": -58.990027,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Posadas",
+    "key": "posadas",
+    "lat": -27.357832,
+    "lon": -55.885107,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santiago del Estero",
+    "key": "santiago del estero city",
+    "lat": -27.783331,
+    "lon": -64.266656,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Corrientes",
+    "key": "corrientes city",
+    "lat": -27.489964,
+    "lon": -58.809987,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Salvador de Jujuy",
+    "key": "san salvador de jujuy",
+    "lat": -24.183344,
+    "lon": -65.30003,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bahía Blanca",
+    "key": "bahía blanca",
+    "lat": -38.740027,
+    "lon": -62.265021,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Paraná",
+    "key": "paraná city",
+    "lat": -31.733323,
+    "lon": -60.533344,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Neuquén",
+    "key": "neuquén city",
+    "lat": -38.95004,
+    "lon": -68.059991,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Formosa",
+    "key": "formosa city",
+    "lat": -26.172835,
+    "lon": -58.182816,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Fernando del Valle de Catamarca",
+    "key": "san fernando del valle de catamarca",
+    "lat": -28.470008,
+    "lon": -65.780001,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rioja",
+    "key": "rioja",
+    "lat": -29.40995,
+    "lon": -66.849961,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Río Cuarto",
+    "key": "río cuarto",
+    "lat": -33.130033,
+    "lon": -64.349985,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Concordia",
+    "key": "concordia",
+    "lat": -31.389571,
+    "lon": -58.029983,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Comodoro Rivadavia",
+    "key": "comodoro rivadavia",
+    "lat": -45.870031,
+    "lon": -67.499999,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Nicolás de los Arroyos",
+    "key": "san nicolás de los arroyos",
+    "lat": -33.330021,
+    "lon": -60.240003,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Martín",
+    "key": "san martín city",
+    "lat": -33.069985,
+    "lon": -68.490016,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Rosa",
+    "key": "santa rosa (argentina)",
+    "lat": -36.620001,
+    "lon": -64.299988,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Rafael",
+    "key": "san rafael",
+    "lat": -34.600021,
+    "lon": -68.333333,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tandil",
+    "key": "tandil",
+    "lat": -37.32001,
+    "lon": -59.150044,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bariloche",
+    "key": "bariloche",
+    "lat": -41.149957,
+    "lon": -71.3,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trelew",
+    "key": "trelew",
+    "lat": -43.250036,
+    "lon": -65.329951,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Villa María",
+    "key": "villa maría",
+    "lat": -32.410026,
+    "lon": -63.260025,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Reconquista",
+    "key": "reconquista",
+    "lat": -29.139528,
+    "lon": -59.650013,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zárate",
+    "key": "zárate",
+    "lat": -34.089561,
+    "lon": -59.040025,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rafaela",
+    "key": "rafaela",
+    "lat": -31.250045,
+    "lon": -61.499978,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pergamino",
+    "key": "pergamino",
+    "lat": -33.899599,
+    "lon": -60.569983,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Olavarría",
+    "key": "olavarría",
+    "lat": -36.900036,
+    "lon": -60.329997,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Río Gallegos",
+    "key": "río gallegos",
+    "lat": -51.633297,
+    "lon": -69.216587,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Junín",
+    "key": "junín city",
+    "lat": -34.58457,
+    "lon": -60.958874,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yacuiba",
+    "key": "yacuiba",
+    "lat": -22.030039,
+    "lon": -63.699998,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Presidencia Roque Sáenz Peña",
+    "key": "presidencia roque sáenz peña",
+    "lat": -26.790007,
+    "lon": -60.450016,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Luján",
+    "key": "luján",
+    "lat": -34.56991,
+    "lon": -59.110454,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Campana",
+    "key": "campana",
+    "lat": -34.159996,
+    "lon": -58.959978,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Necochea",
+    "key": "necochea",
+    "lat": -38.559986,
+    "lon": -58.749991,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gualeguaychú",
+    "key": "gualeguaychú",
+    "lat": -33.020014,
+    "lon": -58.520004,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Ramón de la Nueva Orán",
+    "key": "san ramón de la nueva orán",
+    "lat": -23.139997,
+    "lon": -64.320012,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "General Roca",
+    "key": "general roca",
+    "lat": -39.019958,
+    "lon": -67.609966,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Venado Tuerto",
+    "key": "venado tuerto",
+    "lat": -33.749582,
+    "lon": -61.970001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Goya",
+    "key": "goya",
+    "lat": -29.139993,
+    "lon": -59.269985,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Villa Carlos Paz",
+    "key": "villa carlos paz",
+    "lat": -31.420009,
+    "lon": -64.500001,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Concepción del Uruguay",
+    "key": "concepción del uruguay",
+    "lat": -32.479996,
+    "lon": -58.239996,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Las Heras",
+    "key": "las heras",
+    "lat": -32.825039,
+    "lon": -68.801677,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto Madryn",
+    "key": "puerto madryn",
+    "lat": -42.770013,
+    "lon": -65.04002,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tartagal",
+    "key": "tartagal",
+    "lat": -22.550007,
+    "lon": -63.810018,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Viedma",
+    "key": "viedma",
+    "lat": -40.813197,
+    "lon": -62.997545,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Francisco",
+    "key": "san francisco city",
+    "lat": -31.430034,
+    "lon": -62.089968,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Pedro de Jujuy",
+    "key": "san pedro de jujuy",
+    "lat": -24.219621,
+    "lon": -64.870004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ushuaia",
+    "key": "ushuaia",
+    "lat": -54.790003,
+    "lon": -68.310001,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Punta Alta",
+    "key": "punta alta",
+    "lat": -38.879967,
+    "lon": -62.079968,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "General Pico",
+    "key": "general pico",
+    "lat": -35.659595,
+    "lon": -63.77002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chivilcoy",
+    "key": "chivilcoy",
+    "lat": -34.899951,
+    "lon": -60.039989,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Azul",
+    "key": "azul",
+    "lat": -36.77963,
+    "lon": -59.87,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Río Tercero",
+    "key": "río tercero",
+    "lat": -32.1796,
+    "lon": -64.120024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mercedes",
+    "key": "mercedes",
+    "lat": -34.660018,
+    "lon": -59.440026,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Villa Mercedes",
+    "key": "villa mercedes",
+    "lat": -33.689586,
+    "lon": -65.469968,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Libertador General San Martín",
+    "key": "libertador general san martín",
+    "lat": -23.819542,
+    "lon": -64.789984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cutral Có",
+    "key": "cutral có",
+    "lat": -38.940015,
+    "lon": -69.240022,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San-Lorenzo",
+    "key": "san-lorenzo",
+    "lat": -28.120003,
+    "lon": -58.769989,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tres Arroyos",
+    "key": "tres arroyos",
+    "lat": -38.369972,
+    "lon": -60.269949,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Villa Constitución",
+    "key": "villa constitución",
+    "lat": -33.230027,
+    "lon": -60.350022,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alta Gracia",
+    "key": "alta gracia",
+    "lat": -31.659994,
+    "lon": -64.42998,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bell Ville",
+    "key": "bell ville",
+    "lat": -32.60004,
+    "lon": -62.679957,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nueve de Julio",
+    "key": "nueve de julio",
+    "lat": -35.445964,
+    "lon": -60.889989,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chacabuco",
+    "key": "chacabuco",
+    "lat": -34.650044,
+    "lon": -60.489988,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gualeguay",
+    "key": "gualeguay",
+    "lat": -33.150032,
+    "lon": -59.340006,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rio Grande",
+    "key": "rio grande city",
+    "lat": -53.791446,
+    "lon": -67.698995,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mercedes",
+    "key": "mercedes (argentina)",
+    "lat": -29.179577,
+    "lon": -58.07998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Villa Ángela",
+    "key": "villa ángela",
+    "lat": -27.583292,
+    "lon": -60.716666,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Coronel Suárez",
+    "key": "coronel suárez",
+    "lat": -37.466616,
+    "lon": -61.916619,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rawson",
+    "key": "rawson",
+    "lat": -43.300007,
+    "lon": -65.099991,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dolores",
+    "key": "dolores",
+    "lat": -36.330045,
+    "lon": -57.689978,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Victoria",
+    "key": "victoria (argentina)",
+    "lat": -32.610013,
+    "lon": -60.179981,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lincoln",
+    "key": "lincoln city",
+    "lat": -34.880004,
+    "lon": -61.539949,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Veinticinco de Mayo",
+    "key": "veinticinco de mayo",
+    "lat": -35.429996,
+    "lon": -60.179981,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tunuyán",
+    "key": "tunuyán",
+    "lat": -33.566182,
+    "lon": -69.016677,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chascomús",
+    "key": "chascomús",
+    "lat": -35.566215,
+    "lon": -58.016624,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chilecito",
+    "key": "chilecito",
+    "lat": -29.165521,
+    "lon": -67.499999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Esquel",
+    "key": "esquel",
+    "lat": -42.900031,
+    "lon": -71.316614,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "General Güemes",
+    "key": "general güemes",
+    "lat": -24.666622,
+    "lon": -65.049968,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zapala",
+    "key": "zapala",
+    "lat": -38.900017,
+    "lon": -70.066664,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Balcarce",
+    "key": "balcarce",
+    "lat": -37.833312,
+    "lon": -58.249995,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Charata",
+    "key": "charata",
+    "lat": -27.216286,
+    "lon": -61.199996,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lobos",
+    "key": "lobos",
+    "lat": -35.184895,
+    "lon": -59.094672,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Veinticinco de Mayo",
+    "key": "veinticinco de mayo city",
+    "lat": -37.800033,
+    "lon": -67.683295,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Eldorado",
+    "key": "eldorado",
+    "lat": -26.200017,
+    "lon": -54.599985,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Añatuya",
+    "key": "añatuya",
+    "lat": -28.466132,
+    "lon": -62.833307,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mar de Ajó",
+    "key": "mar de ajó",
+    "lat": -36.716223,
+    "lon": -56.676603,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Frías",
+    "key": "frías",
+    "lat": -28.649583,
+    "lon": -65.149987,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Joaquín Víctor González",
+    "key": "joaquín víctor gonzález",
+    "lat": -25.083341,
+    "lon": -64.183354,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sunchales",
+    "key": "sunchales",
+    "lat": -30.932907,
+    "lon": -61.566614,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Malargüe",
+    "key": "malargüe",
+    "lat": -35.466118,
+    "lon": -69.583309,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cafayate",
+    "key": "cafayate",
+    "lat": -26.082918,
+    "lon": -65.966604,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Río Colorado",
+    "key": "río colorado",
+    "lat": -38.966576,
+    "lon": -64.083282,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cerrillos",
+    "key": "cerrillos",
+    "lat": -24.899631,
+    "lon": -65.4833,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Monte Quemado",
+    "key": "monte quemado",
+    "lat": -25.799628,
+    "lon": -62.866587,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Humahuaca",
+    "key": "humahuaca",
+    "lat": -23.199994,
+    "lon": -65.349949,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Belén",
+    "key": "belén city",
+    "lat": -27.649593,
+    "lon": -67.033283,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Benito Juarez",
+    "key": "benito juarez",
+    "lat": -37.665519,
+    "lon": -59.80003,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Choele Choel",
+    "key": "choele choel",
+    "lat": -39.26661,
+    "lon": -65.683314,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vera",
+    "key": "vera",
+    "lat": -29.466174,
+    "lon": -60.216594,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Justo",
+    "key": "san justo",
+    "lat": -30.78289,
+    "lon": -60.583289,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Juan José Castelli",
+    "key": "juan josé castelli",
+    "lat": -25.949541,
+    "lon": -60.616647,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chamical",
+    "key": "chamical",
+    "lat": -30.349583,
+    "lon": -66.31666,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chos Malal",
+    "key": "chos malal",
+    "lat": -37.382952,
+    "lon": -70.266574,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Antonio Oeste",
+    "key": "san antonio oeste",
+    "lat": -40.732877,
+    "lon": -64.933282,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "El Calafate",
+    "key": "el calafate",
+    "lat": -50.333324,
+    "lon": -72.300016,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Las Lomitas",
+    "key": "las lomitas",
+    "lat": -24.699592,
+    "lon": -60.600007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Carhué",
+    "key": "carhué",
+    "lat": -37.182861,
+    "lon": -62.733313,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pedro Luro",
+    "key": "pedro luro",
+    "lat": -39.483341,
+    "lon": -62.683316,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rinconada",
+    "key": "rinconada",
+    "lat": -22.432908,
+    "lon": -66.166592,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ingeniero Juárez",
+    "key": "ingeniero juárez",
+    "lat": -23.900002,
+    "lon": -61.849982,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Doctor Pedro P. Peña",
+    "key": "doctor pedro p. peña",
+    "lat": -22.479986,
+    "lon": -62.29998,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chepes",
+    "key": "chepes",
+    "lat": -31.349987,
+    "lon": -66.599951,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ingeniero Jacobacci",
+    "key": "ingeniero jacobacci",
+    "lat": -41.300026,
+    "lon": -69.583309,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Veintiocho de Noviembre",
+    "key": "veintiocho de noviembre",
+    "lat": -51.58929,
+    "lon": -72.219601,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sarmiento",
+    "key": "sarmiento",
+    "lat": -45.600021,
+    "lon": -69.083313,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Abra Pampa",
+    "key": "abra pampa",
+    "lat": -22.716664,
+    "lon": -65.69998,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Victorica",
+    "key": "victorica",
+    "lat": -36.216253,
+    "lon": -65.450021,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "La Paz",
+    "key": "la paz (argentina)",
+    "lat": -33.466137,
+    "lon": -67.549996,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Comandante Fontana",
+    "key": "comandante fontana",
+    "lat": -25.3333,
+    "lon": -59.683318,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "El Maitén",
+    "key": "el maitén",
+    "lat": -42.050006,
+    "lon": -71.166623,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Antonio de los Cobres",
+    "key": "san antonio de los cobres",
+    "lat": -24.182931,
+    "lon": -66.350018,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Perito Moreno",
+    "key": "perito moreno",
+    "lat": -46.600012,
+    "lon": -70.933355,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Darregueira",
+    "key": "darregueira",
+    "lat": -37.699573,
+    "lon": -63.166594,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto Deseado",
+    "key": "puerto deseado",
+    "lat": -47.75002,
+    "lon": -65.899968,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "General Conesa",
+    "key": "general conesa",
+    "lat": -40.100047,
+    "lon": -64.433287,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pampa del Infierno",
+    "key": "pampa del infierno",
+    "lat": -26.516587,
+    "lon": -61.166587,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Villalonga",
+    "key": "villalonga",
+    "lat": -39.921105,
+    "lon": -62.624309,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chumbicha",
+    "key": "chumbicha",
+    "lat": -28.866624,
+    "lon": -66.233306,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gobernador Gregores",
+    "key": "gobernador gregores",
+    "lat": -48.766598,
+    "lon": -70.250012,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uspallata",
+    "key": "uspallata",
+    "lat": -32.593115,
+    "lon": -69.345985,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto San Julián",
+    "key": "puerto san julián",
+    "lat": -49.300002,
+    "lon": -67.716652,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Río Mayo",
+    "key": "río mayo",
+    "lat": -45.683376,
+    "lon": -70.266574,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trancas",
+    "key": "trancas",
+    "lat": -26.216657,
+    "lon": -65.283313,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alto Río Senguer",
+    "key": "alto río senguer",
+    "lat": -45.033286,
+    "lon": -70.833284,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sierra Colorada",
+    "key": "sierra colorada",
+    "lat": -40.58286,
+    "lon": -67.799981,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Villa Rumipal",
+    "key": "villa rumipal",
+    "lat": -32.183321,
+    "lon": -64.483284,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Las Lajas",
+    "key": "las lajas",
+    "lat": -38.516268,
+    "lon": -70.366594,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Los Blancos",
+    "key": "los blancos",
+    "lat": -23.599607,
+    "lon": -62.60004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Susques",
+    "key": "susques",
+    "lat": -23.416673,
+    "lon": -66.483317,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Comallo",
+    "key": "comallo",
+    "lat": -41.033324,
+    "lon": -70.266574,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rodeo",
+    "key": "rodeo",
+    "lat": -30.215586,
+    "lon": -69.139951,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Las Plumas",
+    "key": "las plumas",
+    "lat": -43.723881,
+    "lon": -67.28318,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tinogasta",
+    "key": "tinogasta",
+    "lat": -28.066622,
+    "lon": -67.566584,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gastre",
+    "key": "gastre",
+    "lat": -42.282963,
+    "lon": -69.233304,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Telsen",
+    "key": "telsen",
+    "lat": -42.399597,
+    "lon": -66.950007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Comandante Luis Piedrabuena",
+    "key": "comandante luis piedrabuena",
+    "lat": -49.974549,
+    "lon": -68.903473,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

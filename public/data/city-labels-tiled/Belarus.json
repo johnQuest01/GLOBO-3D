@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Minsk",
+    "key": "minsk city",
+    "lat": 53.901923,
+    "lon": 27.564681,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gomel",
+    "key": "gomel city",
+    "lat": 52.430016,
+    "lon": 31.000009,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mahilou",
+    "key": "mahilou",
+    "lat": 53.898505,
+    "lon": 30.32465,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vitebsk",
+    "key": "vitebsk city",
+    "lat": 55.18871,
+    "lon": 30.18533,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hrodna",
+    "key": "hrodna",
+    "lat": 53.677872,
+    "lon": 23.83409,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brest",
+    "key": "brest city",
+    "lat": 52.099984,
+    "lon": 23.69999,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Babruysk",
+    "key": "babruysk",
+    "lat": 53.126562,
+    "lon": 29.192781,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baranavičy",
+    "key": "baranavičy",
+    "lat": 53.136846,
+    "lon": 26.01344,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barysaŭ",
+    "key": "barysaŭ",
+    "lat": 54.226004,
+    "lon": 28.492152,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Orsha",
+    "key": "orsha",
+    "lat": 54.515315,
+    "lon": 30.421543,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pinsk",
+    "key": "pinsk",
+    "lat": 52.127863,
+    "lon": 26.094055,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mazyr",
+    "key": "mazyr",
+    "lat": 52.045956,
+    "lon": 29.272156,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maladzyechna",
+    "key": "maladzyechna",
+    "lat": 54.318789,
+    "lon": 26.865326,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lida",
+    "key": "lida",
+    "lat": 53.888479,
+    "lon": 25.284648,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Polatsk",
+    "key": "polatsk",
+    "lat": 55.48939,
+    "lon": 28.785984,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

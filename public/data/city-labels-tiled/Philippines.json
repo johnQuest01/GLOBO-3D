@@ -1,0 +1,344 @@
+[
+  {
+    "name": "Manila",
+    "key": "manila city",
+    "lat": 14.606105,
+    "lon": 120.980271,
+    "labelRank": 1,
+    "minLabel": 2.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cidade Quezon",
+    "key": "cidade quezon",
+    "lat": 14.650435,
+    "lon": 121.029966,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cidade Davao",
+    "key": "cidade davao",
+    "lat": 7.111963,
+    "lon": 125.62805,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cagayan de Ouro",
+    "key": "cagayan de ouro",
+    "lat": 8.45084,
+    "lon": 124.685299,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "General Santos",
+    "key": "general santos city",
+    "lat": 6.110827,
+    "lon": 125.174726,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bacolod",
+    "key": "bacolod city",
+    "lat": 10.631688,
+    "lon": 122.981682,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cidade de Cebu",
+    "key": "cidade de cebu",
+    "lat": 10.321922,
+    "lon": 123.898129,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cidade de Zamboanga",
+    "key": "cidade de zamboanga",
+    "lat": 6.921923,
+    "lon": 122.078085,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Naga",
+    "key": "naga city",
+    "lat": 13.619155,
+    "lon": 123.181359,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Iligan",
+    "key": "iligan city",
+    "lat": 8.171244,
+    "lon": 124.215353,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baguio",
+    "key": "baguio city",
+    "lat": 16.429991,
+    "lon": 120.569943,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cidade de Batangas",
+    "key": "cidade de batangas",
+    "lat": 13.781677,
+    "lon": 121.021698,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pasay",
+    "key": "pasay city",
+    "lat": 14.550441,
+    "lon": 120.999994,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cidade de Iloilo",
+    "key": "cidade de iloilo",
+    "lat": 10.705043,
+    "lon": 122.545016,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Legazpi",
+    "key": "legazpi",
+    "lat": 13.169983,
+    "lon": 123.750007,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Angeles",
+    "key": "angeles city",
+    "lat": 15.145056,
+    "lon": 120.545086,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Olongapo",
+    "key": "olongapo city",
+    "lat": 14.829572,
+    "lon": 120.282777,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cadiz",
+    "key": "cadiz",
+    "lat": 10.958748,
+    "lon": 123.308587,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tacloban",
+    "key": "tacloban city",
+    "lat": 11.250436,
+    "lon": 125.000008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cidade do Cotabato",
+    "key": "cidade do cotabato",
+    "lat": 7.21691,
+    "lon": 124.248426,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Pablo",
+    "key": "san pablo",
+    "lat": 14.069566,
+    "lon": 121.32261,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cabanatuan",
+    "key": "cabanatuan",
+    "lat": 15.502089,
+    "lon": 120.961702,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Laoag",
+    "key": "laoag",
+    "lat": 18.198849,
+    "lon": 120.59361,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Butuan",
+    "key": "butuan city",
+    "lat": 8.949543,
+    "lon": 125.543593,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tarlac",
+    "key": "tarlac city",
+    "lat": 15.483795,
+    "lon": 120.583378,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ormoc",
+    "key": "ormoc city",
+    "lat": 11.064298,
+    "lon": 124.607526,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dagupan",
+    "key": "dagupan city",
+    "lat": 16.047895,
+    "lon": 120.340809,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pagadian",
+    "key": "pagadian",
+    "lat": 7.852969,
+    "lon": 123.507024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Porto Princesa",
+    "key": "porto princesa",
+    "lat": 9.754268,
+    "lon": 118.744384,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tuguegarao",
+    "key": "tuguegarao",
+    "lat": 17.613097,
+    "lon": 121.726875,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Roxas",
+    "key": "roxas",
+    "lat": 11.585273,
+    "lon": 122.751101,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ozamiz",
+    "key": "ozamiz",
+    "lat": 8.146207,
+    "lon": 123.84442,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cidade de Surigao",
+    "key": "cidade de surigao",
+    "lat": 9.784298,
+    "lon": 125.488816,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Calbayog",
+    "key": "calbayog",
+    "lat": 12.067182,
+    "lon": 124.604167,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vigan",
+    "key": "vigan",
+    "lat": 17.574727,
+    "lon": 120.386905,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tagum",
+    "key": "tagum",
+    "lat": 7.382145,
+    "lon": 125.801665,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "San Carlos",
+    "key": "san carlos (philippines)",
+    "lat": 10.550375,
+    "lon": 123.380004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gingoog",
+    "key": "gingoog",
+    "lat": 8.830377,
+    "lon": 125.129974,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

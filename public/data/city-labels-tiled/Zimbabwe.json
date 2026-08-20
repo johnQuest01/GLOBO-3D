@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Harare",
+    "key": "harare city",
+    "lat": -17.815844,
+    "lon": 31.042764,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bulawayo",
+    "key": "bulawayo city",
+    "lat": -20.169998,
+    "lon": 28.580002,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chitungwiza",
+    "key": "chitungwiza",
+    "lat": -18.000001,
+    "lon": 31.100003,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mutare",
+    "key": "mutare",
+    "lat": -18.970019,
+    "lon": 32.650038,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gweru",
+    "key": "gweru",
+    "lat": -19.450042,
+    "lon": 29.82003,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kwekwe",
+    "key": "kwekwe",
+    "lat": -18.929608,
+    "lon": 29.799979,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kadoma",
+    "key": "kadoma",
+    "lat": -18.330006,
+    "lon": 29.909947,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Masvingo",
+    "key": "masvingo city",
+    "lat": -20.059617,
+    "lon": 30.82002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chinhoyi",
+    "key": "chinhoyi",
+    "lat": -17.359626,
+    "lon": 30.180008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zvishavane",
+    "key": "zvishavane",
+    "lat": -20.329574,
+    "lon": 30.04999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Victoria Falls",
+    "key": "victoria falls",
+    "lat": -17.929617,
+    "lon": 25.840014,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hwange",
+    "key": "hwange",
+    "lat": -18.370004,
+    "lon": 26.500026,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chiredzi",
+    "key": "chiredzi",
+    "lat": -21.049582,
+    "lon": 31.660021,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Beitbridge",
+    "key": "beitbridge",
+    "lat": -22.209615,
+    "lon": 29.989993,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kariba",
+    "key": "kariba",
+    "lat": -16.5296,
+    "lon": 28.80004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karoi",
+    "key": "karoi",
+    "lat": -16.819556,
+    "lon": 29.679986,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gwanda",
+    "key": "gwanda",
+    "lat": -20.939615,
+    "lon": 29.010002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shamva",
+    "key": "shamva",
+    "lat": -17.319629,
+    "lon": 31.57,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mazowe",
+    "key": "mazowe",
+    "lat": -17.519617,
+    "lon": 30.970037,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Plumtree",
+    "key": "plumtree",
+    "lat": -20.479539,
+    "lon": 27.819997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

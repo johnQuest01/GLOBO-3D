@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Amsterdã",
+    "key": "amsterdam",
+    "lat": 52.37,
+    "lon": 4.9,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Haia",
+    "key": "haia",
+    "lat": 52.080037,
+    "lon": 4.269961,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Roterdão",
+    "key": "roterdão",
+    "lat": 51.921915,
+    "lon": 4.478028,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Utrecht",
+    "key": "utrecht city",
+    "lat": 52.100346,
+    "lon": 5.120039,
+    "labelRank": 7,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Eindhoven",
+    "key": "eindhoven",
+    "lat": 51.429973,
+    "lon": 5.500015,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Haarlem",
+    "key": "haarlem",
+    "lat": 52.380432,
+    "lon": 4.629991,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Groninga",
+    "key": "groninga",
+    "lat": 53.220407,
+    "lon": 6.580001,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arnhem",
+    "key": "arnhem",
+    "lat": 51.987996,
+    "lon": 5.923,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "'s-Hertogenbosch",
+    "key": "'s-hertogenbosch",
+    "lat": 51.683337,
+    "lon": 5.316661,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Leeuwarden",
+    "key": "leeuwarden",
+    "lat": 53.250379,
+    "lon": 5.783357,
+    "labelRank": 7,
+    "minLabel": 7.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maastricht",
+    "key": "maastricht",
+    "lat": 50.852997,
+    "lon": 5.677003,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zwolle",
+    "key": "zwolle",
+    "lat": 52.524,
+    "lon": 6.096997,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Assen",
+    "key": "assen",
+    "lat": 53.000001,
+    "lon": 6.550003,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Midelburgo",
+    "key": "midelburgo",
+    "lat": 51.501996,
+    "lon": 3.609999,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

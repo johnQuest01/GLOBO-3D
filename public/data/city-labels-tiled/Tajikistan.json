@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Duchambe",
+    "key": "duchambe",
+    "lat": 38.560035,
+    "lon": 68.773879,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Khujand",
+    "key": "khujand",
+    "lat": 40.289981,
+    "lon": 69.619926,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qurghonteppa",
+    "key": "qurghonteppa",
+    "lat": 37.837314,
+    "lon": 68.771347,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Konibodom",
+    "key": "konibodom",
+    "lat": 40.292152,
+    "lon": 70.427164,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Istarawshan",
+    "key": "istarawshan",
+    "lat": 39.921916,
+    "lon": 69.001462,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kulob",
+    "key": "kulob",
+    "lat": 37.92116,
+    "lon": 69.77573,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Khorugh",
+    "key": "khorugh",
+    "lat": 37.487517,
+    "lon": 71.54756,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chorbogh",
+    "key": "chorbogh",
+    "lat": 39.750003,
+    "lon": 69.000004,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kuybyshevsky",
+    "key": "kuybyshevsky",
+    "lat": 37.979399,
+    "lon": 68.688975,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

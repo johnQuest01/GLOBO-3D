@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Djibouti",
+    "key": "djibouti city",
+    "lat": 11.595014,
+    "lon": 43.148002,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ali Sabieh",
+    "key": "ali sabieh city",
+    "lat": 11.15623,
+    "lon": 42.712524,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tadjourah",
+    "key": "tadjourah city",
+    "lat": 11.783304,
+    "lon": 42.900003,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Obock",
+    "key": "obock city",
+    "lat": 11.973441,
+    "lon": 43.285564,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dikhil",
+    "key": "dikhil city",
+    "lat": 11.104002,
+    "lon": 42.372001,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  }
+]

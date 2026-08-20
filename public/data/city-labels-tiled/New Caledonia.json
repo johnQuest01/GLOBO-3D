@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Nouméa",
+    "key": "nouméa",
+    "lat": -22.262528,
+    "lon": 166.444285,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  }
+]

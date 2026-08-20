@@ -1,0 +1,326 @@
+[
+  {
+    "name": "Nairóbi",
+    "key": "nairobi",
+    "lat": -1.29,
+    "lon": 36.82,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mombaça",
+    "key": "mombaça",
+    "lat": -4.03808,
+    "lon": 39.687972,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kisumu",
+    "key": "kisumu",
+    "lat": -0.090035,
+    "lon": 34.750013,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nakuru",
+    "key": "nakuru",
+    "lat": -0.279997,
+    "lon": 36.069984,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Eldoret",
+    "key": "eldoret",
+    "lat": 0.520006,
+    "lon": 35.269981,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kitale",
+    "key": "kitale",
+    "lat": 1.030466,
+    "lon": 34.989947,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Machakos",
+    "key": "machakos",
+    "lat": -1.509535,
+    "lon": 37.259989,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Thika",
+    "key": "thika",
+    "lat": -1.039589,
+    "lon": 37.090025,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kericho",
+    "key": "kericho",
+    "lat": -0.359579,
+    "lon": 35.280006,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Melinde",
+    "key": "melinde",
+    "lat": -3.209999,
+    "lon": 40.100022,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kendu Bay",
+    "key": "kendu bay",
+    "lat": -0.359579,
+    "lon": 34.639994,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kilifi",
+    "key": "kilifi",
+    "lat": -3.609613,
+    "lon": 39.850012,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sotik",
+    "key": "sotik",
+    "lat": -0.679559,
+    "lon": 35.120016,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Garissa",
+    "key": "garissa",
+    "lat": -0.439626,
+    "lon": 39.670023,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kakamega",
+    "key": "kakamega",
+    "lat": 0.290407,
+    "lon": 34.730014,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Embu",
+    "key": "embu",
+    "lat": -0.519569,
+    "lon": 37.450003,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bungoma",
+    "key": "bungoma",
+    "lat": 0.57039,
+    "lon": 34.559999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nyeri",
+    "key": "nyeri",
+    "lat": -0.416997,
+    "lon": 36.951004,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Meru",
+    "key": "meru",
+    "lat": 0.059982,
+    "lon": 37.640017,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wajir",
+    "key": "wajir",
+    "lat": 1.75037,
+    "lon": 40.05,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Naivasha",
+    "key": "naivasha",
+    "lat": -0.709583,
+    "lon": 36.429962,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Voi",
+    "key": "voi",
+    "lat": -3.369576,
+    "lon": 38.569986,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Naniuqui",
+    "key": "naniuqui",
+    "lat": 0.020398,
+    "lon": 37.060001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kisii",
+    "key": "kisii",
+    "lat": -0.669586,
+    "lon": 34.759986,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Moyale",
+    "key": "moyale",
+    "lat": 3.519978,
+    "lon": 39.050009,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lamu",
+    "key": "lamu",
+    "lat": -2.262044,
+    "lon": 40.919666,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maralal",
+    "key": "maralal",
+    "lat": 1.110461,
+    "lon": 36.680024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lodwar",
+    "key": "lodwar",
+    "lat": 3.130389,
+    "lon": 35.570015,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Eldama Ravine",
+    "key": "eldama ravine",
+    "lat": 0.05037,
+    "lon": 35.720031,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Marsabit",
+    "key": "marsabit",
+    "lat": 2.329999,
+    "lon": 37.979997,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Namanga",
+    "key": "namanga",
+    "lat": -2.539601,
+    "lon": 36.800017,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mwingi",
+    "key": "mwingi",
+    "lat": -0.92957,
+    "lon": 38.070017,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Witu",
+    "key": "witu",
+    "lat": -2.379611,
+    "lon": 40.430028,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karungu",
+    "key": "karungu",
+    "lat": -0.849626,
+    "lon": 34.149998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Konza",
+    "key": "konza",
+    "lat": -1.749623,
+    "lon": 37.119997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tsavo",
+    "key": "tsavo",
+    "lat": -2.982778,
+    "lon": 38.466634,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

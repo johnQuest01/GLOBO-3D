@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Asmara",
+    "key": "asmara",
+    "lat": 15.333339,
+    "lon": 38.933324,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mendefera",
+    "key": "mendefera",
+    "lat": 14.885976,
+    "lon": 38.816328,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Keren",
+    "key": "keren",
+    "lat": 15.781441,
+    "lon": 38.454351,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maçuá",
+    "key": "maçuá",
+    "lat": 15.610118,
+    "lon": 39.450036,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Assab",
+    "key": "assab",
+    "lat": 13.010018,
+    "lon": 42.729991,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Agordat",
+    "key": "agordat",
+    "lat": 15.549037,
+    "lon": 37.886669,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Teseney",
+    "key": "teseney",
+    "lat": 15.110381,
+    "lon": 36.657493,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

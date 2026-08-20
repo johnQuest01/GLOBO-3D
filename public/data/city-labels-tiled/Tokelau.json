@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Atafu",
+    "key": "atafu",
+    "lat": -8.548618,
+    "lon": -172.497665,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

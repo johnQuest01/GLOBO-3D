@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Thimbu",
+    "key": "thimbu",
+    "lat": 27.472986,
+    "lon": 89.639014,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Paro",
+    "key": "paro city",
+    "lat": 27.42937,
+    "lon": 89.416777,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Punakha",
+    "key": "punakha city",
+    "lat": 27.584154,
+    "lon": 89.864135,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wangdue Phodrang",
+    "key": "wangdue phodrang",
+    "lat": 27.433296,
+    "lon": 89.916697,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  }
+]

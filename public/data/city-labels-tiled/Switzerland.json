@@ -1,0 +1,254 @@
+[
+  {
+    "name": "Genebra",
+    "key": "genebra",
+    "lat": 46.210008,
+    "lon": 6.140028,
+    "labelRank": 1,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zurique",
+    "key": "zurique",
+    "lat": 47.381934,
+    "lon": 8.548064,
+    "labelRank": 2,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Basileia",
+    "key": "basileia",
+    "lat": 47.580389,
+    "lon": 7.590017,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Berna",
+    "key": "berna",
+    "lat": 46.916683,
+    "lon": 7.466976,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lausana",
+    "key": "lausana",
+    "lat": 46.530427,
+    "lon": 6.650023,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lucerna",
+    "key": "lucerna",
+    "lat": 47.050421,
+    "lon": 8.280001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lugano",
+    "key": "lugano",
+    "lat": 46.000382,
+    "lon": 8.966677,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bienna",
+    "key": "bienna",
+    "lat": 47.16659,
+    "lon": 7.250038,
+    "labelRank": 8,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "São Galo",
+    "key": "são galo",
+    "lat": 47.422998,
+    "lon": 9.361999,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Coira",
+    "key": "coira",
+    "lat": 46.85002,
+    "lon": 9.50003,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Schaffhausen",
+    "key": "schaffhausen city",
+    "lat": 47.706003,
+    "lon": 8.632998,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Friburgo",
+    "key": "friburgo",
+    "lat": 46.8,
+    "lon": 7.149997,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Neuchâtel",
+    "key": "neuchâtel city",
+    "lat": 46.998999,
+    "lon": 6.922999,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sion",
+    "key": "sion",
+    "lat": 46.239003,
+    "lon": 7.353999,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zug",
+    "key": "zug city",
+    "lat": 47.178999,
+    "lon": 8.487001,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Frauenfeld",
+    "key": "frauenfeld",
+    "lat": 47.552619,
+    "lon": 8.904888,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bellinzona",
+    "key": "bellinzona",
+    "lat": 46.197,
+    "lon": 9.019999,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aarau",
+    "key": "aarau",
+    "lat": 47.390004,
+    "lon": 8.034004,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Herisau",
+    "key": "herisau",
+    "lat": 47.383299,
+    "lon": 9.283302,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Soleura",
+    "key": "soleura",
+    "lat": 47.212002,
+    "lon": 7.536997,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Schwyz",
+    "key": "schwyz city",
+    "lat": 47.019996,
+    "lon": 8.648002,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Liestal",
+    "key": "liestal",
+    "lat": 47.483001,
+    "lon": 7.737004,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Delémont",
+    "key": "delémont",
+    "lat": 47.369997,
+    "lon": 7.345,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sarnen",
+    "key": "sarnen",
+    "lat": 46.899,
+    "lon": 8.243002,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Altdorf",
+    "key": "altdorf",
+    "lat": 46.879002,
+    "lon": 8.638003,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Stans",
+    "key": "stans",
+    "lat": 46.950003,
+    "lon": 8.383302,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Glarona",
+    "key": "glarona",
+    "lat": 47.050002,
+    "lon": 9.0667,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Appenzell",
+    "key": "appenzell",
+    "lat": 47.333304,
+    "lon": 9.4167,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  }
+]

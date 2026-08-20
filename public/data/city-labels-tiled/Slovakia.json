@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Bratislava",
+    "key": "bratislava",
+    "lat": 48.150018,
+    "lon": 17.116981,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Košice",
+    "key": "košice",
+    "lat": 48.730448,
+    "lon": 21.25001,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Prešov",
+    "key": "prešov city",
+    "lat": 48.999734,
+    "lon": 21.239365,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Žilina",
+    "key": "žilina",
+    "lat": 49.219824,
+    "lon": 18.749388,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Banská Bystrica",
+    "key": "banská bystrica",
+    "lat": 48.73329,
+    "lon": 19.149983,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trnava",
+    "key": "trnava",
+    "lat": 48.366594,
+    "lon": 17.6,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zvolen",
+    "key": "zvolen",
+    "lat": 48.583739,
+    "lon": 19.13324,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

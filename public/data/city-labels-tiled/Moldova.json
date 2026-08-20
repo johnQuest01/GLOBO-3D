@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Chișinău",
+    "key": "chișinău",
+    "lat": 47.005024,
+    "lon": 28.857711,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tiraspol",
+    "key": "tiraspol",
+    "lat": 46.853095,
+    "lon": 29.639989,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bălţi",
+    "key": "bălţi city",
+    "lat": 47.759086,
+    "lon": 27.905314,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cahul",
+    "key": "cahul city",
+    "lat": 45.907881,
+    "lon": 28.194444,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dubăsari",
+    "key": "dubăsari",
+    "lat": 47.263056,
+    "lon": 29.160833,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  }
+]

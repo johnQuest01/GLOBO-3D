@@ -1,0 +1,308 @@
+[
+  {
+    "name": "Estocolmo",
+    "key": "estocolmo",
+    "lat": 59.324127,
+    "lon": 18.0663,
+    "labelRank": 1,
+    "minLabel": 3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gotemburgo",
+    "key": "gotemburgo",
+    "lat": 57.709147,
+    "lon": 11.97863,
+    "labelRank": 6,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Malmö",
+    "key": "malmö",
+    "lat": 55.599424,
+    "lon": 13.02306,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uppsala",
+    "key": "uppsala city",
+    "lat": 59.860053,
+    "lon": 17.639998,
+    "labelRank": 6,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Västerås",
+    "key": "västerås",
+    "lat": 59.609084,
+    "lon": 16.55768,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Örebro",
+    "key": "örebro",
+    "lat": 59.280347,
+    "lon": 15.219991,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Linköping",
+    "key": "linköping",
+    "lat": 58.410012,
+    "lon": 15.62994,
+    "labelRank": 6,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Helsingborg",
+    "key": "helsingborg",
+    "lat": 56.041291,
+    "lon": 12.72327,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jönköping",
+    "key": "jönköping city",
+    "lat": 57.771343,
+    "lon": 14.165016,
+    "labelRank": 6,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Norrköping",
+    "key": "norrköping",
+    "lat": 58.595427,
+    "lon": 16.178692,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Umeå",
+    "key": "umeå",
+    "lat": 63.829991,
+    "lon": 20.239994,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karlstad",
+    "key": "karlstad",
+    "lat": 59.367137,
+    "lon": 13.499941,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sundsvall",
+    "key": "sundsvall",
+    "lat": 62.400053,
+    "lon": 17.316658,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gävle",
+    "key": "gävle",
+    "lat": 60.66698,
+    "lon": 17.166642,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Borås",
+    "key": "borås",
+    "lat": 57.717756,
+    "lon": 12.939247,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Växjö",
+    "key": "växjö",
+    "lat": 56.883697,
+    "lon": 14.816708,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Halmstad",
+    "key": "halmstad",
+    "lat": 56.671772,
+    "lon": 12.855587,
+    "labelRank": 7,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Luleå",
+    "key": "luleå",
+    "lat": 65.596635,
+    "lon": 22.158378,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Östersund",
+    "key": "östersund",
+    "lat": 63.183313,
+    "lon": 14.65,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trollhättan",
+    "key": "trollhättan",
+    "lat": 58.267101,
+    "lon": 12.299962,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Borlänge",
+    "key": "borlänge",
+    "lat": 60.483322,
+    "lon": 15.416671,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Falun",
+    "key": "falun",
+    "lat": 60.613002,
+    "lon": 15.647005,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karlskrona",
+    "key": "karlskrona",
+    "lat": 56.162781,
+    "lon": 15.590754,
+    "labelRank": 10,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kalmar",
+    "key": "kalmar city",
+    "lat": 56.667018,
+    "lon": 16.366587,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kristianstad",
+    "key": "kristianstad",
+    "lat": 56.033671,
+    "lon": 14.133287,
+    "labelRank": 7,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Skellefteå",
+    "key": "skellefteå",
+    "lat": 64.772079,
+    "lon": 20.950028,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Örnsköldsvik",
+    "key": "örnsköldsvik",
+    "lat": 63.318007,
+    "lon": 18.716676,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nyköping",
+    "key": "nyköping",
+    "lat": 58.75199,
+    "lon": 16.996082,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Visby",
+    "key": "visby",
+    "lat": 57.633651,
+    "lon": 18.300009,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vänersborg",
+    "key": "vänersborg",
+    "lat": 58.363002,
+    "lon": 12.330001,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kiruna",
+    "key": "kiruna",
+    "lat": 67.850004,
+    "lon": 20.216636,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Härnösand",
+    "key": "härnösand",
+    "lat": 62.633997,
+    "lon": 17.934004,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mariestad",
+    "key": "mariestad",
+    "lat": 58.705002,
+    "lon": 13.827997,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bollnäs",
+    "key": "bollnäs",
+    "lat": 61.352003,
+    "lon": 16.366587,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  }
+]

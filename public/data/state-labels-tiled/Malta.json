@@ -38,8 +38,8 @@
   {
     "name": "Pembroke",
     "key": "pembroke",
-    "lat": 32.2995,
-    "lon": -64.7997,
+    "lat": 35.9279,
+    "lon": 14.4756,
     "labelRank": 20,
     "minLabel": 11,
     "maxLabel": 11
@@ -272,8 +272,8 @@
   {
     "name": "Victoria",
     "key": "victoria",
-    "lat": -37.0082,
-    "lon": 144.75,
+    "lat": 36.0407,
+    "lon": 14.2444,
     "labelRank": 20,
     "minLabel": 11,
     "maxLabel": 11

@@ -1,0 +1,704 @@
+[
+  {
+    "name": "Bangkok",
+    "key": "bangkok",
+    "lat": 13.76,
+    "lon": 100.5,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chiang Mai",
+    "key": "chiang mai city",
+    "lat": 18.799975,
+    "lon": 98.980046,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Samut Prakan",
+    "key": "samut prakan city",
+    "lat": 13.606907,
+    "lon": 100.611471,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nakhon Ratchasima",
+    "key": "nakhon ratchasima city",
+    "lat": 15.000026,
+    "lon": 102.10001,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hat Yai",
+    "key": "hat yai",
+    "lat": 6.996432,
+    "lon": 100.471428,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ubon Ratchathani",
+    "key": "ubon ratchathani city",
+    "lat": 15.249959,
+    "lon": 104.830025,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Khon Kaen",
+    "key": "khon kaen city",
+    "lat": 16.420043,
+    "lon": 102.830044,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Udon Thani",
+    "key": "udon thani city",
+    "lat": 17.404763,
+    "lon": 102.789322,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nakhon Si Thammarat",
+    "key": "nakhon si thammarat city",
+    "lat": 8.39999,
+    "lon": 99.970011,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chonburi",
+    "key": "chonburi",
+    "lat": 13.400408,
+    "lon": 100.999974,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lampang",
+    "key": "lampang city",
+    "lat": 18.291557,
+    "lon": 99.481256,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Si Racha",
+    "key": "si racha",
+    "lat": 13.159028,
+    "lon": 100.928661,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Phitsanulok",
+    "key": "phitsanulok city",
+    "lat": 16.828313,
+    "lon": 100.272887,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Surat Thani",
+    "key": "surat thani city",
+    "lat": 9.150099,
+    "lon": 99.340127,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pathum Thani",
+    "key": "pathum thani city",
+    "lat": 14.017115,
+    "lon": 100.533336,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pattani",
+    "key": "pattani city",
+    "lat": 6.864003,
+    "lon": 101.250001,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yala",
+    "key": "yala city",
+    "lat": 6.55049,
+    "lon": 101.285073,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trang",
+    "key": "trang city",
+    "lat": 7.5634,
+    "lon": 99.608018,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ayutthaya",
+    "key": "ayutthaya",
+    "lat": 14.358799,
+    "lon": 100.568424,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Phuket",
+    "key": "phuket city",
+    "lat": 7.876533,
+    "lon": 98.381529,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nakhon Pathom",
+    "key": "nakhon pathom city",
+    "lat": 13.817997,
+    "lon": 100.063999,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chiang Rai",
+    "key": "chiang rai city",
+    "lat": 19.911871,
+    "lon": 99.826454,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nakhon Sawan",
+    "key": "nakhon sawan city",
+    "lat": 15.700035,
+    "lon": 100.070005,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ratchaburi",
+    "key": "ratchaburi city",
+    "lat": 13.541898,
+    "lon": 99.821545,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nong Khai",
+    "key": "nong khai city",
+    "lat": 17.873262,
+    "lon": 102.747878,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chanthaburi",
+    "key": "chanthaburi city",
+    "lat": 12.613273,
+    "lon": 102.097892,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Phetchaburi",
+    "key": "phetchaburi city",
+    "lat": 13.113294,
+    "lon": 99.941176,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chumphon",
+    "key": "chumphon city",
+    "lat": 10.512677,
+    "lon": 99.187217,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nan",
+    "key": "nan city",
+    "lat": 18.786849,
+    "lon": 100.771461,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Prachin Buri",
+    "key": "prachin buri city",
+    "lat": 14.057216,
+    "lon": 101.376799,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uttaradit",
+    "key": "uttaradit city",
+    "lat": 17.631623,
+    "lon": 100.097187,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sakon Nakhon",
+    "key": "sakon nakhon city",
+    "lat": 17.167904,
+    "lon": 104.147896,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saraburi",
+    "key": "saraburi city",
+    "lat": 14.530365,
+    "lon": 100.879982,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Narathiwat",
+    "key": "narathiwat city",
+    "lat": 6.431841,
+    "lon": 101.821423,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kanchanaburi",
+    "key": "kanchanaburi city",
+    "lat": 14.017425,
+    "lon": 99.522028,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Samut Sakhon",
+    "key": "samut sakhon city",
+    "lat": 13.536,
+    "lon": 100.274005,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Surin",
+    "key": "surin city",
+    "lat": 14.886829,
+    "lon": 103.49145,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kamphaeng Phet",
+    "key": "kamphaeng phet city",
+    "lat": 16.472997,
+    "lon": 99.529003,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chaiyaphum",
+    "key": "chaiyaphum city",
+    "lat": 15.804008,
+    "lon": 102.038619,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lopburi",
+    "key": "lopburi",
+    "lat": 14.804018,
+    "lon": 100.618602,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nakhon Phanom",
+    "key": "nakhon phanom city",
+    "lat": 17.39448,
+    "lon": 104.76946,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kalasin",
+    "key": "kalasin city",
+    "lat": 16.427997,
+    "lon": 103.509001,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Suphanburi",
+    "key": "suphanburi",
+    "lat": 14.471001,
+    "lon": 100.128997,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maha Sarakham",
+    "key": "maha sarakham city",
+    "lat": 16.183998,
+    "lon": 103.298005,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Phetchabun",
+    "key": "phetchabun city",
+    "lat": 16.418997,
+    "lon": 101.159002,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hua Hin",
+    "key": "hua hin",
+    "lat": 12.56971,
+    "lon": 99.944328,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chachoengsao",
+    "key": "chachoengsao city",
+    "lat": 13.679001,
+    "lon": 101.076004,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Songkhla",
+    "key": "songkhla city",
+    "lat": 7.209959,
+    "lon": 100.560001,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Buri Ram",
+    "key": "buri ram city",
+    "lat": 15.00044,
+    "lon": 103.116641,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mae Sot",
+    "key": "mae sot",
+    "lat": 16.716175,
+    "lon": 98.570769,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Si Sa Ket",
+    "key": "si sa ket city",
+    "lat": 15.120252,
+    "lon": 104.329849,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Phatthalung",
+    "key": "phatthalung city",
+    "lat": 7.614999,
+    "lon": 100.081,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Roi Et",
+    "key": "roi et city",
+    "lat": 16.050996,
+    "lon": 103.654999,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Phrae",
+    "key": "phrae city",
+    "lat": 18.153296,
+    "lon": 100.16292,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rayong",
+    "key": "rayong city",
+    "lat": 12.671848,
+    "lon": 101.281456,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Phichit",
+    "key": "phichit city",
+    "lat": 16.439004,
+    "lon": 100.349002,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Loei",
+    "key": "loei city",
+    "lat": 17.49189,
+    "lon": 101.731506,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Samut Songkhram",
+    "key": "samut songkhram city",
+    "lat": 13.412997,
+    "lon": 100.000999,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Satun",
+    "key": "satun city",
+    "lat": 6.616701,
+    "lon": 100.066699,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Prachuap Khiri Khan",
+    "key": "prachuap khiri khan city",
+    "lat": 11.802996,
+    "lon": 99.800002,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tak",
+    "key": "tak city",
+    "lat": 16.884743,
+    "lon": 99.129339,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Krabi",
+    "key": "krabi city",
+    "lat": 8.052003,
+    "lon": 98.911999,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Thung Song",
+    "key": "thung song",
+    "lat": 8.153958,
+    "lon": 99.728631,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ranong",
+    "key": "ranong city",
+    "lat": 9.962001,
+    "lon": 98.638003,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aranyaprathet",
+    "key": "aranyaprathet",
+    "lat": 13.682355,
+    "lon": 102.496937,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uthai Thani",
+    "key": "uthai thani city",
+    "lat": 15.381863,
+    "lon": 100.026442,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yasothon",
+    "key": "yasothon city",
+    "lat": 15.787998,
+    "lon": 104.150998,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trat",
+    "key": "trat city",
+    "lat": 12.237003,
+    "lon": 102.509002,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nakhon Nayok",
+    "key": "nakhon nayok city",
+    "lat": 14.200002,
+    "lon": 101.215999,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Phayao",
+    "key": "phayao city",
+    "lat": 19.170702,
+    "lon": 99.90831,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sing Buri",
+    "key": "sing buri city",
+    "lat": 14.886999,
+    "lon": 100.401004,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bua Yai",
+    "key": "bua yai",
+    "lat": 15.584022,
+    "lon": 102.418596,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chai Nat",
+    "key": "chai nat city",
+    "lat": 15.179004,
+    "lon": 100.126,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lamphun",
+    "key": "lamphun city",
+    "lat": 18.573985,
+    "lon": 99.007052,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ang Thong",
+    "key": "ang thong city",
+    "lat": 14.583303,
+    "lon": 100.45,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sukhothai Thani",
+    "key": "sukhothai thani",
+    "lat": 17.011867,
+    "lon": 99.751523,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Phang Nga",
+    "key": "phang nga",
+    "lat": 8.451,
+    "lon": 98.533999,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mae Hong Son",
+    "key": "mae hong son city",
+    "lat": 19.301004,
+    "lon": 97.968997,
+    "labelRank": 10,
+    "minLabel": 8,
+    "maxLabel": 24
+  }
+]

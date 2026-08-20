@@ -1,0 +1,38 @@
+[
+  {
+    "name": "San Juan",
+    "key": "san juan city",
+    "lat": 18.440023,
+    "lon": -66.129979,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mayagüez",
+    "key": "mayagüez",
+    "lat": 18.20151,
+    "lon": -67.139711,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ponce",
+    "key": "ponce",
+    "lat": 18.000386,
+    "lon": -66.616642,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arecibo",
+    "key": "arecibo",
+    "lat": 18.440023,
+    "lon": -66.729994,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  }
+]

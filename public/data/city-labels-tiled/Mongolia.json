@@ -1,0 +1,218 @@
+[
+  {
+    "name": "Ulan Bator",
+    "key": "ulan bator",
+    "lat": 47.918619,
+    "lon": 106.91467,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Erdenet",
+    "key": "erdenet",
+    "lat": 49.053297,
+    "lon": 104.118337,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Darhan",
+    "key": "darhan",
+    "lat": 49.462392,
+    "lon": 105.972544,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ulaangom",
+    "key": "ulaangom",
+    "lat": 49.983317,
+    "lon": 92.066618,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ölgiy",
+    "key": "ölgiy",
+    "lat": 48.933691,
+    "lon": 89.950003,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Choybalsan",
+    "key": "choybalsan",
+    "lat": 48.066587,
+    "lon": 114.506023,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Altai",
+    "key": "altai city",
+    "lat": 46.361858,
+    "lon": 96.25585,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Khovd",
+    "key": "khovd",
+    "lat": 48.016641,
+    "lon": 91.633259,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arvaikheer",
+    "key": "arvaikheer",
+    "lat": 46.249979,
+    "lon": 102.766585,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mörön",
+    "key": "mörön",
+    "lat": 49.645276,
+    "lon": 100.154444,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bajanchongor",
+    "key": "bajanchongor",
+    "lat": 46.300002,
+    "lon": 100.983334,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sühbaatar",
+    "key": "sühbaatar city",
+    "lat": 50.249997,
+    "lon": 106.200001,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tsetserleg",
+    "key": "tsetserleg",
+    "lat": 47.476881,
+    "lon": 101.450179,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Züünkharaa",
+    "key": "züünkharaa",
+    "lat": 48.86659,
+    "lon": 106.466617,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zuunmod",
+    "key": "zuunmod",
+    "lat": 47.710998,
+    "lon": 106.947001,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bulgan",
+    "key": "bulgan city",
+    "lat": 48.810598,
+    "lon": 103.531706,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baruun-Urt",
+    "key": "baruun-urt",
+    "lat": 46.699978,
+    "lon": 113.283307,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dalandsadgad",
+    "key": "dalandsadgad",
+    "lat": 43.583553,
+    "lon": 104.440281,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Öndörkhaan",
+    "key": "öndörkhaan",
+    "lat": 47.316684,
+    "lon": 110.650031,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sainschand",
+    "key": "sainschand",
+    "lat": 44.866601,
+    "lon": 110.15001,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uliastai",
+    "key": "uliastai",
+    "lat": 47.750017,
+    "lon": 96.816716,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ulaan-Uul",
+    "key": "ulaan-uul",
+    "lat": 44.333714,
+    "lon": 111.233303,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mandalgobi",
+    "key": "mandalgobi",
+    "lat": 45.749984,
+    "lon": 106.266009,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hödrögö",
+    "key": "hödrögö",
+    "lat": 48.966428,
+    "lon": 96.783281,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  }
+]

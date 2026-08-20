@@ -38,8 +38,8 @@
   {
     "name": "Sul",
     "key": "sud",
-    "lat": 2.79256,
-    "lon": 11.731,
+    "lat": 18.2929,
+    "lon": -73.7855,
     "labelRank": 7,
     "minLabel": 7.7,
     "maxLabel": 11
@@ -56,8 +56,8 @@
   {
     "name": "Noroeste",
     "key": "nord-ouest",
-    "lat": 6.34548,
-    "lon": 10.4002,
+    "lat": 19.8257,
+    "lon": -73.0166,
     "labelRank": 7,
     "minLabel": 7.7,
     "maxLabel": 11
@@ -65,8 +65,8 @@
   {
     "name": "Norte",
     "key": "nord",
-    "lat": 50.403,
-    "lon": 3.22709,
+    "lat": 19.6412,
+    "lon": -72.3274,
     "labelRank": 7,
     "minLabel": 7.7,
     "maxLabel": 11

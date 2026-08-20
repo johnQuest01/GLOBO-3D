@@ -1,0 +1,5285 @@
+[
+  {
+    "name": "Moscou",
+    "key": "moscow city",
+    "lat": 55.76,
+    "lon": 37.62,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "São Petersburgo",
+    "key": "saint petersburg",
+    "lat": 59.93,
+    "lon": 30.32,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Novosibirsk",
+    "key": "novosibirsk",
+    "lat": 55.03,
+    "lon": 82.92,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yekaterinburg",
+    "key": "yekaterinburg",
+    "lat": 56.84,
+    "lon": 60.61,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kazan",
+    "key": "kazan",
+    "lat": 55.79,
+    "lon": 49.12,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nizhny Novgorod",
+    "key": "nizhny novgorod",
+    "lat": 56.33,
+    "lon": 44,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Samara",
+    "key": "samara",
+    "lat": 53.2,
+    "lon": 50.15,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rostov",
+    "key": "rostov",
+    "lat": 47.24,
+    "lon": 39.7,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chelyabinsk",
+    "key": "chelyabinsk",
+    "lat": 55.16,
+    "lon": 61.4,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Novosibirsk",
+    "key": "novosibirsk city",
+    "lat": 55.031906,
+    "lon": 82.958096,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ecaterimburgo",
+    "key": "ecaterimburgo",
+    "lat": 56.851976,
+    "lon": 60.598014,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Omsk",
+    "key": "omsk city",
+    "lat": 54.991934,
+    "lon": 73.398008,
+    "labelRank": 4,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ufa",
+    "key": "ufa",
+    "lat": 54.791921,
+    "lon": 56.038085,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Perm",
+    "key": "perm",
+    "lat": 58.001906,
+    "lon": 56.248047,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Volgogrado",
+    "key": "volgogrado",
+    "lat": 48.711956,
+    "lon": 44.498015,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Krasnoyarsk",
+    "key": "krasnoyarsk city",
+    "lat": 56.015929,
+    "lon": 92.864055,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Voronej",
+    "key": "voronej",
+    "lat": 51.66539,
+    "lon": 39.186843,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saratov",
+    "key": "saratov city",
+    "lat": 51.581936,
+    "lon": 46.02805,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Togliatti",
+    "key": "togliatti",
+    "lat": 53.508094,
+    "lon": 49.420063,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Krasnodar",
+    "key": "krasnodar city",
+    "lat": 45.019977,
+    "lon": 39.000038,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ulianovsk",
+    "key": "ulianovsk",
+    "lat": 54.329977,
+    "lon": 48.410006,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ijevsk",
+    "key": "ijevsk",
+    "lat": 56.85003,
+    "lon": 53.230022,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Iaroslavl",
+    "key": "iaroslavl",
+    "lat": 57.619983,
+    "lon": 39.87001,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barnaul",
+    "key": "barnaul",
+    "lat": 53.354998,
+    "lon": 83.745007,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vladivostok",
+    "key": "vladivostok",
+    "lat": 43.130015,
+    "lon": 131.910026,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Irkutsk",
+    "key": "irkutsk city",
+    "lat": 52.284604,
+    "lon": 104.283869,
+    "labelRank": 3,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Khabarovsk",
+    "key": "khabarovsk city",
+    "lat": 48.454987,
+    "lon": 135.120011,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mahackala",
+    "key": "mahackala",
+    "lat": 42.980024,
+    "lon": 47.499984,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oremburgo",
+    "key": "oremburgo",
+    "lat": 51.779978,
+    "lon": 55.110011,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Novokuznetsk",
+    "key": "novokuznetsk",
+    "lat": 53.750012,
+    "lon": 87.114982,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tomsk",
+    "key": "tomsk city",
+    "lat": 56.494987,
+    "lon": 84.975009,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Riazan",
+    "key": "riazan",
+    "lat": 54.619959,
+    "lon": 39.719994,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tiumen",
+    "key": "tiumen",
+    "lat": 57.140012,
+    "lon": 65.529995,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lipetsk",
+    "key": "lipetsk city",
+    "lat": 52.620004,
+    "lon": 39.639999,
+    "labelRank": 6,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Penza",
+    "key": "penza city",
+    "lat": 53.180021,
+    "lon": 44.999982,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Astracã",
+    "key": "astracã",
+    "lat": 46.348655,
+    "lon": 48.054989,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tula",
+    "key": "tula city",
+    "lat": 54.199959,
+    "lon": 37.629941,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kemerovo",
+    "key": "kemerovo city",
+    "lat": 55.339967,
+    "lon": 86.08998,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Naberejnye Chelny",
+    "key": "naberejnye chelny",
+    "lat": 55.731906,
+    "lon": 52.39244,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kirov",
+    "key": "kirov city",
+    "lat": 58.590053,
+    "lon": 49.669981,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cheboksary",
+    "key": "cheboksary",
+    "lat": 56.12997,
+    "lon": 47.250025,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Caliningrado",
+    "key": "caliningrado",
+    "lat": 54.700006,
+    "lon": 20.497343,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Briansk",
+    "key": "briansk",
+    "lat": 53.259991,
+    "lon": 34.429981,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ivanovo",
+    "key": "ivanovo city",
+    "lat": 57.01002,
+    "lon": 41.009993,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Magnitogorsk",
+    "key": "magnitogorsk",
+    "lat": 53.422694,
+    "lon": 58.980007,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kursk",
+    "key": "kursk city",
+    "lat": 51.73998,
+    "lon": 36.190028,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tver",
+    "key": "tver",
+    "lat": 56.859978,
+    "lon": 35.889995,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Surgut",
+    "key": "surgut",
+    "lat": 61.259942,
+    "lon": 73.425017,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nizhny Tagil",
+    "key": "nizhny tagil",
+    "lat": 57.920016,
+    "lon": 59.974985,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sebastopol",
+    "key": "sebastopol",
+    "lat": 44.603925,
+    "lon": 33.524395,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vladikavkaz",
+    "key": "vladikavkaz",
+    "lat": 43.050381,
+    "lon": 44.669976,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Stavropol",
+    "key": "stavropol",
+    "lat": 45.050001,
+    "lon": 41.980011,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ulan-Ude",
+    "key": "ulan-ude",
+    "lat": 51.824988,
+    "lon": 107.624996,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Simferopol",
+    "key": "simferopol",
+    "lat": 44.949154,
+    "lon": 34.098735,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arcangel",
+    "key": "arcangel",
+    "lat": 64.574959,
+    "lon": 40.545008,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Belgorod",
+    "key": "belgorod city",
+    "lat": 50.629996,
+    "lon": 36.599926,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kurgan",
+    "key": "kurgan city",
+    "lat": 55.45996,
+    "lon": 65.344993,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kaluga",
+    "key": "kaluga city",
+    "lat": 54.520379,
+    "lon": 36.270024,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oriol",
+    "key": "oriol",
+    "lat": 52.969957,
+    "lon": 36.069984,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sóchi",
+    "key": "sóchi",
+    "lat": 43.590012,
+    "lon": 39.729967,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Iochkar-Ola",
+    "key": "iochkar-ola",
+    "lat": 56.635392,
+    "lon": 47.874948,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Volzhsky",
+    "key": "volzhsky",
+    "lat": 48.794811,
+    "lon": 44.774362,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Smolensk",
+    "key": "smolensk city",
+    "lat": 54.782688,
+    "lon": 32.047336,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Podolsk",
+    "key": "podolsk",
+    "lat": 55.38043,
+    "lon": 37.529947,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Murmansk",
+    "key": "murmansk city",
+    "lat": 68.969988,
+    "lon": 33.100036,
+    "labelRank": 3,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vladimir",
+    "key": "vladimir city",
+    "lat": 56.12997,
+    "lon": 40.409926,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cherepovets",
+    "key": "cherepovets",
+    "lat": 59.140433,
+    "lon": 37.909975,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chita",
+    "key": "chita city",
+    "lat": 52.055025,
+    "lon": 113.465002,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nalchik",
+    "key": "nalchik",
+    "lat": 43.498106,
+    "lon": 43.617947,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saransk",
+    "key": "saransk",
+    "lat": 54.170374,
+    "lon": 45.180022,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tambov",
+    "key": "tambov city",
+    "lat": 52.730023,
+    "lon": 41.430019,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vologda",
+    "key": "vologda city",
+    "lat": 59.209989,
+    "lon": 39.919982,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Taganrog",
+    "key": "taganrog",
+    "lat": 47.229997,
+    "lon": 38.919991,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kostroma",
+    "key": "kostroma city",
+    "lat": 57.770026,
+    "lon": 40.940023,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Komsomolsk-na-Amure",
+    "key": "komsomolsk-na-amure",
+    "lat": 50.554988,
+    "lon": 137.019998,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Prokopyevsk",
+    "key": "prokopyevsk",
+    "lat": 53.899977,
+    "lon": 86.709994,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sterlitamak",
+    "key": "sterlitamak",
+    "lat": 53.629994,
+    "lon": 55.960036,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Petrozavodsk",
+    "key": "petrozavodsk",
+    "lat": 61.781318,
+    "lon": 34.361223,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dzerjinsk",
+    "key": "dzerjinsk",
+    "lat": 56.250377,
+    "lon": 43.460024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Orsk",
+    "key": "orsk",
+    "lat": 51.210012,
+    "lon": 58.627315,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bratsk",
+    "key": "bratsk",
+    "lat": 56.156997,
+    "lon": 101.615027,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nizhnevartovsk",
+    "key": "nizhnevartovsk",
+    "lat": 60.934974,
+    "lon": 76.580018,
+    "labelRank": 6,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Angarsk",
+    "key": "angarsk",
+    "lat": 52.560007,
+    "lon": 103.920003,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Novorossisk",
+    "key": "novorossisk",
+    "lat": 44.729969,
+    "lon": 37.769932,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yakutsk",
+    "key": "yakutsk",
+    "lat": 62.034959,
+    "lon": 129.735016,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nizhnekamsk",
+    "key": "nizhnekamsk",
+    "lat": 55.64044,
+    "lon": 51.820031,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Syktyvkar",
+    "key": "syktyvkar",
+    "lat": 61.659995,
+    "lon": 50.819988,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Noguinsk",
+    "key": "noguinsk",
+    "lat": 55.870426,
+    "lon": 38.480018,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Noginsk",
+    "key": "noginsk",
+    "lat": 64.483311,
+    "lon": 91.233335,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Stari Oskol",
+    "key": "stari oskol",
+    "lat": 51.30042,
+    "lon": 37.839954,
+    "labelRank": 7,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Grózni",
+    "key": "grózni",
+    "lat": 43.318685,
+    "lon": 45.698699,
+    "labelRank": 4,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kolpino",
+    "key": "kolpino",
+    "lat": 59.730009,
+    "lon": 30.650005,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shajty",
+    "key": "shajty",
+    "lat": 47.72038,
+    "lon": 40.270038,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Blagoveschensk",
+    "key": "blagoveschensk",
+    "lat": 50.266607,
+    "lon": 127.533342,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Veliky Novgorod",
+    "key": "veliky novgorod",
+    "lat": 58.499981,
+    "lon": 31.330015,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rybinsk",
+    "key": "rybinsk",
+    "lat": 58.050344,
+    "lon": 38.819997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bisk",
+    "key": "bisk",
+    "lat": 52.534066,
+    "lon": 85.18001,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pskov",
+    "key": "pskov city",
+    "lat": 57.829996,
+    "lon": 28.32994,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Balakovo",
+    "key": "balakovo",
+    "lat": 52.029988,
+    "lon": 47.800018,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Armavir",
+    "key": "armavir city",
+    "lat": 45.000391,
+    "lon": 41.130037,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Engels",
+    "key": "engels",
+    "lat": 51.500408,
+    "lon": 46.120017,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Severodvinsk",
+    "key": "severodvinsk",
+    "lat": 64.570024,
+    "lon": 39.830013,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zlatoust",
+    "key": "zlatoust",
+    "lat": 55.17499,
+    "lon": 59.649992,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Syzrã",
+    "key": "syzrã",
+    "lat": 53.169996,
+    "lon": 48.479976,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Petropavlovsk-Kamchatski",
+    "key": "petropavlovsk-kamchatski",
+    "lat": 53.061992,
+    "lon": 158.62302,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kamensk-Uralsky",
+    "key": "kamensk-uralsky",
+    "lat": 56.42047,
+    "lon": 61.93502,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Iujno-Sakhalinsk",
+    "key": "iujno-sakhalinsk",
+    "lat": 46.964974,
+    "lon": 142.740011,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Perm",
+    "key": "perm city",
+    "lat": 59.420002,
+    "lon": 56.759987,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Volgodonsk",
+    "key": "volgodonsk",
+    "lat": 47.50998,
+    "lon": 42.159948,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Miass",
+    "key": "miass",
+    "lat": 54.995414,
+    "lon": 60.094926,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Abakan",
+    "key": "abakan",
+    "lat": 53.703685,
+    "lon": 91.445002,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Novocherkassk",
+    "key": "novocherkassk",
+    "lat": 47.419959,
+    "lon": 40.080024,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Norilsk",
+    "key": "norilsk",
+    "lat": 69.340017,
+    "lon": 88.224992,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rubtsovsk",
+    "key": "rubtsovsk",
+    "lat": 51.520019,
+    "lon": 81.21002,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salavat",
+    "key": "salavat",
+    "lat": 53.370346,
+    "lon": 55.92996,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nakhodka",
+    "key": "nakhodka",
+    "lat": 67.750398,
+    "lon": 77.51996,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nakhodka",
+    "key": "nakhodka city",
+    "lat": 42.837449,
+    "lon": 132.887434,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maikop",
+    "key": "maikop",
+    "lat": 44.609976,
+    "lon": 40.120021,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ussurijsk",
+    "key": "ussurijsk",
+    "lat": 43.800025,
+    "lon": 132.019993,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kovrov",
+    "key": "kovrov",
+    "lat": 56.36037,
+    "lon": 41.330025,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Novokuybyshevsk",
+    "key": "novokuybyshevsk",
+    "lat": 53.119999,
+    "lon": 49.91994,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kerch",
+    "key": "kerch",
+    "lat": 45.368508,
+    "lon": 36.488098,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kolomna",
+    "key": "kolomna",
+    "lat": 55.079983,
+    "lon": 38.78496,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Piatigorsk",
+    "key": "piatigorsk",
+    "lat": 44.079957,
+    "lon": 43.090021,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arzamas",
+    "key": "arzamas",
+    "lat": 55.399989,
+    "lon": 43.800003,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Almetyevsk",
+    "key": "almetyevsk",
+    "lat": 54.900407,
+    "lon": 52.319948,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Orekhovo-Zuyevo",
+    "key": "orekhovo-zuyevo",
+    "lat": 55.820015,
+    "lon": 38.979987,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Serpukhov",
+    "key": "serpukhov",
+    "lat": 54.93038,
+    "lon": 37.430004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nevinnomyssk",
+    "key": "nevinnomyssk",
+    "lat": 44.620053,
+    "lon": 41.950039,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Perwouralsk",
+    "key": "perwouralsk",
+    "lat": 56.910026,
+    "lon": 59.955038,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kislovodsk",
+    "key": "kislovodsk",
+    "lat": 43.909967,
+    "lon": 42.720017,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dimitrovgrad",
+    "key": "dimitrovgrad",
+    "lat": 54.250421,
+    "lon": 49.560013,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Murom",
+    "key": "murom",
+    "lat": 55.570418,
+    "lon": 42.040007,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Novomoskovsk",
+    "key": "novomoskovsk",
+    "lat": 54.010715,
+    "lon": 38.289305,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kamyschin",
+    "key": "kamyschin",
+    "lat": 50.080391,
+    "lon": 45.400009,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Neftekamsk",
+    "key": "neftekamsk",
+    "lat": 56.083513,
+    "lon": 54.263086,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Achinsk",
+    "key": "achinsk",
+    "lat": 56.269988,
+    "lon": 90.499995,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vyborg",
+    "key": "vyborg",
+    "lat": 60.703877,
+    "lon": 28.754927,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cherkessk",
+    "key": "cherkessk",
+    "lat": 44.290409,
+    "lon": 42.060006,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ielets",
+    "key": "ielets",
+    "lat": 52.580006,
+    "lon": 38.500017,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tobolsk",
+    "key": "tobolsk",
+    "lat": 58.199793,
+    "lon": 68.264815,
+    "labelRank": 6,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nefteyugansk",
+    "key": "nefteyugansk",
+    "lat": 61.092018,
+    "lon": 72.608008,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Noyabrsk",
+    "key": "noyabrsk",
+    "lat": 63.166544,
+    "lon": 75.616511,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bataisk",
+    "key": "bataisk",
+    "lat": 47.136824,
+    "lon": 39.74485,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Serguiev Possad",
+    "key": "serguiev possad",
+    "lat": 56.33001,
+    "lon": 38.170011,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Leninsk-Kuznetsky",
+    "key": "leninsk-kuznetsky",
+    "lat": 54.660009,
+    "lon": 86.169975,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kyzyl",
+    "key": "kyzyl",
+    "lat": 51.7067,
+    "lon": 94.383066,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oktiabrski",
+    "key": "oktiabrski",
+    "lat": 54.459969,
+    "lon": 53.459982,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Obninsk",
+    "key": "obninsk",
+    "lat": 55.080448,
+    "lon": 36.620028,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chapayevsk",
+    "key": "chapayevsk",
+    "lat": 52.974323,
+    "lon": 49.724344,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Elista",
+    "key": "elista",
+    "lat": 46.328657,
+    "lon": 44.208712,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Novotroitsk",
+    "key": "novotroitsk",
+    "lat": 51.200013,
+    "lon": 58.330021,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Derbent",
+    "key": "derbent",
+    "lat": 42.057806,
+    "lon": 48.277404,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yevpatoria",
+    "key": "yevpatoria",
+    "lat": 45.196891,
+    "lon": 33.363069,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kiselyovsk",
+    "key": "kiselyovsk",
+    "lat": 54.000023,
+    "lon": 86.640024,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Velikiye Luki",
+    "key": "velikiye luki",
+    "lat": 56.319959,
+    "lon": 30.520039,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ukhta",
+    "key": "ukhta",
+    "lat": 63.559982,
+    "lon": 53.689994,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kansk",
+    "key": "kansk",
+    "lat": 56.190019,
+    "lon": 95.710013,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sarapul",
+    "key": "sarapul",
+    "lat": 56.479148,
+    "lon": 53.798721,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Solikamsk",
+    "key": "solikamsk",
+    "lat": 59.669987,
+    "lon": 56.749962,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Glazov",
+    "key": "glazov",
+    "lat": 58.123208,
+    "lon": 52.628767,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ust-Ilimsk",
+    "key": "ust-ilimsk",
+    "lat": 57.98996,
+    "lon": 102.633311,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zelenodolsk",
+    "key": "zelenodolsk",
+    "lat": 55.848066,
+    "lon": 48.496973,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Novoshajtinsk",
+    "key": "novoshajtinsk",
+    "lat": 47.76999,
+    "lon": 39.919982,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tuapse",
+    "key": "tuapse",
+    "lat": 44.114761,
+    "lon": 39.064375,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vótkinsk",
+    "key": "vótkinsk",
+    "lat": 57.030406,
+    "lon": 53.990027,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Serov",
+    "key": "serov",
+    "lat": 59.614977,
+    "lon": 60.584973,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Balashov",
+    "key": "balashov",
+    "lat": 51.553506,
+    "lon": 43.163091,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zheleznogorsk",
+    "key": "zheleznogorsk",
+    "lat": 52.354775,
+    "lon": 35.404392,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kuznetsk",
+    "key": "kuznetsk",
+    "lat": 53.120413,
+    "lon": 46.599987,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Magadan",
+    "key": "magadan",
+    "lat": 59.57498,
+    "lon": 150.810009,
+    "labelRank": 3,
+    "minLabel": 3.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Novy Urengoy",
+    "key": "novy urengoy",
+    "lat": 66.083316,
+    "lon": 76.633245,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Michurinsk",
+    "key": "michurinsk",
+    "lat": 52.899987,
+    "lon": 40.499998,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nazran",
+    "key": "nazran",
+    "lat": 43.233003,
+    "lon": 44.783001,
+    "labelRank": 9,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kineshma",
+    "key": "kineshma",
+    "lat": 57.469966,
+    "lon": 42.129976,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bugulma",
+    "key": "bugulma",
+    "lat": 54.55433,
+    "lon": 52.794286,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Novoaltaysk",
+    "key": "novoaltaysk",
+    "lat": 53.399259,
+    "lon": 83.958844,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gatchina",
+    "key": "gatchina",
+    "lat": 59.570665,
+    "lon": 30.133344,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kirovo-Chepetsk",
+    "key": "kirovo-chepetsk",
+    "lat": 58.55437,
+    "lon": 50.044377,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yegoryevsk",
+    "key": "yegoryevsk",
+    "lat": 55.384796,
+    "lon": 39.02939,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yeysk",
+    "key": "yeysk",
+    "lat": 46.698789,
+    "lon": 38.26339,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Buzuluk",
+    "key": "buzuluk",
+    "lat": 52.782113,
+    "lon": 52.261761,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Schokino",
+    "key": "schokino",
+    "lat": 54.014337,
+    "lon": 37.514289,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Usolye-Sibirskoye",
+    "key": "usolye-sibirskoye",
+    "lat": 52.764982,
+    "lon": 103.644981,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yurga",
+    "key": "yurga",
+    "lat": 55.725758,
+    "lon": 84.885402,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Anjero-Sudjensk",
+    "key": "anjero-sudjensk",
+    "lat": 56.080025,
+    "lon": 86.040009,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Troitsk",
+    "key": "troitsk",
+    "lat": 54.10565,
+    "lon": 61.570236,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kaspiysk",
+    "key": "kaspiysk",
+    "lat": 42.874733,
+    "lon": 47.624369,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Asbest",
+    "key": "asbest",
+    "lat": 57.023043,
+    "lon": 61.458047,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Klin",
+    "key": "klin",
+    "lat": 56.343058,
+    "lon": 36.698731,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vorkuta",
+    "key": "vorkuta",
+    "lat": 67.5,
+    "lon": 64.009984,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kropotkin",
+    "key": "kropotkin",
+    "lat": 45.447083,
+    "lon": 40.582112,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ialta",
+    "key": "ialta",
+    "lat": 44.499311,
+    "lon": 34.159403,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chadrinsk",
+    "key": "chadrinsk",
+    "lat": 56.083668,
+    "lon": 63.633263,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Birobidjan",
+    "key": "birobidjan",
+    "lat": 48.797421,
+    "lon": 132.950789,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kamensk-Shakhtinsky",
+    "key": "kamensk-shakhtinsky",
+    "lat": 48.331764,
+    "lon": 40.251796,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Buynaksk",
+    "key": "buynaksk",
+    "lat": 42.833495,
+    "lon": 47.113031,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Georgiyevsk",
+    "key": "georgiyevsk",
+    "lat": 44.1599,
+    "lon": 43.469946,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tchussovoi",
+    "key": "tchussovoi",
+    "lat": 58.29343,
+    "lon": 57.81305,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chernogorsk",
+    "key": "chernogorsk",
+    "lat": 53.831325,
+    "lon": 91.22269,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Volsk",
+    "key": "volsk",
+    "lat": 52.034717,
+    "lon": 47.374307,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Belogorsk",
+    "key": "belogorsk",
+    "lat": 50.9191,
+    "lon": 128.463724,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tuymazy",
+    "key": "tuymazy",
+    "lat": 54.604792,
+    "lon": 53.694335,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Borisoglebsk",
+    "key": "borisoglebsk",
+    "lat": 51.368711,
+    "lon": 42.088738,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Khanty-Mansiysk",
+    "key": "khanty-mansiysk",
+    "lat": 61.001534,
+    "lon": 69.001514,
+    "labelRank": 6,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ishim",
+    "key": "ishim",
+    "lat": 56.150228,
+    "lon": 69.449807,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Apatity",
+    "key": "apatity",
+    "lat": 67.573071,
+    "lon": 33.393042,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aleksin",
+    "key": "aleksin",
+    "lat": 54.514333,
+    "lon": 37.094366,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kungur",
+    "key": "kungur",
+    "lat": 57.434775,
+    "lon": 56.954342,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Klintsy",
+    "key": "klintsy",
+    "lat": 52.76524,
+    "lon": 32.244843,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Neryungri",
+    "key": "neryungri",
+    "lat": 56.674046,
+    "lon": 124.710362,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Leninogorsk",
+    "key": "leninogorsk",
+    "lat": 54.598695,
+    "lon": 52.448726,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lesosibirsk",
+    "key": "lesosibirsk",
+    "lat": 58.243252,
+    "lon": 92.483285,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Polevskoi",
+    "key": "polevskoi",
+    "lat": 56.443414,
+    "lon": 60.188047,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kumertau",
+    "key": "kumertau",
+    "lat": 52.774775,
+    "lon": 55.784336,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Krasnoturyinsk",
+    "key": "krasnoturyinsk",
+    "lat": 59.76237,
+    "lon": 60.208342,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tikhoretsk",
+    "key": "tikhoretsk",
+    "lat": 45.853104,
+    "lon": 40.137746,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Svobodny",
+    "key": "svobodny",
+    "lat": 51.406176,
+    "lon": 128.131187,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rjev",
+    "key": "rjev",
+    "lat": 56.257405,
+    "lon": 34.327455,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Balakhna",
+    "key": "balakhna",
+    "lat": 56.494341,
+    "lon": 43.594383,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Belebey",
+    "key": "belebey",
+    "lat": 54.129137,
+    "lon": 54.118702,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chistopol",
+    "key": "chistopol",
+    "lat": 55.364772,
+    "lon": 50.640671,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tikhvin",
+    "key": "tikhvin",
+    "lat": 59.644846,
+    "lon": 33.514378,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Labinsk",
+    "key": "labinsk",
+    "lat": 44.634781,
+    "lon": 40.744272,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Iskitim",
+    "key": "iskitim",
+    "lat": 54.650939,
+    "lon": 83.286534,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vyksa",
+    "key": "vyksa",
+    "lat": 55.324723,
+    "lon": 42.164392,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sibay",
+    "key": "sibay",
+    "lat": 52.70912,
+    "lon": 58.638736,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salsk",
+    "key": "salsk",
+    "lat": 46.477511,
+    "lon": 41.542001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shuya",
+    "key": "shuya",
+    "lat": 56.854345,
+    "lon": 41.364286,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zima",
+    "key": "zima",
+    "lat": 53.93305,
+    "lon": 102.03309,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kotlas",
+    "key": "kotlas",
+    "lat": 61.263068,
+    "lon": 46.663084,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gorno-Altaisk",
+    "key": "gorno-altaisk",
+    "lat": 51.961336,
+    "lon": 85.957688,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mikhailovka",
+    "key": "mikhailovka",
+    "lat": 50.06786,
+    "lon": 43.217455,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Solnechnogorsk",
+    "key": "solnechnogorsk",
+    "lat": 56.180691,
+    "lon": 36.980885,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arseniev",
+    "key": "arseniev",
+    "lat": 44.162303,
+    "lon": 133.282345,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kogalym",
+    "key": "kogalym",
+    "lat": 62.044622,
+    "lon": 74.494099,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Borovichí",
+    "key": "borovichí",
+    "lat": 58.397817,
+    "lon": 33.897404,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cheremkhovo",
+    "key": "cheremkhovo",
+    "lat": 53.158808,
+    "lon": 103.073853,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Roslavl",
+    "key": "roslavl",
+    "lat": 53.950905,
+    "lon": 32.860413,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nizhnyaya Tura",
+    "key": "nizhnyaya tura",
+    "lat": 58.643641,
+    "lon": 59.798251,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sayanogorsk",
+    "key": "sayanogorsk",
+    "lat": 53.089433,
+    "lon": 91.400405,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gelendzhik",
+    "key": "gelendzhik",
+    "lat": 44.574759,
+    "lon": 38.064384,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Viazma",
+    "key": "viazma",
+    "lat": 55.212197,
+    "lon": 34.291798,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Krasnokamensk",
+    "key": "krasnokamensk",
+    "lat": 50.066491,
+    "lon": 118.02648,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Severomorsk",
+    "key": "severomorsk",
+    "lat": 69.073057,
+    "lon": 33.423066,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vyshny Volochyok",
+    "key": "vyshny volochyok",
+    "lat": 57.583034,
+    "lon": 34.563099,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Buguruslan",
+    "key": "buguruslan",
+    "lat": 53.663015,
+    "lon": 52.433016,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Livny",
+    "key": "livny",
+    "lat": 52.424796,
+    "lon": 37.604361,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Krasnokamsk",
+    "key": "krasnokamsk",
+    "lat": 58.074736,
+    "lon": 55.744287,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tayshet",
+    "key": "tayshet",
+    "lat": 55.927709,
+    "lon": 97.987703,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nyagan",
+    "key": "nyagan",
+    "lat": 62.146528,
+    "lon": 65.381425,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kimry",
+    "key": "kimry",
+    "lat": 56.869124,
+    "lon": 37.344377,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tulun",
+    "key": "tulun",
+    "lat": 54.565337,
+    "lon": 100.565376,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kyshtym",
+    "key": "kyshtym",
+    "lat": 55.699997,
+    "lon": 60.559549,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Otradny",
+    "key": "otradny",
+    "lat": 53.377813,
+    "lon": 51.347398,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kanash",
+    "key": "kanash",
+    "lat": 55.50913,
+    "lon": 47.468668,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Monchegorsk",
+    "key": "monchegorsk",
+    "lat": 67.929121,
+    "lon": 32.828735,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Morshansk",
+    "key": "morshansk",
+    "lat": 53.454733,
+    "lon": 41.804363,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ruzayevka",
+    "key": "ruzayevka",
+    "lat": 54.064334,
+    "lon": 44.924379,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Verkhnyaya Salda",
+    "key": "verkhnyaya salda",
+    "lat": 58.050189,
+    "lon": 60.549782,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Slobodskoy",
+    "key": "slobodskoy",
+    "lat": 58.718495,
+    "lon": 50.188037,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Megion",
+    "key": "megion",
+    "lat": 61.060755,
+    "lon": 76.095345,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Torzhok",
+    "key": "torzhok",
+    "lat": 57.029063,
+    "lon": 34.978733,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yamburg",
+    "key": "yamburg",
+    "lat": 67.922117,
+    "lon": 74.925313,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Belaya Kalitva",
+    "key": "belaya kalitva",
+    "lat": 48.186502,
+    "lon": 40.78613,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mtsensk",
+    "key": "mtsensk",
+    "lat": 53.264745,
+    "lon": 36.547164,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gryazi",
+    "key": "gryazi",
+    "lat": 52.494766,
+    "lon": 39.934348,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mozhga",
+    "key": "mozhga",
+    "lat": 56.454757,
+    "lon": 52.184349,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Amursk",
+    "key": "amursk",
+    "lat": 50.222837,
+    "lon": 136.897421,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Safonovo",
+    "key": "safonovo",
+    "lat": 55.14649,
+    "lon": 33.216101,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alatyr",
+    "key": "alatyr",
+    "lat": 54.850359,
+    "lon": 46.599987,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nadim",
+    "key": "nadim",
+    "lat": 65.52981,
+    "lon": 72.514788,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pechora",
+    "key": "pechora",
+    "lat": 65.158748,
+    "lon": 57.208745,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Spassk-Dalny",
+    "key": "spassk-dalny",
+    "lat": 44.600158,
+    "lon": 132.819789,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Apsheronsk",
+    "key": "apsheronsk",
+    "lat": 44.468719,
+    "lon": 39.728727,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mozdok",
+    "key": "mozdok",
+    "lat": 43.754318,
+    "lon": 44.65437,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Volkhov",
+    "key": "volkhov",
+    "lat": 59.929093,
+    "lon": 32.338739,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Iefremov",
+    "key": "iefremov",
+    "lat": 53.149119,
+    "lon": 38.121538,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shebekino",
+    "key": "shebekino",
+    "lat": 50.41435,
+    "lon": 36.894378,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chernyakhovsk",
+    "key": "chernyakhovsk",
+    "lat": 54.631638,
+    "lon": 21.810855,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Usinsk",
+    "key": "usinsk",
+    "lat": 65.923042,
+    "lon": 57.402997,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Strejevoi",
+    "key": "strejevoi",
+    "lat": 60.733152,
+    "lon": 77.577683,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Artyomovsky",
+    "key": "artyomovsky",
+    "lat": 57.365192,
+    "lon": 61.869753,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kamen-na-Obi",
+    "key": "kamen-na-obi",
+    "lat": 53.793602,
+    "lon": 81.338797,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Akhtubinsk",
+    "key": "akhtubinsk",
+    "lat": 48.278718,
+    "lon": 46.168696,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Timashyovsk",
+    "key": "timashyovsk",
+    "lat": 45.624746,
+    "lon": 38.944382,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alapayevsk",
+    "key": "alapayevsk",
+    "lat": 57.846507,
+    "lon": 61.691521,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dzhankoy",
+    "key": "dzhankoy",
+    "lat": 45.71704,
+    "lon": 34.400008,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Novozybkov",
+    "key": "novozybkov",
+    "lat": 52.534815,
+    "lon": 31.944861,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nizhneudinsk",
+    "key": "nizhneudinsk",
+    "lat": 54.897669,
+    "lon": 99.027692,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sovetsk",
+    "key": "sovetsk",
+    "lat": 55.071766,
+    "lon": 21.881961,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mariinsk",
+    "key": "mariinsk",
+    "lat": 56.210767,
+    "lon": 87.760369,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Krasnoufimsk",
+    "key": "krasnoufimsk",
+    "lat": 56.599115,
+    "lon": 57.758634,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Partizansk",
+    "key": "partizansk",
+    "lat": 43.134872,
+    "lon": 133.134912,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sokol",
+    "key": "sokol",
+    "lat": 59.46478,
+    "lon": 40.114388,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yemanzhelinsk",
+    "key": "yemanzhelinsk",
+    "lat": 54.748866,
+    "lon": 61.293509,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lesozavodsk",
+    "key": "lesozavodsk",
+    "lat": 45.474755,
+    "lon": 133.429778,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uryupinsk",
+    "key": "uryupinsk",
+    "lat": 50.77345,
+    "lon": 42.003059,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gay",
+    "key": "gay",
+    "lat": 51.474725,
+    "lon": 58.454302,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zelenokumsk",
+    "key": "zelenokumsk",
+    "lat": 44.40911,
+    "lon": 43.878706,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Birsk",
+    "key": "birsk",
+    "lat": 55.42438,
+    "lon": 55.544351,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Frolovo",
+    "key": "frolovo",
+    "lat": 49.772193,
+    "lon": 43.651795,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mirny",
+    "key": "mirny",
+    "lat": 62.540019,
+    "lon": 113.961354,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Luga",
+    "key": "luga",
+    "lat": 58.736349,
+    "lon": 29.838995,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ob",
+    "key": "ob",
+    "lat": 54.99805,
+    "lon": 82.707654,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uray",
+    "key": "uray",
+    "lat": 60.140139,
+    "lon": 64.754796,
+    "labelRank": 7,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alekseievka",
+    "key": "alekseievka",
+    "lat": 50.653483,
+    "lon": 38.69308,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bogoroditsk",
+    "key": "bogoroditsk",
+    "lat": 53.774688,
+    "lon": 38.114355,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tavda",
+    "key": "tavda",
+    "lat": 58.053652,
+    "lon": 65.25828,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kirov",
+    "key": "kirov (russia)",
+    "lat": 54.085186,
+    "lon": 34.30482,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vichuga",
+    "key": "vichuga",
+    "lat": 57.219129,
+    "lon": 41.928748,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Asha",
+    "key": "asha",
+    "lat": 54.997998,
+    "lon": 57.272618,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guryevsk",
+    "key": "guryevsk",
+    "lat": 54.298144,
+    "lon": 85.93769,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Millerovo",
+    "key": "millerovo",
+    "lat": 48.937851,
+    "lon": 40.39742,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kandalaksha",
+    "key": "kandalaksha",
+    "lat": 67.164336,
+    "lon": 32.414393,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salekhard",
+    "key": "salekhard",
+    "lat": 66.53502,
+    "lon": 66.60998,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uglitch",
+    "key": "uglitch",
+    "lat": 57.524356,
+    "lon": 38.330001,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tynda",
+    "key": "tynda",
+    "lat": 55.174267,
+    "lon": 124.707571,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kasimov",
+    "key": "kasimov",
+    "lat": 54.943454,
+    "lon": 41.39307,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Serdobsk",
+    "key": "serdobsk",
+    "lat": 52.462184,
+    "lon": 44.221786,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Slantsy",
+    "key": "slantsy",
+    "lat": 59.111597,
+    "lon": 28.074658,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Severouralsk",
+    "key": "severouralsk",
+    "lat": 60.156521,
+    "lon": 59.961549,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Blagodarny",
+    "key": "blagodarny",
+    "lat": 45.104726,
+    "lon": 43.434393,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Boyarka",
+    "key": "boyarka",
+    "lat": 70.766984,
+    "lon": 97.500033,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yalutorovsk",
+    "key": "yalutorovsk",
+    "lat": 56.673632,
+    "lon": 66.298268,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Valuyki",
+    "key": "valuyki",
+    "lat": 50.209092,
+    "lon": 38.098698,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Charia",
+    "key": "charia",
+    "lat": 58.379756,
+    "lon": 45.509356,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shumerlya",
+    "key": "shumerlya",
+    "lat": 55.484816,
+    "lon": 46.424391,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Korsakov",
+    "key": "korsakov",
+    "lat": 46.642436,
+    "lon": 142.777476,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bezhetsk",
+    "key": "bezhetsk",
+    "lat": 57.764729,
+    "lon": 36.689998,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kondopoga",
+    "key": "kondopoga",
+    "lat": 62.208721,
+    "lon": 34.288697,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Staraya Russa",
+    "key": "staraya russa",
+    "lat": 57.994766,
+    "lon": 31.354355,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Slavgorod",
+    "key": "slavgorod",
+    "lat": 53.004942,
+    "lon": 78.669554,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Verkhny Ufaley",
+    "key": "verkhny ufaley",
+    "lat": 56.066279,
+    "lon": 60.2313,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zaozyorny",
+    "key": "zaozyorny",
+    "lat": 55.96197,
+    "lon": 94.702788,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rostov",
+    "key": "rostov city",
+    "lat": 57.189157,
+    "lon": 39.404303,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dyatkovo",
+    "key": "dyatkovo",
+    "lat": 53.589144,
+    "lon": 34.339185,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Segezha",
+    "key": "segezha",
+    "lat": 63.754776,
+    "lon": 34.324303,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Veliky Ustyug",
+    "key": "veliky ustyug",
+    "lat": 60.768706,
+    "lon": 46.298662,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kotovsk",
+    "key": "kotovsk",
+    "lat": 52.594734,
+    "lon": 41.504381,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kholmsk",
+    "key": "kholmsk",
+    "lat": 47.047321,
+    "lon": 142.062377,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Omutninsk",
+    "key": "omutninsk",
+    "lat": 58.658938,
+    "lon": 52.159183,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kudymkar",
+    "key": "kudymkar",
+    "lat": 59.016177,
+    "lon": 54.633037,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barabinsk",
+    "key": "barabinsk",
+    "lat": 55.357279,
+    "lon": 78.351899,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gubakha",
+    "key": "gubakha",
+    "lat": 58.869132,
+    "lon": 57.588722,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sassovo",
+    "key": "sassovo",
+    "lat": 54.349149,
+    "lon": 41.908698,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karpinsk",
+    "key": "karpinsk",
+    "lat": 59.760162,
+    "lon": 60.009815,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mednogorsk",
+    "key": "mednogorsk",
+    "lat": 51.419121,
+    "lon": 57.578749,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Borzya",
+    "key": "borzya",
+    "lat": 50.388564,
+    "lon": 116.518562,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Svetogorsk",
+    "key": "svetogorsk",
+    "lat": 61.101321,
+    "lon": 28.917656,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sovetskaya Gavan",
+    "key": "sovetskaya gavan",
+    "lat": 48.969891,
+    "lon": 140.27489,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kirovsk",
+    "key": "kirovsk",
+    "lat": 67.609089,
+    "lon": 33.668735,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sosnogorsk",
+    "key": "sosnogorsk",
+    "lat": 63.59476,
+    "lon": 53.894323,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karasuk",
+    "key": "karasuk",
+    "lat": 53.727301,
+    "lon": 78.021894,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kartaly",
+    "key": "kartaly",
+    "lat": 53.047394,
+    "lon": 60.681919,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zheleznogorsk-Ilimsky",
+    "key": "zheleznogorsk-ilimsky",
+    "lat": 56.576248,
+    "lon": 104.122678,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kotelnich",
+    "key": "kotelnich",
+    "lat": 58.304127,
+    "lon": 48.313733,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dalnerechensk",
+    "key": "dalnerechensk",
+    "lat": 45.927286,
+    "lon": 133.722318,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nevyansk",
+    "key": "nevyansk",
+    "lat": 57.490249,
+    "lon": 60.214763,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aleysk",
+    "key": "aleysk",
+    "lat": 52.491769,
+    "lon": 82.777676,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kolpashevo",
+    "key": "kolpashevo",
+    "lat": 58.311021,
+    "lon": 82.907051,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Atkarsk",
+    "key": "atkarsk",
+    "lat": 51.876458,
+    "lon": 44.996106,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sol-lletsk",
+    "key": "sol-lletsk",
+    "lat": 51.1603,
+    "lon": 54.999888,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nikolayevsk-na-Amure",
+    "key": "nikolayevsk-na-amure",
+    "lat": 53.149636,
+    "lon": 140.730004,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Asino",
+    "key": "asino",
+    "lat": 56.993122,
+    "lon": 86.162689,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zeya",
+    "key": "zeya",
+    "lat": 53.750012,
+    "lon": 127.266588,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tara",
+    "key": "tara",
+    "lat": 56.898244,
+    "lon": 74.37824,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pugachyov",
+    "key": "pugachyov",
+    "lat": 52.014769,
+    "lon": 48.794375,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oxa",
+    "key": "oxa",
+    "lat": 53.573899,
+    "lon": 142.947853,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bakal",
+    "key": "bakal",
+    "lat": 54.945883,
+    "lon": 58.795884,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Buy",
+    "key": "buy",
+    "lat": 58.484685,
+    "lon": 41.52438,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Velsk",
+    "key": "velsk",
+    "lat": 61.067395,
+    "lon": 42.09742,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Krasnoarmeysk",
+    "key": "krasnoarmeysk",
+    "lat": 51.017389,
+    "lon": 45.697407,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Severobaikalsk",
+    "key": "severobaikalsk",
+    "lat": 55.634006,
+    "lon": 109.312955,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lensk",
+    "key": "lensk",
+    "lat": 60.725271,
+    "lon": 114.94703,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ust-Kut",
+    "key": "ust-kut",
+    "lat": 56.76497,
+    "lon": 105.759994,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nelidovo",
+    "key": "nelidovo",
+    "lat": 56.223505,
+    "lon": 32.773079,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tatarsk",
+    "key": "tatarsk",
+    "lat": 55.221938,
+    "lon": 75.966515,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bologoye",
+    "key": "bologoye",
+    "lat": 57.872164,
+    "lon": 34.051761,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Topki",
+    "key": "topki",
+    "lat": 55.280177,
+    "lon": 85.610836,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aldan",
+    "key": "aldan",
+    "lat": 58.602998,
+    "lon": 125.38939,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gusinoozyorsk",
+    "key": "gusinoozyorsk",
+    "lat": 51.280757,
+    "lon": 106.500362,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kalachinsk",
+    "key": "kalachinsk",
+    "lat": 55.048667,
+    "lon": 74.568254,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bogotol",
+    "key": "bogotol",
+    "lat": 56.216477,
+    "lon": 89.518401,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dudinka",
+    "key": "dudinka",
+    "lat": 69.418203,
+    "lon": 86.22501,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lgov",
+    "key": "lgov",
+    "lat": 51.694763,
+    "lon": 35.274374,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Inta",
+    "key": "inta",
+    "lat": 66.037428,
+    "lon": 60.167428,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tashtagol",
+    "key": "tashtagol",
+    "lat": 52.79175,
+    "lon": 87.867701,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Onega",
+    "key": "onega",
+    "lat": 63.927143,
+    "lon": 38.077148,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kizel",
+    "key": "kizel",
+    "lat": 59.064365,
+    "lon": 57.634301,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Toguchin",
+    "key": "toguchin",
+    "lat": 55.237674,
+    "lon": 84.377681,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Naryan-Mar",
+    "key": "naryan-mar",
+    "lat": 67.647407,
+    "lon": 53.057423,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shimanovsk",
+    "key": "shimanovsk",
+    "lat": 52.002445,
+    "lon": 127.697466,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Palatka",
+    "key": "palatka city",
+    "lat": 60.100012,
+    "lon": 150.899978,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Isilkul",
+    "key": "isilkul",
+    "lat": 54.9287,
+    "lon": 71.268249,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Petrovsk-Zabaykalsky",
+    "key": "petrovsk-zabaykalsky",
+    "lat": 51.282695,
+    "lon": 108.832674,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Krasnouralsk",
+    "key": "krasnouralsk",
+    "lat": 58.351515,
+    "lon": 60.051518,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cherepanovo",
+    "key": "cherepanovo",
+    "lat": 54.233626,
+    "lon": 83.368802,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rayevskiy",
+    "key": "rayevskiy",
+    "lat": 54.067383,
+    "lon": 54.926921,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yeniseysk",
+    "key": "yeniseysk",
+    "lat": 58.451508,
+    "lon": 92.156535,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bikin",
+    "key": "bikin",
+    "lat": 46.820254,
+    "lon": 134.264921,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ivdel",
+    "key": "ivdel",
+    "lat": 60.693645,
+    "lon": 60.413253,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uzhur",
+    "key": "uzhur",
+    "lat": 55.329167,
+    "lon": 89.820708,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Polyarny",
+    "key": "polyarny",
+    "lat": 69.205219,
+    "lon": 33.450247,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Slyudyanka",
+    "key": "slyudyanka",
+    "lat": 51.653835,
+    "lon": 103.698828,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kavalerovo",
+    "key": "kavalerovo",
+    "lat": 44.270204,
+    "lon": 135.049782,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vanino",
+    "key": "vanino",
+    "lat": 49.087325,
+    "lon": 140.242489,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kyakhta",
+    "key": "kyakhta",
+    "lat": 50.352675,
+    "lon": 106.452665,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Abaza",
+    "key": "abaza",
+    "lat": 52.669019,
+    "lon": 90.095369,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kirsanov",
+    "key": "kirsanov",
+    "lat": 52.657392,
+    "lon": 42.717434,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kurtamysh",
+    "key": "kurtamysh",
+    "lat": 54.908676,
+    "lon": 64.433266,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sovetsk",
+    "key": "sovetsk city",
+    "lat": 57.578461,
+    "lon": 48.958086,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pallasovka",
+    "key": "pallasovka",
+    "lat": 50.047732,
+    "lon": 46.877335,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Plast",
+    "key": "plast",
+    "lat": 54.368502,
+    "lon": 60.808526,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nevelsk",
+    "key": "nevelsk",
+    "lat": 46.680289,
+    "lon": 141.869934,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Poronaysk",
+    "key": "poronaysk",
+    "lat": 49.241554,
+    "lon": 143.085002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kamenka",
+    "key": "kamenka",
+    "lat": 53.194723,
+    "lon": 44.044381,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kupina",
+    "key": "kupina",
+    "lat": 54.359226,
+    "lon": 77.274187,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nikolayevsk",
+    "key": "nikolayevsk",
+    "lat": 50.016106,
+    "lon": 45.426105,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bodaybo",
+    "key": "bodaybo",
+    "lat": 57.850748,
+    "lon": 114.193242,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nikel",
+    "key": "nikel",
+    "lat": 69.412571,
+    "lon": 30.218817,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kodinskiy",
+    "key": "kodinskiy",
+    "lat": 58.694558,
+    "lon": 99.099619,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gornyak",
+    "key": "gornyak",
+    "lat": 50.988088,
+    "lon": 81.487677,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nerchinsk",
+    "key": "nerchinsk",
+    "lat": 52.008956,
+    "lon": 116.548586,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kulunda",
+    "key": "kulunda",
+    "lat": 52.582668,
+    "lon": 78.947264,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Udachny",
+    "key": "udachny",
+    "lat": 66.423166,
+    "lon": 112.39654,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vyazemsky",
+    "key": "vyazemsky",
+    "lat": 47.532847,
+    "lon": 134.747475,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chegdomyn",
+    "key": "chegdomyn",
+    "lat": 51.117796,
+    "lon": 133.024118,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ust-Ordynsky",
+    "key": "ust-ordynsky",
+    "lat": 52.832997,
+    "lon": 104.699998,
+    "labelRank": 9,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shilka",
+    "key": "shilka",
+    "lat": 51.870566,
+    "lon": 116.030633,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kem",
+    "key": "kem",
+    "lat": 64.953592,
+    "lon": 34.56837,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Golyshmanovo",
+    "key": "golyshmanovo",
+    "lat": 56.381945,
+    "lon": 68.371475,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kirensk",
+    "key": "kirensk",
+    "lat": 57.785735,
+    "lon": 108.111943,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uyar",
+    "key": "uyar",
+    "lat": 55.810378,
+    "lon": 94.315318,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uglegorsk",
+    "key": "uglegorsk",
+    "lat": 49.083346,
+    "lon": 142.033335,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mogocha",
+    "key": "mogocha",
+    "lat": 53.733321,
+    "lon": 119.766581,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nazyvayevsk",
+    "key": "nazyvayevsk",
+    "lat": 55.566956,
+    "lon": 71.350001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Belomorsk",
+    "key": "belomorsk",
+    "lat": 64.52522,
+    "lon": 34.765826,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cherlak",
+    "key": "cherlak",
+    "lat": 54.160478,
+    "lon": 74.820022,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alexandrovsk-Sakhalinsk",
+    "key": "alexandrovsk-sakhalinsk",
+    "lat": 50.897499,
+    "lon": 142.156118,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dolinsk",
+    "key": "dolinsk",
+    "lat": 47.350429,
+    "lon": 142.800007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Magdagachi",
+    "key": "magdagachi",
+    "lat": 53.449979,
+    "lon": 125.800011,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Severny",
+    "key": "severny",
+    "lat": 67.608288,
+    "lon": 64.123259,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zmeinogorsk",
+    "key": "zmeinogorsk",
+    "lat": 51.157096,
+    "lon": 82.195024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aguinskoe",
+    "key": "aguinskoe",
+    "lat": 51.103068,
+    "lon": 114.522818,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kirs",
+    "key": "kirs",
+    "lat": 59.313833,
+    "lon": 52.245173,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kargat",
+    "key": "kargat",
+    "lat": 55.195945,
+    "lon": 80.281136,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Khilok",
+    "key": "khilok",
+    "lat": 51.350004,
+    "lon": 110.450044,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Taksimo",
+    "key": "taksimo",
+    "lat": 56.331534,
+    "lon": 114.889979,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Anadyr",
+    "key": "anadyr",
+    "lat": 64.73699,
+    "lon": 177.474996,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nogliki",
+    "key": "nogliki",
+    "lat": 51.833282,
+    "lon": 143.166703,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Skovorodino",
+    "key": "skovorodino",
+    "lat": 53.983306,
+    "lon": 123.916663,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Obluchye",
+    "key": "obluchye",
+    "lat": 48.999992,
+    "lon": 131.083306,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Olyokminsk",
+    "key": "olyokminsk",
+    "lat": 60.503192,
+    "lon": 120.392589,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vilyuysk",
+    "key": "vilyuysk",
+    "lat": 63.755267,
+    "lon": 121.624762,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pokrovsk",
+    "key": "pokrovsk",
+    "lat": 61.493442,
+    "lon": 129.12725,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Biryusinsk",
+    "key": "biryusinsk",
+    "lat": 55.960653,
+    "lon": 97.814432,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dombarovski",
+    "key": "dombarovski",
+    "lat": 50.754588,
+    "lon": 59.540024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Igrim",
+    "key": "igrim",
+    "lat": 63.193312,
+    "lon": 64.419416,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shira",
+    "key": "shira",
+    "lat": 54.49144,
+    "lon": 89.953052,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ust-Nera",
+    "key": "ust-nera",
+    "lat": 64.566587,
+    "lon": 143.199983,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Suntar",
+    "key": "suntar",
+    "lat": 62.14441,
+    "lon": 117.631931,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Olovyannaya",
+    "key": "olovyannaya",
+    "lat": 50.949977,
+    "lon": 115.56663,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dalnegorsk",
+    "key": "dalnegorsk",
+    "lat": 44.537216,
+    "lon": 135.517247,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Igarka",
+    "key": "igarka",
+    "lat": 67.467108,
+    "lon": 86.583335,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Susuman",
+    "key": "susuman",
+    "lat": 62.783337,
+    "lon": 148.166759,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Timiryazevskiy",
+    "key": "timiryazevskiy",
+    "lat": 56.49261,
+    "lon": 84.903593,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Khandyga",
+    "key": "khandyga",
+    "lat": 62.666006,
+    "lon": 135.600033,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Makarov",
+    "key": "makarov",
+    "lat": 48.633736,
+    "lon": 142.800007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Verkhnevilyuysk",
+    "key": "verkhnevilyuysk",
+    "lat": 63.4457,
+    "lon": 120.316728,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Umba",
+    "key": "umba",
+    "lat": 66.681394,
+    "lon": 34.345542,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tazovsky",
+    "key": "tazovsky",
+    "lat": 67.466669,
+    "lon": 78.699992,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mundybash",
+    "key": "mundybash",
+    "lat": 53.233274,
+    "lon": 87.316675,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bilibino",
+    "key": "bilibino",
+    "lat": 68.052627,
+    "lon": 166.448574,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tiksi",
+    "key": "tiksi",
+    "lat": 71.626886,
+    "lon": 128.834967,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Okhotsk",
+    "key": "okhotsk",
+    "lat": 59.383002,
+    "lon": 143.217036,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tura",
+    "key": "tura",
+    "lat": 64.283297,
+    "lon": 100.250046,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chernyshevsky",
+    "key": "chernyshevsky",
+    "lat": 63.012754,
+    "lon": 112.471419,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Artyomovsk",
+    "key": "artyomovsk",
+    "lat": 54.348736,
+    "lon": 93.435526,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ust-Kamchatsk",
+    "key": "ust-kamchatsk",
+    "lat": 56.213505,
+    "lon": 162.434984,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pevek",
+    "key": "pevek",
+    "lat": 69.700822,
+    "lon": 170.313315,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Turukhansk",
+    "key": "turukhansk",
+    "lat": 65.838163,
+    "lon": 87.954982,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bagdarin",
+    "key": "bagdarin",
+    "lat": 54.433304,
+    "lon": 113.600032,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Comunidade Urbana de Russie",
+    "key": "comunidade urbana de russie",
+    "lat": 63.924146,
+    "lon": 127.473914,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Batagay",
+    "key": "batagay",
+    "lat": 67.655985,
+    "lon": 134.635027,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Omsukchan",
+    "key": "omsukchan",
+    "lat": 62.533275,
+    "lon": 155.80004,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Novy Uoyan",
+    "key": "novy uoyan",
+    "lat": 56.134983,
+    "lon": 111.733893,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vitim",
+    "key": "vitim",
+    "lat": 59.451499,
+    "lon": 112.557822,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Teli",
+    "key": "teli",
+    "lat": 51.033305,
+    "lon": 90.233293,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chersky",
+    "key": "chersky",
+    "lat": 68.750053,
+    "lon": 161.330039,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mezen",
+    "key": "mezen",
+    "lat": 65.85222,
+    "lon": 44.240028,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Palana",
+    "key": "palana",
+    "lat": 59.084002,
+    "lon": 159.950019,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zyryanka",
+    "key": "zyryanka",
+    "lat": 65.735973,
+    "lon": 150.890004,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "De Kastri",
+    "key": "de kastri",
+    "lat": 51.466586,
+    "lon": 140.783334,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Srednekolymsk",
+    "key": "srednekolymsk",
+    "lat": 67.450003,
+    "lon": 153.710039,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bukachacha",
+    "key": "bukachacha",
+    "lat": 52.983341,
+    "lon": 116.916625,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ugolnye Kopi",
+    "key": "ugolnye kopi",
+    "lat": 64.733295,
+    "lon": 177.699995,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Krasnogorsk",
+    "key": "krasnogorsk",
+    "lat": 48.46155,
+    "lon": 142.089973,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhigansk",
+    "key": "zhigansk",
+    "lat": 66.769709,
+    "lon": 123.371115,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Khatanga",
+    "key": "khatanga",
+    "lat": 72.041144,
+    "lon": 102.465001,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ust-Maya",
+    "key": "ust-maya",
+    "lat": 60.45658,
+    "lon": 134.543302,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saranpaul",
+    "key": "saranpaul",
+    "lat": 64.250457,
+    "lon": 60.970015,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Provideniya",
+    "key": "provideniya",
+    "lat": 64.423495,
+    "lon": -173.225794,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chokurdakh",
+    "key": "chokurdakh",
+    "lat": 70.618311,
+    "lon": 147.89458,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Severo-Kurilsk",
+    "key": "severo-kurilsk",
+    "lat": 50.690483,
+    "lon": 156.085036,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Egvekinot",
+    "key": "egvekinot",
+    "lat": 66.322132,
+    "lon": -179.183722,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Evensk",
+    "key": "evensk",
+    "lat": 61.949977,
+    "lon": 159.233319,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Saskylakh",
+    "key": "saskylakh",
+    "lat": 71.91663,
+    "lon": 114.08331,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Beringovsky",
+    "key": "beringovsky",
+    "lat": 63.065464,
+    "lon": 179.306667,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Porto de Novy",
+    "key": "porto de novy",
+    "lat": 67.698334,
+    "lon": 72.928303,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oktiabrski",
+    "key": "oktiabrski city",
+    "lat": 52.663593,
+    "lon": 156.238721,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ust-Kuyga",
+    "key": "ust-kuyga",
+    "lat": 70.017056,
+    "lon": 135.600033,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Eldikan",
+    "key": "eldikan",
+    "lat": 60.800021,
+    "lon": 135.183314,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Verkhoiansk",
+    "key": "verkhoiansk",
+    "lat": 67.5447,
+    "lon": 133.384974,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chumikan",
+    "key": "chumikan",
+    "lat": 54.711394,
+    "lon": 135.314514,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ayan",
+    "key": "ayan",
+    "lat": 56.454241,
+    "lon": 138.16733,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lavrentiya",
+    "key": "lavrentiya",
+    "lat": 65.58327,
+    "lon": -171.024998,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dikson",
+    "key": "dikson",
+    "lat": 73.506972,
+    "lon": 80.545099,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Klyuchi",
+    "key": "klyuchi",
+    "lat": 56.29996,
+    "lon": 160.850016,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Omolon",
+    "key": "omolon",
+    "lat": 65.249982,
+    "lon": 160.500012,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Govorovo",
+    "key": "govorovo",
+    "lat": 70.211359,
+    "lon": 125.993281,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chelyuskin",
+    "key": "chelyuskin",
+    "lat": 77.716973,
+    "lon": 104.250009,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uelen",
+    "key": "uelen",
+    "lat": 66.154139,
+    "lon": -169.810584,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yerema",
+    "key": "yerema",
+    "lat": 60.380796,
+    "lon": 107.779405,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mikhalkino",
+    "key": "mikhalkino",
+    "lat": 69.42444,
+    "lon": 161.481143,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oymyakon",
+    "key": "oymyakon",
+    "lat": 63.421446,
+    "lon": 142.769768,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mys Shmidta",
+    "key": "mys shmidta",
+    "lat": 68.933711,
+    "lon": -179.499984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sherlovaya Gora",
+    "key": "sherlovaya gora",
+    "lat": 50.530597,
+    "lon": 116.300642,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Korf",
+    "key": "korf",
+    "lat": 60.332065,
+    "lon": 165.818343,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nizhneyansk",
+    "key": "nizhneyansk",
+    "lat": 71.433326,
+    "lon": 136.066619,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bugrino",
+    "key": "bugrino",
+    "lat": 68.807879,
+    "lon": 49.304163,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shoyna",
+    "key": "shoyna",
+    "lat": 67.866644,
+    "lon": 44.133368,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Put' Lenina",
+    "key": "put' lenina",
+    "lat": 68.516631,
+    "lon": 107.799973,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Enurmino",
+    "key": "enurmino",
+    "lat": 66.950008,
+    "lon": -171.816603,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Amderma",
+    "key": "amderma",
+    "lat": 69.763014,
+    "lon": 61.667698,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gubkin",
+    "key": "gubkin",
+    "lat": 51.27435,
+    "lon": 37.384323,
+    "labelRank": 8,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vikhorevka",
+    "key": "vikhorevka",
+    "lat": 56.093099,
+    "lon": 101.242699,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Progress",
+    "key": "progress",
+    "lat": 49.750386,
+    "lon": 129.616677,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mukhomornoye",
+    "key": "mukhomornoye",
+    "lat": 66.417069,
+    "lon": 173.333337,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vorontsovo",
+    "key": "vorontsovo",
+    "lat": 71.698323,
+    "lon": 83.564191,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kovda",
+    "key": "kovda",
+    "lat": 66.690282,
+    "lon": 32.870231,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zvëzdnyj",
+    "key": "zvëzdnyj",
+    "lat": 70.956585,
+    "lon": -179.589979,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zemlya Bunge",
+    "key": "zemlya bunge",
+    "lat": 74.898308,
+    "lon": 142.10501,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Khorgo",
+    "key": "khorgo",
+    "lat": 73.483304,
+    "lon": 113.630004,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Omchak",
+    "key": "omchak",
+    "lat": 61.633278,
+    "lon": 147.916697,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pakhachi",
+    "key": "pakhachi",
+    "lat": 60.581585,
+    "lon": 169.049981,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Varnek",
+    "key": "varnek",
+    "lat": 69.730148,
+    "lon": 60.063558,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Peregrebnoye",
+    "key": "peregrebnoye",
+    "lat": 62.966995,
+    "lon": 65.085939,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Laryak",
+    "key": "laryak",
+    "lat": 61.101192,
+    "lon": 80.25137,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yessey",
+    "key": "yessey",
+    "lat": 68.483738,
+    "lon": 102.166622,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ul'kan",
+    "key": "ul'kan",
+    "lat": 55.900398,
+    "lon": 107.783333,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Podkamennaya Tunguska",
+    "key": "podkamennaya tunguska",
+    "lat": 61.599508,
+    "lon": 90.123636,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Agapa",
+    "key": "agapa",
+    "lat": 71.450379,
+    "lon": 89.249994,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ust'-Nyukzha",
+    "key": "ust'-nyukzha",
+    "lat": 56.531212,
+    "lon": 121.613083,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shalaurova",
+    "key": "shalaurova",
+    "lat": 73.220374,
+    "lon": 143.183343,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tunguskhaya",
+    "key": "tunguskhaya",
+    "lat": 64.900443,
+    "lon": 125.250019,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Natara",
+    "key": "natara",
+    "lat": 68.410616,
+    "lon": 123.9255,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zhilinda",
+    "key": "zhilinda",
+    "lat": 70.133689,
+    "lon": 114.000008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trofimovsk",
+    "key": "trofimovsk",
+    "lat": 72.599689,
+    "lon": 127.033682,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tukchi",
+    "key": "tukchi",
+    "lat": 57.366975,
+    "lon": 139.500002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Siglan",
+    "key": "siglan",
+    "lat": 59.033721,
+    "lon": 152.416577,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Karamken",
+    "key": "karamken",
+    "lat": 60.20042,
+    "lon": 151.166628,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Strelka",
+    "key": "strelka",
+    "lat": 61.866985,
+    "lon": 152.250179,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Utkholok",
+    "key": "utkholok",
+    "lat": 57.550401,
+    "lon": 157.233338,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ust'-Bol'sheretsk",
+    "key": "ust'-bol'sheretsk",
+    "lat": 52.438981,
+    "lon": 156.359386,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Il'pyrskiy",
+    "key": "il'pyrskiy",
+    "lat": 59.967388,
+    "lon": 164.172005,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Krasino",
+    "key": "krasino",
+    "lat": 70.731448,
+    "lon": 54.420799,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Estreito de Matochkin",
+    "key": "estreito de matochkin",
+    "lat": 73.269992,
+    "lon": 56.449697,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Indiga",
+    "key": "indiga",
+    "lat": 67.689754,
+    "lon": 49.016595,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gyda",
+    "key": "gyda",
+    "lat": 70.881422,
+    "lon": 78.466104,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Numto",
+    "key": "numto",
+    "lat": 63.66672,
+    "lon": 71.33331,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Komsa",
+    "key": "komsa",
+    "lat": 61.868044,
+    "lon": 89.257745,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Starorybnoye",
+    "key": "starorybnoye",
+    "lat": 72.766604,
+    "lon": 104.800001,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mikhaylova",
+    "key": "mikhaylova",
+    "lat": 75.094989,
+    "lon": 86.982432,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chagda",
+    "key": "chagda",
+    "lat": 60.100012,
+    "lon": 133.899982,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Terbyas",
+    "key": "terbyas",
+    "lat": 64.376082,
+    "lon": 120.546895,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Menkere",
+    "key": "menkere",
+    "lat": 67.988601,
+    "lon": 123.350496,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sagastyr",
+    "key": "sagastyr",
+    "lat": 73.377933,
+    "lon": 126.592352,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ust Olensk",
+    "key": "ust olensk",
+    "lat": 72.997783,
+    "lon": 119.77293,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oleniok",
+    "key": "oleniok",
+    "lat": 68.525002,
+    "lon": 112.450025,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Khakhar",
+    "key": "khakhar",
+    "lat": 57.666595,
+    "lon": 135.430017,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Manily",
+    "key": "manily",
+    "lat": 62.549992,
+    "lon": 165.300029,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rusanovo",
+    "key": "rusanovo",
+    "lat": 70.598074,
+    "lon": 56.372291,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nordvik",
+    "key": "nordvik",
+    "lat": 74.016502,
+    "lon": 111.51003,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Logashkino",
+    "key": "logashkino",
+    "lat": 70.85039,
+    "lon": 153.900001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ambarchik",
+    "key": "ambarchik",
+    "lat": 69.651006,
+    "lon": 162.333595,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kavache",
+    "key": "kavache",
+    "lat": 70.733291,
+    "lon": 136.216636,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  }
+]

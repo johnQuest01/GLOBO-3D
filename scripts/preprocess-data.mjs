@@ -2,7 +2,9 @@
 // ESTA É A VERSÃO ATUALIZADA COM A LÓGICA DE "TILING" (FATIAMENTO)
 
 import { promises as fs } from 'fs';
+import os from 'os';
 import path from 'path';
+import { execFileSync } from 'child_process';
 import { fileURLToPath } from 'url';
 
 import sharp from 'sharp';
@@ -18,6 +20,7 @@ const translationsDir = path.resolve(publicDir, 'translations');
 
 // --- NOVO: Caminho para os "tiles" de estados ---
 const stateLabelsTiledDir = path.resolve(dataDir, 'state-labels-tiled');
+const cityLabelsTiledDir = path.resolve(dataDir, 'city-labels-tiled');
 
 // --- Funções Auxiliares GeoJSON (Inalteradas) ---
 function getGeoJsonCentroid(geometry) {
@@ -155,11 +158,12 @@ async function processDataFiles() {
     const translations = JSON.parse(await fs.readFile(translationsPath, 'utf-8'));
     console.log('Arquivos carregados.');
 
-    // --- (Limpeza do diretório 'state-labels-tiled' - Inalterado) ---
-    await fs.mkdir(stateLabelsTiledDir, { recursive: true });
-    const oldFiles = await fs.readdir(stateLabelsTiledDir);
-    for (const file of oldFiles) {
-      await fs.unlink(path.join(stateLabelsTiledDir, file));
+    // --- (Limpeza dos diretórios fatiados) ---
+    for (const dir of [stateLabelsTiledDir, cityLabelsTiledDir]) {
+      await fs.mkdir(dir, { recursive: true });
+      for (const file of await fs.readdir(dir)) {
+        await fs.unlink(path.join(dir, file));
+      }
     }
 
     // --- 3. Processar content.json (Inalterado) ---
@@ -182,6 +186,20 @@ async function processDataFiles() {
     // --- 4. Processar states.geojson (Inalterado) ---
     // (Este passo lê "são paulo" e encontra no geoMapping)
     console.log('Processando states.geojson para "tiling"...');
+    /** Qual país registrou cada chave de estado no geoMapping. */
+    const stateKeyOwner = new Map();
+
+    /**
+     * Nomes que o Natural Earth traz errados ou cortados, corrigidos POR PAÍS.
+     *
+     * Tem que ser por país porque a correção não pode viajar para o homônimo:
+     * o NAME_PT do Distrito Federal brasileiro vem só como "Federal", enquanto
+     * o do mexicano vem certo, como "Cidade do México". Uma tradução global de
+     * "Distrito Federal" arrumaria um e estragaria o outro.
+     */
+    const STATE_NAME_OVERRIDES = {
+      Brazil: { 'distrito federal': 'Distrito Federal' },
+    };
     for (const feature of statesData.features) {
       const stateName = getNameFromProperties(feature.properties); // Ex: "São Paulo"
       const stateKey = stateName.toLowerCase(); // Ex: "são paulo"
@@ -203,10 +221,35 @@ async function processDataFiles() {
       }
 
       let lat, lon;
-      // Procura por "são paulo" (minúsculo), o que está correto
-      if (geoMapping[stateKey]) {
+      /**
+       * O geoMapping é indexado só pelo nome do estado em minúsculas, e nome
+       * de estado se repete pelo mundo: "Distrito Federal" existe no Brasil e
+       * no México, "Western" em nove países, "Victoria" na Austrália e em
+       * Malta. Sem dono, o primeiro que entrava ficava com a coordenada e
+       * TODOS os homônimos eram desenhados lá — medido, 65 chaves nessa
+       * situação, e era por isso que a Cidade do México aparecia sobre
+       * Brasília.
+       *
+       * Então a coordenada compartilhada só vale para quem a registrou. As
+       * chaves que vieram do content.json não têm dono e seguem valendo para
+       * todos: são as âncoras escolhidas à mão do projeto.
+       */
+      const donoDaChave = stateKeyOwner.get(stateKey);
+      const podeReusar =
+        geoMapping[stateKey] &&
+        (donoDaChave === undefined || donoDaChave === countryName);
+
+      if (podeReusar) {
         lat = geoMapping[stateKey].lat;
         lon = geoMapping[stateKey].lon;
+      } else if (geoMapping[stateKey]) {
+        // Homônimo de outro país: usa a âncora do próprio Natural Earth e não
+        // toca no geoMapping, que já pertence a outro lugar.
+        const anchor =
+          getLabelAnchor(feature.properties) ??
+          getGeoJsonCentroid(feature.geometry);
+        lat = anchor.lat;
+        lon = anchor.lon;
       } else {
         // Ancoragem do Natural Earth quando existir; centroide só como último caso
         // (o centroide de estados recortados costuma cair fora do território).
@@ -216,11 +259,12 @@ async function processDataFiles() {
         lat = anchor.lat;
         lon = anchor.lon;
         geoMapping[stateKey] = { lat, lon };
+        stateKeyOwner.set(stateKey, countryName);
         flightLocations.push({ key: stateKey, name: stateDisplayName, lat, lon });
       }
 
       stateLabelsTiled[countryName].push({
-        name: stateDisplayName,
+        name: STATE_NAME_OVERRIDES[countryName]?.[stateKey] ?? stateDisplayName,
         key: stateKey,
         lat,
         lon,
@@ -300,13 +344,26 @@ async function processDataFiles() {
       Oceania: 'Oceania',
       Antarctica: 'Antártida',
     };
+    /**
+     * Onde ENCOSTAR o nome do continente — que não é o centro geográfico dele.
+     *
+     * O centro do geoMapping continua mandando no pino e no popup; aqui só o
+     * texto se muda. Oceania estava em -25,135, que é o meio da Austrália: no
+     * mesmo ponto do rótulo do país. Como os dois disputam a mesma vaga, o
+     * continente ganhava e a pessoa via "Oceania" escrito em cima da
+     * Austrália. Levado para o Mar de Coral, os dois nomes cabem.
+     */
+    const CONTINENT_LABEL_ANCHORS = {
+      Oceania: { lat: -14, lon: 165 },
+    };
+
     const continentLabels = Object.keys(CONTINENT_NAMES_PT)
       .filter((key) => geoMapping[key])
       .map((key) => ({
         name: translations[key] || CONTINENT_NAMES_PT[key],
         key,
-        lat: geoMapping[key].lat,
-        lon: geoMapping[key].lon,
+        lat: (CONTINENT_LABEL_ANCHORS[key] ?? geoMapping[key]).lat,
+        lon: (CONTINENT_LABEL_ANCHORS[key] ?? geoMapping[key]).lon,
         labelRank: 1,
         minLabel: 0,
         // Some quando os países assumem a tela.
@@ -341,6 +398,27 @@ async function processDataFiles() {
       console.log('Arquivo state-labels.json obsoleto removido.');
     } catch (e) {
       // Ignora se o arquivo não existir
+    }
+
+    // --- 5c. Cidades: tiles para desenhar, índice achatado para buscar ---
+    const { tiles: cityLabelsTiled, searchIndex } = await buildCityTiles(
+      geoMapping,
+      translations,
+    );
+
+    await fs.writeFile(
+      path.resolve(dataDir, 'city-search.json'),
+      JSON.stringify({ fields: ['key', 'name', 'lat', 'lon', 'region', 'country'], cities: searchIndex }),
+    );
+    const searchKb = (
+      (await fs.stat(path.resolve(dataDir, 'city-search.json'))).size / 1024
+    ).toFixed(0);
+    console.log(`  city-search.json: ${searchIndex.length} cidades, ${searchKb} KB`);
+
+    console.log(`Salvando ${Object.keys(cityLabelsTiled).length} arquivos de cidades fatiados...`);
+    for (const [countryKey, cities] of Object.entries(cityLabelsTiled)) {
+      const filePath = path.resolve(cityLabelsTiledDir, `${countryKey}.json`);
+      await fs.writeFile(filePath, JSON.stringify(cities, null, 2));
     }
 
     // (Salva os arquivos de estados "fatiados" - Inalterado)
@@ -458,12 +536,73 @@ async function generateBorderLines() {
 
 const DAY_SOURCE = path.resolve(texturesDir, 'earth-1.png');
 
-/** Níveis de LOD do dia. `maxDistance` é a distância da câmera em que cada um assume. */
-const DAY_LEVELS = [
-  { width: 2048, quality: 82, out: 'earth-day-2k.webp' },
-  { width: 4096, quality: 80, out: 'earth-day-4k.webp' },
-  { width: 8192, quality: 78, out: 'earth-day-8k.webp' },
+/**
+ * UMA textura, e não uma escada de níveis.
+ *
+ * A escada 2K/4K/8K existia por um motivo só: os mipmaps estavam desligados,
+ * então trocar de imagem conforme a câmera se aproxima era a única forma de
+ * não ver o borrão. O KTX2 traz a cadeia de mipmaps DENTRO do arquivo, e aí
+ * quem escolhe o nível de detalhe é a GPU, por pixel, sem pop e sem o
+ * crossfade que o shader fazia. Uma imagem basta.
+ *
+ * A noite continua sem textura própria: é esta mesma imagem escurecida e
+ * puxada para o azul no shader.
+ *
+ * Os dois tamanhos aqui NÃO são dois níveis — é a mesma textura em duas
+ * medidas, e cada aparelho baixa exatamente uma. Aparelho antigo com teto de
+ * textura em 4096 não consegue subir uma imagem de 8192 e, por ser formato
+ * comprimido, ninguém redimensiona por ele: ficaria com o globo preto. O 4K
+ * existe só para esse caso.
+ */
+const DAY_TEXTURES = [
+  { width: 8192, out: 'earth-day-8k.ktx2' },
+  { width: 4096, out: 'earth-day-4k.ktx2' },
 ];
+
+/**
+ * Por que KTX2 e não WebP.
+ *
+ * A GPU não entende WebP: o navegador decodifica e guarda RGBA8, 4 bytes por
+ * pixel, sempre. O nível 8K sozinho virava 128 MB de memória de vídeo. O KTX2
+ * guarda a textura já no formato que a GPU lê comprimido e transcodifica na
+ * hora para o do aparelho (ETC2 no Android, ASTC, BC no desktop): o mesmo 8K
+ * passa a ocupar ~22 MB, mipmaps inclusos.
+ *
+ * O preço é a rede — formato de GPU tem bloco de tamanho fixo e não alcança a
+ * taxa de um codec lossy. Medido no 2K: 204 KB contra 148 KB do WebP.
+ *
+ * ETC1S e não UASTC porque a escolha aqui é peso: UASTC dobra a memória de GPU
+ * e multiplica o download. O custo é banding em gradiente largo, que no oceano
+ * dá para notar se procurar.
+ */
+const KTX2_ENCODER = process.platform === 'win32' ? 'toktx.cmd' : 'toktx';
+const KTX2_ARGS = [
+  '--t2',
+  '--encode', 'etc1s',
+  '--clevel', '4',
+  '--qlevel', '190',
+  '--genmipmap',
+  '--assign_oetf', 'srgb',
+];
+
+/**
+ * O encoder roda por `shell: true`, porque no Windows ele é um .cmd. Nesse
+ * caminho quem separa os argumentos é o shell, então caminho com espaço tem
+ * que ir entre aspas — e o diretório deste projeto tem espaços no nome. Sem
+ * isto o toktx recebe "C:/Users/Bruno/meu-globo" e "-" como entradas
+ * separadas e para com "cannot use stdin as one among many inputs".
+ */
+const aspas = (caminho) => `"${caminho}"`;
+
+/** O encoder é ferramenta da máquina de desenvolvimento, não dependência do projeto. */
+function temEncoderKtx2() {
+  try {
+    execFileSync(KTX2_ENCODER, ['--version'], { stdio: 'ignore', shell: true });
+    return true;
+  } catch {
+    return false;
+  }
+}
 
 async function generateEarthTextures() {
   console.log('Iniciando Etapa 3: Geração das texturas do globo...');
@@ -476,18 +615,42 @@ async function generateEarthTextures() {
     process.exit(1);
   }
 
+  if (!temEncoderKtx2()) {
+    console.error(
+      '[31mErro: toktx nao encontrado no PATH. Sem ele nao ha textura para o globo.[0m',
+    );
+    console.error(
+      '       Instale o KTX-Software (npm i -g ktx2tools) e rode de novo.',
+    );
+    process.exit(1);
+  }
+
   try {
-    for (const { width, quality, out } of DAY_LEVELS) {
+    for (const { width, out } of DAY_TEXTURES) {
       const outPath = path.resolve(texturesDir, out);
+
+      // O toktx le de arquivo, entao o redimensionamento vai para um PNG
+      // temporario FORA do projeto: 8192x4096 em PNG passa de 100 MB e nao tem
+      // por que encostar no repositorio.
+      const tempPng = path.join(os.tmpdir(), `meu-globo-${width}.png`);
       console.log(`  Gerando ${out} (${width}px)...`);
       await sharp(DAY_SOURCE, { limitInputPixels: false })
         .resize(width, width / 2, { fit: 'fill' })
-        .webp({ quality, effort: 4 })
-        .toFile(outPath);
-      const sizeKb = ((await fs.stat(outPath)).size / 1024).toFixed(0);
-      console.log(`    ${out}: ${sizeKb} KB`);
-    }
+        .png({ compressionLevel: 1 })
+        .toFile(tempPng);
 
+      try {
+        execFileSync(KTX2_ENCODER, [...KTX2_ARGS, aspas(outPath), aspas(tempPng)], {
+          stdio: 'ignore',
+          shell: true,
+        });
+      } finally {
+        await fs.unlink(tempPng).catch(() => {});
+      }
+
+      const sizeKb = ((await fs.stat(outPath)).size / 1024).toFixed(0);
+      console.log(`    ${out}: ${sizeKb} KB (com mipmaps)`);
+    }
     console.log('\x1b[32m✔ Sucesso! Etapa 3 concluída. Texturas salvas.\x1b[0m');
   } catch (error) {
     console.error(`\x1b[31mErro ao gerar texturas: ${error.message}\x1b[0m`);
@@ -619,6 +782,180 @@ async function generateCityLights() {
     console.error(error.stack);
     process.exit(1);
   }
+}
+
+
+// ---------------------------------------------------------------------------
+// Cidades
+// ---------------------------------------------------------------------------
+
+const POPULATED_PLACES = 'ne_10m_populated_places.geojson';
+/** Lista curada à mão do projeto: continua mandando onde existe. */
+const CURATED_CITIES = 'city-labels.json';
+
+/**
+ * Faixa de zoom das cidades curadas, derivada do "rank" editorial (1 = maior).
+ * As do Natural Earth não passam por aqui: elas já trazem o MIN_ZOOM delas.
+ * Esta tabela é a ÚNICA no projeto — o motor de rótulos apenas lê o que sai
+ * daqui, gravado no tile.
+ */
+const CURATED_MIN_LABEL = [4.3, 4.9, 5.4, 5.9, 6.4];
+
+/** Cidade, uma vez colocada, não sai mais de cena por excesso de zoom. */
+const CITY_MAX_LABEL = 24;
+
+/**
+ * Monta os "tiles" de cidade, um arquivo por país.
+ *
+ * Fatiado pelo mesmo motivo dos estados: são 7.342 cidades, e num zoom de
+ * cidade o globo mostra um punhado de países. Baixar o mundo inteiro para ler
+ * "Sete Lagoas" seria cobrar do celular uma conta que ele não vai usar.
+ *
+ * Duas fontes, nesta ordem de prioridade:
+ *
+ * 1. A lista curada do projeto (city-labels.json). Ela tem lugares que o
+ *    Natural Earth não traz — Osasco, Itapevi, Barueri, Taboão da Serra — e
+ *    ranks escolhidos à mão. Ela reserva as chaves primeiro.
+ * 2. O Natural Earth 10m populated places, que entra com tudo o mais e já traz
+ *    a cartografia pronta: SCALERANK (0 = cidade mundial) e MIN_ZOOM, que é o
+ *    mesmo "z" que países e estados usam.
+ *
+ * As chaves são únicas no mundo todo, porque é por elas que o popup e o pino
+ * encontram o lugar. Nome de cidade se repete muito (existem dezenas de "Santa
+ * Cruz"), então a maior população fica com a chave limpa e as outras recebem o
+ * país no fim. Chave que colidiria com um estado ou país ganha " city" — a
+ * mesma convenção que "são paulo city" já usava.
+ *
+ * SAI TAMBÉM O ÍNDICE DE BUSCA, e sai daqui de propósito: quem procura "Sete
+ * Lagoas" no buscador precisa receber a MESMA chave que o tile usa, senão o
+ * pino cai num lugar e o popup abre outro. Gerar as duas coisas em passagens
+ * separadas seria pedir para as chaves divergirem com o tempo.
+ *
+ * O índice é achatado (uma linha por cidade, sem nomes de campo repetidos
+ * 7.390 vezes) porque ele é o oposto do tile: o tile é lido por país, o índice
+ * é lido inteiro de uma vez quando o usuário abre a busca.
+ */
+async function buildCityTiles(geoMapping, translations) {
+  const curatedPath = path.resolve(dataDir, CURATED_CITIES);
+  const placesPath = path.resolve(dataDir, POPULATED_PLACES);
+
+  const tiles = {};
+  /** Uma linha por cidade: [chave, nome, lat, lon, regiao, pais]. */
+  const searchIndex = [];
+  const chavesUsadas = new Set(Object.keys(geoMapping).map((k) => k.toLowerCase()));
+
+  // 4 casas decimais são ~11 metros. Guardar as 6 do Natural Earth só engordaria
+  // o arquivo para uma precisão que nenhum pino de globo usa.
+  const coord = (n) => Number(n.toFixed(4));
+
+  const indexar = (chave, nome, lat, lon, regiao, paisKey) =>
+    searchIndex.push([
+      chave,
+      nome,
+      coord(lat),
+      coord(lon),
+      regiao || '',
+      translations[paisKey] || paisKey,
+    ]);
+
+  const reservarChave = (base, countryKey, regiao) => {
+    const limpa = base.toLowerCase();
+    // Colisão com estado/país: a cidade cede e vira "<nome> city".
+    let chave = chavesUsadas.has(limpa) ? `${limpa} city` : limpa;
+    if (chavesUsadas.has(chave)) chave = `${limpa} (${countryKey.toLowerCase()})`;
+    if (chavesUsadas.has(chave) && regiao) {
+      chave = `${limpa} (${regiao.toLowerCase()}, ${countryKey.toLowerCase()})`;
+    }
+    let n = 2;
+    while (chavesUsadas.has(chave)) chave = `${limpa} ${n++}`;
+    chavesUsadas.add(chave);
+    return chave;
+  };
+
+  const adicionar = (countryKey, cidade) => {
+    if (!tiles[countryKey]) tiles[countryKey] = [];
+    tiles[countryKey].push(cidade);
+  };
+
+  // --- 1. Curadas -----------------------------------------------------------
+  let curadas = [];
+  try {
+    curadas = JSON.parse(await fs.readFile(curatedPath, 'utf-8'));
+  } catch {
+    console.warn(`[33mAviso: ${CURATED_CITIES} não encontrado; só o Natural Earth será usado.[0m`);
+  }
+
+  for (const cidade of curadas) {
+    const countryKey = cidade.countryKey || 'Unknown';
+    const rank = Math.min(5, Math.max(1, Math.round(cidade.rank ?? 3)));
+    // A chave curada é a que já está em uso por pinos salvos e popups: mantida
+    // como está, sem passar pelo desempate.
+    chavesUsadas.add(cidade.key);
+    adicionar(countryKey, {
+      name: cidade.name,
+      key: cidade.key,
+      lat: cidade.lat,
+      lon: cidade.lon,
+      labelRank: Math.min(6, rank + 1),
+      minLabel: CURATED_MIN_LABEL[rank - 1],
+      maxLabel: CITY_MAX_LABEL,
+    });
+    // A lista curada não traz o estado; fica sem, e o país já desempata.
+    indexar(cidade.key, cidade.name, cidade.lat, cidade.lon, '', countryKey);
+  }
+
+  // --- 2. Natural Earth -----------------------------------------------------
+  let places;
+  try {
+    places = JSON.parse(await fs.readFile(placesPath, 'utf-8'));
+  } catch {
+    console.warn(`[33mAviso: ${POPULATED_PLACES} não encontrado; ficam só as cidades curadas.[0m`);
+    return { tiles, searchIndex };
+  }
+
+  // Maior população primeiro: assim a cidade grande fica com a chave limpa.
+  const feicoes = [...places.features].sort(
+    (a, b) => (b.properties.POP_MAX ?? 0) - (a.properties.POP_MAX ?? 0),
+  );
+
+  const jaTemPorPosicao = new Set(
+    curadas.map((c) => `${c.lat.toFixed(1)},${c.lon.toFixed(1)}`),
+  );
+
+  for (const feature of feicoes) {
+    const props = feature.properties;
+    const countryKey = props.ADM0NAME;
+    if (!countryKey) continue;
+
+    const [lon, lat] = feature.geometry.coordinates;
+    // Mesma cidade que já veio curada (o nome do Natural Earth costuma ser o
+    // ASCII, "Sao Paulo"): a curada fica, com o nome e o rank escolhidos aqui.
+    if (jaTemPorPosicao.has(`${lat.toFixed(1)},${lon.toFixed(1)}`)) continue;
+
+    const nomeOriginal = props.NAME || props.NAMEASCII;
+    if (!nomeOriginal) continue;
+    const nome = translations[nomeOriginal] || props.NAME_PT || nomeOriginal;
+
+    const chave = reservarChave(nome, countryKey, props.ADM1NAME);
+    indexar(chave, nome, lat, lon, props.ADM1NAME, countryKey);
+
+    adicionar(countryKey, {
+      name: nome,
+      key: chave,
+      lat,
+      lon,
+      // SCALERANK: 0 é cidade mundial, 10 é vilarejo — a mesma escala de
+      // importância que o motor de rótulos usa para país e estado.
+      labelRank: Math.min(10, Math.max(0, Math.round(props.SCALERANK ?? 7))),
+      minLabel: typeof props.MIN_ZOOM === 'number' ? props.MIN_ZOOM : 6,
+      maxLabel: CITY_MAX_LABEL,
+    });
+  }
+
+  // Maior primeiro também no índice: sem pontuação de relevância, quem aparece
+  // no topo de "santa cruz" passa a ser a Santa Cruz que a pessoa provavelmente
+  // quis dizer.
+  return { tiles, searchIndex };
 }
 
 // --- Função Main ---

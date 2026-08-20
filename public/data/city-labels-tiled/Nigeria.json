@@ -1,0 +1,632 @@
+[
+  {
+    "name": "Lagos",
+    "key": "lagos",
+    "lat": 6.52,
+    "lon": 3.38,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Abuja",
+    "key": "abuja",
+    "lat": 9.08,
+    "lon": 7.4,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lagos",
+    "key": "lagos city",
+    "lat": 6.445208,
+    "lon": 3.389585,
+    "labelRank": 0,
+    "minLabel": 2,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kano",
+    "key": "kano city",
+    "lat": 12.001923,
+    "lon": 8.518092,
+    "labelRank": 2,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ibadan",
+    "key": "ibadan",
+    "lat": 7.381972,
+    "lon": 3.928036,
+    "labelRank": 4,
+    "minLabel": 5.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Abuja",
+    "key": "abuja city",
+    "lat": 9.05462,
+    "lon": 7.489505,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kaduna",
+    "key": "kaduna city",
+    "lat": 10.521961,
+    "lon": 7.438054,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Benin City",
+    "key": "benin city",
+    "lat": 6.342423,
+    "lon": 5.618062,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ikare",
+    "key": "ikare",
+    "lat": 7.53043,
+    "lon": 5.76,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Port Harcourt",
+    "key": "port harcourt",
+    "lat": 4.811948,
+    "lon": 7.008055,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ogbomosho",
+    "key": "ogbomosho",
+    "lat": 8.131952,
+    "lon": 4.238043,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aba",
+    "key": "aba",
+    "lat": 5.100398,
+    "lon": 7.34998,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maiduguri",
+    "key": "maiduguri",
+    "lat": 11.851906,
+    "lon": 13.158067,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zaria",
+    "key": "zaria",
+    "lat": 11.081927,
+    "lon": 7.708064,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Warri",
+    "key": "warri",
+    "lat": 5.519959,
+    "lon": 5.76,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jos",
+    "key": "jos",
+    "lat": 9.929974,
+    "lon": 8.890041,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ilorin",
+    "key": "ilorin",
+    "lat": 8.491956,
+    "lon": 4.54805,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oyo",
+    "key": "oyo city",
+    "lat": 7.850437,
+    "lon": 3.929982,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sokoto",
+    "key": "sokoto city",
+    "lat": 13.060016,
+    "lon": 5.240031,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Enugu",
+    "key": "enugu city",
+    "lat": 6.450031,
+    "lon": 7.499997,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Abeokuta",
+    "key": "abeokuta",
+    "lat": 7.160427,
+    "lon": 3.350017,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uyo",
+    "key": "uyo",
+    "lat": 5.036014,
+    "lon": 7.916153,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Awka",
+    "key": "awka",
+    "lat": 6.210434,
+    "lon": 7.069997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ifé",
+    "key": "ifé",
+    "lat": 7.480434,
+    "lon": 4.560021,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Calabar",
+    "key": "calabar",
+    "lat": 4.960407,
+    "lon": 8.330024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ado Ekiti",
+    "key": "ado ekiti",
+    "lat": 7.630373,
+    "lon": 5.219981,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Katsina",
+    "key": "katsina city",
+    "lat": 12.990407,
+    "lon": 7.599991,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Akure",
+    "key": "akure",
+    "lat": 7.250396,
+    "lon": 5.199982,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Osogbo",
+    "key": "osogbo",
+    "lat": 7.770364,
+    "lon": 4.560021,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bauchi",
+    "key": "bauchi city",
+    "lat": 10.310364,
+    "lon": 9.840009,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sapele",
+    "key": "sapele",
+    "lat": 5.890427,
+    "lon": 5.680004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Makurdi",
+    "key": "makurdi",
+    "lat": 7.729979,
+    "lon": 8.530011,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Minna",
+    "key": "minna",
+    "lat": 9.619993,
+    "lon": 6.550029,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Owo",
+    "key": "owo",
+    "lat": 7.200399,
+    "lon": 5.589984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gombe",
+    "key": "gombe city",
+    "lat": 10.290443,
+    "lon": 11.169954,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Umuahia",
+    "key": "umuahia",
+    "lat": 5.532003,
+    "lon": 7.486002,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ondo",
+    "key": "ondo city",
+    "lat": 7.090406,
+    "lon": 4.840004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Damaturu",
+    "key": "damaturu",
+    "lat": 11.748996,
+    "lon": 11.966005,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Iwo",
+    "key": "iwo",
+    "lat": 7.629959,
+    "lon": 4.179993,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gusau",
+    "key": "gusau",
+    "lat": 12.170406,
+    "lon": 6.659996,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mubi",
+    "key": "mubi",
+    "lat": 10.270341,
+    "lon": 13.270032,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Owerri",
+    "key": "owerri",
+    "lat": 5.492997,
+    "lon": 7.026004,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ijebu Ode",
+    "key": "ijebu ode",
+    "lat": 6.820448,
+    "lon": 3.920008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Funtua",
+    "key": "funtua",
+    "lat": 11.520394,
+    "lon": 7.320008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bida",
+    "key": "bida",
+    "lat": 9.080413,
+    "lon": 6.01001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lafia",
+    "key": "lafia",
+    "lat": 8.490424,
+    "lon": 8.520038,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gashua",
+    "key": "gashua",
+    "lat": 12.870492,
+    "lon": 11.039987,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bama",
+    "key": "bama",
+    "lat": 11.520394,
+    "lon": 13.690007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jalingo",
+    "key": "jalingo",
+    "lat": 8.900373,
+    "lon": 11.360019,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nsukka",
+    "key": "nsukka",
+    "lat": 6.867034,
+    "lon": 7.383363,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nguru",
+    "key": "nguru",
+    "lat": 12.880388,
+    "lon": 10.449998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Birnin Kebbi",
+    "key": "birnin kebbi",
+    "lat": 12.450414,
+    "lon": 4.19994,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Azare",
+    "key": "azare",
+    "lat": 11.68041,
+    "lon": 10.190013,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kontagora",
+    "key": "kontagora",
+    "lat": 10.400359,
+    "lon": 5.46994,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Iseyin",
+    "key": "iseyin",
+    "lat": 7.970016,
+    "lon": 3.590003,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yola",
+    "key": "yola",
+    "lat": 9.209992,
+    "lon": 12.480003,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Biu",
+    "key": "biu",
+    "lat": 10.620423,
+    "lon": 12.189995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Wukari",
+    "key": "wukari",
+    "lat": 7.87041,
+    "lon": 9.780013,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Potiskum",
+    "key": "potiskum",
+    "lat": 11.710382,
+    "lon": 11.079985,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Keffi",
+    "key": "keffi",
+    "lat": 8.849032,
+    "lon": 7.873617,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Numan",
+    "key": "numan",
+    "lat": 9.460442,
+    "lon": 12.04003,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Idah",
+    "key": "idah",
+    "lat": 7.110404,
+    "lon": 6.73994,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Onitsha",
+    "key": "onitsha",
+    "lat": 6.140412,
+    "lon": 6.779989,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Otukpo",
+    "key": "otukpo",
+    "lat": 7.1904,
+    "lon": 8.129984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lokoja",
+    "key": "lokoja",
+    "lat": 7.800388,
+    "lon": 6.73994,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kumo",
+    "key": "kumo",
+    "lat": 10.045703,
+    "lon": 11.213052,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Opobo",
+    "key": "opobo",
+    "lat": 4.570405,
+    "lon": 7.559993,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Koko",
+    "key": "koko",
+    "lat": 11.42319,
+    "lon": 4.516975,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dutse",
+    "key": "dutse",
+    "lat": 11.799189,
+    "lon": 9.350335,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Orlu",
+    "key": "orlu",
+    "lat": 5.783715,
+    "lon": 7.033307,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

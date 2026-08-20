@@ -1,0 +1,317 @@
+[
+  {
+    "name": "Trípoli",
+    "key": "trípoli",
+    "lat": 32.8925,
+    "lon": 13.180012,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bengasi",
+    "key": "bengasi",
+    "lat": 32.118679,
+    "lon": 20.064777,
+    "labelRank": 3,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Misratah",
+    "key": "misratah city",
+    "lat": 32.379973,
+    "lon": 15.099998,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tobruk",
+    "key": "tobruk",
+    "lat": 32.079991,
+    "lon": 23.960026,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al-Khums",
+    "key": "al-khums",
+    "lat": 32.660421,
+    "lon": 14.259998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zawiyah",
+    "key": "zawiyah",
+    "lat": 32.760415,
+    "lon": 12.719988,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zuwarah",
+    "key": "zuwarah",
+    "lat": 32.93441,
+    "lon": 12.079149,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al Marj",
+    "key": "al marj city",
+    "lat": 32.500457,
+    "lon": 20.829984,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gharyan",
+    "key": "gharyan",
+    "lat": 32.170374,
+    "lon": 13.01997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ajdabiyah",
+    "key": "ajdabiyah",
+    "lat": 30.769994,
+    "lon": 20.219995,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sirte",
+    "key": "sirte",
+    "lat": 31.209993,
+    "lon": 16.590036,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Derna",
+    "key": "derna",
+    "lat": 32.764811,
+    "lon": 22.639139,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sabha",
+    "key": "sabha city",
+    "lat": 27.033271,
+    "lon": 14.43332,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nalut",
+    "key": "nalut",
+    "lat": 31.880443,
+    "lon": 10.970018,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bani Walid",
+    "key": "bani walid",
+    "lat": 31.770398,
+    "lon": 13.989988,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Murzuque",
+    "key": "murzuque",
+    "lat": 25.904399,
+    "lon": 13.897229,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Birak",
+    "key": "birak",
+    "lat": 27.533318,
+    "lon": 14.283355,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Shahat",
+    "key": "shahat",
+    "lat": 32.828137,
+    "lon": 21.862169,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mizda",
+    "key": "mizda",
+    "lat": 31.433726,
+    "lon": 12.983331,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ghat",
+    "key": "ghat city",
+    "lat": 24.964741,
+    "lon": 10.172754,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al-Jawf",
+    "key": "al-jawf",
+    "lat": 24.199981,
+    "lon": 23.289989,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hun",
+    "key": "hun",
+    "lat": 29.116658,
+    "lon": 15.933332,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gadamés",
+    "key": "gadamés",
+    "lat": 30.133289,
+    "lon": 9.50003,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Awjila",
+    "key": "awjila",
+    "lat": 29.108028,
+    "lon": 21.286907,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Qaminis",
+    "key": "qaminis",
+    "lat": 31.660637,
+    "lon": 20.01546,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maradah",
+    "key": "maradah",
+    "lat": 29.233705,
+    "lon": 19.216646,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al Bayda'",
+    "key": "al bayda' (libya)",
+    "lat": 32.760415,
+    "lon": 21.620013,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al Jaghbub",
+    "key": "al jaghbub",
+    "lat": 29.750392,
+    "lon": 24.516581,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tajarhi",
+    "key": "tajarhi",
+    "lat": 24.370359,
+    "lon": 14.470837,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Derje",
+    "key": "derje",
+    "lat": 30.167912,
+    "lon": 10.456664,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tmassah",
+    "key": "tmassah",
+    "lat": 26.366645,
+    "lon": 15.800007,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Umm al Abid",
+    "key": "umm al abid",
+    "lat": 27.517014,
+    "lon": 15.033335,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al-Uqaylah",
+    "key": "al-uqaylah",
+    "lat": 30.257028,
+    "lon": 19.200006,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sidra",
+    "key": "sidra",
+    "lat": 30.670413,
+    "lon": 18.266626,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Zella",
+    "key": "zella",
+    "lat": 28.550414,
+    "lon": 17.583361,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  }
+]

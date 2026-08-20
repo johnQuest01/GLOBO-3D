@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Cidade do Panamá",
+    "key": "cidade do panamá",
+    "lat": 8.969963,
+    "lon": -79.534983,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Colón",
+    "key": "colón city",
+    "lat": 9.365021,
+    "lon": -79.87498,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "David",
+    "key": "david",
+    "lat": 8.433321,
+    "lon": -82.433325,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Balboa",
+    "key": "balboa",
+    "lat": 8.949982,
+    "lon": -79.566653,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santiago de Veraguas",
+    "key": "santiago de veraguas",
+    "lat": 8.10037,
+    "lon": -80.983336,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chitré",
+    "key": "chitré",
+    "lat": 7.970016,
+    "lon": -80.420037,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Penonomé",
+    "key": "penonomé",
+    "lat": 8.509983,
+    "lon": -80.359989,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Puerto Armuelles",
+    "key": "puerto armuelles",
+    "lat": 8.280023,
+    "lon": -82.870017,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Las Tablas",
+    "key": "las tablas",
+    "lat": 7.760391,
+    "lon": -80.28002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bocas del Toro",
+    "key": "bocas del toro city",
+    "lat": 9.33535,
+    "lon": -82.247471,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Almirante",
+    "key": "almirante",
+    "lat": 9.300012,
+    "lon": -82.399968,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "La Palma",
+    "key": "la palma",
+    "lat": 8.398181,
+    "lon": -78.140228,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jaqué",
+    "key": "jaqué",
+    "lat": 7.518958,
+    "lon": -78.166015,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "El Porvenir",
+    "key": "el porvenir",
+    "lat": 9.541686,
+    "lon": -78.971963,
+    "labelRank": 9,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

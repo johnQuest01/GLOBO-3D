@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Apia",
+    "key": "apia",
+    "lat": -13.835715,
+    "lon": -171.768599,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  }
+]

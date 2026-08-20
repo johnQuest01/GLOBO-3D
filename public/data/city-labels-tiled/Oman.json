@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Mascate",
+    "key": "mascate",
+    "lat": 23.585179,
+    "lon": 58.378311,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Al-Seeb",
+    "key": "al-seeb",
+    "lat": 23.680246,
+    "lon": 58.182536,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salalah",
+    "key": "salalah",
+    "lat": 17.025458,
+    "lon": 54.085215,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Soar",
+    "key": "soar",
+    "lat": 24.361973,
+    "lon": 56.734419,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ibri",
+    "key": "ibri",
+    "lat": 23.22539,
+    "lon": 56.516953,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nizwa",
+    "key": "nizwa",
+    "lat": 22.92639,
+    "lon": 57.531413,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sur",
+    "key": "sur",
+    "lat": 22.575817,
+    "lon": 59.534805,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alayat Samail",
+    "key": "alayat samail",
+    "lat": 23.303189,
+    "lon": 57.978208,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hilf",
+    "key": "hilf",
+    "lat": 20.656153,
+    "lon": 58.876762,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mirbat",
+    "key": "mirbat",
+    "lat": 16.992437,
+    "lon": 54.691793,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

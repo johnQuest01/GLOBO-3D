@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Bissau",
+    "key": "bissau city",
+    "lat": 11.865024,
+    "lon": -15.598361,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bafatá",
+    "key": "bafatá city",
+    "lat": 12.166995,
+    "lon": -14.666015,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gabu",
+    "key": "gabu",
+    "lat": 12.279996,
+    "lon": -14.234004,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bolama",
+    "key": "bolama city",
+    "lat": 11.582953,
+    "lon": -15.482804,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cacheu",
+    "key": "cacheu city",
+    "lat": 12.268998,
+    "lon": -16.164998,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Catió",
+    "key": "catió",
+    "lat": 11.273036,
+    "lon": -15.254246,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Farim",
+    "key": "farim",
+    "lat": 12.492999,
+    "lon": -15.227,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fulacunda",
+    "key": "fulacunda",
+    "lat": 11.772999,
+    "lon": -15.194997,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  }
+]

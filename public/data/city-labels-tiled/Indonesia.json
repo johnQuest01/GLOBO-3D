@@ -1,0 +1,947 @@
+[
+  {
+    "name": "Jacarta",
+    "key": "jakarta",
+    "lat": -6.21,
+    "lon": 106.85,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Surabaia",
+    "key": "surabaia",
+    "lat": -7.24729,
+    "lon": 112.748887,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bandung",
+    "key": "bandung",
+    "lat": -6.948083,
+    "lon": 107.568067,
+    "labelRank": 2,
+    "minLabel": 4.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bekasi",
+    "key": "bekasi",
+    "lat": -6.217257,
+    "lon": 106.972323,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Medan",
+    "key": "medan",
+    "lat": 3.58192,
+    "lon": 98.648094,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Palimbão",
+    "key": "palimbão",
+    "lat": -2.978093,
+    "lon": 104.748084,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Semarang",
+    "key": "semarang",
+    "lat": -6.964672,
+    "lon": 110.418074,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Macáçar",
+    "key": "macáçar",
+    "lat": -5.138013,
+    "lon": 119.430082,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cilacap",
+    "key": "cilacap",
+    "lat": -7.71882,
+    "lon": 109.015402,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bogor",
+    "key": "bogor",
+    "lat": -6.568055,
+    "lon": 106.748065,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bandar Lampung",
+    "key": "bandar lampung",
+    "lat": -5.449604,
+    "lon": 105.300022,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bandar Lampung",
+    "key": "bandar lampung city",
+    "lat": -5.428073,
+    "lon": 105.268052,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Padang",
+    "key": "padang",
+    "lat": -0.958061,
+    "lon": 100.358068,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Malang",
+    "key": "malang",
+    "lat": -7.978046,
+    "lon": 112.608069,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pekanbaru",
+    "key": "pekanbaru",
+    "lat": 0.56691,
+    "lon": 101.423067,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dempassar",
+    "key": "dempassar",
+    "lat": -8.650029,
+    "lon": 115.219985,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Yogyakarta",
+    "key": "yogyakarta city",
+    "lat": -7.779953,
+    "lon": 110.375009,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Palu",
+    "key": "palu",
+    "lat": -0.907039,
+    "lon": 119.833037,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pontianak",
+    "key": "pontianak",
+    "lat": -0.029987,
+    "lon": 109.319983,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Banjarmasin",
+    "key": "banjarmasin",
+    "lat": -3.329992,
+    "lon": 114.580076,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Samarinda",
+    "key": "samarinda",
+    "lat": -0.500035,
+    "lon": 117.149996,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Binjai",
+    "key": "binjai",
+    "lat": 3.620359,
+    "lon": 98.500075,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Surakarta",
+    "key": "surakarta",
+    "lat": -7.564979,
+    "lon": 110.825008,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Banda Achém",
+    "key": "banda achém",
+    "lat": 5.549983,
+    "lon": 95.320011,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bukittinggi",
+    "key": "bukittinggi",
+    "lat": -0.303148,
+    "lon": 100.36146,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pasuruan",
+    "key": "pasuruan",
+    "lat": -7.629574,
+    "lon": 112.900023,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mataram",
+    "key": "mataram",
+    "lat": -8.579542,
+    "lon": 116.135019,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jambi",
+    "key": "jambi city",
+    "lat": -1.589995,
+    "lon": 103.610048,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Manado",
+    "key": "manado",
+    "lat": 1.480025,
+    "lon": 124.849991,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Balikpapan",
+    "key": "balikpapan",
+    "lat": -1.250015,
+    "lon": 116.830016,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bengkulu",
+    "key": "bengkulu city",
+    "lat": -3.800041,
+    "lon": 102.269974,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gorontalo",
+    "key": "gorontalo city",
+    "lat": 0.549978,
+    "lon": 123.070048,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kota Ambon",
+    "key": "kota ambon",
+    "lat": -3.716687,
+    "lon": 128.200019,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pematangsiantar",
+    "key": "pematangsiantar",
+    "lat": 2.961433,
+    "lon": 99.061488,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jember",
+    "key": "jember",
+    "lat": -8.172694,
+    "lon": 113.687314,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cupão",
+    "key": "cupão",
+    "lat": -10.178669,
+    "lon": 123.582989,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sukabumi",
+    "key": "sukabumi",
+    "lat": -6.909618,
+    "lon": 106.899976,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Majene",
+    "key": "majene",
+    "lat": -3.533597,
+    "lon": 118.966009,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pekalongan",
+    "key": "pekalongan",
+    "lat": -6.879594,
+    "lon": 109.670039,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tasikmalaya",
+    "key": "tasikmalaya",
+    "lat": -7.325407,
+    "lon": 108.214676,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tebing Tingi",
+    "key": "tebing tingi",
+    "lat": 3.330377,
+    "lon": 99.130011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Padangsidimpuan",
+    "key": "padangsidimpuan",
+    "lat": 1.388738,
+    "lon": 99.273361,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cirebon",
+    "key": "cirebon",
+    "lat": -6.733298,
+    "lon": 108.566644,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Singkawang",
+    "key": "singkawang",
+    "lat": 0.911981,
+    "lon": 108.96547,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tegal",
+    "key": "tegal",
+    "lat": -6.869569,
+    "lon": 109.119996,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kediri",
+    "key": "kediri",
+    "lat": -7.789616,
+    "lon": 112.000026,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Singaraja",
+    "key": "singaraja",
+    "lat": -8.115199,
+    "lon": 115.094398,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tanjung Pinang",
+    "key": "tanjung pinang",
+    "lat": 0.916829,
+    "lon": 104.471442,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sibolga",
+    "key": "sibolga",
+    "lat": 1.749982,
+    "lon": 98.800005,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Martapura",
+    "key": "martapura",
+    "lat": -3.413501,
+    "lon": 114.836494,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tarakan",
+    "key": "tarakan",
+    "lat": 3.300017,
+    "lon": 117.633016,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ternate",
+    "key": "ternate",
+    "lat": 0.792961,
+    "lon": 127.363016,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Madiun",
+    "key": "madiun",
+    "lat": -7.634587,
+    "lon": 111.514991,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pinrang",
+    "key": "pinrang",
+    "lat": -3.785726,
+    "lon": 119.652221,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Probolinggo",
+    "key": "probolinggo",
+    "lat": -7.749619,
+    "lon": 113.150034,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salatiga",
+    "key": "salatiga",
+    "lat": -7.309542,
+    "lon": 110.490093,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Banyuwangi",
+    "key": "banyuwangi",
+    "lat": -8.195018,
+    "lon": 114.369597,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jayapura",
+    "key": "jayapura",
+    "lat": -2.532986,
+    "lon": 140.69998,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kendari",
+    "key": "kendari",
+    "lat": -3.955328,
+    "lon": 122.597312,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Serang",
+    "key": "serang",
+    "lat": -6.109977,
+    "lon": 106.149634,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Palangka Raya",
+    "key": "palangka raya",
+    "lat": -2.209595,
+    "lon": 113.909987,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lhokseumawe",
+    "key": "lhokseumawe",
+    "lat": 5.1914,
+    "lon": 97.14145,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Blitar",
+    "key": "blitar",
+    "lat": -8.069599,
+    "lon": 112.149991,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pangkal Pinang",
+    "key": "pangkal pinang",
+    "lat": -2.080042,
+    "lon": 106.150048,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sorong",
+    "key": "sorong",
+    "lat": -0.855414,
+    "lon": 131.284999,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Indramayu",
+    "key": "indramayu",
+    "lat": -6.335648,
+    "lon": 108.319011,
+    "labelRank": 7,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pati",
+    "key": "pati",
+    "lat": -6.741515,
+    "lon": 111.034659,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Langsa",
+    "key": "langsa",
+    "lat": 4.673577,
+    "lon": 97.966361,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mojokerto",
+    "key": "mojokerto",
+    "lat": -7.469584,
+    "lon": 112.429974,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Magelang",
+    "key": "magelang",
+    "lat": -7.469584,
+    "lon": 110.179982,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Raba",
+    "key": "raba",
+    "lat": -8.449989,
+    "lon": 118.766642,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maumere",
+    "key": "maumere",
+    "lat": -8.618868,
+    "lon": 122.212323,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Biak",
+    "key": "biak",
+    "lat": -1.161494,
+    "lon": 136.048481,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Prabumulih",
+    "key": "prabumulih",
+    "lat": -3.443163,
+    "lon": 104.231457,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bontang",
+    "key": "bontang",
+    "lat": 0.133259,
+    "lon": 117.500001,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sungai Penuh",
+    "key": "sungai penuh",
+    "lat": -2.063144,
+    "lon": 101.396436,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sampit",
+    "key": "sampit",
+    "lat": -2.532935,
+    "lon": 112.950046,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Parepare",
+    "key": "parepare",
+    "lat": -4.016668,
+    "lon": 119.633307,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sumenep",
+    "key": "sumenep",
+    "lat": -7.00491,
+    "lon": 113.849629,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Watampone",
+    "key": "watampone",
+    "lat": -4.532813,
+    "lon": 120.333368,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ende",
+    "key": "ende",
+    "lat": -8.862316,
+    "lon": 121.648946,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tuban",
+    "key": "tuban",
+    "lat": -6.899541,
+    "lon": 112.049998,
+    "labelRank": 7,
+    "minLabel": 8,
+    "maxLabel": 24
+  },
+  {
+    "name": "Manokwari",
+    "key": "manokwari",
+    "lat": -0.871124,
+    "lon": 134.069274,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lahat",
+    "key": "lahat",
+    "lat": -3.800041,
+    "lon": 103.533308,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tanjung Pandan",
+    "key": "tanjung pandan",
+    "lat": -2.750027,
+    "lon": 107.650008,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tidore",
+    "key": "tidore",
+    "lat": 0.696377,
+    "lon": 127.435983,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ruteng",
+    "key": "ruteng",
+    "lat": -8.61184,
+    "lon": 120.469845,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sawahlunto",
+    "key": "sawahlunto",
+    "lat": -0.666278,
+    "lon": 100.783347,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Waingapu",
+    "key": "waingapu",
+    "lat": -9.658236,
+    "lon": 120.253011,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Luwuk",
+    "key": "luwuk",
+    "lat": -0.939595,
+    "lon": 122.790014,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Amahai",
+    "key": "amahai",
+    "lat": -3.328132,
+    "lon": 128.940491,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Poso",
+    "key": "poso",
+    "lat": -1.389593,
+    "lon": 120.760008,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Padang Panjang",
+    "key": "padang panjang",
+    "lat": -0.449599,
+    "lon": 100.416651,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nabire",
+    "key": "nabire",
+    "lat": -3.351541,
+    "lon": 135.513423,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kotabumi",
+    "key": "kotabumi",
+    "lat": -4.833311,
+    "lon": 104.899995,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kuala Kapuas",
+    "key": "kuala kapuas",
+    "lat": -2.983715,
+    "lon": 114.384476,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Praya",
+    "key": "praya",
+    "lat": -8.722324,
+    "lon": 116.292322,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Merauke",
+    "key": "merauke",
+    "lat": -8.493191,
+    "lon": 140.401807,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dempassar",
+    "key": "dempassar city",
+    "lat": -8.715113,
+    "lon": 115.184121,
+    "labelRank": 7,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kota Timika",
+    "key": "kota timika",
+    "lat": -4.549607,
+    "lon": 136.88998,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baubau",
+    "key": "baubau",
+    "lat": -5.469861,
+    "lon": 122.616329,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Makale",
+    "key": "makale",
+    "lat": -3.096828,
+    "lon": 119.853087,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Palopo",
+    "key": "palopo",
+    "lat": -3.099928,
+    "lon": 120.236319,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kota Tarutung",
+    "key": "kota tarutung",
+    "lat": 2.017072,
+    "lon": 98.966662,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Telukbutun",
+    "key": "telukbutun",
+    "lat": 4.216989,
+    "lon": 108.2,
+    "labelRank": 7,
+    "minLabel": 6.1,
+    "maxLabel": 24
+  }
+]

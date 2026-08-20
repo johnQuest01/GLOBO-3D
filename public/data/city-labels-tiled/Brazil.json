@@ -1,0 +1,3827 @@
+[
+  {
+    "name": "São Paulo",
+    "key": "são paulo city",
+    "lat": -23.55,
+    "lon": -46.63,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guarulhos",
+    "key": "guarulhos",
+    "lat": -23.45,
+    "lon": -46.53,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Campinas",
+    "key": "campinas",
+    "lat": -22.91,
+    "lon": -47.06,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "São Bernardo",
+    "key": "são bernardo",
+    "lat": -23.69,
+    "lon": -46.56,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santo André",
+    "key": "santo andré",
+    "lat": -23.66,
+    "lon": -46.53,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Osasco",
+    "key": "osasco",
+    "lat": -23.53,
+    "lon": -46.79,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sorocaba",
+    "key": "sorocaba",
+    "lat": -23.5,
+    "lon": -47.46,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ribeirão Preto",
+    "key": "ribeirão preto",
+    "lat": -21.18,
+    "lon": -47.81,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "São José dos Campos",
+    "key": "são josé dos campos",
+    "lat": -23.18,
+    "lon": -45.89,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santos",
+    "key": "santos",
+    "lat": -23.96,
+    "lon": -46.33,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mauá",
+    "key": "mauá",
+    "lat": -23.67,
+    "lon": -46.46,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Diadema",
+    "key": "diadema",
+    "lat": -23.69,
+    "lon": -46.62,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jundiaí",
+    "key": "jundiaí",
+    "lat": -23.19,
+    "lon": -46.88,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Piracicaba",
+    "key": "piracicaba",
+    "lat": -22.73,
+    "lon": -47.65,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bauru",
+    "key": "bauru",
+    "lat": -22.31,
+    "lon": -49.06,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "São José do Rio Preto",
+    "key": "são josé do rio preto",
+    "lat": -20.81,
+    "lon": -49.38,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mogi das Cruzes",
+    "key": "mogi das cruzes",
+    "lat": -23.52,
+    "lon": -46.19,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Franca",
+    "key": "franca",
+    "lat": -20.54,
+    "lon": -47.4,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guarujá",
+    "key": "guarujá",
+    "lat": -23.99,
+    "lon": -46.26,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Taubaté",
+    "key": "taubaté",
+    "lat": -23.03,
+    "lon": -45.56,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Limeira",
+    "key": "limeira",
+    "lat": -22.56,
+    "lon": -47.4,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Suzano",
+    "key": "suzano",
+    "lat": -23.54,
+    "lon": -46.31,
+    "labelRank": 6,
+    "minLabel": 6.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Taboão da Serra",
+    "key": "taboão da serra",
+    "lat": -23.61,
+    "lon": -46.76,
+    "labelRank": 6,
+    "minLabel": 6.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sumaré",
+    "key": "sumaré",
+    "lat": -22.82,
+    "lon": -47.27,
+    "labelRank": 6,
+    "minLabel": 6.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barueri",
+    "key": "barueri",
+    "lat": -23.51,
+    "lon": -46.88,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Embu das Artes",
+    "key": "embu das artes",
+    "lat": -23.65,
+    "lon": -46.85,
+    "labelRank": 6,
+    "minLabel": 6.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "São Vicente",
+    "key": "são vicente",
+    "lat": -23.96,
+    "lon": -46.39,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Praia Grande",
+    "key": "praia grande",
+    "lat": -24.01,
+    "lon": -46.4,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Indaiatuba",
+    "key": "indaiatuba",
+    "lat": -23.09,
+    "lon": -47.22,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cotia",
+    "key": "cotia",
+    "lat": -23.6,
+    "lon": -46.93,
+    "labelRank": 6,
+    "minLabel": 6.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Americana",
+    "key": "americana",
+    "lat": -22.74,
+    "lon": -47.33,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Araraquara",
+    "key": "araraquara",
+    "lat": -21.79,
+    "lon": -48.18,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jacareí",
+    "key": "jacareí",
+    "lat": -23.31,
+    "lon": -45.97,
+    "labelRank": 6,
+    "minLabel": 6.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Presidente Prudente",
+    "key": "presidente prudente",
+    "lat": -22.13,
+    "lon": -51.39,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Marília",
+    "key": "marília",
+    "lat": -22.21,
+    "lon": -49.95,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "São Carlos",
+    "key": "são carlos",
+    "lat": -22.02,
+    "lon": -47.89,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Hortolândia",
+    "key": "hortolândia",
+    "lat": -22.86,
+    "lon": -47.22,
+    "labelRank": 6,
+    "minLabel": 6.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Itapevi",
+    "key": "itapevi",
+    "lat": -23.55,
+    "lon": -46.93,
+    "labelRank": 6,
+    "minLabel": 6.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bragança Paulista",
+    "key": "bragança paulista",
+    "lat": -22.95,
+    "lon": -46.54,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Atibaia",
+    "key": "atibaia",
+    "lat": -23.12,
+    "lon": -46.55,
+    "labelRank": 6,
+    "minLabel": 6.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rio Claro",
+    "key": "rio claro",
+    "lat": -22.41,
+    "lon": -47.56,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Itu",
+    "key": "itu",
+    "lat": -23.26,
+    "lon": -47.3,
+    "labelRank": 6,
+    "minLabel": 6.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Botucatu",
+    "key": "botucatu",
+    "lat": -22.89,
+    "lon": -48.45,
+    "labelRank": 6,
+    "minLabel": 6.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Catanduva",
+    "key": "catanduva",
+    "lat": -21.14,
+    "lon": -48.97,
+    "labelRank": 6,
+    "minLabel": 6.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rio de Janeiro",
+    "key": "rio de janeiro city",
+    "lat": -22.91,
+    "lon": -43.17,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Niterói",
+    "key": "niterói",
+    "lat": -22.88,
+    "lon": -43.1,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Duque de Caxias",
+    "key": "duque de caxias",
+    "lat": -22.79,
+    "lon": -43.31,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nova Iguaçu",
+    "key": "nova iguaçu",
+    "lat": -22.76,
+    "lon": -43.45,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "São Gonçalo",
+    "key": "são gonçalo",
+    "lat": -22.83,
+    "lon": -43.05,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Petrópolis",
+    "key": "petrópolis",
+    "lat": -22.51,
+    "lon": -43.18,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Campos",
+    "key": "campos dos goytacazes",
+    "lat": -21.75,
+    "lon": -41.33,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brasília",
+    "key": "brasília city",
+    "lat": -15.79,
+    "lon": -47.88,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Belo Horizonte",
+    "key": "belo horizonte",
+    "lat": -19.92,
+    "lon": -43.94,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Contagem",
+    "key": "contagem",
+    "lat": -19.93,
+    "lon": -44.05,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uberlândia",
+    "key": "uberlândia",
+    "lat": -18.91,
+    "lon": -48.28,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Juiz de Fora",
+    "key": "juiz de fora",
+    "lat": -21.76,
+    "lon": -43.35,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salvador",
+    "key": "salvador",
+    "lat": -12.97,
+    "lon": -38.5,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Feira de Santana",
+    "key": "feira de santana",
+    "lat": -12.27,
+    "lon": -38.97,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fortaleza",
+    "key": "fortaleza",
+    "lat": -3.72,
+    "lon": -38.54,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Recife",
+    "key": "recife",
+    "lat": -8.05,
+    "lon": -34.88,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Olinda",
+    "key": "olinda",
+    "lat": -8.01,
+    "lon": -34.85,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jaboatão",
+    "key": "jaboatão",
+    "lat": -8.11,
+    "lon": -35.01,
+    "labelRank": 6,
+    "minLabel": 6.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Curitiba",
+    "key": "curitiba",
+    "lat": -25.43,
+    "lon": -49.27,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Londrina",
+    "key": "londrina",
+    "lat": -23.3,
+    "lon": -51.16,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maringá",
+    "key": "maringá",
+    "lat": -23.42,
+    "lon": -51.93,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Porto Alegre",
+    "key": "porto alegre",
+    "lat": -30.03,
+    "lon": -51.23,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Caxias do Sul",
+    "key": "caxias do sul",
+    "lat": -29.17,
+    "lon": -51.18,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Manaus",
+    "key": "manaus",
+    "lat": -3.12,
+    "lon": -60.02,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Belém",
+    "key": "belém",
+    "lat": -1.46,
+    "lon": -48.5,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "Goiânia",
+    "key": "goiânia",
+    "lat": -16.69,
+    "lon": -49.25,
+    "labelRank": 2,
+    "minLabel": 4.3,
+    "maxLabel": 24
+  },
+  {
+    "name": "São Luís",
+    "key": "são luís",
+    "lat": -2.53,
+    "lon": -44.3,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maceió",
+    "key": "maceió",
+    "lat": -9.67,
+    "lon": -35.74,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Natal",
+    "key": "natal",
+    "lat": -5.79,
+    "lon": -35.21,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Teresina",
+    "key": "teresina",
+    "lat": -5.09,
+    "lon": -42.8,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "João Pessoa",
+    "key": "joão pessoa",
+    "lat": -7.12,
+    "lon": -34.86,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aracaju",
+    "key": "aracaju",
+    "lat": -10.91,
+    "lon": -37.07,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Campo Grande",
+    "key": "campo grande",
+    "lat": -20.47,
+    "lon": -54.62,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cuiabá",
+    "key": "cuiabá",
+    "lat": -15.6,
+    "lon": -56.1,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vitória",
+    "key": "vitória",
+    "lat": -20.32,
+    "lon": -40.34,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vila Velha",
+    "key": "vila velha",
+    "lat": -20.33,
+    "lon": -40.29,
+    "labelRank": 5,
+    "minLabel": 5.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Florianópolis",
+    "key": "florianópolis",
+    "lat": -27.59,
+    "lon": -48.55,
+    "labelRank": 3,
+    "minLabel": 4.9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Joinville",
+    "key": "joinville",
+    "lat": -26.3,
+    "lon": -48.85,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Palmas",
+    "key": "palmas",
+    "lat": -10.18,
+    "lon": -48.33,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Porto Velho",
+    "key": "porto velho",
+    "lat": -8.76,
+    "lon": -63.9,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rio Branco",
+    "key": "rio branco",
+    "lat": -9.97,
+    "lon": -67.81,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Macapá",
+    "key": "macapá",
+    "lat": 0.03,
+    "lon": -51.07,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Boa Vista",
+    "key": "boa vista",
+    "lat": 2.82,
+    "lon": -60.67,
+    "labelRank": 4,
+    "minLabel": 5.4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fortaleza",
+    "key": "fortaleza city",
+    "lat": -3.748072,
+    "lon": -38.581927,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Belém",
+    "key": "belém city",
+    "lat": -1.448057,
+    "lon": -48.481969,
+    "labelRank": 2,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vitória",
+    "key": "vitória city",
+    "lat": -20.332042,
+    "lon": -40.353943,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vila Velha",
+    "key": "vila velha city",
+    "lat": 3.216663,
+    "lon": -51.216652,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maceió",
+    "key": "maceió city",
+    "lat": -9.61805,
+    "lon": -35.73192,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Joinville",
+    "key": "joinville city",
+    "lat": -26.318012,
+    "lon": -48.841895,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Natal",
+    "key": "natal city",
+    "lat": -6.983826,
+    "lon": -60.269949,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Olinda",
+    "key": "olinda city",
+    "lat": -7.999991,
+    "lon": -34.849951,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Novo Hamburgo",
+    "key": "novo hamburgo",
+    "lat": -29.709622,
+    "lon": -51.13999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nova Iguaçu",
+    "key": "nova iguaçu city",
+    "lat": -22.755052,
+    "lon": -43.44519,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Campo Grande",
+    "key": "campo grande city",
+    "lat": -20.448086,
+    "lon": -54.618571,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "São José dos Pinhais",
+    "key": "são josé dos pinhais",
+    "lat": -25.57003,
+    "lon": -49.180006,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Canoas",
+    "key": "canoas",
+    "lat": -29.919997,
+    "lon": -51.179987,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Volta Redonda",
+    "key": "volta redonda",
+    "lat": -22.51957,
+    "lon": -44.094968,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Foz do Iguaçu",
+    "key": "foz do iguaçu",
+    "lat": -25.523469,
+    "lon": -54.52999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Campina Grande",
+    "key": "campina grande",
+    "lat": -7.230012,
+    "lon": -35.880017,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ipatinga",
+    "key": "ipatinga",
+    "lat": -19.4796,
+    "lon": -42.519999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Campos dos Goytacazes",
+    "key": "campos dos goytacazes city",
+    "lat": -21.749953,
+    "lon": -41.320021,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Montes Claros",
+    "key": "montes claros",
+    "lat": -16.720027,
+    "lon": -43.860021,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Itajaí",
+    "key": "itajaí",
+    "lat": -26.899613,
+    "lon": -48.680011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pelotas",
+    "key": "pelotas",
+    "lat": -31.750014,
+    "lon": -52.330021,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Anápolis",
+    "key": "anápolis",
+    "lat": -16.319587,
+    "lon": -48.959968,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vitória da Conquista",
+    "key": "vitória da conquista",
+    "lat": -14.850012,
+    "lon": -40.839998,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Blumenau",
+    "key": "blumenau",
+    "lat": -26.920025,
+    "lon": -49.089986,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ponta Grossa",
+    "key": "ponta grossa",
+    "lat": -25.090007,
+    "lon": -50.16005,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Crato",
+    "key": "crato",
+    "lat": -7.229599,
+    "lon": -39.420008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Crato",
+    "key": "crato city",
+    "lat": -7.4639,
+    "lon": -63.039961,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cabo Frio",
+    "key": "cabo frio",
+    "lat": -22.889987,
+    "lon": -42.039977,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Petrolina",
+    "key": "petrolina",
+    "lat": -9.38001,
+    "lon": -40.509967,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uberaba",
+    "key": "uberaba",
+    "lat": -19.779995,
+    "lon": -47.950004,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cascavel",
+    "key": "cascavel",
+    "lat": -24.959576,
+    "lon": -53.460029,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Governador Valadares",
+    "key": "governador valadares",
+    "lat": -18.870025,
+    "lon": -41.970007,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Várzea Grande",
+    "key": "várzea grande",
+    "lat": -15.650015,
+    "lon": -56.140021,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Maria",
+    "key": "santa maria",
+    "lat": -29.683319,
+    "lon": -53.800008,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Caruaru",
+    "key": "caruaru",
+    "lat": -8.280026,
+    "lon": -35.980011,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ilhéus",
+    "key": "ilhéus",
+    "lat": -14.780042,
+    "lon": -39.050004,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santarém",
+    "key": "santarém city",
+    "lat": -2.433251,
+    "lon": -54.699979,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Juazeiro do Norte",
+    "key": "juazeiro do norte",
+    "lat": -7.210013,
+    "lon": -39.320014,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Itabuna",
+    "key": "itabuna",
+    "lat": -14.789602,
+    "lon": -39.280016,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Imperatriz",
+    "key": "imperatriz",
+    "lat": -5.520039,
+    "lon": -47.490006,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Criciúma",
+    "key": "criciúma",
+    "lat": -28.680021,
+    "lon": -49.389967,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guaratinguetá",
+    "key": "guaratinguetá",
+    "lat": -22.819965,
+    "lon": -45.189991,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mossoró",
+    "key": "mossoró",
+    "lat": -5.190033,
+    "lon": -37.340005,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sete Lagoas",
+    "key": "sete lagoas",
+    "lat": -19.449628,
+    "lon": -44.249997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Divinópolis",
+    "key": "divinópolis",
+    "lat": -20.149534,
+    "lon": -44.899983,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rio Grande",
+    "key": "rio grande",
+    "lat": -32.049479,
+    "lon": -52.120008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arapiraca",
+    "key": "arapiraca",
+    "lat": -9.750013,
+    "lon": -36.669995,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cachoeiro de Itapemirim",
+    "key": "cachoeiro de itapemirim",
+    "lat": -20.850008,
+    "lon": -41.129981,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Passo Fundo",
+    "key": "passo fundo",
+    "lat": -28.250021,
+    "lon": -52.419989,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nova Friburgo",
+    "key": "nova friburgo",
+    "lat": -22.259999,
+    "lon": -42.54005,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Araçatuba",
+    "key": "araçatuba",
+    "lat": -21.209986,
+    "lon": -50.450006,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barra Mansa",
+    "key": "barra mansa",
+    "lat": -22.560032,
+    "lon": -44.16995,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Marabá",
+    "key": "marabá",
+    "lat": -5.349972,
+    "lon": -49.115979,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Carpina",
+    "key": "carpina",
+    "lat": -7.847458,
+    "lon": -35.253891,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lages",
+    "key": "lages",
+    "lat": -27.809583,
+    "lon": -50.309989,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Dourados",
+    "key": "dourados",
+    "lat": -22.230027,
+    "lon": -54.809998,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chapecó",
+    "key": "chapecó",
+    "lat": -27.100014,
+    "lon": -52.640028,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rio Largo",
+    "key": "rio largo",
+    "lat": -9.480004,
+    "lon": -35.839968,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barreiras",
+    "key": "barreiras",
+    "lat": -12.139997,
+    "lon": -45.000003,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sobral",
+    "key": "sobral",
+    "lat": -3.690021,
+    "lon": -40.350028,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rondonópolis",
+    "key": "rondonópolis",
+    "lat": -16.4695,
+    "lon": -54.639983,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guarapuava",
+    "key": "guarapuava",
+    "lat": -25.380015,
+    "lon": -51.480021,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Poços de Caldas",
+    "key": "poços de caldas",
+    "lat": -21.780029,
+    "lon": -46.569985,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cabo de Santo Agostinho",
+    "key": "cabo de santo agostinho",
+    "lat": -8.289999,
+    "lon": -35.029991,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Macaé",
+    "key": "macaé",
+    "lat": -22.379992,
+    "lon": -41.789992,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Paranaguá",
+    "key": "paranaguá",
+    "lat": -25.527876,
+    "lon": -48.534453,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Parnaíba",
+    "key": "parnaíba",
+    "lat": -2.910017,
+    "lon": -41.769967,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Castanhal",
+    "key": "castanhal",
+    "lat": -1.2896,
+    "lon": -47.930031,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jequié",
+    "key": "jequié",
+    "lat": -13.850022,
+    "lon": -40.079993,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Caxias",
+    "key": "caxias",
+    "lat": -4.833001,
+    "lon": -43.350026,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pindamonhangaba",
+    "key": "pindamonhangaba",
+    "lat": -22.919959,
+    "lon": -45.470026,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jaraguá do Sul",
+    "key": "jaraguá do sul",
+    "lat": -26.48,
+    "lon": -49.099985,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bragança Paulista",
+    "key": "bragança paulista city",
+    "lat": -22.952716,
+    "lon": -46.533394,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Itapetininga",
+    "key": "itapetininga",
+    "lat": -23.589996,
+    "lon": -48.039998,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alagoinhas",
+    "key": "alagoinhas",
+    "lat": -12.139997,
+    "lon": -38.429991,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uruguaiana",
+    "key": "uruguaiana",
+    "lat": -29.769618,
+    "lon": -57.089988,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Porto Seguro",
+    "key": "porto seguro",
+    "lat": -16.429606,
+    "lon": -39.080028,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barbacena",
+    "key": "barbacena",
+    "lat": -21.220011,
+    "lon": -43.77,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jaú",
+    "key": "jaú",
+    "lat": -22.28961,
+    "lon": -48.570017,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pouso Alegre",
+    "key": "pouso alegre",
+    "lat": -22.220002,
+    "lon": -45.940023,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Botucatu",
+    "key": "botucatu city",
+    "lat": -22.8796,
+    "lon": -48.449999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Cruz do Sul",
+    "key": "santa cruz do sul",
+    "lat": -29.710035,
+    "lon": -52.44004,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Conselheiro Lafaiete",
+    "key": "conselheiro lafaiete",
+    "lat": -20.670019,
+    "lon": -43.789999,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Garanhuns",
+    "key": "garanhuns",
+    "lat": -8.890014,
+    "lon": -36.500031,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Apucarana",
+    "key": "apucarana",
+    "lat": -23.549998,
+    "lon": -51.470021,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bagé",
+    "key": "bagé",
+    "lat": -31.320015,
+    "lon": -54.100016,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Linhares",
+    "key": "linhares",
+    "lat": -19.389993,
+    "lon": -40.050021,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barretos",
+    "key": "barretos",
+    "lat": -20.550026,
+    "lon": -48.580017,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Teófilo Otoni",
+    "key": "teófilo otoni",
+    "lat": -17.870035,
+    "lon": -41.50001,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Passos",
+    "key": "passos",
+    "lat": -20.710016,
+    "lon": -46.609982,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ubá",
+    "key": "ubá",
+    "lat": -21.119604,
+    "lon": -42.950025,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ourinhos",
+    "key": "ourinhos",
+    "lat": -22.970033,
+    "lon": -49.86999,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Trindade",
+    "key": "trindade",
+    "lat": -16.650006,
+    "lon": -49.499987,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arapongas",
+    "key": "arapongas",
+    "lat": -23.410007,
+    "lon": -51.43005,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Araguari",
+    "key": "araguari",
+    "lat": -18.640013,
+    "lon": -48.199988,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Corumbá",
+    "key": "corumbá",
+    "lat": -19.016011,
+    "lon": -57.650006,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Erechim",
+    "key": "erechim",
+    "lat": -27.630007,
+    "lon": -52.269998,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Juazeiro",
+    "key": "juazeiro",
+    "lat": -9.420008,
+    "lon": -40.499967,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ponta Porã",
+    "key": "ponta porã",
+    "lat": -22.530009,
+    "lon": -55.729968,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bento Gonçalves",
+    "key": "bento gonçalves",
+    "lat": -29.1695,
+    "lon": -51.519967,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tatuí",
+    "key": "tatuí",
+    "lat": -23.35001,
+    "lon": -47.860009,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Patos",
+    "key": "patos",
+    "lat": -7.019586,
+    "lon": -37.290008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Itaituba",
+    "key": "itaituba",
+    "lat": -4.258617,
+    "lon": -55.925021,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tubarão",
+    "key": "tubarão",
+    "lat": -28.480033,
+    "lon": -49.020016,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Muriaé",
+    "key": "muriaé",
+    "lat": -21.130042,
+    "lon": -42.389981,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Itanhaém",
+    "key": "itanhaém",
+    "lat": -24.179985,
+    "lon": -46.800022,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santana do Livramento",
+    "key": "santana do livramento",
+    "lat": -30.880042,
+    "lon": -55.530006,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nova Lima",
+    "key": "nova lima",
+    "lat": -19.980035,
+    "lon": -43.850021,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brusque",
+    "key": "brusque",
+    "lat": -27.129986,
+    "lon": -48.930021,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Assis",
+    "key": "assis",
+    "lat": -22.659613,
+    "lon": -50.419982,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Paulo Afonso",
+    "key": "paulo afonso",
+    "lat": -9.402967,
+    "lon": -38.221689,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ituiutaba",
+    "key": "ituiutaba",
+    "lat": -18.970019,
+    "lon": -49.459989,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cáceres",
+    "key": "cáceres",
+    "lat": -16.050042,
+    "lon": -57.510014,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Porto de Santana",
+    "key": "porto de santana",
+    "lat": -0.039598,
+    "lon": -51.179987,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Codó",
+    "key": "codó",
+    "lat": -4.479586,
+    "lon": -43.879968,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Araxá",
+    "key": "araxá",
+    "lat": -19.579594,
+    "lon": -46.950013,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lavras",
+    "key": "lavras",
+    "lat": -21.24957,
+    "lon": -45.009951,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Avaré",
+    "key": "avaré",
+    "lat": -23.110025,
+    "lon": -48.930021,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Formosa",
+    "key": "formosa (brazil)",
+    "lat": -15.539479,
+    "lon": -47.339989,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Itumbiara",
+    "key": "itumbiara",
+    "lat": -18.399615,
+    "lon": -49.210004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Abaetetuba",
+    "key": "abaetetuba",
+    "lat": -1.724531,
+    "lon": -48.88488,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Três Lagoas",
+    "key": "três lagoas",
+    "lat": -20.790011,
+    "lon": -51.720006,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "São João del-Rei",
+    "key": "são joão del-rei",
+    "lat": -21.130042,
+    "lon": -44.249997,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Itaúna",
+    "key": "itaúna",
+    "lat": -20.06003,
+    "lon": -44.570029,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "São Mateus",
+    "key": "são mateus",
+    "lat": -18.72962,
+    "lon": -39.859981,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jataí",
+    "key": "jataí",
+    "lat": -17.879595,
+    "lon": -51.750004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "São João da Boa Vista",
+    "key": "são joão da boa vista",
+    "lat": -21.980016,
+    "lon": -46.789997,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tucuruí",
+    "key": "tucuruí",
+    "lat": -3.767357,
+    "lon": -49.673652,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Campo Mourão",
+    "key": "campo mourão",
+    "lat": -24.049606,
+    "lon": -52.419989,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cachoeira do Sul",
+    "key": "cachoeira do sul",
+    "lat": -30.029964,
+    "lon": -52.909985,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bacabal",
+    "key": "bacabal",
+    "lat": -4.229989,
+    "lon": -44.799989,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Porto União",
+    "key": "porto união",
+    "lat": -26.239601,
+    "lon": -51.079968,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Goiana",
+    "key": "goiana",
+    "lat": -7.559604,
+    "lon": -34.999993,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ijuí",
+    "key": "ijuí",
+    "lat": -28.389547,
+    "lon": -53.919949,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Altamira",
+    "key": "altamira",
+    "lat": -3.199612,
+    "lon": -52.210002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Paracatu",
+    "key": "paracatu",
+    "lat": -17.199585,
+    "lon": -46.869992,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Iguatu",
+    "key": "iguatu",
+    "lat": -6.359988,
+    "lon": -39.299989,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Paragominas",
+    "key": "paragominas",
+    "lat": -2.959575,
+    "lon": -47.490006,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guajará-Mirim",
+    "key": "guajará-mirim",
+    "lat": -10.800027,
+    "lon": -65.349949,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jaboticabal",
+    "key": "jaboticabal",
+    "lat": -21.250035,
+    "lon": -48.32998,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Balsas",
+    "key": "balsas",
+    "lat": -7.52002,
+    "lon": -46.04999,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Inês",
+    "key": "santa inês",
+    "lat": -3.659997,
+    "lon": -45.390031,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rio Negro",
+    "key": "rio negro",
+    "lat": -26.100023,
+    "lon": -49.790021,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santo Ângelo",
+    "key": "santo ângelo",
+    "lat": -28.300044,
+    "lon": -54.280031,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ji-Paraná",
+    "key": "ji-paraná",
+    "lat": -10.833307,
+    "lon": -61.967003,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Gurupi",
+    "key": "gurupi",
+    "lat": -11.719609,
+    "lon": -49.059988,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Parintins",
+    "key": "parintins",
+    "lat": -2.610036,
+    "lon": -56.74001,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Curvelo",
+    "key": "curvelo",
+    "lat": -18.759593,
+    "lon": -44.429986,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Caçador",
+    "key": "caçador",
+    "lat": -26.770008,
+    "lon": -51.020023,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Irecê",
+    "key": "irecê",
+    "lat": -11.299996,
+    "lon": -41.870013,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Catalão",
+    "key": "catalão",
+    "lat": -18.180042,
+    "lon": -47.950004,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Valença",
+    "key": "valença",
+    "lat": -13.359612,
+    "lon": -39.080028,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vilhena",
+    "key": "vilhena",
+    "lat": -12.716602,
+    "lon": -60.1166,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Itapeva",
+    "key": "itapeva",
+    "lat": -23.979584,
+    "lon": -48.880024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tupã",
+    "key": "tupã",
+    "lat": -21.929993,
+    "lon": -50.51995,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fernandópolis",
+    "key": "fernandópolis",
+    "lat": -20.26963,
+    "lon": -50.260044,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Canela",
+    "key": "canela",
+    "lat": -29.360031,
+    "lon": -50.81001,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pirassununga",
+    "key": "pirassununga",
+    "lat": -21.990042,
+    "lon": -47.429984,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pirapora",
+    "key": "pirapora",
+    "lat": -17.330016,
+    "lon": -44.929981,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Caratinga",
+    "key": "caratinga",
+    "lat": -19.790021,
+    "lon": -42.139997,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Itapetinga",
+    "key": "itapetinga",
+    "lat": -15.249988,
+    "lon": -40.249983,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "São Borja",
+    "key": "são borja",
+    "lat": -28.659609,
+    "lon": -56.009977,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Carazinho",
+    "key": "carazinho",
+    "lat": -28.290019,
+    "lon": -52.800044,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Rosa",
+    "key": "santa rosa (brazil)",
+    "lat": -27.869528,
+    "lon": -54.459968,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Manacapuru",
+    "key": "manacapuru",
+    "lat": -3.289581,
+    "lon": -60.61998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Telêmaco Borba",
+    "key": "telêmaco borba",
+    "lat": -24.32995,
+    "lon": -50.619996,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guanambi",
+    "key": "guanambi",
+    "lat": -14.229585,
+    "lon": -42.789983,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ariquemes",
+    "key": "ariquemes",
+    "lat": -9.939614,
+    "lon": -63.079985,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Timbaúba",
+    "key": "timbaúba",
+    "lat": -7.499608,
+    "lon": -35.320025,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Picos",
+    "key": "picos",
+    "lat": -7.079995,
+    "lon": -41.439988,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Arcoverde",
+    "key": "arcoverde",
+    "lat": -8.420017,
+    "lon": -37.069996,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bragança",
+    "key": "bragança city",
+    "lat": -1.050028,
+    "lon": -46.769998,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cruzeiro do Sul",
+    "key": "cruzeiro do sul",
+    "lat": -7.629988,
+    "lon": -72.669968,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Serrinha",
+    "key": "serrinha",
+    "lat": -11.649587,
+    "lon": -39.010007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vacaria",
+    "key": "vacaria",
+    "lat": -28.499618,
+    "lon": -50.940002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Janaúba",
+    "key": "janaúba",
+    "lat": -15.799618,
+    "lon": -43.309977,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Formiga",
+    "key": "formiga",
+    "lat": -20.460006,
+    "lon": -45.430028,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nova Viçosa",
+    "key": "nova viçosa",
+    "lat": -17.880008,
+    "lon": -39.370011,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Itapipoca",
+    "key": "itapipoca",
+    "lat": -3.499542,
+    "lon": -39.580024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Estância",
+    "key": "estância",
+    "lat": -11.269611,
+    "lon": -37.450024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "São Gabriel",
+    "key": "são gabriel",
+    "lat": -30.320024,
+    "lon": -54.320028,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Concórdia",
+    "key": "concórdia",
+    "lat": -27.230032,
+    "lon": -52.030013,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "São José de Ribamar",
+    "key": "são josé de ribamar",
+    "lat": -2.549988,
+    "lon": -44.069982,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Caicó",
+    "key": "caicó",
+    "lat": -6.45962,
+    "lon": -37.10002,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Penápolis",
+    "key": "penápolis",
+    "lat": -21.410025,
+    "lon": -50.080003,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Coari",
+    "key": "coari",
+    "lat": -4.079972,
+    "lon": -63.129981,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Registro",
+    "key": "registro",
+    "lat": -24.490044,
+    "lon": -47.839985,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Camaquã",
+    "key": "camaquã",
+    "lat": -30.83963,
+    "lon": -51.810001,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Crateús",
+    "key": "crateús",
+    "lat": -5.16559,
+    "lon": -40.666004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Andradina",
+    "key": "andradina",
+    "lat": -20.909591,
+    "lon": -51.379949,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Garças",
+    "key": "garças",
+    "lat": -15.879613,
+    "lon": -52.259999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Batatais",
+    "key": "batatais",
+    "lat": -20.890005,
+    "lon": -47.59,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Itacoatiara",
+    "key": "itacoatiara",
+    "lat": -3.140029,
+    "lon": -58.439984,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tefé",
+    "key": "tefé",
+    "lat": -3.360016,
+    "lon": -64.699989,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jacundá",
+    "key": "jacundá",
+    "lat": -4.439459,
+    "lon": -49.115693,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Araguaína",
+    "key": "araguaína",
+    "lat": -7.190015,
+    "lon": -48.210014,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quixadá",
+    "key": "quixadá",
+    "lat": -4.969995,
+    "lon": -39.020006,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Corda",
+    "key": "corda",
+    "lat": -5.5096,
+    "lon": -45.259961,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Floriano",
+    "key": "floriano",
+    "lat": -6.769575,
+    "lon": -43.029968,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Senhor do Bonfim",
+    "key": "senhor do bonfim",
+    "lat": -10.449609,
+    "lon": -40.190012,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rio Verde",
+    "key": "rio verde",
+    "lat": -17.819598,
+    "lon": -50.929977,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ponte Nova",
+    "key": "ponte nova",
+    "lat": -20.409621,
+    "lon": -42.89995,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guaxupé",
+    "key": "guaxupé",
+    "lat": -21.290032,
+    "lon": -46.70995,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Goianésia",
+    "key": "goianésia",
+    "lat": -15.309622,
+    "lon": -49.130009,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Capanema",
+    "key": "capanema",
+    "lat": -1.190019,
+    "lon": -47.179999,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Itamaraju",
+    "key": "itamaraju",
+    "lat": -17.039594,
+    "lon": -39.529949,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Campo Belo",
+    "key": "campo belo",
+    "lat": -20.889592,
+    "lon": -45.279986,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Itaberaba",
+    "key": "itaberaba",
+    "lat": -12.519612,
+    "lon": -40.29998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Breves",
+    "key": "breves",
+    "lat": -1.680015,
+    "lon": -50.490004,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Leopoldina",
+    "key": "leopoldina",
+    "lat": -21.530018,
+    "lon": -42.640044,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Irati",
+    "key": "irati",
+    "lat": -25.470036,
+    "lon": -50.659968,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cametá",
+    "key": "cametá",
+    "lat": -2.239619,
+    "lon": -49.509986,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Laranjal do Jari",
+    "key": "laranjal do jari",
+    "lat": -0.85004,
+    "lon": -52.480011,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Piripiri",
+    "key": "piripiri",
+    "lat": -4.269573,
+    "lon": -41.789992,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Camocim",
+    "key": "camocim",
+    "lat": -2.899992,
+    "lon": -40.850024,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aracati",
+    "key": "aracati",
+    "lat": -4.559994,
+    "lon": -37.770031,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Inhumas",
+    "key": "inhumas",
+    "lat": -16.359997,
+    "lon": -49.499987,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Imbituba",
+    "key": "imbituba",
+    "lat": -28.229609,
+    "lon": -48.660012,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Araranguá",
+    "key": "araranguá",
+    "lat": -28.940005,
+    "lon": -49.499987,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Canindé",
+    "key": "canindé",
+    "lat": -4.350033,
+    "lon": -39.309988,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salgueiro",
+    "key": "salgueiro",
+    "lat": -8.059626,
+    "lon": -39.130025,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Penedo",
+    "key": "penedo",
+    "lat": -10.26962,
+    "lon": -36.580026,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Castro",
+    "key": "castro",
+    "lat": -24.790026,
+    "lon": -50.009981,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Brumado",
+    "key": "brumado",
+    "lat": -14.21,
+    "lon": -41.670025,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Canoinhas",
+    "key": "canoinhas",
+    "lat": -26.179967,
+    "lon": -50.400009,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jaguaquara",
+    "key": "jaguaquara",
+    "lat": -13.529989,
+    "lon": -39.97,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Garça",
+    "key": "garça",
+    "lat": -22.220002,
+    "lon": -49.659977,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Palmeira dos Índios",
+    "key": "palmeira dos índios",
+    "lat": -9.416597,
+    "lon": -36.616639,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salinópolis",
+    "key": "salinópolis",
+    "lat": -0.609486,
+    "lon": -47.339989,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Frutal",
+    "key": "frutal",
+    "lat": -20.030006,
+    "lon": -48.940021,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Chapadinha",
+    "key": "chapadinha",
+    "lat": -3.739528,
+    "lon": -43.36,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aquidauana",
+    "key": "aquidauana",
+    "lat": -20.469617,
+    "lon": -55.790016,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bom Jesus da Lapa",
+    "key": "bom jesus da lapa",
+    "lat": -13.249541,
+    "lon": -43.440021,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alta Floresta",
+    "key": "alta floresta",
+    "lat": -9.90003,
+    "lon": -55.909983,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Laguna",
+    "key": "laguna city",
+    "lat": -28.480033,
+    "lon": -48.779979,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Russas",
+    "key": "russas",
+    "lat": -4.940023,
+    "lon": -37.979992,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Palmas",
+    "key": "palmas city",
+    "lat": -26.48,
+    "lon": -51.999989,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mineiros",
+    "key": "mineiros",
+    "lat": -17.569536,
+    "lon": -52.559981,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pinheiro",
+    "key": "pinheiro",
+    "lat": -2.519602,
+    "lon": -45.089997,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Joaçaba",
+    "key": "joaçaba",
+    "lat": -27.170035,
+    "lon": -51.499968,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Remanso",
+    "key": "remanso",
+    "lat": -9.599583,
+    "lon": -42.109998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nanuque",
+    "key": "nanuque",
+    "lat": -17.839959,
+    "lon": -40.350028,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Diamantina",
+    "key": "diamantina",
+    "lat": -18.239986,
+    "lon": -43.609984,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rosário do Sul",
+    "key": "rosário do sul",
+    "lat": -30.250002,
+    "lon": -54.920018,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Cristalina",
+    "key": "cristalina",
+    "lat": -16.769998,
+    "lon": -47.610025,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Salto del Guairá",
+    "key": "salto del guairá",
+    "lat": -24.089965,
+    "lon": -54.26998,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "São Francisco do Sul",
+    "key": "são francisco do sul",
+    "lat": -26.239601,
+    "lon": -48.59999,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Assu",
+    "key": "assu",
+    "lat": -5.579622,
+    "lon": -36.910057,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Oriximiná",
+    "key": "oriximiná",
+    "lat": -1.759597,
+    "lon": -55.869985,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barreiros",
+    "key": "barreiros",
+    "lat": -8.829605,
+    "lon": -35.200007,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xique-Xique",
+    "key": "xique-xique",
+    "lat": -10.820026,
+    "lon": -42.730012,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jacarezinho",
+    "key": "jacarezinho",
+    "lat": -23.159944,
+    "lon": -49.979983,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Itapecuru-Mirim",
+    "key": "itapecuru-mirim",
+    "lat": -3.400013,
+    "lon": -44.360016,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Januária",
+    "key": "januária",
+    "lat": -15.48,
+    "lon": -44.36999,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Osório",
+    "key": "osório",
+    "lat": -29.879999,
+    "lon": -50.269991,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Morrinhos",
+    "key": "morrinhos",
+    "lat": -17.730043,
+    "lon": -49.109985,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Coroatá",
+    "key": "coroatá",
+    "lat": -4.129581,
+    "lon": -44.150003,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Capitão Poço",
+    "key": "capitão poço",
+    "lat": -1.749623,
+    "lon": -47.090004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maués",
+    "key": "maués",
+    "lat": -3.389626,
+    "lon": -57.720028,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Paranaíba",
+    "key": "paranaíba",
+    "lat": -19.679588,
+    "lon": -51.200012,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bocaiuva",
+    "key": "bocaiuva",
+    "lat": -17.109616,
+    "lon": -43.81005,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "São Luiz Gonzaga",
+    "key": "são luiz gonzaga",
+    "lat": -28.410011,
+    "lon": -54.959989,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Campo Maior",
+    "key": "campo maior",
+    "lat": -4.82003,
+    "lon": -42.18002,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jacareacanga",
+    "key": "jacareacanga",
+    "lat": -6.228018,
+    "lon": -57.760131,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bugres",
+    "key": "bugres",
+    "lat": -15.069585,
+    "lon": -57.190008,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tucano",
+    "key": "tucano",
+    "lat": -10.969629,
+    "lon": -38.789994,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Presidente Dutra",
+    "key": "presidente dutra",
+    "lat": -5.25003,
+    "lon": -44.519981,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Grajaú",
+    "key": "grajaú",
+    "lat": -5.809996,
+    "lon": -46.149984,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Novo Horizonte",
+    "key": "novo horizonte",
+    "lat": -21.459583,
+    "lon": -49.220004,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Iturama",
+    "key": "iturama",
+    "lat": -19.729973,
+    "lon": -50.200021,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jaguarão",
+    "key": "jaguarão",
+    "lat": -32.560042,
+    "lon": -53.369983,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pontes e Lacerda",
+    "key": "pontes e lacerda",
+    "lat": -15.219602,
+    "lon": -59.34998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Almenara",
+    "key": "almenara",
+    "lat": -16.170035,
+    "lon": -40.700007,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tauá",
+    "key": "tauá",
+    "lat": -5.999493,
+    "lon": -40.310031,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Acaraú",
+    "key": "acaraú",
+    "lat": -2.889605,
+    "lon": -40.119991,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ubaitaba",
+    "key": "ubaitaba",
+    "lat": -14.30002,
+    "lon": -39.330013,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Icó",
+    "key": "icó",
+    "lat": -6.400037,
+    "lon": -38.849991,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Iporá",
+    "key": "iporá",
+    "lat": -16.450018,
+    "lon": -51.12999,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Vitória do Palmar",
+    "key": "santa vitória do palmar",
+    "lat": -33.520035,
+    "lon": -53.369983,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Cruz",
+    "key": "santa cruz (brazil)",
+    "lat": -6.219996,
+    "lon": -36.029982,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Óbidos",
+    "key": "óbidos",
+    "lat": -1.910027,
+    "lon": -55.520007,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Niquelândia",
+    "key": "niquelândia",
+    "lat": -14.469622,
+    "lon": -48.470024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Colíder",
+    "key": "colíder",
+    "lat": -10.817287,
+    "lon": -55.45058,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Conceição do Araguaia",
+    "key": "conceição do araguaia",
+    "lat": -8.250002,
+    "lon": -49.290025,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Aripuanã",
+    "key": "aripuanã",
+    "lat": -10.17666,
+    "lon": -59.44387,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Viana",
+    "key": "viana",
+    "lat": -3.209586,
+    "lon": -45.000003,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Miracema",
+    "key": "miracema",
+    "lat": -21.410025,
+    "lon": -42.199967,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ipu",
+    "key": "ipu",
+    "lat": -4.319596,
+    "lon": -40.720057,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Canavieiras",
+    "key": "canavieiras",
+    "lat": -15.640042,
+    "lon": -38.96001,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alenquer",
+    "key": "alenquer",
+    "lat": -1.939586,
+    "lon": -54.79,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sena Madureira",
+    "key": "sena madureira",
+    "lat": -9.070003,
+    "lon": -68.669979,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Granja",
+    "key": "granja",
+    "lat": -3.119514,
+    "lon": -40.839998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pimenta Bueno",
+    "key": "pimenta bueno",
+    "lat": -11.640027,
+    "lon": -61.209995,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lapa",
+    "key": "lapa",
+    "lat": -25.760044,
+    "lon": -49.729998,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "São Lourenço do Sul",
+    "key": "são lourenço do sul",
+    "lat": -31.369986,
+    "lon": -51.980016,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Colinas",
+    "key": "colinas",
+    "lat": -6.039542,
+    "lon": -44.239998,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pires do Rio",
+    "key": "pires do rio",
+    "lat": -17.299527,
+    "lon": -48.279984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rolim de Moura",
+    "key": "rolim de moura",
+    "lat": -11.730203,
+    "lon": -61.780632,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Iguape",
+    "key": "iguape",
+    "lat": -24.720004,
+    "lon": -47.569949,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Jardim",
+    "key": "jardim",
+    "lat": -21.479943,
+    "lon": -56.15002,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Guanhães",
+    "key": "guanhães",
+    "lat": -18.780005,
+    "lon": -42.950025,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Itambé",
+    "key": "itambé",
+    "lat": -15.239601,
+    "lon": -40.629985,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Maria da Vitória",
+    "key": "santa maria da vitória",
+    "lat": -13.389998,
+    "lon": -44.210025,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Quaraí",
+    "key": "quaraí",
+    "lat": -30.38002,
+    "lon": -56.459949,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Nova Cruz",
+    "key": "nova cruz",
+    "lat": -6.469594,
+    "lon": -35.439992,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Maracaju",
+    "key": "maracaju",
+    "lat": -21.610013,
+    "lon": -55.180028,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baturité",
+    "key": "baturité",
+    "lat": -4.329569,
+    "lon": -38.879989,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Itaberaí",
+    "key": "itaberaí",
+    "lat": -16.019967,
+    "lon": -49.809968,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Araçuaí",
+    "key": "araçuaí",
+    "lat": -16.859605,
+    "lon": -42.069949,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Eirunepé",
+    "key": "eirunepé",
+    "lat": -6.660021,
+    "lon": -69.873808,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barras",
+    "key": "barras",
+    "lat": -4.250039,
+    "lon": -42.299987,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Manicoré",
+    "key": "manicoré",
+    "lat": -5.812166,
+    "lon": -61.297484,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Portel",
+    "key": "portel",
+    "lat": -1.949973,
+    "lon": -50.819984,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Itupiranga",
+    "key": "itupiranga",
+    "lat": -5.120012,
+    "lon": -49.300025,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Paracuru",
+    "key": "paracuru",
+    "lat": -3.399548,
+    "lon": -39.040031,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Santa Cruz Cabrália",
+    "key": "santa cruz cabrália",
+    "lat": -16.280002,
+    "lon": -39.02998,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Viseu",
+    "key": "viseu (brazil)",
+    "lat": -1.196479,
+    "lon": -46.140011,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ceres",
+    "key": "ceres",
+    "lat": -15.303318,
+    "lon": -49.6052,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Apodi",
+    "key": "apodi",
+    "lat": -5.650005,
+    "lon": -37.800003,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Vila Bela da Santíssima Trindade",
+    "key": "vila bela da santíssima trindade",
+    "lat": -15.000029,
+    "lon": -59.950021,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Fonte Boa",
+    "key": "fonte boa",
+    "lat": -2.513814,
+    "lon": -66.09161,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "São Gabriel da Cachoeira",
+    "key": "são gabriel da cachoeira",
+    "lat": -0.133236,
+    "lon": -67.083306,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Pedreiras",
+    "key": "pedreiras",
+    "lat": -4.569606,
+    "lon": -44.670023,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Barcelos",
+    "key": "barcelos",
+    "lat": -0.974993,
+    "lon": -62.923896,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Caracaraí",
+    "key": "caracaraí",
+    "lat": 1.816231,
+    "lon": -61.127675,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Alvorada",
+    "key": "alvorada",
+    "lat": -12.470002,
+    "lon": -49.082002,
+    "labelRank": 4,
+    "minLabel": 5.6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Porto Nacional",
+    "key": "porto nacional",
+    "lat": -10.700033,
+    "lon": -48.419949,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Novo Airão",
+    "key": "novo airão",
+    "lat": -2.620785,
+    "lon": -60.943784,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Sinop",
+    "key": "sinop (brazil)",
+    "lat": -11.849989,
+    "lon": -55.459985,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tocantinópolis",
+    "key": "tocantinópolis",
+    "lat": -6.319577,
+    "lon": -47.419984,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Rosário",
+    "key": "rosário city",
+    "lat": -2.940041,
+    "lon": -44.260022,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Tonantins",
+    "key": "tonantins",
+    "lat": -2.872707,
+    "lon": -67.801893,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Xinguara",
+    "key": "xinguara",
+    "lat": -7.100614,
+    "lon": -49.948047,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Amapá",
+    "key": "amapá city",
+    "lat": 2.04999,
+    "lon": -50.800011,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Abunã",
+    "key": "abunã",
+    "lat": -9.695391,
+    "lon": -65.359716,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Juína",
+    "key": "juína",
+    "lat": -11.429764,
+    "lon": -58.765523,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Príncipe da Beira",
+    "key": "príncipe da beira",
+    "lat": -12.416672,
+    "lon": -64.416647,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Uruará",
+    "key": "uruará",
+    "lat": -3.8296,
+    "lon": -54.029994,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  }
+]

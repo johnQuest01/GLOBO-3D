@@ -11,8 +11,8 @@
   {
     "name": "Oriental",
     "key": "eastern",
-    "lat": -13.7617,
-    "lon": 31.8341,
+    "lat": 2.60695,
+    "lon": 37.7915,
     "labelRank": 4,
     "minLabel": 6.6,
     "maxLabel": 11
@@ -47,8 +47,8 @@
   {
     "name": "Ocidental",
     "key": "western",
-    "lat": -2.13156,
-    "lon": 29.2644,
+    "lat": 0.537049,
+    "lon": 34.5306,
     "labelRank": 4,
     "minLabel": 6.6,
     "maxLabel": 11
@@ -65,8 +65,8 @@
   {
     "name": "Central",
     "key": "central",
-    "lat": -21.8775,
-    "lon": 26.6144,
+    "lat": -0.709986,
+    "lon": 36.8463,
     "labelRank": 4,
     "minLabel": 6.6,
     "maxLabel": 11

@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Georgetown",
+    "key": "georgetown",
+    "lat": 6.801974,
+    "lon": -58.167029,
+    "labelRank": 3,
+    "minLabel": 4,
+    "maxLabel": 24
+  },
+  {
+    "name": "New Amsterdam",
+    "key": "new amsterdam",
+    "lat": 6.250018,
+    "lon": -57.529987,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Linden",
+    "key": "linden",
+    "lat": 5.990008,
+    "lon": -58.269968,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Corriverton",
+    "key": "corriverton",
+    "lat": 5.900039,
+    "lon": -57.169984,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Bartica",
+    "key": "bartica",
+    "lat": 6.410421,
+    "lon": -58.630024,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Anna Regina",
+    "key": "anna regina",
+    "lat": 7.270421,
+    "lon": -58.500057,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mabaruma",
+    "key": "mabaruma",
+    "lat": 8.199976,
+    "lon": -59.779979,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Kumaka",
+    "key": "kumaka",
+    "lat": 3.900394,
+    "lon": -58.380013,
+    "labelRank": 7,
+    "minLabel": 6.7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lethem",
+    "key": "lethem",
+    "lat": 3.38996,
+    "lon": -59.80003,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Ituni",
+    "key": "ituni",
+    "lat": 5.430016,
+    "lon": -58.249995,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  }
+]

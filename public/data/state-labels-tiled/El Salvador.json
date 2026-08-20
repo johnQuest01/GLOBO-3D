@@ -74,8 +74,8 @@
   {
     "name": "La Libertad",
     "key": "la libertad",
-    "lat": -8.21334,
-    "lon": -78.2813,
+    "lat": 13.7727,
+    "lon": -89.3593,
     "labelRank": 9,
     "minLabel": 10,
     "maxLabel": 11
@@ -83,8 +83,8 @@
   {
     "name": "La Paz",
     "key": "la paz",
-    "lat": -14.8335,
-    "lon": -68.2128,
+    "lat": 13.4872,
+    "lon": -88.9628,
     "labelRank": 9,
     "minLabel": 10,
     "maxLabel": 11
@@ -119,8 +119,8 @@
   {
     "name": "San Salvador",
     "key": "san salvador",
-    "lat": 24.0513,
-    "lon": -74.4785,
+    "lat": 13.713,
+    "lon": -89.1488,
     "labelRank": 9,
     "minLabel": 10,
     "maxLabel": 11

@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Kingston",
+    "key": "kingston city",
+    "lat": 17.977077,
+    "lon": -76.767434,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  },
+  {
+    "name": "Spanish Town",
+    "key": "spanish town",
+    "lat": 17.983332,
+    "lon": -76.949991,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "May Pen",
+    "key": "may pen",
+    "lat": 17.966615,
+    "lon": -77.233281,
+    "labelRank": 8,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Montego Bay",
+    "key": "montego bay",
+    "lat": 18.466688,
+    "lon": -77.916676,
+    "labelRank": 6,
+    "minLabel": 6,
+    "maxLabel": 24
+  },
+  {
+    "name": "Half Way Tree",
+    "key": "half way tree",
+    "lat": 18.0333,
+    "lon": -76.799997,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Mandeville",
+    "key": "mandeville",
+    "lat": 18.033003,
+    "lon": -77.499999,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Savanna-la-Mar",
+    "key": "savanna-la-mar",
+    "lat": 18.163998,
+    "lon": -77.948001,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Port Antonio",
+    "key": "port antonio",
+    "lat": 18.159003,
+    "lon": -76.380003,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Baía de Saint Ann",
+    "key": "baía de saint ann",
+    "lat": 18.432639,
+    "lon": -77.199524,
+    "labelRank": 10,
+    "minLabel": 7,
+    "maxLabel": 24
+  },
+  {
+    "name": "Port Morant",
+    "key": "port morant",
+    "lat": 17.891001,
+    "lon": -76.329,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Port Maria",
+    "key": "port maria",
+    "lat": 18.377001,
+    "lon": -76.899996,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Falmouth",
+    "key": "falmouth",
+    "lat": 18.479583,
+    "lon": -77.65605,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Lucea",
+    "key": "lucea",
+    "lat": 18.442998,
+    "lon": -78.179004,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  },
+  {
+    "name": "Black River",
+    "key": "black river",
+    "lat": 18.030996,
+    "lon": -77.851997,
+    "labelRank": 10,
+    "minLabel": 9,
+    "maxLabel": 24
+  }
+]

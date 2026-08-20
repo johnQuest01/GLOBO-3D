@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Hamilton",
+    "key": "hamilton (bermuda)",
+    "lat": 32.29419,
+    "lon": -64.783937,
+    "labelRank": 3,
+    "minLabel": 5,
+    "maxLabel": 24
+  }
+]
