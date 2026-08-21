@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 
+import { startAdminSession } from '@/lib/auth/session';
+
 /**
  * Conferência da senha de administrador NO SERVIDOR.
  *
@@ -8,11 +10,12 @@ import { NextResponse } from 'next/server';
  * qualquer pessoa leria o valor abrindo o DevTools — o que é especialmente
  * grave quando a senha é reaproveitada de outro lugar.
  *
- * Isto é um portão de interface, não uma barreira de segurança: alguém
- * determinado ainda pode forjar a resposta no próprio navegador. Serve para
- * esconder o painel de animações de quem não é o dono, e é proporcional ao que
- * ele faz (ligar e desligar animações). Se um dia guardar algo sensível de
- * verdade, troque por sessão assinada.
+ * ATUALIZADO: agora o acerto emite um COOKIE ASSINADO de administrador
+ * (lib/auth/session.ts), e não mais só um `{ok:true}` que o navegador guardava
+ * por conta própria. A troca deixou de ser opcional no dia em que o painel
+ * ganhou poder de banir conta — forjar a resposta no DevTools continuaria
+ * escondendo o painel de animações, mas não produziria o cookie que a rota de
+ * moderação exige.
  */
 
 export const runtime = 'nodejs';
@@ -60,5 +63,11 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: false }, { status: 401 });
   }
 
-  return NextResponse.json({ ok: true });
+  // A partir daqui existe uma sessão assinada de administrador, e não só um
+  // `{ok:true}` que o navegador guardava por conta própria. Era o que o
+  // comentário no topo deste arquivo pedia — e passou a ser necessário no dia
+  // em que o painel ganhou poder de banir conta (/api/admin/ban).
+  const abriu = await startAdminSession(expectedEmail);
+
+  return NextResponse.json({ ok: true, sessao: abriu });
 }

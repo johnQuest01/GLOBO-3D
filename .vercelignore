@@ -20,6 +20,8 @@ public/textures/earth-1-with-borders.webp
 public/textures/earth-2.webp
 public/textures/earth-3.webp
 public/textures/earth-placeholder.webp
+# Servidor de realtime: pacote proprio, deploy separado no Railway.
+realtime
 public/data/states.geojson
 public/data/countries.geojson
 public/data/all-labels.json

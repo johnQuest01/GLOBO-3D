@@ -225,6 +225,10 @@ export const useGlobeStateAndHandlers = () => {
   };
   const handleCloseUserProfile = () => setIsUserProfileOpen(false);
   const handleLogout = () => {
+    // Avisa o servidor para revogar a sessao: sem isto o cookie continuaria
+    // valendo, e "sair" seria so apagar a tela. Nao esperamos a resposta — a
+    // saida da interface e imediata de qualquer forma.
+    void fetch('/api/auth/logout', { method: 'POST' }).catch(() => {});
     localStorage.removeItem('userData');
     setCurrentUser(null);
     setIsUserProfileOpen(false);
@@ -364,6 +368,60 @@ export const useGlobeStateAndHandlers = () => {
     } else {
       router.push('/login');
     }
+  }, [router]);
+
+  /**
+   * A sessao do servidor manda mais que o localStorage.
+   *
+   * O `userData` diz quem esta na tela; ele NAO prova que a pessoa pode estar
+   * aqui — o navegador escreve o que quiser nele. Quem prova e o cookie de
+   * sessao, e e o servidor que decide se ele ainda vale.
+   *
+   * E e assim que um banimento chega ate a tela: o administrador bane, as
+   * sessoes daquela conta sao revogadas, e na proxima checagem o `/api/auth/me`
+   * responde 401 — a pessoa e mandada de volta ao login, em qualquer aparelho
+   * onde estivesse.
+   *
+   * O INTERVALO ACOMPANHA O COOKIE_CACHE. Enquanto o cache assinado vale, a
+   * resposta vem dele sem consultar o banco; so quando ele vence e que o
+   * banimento aparece. Checar mais rapido que o TTL do cache nao adiantaria
+   * nada e so gastaria requisicao.
+   */
+  useEffect(() => {
+    let cancelado = false;
+    let intervaloMs = 60_000;
+
+    const conferir = async () => {
+      try {
+        const resposta = await fetch('/api/auth/me', { cache: 'no-store' });
+
+        // 503 = servidor sem AUTH_SECRET ou sem banco. Nao e "deslogado": nao
+        // mexe em nada, so tenta de novo depois.
+        if (resposta.status === 503) return;
+
+        if (resposta.status === 401) {
+          if (cancelado) return;
+          localStorage.removeItem('userData');
+          setCurrentUser(null);
+          router.push('/login');
+          return;
+        }
+
+        const dados = await resposta.json().catch(() => null);
+        if (dados?.cacheTtlSec) {
+          intervaloMs = Math.max(15_000, Number(dados.cacheTtlSec) * 1000);
+        }
+      } catch {
+        // Rede caiu. Ficar offline nao pode deslogar ninguem.
+      }
+    };
+
+    void conferir();
+    const timer = window.setInterval(() => void conferir(), intervaloMs);
+    return () => {
+      cancelado = true;
+      window.clearInterval(timer);
+    };
   }, [router]);
 
   useEffect(() => {

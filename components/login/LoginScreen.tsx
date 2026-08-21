@@ -11,7 +11,11 @@ interface FormData {
   fullName: string;
   age: string;
   city: string;
+  state: string;
+  country: string;
   email: string;
+  password: string;
+  confirmPassword: string;
   isLogin: boolean;
 }
 
@@ -100,16 +104,40 @@ const IconHome = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
+const IconLock = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={2}
+    stroke="currentColor"
+    className="w-6 h-6 text-gray-400"
+    {...props}
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+    />
+  </svg>
+);
+
 const LoginScreen: React.FC = () => {
   const router = useRouter();
   const [formData, setFormData] = useState<FormData>({
     fullName: '',
     age: '',
     city: '',
+    state: '',
+    country: '',
     email: '',
+    password: '',
+    confirmPassword: '',
     isLogin: false,
   });
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
+  /** Trava o botão enquanto o servidor responde, para não criar conta duplicada no duplo clique. */
+  const [enviando, setEnviando] = useState(false);
 
   // A função de validação está correta, não precisa mudar.
   const validateField = (name: string, value: string): string => {
@@ -135,6 +163,28 @@ const LoginScreen: React.FC = () => {
         else if (!nameRegex.test(value))
           error = 'Apenas letras, espaços e acentos são permitidos.';
         else if (value.length > 170) error = 'Máximo de 170 caracteres.';
+        break;
+      case 'state':
+        if (!value.trim()) error = 'Estado é obrigatório.';
+        else if (!nameRegex.test(value))
+          error = 'Apenas letras, espaços e acentos são permitidos.';
+        else if (value.length > 120) error = 'Máximo de 120 caracteres.';
+        break;
+      case 'country':
+        if (!value.trim()) error = 'País é obrigatório.';
+        else if (!nameRegex.test(value))
+          error = 'Apenas letras, espaços e acentos são permitidos.';
+        else if (value.length > 120) error = 'Máximo de 120 caracteres.';
+        break;
+      case 'password':
+        // O mesmo mínimo que o servidor exige (lib/auth/password.ts). Validar
+        // aqui é conveniência; quem decide é o servidor.
+        if (!value) error = 'Senha é obrigatória.';
+        else if (value.length < 8) error = 'A senha precisa de pelo menos 8 caracteres.';
+        else if (value.length > 200) error = 'Máximo de 200 caracteres.';
+        break;
+      case 'confirmPassword':
+        if (!value) error = 'Repita a senha.';
         break;
       case 'email':
         if (!value.trim()) error = 'Email é obrigatório.';
@@ -172,12 +222,21 @@ const LoginScreen: React.FC = () => {
       }
     }
 
-    if (name === 'fullName' || name === 'city') {
+    if (
+      name === 'fullName' ||
+      name === 'city' ||
+      name === 'state' ||
+      name === 'country'
+    ) {
       newValue = newValue.replace(/[^A-Za-z\s\u00C0-\u017F]/g, '');
       if (newValue.length > 170) {
         newValue = newValue.substring(0, 170);
       }
     }
+
+    // Senha N\u00C3O passa por limpeza nenhuma. Tirar caractere de senha \u00E9 trocar a
+    // senha da pessoa sem avisar: ela digita uma coisa, o campo guarda outra, e
+    // o login falha depois sem explica\u00E7\u00E3o.
 
     setFormData((prev) => ({
       ...prev,
@@ -188,63 +247,127 @@ const LoginScreen: React.FC = () => {
     setErrors((prev) => ({ ...prev, [name]: error }));
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  /**
+   * Cadastro e entrada, agora contra o servidor.
+   *
+   * O QUE MUDOU: antes esta função aceitava qualquer e-mail, inventava
+   * `age: '99'` e `city: 'Internet'`, gravava no localStorage e entrava. Não
+   * havia senha, servidor nem sessão — qualquer pessoa "logava" como qualquer
+   * outra digitando o e-mail dela.
+   *
+   * Agora quem decide é `/api/auth/register` e `/api/auth/login`, que abrem uma
+   * sessão em cookie assinado. O `userData` no localStorage continua sendo
+   * gravado porque o resto do app o usa para saber quem está na tela — mas ele
+   * deixou de ser a prova de que a pessoa entrou. A prova é o cookie, e ele o
+   * navegador não consegue forjar.
+   */
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (enviando) return;
 
     const newErrors: { [key: string]: string } = {};
 
-    // --- 2. USAMOS O NOVO TIPO AQUI ---
-    // Agora 'fieldsToValidate' SÓ pode conter chaves de campos string.
-    let fieldsToValidate: Array<ValidatableFieldKeys> = ['email'];
-
+    let fieldsToValidate: Array<ValidatableFieldKeys> = ['email', 'password'];
     if (!formData.isLogin) {
-      fieldsToValidate = ['fullName', 'age', 'city', 'email'];
+      fieldsToValidate = [
+        'fullName',
+        'age',
+        'city',
+        'state',
+        'country',
+        'email',
+        'password',
+        'confirmPassword',
+      ];
     }
 
-    // --- 3. O ERRO DESAPARECE ---
-    // O TypeScript agora sabe que 'key' SÓ pode ser "fullName", "age", "city", ou "email".
-    // Portanto, ele sabe que 'formData[key]' SEMPRE será uma string.
     fieldsToValidate.forEach((key) => {
       const error = validateField(key, formData[key]);
-      if (error) {
-        newErrors[key] = error;
-      }
+      if (error) newErrors[key] = error;
     });
 
+    if (
+      !formData.isLogin &&
+      !newErrors.confirmPassword &&
+      formData.password !== formData.confirmPassword
+    ) {
+      newErrors.confirmPassword = 'As senhas não coincidem.';
+    }
+
     setErrors(newErrors);
+    if (Object.keys(newErrors).length > 0) return;
 
-    if (Object.keys(newErrors).length === 0) {
-      let userData: UserProfileData;
+    setEnviando(true);
+    try {
+      const rota = formData.isLogin ? '/api/auth/login' : '/api/auth/register';
+      // Leva junto o identificador anônimo que já existia neste navegador: é
+      // o que faz o histórico de navegação da pessoa passar a ter dono, em vez
+      // de começar do zero por ela ter criado conta.
+      const clientId = localStorage.getItem('globoClientId');
 
-      if (formData.isLogin) {
-        console.log('Tentando logar:', { email: formData.email });
-        userData = {
-          email: formData.email,
-          fullName: formData.email.split('@')[0],
-          age: '99',
-          city: 'Internet',
-        };
-      } else {
-        console.log('Tentando cadastrar:', formData);
-        userData = {
-          fullName: formData.fullName,
-          age: formData.age,
-          city: formData.city,
-          email: formData.email,
-        };
+      const corpo = formData.isLogin
+        ? { email: formData.email, password: formData.password }
+        : {
+            email: formData.email,
+            password: formData.password,
+            confirmPassword: formData.confirmPassword,
+            fullName: formData.fullName,
+            city: formData.city,
+            state: formData.state,
+            country: formData.country,
+            clientId,
+          };
+
+      const resposta = await fetch(rota, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(corpo),
+      });
+
+      const dados = await resposta.json().catch(() => ({}));
+
+      if (!resposta.ok) {
+        if (dados?.errors && typeof dados.errors === 'object') {
+          setErrors(dados.errors as { [key: string]: string });
+        } else if (resposta.status === 401) {
+          // Uma mensagem só para e-mail inexistente e senha errada — é o que o
+          // servidor responde, e repetir a distinção aqui a desfaria.
+          setErrors({ general: 'E-mail ou senha incorretos.' });
+        } else if (resposta.status === 403) {
+          setErrors({ general: dados?.message ?? 'Esta conta está suspensa.' });
+        } else if (resposta.status === 503) {
+          setErrors({
+            general:
+              'O cadastro está indisponível agora (servidor sem configuração). Tente mais tarde.',
+          });
+        } else {
+          setErrors({ general: 'Não foi possível concluir. Tente novamente.' });
+        }
+        return;
       }
+
+      const userData: UserProfileData = {
+        fullName:
+          dados?.user?.fullName || formData.fullName || formData.email.split('@')[0],
+        age: formData.age,
+        city: dados?.user?.city || formData.city,
+        email: dados?.user?.email || formData.email,
+        state: dados?.user?.state || formData.state,
+        country: dados?.user?.country || formData.country,
+      };
 
       try {
         localStorage.setItem('userData', JSON.stringify(userData));
-        router.push('/');
       } catch (storageError) {
-        console.error('Falha ao salvar dados no localStorage:', storageError);
-        setErrors({
-          general: 'Não foi possível salvar sua sessão. Tente novamente.',
-        });
+        // A sessão real é o cookie; perder o localStorage não desloga ninguém.
+        console.error('Falha ao guardar o perfil localmente:', storageError);
       }
-    } else {
-      console.log('Erros de validação:', newErrors);
+
+      router.push('/');
+    } catch {
+      setErrors({ general: 'Não foi possível falar com o servidor.' });
+    } finally {
+      setEnviando(false);
     }
   };
 
@@ -346,6 +469,44 @@ ${
                   <p className="text-red-400 text-sm mt-1">{errors.city}</p>
                 )}
               </div>
+
+              <div>
+                <div className="flex items-center border-b border-gray-600 focus-within:border-green-500 transition-colors">
+                  <IconHome />
+                  <input
+                    type="text"
+                    name="state"
+                    placeholder="Estado (ex: Minas Gerais)"
+                    value={formData.state}
+                    onChange={handleChange}
+                    autoComplete="address-level1"
+                    className="flex-1 bg-transparent text-white placeholder-gray-400 py-2 px-3 focus:outline-none text-base sm:text-lg"
+                    maxLength={120}
+                  />
+                </div>
+                {errors.state && (
+                  <p className="text-red-400 text-sm mt-1">{errors.state}</p>
+                )}
+              </div>
+
+              <div>
+                <div className="flex items-center border-b border-gray-600 focus-within:border-green-500 transition-colors">
+                  <IconHome />
+                  <input
+                    type="text"
+                    name="country"
+                    placeholder="País (ex: Brasil)"
+                    value={formData.country}
+                    onChange={handleChange}
+                    autoComplete="country-name"
+                    className="flex-1 bg-transparent text-white placeholder-gray-400 py-2 px-3 focus:outline-none text-base sm:text-lg"
+                    maxLength={120}
+                  />
+                </div>
+                {errors.country && (
+                  <p className="text-red-400 text-sm mt-1">{errors.country}</p>
+                )}
+              </div>
             </>
           )}
 
@@ -369,6 +530,52 @@ ${
             )}
           </div>
 
+          <div>
+            <div className="flex items-center border-b border-gray-600 focus-within:border-green-500 transition-colors">
+              <IconLock />
+              <input
+                type="password"
+                name="password"
+                placeholder="Senha (mínimo 8 caracteres)"
+                value={formData.password}
+                onChange={handleChange}
+                /* `new-password` no cadastro faz o gerenciador de senhas
+                   oferecer uma senha forte; `current-password` na entrada faz
+                   ele preencher a que já existe. Trocar os dois confunde o
+                   gerenciador e a pessoa acaba salvando lixo. */
+                autoComplete={formData.isLogin ? 'current-password' : 'new-password'}
+                className="flex-1 bg-transparent text-white placeholder-gray-400 py-2 px-3 focus:outline-none text-base sm:text-lg"
+                maxLength={200}
+              />
+            </div>
+            {errors.password && (
+              <p className="text-red-400 text-sm mt-1">{errors.password}</p>
+            )}
+          </div>
+
+          {!formData.isLogin && (
+            <div>
+              <div className="flex items-center border-b border-gray-600 focus-within:border-green-500 transition-colors">
+                <IconLock />
+                <input
+                  type="password"
+                  name="confirmPassword"
+                  placeholder="Repita a senha"
+                  value={formData.confirmPassword}
+                  onChange={handleChange}
+                  autoComplete="new-password"
+                  className="flex-1 bg-transparent text-white placeholder-gray-400 py-2 px-3 focus:outline-none text-base sm:text-lg"
+                  maxLength={200}
+                />
+              </div>
+              {errors.confirmPassword && (
+                <p className="text-red-400 text-sm mt-1">
+                  {errors.confirmPassword}
+                </p>
+              )}
+            </div>
+          )}
+
           {errors.general && (
             <p className="text-red-400 text-sm text-center">
               {errors.general}
@@ -377,11 +584,17 @@ ${
 
           <button
             type="submit"
+            disabled={enviando}
             className="w-full py-3 rounded-lg bg-green-600 hover:bg-green-700
 text-white text-lg font-semibold shadow-lg transition-colors
-focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-stone-900 focus:ring-green-500"
+focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-stone-900 focus:ring-green-500
+disabled:opacity-60 disabled:cursor-not-allowed"
           >
-            {formData.isLogin ? 'Entrar' : 'Cadastrar e Entrar'}
+            {enviando
+              ? 'Enviando...'
+              : formData.isLogin
+                ? 'Entrar'
+                : 'Cadastrar e Entrar'}
           </button>
         </form>
 

@@ -2,6 +2,9 @@
 
 # dependencies
 /node_modules
+realtime/node_modules
+realtime/dist
+realtime/.env
 /.pnp
 .pnp.*
 .yarn/*

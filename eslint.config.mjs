@@ -18,6 +18,8 @@ const eslintConfig = [
       "out/**",
       "build/**",
       "next-env.d.ts",
+      // Pacote proprio, com tsconfig e regras de Node. Nao e front.
+      "realtime/**",
     ],
   },
 ];
