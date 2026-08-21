@@ -12,7 +12,8 @@
     "build": "tsc",
     "start": "node dist/src/index.js",
     "typecheck": "tsc --noEmit",
-    "probe": "tsx scripts/probe.ts"
+    "probe": "tsx scripts/probe.ts",
+    "test:store": "tsx scripts/teste-store.ts"
   },
   "dependencies": {
     "@socket.io/redis-adapter": "^8.3.0",
