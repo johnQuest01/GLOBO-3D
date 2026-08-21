@@ -20,8 +20,20 @@ public/textures/earth-1-with-borders.webp
 public/textures/earth-2.webp
 public/textures/earth-3.webp
 public/textures/earth-placeholder.webp
-# Servidor de realtime: pacote proprio, deploy separado no Railway.
-realtime
+# Servidor de realtime: o CODIGO dele nao vai junto com o front (deploy
+# separado no Railway)...
+realtime/src
+realtime/scripts
+realtime/node_modules
+realtime/dist
+realtime/package.json
+realtime/package-lock.json
+realtime/tsconfig.json
+realtime/README.md
+realtime/.env
+# ...mas realtime/shared FICA. E o contrato de eventos, e o front importa dele
+# (`@/realtime/shared/protocol`). Excluir a pasta inteira quebrou o build da
+# imagem do Fly: `COPY . .` nao trazia o arquivo e o import morria.
 public/data/states.geojson
 public/data/countries.geojson
 public/data/all-labels.json
