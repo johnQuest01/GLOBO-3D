@@ -38,7 +38,17 @@ const GlobeMaterialImpl = shaderMaterial(
     varying vec2 vUv;
     varying vec3 vNormal;
     void main() {
-      vUv = uv;
+      // O V VAI INVERTIDO, E ISSO NAO E OPCIONAL.
+      //
+      // Textura comprimida ignora o flipY: o WebGL nao consegue virar as
+      // linhas durante o upload de blocos comprimidos, e o three so avisa e
+      // segue. O WebP anterior era virado no upload; o KTX2 chega como esta
+      // gravado, de cima para baixo (KTXorientation: rd).
+      //
+      // Sem esta linha o planeta aparece espelhado na vertical e sai de
+      // registro com as fronteiras, os rotulos e as luzes — que sao geometria
+      // calculada de latitude e longitude, e nao acompanham a textura.
+      vUv = vec2(uv.x, 1.0 - uv.y);
       vNormal = normalize(mat3(modelMatrix) * normal);
       gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
     }
