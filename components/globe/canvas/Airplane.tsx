@@ -5,6 +5,7 @@ import { useFrame, useThree } from '@react-three/fiber';
 import { useGLTF, Billboard, Text, RoundedBox } from '@react-three/drei';
 import * as THREE from 'three';
 import { labelWorldScale } from '@/app/lib/globeLabels';
+import { makeGreatCircleRoute } from '@/components/lib/greatCircle';
 
 interface AirplaneProps {
   startVec: THREE.Vector3;
@@ -12,7 +13,6 @@ interface AirplaneProps {
   onFlightComplete?: () => void;
 }
 
-const SPHERE_RADIUS = 1.5;
 const FLIGHT_SPEED = 0.05;
 /** Pontos do rastro. A geometria é criada UMA vez com todos eles. */
 const LINE_POINTS = 220;
@@ -55,51 +55,6 @@ const AirplaneModel: React.FC = () => {
 };
 
 useGLTF.preload('/models/airplane.glb');
-
-/**
- * Rota de círculo máximo — a mesma que a aviação comercial voa.
- *
- * Entre dois aeroportos, o caminho mais curto sobre a esfera é o arco de
- * círculo máximo, e é por isso que um voo São Paulo–Tóquio passa perto do
- * Ártico em vez de seguir reto no mapa plano. A interpolação é feita por
- * quaternion (rotação constante em torno do eixo comum), o que dá o arco exato
- * — a curva Catmull-Rom que havia aqui antes passava pelos pontos certos mas
- * saía do círculo máximo no meio do caminho.
- *
- * A altitude segue um seno: sobe, cruza no teto e desce.
- */
-function makeGreatCircleRoute(start: THREE.Vector3, end: THREE.Vector3) {
-  const from = start.clone().normalize();
-  const to = end.clone().normalize();
-
-  // Antípodas não definem um plano: qualquer perpendicular serve de desempate.
-  let axisQuaternion: THREE.Quaternion;
-  if (from.dot(to) < -0.9999) {
-    const fallback =
-      Math.abs(from.y) > 0.9
-        ? new THREE.Vector3(1, 0, 0)
-        : new THREE.Vector3(0, 1, 0);
-    const axis = new THREE.Vector3().crossVectors(from, fallback).normalize();
-    axisQuaternion = new THREE.Quaternion().setFromAxisAngle(axis, Math.PI);
-  } else {
-    axisQuaternion = new THREE.Quaternion().setFromUnitVectors(from, to);
-  }
-
-  // Distância angular: define o teto de cruzeiro, como numa rota real.
-  const angle = from.angleTo(to);
-  const cruiseAltitude = 0.06 + (angle / Math.PI) * 0.30;
-
-  const identity = new THREE.Quaternion();
-  const step = new THREE.Quaternion();
-
-  return function pointAt(t: number, target: THREE.Vector3): THREE.Vector3 {
-    step.slerpQuaternions(identity, axisQuaternion, t);
-    target.copy(from).applyQuaternion(step);
-
-    const altitude = cruiseAltitude * Math.sin(Math.PI * t);
-    return target.multiplyScalar(SPHERE_RADIUS + altitude);
-  };
-}
 
 const Airplane: React.FC<AirplaneProps> = ({
   startVec,

@@ -75,5 +75,18 @@ export function useGeoMapping() {
   );
 
 
-  return { keyToVector3, isLoading };
+  /**
+   * A coordenada crua, sem virar vetor.
+   *
+   * A presença precisa mandar lat/lon para o servidor de realtime, e converter
+   * para Vector3 só para desconverter do outro lado seria trabalho perdido —
+   * e uma chance a mais de os dois caminhos discordarem.
+   */
+  const keyToLatLon = useCallback(
+    (key: string): { lat: number; lon: number } | null =>
+      locationMap.get(key) ?? null,
+    [locationMap],
+  );
+
+  return { keyToVector3, keyToLatLon, isLoading };
 }

@@ -9,6 +9,7 @@ import { usePopupContent } from '@/app/hooks/usePopupContent';
 import { useMessageSystem } from '@/app/hooks/useMessageSystem';
 import { useGeoMapping } from '@/app/hooks/useGeoMapping';
 import { useBehaviorTracker } from '@/app/hooks/useBehaviorTracker';
+import { useLiveRealtime } from '@/app/hooks/useLiveRealtime';
 
 import GlobeScene from './GlobeScene';
 import StatePopup from '@/components/globe/ui/StatePopup';
@@ -29,6 +30,8 @@ import MessageInputPopup from '@/components/globe/ui/MessageInputPopup';
 import GlobeModeToggle, { GlobeMode } from '@/components/globe/ui/GlobeModeToggle';
 import AdminLoginPopup from '@/components/globe/ui/AdminLoginPopup';
 import GlobeClock from '@/components/globe/ui/GlobeClock';
+import { latLonToVector3 } from '@/components/lib/utils';
+import LiveChatPanel from '@/components/globe/ui/LiveChatPanel';
 
 import AppHeader from '@/components/layout/AppHeader';
 import AppFooter from '@/components/layout/AppFooter';
@@ -204,6 +207,32 @@ export default function GlobeCanvas() {
       quaternion: new THREE.Quaternion(),
   });
 
+  /**
+   * Conversa ao vivo: presenca, beacons e o canal P2P.
+   *
+   * Sem NEXT_PUBLIC_REALTIME_URL configurada, o hook nao conecta em nada e
+   * tudo isto simplesmente nao aparece — o globo segue igual ao que era.
+   */
+  const realtime = useLiveRealtime(states.currentUser);
+
+  /**
+   * As duas pontas do arco.
+   *
+   * Saem da lista de presencas, que ja tem a coordenada de cada um: converter
+   * aqui evita guardar a mesma posicao em dois lugares e elas discordarem.
+   */
+  const arco = useMemo(() => {
+    const { presencas, parClientId } = realtime.estado;
+    if (!parClientId) return null;
+    const eu = presencas.find((p) => p.clientId === realtime.meuClientId);
+    const outro = presencas.find((p) => p.clientId === parClientId);
+    if (!eu || !outro) return null;
+    return {
+      de: latLonToVector3(eu.lat, eu.lon, 1.5),
+      para: latLonToVector3(outro.lat, outro.lon, 1.5),
+    };
+  }, [realtime.estado, realtime.meuClientId]);
+
   // --- LÓGICA DE DESTINO INTELIGENTE ---
   const handleSendMessage = (text: string, destination: string) => {
     let targetVector: THREE.Vector3 | null = null;
@@ -285,6 +314,11 @@ export default function GlobeCanvas() {
             flyingMessages={flyingMessages}
             onMessageComplete={removeMessage}
             globeMode={globeMode}
+            beacons={realtime.estado.beacons}
+            meuClientId={realtime.meuClientId}
+            onPedirConexao={realtime.pedirConexao}
+            arco={arco}
+            arcoAtivo={realtime.estado.estadoDaChamada === 'conectado'}
           />
         </Suspense>
       </Canvas>
@@ -363,6 +397,44 @@ export default function GlobeCanvas() {
             className="bottom-[24.5rem] pointer-events-auto"
           />
 
+          {/* Sinal de "quero conversar". So aparece com o realtime configurado
+              (NEXT_PUBLIC_REALTIME_URL) — sem ele, nada disto existe. */}
+          {realtime.estado.ligado && (
+            <button
+              type="button"
+              onClick={() =>
+                realtime.estado.meuBeacon
+                  ? realtime.apagarBeacon()
+                  : realtime.acenderBeacon('quero conversar')
+              }
+              disabled={states.isAnyPopupOpen || !realtime.estado.conectado}
+              title={
+                realtime.estado.meuBeacon
+                  ? 'Apagar meu sinal'
+                  : 'Acender um sinal: quem quiser conversar te encontra'
+              }
+              className={`absolute right-4 z-40 p-4 rounded-full shadow-lg text-white transition-all duration-300 disabled:bg-gray-600 disabled:opacity-50 bottom-[28.5rem] pointer-events-auto ${
+                realtime.estado.meuBeacon
+                  ? 'bg-cyan-500 ring-2 ring-cyan-300 animate-pulse'
+                  : 'bg-cyan-700 hover:bg-cyan-600'
+              } ${states.isMainUiVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                className="w-6 h-6"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M12 18.75a6.75 6.75 0 006.75-6.75M12 18.75A6.75 6.75 0 015.25 12M12 18.75V22m0-19a3 3 0 013 3v4a3 3 0 11-6 0V6a3 3 0 013-3z"
+                />
+              </svg>
+            </button>
+          )}
+
           <ClearPinsButton
             onClick={handlers.handleClearPins}
             isVisible={
@@ -384,7 +456,7 @@ export default function GlobeCanvas() {
                   states.isAdminNewsEnabled
                     ? 'focus:ring-red-500'
                     : 'focus:ring-green-500'
-                } bottom-[32.5rem] pointer-events-auto`}
+                } bottom-[36.5rem] pointer-events-auto`}
               >
                 {states.isAdminNewsEnabled ? 'News: ON' : 'News: OFF'}
               </button>
@@ -392,7 +464,7 @@ export default function GlobeCanvas() {
                 onClick={handlers.handleOpenAdminAnimPopup}
                 disabled={states.isAnyPopupOpen}
                 title="Configurar Animações"
-                className="absolute right-4 z-40 p-4 rounded-full shadow-lg bg-cyan-600 text-white hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-cyan-500 disabled:bg-gray-600 disabled:opacity-50 bottom-[28.5rem] pointer-events-auto"
+                className="absolute right-4 z-40 p-4 rounded-full shadow-lg bg-cyan-600 text-white hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-cyan-500 disabled:bg-gray-600 disabled:opacity-50 bottom-[32.5rem] pointer-events-auto"
               >
                 <SettingsIcon />
               </button>
@@ -531,6 +603,64 @@ export default function GlobeCanvas() {
             </div>
           )}
           
+          {/* Convite recebido. Bloqueia a decisao numa caixa propria: aceitar
+              conversa com estranho nao pode acontecer por clique errado. */}
+          {realtime.estado.convite && (
+            <div className="absolute inset-0 z-[140] flex items-center justify-center bg-black/60 pointer-events-auto">
+              <div className="w-80 max-w-[calc(100vw-2rem)] rounded-2xl bg-stone-900 p-5 ring-1 ring-cyan-700/60 shadow-2xl">
+                <p className="text-white text-base">
+                  <span className="font-semibold text-cyan-300">
+                    {realtime.estado.convite.fromName ?? 'Alguem'}
+                  </span>{' '}
+                  quer conversar com voce.
+                </p>
+                <p className="mt-1 text-xs text-white/50">
+                  A conversa e direta entre voces dois e nao fica gravada.
+                </p>
+                <div className="mt-4 flex gap-2">
+                  <button
+                    type="button"
+                    onClick={realtime.aceitarConvite}
+                    className="flex-1 rounded-lg bg-cyan-600 py-2 font-semibold text-white hover:bg-cyan-500"
+                  >
+                    Aceitar
+                  </button>
+                  <button
+                    type="button"
+                    onClick={realtime.recusarConvite}
+                    className="flex-1 rounded-lg bg-white/10 py-2 text-white/80 hover:bg-white/20"
+                  >
+                    Agora nao
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {realtime.estado.emChamada && (
+            <div className="pointer-events-auto">
+              <LiveChatPanel
+                estado={realtime.estado}
+                onEnviarTexto={realtime.enviarTexto}
+                onEnviarImagem={realtime.enviarImagem}
+                onAlternarVideo={realtime.alternarVideo}
+                onEncerrar={realtime.encerrarChamada}
+                onDenunciar={realtime.denunciar}
+                onBloquear={realtime.bloquear}
+              />
+            </div>
+          )}
+
+          {realtime.estado.aviso && (
+            <button
+              type="button"
+              onClick={realtime.limparAviso}
+              className="absolute bottom-4 left-1/2 -translate-x-1/2 z-[150] rounded-full bg-stone-900/95 px-4 py-2 text-sm text-white ring-1 ring-white/15 shadow-lg pointer-events-auto"
+            >
+              {realtime.estado.aviso}
+            </button>
+          )}
+
           <AdminLoginPopup
             isOpen={isAdminLoginOpen}
             onClose={() => setIsAdminLoginOpen(false)}

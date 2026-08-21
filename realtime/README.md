@@ -74,3 +74,101 @@ Ver [`.env.example`](.env.example). Duas merecem atenção:
   aparecer.
 
 O deploy no Railway e a configuração de STUN/TURN estão na Fase 7.
+
+---
+
+## Deploy no Railway (Fase 7)
+
+Dois serviços no MESMO projeto do Railway, e isso não é detalhe: o servidor
+conversa com o Redis o tempo todo — heartbeat de presença a cada 15s por
+pessoa, mais o pub/sub do adapter a cada evento. No mesmo projeto eles falam
+por rede privada; separados, cada operação atravessa a internet pública com
+TLS e o Redis fica exposto.
+
+### 1. Redis
+
+*New → Database → Redis*. Copie a URL **privada**
+(`redis://default:...@redis.railway.internal:6379`). A pública sai para a
+internet e cobra egress a cada batida de heartbeat.
+
+### 2. O servidor
+
+*New → GitHub Repo* → este repositório, e então:
+
+| campo | valor |
+|---|---|
+| Root Directory | `realtime` |
+| Build Command | `npm ci && npm run build` |
+| Start Command | `npm start` |
+| Health Check Path | `/health` |
+
+Variáveis:
+
+```
+REDIS_URL   = ${{Redis.REDIS_PRIVATE_URL}}   # referência ao outro serviço
+CORS_ORIGIN = https://globo-3d-ten.vercel.app,https://meu-globo.fly.dev
+STUN_URL    = stun:stun.l.google.com:19302
+TURN_URL    = turn:SEU-TURN:3478
+TURN_USER   = ...
+TURN_CRED   = ...
+NODE_ENV    = production
+```
+
+`PORT` o Railway injeta sozinho. **Sem `REDIS_URL`, o servidor recusa subir** —
+cair para memória com duas instâncias faria metade das pessoas ficar invisível
+para a outra metade, sem erro nenhum aparecer.
+
+### 3. O front
+
+Na Vercel e no Fly, aponte para o servidor:
+
+```
+NEXT_PUBLIC_REALTIME_URL = https://SEU-SERVICO.up.railway.app
+```
+
+Sem essa variável, nada de realtime aparece na interface e o globo funciona
+exatamente como antes. É proposital: o recurso é opcional, não um requisito
+para o app subir.
+
+## Por que Railway e não Fly (para ESTE serviço)
+
+O app Next continua no Fly e na Vercel. O que não pode ir para o Fly com a
+configuração atual é o servidor de socket: o `fly.toml` do projeto tem
+
+```toml
+auto_stop_machines = 'stop'
+min_machines_running = 0
+```
+
+A máquina dorme quando fica ociosa. Para o Next isso é ótimo; para Socket.io é
+fatal — dormir **derruba todas as conexões WebSocket** e apaga a presença.
+Seria preciso `min_machines_running = 1`, ou seja, pagar always-on de qualquer
+forma, e ainda por cima com o Redis do outro lado da internet.
+
+## TURN: não é opcional em produção
+
+STUN só descobre o endereço público de cada lado; ele **não** carrega mídia.
+Quando os dois lados estão atrás de NAT que não permite conexão direta — o caso
+comum em rede de celular com CGNAT — é o TURN que retransmite os pacotes.
+
+Sem TURN, o sintoma é um chat que "às vezes não conecta", tipicamente entre dois
+celulares em operadoras diferentes. O servidor avisa no console quando sobe sem
+`TURN_URL`, e o front avisa na tela quando recebe uma lista de ICE vazia.
+
+Opções: coturn próprio (mais barato em volume, exige um servidor com IP
+público) ou serviço gerenciado (Metered, Twilio, Cloudflare Calls).
+
+## O que roda hoje
+
+| fase | estado |
+|---|---|
+| 1 — presença | pronta e verificada com dois clientes |
+| 2 — beacons com TTL | pronta e verificada |
+| 3 — aperto de mão + relay | pronta e verificada |
+| 4 — texto P2P + arco | código pronto; o WebRTC em si só um navegador prova |
+| 5 — imagem e vídeo | código pronto; idem |
+| 6 — limite, bloqueio, denúncia | pronta e verificada |
+| 7 — TURN e deploy | documentado aqui; falta você criar o serviço |
+
+Verificação local: `npm run test:store` (14 checagens da lógica do store) e os
+cenários com `npm run probe` descritos no topo deste arquivo.
