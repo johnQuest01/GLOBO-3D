@@ -25,6 +25,23 @@ export interface SocketData {
   clientId?: string;
   regionKey?: string;
   presence?: Presence;
+  /** Beacon aceso por esta conexão, se houver. Um por pessoa. */
+  beaconId?: string;
+  /**
+   * Em que região o beacon foi aceso.
+   *
+   * Guardado à parte de `presence` de propósito: no `disconnect`, os handlers
+   * rodam na ordem em que foram registrados, e o da presença apaga
+   * `socket.data.presence` antes de o do beacon rodar. Sem esta cópia, a
+   * limpeza não sabia de qual região tirar o sinal e o beacon ficava órfão
+   * até vencer o TTL — visto acontecendo no teste.
+   */
+  beaconRegionKey?: string;
+  /**
+   * Com quem esta conexão foi APRESENTADA. É esta lista que autoriza a
+   * sinalização — ver signaling.ts.
+   */
+  peers?: Set<string>;
 }
 
 export type RealtimeServer = Server<
@@ -85,20 +102,26 @@ export function registerPresence(
     socket.data.presence = presence;
 
     await store.add(socket.id, presence);
+    // De clientId para esta conexão: é assim que um pedido de conexão
+    // endereçado à PESSOA encontra a aba aberta dela agora.
+    await store.bindClient(presence.clientId, socket.id);
     await socket.join(presence.regionKey);
 
     // O snapshot vai só para quem entrou; o update vai para os outros. Se o
     // update fosse para a sala inteira incluindo o remetente, quem entra se
     // veria entrando.
-    const presences = await store.listRegion(presence.regionKey);
-    socket.emit('presence:snapshot', { presences, beacons: [] });
+    const [presences, beacons] = await Promise.all([
+      store.listRegion(presence.regionKey),
+      store.listBeacons(presence.regionKey),
+    ]);
+    socket.emit('presence:snapshot', { presences, beacons });
     socket.to(presence.regionKey).emit('presence:update', {
       kind: 'join',
       presence,
     });
 
     log(
-      `join   ${socket.id} clientId=${presence.clientId} regiao=${presence.regionKey} (${presences.length} na regiao)`,
+      `join   ${socket.id} clientId=${presence.clientId} regiao=${presence.regionKey} (${presences.length} na regiao, ${beacons.length} beacon(s))`,
     );
   });
 
@@ -151,6 +174,7 @@ async function sairDaRegiao(
   socket.data.regionKey = undefined;
   socket.data.presence = undefined;
 
+  if (presence.clientId) await store.unbindClient(presence.clientId, socket.id);
   await store.remove(socket.id, regionKey);
   await socket.leave(regionKey);
   io.to(regionKey).emit('presence:update', { kind: 'leave', presence });

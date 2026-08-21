@@ -22,7 +22,11 @@ import { Server } from 'socket.io';
 
 import type { ClientToServer, ServerToClient } from '../shared/protocol.js';
 import { HEARTBEAT_INTERVAL_MS, PRESENCE_TTL_SEC } from '../shared/protocol.js';
+import { registerBeacons } from './beacons.js';
+import { avisarSeFaltaTurn, registerMatchmaking } from './matchmaking.js';
 import { registerPresence, type RealtimeServer, type SocketData } from './presence.js';
+import { criarLimitador, registerSafety } from './safety.js';
+import { registerSignaling } from './signaling.js';
 import { createMemoryStore, createRedisStore, type PresenceStore } from './store.js';
 
 const PORT = Number(process.env.PORT ?? 8080);
@@ -105,15 +109,25 @@ async function main() {
     log('adapter Redis ligado');
   }
 
+  // Um limitador para o processo inteiro: os baldes são por conexão, mas o
+  // mapa que os guarda é compartilhado.
+  const limitador = criarLimitador();
+
   io.on('connection', (socket) => {
     log(`conn   ${socket.id}`);
     registerPresence(io, socket, store, log);
+    registerBeacons(io, socket, store, limitador, log);
+    registerMatchmaking(io, socket, store, limitador, log);
+    registerSignaling(io, socket, log);
+    registerSafety(io, socket, store, limitador, log);
+    socket.on('disconnect', () => limitador.esquecer(socket.id));
   });
 
   httpServer.listen(PORT, () => {
     log(`realtime ouvindo em :${PORT}`);
     log(`cors: ${CORS_ORIGIN.length > 0 ? CORS_ORIGIN.join(', ') : '\x1b[33mliberado (defina CORS_ORIGIN)\x1b[0m'}`);
     log(`heartbeat ${HEARTBEAT_INTERVAL_MS / 1000}s, presenca expira em ${PRESENCE_TTL_SEC}s`);
+    avisarSeFaltaTurn(log);
   });
 
   // --- Encerramento limpo --------------------------------------------------

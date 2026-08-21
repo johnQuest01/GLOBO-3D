@@ -29,6 +29,7 @@ const avancarSegundos = (s: number) => {
 function fakeRedis() {
   const hashes = new Map<string, { valor: Record<string, string>; expiraEm: number | null }>();
   const sets = new Map<string, Set<string>>();
+  const strings = new Map<string, { valor: string; expiraEm: number | null }>();
 
   const vivo = (k: string) => {
     const e = hashes.get(k);
@@ -71,6 +72,22 @@ function fakeRedis() {
     },
     async hgetall(key: string) {
       return vivo(key) ? { ...hashes.get(key)!.valor } : {};
+    },
+    async set(key: string, value: string, mode?: 'EX', ttl?: number) {
+      strings.set(key, {
+        valor: value,
+        expiraEm: mode === 'EX' && ttl ? agora + ttl * 1000 : null,
+      });
+      return 'OK';
+    },
+    async get(key: string) {
+      const e = strings.get(key);
+      if (!e) return null;
+      if (e.expiraEm !== null && e.expiraEm <= agora) {
+        strings.delete(key);
+        return null;
+      }
+      return e.valor;
     },
     async quit() {
       return 'OK';
