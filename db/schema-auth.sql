@@ -86,3 +86,26 @@ create index if not exists policy_reports_target_idx
 create or replace function purge_expired_sessions() returns void as $$
   delete from sessions where expires_at < now() - interval '7 days';
 $$ language sql;
+
+-- Tentativas de entrada, para o limite de taxa.
+--
+-- No banco, e nao em memoria, porque funcao serverless nao tem memoria
+-- compartilhada: cada instancia teria o proprio contador e o limite viraria
+-- decoracao. Uma escrita por tentativa e barato perto do que o scrypt ja custa.
+create table if not exists login_attempts (
+  id          bigserial primary key,
+  email       text,
+  ip          text,
+  ok          boolean not null,
+  created_at  timestamptz not null default now()
+);
+
+create index if not exists login_attempts_email_idx
+  on login_attempts (email, created_at desc);
+create index if not exists login_attempts_ip_idx
+  on login_attempts (ip, created_at desc);
+
+-- Tentativa antiga nao serve para nada: o limite so olha a janela recente.
+create or replace function purge_old_login_attempts() returns void as $$
+  delete from login_attempts where created_at < now() - interval '1 day';
+$$ language sql;

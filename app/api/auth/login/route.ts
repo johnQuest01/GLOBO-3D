@@ -3,7 +3,17 @@ import { NextResponse } from 'next/server';
 import { getSecret } from '@/lib/auth/cookies';
 import { hashPassword, verifyPassword } from '@/lib/auth/password';
 import { startSession } from '@/lib/auth/session';
-import { findUserByEmail, isAuthDbEnabled, markLogin } from '@/lib/db/auth';
+import {
+  clearLoginFailures,
+  findUserByEmail,
+  isAuthDbEnabled,
+  markLogin,
+  RATE_MAX_PER_EMAIL,
+  RATE_MAX_PER_IP,
+  RATE_WINDOW_MIN,
+  recentLoginFailures,
+  recordLoginAttempt,
+} from '@/lib/db/auth';
 
 export const runtime = 'nodejs';
 
@@ -49,15 +59,35 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: false, reason: 'credenciais' }, { status: 401 });
   }
 
+  // O IP vem do cabeçalho que o proxy escreve. Dá para forjar, e é por isso
+  // que ele NÃO é a única defesa: o teto por conta continua valendo mesmo que
+  // o atacante troque de IP a cada tentativa.
+  const ip = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ?? null;
+
+  const falhas = await recentLoginFailures(email, ip);
+  if (falhas.porEmail >= RATE_MAX_PER_EMAIL || falhas.porIp >= RATE_MAX_PER_IP) {
+    const segundos = RATE_WINDOW_MIN * 60;
+    return NextResponse.json(
+      {
+        ok: false,
+        reason: 'muitas-tentativas',
+        message: `Muitas tentativas. Tente de novo em ${RATE_WINDOW_MIN} minutos.`,
+      },
+      { status: 429, headers: { 'retry-after': String(segundos) } },
+    );
+  }
+
   const user = await findUserByEmail(email);
 
   if (!user) {
     await hashPassword(HASH_FALSO_BASE);
+    await recordLoginAttempt(email, ip, false);
     return NextResponse.json({ ok: false, reason: 'credenciais' }, { status: 401 });
   }
 
   const senhaOk = await verifyPassword(password, user.passwordHash);
   if (!senhaOk) {
+    await recordLoginAttempt(email, ip, false);
     return NextResponse.json({ ok: false, reason: 'credenciais' }, { status: 401 });
   }
 
@@ -79,6 +109,7 @@ export async function POST(request: Request) {
   }
 
   await markLogin(user.id);
+  await clearLoginFailures(email);
 
   return NextResponse.json({
     ok: true,

@@ -6,6 +6,7 @@ import Image from 'next/image';
 import LoginBackground from './LoginBackground'; // Importa o fundo 3D
 import { useRouter } from 'next/navigation';
 import { UserProfileData } from '@/app/types/user';
+import LocationFields from './LocationFields';
 
 interface FormData {
   fullName: string;
@@ -86,23 +87,6 @@ const IconCake = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-const IconHome = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth={2}
-    stroke="currentColor"
-    className="w-6 h-6 text-gray-400"
-    {...props}
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-    />
-  </svg>
-);
 
 const IconLock = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -142,7 +126,10 @@ const LoginScreen: React.FC = () => {
   // A função de validação está correta, não precisa mudar.
   const validateField = (name: string, value: string): string => {
     let error = '';
-    const nameRegex = /^[A-Za-z\s\u00C0-\u017F]+$/;
+    // Hifen, apostrofo e ponto entram porque nome de lugar tem: N'Djamena,
+    // Saint-Louis, Sant'Ana. A regra antiga os apagava, e a pessoa escolhia da
+    // lista um nome que o campo entao corrompia.
+    const nameRegex = /^[A-Za-z\s\u00C0-\u017F'\u2019.-]+$/;
 
     switch (name) {
       case 'fullName':
@@ -228,7 +215,7 @@ const LoginScreen: React.FC = () => {
       name === 'state' ||
       name === 'country'
     ) {
-      newValue = newValue.replace(/[^A-Za-z\s\u00C0-\u017F]/g, '');
+      newValue = newValue.replace(/[^A-Za-z\s\u00C0-\u017F'\u2019.-]/g, '');
       if (newValue.length > 170) {
         newValue = newValue.substring(0, 170);
       }
@@ -452,61 +439,13 @@ ${
                 )}
               </div>
 
-              <div>
-                <div className="flex items-center border-b border-gray-600 focus-within:border-green-500 transition-colors">
-                  <IconHome />
-                  <input
-                    type="text"
-                    name="city"
-                    placeholder="Cidade onde mora"
-                    value={formData.city}
-                    onChange={handleChange}
-                    className="flex-1 bg-transparent text-white placeholder-gray-400 py-2 px-3 focus:outline-none text-base sm:text-lg"
-                    maxLength={170}
-                  />
-                </div>
-                {errors.city && (
-                  <p className="text-red-400 text-sm mt-1">{errors.city}</p>
-                )}
-              </div>
-
-              <div>
-                <div className="flex items-center border-b border-gray-600 focus-within:border-green-500 transition-colors">
-                  <IconHome />
-                  <input
-                    type="text"
-                    name="state"
-                    placeholder="Estado (ex: Minas Gerais)"
-                    value={formData.state}
-                    onChange={handleChange}
-                    autoComplete="address-level1"
-                    className="flex-1 bg-transparent text-white placeholder-gray-400 py-2 px-3 focus:outline-none text-base sm:text-lg"
-                    maxLength={120}
-                  />
-                </div>
-                {errors.state && (
-                  <p className="text-red-400 text-sm mt-1">{errors.state}</p>
-                )}
-              </div>
-
-              <div>
-                <div className="flex items-center border-b border-gray-600 focus-within:border-green-500 transition-colors">
-                  <IconHome />
-                  <input
-                    type="text"
-                    name="country"
-                    placeholder="País (ex: Brasil)"
-                    value={formData.country}
-                    onChange={handleChange}
-                    autoComplete="country-name"
-                    className="flex-1 bg-transparent text-white placeholder-gray-400 py-2 px-3 focus:outline-none text-base sm:text-lg"
-                    maxLength={120}
-                  />
-                </div>
-                {errors.country && (
-                  <p className="text-red-400 text-sm mt-1">{errors.country}</p>
-                )}
-              </div>
+              <LocationFields
+                country={formData.country}
+                state={formData.state}
+                city={formData.city}
+                onChange={handleChange}
+                errors={errors}
+              />
             </>
           )}
 

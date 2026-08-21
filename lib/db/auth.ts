@@ -176,6 +176,65 @@ export async function revokeSession(token: string): Promise<void> {
 }
 
 // ---------------------------------------------------------------------------
+// Limite de tentativas
+// ---------------------------------------------------------------------------
+
+/** Janela e tetos. Curtos o bastante para não punir quem só errou a senha. */
+export const RATE_WINDOW_MIN = 15;
+/** Por conta: protege UMA pessoa de ter a senha adivinhada. */
+export const RATE_MAX_PER_EMAIL = 8;
+/** Por origem: protege TODAS as contas de alguém varrendo a lista. */
+export const RATE_MAX_PER_IP = 30;
+
+export async function recordLoginAttempt(
+  email: string,
+  ip: string | null,
+  ok: boolean,
+): Promise<void> {
+  if (!sql) return;
+  await sql`
+    insert into login_attempts (email, ip, ok)
+    values (${normalizeEmail(email)}, ${ip}, ${ok})
+  `;
+}
+
+/**
+ * Quantas falhas recentes existem para esta conta e para esta origem.
+ *
+ * Só falhas contam: quem entra certo não gasta o próprio limite. E a contagem
+ * é feita numa consulta só, com dois `count` filtrados — duas idas ao banco
+ * dariam ao atacante uma janela entre elas.
+ */
+export async function recentLoginFailures(
+  email: string,
+  ip: string | null,
+): Promise<{ porEmail: number; porIp: number }> {
+  if (!sql) return { porEmail: 0, porIp: 0 };
+  const rows = (await sql`
+    select
+      count(*) filter (where email = ${normalizeEmail(email)})::int as por_email,
+      count(*) filter (where ip = ${ip} and ${ip}::text is not null)::int as por_ip
+    from login_attempts
+    where ok = false
+      and created_at > now() - ${RATE_WINDOW_MIN} * interval '1 minute'
+  `) as Record<string, unknown>[];
+
+  return {
+    porEmail: Number(rows[0]?.por_email ?? 0),
+    porIp: Number(rows[0]?.por_ip ?? 0),
+  };
+}
+
+/** Entrou: o histórico de falhas daquela conta deixa de pesar. */
+export async function clearLoginFailures(email: string): Promise<void> {
+  if (!sql) return;
+  await sql`
+    delete from login_attempts
+    where email = ${normalizeEmail(email)} and ok = false
+  `;
+}
+
+// ---------------------------------------------------------------------------
 // Política de uso
 // ---------------------------------------------------------------------------
 
