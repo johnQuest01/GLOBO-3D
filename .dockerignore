@@ -8,7 +8,16 @@ public/textures/earth-1-with-borders.png
 public/textures/earth-2.png
 public/textures/earth-3.png
 public/textures/earth-4.png
-public/textures/*.ktx2
+# Copias da fonte em KTX2, de uma tentativa anterior. A textura que o globo
+# realmente usa e a earth-day-*.ktx2, que NAO pode entrar nesta lista.
+public/textures/earth-1-with-borders.ktx2
+public/textures/earth-2.ktx2
+public/textures/earth-3.ktx2
+public/textures/earth-placeholder.ktx2
+# WebP da escada antiga de LOD, substituida por uma textura unica com mipmaps.
+public/textures/earth-day-2k.webp
+public/textures/earth-day-4k.webp
+public/textures/earth-day-8k.webp
 public/textures/earth-1-with-borders.webp
 public/textures/earth-2.webp
 public/textures/earth-3.webp
@@ -16,4 +25,7 @@ public/textures/earth-placeholder.webp
 public/data/states.geojson
 public/data/countries.geojson
 public/data/all-labels.json
+# Fonte das cidades (19 MB) e a lista curada: as duas viram city-labels-tiled/.
+public/data/ne_10m_populated_places.geojson
+public/data/city-labels.json
 public/textures/debug-night.webp
