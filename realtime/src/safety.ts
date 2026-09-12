@@ -39,13 +39,28 @@ export interface LimiteConfig {
 /**
  * Os números.
  *
- * Beacon é mais raro que pedido de conexão: acender é dizer "estou aqui,
- * quero conversar", o que ninguém precisa fazer dez vezes por minuto. Já
- * pedido de conexão pode acontecer em sequência legítima — a pessoa tenta
- * três beacons até alguém responder.
+ * Pedido de conexão pode acontecer em sequência legítima — a pessoa tenta
+ * três vezes até alguém responder.
  */
 export const LIMITES: Record<string, LimiteConfig> = {
-  'beacon:raise': { capacidade: 3, recargaMs: 5 * 60_000 },
+  /*
+   * O SINAL É UM INTERRUPTOR, e o limite antigo (3 por cinco minutos) tratava
+   * ele como se fosse um megafone.
+   *
+   * O raciocínio de antes era "ninguém precisa acender dez vezes por minuto",
+   * e ele ignorava o desenho do próprio beacon: o `beaconId` é derivado do
+   * clientId, então acender de novo ESCREVE NA MESMA CHAVE. Não existe encher
+   * o mapa de sinais — a pessoa tem um, e só. O que o limite defende, então,
+   * não é o mapa: é o volume de escrita.
+   *
+   * E o botão da interface liga e desliga. Apagar e acender de novo gastava
+   * uma ficha; três toques e a pessoa ficava trancada fora do PRÓPRIO sinal
+   * por minutos, lendo "espere 73s". Foi exatamente o que aconteceu no
+   * primeiro uso real.
+   *
+   * O teto novo segura script e não alcança dedo humano.
+   */
+  'beacon:raise': { capacidade: 10, recargaMs: 60_000 },
   'connect:request': { capacidade: 5, recargaMs: 60_000 },
   // Busca é barata e legítima em rajada — a pessoa erra o nome e tenta de
   // novo. O teto existe só para impedir varredura do diretório inteiro.
