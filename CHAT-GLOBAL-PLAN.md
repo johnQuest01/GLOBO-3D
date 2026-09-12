@@ -237,15 +237,98 @@ looks private and is not. It gets its own phase, its own review.
 
 ### Phase H — Infrastructure `[~]`
 
+#### The shopping list
+
+Everything this project needs to be online, and what each piece is for. Prices
+are orders of magnitude as of this writing — check before signing anything.
+
+| piece | what it does | where | ~cost/month |
+|---|---|---|---|
+| Next app | the globe, the login, the API routes | **Vercel** (already linked) or **Fly** (Dockerfile + fly.toml already here) | $0 Hobby |
+| Postgres | accounts, nicknames, behaviour | **Neon** (already) | $0 free tier |
+| Realtime server | presence, the magnifier's directory, the WebRTC handshake | **Railway** (or Fly/Render) — must be always-on | ~$5 |
+| Redis | shares presence between server instances + Socket.io adapter | **Railway Redis**, same project (private network) | ~$5-10 |
+| STUN | tells each side its public address | Google's public server | $0 |
+| **TURN** | **relays the media when NAT won't allow a direct link** | coturn on a small VPS, or managed (Metered/Twilio/Cloudflare) | VPS ~$5, or per GB |
+| Domain | | any registrar | ~$1 |
+
+**Nothing above stores a message**, and that is the point: no S3, no R2, no CDN
+for media, no message table, no backup of conversations, no moderation
+pipeline for content the server cannot read. A chat product normally spends
+most of its infrastructure budget on exactly those. This one does not have
+them, because the bytes never reach a server.
+
+#### The one that scales with usage: TURN
+
+STUN is free and does not carry media. TURN does, and it is the only line here
+that grows with how much people talk:
+
+- Text and photos are negligible (a photo is a few hundred KB, once).
+- Video is what costs. One relayed video call at ~1 Mbps burns roughly
+  **450 MB per hour**. At managed-TURN prices (~$0.40/GB) that is ~$0.18/hour
+  of relayed video; on a $5 VPS with a few TB of traffic included, it is
+  effectively flat until you are big.
+- Only **part** of the calls need the relay at all — the ones where neither
+  side can be reached directly, typically two phones on mobile networks
+  (CGNAT). Plan for something like a fifth to a third of pairs.
+
+Start with coturn on the cheapest VPS. Move to managed only if running it
+becomes annoying — not before.
+
+#### What would change with Phase G (the offline mailbox)
+
+- Storage for the ciphertext (small, and it deletes itself on delivery)
+- **Web Push** (VAPID keys, free) so the phone wakes up
+- FCM/APNs only if a native app ever exists
+
+#### What this project does NOT need
+
+Kubernetes, microservices, a message broker, a media server (SFU), a CDN for
+user content, an image pipeline. If any of those shows up in a plan, something
+went wrong in the reasoning — write down which problem it solves first.
+
+#### Order of operations to go live
+
+1. **GitHub** — the credentials on this machine are expired (`gh auth status`
+   says both tokens are invalid). Re-authenticate, then push the branch.
+2. **Vercel** — `.vercel/project.json` points at project `globo-3d`
+   (`prj_A25zj1…`), and that project **no longer exists** on the account: the
+   API answers 404 and the team only has `atendente-client` and
+   `este-plataforma-em-desenvolvimento`. So it has to be imported again from
+   the GitHub repo. Environment variables it needs: `DATABASE_URL`,
+   `AUTH_SECRET`, optionally `ADMIN_EMAIL` / `ADMIN_PASSWORD` /
+   `COOKIE_CACHE_TTL_SEC`.
+3. **Railway** — Redis first, then the realtime service with Root Directory
+   `realtime`, `REDIS_URL` pointing at the *private* URL, and `CORS_ORIGIN`
+   set to the Vercel domain. Full walkthrough in `realtime/README.md`.
+4. **Back to Vercel** — set `NEXT_PUBLIC_REALTIME_URL` to the Railway URL and
+   redeploy. Until this exists, the globe works exactly as before and no
+   realtime feature appears. That is deliberate.
+5. **TURN** — before inviting real people on phones, not after.
+
+#### Checklist
+
 - [x] Realtime server documented for Railway (`realtime/README.md`)
 - [x] Local loop working end to end: the `realtime` process (in-memory store)
       plus `NEXT_PUBLIC_REALTIME_URL=http://localhost:8080` in `.env.local`
 - [x] `db/schema-nickname.sql` applied to the Neon database
-- [ ] Redis service created on Railway (Bruno, one click)
-- [ ] `NEXT_PUBLIC_REALTIME_URL` set on Vercel and Fly
-- [ ] TURN server (coturn or Metered/Twilio/Cloudflare) — **required**, not
-      optional: without it mobile-to-mobile pairs silently fail
+- [ ] GitHub credentials renewed and the branch pushed
+- [ ] Vercel project re-imported, env vars set
+- [ ] Redis service created on Railway
+- [ ] Realtime service deployed, `CORS_ORIGIN` locked to the real domain
+- [ ] `NEXT_PUBLIC_REALTIME_URL` set on Vercel (and on Fly, if it stays)
+- [ ] TURN server — **required**, not optional: without it mobile-to-mobile
+      pairs silently fail
 - [ ] Load check: 100 simultaneous presences on one instance
+
+#### A note on Fly, which is also configured here
+
+`fly.toml` has `auto_stop_machines = 'stop'` and `min_machines_running = 0`.
+For the Next app that is ideal — it sleeps when nobody is around. For the
+socket server it would be fatal: sleeping drops every open WebSocket and wipes
+presence. If the realtime server ever moves to Fly, it needs its own app with
+`min_machines_running = 1`, which is the same always-on bill as Railway, with
+the Redis one internet away instead of on the private network.
 
 ---
 
