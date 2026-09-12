@@ -32,8 +32,15 @@ interface Props {
   onVerQuemEstaOnline: (nicknames: string[]) => void;
   /** Leva o globo até a pessoa (e marca o ponto). */
   onVerNoGlobo: (pessoa: PessoaEncontrada) => void;
-  /** Pede conversa. Só faz sentido para quem está online. */
-  onConectar: (pessoa: PessoaEncontrada) => void;
+  /**
+   * Abre a conversa.
+   *
+   * Vale para quem está offline também — e essa é a mudança inteira desta
+   * fase: a mensagem fica guardada no servidor até a pessoa voltar. Enquanto a
+   * conversa era ponta a ponta, um botão assim falharia sempre com a outra aba
+   * fechada, e por isso ele ficava desabilitado.
+   */
+  onConversar: (pessoa: PessoaEncontrada) => void;
 }
 
 const ESPERA_MS = 300;
@@ -48,7 +55,7 @@ const PeopleSearchPanel: FC<Props> = ({
   presencaPorNickname,
   onVerQuemEstaOnline,
   onVerNoGlobo,
-  onConectar,
+  onConversar,
 }) => {
   const [termo, setTermo] = useState('');
   const [resultados, setResultados] = useState<
@@ -230,20 +237,17 @@ const PeopleSearchPanel: FC<Props> = ({
                   Ver no globo
                 </button>
 
-                {/*
-                  "Conectar" só aparece para quem está online, e isso não é
-                  detalhe de interface: a conversa é ponta a ponta, então não
-                  existe a quem entregar nada se a outra aba estiver fechada.
-                  Um botão que falharia sempre é pior que botão nenhum.
-                */}
                 <button
                   type="button"
-                  disabled={!online}
-                  onClick={() => onConectar(pessoa)}
-                  title={online ? 'Pedir conversa' : 'Essa pessoa não está online agora'}
-                  className="rounded-full bg-cyan-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-cyan-500 disabled:cursor-not-allowed disabled:bg-white/10 disabled:text-white/30"
+                  onClick={() => onConversar(pessoa)}
+                  title={
+                    online
+                      ? 'Conversar agora'
+                      : 'Conversar — ela recebe quando voltar'
+                  }
+                  className="rounded-full bg-cyan-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-cyan-500"
                 >
-                  Conectar
+                  Conversar
                 </button>
               </div>
             );
@@ -251,7 +255,7 @@ const PeopleSearchPanel: FC<Props> = ({
         </div>
 
         <p className="border-t border-white/10 px-4 py-2 text-center text-[11px] text-white/35">
-          A conversa é direta entre os dois navegadores. Nada fica gravado.
+          Quem está offline recebe quando voltar.
         </p>
       </div>
     </div>

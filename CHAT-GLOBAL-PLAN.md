@@ -275,36 +275,66 @@ Two things found while doing it:
   left open overnight would come back **anonymous** — gone from the search,
   with nothing on screen saying so.
 
-#### G1 — The mailbox itself
+#### G1 — The mailbox itself `[x]`
 
-- [ ] `db/schema-mailbox.sql`: table `envelopes` — `msg_id` (from the sender,
+- [x] `db/schema-mailbox.sql`: table `envelopes` — `msg_id` (from the sender,
       for dedupe), from/to user, `to_device` (null today, exists for E2E),
       `kind`, `payload` (opaque bytes), `enc` (`srv-v1` now, `e2e-v1` later),
-      timestamps, `expires_at`
-- [ ] Payload encrypted at rest with a server key (`MESSAGE_KEY`): a database
-      dump should not be a transcript. Without the key, the mailbox stays off —
-      same pattern as the rest of the project.
-- [ ] `realtime/src/mailbox.ts`: `msg:send` → persist → deliver if online;
-      `msg:sync` on connect for what piled up; `msg:ack` deletes the envelope;
-      block list checked at enqueue; rate limit per sender
-- [ ] TTL sweep for what was never delivered
+      timestamps, `expires_at`; plus `user_blocks` (account-level, because the
+      old Redis block is per browser and does not survive a new device)
+- [x] Payload encrypted at rest with a server key (`MESSAGE_KEY`, AES-256-GCM):
+      a database dump should not be a transcript. Without the key the mailbox
+      stays off and says so on boot — same pattern as the rest of the project.
+- [x] `realtime/src/mailbox.ts`: `msg:send` → persist → deliver if online;
+      `msg:sync` for what piled up; `msg:ack` deletes the envelope and tells
+      the sender; block checked at enqueue; rate limit per sender
+- [x] TTL of 30 days + `purge_expired_envelopes()` for what nobody ever came
+      to fetch
 
-#### G2 — The client
+**Tested (2026-09-12, end to end):** with the recipient's tab **closed**, the
+message was stored — `anateste_mg -> yuki_tokyo | texto | srv-v1 | 65 bytes
+cifrados` (37 bytes of payload plus IV and tag, so the encryption at rest is
+really happening). Reopening her browser: `sync: 1 guardada(s)` → `ack: 1
+entregue(s)` → **0 envelopes left in the table**. The server keeps it only
+until it is delivered, exactly as promised.
 
-- [ ] Messages travel over the socket, not the DataChannel
-- [ ] A conversation exists without a live connection: opening a chat no longer
-      requires the other person to be online
-- [ ] ✓ = the server took it, ✓✓ = delivered to the other device, ✓✓ blue =
-      read (read receipt is end to end, inside the payload)
-- [ ] The "nothing is stored" notice is replaced by what is actually true
+#### G2 — The client `[x]`
 
-#### G3 — Media offline
+- [x] `app/hooks/useConversas.ts`: conversations over the socket, addressed by
+      nickname. Separate from `useLiveRealtime` on purpose — presence and calls
+      die when the connection dies; a conversation must not.
+- [x] History lives in `localStorage` on the device. **This is required, not
+      polish:** the server deletes on delivery, so without it, reading a
+      message and refreshing the page would lose it forever.
+- [x] A conversation opens with the other person offline
+- [x] ✓ = the server took it, ✓✓ = the other device has it, ✓✓ cyan = read
+- [x] `ConversasPanel` + an unread badge on the globe. Without it the feature
+      was invisible: the message arrived, was stored, and waited for the person
+      to happen to search the sender in the magnifier.
+- [x] The "nothing is stored" notice replaced by what is actually true
+
+**Tested:** two accounts in two browsers — sent while online (delivered and
+read, cyan ✓✓ verified by computed colour, not by eyeballing a screenshot);
+sent while offline (badge showed **2** the moment she came back); history
+survived a full page reload; date separator correct.
+
+**Known gap, deliberate:** `localStorage` keeps **text only**. Photo and audio
+stay in the tab's memory and vanish on reload — a couple of dozen base64 photos
+would blow the ~5 MB quota and take the text history down with them. IndexedDB
+is the fix, and it belongs to G3 along with the rest of the media work.
+
+#### G3 — Media offline `[ ]`
+
+Photo and audio still travel only over the live P2P channel: they do **not**
+go through the mailbox yet, so they cannot reach someone who is offline.
 
 - [ ] Photo resized client-side (~1280px) and audio capped, so an offline photo
       is a few hundred KB and not eight megabytes
-- [ ] Stored as bytes with a TTL. If volume grows, move to object storage
-      (R2/S3) — the envelope already points at an opaque payload, so only the
-      storage layer changes
+- [ ] Sent through `msg:send` like text (the envelope already carries `kind`)
+- [ ] History moved from `localStorage` to **IndexedDB**, which stores Blobs
+      natively and is not stuck at 5 MB
+- [ ] If volume grows, move the bytes to object storage (R2/S3) — the envelope
+      points at an opaque payload, so only the storage layer changes
 
 #### G4 — Waking the phone
 

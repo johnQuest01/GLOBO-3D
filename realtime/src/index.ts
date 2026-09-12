@@ -15,24 +15,11 @@
  * protocolo e entram nas fases seguintes.
  */
 
-import { createServer } from 'node:http';
+// PRIMEIRO de todos, e a ordem importa: este import carrega o .env antes que
+// qualquer outro modulo leia process.env. Ver o comentario em src/env.ts.
+import './env.js';
 
-/*
- * O .env local, lido pelo proprio processo.
- *
- * Ate aqui NINGUEM carregava este arquivo: o README mandava copiar o
- * .env.example, e o `npm run dev` subia sem ler nada. CORS_ORIGIN, STUN_URL e
- * REDIS_URL escritos ali eram ignorados em silencio — o pior tipo de
- * configuracao, a que parece estar valendo.
- *
- * Em producao o arquivo nao existe (Railway injeta as variaveis), e por isso o
- * try: faltar .env e' o caso normal la, nao erro.
- */
-try {
-  process.loadEnvFile('.env');
-} catch {
-  /* sem .env: producao, ou dev sem arquivo. As variaveis vem do ambiente. */
-}
+import { createServer } from 'node:http';
 import { createAdapter } from '@socket.io/redis-adapter';
 import { Redis } from 'ioredis';
 import { Server } from 'socket.io';
@@ -42,6 +29,7 @@ import { HEARTBEAT_INTERVAL_MS, PRESENCE_TTL_SEC } from '../shared/protocol.js';
 import { registerAuth } from './auth.js';
 import { registerBeacons } from './beacons.js';
 import { registerDirectory } from './directory.js';
+import { mailboxLigada, registerMailbox } from './mailbox.js';
 import { avisarSeFaltaTurn, registerMatchmaking } from './matchmaking.js';
 import { registerPresence, type RealtimeServer, type SocketData } from './presence.js';
 import { criarLimitador, registerSafety } from './safety.js';
@@ -144,6 +132,7 @@ async function main() {
     registerMatchmaking(io, socket, store, limitador, log);
     registerSignaling(io, socket, log);
     registerSafety(io, socket, store, limitador, log);
+    registerMailbox(io, socket, store, limitador, log);
     socket.on('disconnect', () => limitador.esquecer(socket.id));
   });
 
@@ -152,6 +141,11 @@ async function main() {
     log(`cors: ${CORS_ORIGIN.length > 0 ? CORS_ORIGIN.join(', ') : '\x1b[33mliberado (defina CORS_ORIGIN)\x1b[0m'}`);
     log(`heartbeat ${HEARTBEAT_INTERVAL_MS / 1000}s, presenca expira em ${PRESENCE_TTL_SEC}s`);
     avisarSeFaltaTurn(log);
+    log(
+      mailboxLigada()
+        ? 'caixa postal LIGADA (mensagem para quem esta offline fica guardada)'
+        : '[33mcaixa postal desligada: falta DATABASE_URL ou MESSAGE_KEY[0m',
+    );
   });
 
   // --- Encerramento limpo --------------------------------------------------

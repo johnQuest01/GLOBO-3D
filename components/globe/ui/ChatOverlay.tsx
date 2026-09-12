@@ -1,45 +1,41 @@
 'use client';
 
-import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
+import React, { FC, useEffect, useRef, useState } from 'react';
 
-import type { EstadoDoRealtime } from '@/app/hooks/useLiveRealtime';
+import type { Mensagem } from '@/app/hooks/useConversas';
 
 /**
  * A conversa, em tela cheia, com o globo desfocado por baixo.
  *
- * POR QUE TELA CHEIA E NÃO UM CARTÃO NO CANTO: conversa é a tarefa inteira
- * enquanto dura. O painel pequeno de antes disputava atenção e clique com o
- * globo girando atrás; o desfoque resolve os dois de uma vez — o globo
- * continua lá, reconhecível, e para de competir.
+ * O QUE MUDOU NESTA FASE: a tela não depende mais de uma conexão viva. Antes
+ * ela só existia enquanto o canal P2P estivesse de pé, e fechar apagava tudo.
+ * Agora a conversa é um lugar: abre com a pessoa offline, guarda o que foi dito
+ * e continua lá depois de recarregar a página.
  *
- * TUDO AQUI É EFÊMERO. Não existe gravação: fechar a conversa apaga tudo, e
- * nem o servidor nem o banco têm cópia. O aviso disso fica na própria tela — a
- * pessoa precisa saber, antes de escrever, que aquilo não volta.
+ * E O AVISO MUDOU JUNTO. Enquanto nada era gravado, a tela dizia isso. Agora o
+ * servidor guarda a mensagem até entregar — então ela diz ISSO, e não a frase
+ * antiga, que ficaria bonita e mentirosa.
  *
- * DENUNCIAR E BLOQUEAR ficam à mão, não escondidos num menu. Conversa com
- * estranho sem uma saída de um clique é um convite ao abuso.
+ * DENUNCIAR E BLOQUEAR continuam a um clique, sem menu escondido.
  */
 
 interface Props {
-  estado: EstadoDoRealtime;
+  aberta: boolean;
+  /** O nickname de quem está do outro lado. */
+  nome: string;
+  mensagens: Mensagem[];
+  /** Online agora? Muda só o pontinho e o texto do cabeçalho. */
+  online: boolean;
+  /** Estado da chamada de vídeo, quando há uma. */
+  videoRemoto?: MediaStream | null;
+  videoLocal?: MediaStream | null;
   onEnviarTexto: (texto: string) => boolean;
-  onEnviarImagem: (arquivo: Blob) => Promise<boolean>;
-  onEnviarAudio: (arquivo: Blob, duracaoMs: number) => Promise<boolean>;
-  onDigitando: (ativo: boolean) => void;
   onMarcarLidas: () => void;
-  onAlternarVideo: () => void;
-  onEncerrar: () => void;
+  onFechar: () => void;
+  onChamarVideo?: () => void;
   onDenunciar: (motivo: string) => void;
   onBloquear: () => void;
 }
-
-const ROTULO_ESTADO: Record<string, string> = {
-  conectando: 'conectando…',
-  conectado: 'conectado',
-  reconectando: 'reconectando…',
-  encerrado: 'encerrado',
-  falhou: 'não foi possível conectar',
-};
 
 const hora = (quando: number) =>
   new Date(quando).toLocaleTimeString('pt-BR', {
@@ -47,70 +43,74 @@ const hora = (quando: number) =>
     minute: '2-digit',
   });
 
-const duracaoLegivel = (ms?: number) => {
-  if (!ms) return '';
-  const total = Math.round(ms / 1000);
-  return `${Math.floor(total / 60)}:${String(total % 60).padStart(2, '0')}`;
-};
+const dia = (quando: number) =>
+  new Date(quando).toLocaleDateString('pt-BR', {
+    day: '2-digit',
+    month: 'short',
+  });
 
 /**
- * O ✓ e o ✓✓.
+ * O tique.
  *
- * Um traço visual, e não texto: "entregue" escrito ao lado de cada mensagem
- * roubaria a linha inteira numa conversa de frases curtas.
+ * Três estados e não dois, porque "o servidor pegou" e "o aparelho dela pegou"
+ * são coisas diferentes — e é exatamente a diferença que a caixa postal
+ * introduziu: a primeira acontece na hora, a segunda pode acontecer amanhã.
  */
-const Recibo: FC<{ estado?: string }> = ({ estado }) => {
+const Recibo: FC<{ estado?: Mensagem['entrega'] }> = ({ estado }) => {
   if (!estado) return null;
-  if (estado === 'enviando') return <span className="text-white/40">✓</span>;
+  if (estado === 'falhou') return <span className="text-red-300">!</span>;
+  if (estado === 'enviando') return <span className="text-white/30">◌</span>;
+  if (estado === 'enviada') return <span className="text-white/50">✓</span>;
   return (
-    <span className={estado === 'lido' ? 'text-cyan-300' : 'text-white/50'}>✓✓</span>
+    <span className={estado === 'lida' ? 'text-cyan-300' : 'text-white/50'}>✓✓</span>
   );
 };
 
+const ERRO_EM_PORTUGUES: Record<string, string> = {
+  SEM_DESTINATARIO: 'Esse nickname não existe mais.',
+  BLOQUEADO: 'Vocês não podem mais se falar.',
+  GRANDE_DEMAIS: 'Conteúdo grande demais.',
+  INDISPONIVEL: 'As mensagens estão indisponíveis agora.',
+  SEM_CONTA: 'Entre na sua conta para conversar.',
+};
+
 const ChatOverlay: FC<Props> = ({
-  estado,
+  aberta,
+  nome,
+  mensagens,
+  online,
+  videoRemoto,
+  videoLocal,
   onEnviarTexto,
-  onEnviarImagem,
-  onEnviarAudio,
-  onDigitando,
   onMarcarLidas,
-  onAlternarVideo,
-  onEncerrar,
+  onFechar,
+  onChamarVideo,
   onDenunciar,
   onBloquear,
 }) => {
   const [texto, setTexto] = useState('');
   const [pedindoMotivo, setPedindoMotivo] = useState(false);
   const [motivo, setMotivo] = useState('');
-  const [gravando, setGravando] = useState(false);
-  const [segundosGravados, setSegundosGravados] = useState(0);
-  const [erroDeMicrofone, setErroDeMicrofone] = useState<string | null>(null);
 
   const fim = useRef<HTMLDivElement>(null);
   const videoRemotoRef = useRef<HTMLVideoElement>(null);
   const videoLocalRef = useRef<HTMLVideoElement>(null);
 
-  const gravadorRef = useRef<MediaRecorder | null>(null);
-  const pedacosRef = useRef<Blob[]>([]);
-  const inicioGravacaoRef = useRef(0);
-  const cancelarGravacaoRef = useRef(false);
-  const timerGravacaoRef = useRef<ReturnType<typeof setInterval> | null>(null);
-
-  const quantidade = estado.mensagens.length;
+  const quantidade = mensagens.length;
 
   useEffect(() => {
-    fim.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [quantidade, estado.digitando]);
+    if (aberta) fim.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [quantidade, aberta]);
 
   /**
-   * Marca como lido quando a tela está de fato visível.
+   * Marca como lido só com a janela à vista.
    *
    * A checagem de `visibilityState` não é preciosismo: sem ela, uma aba em
-   * segundo plano marcaria tudo como lido, e o ✓✓ azul do outro lado seria
-   * mentira — exatamente o tipo de detalhe que faz alguém confiar ou não no
-   * recibo.
+   * segundo plano marcaria tudo como lido e o ✓✓ azul do outro lado seria
+   * mentira — justamente o detalhe que faz alguém confiar ou não no recibo.
    */
   useEffect(() => {
+    if (!aberta) return;
     const marcar = () => {
       if (document.visibilityState === 'visible') onMarcarLidas();
     };
@@ -121,115 +121,32 @@ const ChatOverlay: FC<Props> = ({
       document.removeEventListener('visibilitychange', marcar);
       window.removeEventListener('focus', marcar);
     };
-  }, [quantidade, onMarcarLidas]);
+  }, [quantidade, aberta, onMarcarLidas]);
 
-  // O elemento de vídeo recebe o stream por propriedade, não por atributo:
-  // `src` não aceita MediaStream.
+  // O elemento de vídeo recebe o stream por propriedade: `src` não aceita
+  // MediaStream.
   useEffect(() => {
-    if (videoRemotoRef.current) videoRemotoRef.current.srcObject = estado.videoRemoto;
-  }, [estado.videoRemoto]);
+    if (videoRemotoRef.current) videoRemotoRef.current.srcObject = videoRemoto ?? null;
+  }, [videoRemoto]);
 
   useEffect(() => {
-    if (videoLocalRef.current) videoLocalRef.current.srcObject = estado.videoLocal;
-  }, [estado.videoLocal]);
+    if (videoLocalRef.current) videoLocalRef.current.srcObject = videoLocal ?? null;
+  }, [videoLocal]);
 
-  // Sair pelo Esc. Uma tela que cobre tudo e só fecha no X é uma armadilha.
   useEffect(() => {
     const aoTeclar = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onEncerrar();
+      if (e.key === 'Escape') onFechar();
     };
-    window.addEventListener('keydown', aoTeclar);
+    if (aberta) window.addEventListener('keydown', aoTeclar);
     return () => window.removeEventListener('keydown', aoTeclar);
-  }, [onEncerrar]);
+  }, [aberta, onFechar]);
 
-  // Se o componente sair do ar no meio de uma gravação, o microfone precisa
-  // ser solto — senão a luz da câmera/mic fica acesa com a tela fechada.
-  useEffect(
-    () => () => {
-      if (timerGravacaoRef.current) clearInterval(timerGravacaoRef.current);
-      const g = gravadorRef.current;
-      if (g && g.state !== 'inactive') {
-        cancelarGravacaoRef.current = true;
-        g.stop();
-      }
-    },
-    [],
-  );
+  if (!aberta) return null;
 
   const enviar = (e: React.FormEvent) => {
     e.preventDefault();
     if (onEnviarTexto(texto)) setTexto('');
   };
-
-  const escolherImagem = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const arquivo = e.target.files?.[0];
-    if (arquivo) await onEnviarImagem(arquivo);
-    e.target.value = '';
-  };
-
-  // --- Gravação de áudio ----------------------------------------------------
-
-  const comecarAGravar = useCallback(async () => {
-    if (gravadorRef.current) return;
-    setErroDeMicrofone(null);
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      const gravador = new MediaRecorder(stream);
-      gravadorRef.current = gravador;
-      pedacosRef.current = [];
-      cancelarGravacaoRef.current = false;
-      inicioGravacaoRef.current = Date.now();
-
-      gravador.ondataavailable = (ev) => {
-        if (ev.data.size > 0) pedacosRef.current.push(ev.data);
-      };
-
-      gravador.onstop = async () => {
-        // O microfone precisa ser solto SEMPRE, inclusive quando a gravação
-        // foi cancelada: parar o gravador não desliga o dispositivo.
-        for (const faixa of stream.getTracks()) faixa.stop();
-        gravadorRef.current = null;
-
-        const duracaoMs = Date.now() - inicioGravacaoRef.current;
-        const pedacos = pedacosRef.current;
-        pedacosRef.current = [];
-
-        if (cancelarGravacaoRef.current || pedacos.length === 0) return;
-        // Áudio de menos de meio segundo é quase sempre o dedo escorregando no
-        // botão, não uma mensagem.
-        if (duracaoMs < 500) return;
-
-        await onEnviarAudio(new Blob(pedacos, { type: gravador.mimeType }), duracaoMs);
-      };
-
-      gravador.start();
-      setGravando(true);
-      setSegundosGravados(0);
-      timerGravacaoRef.current = setInterval(
-        () => setSegundosGravados((s) => s + 1),
-        1000,
-      );
-    } catch {
-      setErroDeMicrofone('Microfone não liberado.');
-    }
-  }, [onEnviarAudio]);
-
-  const pararDeGravar = useCallback((cancelar: boolean) => {
-    if (timerGravacaoRef.current) {
-      clearInterval(timerGravacaoRef.current);
-      timerGravacaoRef.current = null;
-    }
-    cancelarGravacaoRef.current = cancelar;
-    const g = gravadorRef.current;
-    if (g && g.state !== 'inactive') g.stop();
-    setGravando(false);
-    setSegundosGravados(0);
-  }, []);
-
-  if (!estado.emChamada) return null;
-
-  const nome = estado.parNome ?? 'Conversa ao vivo';
-  const inicial = (estado.parNome ?? '?').charAt(0).toUpperCase();
 
   return (
     <div
@@ -238,14 +155,11 @@ const ChatOverlay: FC<Props> = ({
       aria-label={`Conversa com ${nome}`}
       className="fixed inset-0 z-[200] flex items-center justify-center"
     >
-      {/*
-        O DESFOQUE. É esta camada que transforma o globo em fundo: ele continua
-        girando e reconhecível atrás, e para de disputar clique — a camada
-        cobre tudo e recebe os eventos.
-      */}
+      {/* O desfoque: o globo continua reconhecível atrás e para de disputar
+          clique, porque esta camada cobre tudo e recebe os eventos. */}
       <div
         className="absolute inset-0 bg-slate-950/45 backdrop-blur-2xl backdrop-saturate-150"
-        onClick={onEncerrar}
+        onClick={onFechar}
         aria-hidden="true"
       />
 
@@ -256,50 +170,45 @@ const ChatOverlay: FC<Props> = ({
       >
         {/* --- Cabeçalho --- */}
         <header className="flex items-center gap-3 border-b border-white/10 bg-white/[0.04] px-4 py-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-cyan-400/90 to-blue-600/90 text-base font-semibold text-white">
-            {inicial}
+          <div className="relative">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-cyan-400/90 to-blue-600/90 text-base font-semibold text-white">
+              {nome.charAt(0).toUpperCase()}
+            </div>
+            <span
+              className={`absolute -bottom-0.5 -right-0.5 h-3 w-3 rounded-full ring-2 ring-slate-900 ${
+                online ? 'bg-emerald-400' : 'bg-slate-500'
+              }`}
+            />
           </div>
 
           <div className="min-w-0 flex-1">
-            <p className="truncate text-[15px] font-semibold text-white">{nome}</p>
-            <p className="truncate text-xs text-cyan-300/80">
-              {estado.digitando ? (
-                <span className="inline-flex items-center gap-1">
-                  digitando
-                  <span className="inline-flex gap-0.5">
-                    <span className="h-1 w-1 animate-bounce rounded-full bg-cyan-300 [animation-delay:-0.3s]" />
-                    <span className="h-1 w-1 animate-bounce rounded-full bg-cyan-300 [animation-delay:-0.15s]" />
-                    <span className="h-1 w-1 animate-bounce rounded-full bg-cyan-300" />
-                  </span>
-                </span>
-              ) : (
-                (ROTULO_ESTADO[estado.estadoDaChamada ?? 'conectando'] ?? '')
-              )}
+            <p className="truncate text-[15px] font-semibold text-white">@{nome}</p>
+            <p className="truncate text-xs text-white/45">
+              {online ? 'online agora' : 'offline — vai receber quando voltar'}
             </p>
           </div>
 
-          <button
-            type="button"
-            onClick={onAlternarVideo}
-            title={estado.videoLocal ? 'Desligar vídeo' : 'Ligar vídeo'}
-            aria-label={estado.videoLocal ? 'Desligar vídeo' : 'Ligar vídeo'}
-            className={`rounded-full p-2 transition-colors ${
-              estado.videoLocal
-                ? 'bg-cyan-500/20 text-cyan-300'
-                : 'text-white/60 hover:bg-white/10 hover:text-white'
-            }`}
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-              <path d="M15 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3.5l6 3.5V7z" strokeLinejoin="round" />
-            </svg>
-          </button>
+          {onChamarVideo && (
+            <button
+              type="button"
+              onClick={onChamarVideo}
+              disabled={!online}
+              title={online ? 'Chamar em vídeo' : 'Só dá para chamar quem está online'}
+              aria-label="Chamar em vídeo"
+              className="rounded-full p-2 text-white/60 transition-colors hover:bg-white/10 hover:text-white disabled:cursor-not-allowed disabled:text-white/20 disabled:hover:bg-transparent"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <path d="M15 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3.5l6 3.5V7z" strokeLinejoin="round" />
+              </svg>
+            </button>
+          )}
 
           <button
             type="button"
-            onClick={onEncerrar}
-            title="Encerrar conversa (Esc)"
-            aria-label="Encerrar conversa"
-            className="rounded-full p-2 text-white/60 transition-colors hover:bg-red-500/20 hover:text-red-300"
+            onClick={onFechar}
+            title="Fechar (Esc)"
+            aria-label="Fechar conversa"
+            className="rounded-full p-2 text-white/60 transition-colors hover:bg-white/10 hover:text-white"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
               <path d="M6 6l12 12M18 6L6 18" strokeLinecap="round" />
@@ -307,16 +216,11 @@ const ChatOverlay: FC<Props> = ({
           </button>
         </header>
 
-        {/* --- Vídeo --- */}
-        {(estado.videoRemoto || estado.videoLocal) && (
+        {/* --- Vídeo, quando há chamada --- */}
+        {(videoRemoto || videoLocal) && (
           <div className="relative bg-black/60">
-            <video
-              ref={videoRemotoRef}
-              autoPlay
-              playsInline
-              className="max-h-52 w-full object-contain"
-            />
-            {estado.videoLocal && (
+            <video ref={videoRemotoRef} autoPlay playsInline className="max-h-52 w-full object-contain" />
+            {videoLocal && (
               <video
                 ref={videoLocalRef}
                 autoPlay
@@ -330,52 +234,67 @@ const ChatOverlay: FC<Props> = ({
 
         {/* --- Mensagens --- */}
         <div className="flex-1 space-y-2 overflow-y-auto px-4 py-3">
-          <p className="mx-auto max-w-xs rounded-full bg-black/25 px-3 py-1 text-center text-[11px] leading-relaxed text-white/45">
-            Esta conversa vai direto de um aparelho ao outro. Nada fica gravado —
-            nem no servidor, nem aqui depois que você fechar.
+          <p className="mx-auto max-w-sm rounded-2xl bg-black/25 px-3 py-2 text-center text-[11px] leading-relaxed text-white/45">
+            O servidor guarda a mensagem só até entregar, e apaga depois. O
+            histórico fica neste aparelho.
           </p>
 
-          {estado.mensagens.map((m) => {
+          {mensagens.length === 0 && (
+            <p className="py-8 text-center text-sm text-white/35">
+              Nenhuma mensagem ainda. Escreva a primeira —{' '}
+              {online ? 'ela chega agora.' : 'ela espera essa pessoa voltar.'}
+            </p>
+          )}
+
+          {mensagens.map((m, i) => {
             const minha = m.de === 'eu';
+            const anterior = mensagens[i - 1];
+            const trocouODia =
+              !anterior ||
+              new Date(anterior.quando).toDateString() !==
+                new Date(m.quando).toDateString();
+
             return (
-              <div key={m.id} className={`flex ${minha ? 'justify-end' : 'justify-start'}`}>
-                <div
-                  className={`max-w-[82%] px-3 py-2 text-[15px] leading-snug shadow-sm ${
-                    minha
-                      ? 'rounded-2xl rounded-br-md bg-cyan-600/90 text-white'
-                      : 'rounded-2xl rounded-bl-md bg-white/[0.13] text-white/95'
-                  }`}
-                >
-                  {m.tipo === 'texto' && (
-                    <p className="whitespace-pre-wrap break-words">{m.texto}</p>
-                  )}
+              <React.Fragment key={m.id}>
+                {trocouODia && (
+                  <p className="py-1 text-center text-[10px] uppercase tracking-wide text-white/30">
+                    {dia(m.quando)}
+                  </p>
+                )}
+                <div className={`flex ${minha ? 'justify-end' : 'justify-start'}`}>
+                  <div
+                    className={`max-w-[82%] px-3 py-2 text-[15px] leading-snug shadow-sm ${
+                      minha
+                        ? 'rounded-2xl rounded-br-md bg-cyan-600/90 text-white'
+                        : 'rounded-2xl rounded-bl-md bg-white/[0.13] text-white/95'
+                    }`}
+                  >
+                    {m.tipo === 'texto' && (
+                      <p className="whitespace-pre-wrap break-words">{m.texto}</p>
+                    )}
 
-                  {m.tipo === 'imagem' && m.midiaUrl && (
-                    /* eslint-disable-next-line @next/next/no-img-element */
-                    <img
-                      src={m.midiaUrl}
-                      alt="imagem enviada na conversa"
-                      className="max-h-64 rounded-xl"
-                    />
-                  )}
+                    {m.tipo === 'imagem' && m.midiaUrl && (
+                      /* eslint-disable-next-line @next/next/no-img-element */
+                      <img src={m.midiaUrl} alt="imagem da conversa" className="max-h-64 rounded-xl" />
+                    )}
 
-                  {m.tipo === 'audio' && m.midiaUrl && (
-                    <div className="flex items-center gap-2">
+                    {m.tipo === 'audio' && m.midiaUrl && (
                       <audio src={m.midiaUrl} controls className="h-9 max-w-[12rem]" />
-                      {m.duracaoMs ? (
-                        <span className="text-[11px] text-white/60">
-                          {duracaoLegivel(m.duracaoMs)}
-                        </span>
-                      ) : null}
-                    </div>
-                  )}
+                    )}
 
-                  <div className="mt-0.5 flex items-center justify-end gap-1 text-[10px] text-white/50">
-                    <span>{hora(m.quando)}</span>
-                    {minha && <Recibo estado={m.entrega} />}
+                    <div className="mt-0.5 flex items-center justify-end gap-1 text-[10px] text-white/50">
+                      <span>{hora(m.quando)}</span>
+                      {minha && <Recibo estado={m.entrega} />}
+                    </div>
+
+                    {m.entrega === 'falhou' && (
+                      <p className="mt-1 text-[11px] text-red-200">
+                        {ERRO_EM_PORTUGUES[m.erro ?? ''] ?? 'Não foi enviada.'}
+                      </p>
+                    )}
                   </div>
                 </div>
-              </div>
+              </React.Fragment>
             );
           })}
           <div ref={fim} />
@@ -418,90 +337,26 @@ const ChatOverlay: FC<Props> = ({
             onSubmit={enviar}
             className="border-t border-white/10 bg-white/[0.04] px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3"
           >
-            {gravando ? (
-              <div className="flex items-center gap-3 rounded-2xl bg-red-500/15 px-4 py-2.5 ring-1 ring-red-400/30">
-                <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-red-400" />
-                <span className="flex-1 text-sm text-white">
-                  Gravando… {duracaoLegivel(segundosGravados * 1000)}
-                </span>
-                <button
-                  type="button"
-                  onClick={() => pararDeGravar(true)}
-                  className="text-sm text-white/60 hover:text-white"
-                >
-                  Cancelar
-                </button>
-                <button
-                  type="button"
-                  onClick={() => pararDeGravar(false)}
-                  className="rounded-full bg-cyan-600 px-4 py-1.5 text-sm font-semibold text-white hover:bg-cyan-500"
-                >
-                  Enviar
-                </button>
-              </div>
-            ) : (
-              <div className="flex items-center gap-2">
-                <label
-                  className="cursor-pointer rounded-full p-2 text-white/60 transition-colors hover:bg-white/10 hover:text-white"
-                  title="Enviar foto"
-                >
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                    <rect x="3" y="5" width="18" height="14" rx="2" />
-                    <circle cx="8.5" cy="10" r="1.5" />
-                    <path d="M21 16l-5-5-4 4-2-2-7 7" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                  <input
-                    type="file"
-                    accept="image/*"
-                    onChange={escolherImagem}
-                    className="hidden"
-                  />
-                </label>
-
-                <button
-                  type="button"
-                  onClick={comecarAGravar}
-                  title="Gravar áudio"
-                  aria-label="Gravar áudio"
-                  className="rounded-full p-2 text-white/60 transition-colors hover:bg-white/10 hover:text-white"
-                >
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                    <rect x="9" y="3" width="6" height="11" rx="3" />
-                    <path d="M5 11a7 7 0 0 0 14 0M12 18v3" strokeLinecap="round" />
-                  </svg>
-                </button>
-
-                <input
-                  value={texto}
-                  onChange={(e) => {
-                    setTexto(e.target.value);
-                    // O estrangulamento fica no peer: aqui a cada tecla, lá um
-                    // pacote a cada segundo e meio.
-                    onDigitando(e.target.value.length > 0);
-                  }}
-                  onBlur={() => onDigitando(false)}
-                  placeholder="Escreva uma mensagem…"
-                  maxLength={4000}
-                  className="min-w-0 flex-1 rounded-full bg-white/10 px-4 py-2.5 text-[15px] text-white placeholder-white/40 outline-none ring-1 ring-white/10 focus:ring-cyan-400/50"
-                />
-
-                <button
-                  type="submit"
-                  disabled={!texto.trim()}
-                  title="Enviar"
-                  aria-label="Enviar mensagem"
-                  className="rounded-full bg-cyan-600 p-2.5 text-white transition-colors hover:bg-cyan-500 disabled:cursor-not-allowed disabled:bg-white/10 disabled:text-white/30"
-                >
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                    <path d="M4 12l16-8-6 16-2.5-6.5z" strokeLinejoin="round" />
-                  </svg>
-                </button>
-              </div>
-            )}
-
-            {erroDeMicrofone && (
-              <p className="mt-2 text-center text-xs text-red-300">{erroDeMicrofone}</p>
-            )}
+            <div className="flex items-center gap-2">
+              <input
+                value={texto}
+                onChange={(e) => setTexto(e.target.value)}
+                placeholder="Escreva uma mensagem…"
+                maxLength={4000}
+                className="min-w-0 flex-1 rounded-full bg-white/10 px-4 py-2.5 text-[15px] text-white placeholder-white/40 outline-none ring-1 ring-white/10 focus:ring-cyan-400/50"
+              />
+              <button
+                type="submit"
+                disabled={!texto.trim()}
+                title="Enviar"
+                aria-label="Enviar mensagem"
+                className="rounded-full bg-cyan-600 p-2.5 text-white transition-colors hover:bg-cyan-500 disabled:cursor-not-allowed disabled:bg-white/10 disabled:text-white/30"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                  <path d="M4 12l16-8-6 16-2.5-6.5z" strokeLinejoin="round" />
+                </svg>
+              </button>
+            </div>
 
             <div className="mt-2 flex justify-center gap-4 text-[11px]">
               <button

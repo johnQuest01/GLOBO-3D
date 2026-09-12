@@ -51,6 +51,10 @@ export const LIMITES: Record<string, LimiteConfig> = {
   // novo. O teto existe só para impedir varredura do diretório inteiro.
   'directory:find': { capacidade: 20, recargaMs: 60_000 },
   report: { capacidade: 5, recargaMs: 10 * 60_000 },
+  // Conversa e' rajada por natureza: a pessoa manda cinco frases seguidas e
+  // depois fica quieta. O teto existe contra script, nao contra quem digita
+  // rapido — dai a capacidade alta com recarga curta.
+  'msg:send': { capacidade: 40, recargaMs: 60_000 },
 };
 
 interface Balde {

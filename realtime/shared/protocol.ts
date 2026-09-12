@@ -63,6 +63,41 @@ export interface Beacon {
 }
 
 /**
+ * Uma mensagem, do jeito que ela atravessa o servidor.
+ *
+ * `payload` e' OPACO: uma string que quem envia montou e que o servidor repassa
+ * sem interpretar. Hoje ela e' JSON legivel; quando a criptografia ponta a
+ * ponta entrar, vira texto cifrado e NADA neste contrato muda.
+ *
+ * `kind` fica de fora do payload de proposito. E' o unico pedaco de conteudo
+ * que o servidor precisa mesmo enxergar: e' com ele que uma notificacao diz
+ * "fulano te mandou uma foto" sem abrir a foto.
+ */
+export interface Envelope {
+  msgId: string;
+  /** Quem mandou, pelo nome publico. */
+  from: string;
+  kind: 'texto' | 'imagem' | 'audio';
+  payload: string;
+  /** ISO. Quando o SERVIDOR aceitou — o relogio do remetente nao e' confiavel. */
+  sentAt: string;
+}
+
+/** Por que uma mensagem nao foi aceita. */
+export const MsgError = {
+  SEM_CONTA: 'SEM_CONTA',
+  SEM_DESTINATARIO: 'SEM_DESTINATARIO',
+  BLOQUEADO: 'BLOQUEADO',
+  GRANDE_DEMAIS: 'GRANDE_DEMAIS',
+  INDISPONIVEL: 'INDISPONIVEL',
+} as const;
+
+export type MsgErrorValue = (typeof MsgError)[keyof typeof MsgError];
+
+/** Teto do payload, em caracteres. Midia grande e' assunto da fase seguinte. */
+export const PAYLOAD_MAX = 300_000;
+
+/**
  * Servidor de STUN/TURN entregue ao cliente no aceite.
  *
  * É a mesma forma do `RTCIceServer` do DOM, redeclarada aqui de propósito: o
@@ -119,7 +154,39 @@ export interface ClientToServer {
   'peer:hangup': (p: { peerSocketId: SocketId }) => void;
 
   'report': (p: { targetClientId: ClientId; reason: string }) => void;
-  'block': (p: { targetClientId: ClientId }) => void;
+  /**
+   * `targetNickname` entra junto porque agora existem DOIS bloqueios: o antigo,
+   * por clientId (o navegador), que continua valendo para o pedido de conexao
+   * P2P; e o por CONTA, que e' o que a caixa postal consulta. Bloqueio que se
+   * perde quando a pessoa troca de navegador nao serve para mensagem guardada
+   * para entregar depois.
+   */
+  'block': (p: { targetClientId: ClientId; targetNickname?: string }) => void;
+
+  // --- Caixa postal ------------------------------------------------------
+  /**
+   * Manda uma mensagem. O servidor guarda e entrega — agora ou quando a pessoa
+   * voltar.
+   *
+   * `msgId` e' gerado por quem envia, e e' o que torna o reenvio seguro: a
+   * mesma mensagem mandada duas vezes (rede caiu no meio) e' guardada uma vez
+   * so.
+   */
+  'msg:send': (p: {
+    msgId: string;
+    to: string;
+    kind: 'texto' | 'imagem' | 'audio';
+    payload: string;
+  }) => void;
+
+  /** "O que chegou enquanto eu estava fora?" */
+  'msg:sync': () => void;
+
+  /** "Recebi." O servidor apaga o envelope e avisa quem mandou. */
+  'msg:ack': (p: { msgIds: string[] }) => void;
+
+  /** "Li." Nao e' guardado: se o outro estiver offline, o aviso se perde. */
+  'msg:read': (p: { to: string; msgIds: string[] }) => void;
 }
 
 // ---------------------------------------------------------------------------
@@ -174,6 +241,22 @@ export interface ServerToClient {
 
   'signal': (p: { fromSocketId: SocketId; data: unknown }) => void;
   'peer:disconnected': (p: { peerSocketId: SocketId }) => void;
+
+  // --- Caixa postal ------------------------------------------------------
+  /** O servidor assumiu a mensagem. Na tela: o primeiro tique. */
+  'msg:accepted': (p: { msgId: string; sentAt: string }) => void;
+
+  /** Chegou uma mensagem para voce — agora, ou guardada de antes. */
+  'msg:new': (e: Envelope) => void;
+
+  /** O aparelho do outro confirmou o recebimento. Na tela: o segundo tique. */
+  'msg:delivered': (p: { msgIds: string[] }) => void;
+
+  /** O outro lado leu. */
+  'msg:read': (p: { from: string; msgIds: string[] }) => void;
+
+  /** Nao deu. `code` diz por que; a interface e' quem traduz. */
+  'msg:failed': (p: { msgId: string; code: MsgErrorValue }) => void;
 
   'rate_limited': (p: { action: string; retryAfterMs: number }) => void;
   'error': (p: { code: string; message: string }) => void;

@@ -10,6 +10,7 @@ import { useMessageSystem } from '@/app/hooks/useMessageSystem';
 import { useGeoMapping } from '@/app/hooks/useGeoMapping';
 import { useBehaviorTracker } from '@/app/hooks/useBehaviorTracker';
 import { useLiveRealtime, type PessoaEncontrada } from '@/app/hooks/useLiveRealtime';
+import { useConversas } from '@/app/hooks/useConversas';
 
 import GlobeScene from './GlobeScene';
 import type { AlvoDoFoco } from './PersonFocus';
@@ -34,6 +35,7 @@ import GlobeClock from '@/components/globe/ui/GlobeClock';
 import { latLonToVector3 } from '@/components/lib/utils';
 import ChatOverlay from '@/components/globe/ui/ChatOverlay';
 import PeopleSearchPanel from '@/components/globe/ui/PeopleSearchPanel';
+import ConversasPanel from '@/components/globe/ui/ConversasPanel';
 
 import AppHeader from '@/components/layout/AppHeader';
 import AppFooter from '@/components/layout/AppFooter';
@@ -217,8 +219,22 @@ export default function GlobeCanvas() {
    */
   const realtime = useLiveRealtime(states.currentUser);
 
+  /**
+   * As conversas. Nao dependem do realtime estar conectado para EXISTIR — o
+   * historico vem do proprio aparelho —, so para enviar e receber.
+   */
+  const conversas = useConversas(realtime.meuNickname, realtime.socketPronto);
+
+  /** Quantas mensagens esperam resposta, somando todas as conversas. */
+  const totalNaoLidas = useMemo(
+    () =>
+      Object.values(conversas.naoLidasPorConversa).reduce((a, b) => a + b, 0),
+    [conversas.naoLidasPorConversa],
+  );
+
   /** A lupa: painel aberto e a pessoa que o globo esta olhando agora. */
   const [buscaAberta, setBuscaAberta] = useState(false);
+  const [conversasAbertas, setConversasAbertas] = useState(false);
   const [alvoDaBusca, setAlvoDaBusca] = useState<AlvoDoFoco | null>(null);
 
   /**
@@ -291,6 +307,18 @@ export default function GlobeCanvas() {
       para: latLonToVector3(outro.lat, outro.lon, 1.5),
     };
   }, [realtime.estado, realtime.meuClientId, realtime.minhaPresenca]);
+
+  /**
+   * Chamada de video aceita: abre a conversa daquela pessoa.
+   *
+   * O video e' desenhado DENTRO da conversa, entao sem isto uma chamada
+   * aceita ficaria acontecendo sem tela nenhuma — com a camera ligada e nada
+   * aparecendo.
+   */
+  useEffect(() => {
+    const { emChamada, parNome } = realtime.estado;
+    if (emChamada && parNome) conversas.abrirConversa(parNome);
+  }, [realtime.estado.emChamada, realtime.estado.parNome, conversas.abrirConversa]);
 
   // --- LÓGICA DE DESTINO INTELIGENTE ---
   const handleSendMessage = (text: string, destination: string) => {
@@ -456,6 +484,39 @@ export default function GlobeCanvas() {
             isVisible={states.isMainUiVisible}
             className="bottom-[24.5rem] pointer-events-auto"
           />
+
+          {/*
+            AS CONVERSAS, com o contador de nao lidas.
+
+            Sem este botao a caixa postal nao servia para nada: a mensagem
+            chegava, era guardada no aparelho e ficava invisivel ate a pessoa
+            procurar o remetente na lupa por acaso.
+          */}
+          {realtime.estado.ligado && (
+            <button
+              type="button"
+              onClick={() => setConversasAbertas(true)}
+              disabled={states.isAnyPopupOpen}
+              title="Suas conversas"
+              aria-label="Suas conversas"
+              className={`absolute right-4 z-40 p-4 rounded-full shadow-lg text-white transition-all duration-300 bg-slate-700/90 hover:bg-slate-600 disabled:bg-gray-600 disabled:opacity-50 bottom-[36.5rem] pointer-events-auto ${
+                states.isMainUiVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
+              }`}
+            >
+              <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6" stroke="currentColor" strokeWidth={2}>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M8 10.5h8M8 14h5M21 12a8.5 8.5 0 0 1-8.5 8.5c-1.5 0-2.9-.4-4.1-1L3 21l1.6-5A8.5 8.5 0 1 1 21 12z"
+                />
+              </svg>
+              {totalNaoLidas > 0 && (
+                <span className="absolute -top-1 -right-1 flex h-6 min-w-6 items-center justify-center rounded-full bg-cyan-500 px-1.5 text-xs font-bold text-white ring-2 ring-slate-900">
+                  {totalNaoLidas > 99 ? '99+' : totalNaoLidas}
+                </span>
+              )}
+            </button>
+          )}
 
           {/* A LUPA. Procurar alguem pelo nickname e ir ate a pessoa no globo. */}
           {realtime.estado.ligado && (
@@ -724,22 +785,60 @@ export default function GlobeCanvas() {
             </div>
           )}
 
-          {realtime.estado.emChamada && (
+          {conversas.abertaCom && (
             <div className="pointer-events-auto">
               <ChatOverlay
-                estado={realtime.estado}
-                onEnviarTexto={realtime.enviarTexto}
-                onEnviarImagem={realtime.enviarImagem}
-                onEnviarAudio={realtime.enviarAudio}
-                onDigitando={realtime.avisarDigitando}
-                onMarcarLidas={realtime.marcarLidas}
-                onAlternarVideo={realtime.alternarVideo}
-                onEncerrar={realtime.encerrarChamada}
+                aberta
+                nome={conversas.abertaCom}
+                mensagens={conversas.mensagensAbertas}
+                online={Boolean(
+                  realtime.presencaPorNickname[conversas.abertaCom],
+                )}
+                videoRemoto={realtime.estado.videoRemoto}
+                videoLocal={realtime.estado.videoLocal}
+                onEnviarTexto={(texto) =>
+                  conversas.enviarTexto(conversas.abertaCom!, texto)
+                }
+                onMarcarLidas={() => conversas.marcarLidas(conversas.abertaCom!)}
+                onFechar={() => {
+                  conversas.fecharConversa();
+                  // Fechar a conversa encerra a chamada junto: deixar camera e
+                  // microfone ligados atras de uma tela fechada seria o pior
+                  // tipo de surpresa.
+                  if (realtime.estado.emChamada) realtime.encerrarChamada();
+                }}
+                onChamarVideo={() => {
+                  const presenca =
+                    realtime.presencaPorNickname[conversas.abertaCom!];
+                  if (!presenca) return;
+                  realtime.pedirConexao(presenca.clientId, {
+                    nickname: conversas.abertaCom!,
+                    presenca,
+                  });
+                }}
                 onDenunciar={realtime.denunciar}
                 onBloquear={realtime.bloquear}
               />
             </div>
           )}
+
+          <div className="pointer-events-auto">
+            <ConversasPanel
+              aberto={conversasAbertas}
+              onFechar={() => setConversasAbertas(false)}
+              conversas={conversas.conversas}
+              naoLidasPorConversa={conversas.naoLidasPorConversa}
+              presencaPorNickname={realtime.presencaPorNickname}
+              onAbrir={(com) => {
+                conversas.abrirConversa(com);
+                setConversasAbertas(false);
+                // Pergunta se essa pessoa esta online agora, para o cabecalho
+                // da conversa nao mentir dizendo "offline" por falta de dado.
+                realtime.verQuemEstaOnline([com]);
+              }}
+              onApagar={conversas.apagarConversa}
+            />
+          </div>
 
           <div className="pointer-events-auto">
             <PeopleSearchPanel
@@ -751,13 +850,12 @@ export default function GlobeCanvas() {
               onVerNoGlobo={(pessoa) => {
                 if (verPessoaNoGlobo(pessoa)) setBuscaAberta(false);
               }}
-              onConectar={(pessoa) => {
-                if (!pessoa.presenca) return;
+              onConversar={(pessoa) => {
+                // Se der para mostrar onde ela esta, mostra — mas isso nao e'
+                // requisito para conversar. Quem esta offline nao tem
+                // coordenada, e a conversa abre do mesmo jeito.
                 verPessoaNoGlobo(pessoa);
-                realtime.pedirConexao(pessoa.presenca.clientId, {
-                  nickname: pessoa.nickname,
-                  presenca: pessoa.presenca,
-                });
+                conversas.abrirConversa(pessoa.nickname);
                 setBuscaAberta(false);
               }}
             />

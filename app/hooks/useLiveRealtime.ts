@@ -671,6 +671,8 @@ export function useLiveRealtime(user: UserProfileData | null) {
     estado,
     meuClientId: meuClientIdRef.current,
     meuNickname,
+    /** Para quem precisa esperar a conexao existir (ver useConversas). */
+    socketPronto,
     minhaPresenca,
     presencaPorNickname,
     verQuemEstaOnline,
