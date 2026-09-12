@@ -17,6 +17,25 @@ export const metadata: Metadata = {
   title: 'Globo Interativo', // Título permanece aqui
   description: 'Uma aplicação web interativa com Next.js e Three.js',
   // REMOVA 'viewport' daqui!
+
+  /*
+   * O MANIFESTO É O QUE TORNA O SITE INSTALÁVEL — sem loja de aplicativos.
+   *
+   * Com ele, o Android oferece "instalar"; no iPhone, "Adicionar à Tela de
+   * Início" passa a abrir em tela cheia, sem a barra do navegador. E no iPhone
+   * isso não é enfeite: o Safari só permite notificação para site instalado
+   * assim, então o manifesto é pré-requisito do aviso chegar.
+   */
+  manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    title: 'Globo',
+    statusBarStyle: 'black-translucent',
+  },
+  icons: {
+    icon: '/icons/icon-192.png',
+    apple: '/icons/icon-192.png',
+  },
 };
 
 // 2. VIEWPORT AGORA É UM EXPORT SEPARADO

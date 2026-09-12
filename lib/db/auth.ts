@@ -287,6 +287,42 @@ export async function acharOuCriarPeloGoogle(conta: {
   return denovo.length > 0 ? toUser(denovo[0]!) : null;
 }
 
+// ---------------------------------------------------------------------------
+// Notificação com o app fechado
+// ---------------------------------------------------------------------------
+
+/**
+ * Guarda (ou atualiza) a inscrição de push deste aparelho.
+ *
+ * `on conflict` atualiza em vez de ignorar, e a razão é concreta: o navegador
+ * troca as chaves de uma inscrição sem mudar o endpoint. Ignorar o conflito
+ * deixaria as chaves velhas no banco, e todo empurrão chegaria como lixo
+ * indecifrável — uma falha silenciosa, do pior tipo, porque ninguém reclama de
+ * uma notificação que simplesmente não aparece.
+ */
+export async function guardarInscricao(i: {
+  endpoint: string;
+  userId: string;
+  p256dh: string;
+  auth: string;
+}): Promise<void> {
+  if (!sql) return;
+  await sql`
+    insert into push_subscriptions (endpoint, user_id, p256dh, auth)
+    values (${i.endpoint}, ${i.userId}::uuid, ${i.p256dh}, ${i.auth})
+    on conflict (endpoint) do update
+      set user_id = excluded.user_id,
+          p256dh  = excluded.p256dh,
+          auth    = excluded.auth`;
+}
+
+export async function removerInscricao(endpoint: string, userId: string): Promise<void> {
+  if (!sql) return;
+  await sql`
+    delete from push_subscriptions
+     where endpoint = ${endpoint} and user_id = ${userId}::uuid`;
+}
+
 /** Grava onde a pessoa está. Pode ser chamado quantas vezes ela se mudar. */
 export async function setLocal(
   userId: string,

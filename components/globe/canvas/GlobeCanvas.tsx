@@ -38,6 +38,7 @@ import ChatOverlay from '@/components/globe/ui/ChatOverlay';
 import PeopleSearchPanel from '@/components/globe/ui/PeopleSearchPanel';
 import ConversasPanel from '@/components/globe/ui/ConversasPanel';
 import GrupoDeSinaisPanel from '@/components/globe/ui/GrupoDeSinaisPanel';
+import { registrarWorker } from '@/lib/push/avisos';
 import EscolherLugar from '@/components/globe/ui/EscolherLugar';
 import EscolherNickname from '@/components/globe/ui/EscolherNickname';
 
@@ -259,6 +260,45 @@ export default function GlobeCanvas() {
   const [pedindoLugar, setPedindoLugar] = useState(false);
   /** Os sinais de um marcador agrupado, quando a pessoa toca nele. */
   const [grupoDeSinais, setGrupoDeSinais] = useState<Beacon[] | null>(null);
+
+  /*
+   * O QUE FAZER QUANDO A PESSOA TOCA NA NOTIFICACAO.
+   *
+   * Duas portas levam aqui, e as duas precisam abrir a mesma conversa: o app
+   * ja' estava aberto (o service worker manda um recado para a aba) ou estava
+   * fechado (ele abre a pagina com `?conversa=` na URL).
+   *
+   * A URL e' limpa depois de lida: deixar o parametro faria a conversa reabrir
+   * sozinha toda vez que a pessoa recarregasse a pagina, dias depois.
+   */
+  useEffect(() => {
+    const daUrl = new URLSearchParams(window.location.search).get('conversa');
+    if (daUrl) {
+      conversas.abrirConversa(daUrl.toLowerCase());
+      window.history.replaceState({}, '', window.location.pathname);
+    }
+
+    const aoRecado = (e: MessageEvent) => {
+      if (e.data?.tipo !== 'abrir-conversa' || !e.data?.com) return;
+      conversas.abrirConversa(String(e.data.com).toLowerCase());
+    };
+    navigator.serviceWorker?.addEventListener('message', aoRecado);
+    return () => navigator.serviceWorker?.removeEventListener('message', aoRecado);
+    // Roda uma vez: `abrirConversa` e' estavel (useCallback sem dependencias).
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  /*
+   * REGISTRA O SERVICE WORKER assim que a pagina abre.
+   *
+   * Registrar NAO pede permissao nenhuma e nao mostra nada — e' so' o que faz
+   * o navegador considerar o site instalavel e ter onde entregar um empurrao
+   * depois. O pedido de permissao continua nascendo de um gesto, dentro da
+   * conversa (ver ConviteDeAvisos).
+   */
+  useEffect(() => {
+    void registrarWorker();
+  }, []);
 
   /**
    * Entrou na conversa sem ter nome público?

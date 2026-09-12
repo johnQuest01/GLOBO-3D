@@ -192,3 +192,33 @@ export async function limparVencidos(): Promise<number> {
   `) as unknown[];
   return linhas.length;
 }
+
+// ---------------------------------------------------------------------------
+// Inscrições de notificação
+// ---------------------------------------------------------------------------
+
+export interface InscricaoDePush {
+  endpoint: string;
+  p256dh: string;
+  auth: string;
+}
+
+/** Todos os aparelhos onde esta pessoa pediu para ser avisada. */
+export async function inscricoesDe(userId: string): Promise<InscricaoDePush[]> {
+  if (!sql) return [];
+  const linhas = (await sql`
+    select endpoint, p256dh, auth from push_subscriptions
+    where user_id = ${userId}::uuid
+  `) as Record<string, unknown>[];
+  return linhas.map((l) => ({
+    endpoint: String(l.endpoint),
+    p256dh: String(l.p256dh),
+    auth: String(l.auth),
+  }));
+}
+
+/** O servidor de push disse que este aparelho não existe mais. */
+export async function apagarInscricao(endpoint: string): Promise<void> {
+  if (!sql) return;
+  await sql`delete from push_subscriptions where endpoint = ${endpoint}`;
+}

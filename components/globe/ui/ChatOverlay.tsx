@@ -3,6 +3,7 @@
 import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
 
 import type { Mensagem } from '@/app/hooks/useConversas';
+import ConviteDeAvisos from '@/components/globe/ui/ConviteDeAvisos';
 import {
   AUDIO_MAX_MS,
   BYTES_MAX,
@@ -548,6 +549,10 @@ const ChatOverlay: FC<Props> = ({
             onSubmit={enviar}
             className="border-t border-white/10 bg-white/[0.04] px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3"
           >
+            {/* O convite de avisos vive aqui: colado na conversa, que e' onde
+                a pergunta "quer saber quando responderem?" se explica. */}
+            <ConviteDeAvisos visivel={aberta && !gravando} />
+
             {gravando ? (
               <div className="flex items-center gap-3 rounded-2xl bg-red-500/15 px-4 py-2.5 ring-1 ring-red-400/30">
                 <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-red-400" />

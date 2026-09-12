@@ -30,6 +30,7 @@ import { registerAuth } from './auth.js';
 import { registerBeacons } from './beacons.js';
 import { registerDirectory } from './directory.js';
 import { mailboxLigada, registerMailbox } from './mailbox.js';
+import { configurarPush } from './push.js';
 import { avisarSeFaltaTurn, registerMatchmaking } from './matchmaking.js';
 import { registerPresence, type RealtimeServer, type SocketData } from './presence.js';
 import { criarLimitador, registerSafety } from './safety.js';
@@ -166,6 +167,7 @@ async function main() {
     log(`cors: ${CORS_ORIGIN.length > 0 ? CORS_ORIGIN.join(', ') : '\x1b[33mliberado (defina CORS_ORIGIN)\x1b[0m'}`);
     log(`heartbeat ${HEARTBEAT_INTERVAL_MS / 1000}s, presenca expira em ${PRESENCE_TTL_SEC}s`);
     avisarSeFaltaTurn(log);
+    configurarPush(log);
     log(
       mailboxLigada()
         ? 'caixa postal LIGADA (mensagem para quem esta offline fica guardada)'

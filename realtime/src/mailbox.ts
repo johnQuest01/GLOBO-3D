@@ -32,6 +32,7 @@ import {
 } from './db.js';
 import type { RealtimeServer, RealtimeSocket } from './presence.js';
 import { permitir, type Limitador } from './safety.js';
+import { avisar } from './push.js';
 import type { PresenceStore } from './store.js';
 
 /** A caixa postal precisa das duas coisas; sem uma delas ela fica desligada. */
@@ -170,11 +171,34 @@ export function registerMailbox(
     const remetente = meuNick;
     const envelope: Envelope = { msgId, from: remetente, kind, payload, sentAt };
 
+    /*
+     * ONLINE AGORA? A resposta decide entre entregar e ACORDAR O TELEFONE.
+     *
+     * `fetchSockets` da sala da conta atravessa as instancias do servidor
+     * (e' o adaptador do Redis que responde), entao "nenhuma aba aberta" aqui
+     * significa nenhuma aba aberta em lugar nenhum — e nao apenas nenhuma
+     * nesta maquina.
+     *
+     * So' quem NAO recebeu ao vivo e' avisado. Mandar os dois faria o telefone
+     * tocar com a conversa aberta na tela, que e' o tipo de aviso que ensina a
+     * pessoa a desligar os avisos.
+     */
+    const abertas = await io.in(salaDaConta(destinoId)).fetchSockets();
+
     // Para TODAS as abas da pessoa. Se não houver nenhuma, não tem problema:
     // o envelope está guardado e sai no próximo `msg:sync`.
     io.to(salaDaConta(destinoId)).emit('msg:new', envelope);
 
-    log(`msg    ${remetente} -> ${to} (${kind}, ${payload.length}b)`);
+    if (abertas.length === 0) {
+      // Sem esperar: o servidor de push de terceiro pode demorar segundos, e
+      // isso não pode ficar na frente da próxima mensagem de ninguem.
+      void avisar(destinoId, { de: remetente, tipo: kind }, log);
+    }
+
+    log(
+      `msg    ${remetente} -> ${to} (${kind}, ${payload.length}b)` +
+        (abertas.length === 0 ? ' [offline: empurrão]' : ''),
+    );
   });
 
   socket.on('msg:ack', async ({ msgIds }) => {
