@@ -70,15 +70,31 @@ async function main() {
     store = createRedisStore(pub);
     adapterPair = { pub, sub };
     log('presenca em Redis');
-  } else if (ehProducao) {
-    // Em produção, cair para memória seria pior que não subir: com duas
-    // instâncias, metade das pessoas ficaria invisível para a outra metade e
-    // ninguém veria erro nenhum.
+  } else if (ehProducao && process.env.ALLOW_MEMORY_PRESENCE !== '1') {
+    /*
+     * Em produção, cair para memória CALADO seria pior que não subir: com duas
+     * instâncias, metade das pessoas ficaria invisível para a outra metade e
+     * nenhum erro apareceria em lugar nenhum.
+     *
+     * A saída não é proibir — é exigir que alguém assuma. `ALLOW_MEMORY_PRESENCE=1`
+     * é essa assinatura: quem a escreve está dizendo "eu sei, e garanto UMA
+     * máquina só". É o caso do primeiro deploy, antes de existir Redis.
+     *
+     * A garantia mora no fly.toml (`min_machines_running = 1`, e nunca
+     * escalar). No dia em que este app subir para duas máquinas sem Redis, o
+     * bug volta — e volta silencioso, que é o motivo de estar escrito aqui e
+     * lá.
+     */
     console.error('REDIS_URL ausente em producao. Recusando subir.');
+    console.error('  Se for mesmo UMA maquina so, assuma com ALLOW_MEMORY_PRESENCE=1.');
     process.exit(1);
   } else {
     store = createMemoryStore();
-    log('\x1b[33mpresenca em MEMORIA (sem REDIS_URL) — so vale para dev local\x1b[0m');
+    log(
+      ehProducao
+        ? '\x1b[33mpresenca em MEMORIA em PRODUCAO (ALLOW_MEMORY_PRESENCE=1) — NAO escale este app\x1b[0m'
+        : '\x1b[33mpresenca em MEMORIA (sem REDIS_URL) — so vale para dev local\x1b[0m',
+    );
   }
 
   // --- Socket.io -----------------------------------------------------------

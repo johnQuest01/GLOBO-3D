@@ -431,17 +431,17 @@ const LoginScreen: React.FC = () => {
       <div className="fixed inset-0 bg-black/60 z-10" />
       <div
         className="relative z-20 m-auto w-full max-w-md bg-stone-900/90 backdrop-blur-sm
-rounded-xl shadow-2xl border border-green-700 p-6 sm:p-8
-flex flex-col gap-6 animate-in fade-in zoom-in-95 duration-500"
+rounded-xl shadow-2xl border border-green-700 p-5 sm:p-7
+flex flex-col gap-4 animate-in fade-in zoom-in-95 duration-500"
       >
-        <h2 className="text-3xl font-extrabold text-white text-center">
+        <h2 className="text-2xl font-extrabold text-white text-center">
           {formData.isLogin ? 'Entrar na Conta' : 'Criar Nova Conta'}
         </h2>
 
         <div className="flex justify-center gap-4">
           <button
             onClick={() => setFormData((prev) => ({ ...prev, isLogin: false }))}
-            className={`px-5 py-2.5 text-base rounded-lg font-semibold transition-all duration-200
+            className={`px-4 py-2 text-sm rounded-lg font-semibold transition-all duration-200
 ${
   !formData.isLogin
     ? 'bg-green-600 text-white shadow-md'
@@ -452,7 +452,7 @@ ${
           </button>
           <button
             onClick={() => setFormData((prev) => ({ ...prev, isLogin: true }))}
-            className={`px-5 py-2.5 text-base rounded-lg font-semibold transition-all duration-200
+            className={`px-4 py-2 text-sm rounded-lg font-semibold transition-all duration-200
 ${
   formData.isLogin
     ? 'bg-green-600 text-white shadow-md'
@@ -463,7 +463,7 @@ ${
           </button>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-3.5">
           {!formData.isLogin && (
             <>
               <div>
@@ -475,7 +475,7 @@ ${
                     placeholder="Nome Completo"
                     value={formData.fullName}
                     onChange={handleChange}
-                    className="flex-1 bg-transparent text-white placeholder-gray-400 py-2 px-3 focus:outline-none text-base sm:text-lg"
+                    className="flex-1 bg-transparent text-white placeholder-gray-400 py-1.5 px-3 focus:outline-none text-base"
                     maxLength={170}
                   />
                 </div>
@@ -501,7 +501,7 @@ ${
                     autoComplete="username"
                     autoCapitalize="none"
                     spellCheck={false}
-                    className="flex-1 bg-transparent text-white placeholder-gray-400 py-2 px-3 focus:outline-none text-base sm:text-lg lowercase"
+                    className="flex-1 bg-transparent text-white placeholder-gray-400 py-1.5 px-3 focus:outline-none text-base lowercase"
                     maxLength={NICKNAME_MAX}
                   />
                 </div>
@@ -523,7 +523,7 @@ ${
                     placeholder="Idade (ex: 30)"
                     value={formData.age}
                     onChange={handleChange}
-                    className="flex-1 bg-transparent text-white placeholder-gray-400 py-2 px-3 focus:outline-none text-base sm:text-lg"
+                    className="flex-1 bg-transparent text-white placeholder-gray-400 py-1.5 px-3 focus:outline-none text-base"
                     inputMode="numeric"
                     pattern="\d{1,2}"
                     maxLength={2}
@@ -555,7 +555,7 @@ ${
                 onChange={handleChange}
                 autoComplete="email"
                 inputMode="email"
-                className="flex-1 bg-transparent text-white placeholder-gray-400 py-2 px-3 focus:outline-none text-base sm:text-lg"
+                className="flex-1 bg-transparent text-white placeholder-gray-400 py-1.5 px-3 focus:outline-none text-base"
                 maxLength={254}
               />
             </div>
@@ -578,7 +578,7 @@ ${
                    ele preencher a que já existe. Trocar os dois confunde o
                    gerenciador e a pessoa acaba salvando lixo. */
                 autoComplete={formData.isLogin ? 'current-password' : 'new-password'}
-                className="flex-1 bg-transparent text-white placeholder-gray-400 py-2 px-3 focus:outline-none text-base sm:text-lg"
+                className="flex-1 bg-transparent text-white placeholder-gray-400 py-1.5 px-3 focus:outline-none text-base"
                 maxLength={200}
               />
             </div>
@@ -598,7 +598,7 @@ ${
                   value={formData.confirmPassword}
                   onChange={handleChange}
                   autoComplete="new-password"
-                  className="flex-1 bg-transparent text-white placeholder-gray-400 py-2 px-3 focus:outline-none text-base sm:text-lg"
+                  className="flex-1 bg-transparent text-white placeholder-gray-400 py-1.5 px-3 focus:outline-none text-base"
                   maxLength={200}
                 />
               </div>
@@ -619,7 +619,7 @@ ${
           <button
             type="submit"
             disabled={enviando}
-            className="w-full py-3 rounded-lg bg-green-600 hover:bg-green-700
+            className="w-full py-2.5 rounded-lg bg-green-600 hover:bg-green-700
 text-white text-lg font-semibold shadow-lg transition-colors
 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-stone-900 focus:ring-green-500
 disabled:opacity-60 disabled:cursor-not-allowed"
@@ -651,7 +651,7 @@ disabled:opacity-60 disabled:cursor-not-allowed"
           ela, e aí com o arquivo em public/images.
         */}
         <button
-          className="w-full py-3 rounded-lg bg-red-700 text-white text-lg font-semibold
+          className="w-full py-2.5 rounded-lg bg-red-700 text-white text-base font-semibold
 shadow-lg opacity-50 cursor-not-allowed flex items-center justify-center gap-3"
           disabled
           title="Funcionalidade disponível apenas na web"
