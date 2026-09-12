@@ -41,6 +41,14 @@ export interface Presence {
   lon: number;
   regionKey: RegionKey;
   name?: string;
+  /**
+   * O nome público da conta (users.nickname), em minúsculas.
+   *
+   * É o que a lupa procura. Opcional porque presença não exige conta: quem
+   * está sem login aparece no globo, mas não é encontrável por nome — e essa
+   * é a diferença que o cliente deve mostrar na tela.
+   */
+  nickname?: string;
 }
 
 export interface Beacon {
@@ -78,10 +86,20 @@ export interface ClientToServer {
     lon: number;
     regionKey: RegionKey;
     name?: string;
+    nickname?: string;
   }) => void;
   /** A cada ~15s. Sem batida, a presença expira sozinha. */
   'presence:heartbeat': () => void;
   'presence:leave': () => void;
+
+  /**
+   * "Onde está fulano AGORA?" — a busca da lupa.
+   *
+   * Separada da busca do banco (/api/users/search) de propósito: o banco
+   * responde quem EXISTE, este evento responde quem está ONLINE e com qual
+   * coordenada. Presença muda a cada 15s; não é dado de tabela.
+   */
+  'directory:find': (p: { nicknames: string[] }) => void;
 
   'beacon:raise': (p: { topic?: string; ttlSec: number }) => void;
   'beacon:lower': () => void;
@@ -109,6 +127,18 @@ export interface ServerToClient {
     presence: Presence;
   }) => void;
 
+  /**
+   * Um item por nickname perguntado. `presence` nulo = essa pessoa não está
+   * online agora.
+   *
+   * EM LOTE, e não um evento por nome: a lupa mostra até oito resultados de
+   * uma vez, e oito eventos por tecla digitada consumiriam o limite de taxa em
+   * segundos — o freio contra varredura acabaria punindo o uso normal.
+   */
+  'directory:result': (p: {
+    encontrados: { nickname: string; presence: Presence | null }[];
+  }) => void;
+
   'beacon:new': (b: Beacon) => void;
   'beacon:gone': (p: { beaconId: string }) => void;
 
@@ -116,6 +146,16 @@ export interface ServerToClient {
     requestId: string;
     fromClientId: ClientId;
     fromName?: string;
+    /**
+     * O nome público de quem convidou.
+     *
+     * Vai junto porque quem recebe o convite precisa de duas coisas que só
+     * este campo dá: mostrar QUEM está chamando (um clientId não diz nada a
+     * ninguém) e, depois do aceite, achar a coordenada da pessoa no diretório
+     * para desenhar o arco — ela quase sempre está em outra região, e a lista
+     * de presença de quem recebe não a contém.
+     */
+    fromNickname?: string;
   }) => void;
   'connect:accepted': (p: {
     requestId: string;
@@ -148,6 +188,9 @@ export const HEARTBEAT_INTERVAL_MS = 15_000;
  * dos outros.
  */
 export const PRESENCE_TTL_SEC = 45;
+
+/** Teto de nomes por `directory:find`. Acima disso, o servidor ignora o resto. */
+export const DIRECTORY_MAX_POR_BUSCA = 10;
 
 /** Códigos de erro que o servidor emite em 'error'. */
 export const ErrorCode = {

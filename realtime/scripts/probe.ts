@@ -10,6 +10,8 @@
  *   npm run probe -- --name Ana --connect probe-Bruno --signal-test
  *   npm run probe -- --name Spam --flood-beacon 6
  *   npm run probe -- --name Ana --block probe-Bruno
+ *   npm run probe -- --name Ana --nick ana_mg
+ *   npm run probe -- --name Bruno --nick bruno --find ana_mg --connect-found
  */
 
 import { io, type Socket } from 'socket.io-client';
@@ -29,6 +31,8 @@ const REGIAO = arg('region', 'são paulo');
 const LAT = Number(arg('lat', '-23.55'));
 const LON = Number(arg('lon', '-46.63'));
 const CLIENT_ID = arg('client', `probe-${NOME}`);
+/** O nome publico. Sem ele, este probe aparece no globo mas nao e encontravel. */
+const NICK = arg('nick', '').trim().toLowerCase();
 
 const BEACON = arg('beacon', '');
 const BEACON_TTL = Number(arg('beacon-ttl', '300'));
@@ -39,6 +43,9 @@ const FLOOD = Number(arg('flood-beacon', '0'));
 const AUTO_ACEITA = temFlag('auto-accept');
 const AUTO_RECUSA = temFlag('auto-decline');
 const TESTE_SINAL = temFlag('signal-test');
+const PROCURAR = arg('find', '').trim().toLowerCase();
+/** Achou pelo nickname? Ja pede conexao — o caminho inteiro da lupa num comando. */
+const CONECTAR_ACHADO = temFlag('connect-found');
 
 const hora = () => new Date().toISOString().slice(11, 19);
 const log = (...a: unknown[]) => console.log(hora(), `[${NOME}]`, ...a);
@@ -58,7 +65,16 @@ socket.on('connect', () => {
     lon: LON,
     regionKey: REGIAO,
     name: NOME,
+    ...(NICK ? { nickname: NICK } : {}),
   });
+
+  if (PROCURAR) {
+    // Espera o join ser processado: procurar antes dele e' NOT_JOINED.
+    setTimeout(() => {
+      socket.emit('directory:find', { nicknames: [PROCURAR] });
+      log(`procurando "${PROCURAR}"`);
+    }, 300);
+  }
 
   if (BLOQUEAR) {
     socket.emit('block', { targetClientId: BLOQUEAR });
@@ -103,6 +119,25 @@ socket.on('presence:snapshot', ({ presences, beacons }) => {
 
 socket.on('presence:update', ({ kind, presence }) => {
   log(`update: ${kind} -> ${presence.name ?? presence.clientId}`);
+});
+
+// --- Diretorio (a lupa) -----------------------------------------------------
+
+socket.on('directory:result', ({ encontrados }) => {
+  for (const { nickname, presence } of encontrados) {
+    if (!presence) {
+      log(`busca "${nickname}": nao esta online agora`);
+      continue;
+    }
+    log(
+      `busca "${nickname}": ONLINE em ${presence.regionKey} ` +
+        `(lat ${presence.lat}, lon ${presence.lon}) clientId=${presence.clientId}`,
+    );
+    if (CONECTAR_ACHADO) {
+      socket.emit('connect:request', { targetClientId: presence.clientId });
+      log(`  pedi conexao a ${presence.clientId}`);
+    }
+  }
 });
 
 // --- Beacons ----------------------------------------------------------------

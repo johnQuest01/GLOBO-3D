@@ -47,6 +47,9 @@ export interface LimiteConfig {
 export const LIMITES: Record<string, LimiteConfig> = {
   'beacon:raise': { capacidade: 3, recargaMs: 5 * 60_000 },
   'connect:request': { capacidade: 5, recargaMs: 60_000 },
+  // Busca é barata e legítima em rajada — a pessoa erra o nome e tenta de
+  // novo. O teto existe só para impedir varredura do diretório inteiro.
+  'directory:find': { capacidade: 20, recargaMs: 60_000 },
   report: { capacidade: 5, recargaMs: 10 * 60_000 },
 };
 

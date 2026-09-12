@@ -1,9 +1,15 @@
 import { NextResponse } from 'next/server';
 
 import { getSecret } from '@/lib/auth/cookies';
+import { normalizeNickname, validateNickname } from '@/lib/auth/nickname';
 import { hashPassword, validatePassword } from '@/lib/auth/password';
 import { startSession } from '@/lib/auth/session';
-import { createUser, isAuthDbEnabled, normalizeEmail } from '@/lib/db/auth';
+import {
+  createUser,
+  emailExists,
+  isAuthDbEnabled,
+  normalizeEmail,
+} from '@/lib/db/auth';
 
 /**
  * Cadastro.
@@ -68,6 +74,13 @@ export async function POST(request: Request) {
   // contra o erro de digitação, não contra uma requisição montada à mão.
   else if (password !== confirm) erros.confirmPassword = 'As senhas não coincidem.';
 
+  // O nickname e o unico campo que OUTRAS pessoas vao ver e digitar. As regras
+  // vivem em lib/auth/nickname.ts porque o formulario usa as mesmas.
+  const nicknameCru = typeof body.nickname === 'string' ? body.nickname : '';
+  const erroNickname = validateNickname(nicknameCru);
+  if (erroNickname) erros.nickname = erroNickname;
+  const nickname = normalizeNickname(nicknameCru);
+
   const fullName = texto(body.fullName, LIMITES.nome);
   const city = texto(body.city, LIMITES.cidade);
   const state = texto(body.state, LIMITES.estado);
@@ -87,6 +100,7 @@ export async function POST(request: Request) {
   const user = await createUser({
     email: normalizeEmail(email!),
     passwordHash,
+    nickname,
     fullName,
     city,
     state,
@@ -97,10 +111,22 @@ export async function POST(request: Request) {
   });
 
   if (!user) {
-    // E-mail já cadastrado. A mensagem é genérica de propósito: dizer "esta
+    // Bateu num dos dois índices únicos, e a resposta PRECISA dizer em qual:
+    // um erro de e-mail exibido num cadastro que falhou pelo nickname manda a
+    // pessoa trocar o campo errado e tentar de novo para sempre.
+    //
+    // Sobre o e-mail a mensagem continua genérica de propósito — dizer "esta
     // conta existe" transforma o cadastro num verificador de quem tem conta.
+    // Com o nickname não há esse problema: ele já é público na busca, e a
+    // pessoa precisa saber que aquele nome está tomado para escolher outro.
+    if (await emailExists(email!)) {
+      return NextResponse.json(
+        { ok: false, errors: { email: 'Não foi possível cadastrar este e-mail.' } },
+        { status: 409 },
+      );
+    }
     return NextResponse.json(
-      { ok: false, errors: { email: 'Não foi possível cadastrar este e-mail.' } },
+      { ok: false, errors: { nickname: 'Esse nickname já está em uso.' } },
       { status: 409 },
     );
   }
@@ -117,6 +143,7 @@ export async function POST(request: Request) {
     ok: true,
     user: {
       email: user.email,
+      nickname: user.nickname,
       fullName: user.fullName,
       city: user.city,
       state: user.state,

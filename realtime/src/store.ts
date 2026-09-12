@@ -60,6 +60,25 @@ export interface PresenceStore {
   bindClient(clientId: ClientId, socketId: SocketId): Promise<void>;
   unbindClient(clientId: ClientId, socketId: SocketId): Promise<void>;
   socketOfClient(clientId: ClientId): Promise<SocketId | null>;
+  /** A presença de UMA conexão, sem varrer a região inteira. */
+  getPresence(socketId: SocketId): Promise<Presence | null>;
+
+  // --- Diretório de nicknames --------------------------------------------
+  /**
+   * O índice que faz a lupa funcionar ENTRE regiões.
+   *
+   * `listRegion` só enxerga a própria região — de propósito, senão cada pessoa
+   * que entrasse acordaria o mundo inteiro. Mas procurar alguém pelo nome é
+   * exatamente a operação que atravessa regiões: quem busca está em São Paulo
+   * e a pessoa procurada, em Tóquio. Daí um índice próprio, plano, do nickname
+   * para o clientId.
+   *
+   * TTL igual ao do apontador de cliente: nickname sem dono vivo não é achado,
+   * é fantasma.
+   */
+  bindNickname(nickname: string, clientId: ClientId): Promise<void>;
+  unbindNickname(nickname: string, clientId: ClientId): Promise<void>;
+  clientOfNickname(nickname: string): Promise<ClientId | null>;
 
   // --- Beacons -----------------------------------------------------------
   addBeacon(beacon: Beacon, ttlSec: number): Promise<void>;
@@ -88,6 +107,7 @@ export interface PresenceStore {
 const regionKeyOf = (regionKey: RegionKey) => `region:${regionKey}`;
 const presenceKeyOf = (socketId: SocketId) => `presence:${socketId}`;
 const clientKeyOf = (clientId: ClientId) => `client:${clientId}`;
+const nickKeyOf = (nickname: string) => `nick:${nickname.trim().toLowerCase()}`;
 const beaconKeyOf = (beaconId: string) => `beacon:${beaconId}`;
 const beaconsOfRegion = (regionKey: RegionKey) => `beacons:${regionKey}`;
 const requestKeyOf = (requestId: string) => `request:${requestId}`;
@@ -237,6 +257,27 @@ export function createRedisStore(redis: RedisLike): PresenceStore {
       return (await redis.get(clientKeyOf(clientId))) ?? null;
     },
 
+    async getPresence(socketId) {
+      return fromHash(await redis.hgetall(presenceKeyOf(socketId)));
+    },
+
+    // --- Diretório -------------------------------------------------------
+
+    async bindNickname(nickname, clientId) {
+      await redis.set(nickKeyOf(nickname), clientId, 'EX', PRESENCE_TTL_SEC * 4);
+    },
+
+    async unbindNickname(nickname, clientId) {
+      // Mesma checagem do unbindClient, e pela mesma razão: a pessoa pode ter
+      // aberto outra aba: fechar a antiga não pode apagar o apontador da nova.
+      const atual = await redis.get(nickKeyOf(nickname));
+      if (atual === clientId) await redis.del(nickKeyOf(nickname));
+    },
+
+    async clientOfNickname(nickname) {
+      return (await redis.get(nickKeyOf(nickname))) ?? null;
+    },
+
     // --- Beacons ---------------------------------------------------------
 
     async addBeacon(beacon, ttlSec) {
@@ -327,6 +368,8 @@ export function createMemoryStore(): PresenceStore {
   const presencas = new Map<SocketId, { presence: Presence; expiraEm: number }>();
   const regioes = new Map<RegionKey, Set<SocketId>>();
   const clientes = new Map<ClientId, SocketId>();
+  /** nickname em minúsculas -> clientId. O índice plano da busca. */
+  const apelidos = new Map<string, ClientId>();
   const beacons = new Map<string, Beacon>();
   const beaconsPorRegiao = new Map<RegionKey, Set<string>>();
   const pedidos = new Map<string, { req: PendingRequest; expiraEm: number }>();
@@ -385,6 +428,25 @@ export function createMemoryStore(): PresenceStore {
 
     async socketOfClient(clientId) {
       return clientes.get(clientId) ?? null;
+    },
+
+    async getPresence(socketId) {
+      const entrada = presencas.get(socketId);
+      if (!entrada || !vivo(entrada)) return null;
+      return entrada.presence;
+    },
+
+    async bindNickname(nickname, clientId) {
+      apelidos.set(nickname.trim().toLowerCase(), clientId);
+    },
+
+    async unbindNickname(nickname, clientId) {
+      const chave = nickname.trim().toLowerCase();
+      if (apelidos.get(chave) === clientId) apelidos.delete(chave);
+    },
+
+    async clientOfNickname(nickname) {
+      return apelidos.get(nickname.trim().toLowerCase()) ?? null;
     },
 
     async addBeacon(beacon) {
@@ -452,6 +514,7 @@ export function createMemoryStore(): PresenceStore {
       presencas.clear();
       regioes.clear();
       clientes.clear();
+      apelidos.clear();
       beacons.clear();
       beaconsPorRegiao.clear();
       pedidos.clear();

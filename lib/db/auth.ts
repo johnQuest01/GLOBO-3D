@@ -16,6 +16,7 @@ const sql = DATABASE_URL ? neon(DATABASE_URL) : null;
 export interface UserRow {
   id: string;
   email: string;
+  nickname: string | null;
   full_name: string | null;
   country: string | null;
   state: string | null;
@@ -28,6 +29,11 @@ export interface UserRow {
 export interface AuthUser {
   id: string;
   email: string;
+  /**
+   * Nulo nas contas criadas antes da busca por nickname existir. Elas escolhem
+   * um na primeira vez que abrirem a busca — exigir aqui deslogaria todas.
+   */
+  nickname: string | null;
   fullName: string | null;
   country: string | null;
   state: string | null;
@@ -36,10 +42,19 @@ export interface AuthUser {
   bannedReason: string | null;
 }
 
+/** O que é seguro devolver sobre OUTRA pessoa. Note o que não está aqui: e-mail. */
+export interface PublicUser {
+  nickname: string;
+  country: string | null;
+  state: string | null;
+  city: string | null;
+}
+
 function toUser(row: Record<string, unknown>): AuthUser {
   return {
     id: String(row.id),
     email: String(row.email),
+    nickname: (row.nickname as string) ?? null,
     fullName: (row.full_name as string) ?? null,
     country: (row.country as string) ?? null,
     state: (row.state as string) ?? null,
@@ -61,6 +76,7 @@ export function normalizeEmail(email: string): string {
 export interface NewUser {
   email: string;
   passwordHash: string;
+  nickname?: string | null;
   fullName?: string | null;
   country?: string | null;
   state?: string | null;
@@ -69,25 +85,112 @@ export interface NewUser {
 }
 
 /**
- * Cria a conta. Devolve null se o e-mail já existe.
+ * Cria a conta. Devolve null se o e-mail OU o nickname já existem.
  *
- * A checagem é do BANCO (`on conflict do nothing` sobre o índice único), e não
- * um "select antes de inserir": dois cadastros simultâneos com o mesmo e-mail
- * passariam pelo select ao mesmo tempo e criariam duas contas.
+ * A checagem é do BANCO (`on conflict do nothing` sobre os índices únicos), e
+ * não um "select antes de inserir": dois cadastros simultâneos com o mesmo
+ * e-mail passariam pelo select ao mesmo tempo e criariam duas contas.
+ *
+ * `on conflict do nothing` SEM especificar a coluna, de propósito: agora são
+ * dois índices únicos (email e lower(nickname)), e nomear só um faria o outro
+ * estourar exceção em vez de devolver null.
+ *
+ * Quem chama descobre QUAL dos dois bateu com `emailExists` / `isNicknameTaken`
+ * — duas consultas a mais só no caminho do erro, que é raro.
  */
 export async function createUser(input: NewUser): Promise<AuthUser | null> {
   if (!sql) return null;
   const rows = (await sql`
-    insert into users (email, password_hash, full_name, country, state, city, client_id)
+    insert into users (email, password_hash, nickname, full_name, country, state, city, client_id)
     values (
-      ${normalizeEmail(input.email)}, ${input.passwordHash}, ${input.fullName ?? null},
+      ${normalizeEmail(input.email)}, ${input.passwordHash}, ${input.nickname ?? null},
+      ${input.fullName ?? null},
       ${input.country ?? null}, ${input.state ?? null}, ${input.city ?? null},
       ${input.clientId ?? null}
     )
-    on conflict (email) do nothing
-    returning id, email, full_name, country, state, city, banned_at, banned_reason
+    on conflict do nothing
+    returning id, email, nickname, full_name, country, state, city, banned_at, banned_reason
   `) as Record<string, unknown>[];
 
+  return rows.length > 0 ? toUser(rows[0]!) : null;
+}
+
+// ---------------------------------------------------------------------------
+// Nickname
+// ---------------------------------------------------------------------------
+
+/** Já existe alguém com este nickname? A comparação é a mesma do índice único. */
+export async function isNicknameTaken(nickname: string): Promise<boolean> {
+  if (!sql) return false;
+  const rows = (await sql`
+    select 1 from users where lower(nickname) = ${nickname.trim().toLowerCase()} limit 1
+  `) as unknown[];
+  return rows.length > 0;
+}
+
+/** Só para separar "e-mail em uso" de "nickname em uso" na resposta do cadastro. */
+export async function emailExists(email: string): Promise<boolean> {
+  if (!sql) return false;
+  const rows = (await sql`
+    select 1 from users where email = ${normalizeEmail(email)} limit 1
+  `) as unknown[];
+  return rows.length > 0;
+}
+
+/**
+ * Busca por prefixo de nickname, para a lupa do globo.
+ *
+ * PREFIXO, e não `%termo%`: busca por pedaço no meio varreria a tabela toda e
+ * transformaria a caixa de busca num jeito de listar todo mundo digitando "a".
+ * Quem procura alguém sabe como o nickname começa.
+ *
+ * Banido não aparece — continuar visível na busca seria continuar alcançável.
+ */
+export async function searchByNickname(
+  prefixo: string,
+  limite = 8,
+): Promise<PublicUser[]> {
+  if (!sql) return [];
+  const termo = prefixo.trim().toLowerCase();
+  if (termo.length < 2) return [];
+
+  // `like` com o termo já escapado: `_` e `%` digitados por quem busca são
+  // caracteres literais, não curingas. Sem isto, "_" sozinho casaria com tudo.
+  const padrao = termo.replace(/[\\%_]/g, '\\$&') + '%';
+
+  const rows = (await sql`
+    select nickname, country, state, city
+    from users
+    where lower(nickname) like ${padrao}
+      and banned_at is null
+    order by length(nickname), nickname
+    limit ${Math.min(limite, 20)}
+  `) as Record<string, unknown>[];
+
+  return rows.map((r) => ({
+    nickname: String(r.nickname),
+    country: (r.country as string) ?? null,
+    state: (r.state as string) ?? null,
+    city: (r.city as string) ?? null,
+  }));
+}
+
+/** Escolha do nickname depois do cadastro (contas antigas). Null se já for de outro. */
+export async function setNickname(
+  userId: string,
+  nickname: string,
+): Promise<AuthUser | null> {
+  if (!sql) return null;
+  const rows = (await sql`
+    update users set nickname = ${nickname.trim().toLowerCase()}
+    where id = ${userId}::uuid
+      and not exists (
+        select 1 from users outro
+        where lower(outro.nickname) = ${nickname.trim().toLowerCase()}
+          and outro.id <> ${userId}::uuid
+      )
+    returning id, email, nickname, full_name, country, state, city, banned_at, banned_reason
+  `) as Record<string, unknown>[];
   return rows.length > 0 ? toUser(rows[0]!) : null;
 }
 
@@ -96,7 +199,7 @@ export async function findUserByEmail(
 ): Promise<(AuthUser & { passwordHash: string }) | null> {
   if (!sql) return null;
   const rows = (await sql`
-    select id, email, password_hash, full_name, country, state, city,
+    select id, email, nickname, password_hash, full_name, country, state, city,
            banned_at, banned_reason
     from users
     where email = ${normalizeEmail(email)}
@@ -110,7 +213,7 @@ export async function findUserByEmail(
 export async function findUserById(id: string): Promise<AuthUser | null> {
   if (!sql) return null;
   const rows = (await sql`
-    select id, email, full_name, country, state, city, banned_at, banned_reason
+    select id, email, nickname, full_name, country, state, city, banned_at, banned_reason
     from users where id = ${id}::uuid limit 1
   `) as Record<string, unknown>[];
   return rows.length > 0 ? toUser(rows[0]!) : null;
@@ -152,7 +255,7 @@ export async function createSession(
 export async function findSessionUser(token: string): Promise<AuthUser | null> {
   if (!sql) return null;
   const rows = (await sql`
-    select u.id, u.email, u.full_name, u.country, u.state, u.city,
+    select u.id, u.email, u.nickname, u.full_name, u.country, u.state, u.city,
            u.banned_at, u.banned_reason
     from sessions s
     join users u on u.id = s.user_id

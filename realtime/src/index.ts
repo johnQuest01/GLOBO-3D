@@ -23,6 +23,7 @@ import { Server } from 'socket.io';
 import type { ClientToServer, ServerToClient } from '../shared/protocol.js';
 import { HEARTBEAT_INTERVAL_MS, PRESENCE_TTL_SEC } from '../shared/protocol.js';
 import { registerBeacons } from './beacons.js';
+import { registerDirectory } from './directory.js';
 import { avisarSeFaltaTurn, registerMatchmaking } from './matchmaking.js';
 import { registerPresence, type RealtimeServer, type SocketData } from './presence.js';
 import { criarLimitador, registerSafety } from './safety.js';
@@ -117,6 +118,7 @@ async function main() {
     log(`conn   ${socket.id}`);
     registerPresence(io, socket, store, log);
     registerBeacons(io, socket, store, limitador, log);
+    registerDirectory(io, socket, store, limitador, log);
     registerMatchmaking(io, socket, store, limitador, log);
     registerSignaling(io, socket, log);
     registerSafety(io, socket, store, limitador, log);

@@ -1,7 +1,7 @@
 'use client';
 
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { Suspense, useEffect, useMemo, useRef, useState } from 'react';
+import { Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import * as THREE from 'three';
 
 import { useGlobeStateAndHandlers } from '@/app/hooks/useGlobeStateAndHandlers';
@@ -9,9 +9,10 @@ import { usePopupContent } from '@/app/hooks/usePopupContent';
 import { useMessageSystem } from '@/app/hooks/useMessageSystem';
 import { useGeoMapping } from '@/app/hooks/useGeoMapping';
 import { useBehaviorTracker } from '@/app/hooks/useBehaviorTracker';
-import { useLiveRealtime } from '@/app/hooks/useLiveRealtime';
+import { useLiveRealtime, type PessoaEncontrada } from '@/app/hooks/useLiveRealtime';
 
 import GlobeScene from './GlobeScene';
+import type { AlvoDoFoco } from './PersonFocus';
 import StatePopup from '@/components/globe/ui/StatePopup';
 import CountryPopup from '@/components/globe/ui/CountryPopup';
 import TravelPopup from '@/components/globe/ui/TravelPopup';
@@ -31,7 +32,8 @@ import GlobeModeToggle, { GlobeMode } from '@/components/globe/ui/GlobeModeToggl
 import AdminLoginPopup from '@/components/globe/ui/AdminLoginPopup';
 import GlobeClock from '@/components/globe/ui/GlobeClock';
 import { latLonToVector3 } from '@/components/lib/utils';
-import LiveChatPanel from '@/components/globe/ui/LiveChatPanel';
+import ChatOverlay from '@/components/globe/ui/ChatOverlay';
+import PeopleSearchPanel from '@/components/globe/ui/PeopleSearchPanel';
 
 import AppHeader from '@/components/layout/AppHeader';
 import AppFooter from '@/components/layout/AppFooter';
@@ -137,7 +139,7 @@ export default function GlobeCanvas() {
     removeMessage,
   } = useMessageSystem();
 
-  const { keyToVector3 } = useGeoMapping();
+  const { keyToVector3, keyToLatLon } = useGeoMapping();
 
   // Coletor do algoritmo de comportamento. Nada aqui roda por quadro: os
   // eventos vao para uma fila e sao descarregados em lote.
@@ -215,6 +217,54 @@ export default function GlobeCanvas() {
    */
   const realtime = useLiveRealtime(states.currentUser);
 
+  /** A lupa: painel aberto e a pessoa que o globo esta olhando agora. */
+  const [buscaAberta, setBuscaAberta] = useState(false);
+  const [alvoDaBusca, setAlvoDaBusca] = useState<AlvoDoFoco | null>(null);
+
+  /**
+   * Leva o globo ate a pessoa.
+   *
+   * A coordenada preferida e a da PRESENCA (onde ela esta agora); a do
+   * cadastro so entra quando ela esta offline. As duas costumam ser a mesma
+   * cidade, mas quando nao sao, e a presenca que esta certa.
+   */
+  const verPessoaNoGlobo = useCallback(
+    (pessoa: PessoaEncontrada) => {
+      const daPresenca = pessoa.presenca;
+      const chave = [pessoa.city, pessoa.state, pessoa.country]
+        .filter((v): v is string => Boolean(v && v.trim()))
+        .map((v) => v.trim().toLowerCase());
+
+      let lat = daPresenca?.lat;
+      let lon = daPresenca?.lon;
+
+      if (lat === undefined || lon === undefined) {
+        for (const c of chave) {
+          const coord = keyToLatLon(c);
+          if (coord) {
+            lat = coord.lat;
+            lon = coord.lon;
+            break;
+          }
+        }
+      }
+
+      if (lat === undefined || lon === undefined) return false;
+
+      setAlvoDaBusca({
+        lat,
+        lon,
+        nickname: pessoa.nickname,
+        online: Boolean(daPresenca),
+        // O instante e o que reabre a viagem quando a MESMA pessoa e
+        // escolhida de novo — sem ele, o segundo clique nao mudaria nada.
+        pedidoEm: Date.now(),
+      });
+      return true;
+    },
+    [keyToLatLon],
+  );
+
   /**
    * As duas pontas do arco.
    *
@@ -222,16 +272,25 @@ export default function GlobeCanvas() {
    * aqui evita guardar a mesma posicao em dois lugares e elas discordarem.
    */
   const arco = useMemo(() => {
-    const { presencas, parClientId } = realtime.estado;
+    const { presencas, parClientId, parPresenca } = realtime.estado;
     if (!parClientId) return null;
-    const eu = presencas.find((p) => p.clientId === realtime.meuClientId);
-    const outro = presencas.find((p) => p.clientId === parClientId);
+
+    const eu =
+      realtime.minhaPresenca ??
+      presencas.find((p) => p.clientId === realtime.meuClientId);
+
+    // A presenca do par vem do DIRETORIO quando ele esta em outra regiao — que
+    // e o caso comum de quem se achou pela lupa. A lista de presencas so
+    // enxerga a propria regiao, e usar so ela deixava o arco sem desenhar
+    // justamente na conversa mais interessante, a de longe.
+    const outro = parPresenca ?? presencas.find((p) => p.clientId === parClientId);
     if (!eu || !outro) return null;
+
     return {
       de: latLonToVector3(eu.lat, eu.lon, 1.5),
       para: latLonToVector3(outro.lat, outro.lon, 1.5),
     };
-  }, [realtime.estado, realtime.meuClientId]);
+  }, [realtime.estado, realtime.meuClientId, realtime.minhaPresenca]);
 
   // --- LÓGICA DE DESTINO INTELIGENTE ---
   const handleSendMessage = (text: string, destination: string) => {
@@ -319,6 +378,7 @@ export default function GlobeCanvas() {
             onPedirConexao={realtime.pedirConexao}
             arco={arco}
             arcoAtivo={realtime.estado.estadoDaChamada === 'conectado'}
+            alvoDaBusca={alvoDaBusca}
           />
         </Suspense>
       </Canvas>
@@ -396,6 +456,31 @@ export default function GlobeCanvas() {
             isVisible={states.isMainUiVisible}
             className="bottom-[24.5rem] pointer-events-auto"
           />
+
+          {/* A LUPA. Procurar alguem pelo nickname e ir ate a pessoa no globo. */}
+          {realtime.estado.ligado && (
+            <button
+              type="button"
+              onClick={() => setBuscaAberta(true)}
+              disabled={states.isAnyPopupOpen}
+              title="Procurar uma pessoa pelo nickname"
+              aria-label="Procurar uma pessoa pelo nickname"
+              className={`absolute right-4 z-40 p-4 rounded-full shadow-lg text-white transition-all duration-300 bg-slate-700/90 hover:bg-slate-600 disabled:bg-gray-600 disabled:opacity-50 bottom-[32.5rem] pointer-events-auto ${
+                states.isMainUiVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
+              }`}
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                className="w-6 h-6"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <circle cx="11" cy="11" r="7" />
+                <path d="M20 20l-3.5-3.5" strokeLinecap="round" />
+              </svg>
+            </button>
+          )}
 
           {/* Sinal de "quero conversar". So aparece com o realtime configurado
               (NEXT_PUBLIC_REALTIME_URL) — sem ele, nada disto existe. */}
@@ -610,7 +695,9 @@ export default function GlobeCanvas() {
               <div className="w-80 max-w-[calc(100vw-2rem)] rounded-2xl bg-stone-900 p-5 ring-1 ring-cyan-700/60 shadow-2xl">
                 <p className="text-white text-base">
                   <span className="font-semibold text-cyan-300">
-                    {realtime.estado.convite.fromName ?? 'Alguem'}
+                    {realtime.estado.convite.fromNickname
+                      ? `@${realtime.estado.convite.fromNickname}`
+                      : (realtime.estado.convite.fromName ?? 'Alguem')}
                   </span>{' '}
                   quer conversar com voce.
                 </p>
@@ -639,10 +726,13 @@ export default function GlobeCanvas() {
 
           {realtime.estado.emChamada && (
             <div className="pointer-events-auto">
-              <LiveChatPanel
+              <ChatOverlay
                 estado={realtime.estado}
                 onEnviarTexto={realtime.enviarTexto}
                 onEnviarImagem={realtime.enviarImagem}
+                onEnviarAudio={realtime.enviarAudio}
+                onDigitando={realtime.avisarDigitando}
+                onMarcarLidas={realtime.marcarLidas}
                 onAlternarVideo={realtime.alternarVideo}
                 onEncerrar={realtime.encerrarChamada}
                 onDenunciar={realtime.denunciar}
@@ -650,6 +740,28 @@ export default function GlobeCanvas() {
               />
             </div>
           )}
+
+          <div className="pointer-events-auto">
+            <PeopleSearchPanel
+              aberto={buscaAberta}
+              onFechar={() => setBuscaAberta(false)}
+              meuNickname={realtime.meuNickname}
+              presencaPorNickname={realtime.presencaPorNickname}
+              onVerQuemEstaOnline={realtime.verQuemEstaOnline}
+              onVerNoGlobo={(pessoa) => {
+                if (verPessoaNoGlobo(pessoa)) setBuscaAberta(false);
+              }}
+              onConectar={(pessoa) => {
+                if (!pessoa.presenca) return;
+                verPessoaNoGlobo(pessoa);
+                realtime.pedirConexao(pessoa.presenca.clientId, {
+                  nickname: pessoa.nickname,
+                  presenca: pessoa.presenca,
+                });
+                setBuscaAberta(false);
+              }}
+            />
+          </div>
 
           {realtime.estado.aviso && (
             <button

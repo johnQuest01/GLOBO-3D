@@ -118,6 +118,7 @@ export function registerMatchmaking(
       requestId,
       fromClientId: meuClientId,
       ...(socket.data.presence?.name ? { fromName: socket.data.presence.name } : {}),
+      ...(socket.data.nickname ? { fromNickname: socket.data.nickname } : {}),
     });
 
     log(`pedido ${requestId.slice(0, 8)}: ${meuClientId} -> ${targetClientId}`);

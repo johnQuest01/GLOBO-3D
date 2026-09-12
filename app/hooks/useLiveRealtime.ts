@@ -2,7 +2,12 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
-import { PeerConnection, type EstadoDaConexao } from '@/lib/realtime/peer';
+import {
+  PeerConnection,
+  type EstadoDaConexao,
+  type EstadoDaEntrega,
+  type TipoDeMidia,
+} from '@/lib/realtime/peer';
 import { getSocket, isRealtimeEnabled } from '@/lib/realtime/socket';
 import type { Beacon, Presence } from '@/realtime/shared/protocol';
 import { HEARTBEAT_INTERVAL_MS } from '@/realtime/shared/protocol';
@@ -10,31 +15,49 @@ import { useGeoMapping } from '@/app/hooks/useGeoMapping';
 import type { UserProfileData } from '@/app/types/user';
 
 /**
- * Presença, beacons e a conversa ao vivo — do lado do navegador.
+ * Presença, busca, beacons e a conversa ao vivo — do lado do navegador.
  *
- * Um hook só, e não três, porque as três coisas são o mesmo fio: a presença
- * diz onde você está, o beacon anuncia que você quer conversa, e o convite
- * aceito vira o canal P2P. Separá-los obrigaria a compartilhar o socket, o
- * par e o estado da negociação entre hooks — que é o mesmo estado, só que
- * espalhado.
+ * Um hook só, e não quatro, porque as coisas são o mesmo fio: a presença diz
+ * onde você está, a busca encontra alguém em qualquer região, o convite aceito
+ * vira o canal P2P e a conversa acontece dentro dele. Separá-los obrigaria a
+ * compartilhar o socket, o par e o estado da negociação entre hooks — que é o
+ * mesmo estado, só que espalhado.
  *
  * O QUE É EFÊMERO E O QUE É GRAVADO: tudo aqui é efêmero. Nenhuma mensagem
- * desta conversa toca o Neon. O que o projeto persiste é outra coisa (perfil e
- * comportamento), e continua onde estava.
+ * desta conversa toca o Neon, nem passa pelo servidor de realtime. O que o
+ * projeto persiste é outra coisa (perfil e comportamento), e continua onde
+ * estava.
  */
 
 export interface MensagemDoChat {
   id: string;
   de: 'eu' | 'outro';
+  tipo: 'texto' | 'imagem' | 'audio';
   texto?: string;
-  imagemUrl?: string;
+  /** Um blob: URL local. Nunca uma URL de servidor — não existe servidor aqui. */
+  midiaUrl?: string;
+  duracaoMs?: number;
   quando: number;
+  /** Só nas minhas mensagens: o ✓ / ✓✓ da interface. */
+  entrega?: EstadoDaEntrega;
 }
 
 export interface ConviteRecebido {
   requestId: string;
   fromClientId: string;
   fromName?: string;
+  fromNickname?: string;
+}
+
+/** Um resultado da lupa, já com as duas metades juntas. */
+export interface PessoaEncontrada {
+  nickname: string;
+  /** Do cadastro (Neon): onde a pessoa disse que mora. */
+  country: string | null;
+  state: string | null;
+  city: string | null;
+  /** Do realtime: onde ela está AGORA. Nulo quando está offline. */
+  presenca: Presence | null;
 }
 
 export interface EstadoDoRealtime {
@@ -47,7 +70,12 @@ export interface EstadoDoRealtime {
   emChamada: boolean;
   estadoDaChamada: EstadoDaConexao | null;
   parClientId: string | null;
+  /** Quem é o par, com coordenada — mesmo que ele esteja em outra região. */
+  parPresenca: Presence | null;
+  parNome: string | null;
   mensagens: MensagemDoChat[];
+  /** O outro lado está escrevendo agora. */
+  digitando: boolean;
   videoRemoto: MediaStream | null;
   videoLocal: MediaStream | null;
   aviso: string | null;
@@ -62,16 +90,34 @@ export function useLiveRealtime(user: UserProfileData | null) {
   const [beacons, setBeacons] = useState<Beacon[]>([]);
   const [convite, setConvite] = useState<ConviteRecebido | null>(null);
   const [mensagens, setMensagens] = useState<MensagemDoChat[]>([]);
+  const [digitando, setDigitando] = useState(false);
   const [estadoDaChamada, setEstadoDaChamada] = useState<EstadoDaConexao | null>(null);
   const [parClientId, setParClientId] = useState<string | null>(null);
+  const [parPresenca, setParPresenca] = useState<Presence | null>(null);
+  const [parNome, setParNome] = useState<string | null>(null);
   const [videoRemoto, setVideoRemoto] = useState<MediaStream | null>(null);
   const [videoLocal, setVideoLocal] = useState<MediaStream | null>(null);
   const [conectado, setConectado] = useState(false);
   const [aviso, setAviso] = useState<string | null>(null);
 
+  /**
+   * Quem está online entre os nicknames já perguntados.
+   *
+   * Fica aqui, e não dentro do painel de busca, porque o resultado sobrevive ao
+   * fechar do painel: é ele que diz ao globo onde desenhar o pino da pessoa
+   * encontrada.
+   */
+  const [presencaPorNickname, setPresencaPorNickname] = useState<
+    Record<string, Presence | null>
+  >({});
+
   const peerRef = useRef<PeerConnection | null>(null);
   const peerSocketIdRef = useRef<string | null>(null);
   const meuClientIdRef = useRef<string>('');
+  /** Espelho do nickname do par, para resolver a coordenada dele depois do aceite. */
+  const parNicknameRef = useRef<string | null>(null);
+
+  const meuNickname = user?.nickname?.trim().toLowerCase() || undefined;
 
   /**
    * Onde a pessoa está, para efeito de presença.
@@ -112,49 +158,96 @@ export function useLiveRealtime(user: UserProfileData | null) {
         lon: local.lon,
         regionKey: local.regionKey,
         ...(user?.fullName ? { name: user.fullName.split(' ')[0] } : {}),
+        // Sem nickname a pessoa aparece no globo, mas ninguém consegue
+        // encontrá-la pela lupa. É a diferença entre estar e ser achável.
+        ...(meuNickname ? { nickname: meuNickname } : {}),
       });
     };
 
-    if (socket.connected) entrar();
-    socket.on('connect', entrar);
-    socket.on('disconnect', () => setConectado(false));
+    const aoDesconectar = () => setConectado(false);
 
-    socket.on('presence:snapshot', ({ presences, beacons: bs }) => {
+    const aoSnapshot = ({
+      presences,
+      beacons: bs,
+    }: {
+      presences: Presence[];
+      beacons: Beacon[];
+    }) => {
       setPresencas(presences);
       setBeacons(bs);
-    });
+    };
 
-    socket.on('presence:update', ({ kind, presence }) => {
+    const aoAtualizarPresenca = ({
+      kind,
+      presence,
+    }: {
+      kind: 'join' | 'leave' | 'move';
+      presence: Presence;
+    }) => {
       setPresencas((atual) => {
         const semEle = atual.filter((p) => p.clientId !== presence.clientId);
         return kind === 'leave' ? semEle : [...semEle, presence];
       });
-    });
+    };
 
-    socket.on('beacon:new', (b) => {
+    const aoBeaconNovo = (b: Beacon) =>
       setBeacons((atual) => [...atual.filter((x) => x.beaconId !== b.beaconId), b]);
-    });
 
-    socket.on('beacon:gone', ({ beaconId }) => {
+    const aoBeaconSumir = ({ beaconId }: { beaconId: string }) =>
       setBeacons((atual) => atual.filter((b) => b.beaconId !== beaconId));
-    });
 
-    socket.on('connect:incoming', (p) => setConvite(p));
+    const aoResultadoDaBusca = ({
+      encontrados,
+    }: {
+      encontrados: { nickname: string; presence: Presence | null }[];
+    }) => {
+      setPresencaPorNickname((atual) => {
+        const novo = { ...atual };
+        for (const { nickname, presence } of encontrados) novo[nickname] = presence;
+        return novo;
+      });
 
-    socket.on('connect:declined', () =>
-      setAviso('A pessoa não está disponível agora.'),
-    );
+      // Se uma dessas respostas é a do par, ela é a coordenada que o arco do
+      // globo estava esperando.
+      const doPar = encontrados.find((e) => e.nickname === parNicknameRef.current);
+      if (doPar?.presence) setParPresenca(doPar.presence);
+    };
 
-    socket.on('rate_limited', ({ action, retryAfterMs }) => {
+    const aoConviteChegar = (p: ConviteRecebido) => setConvite(p);
+
+    const aoRecusarem = () => setAviso('A pessoa não está disponível agora.');
+
+    const aoLimitar = ({
+      action,
+      retryAfterMs,
+    }: {
+      action: string;
+      retryAfterMs: number;
+    }) => {
       const s = Math.ceil(retryAfterMs / 1000);
       setAviso(
         action === 'beacon:raise'
           ? `Espere ${s}s para acender outro sinal.`
-          : `Muitos pedidos. Tente de novo em ${s}s.`,
+          : action === 'directory:find'
+            ? `Muitas buscas seguidas. Tente de novo em ${s}s.`
+            : `Muitos pedidos. Tente de novo em ${s}s.`,
       );
-    });
+    };
 
-    socket.on('error', ({ message }) => setAviso(message));
+    const aoErro = ({ message }: { message: string }) => setAviso(message);
+
+    if (socket.connected) entrar();
+    socket.on('connect', entrar);
+    socket.on('disconnect', aoDesconectar);
+    socket.on('presence:snapshot', aoSnapshot);
+    socket.on('presence:update', aoAtualizarPresenca);
+    socket.on('beacon:new', aoBeaconNovo);
+    socket.on('beacon:gone', aoBeaconSumir);
+    socket.on('directory:result', aoResultadoDaBusca);
+    socket.on('connect:incoming', aoConviteChegar);
+    socket.on('connect:declined', aoRecusarem);
+    socket.on('rate_limited', aoLimitar);
+    socket.on('error', aoErro);
 
     const batida = setInterval(() => {
       if (socket.connected) socket.emit('presence:heartbeat');
@@ -163,9 +256,34 @@ export function useLiveRealtime(user: UserProfileData | null) {
     return () => {
       clearInterval(batida);
       socket.emit('presence:leave');
-      socket.removeAllListeners();
+
+      /*
+       * SÓ OS OUVINTES DESTE EFEITO.
+       *
+       * Aqui havia um `socket.removeAllListeners()`, e ele apagava também os
+       * ouvintes do OUTRO efeito — o do par (`connect:accepted`, `signal`,
+       * `peer:disconnected`). Como aquele efeito tem dependências próprias, ele
+       * não voltava a registrar nada, e o socket ficava surdo justamente para o
+       * aperto de mão.
+       *
+       * O sintoma, visto acontecendo no teste com dois navegadores: quem
+       * convidou nunca abria a conversa, e quem aceitou ficava eternamente em
+       * "conectando…". Nenhum erro no console, nenhum erro no servidor — o
+       * evento chegava e não havia mais ninguém escutando.
+       */
+      socket.off('connect', entrar);
+      socket.off('disconnect', aoDesconectar);
+      socket.off('presence:snapshot', aoSnapshot);
+      socket.off('presence:update', aoAtualizarPresenca);
+      socket.off('beacon:new', aoBeaconNovo);
+      socket.off('beacon:gone', aoBeaconSumir);
+      socket.off('directory:result', aoResultadoDaBusca);
+      socket.off('connect:incoming', aoConviteChegar);
+      socket.off('connect:declined', aoRecusarem);
+      socket.off('rate_limited', aoLimitar);
+      socket.off('error', aoErro);
     };
-  }, [local, carregandoMapa, user?.fullName]);
+  }, [local, carregandoMapa, user?.fullName, meuNickname]);
 
   // --- O par ----------------------------------------------------------------
 
@@ -177,9 +295,20 @@ export function useLiveRealtime(user: UserProfileData | null) {
     peerRef.current?.encerrar();
     peerRef.current = null;
     peerSocketIdRef.current = null;
+    parNicknameRef.current = null;
     setParClientId(null);
+    setParPresenca(null);
+    setParNome(null);
     setEstadoDaChamada(null);
-    setMensagens([]);
+    setDigitando(false);
+    // As mensagens somem com o painel: elas só existiam na memória desta aba,
+    // e é isso que "não fica gravado em lugar nenhum" quer dizer.
+    setMensagens((antigas) => {
+      for (const m of antigas) {
+        if (m.midiaUrl) URL.revokeObjectURL(m.midiaUrl);
+      }
+      return [];
+    });
     setVideoRemoto(null);
     setVideoLocal(null);
   }, []);
@@ -207,16 +336,43 @@ export function useLiveRealtime(user: UserProfileData | null) {
 
       const peer = new PeerConnection(iceServers, polite, {
         onSignal: (data) => socket.emit('signal', { toSocketId: peerSocketId, data }),
-        onTexto: (texto) =>
+
+        onTexto: (id, texto) =>
           setMensagens((m) => [
             ...m,
-            { id: idNovo(), de: 'outro', texto, quando: Date.now() },
+            { id, de: 'outro', tipo: 'texto', texto, quando: Date.now() },
           ]),
-        onImagem: (imagemUrl) =>
+
+        onMidia: (id, tipo, midiaUrl, _mime, duracaoMs) =>
           setMensagens((m) => [
             ...m,
-            { id: idNovo(), de: 'outro', imagemUrl, quando: Date.now() },
+            {
+              id,
+              de: 'outro',
+              tipo: tipo === 'audio' ? 'audio' : 'imagem',
+              midiaUrl,
+              duracaoMs,
+              quando: Date.now(),
+            },
           ]),
+
+        onDigitando: setDigitando,
+
+        // O recibo chega com o id da mensagem, e só sobe o estado: um "lido"
+        // que chegasse antes do "entregue" (rede reordena) não pode rebaixar.
+        onRecibo: (id, estado) =>
+          setMensagens((m) =>
+            m.map((msg) =>
+              msg.id === id && msg.de === 'eu'
+                ? {
+                    ...msg,
+                    entrega:
+                      msg.entrega === 'lido' ? 'lido' : (estado as EstadoDaEntrega),
+                  }
+                : msg,
+            ),
+          ),
+
         onVideoRemoto: setVideoRemoto,
         onEstado: setEstadoDaChamada,
       });
@@ -230,6 +386,19 @@ export function useLiveRealtime(user: UserProfileData | null) {
     };
 
     const aoDesconectarPar = () => {
+      /*
+       * SÓ AVISA QUEM NÃO FOI O AUTOR.
+       *
+       * Encerrar é uma conversa de ida e volta: quem sai avisa o outro, o
+       * outro encerra do lado dele e o `peer:hangup` dele volta para cá. Sem
+       * esta guarda, quem apertou Esc recebia "a outra pessoa encerrou a
+       * conversa" — o aplicativo culpando o outro pelo que a própria pessoa
+       * acabou de fazer. Visto acontecendo no teste com dois navegadores.
+       *
+       * `peerRef.current` já é nulo quando o encerramento partiu daqui, e é
+       * isso que distingue os dois casos.
+       */
+      if (!peerRef.current) return;
       setAviso('A outra pessoa encerrou a conversa.');
       encerrarChamada();
     };
@@ -245,6 +414,23 @@ export function useLiveRealtime(user: UserProfileData | null) {
     };
   }, [encerrarChamada]);
 
+  // --- Busca ----------------------------------------------------------------
+
+  /**
+   * Pergunta ao diretório quem, desta lista, está online agora.
+   *
+   * Em lote de propósito: a lupa mostra vários resultados, e um evento por
+   * nome consumiria o limite de taxa do servidor em poucas teclas.
+   */
+  const verQuemEstaOnline = useCallback((nicknames: string[]) => {
+    const limpos = nicknames
+      .map((n) => n.trim().toLowerCase())
+      .filter(Boolean)
+      .slice(0, 10);
+    if (limpos.length === 0) return;
+    getSocket()?.emit('directory:find', { nicknames: limpos });
+  }, []);
+
   // --- Ações ----------------------------------------------------------------
 
   const acenderBeacon = useCallback((topic: string, ttlSec = 900) => {
@@ -255,14 +441,37 @@ export function useLiveRealtime(user: UserProfileData | null) {
     getSocket()?.emit('beacon:lower');
   }, []);
 
-  const pedirConexao = useCallback((targetClientId: string) => {
-    setParClientId(targetClientId);
-    getSocket()?.emit('connect:request', { targetClientId });
-  }, []);
+  /**
+   * Pede conversa. `pessoa` vem da lupa — é dela que saem o nome e a
+   * coordenada que o globo usa enquanto o convite não é respondido.
+   */
+  const pedirConexao = useCallback(
+    (targetClientId: string, pessoa?: { nickname?: string; presenca?: Presence | null }) => {
+      setParClientId(targetClientId);
+      if (pessoa?.nickname) {
+        parNicknameRef.current = pessoa.nickname;
+        setParNome(pessoa.nickname);
+      }
+      if (pessoa?.presenca) setParPresenca(pessoa.presenca);
+      getSocket()?.emit('connect:request', { targetClientId });
+    },
+    [],
+  );
 
   const aceitarConvite = useCallback(() => {
     if (!convite) return;
     setParClientId(convite.fromClientId);
+    setParNome(convite.fromNickname ?? convite.fromName ?? null);
+    parNicknameRef.current = convite.fromNickname ?? null;
+
+    // Quem aceita quase nunca tem a coordenada de quem chamou: a pessoa está
+    // em outra região, e a lista de presença desta aba não a contém. Uma
+    // consulta ao diretório resolve, e é ela que faz o arco aparecer nos DOIS
+    // lados do globo, e não só no de quem procurou.
+    if (convite.fromNickname) {
+      getSocket()?.emit('directory:find', { nicknames: [convite.fromNickname] });
+    }
+
     getSocket()?.emit('connect:accept', { requestId: convite.requestId });
     setConvite(null);
   }, [convite]);
@@ -275,30 +484,73 @@ export function useLiveRealtime(user: UserProfileData | null) {
 
   const enviarTexto = useCallback((texto: string) => {
     const limpo = texto.trim().slice(0, 4000);
-    if (!limpo || !peerRef.current?.enviarTexto(limpo)) return false;
+    if (!limpo) return false;
+    const id = peerRef.current?.enviarTexto(limpo);
+    if (!id) return false;
     setMensagens((m) => [
       ...m,
-      { id: idNovo(), de: 'eu', texto: limpo, quando: Date.now() },
+      { id, de: 'eu', tipo: 'texto', texto: limpo, quando: Date.now(), entrega: 'enviando' },
     ]);
     return true;
   }, []);
 
-  const enviarImagem = useCallback(async (arquivo: Blob) => {
-    const ok = await peerRef.current?.enviarImagem(arquivo);
-    if (!ok) {
-      setAviso('Não foi possível enviar a imagem (muito grande ou canal fechado).');
-      return false;
-    }
-    setMensagens((m) => [
-      ...m,
-      {
-        id: idNovo(),
-        de: 'eu',
-        imagemUrl: URL.createObjectURL(arquivo),
-        quando: Date.now(),
-      },
-    ]);
-    return true;
+  const enviarMidia = useCallback(
+    async (arquivo: Blob, tipo: TipoDeMidia, duracaoMs?: number) => {
+      const id = await peerRef.current?.enviarMidia(arquivo, tipo, duracaoMs);
+      if (!id) {
+        setAviso(
+          tipo === 'audio'
+            ? 'Não foi possível enviar o áudio (muito grande ou canal fechado).'
+            : 'Não foi possível enviar a imagem (muito grande ou canal fechado).',
+        );
+        return false;
+      }
+      setMensagens((m) => [
+        ...m,
+        {
+          id,
+          de: 'eu',
+          tipo: tipo === 'audio' ? 'audio' : 'imagem',
+          midiaUrl: URL.createObjectURL(arquivo),
+          duracaoMs,
+          quando: Date.now(),
+          entrega: 'enviando',
+        },
+      ]);
+      return true;
+    },
+    [],
+  );
+
+  const enviarImagem = useCallback(
+    (arquivo: Blob) => enviarMidia(arquivo, 'imagem'),
+    [enviarMidia],
+  );
+
+  const enviarAudio = useCallback(
+    (arquivo: Blob, duracaoMs: number) => enviarMidia(arquivo, 'audio', duracaoMs),
+    [enviarMidia],
+  );
+
+  const avisarDigitando = useCallback((ativo: boolean) => {
+    peerRef.current?.enviarDigitando(ativo);
+  }, []);
+
+  /**
+   * "Eu vi." Avisa o outro lado sobre as mensagens dele que ainda não tinham
+   * recibo de leitura. Quem chama é a tela, quando ela está de fato visível —
+   * marcar como lido com a aba em segundo plano seria mentira.
+   */
+  const marcarLidas = useCallback(() => {
+    const peer = peerRef.current;
+    if (!peer) return;
+    setMensagens((atual) => {
+      const naoLidas = atual.filter((m) => m.de === 'outro' && !m.entrega);
+      if (naoLidas.length === 0) return atual;
+      peer.marcarComoLido(naoLidas.map((m) => m.id));
+      const ids = new Set(naoLidas.map((m) => m.id));
+      return atual.map((m) => (ids.has(m.id) ? { ...m, entrega: 'lido' as const } : m));
+    });
   }, []);
 
   const alternarVideo = useCallback(async () => {
@@ -341,6 +593,21 @@ export function useLiveRealtime(user: UserProfileData | null) {
     [beacons],
   );
 
+  /** Minha própria posição no globo, para a ponta de cá do arco. */
+  const minhaPresenca = useMemo<Presence | null>(
+    () =>
+      local
+        ? {
+            clientId: meuClientIdRef.current,
+            lat: local.lat,
+            lon: local.lon,
+            regionKey: local.regionKey,
+            ...(meuNickname ? { nickname: meuNickname } : {}),
+          }
+        : null,
+    [local, meuNickname],
+  );
+
   const estado: EstadoDoRealtime = {
     ligado: isRealtimeEnabled,
     conectado,
@@ -351,7 +618,10 @@ export function useLiveRealtime(user: UserProfileData | null) {
     emChamada: peerRef.current !== null,
     estadoDaChamada,
     parClientId,
+    parPresenca,
+    parNome,
     mensagens,
+    digitando,
     videoRemoto,
     videoLocal,
     aviso,
@@ -360,6 +630,10 @@ export function useLiveRealtime(user: UserProfileData | null) {
   return {
     estado,
     meuClientId: meuClientIdRef.current,
+    meuNickname,
+    minhaPresenca,
+    presencaPorNickname,
+    verQuemEstaOnline,
     acenderBeacon,
     apagarBeacon,
     pedirConexao,
@@ -367,6 +641,9 @@ export function useLiveRealtime(user: UserProfileData | null) {
     recusarConvite,
     enviarTexto,
     enviarImagem,
+    enviarAudio,
+    avisarDigitando,
+    marcarLidas,
     alternarVideo,
     encerrarChamada,
     denunciar,

@@ -24,6 +24,13 @@ import type { PresenceStore } from './store.js';
 export interface SocketData {
   clientId?: string;
   regionKey?: string;
+  /**
+   * Guardado à parte da presença pela mesma razão do `beaconRegionKey`: no
+   * `disconnect` os handlers rodam na ordem de registro, e o da presença limpa
+   * `socket.data.presence` antes de os outros rodarem. Sem esta cópia, a
+   * limpeza do diretório não saberia qual nickname desindexar.
+   */
+  nickname?: string;
   presence?: Presence;
   /** Beacon aceso por esta conexão, se houver. Um por pessoa. */
   beaconId?: string;
@@ -95,13 +102,22 @@ export function registerPresence(
       lon: p.lon,
       regionKey: p.regionKey,
       ...(typeof p.name === 'string' && p.name.trim() ? { name: p.name.trim() } : {}),
+      ...(typeof p.nickname === 'string' && p.nickname.trim()
+        ? { nickname: p.nickname.trim().toLowerCase().slice(0, 20) }
+        : {}),
     };
 
     socket.data.clientId = presence.clientId;
     socket.data.regionKey = presence.regionKey;
     socket.data.presence = presence;
+    socket.data.nickname = presence.nickname;
 
     await store.add(socket.id, presence);
+    // O índice da lupa. Só quem tem conta tem nickname — quem entra sem login
+    // aparece no globo, mas não é encontrável por nome.
+    if (presence.nickname) {
+      await store.bindNickname(presence.nickname, presence.clientId);
+    }
     // De clientId para esta conexão: é assim que um pedido de conexão
     // endereçado à PESSOA encontra a aba aberta dela agora.
     await store.bindClient(presence.clientId, socket.id);
@@ -168,13 +184,15 @@ async function sairDaRegiao(
   socket: RealtimeSocket,
   store: PresenceStore,
 ): Promise<void> {
-  const { regionKey, presence } = socket.data;
+  const { regionKey, presence, nickname } = socket.data;
   if (!regionKey || !presence) return;
 
   socket.data.regionKey = undefined;
   socket.data.presence = undefined;
+  socket.data.nickname = undefined;
 
   if (presence.clientId) await store.unbindClient(presence.clientId, socket.id);
+  if (nickname) await store.unbindNickname(nickname, presence.clientId);
   await store.remove(socket.id, regionKey);
   await socket.leave(regionKey);
   io.to(regionKey).emit('presence:update', { kind: 'leave', presence });

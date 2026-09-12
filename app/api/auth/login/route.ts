@@ -115,6 +115,7 @@ export async function POST(request: Request) {
     ok: true,
     user: {
       email: user.email,
+      nickname: user.nickname,
       fullName: user.fullName,
       city: user.city,
       state: user.state,

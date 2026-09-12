@@ -29,7 +29,7 @@ import {
  * COOKIE_CACHE_TTL_SEC segundos atrasado em relação a um banimento.
  */
 export interface SessionInfo {
-  user: Pick<AuthUser, 'id' | 'email' | 'fullName'>;
+  user: Pick<AuthUser, 'id' | 'email' | 'fullName' | 'nickname'>;
   viaCache: boolean;
 }
 
@@ -37,6 +37,11 @@ interface CachePayload extends Record<string, unknown> {
   id: string;
   email: string;
   name: string | null;
+  /**
+   * Opcional porque o cookie de cache de quem já estava logado quando isto foi
+   * lançado não tem o campo. Sem o `?`, todo mundo seria deslogado no deploy.
+   */
+  nick?: string | null;
 }
 
 /**
@@ -64,7 +69,12 @@ export async function getSession(
     const cache = unpackSigned<CachePayload>(jar.get(CACHE_COOKIE)?.value, secret);
     if (cache) {
       return {
-        user: { id: cache.id, email: cache.email, fullName: cache.name },
+        user: {
+          id: cache.id,
+          email: cache.email,
+          fullName: cache.name,
+          nickname: cache.nick ?? null,
+        },
         viaCache: true,
       };
     }
@@ -74,7 +84,12 @@ export async function getSession(
   if (!user) return null;
 
   return {
-    user: { id: user.id, email: user.email, fullName: user.fullName },
+    user: {
+      id: user.id,
+      email: user.email,
+      fullName: user.fullName,
+      nickname: user.nickname,
+    },
     viaCache: false,
   };
 }
@@ -118,6 +133,7 @@ function writeCache(
     id: user.id,
     email: user.email,
     name: user.fullName,
+    nick: user.nickname,
   };
   jar.set(
     CACHE_COOKIE,

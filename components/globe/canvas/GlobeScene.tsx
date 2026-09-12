@@ -26,6 +26,7 @@ import Advertisements from './Advertisements';
 import { PinnedLocation, AdData, AnimationState, FlyingMessage } from '@/app/types/globe';
 import Missile from './Missile';
 import BeaconMarkers from './BeaconMarkers';
+import PersonFocus, { type AlvoDoFoco } from './PersonFocus';
 import ConnectionArc from './ConnectionArc';
 import type { Beacon } from '@/realtime/shared/protocol';
 import { latLonToVector3 } from '@/components/lib/utils';
@@ -62,6 +63,8 @@ interface GlobeSceneProps {
   /** As duas pontas da conversa em andamento, quando ha uma. */
   arco: { de: THREE.Vector3; para: THREE.Vector3 } | null;
   arcoAtivo: boolean;
+  /** Alguem procurado na lupa: a camera vai ate la e o ponto fica marcado. */
+  alvoDaBusca: AlvoDoFoco | null;
 }
 
 const SPHERE_RADIUS = 1.5;
@@ -96,6 +99,7 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
     onPedirConexao,
     arco,
     arcoAtivo,
+    alvoDaBusca,
   } = props;
 
   const controlsRef = useRef<OrbitControlsImpl>(null);
@@ -199,11 +203,14 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
         {/* Sinais e a linha da conversa. Fora do popup: com um popup aberto o
             quadro e do popup, e o globo inteiro sai de cena. */}
         {!isPopupOpen && (
-          <BeaconMarkers
-            beacons={beacons}
-            meuClientId={meuClientId}
-            onPedirConexao={onPedirConexao}
-          />
+          <>
+            <PersonFocus alvo={alvoDaBusca} />
+            <BeaconMarkers
+              beacons={beacons}
+              meuClientId={meuClientId}
+              onPedirConexao={onPedirConexao}
+            />
+          </>
         )}
         {arco && !isPopupOpen && (
           <ConnectionArc de={arco.de} para={arco.para} ativa={arcoAtivo} />

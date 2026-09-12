@@ -68,7 +68,17 @@ function fakeRedis() {
       return [...(sets.get(key) ?? [])];
     },
     async del(key: string) {
-      return hashes.delete(key) ? 1 : 0;
+      // O DEL do Redis apaga a chave seja ela do tipo que for. Este duble ja
+      // apagou SO hash um dia, e o efeito foi pior que um teste falhando: as
+      // chaves de string (apontador de cliente, nickname, pedido de conexao)
+      // continuavam vivas depois do del, e o teste do `takeRequest` — o que
+      // garante que um convite so pode ser aceito uma vez — passava sem provar
+      // nada. Duble que diverge do original nao e teste, e falsa seguranca.
+      const n =
+        (hashes.delete(key) ? 1 : 0) +
+        (strings.delete(key) ? 1 : 0) +
+        (sets.delete(key) ? 1 : 0);
+      return n > 0 ? 1 : 0;
     },
     async hgetall(key: string) {
       return vivo(key) ? { ...hashes.get(key)!.valor } : {};
@@ -191,6 +201,89 @@ async function main() {
   );
   await mem.remove('m1', 'são paulo');
   checa('memoria: remove esvazia', await mem.listRegion('são paulo'), []);
+
+  // -------------------------------------------------------------------------
+  // Diretorio de nicknames — o indice que faz a lupa atravessar regioes
+  // -------------------------------------------------------------------------
+  console.log('\n=== diretorio de nicknames ===');
+
+  const dir = createRedisStore(fakeRedis());
+
+  // Duas pessoas em regioes DIFERENTES: e exatamente o caso que `listRegion`
+  // nao cobre e que a busca precisa cobrir.
+  const ana: Presence = { ...presenca('ana-id', 'minas gerais'), nickname: 'ana_mg' };
+  const yuki: Presence = { ...presenca('yuki-id', 'tokyo'), nickname: 'yuki' };
+  await dir.add('sa', ana);
+  await dir.bindClient('ana-id', 'sa');
+  await dir.bindNickname('ana_mg', 'ana-id');
+  await dir.add('sy', yuki);
+  await dir.bindClient('yuki-id', 'sy');
+  await dir.bindNickname('yuki', 'yuki-id');
+
+  checa('acha quem esta em outra regiao', await dir.clientOfNickname('yuki'), 'yuki-id');
+  checa(
+    'a busca nao diferencia maiuscula nem espaco',
+    await dir.clientOfNickname('  YUKI '),
+    'yuki-id',
+  );
+  checa('nickname que ninguem tem', await dir.clientOfNickname('fulano'), null);
+
+  // O caminho completo da lupa: nickname -> clientId -> socketId -> presenca
+  // com coordenada, que e o que o globo precisa para virar ate a pessoa.
+  const socketDaYuki = await dir.socketOfClient((await dir.clientOfNickname('yuki'))!);
+  checa(
+    'do nickname ate a coordenada',
+    (await dir.getPresence(socketDaYuki!))?.regionKey,
+    'tokyo',
+  );
+
+  // Fechar UMA aba nao pode apagar o apontador de outra: o desindexar so vale
+  // quando quem pede e o dono atual do nome.
+  await dir.unbindNickname('yuki', 'outro-id');
+  checa(
+    'desindexar em nome de outro clientId nao apaga',
+    await dir.clientOfNickname('yuki'),
+    'yuki-id',
+  );
+  await dir.unbindNickname('yuki', 'yuki-id');
+  checa('desindexar o proprio apaga', await dir.clientOfNickname('yuki'), null);
+
+  checa('presenca de socket que nao existe', await dir.getPresence('nao-existe'), null);
+
+  const memDir = createMemoryStore();
+  await memDir.add('m9', { ...presenca('carla-id', 'ceará'), nickname: 'carlinha' });
+  await memDir.bindClient('carla-id', 'm9');
+  await memDir.bindNickname('carlinha', 'carla-id');
+  checa(
+    'memoria: mesmo contrato de diretorio',
+    await memDir.clientOfNickname('CARLINHA'),
+    'carla-id',
+  );
+  checa(
+    'memoria: presenca por socket',
+    (await memDir.getPresence('m9'))?.nickname,
+    'carlinha',
+  );
+  await memDir.unbindNickname('carlinha', 'carla-id');
+  checa('memoria: desindexa', await memDir.clientOfNickname('carlinha'), null);
+
+  // -------------------------------------------------------------------------
+  // Pedido de conexao: uma vez, e so uma
+  // -------------------------------------------------------------------------
+  console.log('\n=== pedidos de conexao ===');
+
+  const pedidos = createRedisStore(fakeRedis());
+  const pedido = {
+    requestId: 'r1',
+    fromSocketId: 'sa',
+    fromClientId: 'ana-id',
+    toSocketId: 'sy',
+    toClientId: 'yuki-id',
+  };
+  await pedidos.putRequest(pedido, 60);
+  checa('o primeiro aceite recebe o pedido', (await pedidos.takeRequest('r1'))?.toClientId, 'yuki-id');
+  // Se este falhar, dois aceites do MESMO convite viram duas conexoes.
+  checa('o segundo aceite nao recebe nada', await pedidos.takeRequest('r1'), null);
 
   console.log(`\npassou: ${passou} | falhou: ${falhou}`);
   process.exit(falhou === 0 ? 0 : 1);

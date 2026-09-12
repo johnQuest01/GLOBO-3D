@@ -6,10 +6,13 @@ import Image from 'next/image';
 import LoginBackground from './LoginBackground'; // Importa o fundo 3D
 import { useRouter } from 'next/navigation';
 import { UserProfileData } from '@/app/types/user';
+import { NICKNAME_MAX, validateNickname } from '@/lib/auth/nickname';
 import LocationFields from './LocationFields';
 
 interface FormData {
   fullName: string;
+  /** O nome público. É por ele que a lupa do globo encontra a pessoa. */
+  nickname: string;
   age: string;
   city: string;
   state: string;
@@ -106,10 +109,30 @@ const IconLock = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
+/** O arroba do nickname. Mesma família visual dos outros ícones desta tela. */
+const IconAt = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={2}
+    stroke="currentColor"
+    className="w-6 h-6 text-gray-400"
+    {...props}
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364"
+    />
+  </svg>
+);
+
 const LoginScreen: React.FC = () => {
   const router = useRouter();
   const [formData, setFormData] = useState<FormData>({
     fullName: '',
+    nickname: '',
     age: '',
     city: '',
     state: '',
@@ -137,6 +160,11 @@ const LoginScreen: React.FC = () => {
         else if (!nameRegex.test(value))
           error = 'Apenas letras e espaços são permitidos.';
         else if (value.length > 170) error = 'Máximo de 170 caracteres.';
+        break;
+      case 'nickname':
+        // As MESMAS regras do servidor, importadas — e não recopiadas aqui.
+        // Duas cópias viram duas regras diferentes na primeira alteração.
+        error = validateNickname(value) ?? '';
         break;
       case 'age':
         if (!value.trim()) error = 'Idade é obrigatória.';
@@ -202,6 +230,18 @@ const LoginScreen: React.FC = () => {
       }
     }
 
+    if (name === 'nickname') {
+      // A limpeza espelha o formato aceito (minúsculas, sem acento, sem
+      // espaço). Assim a pessoa vê o nickname real enquanto digita, em vez de
+      // digitar "Bruno Silva" e descobrir só ao enviar que virou outra coisa.
+      newValue = newValue
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9_]/g, '')
+        .slice(0, NICKNAME_MAX);
+    }
+
     if (name === 'age') {
       newValue = newValue.replace(/[^0-9]/g, '');
       if (newValue.length > 2) {
@@ -258,6 +298,7 @@ const LoginScreen: React.FC = () => {
     if (!formData.isLogin) {
       fieldsToValidate = [
         'fullName',
+        'nickname',
         'age',
         'city',
         'state',
@@ -299,6 +340,7 @@ const LoginScreen: React.FC = () => {
             password: formData.password,
             confirmPassword: formData.confirmPassword,
             fullName: formData.fullName,
+            nickname: formData.nickname,
             city: formData.city,
             state: formData.state,
             country: formData.country,
@@ -339,6 +381,7 @@ const LoginScreen: React.FC = () => {
         age: formData.age,
         city: dados?.user?.city || formData.city,
         email: dados?.user?.email || formData.email,
+        nickname: dados?.user?.nickname || formData.nickname || undefined,
         state: dados?.user?.state || formData.state,
         country: dados?.user?.country || formData.country,
       };
@@ -415,6 +458,34 @@ ${
                 {errors.fullName && (
                   <p className="text-red-400 text-sm mt-1">
                     {errors.fullName}
+                  </p>
+                )}
+              </div>
+
+              {/* NICKNAME. É o único campo desta tela que outras pessoas vão
+                  ver: o nome completo fica guardado, o nickname é o que
+                  aparece na busca do globo. */}
+              <div>
+                <div className="flex items-center border-b border-gray-600 focus-within:border-green-500 transition-colors">
+                  <IconAt />
+                  <input
+                    type="text"
+                    name="nickname"
+                    placeholder="nickname (como te acham no globo)"
+                    value={formData.nickname}
+                    onChange={handleChange}
+                    autoComplete="username"
+                    autoCapitalize="none"
+                    spellCheck={false}
+                    className="flex-1 bg-transparent text-white placeholder-gray-400 py-2 px-3 focus:outline-none text-base sm:text-lg lowercase"
+                    maxLength={NICKNAME_MAX}
+                  />
+                </div>
+                {errors.nickname ? (
+                  <p className="text-red-400 text-sm mt-1">{errors.nickname}</p>
+                ) : (
+                  <p className="text-gray-400 text-xs mt-1">
+                    Letras, números e _ . É este nome que aparece para os outros.
                   </p>
                 )}
               </div>

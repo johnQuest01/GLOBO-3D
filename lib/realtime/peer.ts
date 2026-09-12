@@ -6,9 +6,14 @@ import type { IceServer } from '@/realtime/shared/protocol';
  * A conexão ponta a ponta.
  *
  * Depois que o servidor apresenta as duas pessoas, ele sai de cena: texto,
- * imagem e vídeo vão direto de um navegador para o outro. O servidor não tem o
- * que entregar a quem pedir, porque nunca teve — o que passou por ele foi só o
- * "como eu te acho" (SDP e ICE).
+ * imagem, áudio e vídeo vão direto de um navegador para o outro. O servidor não
+ * tem o que entregar a quem pedir, porque nunca teve — o que passou por ele foi
+ * só o "como eu te acho" (SDP e ICE).
+ *
+ * ISTO INCLUI O "DIGITANDO" E OS RECIBOS. Poderiam ser eventos do Socket.io, e
+ * seria mais fácil; seriam também o servidor sabendo quem fala com quem, a que
+ * horas, e com que frequência — ou seja, os metadados, que é justamente o que
+ * se quer não ter. Eles vão pelo mesmo canal cego das mensagens.
  *
  * NEGOCIAÇÃO PERFEITA. Os dois lados podem querer renegociar ao mesmo tempo
  * (por exemplo, os dois ligam a câmera juntos). Quando isso acontece, uma
@@ -19,11 +24,24 @@ import type { IceServer } from '@/realtime/shared/protocol';
  * pode decidir isso sozinho.
  */
 
+export type TipoDeMidia = 'imagem' | 'audio';
+export type EstadoDaEntrega = 'enviando' | 'entregue' | 'lido';
+
 export interface PeerCallbacks {
   /** Manda SDP/ICE para o outro lado (o servidor só repassa). */
   onSignal: (data: unknown) => void;
-  onTexto: (texto: string) => void;
-  onImagem: (blobUrl: string, mime: string) => void;
+  onTexto: (id: string, texto: string) => void;
+  onMidia: (
+    id: string,
+    tipo: TipoDeMidia,
+    blobUrl: string,
+    mime: string,
+    duracaoMs?: number,
+  ) => void;
+  /** O outro lado está escrevendo (ou parou). */
+  onDigitando: (ativo: boolean) => void;
+  /** Uma mensagem NOSSA foi entregue ou lida. */
+  onRecibo: (id: string, estado: EstadoDaEntrega) => void;
   onVideoRemoto: (stream: MediaStream | null) => void;
   onEstado: (estado: EstadoDaConexao) => void;
 }
@@ -35,14 +53,24 @@ export type EstadoDaConexao =
   | 'encerrado'
   | 'falhou';
 
-/** Cabeçalho de um pedaço de imagem. Ver o comentário do `enviarImagem`. */
-interface CabecalhoImagem {
-  tipo: 'imagem:inicio';
-  id: string;
-  mime: string;
-  tamanho: number;
-  partes: number;
-}
+/**
+ * O que trafega como texto no canal. Os bytes crus que vêm depois de um
+ * `midia:inicio` são os pedaços do arquivo.
+ */
+type Envelope =
+  | { tipo: 'texto'; id: string; texto: string }
+  | { tipo: 'digitando'; ativo: boolean }
+  | { tipo: 'recibo'; id: string; estado: 'entregue' | 'lido' }
+  | {
+      tipo: 'midia:inicio';
+      id: string;
+      midia: TipoDeMidia;
+      mime: string;
+      tamanho: number;
+      partes: number;
+      /** Só para áudio: quanto tempo dura, para desenhar antes de baixar. */
+      duracaoMs?: number;
+    };
 
 /**
  * Tamanho do pedaço.
@@ -63,8 +91,22 @@ const PEDACO = 16 * 1024;
 const BUFFER_ALTO = 1 * 1024 * 1024;
 const BUFFER_BAIXO = 256 * 1024;
 
-/** Limite do que aceitamos receber, para uma imagem não virar negação de serviço. */
-const IMAGEM_MAX = 8 * 1024 * 1024;
+/** Limite do que aceitamos receber, para um arquivo não virar negação de serviço. */
+const MIDIA_MAX = 8 * 1024 * 1024;
+
+/** De quanto em quanto tempo o "digitando" é reenviado enquanto a pessoa escreve. */
+const DIGITANDO_REENVIO_MS = 1_500;
+
+/**
+ * Quanto tempo o "digitando" do outro lado sobrevive sem reforço.
+ *
+ * Precisa ser maior que o reenvio, senão o aviso pisca entre uma batida e
+ * outra. E precisa existir: sem ele, quem fechasse o navegador no meio de uma
+ * frase ficaria "digitando…" para sempre na tela do outro.
+ */
+const DIGITANDO_VALIDADE_MS = 4_000;
+
+const novoId = () => Math.random().toString(36).slice(2, 11);
 
 export class PeerConnection {
   private pc: RTCPeerConnection;
@@ -76,10 +118,29 @@ export class PeerConnection {
   private fazendoOferta = false;
   private ignorandoOferta = false;
 
-  /** Remontagem de imagem que chega em pedaços. */
-  private recebendo: { cabecalho: CabecalhoImagem; partes: ArrayBuffer[] } | null = null;
+  /** Remontagem da mídia que chega em pedaços. */
+  private recebendo: {
+    cabecalho: Extract<Envelope, { tipo: 'midia:inicio' }>;
+    partes: ArrayBuffer[];
+    recebido: number;
+  } | null = null;
+
+  /**
+   * Fila de envio.
+   *
+   * Duas mídias enviadas em sequência rápida (uma foto e logo um áudio) são
+   * duas funções `async` correndo ao mesmo tempo, e os pedaços das duas se
+   * intercalariam no canal. Como o lado que recebe tem UM slot de remontagem,
+   * o resultado seria um arquivo corrompido — e silenciosamente, que é o pior
+   * jeito. A fila serializa: um arquivo inteiro, depois o outro.
+   */
+  private fila: Promise<unknown> = Promise.resolve();
 
   private streamLocal: MediaStream | null = null;
+
+  /** Última vez que anunciamos "estou digitando". */
+  private ultimoDigitando = 0;
+  private timerDigitandoRemoto: ReturnType<typeof setTimeout> | null = null;
 
   constructor(iceServers: IceServer[], polite: boolean, cb: PeerCallbacks) {
     this.cb = cb;
@@ -153,6 +214,16 @@ export class PeerConnection {
     canal.onmessage = (ev) => this.receber(ev.data);
   }
 
+  private aberto(): boolean {
+    return this.canal?.readyState === 'open';
+  }
+
+  private enviarEnvelope(envelope: Envelope): boolean {
+    if (!this.aberto()) return false;
+    this.canal!.send(JSON.stringify(envelope));
+    return true;
+  }
+
   // --- Sinalização de entrada ---------------------------------------------
 
   /**
@@ -201,36 +272,100 @@ export class PeerConnection {
 
   // --- Envio ---------------------------------------------------------------
 
-  enviarTexto(texto: string): boolean {
-    if (this.canal?.readyState !== 'open') return false;
-    this.canal.send(JSON.stringify({ tipo: 'texto', texto }));
-    return true;
+  /**
+   * Manda o texto e devolve o id, ou null se o canal está fechado.
+   *
+   * O ID É A METADE QUE FALTAVA. Sem ele o recibo não teria a que se referir:
+   * "entregue" chegaria sem dizer entregue o quê, e duas mensagens iguais
+   * seguidas ("ok", "ok") seriam indistinguíveis.
+   */
+  enviarTexto(texto: string): string | null {
+    const id = novoId();
+    if (!this.enviarEnvelope({ tipo: 'texto', id, texto })) return null;
+    // Quem estava digitando acabou de enviar: o aviso do outro lado tem que
+    // sumir agora, e não daqui a quatro segundos.
+    this.enviarDigitando(false);
+    return id;
   }
 
   /**
-   * Imagem em pedaços.
+   * "Estou digitando".
+   *
+   * Estrangulado aqui dentro, e não em quem chama: cada tecla dispara um
+   * evento, e mandar um pacote por tecla é desperdício puro num canal que
+   * também carrega áudio e vídeo.
+   */
+  enviarDigitando(ativo: boolean): void {
+    if (!this.aberto()) return;
+
+    if (!ativo) {
+      this.ultimoDigitando = 0;
+      this.enviarEnvelope({ tipo: 'digitando', ativo: false });
+      return;
+    }
+
+    const agora = Date.now();
+    if (agora - this.ultimoDigitando < DIGITANDO_REENVIO_MS) return;
+    this.ultimoDigitando = agora;
+    this.enviarEnvelope({ tipo: 'digitando', ativo: true });
+  }
+
+  /** Avisa o outro lado de que as mensagens dele foram lidas. */
+  marcarComoLido(ids: string[]): void {
+    for (const id of ids) {
+      this.enviarEnvelope({ tipo: 'recibo', id, estado: 'lido' });
+    }
+  }
+
+  /**
+   * Imagem ou áudio, em pedaços.
    *
    * Vai como um cabeçalho JSON e depois os bytes crus, e não como base64 num
    * JSON só: base64 inflaria 33% e o canal fecharia no tamanho.
+   *
+   * Devolve o id da mensagem, ou null se não deu para enviar.
    */
-  async enviarImagem(arquivo: Blob): Promise<boolean> {
-    if (this.canal?.readyState !== 'open') return false;
-    if (arquivo.size > IMAGEM_MAX) return false;
+  enviarMidia(
+    arquivo: Blob,
+    tipo: TipoDeMidia,
+    duracaoMs?: number,
+  ): Promise<string | null> {
+    // Entra na fila: o corpo só começa quando o envio anterior terminou.
+    const resultado = this.fila.then(() =>
+      this.enviarMidiaAgora(arquivo, tipo, duracaoMs),
+    );
+    // A fila segue mesmo se este envio falhar — senão um erro travaria todos
+    // os envios seguintes da conversa.
+    this.fila = resultado.catch(() => null);
+    return resultado;
+  }
+
+  private async enviarMidiaAgora(
+    arquivo: Blob,
+    tipo: TipoDeMidia,
+    duracaoMs?: number,
+  ): Promise<string | null> {
+    if (!this.aberto()) return null;
+    if (arquivo.size > MIDIA_MAX) return null;
 
     const buffer = await arquivo.arrayBuffer();
     const partes = Math.ceil(buffer.byteLength / PEDACO);
-    const cabecalho: CabecalhoImagem = {
-      tipo: 'imagem:inicio',
-      id: Math.random().toString(36).slice(2),
-      mime: arquivo.type || 'image/jpeg',
+    const id = novoId();
+
+    const enviou = this.enviarEnvelope({
+      tipo: 'midia:inicio',
+      id,
+      midia: tipo,
+      mime: arquivo.type || (tipo === 'audio' ? 'audio/webm' : 'image/jpeg'),
       tamanho: buffer.byteLength,
       partes,
-    };
-    this.canal.send(JSON.stringify(cabecalho));
+      ...(duracaoMs ? { duracaoMs } : {}),
+    });
+    if (!enviou) return null;
 
     for (let i = 0; i < partes; i++) {
       // Espera o buffer drenar antes de continuar.
-      if (this.canal.bufferedAmount > BUFFER_ALTO) {
+      if (this.canal!.bufferedAmount > BUFFER_ALTO) {
         await new Promise<void>((resolve) => {
           const seguir = () => {
             this.canal?.removeEventListener('bufferedamountlow', seguir);
@@ -239,38 +374,105 @@ export class PeerConnection {
           this.canal?.addEventListener('bufferedamountlow', seguir);
         });
       }
-      if (this.canal.readyState !== 'open') return false;
-      this.canal.send(buffer.slice(i * PEDACO, (i + 1) * PEDACO));
+      if (!this.aberto()) return null;
+      this.canal!.send(buffer.slice(i * PEDACO, (i + 1) * PEDACO));
     }
-    return true;
+    return id;
   }
+
+  // --- Recepção -------------------------------------------------------------
 
   private receber(dados: string | ArrayBuffer): void {
     if (typeof dados === 'string') {
+      let msg: Envelope;
       try {
-        const msg = JSON.parse(dados);
-        if (msg.tipo === 'texto' && typeof msg.texto === 'string') {
-          this.cb.onTexto(String(msg.texto).slice(0, 4000));
-        } else if (msg.tipo === 'imagem:inicio') {
-          if (msg.tamanho > IMAGEM_MAX) return;
-          this.recebendo = { cabecalho: msg, partes: [] };
-        }
+        msg = JSON.parse(dados) as Envelope;
       } catch {
-        /* mensagem que não é JSON: ignorada */
+        return; // mensagem que não é JSON: ignorada
       }
+      this.tratarEnvelope(msg);
       return;
     }
 
-    // Bytes: pedaço de imagem.
+    // Bytes: pedaço da mídia anunciada pelo último cabeçalho.
     if (!this.recebendo) return;
+
+    this.recebendo.recebido += dados.byteLength;
+    // O cabeçalho diz o tamanho; os bytes têm que caber nele. Sem esta
+    // checagem, um lado mal-intencionado anuncia 1 KB e despeja 500 MB.
+    if (this.recebendo.recebido > this.recebendo.cabecalho.tamanho) {
+      this.recebendo = null;
+      return;
+    }
     this.recebendo.partes.push(dados);
 
     if (this.recebendo.partes.length >= this.recebendo.cabecalho.partes) {
-      const blob = new Blob(this.recebendo.partes, {
-        type: this.recebendo.cabecalho.mime,
-      });
-      this.cb.onImagem(URL.createObjectURL(blob), this.recebendo.cabecalho.mime);
+      const { id, mime, midia, duracaoMs } = this.recebendo.cabecalho;
+      const blob = new Blob(this.recebendo.partes, { type: mime });
       this.recebendo = null;
+      this.cb.onMidia(id, midia, URL.createObjectURL(blob), mime, duracaoMs);
+      // O recibo sai no instante em que o último pedaço chega — é isto, e não
+      // um relógio, que faz o ✓✓ aparecer na velocidade real da rede.
+      this.enviarEnvelope({ tipo: 'recibo', id, estado: 'entregue' });
+    }
+  }
+
+  private tratarEnvelope(msg: Envelope): void {
+    switch (msg.tipo) {
+      case 'texto': {
+        if (typeof msg.texto !== 'string' || typeof msg.id !== 'string') return;
+        // Recebeu: quem estava "digitando" já falou.
+        this.marcarDigitandoRemoto(false);
+        this.cb.onTexto(msg.id, msg.texto.slice(0, 4000));
+        this.enviarEnvelope({ tipo: 'recibo', id: msg.id, estado: 'entregue' });
+        return;
+      }
+
+      case 'digitando':
+        this.marcarDigitandoRemoto(Boolean(msg.ativo));
+        return;
+
+      case 'recibo':
+        if (msg.estado === 'entregue' || msg.estado === 'lido') {
+          this.cb.onRecibo(String(msg.id), msg.estado);
+        }
+        return;
+
+      case 'midia:inicio': {
+        if (
+          typeof msg.tamanho !== 'number' ||
+          msg.tamanho <= 0 ||
+          msg.tamanho > MIDIA_MAX ||
+          typeof msg.partes !== 'number' ||
+          msg.partes <= 0
+        ) {
+          return;
+        }
+        if (msg.midia !== 'imagem' && msg.midia !== 'audio') return;
+        this.recebendo = { cabecalho: msg, partes: [], recebido: 0 };
+        return;
+      }
+    }
+  }
+
+  /**
+   * O "digitando" do outro lado, com validade.
+   *
+   * Um aviso que só some quando chega um "parei" ficaria preso na tela para
+   * sempre se a pessoa fechasse o navegador no meio da frase — e é justamente
+   * quando o "parei" não chega.
+   */
+  private marcarDigitandoRemoto(ativo: boolean): void {
+    if (this.timerDigitandoRemoto) {
+      clearTimeout(this.timerDigitandoRemoto);
+      this.timerDigitandoRemoto = null;
+    }
+    this.cb.onDigitando(ativo);
+    if (ativo) {
+      this.timerDigitandoRemoto = setTimeout(
+        () => this.cb.onDigitando(false),
+        DIGITANDO_VALIDADE_MS,
+      );
     }
   }
 
@@ -311,6 +513,7 @@ export class PeerConnection {
   // --- Fim ------------------------------------------------------------------
 
   encerrar(): void {
+    if (this.timerDigitandoRemoto) clearTimeout(this.timerDigitandoRemoto);
     this.desligarVideo();
     this.canal?.close();
     this.pc.close();
