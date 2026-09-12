@@ -355,6 +355,41 @@ export const useGlobeStateAndHandlers = () => {
     return { content, displayName, isCountry: isCountryContent(content) };
   }, [popupNameKey, getContentByNameKey]);
   
+  /**
+   * Copia para a tela (e para o localStorage) o que o servidor diz da conta.
+   *
+   * Só mexe no estado quando algo mudou de verdade: devolver um objeto novo a
+   * cada minuto refaria a identidade do socket e reconectaria à toa.
+   */
+  const sincronizarPerfil = useCallback(
+    (doServidor: { nickname?: string | null; fullName?: string | null; email?: string }) => {
+      setCurrentUser((atual) => {
+        if (!atual) return atual;
+
+        const nickname = doServidor.nickname ?? atual.nickname;
+        const fullName = doServidor.fullName ?? atual.fullName;
+        const email = doServidor.email ?? atual.email;
+
+        if (
+          nickname === atual.nickname &&
+          fullName === atual.fullName &&
+          email === atual.email
+        ) {
+          return atual;
+        }
+
+        const novo = { ...atual, nickname, fullName, email };
+        try {
+          localStorage.setItem('userData', JSON.stringify(novo));
+        } catch {
+          /* sem localStorage a tela continua certa; só não sobrevive ao recarregar */
+        }
+        return novo;
+      });
+    },
+    [],
+  );
+
   useEffect(() => {
     const storedData = localStorage.getItem('userData');
     if (storedData) {
@@ -411,6 +446,22 @@ export const useGlobeStateAndHandlers = () => {
         if (dados?.cacheTtlSec) {
           intervaloMs = Math.max(15_000, Number(dados.cacheTtlSec) * 1000);
         }
+
+        /*
+         * O PERFIL DA TELA PASSA A SEGUIR O SERVIDOR.
+         *
+         * O `userData` do localStorage é escrito no login e nunca mais — então
+         * ele envelhece. Um aparelho que entrou na conta antes de o nickname
+         * existir continuava, para sempre, achando que a conta não tinha nome:
+         * a lupa e as conversas abriam o pedido de nickname, o servidor
+         * respondia "você já tem", e a pessoa ficava presa nesse laço sem nada
+         * que pudesse fazer na tela para sair dele.
+         *
+         * A resposta desta checagem já traz a conta inteira. Copiá-la para cá
+         * corrige o espelho velho sozinho, em qualquer aparelho, sem exigir
+         * que ninguém saia e entre de novo.
+         */
+        if (!cancelado && dados?.user) sincronizarPerfil(dados.user);
       } catch {
         // Rede caiu. Ficar offline nao pode deslogar ninguem.
       }
@@ -422,7 +473,7 @@ export const useGlobeStateAndHandlers = () => {
       cancelado = true;
       window.clearInterval(timer);
     };
-  }, [router]);
+  }, [router, sincronizarPerfil]);
 
   useEffect(() => {
     if (

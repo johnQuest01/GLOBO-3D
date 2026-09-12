@@ -24,6 +24,17 @@ interface Props {
   onFechar: () => void;
 }
 
+/** Espelha o nickname no perfil deste aparelho. A verdade continua no servidor. */
+function guardarLocal(nickname: string): void {
+  try {
+    const perfil = JSON.parse(localStorage.getItem('userData') ?? '{}');
+    perfil.nickname = nickname;
+    localStorage.setItem('userData', JSON.stringify(perfil));
+  } catch {
+    /* perder isto não impede nada: o servidor é a fonte da verdade */
+  }
+}
+
 const EscolherNickname: FC<Props> = ({ aberto, onFechar }) => {
   const [valor, setValor] = useState('');
   const [erro, setErro] = useState<string | null>(null);
@@ -52,19 +63,30 @@ const EscolherNickname: FC<Props> = ({ aberto, onFechar }) => {
       const dados = await r.json().catch(() => ({}));
 
       if (!r.ok) {
+        /*
+         * "SUA CONTA JÁ TEM UM NICKNAME" NÃO É ERRO DA PESSOA — é esta tela que
+         * não devia ter aparecido. Ela abre quando o perfil guardado neste
+         * aparelho está velho e não sabe do nome que a conta já tem; mostrar o
+         * aviso e parar ali deixava a pessoa num laço do qual a tela não
+         * oferecia saída: tentar de novo dava o mesmo resultado, e a lupa
+         * reabria o mesmo pedido.
+         *
+         * Então o servidor manda junto o nome verdadeiro, e nós o adotamos. A
+         * pessoa não perde nada: o nickname que ela tentou criar era um nome
+         * novo para uma conta que já tinha um.
+         */
+        if (r.status === 409 && typeof dados?.nickname === 'string') {
+          guardarLocal(dados.nickname);
+          window.location.reload();
+          return;
+        }
         setErro(dados?.errors?.nickname ?? 'Não foi possível salvar. Tente de novo.');
         return;
       }
 
       // Guarda no perfil local para a interface não precisar perguntar ao
       // servidor de novo, e recarrega (ver o comentário no topo).
-      try {
-        const perfil = JSON.parse(localStorage.getItem('userData') ?? '{}');
-        perfil.nickname = dados.nickname;
-        localStorage.setItem('userData', JSON.stringify(perfil));
-      } catch {
-        /* perder isto não impede nada: o servidor é a fonte da verdade */
-      }
+      guardarLocal(dados.nickname);
       window.location.reload();
     } catch {
       setErro('Sem conexão agora. Tente de novo.');

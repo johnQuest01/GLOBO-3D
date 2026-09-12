@@ -588,6 +588,21 @@ const ChatOverlay: FC<Props> = ({
                 <button
                   type="submit"
                   disabled={!texto.trim()}
+                  /*
+                   * NÃO TIRE O FOCO DO CAMPO AO TOCAR AQUI.
+                   *
+                   * No celular, tocar num botão tira o foco do campo de texto,
+                   * o teclado começa a fechar e a barra de escrever desce
+                   * JUNTO — no meio do toque. O dedo desceu num botão que,
+                   * quando levantou, já não estava mais ali: o clique nunca
+                   * acontece, a mensagem não sai e o texto fica no campo.
+                   *
+                   * Impedir o padrão do `pointerdown` mantém o foco onde está.
+                   * O teclado não fecha, nada se mexe, o clique chega — e de
+                   * quebra dá para escrever a próxima mensagem em seguida, que
+                   * é como todo aplicativo de conversa se comporta.
+                   */
+                  onPointerDown={(e) => e.preventDefault()}
                   title="Enviar"
                   aria-label="Enviar mensagem"
                   className="rounded-full bg-cyan-600 p-2.5 text-white transition-colors hover:bg-cyan-500 disabled:cursor-not-allowed disabled:bg-white/10 disabled:text-white/30"

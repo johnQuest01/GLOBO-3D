@@ -39,9 +39,20 @@ export async function POST(request: Request) {
   // Quem já tem nickname não troca por aqui. Trocar de nome público tem
   // consequências (conversas em andamento apontam para o nome antigo) e merece
   // uma tela própria, com aviso — não um POST silencioso.
+  //
+  // A RESPOSTA DEVOLVE O NICKNAME QUE JÁ EXISTE, e isso não é detalhe: quem
+  // cai aqui é justamente a tela que estava vendo um perfil velho e por isso
+  // pediu um nome que a conta já tinha. Sem o nome na resposta, ela só
+  // conseguia repetir "já existe" e a pessoa ficava presa. Com ele, a tela se
+  // corrige e segue. Não vaza nada: o nickname é público na busca.
   if (session.user.nickname) {
     return NextResponse.json(
-      { ok: false, errors: { nickname: 'Sua conta já tem um nickname.' } },
+      {
+        ok: false,
+        reason: 'ja-tem-nickname',
+        nickname: session.user.nickname,
+        errors: { nickname: 'Sua conta já tem um nickname.' },
+      },
       { status: 409 },
     );
   }
