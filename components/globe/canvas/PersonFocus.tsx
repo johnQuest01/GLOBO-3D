@@ -43,6 +43,15 @@ const DISTANCIA_FOCO = 2.6;
  */
 const SUAVIDADE = 0.06;
 
+/**
+ * Teto de duração da viagem.
+ *
+ * Com a suavidade acima, atravessar meio planeta leva cerca de um segundo e
+ * meio. Quatro segundos é folga larga para o caso normal e curto o bastante
+ * para que um caso anômalo não prenda a câmera.
+ */
+const PRAZO_MS = 4000;
+
 /** Perto disto, considera-se chegado, e a animação se desliga. */
 const TOLERANCIA = 0.015;
 
@@ -50,10 +59,21 @@ const PX = 16;
 const CARD_RENDER_ORDER = 22;
 const COR_ONLINE = '#34d399';
 const COR_OFFLINE = '#94a3b8';
+/** Lugar de ferias: ambar, a mesma familia dos pinos do globo. */
+const COR_LUGAR = '#fbbf24';
 
 export interface AlvoDoFoco {
   lat: number;
   lon: number;
+  /**
+   * O que está sendo procurado.
+   *
+   * Começou como "a pessoa da lupa" e passou a servir também para um lugar de
+   * férias — são o mesmo gesto: pedi para ver onde fica, o globo me leva até
+   * lá. O que muda é o rótulo (um leva arroba, o outro não) e a cor, que na
+   * pessoa diz se ela está online e num lugar não diria nada.
+   */
+  tipo?: 'pessoa' | 'lugar';
   nickname: string;
   online: boolean;
   /** Muda a cada pedido, mesmo que a coordenada se repita. Ver o efeito abaixo. */
@@ -69,8 +89,19 @@ interface Props {
 const geoAnel = new THREE.TorusGeometry(0.5, 0.1, 8, 24);
 const geoNucleo = new THREE.SphereGeometry(0.2, 12, 12);
 
+/**
+ * A cor do marcador.
+ *
+ * Lugar de férias tem cor própria porque "online" não quer dizer nada sobre um
+ * lugar — pintar de verde sugeriria que ele está disponível para conversar.
+ */
+function corDoAlvo(alvo: AlvoDoFoco | null): string {
+  if (alvo?.tipo === 'lugar') return COR_LUGAR;
+  return alvo?.online ? COR_ONLINE : COR_OFFLINE;
+}
+
 const PersonFocus: FC<Props> = ({ alvo }) => {
-  const { camera, size } = useThree();
+  const { camera, size, gl } = useThree();
   const grupo = useRef<THREE.Group>(null);
   const pulso = useRef<THREE.Mesh>(null);
 
@@ -91,17 +122,17 @@ const PersonFocus: FC<Props> = ({ alvo }) => {
   );
 
   const material = useMemo(() => {
-    const cor = alvo?.online ? COR_ONLINE : COR_OFFLINE;
+    const cor = corDoAlvo(alvo);
     return new THREE.MeshStandardMaterial({
       color: cor,
       emissive: cor,
       emissiveIntensity: 0.9,
       roughness: 0.5,
     });
-  }, [alvo?.online]);
+  }, [alvo?.online, alvo?.tipo]);
   useEffect(() => () => material.dispose(), [material]);
 
-  const rotulo = alvo ? `@${alvo.nickname}` : '';
+  const rotulo = alvo ? (alvo.tipo === 'lugar' ? alvo.nickname : `@${alvo.nickname}`) : '';
   const largura = useMemo(() => textEmWidth(rotulo) * 0.62 + 0.8, [rotulo]);
 
   /**
@@ -111,13 +142,42 @@ const PersonFocus: FC<Props> = ({ alvo }) => {
    * tem que funcionar as duas vezes. Sem ele, a segunda vez não mudaria
    * nenhuma propriedade e o efeito não rodaria.
    */
+  /** Quando esta viagem começou. Junto com o prazo, é o freio de segurança. */
+  const partiuEm = useRef(0);
+
   useEffect(() => {
     if (!alvo) {
       destino.current = null;
       return;
     }
     destino.current = latLonToVector3(alvo.lat, alvo.lon, DISTANCIA_FOCO);
-  }, [alvo]);
+    partiuEm.current = performance.now();
+
+    /*
+     * A VIAGEM CEDE NA HORA EM QUE A PESSOA TOCA NO GLOBO.
+     *
+     * Sem isto havia um cabo de guerra sem fim, e foi relatado assim: "o globo
+     * fica focando toda hora, tirando o acesso de navegar livremente". A
+     * aproximação move uma fração do que falta a cada quadro, então, se
+     * alguém arrasta o globo no meio do caminho, a distância nunca entra na
+     * tolerância — e a viagem, que só terminava ao chegar, puxava a câmera de
+     * volta para sempre.
+     *
+     * Quem manda na câmera é quem está com a mão nela. O voo é um favor, e
+     * favor não insiste.
+     */
+    const desistir = () => {
+      destino.current = null;
+    };
+    const tela = gl.domElement;
+    tela.addEventListener('pointerdown', desistir);
+    tela.addEventListener('wheel', desistir, { passive: true });
+
+    return () => {
+      tela.removeEventListener('pointerdown', desistir);
+      tela.removeEventListener('wheel', desistir);
+    };
+  }, [alvo, gl]);
 
   useFrame(({ clock }, delta) => {
     const g = grupo.current;
@@ -163,9 +223,18 @@ const PersonFocus: FC<Props> = ({ alvo }) => {
     const raio = THREE.MathUtils.lerp(raioAtual, DISTANCIA_FOCO, t);
     camera.position.copy(direcao.multiplyScalar(raio));
 
-    if (camera.position.distanceTo(paraOnde) < TOLERANCIA) {
-      // Chegou: desliga, e daqui em diante a câmera é inteiramente de quem
-      // estiver mexendo nela.
+    /*
+     * CHEGOU, OU ACABOU O PRAZO.
+     *
+     * O prazo não é desconfiança do cálculo: é que o destino pode ficar
+     * inalcançável por fora — outro código mexendo na câmera, o amortecimento
+     * do controle empatando com a aproximação. Sem um fim garantido, "quase
+     * chegando" vira para sempre.
+     */
+    const chegou = camera.position.distanceTo(paraOnde) < TOLERANCIA;
+    const demorou = performance.now() - partiuEm.current > PRAZO_MS;
+    if (chegou || demorou) {
+      // Daqui em diante a câmera é inteiramente de quem estiver mexendo nela.
       destino.current = null;
     }
   });
@@ -195,7 +264,7 @@ const PersonFocus: FC<Props> = ({ alvo }) => {
           renderOrder={CARD_RENDER_ORDER}
         >
           <meshBasicMaterial
-            color={alvo.online ? COR_ONLINE : COR_OFFLINE}
+            color={corDoAlvo(alvo)}
             depthTest={false}
             depthWrite={false}
             toneMapped={false}

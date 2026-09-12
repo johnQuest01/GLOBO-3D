@@ -21,8 +21,11 @@ import {
  * A tela não depende de conexão viva: ela abre com a outra pessoa offline,
  * guarda o que foi dito e continua lá depois de recarregar a página.
  *
- * O AVISO DIZ A VERDADE: enquanto nada era gravado, ele dizia isso. Agora o
- * servidor guarda a mensagem até entregar — então é isso que está escrito.
+ * O AVISO DIZ A VERDADE, e já mudou duas vezes junto com o sistema: quando
+ * nada era gravado, ele dizia isso; quando o servidor passou a guardar só até
+ * entregar, passou a dizer aquilo. Agora o histórico acompanha a CONTA, e a
+ * frase acompanha. Dizer à pessoa uma garantia que o sistema deixou de dar é
+ * pior do que não dizer nada.
  *
  * DENUNCIAR E BLOQUEAR continuam a um clique, sem menu escondido.
  */
@@ -401,8 +404,8 @@ const ChatOverlay: FC<Props> = ({
         {/* --- Mensagens --- */}
         <div className="flex-1 space-y-2 overflow-y-auto px-4 py-3">
           <p className="mx-auto max-w-sm rounded-2xl bg-black/25 px-3 py-2 text-center text-[11px] leading-relaxed text-white/45">
-            O servidor guarda a mensagem só até entregar, e apaga depois. O
-            histórico fica neste aparelho.
+            A conversa fica guardada na sua conta, cifrada, e aparece em
+            qualquer aparelho onde você entrar.
           </p>
 
           {mensagens.length === 0 && (

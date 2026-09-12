@@ -770,7 +770,31 @@ export default function GlobeCanvas() {
                 <VacationPopup
                   isOpen={states.isVacationPopupOpen}
                   onClose={handlers.handleCloseVacationPopup}
-                  onSubmit={handlers.handlePinLocationSubmit}
+                  onSubmit={(escolha) => {
+                    handlers.handlePinLocationSubmit(escolha);
+                    /*
+                     * O GLOBO VAI ATE' O LUGAR, como vai ate' uma pessoa.
+                     *
+                     * Antes, marcar um lugar de ferias cravava o pino e
+                     * deixava a pessoa procurando no planeta onde ele tinha
+                     * caido — podia estar do outro lado, invisivel. E' o mesmo
+                     * gesto da lupa ("me mostre onde fica"), entao usa o mesmo
+                     * voo, que ja' sabe contornar o globo em vez de atravessa-lo.
+                     */
+                    const lugar = externalData.flightLocations.find(
+                      (l) => l.key === escolha.locationKey,
+                    );
+                    if (lugar) {
+                      setAlvoDaBusca({
+                        lat: lugar.lat,
+                        lon: lugar.lon,
+                        tipo: 'lugar',
+                        nickname: lugar.name,
+                        online: false,
+                        pedidoEm: Date.now(),
+                      });
+                    }
+                  }}
                   locations={externalData.flightLocations}
                 />
               )}

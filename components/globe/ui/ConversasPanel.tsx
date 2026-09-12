@@ -172,7 +172,7 @@ const ConversasPanel: FC<Props> = ({
         </div>
 
         <p className="border-t border-white/10 px-4 py-2 text-center text-[11px] text-white/35">
-          O histórico fica só neste aparelho. Apagar aqui não apaga do outro lado.
+          Apagar aqui tira a conversa deste aparelho. Ela não some do outro lado.
         </p>
       </div>
     </div>
