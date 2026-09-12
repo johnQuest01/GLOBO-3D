@@ -254,6 +254,20 @@ export default function GlobeCanvas() {
    */
   const [contextoPerdido, setContextoPerdido] = useState(false);
 
+  /**
+   * Isto aqui e' um aparelho de toque?
+   *
+   * Decidido UMA VEZ e guardado: ler `matchMedia` durante a renderizacao faria
+   * a resposta mudar entre servidor e navegador e o React reclamaria. E nao
+   * muda no meio do uso — ninguem troca de telefone com a pagina aberta.
+   */
+  const [ehTelaDeToque, setEhTelaDeToque] = useState(false);
+  useEffect(() => {
+    setEhTelaDeToque(
+      window.matchMedia('(pointer: coarse)').matches || window.innerWidth < 820,
+    );
+  }, []);
+
   const [buscaAberta, setBuscaAberta] = useState(false);
   const [conversasAbertas, setConversasAbertas] = useState(false);
   const [pedindoNickname, setPedindoNickname] = useState(false);
@@ -437,7 +451,19 @@ export default function GlobeCanvas() {
       style={{ overscrollBehavior: 'none' }}
     >
       <Canvas
-        dpr={[1, 2]}
+        /*
+         * QUANTOS PIXELS DESENHAR, e no celular esta e' a conta que mais pesa.
+         *
+         * Um telefone moderno tem densidade 3: a tela de 400 pontos de largura
+         * quer 1200 pixels de verdade. Desenhar tudo nessa densidade e' NOVE
+         * vezes mais trabalho de preenchimento que desenhar em 1 — e o globo e'
+         * feito de superficie, que e' exatamente o que custa preenchimento.
+         *
+         * Em 1,5 a diferenca visual num globo em movimento e' dificil de notar,
+         * e o custo cai para um quarto. No computador, onde sobra folga, fica
+         * como estava.
+         */
+        dpr={ehTelaDeToque ? [1, 1.5] : [1, 2]}
         camera={{ position: [0, 0, 3], fov: CAMERA_FOV, near: 0.1, far: 1000 }}
         onCreated={({ gl }) => {
           const tela = gl.domElement;
@@ -451,7 +477,15 @@ export default function GlobeCanvas() {
         }}
         gl={{
           powerPreference: 'high-performance',
-          antialias: true,
+          /*
+           * Suavizacao de bordas so' onde ela se paga.
+           *
+           * O antialias e' uma segunda passada sobre cada pixel. Em densidade
+           * alta as bordas ja' saem suaves porque os pixels sao menores que o
+           * olho resolve — entao no celular ele cobra caro por algo que quase
+           * nao se ve.
+           */
+          antialias: !ehTelaDeToque,
           stencil: false,
           depth: true,
         }}

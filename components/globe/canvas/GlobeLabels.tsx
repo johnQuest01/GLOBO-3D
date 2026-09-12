@@ -24,6 +24,14 @@ import {
 import { latLonToVector3 } from '@/components/lib/utils';
 import LabelItem from './LabelItem';
 
+/**
+ * Intervalo minimo entre dois reposicionamentos de nomes, em milissegundos.
+ *
+ * 70 ms sao ~14 vezes por segundo. Acima disso o olho nao distingue o
+ * arranjo; abaixo, o custo comeca a competir com o desenho da cena.
+ */
+const INTERVALO_POSICIONAMENTO_MS = 70;
+
 /** Quantos países podem ter os tiles de estado carregados ao mesmo tempo. */
 const MAX_STATE_TILE_COUNTRIES = 14;
 /**
@@ -178,6 +186,9 @@ const GlobeLabels: FC<GlobeLabelsProps> = ({
     };
   }, []);
 
+  /** Quando os nomes foram posicionados pela ultima vez. Ver o freio no laco. */
+  const ultimoPosicionamentoRef = useRef(0);
+
   /** Remove de vez um rótulo depois que ele terminou de sumir. */
   const scheduleRemoval = useCallback((id: string) => {
     if (exitTimersRef.current.has(id)) return;
@@ -203,6 +214,25 @@ const GlobeLabels: FC<GlobeLabelsProps> = ({
     const cameraMoved =
       perspective.position.distanceToSquared(lastCameraRef.current) > 1e-8;
     if (!cameraMoved && !needsPlacementRef.current) return;
+
+    /*
+     * O REPOSICIONAMENTO TEM FREIO, e e' ele que devolve fluidez ao arrastar.
+     *
+     * `placeLabels` percorre todos os nomes carregados, ordena por importancia
+     * e testa colisao de caixa contra caixa. Com os tiles de estado e cidade
+     * abertos, sao milhares de itens — e isso rodava A CADA QUADRO enquanto o
+     * globo estivesse em movimento, que e' exatamente o momento em que o
+     * aparelho ja' esta ocupado desenhando.
+     *
+     * Recalcular 60 vezes por segundo nao produz 60 arranjos diferentes: o
+     * globo nao gira tanto assim em 16 ms. A cada 70 ms o resultado e'
+     * visualmente o mesmo e o trabalho cai a um quarto. O tempo foi escolhido
+     * abaixo do fade dos rotulos, entao a entrada e a saida continuam suaves.
+     */
+    const agora = performance.now();
+    if (agora - ultimoPosicionamentoRef.current < INTERVALO_POSICIONAMENTO_MS) return;
+    ultimoPosicionamentoRef.current = agora;
+
     lastCameraRef.current.copy(perspective.position);
     needsPlacementRef.current = false;
 
