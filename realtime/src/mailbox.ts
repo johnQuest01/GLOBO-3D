@@ -215,6 +215,33 @@ export function registerMailbox(
     }
   });
 
+  /*
+   * O "digitando…".
+   *
+   * Mesmo caminho do recibo de leitura, e pelo mesmo motivo: vai para as
+   * conexões da conta de destino e não encosta no banco. O que o servidor faz
+   * aqui é só traduzir nickname em sala e carimbar QUEM está digitando — se
+   * viesse do cliente, daria para anunciar digitação em nome de outra pessoa.
+   *
+   * Não checa bloqueio de propósito: quem está bloqueado não consegue mandar
+   * mensagem, então o pior que este evento faz é acender um aviso na tela de
+   * alguém que nunca vai receber o texto. Uma ida ao banco a cada três
+   * segundos, por conversa aberta, para evitar isso não se paga.
+   */
+  socket.on('msg:typing', async ({ to, typing }) => {
+    if (typeof to !== 'string' || !to || typeof typing !== 'boolean') return;
+
+    const eu = socket.data.nickname;
+    if (!eu) return;
+
+    if (!permitir(socket, limitador, 'msg:typing')) return;
+
+    const destinoId = await userIdDoNickname(to);
+    if (!destinoId || destinoId === meuId) return;
+
+    io.to(salaDaConta(destinoId)).emit('msg:typing', { from: eu, typing });
+  });
+
   socket.on('msg:read', async ({ to, msgIds }) => {
     if (typeof to !== 'string' || !Array.isArray(msgIds) || msgIds.length === 0) {
       return;

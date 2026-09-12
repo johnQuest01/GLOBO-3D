@@ -199,6 +199,20 @@ export interface ClientToServer {
 
   /** "Li." Nao e' guardado: se o outro estiver offline, o aviso se perde. */
   'msg:read': (p: { to: string; msgIds: string[] }) => void;
+
+  /**
+   * "Estou escrevendo" / "parei".
+   *
+   * NAO E' GUARDADO, e essa e' a diferenca que importa entre este evento e
+   * `msg:send`. Um aviso de digitacao entregue depois e' mentira: dizer
+   * "fulano esta digitando" sobre algo que aconteceu ha uma hora e' pior do
+   * que nao dizer nada. Se o outro lado nao estiver online agora, o aviso se
+   * perde, e e' assim que tem de ser.
+   *
+   * Por isso tambem ele nao passa pelo banco nem pelo cofre: nao ha o que
+   * cifrar num booleano que morre em segundos.
+   */
+  'msg:typing': (p: { to: string; typing: boolean }) => void;
 }
 
 // ---------------------------------------------------------------------------
@@ -267,6 +281,9 @@ export interface ServerToClient {
   /** O outro lado leu. */
   'msg:read': (p: { from: string; msgIds: string[] }) => void;
 
+  /** O outro lado esta escrevendo agora (ou parou). Nunca guardado. */
+  'msg:typing': (p: { from: string; typing: boolean }) => void;
+
   /** Nao deu. `code` diz por que; a interface e' quem traduz. */
   'msg:failed': (p: { msgId: string; code: MsgErrorValue }) => void;
 
@@ -289,6 +306,23 @@ export const HEARTBEAT_INTERVAL_MS = 15_000;
  * dos outros.
  */
 export const PRESENCE_TTL_SEC = 45;
+
+/**
+ * De quanto em quanto tempo quem escreve repete o aviso de digitacao.
+ *
+ * Repetir e' necessario porque o "parei" pode nunca chegar: a pessoa fecha a
+ * aba, o metro entra no tunel, o celular dorme. Sem repeticao, o "digitando"
+ * do outro lado ficaria eternamente aceso.
+ */
+export const TYPING_PING_MS = 3_000;
+
+/**
+ * Quanto tempo o "digitando" sobrevive sem um aviso novo.
+ *
+ * Duas repeticoes, e nao uma: uma perdida no caminho nao pode fazer o aviso
+ * piscar na tela de quem le.
+ */
+export const TYPING_TTL_MS = 7_000;
 
 /** Teto de nomes por `directory:find`. Acima disso, o servidor ignora o resto. */
 export const DIRECTORY_MAX_POR_BUSCA = 10;

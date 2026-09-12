@@ -55,6 +55,11 @@ export const LIMITES: Record<string, LimiteConfig> = {
   // depois fica quieta. O teto existe contra script, nao contra quem digita
   // rapido — dai a capacidade alta com recarga curta.
   'msg:send': { capacidade: 40, recargaMs: 60_000 },
+  // O cliente repete o aviso a cada TYPING_PING_MS (3s) enquanto escreve, e
+  // manda um "parei" ao fim. Com duas ou três conversas abertas ao mesmo
+  // tempo, isso dá algo como 40 por minuto; o teto é generoso porque este
+  // evento é barato e não deixa rastro, mas continua havendo um.
+  'msg:typing': { capacidade: 120, recargaMs: 60_000 },
 };
 
 interface Balde {

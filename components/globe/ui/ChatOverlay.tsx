@@ -33,7 +33,11 @@ interface Props {
   online: boolean;
   videoRemoto?: MediaStream | null;
   videoLocal?: MediaStream | null;
+  /** O outro lado está escrevendo agora. */
+  digitando?: boolean;
   onEnviarTexto: (texto: string) => boolean;
+  /** Chamada a cada tecla. O freio de rede é de quem recebe esta chamada. */
+  onDigitando?: () => void;
   onEnviarMidia: (
     tipo: TipoDeMidia,
     blob: Blob,
@@ -89,7 +93,9 @@ const ChatOverlay: FC<Props> = ({
   online,
   videoRemoto,
   videoLocal,
+  digitando,
   onEnviarTexto,
+  onDigitando,
   onEnviarMidia,
   onMarcarLidas,
   onFechar,
@@ -331,9 +337,20 @@ const ChatOverlay: FC<Props> = ({
 
           <div className="min-w-0 flex-1">
             <p className="truncate text-[15px] font-semibold text-white">@{nome}</p>
-            <p className="truncate text-xs text-white/45">
-              {online ? 'online agora' : 'offline — vai receber quando voltar'}
-            </p>
+            {/*
+              O "digitando…" TOMA O LUGAR do estado de presença em vez de
+              aparecer ao lado dele. Quem está escrevendo está online — dizer
+              as duas coisas gastaria uma linha para repetir uma delas.
+            */}
+            {digitando ? (
+              <p className="truncate text-xs text-cyan-300">
+                digitando<span className="inline-block animate-pulse">…</span>
+              </p>
+            ) : (
+              <p className="truncate text-xs text-white/45">
+                {online ? 'online agora' : 'offline — vai receber quando voltar'}
+              </p>
+            )}
           </div>
 
           {onChamarVideo && (
@@ -572,7 +589,10 @@ const ChatOverlay: FC<Props> = ({
 
                 <input
                   value={texto}
-                  onChange={(e) => setTexto(e.target.value)}
+                  onChange={(e) => {
+                    setTexto(e.target.value);
+                    if (e.target.value) onDigitando?.();
+                  }}
                   placeholder="Escreva uma mensagem…"
                   maxLength={4000}
                   enterKeyHint="send"

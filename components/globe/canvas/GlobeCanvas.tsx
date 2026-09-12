@@ -838,8 +838,12 @@ export default function GlobeCanvas() {
                 )}
                 videoRemoto={realtime.estado.videoRemoto}
                 videoLocal={realtime.estado.videoLocal}
+                digitando={Boolean(conversas.digitando[conversas.abertaCom])}
                 onEnviarTexto={(texto) =>
                   conversas.enviarTexto(conversas.abertaCom!, texto)
+                }
+                onDigitando={() =>
+                  conversas.avisarQueEstouEscrevendo(conversas.abertaCom!)
                 }
                 onEnviarMidia={(tipo, blob, mime, duracaoMs) =>
                   conversas.enviarMidia(
@@ -886,6 +890,7 @@ export default function GlobeCanvas() {
               onFechar={() => setConversasAbertas(false)}
               conversas={conversas.conversas}
               naoLidasPorConversa={conversas.naoLidasPorConversa}
+              digitando={conversas.digitando}
               presencaPorNickname={realtime.presencaPorNickname}
               onAbrir={(com) => {
                 conversas.abrirConversa(com);

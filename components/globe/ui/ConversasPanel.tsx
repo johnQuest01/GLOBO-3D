@@ -23,6 +23,8 @@ interface Props {
   onFechar: () => void;
   conversas: Conversas;
   naoLidasPorConversa: Record<string, number>;
+  /** Quem esta escrevendo agora, por nickname. */
+  digitando: Record<string, boolean>;
   presencaPorNickname: Record<string, Presence | null>;
   onAbrir: (com: string) => void;
   onApagar: (com: string) => void;
@@ -40,6 +42,7 @@ const resumo = (m: { tipo: string; texto?: string; de: string }) => {
   const prefixo = m.de === 'eu' ? 'Você: ' : '';
   if (m.tipo === 'imagem') return `${prefixo}foto`;
   if (m.tipo === 'audio') return `${prefixo}áudio`;
+  if (m.tipo === 'video') return `${prefixo}vídeo`;
   return prefixo + (m.texto ?? '');
 };
 
@@ -48,6 +51,7 @@ const ConversasPanel: FC<Props> = ({
   onFechar,
   conversas,
   naoLidasPorConversa,
+  digitando,
   presencaPorNickname,
   onAbrir,
   onApagar,
@@ -125,13 +129,20 @@ const ConversasPanel: FC<Props> = ({
                         {ultima ? quando(ultima.quando) : ''}
                       </span>
                     </div>
-                    <p
-                      className={`truncate text-xs ${
-                        naoLidas > 0 ? 'font-medium text-white/80' : 'text-white/45'
-                      }`}
-                    >
-                      {ultima ? resumo(ultima) : ''}
-                    </p>
+                    {/* Escrevendo agora vale mais que a última mensagem. */}
+                    {digitando[com] ? (
+                      <p className="truncate text-xs text-cyan-300">
+                        digitando<span className="inline-block animate-pulse">…</span>
+                      </p>
+                    ) : (
+                      <p
+                        className={`truncate text-xs ${
+                          naoLidas > 0 ? 'font-medium text-white/80' : 'text-white/45'
+                        }`}
+                      >
+                        {ultima ? resumo(ultima) : ''}
+                      </p>
+                    )}
                   </div>
                 </button>
 

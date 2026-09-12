@@ -12,7 +12,12 @@ import {
 } from '@/lib/chat/armazem';
 import { deBase64, paraBase64, type TipoDeMidia } from '@/lib/chat/midia';
 import { getSocket } from '@/lib/realtime/socket';
-import type { Envelope, MsgErrorValue } from '@/realtime/shared/protocol';
+import {
+  TYPING_PING_MS,
+  TYPING_TTL_MS,
+  type Envelope,
+  type MsgErrorValue,
+} from '@/realtime/shared/protocol';
 
 /**
  * As conversas — pelo servidor, com histórico neste aparelho.
@@ -95,6 +100,23 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
   const filaRef = useRef<
     { msgId: string; para: string; kind: string; payload: string }[]
   >([]);
+
+  /**
+   * Quem está escrevendo para mim agora, por nickname.
+   *
+   * Um mapa e não um booleano: duas pessoas podem estar escrevendo ao mesmo
+   * tempo, e a lista de conversas mostra isso em cada linha.
+   */
+  const [digitando, setDigitando] = useState<Record<string, boolean>>({});
+
+  /** Os relógios que apagam cada "digitando" quando o aviso envelhece. */
+  const apagarDigitandoRef = useRef<Map<string, number>>(new Map());
+
+  /** Quando avisei, pela última vez, que estou escrevendo para cada pessoa. */
+  const aviseiEmRef = useRef<Map<string, number>>(new Map());
+
+  /** O relógio que manda o "parei" depois de a pessoa parar de teclar. */
+  const pareiRef = useRef<number | null>(null);
 
   /** Espelho para os handlers do socket, que são registrados uma vez só. */
   const conversasRef = useRef<Conversas>({});
@@ -207,6 +229,46 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
     const aoLer = ({ msgIds }: { from: string; msgIds: string[] }) =>
       mudarEntrega(msgIds, 'lida');
 
+    /*
+     * O "digitando…" do outro lado.
+     *
+     * APAGA SOZINHO, sempre. O "parei de escrever" pode nunca chegar — a aba
+     * fecha, o metrô entra no túnel, o celular dorme —, e um aviso que só
+     * apaga quando avisam ficaria aceso para sempre, mentindo. Por isso cada
+     * aviso vale por um tempo e é o relógio daqui que o desliga; quem escreve
+     * repete o aviso enquanto estiver escrevendo.
+     */
+    const aoDigitar = ({ from, typing }: { from: string; typing: boolean }) => {
+      const quem = from.toLowerCase();
+      const antigo = apagarDigitandoRef.current.get(quem);
+      if (antigo) window.clearTimeout(antigo);
+
+      if (!typing) {
+        apagarDigitandoRef.current.delete(quem);
+        setDigitando((atual) => {
+          if (!atual[quem]) return atual;
+          const novo = { ...atual };
+          delete novo[quem];
+          return novo;
+        });
+        return;
+      }
+
+      setDigitando((atual) => (atual[quem] ? atual : { ...atual, [quem]: true }));
+      apagarDigitandoRef.current.set(
+        quem,
+        window.setTimeout(() => {
+          apagarDigitandoRef.current.delete(quem);
+          setDigitando((atual) => {
+            if (!atual[quem]) return atual;
+            const novo = { ...atual };
+            delete novo[quem];
+            return novo;
+          });
+        }, TYPING_TTL_MS),
+      );
+    };
+
     const aoFalhar = ({ msgId, code }: { msgId: string; code: MsgErrorValue }) => {
       setConversas((atual) => {
         const novo: Conversas = {};
@@ -258,6 +320,7 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
       }
     };
 
+    socket.on('msg:typing', aoDigitar);
     socket.on('msg:new', aoChegar);
     socket.on('msg:accepted', aoAceitar);
     socket.on('msg:delivered', aoEntregar);
@@ -269,6 +332,7 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
     socket.emit('msg:sync');
 
     return () => {
+      socket.off('msg:typing', aoDigitar);
       socket.off('msg:new', aoChegar);
       socket.off('msg:accepted', aoAceitar);
       socket.off('msg:delivered', aoEntregar);
@@ -292,10 +356,53 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
     [],
   );
 
+  /**
+   * "Estou escrevendo para fulano."
+   *
+   * Chamada a cada tecla, mas só vira evento de rede uma vez a cada
+   * `TYPING_PING_MS`. Sem esse freio, escrever uma frase mandaria dezenas de
+   * eventos pela rede do celular para dizer sempre a mesma coisa.
+   *
+   * O "parei" sai por conta própria depois de um tempo sem teclar — e também
+   * ao enviar, porque quem enviou obviamente parou.
+   */
+  const avisarQueEstouEscrevendo = useCallback((para: string) => {
+    const socket = getSocket();
+    if (!socket?.connected || !para) return;
+
+    const agora = Date.now();
+    const ultimo = aviseiEmRef.current.get(para) ?? 0;
+    if (agora - ultimo >= TYPING_PING_MS) {
+      aviseiEmRef.current.set(para, agora);
+      socket.emit('msg:typing', { to: para, typing: true });
+    }
+
+    if (pareiRef.current) window.clearTimeout(pareiRef.current);
+    pareiRef.current = window.setTimeout(() => {
+      pareiRef.current = null;
+      aviseiEmRef.current.delete(para);
+      getSocket()?.emit('msg:typing', { to: para, typing: false });
+    }, TYPING_PING_MS);
+  }, []);
+
+  /** Encerra o aviso na hora. Usado ao enviar e ao fechar a conversa. */
+  const pararDeAvisar = useCallback((para: string) => {
+    if (pareiRef.current) {
+      window.clearTimeout(pareiRef.current);
+      pareiRef.current = null;
+    }
+    if (!para) return;
+    if (aviseiEmRef.current.delete(para)) {
+      getSocket()?.emit('msg:typing', { to: para, typing: false });
+    }
+  }, []);
+
   const enviarTexto = useCallback(
     (para: string, texto: string) => {
       const limpo = texto.trim().slice(0, 4000);
       if (!limpo || !para) return false;
+
+      pararDeAvisar(para);
 
       const msgId = idNovo();
       acrescentar(para, {
@@ -373,7 +480,13 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
   }, []);
 
   const abrirConversa = useCallback((com: string) => setAbertaCom(com), []);
-  const fecharConversa = useCallback(() => setAbertaCom(null), []);
+
+  const fecharConversa = useCallback(() => {
+    // Fechar a conversa com o texto pela metade deixaria o "digitando" aceso
+    // na tela do outro até o relógio dele apagar.
+    if (abertaRef.current) pararDeAvisar(abertaRef.current);
+    setAbertaCom(null);
+  }, [pararDeAvisar]);
 
   const apagarConversa = useCallback((com: string) => {
     void apagarNoDisco(com);
@@ -397,6 +510,8 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
     mensagensAbertas: abertaCom ? (conversas[abertaCom] ?? []) : [],
     abertaCom,
     naoLidasPorConversa,
+    digitando,
+    avisarQueEstouEscrevendo,
     meuNickname,
     aviso,
     limparAviso: () => setAviso(null),
