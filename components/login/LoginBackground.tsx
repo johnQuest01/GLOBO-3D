@@ -61,7 +61,10 @@ function AnimatedParticle() {
 // O Canvas 3D para o fundo
 const LoginBackground: React.FC = () => {
   return (
-    <div className="absolute inset-0 z-0 overflow-hidden">
+    /* `fixed`, e nao `absolute`: a tela de login agora rola quando o
+       formulario e mais alto que o celular, e um fundo absoluto rolaria junto,
+       deixando o fim do formulario sobre o vazio. */
+    <div className="fixed inset-0 z-0 overflow-hidden">
       <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
         <color attach="background" args={['#0c0a09']} /> {/* stone-900 */}
         <ambientLight intensity={0.5} />

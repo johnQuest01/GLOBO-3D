@@ -402,11 +402,36 @@ const LoginScreen: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full h-screen flex items-center justify-center p-4 overflow-hidden">
+    /*
+     * ESTA DIV É A ÁREA QUE ROLA.
+     *
+     * Antes era `h-screen ... overflow-hidden` com o cartão centrado por
+     * `items-center`. No celular o cartão do cadastro é mais alto que a tela
+     * (são dez campos), e o resultado era o pior dos dois mundos: centrado, ele
+     * passava do limite EM CIMA e EMBAIXO ao mesmo tempo, e o `overflow-hidden`
+     * tornava as duas pontas inalcançáveis — as abas "Criar Cadastro/Entrar"
+     * cortadas no topo e o botão de enviar fora da tela, sem rolagem nenhuma.
+     * Medido em 375x812: cartão de 973px dentro de uma caixa de 812.
+     *
+     * `app-viewport` é a classe que o projeto já usa para altura de tela no
+     * celular (100dvh, descontando a barra do navegador). `h-screen` mede a
+     * viewport GRANDE e é justamente o bug que aquele comentário no
+     * globals.css descreve.
+     *
+     * O CENTRO AGORA VEM DE `m-auto` NO CARTÃO, e não de `items-center`. A
+     * diferença aparece exatamente no caso que quebrou: com `items-center`, um
+     * filho mais alto que o contêiner rolável tem o topo cortado e
+     * inalcançável; com `margin: auto` ele centraliza quando cabe e encosta no
+     * topo quando não cabe, continuando inteiro.
+     */
+    <div className="relative w-full app-viewport overflow-y-auto overflow-x-hidden flex p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
+      {/* Fundo e véu são `fixed`: a área acima rola, e eles precisam ficar
+          parados cobrindo a tela. Se fossem `absolute`, subiriam junto com a
+          rolagem e deixariam o fim do formulário sobre o fundo cru. */}
       <LoginBackground />
-      <div className="absolute inset-0 bg-black/60 z-10" />
+      <div className="fixed inset-0 bg-black/60 z-10" />
       <div
-        className="relative z-20 w-full max-w-md bg-stone-900/90 backdrop-blur-sm
+        className="relative z-20 m-auto w-full max-w-md bg-stone-900/90 backdrop-blur-sm
 rounded-xl shadow-2xl border border-green-700 p-6 sm:p-8
 flex flex-col gap-6 animate-in fade-in zoom-in-95 duration-500"
       >
@@ -471,7 +496,7 @@ ${
                   <input
                     type="text"
                     name="nickname"
-                    placeholder="nickname (como te acham no globo)"
+                    placeholder="nickname"
                     value={formData.nickname}
                     onChange={handleChange}
                     autoComplete="username"
@@ -485,7 +510,7 @@ ${
                   <p className="text-red-400 text-sm mt-1">{errors.nickname}</p>
                 ) : (
                   <p className="text-gray-400 text-xs mt-1">
-                    Letras, números e _ . É este nome que aparece para os outros.
+                    É por ele que te acham no globo. Letras, números e{'\u00a0'}_
                   </p>
                 )}
               </div>
