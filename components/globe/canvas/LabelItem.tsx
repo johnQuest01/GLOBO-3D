@@ -147,9 +147,19 @@ const LabelItem: FC<LabelItemProps> = ({
           onPointerOver={isClickable ? handlePointerOver : undefined}
           onPointerOut={isClickable ? handlePointerOut : undefined}
           renderOrder={10}
-          outlineWidth={0.055}
+          /*
+           * O CONTORNO ENGROSSAVA O TEXTO. Ele existe para o nome continuar
+           * legível sobre deserto claro e sobre mar escuro, e para isso não
+           * precisa ser uma auréola opaca de 5,5% da altura da letra: nesse
+           * tamanho ele se soma ao traço da fonte e o resultado lê como texto
+           * em negrito e serrilhado.
+           *
+           * Mais fino e um pouco transparente resolve o mesmo problema sem
+           * empastar a letra.
+           */
+          outlineWidth={0.035}
           outlineColor={outlineColor}
-          outlineOpacity={1}
+          outlineOpacity={0.85}
         >
           {displayName}
           <meshBasicMaterial

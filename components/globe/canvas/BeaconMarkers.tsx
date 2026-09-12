@@ -7,6 +7,7 @@ import * as THREE from 'three';
 
 import { labelWorldScale, SPHERE_RADIUS, textEmWidth } from '@/app/lib/globeLabels';
 import { latLonToVector3 } from '@/components/lib/utils';
+import { espalharNaRegiao } from '@/lib/geo/espalhar';
 import type { Beacon } from '@/realtime/shared/protocol';
 
 /**
@@ -78,10 +79,20 @@ const BeaconMarker: FC<{
   const corCard = useRef<THREE.MeshBasicMaterial>(null);
   const { size } = useThree();
 
-  const posicao = useMemo(
-    () => latLonToVector3(beacon.lat, beacon.lon, SPHERE_RADIUS * 1.004),
-    [beacon.lat, beacon.lon],
-  );
+  /*
+   * O PONTO É AFASTADO DO CENTRO DA REGIÃO, sempre do mesmo jeito.
+   *
+   * A coordenada que vem no beacon é a da região, não a da pessoa: todo mundo
+   * no mesmo estado tem latitude e longitude idênticas, e os sinais ficavam um
+   * exatamente em cima do outro — o de baixo sumia da vista e do clique.
+   *
+   * O afastamento sai do `clientId`, então é o mesmo em todo quadro e na tela
+   * de todo mundo. Ver lib/geo/espalhar.ts.
+   */
+  const posicao = useMemo(() => {
+    const p = espalharNaRegiao(beacon.lat, beacon.lon, beacon.clientId);
+    return latLonToVector3(p.lat, p.lon, SPHERE_RADIUS * 1.004);
+  }, [beacon.lat, beacon.lon, beacon.clientId]);
   const normal = useMemo(() => posicao.clone().normalize(), [posicao]);
   const quaternion = useMemo(
     () =>

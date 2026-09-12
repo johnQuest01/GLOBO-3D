@@ -231,18 +231,31 @@ export function labelScore(
   );
 }
 
+/*
+ * OS NOMES ENCOLHERAM, e o que mais encolheu foi a DIFERENÇA entre eles.
+ *
+ * O tamanho tinha duas partes somadas: uma base por camada e um bônus por
+ * importância. O bônus era grande — um país bem colocado ganhava até +10,2px
+ * sobre 15,5, dois terços a mais —, e num globo isso fazia "Brasil" e
+ * "Argentina" ocuparem mais tela que os próprios países. A hierarquia existia,
+ * mas gritada.
+ *
+ * Agora a base é menor e o degrau é quase metade: a ordem de importância
+ * continua legível (país maior que estado, estado maior que cidade), só que
+ * dita em voz baixa. Num mapa, quem precisa se destacar é a terra.
+ */
 const LAYER_BASE_PX: Record<LabelLayer, number> = {
-  continent: 19,
-  country: 15.5,
-  state: 13.2,
-  city: 12.4,
+  continent: 16,
+  country: 13,
+  state: 11.6,
+  city: 11,
 };
 
 const LAYER_RANK_STEP_PX: Record<LabelLayer, number> = {
   continent: 0,
-  country: 1.7,
-  state: 0.9,
-  city: 0.8,
+  country: 0.9,
+  state: 0.5,
+  city: 0.45,
 };
 
 /** Tamanho do texto em pixels de tela: lugar mais importante, nome maior. */
