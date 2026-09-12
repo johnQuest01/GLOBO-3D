@@ -12,6 +12,7 @@ import { connectSocket, getSocket, isRealtimeEnabled } from '@/lib/realtime/sock
 import type { Beacon, Presence } from '@/realtime/shared/protocol';
 import { HEARTBEAT_INTERVAL_MS } from '@/realtime/shared/protocol';
 import { useGeoMapping } from '@/app/hooks/useGeoMapping';
+import { chavesPossiveis } from '@/lib/geo/normalizar';
 import type { UserProfileData } from '@/app/types/user';
 
 /**
@@ -137,9 +138,16 @@ export function useLiveRealtime(user: UserProfileData | null) {
    */
   const local = useMemo(() => {
     if (!user) return null;
-    const candidatos = [user.state, user.city, user.country]
-      .filter((v): v is string => Boolean(v && v.trim()))
-      .map((v) => v.trim().toLowerCase());
+
+    /*
+     * O mapa do globo guarda os nomes por extenso e COM acento ("são paulo").
+     * Quem se cadastra escreve "SP", "Sao Paulo", "Estado de São Paulo". Sem
+     * traduzir isso, a pessoa fica sem lugar no globo — e, até este conserto,
+     * ficava também sem chat, porque a conexão dependia da coordenada.
+     */
+    const candidatos = [user.state, user.city, user.country].flatMap((v) =>
+      chavesPossiveis(v),
+    );
 
     for (const chave of candidatos) {
       const coord = keyToLatLon(chave);
@@ -148,18 +156,36 @@ export function useLiveRealtime(user: UserProfileData | null) {
     return null;
   }, [user, keyToLatLon]);
 
+  /**
+   * O lugar visto de dentro dos handlers do socket.
+   *
+   * Eles são registrados uma vez e vivem enquanto a conexão viver; sem o
+   * espelho, leriam para sempre o valor do primeiro render (quase sempre nulo,
+   * porque o mapa do globo ainda estava carregando).
+   */
+  const localRef = useRef<typeof local>(null);
+  localRef.current = local;
+
   // --- Conexão e presença ---------------------------------------------------
 
   useEffect(() => {
-    if (!isRealtimeEnabled || !local || carregandoMapa) return;
+    /*
+     * CONECTA SEMPRE — e esta linha é o conserto de um defeito sério.
+     *
+     * Antes a condição era `!isRealtimeEnabled || !local`: sem uma coordenada
+     * no globo, o socket nunca abria. E ficar sem coordenada é fácil — basta
+     * escrever "SP" em vez de "São Paulo" no cadastro. O efeito era mudo e
+     * total: a pessoa entrava, escrevia, a mensagem ficava girando para sempre
+     * e nada chegava a ninguém. Foi assim que o defeito foi relatado.
+     *
+     * Conversar não depende de geografia. O lugar no globo é enfeite bonito da
+     * presença; a caixa postal endereça por conta. Agora o socket abre sempre,
+     * e a presença é anunciada à parte, quando (e se) houver coordenada.
+     */
+    if (!isRealtimeEnabled) return;
 
     const clientId = localStorage.getItem('globoClientId') ?? `anon-${idNovo()}`;
     meuClientIdRef.current = clientId;
-
-    // Copia o lugar depois da checagem acima. `registrar` e' uma funcao
-    // declarada (icada), e o TypeScript nao leva o estreitamento de tipo para
-    // dentro dela: la, `local` voltaria a poder ser nulo.
-    const aqui = local;
 
     /*
      * Conectar virou assíncrono: o crachá (/api/realtime/token) vem ANTES do
@@ -188,6 +214,10 @@ export function useLiveRealtime(user: UserProfileData | null) {
 
     const entrar = () => {
       setConectado(true);
+      const aqui = localRef.current;
+      // Sem coordenada, a conexão vale do mesmo jeito: dá para conversar, só
+      // não dá para desenhar a pessoa no globo.
+      if (!aqui) return;
       socket.emit('presence:join', {
         clientId,
         lat: aqui.lat,
@@ -320,7 +350,30 @@ export function useLiveRealtime(user: UserProfileData | null) {
       socket.off('error', aoErro);
     };
     }
-  }, [local, carregandoMapa, user?.fullName]);
+    // Sem `local` nem `carregandoMapa` nas dependências: a conexão não depende
+    // deles, e reconectar toda vez que o mapa carrega seria trocar o socket
+    // por baixo de uma conversa aberta.
+  }, [user?.fullName]);
+
+  /**
+   * A presença, anunciada quando o lugar aparece.
+   *
+   * O mapa do globo carrega depois da conexão, então o `presence:join` do
+   * `entrar` muitas vezes não tem coordenada ainda. Este efeito cobre isso — e
+   * cobre também quem só ganha coordenada mais tarde.
+   */
+  useEffect(() => {
+    if (!local || carregandoMapa) return;
+    const socket = getSocket();
+    if (!socket?.connected) return;
+    socket.emit('presence:join', {
+      clientId: meuClientIdRef.current,
+      lat: local.lat,
+      lon: local.lon,
+      regionKey: local.regionKey,
+      ...(user?.fullName ? { name: user.fullName.split(' ')[0] } : {}),
+    });
+  }, [local, carregandoMapa, socketPronto, conectado, user?.fullName]);
 
   // --- O par ----------------------------------------------------------------
 
