@@ -122,6 +122,15 @@ async function main() {
     // protocolo, mais curto, que derruba conexão morta rápido.
     pingInterval: 20_000,
     pingTimeout: 20_000,
+
+    /*
+     * Quadro máximo. O padrão do Socket.io é 1 MB, e foto e áudio não cabem
+     * nele: o envelope carrega os bytes em base64 dentro do próprio evento.
+     * Precisa ser maior que PAYLOAD_MAX (2 milhões de caracteres) mais o JSON
+     * em volta — senão a mensagem é recusada pelo transporte antes de qualquer
+     * validação nossa, e o cliente vê a conexão cair sem explicação.
+     */
+    maxHttpBufferSize: 3_000_000,
   });
 
   if (adapterPair) {

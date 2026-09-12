@@ -1,35 +1,45 @@
 'use client';
 
-import React, { FC, useEffect, useRef, useState } from 'react';
+import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
 
 import type { Mensagem } from '@/app/hooks/useConversas';
+import {
+  AUDIO_MAX_MS,
+  BYTES_MAX,
+  cabeComoVideo,
+  duracaoDe,
+  formatoDeAudio,
+  prepararImagem,
+  tamanhoLegivel,
+  type TipoDeMidia,
+} from '@/lib/chat/midia';
 
 /**
  * A conversa, em tela cheia, com o globo desfocado por baixo.
  *
- * O QUE MUDOU NESTA FASE: a tela não depende mais de uma conexão viva. Antes
- * ela só existia enquanto o canal P2P estivesse de pé, e fechar apagava tudo.
- * Agora a conversa é um lugar: abre com a pessoa offline, guarda o que foi dito
- * e continua lá depois de recarregar a página.
+ * A tela não depende de conexão viva: ela abre com a outra pessoa offline,
+ * guarda o que foi dito e continua lá depois de recarregar a página.
  *
- * E O AVISO MUDOU JUNTO. Enquanto nada era gravado, a tela dizia isso. Agora o
- * servidor guarda a mensagem até entregar — então ela diz ISSO, e não a frase
- * antiga, que ficaria bonita e mentirosa.
+ * O AVISO DIZ A VERDADE: enquanto nada era gravado, ele dizia isso. Agora o
+ * servidor guarda a mensagem até entregar — então é isso que está escrito.
  *
  * DENUNCIAR E BLOQUEAR continuam a um clique, sem menu escondido.
  */
 
 interface Props {
   aberta: boolean;
-  /** O nickname de quem está do outro lado. */
   nome: string;
   mensagens: Mensagem[];
-  /** Online agora? Muda só o pontinho e o texto do cabeçalho. */
   online: boolean;
-  /** Estado da chamada de vídeo, quando há uma. */
   videoRemoto?: MediaStream | null;
   videoLocal?: MediaStream | null;
   onEnviarTexto: (texto: string) => boolean;
+  onEnviarMidia: (
+    tipo: TipoDeMidia,
+    blob: Blob,
+    mime: string,
+    duracaoMs?: number,
+  ) => Promise<boolean>;
   onMarcarLidas: () => void;
   onFechar: () => void;
   onChamarVideo?: () => void;
@@ -38,32 +48,30 @@ interface Props {
 }
 
 const hora = (quando: number) =>
-  new Date(quando).toLocaleTimeString('pt-BR', {
-    hour: '2-digit',
-    minute: '2-digit',
-  });
+  new Date(quando).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
 
 const dia = (quando: number) =>
-  new Date(quando).toLocaleDateString('pt-BR', {
-    day: '2-digit',
-    month: 'short',
-  });
+  new Date(quando).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short' });
+
+const duracaoLegivel = (ms?: number) => {
+  if (!ms) return '';
+  const total = Math.round(ms / 1000);
+  return `${Math.floor(total / 60)}:${String(total % 60).padStart(2, '0')}`;
+};
 
 /**
  * O tique.
  *
  * Três estados e não dois, porque "o servidor pegou" e "o aparelho dela pegou"
- * são coisas diferentes — e é exatamente a diferença que a caixa postal
- * introduziu: a primeira acontece na hora, a segunda pode acontecer amanhã.
+ * são coisas diferentes — a primeira acontece na hora, a segunda pode acontecer
+ * amanhã.
  */
 const Recibo: FC<{ estado?: Mensagem['entrega'] }> = ({ estado }) => {
   if (!estado) return null;
   if (estado === 'falhou') return <span className="text-red-300">!</span>;
   if (estado === 'enviando') return <span className="text-white/30">◌</span>;
   if (estado === 'enviada') return <span className="text-white/50">✓</span>;
-  return (
-    <span className={estado === 'lida' ? 'text-cyan-300' : 'text-white/50'}>✓✓</span>
-  );
+  return <span className={estado === 'lida' ? 'text-cyan-300' : 'text-white/50'}>✓✓</span>;
 };
 
 const ERRO_EM_PORTUGUES: Record<string, string> = {
@@ -82,6 +90,7 @@ const ChatOverlay: FC<Props> = ({
   videoRemoto,
   videoLocal,
   onEnviarTexto,
+  onEnviarMidia,
   onMarcarLidas,
   onFechar,
   onChamarVideo,
@@ -91,10 +100,21 @@ const ChatOverlay: FC<Props> = ({
   const [texto, setTexto] = useState('');
   const [pedindoMotivo, setPedindoMotivo] = useState(false);
   const [motivo, setMotivo] = useState('');
+  const [preparando, setPreparando] = useState<string | null>(null);
+  const [problema, setProblema] = useState<string | null>(null);
+  const [gravando, setGravando] = useState(false);
+  const [segundos, setSegundos] = useState(0);
+  const [ampliada, setAmpliada] = useState<string | null>(null);
 
   const fim = useRef<HTMLDivElement>(null);
   const videoRemotoRef = useRef<HTMLVideoElement>(null);
   const videoLocalRef = useRef<HTMLVideoElement>(null);
+
+  const gravadorRef = useRef<MediaRecorder | null>(null);
+  const pedacosRef = useRef<Blob[]>([]);
+  const inicioRef = useRef(0);
+  const cancelarRef = useRef(false);
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const quantidade = mensagens.length;
 
@@ -105,9 +125,8 @@ const ChatOverlay: FC<Props> = ({
   /**
    * Marca como lido só com a janela à vista.
    *
-   * A checagem de `visibilityState` não é preciosismo: sem ela, uma aba em
-   * segundo plano marcaria tudo como lido e o ✓✓ azul do outro lado seria
-   * mentira — justamente o detalhe que faz alguém confiar ou não no recibo.
+   * Sem a checagem de `visibilityState`, uma aba em segundo plano marcaria tudo
+   * como lido e o ✓✓ azul do outro lado seria mentira.
    */
   useEffect(() => {
     if (!aberta) return;
@@ -128,18 +147,149 @@ const ChatOverlay: FC<Props> = ({
   useEffect(() => {
     if (videoRemotoRef.current) videoRemotoRef.current.srcObject = videoRemoto ?? null;
   }, [videoRemoto]);
-
   useEffect(() => {
     if (videoLocalRef.current) videoLocalRef.current.srcObject = videoLocal ?? null;
   }, [videoLocal]);
 
   useEffect(() => {
     const aoTeclar = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onFechar();
+      if (e.key !== 'Escape') return;
+      if (ampliada) setAmpliada(null);
+      else onFechar();
     };
     if (aberta) window.addEventListener('keydown', aoTeclar);
     return () => window.removeEventListener('keydown', aoTeclar);
-  }, [aberta, onFechar]);
+  }, [aberta, onFechar, ampliada]);
+
+  // Microfone preso com a tela fechada seria o pior tipo de surpresa.
+  useEffect(
+    () => () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+      const g = gravadorRef.current;
+      if (g && g.state !== 'inactive') {
+        cancelarRef.current = true;
+        g.stop();
+      }
+    },
+    [],
+  );
+
+  // --- Envio de arquivo ------------------------------------------------------
+
+  const escolherFoto = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const arquivo = e.target.files?.[0];
+    e.target.value = '';
+    if (!arquivo) return;
+
+    setProblema(null);
+    setPreparando('Preparando a foto…');
+    try {
+      // Encolher no navegador é o que faz a foto de 4 MB da câmera virar
+      // mensagem. O arquivo original nunca sai do aparelho.
+      const pronta = await prepararImagem(arquivo);
+      if (!pronta) {
+        setProblema('Não consegui preparar essa imagem.');
+        return;
+      }
+      await onEnviarMidia('imagem', pronta.blob, pronta.mime);
+    } finally {
+      setPreparando(null);
+    }
+  };
+
+  const escolherVideo = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const arquivo = e.target.files?.[0];
+    e.target.value = '';
+    if (!arquivo) return;
+
+    setProblema(null);
+    if (!cabeComoVideo(arquivo)) {
+      setProblema(
+        `Esse vídeo tem ${tamanhoLegivel(arquivo.size)} e o limite é ${tamanhoLegivel(
+          BYTES_MAX,
+        )}. Mande um trecho mais curto.`,
+      );
+      return;
+    }
+
+    setPreparando('Preparando o vídeo…');
+    try {
+      const duracaoMs = await duracaoDe(arquivo);
+      await onEnviarMidia('video', arquivo, arquivo.type || 'video/mp4', duracaoMs);
+    } finally {
+      setPreparando(null);
+    }
+  };
+
+  // --- Gravação de áudio -----------------------------------------------------
+
+  const pararDeGravar = useCallback((cancelar: boolean) => {
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+      timerRef.current = null;
+    }
+    cancelarRef.current = cancelar;
+    const g = gravadorRef.current;
+    if (g && g.state !== 'inactive') g.stop();
+    setGravando(false);
+    setSegundos(0);
+  }, []);
+
+  const comecarAGravar = useCallback(async () => {
+    if (gravadorRef.current) return;
+    setProblema(null);
+
+    const mime = formatoDeAudio();
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const gravador = new MediaRecorder(stream, mime ? { mimeType: mime } : undefined);
+      gravadorRef.current = gravador;
+      pedacosRef.current = [];
+      cancelarRef.current = false;
+      inicioRef.current = Date.now();
+
+      gravador.ondataavailable = (ev) => {
+        if (ev.data.size > 0) pedacosRef.current.push(ev.data);
+      };
+
+      gravador.onstop = async () => {
+        // O microfone precisa ser solto SEMPRE, inclusive quando a gravação foi
+        // cancelada: parar o gravador não desliga o aparelho.
+        for (const faixa of stream.getTracks()) faixa.stop();
+        gravadorRef.current = null;
+
+        const duracaoMs = Date.now() - inicioRef.current;
+        const pedacos = pedacosRef.current;
+        pedacosRef.current = [];
+
+        if (cancelarRef.current || pedacos.length === 0) return;
+        // Meio segundo é quase sempre o dedo escorregando no botão.
+        if (duracaoMs < 500) return;
+
+        const blob = new Blob(pedacos, { type: gravador.mimeType });
+        if (blob.size > BYTES_MAX) {
+          setProblema('Esse áudio ficou grande demais. Grave um mais curto.');
+          return;
+        }
+        await onEnviarMidia('audio', blob, gravador.mimeType, duracaoMs);
+      };
+
+      gravador.start();
+      setGravando(true);
+      setSegundos(0);
+      timerRef.current = setInterval(() => {
+        setSegundos((s) => {
+          const novo = s + 1;
+          // Teto de duração: o envelope tem tamanho, e parar sozinho é melhor
+          // que recusar depois de a pessoa ter falado dois minutos à toa.
+          if (novo * 1000 >= AUDIO_MAX_MS) pararDeGravar(false);
+          return novo;
+        });
+      }, 1000);
+    } catch {
+      setProblema('Microfone não liberado.');
+    }
+  }, [onEnviarMidia, pararDeGravar]);
 
   if (!aberta) return null;
 
@@ -155,8 +305,6 @@ const ChatOverlay: FC<Props> = ({
       aria-label={`Conversa com ${nome}`}
       className="fixed inset-0 z-[200] flex items-center justify-center"
     >
-      {/* O desfoque: o globo continua reconhecível atrás e para de disputar
-          clique, porque esta camada cobre tudo e recebe os eventos. */}
       <div
         className="absolute inset-0 bg-slate-950/45 backdrop-blur-2xl backdrop-saturate-150"
         onClick={onFechar}
@@ -216,7 +364,7 @@ const ChatOverlay: FC<Props> = ({
           </button>
         </header>
 
-        {/* --- Vídeo, quando há chamada --- */}
+        {/* --- Vídeo da chamada --- */}
         {(videoRemoto || videoLocal) && (
           <div className="relative bg-black/60">
             <video ref={videoRemotoRef} autoPlay playsInline className="max-h-52 w-full object-contain" />
@@ -263,32 +411,59 @@ const ChatOverlay: FC<Props> = ({
                 )}
                 <div className={`flex ${minha ? 'justify-end' : 'justify-start'}`}>
                   <div
-                    className={`max-w-[82%] px-3 py-2 text-[15px] leading-snug shadow-sm ${
+                    className={`max-w-[82%] px-1.5 py-1.5 text-[15px] leading-snug shadow-sm ${
                       minha
                         ? 'rounded-2xl rounded-br-md bg-cyan-600/90 text-white'
                         : 'rounded-2xl rounded-bl-md bg-white/[0.13] text-white/95'
                     }`}
                   >
                     {m.tipo === 'texto' && (
-                      <p className="whitespace-pre-wrap break-words">{m.texto}</p>
+                      <p className="whitespace-pre-wrap break-words px-1.5">{m.texto}</p>
                     )}
 
                     {m.tipo === 'imagem' && m.midiaUrl && (
-                      /* eslint-disable-next-line @next/next/no-img-element */
-                      <img src={m.midiaUrl} alt="imagem da conversa" className="max-h-64 rounded-xl" />
+                      <button
+                        type="button"
+                        onClick={() => setAmpliada(m.midiaUrl!)}
+                        className="block"
+                        title="Ver maior"
+                      >
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={m.midiaUrl}
+                          alt="foto da conversa"
+                          className="max-h-72 rounded-xl"
+                        />
+                      </button>
+                    )}
+
+                    {m.tipo === 'video' && m.midiaUrl && (
+                      <video
+                        src={m.midiaUrl}
+                        controls
+                        playsInline
+                        className="max-h-72 rounded-xl"
+                      />
                     )}
 
                     {m.tipo === 'audio' && m.midiaUrl && (
-                      <audio src={m.midiaUrl} controls className="h-9 max-w-[12rem]" />
+                      <div className="flex items-center gap-2 px-1">
+                        <audio src={m.midiaUrl} controls className="h-10 max-w-[13rem]" />
+                        {m.duracaoMs ? (
+                          <span className="text-[11px] text-white/60">
+                            {duracaoLegivel(m.duracaoMs)}
+                          </span>
+                        ) : null}
+                      </div>
                     )}
 
-                    <div className="mt-0.5 flex items-center justify-end gap-1 text-[10px] text-white/50">
+                    <div className="mt-0.5 flex items-center justify-end gap-1 px-1.5 text-[10px] text-white/50">
                       <span>{hora(m.quando)}</span>
                       {minha && <Recibo estado={m.entrega} />}
                     </div>
 
                     {m.entrega === 'falhou' && (
-                      <p className="mt-1 text-[11px] text-red-200">
+                      <p className="px-1.5 pb-1 text-[11px] text-red-200">
                         {ERRO_EM_PORTUGUES[m.erro ?? ''] ?? 'Não foi enviada.'}
                       </p>
                     )}
@@ -337,40 +512,99 @@ const ChatOverlay: FC<Props> = ({
             onSubmit={enviar}
             className="border-t border-white/10 bg-white/[0.04] px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3"
           >
-            <div className="flex items-center gap-2">
-              <input
-                value={texto}
-                onChange={(e) => setTexto(e.target.value)}
-                placeholder="Escreva uma mensagem…"
-                maxLength={4000}
-                /*
-                 * A tecla do teclado do celular vira "enviar" em vez de
-                 * "nova linha". E' o caminho que a maioria usa no celular — e
-                 * funciona mesmo se o botao estiver escondido por qualquer
-                 * motivo.
-                 */
-                enterKeyHint="send"
-                /* Com o teclado aberto, garante que o campo fique a vista. */
-                onFocus={(e) =>
-                  setTimeout(
-                    () => e.target.scrollIntoView({ block: 'center', behavior: 'smooth' }),
-                    300,
-                  )
-                }
-                className="min-w-0 flex-1 rounded-full bg-white/10 px-4 py-2.5 text-[15px] text-white placeholder-white/40 outline-none ring-1 ring-white/10 focus:ring-cyan-400/50"
-              />
-              <button
-                type="submit"
-                disabled={!texto.trim()}
-                title="Enviar"
-                aria-label="Enviar mensagem"
-                className="rounded-full bg-cyan-600 p-2.5 text-white transition-colors hover:bg-cyan-500 disabled:cursor-not-allowed disabled:bg-white/10 disabled:text-white/30"
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                  <path d="M4 12l16-8-6 16-2.5-6.5z" strokeLinejoin="round" />
-                </svg>
-              </button>
-            </div>
+            {gravando ? (
+              <div className="flex items-center gap-3 rounded-2xl bg-red-500/15 px-4 py-2.5 ring-1 ring-red-400/30">
+                <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-red-400" />
+                <span className="flex-1 text-sm text-white">
+                  Gravando… {duracaoLegivel(segundos * 1000)}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => pararDeGravar(true)}
+                  className="text-sm text-white/60 hover:text-white"
+                >
+                  Cancelar
+                </button>
+                <button
+                  type="button"
+                  onClick={() => pararDeGravar(false)}
+                  className="rounded-full bg-cyan-600 px-4 py-1.5 text-sm font-semibold text-white hover:bg-cyan-500"
+                >
+                  Enviar
+                </button>
+              </div>
+            ) : (
+              <div className="flex items-center gap-1.5">
+                <label
+                  className="cursor-pointer rounded-full p-2 text-white/60 transition-colors hover:bg-white/10 hover:text-white"
+                  title="Enviar foto"
+                >
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <circle cx="8.5" cy="10" r="1.5" />
+                    <path d="M21 16l-5-5-4 4-2-2-7 7" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                  <input type="file" accept="image/*" onChange={escolherFoto} className="hidden" />
+                </label>
+
+                <label
+                  className="cursor-pointer rounded-full p-2 text-white/60 transition-colors hover:bg-white/10 hover:text-white"
+                  title="Enviar vídeo"
+                >
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                    <path d="M15 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3.5l6 3.5V7z" strokeLinejoin="round" />
+                  </svg>
+                  <input type="file" accept="video/*" onChange={escolherVideo} className="hidden" />
+                </label>
+
+                <button
+                  type="button"
+                  onClick={comecarAGravar}
+                  title="Gravar áudio"
+                  aria-label="Gravar áudio"
+                  className="rounded-full p-2 text-white/60 transition-colors hover:bg-white/10 hover:text-white"
+                >
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                    <rect x="9" y="3" width="6" height="11" rx="3" />
+                    <path d="M5 11a7 7 0 0 0 14 0M12 18v3" strokeLinecap="round" />
+                  </svg>
+                </button>
+
+                <input
+                  value={texto}
+                  onChange={(e) => setTexto(e.target.value)}
+                  placeholder="Escreva uma mensagem…"
+                  maxLength={4000}
+                  enterKeyHint="send"
+                  onFocus={(e) =>
+                    setTimeout(
+                      () => e.target.scrollIntoView({ block: 'center', behavior: 'smooth' }),
+                      300,
+                    )
+                  }
+                  className="min-w-0 flex-1 rounded-full bg-white/10 px-4 py-2.5 text-[15px] text-white placeholder-white/40 outline-none ring-1 ring-white/10 focus:ring-cyan-400/50"
+                />
+
+                <button
+                  type="submit"
+                  disabled={!texto.trim()}
+                  title="Enviar"
+                  aria-label="Enviar mensagem"
+                  className="rounded-full bg-cyan-600 p-2.5 text-white transition-colors hover:bg-cyan-500 disabled:cursor-not-allowed disabled:bg-white/10 disabled:text-white/30"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                    <path d="M4 12l16-8-6 16-2.5-6.5z" strokeLinejoin="round" />
+                  </svg>
+                </button>
+              </div>
+            )}
+
+            {preparando && (
+              <p className="mt-2 text-center text-xs text-cyan-200/80">{preparando}</p>
+            )}
+            {problema && (
+              <p className="mt-2 text-center text-xs text-red-300">{problema}</p>
+            )}
 
             <div className="mt-2 flex justify-center gap-4 text-[11px]">
               <button
@@ -391,6 +625,17 @@ const ChatOverlay: FC<Props> = ({
           </form>
         )}
       </div>
+
+      {/* Foto ampliada. Fecha com Esc ou clique, como qualquer visualizador. */}
+      {ampliada && (
+        <div
+          className="absolute inset-0 z-[220] flex items-center justify-center bg-black/90 p-4"
+          onClick={() => setAmpliada(null)}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={ampliada} alt="foto ampliada" className="max-h-full max-w-full rounded-lg" />
+        </div>
+      )}
     </div>
   );
 };

@@ -841,6 +841,15 @@ export default function GlobeCanvas() {
                 onEnviarTexto={(texto) =>
                   conversas.enviarTexto(conversas.abertaCom!, texto)
                 }
+                onEnviarMidia={(tipo, blob, mime, duracaoMs) =>
+                  conversas.enviarMidia(
+                    conversas.abertaCom!,
+                    tipo,
+                    blob,
+                    mime,
+                    duracaoMs,
+                  )
+                }
                 onMarcarLidas={() => conversas.marcarLidas(conversas.abertaCom!)}
                 onFechar={() => {
                   conversas.fecharConversa();

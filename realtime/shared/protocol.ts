@@ -77,7 +77,7 @@ export interface Envelope {
   msgId: string;
   /** Quem mandou, pelo nome publico. */
   from: string;
-  kind: 'texto' | 'imagem' | 'audio';
+  kind: 'texto' | 'imagem' | 'audio' | 'video';
   payload: string;
   /** ISO. Quando o SERVIDOR aceitou — o relogio do remetente nao e' confiavel. */
   sentAt: string;
@@ -94,8 +94,20 @@ export const MsgError = {
 
 export type MsgErrorValue = (typeof MsgError)[keyof typeof MsgError];
 
-/** Teto do payload, em caracteres. Midia grande e' assunto da fase seguinte. */
-export const PAYLOAD_MAX = 300_000;
+/**
+ * Teto do payload, em caracteres.
+ *
+ * O payload e' JSON com os bytes em base64, que infla 4/3 — entao este numero
+ * vale cerca de 1,5 MB de arquivo. Foi calibrado para caber, com folga: uma
+ * foto de celular reduzida para 1280px fica em 200-400 KB, um minuto de audio
+ * em opus fica em ~150 KB, e clipes curtos de video passam.
+ *
+ * O limite existe por dois motivos, e nenhum e' arbitrario: o envelope e'
+ * guardado no banco ate a entrega (nao ha bucket), e o socket recusa quadro
+ * maior que o `maxHttpBufferSize` do servidor, que precisa acompanhar este
+ * valor.
+ */
+export const PAYLOAD_MAX = 2_000_000;
 
 /**
  * Servidor de STUN/TURN entregue ao cliente no aceite.
@@ -175,7 +187,7 @@ export interface ClientToServer {
   'msg:send': (p: {
     msgId: string;
     to: string;
-    kind: 'texto' | 'imagem' | 'audio';
+    kind: 'texto' | 'imagem' | 'audio' | 'video';
     payload: string;
   }) => void;
 
