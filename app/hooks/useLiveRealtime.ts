@@ -326,13 +326,26 @@ export function useLiveRealtime(user: UserProfileData | null) {
     socket.on('rate_limited', aoLimitar);
     socket.on('error', aoErro);
 
+    /*
+     * SÓ BATE O CORAÇÃO QUEM ENTROU NO GLOBO.
+     *
+     * O heartbeat renova uma presença; sem `presence:join` não há presença
+     * para renovar, e o servidor responde com erro — a cada quinze segundos,
+     * para sempre. Quem entra pelo Google não tem cidade, logo não entra no
+     * globo, e via a frase "heartbeat antes de presence:join." piscando na
+     * tela sem ter feito nada.
+     *
+     * A conexão continua valendo sem isto: conversar não depende de estar
+     * desenhado no mapa.
+     */
     const batida = setInterval(() => {
-      if (socket.connected) socket.emit('presence:heartbeat');
+      if (socket.connected && localRef.current) socket.emit('presence:heartbeat');
     }, HEARTBEAT_INTERVAL_MS);
 
     return () => {
       clearInterval(batida);
-      socket.emit('presence:leave');
+      // `leave` só faz sentido para quem entrou — e o servidor trata o resto.
+      if (localRef.current) socket.emit('presence:leave');
 
       /*
        * SÓ OS OUVINTES DESTE EFEITO.
@@ -739,6 +752,18 @@ export function useLiveRealtime(user: UserProfileData | null) {
     /** Para quem precisa esperar a conexao existir (ver useConversas). */
     socketPronto,
     minhaPresenca,
+    /**
+     * A conta não tem lugar no globo.
+     *
+     * Espera o mapa terminar de carregar antes de afirmar isso: enquanto ele
+     * carrega, TODO MUNDO está sem coordenada, e confundir as duas coisas
+     * faria o pedido de lugar aparecer para quem já tem cidade.
+     *
+     * Vale também para quem se cadastrou com um lugar que o mapa não conhece —
+     * e isso é correto: ela está fora do globo do mesmo jeito, e esta é a
+     * chance de corrigir.
+     */
+    semLugar: !carregandoMapa && !local,
     presencaPorNickname,
     verQuemEstaOnline,
     acenderBeacon,

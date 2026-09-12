@@ -36,6 +36,7 @@ import { latLonToVector3 } from '@/components/lib/utils';
 import ChatOverlay from '@/components/globe/ui/ChatOverlay';
 import PeopleSearchPanel from '@/components/globe/ui/PeopleSearchPanel';
 import ConversasPanel from '@/components/globe/ui/ConversasPanel';
+import EscolherLugar from '@/components/globe/ui/EscolherLugar';
 import EscolherNickname from '@/components/globe/ui/EscolherNickname';
 
 import AppHeader from '@/components/layout/AppHeader';
@@ -253,6 +254,7 @@ export default function GlobeCanvas() {
   const [buscaAberta, setBuscaAberta] = useState(false);
   const [conversasAbertas, setConversasAbertas] = useState(false);
   const [pedindoNickname, setPedindoNickname] = useState(false);
+  const [pedindoLugar, setPedindoLugar] = useState(false);
 
   /**
    * Entrou na conversa sem ter nome público?
@@ -590,11 +592,17 @@ export default function GlobeCanvas() {
           {realtime.estado.ligado && (
             <button
               type="button"
-              onClick={() =>
-                realtime.estado.meuBeacon
-                  ? realtime.apagarBeacon()
-                  : realtime.acenderBeacon('quero conversar')
-              }
+              onClick={() => {
+                // Sem lugar no globo não há de onde acender o sinal. Antes
+                // disto o servidor recusava com uma frase do protocolo
+                // ("beacon:raise antes de presence:join") na cara da pessoa.
+                if (realtime.semLugar) {
+                  setPedindoLugar(true);
+                  return;
+                }
+                if (realtime.estado.meuBeacon) realtime.apagarBeacon();
+                else realtime.acenderBeacon('quero conversar');
+              }}
               disabled={states.isAnyPopupOpen || !realtime.estado.conectado}
               title={
                 realtime.estado.meuBeacon
@@ -881,6 +889,13 @@ export default function GlobeCanvas() {
             <EscolherNickname
               aberto={pedindoNickname}
               onFechar={() => setPedindoNickname(false)}
+            />
+          </div>
+
+          <div className="pointer-events-auto">
+            <EscolherLugar
+              aberto={pedindoLugar}
+              onFechar={() => setPedindoLugar(false)}
             />
           </div>
 

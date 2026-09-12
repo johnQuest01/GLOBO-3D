@@ -287,6 +287,18 @@ export async function acharOuCriarPeloGoogle(conta: {
   return denovo.length > 0 ? toUser(denovo[0]!) : null;
 }
 
+/** Grava onde a pessoa está. Pode ser chamado quantas vezes ela se mudar. */
+export async function setLocal(
+  userId: string,
+  local: { country: string; state: string | null; city: string | null },
+): Promise<void> {
+  if (!sql) return;
+  await sql`
+    update users
+       set country = ${local.country}, state = ${local.state}, city = ${local.city}
+     where id = ${userId}::uuid`;
+}
+
 export async function findUserById(id: string): Promise<AuthUser | null> {
   if (!sql) return null;
   const rows = (await sql`
