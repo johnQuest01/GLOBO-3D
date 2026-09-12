@@ -41,7 +41,9 @@ function fakeRedis() {
     return true;
   };
 
-  return {
+  const zsets = new Map<string, Map<string, number>>();
+
+  const api = {
     async hset(key: string, value: Record<string, string>) {
       hashes.set(key, { valor: { ...value }, expiraEm: null });
       return Object.keys(value).length;
@@ -99,6 +101,58 @@ function fakeRedis() {
       }
       return e.valor;
     },
+
+    // --- Indice mundial de sinais ----------------------------------------
+    // Um Map de membro -> pontuacao por chave. E' o minimo que reproduz o
+    // comportamento de que o store depende: ordenar do maior para o menor.
+    async zadd(key: string, score: number, member: string) {
+      const z = zsets.get(key) ?? new Map<string, number>();
+      z.set(member, score);
+      zsets.set(key, z);
+      return 1;
+    },
+    async zrem(key: string, ...members: string[]) {
+      const z = zsets.get(key);
+      if (!z) return 0;
+      let n = 0;
+      for (const m of members) if (z.delete(m)) n += 1;
+      return n;
+    },
+    async zrevrange(key: string, inicio: number, fim: number) {
+      const z = zsets.get(key);
+      if (!z) return [];
+      return [...z.entries()]
+        .sort((a, b) => b[1] - a[1])
+        .slice(inicio, fim + 1)
+        .map(([m]) => m);
+    },
+
+    /**
+     * O pipeline de mentira EXECUTA NA HORA cada ordem e guarda a resposta.
+     *
+     * Nao reproduz a otimizacao (aqui nao ha rede para economizar), e sim o
+     * CONTRATO: as mesmas ordens, na mesma ordem, com as respostas em pares
+     * [erro, valor] — que e' o formato que o store le'.
+     */
+    pipeline() {
+      const respostas: Promise<unknown>[] = [];
+      const fila = {
+        hset: (k: string, v: Record<string, string>) => (respostas.push(api.hset(k, v)), fila),
+        hgetall: (k: string) => (respostas.push(api.hgetall(k)), fila),
+        expire: (k: string, seg: number) => (respostas.push(api.expire(k, seg)), fila),
+        sadd: (k: string, m: string) => (respostas.push(api.sadd(k, m)), fila),
+        srem: (k: string, ...m: string[]) => (respostas.push(api.srem(k, ...m)), fila),
+        del: (k: string) => (respostas.push(api.del(k)), fila),
+        zadd: (k: string, sc: number, m: string) => (respostas.push(api.zadd(k, sc, m)), fila),
+        zrem: (k: string, ...m: string[]) => (respostas.push(api.zrem(k, ...m)), fila),
+        async exec() {
+          const valores = await Promise.all(respostas);
+          return valores.map((v) => [null, v] as [Error | null, unknown]);
+        },
+      };
+      return fila;
+    },
+
     async quit() {
       return 'OK';
     },
@@ -107,6 +161,8 @@ function fakeRedis() {
       return sets.get(key)?.size ?? 0;
     },
   };
+
+  return api;
 }
 
 // ---------------------------------------------------------------------------

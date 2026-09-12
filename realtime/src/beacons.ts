@@ -70,6 +70,9 @@ export function registerBeacons(
       // Derivado da pessoa, e não sorteado: ver o comentário do topo.
       beaconId: `b:${clientId}`,
       clientId,
+      // Sem o nome, um ponto num pais distante nao diz nada — e nao da' para
+      // abrir conversa, que e' enderecada por nickname.
+      ...(socket.data.nickname ? { nickname: socket.data.nickname } : {}),
       lat: presence.lat,
       lon: presence.lon,
       regionKey: presence.regionKey,
@@ -81,10 +84,19 @@ export function registerBeacons(
     socket.data.beaconId = beacon.beaconId;
     socket.data.beaconRegionKey = beacon.regionKey;
 
-    // Para a região inteira, INCLUSIVE quem acendeu: é assim que a própria
-    // pessoa vê o próprio sinal aparecer no globo, sem o cliente ter que
-    // adivinhar o beaconId que o servidor gerou.
-    io.to(presence.regionKey).emit('beacon:new', beacon);
+    /*
+     * PARA O MUNDO INTEIRO, e nao so' para a regiao.
+     *
+     * O sinal e' o convite aberto do projeto: "quero conversar". Limita-lo a
+     * quem esta na mesma regiao do globo o tornava quase inutil — duas pessoas
+     * so' se encontravam por acaso de geografia, num aplicativo cujo proposito
+     * e' encontrar gente de qualquer lugar.
+     *
+     * Inclui quem acendeu, de proposito: e' assim que a propria pessoa ve' o
+     * proprio sinal aparecer, sem o cliente ter que adivinhar o beaconId que o
+     * servidor gerou.
+     */
+    io.emit('beacon:new', beacon);
 
     log(
       `beacon ${beacon.beaconId.slice(0, 8)} de ${clientId} em ${presence.regionKey} por ${ttlSec}s`,
@@ -195,5 +207,6 @@ async function apagarBeaconDoSocket(
   socket.data.beaconId = undefined;
   socket.data.beaconRegionKey = undefined;
   await store.removeBeacon(beaconId, regionKey);
-  io.to(regionKey).emit('beacon:gone', { beaconId });
+  // Mundial como o acender: quem viu aparecer precisa ver sumir.
+  io.emit('beacon:gone', { beaconId });
 }

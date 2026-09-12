@@ -84,6 +84,14 @@ export interface PresenceStore {
   addBeacon(beacon: Beacon, ttlSec: number): Promise<void>;
   removeBeacon(beaconId: string, regionKey: RegionKey): Promise<void>;
   listBeacons(regionKey: RegionKey): Promise<Beacon[]>;
+  /**
+   * Os sinais do mundo inteiro, dos mais recentes para os mais antigos.
+   *
+   * Existe separado de `listBeacons` porque as duas perguntas sao diferentes:
+   * a da regiao serve ao globo local; esta serve a quem quer conversar com
+   * alguem, em qualquer lugar — que e' o proposito do sinal.
+   */
+  listBeaconsGlobais(limite: number): Promise<Beacon[]>;
   getBeacon(beaconId: string): Promise<Beacon | null>;
 
   // --- Pedidos de conexão ------------------------------------------------
@@ -110,6 +118,15 @@ const clientKeyOf = (clientId: ClientId) => `client:${clientId}`;
 const nickKeyOf = (nickname: string) => `nick:${nickname.trim().toLowerCase()}`;
 const beaconKeyOf = (beaconId: string) => `beacon:${beaconId}`;
 const beaconsOfRegion = (regionKey: RegionKey) => `beacons:${regionKey}`;
+/**
+ * O indice MUNDIAL de sinais.
+ *
+ * E' um sorted set com o instante de acender como pontuacao, e nao um Set
+ * comum: assim da' para pedir "os N mais recentes" sem ler todos, que e' a
+ * unica forma de um indice global nao virar um problema quando houver muita
+ * gente.
+ */
+const BEACONS_GLOBAIS = 'beacons:todos';
 const requestKeyOf = (requestId: string) => `request:${requestId}`;
 /** Bloqueio é simétrico, então a chave é o par ordenado. */
 const blockKeyOf = (a: ClientId, b: ClientId) =>
@@ -118,6 +135,7 @@ const blockKeyOf = (a: ClientId, b: ClientId) =>
 const beaconToHash = (b: Beacon): Record<string, string> => ({
   beaconId: b.beaconId,
   clientId: b.clientId,
+  ...(b.nickname ? { nickname: b.nickname } : {}),
   lat: String(b.lat),
   lon: String(b.lon),
   regionKey: b.regionKey,
@@ -140,6 +158,7 @@ function beaconFromHash(hash: Record<string, string>): Beacon | null {
     lat,
     lon,
     regionKey: hash.regionKey,
+    ...(hash.nickname ? { nickname: hash.nickname } : {}),
     expiresAt,
     ...(hash.topic ? { topic: hash.topic } : {}),
   };
@@ -177,6 +196,26 @@ function fromHash(hash: Record<string, string>): Presence | null {
 // ---------------------------------------------------------------------------
 
 /** Só o que este store usa do ioredis — evita amarrar o tipo ao pacote. */
+/**
+ * Varias ordens numa viagem so'.
+ *
+ * Cada metodo devolve O PROPRIO pipeline — e' o que permite encadear. O tipo
+ * declara o minimo que usamos, e nao a assinatura completa do ioredis: copiar
+ * as sobrecargas dele amarraria este arquivo a versao dele, que e' justamente
+ * o que esta interface existe para evitar.
+ */
+interface PipelineLike {
+  hset(key: string, value: Record<string, string>): PipelineLike;
+  hgetall(key: string): PipelineLike;
+  expire(key: string, seconds: number): PipelineLike;
+  sadd(key: string, member: string): PipelineLike;
+  srem(key: string, ...members: string[]): PipelineLike;
+  del(key: string): PipelineLike;
+  zadd(key: string, score: number, member: string): PipelineLike;
+  zrem(key: string, ...members: string[]): PipelineLike;
+  exec(): Promise<[Error | null, unknown][] | null>;
+}
+
 interface RedisLike {
   hset(key: string, value: Record<string, string>): Promise<number>;
   expire(key: string, seconds: number): Promise<number>;
@@ -191,7 +230,60 @@ interface RedisLike {
   set(key: string, value: string): Promise<unknown>;
   set(key: string, value: string, mode: 'EX', ttl: number): Promise<unknown>;
   get(key: string): Promise<string | null>;
+
+  // --- Indice mundial de sinais ------------------------------------------
+  zadd(key: string, score: number, member: string): Promise<unknown>;
+  zrem(key: string, ...members: string[]): Promise<number>;
+  /** Do maior para o menor: os sinais mais recentes primeiro. */
+  zrevrange(key: string, inicio: number, fim: number): Promise<string[]>;
+
+  /**
+   * Varias ordens numa viagem so'.
+   *
+   * O tipo e' o minimo que usamos, e nao a declaracao completa do ioredis:
+   * copiar as sobrecargas dele aqui amarraria este arquivo a versao dele, que
+   * e' justamente o que esta interface existe para evitar.
+   */
+  pipeline(): PipelineLike;
+
   quit(): Promise<unknown>;
+}
+
+/**
+ * Le' varios hashes de uma vez, e limpa os que morreram.
+ *
+ * O LACO ANTIGO FAZIA UMA IDA AO REDIS POR ITEM. Com mil pessoas numa regiao
+ * eram mil viagens sequenciais a cada vez que alguem entrava — e cada uma
+ * esperando a anterior. O pipeline manda todas juntas e espera uma vez so'.
+ *
+ * A limpeza preguicosa continua: o indice (Set ou sorted set) nao expira
+ * sozinho junto com o hash, entao quem le' e' quem varre.
+ */
+async function lerEmLote<T>(
+  redis: RedisLike,
+  ids: string[],
+  chaveDe: (id: string) => string,
+  converter: (hash: Record<string, string>) => T | null,
+  limpar: (mortos: string[]) => Promise<unknown>,
+): Promise<T[]> {
+  if (ids.length === 0) return [];
+
+  const pipeline = redis.pipeline();
+  for (const id of ids) pipeline.hgetall(chaveDe(id));
+  const respostas = (await pipeline.exec()) ?? [];
+
+  const vivos: T[] = [];
+  const mortos: string[] = [];
+
+  ids.forEach((id, i) => {
+    const hash = (respostas[i]?.[1] ?? {}) as Record<string, string>;
+    const item = converter(hash);
+    if (item) vivos.push(item);
+    else mortos.push(id);
+  });
+
+  if (mortos.length > 0) await limpar(mortos);
+  return vivos;
 }
 
 export function createRedisStore(redis: RedisLike): PresenceStore {
@@ -219,24 +311,9 @@ export function createRedisStore(redis: RedisLike): PresenceStore {
 
     async listRegion(regionKey) {
       const socketIds = await redis.smembers(regionKeyOf(regionKey));
-      if (socketIds.length === 0) return [];
-
-      const presences: Presence[] = [];
-      const mortos: string[] = [];
-
-      for (const socketId of socketIds) {
-        const hash = await redis.hgetall(presenceKeyOf(socketId));
-        const presence = fromHash(hash);
-        if (presence) presences.push(presence);
-        else mortos.push(socketId);
-      }
-
-      // Limpeza preguiçosa dos socketIds cujo hash já expirou.
-      if (mortos.length > 0) {
-        await redis.srem(regionKeyOf(regionKey), ...mortos);
-      }
-
-      return presences;
+      return lerEmLote(redis, socketIds, presenceKeyOf, fromHash, (mortos) =>
+        redis.srem(regionKeyOf(regionKey), ...mortos),
+      );
     },
 
     // --- Quem é quem -----------------------------------------------------
@@ -293,14 +370,24 @@ export function createRedisStore(redis: RedisLike): PresenceStore {
         await redis.srem(beaconsOfRegion(anterior.regionKey), beacon.beaconId);
       }
 
-      await redis.hset(key, beaconToHash(beacon));
-      await redis.expire(key, ttlSec);
-      await redis.sadd(beaconsOfRegion(beacon.regionKey), beacon.beaconId);
+      await redis
+        .pipeline()
+        .hset(key, beaconToHash(beacon))
+        .expire(key, ttlSec)
+        .sadd(beaconsOfRegion(beacon.regionKey), beacon.beaconId)
+        // No indice mundial a pontuacao e' o instante: pedir "os mais
+        // recentes" custa uma consulta so', por maior que ele fique.
+        .zadd(BEACONS_GLOBAIS, Date.now(), beacon.beaconId)
+        .exec();
     },
 
     async removeBeacon(beaconId, regionKey) {
-      await redis.del(beaconKeyOf(beaconId));
-      await redis.srem(beaconsOfRegion(regionKey), beaconId);
+      await redis
+        .pipeline()
+        .del(beaconKeyOf(beaconId))
+        .srem(beaconsOfRegion(regionKey), beaconId)
+        .zrem(BEACONS_GLOBAIS, beaconId)
+        .exec();
     },
 
     async getBeacon(beaconId) {
@@ -309,18 +396,17 @@ export function createRedisStore(redis: RedisLike): PresenceStore {
 
     async listBeacons(regionKey) {
       const ids = await redis.smembers(beaconsOfRegion(regionKey));
-      if (ids.length === 0) return [];
+      return lerEmLote(redis, ids, beaconKeyOf, beaconFromHash, (mortos) =>
+        redis.srem(beaconsOfRegion(regionKey), ...mortos),
+      );
+    },
 
-      const vivos: Beacon[] = [];
-      const mortos: string[] = [];
-      for (const id of ids) {
-        const b = beaconFromHash(await redis.hgetall(beaconKeyOf(id)));
-        if (b) vivos.push(b);
-        else mortos.push(id);
-      }
-      // Mesma limpeza preguiçosa da presença: o Set não expira sozinho.
-      if (mortos.length > 0) await redis.srem(beaconsOfRegion(regionKey), ...mortos);
-      return vivos;
+    async listBeaconsGlobais(limite) {
+      // Do mais recente para o mais antigo, so' o teto pedido.
+      const ids = await redis.zrevrange(BEACONS_GLOBAIS, 0, Math.max(0, limite - 1));
+      return lerEmLote(redis, ids, beaconKeyOf, beaconFromHash, (mortos) =>
+        redis.zrem(BEACONS_GLOBAIS, ...mortos),
+      );
     },
 
     // --- Pedidos ---------------------------------------------------------
@@ -489,6 +575,17 @@ export function createMemoryStore(): PresenceStore {
         }
       }
       return saida;
+    },
+
+    async listBeaconsGlobais(limite) {
+      // Em memoria nao ha indice: sao poucos sinais por definicao (isto so'
+      // roda em desenvolvimento), entao varrer e ordenar custa nada.
+      const vivos: Beacon[] = [];
+      for (const [id, b] of beacons) {
+        if (b.expiresAt > Date.now()) vivos.push(b);
+        else beacons.delete(id);
+      }
+      return vivos.sort((a, b) => b.expiresAt - a.expiresAt).slice(0, limite);
     },
 
     async putRequest(req, ttlSec) {

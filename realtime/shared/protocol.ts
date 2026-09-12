@@ -58,9 +58,28 @@ export interface Beacon {
   lon: number;
   regionKey: RegionKey;
   topic?: string;
+  /**
+   * Quem acendeu, pelo nome publico.
+   *
+   * Passou a viajar junto quando os sinais viraram MUNDIAIS: de longe, o que
+   * a pessoa ve' e' um ponto num pais que ela nao conhece, e sem um nome nao
+   * ha' como decidir se quer falar — nem como abrir uma conversa, que e'
+   * enderecada por nickname.
+   */
+  nickname?: string;
   /** Epoch em milissegundos. Passou disso, o beacon não existe mais. */
   expiresAt: number;
 }
+
+/**
+ * Teto de sinais que um aparelho recebe de uma vez.
+ *
+ * Sinais sao mundiais, e isso so' se sustenta com um teto: com muita gente
+ * online, mandar todos para todo mundo seria um broadcast que cresce com o
+ * quadrado da audiencia. Duzentos pontos ja' enchem um globo, e o agrupamento
+ * do cliente cuida de mostra-los sem virar mancha.
+ */
+export const BEACONS_MAX = 200;
 
 /**
  * Uma mensagem, do jeito que ela atravessa o servidor.

@@ -34,7 +34,14 @@ interface Props {
   beacons: Beacon[];
   /** Para não desenhar (nem deixar clicar) o próprio sinal como convite. */
   meuClientId: string;
-  onPedirConexao: (clientId: string) => void;
+  /**
+   * Tocou num sinal. A interface abre a tela dele — e nao um convite.
+   *
+   * Antes isto disparava o pedido de conexao na hora, as cegas dos dois lados:
+   * quem tocava nao sabia para quem, e quem recebia via um pedido vindo do
+   * nada.
+   */
+  onAbrirSinal: (sinal: Beacon) => void;
   /** Abriu um grupo: a interface mostra a lista de quem está ali. */
   onAbrirGrupo: (doGrupo: Beacon[]) => void;
 }
@@ -81,7 +88,7 @@ const matSinal = new THREE.MeshStandardMaterial({
 const BeaconMarkers: FC<Props> = ({
   beacons,
   meuClientId,
-  onPedirConexao,
+  onAbrirSinal,
   onAbrirGrupo,
 }) => {
   const { size, camera } = useThree();
@@ -146,7 +153,7 @@ const BeaconMarkers: FC<Props> = ({
             key={g.itens[0]!.beaconId}
             beacon={g.itens[0]!}
             ehMeu={g.itens[0]!.clientId === meuClientId}
-            onPedirConexao={onPedirConexao}
+            onAbrir={onAbrirSinal}
           />
         ) : (
           <GrupoDeSinais
@@ -278,8 +285,8 @@ const GrupoDeSinais: FC<{
 const BeaconMarker: FC<{
   beacon: Beacon;
   ehMeu: boolean;
-  onPedirConexao: (clientId: string) => void;
-}> = ({ beacon, ehMeu, onPedirConexao }) => {
+  onAbrir: (sinal: Beacon) => void;
+}> = ({ beacon, ehMeu, onAbrir }) => {
   const grupo = useRef<THREE.Group>(null!);
   const anel = useRef<THREE.Mesh>(null!);
   const corCard = useRef<THREE.MeshBasicMaterial>(null);
@@ -335,8 +342,9 @@ const BeaconMarker: FC<{
 
   const clicar = (e: ThreeEvent<PointerEvent>) => {
     e.stopPropagation();
-    if (ehMeu) return;
-    onPedirConexao(beacon.clientId);
+    // O proprio sinal tambem abre: e' como a pessoa confere o que escreveu e
+    // ve' quanto tempo ainda falta para ele apagar.
+    onAbrir(beacon);
   };
 
   return (
@@ -351,7 +359,6 @@ const BeaconMarker: FC<{
           onClick={clicar}
           onPointerOver={(e) => {
             e.stopPropagation();
-            if (ehMeu) return;
             document.body.style.cursor = 'pointer';
             corCard.current?.color.set(COR_HOVER);
           }}

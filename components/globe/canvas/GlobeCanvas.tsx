@@ -38,6 +38,7 @@ import ChatOverlay from '@/components/globe/ui/ChatOverlay';
 import PeopleSearchPanel from '@/components/globe/ui/PeopleSearchPanel';
 import ConversasPanel from '@/components/globe/ui/ConversasPanel';
 import GrupoDeSinaisPanel from '@/components/globe/ui/GrupoDeSinaisPanel';
+import SinalPanel from '@/components/globe/ui/SinalPanel';
 import { registrarWorker } from '@/lib/push/avisos';
 import EscolherLugar from '@/components/globe/ui/EscolherLugar';
 import EscolherNickname from '@/components/globe/ui/EscolherNickname';
@@ -274,6 +275,8 @@ export default function GlobeCanvas() {
   const [pedindoLugar, setPedindoLugar] = useState(false);
   /** Os sinais de um marcador agrupado, quando a pessoa toca nele. */
   const [grupoDeSinais, setGrupoDeSinais] = useState<Beacon[] | null>(null);
+  /** O sinal aberto, quando a pessoa toca em um. */
+  const [sinalAberto, setSinalAberto] = useState<Beacon | null>(null);
 
   /*
    * O QUE FAZER QUANDO A PESSOA TOCA NA NOTIFICACAO.
@@ -522,6 +525,7 @@ export default function GlobeCanvas() {
             beacons={realtime.estado.beacons}
             meuClientId={realtime.meuClientId}
             onPedirConexao={realtime.pedirConexao}
+            onAbrirSinal={setSinalAberto}
             onAbrirGrupoDeSinais={setGrupoDeSinais}
             arco={arco}
             arcoAtivo={realtime.estado.estadoDaChamada === 'conectado'}
@@ -1004,13 +1008,33 @@ export default function GlobeCanvas() {
           </div>
 
           <div className="pointer-events-auto">
+            <SinalPanel
+              sinal={sinalAberto}
+              onFechar={() => setSinalAberto(null)}
+              meuClientId={realtime.meuClientId}
+              onConversar={(apelido) => {
+                setSinalAberto(null);
+                conversas.abrirConversa(apelido);
+              }}
+              onChamarVideo={(clientId) => {
+                setSinalAberto(null);
+                realtime.pedirConexao(clientId);
+              }}
+            />
+          </div>
+
+          <div className="pointer-events-auto">
             <GrupoDeSinaisPanel
               itens={grupoDeSinais}
               onFechar={() => setGrupoDeSinais(null)}
               meuClientId={realtime.meuClientId}
               onChamar={(clientId) => {
+                // Do grupo para a tela do sinal: a decisao de chamar e' a
+                // mesma, e ela merece as mesmas informacoes.
+                const escolhido = grupoDeSinais?.find((b) => b.clientId === clientId);
                 setGrupoDeSinais(null);
-                realtime.pedirConexao(clientId);
+                if (escolhido) setSinalAberto(escolhido);
+                else realtime.pedirConexao(clientId);
               }}
             />
           </div>
