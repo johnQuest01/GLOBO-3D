@@ -540,3 +540,42 @@ nicknames, and search one from the other.
    migration is additive.
 5. **Report and block are one click away, always** — including inside the new
    full-screen overlay.
+
+---
+
+## 6. Testing the chat with two people
+
+The chat needs two different accounts, and a browser keeps **one session per
+site** — open the same site twice in the same window and both tabs are the same
+person. So the second person needs a separate cookie jar.
+
+### Two test accounts (live, in the production database)
+
+| account | nickname | e-mail | password |
+|---|---|---|---|
+| Ana | `anateste_mg` | ana.teste.globo@example.com | senhaDeTeste123 |
+| Yuki | `yuki_tokyo` | yuki.teste.globo@example.com | senhaDeTeste123 |
+
+They live in Minas Gerais and Tokyo on purpose: different regions is the case
+the magnifier exists for, and the one that a simple "who is nearby" list would
+never cover.
+
+### How to run the test
+
+1. Normal window → https://globo-3d-ten.vercel.app → log in as **Ana**
+2. **Anonymous window** (Ctrl+Shift+N) → same address → log in as **Yuki**
+3. In Ana's window: magnifier → type `yuki` → **Conversar**
+4. Write something. It appears in Yuki's window, and the tick turns ✓✓
+5. For the **offline** case: close Yuki's window, send another message from
+   Ana (single ✓), then reopen and log in again — the conversations button
+   shows the unread badge and the message is there
+
+### Verified in production on 2026-09-12
+
+Ana in the production site and Yuki in a second origin, both against
+`globo-realtime.fly.dev`: the message left one browser, crossed the server and
+landed in the other, with ✓✓ on the sender's side. The server logged
+`msg anateste_mg -> yuki_tokyo` and then the `ack` that deletes the envelope.
+
+Delete these two accounts before the site has real users — they are a public
+door with a password written in a file.
