@@ -390,19 +390,80 @@ export const useGlobeStateAndHandlers = () => {
     [],
   );
 
+  /*
+   * NÃO TER PERFIL LOCAL NÃO É ESTAR DESLOGADO.
+   *
+   * Antes, `userData` ausente mandava direto para o login — o que valia
+   * enquanto a única porta de entrada era o formulário, que escreve esse
+   * perfil ao entrar. Quem entra pelo Google volta do redirecionamento com uma
+   * sessão perfeitamente válida e nenhum `userData`: seria expulso para o
+   * login logo depois de ter logado, num ciclo do qual não sairia nunca.
+   *
+   * Então o servidor decide. Só quando ELE diz que não há sessão é que a
+   * pessoa vai para o login.
+   */
   useEffect(() => {
+    let cancelado = false;
     const storedData = localStorage.getItem('userData');
+
     if (storedData) {
       try {
         setCurrentUser(JSON.parse(storedData));
+        return;
       } catch (e) {
         console.error('Failed to parse userData, clearing cache:', e);
         localStorage.removeItem('userData');
-        router.push('/login');
       }
-    } else {
-      router.push('/login');
     }
+
+    void (async () => {
+      try {
+        /*
+         * `fresh=1` PORQUE O CACHE NÃO SERVE AQUI.
+         *
+         * O cookie de cache guarda só id, e-mail, nome e nickname — o bastante
+         * para dizer quem está logado, e não o bastante para montar um perfil:
+         * faltam cidade, estado e país, que são o que coloca a pessoa no
+         * globo. Reconstruir a partir dele devolveria alguém sem lugar no
+         * mundo. É uma consulta ao banco, e só acontece quando não há perfil
+         * neste aparelho.
+         */
+        const r = await fetch('/api/auth/me?fresh=1', { cache: 'no-store' });
+        // 503 é "não consigo saber", não "não está logado" — devolver ao login
+        // por uma configuração ausente no servidor deslogaria todo mundo.
+        if (r.status === 503) return;
+
+        const dados = r.ok ? await r.json().catch(() => null) : null;
+        if (cancelado) return;
+
+        if (!dados?.user) {
+          router.push('/login');
+          return;
+        }
+
+        const perfil: UserProfileData = {
+          fullName: dados.user.fullName ?? dados.user.nickname ?? 'Você',
+          age: '',
+          city: dados.user.city ?? '',
+          email: dados.user.email,
+          nickname: dados.user.nickname ?? undefined,
+          state: dados.user.state ?? '',
+          country: dados.user.country ?? '',
+        };
+        try {
+          localStorage.setItem('userData', JSON.stringify(perfil));
+        } catch {
+          /* sem localStorage a sessão continua valendo; só não sobrevive ao recarregar */
+        }
+        setCurrentUser(perfil);
+      } catch {
+        // Rede caiu no primeiro carregamento. Ficar offline não pode deslogar.
+      }
+    })();
+
+    return () => {
+      cancelado = true;
+    };
   }, [router]);
 
   /**

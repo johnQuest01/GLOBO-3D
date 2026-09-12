@@ -194,9 +194,17 @@ export async function setNickname(
   return rows.length > 0 ? toUser(rows[0]!) : null;
 }
 
+/**
+ * `passwordHash` é NULO nas contas do Google, e quem chama precisa tratar isso.
+ *
+ * Antes ele era sempre string, e uma conta sem senha viraria a string "null"
+ * — que passaria pelo verificador de senha como um hash mal formado e daria
+ * "e-mail ou senha incorretos". Funcionaria, e mentiria: a pessoa ficaria
+ * tentando lembrar uma senha que ela nunca criou.
+ */
 export async function findUserByEmail(
   email: string,
-): Promise<(AuthUser & { passwordHash: string }) | null> {
+): Promise<(AuthUser & { passwordHash: string | null }) | null> {
   if (!sql) return null;
   const rows = (await sql`
     select id, email, nickname, password_hash, full_name, country, state, city,
@@ -207,7 +215,76 @@ export async function findUserByEmail(
   `) as Record<string, unknown>[];
 
   if (rows.length === 0) return null;
-  return { ...toUser(rows[0]!), passwordHash: String(rows[0]!.password_hash) };
+  const hash = rows[0]!.password_hash;
+  return {
+    ...toUser(rows[0]!),
+    passwordHash: typeof hash === 'string' && hash ? hash : null,
+  };
+}
+
+/**
+ * Acha (ou cria) a conta de quem entrou pelo Google.
+ *
+ * A ORDEM DAS TRÊS TENTATIVAS NÃO É ARBITRÁRIA.
+ *
+ * 1. Pelo `google_sub`: é o identificador estável. Quem já entrou antes cai
+ *    aqui, mesmo que tenha trocado de e-mail no Google desde então.
+ *
+ * 2. Pelo e-mail, LIGANDO as duas contas: é o caso de quem já tinha conta com
+ *    senha aqui e agora clicou no botão do Google. Sem este passo, a pessoa
+ *    ganharia uma segunda conta e perderia as conversas da primeira. Só é
+ *    seguro porque o Google confirmou que aquele e-mail é dela — um e-mail não
+ *    verificado nunca chega até aqui (ver lib/auth/google.ts).
+ *
+ * 3. Criar. Sem senha e SEM NICKNAME: o nome público é pedido depois, na
+ *    primeira vez que a pessoa for procurar alguém. Exigir na porta de entrada
+ *    transformaria "entrar com o Google" num formulário, que é exatamente o
+ *    que o botão existe para evitar.
+ */
+export async function acharOuCriarPeloGoogle(conta: {
+  sub: string;
+  email: string;
+  nome: string | null;
+  foto: string | null;
+  clientId?: string | null;
+}): Promise<AuthUser | null> {
+  if (!sql) return null;
+
+  const porSub = (await sql`
+    select id, email, nickname, full_name, country, state, city, banned_at, banned_reason
+    from users where google_sub = ${conta.sub} limit 1
+  `) as Record<string, unknown>[];
+  if (porSub.length > 0) return toUser(porSub[0]!);
+
+  const email = normalizeEmail(conta.email);
+
+  // `where google_sub is null` impede que duas contas do Google diferentes
+  // disputem o mesmo e-mail — o segundo não rouba o vínculo do primeiro.
+  const ligadas = (await sql`
+    update users
+       set google_sub = ${conta.sub},
+           avatar_url = coalesce(avatar_url, ${conta.foto}),
+           full_name  = coalesce(full_name, ${conta.nome})
+     where email = ${email} and google_sub is null
+    returning id, email, nickname, full_name, country, state, city, banned_at, banned_reason
+  `) as Record<string, unknown>[];
+  if (ligadas.length > 0) return toUser(ligadas[0]!);
+
+  const criadas = (await sql`
+    insert into users (email, google_sub, full_name, avatar_url, client_id)
+    values (${email}, ${conta.sub}, ${conta.nome}, ${conta.foto}, ${conta.clientId ?? null})
+    on conflict do nothing
+    returning id, email, nickname, full_name, country, state, city, banned_at, banned_reason
+  `) as Record<string, unknown>[];
+  if (criadas.length > 0) return toUser(criadas[0]!);
+
+  // Conflito: alguém criou a mesma conta entre a checagem e a inserção. Ler de
+  // volta é mais honesto que devolver erro para uma corrida que já terminou bem.
+  const denovo = (await sql`
+    select id, email, nickname, full_name, country, state, city, banned_at, banned_reason
+    from users where google_sub = ${conta.sub} or email = ${email} limit 1
+  `) as Record<string, unknown>[];
+  return denovo.length > 0 ? toUser(denovo[0]!) : null;
 }
 
 export async function findUserById(id: string): Promise<AuthUser | null> {

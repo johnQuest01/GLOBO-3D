@@ -1,7 +1,7 @@
 // components/login/LoginScreen.tsx
 'use client';
 
-import React, { useState, FormEvent, ChangeEvent } from 'react';
+import React, { useState, useEffect, FormEvent, ChangeEvent } from 'react';
 import LoginBackground from './LoginBackground'; // Importa o fundo 3D
 import { useRouter } from 'next/navigation';
 import { UserProfileData } from '@/app/types/user';
@@ -144,6 +144,32 @@ const LoginScreen: React.FC = () => {
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   /** Trava o botão enquanto o servidor responde, para não criar conta duplicada no duplo clique. */
   const [enviando, setEnviando] = useState(false);
+
+  /*
+   * O QUE DEU ERRADO NA VOLTA DO GOOGLE.
+   *
+   * O caminho do OAuth é um redirecionamento, não um fetch: não há resposta
+   * para ler. O motivo volta na URL, e sem esta tradução a pessoa reapareceria
+   * no login sem nenhuma explicação de por que não entrou.
+   *
+   * O parâmetro é apagado depois de lido, para o aviso não voltar se a pessoa
+   * recarregar a página.
+   */
+  useEffect(() => {
+    const motivo = new URLSearchParams(window.location.search).get('google');
+    if (!motivo) return;
+
+    const recado: Record<string, string> = {
+      indisponivel: 'A entrada com Google não está configurada neste servidor.',
+      cancelado: 'Você cancelou a entrada com o Google.',
+      expirado: 'A tentativa demorou demais. Toque em "Entrar com Google" de novo.',
+      banida: 'Esta conta está suspensa.',
+      falhou: 'Não deu para entrar com o Google agora. Tente de novo.',
+    };
+    setErrors({ general: recado[motivo] ?? recado.falhou! });
+
+    window.history.replaceState({}, '', window.location.pathname);
+  }, []);
 
   // A função de validação está correta, não precisa mudar.
   const validateField = (name: string, value: string): string => {
@@ -641,25 +667,31 @@ disabled:opacity-60 disabled:cursor-not-allowed"
         </div>
 
         {/*
-          SEM ÍCONE, de propósito.
+          O ÍCONE É SVG INLINE, e não um arquivo em public/images.
 
-          Aqui havia um <Image src="/images/google-icon.png">, e a pasta
-          public/images nunca existiu: todo carregamento desta tela pedia a
-          imagem e levava 400, em toda visita de todo mundo. O botão já está
-          desligado (a entrada com Google ainda não existe), então o ícone não
-          estava informando nada — só gastava uma requisição para falhar.
+          Aqui havia um <Image src="/images/google-icon.png"> apontando para uma
+          pasta que nunca existiu: toda visita a esta tela pedia a imagem e
+          levava 400. Desenhado aqui, ele não pode faltar — e são as quatro
+          cores que fazem o botão ser reconhecido antes de alguém ler o texto.
 
-          Quando a entrada com Google for implementada, o ícone volta junto com
-          ela, e aí com o arquivo em public/images.
+          É UM LINK COMUM, não um fetch: quem precisa ver a tela do Google é a
+          pessoa, e o login dela mora no navegador dela. O servidor monta o
+          endereço com o `state` assinado e leva junto.
         */}
-        <button
-          className="w-full py-2 rounded-lg bg-red-700 text-white text-sm font-semibold
-shadow-lg opacity-50 cursor-not-allowed flex items-center justify-center gap-3"
-          disabled
-          title="Funcionalidade disponível apenas na web"
+        <a
+          href="/api/auth/google/start"
+          className="flex w-full items-center justify-center gap-3 rounded-lg bg-white py-2.5
+                     text-sm font-semibold text-gray-700 shadow-lg transition-colors
+                     hover:bg-gray-100"
         >
+          <svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true">
+            <path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h11.8c-.5 2.7-2 5-4.4 6.6v5.5h7.1c4.1-3.8 6.6-9.4 6.6-16.1z" />
+            <path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7.1-5.5c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9H4.5v5.7C8.1 41.1 15.4 46 24 46z" />
+            <path fill="#FBBC05" d="M11.8 28.2c-.4-1.3-.7-2.7-.7-4.2s.3-2.9.7-4.2v-5.7H4.5C3 17.1 2.1 20.4 2.1 24s.9 6.9 2.4 9.9l7.3-5.7z" />
+            <path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.2 29.9 2 24 2 15.4 2 8.1 6.9 4.5 14.1l7.3 5.7c1.7-5.2 6.5-9 12.2-9z" />
+          </svg>
           Entrar com Google
-        </button>
+        </a>
       </div>
     </div>
   );

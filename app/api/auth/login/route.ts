@@ -85,6 +85,27 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: false, reason: 'credenciais' }, { status: 401 });
   }
 
+  /*
+   * CONTA SEM SENHA É CONTA DO GOOGLE, e aqui a mensagem é específica.
+   *
+   * O sigilo que "e-mail ou senha incorretos" protege — não revelar se o
+   * e-mail existe — não se aplica: dizer "esta conta entra pelo Google" conta
+   * a mesma coisa que a tela de login do Google contaria em seguida. E o
+   * silêncio custaria caro: a pessoa ficaria tentando lembrar uma senha que
+   * ela nunca criou.
+   */
+  if (!user.passwordHash) {
+    await recordLoginAttempt(email, ip, false);
+    return NextResponse.json(
+      {
+        ok: false,
+        reason: 'use-google',
+        message: 'Esta conta entra pelo Google. Use o botão "Entrar com Google".',
+      },
+      { status: 401 },
+    );
+  }
+
   const senhaOk = await verifyPassword(password, user.passwordHash);
   if (!senhaOk) {
     await recordLoginAttempt(email, ip, false);

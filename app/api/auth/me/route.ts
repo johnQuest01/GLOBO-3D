@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 
 import { COOKIE_CACHE_TTL_SEC, getSecret } from '@/lib/auth/cookies';
 import { getSession } from '@/lib/auth/session';
-import { isAuthDbEnabled } from '@/lib/db/auth';
+import { findUserById, isAuthDbEnabled } from '@/lib/db/auth';
 
 /**
  * Quem está logado agora.
@@ -36,9 +36,33 @@ export async function GET(request: Request) {
     return NextResponse.json({ ok: false, user: null }, { status: 401 });
   }
 
+  /*
+   * COM `fresh=1` A RESPOSTA TRAZ O PERFIL INTEIRO.
+   *
+   * A sessão carrega de propósito só o mínimo para dizer quem está logado —
+   * id, e-mail, nome e nickname —, porque é isso que cabe num cookie de cache
+   * e é isso que a maior parte das telas precisa. Mas quem chega sem perfil
+   * guardado no aparelho (entrou pelo Google, ou limpou o navegador) precisa
+   * montar um do zero, e aí faltam cidade, estado e país: sem eles a pessoa
+   * fica sem lugar no globo.
+   *
+   * Só no caminho `fresh`, que já foi ao banco de qualquer forma.
+   */
+  const completo = fresh ? await findUserById(session.user.id) : null;
+
   return NextResponse.json({
     ok: true,
-    user: session.user,
+    user: completo
+      ? {
+          id: completo.id,
+          email: completo.email,
+          nickname: completo.nickname,
+          fullName: completo.fullName,
+          country: completo.country,
+          state: completo.state,
+          city: completo.city,
+        }
+      : session.user,
     viaCache: session.viaCache,
     cacheTtlSec: COOKIE_CACHE_TTL_SEC,
   });
