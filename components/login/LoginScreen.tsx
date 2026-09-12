@@ -2,7 +2,6 @@
 'use client';
 
 import React, { useState, FormEvent, ChangeEvent } from 'react';
-import Image from 'next/image';
 import LoginBackground from './LoginBackground'; // Importa o fundo 3D
 import { useRouter } from 'next/navigation';
 import { UserProfileData } from '@/app/types/user';
@@ -639,19 +638,24 @@ disabled:opacity-60 disabled:cursor-not-allowed"
           <div className="flex-grow border-t border-gray-700" />
         </div>
 
+        {/*
+          SEM ÍCONE, de propósito.
+
+          Aqui havia um <Image src="/images/google-icon.png">, e a pasta
+          public/images nunca existiu: todo carregamento desta tela pedia a
+          imagem e levava 400, em toda visita de todo mundo. O botão já está
+          desligado (a entrada com Google ainda não existe), então o ícone não
+          estava informando nada — só gastava uma requisição para falhar.
+
+          Quando a entrada com Google for implementada, o ícone volta junto com
+          ela, e aí com o arquivo em public/images.
+        */}
         <button
           className="w-full py-3 rounded-lg bg-red-700 text-white text-lg font-semibold
 shadow-lg opacity-50 cursor-not-allowed flex items-center justify-center gap-3"
           disabled
           title="Funcionalidade disponível apenas na web"
         >
-          <Image
-            src="/images/google-icon.png"
-            alt="Google"
-            width={24}
-            height={24}
-            className="w-6 h-6"
-          />
           Entrar com Google
         </button>
       </div>
