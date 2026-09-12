@@ -22,12 +22,12 @@ import { MsgError, PAYLOAD_MAX, type Envelope } from '../shared/protocol.js';
 import { cofreLigado } from './cofre.js';
 import {
   bancoLigado,
-  caixaDeEntrada,
+  confirmarLeitura,
+  desde,
   confirmarEntrega,
   estaBloqueado,
   guardarEnvelope,
   nicknameDoUserId,
-  quantosEsperando,
   userIdDoNickname,
 } from './db.js';
 import type { RealtimeServer, RealtimeSocket } from './presence.js';
@@ -64,27 +64,39 @@ export function registerMailbox(
 
   void socket.join(salaDaConta(meuId));
 
-  /** Manda para quem está esperando o que já chegou. */
-  const entregarPendentes = async () => {
+  /**
+   * Manda para este aparelho tudo o que ele ainda não tem.
+   *
+   * `corte` é o instante da mensagem mais nova que ELE conhece. Vem do
+   * aparelho, e não de um registro do servidor, e essa é a razão de a conta
+   * poder ter quantos aparelhos quiser sem o servidor ter que conhecê-los: cada
+   * um diz onde parou.
+   */
+  const sincronizar = async (corte: string | null) => {
     if (!mailboxLigada()) return;
-    const pendentes = await caixaDeEntrada(meuId);
-    if (pendentes.length === 0) return;
+    const mensagens = await desde(meuId, corte);
+    if (mensagens.length === 0) return;
 
-    for (const p of pendentes) {
+    for (const m of mensagens) {
       const envelope: Envelope = {
-        msgId: p.msgId,
-        from: p.fromNickname ?? '?',
-        kind: p.kind as Envelope['kind'],
-        payload: p.payload,
-        sentAt: p.createdAt,
+        msgId: m.msgId,
+        from: m.fromNickname ?? '?',
+        kind: m.kind as Envelope['kind'],
+        payload: m.payload,
+        sentAt: m.createdAt,
+        ...(m.toNickname ? { to: m.toNickname } : {}),
+        ...(m.minha ? { minha: true } : {}),
+        ...(m.entregue ? { entregue: true } : {}),
+        ...(m.lida ? { lida: true } : {}),
       };
       socket.emit('msg:new', envelope);
     }
-    log(`sync   ${meuId.slice(0, 8)}: ${pendentes.length} guardada(s)`);
+    log(`sync   ${meuId.slice(0, 8)}: ${mensagens.length} desde ${corte ?? 'o comeco'}`);
   };
 
-  socket.on('msg:sync', () => {
-    void entregarPendentes();
+  socket.on('msg:sync', (p) => {
+    const corte = typeof p?.desde === 'string' && p.desde ? p.desde : null;
+    void sincronizar(corte);
   });
 
   socket.on('msg:send', async ({ msgId, to, kind, payload }) => {
@@ -276,16 +288,26 @@ export function registerMailbox(
     const eu = socket.data.nickname;
     if (!eu) return;
 
-    io.to(salaDaConta(destinoId)).emit('msg:read', {
-      from: eu,
-      msgIds: msgIds.filter((m): m is string => typeof m === 'string').slice(0, 500),
-    });
+    const limpos = msgIds.filter((m): m is string => typeof m === 'string').slice(0, 500);
+
+    /*
+     * A LEITURA AGORA FICA GRAVADA.
+     *
+     * Antes este aviso so' existia ao vivo: se o remetente estivesse fora, o
+     * tique azul se perdia e nunca mais aparecia. Com o historico no servidor
+     * ele e' um carimbo na linha — sobrevive ao recarregar, chega ao outro
+     * aparelho da mesma pessoa, e volta na proxima sincronizacao.
+     */
+    await confirmarLeitura(meuId, limpos);
+
+    io.to(salaDaConta(destinoId)).emit('msg:read', { from: eu, msgIds: limpos });
   });
 
-  // Ao entrar, já manda o que estava esperando. É o que faz "abriu o globo e a
-  // mensagem estava lá" acontecer sem a interface pedir.
-  void (async () => {
-    const n = await quantosEsperando(meuId);
-    if (n > 0) await entregarPendentes();
-  })();
+  /*
+   * Ao entrar, o servidor NÃO empurra nada por conta própria.
+   *
+   * Quem pede é o aparelho, com `msg:sync`, porque só ele sabe até onde já
+   * tem. Empurrar o histórico inteiro na conexão seria reenviar, a cada
+   * reconexão de celular, tudo o que a pessoa já tem guardado.
+   */
 }

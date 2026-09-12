@@ -56,6 +56,38 @@ export interface Mensagem {
 
 export type Conversas = Record<string, Mensagem[]>;
 
+/**
+ * Até onde este aparelho já sincronizou.
+ *
+ * Fica no `localStorage` e não no IndexedDB de propósito: é UM valor, lido no
+ * instante em que a conexão abre, e esperar uma transação de banco para
+ * descobrir o que pedir atrasaria a única coisa que a pessoa está esperando.
+ *
+ * Perder este valor não perde mensagem: sem ele o aparelho pede o histórico
+ * inteiro e o dedupe por id cuida do resto.
+ */
+const CHAVE_CORTE = 'globoUltimaSync';
+
+function lerCorte(): string | null {
+  try {
+    return localStorage.getItem(CHAVE_CORTE);
+  } catch {
+    return null;
+  }
+}
+
+function guardarCorte(sentAt: string): void {
+  try {
+    const atual = localStorage.getItem(CHAVE_CORTE);
+    // Só anda para a frente: a sincronização entrega em ordem, mas a entrega ao
+    // vivo pode chegar no meio, e recuar o corte faria o aparelho rebaixar o
+    // que já tinha.
+    if (!atual || sentAt > atual) localStorage.setItem(CHAVE_CORTE, sentAt);
+  } catch {
+    /* sem localStorage o aparelho sincroniza tudo de novo; nao perde nada */
+  }
+}
+
 const idNovo = () =>
   `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
 
@@ -214,31 +246,74 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
       const midia =
         corpo.b64 && corpo.mime ? deBase64(corpo.b64, corpo.mime) : undefined;
 
+      /*
+       * COM QUEM É ESTA CONVERSA?
+       *
+       * Nem sempre é com quem mandou. Desde que o histórico passou a viver no
+       * servidor, o meu outro aparelho recebe de volta as mensagens que EU
+       * mandei — e a conversa delas é com quem as recebeu, não comigo. Colocar
+       * pelo remetente criaria uma conversa comigo mesmo.
+       */
+      const minha = Boolean(e.minha);
+      const com = minha ? (e.to ?? '') : e.from;
+      if (!com) return;
+
+      const quando = new Date(e.sentAt).getTime();
+
       acrescentar(
-        e.from,
+        com,
         {
           id: e.msgId,
-          de: 'outro',
+          de: minha ? 'eu' : 'outro',
           tipo: e.kind,
           texto: corpo.texto,
           mime: corpo.mime,
           duracaoMs: corpo.duracaoMs,
-          quando: new Date(e.sentAt).getTime(),
+          quando,
+          /*
+           * O ESTADO VEM DO SERVIDOR NOS DOIS SENTIDOS.
+           *
+           * Nas MINHAS ele diz se chegou e se foi lida — o tique. Nas que
+           * RECEBI ele diz se eu ja' as li em ALGUM aparelho: sem isso, tudo o
+           * que a pessoa leu no celular reapareceria como nao lido no
+           * computador, que e' metade do sentido de sincronizar.
+           */
+          ...(minha
+            ? { entrega: (e.lida ? 'lida' : e.entregue ? 'entregue' : 'enviada') as EstadoDaEntrega }
+            : e.lida
+              ? { entrega: 'lida' as EstadoDaEntrega }
+              : {}),
           ...(midia ? { midiaUrl: URL.createObjectURL(midia) } : {}),
         },
         midia,
       );
 
+      // O corte anda para a frente com a mensagem mais nova que este aparelho
+      // viu. É o que a próxima sincronização vai perguntar.
+      guardarCorte(e.sentAt);
+
       /*
-       * O ACK APAGA A MENSAGEM DO SERVIDOR.
+       * O ACK NÃO APAGA MAIS NADA — ele carimba "chegou".
        *
-       * Mandar agora, e não quando a pessoa abrir a conversa, é o que faz o
-       * servidor parar de guardar — ela já está neste aparelho.
+       * Só faz sentido para o que recebi: avisar que a minha própria mensagem
+       * chegou até mim não quer dizer coisa nenhuma.
        */
-      socket.emit('msg:ack', { msgIds: [e.msgId] });
+      if (!minha) socket.emit('msg:ack', { msgIds: [e.msgId] });
     };
 
-    const aoAceitar = ({ msgId }: { msgId: string }) => mudarEntrega([msgId], 'enviada');
+    const aoAceitar = ({ msgId, sentAt }: { msgId: string; sentAt: string }) => {
+      mudarEntrega([msgId], 'enviada');
+      /*
+       * O CORTE ANDA TAMBEM COM O QUE EU MANDO.
+       *
+       * Sem isto, a proxima sincronizacao devolveria as minhas proprias
+       * mensagens — com as fotos e os audios dentro — para um aparelho que ja'
+       * as tem guardadas. E' seguro avancar aqui porque o servidor devolve
+       * SEMPRE o que ainda nao foi entregue a ninguem, independente do corte
+       * (ver o `where` em realtime/src/db.ts).
+       */
+      guardarCorte(sentAt);
+    };
     const aoEntregar = ({ msgIds }: { msgIds: string[] }) =>
       mudarEntrega(msgIds, 'entregue');
     const aoLer = ({ msgIds }: { from: string; msgIds: string[] }) =>
@@ -341,10 +416,22 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
     socket.on('msg:delivered', aoEntregar);
     socket.on('msg:read', aoLer);
     socket.on('msg:failed', aoFalhar);
-    socket.on('connect', esvaziarFila);
+    const aoConectar = () => {
+      esvaziarFila();
+      // Reconectou: pergunta o que perdeu enquanto esteve fora.
+      socket.emit('msg:sync', { desde: lerCorte() });
+    };
+    socket.on('connect', aoConectar);
     if (socket.connected) esvaziarFila();
 
-    socket.emit('msg:sync');
+    /*
+     * PEDE SÓ O QUE FALTA.
+     *
+     * O corte é o instante da mensagem mais nova que este aparelho tem. Sem
+     * ele, cada reconexão de celular baixaria o histórico inteiro de novo —
+     * com as fotos e os áudios dentro.
+     */
+    socket.emit('msg:sync', { desde: lerCorte() });
 
     return () => {
       socket.off('msg:typing', aoDigitar);
@@ -353,7 +440,7 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
       socket.off('msg:delivered', aoEntregar);
       socket.off('msg:read', aoLer);
       socket.off('msg:failed', aoFalhar);
-      socket.off('connect', esvaziarFila);
+      socket.off('connect', aoConectar);
     };
   }, [socketPronto, acrescentar, mudarEntrega]);
 

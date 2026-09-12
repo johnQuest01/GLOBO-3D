@@ -77,6 +77,19 @@ export interface Envelope {
   msgId: string;
   /** Quem mandou, pelo nome publico. */
   from: string;
+  /**
+   * Para quem foi.
+   *
+   * Passou a existir com o historico no servidor: quando a mensagem e' MINHA,
+   * ela chega de volta ao meu outro aparelho, e a conversa nao e' com quem
+   * mandou (eu) e sim com quem recebeu.
+   */
+  to?: string;
+  /** Fui eu que mandei? O aparelho usa para saber de que lado desenhar. */
+  minha?: boolean;
+  /** Ja' foi entregue / lida. So' faz sentido nas minhas. */
+  entregue?: boolean;
+  lida?: boolean;
   kind: 'texto' | 'imagem' | 'audio' | 'video';
   payload: string;
   /** ISO. Quando o SERVIDOR aceitou — o relogio do remetente nao e' confiavel. */
@@ -191,8 +204,18 @@ export interface ClientToServer {
     payload: string;
   }) => void;
 
-  /** "O que chegou enquanto eu estava fora?" */
-  'msg:sync': () => void;
+  /**
+   * "O que mudou desde o corte que eu conheco?"
+   *
+   * `desde` e' o instante da mensagem mais nova que ESTE aparelho ja' tem, em
+   * ISO. Nulo pede o historico inteiro que ainda existe — e' o caso de um
+   * aparelho novo entrando numa conta antiga.
+   *
+   * A resposta traz os DOIS SENTIDOS: o que a pessoa recebeu e o que ela
+   * mandou. Sem o segundo, a mensagem enviada do celular nao existiria no
+   * computador, que e' o defeito que trouxe o historico para o servidor.
+   */
+  'msg:sync': (p?: { desde?: string | null }) => void;
 
   /** "Recebi." O servidor apaga o envelope e avisa quem mandou. */
   'msg:ack': (p: { msgIds: string[] }) => void;
