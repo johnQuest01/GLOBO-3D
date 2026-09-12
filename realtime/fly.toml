@@ -11,10 +11,15 @@
 # WebSocket aberta e apaga a presença de quem estava online. Uma conversa
 # aberta viraria "reconectando…" sem motivo visível.
 #
-# UMA MÁQUINA, E SÓ UMA. Ver o comentário sobre ALLOW_MEMORY_PRESENCE no
-# src/index.ts: sem Redis, a presença vive na memória do processo. Com duas
-# máquinas, metade das pessoas ficaria invisível para a outra metade, em
-# silêncio. Enquanto não houver Redis, NÃO escale este app.
+# ESCALAR AGORA É SEGURO — desde 2026-09-12, quando o Redis entrou.
+#
+# Antes disso a presença vivia na memória do processo, e uma segunda máquina
+# deixaria metade das pessoas invisível para a outra metade, sem erro nenhum.
+# Com o Redis, a presença é compartilhada e o adapter do Socket.io faz um
+# `io.to(...)` alcançar quem está conectado na outra máquina.
+#
+# `min_machines_running = 1` continua sendo o mínimo, não o máximo: o que não
+# pode é chegar a ZERO, porque dormir derruba toda conexão aberta.
 
 app = 'globo-realtime'
 primary_region = 'gru'

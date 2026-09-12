@@ -1,0 +1,50 @@
+# fly.toml do TURN.
+#
+# Terceiro app do projeto, e o motivo de ser separado é o mesmo dos outros
+# dois: necessidades incompatíveis. O globo dorme quando ocioso; o realtime
+# fica acordado e fala HTTP; este aqui fala UDP e precisa de um intervalo de
+# portas. Misturar os três num app só significaria dar a todos a configuração
+# mais cara e mais exposta.
+#
+# UDP NO FLY EXIGE IPv4 DEDICADO (o compartilhado só faz TCP). É por isso que
+# este app custa ~US$2/mês só de endereço, antes da máquina.
+
+app = 'globo-turn'
+primary_region = 'gru'
+
+[build]
+  dockerfile = 'Dockerfile'
+
+# Onde o navegador conversa com o TURN para pedir uma alocação.
+[[services]]
+  protocol = 'udp'
+  internal_port = 3478
+
+  [[services.ports]]
+    port = 3478
+
+[[services]]
+  protocol = 'tcp'
+  internal_port = 3478
+
+  [[services.ports]]
+    port = 3478
+
+# POR ONDE O ÁUDIO E O VÍDEO PASSAM. Cada chamada relayed ocupa portas deste
+# intervalo, e ele precisa bater exatamente com min-port/max-port do
+# turnserver.conf — se o coturn alocar fora do que está declarado aqui, o
+# pacote chega na máquina e o Fly não sabe para onde mandar.
+[[services]]
+  protocol = 'udp'
+  internal_port = 49160
+
+  [[services.ports]]
+    start_port = 49160
+    end_port = 49200
+
+# Máquina mínima: relay é trabalho de rede, não de CPU. A memória sobe se
+# muitas chamadas acontecerem ao mesmo tempo.
+[[vm]]
+  size = 'shared-cpu-1x'
+  memory = '256mb'
+  cpus = 1
