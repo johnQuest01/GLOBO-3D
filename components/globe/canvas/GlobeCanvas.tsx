@@ -36,6 +36,7 @@ import { latLonToVector3 } from '@/components/lib/utils';
 import ChatOverlay from '@/components/globe/ui/ChatOverlay';
 import PeopleSearchPanel from '@/components/globe/ui/PeopleSearchPanel';
 import ConversasPanel from '@/components/globe/ui/ConversasPanel';
+import EscolherNickname from '@/components/globe/ui/EscolherNickname';
 
 import AppHeader from '@/components/layout/AppHeader';
 import AppFooter from '@/components/layout/AppFooter';
@@ -251,6 +252,17 @@ export default function GlobeCanvas() {
 
   const [buscaAberta, setBuscaAberta] = useState(false);
   const [conversasAbertas, setConversasAbertas] = useState(false);
+  const [pedindoNickname, setPedindoNickname] = useState(false);
+
+  /**
+   * Entrou na conversa sem ter nome público?
+   *
+   * Conta criada antes do nickname existir consegue mandar mensagem, mas do
+   * outro lado a conversa aparece como "?" e nao da para responder. Em vez de
+   * deixar a pessoa descobrir isso do pior jeito, o pedido aparece na hora em
+   * que ela vai usar a parte social.
+   */
+  const precisaDeNickname = realtime.estado.ligado && !realtime.meuNickname;
   const [alvoDaBusca, setAlvoDaBusca] = useState<AlvoDoFoco | null>(null);
 
   /**
@@ -521,7 +533,9 @@ export default function GlobeCanvas() {
           {realtime.estado.ligado && (
             <button
               type="button"
-              onClick={() => setConversasAbertas(true)}
+              onClick={() =>
+                precisaDeNickname ? setPedindoNickname(true) : setConversasAbertas(true)
+              }
               disabled={states.isAnyPopupOpen}
               title="Suas conversas"
               aria-label="Suas conversas"
@@ -548,7 +562,9 @@ export default function GlobeCanvas() {
           {realtime.estado.ligado && (
             <button
               type="button"
-              onClick={() => setBuscaAberta(true)}
+              onClick={() =>
+                precisaDeNickname ? setPedindoNickname(true) : setBuscaAberta(true)
+              }
               disabled={states.isAnyPopupOpen}
               title="Procurar uma pessoa pelo nickname"
               aria-label="Procurar uma pessoa pelo nickname"
@@ -847,6 +863,13 @@ export default function GlobeCanvas() {
               />
             </div>
           )}
+
+          <div className="pointer-events-auto">
+            <EscolherNickname
+              aberto={pedindoNickname}
+              onFechar={() => setPedindoNickname(false)}
+            />
+          </div>
 
           <div className="pointer-events-auto">
             <ConversasPanel

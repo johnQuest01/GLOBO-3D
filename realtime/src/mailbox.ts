@@ -108,6 +108,20 @@ export function registerMailbox(
       return;
     }
 
+    /*
+     * QUEM NAO TEM NOME PUBLICO NAO MANDA.
+     *
+     * Nao e' rigor: a mensagem chega do outro lado identificada pelo nickname
+     * do remetente, e sem ele a conversa aparece como "?" — impossivel de
+     * responder. Visto no log de producao: `msg ? -> teste01`. Melhor recusar
+     * com um motivo do que entregar algo que nao tem volta.
+     */
+    const meuNick = socket.data.nickname ?? (await nicknameDoUserId(meuId));
+    if (!meuNick) {
+      socket.emit('msg:failed', { msgId, code: MsgError.SEM_CONTA });
+      return;
+    }
+
     if (!permitir(socket, limitador, 'msg:send')) return;
 
     const destinoId = await userIdDoNickname(to);
@@ -153,7 +167,7 @@ export function registerMailbox(
     // do tique) mas não entrega duas vezes.
     if (!novo) return;
 
-    const remetente = socket.data.nickname ?? (await nicknameDoUserId(meuId)) ?? '?';
+    const remetente = meuNick;
     const envelope: Envelope = { msgId, from: remetente, kind, payload, sentAt };
 
     // Para TODAS as abas da pessoa. Se não houver nenhuma, não tem problema:

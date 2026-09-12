@@ -71,7 +71,7 @@ const ERRO_EM_PORTUGUES: Record<string, string> = {
   BLOQUEADO: 'Vocês não podem mais se falar.',
   GRANDE_DEMAIS: 'Conteúdo grande demais.',
   INDISPONIVEL: 'As mensagens estão indisponíveis agora.',
-  SEM_CONTA: 'Entre na sua conta para conversar.',
+  SEM_CONTA: 'Escolha um nickname para poder conversar.',
 };
 
 const ChatOverlay: FC<Props> = ({
