@@ -404,22 +404,64 @@ went wrong in the reasoning — write down which problem it solves first.
 
 #### Order of operations to go live
 
-1. **GitHub** — the credentials on this machine are expired (`gh auth status`
-   says both tokens are invalid). Re-authenticate, then push the branch.
-2. **Vercel** — `.vercel/project.json` points at project `globo-3d`
-   (`prj_A25zj1…`), and that project **no longer exists** on the account: the
-   API answers 404 and the team only has `atendente-client` and
-   `este-plataforma-em-desenvolvimento`. So it has to be imported again from
-   the GitHub repo. Environment variables it needs: `DATABASE_URL`,
-   `AUTH_SECRET`, optionally `ADMIN_EMAIL` / `ADMIN_PASSWORD` /
-   `COOKIE_CACHE_TTL_SEC`.
-3. **Railway** — Redis first, then the realtime service with Root Directory
-   `realtime`, `REDIS_URL` pointing at the *private* URL, and `CORS_ORIGIN`
-   set to the Vercel domain. Full walkthrough in `realtime/README.md`.
-4. **Back to Vercel** — set `NEXT_PUBLIC_REALTIME_URL` to the Railway URL and
-   redeploy. Until this exists, the globe works exactly as before and no
-   realtime feature appears. That is deliberate.
-5. **TURN** — before inviting real people on phones, not after.
+**Checked on 2026-09-12, and two doors are locked from the inside** — both need
+Bruno, because both are interactive logins the agent cannot perform:
+
+1. **GitHub credentials are expired.** `gh auth status` reports *"The token in
+   default is invalid"* for both stored accounts. Reading works (the repo is
+   public: `git ls-remote` answers), pushing does not. Fix:
+
+   ```
+   gh auth login
+   ```
+
+2. **The Vercel GitHub App is not installed on the repository.** Linking the
+   project fails with *"To link a GitHub repository, you need to install the
+   GitHub integration first"*. Install it at https://github.com/apps/vercel and
+   grant access to `johnQuest01/GLOBO-3D`.
+
+   (The Vercel CLI is also not logged in — `npx vercel whoami` answers "Not
+   authorized" — so the direct-upload route is closed too.)
+
+After those two, the rest is mechanical: push the branch, link the project,
+set the environment variables, deploy.
+
+#### The environment variables, by service
+
+**Vercel (the Next app)** — without the first two, login and registration
+answer 503 and the globe still works:
+
+| variable | what breaks without it |
+|---|---|
+| `DATABASE_URL` | accounts, nickname, search |
+| `AUTH_SECRET` | sessions (needs 32+ characters) |
+| `REALTIME_TOKEN_SECRET` | the socket badge: everyone connects anonymous, so no search and no mailbox |
+| `NEXT_PUBLIC_REALTIME_URL` | all realtime disappears from the interface — deliberately, the globe is unaffected |
+| `COOKIE_CACHE_TTL_SEC` | optional (defaults to 60) |
+| `ADMIN_EMAIL`, `ADMIN_PASSWORD` | the moderation screen |
+
+**Railway (the realtime server)**:
+
+| variable | what breaks without it |
+|---|---|
+| `REDIS_URL` | **refuses to boot in production** — on purpose, see realtime/README.md |
+| `CORS_ORIGIN` | any site could open a socket in your users' name |
+| `REALTIME_TOKEN_SECRET` | **must be the same value as Vercel's** — it is the shared secret |
+| `DATABASE_URL` | the mailbox stays off |
+| `MESSAGE_KEY` | the mailbox stays off (32 bytes in base64: `openssl rand -base64 32`) |
+| `STUN_URL`, `TURN_URL`, `TURN_USER`, `TURN_CRED` | video calls between phones |
+
+#### One branch, and which one is production
+
+The repository currently has three branches: `main`,
+`globo/lod-luzes-fronteiras` (where all of this work lives, 6 commits ahead of
+its remote) and `claude/globo-3d-freeze-features-1s9khz`. Bruno asked to keep
+only the working one and create no new ones.
+
+So: **`globo/lod-luzes-fronteiras` must be set as the Production Branch in the
+Vercel project** (Settings → Git → Production Branch). Left at the default,
+Vercel would treat `main` as production and publish the old code from there
+while every push to the real branch became a mere preview.
 
 #### Checklist
 
