@@ -75,8 +75,39 @@ export function useGlobeTextures() {
       // um único arquivo servir Android, iPhone e desktop.
       .detectSupport(gl);
 
+    /*
+     * QUAL DAS DUAS, e por que o teto da GPU nao basta.
+     *
+     * A regra era so `maxTextureSize >= 8192 ? 8K : 4K`. Celular moderno
+     * ANUNCIA teto de 8192 ou mais e mesmo assim nao tem memoria de video para
+     * sustentar o 8K junto com o resto da cena — e quando falta, o navegador
+     * nao avisa: ele DERRUBA o contexto WebGL. O sintoma e' uma tela preta
+     * permanente, que foi exatamente o defeito relatado ("o globo nao
+     * aparece"), com `THREE.WebGLRenderer: Context Lost` no console.
+     *
+     * Numeros: o 8K ocupa ~22 MB de memoria de video com os mipmaps, contra
+     * ~6 MB do 4K, e pesa 2,5 MB de download contra 679 KB.
+     *
+     * E o 8K nem faz falta na tela pequena: um globo que ocupa 400px de
+     * largura nao tem para onde mostrar 8192 pixels de textura.
+     */
     const tetoDeTextura = gl.capabilities.maxTextureSize;
-    const url = tetoDeTextura >= 8192 ? TEXTURE_8K : TEXTURE_4K;
+
+    // `pointer: coarse` = dedo, nao mouse. E' o sinal mais confiavel de
+    // celular/tablet que existe em CSS, melhor do que farejar o user agent.
+    const ehDedo =
+      typeof window !== 'undefined' &&
+      window.matchMedia?.('(pointer: coarse)').matches === true;
+    const telaPequena = typeof window !== 'undefined' && window.innerWidth < 1024;
+    // `deviceMemory` so existe em alguns navegadores; quando existe e e' baixa,
+    // e' uma informacao boa demais para ignorar.
+    const memoriaBaixa =
+      typeof navigator !== 'undefined' &&
+      typeof (navigator as { deviceMemory?: number }).deviceMemory === 'number' &&
+      (navigator as { deviceMemory?: number }).deviceMemory! <= 4;
+
+    const aguentaOitoK = tetoDeTextura >= 8192 && !ehDedo && !telaPequena && !memoriaBaixa;
+    const url = aguentaOitoK ? TEXTURE_8K : TEXTURE_4K;
 
     loader.load(
       url,

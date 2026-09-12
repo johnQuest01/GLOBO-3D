@@ -233,6 +233,22 @@ export default function GlobeCanvas() {
   );
 
   /** A lupa: painel aberto e a pessoa que o globo esta olhando agora. */
+  /**
+   * A placa de video largou o globo?
+   *
+   * `webglcontextlost` acontece de verdade e com mais frequencia do que
+   * parece: memoria de video no limite (celular, placa integrada), o sistema
+   * reiniciando o driver, a aba ficando muito tempo em segundo plano. Quando
+   * acontece, o three.js escreve "Context Lost" no console e o canvas para
+   * para sempre — sem tratamento, o usuario ve uma tela preta e conclui que o
+   * site quebrou. Foi exatamente o que aconteceu aqui.
+   *
+   * Nao da para "consertar" a cena no lugar: texturas, geometrias e programas
+   * de shader morreram com o contexto. O caminho honesto e' dizer o que houve
+   * e oferecer o recarregar.
+   */
+  const [contextoPerdido, setContextoPerdido] = useState(false);
+
   const [buscaAberta, setBuscaAberta] = useState(false);
   const [conversasAbertas, setConversasAbertas] = useState(false);
   const [alvoDaBusca, setAlvoDaBusca] = useState<AlvoDoFoco | null>(null);
@@ -365,6 +381,16 @@ export default function GlobeCanvas() {
       <Canvas
         dpr={[1, 2]}
         camera={{ position: [0, 0, 3], fov: CAMERA_FOV, near: 0.1, far: 1000 }}
+        onCreated={({ gl }) => {
+          const tela = gl.domElement;
+          tela.addEventListener('webglcontextlost', (evento) => {
+            // `preventDefault` e' o que autoriza o navegador a tentar devolver
+            // o contexto depois. Sem isso a perda e' definitiva.
+            evento.preventDefault();
+            setContextoPerdido(true);
+          });
+          tela.addEventListener('webglcontextrestored', () => setContextoPerdido(false));
+        }}
         gl={{
           powerPreference: 'high-performance',
           antialias: true,
@@ -860,6 +886,28 @@ export default function GlobeCanvas() {
               }}
             />
           </div>
+
+          {contextoPerdido && (
+            <div className="absolute inset-0 z-[210] flex items-center justify-center bg-slate-950/80 backdrop-blur-sm pointer-events-auto">
+              <div className="mx-4 max-w-sm rounded-2xl bg-stone-900 p-5 text-center ring-1 ring-white/15">
+                <p className="text-base font-semibold text-white">
+                  O globo 3D parou
+                </p>
+                <p className="mt-2 text-sm text-white/60">
+                  A placa de vídeo interrompeu o desenho — costuma acontecer
+                  quando a memória aperta, com muitas abas abertas ou no celular.
+                  Suas conversas não se perderam.
+                </p>
+                <button
+                  type="button"
+                  onClick={() => window.location.reload()}
+                  className="mt-4 w-full rounded-xl bg-cyan-600 py-2.5 font-semibold text-white hover:bg-cyan-500"
+                >
+                  Recarregar
+                </button>
+              </div>
+            </div>
+          )}
 
           {realtime.estado.aviso && (
             <button

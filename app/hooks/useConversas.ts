@@ -80,6 +80,22 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
   const abertaRef = useRef<string | null>(null);
   abertaRef.current = abertaCom;
 
+  /**
+   * O que foi escrito antes de a conexão existir.
+   *
+   * ISTO NASCEU DE UM DEFEITO RELATADO: quem abria o site e ia direto
+   * conversar tocava em enviar e NADA acontecia — a mensagem não entrava na
+   * lista, o campo não limpava, nenhum aviso aparecia. O envio simplesmente
+   * desistia quando o socket ainda não estava de pé, e a inicialização do
+   * globo demora vários segundos.
+   *
+   * Agora a mensagem sempre entra na conversa (com o relógio de "enviando") e
+   * espera aqui. Quando a conexão abre, a fila sai na ordem. É o mesmo
+   * princípio da caixa postal, um degrau antes: nada se perde por causa de
+   * tempo.
+   */
+  const filaRef = useRef<{ msgId: string; para: string; payload: string }[]>([]);
+
   // O histórico volta do disco uma vez, no cliente. Em SSR não existe
   // localStorage, e ler no corpo do hook quebraria a hidratação.
   useEffect(() => {
@@ -183,11 +199,29 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
       });
     };
 
+    /**
+     * Manda o que ficou esperando.
+     *
+     * Roda no `connect` também, e não só uma vez: uma queda de rede no meio da
+     * conversa deixa mensagens na fila, e elas precisam sair quando a conexão
+     * voltar — sem a pessoa ter que reescrever nada.
+     */
+    const esvaziarFila = () => {
+      const pendentes = filaRef.current;
+      if (pendentes.length === 0) return;
+      filaRef.current = [];
+      for (const { msgId, para, payload } of pendentes) {
+        socket.emit('msg:send', { msgId, to: para, kind: 'texto', payload });
+      }
+    };
+
     socket.on('msg:new', aoChegar);
     socket.on('msg:accepted', aoAceitar);
     socket.on('msg:delivered', aoEntregar);
     socket.on('msg:read', aoLer);
     socket.on('msg:failed', aoFalhar);
+    socket.on('connect', esvaziarFila);
+    if (socket.connected) esvaziarFila();
 
     // Pede o que ficou esperando. O servidor também manda sozinho ao conectar;
     // este pedido cobre o caso de a aba ter voltado do segundo plano.
@@ -199,6 +233,7 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
       socket.off('msg:delivered', aoEntregar);
       socket.off('msg:read', aoLer);
       socket.off('msg:failed', aoFalhar);
+      socket.off('connect', esvaziarFila);
     };
   }, [socketPronto, acrescentar, mudarEntrega]);
 
@@ -207,10 +242,16 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
   const enviarTexto = useCallback(
     (para: string, texto: string) => {
       const limpo = texto.trim().slice(0, 4000);
-      const socket = getSocket();
-      if (!limpo || !socket || !para) return false;
+      if (!limpo || !para) return false;
 
       const msgId = idNovo();
+      // O payload é uma string opaca para o servidor. Hoje é este JSON; com a
+      // criptografia ponta a ponta, será o texto cifrado — e nada no caminho
+      // entre aqui e o outro aparelho precisa mudar.
+      const payload = JSON.stringify({ texto: limpo });
+
+      // A mensagem entra na conversa SEMPRE, mesmo sem conexão. O que muda é
+      // só o tique: ela fica no relógio até sair.
       acrescentar(para, {
         id: msgId,
         de: 'eu',
@@ -220,15 +261,12 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
         entrega: 'enviando',
       });
 
-      socket.emit('msg:send', {
-        msgId,
-        to: para,
-        kind: 'texto',
-        // O payload é uma string opaca para o servidor. Hoje é este JSON; com
-        // a criptografia ponta a ponta, será o texto cifrado — e nada no
-        // caminho entre aqui e o outro aparelho precisa mudar.
-        payload: JSON.stringify({ texto: limpo }),
-      });
+      const socket = getSocket();
+      if (socket?.connected) {
+        socket.emit('msg:send', { msgId, to: para, kind: 'texto', payload });
+      } else {
+        filaRef.current.push({ msgId, para, payload });
+      }
       return true;
     },
     [acrescentar],
