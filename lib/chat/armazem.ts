@@ -19,13 +19,22 @@
  */
 
 const BANCO = 'globoChat';
-const VERSAO = 1;
+const VERSAO = 2;
 const LOJA = 'mensagens';
 /** Chave do formato antigo, migrado uma vez e apagado. */
 const CHAVE_ANTIGA = 'globoConversas';
 
 export interface MensagemGuardada {
   id: string;
+  /**
+   * De quem é este histórico — o nickname do DONO da conta, não do par.
+   *
+   * O IndexedDB é do site, não da conta. Sem este campo, sair da conta e
+   * entrar com outra no mesmo navegador mostrava as conversas da pessoa
+   * anterior: foi visto em teste, com uma conta exibindo "Você: vídeo" numa
+   * conversa que era de outra.
+   */
+  conta: string;
   /** Com quem é a conversa (o nickname do outro). Também é o índice. */
   com: string;
   de: 'eu' | 'outro';
@@ -53,11 +62,23 @@ function abrir(): Promise<IDBDatabase | null> {
 
     pedido.onupgradeneeded = () => {
       const db = pedido.result;
-      if (!db.objectStoreNames.contains(LOJA)) {
-        const loja = db.createObjectStore(LOJA, { keyPath: 'id' });
-        // Buscar "as mensagens desta conversa" é a única consulta que existe.
-        loja.createIndex('com', 'com', { unique: false });
+      /*
+       * A VERSÃO 2 APAGA O QUE A 1 GUARDOU, e isso é seguro agora.
+       *
+       * As linhas antigas não dizem de que conta são, e adivinhar seria
+       * justamente o vazamento que este campo existe para fechar. Apagar
+       * deixou de custar histórico no dia em que ele passou a viver no
+       * servidor: o aparelho sincroniza de novo, agora com a conta certa.
+       */
+      if (pedido.transaction && db.objectStoreNames.contains(LOJA)) {
+        db.deleteObjectStore(LOJA);
       }
+
+      const loja = db.createObjectStore(LOJA, { keyPath: 'id' });
+      // Buscar "as mensagens desta conversa" é a única consulta que existe.
+      loja.createIndex('com', 'com', { unique: false });
+      // E "as mensagens desta conta", que é o filtro de tudo.
+      loja.createIndex('conta', 'conta', { unique: false });
     };
 
     pedido.onsuccess = () => resolve(pedido.result);
@@ -106,13 +127,16 @@ export async function marcarEntrega(id: string, entrega: string): Promise<void> 
   }
 }
 
-export async function carregarTudo(): Promise<MensagemGuardada[]> {
+/** Só o histórico DESTA conta. Sem conta, nada — e não "tudo". */
+export async function carregarTudo(conta: string): Promise<MensagemGuardada[]> {
   const db = await abrir();
-  if (!db) return [];
+  if (!db || !conta) return [];
   try {
     const tx = db.transaction(LOJA, 'readonly');
     const tudo = await comoPromessa(
-      tx.objectStore(LOJA).getAll() as IDBRequest<MensagemGuardada[]>,
+      tx.objectStore(LOJA).index('conta').getAll(conta) as IDBRequest<
+        MensagemGuardada[]
+      >,
     );
     return tudo.sort((a, b) => a.quando - b.quando);
   } catch {
@@ -120,58 +144,37 @@ export async function carregarTudo(): Promise<MensagemGuardada[]> {
   }
 }
 
-export async function apagarConversa(com: string): Promise<void> {
+export async function apagarConversa(conta: string, com: string): Promise<void> {
   const db = await abrir();
   if (!db) return;
   try {
     const tx = db.transaction(LOJA, 'readwrite');
     const loja = tx.objectStore(LOJA);
-    const chaves = await comoPromessa(
-      loja.index('com').getAllKeys(com) as IDBRequest<IDBValidKey[]>,
+    // Pelo par, e depois filtrando pela conta: apagar "a conversa com fulano"
+    // não pode apagar a conversa que OUTRA conta teve com a mesma pessoa
+    // neste mesmo navegador.
+    const desteePar = await comoPromessa(
+      loja.index('com').getAll(com) as IDBRequest<MensagemGuardada[]>,
     );
-    for (const chave of chaves) loja.delete(chave);
+    for (const m of desteePar) if (m.conta === conta) loja.delete(m.id);
   } catch {
     /* idem */
   }
 }
 
 /**
- * Traz o histórico de texto que ficou no formato antigo.
+ * Limpa o formato mais antigo de todos, que vivia no localStorage.
  *
- * Roda uma vez: quem já estava conversando não perde o que disse só porque o
- * armazenamento mudou de lugar. Depois de copiar, apaga a chave velha — deixar
- * as duas cópias convidaria a uma delas ficar para trás e confundir a próxima
- * pessoa que olhar isto.
+ * Antes isto MIGRAVA aquele histórico. Deixou de migrar quando as mensagens
+ * passaram a ser guardadas por conta: aquele formato não dizia de quem era, e
+ * adivinhar seria o vazamento que a coluna `conta` fecha. Apagar não custa
+ * nada agora — o servidor tem o histórico e o aparelho o traz de volta.
  */
-export async function migrarDoLocalStorage(): Promise<number> {
-  if (typeof localStorage === 'undefined') return 0;
-  const cru = localStorage.getItem(CHAVE_ANTIGA);
-  if (!cru) return 0;
-
-  let total = 0;
+export function limparFormatoAntigo(): void {
   try {
-    const antigo = JSON.parse(cru) as Record<
-      string,
-      { id: string; de: 'eu' | 'outro'; texto?: string; quando: number; entrega?: string }[]
-    >;
-    for (const [com, msgs] of Object.entries(antigo)) {
-      for (const m of msgs) {
-        await guardar({
-          id: m.id,
-          com,
-          de: m.de,
-          tipo: 'texto',
-          texto: m.texto,
-          quando: m.quando,
-          entrega: m.entrega,
-        });
-        total += 1;
-      }
-    }
+    localStorage.removeItem(CHAVE_ANTIGA);
   } catch {
-    /* formato irreconhecível: melhor ignorar do que abortar a abertura do chat */
+    /* nada a fazer */
   }
-
-  localStorage.removeItem(CHAVE_ANTIGA);
-  return total;
 }
+

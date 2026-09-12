@@ -7,7 +7,7 @@ import {
   carregarTudo,
   guardar,
   marcarEntrega,
-  migrarDoLocalStorage,
+  limparFormatoAntigo,
   type MensagemGuardada,
 } from '@/lib/chat/armazem';
 import { deBase64, paraBase64, type TipoDeMidia } from '@/lib/chat/midia';
@@ -68,21 +68,25 @@ export type Conversas = Record<string, Mensagem[]>;
  */
 const CHAVE_CORTE = 'globoUltimaSync';
 
-function lerCorte(): string | null {
+/** Uma chave por conta: dois logins no mesmo navegador nao compartilham corte. */
+const chaveDoCorte = (conta: string) => `${CHAVE_CORTE}:${conta}`;
+
+function lerCorte(conta: string): string | null {
   try {
-    return localStorage.getItem(CHAVE_CORTE);
+    return conta ? localStorage.getItem(chaveDoCorte(conta)) : null;
   } catch {
     return null;
   }
 }
 
-function guardarCorte(sentAt: string): void {
+function guardarCorte(conta: string, sentAt: string): void {
+  if (!conta) return;
   try {
-    const atual = localStorage.getItem(CHAVE_CORTE);
+    const atual = localStorage.getItem(chaveDoCorte(conta));
     // Só anda para a frente: a sincronização entrega em ordem, mas a entrega ao
     // vivo pode chegar no meio, e recuar o corte faria o aparelho rebaixar o
     // que já tinha.
-    if (!atual || sentAt > atual) localStorage.setItem(CHAVE_CORTE, sentAt);
+    if (!atual || sentAt > atual) localStorage.setItem(chaveDoCorte(conta), sentAt);
   } catch {
     /* sem localStorage o aparelho sincroniza tudo de novo; nao perde nada */
   }
@@ -158,9 +162,15 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
 
   useEffect(() => {
     let vivo = true;
+
+    // Trocou de conta neste navegador: a tela nao pode ficar com o que era da
+    // anterior enquanto o historico novo carrega.
+    setConversas({});
+    if (!meuNickname) return;
+
     void (async () => {
-      await migrarDoLocalStorage();
-      const tudo = await carregarTudo();
+      limparFormatoAntigo();
+      const tudo = await carregarTudo(meuNickname);
       if (!vivo) return;
       const agrupado: Conversas = {};
       for (const g of tudo) {
@@ -171,7 +181,7 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
     return () => {
       vivo = false;
     };
-  }, []);
+  }, [meuNickname]);
 
   const acrescentar = useCallback((com: string, msg: Mensagem, midia?: Blob) => {
     /*
@@ -199,6 +209,7 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
 
     void guardar({
       id: msg.id,
+      conta: meuNickname ?? '',
       com,
       de: msg.de,
       tipo: msg.tipo,
@@ -209,7 +220,7 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
       entrega: msg.entrega,
       ...(midia ? { midia } : {}),
     });
-  }, []);
+  }, [meuNickname]);
 
   const mudarEntrega = useCallback((ids: string[], estado: EstadoDaEntrega) => {
     const alvo = new Set(ids);
@@ -290,7 +301,7 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
 
       // O corte anda para a frente com a mensagem mais nova que este aparelho
       // viu. É o que a próxima sincronização vai perguntar.
-      guardarCorte(e.sentAt);
+      guardarCorte(meuNickname ?? '', e.sentAt);
 
       /*
        * O ACK NÃO APAGA MAIS NADA — ele carimba "chegou".
@@ -312,7 +323,7 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
        * SEMPRE o que ainda nao foi entregue a ninguem, independente do corte
        * (ver o `where` em realtime/src/db.ts).
        */
-      guardarCorte(sentAt);
+      guardarCorte(meuNickname ?? '', sentAt);
     };
     const aoEntregar = ({ msgIds }: { msgIds: string[] }) =>
       mudarEntrega(msgIds, 'entregue');
@@ -419,7 +430,7 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
     const aoConectar = () => {
       esvaziarFila();
       // Reconectou: pergunta o que perdeu enquanto esteve fora.
-      socket.emit('msg:sync', { desde: lerCorte() });
+      socket.emit('msg:sync', { desde: lerCorte(meuNickname ?? '') });
     };
     socket.on('connect', aoConectar);
     if (socket.connected) esvaziarFila();
@@ -431,7 +442,7 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
      * ele, cada reconexão de celular baixaria o histórico inteiro de novo —
      * com as fotos e os áudios dentro.
      */
-    socket.emit('msg:sync', { desde: lerCorte() });
+    socket.emit('msg:sync', { desde: lerCorte(meuNickname ?? '') });
 
     return () => {
       socket.off('msg:typing', aoDigitar);
@@ -442,7 +453,7 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
       socket.off('msg:failed', aoFalhar);
       socket.off('connect', aoConectar);
     };
-  }, [socketPronto, acrescentar, mudarEntrega]);
+  }, [socketPronto, acrescentar, mudarEntrega, meuNickname]);
 
   // --- Envio -----------------------------------------------------------------
 
@@ -604,7 +615,7 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
   }, [pararDeAvisar]);
 
   const apagarConversa = useCallback((com: string) => {
-    void apagarNoDisco(com);
+    void apagarNoDisco(meuNickname ?? '', com);
     setConversas((atual) => {
       const novo = { ...atual };
       delete novo[com];
