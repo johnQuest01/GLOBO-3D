@@ -41,6 +41,14 @@ export interface MensagemGuardada {
   tipo: 'texto' | 'imagem' | 'audio' | 'video';
   texto?: string;
   midia?: Blob;
+  /**
+   * O nome do objeto no armazenamento.
+   *
+   * Convive com `midia`: quem ENVIOU guarda os bytes aqui também (para ver na
+   * hora, sem baixar o que acabou de subir); quem RECEBEU guarda só a chave e
+   * busca quando for abrir. A URL assinada não é guardada nunca — ela vence.
+   */
+  chave?: string;
   mime?: string;
   duracaoMs?: number;
   quando: number;

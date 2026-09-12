@@ -10,7 +10,8 @@ import {
   limparFormatoAntigo,
   type MensagemGuardada,
 } from '@/lib/chat/armazem';
-import { deBase64, paraBase64, type TipoDeMidia } from '@/lib/chat/midia';
+import { BYTES_MAX, deBase64, paraBase64, type TipoDeMidia } from '@/lib/chat/midia';
+import { subirMidia, urlDaMidia } from '@/lib/chat/midiaRemota';
 import { getSocket } from '@/lib/realtime/socket';
 import {
   TYPING_PING_MS,
@@ -47,6 +48,8 @@ export interface Mensagem {
   texto?: string;
   /** `blob:` URL criada nesta sessão a partir dos bytes guardados. */
   midiaUrl?: string;
+  /** O objeto no armazenamento, quando a mídia não está neste aparelho. */
+  chave?: string;
   mime?: string;
   duracaoMs?: number;
   quando: number;
@@ -98,6 +101,9 @@ const idNovo = () =>
 /** O que viaja dentro do envelope opaco. */
 interface CorpoDaMensagem {
   texto?: string;
+  /** O caminho novo: só o nome do objeto. */
+  chave?: string;
+  /** O caminho antigo: os bytes inteiros. Mantido para ler o que já foi enviado. */
   b64?: string;
   mime?: string;
   duracaoMs?: number;
@@ -112,6 +118,7 @@ function paraTela(g: MensagemGuardada): Mensagem {
     mime: g.mime,
     duracaoMs: g.duracaoMs,
     quando: g.quando,
+    chave: g.chave,
     entrega: g.entrega as EstadoDaEntrega | undefined,
     erro: g.erro as MsgErrorValue | undefined,
     ...(g.midia ? { midiaUrl: URL.createObjectURL(g.midia) } : {}),
@@ -218,6 +225,7 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
       duracaoMs: msg.duracaoMs,
       quando: msg.quando,
       entrega: msg.entrega,
+      ...(msg.chave ? { chave: msg.chave } : {}),
       ...(midia ? { midia } : {}),
     });
   }, [meuNickname]);
@@ -254,6 +262,15 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
         return; // payload que não entendemos: ignorado, sem derrubar nada
       }
 
+      /*
+       * DOIS FORMATOS, e o antigo precisa continuar sendo lido.
+       *
+       * O novo traz só o nome do objeto; a mídia é buscada do armazenamento
+       * quando a conversa for aberta. O antigo trazia os bytes dentro da
+       * mensagem — e as mensagens que já foram enviadas assim continuam no
+       * servidor até vencerem. Descartar o formato velho apagaria conversa de
+       * gente.
+       */
       const midia =
         corpo.b64 && corpo.mime ? deBase64(corpo.b64, corpo.mime) : undefined;
 
@@ -281,6 +298,7 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
           mime: corpo.mime,
           duracaoMs: corpo.duracaoMs,
           quando,
+          ...(corpo.chave ? { chave: corpo.chave } : {}),
           /*
            * O ESTADO VEM DO SERVIDOR NOS DOIS SENTIDOS.
            *
@@ -531,7 +549,7 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
       despachar(msgId, para, 'texto', JSON.stringify({ texto: limpo }));
       return true;
     },
-    [acrescentar, despachar],
+    [acrescentar, despachar, pararDeAvisar],
   );
 
   /**
@@ -566,6 +584,58 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
         },
         blob,
       );
+
+      /*
+       * TENTA O ARMAZENAMENTO PRIMEIRO; O BASE64 É A REDE DE SEGURANÇA.
+       *
+       * Com o armazenamento configurado, a mensagem leva umas dezenas de bytes
+       * em vez de centenas de milhares, e o arquivo nem passa pelo nosso
+       * servidor. Sem ele configurado — ou se a subida falhar — a mensagem
+       * ainda sai pelo caminho antigo, porque uma foto que não vai é pior que
+       * uma foto cara.
+       */
+      const subida = await subirMidia(blob, mime);
+      if (subida) {
+        // O remetente já tem os bytes; guardar a chave junto é o que faz a
+        // mensagem existir também nos outros aparelhos dele.
+        acrescentar(para, {
+          id: msgId,
+          de: 'eu',
+          tipo,
+          mime,
+          duracaoMs,
+          quando: Date.now(),
+          entrega: 'enviando',
+          chave: subida.chave,
+        });
+        despachar(
+          msgId,
+          para,
+          tipo,
+          JSON.stringify({ chave: subida.chave, mime, duracaoMs }),
+        );
+        return true;
+      }
+
+      /*
+       * O CAMINHO ANTIGO TEM TETO, e o novo nao.
+       *
+       * Sem armazenamento, os bytes viajam dentro da mensagem e o envelope tem
+       * limite. Um arquivo que nao cabe ali precisa falhar DIZENDO isso, e nao
+       * ser truncado nem ficar girando para sempre.
+       */
+      if (blob.size > BYTES_MAX) {
+        setConversas((atual) => ({
+          ...atual,
+          [para]: (atual[para] ?? []).map((m) =>
+            m.id === msgId
+              ? { ...m, entrega: 'falhou' as const, erro: 'GRANDE_DEMAIS' as MsgErrorValue }
+              : m,
+          ),
+        }));
+        void marcarEntrega(msgId, 'falhou');
+        return false;
+      }
 
       const b64 = await paraBase64(blob);
       despachar(msgId, para, tipo, JSON.stringify({ b64, mime, duracaoMs }));
@@ -605,6 +675,45 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
     });
   }, []);
 
+  /**
+   * Busca as URLs da mídia que está no armazenamento.
+   *
+   * SÓ DA CONVERSA ABERTA, e só do que ainda não tem URL. Resolver tudo de
+   * uma vez pediria uma assinatura por foto de toda a história da pessoa — e
+   * as assinaturas vencem, então o trabalho seria refeito e jogado fora.
+   *
+   * As URLs não são gravadas em disco em lugar nenhum: elas têm hora para
+   * morrer, e uma URL vencida guardada é uma foto que não abre amanhã.
+   */
+  useEffect(() => {
+    const com = abertaCom;
+    if (!com) return;
+
+    const pendentes = (conversasRef.current[com] ?? []).filter(
+      (m) => m.chave && !m.midiaUrl,
+    );
+    if (pendentes.length === 0) return;
+
+    let vivo = true;
+    void (async () => {
+      for (const m of pendentes) {
+        const url = await urlDaMidia(m.chave!);
+        if (!vivo || !url) continue;
+        setConversas((atual) => {
+          const lista = atual[com] ?? [];
+          return {
+            ...atual,
+            [com]: lista.map((x) => (x.id === m.id ? { ...x, midiaUrl: url } : x)),
+          };
+        });
+      }
+    })();
+
+    return () => {
+      vivo = false;
+    };
+  }, [abertaCom, conversas]);
+
   const abrirConversa = useCallback((com: string) => setAbertaCom(com), []);
 
   const fecharConversa = useCallback(() => {
@@ -622,7 +731,9 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
       return novo;
     });
     setAbertaCom((aberta) => (aberta === com ? null : aberta));
-  }, []);
+    // `meuNickname` na lista: sem ele, trocar de conta faria este apagar
+    // procurar pelo nome da conta anterior — e nao apagar nada.
+  }, [meuNickname]);
 
   const naoLidasPorConversa = Object.fromEntries(
     Object.entries(conversas).map(([com, msgs]) => [

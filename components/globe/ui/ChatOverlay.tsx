@@ -7,7 +7,6 @@ import ConviteDeAvisos from '@/components/globe/ui/ConviteDeAvisos';
 import {
   AUDIO_MAX_MS,
   BYTES_MAX,
-  cabeComoVideo,
   duracaoDe,
   formatoDeAudio,
   prepararImagem,
@@ -81,6 +80,9 @@ const Recibo: FC<{ estado?: Mensagem['entrega'] }> = ({ estado }) => {
   if (estado === 'enviada') return <span className="text-white/50">✓</span>;
   return <span className={estado === 'lida' ? 'text-cyan-300' : 'text-white/50'}>✓✓</span>;
 };
+
+/** O maior video aceito pelo armazenamento. Ver app/api/midia/route.ts. */
+const VIDEO_MAX_BYTES = 25 * 1024 * 1024;
 
 const ERRO_EM_PORTUGUES: Record<string, string> = {
   SEM_DESTINATARIO: 'Esse nickname não existe mais.',
@@ -213,19 +215,30 @@ const ChatOverlay: FC<Props> = ({
     if (!arquivo) return;
 
     setProblema(null);
-    if (!cabeComoVideo(arquivo)) {
+
+    /*
+     * O LIMITE DEIXOU DE SER DAQUI.
+     *
+     * Enquanto os bytes viajavam dentro da mensagem, o teto era o do envelope
+     * (~1,5 MB) e quase nenhum video de celular passava. Agora o arquivo vai
+     * para o armazenamento, e quem sabe se coube e' o envio — que tenta, e so'
+     * recusa se nao houver armazenamento e o arquivo nao couber no caminho
+     * antigo. Recusar aqui, antes de tentar, barraria videos que hoje passam.
+     */
+    if (arquivo.size > VIDEO_MAX_BYTES) {
       setProblema(
-        `Esse vídeo tem ${tamanhoLegivel(arquivo.size)} e o limite é ${tamanhoLegivel(
-          BYTES_MAX,
+        `Esse video tem ${tamanhoLegivel(arquivo.size)} e o limite e' ${tamanhoLegivel(
+          VIDEO_MAX_BYTES,
         )}. Mande um trecho mais curto.`,
       );
       return;
     }
 
-    setPreparando('Preparando o vídeo…');
+    setPreparando('Enviando o video…');
     try {
       const duracaoMs = await duracaoDe(arquivo);
-      await onEnviarMidia('video', arquivo, arquivo.type || 'video/mp4', duracaoMs);
+      const foi = await onEnviarMidia('video', arquivo, arquivo.type || 'video/mp4', duracaoMs);
+      if (!foi) setProblema('Nao consegui enviar esse video. Tente um trecho menor.');
     } finally {
       setPreparando(null);
     }
