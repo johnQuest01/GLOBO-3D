@@ -18,6 +18,22 @@ const VALIDADE_CACHE_MS = 50 * 60 * 1000;
 
 const cache = new Map<string, { url: string; em: number }>();
 
+/**
+ * O endereço público do armazenamento, quando houver um.
+ *
+ * COM ELE, A LEITURA NÃO PRECISA DE ASSINATURA: a URL é montada aqui mesmo, sem
+ * ida ao servidor, e a Cloudflare serve o arquivo do cache dela. Numa conversa
+ * com vinte fotos, são vinte pedidos a menos e um carregamento bem mais rápido.
+ *
+ * O QUE SE TROCA POR ISSO, dito sem rodeio: o arquivo passa a ser legível por
+ * qualquer pessoa que tenha o link, sem login e sem prazo. O que protege é o
+ * nome do objeto — 24 bytes sorteados, que viajam só dentro da mensagem —, mas
+ * um link que vaze uma vez não fecha mais. Foi uma escolha consciente, e ela
+ * vale só para a LEITURA: o envio continua exigindo assinatura do servidor,
+ * porque escrita aberta deixaria qualquer um encher o balde.
+ */
+const BASE_PUBLICA = (process.env.NEXT_PUBLIC_R2_PUBLIC_URL ?? '').replace(/\/+$/, '');
+
 export interface MidiaEnviada {
   chave: string;
   mime: string;
@@ -67,6 +83,9 @@ export async function subirMidia(blob: Blob, mime: string): Promise<MidiaEnviada
  * entregar uma que vence no meio do download.
  */
 export async function urlDaMidia(chave: string): Promise<string | null> {
+  // Caminho direto: nada a pedir, nada a esperar.
+  if (BASE_PUBLICA) return `${BASE_PUBLICA}/${chave}`;
+
   const guardada = cache.get(chave);
   if (guardada && Date.now() - guardada.em < VALIDADE_CACHE_MS) return guardada.url;
 
