@@ -142,13 +142,28 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
   }, []);
 
   const acrescentar = useCallback((com: string, msg: Mensagem, midia?: Blob) => {
+    /*
+     * JA' CONHECO ESTA MENSAGEM?
+     *
+     * A pergunta precisa ser feita AQUI, e não só dentro do `setConversas`, por
+     * causa do que vem depois: a gravação em disco. A mesma mensagem chega
+     * duas vezes com facilidade — entrega ao vivo e, depois, a sincronização,
+     * quando o ack se perdeu no meio.
+     *
+     * Enquanto a gravação acontecia sempre, a segunda cópia REESCREVIA a linha
+     * do disco com `entrega` vazia — apagando o "lida" que a pessoa tinha
+     * acabado de produzir ao abrir a conversa. O sintoma: sair da conversa,
+     * voltar, e reencontrar como não lidas as mensagens que ela já tinha lido.
+     */
+    const jaTenho = (conversasRef.current[com] ?? []).some((m) => m.id === msg.id);
+
     setConversas((atual) => {
       const lista = atual[com] ?? [];
-      // Dedupe pelo id: a mesma mensagem pode chegar duas vezes (entrega ao
-      // vivo e depois a sincronização, se o ack se perdeu no meio).
       if (lista.some((m) => m.id === msg.id)) return atual;
       return { ...atual, [com]: [...lista, msg] };
     });
+
+    if (jaTenho) return;
 
     void guardar({
       id: msg.id,
@@ -463,13 +478,26 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
 
   /** "Eu vi." Só faz sentido com a conversa aberta e a janela à vista. */
   const marcarLidas = useCallback((com: string) => {
+    if (!com) return;
+
+    /*
+     * LER E' LOCAL; AVISAR O OUTRO E' QUE DEPENDE DA REDE.
+     *
+     * Antes, sem socket a função inteira desistia — e abrir a conversa nos
+     * primeiros segundos depois de carregar a página (quando a conexão ainda
+     * está subindo, o que no celular é comum) não marcava nada. A pessoa lia,
+     * saia, e a conversa continuava com o número de não lidas aceso.
+     *
+     * Agora o "eu vi" vale sempre. Se o socket não estiver de pé, o que se
+     * perde é o recibo do outro lado — que é justamente o que o projeto já
+     * decidiu não guardar (ver mailbox.ts).
+     */
     const socket = getSocket();
-    if (!socket || !com) return;
     setConversas((atual) => {
       const msgs = atual[com] ?? [];
       const naoLidas = msgs.filter((m) => m.de === 'outro' && !m.entrega);
       if (naoLidas.length === 0) return atual;
-      socket.emit('msg:read', { to: com, msgIds: naoLidas.map((m) => m.id) });
+      socket?.emit('msg:read', { to: com, msgIds: naoLidas.map((m) => m.id) });
       const ids = new Set(naoLidas.map((m) => m.id));
       for (const id of ids) void marcarEntrega(id, 'lida');
       return {

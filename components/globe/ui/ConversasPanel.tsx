@@ -3,6 +3,7 @@
 import React, { FC } from 'react';
 
 import type { Conversas } from '@/app/hooks/useConversas';
+import BotaoDeAvisos from '@/components/globe/ui/BotaoDeAvisos';
 import type { Presence } from '@/realtime/shared/protocol';
 
 /**
@@ -90,6 +91,8 @@ const ConversasPanel: FC<Props> = ({
             </svg>
           </button>
         </div>
+
+        <BotaoDeAvisos />
 
         <div className="max-h-[55vh] overflow-y-auto">
           {lista.length === 0 && (
