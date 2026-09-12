@@ -222,18 +222,103 @@ pending request) survived a delete in tests. That made the "a connection
 request can only be accepted once" test pass without proving anything. Fixed,
 and that invariant now has its own test.
 
-### Phase G — Offline mailbox (NOT started, deliberately) `[ ]`
+### Phase G — The mailbox: messages through the server `[ ]`
 
-Only after everything above is proven. The WhatsApp model, honestly copied:
+**Decided with Bruno on 2026-09-12**, and it changes the shape of the product:
 
-- [ ] Key pair per device in IndexedDB (WebCrypto, non-extractable)
-- [ ] Public key published with the account; fingerprint shown in the chat
-- [ ] Sender encrypts to the recipient's public key when the peer is offline
-- [ ] Server stores the **ciphertext** with a TTL and deletes it on delivery
-- [ ] Push notification so the phone wakes up (Web Push / FCM)
+1. **Every message goes through the server**, like WhatsApp — never peer to
+   peer. One path, simple ordering, and it works even when NAT blocks a direct
+   connection (today, that case silently fails). WebRTC stays, but only for
+   live video/voice calls, where relaying really is worth the trouble.
+2. **The server can read the stored message for now**, and the envelope is
+   designed opaque from day one so end-to-end encryption drops in later
+   without a rewrite. Consequence, and it is not optional: **the screen must
+   stop promising that nothing is stored.** The text changes with the feature.
 
-Reason it is last: an E2E mailbox done badly is worse than no mailbox — it
-looks private and is not. It gets its own phase, its own review.
+What the server necessarily learns by being able to deliver later: who talks to
+whom, and when. That metadata cannot be avoided in any store-and-forward
+design, E2E included.
+
+#### G0 — The socket has to know who you are (PREREQUISITE) `[x]`
+
+Today `presence:join` takes `clientId` and `nickname` from whatever the client
+sends, and the server believes it. Anyone can appear in the magnifier as
+someone else. That is already a hole — with a mailbox it becomes "anyone can
+read someone else's messages", so it gets fixed first.
+
+- [x] `realtime/shared/token.ts`: mint/verify a short-lived signed token
+      (HMAC, `REALTIME_TOKEN_SECRET`, ~5 min, carrying user id + nickname)
+- [x] `app/api/realtime/token/route.ts`: session in, token out
+- [x] `lib/realtime/socket.ts`: fetch the token, send it in the handshake,
+      renew on reconnect
+- [x] `realtime/src/auth.ts`: `io.use(...)` verifies it → `socket.data.userId`
+- [x] `presence.ts`: identity comes from the TOKEN, never from the payload.
+      No token = anonymous: still visible on the globe, but cannot claim a
+      nickname and cannot use the mailbox.
+
+**Tested (2026-09-12, two browsers + a hostile probe):** the search still finds
+`@yuki_tokyo` online and the globe still flies to Tokyo — and since the client
+no longer sends the nickname at all, the only possible source is the verified
+token. Then `npm run probe -- --nick yuki_tokyo` from São Paulo, deliberately
+sending the field the protocol no longer declares: it did **not** take over the
+name, and the search kept resolving to the real person in Tokyo.
+
+Two things found while doing it:
+
+- **`realtime/.env` was never being read.** The README told you to copy
+  `.env.example`, and `npm run dev` loaded nothing — `CORS_ORIGIN`, `STUN_URL`
+  and `REDIS_URL` written there were silently ignored. The server now loads it
+  itself (`process.loadEnvFile`), and the proof is in the boot line: CORS went
+  from "liberado" to the actual list.
+- The token is short-lived (5 min) but a connection lives for hours, so the
+  client fetches a fresh one on every reconnect attempt. Without that, a tab
+  left open overnight would come back **anonymous** — gone from the search,
+  with nothing on screen saying so.
+
+#### G1 — The mailbox itself
+
+- [ ] `db/schema-mailbox.sql`: table `envelopes` — `msg_id` (from the sender,
+      for dedupe), from/to user, `to_device` (null today, exists for E2E),
+      `kind`, `payload` (opaque bytes), `enc` (`srv-v1` now, `e2e-v1` later),
+      timestamps, `expires_at`
+- [ ] Payload encrypted at rest with a server key (`MESSAGE_KEY`): a database
+      dump should not be a transcript. Without the key, the mailbox stays off —
+      same pattern as the rest of the project.
+- [ ] `realtime/src/mailbox.ts`: `msg:send` → persist → deliver if online;
+      `msg:sync` on connect for what piled up; `msg:ack` deletes the envelope;
+      block list checked at enqueue; rate limit per sender
+- [ ] TTL sweep for what was never delivered
+
+#### G2 — The client
+
+- [ ] Messages travel over the socket, not the DataChannel
+- [ ] A conversation exists without a live connection: opening a chat no longer
+      requires the other person to be online
+- [ ] ✓ = the server took it, ✓✓ = delivered to the other device, ✓✓ blue =
+      read (read receipt is end to end, inside the payload)
+- [ ] The "nothing is stored" notice is replaced by what is actually true
+
+#### G3 — Media offline
+
+- [ ] Photo resized client-side (~1280px) and audio capped, so an offline photo
+      is a few hundred KB and not eight megabytes
+- [ ] Stored as bytes with a TTL. If volume grows, move to object storage
+      (R2/S3) — the envelope already points at an opaque payload, so only the
+      storage layer changes
+
+#### G4 — Waking the phone
+
+- [ ] Web Push (VAPID) + service worker, so a message arrives with the tab
+      closed
+
+#### G5 — The upgrade to E2E (later, its own review)
+
+- [ ] Keypair per device in IndexedDB (non-extractable), public key published
+      with the account
+- [ ] Sender encrypts to each of the recipient's devices; `enc` becomes `e2e-v1`
+- [ ] **Key-change warning and a fingerprint to compare.** Without this, E2E
+      where the server hands out the public keys is theatre: the server swaps a
+      key and nobody notices.
 
 ### Phase H — Infrastructure `[~]`
 

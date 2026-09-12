@@ -80,13 +80,19 @@ export interface IceServer {
 // ---------------------------------------------------------------------------
 
 export interface ClientToServer {
+  /**
+   * O `nickname` NÃO entra aqui, e a ausência é o ponto.
+   *
+   * Ele vem do token do aperto de mão, que o app Next assinou depois de olhar
+   * a sessão. Enquanto o cliente podia mandá-lo neste payload, qualquer pessoa
+   * entrava anunciando o nome de outra e ficava no lugar dela na busca.
+   */
   'presence:join': (p: {
     clientId: ClientId;
     lat: number;
     lon: number;
     regionKey: RegionKey;
     name?: string;
-    nickname?: string;
   }) => void;
   /** A cada ~15s. Sem batida, a presença expira sozinha. */
   'presence:heartbeat': () => void;

@@ -22,13 +22,22 @@ import type { PresenceStore } from './store.js';
 
 /** O que o servidor guarda por conexão. */
 export interface SocketData {
+  /**
+   * A conta dona desta conexão, provada pelo token do aperto de mão
+   * (ver src/auth.ts). Ausente em quem entrou sem login — que continua vendo
+   * o globo, mas não tem nome público nem caixa postal.
+   */
+  userId?: string;
   clientId?: string;
   regionKey?: string;
   /**
-   * Guardado à parte da presença pela mesma razão do `beaconRegionKey`: no
-   * `disconnect` os handlers rodam na ordem de registro, e o da presença limpa
-   * `socket.data.presence` antes de os outros rodarem. Sem esta cópia, a
-   * limpeza do diretório não saberia qual nickname desindexar.
+   * O nome público, vindo do TOKEN — nunca do que o cliente enviou.
+   *
+   * É preenchido no aperto de mão (src/auth.ts) e sobrevive ao `disconnect`
+   * pela mesma razão do `beaconRegionKey`: os handlers de saída rodam na ordem
+   * de registro, e o da presença limpa `socket.data.presence` antes de os
+   * outros rodarem. Sem uma cópia à parte, a limpeza do diretório não saberia
+   * qual nickname desindexar.
    */
   nickname?: string;
   presence?: Presence;
@@ -102,15 +111,17 @@ export function registerPresence(
       lon: p.lon,
       regionKey: p.regionKey,
       ...(typeof p.name === 'string' && p.name.trim() ? { name: p.name.trim() } : {}),
-      ...(typeof p.nickname === 'string' && p.nickname.trim()
-        ? { nickname: p.nickname.trim().toLowerCase().slice(0, 20) }
-        : {}),
+      // Do crachá, e não do payload: é isto que impede alguém de entrar
+      // dizendo ser outra pessoa.
+      ...(socket.data.nickname ? { nickname: socket.data.nickname } : {}),
     };
 
     socket.data.clientId = presence.clientId;
     socket.data.regionKey = presence.regionKey;
     socket.data.presence = presence;
-    socket.data.nickname = presence.nickname;
+    // `socket.data.nickname` NÃO é escrito aqui: ele veio do token e é a
+    // fonte da verdade. Regravá-lo a partir da presença o apagaria para quem
+    // entrou sem nickname, e abriria de volta a porta que o token fechou.
 
     await store.add(socket.id, presence);
     // O índice da lupa. Só quem tem conta tem nickname — quem entra sem login
@@ -189,7 +200,8 @@ async function sairDaRegiao(
 
   socket.data.regionKey = undefined;
   socket.data.presence = undefined;
-  socket.data.nickname = undefined;
+  // O nickname do crachá fica: sair da região não deixa de ser você. Ele só
+  // some quando a conexão morre, junto com o resto do `socket.data`.
 
   if (presence.clientId) await store.unbindClient(presence.clientId, socket.id);
   if (nickname) await store.unbindNickname(nickname, presence.clientId);

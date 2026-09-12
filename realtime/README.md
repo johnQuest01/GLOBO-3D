@@ -29,6 +29,12 @@ cp .env.example .env      # opcional: sem REDIS_URL, a presenca fica em memoria
 npm run dev
 ```
 
+O servidor le o `.env` sozinho, no inicio do `src/index.ts`.
+Ate a Fase G isso nao acontecia: o script nao carregava arquivo nenhum, e
+quem copiava o `.env.example` via as variaveis serem ignoradas sem aviso —
+`CORS_ORIGIN` e `STUN_URL` locais nunca valeram nada. Em producao quem injeta
+as variaveis e a plataforma, entao `npm start` continua sem ler arquivo.
+
 Em outros dois terminais, o cliente de teste:
 
 ```bash

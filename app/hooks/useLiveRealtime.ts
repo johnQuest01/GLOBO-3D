@@ -8,7 +8,7 @@ import {
   type EstadoDaEntrega,
   type TipoDeMidia,
 } from '@/lib/realtime/peer';
-import { getSocket, isRealtimeEnabled } from '@/lib/realtime/socket';
+import { connectSocket, getSocket, isRealtimeEnabled } from '@/lib/realtime/socket';
 import type { Beacon, Presence } from '@/realtime/shared/protocol';
 import { HEARTBEAT_INTERVAL_MS } from '@/realtime/shared/protocol';
 import { useGeoMapping } from '@/app/hooks/useGeoMapping';
@@ -98,6 +98,15 @@ export function useLiveRealtime(user: UserProfileData | null) {
   const [videoRemoto, setVideoRemoto] = useState<MediaStream | null>(null);
   const [videoLocal, setVideoLocal] = useState<MediaStream | null>(null);
   const [conectado, setConectado] = useState(false);
+  /**
+   * A conexão já existe?
+   *
+   * Não é o mesmo que `conectado`. Este diz que o objeto socket foi criado (o
+   * crachá chegou e o `io()` rodou); aquele diz que o servidor respondeu. O
+   * efeito do par depende DESTE: sem ele, ele rodaria no primeiro render, não
+   * acharia socket nenhum e nunca mais tentaria.
+   */
+  const [socketPronto, setSocketPronto] = useState(false);
   const [aviso, setAviso] = useState<string | null>(null);
 
   /**
@@ -144,23 +153,50 @@ export function useLiveRealtime(user: UserProfileData | null) {
   useEffect(() => {
     if (!isRealtimeEnabled || !local || carregandoMapa) return;
 
-    const socket = getSocket();
-    if (!socket) return;
-
     const clientId = localStorage.getItem('globoClientId') ?? `anon-${idNovo()}`;
     meuClientIdRef.current = clientId;
+
+    // Copia o lugar depois da checagem acima. `registrar` e' uma funcao
+    // declarada (icada), e o TypeScript nao leva o estreitamento de tipo para
+    // dentro dela: la, `local` voltaria a poder ser nulo.
+    const aqui = local;
+
+    /*
+     * Conectar virou assíncrono: o crachá (/api/realtime/token) vem ANTES do
+     * socket, porque autenticar depois de conectado deixaria uma janela em que
+     * os eventos chegam sem dono.
+     *
+     * `vivo` e `desfazer` são a dança de sempre com efeito assíncrono: o
+     * componente pode desmontar enquanto a promessa está no ar, e aí não há o
+     * que registrar — nem o que limpar, se nunca chegou a registrar.
+     */
+    let vivo = true;
+    let desfazer: (() => void) | null = null;
+
+    void connectSocket().then((socket) => {
+      if (!socket || !vivo) return;
+      setSocketPronto(true);
+      desfazer = registrar(socket);
+    });
+
+    return () => {
+      vivo = false;
+      desfazer?.();
+    };
+
+    function registrar(socket: NonNullable<ReturnType<typeof getSocket>>) {
 
     const entrar = () => {
       setConectado(true);
       socket.emit('presence:join', {
         clientId,
-        lat: local.lat,
-        lon: local.lon,
-        regionKey: local.regionKey,
+        lat: aqui.lat,
+        lon: aqui.lon,
+        regionKey: aqui.regionKey,
         ...(user?.fullName ? { name: user.fullName.split(' ')[0] } : {}),
-        // Sem nickname a pessoa aparece no globo, mas ninguém consegue
-        // encontrá-la pela lupa. É a diferença entre estar e ser achável.
-        ...(meuNickname ? { nickname: meuNickname } : {}),
+        // O nickname NÃO vai aqui: quem o informa ao servidor é o token do
+        // aperto de mão. Enquanto ele vinha neste payload, qualquer pessoa
+        // entrava com o nome de outra e ficava no lugar dela na busca.
       });
     };
 
@@ -283,7 +319,8 @@ export function useLiveRealtime(user: UserProfileData | null) {
       socket.off('rate_limited', aoLimitar);
       socket.off('error', aoErro);
     };
-  }, [local, carregandoMapa, user?.fullName, meuNickname]);
+    }
+  }, [local, carregandoMapa, user?.fullName]);
 
   // --- O par ----------------------------------------------------------------
 
@@ -314,6 +351,9 @@ export function useLiveRealtime(user: UserProfileData | null) {
   }, []);
 
   useEffect(() => {
+    // Depende de `socketPronto` porque a conexão agora nasce assíncrona: sem
+    // isso este efeito rodaria uma vez, no primeiro render, não acharia socket
+    // e ficaria surdo para sempre ao aperto de mão.
     const socket = getSocket();
     if (!socket) return;
 
@@ -412,7 +452,7 @@ export function useLiveRealtime(user: UserProfileData | null) {
       socket.off('signal', aoSinal);
       socket.off('peer:disconnected', aoDesconectarPar);
     };
-  }, [encerrarChamada]);
+  }, [encerrarChamada, socketPronto]);
 
   // --- Busca ----------------------------------------------------------------
 

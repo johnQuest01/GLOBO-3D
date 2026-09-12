@@ -65,8 +65,18 @@ socket.on('connect', () => {
     lon: LON,
     regionKey: REGIAO,
     name: NOME,
-    ...(NICK ? { nickname: NICK } : {}),
-  });
+    /*
+     * DE PROPOSITO um campo que o protocolo nao declara mais.
+     *
+     * Ate a Fase G o servidor aceitava o nickname daqui, e era assim que
+     * qualquer um aparecia na busca no lugar de outra pessoa. O probe continua
+     * mandando — com uma conversao de tipo explicita, para nao dar a impressao
+     * de que isto e' suportado — porque e' exatamente o ataque que o teste
+     * precisa reproduzir: `npm run probe -- --nick alguem` NAO pode mais
+     * roubar o nome de ninguem.
+     */
+    ...(NICK ? ({ nickname: NICK } as Record<string, string>) : {}),
+  } as Parameters<ClientToServer['presence:join']>[0]);
 
   if (PROCURAR) {
     // Espera o join ser processado: procurar antes dele e' NOT_JOINED.

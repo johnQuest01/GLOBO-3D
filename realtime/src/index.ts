@@ -16,12 +16,30 @@
  */
 
 import { createServer } from 'node:http';
+
+/*
+ * O .env local, lido pelo proprio processo.
+ *
+ * Ate aqui NINGUEM carregava este arquivo: o README mandava copiar o
+ * .env.example, e o `npm run dev` subia sem ler nada. CORS_ORIGIN, STUN_URL e
+ * REDIS_URL escritos ali eram ignorados em silencio — o pior tipo de
+ * configuracao, a que parece estar valendo.
+ *
+ * Em producao o arquivo nao existe (Railway injeta as variaveis), e por isso o
+ * try: faltar .env e' o caso normal la, nao erro.
+ */
+try {
+  process.loadEnvFile('.env');
+} catch {
+  /* sem .env: producao, ou dev sem arquivo. As variaveis vem do ambiente. */
+}
 import { createAdapter } from '@socket.io/redis-adapter';
 import { Redis } from 'ioredis';
 import { Server } from 'socket.io';
 
 import type { ClientToServer, ServerToClient } from '../shared/protocol.js';
 import { HEARTBEAT_INTERVAL_MS, PRESENCE_TTL_SEC } from '../shared/protocol.js';
+import { registerAuth } from './auth.js';
 import { registerBeacons } from './beacons.js';
 import { registerDirectory } from './directory.js';
 import { avisarSeFaltaTurn, registerMatchmaking } from './matchmaking.js';
@@ -110,6 +128,10 @@ async function main() {
     log('adapter Redis ligado');
   }
 
+  // A identidade vem ANTES de qualquer handler: o middleware roda no aperto de
+  // mão, então quando o primeiro evento chega o socket já sabe de quem é.
+  registerAuth(io, log);
+
   // Um limitador para o processo inteiro: os baldes são por conexão, mas o
   // mapa que os guarda é compartilhado.
   const limitador = criarLimitador();
@@ -150,3 +172,4 @@ main().catch((e) => {
   console.error('falha ao subir o realtime:', e);
   process.exit(1);
 });
+
