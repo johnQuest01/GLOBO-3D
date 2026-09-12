@@ -48,3 +48,6 @@ public/textures/debug-night.webp
 
 .vercel
 .env*
+
+.vercel
+.env*

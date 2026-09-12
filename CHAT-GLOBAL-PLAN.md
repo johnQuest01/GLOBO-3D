@@ -472,16 +472,20 @@ while every push to the real branch became a mere preview.
 - [x] GitHub credentials renewed and the branch pushed (2026-09-12: the
       seven commits are on `origin/globo/lod-luzes-fronteiras`, and no new
       branch was created)
-- [ ] Vercel project re-imported, env vars set — **still open.** Two dead
-      ends worth not repeating: the MCP connection to Vercel creates projects
-      it cannot read back (create answers 200, reading the same id answers
-      404), so it left two bare projects behind — `globo-3d` and `meu-globo`
-      (`prj_A6VNNr8...`), both with no repository linked, both safe to delete.
-      A token tried on the CLI answered "not valid". The reliable path is the
-      dashboard: delete the two strays, Add New → Project → import
-      `johnQuest01/GLOBO-3D`, switch the branch to
-      `globo/lod-luzes-fronteiras`, add `DATABASE_URL`, `AUTH_SECRET` and
-      `REALTIME_TOKEN_SECRET`, deploy.
+- [x] **Vercel: no ar em https://globo-3d-ten.vercel.app** (2026-09-12).
+      O projeto `globo-3d` nunca tinha sido apagado — a conexao MCP le num
+      escopo e escreve noutro, e por isso ela o reportava como inexistente. Com
+      um token valido no CLI ele apareceu na hora, junto com mais sete projetos
+      que a listagem via MCP nunca mostrou.
+      Publicado com `vercel deploy --prod` a partir da maquina, o que ignora
+      branch por completo: sobe o que esta em disco. `REALTIME_TOKEN_SECRET`
+      acrescentado as variaveis de producao (as outras cinco ja estavam la).
+      Conferido no ar: o campo `nickname` existe no formulario, e em 375x812 o
+      cartao comeca em 16px e rola 177px, sem estouro lateral.
+      **CUIDADO ao ligar o Git neste projeto:** a branch de producao dele e' a
+      `main`, que esta 8 commits atras e sem nada do nosso trabalho. Conectar o
+      repositorio sem trocar a branch antes faz a Vercel publicar a `main` e
+      derrubar o que acabou de subir.
 - [ ] Redis service created on Railway
 - [ ] Realtime service deployed, `CORS_ORIGIN` locked to the real domain
 - [ ] `NEXT_PUBLIC_REALTIME_URL` set on Vercel (and on Fly, if it stays)
