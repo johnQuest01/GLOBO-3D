@@ -153,7 +153,7 @@ export function registerPresence(
   });
 
   socket.on('presence:heartbeat', async () => {
-    const { regionKey, presence } = socket.data;
+    const { regionKey, presence, nickname } = socket.data;
     if (!regionKey || !presence) {
       socket.emit('error', {
         code: ErrorCode.NOT_JOINED,
@@ -169,6 +169,28 @@ export function registerPresence(
       await store.add(socket.id, presence);
       socket.to(regionKey).emit('presence:update', { kind: 'join', presence });
       log(`revive ${socket.id} regiao=${regionKey}`);
+    }
+
+    /*
+     * OS PONTEIROS TAMBÉM PRECISAM SER RENOVADOS, e esquecer disso custou caro.
+     *
+     * São três chaves com três vidas diferentes: a presença
+     * (`presence:<socketId>`, 45s) é renovada pelo `touch` acima, mas
+     * `client:<clientId>` e `nick:<nickname>` eram gravados SÓ no join, com
+     * TTL de 180s. Passados três minutos, eles venciam com a pessoa ali,
+     * conectada, batendo heartbeat — e o efeito não era um erro, era pior:
+     *
+     *   - a busca passava a dizer que ela estava OFFLINE;
+     *   - o pedido de conexão respondia "essa pessoa não está disponível".
+     *
+     * No store de MEMÓRIA isso nunca aparecia, porque lá os ponteiros são
+     * entradas de Map, sem expiração. O defeito só existe com Redis — ou seja,
+     * só em produção, e só depois de três minutos. Foi relatado do celular
+     * antes de qualquer teste daqui pegar.
+     */
+    if (presence.clientId) {
+      await store.bindClient(presence.clientId, socket.id);
+      if (nickname) await store.bindNickname(nickname, presence.clientId);
     }
   });
 

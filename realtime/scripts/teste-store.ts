@@ -268,6 +268,43 @@ async function main() {
   checa('memoria: desindexa', await memDir.clientOfNickname('carlinha'), null);
 
   // -------------------------------------------------------------------------
+  // Os ponteiros VENCEM. E' o defeito que passou para producao em 12/09/2026:
+  // presenca era renovada pelo heartbeat, mas `client:` e `nick:` nao, entao
+  // depois de tres minutos a pessoa sumia da busca sem sair do lugar.
+  // -------------------------------------------------------------------------
+  console.log('\n=== validade dos ponteiros (o bug do "sempre offline") ===');
+
+  const vencimento = createRedisStore(fakeRedis());
+  await vencimento.add('sv', { ...presenca('vera-id', 'bahia'), nickname: 'vera' });
+  await vencimento.bindClient('vera-id', 'sv');
+  await vencimento.bindNickname('vera', 'vera-id');
+
+  checa('achada assim que entra', await vencimento.clientOfNickname('vera'), 'vera-id');
+
+  // O TTL dos ponteiros e' PRESENCE_TTL_SEC * 4 = 180s.
+  avancarSegundos(200);
+  checa(
+    'sem renovar, some da busca mesmo online',
+    await vencimento.clientOfNickname('vera'),
+    null,
+  );
+
+  // E' isto que o heartbeat passou a fazer.
+  await vencimento.bindClient('vera-id', 'sv');
+  await vencimento.bindNickname('vera', 'vera-id');
+  avancarSegundos(100);
+  checa(
+    'renovando a cada batida, continua achavel',
+    await vencimento.clientOfNickname('vera'),
+    'vera-id',
+  );
+  checa(
+    'e o apontador para a conexao tambem',
+    await vencimento.socketOfClient('vera-id'),
+    'sv',
+  );
+
+  // -------------------------------------------------------------------------
   // Pedido de conexao: uma vez, e so uma
   // -------------------------------------------------------------------------
   console.log('\n=== pedidos de conexao ===');
