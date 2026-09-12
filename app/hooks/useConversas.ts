@@ -96,6 +96,14 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
    */
   const filaRef = useRef<{ msgId: string; para: string; payload: string }[]>([]);
 
+  /**
+   * Espelho das conversas para os handlers do socket.
+   *
+   * Eles são registrados uma vez; sem o espelho, leriam para sempre o estado
+   * do primeiro render.
+   */
+  const conversasRef = useRef<Conversas>({});
+
   // O histórico volta do disco uma vez, no cliente. Em SSR não existe
   // localStorage, e ler no corpo do hook quebraria a hidratação.
   useEffect(() => {
@@ -112,6 +120,8 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
       // conversa aberta por causa disso seria pior.
     }
   }, [conversas, carregado]);
+
+  conversasRef.current = conversas;
 
   const acrescentar = useCallback((com: string, msg: Mensagem) => {
     setConversas((atual) => {
@@ -208,10 +218,33 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
      */
     const esvaziarFila = () => {
       const pendentes = filaRef.current;
-      if (pendentes.length === 0) return;
       filaRef.current = [];
       for (const { msgId, para, payload } of pendentes) {
         socket.emit('msg:send', { msgId, to: para, kind: 'texto', payload });
+      }
+
+      /*
+       * E O QUE FICOU PRESO DE ANTES.
+       *
+       * A fila vive na memória: fechar a aba com algo por enviar perdia a
+       * fila, mas NÃO a mensagem — ela continua no histórico, marcada como
+       * "enviando", e ficaria com o relógio rodando para sempre. Foi assim
+       * que o defeito apareceu: "fica em loop infinito, nada chega".
+       *
+       * Toda vez que a conexão abre, o que estiver em "enviando" é reenviado.
+       * Repetir é seguro: o servidor guarda por `msgId` e a segunda cópia da
+       * mesma mensagem não vira uma segunda mensagem para ninguém.
+       */
+      for (const [com, msgs] of Object.entries(conversasRef.current)) {
+        for (const m of msgs) {
+          if (m.de !== 'eu' || m.entrega !== 'enviando' || m.tipo !== 'texto') continue;
+          socket.emit('msg:send', {
+            msgId: m.id,
+            to: com,
+            kind: 'texto',
+            payload: JSON.stringify({ texto: m.texto ?? '' }),
+          });
+        }
       }
     };
 
