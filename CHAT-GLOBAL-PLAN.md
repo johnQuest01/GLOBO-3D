@@ -469,8 +469,19 @@ while every push to the real branch became a mere preview.
 - [x] Local loop working end to end: the `realtime` process (in-memory store)
       plus `NEXT_PUBLIC_REALTIME_URL=http://localhost:8080` in `.env.local`
 - [x] `db/schema-nickname.sql` applied to the Neon database
-- [ ] GitHub credentials renewed and the branch pushed
-- [ ] Vercel project re-imported, env vars set
+- [x] GitHub credentials renewed and the branch pushed (2026-09-12: the
+      seven commits are on `origin/globo/lod-luzes-fronteiras`, and no new
+      branch was created)
+- [ ] Vercel project re-imported, env vars set — **still open.** Two dead
+      ends worth not repeating: the MCP connection to Vercel creates projects
+      it cannot read back (create answers 200, reading the same id answers
+      404), so it left two bare projects behind — `globo-3d` and `meu-globo`
+      (`prj_A6VNNr8...`), both with no repository linked, both safe to delete.
+      A token tried on the CLI answered "not valid". The reliable path is the
+      dashboard: delete the two strays, Add New → Project → import
+      `johnQuest01/GLOBO-3D`, switch the branch to
+      `globo/lod-luzes-fronteiras`, add `DATABASE_URL`, `AUTH_SECRET` and
+      `REALTIME_TOKEN_SECRET`, deploy.
 - [ ] Redis service created on Railway
 - [ ] Realtime service deployed, `CORS_ORIGIN` locked to the real domain
 - [ ] `NEXT_PUBLIC_REALTIME_URL` set on Vercel (and on Fly, if it stays)
