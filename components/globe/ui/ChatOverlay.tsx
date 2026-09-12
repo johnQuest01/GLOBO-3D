@@ -343,6 +343,20 @@ const ChatOverlay: FC<Props> = ({
                 onChange={(e) => setTexto(e.target.value)}
                 placeholder="Escreva uma mensagem…"
                 maxLength={4000}
+                /*
+                 * A tecla do teclado do celular vira "enviar" em vez de
+                 * "nova linha". E' o caminho que a maioria usa no celular — e
+                 * funciona mesmo se o botao estiver escondido por qualquer
+                 * motivo.
+                 */
+                enterKeyHint="send"
+                /* Com o teclado aberto, garante que o campo fique a vista. */
+                onFocus={(e) =>
+                  setTimeout(
+                    () => e.target.scrollIntoView({ block: 'center', behavior: 'smooth' }),
+                    300,
+                  )
+                }
                 className="min-w-0 flex-1 rounded-full bg-white/10 px-4 py-2.5 text-[15px] text-white placeholder-white/40 outline-none ring-1 ring-white/10 focus:ring-cyan-400/50"
               />
               <button
