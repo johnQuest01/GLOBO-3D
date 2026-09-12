@@ -133,19 +133,40 @@ export async function trocarCodigo(
         grant_type: 'authorization_code',
       }),
     });
-  } catch {
+  } catch (e) {
+    console.error('[google] nao consegui falar com o endpoint de token:', e);
     return null;
   }
 
-  if (!resposta.ok) return null;
+  if (!resposta.ok) {
+    /*
+     * O CORPO DO ERRO DO GOOGLE VAI PARA O LOG, e é a única coisa que
+     * diferencia as causas reais daqui: `invalid_grant` é código já usado ou
+     * expirado, `redirect_uri_mismatch` é o endereço não bater com o do
+     * console, `invalid_client` é segredo errado. Sem isso, as três viram a
+     * mesma frase inútil na tela e nenhuma pista no servidor.
+     *
+     * O corpo do erro não contém segredo: ele diz o que o Google recusou, não
+     * o que foi enviado.
+     */
+    const detalhe = await resposta.text().catch(() => '');
+    console.error(`[google] token recusado (${resposta.status}): ${detalhe.slice(0, 300)}`);
+    return null;
+  }
 
   const dados = (await resposta.json().catch(() => null)) as {
     id_token?: string;
   } | null;
-  if (!dados?.id_token) return null;
+  if (!dados?.id_token) {
+    console.error('[google] resposta sem id_token');
+    return null;
+  }
 
   const corpo = lerIdToken(dados.id_token);
-  if (!corpo?.sub || !corpo.email) return null;
+  if (!corpo?.sub || !corpo.email) {
+    console.error('[google] id_token sem sub ou sem email');
+    return null;
+  }
 
   /*
    * E-MAIL NÃO VERIFICADO NÃO ENTRA.
@@ -155,7 +176,10 @@ export async function trocarCodigo(
    * casamento por e-mail que a criação de conta faz, encostar numa conta
    * alheia.
    */
-  if (corpo.email_verified === false) return null;
+  if (corpo.email_verified === false) {
+    console.error('[google] e-mail nao verificado na conta do Google');
+    return null;
+  }
 
   return {
     sub: String(corpo.sub),
