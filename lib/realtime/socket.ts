@@ -35,6 +35,19 @@ const URL = process.env.NEXT_PUBLIC_REALTIME_URL?.trim();
 /** Uma conexão por aba, e não uma por componente que precisar dela. */
 let singleton: RealtimeSocket | null = null;
 
+/**
+ * De QUEM é o crachá que esta conexão está usando.
+ *
+ * Existe por causa de um defeito real: a conexão abre assim que a página
+ * carrega, o que normalmente é ANTES de a pessoa entrar na conta. O crachá
+ * daquele momento é anônimo, e o servidor, com razão, ignora quem não se
+ * identificou — mensagens sumiam sem erro nenhum.
+ *
+ * Guardando a identidade usada, dá para perceber que ela mudou (entrou, saiu,
+ * trocou de conta) e refazer o aperto de mão com um crachá novo.
+ */
+let identidadeDaConexao: string | null = null;
+
 /** Sem a variável configurada, o app inteiro segue funcionando sem realtime. */
 export const isRealtimeEnabled = Boolean(URL);
 
@@ -63,11 +76,32 @@ async function pegarToken(): Promise<string | null> {
  * autenticar depois deixaria uma janela em que os eventos chegam sem dono, e
  * o servidor teria que tratar os dois casos em cada handler.
  */
-export async function connectSocket(): Promise<RealtimeSocket | null> {
+export async function connectSocket(
+  identidade = 'anon',
+): Promise<RealtimeSocket | null> {
   if (!URL) return null;
-  if (singleton) return singleton;
+
+  // Mesma pessoa de antes: a conexão que já existe serve.
+  if (singleton && identidadeDaConexao === identidade) return singleton;
+
+  /*
+   * A identidade mudou com a conexão já aberta — o caso de quem acabou de
+   * entrar na conta. Pega um crachá novo e refaz o aperto de mão. Não dá para
+   * "atualizar" a identidade de um socket já autenticado: quem a leu foi o
+   * middleware do servidor, no handshake, e ele não roda de novo sem uma
+   * conexão nova.
+   */
+  if (singleton) {
+    const novoToken = await pegarToken();
+    singleton.auth = novoToken ? { token: novoToken } : {};
+    identidadeDaConexao = identidade;
+    singleton.disconnect();
+    singleton.connect();
+    return singleton;
+  }
 
   const token = await pegarToken();
+  identidadeDaConexao = identidade;
 
   singleton = io(URL, {
     // `websocket` direto, sem o polling primeiro: o polling só serve para
@@ -115,4 +149,5 @@ export function getSocket(): RealtimeSocket | null {
 export function closeSocket(): void {
   singleton?.close();
   singleton = null;
+  identidadeDaConexao = null;
 }

@@ -130,6 +130,17 @@ export function useLiveRealtime(user: UserProfileData | null) {
   const meuNickname = user?.nickname?.trim().toLowerCase() || undefined;
 
   /**
+   * Quem está usando esta aba agora.
+   *
+   * É o gatilho para refazer o crachá do socket: a conexão abre junto com a
+   * página (antes do login, portanto anônima), e quando a pessoa entra na
+   * conta é preciso apresentar um crachá novo — senão o servidor continua
+   * tratando a conexão como de ninguém, e a caixa postal, que é por conta,
+   * ignora tudo em silêncio.
+   */
+  const identidade = meuNickname ?? user?.email ?? 'anon';
+
+  /**
    * Onde a pessoa está, para efeito de presença.
    *
    * Sai do cadastro dela (estado, com o país de reserva) e a coordenada vem do
@@ -199,7 +210,7 @@ export function useLiveRealtime(user: UserProfileData | null) {
     let vivo = true;
     let desfazer: (() => void) | null = null;
 
-    void connectSocket().then((socket) => {
+    void connectSocket(identidade).then((socket) => {
       if (!socket || !vivo) return;
       setSocketPronto(true);
       desfazer = registrar(socket);
@@ -352,8 +363,9 @@ export function useLiveRealtime(user: UserProfileData | null) {
     }
     // Sem `local` nem `carregandoMapa` nas dependências: a conexão não depende
     // deles, e reconectar toda vez que o mapa carrega seria trocar o socket
-    // por baixo de uma conversa aberta.
-  }, [user?.fullName]);
+    // por baixo de uma conversa aberta. `identidade` PRECISA estar aqui: é o
+    // que refaz o crachá quando a pessoa entra na conta.
+  }, [identidade, user?.fullName]);
 
   /**
    * A presença, anunciada quando o lugar aparece.
