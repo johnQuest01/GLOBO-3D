@@ -44,6 +44,7 @@ const resumo = (m: { tipo: string; texto?: string; de: string }) => {
   if (m.tipo === 'imagem') return `${prefixo}foto`;
   if (m.tipo === 'audio') return `${prefixo}áudio`;
   if (m.tipo === 'video') return `${prefixo}vídeo`;
+  if (m.tipo === 'documento') return `${prefixo}arquivo`;
   return prefixo + (m.texto ?? '');
 };
 

@@ -28,7 +28,7 @@ export const BYTES_MAX = Math.floor((PAYLOAD_MAX * 3) / 4) - 2048;
 /** O lado maior da foto depois de encolher. Suficiente para tela de celular. */
 const LADO_MAX = 1280;
 
-export type TipoDeMidia = 'imagem' | 'audio' | 'video';
+export type TipoDeMidia = 'imagem' | 'audio' | 'video' | 'documento';
 
 export interface MidiaPronta {
   blob: Blob;

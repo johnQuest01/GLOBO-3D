@@ -38,7 +38,7 @@ import type { PresenceStore } from './store.js';
 /** A caixa postal precisa das duas coisas; sem uma delas ela fica desligada. */
 export const mailboxLigada = (): boolean => bancoLigado && cofreLigado();
 
-const TIPOS = new Set(['texto', 'imagem', 'audio', 'video']);
+const TIPOS = new Set(['texto', 'imagem', 'audio', 'video', 'documento']);
 
 /**
  * De conta para conexões.

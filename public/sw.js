@@ -48,7 +48,9 @@ self.addEventListener('push', (evento) => {
         ? 'mandou um áudio'
         : tipo === 'video'
           ? 'mandou um vídeo'
-          : 'te mandou uma mensagem';
+          : tipo === 'documento'
+            ? 'mandou um arquivo'
+            : 'te mandou uma mensagem';
 
   evento.waitUntil(
     self.registration.showNotification(`@${de}`, {

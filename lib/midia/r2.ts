@@ -154,5 +154,18 @@ export function extensaoDe(mime: string): string {
   if (mime.startsWith('audio/wav')) return '.wav';
   if (mime.startsWith('video/webm')) return '.webm';
   if (mime.startsWith('video/mp4')) return '.mp4';
+  // Documentos: a extensao certa e' o que faz o navegador de quem recebe abrir
+  // no visualizador em vez de baixar um arquivo sem nome.
+  if (mime === 'application/pdf') return '.pdf';
+  if (mime === 'application/zip') return '.zip';
+  if (mime === 'text/plain') return '.txt';
+  if (mime === 'text/csv') return '.csv';
+  if (mime === 'text/markdown') return '.md';
+  if (mime.includes('wordprocessingml')) return '.docx';
+  if (mime.includes('spreadsheetml')) return '.xlsx';
+  if (mime.includes('presentationml')) return '.pptx';
+  if (mime === 'application/msword') return '.doc';
+  if (mime === 'application/vnd.ms-excel') return '.xls';
+  if (mime === 'application/vnd.ms-powerpoint') return '.ppt';
   return '.bin';
 }

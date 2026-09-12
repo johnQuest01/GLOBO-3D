@@ -956,13 +956,14 @@ export default function GlobeCanvas() {
                 onDigitando={() =>
                   conversas.avisarQueEstouEscrevendo(conversas.abertaCom!)
                 }
-                onEnviarMidia={(tipo, blob, mime, duracaoMs) =>
+                onEnviarMidia={(tipo, blob, mime, duracaoMs, nomeDoArquivo) =>
                   conversas.enviarMidia(
                     conversas.abertaCom!,
                     tipo,
                     blob,
                     mime,
                     duracaoMs,
+                    nomeDoArquivo,
                   )
                 }
                 onMarcarLidas={() => conversas.marcarLidas(conversas.abertaCom!)}

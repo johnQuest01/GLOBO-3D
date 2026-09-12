@@ -90,7 +90,7 @@ export interface Envelope {
   /** Ja' foi entregue / lida. So' faz sentido nas minhas. */
   entregue?: boolean;
   lida?: boolean;
-  kind: 'texto' | 'imagem' | 'audio' | 'video';
+  kind: 'texto' | 'imagem' | 'audio' | 'video' | 'documento';
   payload: string;
   /** ISO. Quando o SERVIDOR aceitou — o relogio do remetente nao e' confiavel. */
   sentAt: string;
@@ -200,7 +200,7 @@ export interface ClientToServer {
   'msg:send': (p: {
     msgId: string;
     to: string;
-    kind: 'texto' | 'imagem' | 'audio' | 'video';
+    kind: 'texto' | 'imagem' | 'audio' | 'video' | 'documento';
     payload: string;
   }) => void;
 

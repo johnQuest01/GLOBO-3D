@@ -25,7 +25,16 @@ const VALIDADE_LEITURA_SEG = 60 * 60;
 /** O maior arquivo aceito. O limite real é a paciência de quem espera subir. */
 const BYTES_MAX = 25 * 1024 * 1024;
 
-const TIPOS_ACEITOS = /^(image|audio|video)\//;
+/*
+ * O QUE PODE SUBIR.
+ *
+ * Midia mais os formatos de documento que as pessoas realmente trocam. A lista
+ * e' fechada de proposito: `application/*` inteiro deixaria passar executavel,
+ * e um arquivo que o navegador de quem recebe pode ABRIR e' um problema
+ * diferente de uma foto.
+ */
+const TIPOS_ACEITOS =
+  /^(image|audio|video)\/|^(application\/(pdf|zip|msword|rtf|vnd\.(openxmlformats-officedocument|ms-excel|ms-powerpoint|oasis\.opendocument)[\w.+-]*)|text\/(plain|csv|markdown))$/;
 
 /** POST: "vou mandar um arquivo deste tipo" → devolve para onde enviar. */
 export async function POST(request: Request) {

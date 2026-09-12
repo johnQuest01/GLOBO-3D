@@ -20,6 +20,17 @@
 
 const BANCO = 'globoChat';
 const VERSAO = 2;
+
+/**
+ * A versao do armazenamento local, para quem precisa saber que ela mudou.
+ *
+ * Exportada porque o CORTE da sincronizacao depende disto: subir a versao
+ * apaga o historico guardado, e um corte que sobrevivesse a isso faria o
+ * aparelho dizer "ja tenho tudo ate' aqui" sobre mensagens que ele acabou de
+ * perder — e nunca mais baixa-las. Foi visto em teste, com a conversa sumindo
+ * da lista e nao voltando.
+ */
+export const VERSAO_DO_ARMAZEM = VERSAO;
 const LOJA = 'mensagens';
 /** Chave do formato antigo, migrado uma vez e apagado. */
 const CHAVE_ANTIGA = 'globoConversas';
@@ -38,7 +49,9 @@ export interface MensagemGuardada {
   /** Com quem é a conversa (o nickname do outro). Também é o índice. */
   com: string;
   de: 'eu' | 'outro';
-  tipo: 'texto' | 'imagem' | 'audio' | 'video';
+  tipo: 'texto' | 'imagem' | 'audio' | 'video' | 'documento';
+  /** So' em documento: o nome do arquivo, que e' o unico rotulo que ele tem. */
+  nome?: string;
   texto?: string;
   midia?: Blob;
   /**

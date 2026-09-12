@@ -8,6 +8,7 @@ import {
   guardar,
   marcarEntrega,
   limparFormatoAntigo,
+  VERSAO_DO_ARMAZEM,
   type MensagemGuardada,
 } from '@/lib/chat/armazem';
 import { BYTES_MAX, deBase64, paraBase64, type TipoDeMidia } from '@/lib/chat/midia';
@@ -44,7 +45,11 @@ export type EstadoDaEntrega = 'enviando' | 'enviada' | 'entregue' | 'lida' | 'fa
 export interface Mensagem {
   id: string;
   de: 'eu' | 'outro';
-  tipo: 'texto' | 'imagem' | 'audio' | 'video';
+  tipo: 'texto' | 'imagem' | 'audio' | 'video' | 'documento';
+  /** So' em documento: o nome do arquivo. */
+  nome?: string;
+  /** So' em documento: o tamanho, para a pessoa saber antes de baixar. */
+  bytes?: number;
   texto?: string;
   /** `blob:` URL criada nesta sessão a partir dos bytes guardados. */
   midiaUrl?: string;
@@ -72,7 +77,8 @@ export type Conversas = Record<string, Mensagem[]>;
 const CHAVE_CORTE = 'globoUltimaSync';
 
 /** Uma chave por conta: dois logins no mesmo navegador nao compartilham corte. */
-const chaveDoCorte = (conta: string) => `${CHAVE_CORTE}:${conta}`;
+const chaveDoCorte = (conta: string) =>
+  `${CHAVE_CORTE}:v${VERSAO_DO_ARMAZEM}:${conta}`;
 
 function lerCorte(conta: string): string | null {
   try {
@@ -107,6 +113,9 @@ interface CorpoDaMensagem {
   b64?: string;
   mime?: string;
   duracaoMs?: number;
+  /** Documento: o nome escolhido por quem enviou, e o tamanho. */
+  nome?: string;
+  bytes?: number;
 }
 
 function paraTela(g: MensagemGuardada): Mensagem {
@@ -117,6 +126,7 @@ function paraTela(g: MensagemGuardada): Mensagem {
     texto: g.texto,
     mime: g.mime,
     duracaoMs: g.duracaoMs,
+    nome: g.nome,
     quando: g.quando,
     chave: g.chave,
     entrega: g.entrega as EstadoDaEntrega | undefined,
@@ -225,6 +235,7 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
       duracaoMs: msg.duracaoMs,
       quando: msg.quando,
       entrega: msg.entrega,
+      ...(msg.nome ? { nome: msg.nome } : {}),
       ...(msg.chave ? { chave: msg.chave } : {}),
       ...(midia ? { midia } : {}),
     });
@@ -297,6 +308,8 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
           texto: corpo.texto,
           mime: corpo.mime,
           duracaoMs: corpo.duracaoMs,
+          nome: corpo.nome,
+          bytes: corpo.bytes,
           quando,
           ...(corpo.chave ? { chave: corpo.chave } : {}),
           /*
@@ -566,6 +579,8 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
       blob: Blob,
       mime: string,
       duracaoMs?: number,
+      /** So' documento usa: sem o nome, o arquivo chega sem rotulo nenhum. */
+      nome?: string,
     ) => {
       if (!para) return false;
 
@@ -578,6 +593,8 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
           tipo,
           mime,
           duracaoMs,
+          nome,
+          bytes: blob.size,
           quando: Date.now(),
           entrega: 'enviando',
           midiaUrl: URL.createObjectURL(blob),
@@ -604,6 +621,8 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
           tipo,
           mime,
           duracaoMs,
+          nome,
+          bytes: blob.size,
           quando: Date.now(),
           entrega: 'enviando',
           chave: subida.chave,
@@ -612,7 +631,7 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
           msgId,
           para,
           tipo,
-          JSON.stringify({ chave: subida.chave, mime, duracaoMs }),
+          JSON.stringify({ chave: subida.chave, mime, duracaoMs, nome, bytes: blob.size }),
         );
         return true;
       }
@@ -638,7 +657,7 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
       }
 
       const b64 = await paraBase64(blob);
-      despachar(msgId, para, tipo, JSON.stringify({ b64, mime, duracaoMs }));
+      despachar(msgId, para, tipo, JSON.stringify({ b64, mime, duracaoMs, nome }));
       return true;
     },
     [acrescentar, despachar],

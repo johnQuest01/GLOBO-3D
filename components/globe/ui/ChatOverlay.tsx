@@ -46,6 +46,7 @@ interface Props {
     blob: Blob,
     mime: string,
     duracaoMs?: number,
+    nome?: string,
   ) => Promise<boolean>;
   onMarcarLidas: () => void;
   onFechar: () => void;
@@ -92,6 +93,34 @@ const ERRO_EM_PORTUGUES: Record<string, string> = {
   SEM_CONTA: 'Escolha um nickname para poder conversar.',
 };
 
+/**
+ * Um item da gaveta de anexos.
+ *
+ * E' um `label` com o input escondido dentro, e nao um botao que dispara um
+ * clique programatico: o navegador so' abre o seletor de arquivos a partir de
+ * um gesto direto, e o caminho do label e' o unico que nunca e' bloqueado.
+ */
+const Anexo: FC<{
+  titulo: string;
+  cor: string;
+  accept: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  children: React.ReactNode;
+}> = ({ titulo, cor, accept, onChange, children }) => (
+  <label
+    className="flex w-20 cursor-pointer flex-col items-center gap-1.5 rounded-xl px-2 py-3
+               text-[11px] text-white/70 transition-colors hover:bg-white/10 hover:text-white"
+  >
+    <span className={`rounded-full bg-white/10 p-3 ${cor}`}>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+        {children}
+      </svg>
+    </span>
+    {titulo}
+    <input type="file" accept={accept} onChange={onChange} className="hidden" />
+  </label>
+);
+
 const ChatOverlay: FC<Props> = ({
   aberta,
   nome,
@@ -117,8 +146,10 @@ const ChatOverlay: FC<Props> = ({
   const [gravando, setGravando] = useState(false);
   const [segundos, setSegundos] = useState(0);
   const [ampliada, setAmpliada] = useState<string | null>(null);
+  const [anexosAbertos, setAnexosAbertos] = useState(false);
 
   const fim = useRef<HTMLDivElement>(null);
+  const campoRef = useRef<HTMLTextAreaElement>(null);
   const videoRemotoRef = useRef<HTMLVideoElement>(null);
   const videoLocalRef = useRef<HTMLVideoElement>(null);
 
@@ -191,6 +222,7 @@ const ChatOverlay: FC<Props> = ({
   const escolherFoto = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const arquivo = e.target.files?.[0];
     e.target.value = '';
+    setAnexosAbertos(false);
     if (!arquivo) return;
 
     setProblema(null);
@@ -209,9 +241,51 @@ const ChatOverlay: FC<Props> = ({
     }
   };
 
+  const escolherDocumento = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const arquivo = e.target.files?.[0];
+    e.target.value = '';
+    setAnexosAbertos(false);
+    if (!arquivo) return;
+
+    setProblema(null);
+
+    if (arquivo.size > VIDEO_MAX_BYTES) {
+      setProblema(
+        `Esse arquivo tem ${tamanhoLegivel(arquivo.size)} e o limite e' ${tamanhoLegivel(
+          VIDEO_MAX_BYTES,
+        )}.`,
+      );
+      return;
+    }
+
+    setPreparando('Enviando o arquivo…');
+    try {
+      /*
+       * O NOME DO ARQUIVO VIAJA JUNTO, e sem ele o documento nao teria rotulo
+       * nenhum do outro lado: o objeto no armazenamento se chama por 24 bytes
+       * sorteados, de proposito.
+       *
+       * O tipo vem do proprio arquivo; quando o sistema nao souber dizer qual
+       * e' (acontece com extensoes menos comuns), vai como binario generico —
+       * que o armazenamento aceita e o navegador baixa em vez de tentar abrir.
+       */
+      const foi = await onEnviarMidia(
+        'documento',
+        arquivo,
+        arquivo.type || 'application/octet-stream',
+        undefined,
+        arquivo.name,
+      );
+      if (!foi) setProblema('Nao consegui enviar esse arquivo.');
+    } finally {
+      setPreparando(null);
+    }
+  };
+
   const escolherVideo = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const arquivo = e.target.files?.[0];
     e.target.value = '';
+    setAnexosAbertos(false);
     if (!arquivo) return;
 
     setProblema(null);
@@ -491,6 +565,43 @@ const ChatOverlay: FC<Props> = ({
                       </div>
                     )}
 
+                    {m.tipo === 'documento' && (
+                      /*
+                        O DOCUMENTO E' UM CARTAO, e nao uma previa: nao da' para
+                        mostrar por dentro um .docx ou um .zip, e tentar seria
+                        pior que nao tentar. O que a pessoa precisa para decidir
+                        se abre e' o nome e o tamanho.
+
+                        `download` com o nome original: o objeto no armazenamento
+                        se chama por 24 bytes sorteados, entao sem isto o arquivo
+                        chegaria na pasta de downloads sem nome nenhum.
+                      */
+                      <a
+                        href={m.midiaUrl ?? '#'}
+                        download={m.nome ?? 'arquivo'}
+                        target="_blank"
+                        rel="noreferrer"
+                        className={`flex items-center gap-3 rounded-xl px-2 py-2 transition-colors ${
+                          m.midiaUrl ? 'hover:bg-white/10' : 'pointer-events-none opacity-50'
+                        }`}
+                      >
+                        <span className="shrink-0 rounded-lg bg-white/15 p-2.5 text-sky-200">
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                            <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" strokeLinejoin="round" />
+                            <path d="M14 3v5h5" strokeLinejoin="round" />
+                          </svg>
+                        </span>
+                        <span className="min-w-0">
+                          <span className="block max-w-[11rem] truncate text-sm text-white">
+                            {m.nome ?? 'arquivo'}
+                          </span>
+                          <span className="block text-[11px] text-white/50">
+                            {m.bytes ? tamanhoLegivel(m.bytes) : 'toque para abrir'}
+                          </span>
+                        </span>
+                      </a>
+                    )}
+
                     <div className="mt-0.5 flex items-center justify-end gap-1 px-1.5 text-[10px] text-white/50">
                       <span>{hora(m.quando)}</span>
                       {minha && <Recibo estado={m.entrega} />}
@@ -591,87 +702,173 @@ const ChatOverlay: FC<Props> = ({
                 </button>
               </div>
             ) : (
-              <div className="flex items-center gap-1.5">
-                <label
-                  className="cursor-pointer rounded-full p-2 text-white/60 transition-colors hover:bg-white/10 hover:text-white"
-                  title="Enviar foto"
-                >
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                    <rect x="3" y="5" width="18" height="14" rx="2" />
-                    <circle cx="8.5" cy="10" r="1.5" />
-                    <path d="M21 16l-5-5-4 4-2-2-7 7" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                  <input type="file" accept="image/*" onChange={escolherFoto} className="hidden" />
-                </label>
+              <>
+                {/*
+                  A GAVETA DE ANEXOS.
+                  Tres coisas atras de um clipe, em vez de tres icones sempre na
+                  barra: o campo de texto e' o que a pessoa usa o tempo todo, e
+                  cada icone ao lado dele roubava largura de escrever. Abre por
+                  cima, some ao escolher ou ao tocar fora.
+                */}
+                {anexosAbertos && (
+                  <div
+                    className="absolute inset-0 z-10"
+                    onClick={() => setAnexosAbertos(false)}
+                    aria-hidden="true"
+                  />
+                )}
 
-                <label
-                  className="cursor-pointer rounded-full p-2 text-white/60 transition-colors hover:bg-white/10 hover:text-white"
-                  title="Enviar vídeo"
-                >
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                    <path d="M15 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3.5l6 3.5V7z" strokeLinejoin="round" />
-                  </svg>
-                  <input type="file" accept="video/*" onChange={escolherVideo} className="hidden" />
-                </label>
+                <div className="relative">
+                  {anexosAbertos && (
+                    <div
+                      className="absolute bottom-full left-0 z-20 mb-2 flex gap-2 rounded-2xl
+                                 bg-slate-900/95 p-2 shadow-2xl ring-1 ring-white/15 backdrop-blur-xl"
+                    >
+                      <Anexo titulo="Foto" cor="text-violet-300" accept="image/*" onChange={escolherFoto}>
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <circle cx="8.5" cy="10" r="1.5" />
+                        <path d="M21 16l-5-5-4 4-2-2-7 7" strokeLinecap="round" strokeLinejoin="round" />
+                      </Anexo>
 
-                <button
-                  type="button"
-                  onClick={comecarAGravar}
-                  title="Gravar áudio"
-                  aria-label="Gravar áudio"
-                  className="rounded-full p-2 text-white/60 transition-colors hover:bg-white/10 hover:text-white"
-                >
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                    <rect x="9" y="3" width="6" height="11" rx="3" />
-                    <path d="M5 11a7 7 0 0 0 14 0M12 18v3" strokeLinecap="round" />
-                  </svg>
-                </button>
+                      <Anexo titulo="Vídeo" cor="text-rose-300" accept="video/*" onChange={escolherVideo}>
+                        <path
+                          d="M15 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3.5l6 3.5V7z"
+                          strokeLinejoin="round"
+                        />
+                      </Anexo>
 
-                <input
-                  value={texto}
-                  onChange={(e) => {
-                    setTexto(e.target.value);
-                    if (e.target.value) onDigitando?.();
-                  }}
-                  placeholder="Escreva uma mensagem…"
-                  maxLength={4000}
-                  enterKeyHint="send"
-                  onFocus={(e) =>
-                    setTimeout(
-                      () => e.target.scrollIntoView({ block: 'center', behavior: 'smooth' }),
-                      300,
-                    )
-                  }
-                  className="min-w-0 flex-1 rounded-full bg-white/10 px-4 py-2.5 text-[15px] text-white placeholder-white/40 outline-none ring-1 ring-white/10 focus:ring-cyan-400/50"
-                />
+                      <Anexo
+                        titulo="Documento"
+                        cor="text-sky-300"
+                        accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.txt,.csv,.md,.zip,application/pdf,text/plain"
+                        onChange={escolherDocumento}
+                      >
+                        <path
+                          d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"
+                          strokeLinejoin="round"
+                        />
+                        <path d="M14 3v5h5" strokeLinejoin="round" />
+                      </Anexo>
+                    </div>
+                  )}
 
-                <button
-                  type="submit"
-                  disabled={!texto.trim()}
-                  /*
-                   * NÃO TIRE O FOCO DO CAMPO AO TOCAR AQUI.
-                   *
-                   * No celular, tocar num botão tira o foco do campo de texto,
-                   * o teclado começa a fechar e a barra de escrever desce
-                   * JUNTO — no meio do toque. O dedo desceu num botão que,
-                   * quando levantou, já não estava mais ali: o clique nunca
-                   * acontece, a mensagem não sai e o texto fica no campo.
-                   *
-                   * Impedir o padrão do `pointerdown` mantém o foco onde está.
-                   * O teclado não fecha, nada se mexe, o clique chega — e de
-                   * quebra dá para escrever a próxima mensagem em seguida, que
-                   * é como todo aplicativo de conversa se comporta.
-                   */
-                  onPointerDown={(e) => e.preventDefault()}
-                  title="Enviar"
-                  aria-label="Enviar mensagem"
-                  className="rounded-full bg-cyan-600 p-2.5 text-white transition-colors hover:bg-cyan-500 disabled:cursor-not-allowed disabled:bg-white/10 disabled:text-white/30"
-                >
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                    <path d="M4 12l16-8-6 16-2.5-6.5z" strokeLinejoin="round" />
-                  </svg>
-                </button>
-              </div>
+                  <div className="flex items-end gap-1.5">
+                    <button
+                      type="button"
+                      onPointerDown={(e) => e.preventDefault()}
+                      onClick={() => setAnexosAbertos((v) => !v)}
+                      title="Anexar"
+                      aria-label="Anexar arquivo"
+                      className={`shrink-0 rounded-full p-2.5 transition-colors ${
+                        anexosAbertos
+                          ? 'bg-white/15 text-white'
+                          : 'text-white/60 hover:bg-white/10 hover:text-white'
+                      }`}
+                    >
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                        <path
+                          d="M21.4 11.05 12.25 20.2a5.5 5.5 0 1 1-7.78-7.78l9.2-9.2a3.67 3.67 0 0 1 5.18 5.18l-9.2 9.2a1.83 1.83 0 0 1-2.6-2.6l8.5-8.48"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </button>
+
+                    {/*
+                      A CAMERA E' SEPARADA DA GAVETA de proposito: no celular,
+                      `capture` abre a camera direto, sem passar pela galeria.
+                      E' o gesto mais curto que existe para mandar o que se esta
+                      vendo agora, e esconde-lo atras de um menu o encareceria.
+                    */}
+                    <label
+                      className="shrink-0 cursor-pointer rounded-full p-2.5 text-white/60 transition-colors hover:bg-white/10 hover:text-white"
+                      title="Tirar foto"
+                    >
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                        <path
+                          d="M3 8.5A1.5 1.5 0 0 1 4.5 7h2.2l1.1-2h8.4l1.1 2h2.2A1.5 1.5 0 0 1 21 8.5v9A1.5 1.5 0 0 1 19.5 19h-15A1.5 1.5 0 0 1 3 17.5z"
+                          strokeLinejoin="round"
+                        />
+                        <circle cx="12" cy="13" r="3.4" />
+                      </svg>
+                      <input
+                        type="file"
+                        accept="image/*"
+                        capture="environment"
+                        onChange={escolherFoto}
+                        className="hidden"
+                      />
+                    </label>
+
+                    <textarea
+                      ref={campoRef}
+                      value={texto}
+                      onChange={(e) => {
+                        setTexto(e.target.value);
+                        if (e.target.value) onDigitando?.();
+                      }}
+                      onKeyDown={(e) => {
+                        // Enter manda; Shift+Enter pula linha. Sem isto, um
+                        // campo de varias linhas nao teria como enviar pelo
+                        // teclado — e o teclado do celular mostra "enviar".
+                        if (e.key === 'Enter' && !e.shiftKey) {
+                          e.preventDefault();
+                          enviar(e);
+                        }
+                      }}
+                      rows={1}
+                      placeholder="Escreva uma mensagem…"
+                      maxLength={4000}
+                      enterKeyHint="send"
+                      /*
+                        SEM `scrollIntoView` AQUI.
+                        Havia um `setTimeout` de 300 ms seguido de rolagem
+                        animada a cada toque no campo — era esse o "peso ao
+                        clicar para digitar". O navegador ja' traz o campo
+                        focado para a vista sozinho; o que o codigo acrescentava
+                        era so' a espera.
+                      */
+                      className="max-h-32 min-h-[2.9rem] min-w-0 flex-1 resize-none rounded-2xl bg-white/10
+                                 px-4 py-3 text-[16px] leading-snug text-white placeholder-white/40
+                                 outline-none ring-1 ring-white/10 focus:ring-cyan-400/50"
+                    />
+
+                    {/*
+                      MICROFONE OU ENVIAR, nunca os dois: com o campo vazio nao
+                      ha' o que enviar, e escrevendo nao se esta gravando. E' a
+                      troca que todo aplicativo de conversa faz, e ela devolve
+                      largura ao campo.
+                    */}
+                    {texto.trim() ? (
+                      <button
+                        type="submit"
+                        onPointerDown={(e) => e.preventDefault()}
+                        title="Enviar"
+                        aria-label="Enviar mensagem"
+                        className="shrink-0 rounded-full bg-cyan-600 p-3 text-white transition-colors hover:bg-cyan-500"
+                      >
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                          <path d="M4 12l16-8-6 16-2.5-6.5z" strokeLinejoin="round" />
+                        </svg>
+                      </button>
+                    ) : (
+                      <button
+                        type="button"
+                        onPointerDown={(e) => e.preventDefault()}
+                        onClick={comecarAGravar}
+                        title="Gravar áudio"
+                        aria-label="Gravar áudio"
+                        className="shrink-0 rounded-full bg-white/10 p-3 text-white/70 transition-colors hover:bg-white/20 hover:text-white"
+                      >
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                          <rect x="9" y="3" width="6" height="11" rx="3" />
+                          <path d="M5 11a7 7 0 0 0 14 0M12 18v3" strokeLinecap="round" />
+                        </svg>
+                      </button>
+                    )}
+                  </div>
+                </div>
+              </>
             )}
 
             {preparando && (
