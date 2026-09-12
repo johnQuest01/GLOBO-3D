@@ -42,7 +42,7 @@ const IconUser = (props: React.SVGProps<SVGSVGElement>) => (
     viewBox="0 0 24 24"
     strokeWidth={2}
     stroke="currentColor"
-    className="w-6 h-6 text-gray-400"
+    className="w-5 h-5 shrink-0 text-gray-400"
     {...props}
   >
     <path
@@ -60,7 +60,7 @@ const IconMail = (props: React.SVGProps<SVGSVGElement>) => (
     viewBox="0 0 24 24"
     strokeWidth={2}
     stroke="currentColor"
-    className="w-6 h-6 text-gray-400"
+    className="w-5 h-5 shrink-0 text-gray-400"
     {...props}
   >
     <path
@@ -78,7 +78,7 @@ const IconCake = (props: React.SVGProps<SVGSVGElement>) => (
     viewBox="0 0 24 24"
     strokeWidth={2}
     stroke="currentColor"
-    className="w-6 h-6 text-gray-400"
+    className="w-5 h-5 shrink-0 text-gray-400"
     {...props}
   >
     <path
@@ -97,7 +97,7 @@ const IconLock = (props: React.SVGProps<SVGSVGElement>) => (
     viewBox="0 0 24 24"
     strokeWidth={2}
     stroke="currentColor"
-    className="w-6 h-6 text-gray-400"
+    className="w-5 h-5 shrink-0 text-gray-400"
     {...props}
   >
     <path
@@ -116,7 +116,7 @@ const IconAt = (props: React.SVGProps<SVGSVGElement>) => (
     viewBox="0 0 24 24"
     strokeWidth={2}
     stroke="currentColor"
-    className="w-6 h-6 text-gray-400"
+    className="w-5 h-5 shrink-0 text-gray-400"
     {...props}
   >
     <path
@@ -423,7 +423,7 @@ const LoginScreen: React.FC = () => {
      * inalcançável; com `margin: auto` ele centraliza quando cabe e encosta no
      * topo quando não cabe, continuando inteiro.
      */
-    <div className="relative w-full app-viewport overflow-y-auto overflow-x-hidden flex p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
+    <div className="relative w-full app-viewport overflow-y-auto overflow-x-hidden flex p-2 sm:p-4 pb-[max(0.5rem,env(safe-area-inset-bottom))]">
       {/* Fundo e véu são `fixed`: a área acima rola, e eles precisam ficar
           parados cobrindo a tela. Se fossem `absolute`, subiriam junto com a
           rolagem e deixariam o fim do formulário sobre o fundo cru. */}
@@ -431,10 +431,10 @@ const LoginScreen: React.FC = () => {
       <div className="fixed inset-0 bg-black/60 z-10" />
       <div
         className="relative z-20 m-auto w-full max-w-md bg-stone-900/90 backdrop-blur-sm
-rounded-xl shadow-2xl border border-green-700 p-5 sm:p-7
-flex flex-col gap-4 animate-in fade-in zoom-in-95 duration-500"
+rounded-xl shadow-2xl border border-green-700 p-3.5 sm:p-5
+flex flex-col gap-3 animate-in fade-in zoom-in-95 duration-500"
       >
-        <h2 className="text-2xl font-extrabold text-white text-center">
+        <h2 className="text-xl sm:text-2xl font-extrabold text-white text-center">
           {formData.isLogin ? 'Entrar na Conta' : 'Criar Nova Conta'}
         </h2>
 
@@ -463,7 +463,7 @@ ${
           </button>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-3.5">
+        <form onSubmit={handleSubmit} className="space-y-2">
           {!formData.isLogin && (
             <>
               <div>
@@ -475,12 +475,12 @@ ${
                     placeholder="Nome Completo"
                     value={formData.fullName}
                     onChange={handleChange}
-                    className="flex-1 bg-transparent text-white placeholder-gray-400 py-1.5 px-3 focus:outline-none text-base"
+                    className="flex-1 bg-transparent text-white placeholder-gray-400 py-1 px-2.5 focus:outline-none text-[15px]"
                     maxLength={170}
                   />
                 </div>
                 {errors.fullName && (
-                  <p className="text-red-400 text-sm mt-1">
+                  <p className="text-red-400 text-xs mt-0.5">
                     {errors.fullName}
                   </p>
                 )}
@@ -495,22 +495,24 @@ ${
                   <input
                     type="text"
                     name="nickname"
-                    placeholder="nickname"
+                    placeholder="nickname (letras, números e _)"
                     value={formData.nickname}
                     onChange={handleChange}
                     autoComplete="username"
                     autoCapitalize="none"
                     spellCheck={false}
-                    className="flex-1 bg-transparent text-white placeholder-gray-400 py-1.5 px-3 focus:outline-none text-base lowercase"
+                    className="flex-1 bg-transparent text-white placeholder-gray-400 py-1 px-2.5 focus:outline-none text-[15px] lowercase"
                     maxLength={NICKNAME_MAX}
                   />
                 </div>
-                {errors.nickname ? (
-                  <p className="text-red-400 text-sm mt-1">{errors.nickname}</p>
-                ) : (
-                  <p className="text-gray-400 text-xs mt-1">
-                    É por ele que te acham no globo. Letras, números e{'\u00a0'}_
-                  </p>
+                {/*
+                  A dica saiu daqui e virou placeholder: uma linha de texto
+                  abaixo de um campo, multiplicada por nove campos, era parte
+                  do motivo de a tela nao caber. O erro continua aparecendo —
+                  esse sim precisa interromper a leitura.
+                */}
+                {errors.nickname && (
+                  <p className="text-red-400 text-xs mt-0.5">{errors.nickname}</p>
                 )}
               </div>
 
@@ -523,14 +525,14 @@ ${
                     placeholder="Idade (ex: 30)"
                     value={formData.age}
                     onChange={handleChange}
-                    className="flex-1 bg-transparent text-white placeholder-gray-400 py-1.5 px-3 focus:outline-none text-base"
+                    className="flex-1 bg-transparent text-white placeholder-gray-400 py-1 px-2.5 focus:outline-none text-[15px]"
                     inputMode="numeric"
                     pattern="\d{1,2}"
                     maxLength={2}
                   />
                 </div>
                 {errors.age && (
-                  <p className="text-red-400 text-sm mt-1">{errors.age}</p>
+                  <p className="text-red-400 text-xs mt-0.5">{errors.age}</p>
                 )}
               </div>
 
@@ -555,12 +557,12 @@ ${
                 onChange={handleChange}
                 autoComplete="email"
                 inputMode="email"
-                className="flex-1 bg-transparent text-white placeholder-gray-400 py-1.5 px-3 focus:outline-none text-base"
+                className="flex-1 bg-transparent text-white placeholder-gray-400 py-1 px-2.5 focus:outline-none text-[15px]"
                 maxLength={254}
               />
             </div>
             {errors.email && (
-              <p className="text-red-400 text-sm mt-1">{errors.email}</p>
+              <p className="text-red-400 text-xs mt-0.5">{errors.email}</p>
             )}
           </div>
 
@@ -578,12 +580,12 @@ ${
                    ele preencher a que já existe. Trocar os dois confunde o
                    gerenciador e a pessoa acaba salvando lixo. */
                 autoComplete={formData.isLogin ? 'current-password' : 'new-password'}
-                className="flex-1 bg-transparent text-white placeholder-gray-400 py-1.5 px-3 focus:outline-none text-base"
+                className="flex-1 bg-transparent text-white placeholder-gray-400 py-1 px-2.5 focus:outline-none text-[15px]"
                 maxLength={200}
               />
             </div>
             {errors.password && (
-              <p className="text-red-400 text-sm mt-1">{errors.password}</p>
+              <p className="text-red-400 text-xs mt-0.5">{errors.password}</p>
             )}
           </div>
 
@@ -598,12 +600,12 @@ ${
                   value={formData.confirmPassword}
                   onChange={handleChange}
                   autoComplete="new-password"
-                  className="flex-1 bg-transparent text-white placeholder-gray-400 py-1.5 px-3 focus:outline-none text-base"
+                  className="flex-1 bg-transparent text-white placeholder-gray-400 py-1 px-2.5 focus:outline-none text-[15px]"
                   maxLength={200}
                 />
               </div>
               {errors.confirmPassword && (
-                <p className="text-red-400 text-sm mt-1">
+                <p className="text-red-400 text-xs mt-0.5">
                   {errors.confirmPassword}
                 </p>
               )}
@@ -619,7 +621,7 @@ ${
           <button
             type="submit"
             disabled={enviando}
-            className="w-full py-2.5 rounded-lg bg-green-600 hover:bg-green-700
+            className="w-full py-2 rounded-lg bg-green-600 hover:bg-green-700
 text-white text-lg font-semibold shadow-lg transition-colors
 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-stone-900 focus:ring-green-500
 disabled:opacity-60 disabled:cursor-not-allowed"
@@ -651,7 +653,7 @@ disabled:opacity-60 disabled:cursor-not-allowed"
           ela, e aí com o arquivo em public/images.
         */}
         <button
-          className="w-full py-2.5 rounded-lg bg-red-700 text-white text-base font-semibold
+          className="w-full py-2 rounded-lg bg-red-700 text-white text-sm font-semibold
 shadow-lg opacity-50 cursor-not-allowed flex items-center justify-center gap-3"
           disabled
           title="Funcionalidade disponível apenas na web"
