@@ -18,6 +18,7 @@ import type {
   ServerToClient,
 } from '../shared/protocol.js';
 import { ErrorCode } from '../shared/protocol.js';
+import { restaurarBeacon, TTL_DO_SINAL_SEC } from './beacons.js';
 import type { PresenceStore } from './store.js';
 
 /** O que o servidor guarda por conexão. */
@@ -133,6 +134,16 @@ export function registerPresence(
     // endereçado à PESSOA encontra a aba aberta dela agora.
     await store.bindClient(presence.clientId, socket.id);
     await socket.join(presence.regionKey);
+
+    /*
+     * O SINAL DELA AINDA ESTA ACESO? Entao volta a valer o tempo cheio.
+     *
+     * Toda reconexao passa por aqui, e e' aqui que a carencia do sinal (ver
+     * beacons.ts) deixa de ser um adiamento e vira o que foi prometido: quem
+     * acendeu por quinze minutos e bloqueou a tela no meio encontra o sinal
+     * inteiro ao voltar, em vez de ter que acender de novo.
+     */
+    await restaurarBeacon(socket, store, TTL_DO_SINAL_SEC);
 
     // O snapshot vai só para quem entrou; o update vai para os outros. Se o
     // update fosse para a sala inteira incluindo o remetente, quem entra se

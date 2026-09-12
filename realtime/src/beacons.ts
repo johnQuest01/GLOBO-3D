@@ -32,6 +32,9 @@ const TTL_MIN_SEC = 60;
 const TTL_MAX_SEC = 60 * 60;
 const TTL_PADRAO_SEC = 15 * 60;
 
+/** O mesmo tempo, visto de fora: a presenca usa para devolver a vida cheia. */
+export const TTL_DO_SINAL_SEC = TTL_PADRAO_SEC;
+
 const TOPICO_MAX = 80;
 
 export function registerBeacons(
@@ -92,11 +95,87 @@ export function registerBeacons(
     await apagarBeaconDoSocket(io, socket, store);
   });
 
-  // Fechar a aba apaga o sinal. Sem isto, o TTL ainda o mataria, mas até lá
-  // haveria gente pedindo conexão para quem já foi embora.
+  /*
+   * CAIR A CONEXÃO NÃO É IR EMBORA — e tratar as duas coisas como uma só era
+   * o que fazia o sinal "não funcionar".
+   *
+   * Aqui o `disconnect` apagava o sinal na hora. No computador isso quase
+   * nunca aparece; no celular é o comportamento normal do aparelho: bloquear
+   * a tela, trocar de aplicativo ou passar por um túnel derruba o socket em
+   * segundos. A pessoa acendia um sinal de quinze minutos, olhava para o lado,
+   * e ele morria antes de ela voltar.
+   *
+   * Agora ele entra em CARÊNCIA: continua aceso por pouco tempo, e quem voltar
+   * dentro dessa janela o encontra inteiro (ver `restaurarBeacon`). Quem foi
+   * embora de verdade some em `CARENCIA_SEC`, que é bem menos que o TTL cheio
+   * — o motivo do código antigo (ninguém deve chamar quem já saiu) continua
+   * valendo, só que com um minuto e meio de tolerar a vida real.
+   */
   socket.on('disconnect', () => {
-    void apagarBeaconDoSocket(io, socket, store);
+    void porEmCarencia(socket, store);
   });
+}
+
+/** Quanto tempo um sinal sobrevive à queda da conexão. */
+const CARENCIA_SEC = 90;
+
+/**
+ * Encurta a vida do sinal em vez de apagá-lo.
+ *
+ * Reescrever o mesmo `beaconId` com um TTL curto é o que dá a carência: a
+ * chave é a mesma, então não há sinal duplicado, e o próprio armazenamento
+ * se encarrega de apagá-lo se ninguém voltar.
+ *
+ * NÃO AVISA A REGIÃO que o sinal sumiu, de propósito: ele ainda está aceso.
+ * O aviso sai quando a carência vencer e o sinal de fato deixar de existir.
+ */
+async function porEmCarencia(
+  socket: RealtimeSocket,
+  store: PresenceStore,
+): Promise<void> {
+  const beaconId = socket.data.beaconId;
+  if (!beaconId) return;
+
+  const beacon = await store.getBeacon(beaconId);
+  if (!beacon) return;
+
+  // Se o que resta já é menos que a carência, deixa como está: encurtar seria
+  // uma coisa, esticar seria outra bem diferente.
+  const restaSec = Math.round((beacon.expiresAt - Date.now()) / 1000);
+  if (restaSec <= CARENCIA_SEC) return;
+
+  await store.addBeacon(
+    { ...beacon, expiresAt: Date.now() + CARENCIA_SEC * 1000 },
+    CARENCIA_SEC,
+  );
+}
+
+/**
+ * A pessoa voltou: o sinal dela volta a valer o tempo cheio.
+ *
+ * Chamado no `presence:join`, que é por onde toda reconexão passa. Sem isto, a
+ * carência só adiaria a morte do sinal em noventa segundos.
+ */
+export async function restaurarBeacon(
+  socket: RealtimeSocket,
+  store: PresenceStore,
+  ttlSec: number,
+): Promise<void> {
+  const clientId = socket.data.clientId;
+  const presence = socket.data.presence;
+  if (!clientId || !presence) return;
+
+  const beaconId = `b:${clientId}`;
+  const beacon = await store.getBeacon(beaconId);
+  if (!beacon) return;
+
+  socket.data.beaconId = beaconId;
+  socket.data.beaconRegionKey = presence.regionKey;
+
+  await store.addBeacon(
+    { ...beacon, expiresAt: Date.now() + ttlSec * 1000 },
+    ttlSec,
+  );
 }
 
 async function apagarBeaconDoSocket(
