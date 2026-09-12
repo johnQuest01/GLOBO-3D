@@ -60,6 +60,7 @@ interface GlobeSceneProps {
   beacons: Beacon[];
   meuClientId: string;
   onPedirConexao: (clientId: string) => void;
+  onAbrirGrupoDeSinais: (doGrupo: Beacon[]) => void;
   /** As duas pontas da conversa em andamento, quando ha uma. */
   arco: { de: THREE.Vector3; para: THREE.Vector3 } | null;
   arcoAtivo: boolean;
@@ -97,6 +98,7 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
     beacons,
     meuClientId,
     onPedirConexao,
+    onAbrirGrupoDeSinais,
     arco,
     arcoAtivo,
     alvoDaBusca,
@@ -209,6 +211,7 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
               beacons={beacons}
               meuClientId={meuClientId}
               onPedirConexao={onPedirConexao}
+              onAbrirGrupo={onAbrirGrupoDeSinais}
             />
           </>
         )}

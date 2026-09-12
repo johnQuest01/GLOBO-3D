@@ -33,9 +33,11 @@ import GlobeModeToggle, { GlobeMode } from '@/components/globe/ui/GlobeModeToggl
 import AdminLoginPopup from '@/components/globe/ui/AdminLoginPopup';
 import GlobeClock from '@/components/globe/ui/GlobeClock';
 import { latLonToVector3 } from '@/components/lib/utils';
+import type { Beacon } from '@/realtime/shared/protocol';
 import ChatOverlay from '@/components/globe/ui/ChatOverlay';
 import PeopleSearchPanel from '@/components/globe/ui/PeopleSearchPanel';
 import ConversasPanel from '@/components/globe/ui/ConversasPanel';
+import GrupoDeSinaisPanel from '@/components/globe/ui/GrupoDeSinaisPanel';
 import EscolherLugar from '@/components/globe/ui/EscolherLugar';
 import EscolherNickname from '@/components/globe/ui/EscolherNickname';
 
@@ -255,6 +257,8 @@ export default function GlobeCanvas() {
   const [conversasAbertas, setConversasAbertas] = useState(false);
   const [pedindoNickname, setPedindoNickname] = useState(false);
   const [pedindoLugar, setPedindoLugar] = useState(false);
+  /** Os sinais de um marcador agrupado, quando a pessoa toca nele. */
+  const [grupoDeSinais, setGrupoDeSinais] = useState<Beacon[] | null>(null);
 
   /**
    * Entrou na conversa sem ter nome público?
@@ -444,6 +448,7 @@ export default function GlobeCanvas() {
             beacons={realtime.estado.beacons}
             meuClientId={realtime.meuClientId}
             onPedirConexao={realtime.pedirConexao}
+            onAbrirGrupoDeSinais={setGrupoDeSinais}
             arco={arco}
             arcoAtivo={realtime.estado.estadoDaChamada === 'conectado'}
             alvoDaBusca={alvoDaBusca}
@@ -896,6 +901,18 @@ export default function GlobeCanvas() {
             <EscolherLugar
               aberto={pedindoLugar}
               onFechar={() => setPedindoLugar(false)}
+            />
+          </div>
+
+          <div className="pointer-events-auto">
+            <GrupoDeSinaisPanel
+              itens={grupoDeSinais}
+              onFechar={() => setGrupoDeSinais(null)}
+              meuClientId={realtime.meuClientId}
+              onChamar={(clientId) => {
+                setGrupoDeSinais(null);
+                realtime.pedirConexao(clientId);
+              }}
             />
           </div>
 

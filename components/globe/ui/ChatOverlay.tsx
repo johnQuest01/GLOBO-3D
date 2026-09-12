@@ -489,6 +489,25 @@ const ChatOverlay: FC<Props> = ({
               </React.Fragment>
             );
           })}
+
+          {/*
+            A BOLHA DE "DIGITANDO", no fim da conversa.
+            O aviso ja aparecia no cabecalho, mas o cabecalho fica longe de
+            onde os olhos estao: quem espera resposta olha para a ultima
+            mensagem. Aqui ele aparece no lugar onde a resposta vai nascer, com
+            a forma da bolha de quem esta escrevendo — e por isso empurra a
+            conversa para baixo, levando a rolagem junto.
+          */}
+          {digitando && (
+            <div className="flex justify-start">
+              <div className="flex items-center gap-1 rounded-2xl rounded-bl-md bg-white/10 px-3.5 py-3 ring-1 ring-white/10">
+                <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-white/60 [animation-delay:-0.3s]" />
+                <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-white/60 [animation-delay:-0.15s]" />
+                <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-white/60" />
+              </div>
+            </div>
+          )}
+
           <div ref={fim} />
         </div>
 
