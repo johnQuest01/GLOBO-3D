@@ -174,6 +174,8 @@ const ChatOverlay: FC<Props> = ({
   const [segundos, setSegundos] = useState(0);
   const [ampliada, setAmpliada] = useState<string | null>(null);
   const [anexosAbertos, setAnexosAbertos] = useState(false);
+  /** De onde a pessoa vem, em uma frase. Nulo enquanto nao se sabe. */
+  const [origem, setOrigem] = useState<string | null>(null);
 
   const fim = useRef<HTMLDivElement>(null);
   const campoRef = useRef<HTMLTextAreaElement>(null);
@@ -202,6 +204,45 @@ const ChatOverlay: FC<Props> = ({
   useEffect(() => {
     if (aberta && campoRef.current) crescerComOTexto(campoRef.current);
   }, [aberta]);
+
+  /*
+   * DE ONDE VEM ESTA PESSOA.
+   *
+   * Num aplicativo de globo, essa e' metade da graca: "e' da Russia" muda o
+   * tom de uma conversa entre desconhecidos antes da primeira palavra.
+   *
+   * Quem decide quanto aparece e' o servidor, pela vontade dela: perfil aberto
+   * devolve pais e cidade; reservado, so' o pais; privado, nada. Aqui nao ha'
+   * regra de privacidade nenhuma — so' se mostra o que chegou.
+   */
+  useEffect(() => {
+    if (!aberta || !nome) {
+      setOrigem(null);
+      return;
+    }
+    let vivo = true;
+    setOrigem(null);
+
+    void (async () => {
+      try {
+        const r = await fetch(`/api/users/perfil?de=${encodeURIComponent(nome)}`);
+        if (!r.ok || !vivo) return;
+        const d = (await r.json()) as {
+          perfil?: { lugar: string | null; pais: string | null };
+        };
+        if (!vivo) return;
+        // `lugar` ja' vem como "Cidade, Estado, Pais" quando o perfil e'
+        // aberto; senao sobra o pais sozinho.
+        setOrigem(d.perfil?.lugar ?? d.perfil?.pais ?? null);
+      } catch {
+        /* sem resposta: o cabecalho mostra o estado de presenca, como antes */
+      }
+    })();
+
+    return () => {
+      vivo = false;
+    };
+  }, [aberta, nome]);
 
   /**
    * Marca como lido só com a janela à vista.
@@ -484,9 +525,24 @@ const ChatOverlay: FC<Props> = ({
               aparecer ao lado dele. Quem está escrevendo está online — dizer
               as duas coisas gastaria uma linha para repetir uma delas.
             */}
+            {/*
+              TRES COISAS DISPUTAM ESTA LINHA, e a ordem nao e' arbitraria.
+
+              "Digitando" ganha de tudo: e' o que esta acontecendo agora.
+              Depois vem a origem, que e' o que situa a conversa. O estado de
+              presenca fica por ultimo — e nao se perde: ele continua no ponto
+              colorido ao lado da foto, que e' onde todo aplicativo de conversa
+              o coloca.
+
+              Uma linha so', de proposito: o cabecalho ja' e' alto no celular.
+            */}
             {digitando ? (
               <p className="truncate text-xs text-cyan-300">
                 digitando<span className="inline-block animate-pulse">…</span>
+              </p>
+            ) : origem ? (
+              <p className="truncate text-xs text-white/45">
+                Este contato é de {origem}
               </p>
             ) : (
               <p className="truncate text-xs text-white/45">

@@ -39,6 +39,11 @@ export interface PerfilPublico {
   avatarUrl: string | null;
   /** Só cidade/estado/país — nunca coordenada. */
   lugar: string | null;
+  /**
+   * Só o país. Sai mesmo em perfil reservado — ver o comentario em
+   * `perfilPublico`.
+   */
+  pais: string | null;
   visibilidade: Visibilidade;
 }
 
@@ -156,6 +161,7 @@ export async function perfilPublico(nickname: string): Promise<PerfilPublico | n
     idade: null,
     avatarUrl: null,
     lugar: null,
+    pais: null,
     visibilidade,
   };
 
@@ -163,6 +169,18 @@ export async function perfilPublico(nickname: string): Promise<PerfilPublico | n
   if (visibilidade === 'privado') return base;
 
   base.avatarUrl = (l.avatar_url as string) ?? null;
+
+  /*
+   * O PAÍS SAI MESMO NO PERFIL RESERVADO, e a cidade não.
+   *
+   * A escolha é sobre o que cada um revela. "É da Rússia" situa uma conversa
+   * entre desconhecidos — é o que um globo existe para dizer, e é grosso
+   * demais para localizar alguém: são 17 milhões de km². A cidade é outra
+   * coisa; ela fica guardada até a pessoa decidir abrir o perfil.
+   *
+   * Quem não quiser nem isso tem o nível privado, que não devolve nada.
+   */
+  base.pais = (l.country as string) ?? null;
   if (visibilidade === 'reservado') return base;
 
   // Público: o resto.
