@@ -1020,8 +1020,8 @@ export default function GlobeCanvas() {
                     presenca,
                   });
                 }}
-                onDenunciar={realtime.denunciar}
-                onBloquear={realtime.bloquear}
+                onDenunciar={(motivo) => realtime.denunciar(motivo, conversas.abertaCom ?? undefined)}
+                onBloquear={() => realtime.bloquear(conversas.abertaCom ?? undefined)}
               />
             </div>
           )}

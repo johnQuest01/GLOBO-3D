@@ -251,7 +251,16 @@ export interface ClientToServer {
   'signal': (p: { toSocketId: SocketId; data: unknown }) => void;
   'peer:hangup': (p: { peerSocketId: SocketId }) => void;
 
-  'report': (p: { targetClientId: ClientId; reason: string }) => void;
+  /**
+   * `targetNickname` vai junto pelo mesmo motivo do `block`: denunciar implica
+   * não querer mais contato, e sem a conta o corte valeria só para o navegador
+   * de quem foi denunciado.
+   */
+  'report': (p: {
+    targetClientId: ClientId;
+    targetNickname?: string;
+    reason: string;
+  }) => void;
   /**
    * `targetNickname` entra junto porque agora existem DOIS bloqueios: o antigo,
    * por clientId (o navegador), que continua valendo para o pedido de conexao

@@ -22,6 +22,7 @@
  *    a quem denunciar em grupo.
  */
 
+import { bloquearConta, userIdDoNickname } from './db.js';
 import type { RealtimeServer, RealtimeSocket } from './presence.js';
 import type { PresenceStore } from './store.js';
 
@@ -161,30 +162,73 @@ export function registerSafety(
   limitador: Limitador,
   log: (...args: unknown[]) => void,
 ): void {
-  socket.on('block', async ({ targetClientId }) => {
+  /**
+   * Bloquear.
+   *
+   * SÃO DOIS BLOQUEIOS, e por muito tempo só um deles existia de verdade.
+   *
+   * O primeiro é por `clientId` — o navegador. Vale para o pedido de conexão
+   * P2P, que é endereçado assim, e some quando a pessoa troca de aparelho.
+   *
+   * O segundo é por CONTA, e é o único que a caixa postal consulta. Ele não
+   * estava sendo gravado: o handler recebia o `targetNickname` e o descartava,
+   * e `bloquearConta` não era chamada por nada em lugar nenhum. O efeito, no
+   * uso, era o pior possível — a tela dizia "Pessoa bloqueada" e as mensagens
+   * dela continuavam chegando, porque a única coisa barrada era a chamada de
+   * vídeo. Quem bloqueou acreditava estar protegido e não estava.
+   *
+   * Agora os dois são gravados. O de conta só é possível com as duas contas
+   * identificadas — sem nickname de um dos lados, resta o do navegador, e a
+   * diferença é dita no log em vez de passar por sucesso completo.
+   */
+  socket.on('block', async ({ targetClientId, targetNickname }) => {
     const meu = socket.data.clientId;
-    if (!meu || typeof targetClientId !== 'string' || !targetClientId) return;
-    if (targetClientId === meu) return;
+    const meuId = socket.data.userId;
 
-    await store.block(meu, targetClientId);
-    log(`block  ${meu} -x- ${targetClientId}`);
+    if (typeof targetClientId === 'string' && targetClientId && targetClientId !== meu && meu) {
+      await store.block(meu, targetClientId);
+    }
+
+    if (meuId && typeof targetNickname === 'string' && targetNickname.trim()) {
+      const alvoId = await userIdDoNickname(targetNickname);
+      if (alvoId && alvoId !== meuId) {
+        await bloquearConta(meuId, alvoId);
+        log(`block  conta ${meuId.slice(0, 8)} -x- ${targetNickname}`);
+        return;
+      }
+    }
+
+    log(`block  ${meu ?? '?'} -x- ${targetClientId ?? '?'} (so' o aparelho)`);
   });
 
-  socket.on('report', async ({ targetClientId, reason }) => {
+  socket.on('report', async ({ targetClientId, targetNickname, reason }) => {
     const meu = socket.data.clientId;
-    if (!meu || typeof targetClientId !== 'string' || !targetClientId) return;
+    const meuId = socket.data.userId;
+    const temAlvo =
+      (typeof targetClientId === 'string' && targetClientId) ||
+      (typeof targetNickname === 'string' && targetNickname.trim());
+    if (!temAlvo) return;
     if (!permitir(socket, limitador, 'report')) return;
 
-    const total = (denuncias.get(targetClientId) ?? 0) + 1;
-    denuncias.set(targetClientId, total);
+    const chave = targetNickname?.trim().toLowerCase() || targetClientId;
+    const total = (denuncias.get(chave) ?? 0) + 1;
+    denuncias.set(chave, total);
 
-    // Denunciar implica não querer mais contato: bloqueia junto, senão a
-    // pessoa denuncia e continua recebendo convite de quem denunciou.
-    await store.block(meu, targetClientId);
+    /*
+     * Denunciar implica não querer mais contato, então bloqueia junto — e
+     * bloqueia A CONTA, e não só o navegador. Denunciar alguém e continuar
+     * recebendo mensagem dele é a pior resposta possível a quem acabou de
+     * dizer que foi incomodado.
+     */
+    if (meu && typeof targetClientId === 'string' && targetClientId && targetClientId !== meu) {
+      await store.block(meu, targetClientId);
+    }
+    if (meuId && typeof targetNickname === 'string' && targetNickname.trim()) {
+      const alvoId = await userIdDoNickname(targetNickname);
+      if (alvoId && alvoId !== meuId) await bloquearConta(meuId, alvoId);
+    }
 
-    log(
-      `report ${targetClientId} (${total} no total) por ${meu}: ${String(reason).slice(0, 120)}`,
-    );
+    log(`report ${chave} (${total} no total) por ${meu ?? meuId?.slice(0, 8) ?? '?'}: ${String(reason).slice(0, 120)}`);
   });
 }
 

@@ -767,22 +767,48 @@ export function useLiveRealtime(user: UserProfileData | null) {
    * denunciar seria obrigar a pessoa a continuar vendo quem ela acabou de
    * dizer que não quer ver.
    */
+  /*
+   * O NICKNAME É O QUE FAZ O BLOQUEIO VALER, e ele estava faltando nos dois.
+   *
+   * `parClientId` só existe durante uma chamada de vídeo. Como as duas funções
+   * desistiam na primeira linha sem ele, o botão "Bloquear" do chat de texto
+   * não fazia absolutamente nada — nem a confirmação na tela aparecia. Quem
+   * chama passa de quem é a conversa; é a tela que sabe disso, não o hook. E
+   * mesmo numa chamada, o que ia era o identificador do NAVEGADOR: bloqueio
+   * que a outra pessoa desfaz trocando de aparelho, e que a caixa postal nem
+   * consulta.
+   *
+   * Agora vai o nickname junto, que é a conta. O clientId continua indo quando
+   * existe, porque é por ele que o pedido de chamada é endereçado.
+   */
   const denunciar = useCallback(
-    (motivo: string) => {
-      if (!parClientId) return;
-      getSocket()?.emit('report', { targetClientId: parClientId, reason: motivo });
+    (motivo: string, nickname?: string) => {
+      const alvo = nickname?.trim() || null;
+      if (!parClientId && !alvo) return;
+      getSocket()?.emit('report', {
+        targetClientId: parClientId ?? '',
+        ...(alvo ? { targetNickname: alvo } : {}),
+        reason: motivo,
+      });
       encerrarChamada();
       setAviso('Denúncia registrada. Essa pessoa não vai mais te procurar.');
     },
     [parClientId, encerrarChamada],
   );
 
-  const bloquear = useCallback(() => {
-    if (!parClientId) return;
-    getSocket()?.emit('block', { targetClientId: parClientId });
-    encerrarChamada();
-    setAviso('Pessoa bloqueada.');
-  }, [parClientId, encerrarChamada]);
+  const bloquear = useCallback(
+    (nickname?: string) => {
+      const alvo = nickname?.trim() || null;
+      if (!parClientId && !alvo) return;
+      getSocket()?.emit('block', {
+        targetClientId: parClientId ?? '',
+        ...(alvo ? { targetNickname: alvo } : {}),
+      });
+      encerrarChamada();
+      setAviso(alvo ? `@${alvo} bloqueado. As mensagens não chegam mais.` : 'Pessoa bloqueada.');
+    },
+    [parClientId, encerrarChamada],
+  );
 
   const meuBeacon = useMemo(
     () => beacons.find((b) => b.clientId === meuClientIdRef.current) ?? null,
