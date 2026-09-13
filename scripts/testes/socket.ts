@@ -46,11 +46,26 @@ export class Aparelho {
       );
     }
 
+    /*
+     * TRINTA SEGUNDOS, e o número tem história.
+     *
+     * Eram quinze, e a suíte de estresse passou muitas vezes assim — mas só
+     * quando rodava sozinha. Rodando DEPOIS das outras oito, uma conexão entre
+     * as 64 estourava o prazo, sempre uma diferente. Medido: as mesmas 64
+     * sobem em 1,1 segundo com o processo limpo (pior caso 1063 ms), e uma
+     * conexão isolada leva 735 ms.
+     *
+     * Ou seja: o servidor dá conta, e o que estourava era o PROCESSO DE TESTE
+     * depois de umas quinhentas requisições — o agente HTTPS do Node e o limite
+     * de rajada do lado da Vercel. O prazo aqui existe para pegar travamento,
+     * não para afirmar latência; encurtá-lo só transformava a suíte numa moeda
+     * jogada para o alto, e uma suíte que falha ao acaso ensina a ignorá-la.
+     */
     const socket = io(this.urlRealtime, {
       auth: { token: r.corpo.token },
       transports: ["websocket"],
       reconnection: false,
-      timeout: 15000,
+      timeout: 30000,
     });
     this.socket = socket;
 

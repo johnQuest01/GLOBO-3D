@@ -107,6 +107,58 @@ function corDoLugar(pais: string | null): string {
   return `hsl(${(h >>> 0) % 360} 70% 58%)`;
 }
 
+/**
+ * A cor de um instante na linha do tempo.
+ *
+ * A FAIXA É UMA LINHA DO TEMPO, então o que ela deve codificar é TEMPO. O topo
+ * é o agora; descendo, vai-se para trás. A cor acompanha esse caminho: esmeralda
+ * no presente, violeta no passado, com todos os tons do meio no meio.
+ *
+ * POR QUE ESTAS DUAS CORES. Elas são quase opostas no círculo, então a
+ * passagem entre uma e outra atravessa muito matiz — e é isso que dá ao olho a
+ * sensação de percurso, e não de duas categorias. Um degradê entre cores
+ * vizinhas pareceria só uma cor mal impressa.
+ *
+ * O QUE ERA ANTES: a cor do país. Ela contava algo verdadeiro, mas contava no
+ * eixo errado — numa barra vertical ordenada por tempo, cor que pula sem ordem
+ * vira ruído. O país não se perdeu: ele voltou como o brilho de quem está
+ * selecionado e como a marca no cartão, que é onde há espaço para lê-lo.
+ *
+ * A ORIENTAÇÃO É A DE UM RIO, e não a de uma lista: o PASSADO fica em cima, o
+ * FUTURO embaixo, e o presente no meio — porque é o meio que a pessoa está
+ * olhando. A faixa desliza para manter o agora centrado, então o gesto de
+ * escolher outra publicação é o de mover o tempo, e não o de rolar uma barra.
+ *
+ * `t` vai de 0 (o mais antigo, no alto) a 1 (o mais recente, embaixo).
+ */
+function corDoTempo(t: number, viva: boolean): string {
+  const p = Math.max(0, Math.min(1, t));
+  // 278° é o violeta do passado; 152° o esmeralda de onde o tempo vem. O
+  // caminho entre eles atravessa azul e ciano, e é essa travessia que dá ao
+  // olho a sensação de percurso em vez de duas categorias.
+  const matiz = 278 - p * 126;
+  // O que está perto do agora é mais claro e mais saturado; o passado vai
+  // apagando, que é o que a memória faz.
+  const luz = viva ? 66 : 50 - (1 - p) * 14;
+  const sat = viva ? 85 : 58 - (1 - p) * 16;
+  return `hsl(${matiz.toFixed(0)} ${sat.toFixed(0)}% ${luz.toFixed(0)}%)`;
+}
+
+/**
+ * Os limites da altura de um segmento.
+ *
+ * A ALTURA NÃO É FIXA: ela sai da divisão entre a janela e quantas publicações
+ * há. Com quatro, as barras são grossas e a faixa parece um punhado de marcos;
+ * com quarenta, elas se repartem em traços finos e a faixa vira o que deveria
+ * ser — uma régua de tempo com densidade.
+ *
+ * O TETO EXISTE para poucas publicações não virarem três tarjas enormes, e o
+ * PISO para muitas não virarem uma mancha sem alvo: abaixo de uns seis pixels
+ * ninguém acerta o toque, e a faixa deixa de ser clicável para virar enfeite.
+ */
+const SEGMENTO_MAX_PX = 30;
+const SEGMENTO_MIN_PX = 6;
+
 /** "faltam 3 h" — o prazo é a informação mais útil que um post carrega aqui. */
 function tempoQueResta(expiraEm: string): string {
   const ms = Date.parse(expiraEm) - Date.now();
@@ -210,6 +262,134 @@ const MidiaDoPost: FC<{
   );
 };
 
+/**
+ * A publicação dentro do cartão do lugar, com o globo focado atrás.
+ *
+ * O VÍDEO TOCA COM SOM AQUI, e no feed não. A diferença é o gesto: no feed o
+ * vídeo começa sozinho enquanto a pessoa rola, e som que aparece sem ser pedido
+ * é o que faz gente fechar aplicativo no ônibus. Aqui ela TOCOU no botão do
+ * lugar — pediu para ver aquilo —, e som pedido é outra coisa.
+ *
+ * O NAVEGADOR PODE RECUSAR MESMO ASSIM. A política de reprodução automática é
+ * do navegador e muda entre eles; quando ela barra, o vídeo volta mudo e um
+ * botão aparece, em vez de o vídeo simplesmente não começar. Um vídeo parado
+ * sem explicação parece defeito.
+ */
+const PublicacaoNoCartao: FC<{ post: Post }> = ({ post }) => {
+  const [url, setUrl] = useState<string | null>(null);
+  const [mudo, setMudo] = useState(false);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  useEffect(() => {
+    if (!post.midiaChave || post.kind === "texto") return;
+    let vivo = true;
+    setUrl(null);
+    void urlDaMidia(post.midiaChave).then((u) => {
+      if (vivo) setUrl(u);
+    });
+    return () => {
+      vivo = false;
+    };
+  }, [post.midiaChave, post.kind]);
+
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v || !url) return;
+    v.muted = false;
+    v.volume = 1;
+    void v
+      .play()
+      .then(() => setMudo(false))
+      .catch(() => {
+        // Barrado: volta mudo, mas TOCANDO — e o botão explica o resto.
+        v.muted = true;
+        setMudo(true);
+        void v.play().catch(() => undefined);
+      });
+  }, [url]);
+
+  /*
+   * PUBLICAÇÃO DE TEXTO TAMBÉM APARECE, e não some porque não tem arquivo. Ela
+   * vira um cartão com a cor do lugar e o texto legível — o que a pessoa pediu
+   * ao tocar no botão foi ver a publicação, e texto é publicação.
+   */
+  if (post.kind === "texto" || !post.midiaChave) {
+    return (
+      <div
+        className="mb-2.5 flex min-h-[104px] items-center justify-center rounded-xl px-3 py-3"
+        style={{
+          background: `linear-gradient(150deg, ${corDoLugar(post.pais)}33, rgb(8 12 22 / 0.9))`,
+        }}
+      >
+        <p className="line-clamp-4 text-center text-[13px] font-medium leading-snug text-white/90">
+          {post.body}
+        </p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="relative mb-2.5 overflow-hidden rounded-xl bg-black/60">
+      {url && post.kind === "video" && (
+        <video
+          ref={videoRef}
+          src={url}
+          loop
+          playsInline
+          controls
+          className="max-h-52 w-full object-contain"
+        />
+      )}
+      {url && post.kind === "imagem" && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={url}
+          alt={`Publicação de ${post.autor}`}
+          className="max-h-52 w-full object-cover"
+        />
+      )}
+      {!url && (
+        <div
+          className="h-[104px] w-full"
+          style={{
+            background: `linear-gradient(150deg, ${corDoLugar(post.pais)}33, rgb(8 12 22 / 0.9))`,
+          }}
+        />
+      )}
+
+      {mudo && post.kind === "video" && (
+        <button
+          type="button"
+          onClick={() => {
+            const v = videoRef.current;
+            if (!v) return;
+            v.muted = false;
+            void v
+              .play()
+              .then(() => setMudo(false))
+              .catch(() => undefined);
+          }}
+          className="absolute right-2 top-2 flex items-center gap-1.5 rounded-full bg-slate-950/80 px-2.5 py-1.5
+                     text-[11px] font-medium text-white ring-1 ring-white/20 backdrop-blur"
+        >
+          <svg
+            width="13"
+            height="13"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.9"
+          >
+            <path d="M4 10v4h3l5 4V6l-5 4H4z" strokeLinejoin="round" />
+            <path d="M17 9a4 4 0 0 1 0 6" strokeLinecap="round" />
+          </svg>
+          som
+        </button>
+      )}
+    </div>
+  );
+};
+
 // ---------------------------------------------------------------------------
 // A tela inteira
 // ---------------------------------------------------------------------------
@@ -247,6 +427,27 @@ const LinhaDoTempo: FC<Props> = ({
   const [menuDoPost, setMenuDoPost] = useState<Post | null>(null);
 
   const rolagemRef = useRef<HTMLDivElement | null>(null);
+
+  /**
+   * A altura da janela da faixa, para repartir os segmentos.
+   *
+   * MEDIDA, E NÃO SUPOSTA. A janela muda com a barra do navegador no celular,
+   * com a rotação da tela e com o teclado; um número chutado ficaria certo num
+   * aparelho e errado nos outros.
+   */
+  const janelaRef = useRef<HTMLDivElement | null>(null);
+  const [alturaDaJanela, setAlturaDaJanela] = useState(0);
+
+  useEffect(() => {
+    const alvo = janelaRef.current;
+    if (!alvo) return;
+    const obs = new ResizeObserver(([e]) => {
+      if (e) setAlturaDaJanela(e.contentRect.height);
+    });
+    obs.observe(alvo);
+    setAlturaDaJanela(alvo.getBoundingClientRect().height);
+    return () => obs.disconnect();
+  }, [minimizado]);
 
   // --- Carregar --------------------------------------------------------------
 
@@ -481,31 +682,176 @@ const LinhaDoTempo: FC<Props> = ({
   // MINIMIZADO: a faixa à direita, o globo atrás
   // -------------------------------------------------------------------------
 
+  /*
+   * QUANTO CADA PUBLICAÇÃO OCUPA NA FAIXA.
+   *
+   * A conta é a janela dividida pelo número de publicações, presa entre o piso
+   * e o teto. É o que faz a faixa engrossar quando há pouco e se repartir em
+   * traços finos quando há muito — sem nunca ficar pequena demais para o dedo
+   * nem grande demais para caber.
+   *
+   * O vão acompanha a barra em vez de ser fixo: quatro pixels entre barras de
+   * trinta é um respiro; entre barras de seis é metade do desenho.
+   */
+  const passoBruto =
+    alturaDaJanela > 0 && posts.length > 0
+      ? alturaDaJanela / posts.length
+      : SEGMENTO_MAX_PX;
+  const passoPx = Math.max(
+    SEGMENTO_MIN_PX + 2,
+    Math.min(SEGMENTO_MAX_PX + 4, passoBruto),
+  );
+  const vaoPx = Math.max(2, Math.round(passoPx * 0.13));
+  const segmentoPx = Math.max(SEGMENTO_MIN_PX, passoPx - vaoPx);
+
   if (minimizado) {
     return (
       <div className="pointer-events-none fixed inset-0 z-[168]">
-        {/* A faixa. Cada segmento é uma publicação; a cor é do país. */}
-        <div className="pointer-events-auto absolute right-0 top-0 flex h-full w-9 flex-col gap-[2px] py-2 pr-1.5">
-          {posts.map((p, i) => (
-            <button
-              key={p.id}
-              type="button"
-              onClick={() => escolherNaFaixa(i)}
-              title={p.lugar ?? p.pais ?? ""}
-              aria-label={`Ver ${p.lugar ?? "esta publicação"} no globo`}
-              className="group relative min-h-[8px] flex-1 rounded-full transition-all"
+        {/*
+          A LINHA DO TEMPO, de verdade.
+
+          O topo é o agora e a base é o mais antigo que a lista tem. A cor
+          percorre esse caminho — esmeralda no presente, violeta no passado — e
+          uma luz desce por ela devagar, de novo e de novo, que é o que faz a
+          faixa parecer uma corrente e não uma régua.
+
+          O SEGMENTO ESCOLHIDO É O PRESENTE: mais largo, mais claro, com um halo
+          na cor do LUGAR daquela publicação. É assim que o país continua sendo
+          dito sem voltar a bagunçar o eixo do tempo.
+        */}
+        <div className="pointer-events-auto absolute right-0 top-0 flex h-full w-[26px] flex-col items-stretch pr-1.5">
+          {/*
+            OS RÓTULOS FICAM DE PÉ. Deitados, "antes" tem 22px de largura e a
+            coluna tem 20 — o texto era cortado no meio. Em pé eles cabem, e de
+            quebra passam a parecer o que são: a marcação de um eixo.
+          */}
+          <span
+            className="flex justify-center pt-2 text-[8px] font-semibold uppercase tracking-[0.18em] text-violet-300/60"
+            style={{ writingMode: "vertical-rl" }}
+          >
+            antes
+          </span>
+
+          {/*
+            A JANELA DO TEMPO. O que não cabe some nas bordas, e é isso que faz
+            a faixa parecer um trecho de algo maior em vez de uma lista inteira
+            espremida.
+          */}
+          <div
+            ref={janelaRef}
+            className="relative my-1 min-h-0 flex-1 overflow-hidden"
+          >
+            {/* O agora: duas marcas fixas no meio, por onde o tempo passa. */}
+            <span
+              aria-hidden="true"
+              className="pointer-events-none absolute left-0 right-0 top-1/2 z-10 -translate-y-1/2"
+            >
+              <span className="absolute -left-[3px] top-1/2 h-[1.5px] w-[5px] -translate-y-1/2 rounded-full bg-white/70" />
+              <span className="absolute -right-[3px] top-1/2 h-[1.5px] w-[5px] -translate-y-1/2 rounded-full bg-white/70" />
+            </span>
+
+            {/* A corrente, descendo do passado para o futuro. */}
+            <span
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-0 opacity-60"
               style={{
-                background: cores[i],
-                opacity: i === atual ? 1 : 0.38,
-                transform: i === atual ? "scaleX(1)" : "scaleX(0.55)",
+                background:
+                  "linear-gradient(180deg, transparent 0%, rgb(255 255 255 / 0.45) 12%, transparent 26%)",
+                animation: "correnteDoTempo 6s linear infinite",
+                mixBlendMode: "overlay",
               }}
             />
-          ))}
+
+            {/*
+              A coluna desliza para pôr o segmento escolhido no centro. O `top:
+              50%` leva o topo dela ao meio da janela, e a translação recua até
+              o centro do segmento ativo — sem precisar medir nada em
+              JavaScript, o que manteria a animação a um quadro de atraso.
+            */}
+            <div
+              className="absolute inset-x-0 transition-transform duration-500 ease-out"
+              style={{
+                top: "50%",
+                transform: `translateY(-${
+                  (posts.length - 1 - atual) * passoPx + segmentoPx / 2
+                }px)`,
+              }}
+            >
+              {posts
+                .map((p, i) => ({ p, i }))
+                .reverse()
+                .map(({ p, i }, posicao) => {
+                  const t = posts.length > 1 ? posicao / (posts.length - 1) : 1;
+                  const ativo = i === atual;
+                  return (
+                    <button
+                      key={p.id}
+                      type="button"
+                      onClick={() => escolherNaFaixa(i)}
+                      title={`${p.lugar ?? p.pais ?? ""} · ${tempoQueResta(p.expiraEm)}`}
+                      aria-label={`Ver ${p.lugar ?? "esta publicação"} no globo`}
+                      aria-current={ativo ? "true" : undefined}
+                      className="block w-full rounded-full transition-all duration-300 ease-out"
+                      style={{
+                        height: segmentoPx,
+                        marginBottom: vaoPx,
+                        background: corDoTempo(t, ativo),
+                        transform: ativo ? "scaleX(1)" : "scaleX(0.44)",
+                        opacity: ativo ? 1 : 0.32 + t * 0.3,
+                        // O halo é da cor do LUGAR: é onde o país volta a ser
+                        // dito, sem bagunçar o eixo do tempo.
+                        boxShadow: ativo
+                          ? `0 0 0 1.5px rgb(255 255 255 / 0.5), 0 0 18px 3px ${cores[i]}`
+                          : "none",
+                        animation: ativo
+                          ? "pulsoDoPresente 2.6s ease-in-out infinite"
+                          : undefined,
+                      }}
+                    />
+                  );
+                })}
+            </div>
+          </div>
+
+          <span
+            className="flex justify-center pb-2 text-[8px] font-semibold uppercase tracking-[0.18em] text-emerald-300/70"
+            style={{ writingMode: "vertical-rl" }}
+          >
+            agora
+          </span>
         </div>
+
+        <style>{`
+          @keyframes correnteDoTempo {
+            from { transform: translateY(-40%); }
+            to   { transform: translateY(140%); }
+          }
+          @keyframes pulsoDoPresente {
+            0%, 100% { filter: brightness(1); }
+            50%      { filter: brightness(1.35); }
+          }
+          /*
+            QUEM PEDIU MENOS MOVIMENTO RECEBE MENOS MOVIMENTO. Uma faixa que
+            pulsa sem parar na borda da tela e' desconfortavel para quem tem
+            sensibilidade a movimento, e o navegador ja' sabe dizer isso.
+          */
+          @media (prefers-reduced-motion: reduce) {
+            [style*="correnteDoTempo"], [style*="pulsoDoPresente"] {
+              animation: none !important;
+            }
+          }
+        `}</style>
 
         {/* O cartão do lugar focado. */}
         {postAtual && (
-          <div className="pointer-events-auto absolute bottom-4 left-4 right-14 rounded-2xl bg-slate-950/80 p-3 ring-1 ring-white/15 backdrop-blur-xl sm:right-auto sm:w-80">
+          <div className="pointer-events-auto absolute bottom-4 left-4 right-[38px] rounded-2xl bg-slate-950/80 p-3 ring-1 ring-white/15 backdrop-blur-xl sm:right-auto sm:w-80">
+            {/*
+              A PUBLICAÇÃO VEM ANTES DO NOME DO LUGAR. Quem tocou no botão
+              queria ver aquilo; o nome do lugar é a legenda, e legenda vem
+              depois do que ela legenda.
+            */}
+            <PublicacaoNoCartao post={postAtual} />
+
             <div className="flex items-center gap-2">
               <span
                 className="h-8 w-1.5 shrink-0 rounded-full"
@@ -545,7 +891,9 @@ const LinhaDoTempo: FC<Props> = ({
               </button>
             </div>
 
-            {postAtual.body && (
+            {/* A legenda só aparece quando há mídia: num post de texto ela
+                repetiria o que a miniatura acabou de mostrar. */}
+            {postAtual.body && postAtual.kind !== "texto" && (
               <p className="mt-2 line-clamp-2 text-[12px] leading-snug text-white/65">
                 {postAtual.body}
               </p>
