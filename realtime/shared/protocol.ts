@@ -75,6 +75,8 @@ export interface Beacon {
    * cliente sem cerimonia — mentir nele nao da' acesso a coisa nenhuma.
    */
   pais?: string;
+  /** O estado, pelo mesmo motivo do pais: e' a camada mais perto de todas. */
+  estado?: string;
   /** Epoch em milissegundos. Passou disso, o beacon não existe mais. */
   expiresAt: number;
 }
@@ -141,6 +143,8 @@ export const MsgError = {
   SEM_CONTA: 'SEM_CONTA',
   SEM_DESTINATARIO: 'SEM_DESTINATARIO',
   BLOQUEADO: 'BLOQUEADO',
+  /** A pessoa nao aceita primeira mensagem de quem ela nao conhece. */
+  NAO_ACEITA: 'NAO_ACEITA',
   GRANDE_DEMAIS: 'GRANDE_DEMAIS',
   INDISPONIVEL: 'INDISPONIVEL',
 } as const;
@@ -207,7 +211,12 @@ export interface ClientToServer {
    */
   'directory:find': (p: { nicknames: string[] }) => void;
 
-  'beacon:raise': (p: { topic?: string; ttlSec: number; pais?: string }) => void;
+  'beacon:raise': (p: {
+    topic?: string;
+    ttlSec: number;
+    pais?: string;
+    estado?: string;
+  }) => void;
   /**
    * "Quem quer conversar agora?" — a busca dos sinais do mundo.
    *
@@ -222,6 +231,16 @@ export interface ClientToServer {
    * segundos, entao mil pessoas perguntando ao mesmo tempo custam uma leitura.
    */
   'beacon:find': (p: { pais?: string; limite?: number }) => void;
+
+  /**
+   * "Quem eu deveria conhecer agora?"
+   *
+   * Diferente de `beacon:find`, que devolve uma lista crua. Aqui o servidor
+   * ESCOLHE: gente do seu estado primeiro, depois do seu pais, e sempre alguns
+   * do resto do mundo — porque o globo existe para isso, e uma lista so' de
+   * vizinhos nao precisaria de globo nenhum.
+   */
+  'sugestoes:find': (p: { estado?: string; pais?: string }) => void;
   'beacon:lower': () => void;
 
   'connect:request': (p: { targetClientId: ClientId }) => void;
@@ -333,6 +352,12 @@ export interface ServerToClient {
   'beacon:new': (b: Beacon) => void;
   /** A resposta de `beacon:find`: os sinais do mundo, ja' limitados. */
   'beacon:list': (p: { sinais: Beacon[]; total: number }) => void;
+  /** A resposta de `sugestoes:find`, ja' escolhida e embaralhada. */
+  'sugestoes:list': (p: {
+    doEstado: Beacon[];
+    doPais: Beacon[];
+    doMundo: Beacon[];
+  }) => void;
   'beacon:gone': (p: { beaconId: string }) => void;
 
   'connect:incoming': (p: {

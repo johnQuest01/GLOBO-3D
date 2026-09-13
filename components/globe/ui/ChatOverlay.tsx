@@ -88,6 +88,7 @@ const VIDEO_MAX_BYTES = 25 * 1024 * 1024;
 const ERRO_EM_PORTUGUES: Record<string, string> = {
   SEM_DESTINATARIO: 'Esse nickname não existe mais.',
   BLOQUEADO: 'Vocês não podem mais se falar.',
+  NAO_ACEITA: 'Essa pessoa só recebe mensagem de quem ela já conhece.',
   GRANDE_DEMAIS: 'Conteúdo grande demais.',
   INDISPONIVEL: 'As mensagens estão indisponíveis agora.',
   SEM_CONTA: 'Escolha um nickname para poder conversar.',
@@ -120,6 +121,29 @@ const Anexo: FC<{
     <input type="file" accept={accept} onChange={onChange} className="hidden" />
   </label>
 );
+
+/**
+ * O campo cresce com o que foi escrito, em vez de rolar por dentro.
+ *
+ * COM `rows={1}` E ALTURA FIXA, a segunda linha nascia dentro de uma barrinha
+ * de rolagem: o texto some para cima, a pessoa perde de vista o que escreveu, e
+ * o campo fica com um retangulo apertado no meio da tela. Relatado assim —
+ * "um scroll dentro que quebra o app deixando feio".
+ *
+ * A conta e' direta: zera a altura para o navegador recalcular o `scrollHeight`
+ * (sem zerar, ele nunca DIMINUI quando a pessoa apaga), e depois assume esse
+ * valor ate' o teto.
+ *
+ * O TETO EXISTE porque um campo que cresce sem limite acabaria comendo a
+ * conversa inteira. Passando dele — algo como oito linhas — a rolagem interna
+ * volta, e ai' ela e' o comportamento certo.
+ */
+const ALTURA_MAX_PX = 160;
+
+function crescerComOTexto(campo: HTMLTextAreaElement): void {
+  campo.style.height = 'auto';
+  campo.style.height = `${Math.min(campo.scrollHeight, ALTURA_MAX_PX)}px`;
+}
 
 const ChatOverlay: FC<Props> = ({
   aberta,
@@ -392,7 +416,11 @@ const ChatOverlay: FC<Props> = ({
 
   const enviar = (e: React.FormEvent) => {
     e.preventDefault();
-    if (onEnviarTexto(texto)) setTexto('');
+    if (onEnviarTexto(texto)) {
+      setTexto('');
+      // Sem isto o campo ficaria alto e vazio depois de uma mensagem longa.
+      if (campoRef.current) crescerComOTexto(campoRef.current);
+    };
   };
 
   return (
@@ -806,6 +834,7 @@ const ChatOverlay: FC<Props> = ({
                       onChange={(e) => {
                         setTexto(e.target.value);
                         if (e.target.value) onDigitando?.();
+                        crescerComOTexto(e.target);
                       }}
                       onKeyDown={(e) => {
                         // Enter manda; Shift+Enter pula linha. Sem isto, um
@@ -828,7 +857,7 @@ const ChatOverlay: FC<Props> = ({
                         focado para a vista sozinho; o que o codigo acrescentava
                         era so' a espera.
                       */
-                      className="max-h-32 min-h-[2.9rem] min-w-0 flex-1 resize-none rounded-2xl bg-white/10
+                      className="min-h-[3rem] min-w-0 flex-1 resize-none overflow-y-auto rounded-2xl bg-white/10
                                  px-4 py-3 text-[16px] leading-snug text-white placeholder-white/40
                                  outline-none ring-1 ring-white/10 focus:ring-cyan-400/50"
                     />

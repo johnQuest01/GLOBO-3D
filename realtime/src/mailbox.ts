@@ -22,7 +22,9 @@ import { MsgError, PAYLOAD_MAX, type Envelope } from '../shared/protocol.js';
 import { cofreLigado } from './cofre.js';
 import {
   bancoLigado,
+  aceitaDesconhecidos,
   confirmarLeitura,
+  jaConversaram,
   desde,
   confirmarEntrega,
   estaBloqueado,
@@ -144,6 +146,24 @@ export function registerMailbox(
     }
 
     if (destinoId === meuId) return;
+
+    /*
+     * A PORTA DE QUEM NAO QUER SER PROCURADO.
+     *
+     * So' vale para o PRIMEIRO contato: quem ja' trocou mensagem com voce
+     * continua trocando. Fechar uma conversa existente seria outra coisa —
+     * isso e' o bloqueio, e ele e' explicito.
+     *
+     * As duas consultas custam, entao elas so' acontecem quando a conversa
+     * ainda nao existe: a de historico responde primeiro e, na esmagadora
+     * maioria das mensagens, encerra o assunto.
+     */
+    if (!(await jaConversaram(meuId, destinoId))) {
+      if (!(await aceitaDesconhecidos(destinoId))) {
+        socket.emit('msg:failed', { msgId, code: MsgError.NAO_ACEITA });
+        return;
+      }
+    }
 
     if (await estaBloqueado(meuId, destinoId)) {
       // Bloqueado e inexistente respondem DIFERENTE aqui, ao contrário do que

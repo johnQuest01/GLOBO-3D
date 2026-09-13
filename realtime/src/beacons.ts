@@ -77,6 +77,9 @@ export function registerBeacons(
       ...(typeof p?.pais === 'string' && p.pais.trim()
         ? { pais: p.pais.trim().slice(0, 60) }
         : {}),
+      ...(typeof p?.estado === 'string' && p.estado.trim()
+        ? { estado: p.estado.trim().slice(0, 60) }
+        : {}),
       lat: presence.lat,
       lon: presence.lon,
       regionKey: presence.regionKey,
@@ -121,6 +124,16 @@ export function registerBeacons(
 
     const resposta = await sinaisDoMundo(store, pais, limite);
     socket.emit('beacon:list', resposta);
+  });
+
+  socket.on('sugestoes:find', async (p) => {
+    if (!permitir(socket, limitador, 'beacon:find')) return;
+
+    const estado = typeof p?.estado === 'string' ? p.estado.trim().slice(0, 60) : '';
+    const pais = typeof p?.pais === 'string' ? p.pais.trim().slice(0, 60) : '';
+    const meuClientId = socket.data.clientId ?? '';
+
+    socket.emit('sugestoes:list', await sugerir(store, estado, pais, meuClientId));
   });
 
   socket.on('beacon:lower', async () => {
@@ -270,4 +283,77 @@ async function sinaisDoMundo(
   }
 
   return dados;
+}
+
+// ---------------------------------------------------------------------------
+// Recomendacao
+// ---------------------------------------------------------------------------
+
+/** Quantos de cada camada a pessoa recebe. */
+const DO_ESTADO = 6;
+const DO_PAIS = 6;
+const DO_MUNDO = 8;
+
+/**
+ * O tamanho do bolo de onde a escolha sai.
+ *
+ * MAIOR QUE O QUE SERA' MOSTRADO, e e' ai' que mora a defesa contra
+ * sobrecarregar alguem: se o servidor lesse exatamente seis e mostrasse seis,
+ * todas as pessoas do estado receberiam a MESMA lista, e as seis primeiras
+ * levariam todos os convites do dia. Lendo quarenta e sorteando seis, cada
+ * pessoa ve' um conjunto diferente e a atencao se espalha.
+ */
+const BOLO = 40;
+
+/** Embaralha no lugar (Fisher-Yates). */
+function embaralhar<T>(lista: T[]): T[] {
+  for (let i = lista.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [lista[i], lista[j]] = [lista[j]!, lista[i]!];
+  }
+  return lista;
+}
+
+/**
+ * Escolhe quem mostrar, em tres camadas.
+ *
+ * PERTO PRIMEIRO, porque conversa com quem esta no mesmo estado tem fuso,
+ * lingua e assunto em comum — e' onde a conversa tem mais chance de acontecer.
+ * MAS SEMPRE COM GENTE DE LONGE, porque e' isso que um globo promete, e uma
+ * lista so' de vizinhos nao precisaria de globo nenhum.
+ *
+ * SEM REPETIR entre as camadas: quem ja' apareceu como "do seu estado" nao
+ * aparece de novo como "do seu pais".
+ */
+async function sugerir(
+  store: PresenceStore,
+  estado: string,
+  pais: string,
+  meuClientId: string,
+): Promise<{ doEstado: Beacon[]; doPais: Beacon[]; doMundo: Beacon[] }> {
+  const [candidatosEstado, candidatosPais, candidatosMundo] = await Promise.all([
+    estado ? store.listBeaconsDoEstado(estado, BOLO) : Promise.resolve([]),
+    pais ? store.listBeaconsGlobais(BOLO, pais) : Promise.resolve([]),
+    store.listBeaconsGlobais(BOLO),
+  ]);
+
+  const jaVistos = new Set<string>([meuClientId]);
+
+  const escolher = (candidatos: Beacon[], quantos: number): Beacon[] => {
+    const novos = candidatos.filter((b) => !jaVistos.has(b.clientId));
+    const sorteados = embaralhar(novos).slice(0, quantos);
+    for (const b of sorteados) jaVistos.add(b.clientId);
+    return sorteados;
+  };
+
+  const doEstado = escolher(candidatosEstado, DO_ESTADO);
+  const doPais = escolher(candidatosPais, DO_PAIS);
+  // O mundo entra por ultimo e ja' sem quem apareceu perto — senao, para quem
+  // mora num lugar movimentado, "o mundo" seria a propria cidade de novo.
+  const doMundo = escolher(
+    candidatosMundo.filter((b) => !pais || b.pais !== pais),
+    DO_MUNDO,
+  );
+
+  return { doEstado, doPais, doMundo };
 }

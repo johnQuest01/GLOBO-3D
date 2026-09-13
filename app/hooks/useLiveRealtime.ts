@@ -131,6 +131,13 @@ export function useLiveRealtime(user: UserProfileData | null) {
   const [sinaisDoMundo, setSinaisDoMundo] = useState<Beacon[]>([]);
   const [totalDeSinais, setTotalDeSinais] = useState(0);
 
+  /** As recomendacoes: perto primeiro, e sempre com gente de longe junto. */
+  const [sugestoes, setSugestoes] = useState<{
+    doEstado: Beacon[];
+    doPais: Beacon[];
+    doMundo: Beacon[];
+  }>({ doEstado: [], doPais: [], doMundo: [] });
+
   const peerRef = useRef<PeerConnection | null>(null);
   const peerSocketIdRef = useRef<string | null>(null);
   const meuClientIdRef = useRef<string>('');
@@ -335,6 +342,7 @@ export function useLiveRealtime(user: UserProfileData | null) {
     };
 
     socket.on('beacon:list', aoListarSinais);
+    socket.on('sugestoes:list', setSugestoes);
     socket.on('beacon:gone', aoBeaconSumir);
     socket.on('directory:result', aoResultadoDaBusca);
     socket.on('connect:incoming', aoConviteChegar);
@@ -383,6 +391,7 @@ export function useLiveRealtime(user: UserProfileData | null) {
       socket.off('presence:update', aoAtualizarPresenca);
       socket.off('beacon:new', aoBeaconNovo);
       socket.off('beacon:list', aoListarSinais);
+      socket.off('sugestoes:list', setSugestoes);
       socket.off('beacon:gone', aoBeaconSumir);
       socket.off('directory:result', aoResultadoDaBusca);
       socket.off('connect:incoming', aoConviteChegar);
@@ -576,15 +585,29 @@ export function useLiveRealtime(user: UserProfileData | null) {
         topic,
         ttlSec,
         ...(user?.country ? { pais: user.country } : {}),
+        ...(user?.state ? { estado: user.state } : {}),
       });
     },
-    [user?.country],
+    [user?.country, user?.state],
   );
 
   /** "Quem quer conversar agora?" — pergunta ao servidor, mundo inteiro. */
   const buscarSinais = useCallback((pais?: string) => {
     getSocket()?.emit('beacon:find', pais ? { pais } : {});
   }, []);
+
+  /**
+   * "Quem eu deveria conhecer?" — quem escolhe e' o servidor.
+   *
+   * O estado e o pais vao daqui porque e' o perfil desta pessoa que define as
+   * camadas. O servidor nao guarda isso na conexao.
+   */
+  const buscarSugestoes = useCallback(() => {
+    getSocket()?.emit('sugestoes:find', {
+      ...(user?.state ? { estado: user.state } : {}),
+      ...(user?.country ? { pais: user.country } : {}),
+    });
+  }, [user?.state, user?.country]);
 
   const apagarBeacon = useCallback(() => {
     getSocket()?.emit('beacon:lower');
@@ -800,6 +823,8 @@ export function useLiveRealtime(user: UserProfileData | null) {
     acenderBeacon,
     apagarBeacon,
     buscarSinais,
+    buscarSugestoes,
+    sugestoes,
     sinaisDoMundo,
     totalDeSinais,
     pedirConexao,

@@ -250,6 +250,40 @@ export async function confirmarLeitura(
   }));
 }
 
+/**
+ * Esta pessoa aceita a PRIMEIRA mensagem de quem ela nao conhece?
+ *
+ * Pergunta so' no primeiro contato — ver o uso em mailbox.ts. Quem ja' conversou
+ * uma vez continua conversando, porque o filtro e' sobre abrir a porta, nao
+ * sobre quem ja' esta dentro.
+ */
+export async function aceitaDesconhecidos(userId: string): Promise<boolean> {
+  if (!sql) return true;
+  const linhas = (await sql`
+    select aberto_a_conversas from users where id = ${userId}::uuid limit 1
+  `) as Record<string, unknown>[];
+  // Na duvida, aceita: uma conta sem resposta nao pode virar uma caixa fechada
+  // sem que ninguem tenha pedido isso.
+  return linhas.length === 0 ? true : Boolean(linhas[0]!.aberto_a_conversas);
+}
+
+/**
+ * Ja' existe conversa entre os dois?
+ *
+ * `limit 1` e os dois indices por data resolvem isso sem varrer: a pergunta e'
+ * "existe alguma", e nao "quantas".
+ */
+export async function jaConversaram(a: string, b: string): Promise<boolean> {
+  if (!sql) return false;
+  const linhas = (await sql`
+    select 1 from envelopes
+     where (from_user_id = ${a}::uuid and to_user_id = ${b}::uuid)
+        or (from_user_id = ${b}::uuid and to_user_id = ${a}::uuid)
+     limit 1
+  `) as unknown[];
+  return linhas.length > 0;
+}
+
 /** Quantas mensagens ainda nao foram entregues a nenhum aparelho dela. */
 export async function quantosEsperando(userId: string): Promise<number> {
   if (!sql) return 0;

@@ -323,6 +323,27 @@ export async function removerInscricao(endpoint: string, userId: string): Promis
      where endpoint = ${endpoint} and user_id = ${userId}::uuid`;
 }
 
+/**
+ * A pessoa aceita conversa de quem ela nao conhece?
+ *
+ * Na duvida, sim: o padrao da coluna e' `true`, e uma conta que por algum
+ * motivo nao responda nao pode virar uma caixa fechada sem que ninguem tenha
+ * pedido isso.
+ */
+export async function estaAberto(userId: string): Promise<boolean> {
+  if (!sql) return true;
+  const linhas = (await sql`
+    select aberto_a_conversas from users where id = ${userId}::uuid limit 1
+  `) as Record<string, unknown>[];
+  return linhas.length === 0 ? true : Boolean(linhas[0]!.aberto_a_conversas);
+}
+
+export async function setAberto(userId: string, aberto: boolean): Promise<void> {
+  if (!sql) return;
+  await sql`
+    update users set aberto_a_conversas = ${aberto} where id = ${userId}::uuid`;
+}
+
 /** Grava onde a pessoa está. Pode ser chamado quantas vezes ela se mudar. */
 export async function setLocal(
   userId: string,

@@ -1041,6 +1041,8 @@ export default function GlobeCanvas() {
               total={realtime.totalDeSinais}
               meuClientId={realtime.meuClientId}
               onBuscar={realtime.buscarSinais}
+              onBuscarSugestoes={realtime.buscarSugestoes}
+              sugestoes={realtime.sugestoes}
               onAbrirSinal={(sinal) => {
                 setSinaisAbertos(false);
                 setSinalAberto(sinal);
