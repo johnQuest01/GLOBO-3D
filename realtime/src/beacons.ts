@@ -22,6 +22,7 @@
  */
 
 import type { Beacon } from '../shared/protocol.js';
+import { BEACONS_MAX } from '../shared/protocol.js';
 import { ErrorCode } from '../shared/protocol.js';
 import type { RealtimeServer, RealtimeSocket } from './presence.js';
 import { permitir, type Limitador } from './safety.js';
@@ -73,6 +74,9 @@ export function registerBeacons(
       // Sem o nome, um ponto num pais distante nao diz nada — e nao da' para
       // abrir conversa, que e' enderecada por nickname.
       ...(socket.data.nickname ? { nickname: socket.data.nickname } : {}),
+      ...(typeof p?.pais === 'string' && p.pais.trim()
+        ? { pais: p.pais.trim().slice(0, 60) }
+        : {}),
       lat: presence.lat,
       lon: presence.lon,
       regionKey: presence.regionKey,
@@ -84,23 +88,39 @@ export function registerBeacons(
     socket.data.beaconId = beacon.beaconId;
     socket.data.beaconRegionKey = beacon.regionKey;
 
-    /*
-     * PARA O MUNDO INTEIRO, e nao so' para a regiao.
+/*
+     * O ANUNCIO AO VIVO E' DA REGIAO; O MUNDO VEM POR BUSCA.
      *
-     * O sinal e' o convite aberto do projeto: "quero conversar". Limita-lo a
-     * quem esta na mesma regiao do globo o tornava quase inutil — duas pessoas
-     * so' se encontravam por acaso de geografia, num aplicativo cujo proposito
-     * e' encontrar gente de qualquer lugar.
+     * O sinal e' publico e mundial — essa e' a graca da coisa. Mas ANUNCIAR
+     * cada sinal para cada pessoa e' trabalho que cresce com o produto dos
+     * dois numeros: com 25 mil sinais e 50 mil conexoes, sao 1,25 bilhao de
+     * entregas por rodada. Nenhuma maquina resolve isso, e mais maquinas
+     * pioram (o anuncio passa a atravessar o Redis entre elas).
      *
-     * Inclui quem acendeu, de proposito: e' assim que a propria pessoa ve' o
-     * proprio sinal aparecer, sem o cliente ter que adivinhar o beaconId que o
-     * servidor gerou.
+     * Na regiao o numero e' pequeno por definicao, e ver o vizinho acender na
+     * hora e' o que faz o globo parecer vivo. O mundo inteiro chega por
+     * `beacon:find`, que e' consulta — custo por pessoa interessada, e so'
+     * enquanto ela esta olhando.
      */
-    io.emit('beacon:new', beacon);
+    io.to(presence.regionKey).emit('beacon:new', beacon);
 
     log(
       `beacon ${beacon.beaconId.slice(0, 8)} de ${clientId} em ${presence.regionKey} por ${ttlSec}s`,
     );
+  });
+
+  socket.on('beacon:find', async (p) => {
+    if (!permitir(socket, limitador, 'beacon:find')) return;
+
+    const pais =
+      typeof p?.pais === 'string' && p.pais.trim() ? p.pais.trim().slice(0, 60) : undefined;
+    const limite = Math.min(
+      BEACONS_MAX,
+      Math.max(1, Number.isFinite(Number(p?.limite)) ? Number(p?.limite) : BEACONS_MAX),
+    );
+
+    const resposta = await sinaisDoMundo(store, pais, limite);
+    socket.emit('beacon:list', resposta);
   });
 
   socket.on('beacon:lower', async () => {
@@ -207,6 +227,47 @@ async function apagarBeaconDoSocket(
   socket.data.beaconId = undefined;
   socket.data.beaconRegionKey = undefined;
   await store.removeBeacon(beaconId, regionKey);
-  // Mundial como o acender: quem viu aparecer precisa ver sumir.
-  io.emit('beacon:gone', { beaconId });
+  // Da regiao, como o acender.
+  io.to(regionKey).emit('beacon:gone', { beaconId });
+}
+
+/**
+ * A resposta guardada por alguns segundos.
+ *
+ * E' O QUE FAZ A BUSCA ESCALAR. Sem isto, mil pessoas olhando a lista ao mesmo
+ * tempo seriam mil consultas identicas ao Redis por rodada. Com isto, sao
+ * mil respostas e UMA leitura: o que muda em tres segundos numa lista de
+ * "quem quer conversar agora" nao justifica o custo de reler.
+ *
+ * O cache e' por processo, e nao compartilhado: cada maquina guarda a sua. E'
+ * de proposito — compartilhar exigiria ir ao Redis para evitar ir ao Redis.
+ */
+const CACHE_MS = 3000;
+const cache = new Map<string, { em: number; dados: { sinais: Beacon[]; total: number } }>();
+
+async function sinaisDoMundo(
+  store: PresenceStore,
+  pais: string | undefined,
+  limite: number,
+): Promise<{ sinais: Beacon[]; total: number }> {
+  const chave = `${pais ?? '*'}|${limite}`;
+  const guardado = cache.get(chave);
+  if (guardado && Date.now() - guardado.em < CACHE_MS) return guardado.dados;
+
+  const [sinais, total] = await Promise.all([
+    store.listBeaconsGlobais(limite, pais),
+    store.contarBeacons(pais),
+  ]);
+
+  const dados = { sinais, total };
+  cache.set(chave, { em: Date.now(), dados });
+
+  // O cache nao pode crescer sem fim: um pais por chave, mais as combinacoes
+  // de limite. Cem entradas e' folga larga para qualquer uso real.
+  if (cache.size > 100) {
+    const maisVelha = [...cache.entries()].sort((a, b) => a[1].em - b[1].em)[0];
+    if (maisVelha) cache.delete(maisVelha[0]);
+  }
+
+  return dados;
 }

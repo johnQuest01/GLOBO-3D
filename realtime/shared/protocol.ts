@@ -67,6 +67,14 @@ export interface Beacon {
    * enderecada por nickname.
    */
   nickname?: string;
+  /**
+   * O pais de quem acendeu, para o filtro da busca.
+   *
+   * E' um ROTULO, nao uma permissao: quem procura alguem da Russia esta
+   * escolhendo com quem falar, e nao acessando nada. Por isso vem do perfil do
+   * cliente sem cerimonia — mentir nele nao da' acesso a coisa nenhuma.
+   */
+  pais?: string;
   /** Epoch em milissegundos. Passou disso, o beacon não existe mais. */
   expiresAt: number;
 }
@@ -199,7 +207,21 @@ export interface ClientToServer {
    */
   'directory:find': (p: { nicknames: string[] }) => void;
 
-  'beacon:raise': (p: { topic?: string; ttlSec: number }) => void;
+  'beacon:raise': (p: { topic?: string; ttlSec: number; pais?: string }) => void;
+  /**
+   * "Quem quer conversar agora?" — a busca dos sinais do mundo.
+   *
+   * POR QUE PERGUNTAR EM VEZ DE RECEBER. Sinal aceso e' publico e mundial, e
+   * essa e' a graca: se ninguem da Russia estiver online, alguem da Nigeria
+   * estara'. Mas anunciar cada sinal para cada pessoa e' trabalho que cresce
+   * com o PRODUTO dos dois numeros — com 25 mil sinais e 50 mil conexoes sao
+   * 1,25 bilhao de entregas por rodada, e nenhuma maquina resolve isso.
+   *
+   * Perguntando, o custo vira uma consulta por pessoa interessada, e so'
+   * quando ela esta olhando. O servidor ainda guarda a resposta por alguns
+   * segundos, entao mil pessoas perguntando ao mesmo tempo custam uma leitura.
+   */
+  'beacon:find': (p: { pais?: string; limite?: number }) => void;
   'beacon:lower': () => void;
 
   'connect:request': (p: { targetClientId: ClientId }) => void;
@@ -301,7 +323,16 @@ export interface ServerToClient {
     encontrados: { nickname: string; presence: Presence | null }[];
   }) => void;
 
+  /**
+   * O sinal de quem esta PERTO, ao vivo.
+   *
+   * Continua sendo anunciado, mas so' dentro da regiao: la' o numero e'
+   * pequeno por definicao, e ver o vizinho acender na hora e' o que faz o
+   * globo parecer vivo. O mundo inteiro vem por `beacon:list`, sob demanda.
+   */
   'beacon:new': (b: Beacon) => void;
+  /** A resposta de `beacon:find`: os sinais do mundo, ja' limitados. */
+  'beacon:list': (p: { sinais: Beacon[]; total: number }) => void;
   'beacon:gone': (p: { beaconId: string }) => void;
 
   'connect:incoming': (p: {

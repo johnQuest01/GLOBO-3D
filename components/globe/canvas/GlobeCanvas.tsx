@@ -39,6 +39,7 @@ import PeopleSearchPanel from '@/components/globe/ui/PeopleSearchPanel';
 import ConversasPanel from '@/components/globe/ui/ConversasPanel';
 import GrupoDeSinaisPanel from '@/components/globe/ui/GrupoDeSinaisPanel';
 import SinalPanel from '@/components/globe/ui/SinalPanel';
+import SinaisDoMundoPanel from '@/components/globe/ui/SinaisDoMundoPanel';
 import { registrarWorker } from '@/lib/push/avisos';
 import EscolherLugar from '@/components/globe/ui/EscolherLugar';
 import EscolherNickname from '@/components/globe/ui/EscolherNickname';
@@ -277,6 +278,8 @@ export default function GlobeCanvas() {
   const [grupoDeSinais, setGrupoDeSinais] = useState<Beacon[] | null>(null);
   /** O sinal aberto, quando a pessoa toca em um. */
   const [sinalAberto, setSinalAberto] = useState<Beacon | null>(null);
+  /** A lista mundial de quem quer conversar. */
+  const [sinaisAbertos, setSinaisAbertos] = useState(false);
 
   /*
    * O QUE FAZER QUANDO A PESSOA TOCA NA NOTIFICACAO.
@@ -643,6 +646,29 @@ export default function GlobeCanvas() {
             </button>
           )}
 
+          {/*
+            QUEM QUER CONVERSAR AGORA — o mundo inteiro, nao so' a regiao.
+            E' a promessa central do projeto: se ninguem de um pais estiver
+            online, alguem de outro estara'.
+          */}
+          {realtime.estado.ligado && (
+            <button
+              type="button"
+              onClick={() => setSinaisAbertos(true)}
+              disabled={states.isAnyPopupOpen}
+              title="Quem quer conversar agora, no mundo"
+              aria-label="Quem quer conversar agora, no mundo"
+              className={`absolute right-4 z-40 p-4 rounded-full shadow-lg text-white transition-all duration-300 bg-cyan-700/90 hover:bg-cyan-600 disabled:bg-gray-600 disabled:opacity-50 bottom-[24.5rem] pointer-events-auto ${
+                states.isMainUiVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
+              }`}
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18" />
+              </svg>
+            </button>
+          )}
+
           {/* A LUPA. Procurar alguem pelo nickname e ir ate a pessoa no globo. */}
           {realtime.estado.ligado && (
             <button
@@ -1004,6 +1030,21 @@ export default function GlobeCanvas() {
             <EscolherLugar
               aberto={pedindoLugar}
               onFechar={() => setPedindoLugar(false)}
+            />
+          </div>
+
+          <div className="pointer-events-auto">
+            <SinaisDoMundoPanel
+              aberto={sinaisAbertos}
+              onFechar={() => setSinaisAbertos(false)}
+              sinais={realtime.sinaisDoMundo}
+              total={realtime.totalDeSinais}
+              meuClientId={realtime.meuClientId}
+              onBuscar={realtime.buscarSinais}
+              onAbrirSinal={(sinal) => {
+                setSinaisAbertos(false);
+                setSinalAberto(sinal);
+              }}
             />
           </div>
 

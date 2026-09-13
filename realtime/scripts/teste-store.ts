@@ -118,6 +118,9 @@ function fakeRedis() {
       for (const m of members) if (z.delete(m)) n += 1;
       return n;
     },
+    async zcard(key: string) {
+      return zsets.get(key)?.size ?? 0;
+    },
     async zrevrange(key: string, inicio: number, fim: number) {
       const z = zsets.get(key);
       if (!z) return [];

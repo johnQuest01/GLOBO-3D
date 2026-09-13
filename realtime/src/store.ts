@@ -91,7 +91,16 @@ export interface PresenceStore {
    * a da regiao serve ao globo local; esta serve a quem quer conversar com
    * alguem, em qualquer lugar — que e' o proposito do sinal.
    */
-  listBeaconsGlobais(limite: number): Promise<Beacon[]>;
+  /**
+   * Os sinais do mundo, do mais recente para o mais antigo.
+   *
+   * `pais` filtra; sem ele, vem de qualquer lugar — que e' o caso comum e o
+   * proposito da coisa: se ninguem de um pais estiver online, alguem de outro
+   * estara'.
+   */
+  listBeaconsGlobais(limite: number, pais?: string): Promise<Beacon[]>;
+  /** Quantos sinais existem ao todo (ou no pais). So' o numero. */
+  contarBeacons(pais?: string): Promise<number>;
   getBeacon(beaconId: string): Promise<Beacon | null>;
 
   // --- Pedidos de conexão ------------------------------------------------
@@ -127,6 +136,9 @@ const beaconsOfRegion = (regionKey: RegionKey) => `beacons:${regionKey}`;
  * gente.
  */
 const BEACONS_GLOBAIS = 'beacons:todos';
+/** Um indice por pais, para "quem da Russia esta online agora". */
+const beaconsDoPais = (pais: string) =>
+  `beacons:pais:${pais.trim().toLowerCase().replace(/\s+/g, '-')}`;
 const requestKeyOf = (requestId: string) => `request:${requestId}`;
 /** Bloqueio é simétrico, então a chave é o par ordenado. */
 const blockKeyOf = (a: ClientId, b: ClientId) =>
@@ -136,6 +148,7 @@ const beaconToHash = (b: Beacon): Record<string, string> => ({
   beaconId: b.beaconId,
   clientId: b.clientId,
   ...(b.nickname ? { nickname: b.nickname } : {}),
+  ...(b.pais ? { pais: b.pais } : {}),
   lat: String(b.lat),
   lon: String(b.lon),
   regionKey: b.regionKey,
@@ -159,6 +172,7 @@ function beaconFromHash(hash: Record<string, string>): Beacon | null {
     lon,
     regionKey: hash.regionKey,
     ...(hash.nickname ? { nickname: hash.nickname } : {}),
+    ...(hash.pais ? { pais: hash.pais } : {}),
     expiresAt,
     ...(hash.topic ? { topic: hash.topic } : {}),
   };
@@ -236,6 +250,7 @@ interface RedisLike {
   zrem(key: string, ...members: string[]): Promise<number>;
   /** Do maior para o menor: os sinais mais recentes primeiro. */
   zrevrange(key: string, inicio: number, fim: number): Promise<string[]>;
+  zcard(key: string): Promise<number>;
 
   /**
    * Varias ordens numa viagem so'.
@@ -379,15 +394,24 @@ export function createRedisStore(redis: RedisLike): PresenceStore {
         // recentes" custa uma consulta so', por maior que ele fique.
         .zadd(BEACONS_GLOBAIS, Date.now(), beacon.beaconId)
         .exec();
+
+      if (beacon.pais) {
+        await redis.zadd(beaconsDoPais(beacon.pais), Date.now(), beacon.beaconId);
+      }
     },
 
     async removeBeacon(beaconId, regionKey) {
-      await redis
+      // O pais sai do hash ANTES de apaga-lo: depois nao ha' como saber de
+      // qual indice tirar o id, e ele ficaria la' apontando para o nada.
+      const anterior = beaconFromHash(await redis.hgetall(beaconKeyOf(beaconId)));
+
+      const p = redis
         .pipeline()
         .del(beaconKeyOf(beaconId))
         .srem(beaconsOfRegion(regionKey), beaconId)
-        .zrem(BEACONS_GLOBAIS, beaconId)
-        .exec();
+        .zrem(BEACONS_GLOBAIS, beaconId);
+      if (anterior?.pais) p.zrem(beaconsDoPais(anterior.pais), beaconId);
+      await p.exec();
     },
 
     async getBeacon(beaconId) {
@@ -401,12 +425,17 @@ export function createRedisStore(redis: RedisLike): PresenceStore {
       );
     },
 
-    async listBeaconsGlobais(limite) {
+    async listBeaconsGlobais(limite, pais) {
+      const chave = pais ? beaconsDoPais(pais) : BEACONS_GLOBAIS;
       // Do mais recente para o mais antigo, so' o teto pedido.
-      const ids = await redis.zrevrange(BEACONS_GLOBAIS, 0, Math.max(0, limite - 1));
+      const ids = await redis.zrevrange(chave, 0, Math.max(0, limite - 1));
       return lerEmLote(redis, ids, beaconKeyOf, beaconFromHash, (mortos) =>
-        redis.zrem(BEACONS_GLOBAIS, ...mortos),
+        redis.zrem(chave, ...mortos),
       );
+    },
+
+    async contarBeacons(pais) {
+      return redis.zcard(pais ? beaconsDoPais(pais) : BEACONS_GLOBAIS);
     },
 
     // --- Pedidos ---------------------------------------------------------
@@ -577,13 +606,22 @@ export function createMemoryStore(): PresenceStore {
       return saida;
     },
 
-    async listBeaconsGlobais(limite) {
+    async contarBeacons(pais) {
+      let n = 0;
+      for (const b of beacons.values()) {
+        if (b.expiresAt <= Date.now()) continue;
+        if (!pais || b.pais === pais) n += 1;
+      }
+      return n;
+    },
+
+    async listBeaconsGlobais(limite, pais) {
       // Em memoria nao ha indice: sao poucos sinais por definicao (isto so'
       // roda em desenvolvimento), entao varrer e ordenar custa nada.
       const vivos: Beacon[] = [];
       for (const [id, b] of beacons) {
-        if (b.expiresAt > Date.now()) vivos.push(b);
-        else beacons.delete(id);
+        if (b.expiresAt <= Date.now()) beacons.delete(id);
+        else if (!pais || b.pais === pais) vivos.push(b);
       }
       return vivos.sort((a, b) => b.expiresAt - a.expiresAt).slice(0, limite);
     },

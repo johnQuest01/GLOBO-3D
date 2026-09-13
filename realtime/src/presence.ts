@@ -17,7 +17,7 @@ import type {
   Presence,
   ServerToClient,
 } from '../shared/protocol.js';
-import { BEACONS_MAX, ErrorCode, PRESENCAS_MAX } from '../shared/protocol.js';
+import { ErrorCode, PRESENCAS_MAX } from '../shared/protocol.js';
 import { restaurarBeacon, TTL_DO_SINAL_SEC } from './beacons.js';
 import type { PresenceStore } from './store.js';
 
@@ -150,10 +150,10 @@ export function registerPresence(
     // veria entrando.
     const [presences, beacons] = await Promise.all([
       store.listRegion(presence.regionKey),
-      // Os sinais vem do MUNDO, nao da regiao: quem acende quer ser encontrado
-      // por qualquer pessoa. O teto existe porque um indice global sem limite
-      // seria um broadcast que cresce com a audiencia.
-      store.listBeaconsGlobais(BEACONS_MAX),
+      // Os sinais da REGIAO. Os do mundo sao pedidos a' parte, por
+      // `beacon:find` — mandar todos aqui faria cada entrada no app carregar
+      // a lista inteira do planeta.
+      store.listBeacons(presence.regionKey),
     ]);
     /*
      * O TETO E' APLICADO AQUI, e nao na consulta, de proposito: o `total`

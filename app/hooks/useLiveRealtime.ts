@@ -121,6 +121,16 @@ export function useLiveRealtime(user: UserProfileData | null) {
     Record<string, Presence | null>
   >({});
 
+  /**
+   * Os sinais do mundo, e quantos existem ao todo.
+   *
+   * Nao chegam sozinhos: sao PEDIDOS (`beacon:find`) quando a tela precisa
+   * deles. Receber cada sinal do planeta por anuncio seria trabalho que cresce
+   * com o produto de sinais por conexoes — ver o comentario do protocolo.
+   */
+  const [sinaisDoMundo, setSinaisDoMundo] = useState<Beacon[]>([]);
+  const [totalDeSinais, setTotalDeSinais] = useState(0);
+
   const peerRef = useRef<PeerConnection | null>(null);
   const peerSocketIdRef = useRef<string | null>(null);
   const meuClientIdRef = useRef<string>('');
@@ -319,6 +329,12 @@ export function useLiveRealtime(user: UserProfileData | null) {
     socket.on('presence:snapshot', aoSnapshot);
     socket.on('presence:update', aoAtualizarPresenca);
     socket.on('beacon:new', aoBeaconNovo);
+    const aoListarSinais = (p: { sinais: Beacon[]; total: number }) => {
+      setSinaisDoMundo(p.sinais);
+      setTotalDeSinais(p.total);
+    };
+
+    socket.on('beacon:list', aoListarSinais);
     socket.on('beacon:gone', aoBeaconSumir);
     socket.on('directory:result', aoResultadoDaBusca);
     socket.on('connect:incoming', aoConviteChegar);
@@ -366,6 +382,7 @@ export function useLiveRealtime(user: UserProfileData | null) {
       socket.off('presence:snapshot', aoSnapshot);
       socket.off('presence:update', aoAtualizarPresenca);
       socket.off('beacon:new', aoBeaconNovo);
+      socket.off('beacon:list', aoListarSinais);
       socket.off('beacon:gone', aoBeaconSumir);
       socket.off('directory:result', aoResultadoDaBusca);
       socket.off('connect:incoming', aoConviteChegar);
@@ -551,8 +568,22 @@ export function useLiveRealtime(user: UserProfileData | null) {
 
   // --- Ações ----------------------------------------------------------------
 
-  const acenderBeacon = useCallback((topic: string, ttlSec = 900) => {
-    getSocket()?.emit('beacon:raise', { topic, ttlSec });
+  const acenderBeacon = useCallback(
+    (topic: string, ttlSec = 900) => {
+      // O pais vem do perfil e serve ao FILTRO da busca — e' rotulo, nao
+      // permissao: mentir nele nao da' acesso a nada.
+      getSocket()?.emit('beacon:raise', {
+        topic,
+        ttlSec,
+        ...(user?.country ? { pais: user.country } : {}),
+      });
+    },
+    [user?.country],
+  );
+
+  /** "Quem quer conversar agora?" — pergunta ao servidor, mundo inteiro. */
+  const buscarSinais = useCallback((pais?: string) => {
+    getSocket()?.emit('beacon:find', pais ? { pais } : {});
   }, []);
 
   const apagarBeacon = useCallback(() => {
@@ -768,6 +799,9 @@ export function useLiveRealtime(user: UserProfileData | null) {
     verQuemEstaOnline,
     acenderBeacon,
     apagarBeacon,
+    buscarSinais,
+    sinaisDoMundo,
+    totalDeSinais,
     pedirConexao,
     aceitarConvite,
     recusarConvite,

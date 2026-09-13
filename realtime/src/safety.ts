@@ -61,6 +61,10 @@ export const LIMITES: Record<string, LimiteConfig> = {
    * O teto novo segura script e não alcança dedo humano.
    */
   'beacon:raise': { capacidade: 10, recargaMs: 60_000 },
+  // A lista se atualiza sozinha a cada ~20s enquanto a tela esta aberta, e a
+  // pessoa pode puxar para atualizar. Sessenta por minuto cobre isso com folga
+  // e ainda barra um script que peca em laco.
+  'beacon:find': { capacidade: 60, recargaMs: 60_000 },
   'connect:request': { capacidade: 5, recargaMs: 60_000 },
   // Busca é barata e legítima em rajada — a pessoa erra o nome e tenta de
   // novo. O teto existe só para impedir varredura do diretório inteiro.
