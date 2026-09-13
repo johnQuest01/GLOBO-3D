@@ -39,6 +39,7 @@ import PeopleSearchPanel from '@/components/globe/ui/PeopleSearchPanel';
 import ConversasPanel from '@/components/globe/ui/ConversasPanel';
 import GrupoDeSinaisPanel from '@/components/globe/ui/GrupoDeSinaisPanel';
 import SinalPanel from '@/components/globe/ui/SinalPanel';
+import MuralPanel from '@/components/globe/ui/MuralPanel';
 import SinaisDoMundoPanel from '@/components/globe/ui/SinaisDoMundoPanel';
 import PerfilPanel from '@/components/globe/ui/PerfilPanel';
 import PerfilDeOutroPanel from '@/components/globe/ui/PerfilDeOutroPanel';
@@ -282,6 +283,7 @@ export default function GlobeCanvas() {
   const [sinalAberto, setSinalAberto] = useState<Beacon | null>(null);
   /** A lista mundial de quem quer conversar. */
   const [sinaisAbertos, setSinaisAbertos] = useState(false);
+  const [muralAberto, setMuralAberto] = useState(false);
   /** A tela de editar o proprio perfil. */
   const [perfilAberto, setPerfilAberto] = useState(false);
   /** O perfil de OUTRA pessoa, quando se toca no nome dela. */
@@ -624,6 +626,30 @@ export default function GlobeCanvas() {
             chegava, era guardada no aparelho e ficava invisivel ate a pessoa
             procurar o remetente na lupa por acaso.
           */}
+          {/*
+            O MURAL. Fica acima das conversas de proposito: conversar e' com
+            quem voce ja' escolheu, e o mural e' de onde vem a proxima escolha.
+          */}
+          {realtime.estado.ligado && (
+            <button
+              type="button"
+              onClick={() =>
+                precisaDeNickname ? setPedindoNickname(true) : setMuralAberto(true)
+              }
+              disabled={states.isAnyPopupOpen}
+              title="Mural do globo — o que o mundo publicou hoje"
+              aria-label="Mural do globo"
+              className={`absolute right-4 z-40 p-4 rounded-full shadow-lg text-white transition-all duration-300 bg-emerald-700/90 hover:bg-emerald-600 disabled:bg-gray-600 disabled:opacity-50 bottom-[40.5rem] pointer-events-auto ${
+                states.isMainUiVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
+              }`}
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <rect x="3" y="4" width="18" height="16" rx="2" />
+                <path d="M7 9h10M7 13h6" strokeLinecap="round" />
+              </svg>
+            </button>
+          )}
+
           {realtime.estado.ligado && (
             <button
               type="button"
@@ -1051,6 +1077,42 @@ export default function GlobeCanvas() {
               onConversar={(apelido) => {
                 setPerfilDeOutro(null);
                 conversas.abrirConversa(apelido);
+              }}
+            />
+          </div>
+
+          <div className="pointer-events-auto">
+            <MuralPanel
+              aberto={muralAberto}
+              onFechar={() => setMuralAberto(false)}
+              meuNickname={realtime.meuNickname}
+              onVerPerfil={(apelido) => {
+                setMuralAberto(false);
+                setPerfilDeOutro(apelido);
+              }}
+              onConversar={(apelido) => {
+                setMuralAberto(false);
+                conversas.abrirConversa(apelido);
+              }}
+              onVerNoGlobo={(lat, lon, rotulo) => {
+                /*
+                  FECHA O MURAL AO VIAJAR. O ponto do post fica atras do painel
+                  se ele continuar aberto, e a viagem seria uma animacao que
+                  ninguem ve.
+                */
+                setMuralAberto(false);
+                setAlvoDaBusca({
+                  lat,
+                  lon,
+                  // `lugar` e nao `pessoa`: o rotulo de um lugar nao leva
+                  // arroba, e a cor nao deve fingir dizer se alguem esta
+                  // online. O post e' de um LUGAR, e quem escreveu pode ter
+                  // fechado o aplicativo horas atras.
+                  tipo: 'lugar',
+                  nickname: rotulo,
+                  online: false,
+                  pedidoEm: Date.now(),
+                });
               }}
             />
           </div>
