@@ -25,18 +25,40 @@ import { Conta } from "./cliente";
 /** Curto porque o nickname só aceita 20 caracteres, e ainda cabe o sorteio. */
 export const PREFIXO = "zzt_";
 
-function urlDoBanco(): string {
+/** Uma variável do `.env.local`, ou string vazia. */
+function doEnv(chave: string): string {
   const linha = readFileSync(".env.local", "utf8")
     .split(/\r?\n/)
-    .find((l) => l.startsWith("DATABASE_URL="));
-  if (!linha) throw new Error("sem DATABASE_URL em .env.local");
+    .find((l) => l.startsWith(`${chave}=`));
   return linha
-    .slice(13)
-    .trim()
-    .replace(/^['"]|['"]$/g, "");
+    ? linha
+        .slice(chave.length + 1)
+        .trim()
+        .replace(/^['"]|['"]$/g, "")
+    : "";
 }
 
-export const sql = neon(urlDoBanco());
+const DATABASE_URL = doEnv("DATABASE_URL");
+if (!DATABASE_URL) throw new Error("sem DATABASE_URL em .env.local");
+
+export const sql = neon(DATABASE_URL);
+
+/**
+ * As credenciais de administrador.
+ *
+ * SÃO PRECISAS PARA TESTAR A MODERAÇÃO PELA PORTA DE VERDADE. A alternativa —
+ * chamar a função do banco direto — testaria a regra e pularia justamente a
+ * parte que decide quem pode aplicá-la, que num painel com poder de tirar post
+ * do ar é a metade que importa.
+ *
+ * Devolve nulo quando não estão configuradas, e aí a suíte diz isso em vez de
+ * falhar de um jeito que parece defeito do aplicativo.
+ */
+export function credenciaisDeAdmin(): { email: string; senha: string } | null {
+  const email = doEnv("ADMIN_EMAIL");
+  const senha = doEnv("ADMIN_PASSWORD");
+  return email && senha ? { email, senha } : null;
+}
 
 export interface ContaDeTeste {
   cliente: Conta;
@@ -109,8 +131,11 @@ export async function criarConta(
  * têm, e descobrir isso no meio de uma faxina deixa metade do lixo para trás.
  */
 export async function apagarConta(id: string): Promise<void> {
+  await sql`delete from post_reports where reporter_id = ${id}::uuid`;
+  await sql`delete from posts where author_id = ${id}::uuid`;
   await sql`delete from envelopes where from_user_id = ${id}::uuid or to_user_id = ${id}::uuid`;
   await sql`delete from user_blocks where blocker_user_id = ${id}::uuid or blocked_user_id = ${id}::uuid`;
+  await sql`delete from policy_reports where target_user_id = ${id}::uuid`;
   await sql`delete from push_subscriptions where user_id = ${id}::uuid`;
   await sql`delete from sessions where user_id = ${id}::uuid`;
   await sql`delete from users where id = ${id}::uuid`;

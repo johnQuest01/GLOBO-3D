@@ -563,55 +563,62 @@ export async function suiteConversa(
       },
     );
 
-    await s.teste("denunciar FICA GRAVADO, e nao so' num contador", async () => {
-      /*
-       * A tabela de denuncias existia, a funcao que escreve nela existia, e
-       * nada no projeto inteiro a chamava: o handler somava um contador em
-       * memoria, que morre a cada reinicio do processo. Quem denunciava lia
-       * "denuncia registrada" na tela e nao havia registro nenhum — nao havia
-       * o que moderar.
-       */
-      const antes = (await sql`
+    await s.teste(
+      "denunciar FICA GRAVADO, e nao so' num contador",
+      async () => {
+        /*
+         * A tabela de denuncias existia, a funcao que escreve nela existia, e
+         * nada no projeto inteiro a chamava: o handler somava um contador em
+         * memoria, que morre a cada reinicio do processo. Quem denunciava lia
+         * "denuncia registrada" na tela e nao havia registro nenhum — nao havia
+         * o que moderar.
+         */
+        const antes = (await sql`
         select count(*)::int as n from policy_reports
          where target_user_id = ${B.id}::uuid`) as { n: number }[];
 
-      anaCel.emitir("report", {
-        targetClientId: "sem-cliente",
-        targetNickname: B.nickname,
-        reason: "teste automatizado de moderacao",
-      });
+        anaCel.emitir("report", {
+          targetClientId: "sem-cliente",
+          targetNickname: B.nickname,
+          reason: "teste automatizado de moderacao",
+        });
 
-      await esperarAte(async () => {
-        const agora = (await sql`
+        await esperarAte(async () => {
+          const agora = (await sql`
           select count(*)::int as n from policy_reports
            where target_user_id = ${B.id}::uuid`) as { n: number }[];
-        return agora[0]!.n > antes[0]!.n;
-      }, "a denuncia no banco");
+          return agora[0]!.n > antes[0]!.n;
+        }, "a denuncia no banco");
 
-      const [linha] = (await sql`
+        const [linha] = (await sql`
         select reason, reporter_client_id from policy_reports
          where target_user_id = ${B.id}::uuid
          order by created_at desc limit 1`) as {
-        reason: string;
-        reporter_client_id: string | null;
-      }[];
-      igual(linha!.reason, "teste automatizado de moderacao", "o motivo escrito");
+          reason: string;
+          reporter_client_id: string | null;
+        }[];
+        igual(
+          linha!.reason,
+          "teste automatizado de moderacao",
+          "o motivo escrito",
+        );
 
-      // Denunciar implica nao querer mais contato: o bloqueio de CONTA vem
-      // junto, senao a pessoa denuncia e continua recebendo mensagem.
-      await esperarAte(async () => {
-        const b = (await sql`
+        // Denunciar implica nao querer mais contato: o bloqueio de CONTA vem
+        // junto, senao a pessoa denuncia e continua recebendo mensagem.
+        await esperarAte(async () => {
+          const b = (await sql`
           select 1 from user_blocks
            where blocker_user_id = ${A.id}::uuid
              and blocked_user_id = ${B.id}::uuid`) as unknown[];
-        return b.length > 0;
-      }, "o bloqueio que acompanha a denuncia");
+          return b.length > 0;
+        }, "o bloqueio que acompanha a denuncia");
 
-      await sql`delete from policy_reports where target_user_id = ${B.id}::uuid`;
-      await sql`delete from user_blocks
+        await sql`delete from policy_reports where target_user_id = ${B.id}::uuid`;
+        await sql`delete from user_blocks
                  where blocker_user_id = ${A.id}::uuid and blocked_user_id = ${B.id}::uuid`;
-      return "gravada, com bloqueio de conta junto";
-    });
+        return "gravada, com bloqueio de conta junto";
+      },
+    );
 
     await s.teste("sem conta não se entra no tempo real", async () => {
       const { Conta } = await import("./cliente");
