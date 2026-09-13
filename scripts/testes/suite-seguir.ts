@@ -344,25 +344,69 @@ export async function suiteSeguir(base: string): Promise<Suite> {
     // Não há placar
     // -----------------------------------------------------------------------
 
-    await s.teste("NÃO DÁ PARA DESCOBRIR quem segue outra pessoa", async () => {
-      /*
-       * É a ausência que é a funcionalidade. Com contagem de seguidores
-       * visível, o número vira o objetivo e as pessoas passam a publicar para
-       * ele — o que mata justamente o que este aplicativo faz.
-       */
-      const bruto = JSON.stringify(
-        (await russa.cliente.get("/api/seguir")).corpo,
+    await s.teste("o perfil mostra QUANTOS seguem", async () => {
+      await eu.cliente.post("/api/seguir", {
+        tipo: "pessoa",
+        nickname: russa.nickname,
+      });
+      await russa.cliente.post("/api/users/perfil", {
+        visibilidade: "publico",
+      });
+
+      const r = await eu.cliente.get<{ perfil: { seguidores: number | null } }>(
+        `/api/users/perfil?de=${russa.nickname}`,
       );
-      ok(!bruto.includes(eu.nickname), `a russa viu quem a segue: ${bruto}`);
+      igual(r.status, 200, "status");
+      ok(
+        (r.corpo.perfil.seguidores ?? 0) >= 1,
+        `contagem veio ${r.corpo.perfil.seguidores}`,
+      );
+      return `${r.corpo.perfil.seguidores} seguidor(es)`;
+    });
+
+    await s.teste("mas NÃO mostra QUEM segue", async () => {
+      /*
+       * São duas perguntas diferentes, e só a segunda é sobre privacidade:
+       * saber que alguém tem 40 seguidores não diz nada sobre ninguém; saber
+       * QUEM são os 40 diz sobre os 40. A contagem sai; a lista não existe em
+       * rota nenhuma.
+       */
+      const meuNick = eu.nickname;
 
       const perfil = JSON.stringify(
         (await eu.cliente.get(`/api/users/perfil?de=${russa.nickname}`)).corpo,
       );
       ok(
-        !/seguidor|seguidores|followers/i.test(perfil),
-        `o perfil expõe contagem: ${perfil}`,
+        !perfil.includes(meuNick),
+        `o perfil dela entregou quem a segue: ${perfil}`,
       );
+
+      // E nem a própria pessoa consegue puxar a lista de quem a segue: /api/seguir
+      // responde só sobre quem eu sigo.
+      const dela = JSON.stringify(
+        (await russa.cliente.get("/api/seguir")).corpo,
+      );
+      ok(!dela.includes(meuNick), `a russa viu quem a segue: ${dela}`);
     });
+
+    await s.teste(
+      "a contagem some no perfil privado, como o resto",
+      async () => {
+        await russa.cliente.post("/api/users/perfil", {
+          visibilidade: "privado",
+        });
+        try {
+          const r = await eu.cliente.get<{
+            perfil: { seguidores: number | null };
+          }>(`/api/users/perfil?de=${russa.nickname}`);
+          igual(r.corpo.perfil.seguidores, null, "contagem no perfil privado");
+        } finally {
+          await russa.cliente.post("/api/users/perfil", {
+            visibilidade: "reservado",
+          });
+        }
+      },
+    );
 
     await s.teste(
       "sem sessão não se segue nem se lê o que se segue",

@@ -23,6 +23,7 @@ interface PerfilPublico {
   idade: number | null;
   avatarUrl: string | null;
   lugar: string | null;
+  seguidores: number | null;
   visibilidade: "publico" | "reservado" | "privado";
 }
 
@@ -98,15 +99,28 @@ const PerfilDeOutroPanel: FC<Props> = ({ nickname, onFechar, onConversar }) => {
     // hora, e uma recusa aqui é rara (só o teto).
     const antes = sigo;
     setSigo(!antes);
+    // O número acompanha o toque. Ver "Seguindo" com a contagem parada no
+    // valor antigo faz a tela parecer quebrada por um segundo.
+    const mexerNoNumero = (quanto: number) =>
+      setPerfil((p) =>
+        p && typeof p.seguidores === "number"
+          ? { ...p, seguidores: Math.max(0, p.seguidores + quanto) }
+          : p,
+      );
+    mexerNoNumero(antes ? -1 : 1);
     try {
       const r = await fetch("/api/seguir", {
         method: antes ? "DELETE" : "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ tipo: "pessoa", nickname }),
       });
-      if (!r.ok) setSigo(antes);
+      if (!r.ok) {
+        setSigo(antes);
+        mexerNoNumero(antes ? 1 : -1);
+      }
     } catch {
       setSigo(antes);
+      mexerNoNumero(antes ? 1 : -1);
     } finally {
       setMexendo(false);
     }
@@ -175,6 +189,21 @@ const PerfilDeOutroPanel: FC<Props> = ({ nickname, onFechar, onConversar }) => {
               {[perfil.idade ? `${perfil.idade} anos` : null, perfil.lugar]
                 .filter(Boolean)
                 .join(" · ")}
+            </p>
+          )}
+
+          {/*
+            QUANTAS PESSOAS SEGUEM — o número, e só ele. Quem são elas não sai
+            de lugar nenhum, e não há rota que responda isso: saber que alguém
+            tem 40 seguidores não diz nada sobre ninguém; saber QUEM são os 40
+            diz sobre os 40.
+          */}
+          {typeof perfil?.seguidores === "number" && (
+            <p className="mt-1.5 text-xs text-white/55">
+              <strong className="font-semibold text-white/80">
+                {perfil.seguidores}
+              </strong>{" "}
+              {perfil.seguidores === 1 ? "seguidor" : "seguidores"}
             </p>
           )}
 

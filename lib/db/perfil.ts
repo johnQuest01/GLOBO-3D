@@ -1,4 +1,4 @@
-import { neon } from '@neondatabase/serverless';
+import { neon } from "@neondatabase/serverless";
 
 /**
  * O perfil: ler o meu, gravar o meu, e ler o dos outros — com regras
@@ -15,7 +15,7 @@ import { neon } from '@neondatabase/serverless';
 const DATABASE_URL = process.env.DATABASE_URL;
 const sql = DATABASE_URL ? neon(DATABASE_URL) : null;
 
-export type Visibilidade = 'publico' | 'reservado' | 'privado';
+export type Visibilidade = "publico" | "reservado" | "privado";
 
 /** O que o DONO vê e edita. */
 export interface MeuPerfil {
@@ -44,11 +44,23 @@ export interface PerfilPublico {
    * `perfilPublico`.
    */
   pais: string | null;
+  /**
+   * Quantas pessoas seguem esta.
+   *
+   * O NÚMERO SAI; QUEM SÃO, NÃO. São duas coisas diferentes e só a segunda é
+   * sobre privacidade: saber que alguém tem 40 seguidores não diz nada sobre
+   * ninguém, e saber QUEM são os 40 diz sobre os 40. Não existe rota que
+   * responda a segunda pergunta.
+   *
+   * Nulo no perfil privado, pelo mesmo motivo de todo o resto: ali só sai o
+   * nickname.
+   */
+  seguidores: number | null;
   visibilidade: Visibilidade;
 }
 
 const ehVisibilidade = (v: unknown): v is Visibilidade =>
-  v === 'publico' || v === 'reservado' || v === 'privado';
+  v === "publico" || v === "reservado" || v === "privado";
 
 export async function meuPerfil(userId: string): Promise<MeuPerfil | null> {
   if (!sql) return null;
@@ -71,7 +83,9 @@ export async function meuPerfil(userId: string): Promise<MeuPerfil | null> {
     country: (l.country as string) ?? null,
     state: (l.state as string) ?? null,
     city: (l.city as string) ?? null,
-    visibilidade: ehVisibilidade(l.perfil_visibilidade) ? l.perfil_visibilidade : 'reservado',
+    visibilidade: ehVisibilidade(l.perfil_visibilidade)
+      ? l.perfil_visibilidade
+      : "reservado",
   };
 }
 
@@ -108,12 +122,12 @@ export async function gravarPerfil(
 /** Apaga um campo de verdade — o `coalesce` acima nunca faria isso. */
 export async function limparCampoDoPerfil(
   userId: string,
-  campo: 'descricao' | 'avatar_url' | 'nascimento',
+  campo: "descricao" | "avatar_url" | "nascimento",
 ): Promise<void> {
   if (!sql) return;
-  if (campo === 'descricao') {
+  if (campo === "descricao") {
     await sql`update users set descricao = null where id = ${userId}::uuid`;
-  } else if (campo === 'avatar_url') {
+  } else if (campo === "avatar_url") {
     await sql`update users set avatar_url = null where id = ${userId}::uuid`;
   } else {
     await sql`update users set nascimento = null where id = ${userId}::uuid`;
@@ -131,7 +145,9 @@ export async function limparCampoDoPerfil(
  * abrem portas em outros lugares (recuperação de conta, por exemplo), e o
  * perfil não precisa deles para dizer "27 anos".
  */
-export async function perfilPublico(nickname: string): Promise<PerfilPublico | null> {
+export async function perfilPublico(
+  nickname: string,
+): Promise<PerfilPublico | null> {
   if (!sql) return null;
 
   const linhas = (await sql`
@@ -140,7 +156,9 @@ export async function perfilPublico(nickname: string): Promise<PerfilPublico | n
            case
              when nascimento is null then null
              else extract(year from age(nascimento))::int
-           end as idade
+           end as idade,
+           (select count(*)::int from seguindo_pessoa s where s.seguido_id = users.id)
+             as seguidores
       from users
      where lower(nickname) = ${nickname.trim().toLowerCase()}
        and banned_at is null
@@ -152,7 +170,7 @@ export async function perfilPublico(nickname: string): Promise<PerfilPublico | n
 
   const visibilidade: Visibilidade = ehVisibilidade(l.perfil_visibilidade)
     ? l.perfil_visibilidade
-    : 'reservado';
+    : "reservado";
 
   const base: PerfilPublico = {
     nickname: String(l.nickname),
@@ -162,11 +180,12 @@ export async function perfilPublico(nickname: string): Promise<PerfilPublico | n
     avatarUrl: null,
     lugar: null,
     pais: null,
+    seguidores: null,
     visibilidade,
   };
 
   // Privado: só o nickname. Nem foto — é o que a pessoa pediu.
-  if (visibilidade === 'privado') return base;
+  if (visibilidade === "privado") return base;
 
   base.avatarUrl = (l.avatar_url as string) ?? null;
 
@@ -181,15 +200,17 @@ export async function perfilPublico(nickname: string): Promise<PerfilPublico | n
    * Quem não quiser nem isso tem o nível privado, que não devolve nada.
    */
   base.pais = (l.country as string) ?? null;
-  if (visibilidade === 'reservado') return base;
+  base.seguidores = typeof l.seguidores === "number" ? l.seguidores : 0;
+  if (visibilidade === "reservado") return base;
 
   // Público: o resto.
   base.fullName = (l.full_name as string) ?? null;
   base.descricao = (l.descricao as string) ?? null;
-  base.idade = typeof l.idade === 'number' ? l.idade : null;
+  base.idade = typeof l.idade === "number" ? l.idade : null;
   base.lugar =
-    [l.city, l.state, l.country].filter((v) => typeof v === 'string' && v).join(', ') ||
-    null;
+    [l.city, l.state, l.country]
+      .filter((v) => typeof v === "string" && v)
+      .join(", ") || null;
 
   return base;
 }
