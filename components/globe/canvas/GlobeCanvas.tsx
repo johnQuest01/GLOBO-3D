@@ -39,7 +39,8 @@ import PeopleSearchPanel from '@/components/globe/ui/PeopleSearchPanel';
 import ConversasPanel from '@/components/globe/ui/ConversasPanel';
 import GrupoDeSinaisPanel from '@/components/globe/ui/GrupoDeSinaisPanel';
 import SinalPanel from '@/components/globe/ui/SinalPanel';
-import MuralPanel from '@/components/globe/ui/MuralPanel';
+import LinhaDoTempo from '@/components/globe/ui/LinhaDoTempo';
+import MenuDeAcoes from '@/components/globe/ui/MenuDeAcoes';
 import SinaisDoMundoPanel from '@/components/globe/ui/SinaisDoMundoPanel';
 import PerfilPanel from '@/components/globe/ui/PerfilPanel';
 import PerfilDeOutroPanel from '@/components/globe/ui/PerfilDeOutroPanel';
@@ -49,15 +50,9 @@ import EscolherNickname from '@/components/globe/ui/EscolherNickname';
 
 import AppHeader from '@/components/layout/AppHeader';
 import AppFooter from '@/components/layout/AppFooter';
-import FlightButton from '@/components/globe/ui/FlightButton';
-import BaggageButton from '@/components/globe/ui/BaggageButton';
-import DynamicNewsButton from '@/components/globe/ui/DynamicNewsButton';
-import UserProfileButton from '@/components/globe/ui/UserProfileButton';
-import AdvertiseButton from '@/components/globe/ui/AdvertiseButton';
 import ClearPinsButton from '@/components/ui/ClearPinsButton';
 import LockControl from '@/components/ui/LockControl';
 import SettingsIcon from '@/app/icons/SettingsIcon';
-import MessageButton from '@/components/globe/ui/MessageButton';
 
 import {
   GlobalNewsItem,
@@ -581,196 +576,202 @@ export default function GlobeCanvas() {
             onLockClick={handlers.handleLockClick}
             className="pointer-events-auto"
           />
-          <AdvertiseButton
-            onClick={handlers.handleOpenAdvertisePopup}
-            disabled={states.isAnyPopupOpen}
-            isVisible={states.isMainUiVisible}
-            className="bottom-[4.5rem] pointer-events-auto"
-          />
-          <FlightButton
-            onClick={handlers.handleOpenTravelPopup}
-            disabled={states.isAnyPopupOpen || externalData.isLoadingLocations}
-            isVisible={states.isMainUiVisible}
-            className="bottom-[8.5rem] pointer-events-auto"
-          />
-          <BaggageButton
-            onClick={handlers.handleOpenBaggagePopup}
-            disabled={states.isAnyPopupOpen}
-            isVisible={states.isMainUiVisible}
-            className="bottom-[12.5rem] pointer-events-auto"
-          />
-          <DynamicNewsButton
-            onClick={handlers.handleOpenDynamicNews}
-            disabled={states.isAnyPopupOpen || allNewsItems.length === 0}
-            isVisible={states.isMainUiVisible}
-            className="bottom-[16.5rem] pointer-events-auto"
-          />
-          <UserProfileButton
-            onClick={() => setPerfilAberto(true)}
-            disabled={states.isAnyPopupOpen}
-            isVisible={states.isMainUiVisible}
-            className="bottom-[20.5rem] pointer-events-auto"
-          />
-         
-          <MessageButton
-            onClick={handleOpenMessagePopup}
-            disabled={states.isAnyPopupOpen}
-            isVisible={states.isMainUiVisible}
-            className="bottom-[24.5rem] pointer-events-auto"
-          />
-
           {/*
-            AS CONVERSAS, com o contador de nao lidas.
+            A COLUNA DE DEZ BOTOES VIROU UM MENU.
 
-            Sem este botao a caixa postal nao servia para nada: a mensagem
-            chegava, era guardada no aparelho e ficava invisivel ate a pessoa
-            procurar o remetente na lupa por acaso.
+            Eram dez, empilhados, cada um com um estilo proprio — e dez botoes
+            nao sao dez escolhas, sao uma parede que a pessoa aprende a ignorar.
+            O globo, que e' o produto, ficava espiando por entre eles.
+
+            Agora a tela comeca vazia e cada pessoa fixa o que usa. "Ferias"
+            fica fora daqui de proposito: ele vive no rodape, e nao na coluna.
           */}
-          {/*
-            O MURAL. Fica acima das conversas de proposito: conversar e' com
-            quem voce ja' escolheu, e o mural e' de onde vem a proxima escolha.
-          */}
-          {realtime.estado.ligado && (
-            <button
-              type="button"
-              onClick={() =>
-                precisaDeNickname ? setPedindoNickname(true) : setMuralAberto(true)
-              }
-              disabled={states.isAnyPopupOpen}
-              title="Mural do globo — o que o mundo publicou hoje"
-              aria-label="Mural do globo"
-              className={`absolute right-4 z-40 p-4 rounded-full shadow-lg text-white transition-all duration-300 bg-emerald-700/90 hover:bg-emerald-600 disabled:bg-gray-600 disabled:opacity-50 bottom-[40.5rem] pointer-events-auto ${
-                states.isMainUiVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
-              }`}
-            >
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                <rect x="3" y="4" width="18" height="16" rx="2" />
-                <path d="M7 9h10M7 13h6" strokeLinecap="round" />
-              </svg>
-            </button>
-          )}
-
-          {realtime.estado.ligado && (
-            <button
-              type="button"
-              onClick={() =>
-                precisaDeNickname ? setPedindoNickname(true) : setConversasAbertas(true)
-              }
-              disabled={states.isAnyPopupOpen}
-              title="Suas conversas"
-              aria-label="Suas conversas"
-              className={`absolute right-4 z-40 p-4 rounded-full shadow-lg text-white transition-all duration-300 bg-slate-700/90 hover:bg-slate-600 disabled:bg-gray-600 disabled:opacity-50 bottom-[36.5rem] pointer-events-auto ${
-                states.isMainUiVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
-              }`}
-            >
-              <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6" stroke="currentColor" strokeWidth={2}>
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M8 10.5h8M8 14h5M21 12a8.5 8.5 0 0 1-8.5 8.5c-1.5 0-2.9-.4-4.1-1L3 21l1.6-5A8.5 8.5 0 1 1 21 12z"
-                />
-              </svg>
-              {totalNaoLidas > 0 && (
-                <span className="absolute -top-1 -right-1 flex h-6 min-w-6 items-center justify-center rounded-full bg-cyan-500 px-1.5 text-xs font-bold text-white ring-2 ring-slate-900">
-                  {totalNaoLidas > 99 ? '99+' : totalNaoLidas}
-                </span>
-              )}
-            </button>
-          )}
-
-          {/*
-            QUEM QUER CONVERSAR AGORA — o mundo inteiro, nao so' a regiao.
-            E' a promessa central do projeto: se ninguem de um pais estiver
-            online, alguem de outro estara'.
-          */}
-          {realtime.estado.ligado && (
-            <button
-              type="button"
-              onClick={() => setSinaisAbertos(true)}
-              disabled={states.isAnyPopupOpen}
-              title="Quem quer conversar agora, no mundo"
-              aria-label="Quem quer conversar agora, no mundo"
-              className={`absolute right-4 z-40 p-4 rounded-full shadow-lg text-white transition-all duration-300 bg-cyan-700/90 hover:bg-cyan-600 disabled:bg-gray-600 disabled:opacity-50 bottom-[24.5rem] pointer-events-auto ${
-                states.isMainUiVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
-              }`}
-            >
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                <circle cx="12" cy="12" r="9" />
-                <path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18" />
-              </svg>
-            </button>
-          )}
-
-          {/* A LUPA. Procurar alguem pelo nickname e ir ate a pessoa no globo. */}
-          {realtime.estado.ligado && (
-            <button
-              type="button"
-              onClick={() =>
-                precisaDeNickname ? setPedindoNickname(true) : setBuscaAberta(true)
-              }
-              disabled={states.isAnyPopupOpen}
-              title="Procurar uma pessoa pelo nickname"
-              aria-label="Procurar uma pessoa pelo nickname"
-              className={`absolute right-4 z-40 p-4 rounded-full shadow-lg text-white transition-all duration-300 bg-slate-700/90 hover:bg-slate-600 disabled:bg-gray-600 disabled:opacity-50 bottom-[32.5rem] pointer-events-auto ${
-                states.isMainUiVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
-              }`}
-            >
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                className="w-6 h-6"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <circle cx="11" cy="11" r="7" />
-                <path d="M20 20l-3.5-3.5" strokeLinecap="round" />
-              </svg>
-            </button>
-          )}
-
-          {/* Sinal de "quero conversar". So aparece com o realtime configurado
-              (NEXT_PUBLIC_REALTIME_URL) — sem ele, nada disto existe. */}
-          {realtime.estado.ligado && (
-            <button
-              type="button"
-              onClick={() => {
-                // Sem lugar no globo não há de onde acender o sinal. Antes
-                // disto o servidor recusava com uma frase do protocolo
-                // ("beacon:raise antes de presence:join") na cara da pessoa.
-                if (realtime.semLugar) {
-                  setPedindoLugar(true);
-                  return;
-                }
-                if (realtime.estado.meuBeacon) realtime.apagarBeacon();
-                else realtime.acenderBeacon('quero conversar');
-              }}
-              disabled={states.isAnyPopupOpen || !realtime.estado.conectado}
-              title={
-                realtime.estado.meuBeacon
-                  ? 'Apagar meu sinal'
-                  : 'Acender um sinal: quem quiser conversar te encontra'
-              }
-              className={`absolute right-4 z-40 p-4 rounded-full shadow-lg text-white transition-all duration-300 disabled:bg-gray-600 disabled:opacity-50 bottom-[28.5rem] pointer-events-auto ${
-                realtime.estado.meuBeacon
-                  ? 'bg-cyan-500 ring-2 ring-cyan-300 animate-pulse'
-                  : 'bg-cyan-700 hover:bg-cyan-600'
-              } ${states.isMainUiVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
-            >
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                className="w-6 h-6"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 18.75a6.75 6.75 0 006.75-6.75M12 18.75A6.75 6.75 0 015.25 12M12 18.75V22m0-19a3 3 0 013 3v4a3 3 0 11-6 0V6a3 3 0 013-3z"
-                />
-              </svg>
-            </button>
-          )}
+          <MenuDeAcoes
+            /*
+              SOME COM A LINHA DO TEMPO ABERTA. Minimizada, ela ocupa a mesma
+              borda direita com a faixa de cores — e dois conjuntos de alvos no
+              mesmo lugar nao sao dois conjuntos, sao um toque errado.
+            */
+            visivel={states.isMainUiVisible && !muralAberto}
+            bloqueado={states.isAnyPopupOpen}
+            acoes={[
+              ...(realtime.estado.ligado
+                ? [
+                    {
+                      id: 'mural',
+                      rotulo: 'Linha do tempo',
+                      descricao: 'O que o mundo publicou hoje',
+                      cor: '#059669',
+                      onSelecionar: () =>
+                        precisaDeNickname
+                          ? setPedindoNickname(true)
+                          : setMuralAberto(true),
+                      icone: (
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                          <rect x="3" y="4" width="18" height="16" rx="2" />
+                          <path d="M7 9h10M7 13h6" strokeLinecap="round" />
+                        </svg>
+                      ),
+                    },
+                    {
+                      id: 'conversas',
+                      rotulo: 'Conversas',
+                      descricao: 'Suas mensagens',
+                      cor: '#475569',
+                      contador: totalNaoLidas,
+                      onSelecionar: () =>
+                        precisaDeNickname
+                          ? setPedindoNickname(true)
+                          : setConversasAbertas(true),
+                      icone: (
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M8 10.5h8M8 14h5M21 12a8.5 8.5 0 0 1-8.5 8.5c-1.5 0-2.9-.4-4.1-1L3 21l1.6-5A8.5 8.5 0 1 1 21 12z"
+                          />
+                        </svg>
+                      ),
+                    },
+                    {
+                      id: 'sinais',
+                      rotulo: 'Quem quer falar',
+                      descricao: 'Sinais acesos no mundo inteiro',
+                      cor: '#0e7490',
+                      onSelecionar: () => setSinaisAbertos(true),
+                      icone: (
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                          <circle cx="12" cy="12" r="9" />
+                          <path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18" />
+                        </svg>
+                      ),
+                    },
+                    {
+                      id: 'busca',
+                      rotulo: 'Procurar',
+                      descricao: 'Achar alguem pelo nickname',
+                      cor: '#64748b',
+                      onSelecionar: () =>
+                        precisaDeNickname
+                          ? setPedindoNickname(true)
+                          : setBuscaAberta(true),
+                      icone: (
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <circle cx="11" cy="11" r="7" />
+                          <path d="M20 20l-3.5-3.5" strokeLinecap="round" />
+                        </svg>
+                      ),
+                    },
+                    {
+                      id: 'sinal',
+                      rotulo: realtime.estado.meuBeacon
+                        ? 'Apagar meu sinal'
+                        : 'Acender sinal',
+                      descricao: 'Quem quiser conversar te encontra',
+                      cor: realtime.estado.meuBeacon ? '#22d3ee' : '#0891b2',
+                      desativado: !realtime.estado.conectado,
+                      onSelecionar: () => {
+                        // Sem lugar no globo nao ha' de onde acender o sinal.
+                        if (realtime.semLugar) {
+                          setPedindoLugar(true);
+                          return;
+                        }
+                        if (realtime.estado.meuBeacon) realtime.apagarBeacon();
+                        else realtime.acenderBeacon('quero conversar');
+                      },
+                      icone: (
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M12 18.75a6.75 6.75 0 006.75-6.75M12 18.75A6.75 6.75 0 015.25 12M12 18.75V22m0-19a3 3 0 013 3v4a3 3 0 11-6 0V6a3 3 0 013-3z"
+                          />
+                        </svg>
+                      ),
+                    },
+                  ]
+                : []),
+              {
+                id: 'perfil',
+                rotulo: 'Meu perfil',
+                descricao: 'Foto, descricao e o que os outros veem',
+                cor: '#7c3aed',
+                onSelecionar: () => setPerfilAberto(true),
+                icone: (
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                    <circle cx="12" cy="8" r="3.5" />
+                    <path d="M4.5 20a7.5 7.5 0 0 1 15 0" strokeLinecap="round" />
+                  </svg>
+                ),
+              },
+              {
+                id: 'mensagem-mundo',
+                rotulo: 'Mensagem ao mundo',
+                cor: '#db2777',
+                onSelecionar: handleOpenMessagePopup,
+                icone: (
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                    <path d="M4 5h16v11H7l-3 3V5z" strokeLinejoin="round" />
+                  </svg>
+                ),
+              },
+              {
+                id: 'noticias',
+                rotulo: 'Noticias',
+                descricao: 'O que esta acontecendo por regiao',
+                cor: '#ea580c',
+                desativado: allNewsItems.length === 0,
+                onSelecionar: handlers.handleOpenDynamicNews,
+                icone: (
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                    <path d="M4 5h13v14H5a1 1 0 0 1-1-1V5z" strokeLinejoin="round" />
+                    <path d="M17 9h3v8a2 2 0 0 1-3 1.7" strokeLinejoin="round" />
+                    <path d="M7 9h7M7 12.5h7M7 16h4" strokeLinecap="round" />
+                  </svg>
+                ),
+              },
+              {
+                id: 'viagem',
+                rotulo: 'Planejar viagem',
+                cor: '#2563eb',
+                desativado: externalData.isLoadingLocations,
+                onSelecionar: handlers.handleOpenTravelPopup,
+                icone: (
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                    <path
+                      d="M3 15l7-2 4-8 2 .5-2 7.5 5-1.5 1 2-5 2.5-1 5-2 .5.5-4-5 1.5z"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                ),
+              },
+              {
+                id: 'bagagem',
+                rotulo: 'Bagagem',
+                cor: '#4f46e5',
+                onSelecionar: handlers.handleOpenBaggagePopup,
+                icone: (
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                    <rect x="4" y="7" width="16" height="13" rx="2" />
+                    <path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" strokeLinejoin="round" />
+                  </svg>
+                ),
+              },
+              {
+                id: 'anunciar',
+                rotulo: 'Anunciar',
+                descricao: 'Seu anuncio no globo',
+                cor: '#16a34a',
+                onSelecionar: handlers.handleOpenAdvertisePopup,
+                icone: (
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                    <path d="M4 10v4h3l5 4V6l-5 4H4z" strokeLinejoin="round" />
+                    <path d="M17 9a4 4 0 0 1 0 6" strokeLinecap="round" />
+                  </svg>
+                ),
+              },
+            ]}
+          />
 
           <ClearPinsButton
             onClick={handlers.handleClearPins}
@@ -1081,41 +1082,41 @@ export default function GlobeCanvas() {
             />
           </div>
 
-          <div className="pointer-events-auto">
-            <MuralPanel
-              aberto={muralAberto}
-              onFechar={() => setMuralAberto(false)}
-              meuNickname={realtime.meuNickname}
-              onVerPerfil={(apelido) => {
-                setMuralAberto(false);
-                setPerfilDeOutro(apelido);
-              }}
-              onConversar={(apelido) => {
-                setMuralAberto(false);
-                conversas.abrirConversa(apelido);
-              }}
-              onVerNoGlobo={(lat, lon, rotulo) => {
-                /*
-                  FECHA O MURAL AO VIAJAR. O ponto do post fica atras do painel
-                  se ele continuar aberto, e a viagem seria uma animacao que
-                  ninguem ve.
-                */
-                setMuralAberto(false);
-                setAlvoDaBusca({
-                  lat,
-                  lon,
-                  // `lugar` e nao `pessoa`: o rotulo de um lugar nao leva
-                  // arroba, e a cor nao deve fingir dizer se alguem esta
-                  // online. O post e' de um LUGAR, e quem escreveu pode ter
-                  // fechado o aplicativo horas atras.
-                  tipo: 'lugar',
-                  nickname: rotulo,
-                  online: false,
-                  pedidoEm: Date.now(),
-                });
-              }}
-            />
-          </div>
+          {/*
+            A LINHA DO TEMPO NAO FICA DENTRO de `pointer-events-auto` como os
+            outros paineis. Ela tem dois estados, e no segundo — minimizada —
+            precisa deixar o globo receber o toque atras dela: e' o globo que a
+            pessoa esta olhando, e so' a faixa da direita continua clicavel.
+          */}
+          <LinhaDoTempo
+            aberto={muralAberto}
+            onFechar={() => setMuralAberto(false)}
+            meuNickname={realtime.meuNickname}
+            onVerPerfil={(apelido) => {
+              setMuralAberto(false);
+              setPerfilDeOutro(apelido);
+            }}
+            onConversar={(apelido) => {
+              setMuralAberto(false);
+              conversas.abrirConversa(apelido);
+            }}
+            onFocarNoGlobo={(lat, lon, rotulo) => {
+              setAlvoDaBusca({
+                lat,
+                lon,
+                // `lugar` e nao `pessoa`: o rotulo de um lugar nao leva arroba,
+                // e a cor nao deve fingir dizer se alguem esta online. A
+                // publicacao e' de um LUGAR, e quem escreveu pode ter fechado o
+                // aplicativo horas atras.
+                tipo: 'lugar',
+                nickname: rotulo,
+                online: false,
+                // Muda a cada pedido: sem isto, tocar duas vezes no mesmo
+                // segmento da faixa nao refaria a viagem.
+                pedidoEm: Date.now(),
+              });
+            }}
+          />
 
           <div className="pointer-events-auto">
             <SinaisDoMundoPanel
