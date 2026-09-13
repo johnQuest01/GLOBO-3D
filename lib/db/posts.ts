@@ -65,6 +65,25 @@ export interface Post {
   cidade: string | null;
   criadoEm: string;
   expiraEm: string;
+  /**
+   * Os números sociais.
+   *
+   * ELES VÊM DA LINHA DO POST, mantidos por gatilho (db/schema-social.sql), e
+   * não de um `count(*)`. Contar curtidas a cada leitura percorreria a tabela
+   * inteira daquele post toda vez que alguém abre o feed — e o custo cresce
+   * justamente com o sucesso da publicação.
+   */
+  curtidas: number;
+  comentarios: number;
+  /**
+   * Eu curti este?
+   *
+   * NÃO SAI DESTA CONSULTA. Quem carimba é a rota, com UMA busca para a
+   * página inteira (ver `quaisEuCurti`). Perguntar dentro da consulta do mural
+   * obrigaria toda função daqui a receber "quem está lendo", inclusive as que
+   * não têm leitor — como a fila da moderação.
+   */
+  euCurti?: boolean;
   /** Só nos meus posts, e só para a moderação. */
   denuncias?: number;
   oculto?: boolean;
@@ -87,6 +106,8 @@ function montar(l: Record<string, unknown>): Post {
     cidade: (l.cidade as string) ?? null,
     criadoEm: new Date(String(l.created_at)).toISOString(),
     expiraEm: new Date(String(l.expires_at)).toISOString(),
+    curtidas: Number(l.curtidas ?? 0),
+    comentarios: Number(l.comentarios ?? 0),
   };
 }
 
@@ -133,7 +154,7 @@ export async function publicar(p: NovoPost): Promise<Post | null> {
             ${p.cartazChave}, ${p.lat}, ${p.lon}, ${p.lugar},
             ${p.pais}, ${p.estado}, ${p.cidade})
     returning id, kind, body, midia_chave, cartaz_chave, lat, lon, lugar,
-              created_at, expires_at,
+              created_at, expires_at, curtidas, comentarios,
               pais, estado, cidade,
               (select nickname from users where id = ${p.autorId}::uuid) as autor,
               (select avatar_url from users where id = ${p.autorId}::uuid) as autor_avatar
@@ -171,7 +192,7 @@ export async function listarMural(opcoes?: {
 
   const linhas = (await sql`
     select p.id, p.kind, p.body, p.midia_chave, p.cartaz_chave, p.lat, p.lon, p.lugar,
-           p.pais, p.estado, p.cidade, p.created_at, p.expires_at,
+           p.pais, p.estado, p.cidade, p.created_at, p.expires_at, p.curtidas, p.comentarios,
            u.nickname as autor, u.avatar_url as autor_avatar
       from posts p
       join users u on u.id = p.author_id
@@ -194,7 +215,7 @@ export async function meusPosts(autorId: string): Promise<Post[]> {
   const linhas = (await sql`
     select p.id, p.kind, p.body, p.midia_chave, p.cartaz_chave, p.lat, p.lon, p.lugar,
            p.pais, p.estado, p.cidade,
-           p.created_at, p.expires_at, p.oculto_em, p.removido_em,
+           p.created_at, p.expires_at, p.curtidas, p.comentarios, p.oculto_em, p.removido_em,
            u.nickname as autor, u.avatar_url as autor_avatar,
            (select count(*)::int from post_reports r where r.post_id = p.id) as denuncias
       from posts p
@@ -317,7 +338,7 @@ export async function filaDeModeracao(limite = 50): Promise<PostNaFila[]> {
   if (!sql) return [];
   const linhas = (await sql`
     select p.id, p.kind, p.body, p.midia_chave, p.cartaz_chave, p.lat, p.lon, p.lugar,
-           p.pais, p.estado, p.cidade, p.created_at, p.expires_at, p.oculto_em,
+           p.pais, p.estado, p.cidade, p.created_at, p.expires_at, p.curtidas, p.comentarios, p.oculto_em,
            u.nickname as autor, u.avatar_url as autor_avatar,
            (select count(*)::int from post_reports r where r.post_id = p.id) as denuncias,
            (select coalesce(array_agg(r.reason), '{}')

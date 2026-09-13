@@ -2,6 +2,8 @@
 
 import React, { FC, useEffect, useState } from "react";
 
+import GradeDoPerfil from "./GradeDoPerfil";
+
 /**
  * O perfil de outra pessoa.
  *
@@ -32,9 +34,16 @@ interface Props {
   nickname: string | null;
   onFechar: () => void;
   onConversar: (nickname: string) => void;
+  /** Leva o globo ate' a publicacao aberta na grade. */
+  onVerNoGlobo?: (lat: number, lon: number, rotulo: string) => void;
 }
 
-const PerfilDeOutroPanel: FC<Props> = ({ nickname, onFechar, onConversar }) => {
+const PerfilDeOutroPanel: FC<Props> = ({
+  nickname,
+  onFechar,
+  onConversar,
+  onVerNoGlobo,
+}) => {
   const [perfil, setPerfil] = useState<PerfilPublico | null>(null);
   const [carregando, setCarregando] = useState(false);
   const [semPerfil, setSemPerfil] = useState(false);
@@ -142,9 +151,15 @@ const PerfilDeOutroPanel: FC<Props> = ({ nickname, onFechar, onConversar }) => {
         role="dialog"
         aria-modal="true"
         aria-label={`Perfil de ${nickname}`}
-        className="relative w-full rounded-t-3xl bg-white/[0.08] p-5
-                   pb-[max(1.25rem,env(safe-area-inset-bottom))] shadow-2xl ring-1
-                   ring-white/15 backdrop-blur-xl sm:w-[min(92vw,24rem)] sm:rounded-3xl"
+        /*
+          A ALTURA PASSOU A TER TETO porque agora ha' uma grade embaixo. Sem
+          isso, quem publicou trinta vezes empurraria o botao de conversar para
+          fora da tela — e o botao e' o motivo pelo qual este cartao existe.
+        */
+        className="relative flex max-h-[88dvh] w-full flex-col overflow-y-auto rounded-t-3xl
+                   bg-white/[0.08] p-5 pb-[max(1.25rem,env(safe-area-inset-bottom))]
+                   shadow-2xl ring-1 ring-white/15 backdrop-blur-xl
+                   sm:max-h-[86dvh] sm:w-[min(92vw,24rem)] sm:rounded-3xl"
       >
         <button
           type="button"
@@ -237,6 +252,13 @@ const PerfilDeOutroPanel: FC<Props> = ({ nickname, onFechar, onConversar }) => {
             </p>
           )}
         </div>
+
+        {/*
+          A GRADE FICA ABAIXO DA FOTO E DAS DESCRICOES, e acima dos botoes: ela
+          e' o que faz decidir se vale a pena conversar, entao ela vem ANTES do
+          botao de conversar, e nao depois.
+        */}
+        <GradeDoPerfil nickname={nickname} onVerNoGlobo={onVerNoGlobo} />
 
         <div className="mt-5 flex gap-2">
           <button

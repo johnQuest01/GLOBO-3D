@@ -1134,10 +1134,13 @@ export default function GlobeCanvas() {
               setMuralAberto(false);
               conversas.abrirConversa(apelido);
             }}
-            onFocarNoGlobo={(lat, lon, rotulo) => {
+            onFocarNoGlobo={(lat, lon, rotulo, midia) => {
               setAlvoDaBusca({
                 lat,
                 lon,
+                // A publicacao vai junto: e' ela que aparece acima do nome do
+                // lugar, desenhada na propria cena.
+                midia,
                 // `lugar` e nao `pessoa`: o rotulo de um lugar nao leva arroba,
                 // e a cor nao deve fingir dizer se alguem esta online. A
                 // publicacao e' de um LUGAR, e quem escreveu pode ter fechado o

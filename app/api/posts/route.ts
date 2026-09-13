@@ -13,6 +13,7 @@ import {
 } from '@/lib/db/posts';
 import { muralDeQuemSegue } from '@/lib/db/seguir';
 import { coordenadaValida } from '@/lib/geo/lugar';
+import { quaisEuCurti } from '@/lib/db/social';
 
 /**
  * O mural do globo.
@@ -46,6 +47,24 @@ function indisponivel() {
   return NextResponse.json({ ok: false, reason: 'indisponivel' }, { status: 503 });
 }
 
+/**
+ * Carimba "eu curti" na página inteira, com UMA consulta.
+ *
+ * É a diferença entre uma ida ao banco e sessenta. Perguntar por post é o
+ * erro que mais aparece quando um feed começa a ficar lento sem ninguém
+ * entender por quê — e ele não dói com cinco posts, só com quinhentos.
+ */
+async function comCurtida<T extends { id: string }>(
+  posts: T[],
+  userId: string,
+): Promise<(T & { euCurti: boolean })[]> {
+  const meus = await quaisEuCurti(
+    posts.map((p) => p.id),
+    userId,
+  );
+  return posts.map((p) => ({ ...p, euCurti: meus.has(p.id) }));
+}
+
 export async function GET(request: Request) {
   if (!getSecret() || !isAuthDbEnabled || !postsLigados) return indisponivel();
 
@@ -57,7 +76,10 @@ export async function GET(request: Request) {
   const url = new URL(request.url);
 
   if (url.searchParams.get('meus') === '1') {
-    return NextResponse.json({ ok: true, posts: await meusPosts(session.user.id) });
+    return NextResponse.json({
+      ok: true,
+      posts: await comCurtida(await meusPosts(session.user.id), session.user.id),
+    });
   }
 
   /*
@@ -74,7 +96,10 @@ export async function GET(request: Request) {
   if (url.searchParams.get('de') === 'seguindo') {
     return NextResponse.json({
       ok: true,
-      posts: await muralDeQuemSegue(session.user.id),
+      posts: await comCurtida(
+        await muralDeQuemSegue(session.user.id),
+        session.user.id,
+      ),
       proximo: null,
     });
   }
@@ -91,7 +116,7 @@ export async function GET(request: Request) {
    */
   return NextResponse.json({
     ok: true,
-    posts,
+    posts: await comCurtida(posts, session.user.id),
     proximo: posts.length > 0 ? posts[posts.length - 1]!.criadoEm : null,
   });
 }

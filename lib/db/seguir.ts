@@ -174,6 +174,10 @@ export interface PostSeguido {
   kind: string;
   body: string | null;
   midiaChave: string | null;
+  cartazChave: string | null;
+  curtidas: number;
+  comentarios: number;
+  euCurti?: boolean;
   lat: number;
   lon: number;
   lugar: string | null;
@@ -197,6 +201,9 @@ function montar(
     kind: String(l.kind),
     body: (l.body as string) ?? null,
     midiaChave: (l.midia_chave as string) ?? null,
+    cartazChave: (l.cartaz_chave as string) ?? null,
+    curtidas: Number(l.curtidas ?? 0),
+    comentarios: Number(l.comentarios ?? 0),
     lat: Number(l.lat),
     lon: Number(l.lon),
     lugar: (l.lugar as string) ?? null,
@@ -232,8 +239,9 @@ export async function muralDeQuemSegue(
   const doQueSigo = teto - doMundo;
 
   const escolhidos = (await sql`
-    select p.id, p.kind, p.body, p.midia_chave, p.lat, p.lon, p.lugar,
+    select p.id, p.kind, p.body, p.midia_chave, p.cartaz_chave, p.lat, p.lon, p.lugar,
            p.pais, p.estado, p.cidade, p.created_at, p.expires_at,
+           p.curtidas, p.comentarios,
            u.nickname as autor, u.avatar_url as autor_avatar,
            case when sp.seguido_id is not null then 'pessoa' else 'lugar' end as origem
       from posts p
@@ -271,8 +279,9 @@ export async function muralDeQuemSegue(
    * existe exatamente para o contrário disso.
    */
   const mundo = (await sql`
-    select p.id, p.kind, p.body, p.midia_chave, p.lat, p.lon, p.lugar,
+    select p.id, p.kind, p.body, p.midia_chave, p.cartaz_chave, p.lat, p.lon, p.lugar,
            p.pais, p.estado, p.cidade, p.created_at, p.expires_at,
+           p.curtidas, p.comentarios,
            u.nickname as autor, u.avatar_url as autor_avatar
       from posts p
       join users u on u.id = p.author_id

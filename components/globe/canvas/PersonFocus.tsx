@@ -7,6 +7,7 @@ import * as THREE from 'three';
 
 import { labelWorldScale, SPHERE_RADIUS, textEmWidth } from '@/app/lib/globeLabels';
 import { latLonToVector3 } from '@/components/lib/utils';
+import MidiaNoGlobo, { type MidiaDoFoco } from './MidiaNoGlobo';
 
 /**
  * "Onde está essa pessoa?" — a resposta visual da lupa.
@@ -66,6 +67,14 @@ export interface AlvoDoFoco {
   lat: number;
   lon: number;
   /**
+   * A publicacao que pediu esta viagem, quando houver uma.
+   *
+   * NEM TODO FOCO TEM MIDIA: a lupa procura uma pessoa, o botao de ferias
+   * procura um lugar, e nenhum dos dois traz foto. Por isso ela e' opcional, e
+   * nao um campo vazio que todo chamador tem de preencher com nulo.
+   */
+  midia?: MidiaDoFoco | null;
+  /**
    * O que está sendo procurado.
    *
    * Começou como "a pessoa da lupa" e passou a servir também para um lugar de
@@ -83,6 +92,15 @@ export interface AlvoDoFoco {
 interface Props {
   alvo: AlvoDoFoco | null;
 }
+
+/*
+ * Onde o cartao do nome termina.
+ *
+ * Ele fica em y = 1,1 e tem 1 de altura, entao o topo esta' em 1,6. A conta
+ * esta' escrita aqui, e nao no outro arquivo, porque quem mexer na altura do
+ * cartao mexe neste arquivo — e o numero precisa estar onde a mao ja' esta'.
+ */
+const TOPO_DO_NOME = 1.6;
 
 // Compartilhadas: só há um destes por vez, mas recriar geometria a cada busca
 // seria alocação à toa.
@@ -287,6 +305,13 @@ const PersonFocus: FC<Props> = ({ alvo }) => {
           />
         </Text>
       </Billboard>
+
+      {/*
+        A PUBLICACAO, acima do nome do lugar. Ela nasce em cima do ponto que
+        acendeu — o video e o nome da cidade sao uma coisa so', e nao duas que
+        o olho precisa casar atravessando a tela.
+      */}
+      <MidiaNoGlobo midia={alvo.midia ?? null} base={TOPO_DO_NOME} />
     </group>
   );
 };

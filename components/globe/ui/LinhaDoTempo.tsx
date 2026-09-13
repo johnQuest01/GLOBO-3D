@@ -11,6 +11,7 @@ import React, {
 
 import { subirMidia, urlDaMidia } from "@/lib/chat/midiaRemota";
 import { prepararMidia, VIDEO_SEG_MAX } from "@/lib/midia/comprimir";
+import ComentariosPanel from "./ComentariosPanel";
 
 /**
  * A linha do tempo — e o gesto que só existe porque há um globo atrás dela.
@@ -52,6 +53,9 @@ interface Post {
   cidade: string | null;
   criadoEm: string;
   expiraEm: string;
+  curtidas: number;
+  comentarios: number;
+  euCurti?: boolean;
   porque?: "lugar" | "pessoa" | "mundo";
 }
 
@@ -74,7 +78,16 @@ interface Props {
   onConversar: (nickname: string) => void;
   meuNickname?: string | null;
   /** Leva o globo até o post. Chamado ao minimizar e a cada troca na faixa. */
-  onFocarNoGlobo: (lat: number, lon: number, rotulo: string) => void;
+  onFocarNoGlobo: (
+    lat: number,
+    lon: number,
+    rotulo: string,
+    midia?: {
+      kind: "imagem" | "video";
+      midiaChave: string;
+      cartazChave: string | null;
+    } | null,
+  ) => void;
 }
 
 const MOTIVOS: { valor: string; rotulo: string }[] = [
@@ -288,157 +301,20 @@ const MidiaDoPost: FC<{
 };
 
 /**
- * A publicação dentro do cartão do lugar, com o globo focado atrás.
+ * O que deste post vai para o globo.
  *
- * O VÍDEO TOCA COM SOM AQUI, e no feed não. A diferença é o gesto: no feed o
- * vídeo começa sozinho enquanto a pessoa rola, e som que aparece sem ser pedido
- * é o que faz gente fechar aplicativo no ônibus. Aqui ela TOCOU no botão do
- * lugar — pediu para ver aquilo —, e som pedido é outra coisa.
- *
- * O NAVEGADOR PODE RECUSAR MESMO ASSIM. A política de reprodução automática é
- * do navegador e muda entre eles; quando ela barra, o vídeo volta mudo e um
- * botão aparece, em vez de o vídeo simplesmente não começar. Um vídeo parado
- * sem explicação parece defeito.
+ * POST DE TEXTO NÃO VAI. Uma publicação sem arquivo viraria um retângulo vazio
+ * pairando sobre a cidade, e o nome do lugar já está logo abaixo dizendo tudo
+ * o que aquele ponto tem a dizer.
  */
-const PublicacaoNoCartao: FC<{ post: Post }> = ({ post }) => {
-  const [url, setUrl] = useState<string | null>(null);
-  const [cartaz, setCartaz] = useState<string | null>(null);
-  const [mudo, setMudo] = useState(false);
-  const videoRef = useRef<HTMLVideoElement | null>(null);
-
-  /*
-   * A MINIATURA APARECE ANTES DO VÍDEO. Este cartão nasce junto com o giro do
-   * globo; se ele ficasse cinza pelos segundos em que o vídeo desce, o gesto
-   * de tocar no botão não teria resposta — e a resposta é justamente o ponto.
-   */
-  useEffect(() => {
-    if (!post.cartazChave) {
-      setCartaz(null);
-      return;
-    }
-    let vivo = true;
-    void urlDaMidia(post.cartazChave).then((u) => {
-      if (vivo) setCartaz(u);
-    });
-    return () => {
-      vivo = false;
-    };
-  }, [post.cartazChave]);
-
-  useEffect(() => {
-    if (!post.midiaChave || post.kind === "texto") return;
-    let vivo = true;
-    setUrl(null);
-    void urlDaMidia(post.midiaChave).then((u) => {
-      if (vivo) setUrl(u);
-    });
-    return () => {
-      vivo = false;
-    };
-  }, [post.midiaChave, post.kind]);
-
-  useEffect(() => {
-    const v = videoRef.current;
-    if (!v || !url) return;
-    v.muted = false;
-    v.volume = 1;
-    void v
-      .play()
-      .then(() => setMudo(false))
-      .catch(() => {
-        // Barrado: volta mudo, mas TOCANDO — e o botão explica o resto.
-        v.muted = true;
-        setMudo(true);
-        void v.play().catch(() => undefined);
-      });
-  }, [url]);
-
-  /*
-   * PUBLICAÇÃO DE TEXTO TAMBÉM APARECE, e não some porque não tem arquivo. Ela
-   * vira um cartão com a cor do lugar e o texto legível — o que a pessoa pediu
-   * ao tocar no botão foi ver a publicação, e texto é publicação.
-   */
-  if (post.kind === "texto" || !post.midiaChave) {
-    return (
-      <div
-        className="mb-2.5 flex min-h-[104px] items-center justify-center rounded-xl px-3 py-3"
-        style={{
-          background: `linear-gradient(150deg, ${corDoLugar(post.pais)}33, rgb(8 12 22 / 0.9))`,
-        }}
-      >
-        <p className="line-clamp-4 text-center text-[13px] font-medium leading-snug text-white/90">
-          {post.body}
-        </p>
-      </div>
-    );
-  }
-
-  return (
-    <div className="relative mb-2.5 overflow-hidden rounded-xl bg-black/60">
-      {url && post.kind === "video" && (
-        <video
-          ref={videoRef}
-          src={url}
-          poster={cartaz ?? undefined}
-          loop
-          playsInline
-          controls
-          className="max-h-52 w-full object-contain"
-        />
-      )}
-      {url && post.kind === "imagem" && (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src={url}
-          alt={`Publicação de ${post.autor}`}
-          className="max-h-52 w-full object-cover"
-        />
-      )}
-      {!url && cartaz && (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img src={cartaz} alt="" className="max-h-52 w-full object-cover" />
-      )}
-      {!url && !cartaz && (
-        <div
-          className="h-[104px] w-full"
-          style={{
-            background: `linear-gradient(150deg, ${corDoLugar(post.pais)}33, rgb(8 12 22 / 0.9))`,
-          }}
-        />
-      )}
-
-      {mudo && post.kind === "video" && (
-        <button
-          type="button"
-          onClick={() => {
-            const v = videoRef.current;
-            if (!v) return;
-            v.muted = false;
-            void v
-              .play()
-              .then(() => setMudo(false))
-              .catch(() => undefined);
-          }}
-          className="absolute right-2 top-2 flex items-center gap-1.5 rounded-full bg-slate-950/80 px-2.5 py-1.5
-                     text-[11px] font-medium text-white ring-1 ring-white/20 backdrop-blur"
-        >
-          <svg
-            width="13"
-            height="13"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.9"
-          >
-            <path d="M4 10v4h3l5 4V6l-5 4H4z" strokeLinejoin="round" />
-            <path d="M17 9a4 4 0 0 1 0 6" strokeLinecap="round" />
-          </svg>
-          som
-        </button>
-      )}
-    </div>
-  );
-};
+function midiaDoPost(p: Post) {
+  if (p.kind === "texto" || !p.midiaChave) return null;
+  return {
+    kind: p.kind,
+    midiaChave: p.midiaChave,
+    cartazChave: p.cartazChave,
+  };
+}
 
 // ---------------------------------------------------------------------------
 // A tela inteira
@@ -473,6 +349,8 @@ const LinhaDoTempo: FC<Props> = ({
   const [enviando, setEnviando] = useState(false);
   /** De 0 a 1 enquanto o vídeo é recodificado; nulo quando não há preparo. */
   const [preparo, setPreparo] = useState<number | null>(null);
+  /** Qual publicacao esta' com os comentarios abertos. */
+  const [comentando, setComentando] = useState<string | null>(null);
   const arquivoRef = useRef<HTMLInputElement | null>(null);
 
   const [denunciando, setDenunciando] = useState<Post | null>(null);
@@ -576,7 +454,12 @@ const LinhaDoTempo: FC<Props> = ({
     (post: Post) => {
       setMinimizado(true);
       setMenuDoPost(null);
-      onFocarNoGlobo(post.lat, post.lon, post.lugar ?? post.pais ?? "aqui");
+      onFocarNoGlobo(
+        post.lat,
+        post.lon,
+        post.lugar ?? post.pais ?? "aqui",
+        midiaDoPost(post),
+      );
     },
     [onFocarNoGlobo],
   );
@@ -586,7 +469,12 @@ const LinhaDoTempo: FC<Props> = ({
       const p = posts[i];
       if (!p) return;
       setAtual(i);
-      onFocarNoGlobo(p.lat, p.lon, p.lugar ?? p.pais ?? "aqui");
+      onFocarNoGlobo(
+        p.lat,
+        p.lon,
+        p.lugar ?? p.pais ?? "aqui",
+        midiaDoPost(p),
+      );
     },
     [posts, onFocarNoGlobo],
   );
@@ -740,6 +628,51 @@ const LinhaDoTempo: FC<Props> = ({
     } finally {
       setPreparo(null);
       setEnviando(false);
+    }
+  };
+
+  /**
+   * Curtir.
+   *
+   * O CORACAO MUDA ANTES DA RESPOSTA DO SERVIDOR — e' o que faz o toque
+   * parecer instantaneo. O servidor devolve o numero de verdade e a tela se
+   * corrige, porque entre o toque e a resposta outras pessoas curtiram
+   * tambem. Se o pedido falhar, o coracao volta: um botao que fica ligado
+   * depois de uma falha mente sobre o que esta' guardado.
+   *
+   * CURTIR DUAS VEZES E' INOFENSIVO no banco (a chave primaria nao deixa
+   * nascer a segunda linha), entao nao ha' trava aqui — e o dedo rapido nao e'
+   * punido com um botao que ignora o toque.
+   */
+  const curtir = async (post: Post) => {
+    const quero = !post.euCurti;
+    const mexer = (dados: Partial<Post>) =>
+      setPosts((todos) =>
+        todos.map((p) => (p.id === post.id ? { ...p, ...dados } : p)),
+      );
+
+    mexer({
+      euCurti: quero,
+      curtidas: Math.max(0, (post.curtidas ?? 0) + (quero ? 1 : -1)),
+    });
+
+    try {
+      const r = await fetch("/api/curtir", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ post: post.id, quero }),
+      });
+      const d = (await r.json().catch(() => ({}))) as {
+        curtidas?: number;
+        euCurti?: boolean;
+      };
+      if (r.ok && typeof d.curtidas === "number") {
+        mexer({ curtidas: d.curtidas, euCurti: Boolean(d.euCurti) });
+      } else {
+        mexer({ euCurti: post.euCurti, curtidas: post.curtidas });
+      }
+    } catch {
+      mexer({ euCurti: post.euCurti, curtidas: post.curtidas });
     }
   };
 
@@ -940,12 +873,12 @@ const LinhaDoTempo: FC<Props> = ({
         {postAtual && (
           <div className="pointer-events-auto absolute bottom-4 left-4 right-[38px] rounded-2xl bg-slate-950/80 p-3 ring-1 ring-white/15 backdrop-blur-xl sm:right-auto sm:w-80">
             {/*
-              A PUBLICAÇÃO VEM ANTES DO NOME DO LUGAR. Quem tocou no botão
-              queria ver aquilo; o nome do lugar é a legenda, e legenda vem
-              depois do que ela legenda.
+              A MÍDIA NÃO ESTÁ MAIS AQUI: ela foi para o globo, logo acima do
+              nome do lugar (ver MidiaNoGlobo). Duas cópias do mesmo vídeo na
+              tela baixariam o arquivo duas vezes e tocariam dois áudios em
+              cima um do outro. Este cartão virou a legenda daquilo: quem
+              publicou, onde, e o que escreveu.
             */}
-            <PublicacaoNoCartao post={postAtual} />
-
             <div className="flex items-center gap-2">
               <span
                 className="h-8 w-1.5 shrink-0 rounded-full"
@@ -985,10 +918,15 @@ const LinhaDoTempo: FC<Props> = ({
               </button>
             </div>
 
-            {/* A legenda só aparece quando há mídia: num post de texto ela
-                repetiria o que a miniatura acabou de mostrar. */}
-            {postAtual.body && postAtual.kind !== "texto" && (
-              <p className="mt-2 line-clamp-2 text-[12px] leading-snug text-white/65">
+            {/*
+              A LEGENDA VALE PARA TODO TIPO agora. Com a mídia no globo, este
+              texto deixou de repetir a miniatura — e num post de texto ele é a
+              única coisa que a publicação tem. Quatro linhas em vez de duas:
+              sem a imagem acima, sobrou espaço, e cortar por cortar só esconde
+              o que a pessoa escreveu.
+            */}
+            {postAtual.body && (
+              <p className="mt-2 line-clamp-4 whitespace-pre-wrap text-[12px] leading-snug text-white/65">
                 {postAtual.body}
               </p>
             )}
@@ -1142,6 +1080,73 @@ const LinhaDoTempo: FC<Props> = ({
                       </span>
                       <span className="max-w-[4.5rem] truncate text-[10px] text-white/70">
                         {post.cidade ?? post.pais ?? "no globo"}
+                      </span>
+                    </button>
+
+                    {/*
+                      CURTIR E COMENTAR VÊM ANTES DE FALAR. São os gestos que
+                      as pessoas fazem dezenas de vezes por sessão; conversar
+                      é o que se faz uma vez. A ordem da coluna é a ordem da
+                      frequência, e não a da importância.
+                    */}
+                    <button
+                      type="button"
+                      onClick={() => void curtir(post)}
+                      aria-label={post.euCurti ? "Descurtir" : "Curtir"}
+                      aria-pressed={Boolean(post.euCurti)}
+                      className="flex flex-col items-center gap-1"
+                    >
+                      <span
+                        className={`flex h-11 w-11 items-center justify-center rounded-full ring-1 transition-colors ${
+                          post.euCurti
+                            ? "bg-rose-500/25 ring-rose-400/50"
+                            : "bg-white/10 ring-white/15"
+                        }`}
+                      >
+                        <svg
+                          width="22"
+                          height="22"
+                          viewBox="0 0 24 24"
+                          fill={post.euCurti ? "currentColor" : "none"}
+                          stroke="currentColor"
+                          strokeWidth="1.7"
+                          className={post.euCurti ? "text-rose-300" : "text-white"}
+                        >
+                          <path
+                            d="M12 20s-7-4.6-7-9.2A4 4 0 0 1 12 8a4 4 0 0 1 7 2.8C19 15.4 12 20 12 20z"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </span>
+                      <span className="text-[10px] tabular-nums text-white/60">
+                        {post.curtidas > 0 ? post.curtidas : "curtir"}
+                      </span>
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => setComentando(post.id)}
+                      aria-label="Comentários"
+                      className="flex flex-col items-center gap-1"
+                    >
+                      <span className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15">
+                        <svg
+                          width="21"
+                          height="21"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="1.7"
+                          className="text-white"
+                        >
+                          <path
+                            d="M20 12a7 7 0 0 1-7 7H8l-4 2.5V12a7 7 0 0 1 7-7h2a7 7 0 0 1 7 7z"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </span>
+                      <span className="text-[10px] tabular-nums text-white/60">
+                        {post.comentarios > 0 ? post.comentarios : "falar disso"}
                       </span>
                     </button>
 
@@ -1492,6 +1497,28 @@ const LinhaDoTempo: FC<Props> = ({
           </div>
         </div>
       )}
+
+      {/*
+        OS COMENTÁRIOS SÃO UMA FOLHA POR CIMA, e não uma terceira coluna.
+        Numa tela de celular não há largura para a conversa ao lado do vídeo, e
+        empurrar o vídeo para o lado tiraria da tela justamente aquilo que está
+        sendo comentado. A folha cobre; ao fechar, o vídeo continua de onde
+        estava.
+      */}
+      <ComentariosPanel
+        postId={comentando}
+        onFechar={() => setComentando(null)}
+        onVerPerfil={onVerPerfil}
+        onContagem={(id, quanto) =>
+          setPosts((todos) =>
+            todos.map((p) =>
+              p.id === id
+                ? { ...p, comentarios: Math.max(0, p.comentarios + quanto) }
+                : p,
+            ),
+          )
+        }
+      />
     </div>
   );
 };

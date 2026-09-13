@@ -2,6 +2,8 @@
 
 import React, { FC, useEffect, useRef, useState } from 'react';
 
+import GradeDoPerfil from './GradeDoPerfil';
+
 import { subirMidia } from '@/lib/chat/midiaRemota';
 import { prepararImagem } from '@/lib/chat/midia';
 
@@ -357,6 +359,17 @@ const PerfilPanel: FC<Props> = ({ aberto, onFechar }) => {
 
           {erro && <p className="text-xs text-red-300">{erro}</p>}
           {recado && !erro && <p className="text-xs text-cyan-200/80">{recado}</p>}
+
+          {/*
+            A MINHA GRADE, no fim — depois dos campos, e nao antes.
+
+            Esta tela e' onde se EDITA o perfil, e quem a abriu veio mexer em
+            nome, foto ou privacidade. A grade aqui e' para conferir o que ja'
+            esta' publicado, inclusive o que a comunidade escondeu: sem isso
+            uma publicacao minha pode sumir sem que eu saiba, e eu sigo
+            publicando para um lugar que ninguem mais enxerga.
+          */}
+          <GradeDoPerfil nickname={null} />
         </div>
 
         <div className="border-t border-white/10 p-3">
