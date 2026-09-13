@@ -40,6 +40,7 @@ import ConversasPanel from '@/components/globe/ui/ConversasPanel';
 import GrupoDeSinaisPanel from '@/components/globe/ui/GrupoDeSinaisPanel';
 import SinalPanel from '@/components/globe/ui/SinalPanel';
 import SinaisDoMundoPanel from '@/components/globe/ui/SinaisDoMundoPanel';
+import PerfilPanel from '@/components/globe/ui/PerfilPanel';
 import { registrarWorker } from '@/lib/push/avisos';
 import EscolherLugar from '@/components/globe/ui/EscolherLugar';
 import EscolherNickname from '@/components/globe/ui/EscolherNickname';
@@ -280,6 +281,8 @@ export default function GlobeCanvas() {
   const [sinalAberto, setSinalAberto] = useState<Beacon | null>(null);
   /** A lista mundial de quem quer conversar. */
   const [sinaisAbertos, setSinaisAbertos] = useState(false);
+  /** A tela de editar o proprio perfil. */
+  const [perfilAberto, setPerfilAberto] = useState(false);
 
   /*
    * O QUE FAZER QUANDO A PESSOA TOCA NA NOTIFICACAO.
@@ -598,7 +601,7 @@ export default function GlobeCanvas() {
             className="bottom-[16.5rem] pointer-events-auto"
           />
           <UserProfileButton
-            onClick={handlers.handleOpenUserProfile}
+            onClick={() => setPerfilAberto(true)}
             disabled={states.isAnyPopupOpen}
             isVisible={states.isMainUiVisible}
             className="bottom-[20.5rem] pointer-events-auto"
@@ -1031,6 +1034,10 @@ export default function GlobeCanvas() {
               aberto={pedindoLugar}
               onFechar={() => setPedindoLugar(false)}
             />
+          </div>
+
+          <div className="pointer-events-auto">
+            <PerfilPanel aberto={perfilAberto} onFechar={() => setPerfilAberto(false)} />
           </div>
 
           <div className="pointer-events-auto">
