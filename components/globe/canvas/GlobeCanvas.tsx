@@ -41,6 +41,7 @@ import GrupoDeSinaisPanel from '@/components/globe/ui/GrupoDeSinaisPanel';
 import SinalPanel from '@/components/globe/ui/SinalPanel';
 import SinaisDoMundoPanel from '@/components/globe/ui/SinaisDoMundoPanel';
 import PerfilPanel from '@/components/globe/ui/PerfilPanel';
+import PerfilDeOutroPanel from '@/components/globe/ui/PerfilDeOutroPanel';
 import { registrarWorker } from '@/lib/push/avisos';
 import EscolherLugar from '@/components/globe/ui/EscolherLugar';
 import EscolherNickname from '@/components/globe/ui/EscolherNickname';
@@ -283,6 +284,8 @@ export default function GlobeCanvas() {
   const [sinaisAbertos, setSinaisAbertos] = useState(false);
   /** A tela de editar o proprio perfil. */
   const [perfilAberto, setPerfilAberto] = useState(false);
+  /** O perfil de OUTRA pessoa, quando se toca no nome dela. */
+  const [perfilDeOutro, setPerfilDeOutro] = useState<string | null>(null);
 
   /*
    * O QUE FAZER QUANDO A PESSOA TOCA NA NOTIFICACAO.
@@ -1000,6 +1003,7 @@ export default function GlobeCanvas() {
                   )
                 }
                 onMarcarLidas={() => conversas.marcarLidas(conversas.abertaCom!)}
+                onVerPerfil={setPerfilDeOutro}
                 onFechar={() => {
                   conversas.fecharConversa();
                   // Fechar a conversa encerra a chamada junto: deixar camera e
@@ -1041,6 +1045,17 @@ export default function GlobeCanvas() {
           </div>
 
           <div className="pointer-events-auto">
+            <PerfilDeOutroPanel
+              nickname={perfilDeOutro}
+              onFechar={() => setPerfilDeOutro(null)}
+              onConversar={(apelido) => {
+                setPerfilDeOutro(null);
+                conversas.abrirConversa(apelido);
+              }}
+            />
+          </div>
+
+          <div className="pointer-events-auto">
             <SinaisDoMundoPanel
               aberto={sinaisAbertos}
               onFechar={() => setSinaisAbertos(false)}
@@ -1069,6 +1084,10 @@ export default function GlobeCanvas() {
               onChamarVideo={(clientId) => {
                 setSinalAberto(null);
                 realtime.pedirConexao(clientId);
+              }}
+              onVerPerfil={(apelido) => {
+                setSinalAberto(null);
+                setPerfilDeOutro(apelido);
               }}
             />
           </div>

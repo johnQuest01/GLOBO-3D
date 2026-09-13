@@ -49,6 +49,8 @@ interface Props {
     nome?: string,
   ) => Promise<boolean>;
   onMarcarLidas: () => void;
+  /** Tocar no nome abre o perfil de quem esta do outro lado. */
+  onVerPerfil?: (nickname: string) => void;
   onFechar: () => void;
   onChamarVideo?: () => void;
   onDenunciar: (motivo: string) => void;
@@ -157,6 +159,7 @@ const ChatOverlay: FC<Props> = ({
   onDigitando,
   onEnviarMidia,
   onMarcarLidas,
+  onVerPerfil,
   onFechar,
   onChamarVideo,
   onDenunciar,
@@ -188,6 +191,17 @@ const ChatOverlay: FC<Props> = ({
   useEffect(() => {
     if (aberta) fim.current?.scrollIntoView({ behavior: 'smooth' });
   }, [quantidade, aberta]);
+
+  /*
+   * A ALTURA DO CAMPO E' ACERTADA AO ABRIR, e nao so' quando alguem digita.
+   *
+   * Sem isto, o campo nascia com a altura de uma linha enquanto o texto de
+   * ajuda ocupava duas — no celular, onde ele e' estreito, a segunda linha
+   * ficava CORTADA na borda de baixo. Relatado tres vezes, e com razao.
+   */
+  useEffect(() => {
+    if (aberta && campoRef.current) crescerComOTexto(campoRef.current);
+  }, [aberta]);
 
   /**
    * Marca como lido só com a janela à vista.
@@ -454,7 +468,16 @@ const ChatOverlay: FC<Props> = ({
             />
           </div>
 
-          <div className="min-w-0 flex-1">
+          {/*
+            O NOME ABRE O PERFIL. E' onde a pessoa procura quando quer saber com
+            quem esta falando — e ate' agora era so' texto.
+          */}
+          <button
+            type="button"
+            onClick={() => onVerPerfil?.(nome)}
+            disabled={!onVerPerfil}
+            className="min-w-0 flex-1 text-left disabled:cursor-default"
+          >
             <p className="truncate text-[15px] font-semibold text-white">@{nome}</p>
             {/*
               O "digitando…" TOMA O LUGAR do estado de presença em vez de
@@ -470,7 +493,7 @@ const ChatOverlay: FC<Props> = ({
                 {online ? 'online agora' : 'offline — vai receber quando voltar'}
               </p>
             )}
-          </div>
+          </button>
 
           {onChamarVideo && (
             <button
@@ -787,7 +810,7 @@ const ChatOverlay: FC<Props> = ({
                       onClick={() => setAnexosAbertos((v) => !v)}
                       title="Anexar"
                       aria-label="Anexar arquivo"
-                      className={`shrink-0 rounded-full p-2.5 transition-colors ${
+                      className={`shrink-0 rounded-full p-2 transition-colors ${
                         anexosAbertos
                           ? 'bg-white/15 text-white'
                           : 'text-white/60 hover:bg-white/10 hover:text-white'
@@ -809,7 +832,7 @@ const ChatOverlay: FC<Props> = ({
                       vendo agora, e esconde-lo atras de um menu o encareceria.
                     */}
                     <label
-                      className="shrink-0 cursor-pointer rounded-full p-2.5 text-white/60 transition-colors hover:bg-white/10 hover:text-white"
+                      className="shrink-0 cursor-pointer rounded-full p-2 text-white/60 transition-colors hover:bg-white/10 hover:text-white"
                       title="Tirar foto"
                     >
                       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
@@ -846,7 +869,7 @@ const ChatOverlay: FC<Props> = ({
                         }
                       }}
                       rows={1}
-                      placeholder="Escreva uma mensagem…"
+                      placeholder="Mensagem"
                       maxLength={4000}
                       enterKeyHint="send"
                       /*
@@ -857,8 +880,8 @@ const ChatOverlay: FC<Props> = ({
                         focado para a vista sozinho; o que o codigo acrescentava
                         era so' a espera.
                       */
-                      className="min-h-[3rem] min-w-0 flex-1 resize-none overflow-y-auto rounded-2xl bg-white/10
-                                 px-4 py-3 text-[16px] leading-snug text-white placeholder-white/40
+                      className="min-h-[2.6rem] min-w-0 flex-1 resize-none overflow-y-auto rounded-2xl bg-white/10
+                                 px-3.5 py-2 text-[16px] leading-snug text-white placeholder-white/40
                                  outline-none ring-1 ring-white/10 focus:ring-cyan-400/50"
                     />
 
@@ -874,7 +897,7 @@ const ChatOverlay: FC<Props> = ({
                         onPointerDown={(e) => e.preventDefault()}
                         title="Enviar"
                         aria-label="Enviar mensagem"
-                        className="shrink-0 rounded-full bg-cyan-600 p-3 text-white transition-colors hover:bg-cyan-500"
+                        className="shrink-0 rounded-full bg-cyan-600 p-2.5 text-white transition-colors hover:bg-cyan-500"
                       >
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                           <path d="M4 12l16-8-6 16-2.5-6.5z" strokeLinejoin="round" />
@@ -887,7 +910,7 @@ const ChatOverlay: FC<Props> = ({
                         onClick={comecarAGravar}
                         title="Gravar áudio"
                         aria-label="Gravar áudio"
-                        className="shrink-0 rounded-full bg-white/10 p-3 text-white/70 transition-colors hover:bg-white/20 hover:text-white"
+                        className="shrink-0 rounded-full bg-white/10 p-2.5 text-white/70 transition-colors hover:bg-white/20 hover:text-white"
                       >
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                           <rect x="9" y="3" width="6" height="11" rx="3" />

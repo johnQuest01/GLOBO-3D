@@ -30,6 +30,8 @@ interface Props {
   meuClientId: string;
   onConversar: (nickname: string) => void;
   onChamarVideo: (clientId: string) => void;
+  /** Ver quem e' antes de chamar. So' faz sentido com nickname. */
+  onVerPerfil?: (nickname: string) => void;
 }
 
 /** "faltam 12 min" — o sinal tem hora para acabar, e isso muda a decisão. */
@@ -54,6 +56,7 @@ const SinalPanel: FC<Props> = ({
   meuClientId,
   onConversar,
   onChamarVideo,
+  onVerPerfil,
 }) => {
   if (!sinal) return null;
 
@@ -85,9 +88,20 @@ const SinalPanel: FC<Props> = ({
           </span>
 
           <div className="min-w-0 flex-1">
-            <p className="truncate text-[15px] font-semibold text-white">
-              {ehMeu ? 'Este é o seu sinal' : nickname ? `@${nickname}` : 'Alguém no globo'}
-            </p>
+            {nickname && !ehMeu && onVerPerfil ? (
+              <button
+                type="button"
+                onClick={() => onVerPerfil(nickname)}
+                className="block max-w-full truncate text-left text-[15px] font-semibold
+                           text-white underline-offset-2 hover:underline"
+              >
+                @{nickname}
+              </button>
+            ) : (
+              <p className="truncate text-[15px] font-semibold text-white">
+                {ehMeu ? 'Este é o seu sinal' : nickname ? `@${nickname}` : 'Alguém no globo'}
+              </p>
+            )}
             <p className="mt-0.5 text-sm text-white/70">
               {sinal.topic ?? 'quer conversar'}
             </p>
