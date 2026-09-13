@@ -51,3 +51,6 @@ public/textures/debug-night.webp
 
 .vercel
 .env*
+
+# Vídeos de teste colocados na raiz para subir manualmente — nunca no repositório.
+video/

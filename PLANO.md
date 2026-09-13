@@ -139,6 +139,27 @@ relevante — e não só o que é recente.
 
 ---
 
+## 7. Pular a recodificação quando o arquivo já está bom
+
+**Estado:** por fazer. Apareceu subindo o vídeo da Califórnia.
+
+O vídeo tem 3 min 51 s, já é H.264 + AAC e tem 57,9 MB. Do celular ele seria
+**recusado** — o preparo tem teto de 3 minutos, porque recodificar acontece em
+tempo real e prender alguém quatro minutos numa barra é abandono. Mas esse
+arquivo **não precisava** de preparo nenhum: cabe no teto de 60 MB e toca em
+todo navegador do jeito que está.
+
+O que precisa existir: antes de recodificar, ler o cabeçalho do arquivo (o
+`moov`, que nos vídeos de câmera vem no começo) e, se for H.264 num MP4 e couber
+no teto, **subir direto**. A recodificação continua existindo para o que
+precisa dela — HEVC de iPhone e arquivo grande demais.
+
+**Pronto quando:** este exato arquivo sobe do navegador sem passar pela barra
+de preparo, e um `.mov` HEVC continua sendo recodificado — os dois cobertos por
+teste, com arquivos reais.
+
+---
+
 ## Dívidas conhecidas (minhas e do projeto)
 
 - [x] ~~vídeo de celular não subia (teto de 25 MB, HEVC)~~ — resolvido em `377443c`
