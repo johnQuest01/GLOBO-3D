@@ -1,6 +1,7 @@
 'use client';
 
 import { Billboard } from '@react-three/drei';
+import { useThree } from '@react-three/fiber';
 import { FC, useEffect, useMemo, useRef, useState } from 'react';
 import * as THREE from 'three';
 
@@ -43,28 +44,55 @@ interface Props {
   midia: MidiaDoFoco | null;
   /** Onde o topo do cartão do nome termina, em unidades da cena. */
   base: number;
+  /**
+   * Quantos pixels de tela vale uma unidade da cena.
+   *
+   * VEM DE FORA porque quem manda nisso é o grupo do marcador, que se
+   * redimensiona a cada quadro para o nome do lugar ter sempre o mesmo tamanho
+   * na tela. Receber o número em vez de repeti-lo aqui é o que impede os dois
+   * arquivos de discordarem no dia em que um deles mudar.
+   */
+  pxPorUnidade: number;
 }
 
 /**
- * As medidas da miniatura, em unidades da cena (o globo tem raio 1,5).
+ * As medidas da miniatura, EM PIXELS DE TELA.
  *
- * O TETO É DA ALTURA, e não da largura. Vídeo de celular é em pé: limitar a
- * largura deixaria um retrato com o dobro da altura de uma paisagem, e a
- * miniatura passaria a ter tamanhos muito diferentes conforme o que foi
- * filmado. Presa a altura, as duas ocupam o mesmo espaço vertical — e a
- * largura ainda tem teto próprio para uma paisagem muito esticada não virar
- * uma faixa atravessada no planeta.
+ * POR QUE EM PIXELS E NÃO EM UNIDADES DA CENA. O grupo do marcador se
+ * redimensiona a cada quadro para o nome do lugar ter sempre o mesmo tamanho na
+ * tela, perto ou longe. A miniatura mora dentro desse grupo, então ela herda a
+ * mesma regra: uma unidade vale sempre os mesmos pixels. Pensar em unidades era
+ * pensar num número sem significado; pensar em pixels é pensar no que a pessoa
+ * vê.
+ *
+ * E É ISSO QUE FAZ FUNCIONAR NO CELULAR. Um tamanho fixo que fica bom num
+ * monitor de 1440 ocupa a tela inteira num telefone de 375. Os tetos são o
+ * MENOR entre um valor absoluto e uma fração da tela: no desktop manda o
+ * absoluto, no celular manda a fração, e em nenhum dos dois a publicação
+ * atropela o globo que ela deveria estar apontando.
+ *
+ * OS DOIS TETOS EXISTEM PORQUE HÁ DOIS FORMATOS, e não um. Vídeo de celular é
+ * em pé (9:16); foto e vídeo de câmera são deitados (16:9 ou 4:3). Prender só a
+ * altura deixaria um deitado atravessado no planeta; prender só a largura
+ * deixaria um em pé com o dobro da altura do outro. Com os dois, cada formato
+ * cresce até esbarrar no SEU limite, e nenhum sai da mesma moldura mental — o
+ * olho não precisa se reajustar a cada troca na faixa do tempo.
  */
-const ALTURA_MAX = 2.6;
-const LARGURA_MAX = 3.6;
-/** O respiro entre o nome do lugar e a miniatura. */
+const ALTURA_MAX_PX = 300;
+const LARGURA_MAX_PX = 340;
+/** Nunca mais que isto da tela, que é o que salva o celular. */
+const FATIA_DA_ALTURA = 0.34;
+const FATIA_DA_LARGURA = 0.7;
+
+/** O respiro entre o nome do lugar e a miniatura, em unidades. */
 const VAO = 0.35;
 /** A moldura escura por trás — é ela que separa a mídia do planeta atrás. */
 const MOLDURA = 0.14;
 
 const ORDEM = 24;
 
-const MidiaNoGlobo: FC<Props> = ({ midia, base }) => {
+const MidiaNoGlobo: FC<Props> = ({ midia, base, pxPorUnidade }) => {
+  const { size } = useThree();
   const [textura, setTextura] = useState<THREE.Texture | null>(null);
   const [aspecto, setAspecto] = useState(1);
   const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -130,6 +158,23 @@ const MidiaNoGlobo: FC<Props> = ({ midia, base }) => {
       video.preload = 'auto';
 
       /*
+       * O ELEMENTO PRECISA ESTAR NO DOCUMENTO, mesmo sem ninguém o ver.
+       *
+       * Descoberto medindo: a textura de vídeo estava montada e ativa, e o
+       * plano saía PRETO. Um `<video>` solto — criado e nunca inserido na
+       * página — o navegador trata como descartável e não produz quadros para
+       * ele, e sem quadros a textura fica preta para sempre.
+       *
+       * FORA DA TELA, E NÃO `display:none`: escondido assim o navegador também
+       * para de desenhar, que é o mesmo problema com outro nome. Um pixel no
+       * canto, atrás de tudo e sem receber toque, é o que o mantém vivo.
+       */
+      video.setAttribute('playsinline', '');
+      video.style.cssText =
+        'position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;z-index:-1';
+      document.body.appendChild(video);
+
+      /*
        * COM SOM. Para chegar aqui foi preciso TOCAR no botão "ver este lugar
        * no globo" — som que responde a um toque é outra coisa do que som que
        * começa sozinho enquanto alguém rola uma lista. Se o navegador recusar
@@ -155,8 +200,15 @@ const MidiaNoGlobo: FC<Props> = ({ midia, base }) => {
         void video.play().catch(() => undefined);
       });
 
-      // Só entra na cena quando há quadro: entrar antes mostra preto.
-      video.addEventListener('canplay', () => {
+      /*
+       * ENTRA NA CENA QUANDO ESTÁ TOCANDO, e não quando "dá para tocar".
+       *
+       * `canplay` diz que há dados suficientes; `playing` diz que o relógio do
+       * vídeo andou. Entre um e outro cabe o caso em que a reprodução foi
+       * barrada — e aí a textura entraria preta, apagando o cartaz que já
+       * estava certo na tela. Trocar o certo pelo preto é pior que demorar.
+       */
+      video.addEventListener('playing', () => {
         if (vivo && tex) setTextura(tex);
       });
     });
@@ -168,6 +220,7 @@ const MidiaNoGlobo: FC<Props> = ({ midia, base }) => {
         video.pause();
         video.removeAttribute('src');
         video.load();
+        video.remove();
       }
       tex?.dispose();
       // Quem sai é o vídeo; se ainda houver cartaz, a próxima montagem o traz.
@@ -181,14 +234,20 @@ const MidiaNoGlobo: FC<Props> = ({ midia, base }) => {
   }, [midia]);
 
   const { largura, altura } = useMemo(() => {
-    let a = ALTURA_MAX;
+    const px = Math.max(1, pxPorUnidade);
+    const alturaMax =
+      Math.min(ALTURA_MAX_PX, size.height * FATIA_DA_ALTURA) / px;
+    const larguraMax =
+      Math.min(LARGURA_MAX_PX, size.width * FATIA_DA_LARGURA) / px;
+
+    let a = alturaMax;
     let l = a * aspecto;
-    if (l > LARGURA_MAX) {
-      l = LARGURA_MAX;
+    if (l > larguraMax) {
+      l = larguraMax;
       a = l / aspecto;
     }
     return { largura: l, altura: a };
-  }, [aspecto]);
+  }, [aspecto, pxPorUnidade, size.width, size.height]);
 
   if (!midia || !textura) return null;
 
@@ -203,10 +262,22 @@ const MidiaNoGlobo: FC<Props> = ({ midia, base }) => {
       */}
       <mesh renderOrder={ORDEM}>
         <planeGeometry args={[largura + MOLDURA, altura + MOLDURA]} />
+        {/*
+          A MOLDURA É OPACA, e isso não é gosto — é o que faz a mídia aparecer.
+
+          Ela era semitransparente, e o plano saía preto. O motivo: o three.js
+          desenha em dois passes, primeiro tudo o que é opaco e depois tudo o
+          que é transparente, e `renderOrder` só ordena DENTRO de um passe. A
+          moldura transparente ia para o segundo passe e era pintada por cima
+          do vídeo — com o teste de profundidade desligado, nada a segurava.
+          Noventa e dois por cento de quase-preto sobre a imagem é exatamente o
+          retângulo escuro que aparecia.
+
+          Opaca, ela volta para o mesmo passe da mídia, onde o `renderOrder`
+          manda e a mídia (25) ganha da moldura (24).
+        */}
         <meshBasicMaterial
           color="#0b1220"
-          transparent
-          opacity={0.92}
           depthTest={false}
           depthWrite={false}
           toneMapped={false}
@@ -215,7 +286,18 @@ const MidiaNoGlobo: FC<Props> = ({ midia, base }) => {
 
       <mesh position={[0, 0, 0.01]} renderOrder={ORDEM + 1}>
         <planeGeometry args={[largura, altura]} />
+        {/*
+          O `key` COM O UUID DA TEXTURA RECRIA O MATERIAL quando ela troca.
+
+          Trocar `map` num material que já foi compilado não basta: o programa
+          de sombreamento é montado uma vez, com as texturas que existiam
+          naquele momento, e a troca sozinha não pede recompilação — o plano
+          fica preto. Recriar o material é a forma mais direta de garantir o
+          programa certo, e acontece duas vezes na vida desta tela (o cartaz e
+          depois o vídeo), não a cada quadro.
+        */}
         <meshBasicMaterial
+          key={textura.uuid}
           map={textura}
           depthTest={false}
           depthWrite={false}

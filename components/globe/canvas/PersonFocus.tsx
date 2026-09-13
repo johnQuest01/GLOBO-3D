@@ -311,7 +311,11 @@ const PersonFocus: FC<Props> = ({ alvo }) => {
         acendeu — o video e o nome da cidade sao uma coisa so', e nao duas que
         o olho precisa casar atravessando a tela.
       */}
-      <MidiaNoGlobo midia={alvo.midia ?? null} base={TOPO_DO_NOME} />
+      <MidiaNoGlobo
+        midia={alvo.midia ?? null}
+        base={TOPO_DO_NOME}
+        pxPorUnidade={PX}
+      />
     </group>
   );
 };
