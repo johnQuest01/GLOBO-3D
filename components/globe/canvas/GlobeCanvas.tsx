@@ -41,6 +41,7 @@ import GrupoDeSinaisPanel from '@/components/globe/ui/GrupoDeSinaisPanel';
 import SinalPanel from '@/components/globe/ui/SinalPanel';
 import LinhaDoTempo from '@/components/globe/ui/LinhaDoTempo';
 import MenuDeAcoes from '@/components/globe/ui/MenuDeAcoes';
+import NoticiasPanel from '@/components/globe/ui/NoticiasPanel';
 import SinaisDoMundoPanel from '@/components/globe/ui/SinaisDoMundoPanel';
 import PerfilPanel from '@/components/globe/ui/PerfilPanel';
 import PerfilDeOutroPanel from '@/components/globe/ui/PerfilDeOutroPanel';
@@ -279,6 +280,7 @@ export default function GlobeCanvas() {
   /** A lista mundial de quem quer conversar. */
   const [sinaisAbertos, setSinaisAbertos] = useState(false);
   const [muralAberto, setMuralAberto] = useState(false);
+  const [noticiasAbertas, setNoticiasAbertas] = useState(false);
   /** A tela de editar o proprio perfil. */
   const [perfilAberto, setPerfilAberto] = useState(false);
   /** O perfil de OUTRA pessoa, quando se toca no nome dela. */
@@ -706,7 +708,8 @@ export default function GlobeCanvas() {
               },
               {
                 id: 'mensagem-mundo',
-                rotulo: 'Mensagem ao mundo',
+                rotulo: 'Soltar no globo',
+                descricao: 'Uma frase que atravessa o planeta e some',
                 cor: '#db2777',
                 onSelecionar: handleOpenMessagePopup,
                 icone: (
@@ -718,10 +721,18 @@ export default function GlobeCanvas() {
               {
                 id: 'noticias',
                 rotulo: 'Noticias',
-                descricao: 'O que esta acontecendo por regiao',
+                descricao: 'O que esta acontecendo na sua regiao',
                 cor: '#ea580c',
-                desativado: allNewsItems.length === 0,
-                onSelecionar: handlers.handleOpenDynamicNews,
+                /*
+                  ANTES ISTO ABRIA UM ARQUIVO ESTATICO do proprio projeto: as
+                  mesmas manchetes para todo mundo, escritas por ninguem, iguais
+                  ontem e amanha. Agora abre o que as pessoas da regiao
+                  escreveram.
+                */
+                onSelecionar: () =>
+                  precisaDeNickname
+                    ? setPedindoNickname(true)
+                    : setNoticiasAbertas(true),
                 icone: (
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                     <path d="M4 5h13v14H5a1 1 0 0 1-1-1V5z" strokeLinejoin="round" />
@@ -1088,6 +1099,29 @@ export default function GlobeCanvas() {
             precisa deixar o globo receber o toque atras dela: e' o globo que a
             pessoa esta olhando, e so' a faixa da direita continua clicavel.
           */}
+          <div className="pointer-events-auto">
+            <NoticiasPanel
+              aberto={noticiasAbertas}
+              onFechar={() => setNoticiasAbertas(false)}
+              meuNickname={realtime.meuNickname}
+              onVerPerfil={(apelido) => {
+                setNoticiasAbertas(false);
+                setPerfilDeOutro(apelido);
+              }}
+              onVerNoGlobo={(lat, lon, rotulo) => {
+                setNoticiasAbertas(false);
+                setAlvoDaBusca({
+                  lat,
+                  lon,
+                  tipo: 'lugar',
+                  nickname: rotulo,
+                  online: false,
+                  pedidoEm: Date.now(),
+                });
+              }}
+            />
+          </div>
+
           <LinhaDoTempo
             aberto={muralAberto}
             onFechar={() => setMuralAberto(false)}

@@ -1,110 +1,178 @@
-'use client';
+"use client";
 
-import React, { FC, useState, FormEvent, useEffect, useRef } from 'react';
-import { PaperAirplaneIcon } from '@/app/icons/PaperAirplaneIcon';
+import React, { FC, FormEvent, useEffect, useRef, useState } from "react";
+
+/**
+ * Soltar uma mensagem no globo.
+ *
+ * O QUE ISTO É, DITO SEM RODEIO: um gesto. A frase nasce na frente da câmera,
+ * atravessa o planeta até o destino e some. Não é guardada, não chega a ninguém
+ * e ninguém mais a vê.
+ *
+ * A TELA PRECISAVA DIZER ISSO. Ela se chamava "Enviar Mensagem", tinha um campo
+ * chamado "Destino" e um botão "Enviar" com um avião de papel — três promessas
+ * de entrega, num recurso que não entrega nada. Quem escrevia "Brasil" ali e
+ * apertava enviar tinha todo o direito de achar que alguém no Brasil ia ler.
+ *
+ * Para CONVERSAR de verdade existem as conversas; para FALAR COM A REGIÃO
+ * existem as notícias; para publicar existe a linha do tempo. Este aqui é o
+ * único que é só bonito — e agora ele admite isso, o que é o mínimo para não
+ * enganar quem chega.
+ */
 
 interface MessageInputPopupProps {
   isOpen: boolean;
   onClose: () => void;
-  // Atualizado para aceitar destino opcional
   onSend: (text: string, destination: string) => void;
 }
 
-const MessageInputPopup: FC<MessageInputPopupProps> = ({ isOpen, onClose, onSend }) => {
-  const [message, setMessage] = useState('');
-  const [destination, setDestination] = useState('');
+const MAX = 140;
+
+const MessageInputPopup: FC<MessageInputPopupProps> = ({
+  isOpen,
+  onClose,
+  onSend,
+}) => {
+  const [message, setMessage] = useState("");
+  const [destination, setDestination] = useState("");
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
-    if (isOpen) {
-      setTimeout(() => inputRef.current?.focus(), 100);
-    }
+    if (!isOpen) return;
+    const t = setTimeout(() => inputRef.current?.focus(), 120);
+    return () => clearTimeout(t);
   }, [isOpen]);
+
+  // Esc fecha — era a primeira coisa que se tentava, e não acontecia nada.
+  useEffect(() => {
+    if (!isOpen) return;
+    const aoTeclar = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", aoTeclar);
+    return () => window.removeEventListener("keydown", aoTeclar);
+  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e: FormEvent) => {
+  const soltar = (e: FormEvent) => {
     e.preventDefault();
-    if (message.trim()) {
-      // Envia mensagem E o destino
-      onSend(message.trim(), destination.trim());
-      setMessage('');
-      setDestination('');
-      onClose();
-    }
-  };
-
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault();
-      handleSubmit(e);
-    }
+    if (!message.trim()) return;
+    onSend(message.trim(), destination.trim());
+    setMessage("");
+    setDestination("");
+    onClose();
   };
 
   return (
-    <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center p-4 z-[120]">
+    <div className="fixed inset-0 z-[170] flex items-end justify-center sm:items-center">
       <div
-        className="absolute inset-0 bg-black/40 backdrop-blur-[2px] animate-in fade-in duration-200"
+        className="absolute inset-0 bg-slate-950/65 backdrop-blur-md"
         onClick={onClose}
+        aria-hidden="true"
       />
 
-      <div className="relative z-20 w-full max-w-sm">
-        <form
-          onSubmit={handleSubmit}
-          className="bg-gray-900/95 border border-pink-500/50 rounded-2xl shadow-2xl p-4 flex flex-col gap-3 animate-in zoom-in-95 duration-200"
-        >
-          <div className="flex justify-between items-center px-1">
-            <h3 className="text-white font-bold text-lg flex items-center gap-2">
-              Enviar Mensagem <span className="text-xl">💬</span>
-            </h3>
-            <button
-              type="button"
-              onClick={onClose}
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              ✕
-            </button>
-          </div>
-         
-          <textarea
-            ref={inputRef}
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            onKeyDown={handleKeyDown}
-            placeholder="Escreva sua mensagem..."
-            maxLength={140}
-            className="w-full bg-gray-800 text-white placeholder-gray-500 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-pink-500 resize-none h-24 text-base leading-relaxed scrollbar-thin scrollbar-thumb-gray-600"
-          />
-
-          {/* NOVO: Campo de Destino */}
+      <form
+        onSubmit={soltar}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Soltar uma mensagem no globo"
+        className="relative w-full rounded-t-[28px] p-5 pb-[max(1.5rem,env(safe-area-inset-bottom))]
+                   shadow-2xl ring-1 ring-white/15 sm:w-[min(94vw,26rem)] sm:rounded-[28px]"
+        style={{
+          background:
+            "linear-gradient(160deg, rgb(28 18 38 / 0.98), rgb(12 10 20 / 0.98))",
+        }}
+      >
+        <div className="flex items-start justify-between gap-3">
           <div>
-            <label className="text-xs text-gray-400 font-semibold ml-1 mb-1 block">
-                Destino (Opcional):
-            </label>
-            <input
-                type="text"
-                value={destination}
-                onChange={(e) => setDestination(e.target.value)}
-                placeholder="Ex: Brasil, China, Paris..."
-                className="w-full bg-gray-800 text-white placeholder-gray-500 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-pink-500 text-sm border border-gray-700"
-            />
+            <h2 className="text-[17px] font-semibold text-white">
+              Soltar uma mensagem no globo
+            </h2>
+            {/*
+              A FRASE QUE FALTAVA. Sem ela, o campo "Destino" e o botão "Enviar"
+              prometiam uma entrega que nunca existiu.
+            */}
+            <p className="mt-0.5 text-[11px] leading-snug text-white/45">
+              Ela atravessa o planeta e some. Ninguém recebe — para falar com
+              alguém, use as conversas.
+            </p>
           </div>
-         
-          <div className="flex justify-between items-center px-1 pt-2">
-            <span className={`text-xs ${message.length > 130 ? 'text-red-400' : 'text-gray-500'}`}>
-              {message.length}/140
-            </span>
-            <button
-              type="submit"
-              disabled={!message.trim()}
-              className="bg-pink-600 hover:bg-pink-700 text-white px-5 py-2 rounded-lg font-semibold flex items-center gap-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-pink-500/20 active:scale-95"
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label="Fechar"
+            className="shrink-0 rounded-full p-1.5 text-white/45 hover:bg-white/10 hover:text-white"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
             >
-              <span>Enviar</span>
-              <PaperAirplaneIcon className="w-4 h-4 transform -rotate-45 mt-1" />
-            </button>
-          </div>
-        </form>
-      </div>
+              <path d="M6 6l12 12M18 6L6 18" strokeLinecap="round" />
+            </svg>
+          </button>
+        </div>
+
+        <textarea
+          ref={inputRef}
+          value={message}
+          onChange={(e) => setMessage(e.target.value.slice(0, MAX))}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" && !e.shiftKey) soltar(e);
+          }}
+          placeholder="Escreva alguma coisa…"
+          rows={3}
+          className="mt-4 w-full resize-none rounded-2xl bg-white/[0.07] px-3.5 py-3 text-[15px]
+                     leading-relaxed text-white placeholder-white/30 outline-none
+                     ring-1 ring-white/10 focus:ring-fuchsia-400/40"
+        />
+
+        <label className="mt-3 block text-[11px] font-medium text-white/50">
+          Para onde ela voa
+        </label>
+        <input
+          value={destination}
+          onChange={(e) => setDestination(e.target.value)}
+          placeholder="Brasil, Tóquio, Paris… (ou deixe em branco)"
+          className="mt-1.5 w-full rounded-xl bg-white/[0.07] px-3 py-2 text-[13px] text-white
+                     placeholder-white/30 outline-none ring-1 ring-white/10 focus:ring-fuchsia-400/40"
+        />
+
+        <div className="mt-4 flex items-center gap-3">
+          <span
+            className={`text-[11px] ${
+              message.length > MAX - 15 ? "text-fuchsia-300" : "text-white/30"
+            }`}
+          >
+            {message.length}/{MAX}
+          </span>
+          <button
+            type="submit"
+            disabled={!message.trim()}
+            className="ml-auto flex items-center gap-2 rounded-xl bg-fuchsia-600 px-4 py-2.5
+                       text-[13px] font-semibold text-white transition-transform
+                       hover:bg-fuchsia-500 active:scale-95
+                       disabled:bg-white/10 disabled:text-white/30 disabled:active:scale-100"
+          >
+            Soltar
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.9"
+            >
+              <circle cx="12" cy="12" r="9" />
+              <path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18" />
+            </svg>
+          </button>
+        </div>
+      </form>
     </div>
   );
 };

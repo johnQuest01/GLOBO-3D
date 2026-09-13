@@ -79,6 +79,10 @@ async function principal(): Promise<void> {
       rodar: async () => (await import("./suite-mural")).suiteMural(base),
     },
     {
+      nome: "noticias",
+      rodar: async () => (await import("./suite-noticias")).suiteNoticias(base),
+    },
+    {
       nome: "seguir",
       rodar: async () => (await import("./suite-seguir")).suiteSeguir(base),
     },

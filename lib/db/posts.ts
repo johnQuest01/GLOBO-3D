@@ -163,7 +163,8 @@ export async function listarMural(opcoes?: {
            u.nickname as autor, u.avatar_url as autor_avatar
       from posts p
       join users u on u.id = p.author_id
-     where p.expires_at > now()
+     where p.tipo = 'mural'
+       and p.expires_at > now()
        and p.removido_em is null
        and p.oculto_em is null
        and u.banned_at is null
@@ -186,7 +187,8 @@ export async function meusPosts(autorId: string): Promise<Post[]> {
            (select count(*)::int from post_reports r where r.post_id = p.id) as denuncias
       from posts p
       join users u on u.id = p.author_id
-     where p.author_id = ${autorId}::uuid
+     where p.tipo = 'mural'
+       and p.author_id = ${autorId}::uuid
        and p.expires_at > now()
      order by p.created_at desc
      limit 100

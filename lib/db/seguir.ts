@@ -247,7 +247,8 @@ export async function muralDeQuemSegue(
          or (sl.tipo = 'estado' and sl.valor = p.estado and (sl.pais = '' or sl.pais = p.pais))
          or (sl.tipo = 'cidade' and sl.valor = p.cidade and (sl.pais = '' or sl.pais = p.pais))
        )
-     where p.expires_at > now()
+     where p.tipo = 'mural'
+       and p.expires_at > now()
        and p.removido_em is null
        and p.oculto_em is null
        and u.banned_at is null
@@ -275,7 +276,8 @@ export async function muralDeQuemSegue(
            u.nickname as autor, u.avatar_url as autor_avatar
       from posts p
       join users u on u.id = p.author_id
-     where p.expires_at > now()
+     where p.tipo = 'mural'
+       and p.expires_at > now()
        and p.removido_em is null
        and p.oculto_em is null
        and u.banned_at is null
