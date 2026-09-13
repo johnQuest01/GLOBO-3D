@@ -53,13 +53,31 @@ async function principal(): Promise<void> {
     rodar: () => Promise<{ resultados: Resultado[] }>;
   }[] = [
     {
+      nome: "conta",
+      rodar: async () => (await import("./suite-conta")).suiteConta(base),
+    },
+    {
       nome: "perfil",
       rodar: async () => (await import("./suite-perfil")).suitePerfil(base),
+    },
+    {
+      nome: "midia",
+      rodar: async () => (await import("./suite-midia")).suiteMidia(base),
+    },
+    {
+      nome: "sinais",
+      rodar: async () =>
+        (await import("./suite-sinais")).suiteSinais(base, realtime),
     },
     {
       nome: "conversa",
       rodar: async () =>
         (await import("./suite-conversa")).suiteConversa(base, realtime),
+    },
+    {
+      nome: "estresse",
+      rodar: async () =>
+        (await import("./suite-estresse")).suiteEstresse(base, realtime),
     },
   ];
 

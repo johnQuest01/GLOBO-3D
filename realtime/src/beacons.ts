@@ -21,10 +21,11 @@
  * a pessoa fecha o navegador e continua "disponível" para sempre.
  */
 
+import { celulaDe } from '../shared/celulas.js';
 import type { Beacon } from '../shared/protocol.js';
 import { BEACONS_MAX } from '../shared/protocol.js';
 import { ErrorCode } from '../shared/protocol.js';
-import type { RealtimeServer, RealtimeSocket } from './presence.js';
+import { anunciarNaCelula, type RealtimeServer, type RealtimeSocket } from './presence.js';
 import { permitir, type Limitador } from './safety.js';
 import type { PresenceStore } from './store.js';
 
@@ -92,7 +93,7 @@ export function registerBeacons(
     socket.data.beaconRegionKey = beacon.regionKey;
 
 /*
-     * O ANUNCIO AO VIVO E' DA REGIAO; O MUNDO VEM POR BUSCA.
+     * O ANUNCIO AO VIVO E' DA CELULA; O MUNDO VEM POR BUSCA.
      *
      * O sinal e' publico e mundial — essa e' a graca da coisa. Mas ANUNCIAR
      * cada sinal para cada pessoa e' trabalho que cresce com o produto dos
@@ -100,15 +101,29 @@ export function registerBeacons(
      * entregas por rodada. Nenhuma maquina resolve isso, e mais maquinas
      * pioram (o anuncio passa a atravessar o Redis entre elas).
      *
-     * Na regiao o numero e' pequeno por definicao, e ver o vizinho acender na
-     * hora e' o que faz o globo parecer vivo. O mundo inteiro chega por
-     * `beacon:find`, que e' consulta — custo por pessoa interessada, e so'
-     * enquanto ela esta olhando.
+     * ATE AQUI O ANUNCIO ERA DA REGIAO, com o argumento de que "na regiao o
+     * numero e' pequeno por definicao". Ele nao e': "sao paulo" e' uma regiao
+     * so'. Medido no teste de estresse — 24 pessoas na mesma regiao acendendo
+     * sinal deram 576 entregas, que e' 24 ao quadrado. O mesmo desenho com mil
+     * pessoas numa cidade da' um milhao de entregas por rodada.
+     *
+     * Agora o anuncio vai para a CELULA (~2,2 km, ver shared/celulas.ts), que
+     * e' onde "o numero e' pequeno" e' verdade. Ver o vizinho acender na hora
+     * continua acontecendo — e e' o que faz o globo parecer vivo —, mas o
+     * custo passa a depender de quanta gente ha' por perto, e nao de quanta
+     * gente ha' na cidade.
+     *
+     * O mundo inteiro chega por `beacon:find`, que e' consulta: custo por
+     * pessoa interessada, e so' enquanto ela esta olhando.
      */
-    io.to(presence.regionKey).emit('beacon:new', beacon);
+    const celula = socket.data.celula ?? celulaDe(presence.lat, presence.lon);
+    const anunciado = anunciarNaCelula(io, celula, (para) =>
+      para.emit('beacon:new', beacon),
+    );
 
     log(
-      `beacon ${beacon.beaconId.slice(0, 8)} de ${clientId} em ${presence.regionKey} por ${ttlSec}s`,
+      `beacon ${beacon.beaconId.slice(0, 8)} de ${clientId} em ${presence.regionKey}/${celula}` +
+        ` por ${ttlSec}s${anunciado ? '' : ' (celula cheia: sem anuncio ao vivo)'}`,
     );
   });
 
@@ -240,8 +255,23 @@ async function apagarBeaconDoSocket(
   socket.data.beaconId = undefined;
   socket.data.beaconRegionKey = undefined;
   await store.removeBeacon(beaconId, regionKey);
-  // Da regiao, como o acender.
-  io.to(regionKey).emit('beacon:gone', { beaconId });
+  /*
+   * DA CELULA, como o acender — e e' obrigatorio que seja a mesma sala dos
+   * dois lados. Anunciar o acender numa sala e o apagar em outra deixaria o
+   * sinal aceso para sempre na tela de quem viu ele nascer.
+   *
+   * A celula e' recalculada da presenca quando `socket.data.celula` ja' foi
+   * limpo: no `disconnect` os handlers rodam na ordem de registro, e o da
+   * presenca pode ter passado antes deste.
+   */
+  const celula =
+    socket.data.celula ??
+    (socket.data.presence
+      ? celulaDe(socket.data.presence.lat, socket.data.presence.lon)
+      : null);
+  if (celula) {
+    anunciarNaCelula(io, celula, (para) => para.emit('beacon:gone', { beaconId }));
+  }
 }
 
 /**

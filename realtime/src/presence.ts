@@ -5,9 +5,24 @@
  * ao fechar a aba ou ao parar de bater. Nada aqui é broadcast de conteúdo — o
  * que trafega é "fulano está aqui", e só para a região dele.
  *
- * A REGIÃO É O RECORTE. Cada socket entra numa sala do Socket.io com o nome da
- * `regionKey`, e é para essa sala que o join/leave é anunciado. Sem isso, cada
- * pessoa que entrasse acordaria todo mundo no mundo inteiro.
+ * O RECORTE DO ANÚNCIO É A CÉLULA, e não mais a região.
+ *
+ * Cada socket entrava numa sala com o nome da `regionKey` — "são paulo" era uma
+ * sala só —, e cada entrada, saída ou sinal era anunciado a todos ali. Isso
+ * custa uma entrega por pessoa presente, o que significa que uma RODADA custa o
+ * QUADRADO da população daquele lugar. Medido: 24 pessoas na mesma região
+ * acendendo sinal produziram 576 entregas, que é 24² exatamente. Mil pessoas em
+ * São Paulo dariam um milhão por rodada; cinquenta mil, dois bilhões e meio.
+ *
+ * A célula (ver shared/celulas.ts) quebra isso. Cada pessoa ESCUTA as nove
+ * células à sua volta e FALA só na sua: o anúncio alcança quem está a cerca de
+ * dois quilômetros, e o custo passa a depender de quanta gente há por perto —
+ * não de quanta gente há na cidade. São Paulo deixa de ser uma sala e vira
+ * algumas centenas.
+ *
+ * A REGIÃO CONTINUA EXISTINDO para o que não é anúncio: o retrato que quem
+ * entra recebe, e a lista de sinais do lugar. Essas são uma consulta por
+ * entrada, com teto — custo constante, não quadrático.
  */
 
 import type { Server, Socket } from 'socket.io';
@@ -17,6 +32,7 @@ import type {
   Presence,
   ServerToClient,
 } from '../shared/protocol.js';
+import { celulaDe, celulasVizinhas } from '../shared/celulas.js';
 import { ErrorCode, PRESENCAS_MAX } from '../shared/protocol.js';
 import { restaurarBeacon, TTL_DO_SINAL_SEC } from './beacons.js';
 import type { PresenceStore } from './store.js';
@@ -31,6 +47,15 @@ export interface SocketData {
   userId?: string;
   clientId?: string;
   regionKey?: string;
+  /**
+   * A célula desta conexão — a sala em que ela FALA.
+   *
+   * Guardada à parte da presença pelo mesmo motivo do `beaconRegionKey`: no
+   * `disconnect` os handlers rodam na ordem de registro, e o da presença apaga
+   * `socket.data.presence` antes de o do beacon rodar. Sem esta cópia, a
+   * limpeza não saberia em que célula anunciar a saída.
+   */
+  celula?: string;
   /**
    * O nome público, vindo do TOKEN — nunca do que o cliente enviou.
    *
@@ -76,6 +101,66 @@ export type RealtimeSocket = Socket<
 
 const coordenadaValida = (n: unknown, limite: number): n is number =>
   typeof n === 'number' && Number.isFinite(n) && Math.abs(n) <= limite;
+
+/**
+ * Quanta gente cabe num anúncio ao vivo.
+ *
+ * POR QUE UM TETO, E NÃO SÓ A CÉLULA. A célula divide o mundo por geografia, e
+ * isso ajuda — mas não resolve sozinha, por um motivo que só aparece no uso: a
+ * coordenada de quem se cadastra vem da LISTA DE CIDADES, e a lista tem um
+ * ponto por cidade. Todo mundo que escolhe "São Paulo" recebe exatamente
+ * -23,55 / -46,63. Uma cidade inteira cai numa célula só, e a divisão
+ * geográfica não divide nada.
+ *
+ * Então o teto é o que garante a conta. Acima dele o anúncio ao vivo é
+ * dispensado, e o lugar continua se atualizando pela consulta que o cliente já
+ * faz a cada vinte segundos.
+ *
+ * O QUE SE PERDE É PEQUENO E O QUE SE GANHA É A ESCALA. Ver o vizinho acender
+ * no mesmo segundo importa num lugar com dez pessoas — é o que faz o globo
+ * parecer vivo. Num lugar com dez mil, ninguém repara em quem chegou: a tela
+ * já está cheia, e o teto de 120 pontos do retrato corta a maior parte de
+ * qualquer jeito.
+ *
+ * TRINTA É ESCOLHIDO PELO PRODUTO, e não pelo teste: é mais gente do que cabe
+ * no campo de visão de um globo antes de os pontos virarem mancha. Mudar este
+ * número muda o custo por evento diretamente, então ele é um botão de escala —
+ * e o teste de estresse afirma o limite, não o valor.
+ */
+const PLATEIA_MAX = 30;
+
+/**
+ * A plateia de uma sala NESTA máquina.
+ *
+ * Local de propósito: a alternativa (`fetchSockets`) é uma ida ao Redis por
+ * evento, e um freio que custa uma consulta de rede a cada anúncio derrota o
+ * próprio propósito. Com várias máquinas o número é menor que o real, e o teto
+ * passa a valer POR MÁQUINA — que é a unidade certa, porque o trabalho que se
+ * quer limitar também é por máquina.
+ */
+function plateiaCabe(io: RealtimeServer, sala: string): boolean {
+  const quantos = io.sockets.adapter.rooms.get(sala)?.size ?? 0;
+  return quantos <= PLATEIA_MAX;
+}
+
+/**
+ * Anuncia na célula — se a plateia couber.
+ *
+ * Está numa função só para que o teto seja UM: presença e sinal precisam ser
+ * anunciados pela mesma regra, senão um lugar cheio mostraria as entradas e
+ * esconderia os sinais, ou o contrário.
+ *
+ * Devolve false quando a plateia não coube — quem chama usa isso para o log.
+ */
+export function anunciarNaCelula(
+  io: RealtimeServer,
+  sala: string,
+  anunciar: (para: ReturnType<RealtimeServer['to']>) => void,
+): boolean {
+  if (!plateiaCabe(io, sala)) return false;
+  anunciar(io.to(sala));
+  return true;
+}
 
 export function registerPresence(
   io: RealtimeServer,
@@ -133,7 +218,20 @@ export function registerPresence(
     // De clientId para esta conexão: é assim que um pedido de conexão
     // endereçado à PESSOA encontra a aba aberta dela agora.
     await store.bindClient(presence.clientId, socket.id);
-    await socket.join(presence.regionKey);
+
+    /*
+     * ESCUTA NOVE, FALA EM UMA.
+     *
+     * A conexão entra nas nove salas em volta (a própria e as oito vizinhas) e
+     * anuncia só na própria. Assim B recebe o anúncio de A exatamente quando a
+     * célula de A está entre as nove de B — ou seja, quando os dois estão a
+     * cerca de dois quilômetros um do outro. A relação é simétrica, e resolve
+     * o caso de quem mora na borda: duas pessoas separadas por uma rua não
+     * ficam invisíveis uma para a outra só por caírem em células diferentes.
+     */
+    const celula = celulaDe(presence.lat, presence.lon);
+    socket.data.celula = celula;
+    await socket.join(celulasVizinhas(celula));
 
     /*
      * O SINAL DELA AINDA ESTA ACESO? Entao volta a valer o tempo cheio.
@@ -166,13 +264,12 @@ export function registerPresence(
       beacons,
       total: presences.length,
     });
-    socket.to(presence.regionKey).emit('presence:update', {
-      kind: 'join',
-      presence,
-    });
+    if (plateiaCabe(io, celula)) {
+      socket.to(celula).emit('presence:update', { kind: 'join', presence });
+    }
 
     log(
-      `join   ${socket.id} clientId=${presence.clientId} regiao=${presence.regionKey} (${presences.length} na regiao, ${beacons.length} beacon(s))`,
+      `join   ${socket.id} clientId=${presence.clientId} regiao=${presence.regionKey} celula=${celula} (${presences.length} na regiao, ${beacons.length} beacon(s))`,
     );
   });
 
@@ -191,7 +288,10 @@ export function registerPresence(
       // Expirou (aba dormindo, rede caída). Regrava em vez de exigir um novo
       // join: o cliente já provou que está aqui.
       await store.add(socket.id, presence);
-      socket.to(regionKey).emit('presence:update', { kind: 'join', presence });
+      const celula = socket.data.celula ?? celulaDe(presence.lat, presence.lon);
+      if (plateiaCabe(io, celula)) {
+        socket.to(celula).emit('presence:update', { kind: 'join', presence });
+      }
       log(`revive ${socket.id} regiao=${regionKey}`);
     }
 
@@ -244,14 +344,19 @@ async function sairDaRegiao(
   const { regionKey, presence, nickname } = socket.data;
   if (!regionKey || !presence) return;
 
+  const celula = socket.data.celula ?? celulaDe(presence.lat, presence.lon);
+
   socket.data.regionKey = undefined;
   socket.data.presence = undefined;
+  socket.data.celula = undefined;
   // O nickname do crachá fica: sair da região não deixa de ser você. Ele só
   // some quando a conexão morre, junto com o resto do `socket.data`.
 
   if (presence.clientId) await store.unbindClient(presence.clientId, socket.id);
   if (nickname) await store.unbindNickname(nickname, presence.clientId);
   await store.remove(socket.id, regionKey);
-  await socket.leave(regionKey);
-  io.to(regionKey).emit('presence:update', { kind: 'leave', presence });
+  for (const sala of celulasVizinhas(celula)) await socket.leave(sala);
+  anunciarNaCelula(io, celula, (para) =>
+    para.emit('presence:update', { kind: 'leave', presence }),
+  );
 }
