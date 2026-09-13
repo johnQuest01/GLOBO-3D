@@ -82,6 +82,20 @@ export async function subirMidia(blob: Blob, mime: string): Promise<MidiaEnviada
  * assinatura de propósito: é melhor pedir uma URL nova antes da hora do que
  * entregar uma que vence no meio do download.
  */
+/**
+ * A URL pública, SEM esperar — ou null quando não há endereço público.
+ *
+ * Existe para um caso só: o `play()` que precisa acontecer DENTRO do toque
+ * (ver lib/globo/videoDoGlobo.ts). `await` no meio do manipulador do clique
+ * quebra a corrente do gesto, e o navegador do celular passa a tratar o
+ * `play()` como se ninguém tivesse tocado em nada. Quando o armazenamento está
+ * em modo assinado, não há como saber a URL sem ir ao servidor — e aí quem
+ * chama cai para o caminho lento, com o botão de som como rede.
+ */
+export function urlPublicaDaMidia(chave: string): string | null {
+  return BASE_PUBLICA ? `${BASE_PUBLICA}/${chave}` : null;
+}
+
 export async function urlDaMidia(chave: string): Promise<string | null> {
   // Caminho direto: nada a pedir, nada a esperar.
   if (BASE_PUBLICA) return `${BASE_PUBLICA}/${chave}`;

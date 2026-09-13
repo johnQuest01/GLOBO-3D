@@ -94,13 +94,15 @@ interface Props {
 }
 
 /*
- * Onde o cartao do nome termina.
+ * O cartao do nome: onde fica e quanto mede.
  *
- * Ele fica em y = 1,1 e tem 1 de altura, entao o topo esta' em 1,6. A conta
- * esta' escrita aqui, e nao no outro arquivo, porque quem mexer na altura do
+ * Os numeros moram aqui, e nao no arquivo da midia, porque quem mexer no
  * cartao mexe neste arquivo — e o numero precisa estar onde a mao ja' esta'.
+ * A midia recebe os dois e se poe acima, dentro do MESMO painel que encara a
+ * camera (ver o comentario em MidiaNoGlobo sobre o eixo Y do mundo).
  */
-const TOPO_DO_NOME = 1.6;
+const CENTRO_DO_NOME = 1.1;
+const ALTURA_DO_NOME = 1;
 
 // Compartilhadas: só há um destes por vez, mas recriar geometria a cada busca
 // seria alocação à toa.
@@ -274,9 +276,9 @@ const PersonFocus: FC<Props> = ({ alvo }) => {
         `depthTest={false}` é o que impede o relevo do globo de comer o cartão
         quando a câmera chega perto e o ponto fica na borda visível.
       */}
-      <Billboard position={[0, 1.1, 0]}>
+      <Billboard position={[0, CENTRO_DO_NOME, 0]}>
         <RoundedBox
-          args={[largura, 1, 0.02]}
+          args={[largura, ALTURA_DO_NOME, 0.02]}
           radius={0.22}
           smoothness={3}
           renderOrder={CARD_RENDER_ORDER}
@@ -313,7 +315,8 @@ const PersonFocus: FC<Props> = ({ alvo }) => {
       */}
       <MidiaNoGlobo
         midia={alvo.midia ?? null}
-        base={TOPO_DO_NOME}
+        centroDoNome={CENTRO_DO_NOME}
+        alturaDoNome={ALTURA_DO_NOME}
         pxPorUnidade={PX}
       />
     </group>

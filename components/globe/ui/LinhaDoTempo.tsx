@@ -9,7 +9,17 @@ import React, {
   useState,
 } from "react";
 
-import { subirMidia, urlDaMidia } from "@/lib/chat/midiaRemota";
+import {
+  subirMidia,
+  urlDaMidia,
+  urlPublicaDaMidia,
+} from "@/lib/chat/midiaRemota";
+import {
+  destravarComSom,
+  ligarSom,
+  pararVideoDoGlobo,
+  useVideoDoGloboMudo,
+} from "@/lib/globo/videoDoGlobo";
 import { prepararMidia, VIDEO_SEG_MAX } from "@/lib/midia/comprimir";
 import ComentariosPanel from "./ComentariosPanel";
 
@@ -473,8 +483,29 @@ const LinhaDoTempo: FC<Props> = ({
 
   // --- Minimizar e viajar ----------------------------------------------------
 
+  /**
+   * O SOM É DESTRAVADO AQUI, DENTRO DO TOQUE — antes de qualquer setState.
+   *
+   * O navegador do celular só deixa um vídeo tocar com som se o `play()`
+   * acontecer no próprio manipulador do toque. Depois que o React processa o
+   * estado e o globo voa, já é tarde: o `play()` é recusado, e o vídeo cai
+   * para mudo. Por isso esta função é a PRIMEIRA linha de quem viaja ao
+   * globo, e não uma consequência da viagem.
+   */
+  const prepararSomDoGlobo = (p: Post) => {
+    if (p.kind === "video" && p.midiaChave) {
+      const url = urlPublicaDaMidia(p.midiaChave);
+      if (url) destravarComSom(url);
+    } else {
+      pararVideoDoGlobo();
+    }
+  };
+
+  const globoMudo = useVideoDoGloboMudo();
+
   const irParaOGlobo = useCallback(
     (post: Post) => {
+      prepararSomDoGlobo(post);
       setMinimizado(true);
       setMenuDoPost(null);
       onFocarNoGlobo(
@@ -491,6 +522,7 @@ const LinhaDoTempo: FC<Props> = ({
     (i: number) => {
       const p = posts[i];
       if (!p) return;
+      prepararSomDoGlobo(p);
       setAtual(i);
       onFocarNoGlobo(
         p.lat,
@@ -503,6 +535,9 @@ const LinhaDoTempo: FC<Props> = ({
   );
 
   const voltarDoGlobo = useCallback(() => {
+    // O vídeo do globo cala ao voltar: o feed tem o dele, mudo, e dois tocando
+    // ao mesmo tempo seria o som de um por cima da imagem do outro.
+    pararVideoDoGlobo();
     setMinimizado(false);
     // Devolve a rolagem ao post de onde se saiu. Sem isto, voltar cairia no
     // topo e a pessoa perderia o lugar na fila.
@@ -952,6 +987,26 @@ const LinhaDoTempo: FC<Props> = ({
               <p className="mt-2 line-clamp-4 whitespace-pre-wrap text-[12px] leading-snug text-white/65">
                 {postAtual.body}
               </p>
+            )}
+
+            {/*
+              O BOTÃO DE SOM só aparece quando o navegador recusou o som — que
+              é a exceção, não a regra, desde que o `play()` passou a acontecer
+              dentro do toque. Este botão é um toque de verdade, então ele
+              sempre funciona; é a rede para a política mais dura.
+            */}
+            {globoMudo && postAtual.kind === "video" && (
+              <button
+                type="button"
+                onClick={ligarSom}
+                className="mt-2.5 flex w-full items-center justify-center gap-2 rounded-lg bg-sky-500/20 py-2 text-[12px] font-semibold text-sky-200 ring-1 ring-sky-400/40 hover:bg-sky-500/30"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9">
+                  <path d="M4 10v4h3l5 4V6l-5 4H4z" strokeLinejoin="round" />
+                  <path d="M17 9a4 4 0 0 1 0 6" strokeLinecap="round" />
+                </svg>
+                Ligar o som do vídeo
+              </button>
             )}
 
             <div className="mt-2.5 flex items-center gap-2">

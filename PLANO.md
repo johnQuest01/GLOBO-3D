@@ -181,6 +181,19 @@ teste, com arquivos reais.
       `setInterval` de rede, pausa quando a página some, e **conferência do que
       saiu antes de subir** (se não decodifica, o original segue)
 
+- [x] ~~o vídeo sobre o globo tocava MUDO no celular~~ — o `play()` acontecia
+      num efeito do React, depois de o globo voar, longe do toque; o navegador
+      do celular só libera som DENTRO do toque. Agora há um único `<video>`
+      destravado no próprio clique (`lib/globo/videoDoGlobo.ts`), e um botão
+      "Ligar o som" quando a política ainda assim barra
+- [x] ~~a mídia caía EM CIMA do nome do lugar~~ — o deslocamento era no eixo Y
+      do mundo (o dos polos), que na latitude de Los Angeles aponta para a
+      câmera; agora ela mora no mesmo painel do nome, onde Y é "para cima na
+      tela"
+- [x] ~~vídeo em `loop`~~ — quatro minutos com som repetindo sobre o globo é um
+      alarme, não uma publicação. Toca uma vez, do começo ao fim
+- [x] borda azul arredondada, e um pouco menor — pedido seu
+
 - [ ] **Vercel: branch de produção** — falta você clicar em
       Settings → Git → Production Branch → `globo/lod-luzes-fronteiras`.
       A API do Vercel recusa esse campo; é clique manual.

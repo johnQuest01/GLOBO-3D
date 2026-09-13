@@ -1,11 +1,12 @@
 'use client';
 
-import { Billboard } from '@react-three/drei';
+import { Billboard, RoundedBox } from '@react-three/drei';
 import { useThree } from '@react-three/fiber';
-import { FC, useEffect, useMemo, useRef, useState } from 'react';
+import { FC, useEffect, useMemo, useState } from 'react';
 import * as THREE from 'three';
 
 import { urlDaMidia } from '@/lib/chat/midiaRemota';
+import { garantirTocando, soltarVideoDoGlobo } from '@/lib/globo/videoDoGlobo';
 
 /**
  * A publicação desenhada NO GLOBO, logo acima do nome do lugar.
@@ -47,8 +48,18 @@ export interface MidiaDoFoco {
 
 interface Props {
   midia: MidiaDoFoco | null;
-  /** Onde o topo do cartão do nome termina, em unidades da cena. */
-  base: number;
+  /**
+   * O cartão do nome do lugar: onde ele está e quanto mede, em unidades.
+   *
+   * A MÍDIA MORA NO MESMO PAINEL QUE O NOME, e por isso precisa das medidas
+   * dele. Ela ficava num painel próprio, deslocada no eixo Y do MUNDO — que é o
+   * eixo dos polos. Na latitude de Los Angeles esse eixo aponta em boa parte
+   * para a câmera, então "subir 2 unidades" virava "aproximar 2 unidades", e a
+   * mídia caía em cima do nome. Dentro de um painel que encara a câmera, Y é
+   * para cima NA TELA — que é o único "cima" que interessa.
+   */
+  centroDoNome: number;
+  alturaDoNome: number;
   /**
    * Quantos pixels de tela vale uma unidade da cena.
    *
@@ -83,16 +94,24 @@ interface Props {
  * cresce até esbarrar no SEU limite, e nenhum sai da mesma moldura mental — o
  * olho não precisa se reajustar a cada troca na faixa do tempo.
  */
-const ALTURA_MAX_PX = 300;
-const LARGURA_MAX_PX = 340;
+const ALTURA_MAX_PX = 240;
+const LARGURA_MAX_PX = 270;
 /** Nunca mais que isto da tela, que é o que salva o celular. */
-const FATIA_DA_ALTURA = 0.34;
-const FATIA_DA_LARGURA = 0.7;
+const FATIA_DA_ALTURA = 0.26;
+const FATIA_DA_LARGURA = 0.6;
 
 /** O respiro entre o nome do lugar e a miniatura, em unidades. */
-const VAO = 0.35;
-/** A moldura escura por trás — é ela que separa a mídia do planeta atrás. */
-const MOLDURA = 0.14;
+const VAO = 0.4;
+/**
+ * A borda: azul, arredondada, e de cada lado.
+ *
+ * Em unidades da cena, com 16 px por unidade: 0,2 dá uns 3 px de borda, e o
+ * raio de 0,5 dá uns 8 px de canto. Menos que isso e a borda vira um fio que
+ * some sobre o oceano; mais e o cartão parece um botão.
+ */
+const BORDA = 0.2;
+const RAIO = 0.5;
+const COR_DA_BORDA = '#38bdf8';
 
 const ORDEM = 24;
 
@@ -163,11 +182,15 @@ function texturaDeTexto(texto: string, cor: string): THREE.CanvasTexture {
   return textura;
 }
 
-const MidiaNoGlobo: FC<Props> = ({ midia, base, pxPorUnidade }) => {
+const MidiaNoGlobo: FC<Props> = ({
+  midia,
+  centroDoNome,
+  alturaDoNome,
+  pxPorUnidade,
+}) => {
   const { size } = useThree();
   const [textura, setTextura] = useState<THREE.Texture | null>(null);
   const [aspecto, setAspecto] = useState(1);
-  const videoRef = useRef<HTMLVideoElement | null>(null);
 
   const chave = midia?.midiaChave ?? null;
   const cartaz = midia?.cartazChave ?? null;
@@ -232,81 +255,51 @@ const MidiaNoGlobo: FC<Props> = ({ midia, base, pxPorUnidade }) => {
     let video: HTMLVideoElement | null = null;
     let tex: THREE.VideoTexture | null = null;
 
+    const aoTerMedidas = () => {
+      if (vivo && video?.videoWidth) {
+        setAspecto(video.videoWidth / video.videoHeight);
+      }
+    };
+    /*
+     * ENTRA NA CENA QUANDO ESTÁ TOCANDO, e não quando "dá para tocar".
+     * `canplay` diz que há dados; `playing` diz que o relógio andou. Entre um
+     * e outro cabe a reprodução barrada — e aí a textura entraria preta,
+     * apagando o cartaz que já estava certo na tela.
+     */
+    const aoTocar = () => {
+      if (vivo && tex) setTextura(tex);
+    };
+
+    let minhaUrl: string | null = null;
     void urlDaMidia(chave).then((url) => {
       if (!vivo || !url) return;
-
-      video = document.createElement('video');
-      video.src = url;
-      video.crossOrigin = 'anonymous';
-      video.loop = true;
-      video.playsInline = true;
-      video.preload = 'auto';
+      minhaUrl = url;
 
       /*
-       * O ELEMENTO PRECISA ESTAR NO DOCUMENTO, mesmo sem ninguém o ver.
-       *
-       * Descoberto medindo: a textura de vídeo estava montada e ativa, e o
-       * plano saía PRETO. Um `<video>` solto — criado e nunca inserido na
-       * página — o navegador trata como descartável e não produz quadros para
-       * ele, e sem quadros a textura fica preta para sempre.
-       *
-       * FORA DA TELA, E NÃO `display:none`: escondido assim o navegador também
-       * para de desenhar, que é o mesmo problema com outro nome. Um pixel no
-       * canto, atrás de tudo e sem receber toque, é o que o mantém vivo.
+       * O ELEMENTO NÃO É CRIADO AQUI. Ele é o único `<video>` do globo (ver
+       * lib/globo/videoDoGlobo.ts), e já foi posto para tocar DENTRO do toque
+       * que pediu esta viagem — é isso que faz o som vir no celular. Este
+       * efeito só pendura a textura nele e garante que ele está tocando, para o
+       * caso de a pessoa ter chegado aqui por um caminho sem toque.
        */
-      video.setAttribute('playsinline', '');
-      video.style.cssText =
-        'position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;z-index:-1';
-      document.body.appendChild(video);
-
-      /*
-       * COM SOM. Para chegar aqui foi preciso TOCAR no botão "ver este lugar
-       * no globo" — som que responde a um toque é outra coisa do que som que
-       * começa sozinho enquanto alguém rola uma lista. Se o navegador recusar
-       * (a política é dele, e muda entre eles), o vídeo volta mudo e TOCANDO:
-       * um vídeo parado sem explicação parece defeito.
-       */
-      video.muted = false;
-      video.volume = 1;
-
-      video.addEventListener('loadedmetadata', () => {
-        if (vivo && video?.videoWidth) {
-          setAspecto(video.videoWidth / video.videoHeight);
-        }
-      });
-
+      video = garantirTocando(url);
       tex = new THREE.VideoTexture(video);
       tex.colorSpace = THREE.SRGBColorSpace;
-      videoRef.current = video;
 
-      void video.play().catch(() => {
-        if (!video) return;
-        video.muted = true;
-        void video.play().catch(() => undefined);
-      });
-
-      /*
-       * ENTRA NA CENA QUANDO ESTÁ TOCANDO, e não quando "dá para tocar".
-       *
-       * `canplay` diz que há dados suficientes; `playing` diz que o relógio do
-       * vídeo andou. Entre um e outro cabe o caso em que a reprodução foi
-       * barrada — e aí a textura entraria preta, apagando o cartaz que já
-       * estava certo na tela. Trocar o certo pelo preto é pior que demorar.
-       */
-      video.addEventListener('playing', () => {
-        if (vivo && tex) setTextura(tex);
-      });
+      video.addEventListener('loadedmetadata', aoTerMedidas);
+      video.addEventListener('playing', aoTocar);
+      // Se o toque já destravou e ele já está tocando, os eventos passaram.
+      if (video.videoWidth) aoTerMedidas();
+      if (!video.paused && video.readyState >= 2) aoTocar();
     });
 
     return () => {
       vivo = false;
-      videoRef.current = null;
       if (video) {
-        video.pause();
-        video.removeAttribute('src');
-        video.load();
-        video.remove();
+        video.removeEventListener('loadedmetadata', aoTerMedidas);
+        video.removeEventListener('playing', aoTocar);
       }
+      if (minhaUrl) soltarVideoDoGlobo(minhaUrl);
       tex?.dispose();
       // Quem sai é o vídeo; se ainda houver cartaz, a próxima montagem o traz.
       setTextura((atual) => (atual instanceof THREE.VideoTexture ? null : atual));
@@ -334,67 +327,88 @@ const MidiaNoGlobo: FC<Props> = ({ midia, base, pxPorUnidade }) => {
     return { largura: l, altura: a };
   }, [aspecto, pxPorUnidade, size.width, size.height]);
 
+  /*
+   * OS CANTOS ARREDONDADOS DA MÍDIA vêm de uma máscara, e não da geometria.
+   *
+   * Um plano com cantos recortados na malha teria de mapear a textura para
+   * uma forma que não é retângulo, e vídeo é retângulo. Uma máscara de alfa
+   * — um canvas com o retângulo arredondado em branco — deixa a geometria como
+   * está e só apaga os cantos. O raio é calculado em unidades da cena e
+   * convertido para pixels do canvas, para ser o mesmo em qualquer formato.
+   */
+  const mascara = useMemo(() => {
+    const L = 512;
+    const A = Math.max(64, Math.round((L * altura) / largura));
+    const tela = document.createElement('canvas');
+    tela.width = L;
+    tela.height = A;
+    const p = tela.getContext('2d')!;
+    p.fillStyle = '#000';
+    p.fillRect(0, 0, L, A);
+    p.fillStyle = '#fff';
+    p.beginPath();
+    p.roundRect(0, 0, L, A, (RAIO / largura) * L);
+    p.fill();
+    const t = new THREE.CanvasTexture(tela);
+    return t;
+  }, [largura, altura]);
+  useEffect(() => () => mascara.dispose(), [mascara]);
+
   if (!midia || !textura) return null;
 
-  const centro = base + VAO + altura / 2;
+  /*
+   * ACIMA DO NOME, medido dentro do painel que encara a câmera: metade da
+   * altura do nome, o respiro, e metade da altura da mídia. Este Y é "para
+   * cima na tela", e por isso a mídia nunca mais cai em cima do nome — ver o
+   * comentário em `centroDoNome`.
+   */
+  const acima = alturaDoNome / 2 + VAO + altura / 2;
 
   return (
-    <Billboard position={[0, centro, 0]}>
+    <Billboard position={[0, centroDoNome, 0]}>
       {/*
-        A MOLDURA EXISTE PARA A MÍDIA TER BORDA. Sem ela, uma foto clara sobre
-        o oceano e uma escura sobre a noite do planeta parecem duas coisas
-        diferentes — e nenhuma parece um objeto, porque objeto tem contorno.
+        A BORDA: azul, arredondada, um pouco maior que a mídia de cada lado.
+
+        SOBRE OS DOIS PASSES DO three.js — e por que os dois materiais daqui
+        são `transparent` com opacidade cheia. O renderizador desenha primeiro
+        tudo o que é opaco e só depois tudo o que é transparente, e
+        `renderOrder` ordena DENTRO de um passe, nunca entre eles. Isso já
+        causou dois defeitos seguidos nesta tela: a moldura semitransparente
+        pintando por cima do vídeo, e depois os NOMES DO MAPA (transparentes,
+        `renderOrder` 10) atravessando a publicação. `transparent` com
+        `opacity` 1 põe tudo no MESMO passe, onde o `renderOrder` manda:
+        nomes (10) < borda (24) < mídia (25).
       */}
-      <mesh renderOrder={ORDEM}>
-        <planeGeometry args={[largura + MOLDURA, altura + MOLDURA]} />
-        {/*
-          OS DOIS PASSES DO three.js, e por que os dois materiais daqui são
-          `transparent` com opacidade cheia.
-
-          O renderizador desenha primeiro tudo o que é opaco e só depois tudo o
-          que é transparente — e `renderOrder` ordena DENTRO de um passe, nunca
-          entre eles. Isso já causou dois defeitos seguidos nesta tela:
-
-            1. A moldura era semitransparente e a mídia opaca. A moldura ia
-               para o segundo passe e pintava por cima do vídeo: retângulo
-               escuro, sempre.
-
-            2. Corrigida a moldura para opaca, os dois foram para o primeiro
-               passe — e aí os NOMES DO MAPA, que são transparentes com
-               `renderOrder` 10 (ver LabelItem), passaram a ser desenhados por
-               cima da publicação. "Tocantins" e "Minas Gerais" atravessados no
-               meio do vídeo de alguém.
-
-          `transparent` com `opacity` 1 põe os dois no MESMO passe dos nomes,
-          onde o `renderOrder` finalmente manda: nomes (10) < moldura (24) <
-          mídia (25). Opacidade cheia mantém a aparência de opaco; o que muda é
-          só a fila em que eles entram.
-        */}
+      <RoundedBox
+        args={[largura + BORDA * 2, altura + BORDA * 2, 0.02]}
+        radius={RAIO + BORDA}
+        smoothness={4}
+        position={[0, acima, 0]}
+        renderOrder={ORDEM}
+      >
         <meshBasicMaterial
-          color="#0b1220"
+          color={COR_DA_BORDA}
           transparent
           opacity={1}
           depthTest={false}
           depthWrite={false}
           toneMapped={false}
         />
-      </mesh>
+      </RoundedBox>
 
-      <mesh position={[0, 0, 0.01]} renderOrder={ORDEM + 1}>
+      <mesh position={[0, acima, 0.02]} renderOrder={ORDEM + 1}>
         <planeGeometry args={[largura, altura]} />
         {/*
           O `key` COM O UUID DA TEXTURA RECRIA O MATERIAL quando ela troca.
-
-          Trocar `map` num material que já foi compilado não basta: o programa
-          de sombreamento é montado uma vez, com as texturas que existiam
-          naquele momento, e a troca sozinha não pede recompilação — o plano
-          fica preto. Recriar o material é a forma mais direta de garantir o
-          programa certo, e acontece duas vezes na vida desta tela (o cartaz e
-          depois o vídeo), não a cada quadro.
+          Trocar `map` num material já compilado não basta: o programa de
+          sombreamento é montado uma vez, e a troca sozinha não pede
+          recompilação — o plano fica preto. Acontece duas vezes na vida desta
+          tela (o cartaz e depois o vídeo), não a cada quadro.
         */}
         <meshBasicMaterial
-          key={textura.uuid}
+          key={textura.uuid + mascara.uuid}
           map={textura}
+          alphaMap={mascara}
           transparent
           opacity={1}
           depthTest={false}
