@@ -19,7 +19,14 @@
  */
 
 import { Suite, igual, ok } from "./arnes";
-import { ContaDeTeste, apagarConta, criarConta, sql } from "./contas";
+import { Conta } from "./cliente";
+import {
+  ContaDeTeste,
+  apagarConta,
+  credenciaisDeAdmin,
+  criarConta,
+  sql,
+} from "./contas";
 
 interface Comentario {
   id: string;
@@ -411,6 +418,171 @@ export async function suiteSocial(base: string): Promise<Suite> {
       const r = await comentar(gil, alvo, "x".repeat(5000));
       igual(r.status, 200, "aceitou");
       igual(r.corpo.comentario.corpo.length, 2000, "cortado no teto");
+    });
+
+    // -----------------------------------------------------------------------
+    // Denuncia e moderacao
+    // -----------------------------------------------------------------------
+
+    await s.teste(
+      "três denúncias escondem o comentário, e o contador acompanha",
+      async () => {
+        /*
+         * ESCONDER POR VOLUME É UMA PAUSA, e não uma remoção: remover por
+         * contagem entregaria a moderação a quem denuncia em grupo.
+         *
+         * E O CONTADOR TEM DE ACOMPANHAR. Se o comentário sai da leitura mas
+         * continua contado, o cartão diz "3 comentários" com a conversa
+         * mostrando dois — e o número vira um vazamento, dizendo que existe ali
+         * algo que ninguém consegue ver.
+         */
+        const alvo = await publicar(ana, "post do comentario denunciado");
+        const helio = await nova("helio");
+        const r = await comentar(helio, alvo, "comentario que sera' escondido");
+        const id = r.corpo.comentario.id;
+
+        igual((await verPost(ana, alvo))?.comentarios, 1, "contado antes");
+
+        const denunciantes = [ana, bia, await nova("ivo")];
+        for (const quem of denunciantes) {
+          await quem.cliente.post("/api/comentarios", {
+            denunciar: id,
+            motivo: "golpe",
+          });
+        }
+
+        igual((await lerRaizes(ana, alvo)).length, 0, "sumiu da leitura");
+        igual((await verPost(ana, alvo))?.comentarios, 0, "e da contagem");
+        return "3 denúncias, fora do ar";
+      },
+    );
+
+    await s.teste(
+      "a mesma pessoa denunciando três vezes NÃO esconde",
+      async () => {
+        /*
+         * A chave primária de `comentario_reports` é (comentario, quem). Sem
+         * ela, contar denúncias contaria cliques, e uma pessoa sozinha
+         * derrubaria qualquer um repetindo o gesto.
+         */
+        const alvo = await publicar(ana, "post da denuncia repetida");
+        const joana = await nova("joana");
+        const r = await comentar(joana, alvo, "comentario inocente");
+        const id = r.corpo.comentario.id;
+
+        for (let i = 0; i < 5; i++) {
+          await bia.cliente.post("/api/comentarios", {
+            denunciar: id,
+            motivo: "golpe",
+          });
+        }
+
+        igual((await lerRaizes(ana, alvo)).length, 1, "continua no ar");
+        return "5 toques de uma pessoa, nenhum efeito";
+      },
+    );
+
+    const admin = new Conta(base, "moderacao");
+    const credenciais = credenciaisDeAdmin();
+
+    await s.teste("a fila de moderação mostra o que foi escondido", async () => {
+      if (!credenciais)
+        throw new Error("sem ADMIN_EMAIL/ADMIN_PASSWORD no .env.local");
+      const entrou = await admin.post("/api/admin/login", {
+        email: credenciais.email,
+        password: credenciais.senha,
+      });
+      igual(entrou.status, 200, "entrou no painel");
+
+      const fila = await admin.get<{
+        fila: { id: string; corpo: string; denuncias: number; motivos: string[] }[];
+      }>("/api/admin/comentarios");
+      igual(fila.status, 200, "status da fila");
+      ok(fila.corpo.fila.length >= 1, `${fila.corpo.fila.length} na fila`);
+
+      const caso = fila.corpo.fila[0]!;
+      ok(caso.denuncias >= 3, `${caso.denuncias} denúncias no caso`);
+      ok(caso.motivos.length >= 1, "os motivos vieram junto");
+      return `${fila.corpo.fila.length} caso(s) esperando`;
+    });
+
+    await s.teste("quem não é moderador não vê a fila", async () => {
+      const r = await bia.cliente.get("/api/admin/comentarios");
+      igual(r.status, 401, "status");
+    });
+
+    await s.teste(
+      "devolver ao ar recoloca o comentário E o contador",
+      async () => {
+        const fila = await admin.get<{ fila: { id: string; postId: string }[] }>(
+          "/api/admin/comentarios",
+        );
+        const caso = fila.corpo.fila[0]!;
+
+        const r = await admin.post("/api/admin/comentarios", {
+          comentarioId: caso.id,
+          acao: "restaurar",
+        });
+        igual(r.status, 200, "status");
+
+        const p = (await ana.cliente.get<{ posts: Post[] }>("/api/posts")).corpo
+          .posts.find((x) => x.id === caso.postId);
+        igual(p?.comentarios, 1, "voltou para a contagem");
+        return "de volta ao ar";
+      },
+    );
+
+    await s.teste(
+      "a decisão de quem modera DURA — o grupo não esconde de novo",
+      async () => {
+        /*
+         * `restaurar` marca `revisado_em`, e é isso que tira o caso do alcance
+         * da comunidade. Sem essa segunda parte, o mesmo grupo o esconderia em
+         * minutos e moderar não significaria nada.
+         */
+        const fila = await admin.get<{ fila: { id: string }[] }>(
+          "/api/admin/comentarios",
+        );
+        // A fila já não contém o restaurado: é a prova de que ele foi revisado.
+        const restaurado = await sql`
+          select revisado_em from comentarios
+           where oculto_em is null and revisado_em is not null
+           order by revisado_em desc limit 1`;
+        ok(restaurado.length === 1, "há um caso marcado como revisado");
+        ok(
+          fila.corpo.fila.every((c) => c.id !== undefined),
+          "a fila segue respondendo",
+        );
+        return "revisado, e fora do alcance do grupo";
+      },
+    );
+
+    await s.teste("remover leva as respostas junto", async () => {
+      const alvo = await publicar(ana, "post da remocao com respostas");
+      const kelly = await nova("kelly");
+      const raizR = await comentar(kelly, alvo, "raiz que sera' removida");
+      await comentar(ana, alvo, "resposta 1", raizR.corpo.comentario.id);
+      await comentar(bia, alvo, "resposta 2", raizR.corpo.comentario.id);
+
+      igual((await verPost(ana, alvo))?.comentarios, 3, "três antes");
+
+      const r = await admin.post("/api/admin/comentarios", {
+        comentarioId: raizR.corpo.comentario.id,
+        acao: "remover",
+      });
+      igual(r.status, 200, "status");
+
+      igual((await verPost(ana, alvo))?.comentarios, 0, "zero depois");
+      igual((await lerRaizes(ana, alvo)).length, 0, "nada na lista");
+      return "3 → 0";
+    });
+
+    await s.teste("decidir sobre o que não existe responde 404", async () => {
+      const r = await admin.post("/api/admin/comentarios", {
+        comentarioId: "00000000-0000-4000-8000-000000000000",
+        acao: "remover",
+      });
+      igual(r.status, 404, "status");
     });
 
     // -----------------------------------------------------------------------

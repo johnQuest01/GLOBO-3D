@@ -446,3 +446,128 @@ export async function denunciarComentario(
 
   return { ok: true, escondido: r.length > 0 };
 }
+
+// ---------------------------------------------------------------------------
+// Moderação — a camada de cima, agora também para comentários
+// ---------------------------------------------------------------------------
+
+export interface ComentarioNaFila {
+  id: string;
+  postId: string;
+  autor: string;
+  autorAvatar: string | null;
+  corpo: string;
+  criadoEm: string;
+  ocultoEm: string | null;
+  denuncias: number;
+  motivos: string[];
+  /** O que está escrito na publicação — o comentário sozinho não se explica. */
+  postCorpo: string | null;
+  postLugar: string | null;
+}
+
+/**
+ * A fila de comentários que a comunidade escondeu e ninguém julgou ainda.
+ *
+ * O POST VEM JUNTO, e isso não é enfeite. "Concordo" é inofensivo embaixo de
+ * uma foto de praia e é outra coisa embaixo de um post sobre uma pessoa. Julgar
+ * um comentário sem ver do que ele fala é julgar metade do caso — e é o erro
+ * que faz moderação errar para os dois lados.
+ *
+ * OS MOTIVOS TAMBÉM. "Spam" e "isto é uma criança" dão a mesma contagem e são
+ * problemas completamente diferentes; uma fila que mostrasse só o número
+ * obrigaria a abrir cada caso para descobrir qual é.
+ */
+export async function filaDeComentarios(
+  limite = 50,
+): Promise<ComentarioNaFila[]> {
+  if (!sql) return [];
+  const linhas = (await sql`
+    select k.id, k.post_id, k.corpo, k.criado_em, k.oculto_em,
+           u.nickname as autor, u.avatar_url as autor_avatar,
+           p.body as post_corpo, p.lugar as post_lugar,
+           (select count(*)::int from comentario_reports r
+             where r.comentario_id = k.id) as denuncias,
+           (select coalesce(array_agg(r.reason), '{}')
+              from comentario_reports r where r.comentario_id = k.id) as motivos
+      from comentarios k
+      join users u on u.id = k.autor_id
+      join posts p on p.id = k.post_id
+     where k.oculto_em is not null
+       and k.revisado_em is null
+       and k.removido_em is null
+     order by k.oculto_em asc
+     limit ${Math.min(limite, 200)}
+  `) as Record<string, unknown>[];
+
+  return linhas.map((l) => ({
+    id: String(l.id),
+    postId: String(l.post_id),
+    autor: String(l.autor ?? "?"),
+    autorAvatar: (l.autor_avatar as string) ?? null,
+    corpo: String(l.corpo ?? ""),
+    criadoEm: new Date(String(l.criado_em)).toISOString(),
+    ocultoEm: l.oculto_em ? new Date(String(l.oculto_em)).toISOString() : null,
+    denuncias: Number(l.denuncias ?? 0),
+    motivos: Array.isArray(l.motivos)
+      ? (l.motivos as string[]).filter(Boolean)
+      : [],
+    postCorpo: (l.post_corpo as string) ?? null,
+    postLugar: (l.post_lugar as string) ?? null,
+  }));
+}
+
+/**
+ * A decisão de quem modera um comentário — e ela fica por cima da comunidade.
+ *
+ * `restaurar` devolve ao ar E marca como revisado. Sem a segunda parte, o mesmo
+ * grupo o esconderia de novo em minutos, e moderar não significaria nada.
+ *
+ * `remover` não apaga a linha, pelo mesmo motivo dos posts: a denúncia do outro
+ * lado precisa continuar apontando para alguma coisa, e uma decisão sem rastro
+ * é uma decisão que ninguém pode revisar depois — inclusive quem a tomou.
+ *
+ * OS CONTADORES ACOMPANHAM SOZINHOS. `oculto_em` e `removido_em` são as duas
+ * colunas que o gatilho de visibilidade escuta, então restaurar devolve o
+ * comentário à conta do post e remover o tira, sem nada a mais aqui.
+ */
+export async function decidirSobreComentario(
+  comentarioId: string,
+  moderadorId: string | null,
+  acao: "restaurar" | "remover",
+): Promise<boolean> {
+  if (!sql) return false;
+
+  if (acao === "restaurar") {
+    const r = (await sql`
+      update comentarios
+         set oculto_em = null, revisado_em = now(),
+             revisado_por = ${moderadorId}::uuid
+       where id = ${comentarioId}::uuid and removido_em is null
+      returning id`) as unknown[];
+    return r.length > 0;
+  }
+
+  const r = (await sql`
+    update comentarios
+       set removido_em = now(), revisado_em = now(),
+           revisado_por = ${moderadorId}::uuid
+     where id = ${comentarioId}::uuid
+    returning id`) as unknown[];
+
+  /*
+   * REMOVER A RAIZ LEVA AS RESPOSTAS JUNTO — a mesma regra de quando o autor
+   * apaga. Deixar as respostas de uma conversa cuja raiz foi removida por
+   * moderação seria deixar metade do problema no ar, respondendo a algo que
+   * ninguém mais consegue ler.
+   */
+  if (r.length > 0) {
+    await sql`
+      update comentarios
+         set removido_em = now(), revisado_em = now(),
+             revisado_por = ${moderadorId}::uuid
+       where raiz_id = ${comentarioId}::uuid and removido_em is null`;
+  }
+
+  return r.length > 0;
+}

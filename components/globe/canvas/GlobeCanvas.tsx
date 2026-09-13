@@ -31,6 +31,7 @@ import MyVacationSpotsPopup from '@/components/globe/ui/MyVacationSpotsPopup';
 import MessageInputPopup from '@/components/globe/ui/MessageInputPopup';
 import GlobeModeToggle, { GlobeMode } from '@/components/globe/ui/GlobeModeToggle';
 import AdminLoginPopup from '@/components/globe/ui/AdminLoginPopup';
+import ModeracaoPanel from '@/components/globe/ui/ModeracaoPanel';
 import GlobeClock from '@/components/globe/ui/GlobeClock';
 import { latLonToVector3 } from '@/components/lib/utils';
 import type { Beacon } from '@/realtime/shared/protocol';
@@ -198,6 +199,15 @@ export default function GlobeCanvas() {
   // acabar quando a aba fecha — o painel não é para ficar aberto por descuido.
   const [isAdmin, setIsAdmin] = useState(false);
   const [isAdminLoginOpen, setIsAdminLoginOpen] = useState(false);
+  /**
+   * A fila de moderacao.
+   *
+   * NAO ABRE SOZINHA no login, ao contrario da tela de animacoes. Entrar como
+   * administrador e' a coisa mais comum do mundo (trocar uma configuracao, ver
+   * um numero); cair direto numa fila de denuncias transformaria todo login num
+   * plantao.
+   */
+  const [moderacaoAberta, setModeracaoAberta] = useState(false);
   useEffect(() => {
     if (sessionStorage.getItem('globeAdmin') === '1') setIsAdmin(true);
   }, []);
@@ -809,6 +819,23 @@ export default function GlobeCanvas() {
               >
                 {states.isAdminNewsEnabled ? 'News: ON' : 'News: OFF'}
               </button>
+              {/*
+                A PORTA DA MODERACAO. Ela so' existe para quem ja' entrou como
+                administrador — e o que protege de verdade nao e' este `isAdmin`
+                do navegador, que e' so' um estado de tela, e sim o cookie
+                assinado que as rotas /api/admin conferem no servidor.
+              */}
+              <button
+                onClick={() => setModeracaoAberta(true)}
+                disabled={states.isAnyPopupOpen}
+                title="Fila de moderação"
+                className="absolute right-4 z-40 p-4 rounded-full shadow-lg bg-amber-600 text-white hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-amber-500 disabled:bg-gray-600 disabled:opacity-50 bottom-[28.5rem] pointer-events-auto"
+              >
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+                  <path d="M12 3l8 3.5v5c0 4.5-3.2 8.4-8 9.5-4.8-1.1-8-5-8-9.5v-5L12 3z" strokeLinejoin="round" />
+                  <path d="M12 9v4M12 16.5v.01" strokeLinecap="round" />
+                </svg>
+              </button>
               <button
                 onClick={handlers.handleOpenAdminAnimPopup}
                 disabled={states.isAnyPopupOpen}
@@ -1279,6 +1306,11 @@ export default function GlobeCanvas() {
               {realtime.estado.aviso}
             </button>
           )}
+
+          <ModeracaoPanel
+            aberto={moderacaoAberta}
+            onFechar={() => setModeracaoAberta(false)}
+          />
 
           <AdminLoginPopup
             isOpen={isAdminLoginOpen}
