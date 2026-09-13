@@ -17,7 +17,7 @@ import type {
   Presence,
   ServerToClient,
 } from '../shared/protocol.js';
-import { BEACONS_MAX, ErrorCode } from '../shared/protocol.js';
+import { BEACONS_MAX, ErrorCode, PRESENCAS_MAX } from '../shared/protocol.js';
 import { restaurarBeacon, TTL_DO_SINAL_SEC } from './beacons.js';
 import type { PresenceStore } from './store.js';
 
@@ -155,7 +155,17 @@ export function registerPresence(
       // seria um broadcast que cresce com a audiencia.
       store.listBeaconsGlobais(BEACONS_MAX),
     ]);
-    socket.emit('presence:snapshot', { presences, beacons });
+    /*
+     * O TETO E' APLICADO AQUI, e nao na consulta, de proposito: o `total`
+     * precisa ser o numero verdadeiro. Mandar so' o que cabe e dizer quantos
+     * sao e' honesto; mandar so' o que cabe e calar sobre o resto faria a
+     * pessoa achar que a regiao esta vazia.
+     */
+    socket.emit('presence:snapshot', {
+      presences: presences.slice(0, PRESENCAS_MAX),
+      beacons,
+      total: presences.length,
+    });
     socket.to(presence.regionKey).emit('presence:update', {
       kind: 'join',
       presence,

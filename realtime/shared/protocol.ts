@@ -82,6 +82,19 @@ export interface Beacon {
 export const BEACONS_MAX = 200;
 
 /**
+ * Teto de presencas que um aparelho recebe de uma vez.
+ *
+ * O snapshot mandava TODO MUNDO da regiao para quem entrasse. Com mil pessoas
+ * em Sao Paulo sao mil registros por pessoa que abre o app; com cinquenta mil,
+ * a conta nao fecha — e o problema nao e' de maquina, e' de desenho: o
+ * trabalho cresce com o quadrado da audiencia daquele lugar.
+ *
+ * Cento e vinte pontos ja' enchem um globo. O resto vira um numero, que e' a
+ * informacao que sobra quando os pontos nao cabem: "ha mais gente aqui".
+ */
+export const PRESENCAS_MAX = 120;
+
+/**
  * Uma mensagem, do jeito que ela atravessa o servidor.
  *
  * `payload` e' OPACO: uma string que quem envia montou e que o servidor repassa
@@ -262,7 +275,15 @@ export interface ClientToServer {
 // ---------------------------------------------------------------------------
 
 export interface ServerToClient {
-  'presence:snapshot': (p: { presences: Presence[]; beacons: Beacon[] }) => void;
+  /**
+   * `presences` vem LIMITADO a PRESENCAS_MAX; `total` diz quantos sao de
+   * verdade. A interface mostra os pontos que couberam e o numero do resto.
+   */
+  'presence:snapshot': (p: {
+    presences: Presence[];
+    beacons: Beacon[];
+    total?: number;
+  }) => void;
   'presence:update': (p: {
     kind: 'join' | 'leave' | 'move';
     presence: Presence;
