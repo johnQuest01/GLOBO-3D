@@ -123,7 +123,7 @@ export function registerBeacons(
 
     log(
       `beacon ${beacon.beaconId.slice(0, 8)} de ${clientId} em ${presence.regionKey}/${celula}` +
-        ` por ${ttlSec}s${anunciado ? '' : ' (celula cheia: sem anuncio ao vivo)'}`,
+        ` por ${ttlSec}s (anunciado a ${anunciado})`,
     );
   });
 

@@ -215,14 +215,29 @@ export async function suiteEstresse(
         ok(
           anuncios <= limite,
           `${anuncios} entregas para ${QUANTOS} sinais no mesmo lugar. ` +
-            `O teto de plateia (${PLATEIA_MAX}) permite no máximo ${limite}; ` +
-            `sem teto seriam ${quadrado}, e é esse o desenho que não passa de alguns ` +
-            `milhares de pessoas — mil numa cidade dariam um milhão de entregas por rodada.`,
+            `O limite de plateia (${PLATEIA_MAX}) permite no máximo ${limite}; ` +
+            `sem limite seriam ${quadrado}, e é esse o desenho que não passa de ` +
+            `alguns milhares de pessoas — mil numa cidade dariam um milhão de ` +
+            `entregas por rodada.`,
         );
 
+        /*
+         * E PRECISA SER MAIS QUE ZERO. Este teste nasceu duas vezes: a primeira
+         * versão do limite simplesmente NÃO anunciava acima do teto, e a medição
+         * foi "0 entregas — economia de 100%". O número parecia ótimo e o produto
+         * estava quebrado: um lugar cheio ficava mudo, e lugar cheio é onde o
+         * globo mais precisa parecer vivo. Limitar não é calar.
+         */
+        ok(
+          anuncios > 0,
+          `nenhuma entrega com ${QUANTOS} pessoas no mesmo lugar — o limite ` +
+            `virou silêncio, e um lugar cheio não pode ficar mudo`,
+        );
+
+        const porSinal = anuncios / QUANTOS;
         return (
-          `${anuncios} entregas em ${Date.now() - comecou}ms ` +
-          `(sem teto seriam ${quadrado}; economia de ${Math.round((1 - anuncios / quadrado) * 100)}%)`
+          `${anuncios} entregas em ${Date.now() - comecou}ms — ` +
+          `${porSinal.toFixed(1)} por sinal (limite ${PLATEIA_MAX}; sem limite seriam ${QUANTOS - 1})`
         );
       },
     );
@@ -271,8 +286,8 @@ export async function suiteEstresse(
         const comecou = Date.now();
         const ids = new Map<string, number>();
 
-        // Cinco mensagens por par: o balde de `msg:send` comporta 40 por minuto,
-        // então isto exercita a rajada sem esbarrar no freio.
+        // Cinco mensagens por par: o balde de `msg:send` comporta 40 por
+        // minuto, então isto exercita a rajada sem esbarrar no freio.
         for (let rodada = 0; rodada < 5; rodada++) {
           for (const [a, b] of pares) {
             const id = randomUUID();

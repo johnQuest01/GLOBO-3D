@@ -103,63 +103,80 @@ const coordenadaValida = (n: unknown, limite: number): n is number =>
   typeof n === 'number' && Number.isFinite(n) && Math.abs(n) <= limite;
 
 /**
- * Quanta gente cabe num anúncio ao vivo.
+ * Quanta gente recebe um anúncio ao vivo.
  *
- * POR QUE UM TETO, E NÃO SÓ A CÉLULA. A célula divide o mundo por geografia, e
- * isso ajuda — mas não resolve sozinha, por um motivo que só aparece no uso: a
- * coordenada de quem se cadastra vem da LISTA DE CIDADES, e a lista tem um
+ * POR QUE UM LIMITE, E NÃO SÓ A CÉLULA. A célula divide o mundo por geografia,
+ * e isso ajuda — mas não resolve sozinha, por um motivo que só aparece no uso:
+ * a coordenada de quem se cadastra vem da LISTA DE CIDADES, e a lista tem um
  * ponto por cidade. Todo mundo que escolhe "São Paulo" recebe exatamente
  * -23,55 / -46,63. Uma cidade inteira cai numa célula só, e a divisão
  * geográfica não divide nada.
  *
- * Então o teto é o que garante a conta. Acima dele o anúncio ao vivo é
- * dispensado, e o lugar continua se atualizando pela consulta que o cliente já
- * faz a cada vinte segundos.
+ * Sem limite, cada anúncio custa uma entrega por pessoa presente — e uma rodada
+ * custa o QUADRADO da população daquele lugar. Medido: 64 pessoas no mesmo
+ * lugar acendendo sinal produziram 4.096 entregas, que é 64² exatamente. Mil
+ * pessoas numa cidade dariam um milhão por rodada; cinquenta mil, dois bilhões
+ * e meio.
  *
- * O QUE SE PERDE É PEQUENO E O QUE SE GANHA É A ESCALA. Ver o vizinho acender
- * no mesmo segundo importa num lugar com dez pessoas — é o que faz o globo
- * parecer vivo. Num lugar com dez mil, ninguém repara em quem chegou: a tela
- * já está cheia, e o teto de 120 pontos do retrato corta a maior parte de
- * qualquer jeito.
- *
- * TRINTA É ESCOLHIDO PELO PRODUTO, e não pelo teste: é mais gente do que cabe
- * no campo de visão de um globo antes de os pontos virarem mancha. Mudar este
- * número muda o custo por evento diretamente, então ele é um botão de escala —
- * e o teste de estresse afirma o limite, não o valor.
+ * TRINTA É ESCOLHIDO PELO PRODUTO: é mais gente do que cabe no campo de visão
+ * de um globo antes de os pontos virarem mancha. Mudar este número muda o custo
+ * por evento diretamente — é um botão de escala, e o teste de estresse afirma o
+ * limite, não o valor.
  */
 const PLATEIA_MAX = 30;
 
 /**
- * A plateia de uma sala NESTA máquina.
+ * Anuncia na célula, para no máximo `PLATEIA_MAX` pessoas.
  *
- * Local de propósito: a alternativa (`fetchSockets`) é uma ida ao Redis por
- * evento, e um freio que custa uma consulta de rede a cada anúncio derrota o
- * próprio propósito. Com várias máquinas o número é menor que o real, e o teto
- * passa a valer POR MÁQUINA — que é a unidade certa, porque o trabalho que se
- * quer limitar também é por máquina.
- */
-function plateiaCabe(io: RealtimeServer, sala: string): boolean {
-  const quantos = io.sockets.adapter.rooms.get(sala)?.size ?? 0;
-  return quantos <= PLATEIA_MAX;
-}
-
-/**
- * Anuncia na célula — se a plateia couber.
+ * AMOSTRA, E NÃO CORTE — e a diferença é o produto inteiro. A primeira versão
+ * simplesmente não anunciava quando a célula passava do limite, e o teste
+ * mostrou o que isso significa: com 64 pessoas no mesmo lugar, ZERO entregas.
+ * Um lugar cheio ficaria mudo, e lugar cheio é exatamente onde o globo precisa
+ * parecer vivo. O limite virava um precipício em vez de um teto.
  *
- * Está numa função só para que o teto seja UM: presença e sinal precisam ser
- * anunciados pela mesma regra, senão um lugar cheio mostraria as entradas e
- * esconderia os sinais, ou o contrário.
+ * Agora o anúncio sempre acontece; o que muda é para quantos. Em lugar pequeno
+ * vai para todos, como antes. Em lugar cheio vai para trinta, escolhidos a
+ * partir de um ponto de partida sorteado — então não são sempre os mesmos
+ * trinta, e ao longo de alguns minutos todo mundo vê movimento.
  *
- * Devolve false quando a plateia não coube — quem chama usa isso para o log.
+ * A JANELA É PERCORRIDA SEM COPIAR A SALA. Materializar a lista de todos os
+ * presentes para escolher trinta seria pagar, em memória, exatamente o preço
+ * que este limite existe para não pagar.
+ *
+ * Devolve quantos receberam — quem chama usa isso para o log.
  */
 export function anunciarNaCelula(
   io: RealtimeServer,
-  sala: string,
+  celula: string,
   anunciar: (para: ReturnType<RealtimeServer['to']>) => void,
-): boolean {
-  if (!plateiaCabe(io, sala)) return false;
-  anunciar(io.to(sala));
-  return true;
+): number {
+  const sala = io.sockets.adapter.rooms.get(celula);
+  const quantos = sala?.size ?? 0;
+  if (quantos === 0) return 0;
+
+  if (quantos <= PLATEIA_MAX) {
+    anunciar(io.to(celula));
+    return quantos;
+  }
+
+  const comeco = Math.floor(Math.random() * quantos);
+  const escolhidos: string[] = [];
+  let i = 0;
+  for (const id of sala!) {
+    // Começa no sorteado e dá a volta: `(i - comeco + quantos) % quantos` diria
+    // o mesmo com uma conta a mais por iteração.
+    if (i >= comeco && escolhidos.length < PLATEIA_MAX) escolhidos.push(id);
+    i++;
+  }
+  for (const id of sala!) {
+    if (escolhidos.length >= PLATEIA_MAX) break;
+    escolhidos.push(id);
+  }
+
+  // Cada socket também é uma sala com o próprio id: é assim que se fala com um
+  // punhado de conexões sem inventar uma sala nova para cada anúncio.
+  anunciar(io.to(escolhidos));
+  return escolhidos.length;
 }
 
 export function registerPresence(
@@ -264,9 +281,9 @@ export function registerPresence(
       beacons,
       total: presences.length,
     });
-    if (plateiaCabe(io, celula)) {
-      socket.to(celula).emit('presence:update', { kind: 'join', presence });
-    }
+    anunciarNaCelula(io, celula, (para) =>
+      para.emit('presence:update', { kind: 'join', presence }),
+    );
 
     log(
       `join   ${socket.id} clientId=${presence.clientId} regiao=${presence.regionKey} celula=${celula} (${presences.length} na regiao, ${beacons.length} beacon(s))`,
@@ -289,9 +306,9 @@ export function registerPresence(
       // join: o cliente já provou que está aqui.
       await store.add(socket.id, presence);
       const celula = socket.data.celula ?? celulaDe(presence.lat, presence.lon);
-      if (plateiaCabe(io, celula)) {
-        socket.to(celula).emit('presence:update', { kind: 'join', presence });
-      }
+      anunciarNaCelula(io, celula, (para) =>
+        para.emit('presence:update', { kind: 'join', presence }),
+      );
       log(`revive ${socket.id} regiao=${regionKey}`);
     }
 
