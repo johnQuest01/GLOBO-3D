@@ -14,6 +14,15 @@
  * NÃO TOCA EM QUEM JÁ TEM PONTO, e é isso que o torna seguro de rodar de novo:
  * uma coordenada guardada veio de uma escolha da pessoa, e este roteiro nunca
  * sabe mais do que ela.
+ *
+ * `--refazer` É A EXCEÇÃO, e existe por um motivo específico: a primeira
+ * execução deste roteiro situou quatro contas no CENTRO GEOGRÁFICO DO BRASIL
+ * porque "SAO PAULO" não casava com "São Paulo" por causa do acento, e uma
+ * quinta no meio da China porque a linha de Hong Kong traz o país como
+ * "Hong Kong S.A.R.". Com a comparação consertada, essas contas precisam ser
+ * recalculadas — e SÓ ELAS: `--refazer` regrava apenas quando o resultado novo
+ * é MAIS PRECISO que o guardado (cidade ganha de estado, estado ganha de país).
+ * Nunca rebaixa, e nunca mexe em quem já está no melhor nível possível.
  */
 import { readFileSync } from "node:fs";
 
@@ -78,10 +87,15 @@ async function principal() {
   let jaTinham = 0;
   let semLugar = 0;
 
+  const refazer = process.argv.includes("--refazer");
+  /** Do mais grosso para o mais fino: só se SOBE nesta escala, nunca desce. */
+  const nivel = { pais: 1, estado: 2, cidade: 3 } as const;
+
   for (const u of contas) {
     const quem = u.nickname ?? u.id;
+    const temPonto = u.lat !== null && u.lon !== null;
 
-    if (u.lat !== null && u.lon !== null) {
+    if (temPonto && !refazer) {
       jaTinham++;
       continue;
     }
@@ -93,12 +107,45 @@ async function principal() {
     });
 
     if (!achado) {
+      if (temPonto) {
+        jaTinham++;
+        continue;
+      }
       semLugar++;
       const escrito =
         [u.city, u.state, u.country].filter(Boolean).join(" / ") ||
         "nada preenchido";
       console.log(`  -  ${quem}: nao consegui situar (${escrito})`);
       continue;
+    }
+
+    if (temPonto) {
+      /*
+       * QUE NÍVEL O PONTO GUARDADO REPRESENTA? Descobre-se comparando com o que
+       * cada camada daria hoje — é a única forma, já que o banco guarda o ponto
+       * e não a origem dele. Um ponto igual ao do país veio do país.
+       */
+      const doEstado = ondeFica(
+        { country: u.country, state: u.state },
+        { paises, cidades, estados: estadosDe(u.country) },
+      );
+      const doPais = ondeFica(
+        { country: u.country },
+        { paises, cidades, estados: [] },
+      );
+      const mesmo = (a: { lat: number; lon: number } | null) =>
+        !!a &&
+        Math.abs(a.lat - u.lat!) < 1e-6 &&
+        Math.abs(a.lon - u.lon!) < 1e-6;
+      const guardado = mesmo(doPais) ? 1 : mesmo(doEstado) ? 2 : 3;
+
+      if (nivel[achado.precisao] <= guardado) {
+        jaTinham++;
+        continue;
+      }
+      console.log(
+        `  ^  ${quem}: estava em ${u.lat}, ${u.lon} (nivel ${guardado}) -> sobe para ${achado.precisao}`,
+      );
     }
 
     await sql`
