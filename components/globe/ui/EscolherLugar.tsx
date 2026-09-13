@@ -3,8 +3,7 @@
 import React, { ChangeEvent, FC, useState } from 'react';
 
 import LocationFields from '@/components/login/LocationFields';
-import { useGeoMapping } from '@/app/hooks/useGeoMapping';
-import { chavesPossiveis } from '@/lib/geo/normalizar';
+import type { Lugar } from '@/lib/geo/lugar';
 
 /**
  * "Onde você está no globo?" — para quem entrou pelo Google.
@@ -34,9 +33,9 @@ interface Props {
 
 const EscolherLugar: FC<Props> = ({ aberto, onFechar }) => {
   const [campos, setCampos] = useState({ country: '', state: '', city: '' });
+  const [lugar, setLugar] = useState<Lugar | null>(null);
   const [erros, setErros] = useState<{ [key: string]: string }>({});
   const [enviando, setEnviando] = useState(false);
-  const { keyToLatLon } = useGeoMapping();
 
   if (!aberto) return null;
 
@@ -55,23 +54,23 @@ const EscolherLugar: FC<Props> = ({ aberto, onFechar }) => {
     }
 
     /*
-     * O LUGAR PRECISA EXISTIR NO GLOBO — e isto e' o conserto de um laco.
+     * SÓ SALVA O QUE TEM PONTO NO GLOBO — e isto é o conserto de um laço.
      *
-     * Salvar um nome que o mapa nao conhece nao dava erro nenhum: a tela
-     * recarregava, o app continuava achando que a pessoa nao tinha lugar, e o
-     * pedido voltava. Para sempre. Foi relatado assim: "preencho e nada
-     * acontece, continua perguntando".
+     * Salvar um nome que o globo não sabia situar não dava erro nenhum: a tela
+     * recarregava, o aplicativo continuava achando que a pessoa não tinha
+     * lugar, e o pedido voltava. Para sempre. Foi relatado assim: "preencho e
+     * nada acontece, continua perguntando".
      *
-     * Conferir ANTES de gravar transforma um laco silencioso numa frase que
-     * diz o que fazer.
+     * Antes a conferência era uma segunda tentativa de adivinhar a coordenada
+     * pelo nome — o mesmo palpite que falhava depois, então às vezes ela
+     * passava e o laço acontecia mesmo assim. Agora o que se confere é a
+     * coordenada que veio junto da opção escolhida: se ela existe, o globo
+     * consegue situar a pessoa, por construção.
      */
-    const achou = [campos.state, campos.city, campos.country].some((valor) =>
-      chavesPossiveis(valor).some((chave) => keyToLatLon(chave)),
-    );
-    if (!achou) {
+    if (!lugar) {
       setErros({
         country:
-          'Nao encontrei esse lugar no globo. Escolha o pais pela lista que aparece ao digitar.',
+          'Não encontrei esse lugar no globo. Escolha pela lista que aparece ao digitar.',
       });
       return;
     }
@@ -81,7 +80,7 @@ const EscolherLugar: FC<Props> = ({ aberto, onFechar }) => {
       const r = await fetch('/api/users/local', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify(campos),
+        body: JSON.stringify({ ...campos, lat: lugar.lat, lon: lugar.lon }),
       });
       const dados = await r.json().catch(() => ({}));
 
@@ -95,6 +94,8 @@ const EscolherLugar: FC<Props> = ({ aberto, onFechar }) => {
         perfil.country = dados.country;
         perfil.state = dados.state ?? '';
         perfil.city = dados.city ?? '';
+        perfil.lat = dados.lat ?? lugar.lat;
+        perfil.lon = dados.lon ?? lugar.lon;
         localStorage.setItem('userData', JSON.stringify(perfil));
       } catch {
         /* o servidor é a fonte da verdade; isto é só o espelho */
@@ -130,13 +131,31 @@ const EscolherLugar: FC<Props> = ({ aberto, onFechar }) => {
             city={campos.city}
             onChange={mudar}
             errors={erros}
+            onLugar={setLugar}
           />
         </div>
+
+        {/*
+          MOSTRAR ONDE VAI CAIR, antes de salvar. A queixa original não foi "o
+          lugar ficou errado" — foi "preencho e nada acontece": a tela não dava
+          sinal nenhum de ter entendido o que foi escrito. Esta linha é esse
+          sinal, e também mostra o quanto o globo consegue aproximar.
+        */}
+        {lugar && (
+          <p className="mt-3 rounded-xl bg-emerald-400/10 px-3 py-2 text-xs text-emerald-200/80">
+            No globo você vai aparecer em <strong>{lugar.rotulo}</strong>
+            {lugar.precisao === 'pais'
+              ? ' — preencha estado e cidade para aparecer mais perto de casa.'
+              : lugar.precisao === 'estado'
+                ? ' — preencha a cidade para aparecer mais perto de casa.'
+                : '.'}
+          </p>
+        )}
 
         <div className="mt-5 flex gap-2">
           <button
             type="submit"
-            disabled={enviando || !campos.country.trim()}
+            disabled={enviando || !lugar}
             className="flex-1 rounded-xl bg-cyan-600 py-2.5 font-semibold text-white
                        hover:bg-cyan-500 disabled:bg-white/10 disabled:text-white/30"
           >

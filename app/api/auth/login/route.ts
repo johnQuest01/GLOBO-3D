@@ -141,6 +141,8 @@ export async function POST(request: Request) {
       city: user.city,
       state: user.state,
       country: user.country,
+      lat: user.lat,
+      lon: user.lon,
     },
   });
 }

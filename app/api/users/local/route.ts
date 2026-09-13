@@ -3,6 +3,7 @@ import { NextResponse } from 'next/server';
 import { getSecret } from '@/lib/auth/cookies';
 import { getSession, refreshCache } from '@/lib/auth/session';
 import { findUserById, isAuthDbEnabled, setLocal } from '@/lib/db/auth';
+import { coordenadaValida } from '@/lib/geo/lugar';
 
 /**
  * Onde a pessoa está no globo.
@@ -54,6 +55,16 @@ export async function POST(request: Request) {
   const city = limpar(body.city);
 
   /*
+   * O PONTO NO GLOBO, recolhido pelo formulário da lista em que a pessoa
+   * escolheu o lugar. Sem ele o aplicativo teria que reconstruir a coordenada a
+   * partir dos nomes depois — que é de onde vinham os lugares errados, e o
+   * pedido "onde você está?" que voltava para sempre (ver lib/geo/lugar.ts).
+   */
+  const temPonto = coordenadaValida(body.lat, body.lon);
+  const lat = temPonto ? (body.lat as number) : null;
+  const lon = temPonto ? (body.lon as number) : null;
+
+  /*
    * O PAÍS É O MÍNIMO. Estado e cidade são melhores — o globo aproxima mais —,
    * mas exigir os três deixaria de fora quem mora onde essa divisão não existe
    * do mesmo jeito, e o país já coloca a pessoa no mapa.
@@ -65,12 +76,12 @@ export async function POST(request: Request) {
     );
   }
 
-  await setLocal(session.user.id, { country, state, city });
+  await setLocal(session.user.id, { country, state, city, lat, lon });
 
   // O perfil da tela é remontado a partir daqui; sem refazer o cache, a
   // interface continuaria vendo a conta sem lugar pelo tempo de vida dele.
   const fresco = await findUserById(session.user.id);
   if (fresco) await refreshCache(fresco);
 
-  return NextResponse.json({ ok: true, country, state, city });
+  return NextResponse.json({ ok: true, country, state, city, lat, lon });
 }

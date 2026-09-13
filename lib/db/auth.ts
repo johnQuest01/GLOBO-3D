@@ -21,6 +21,8 @@ export interface UserRow {
   country: string | null;
   state: string | null;
   city: string | null;
+  lat: number | null;
+  lon: number | null;
   client_id: string | null;
   banned_at: string | null;
   banned_reason: string | null;
@@ -38,6 +40,13 @@ export interface AuthUser {
   country: string | null;
   state: string | null;
   city: string | null;
+  /**
+   * Onde a pessoa está no globo, recolhido no momento em que ela escolheu o
+   * lugar (ver lib/geo/lugar.ts). Nulo nas contas anteriores a isto: elas
+   * continuam sendo situadas pelo nome, como antes, até escolherem de novo.
+   */
+  lat: number | null;
+  lon: number | null;
   bannedAt: string | null;
   bannedReason: string | null;
 }
@@ -59,6 +68,8 @@ function toUser(row: Record<string, unknown>): AuthUser {
     country: (row.country as string) ?? null,
     state: (row.state as string) ?? null,
     city: (row.city as string) ?? null,
+    lat: typeof row.lat === 'number' ? row.lat : null,
+    lon: typeof row.lon === 'number' ? row.lon : null,
     bannedAt: (row.banned_at as string) ?? null,
     bannedReason: (row.banned_reason as string) ?? null,
   };
@@ -81,6 +92,8 @@ export interface NewUser {
   country?: string | null;
   state?: string | null;
   city?: string | null;
+  lat?: number | null;
+  lon?: number | null;
   clientId?: string | null;
 }
 
@@ -101,15 +114,16 @@ export interface NewUser {
 export async function createUser(input: NewUser): Promise<AuthUser | null> {
   if (!sql) return null;
   const rows = (await sql`
-    insert into users (email, password_hash, nickname, full_name, country, state, city, client_id)
+    insert into users (email, password_hash, nickname, full_name, country, state, city, lat, lon, client_id)
     values (
       ${normalizeEmail(input.email)}, ${input.passwordHash}, ${input.nickname ?? null},
       ${input.fullName ?? null},
       ${input.country ?? null}, ${input.state ?? null}, ${input.city ?? null},
+      ${input.lat ?? null}, ${input.lon ?? null},
       ${input.clientId ?? null}
     )
     on conflict do nothing
-    returning id, email, nickname, full_name, country, state, city, banned_at, banned_reason
+    returning id, email, nickname, full_name, country, state, city, lat, lon, banned_at, banned_reason
   `) as Record<string, unknown>[];
 
   return rows.length > 0 ? toUser(rows[0]!) : null;
@@ -189,7 +203,7 @@ export async function setNickname(
         where lower(outro.nickname) = ${nickname.trim().toLowerCase()}
           and outro.id <> ${userId}::uuid
       )
-    returning id, email, nickname, full_name, country, state, city, banned_at, banned_reason
+    returning id, email, nickname, full_name, country, state, city, lat, lon, banned_at, banned_reason
   `) as Record<string, unknown>[];
   return rows.length > 0 ? toUser(rows[0]!) : null;
 }
@@ -207,7 +221,7 @@ export async function findUserByEmail(
 ): Promise<(AuthUser & { passwordHash: string | null }) | null> {
   if (!sql) return null;
   const rows = (await sql`
-    select id, email, nickname, password_hash, full_name, country, state, city,
+    select id, email, nickname, password_hash, full_name, country, state, city, lat, lon,
            banned_at, banned_reason
     from users
     where email = ${normalizeEmail(email)}
@@ -251,7 +265,7 @@ export async function acharOuCriarPeloGoogle(conta: {
   if (!sql) return null;
 
   const porSub = (await sql`
-    select id, email, nickname, full_name, country, state, city, banned_at, banned_reason
+    select id, email, nickname, full_name, country, state, city, lat, lon, banned_at, banned_reason
     from users where google_sub = ${conta.sub} limit 1
   `) as Record<string, unknown>[];
   if (porSub.length > 0) return toUser(porSub[0]!);
@@ -266,7 +280,7 @@ export async function acharOuCriarPeloGoogle(conta: {
            avatar_url = coalesce(avatar_url, ${conta.foto}),
            full_name  = coalesce(full_name, ${conta.nome})
      where email = ${email} and google_sub is null
-    returning id, email, nickname, full_name, country, state, city, banned_at, banned_reason
+    returning id, email, nickname, full_name, country, state, city, lat, lon, banned_at, banned_reason
   `) as Record<string, unknown>[];
   if (ligadas.length > 0) return toUser(ligadas[0]!);
 
@@ -274,14 +288,14 @@ export async function acharOuCriarPeloGoogle(conta: {
     insert into users (email, google_sub, full_name, avatar_url, client_id)
     values (${email}, ${conta.sub}, ${conta.nome}, ${conta.foto}, ${conta.clientId ?? null})
     on conflict do nothing
-    returning id, email, nickname, full_name, country, state, city, banned_at, banned_reason
+    returning id, email, nickname, full_name, country, state, city, lat, lon, banned_at, banned_reason
   `) as Record<string, unknown>[];
   if (criadas.length > 0) return toUser(criadas[0]!);
 
   // Conflito: alguém criou a mesma conta entre a checagem e a inserção. Ler de
   // volta é mais honesto que devolver erro para uma corrida que já terminou bem.
   const denovo = (await sql`
-    select id, email, nickname, full_name, country, state, city, banned_at, banned_reason
+    select id, email, nickname, full_name, country, state, city, lat, lon, banned_at, banned_reason
     from users where google_sub = ${conta.sub} or email = ${email} limit 1
   `) as Record<string, unknown>[];
   return denovo.length > 0 ? toUser(denovo[0]!) : null;
@@ -344,22 +358,36 @@ export async function setAberto(userId: string, aberto: boolean): Promise<void> 
     update users set aberto_a_conversas = ${aberto} where id = ${userId}::uuid`;
 }
 
-/** Grava onde a pessoa está. Pode ser chamado quantas vezes ela se mudar. */
+/**
+ * Grava onde a pessoa está. Pode ser chamado quantas vezes ela se mudar.
+ *
+ * A COORDENADA VAI JUNTO COM OS NOMES, e as duas coisas são gravadas na mesma
+ * instrução de propósito: se o ponto fosse gravado num segundo passo, uma falha
+ * no meio deixaria a conta com o nome de um lugar e o ponto de outro — que é
+ * exatamente o defeito que isto veio consertar, só que persistido.
+ */
 export async function setLocal(
   userId: string,
-  local: { country: string; state: string | null; city: string | null },
+  local: {
+    country: string;
+    state: string | null;
+    city: string | null;
+    lat: number | null;
+    lon: number | null;
+  },
 ): Promise<void> {
   if (!sql) return;
   await sql`
     update users
-       set country = ${local.country}, state = ${local.state}, city = ${local.city}
+       set country = ${local.country}, state = ${local.state}, city = ${local.city},
+           lat = ${local.lat}, lon = ${local.lon}
      where id = ${userId}::uuid`;
 }
 
 export async function findUserById(id: string): Promise<AuthUser | null> {
   if (!sql) return null;
   const rows = (await sql`
-    select id, email, nickname, full_name, country, state, city, banned_at, banned_reason
+    select id, email, nickname, full_name, country, state, city, lat, lon, banned_at, banned_reason
     from users where id = ${id}::uuid limit 1
   `) as Record<string, unknown>[];
   return rows.length > 0 ? toUser(rows[0]!) : null;
@@ -507,7 +535,7 @@ export async function banUser(
     update users
     set banned_at = now(), banned_reason = ${reason}, sessions_valid_from = now()
     where email = ${normalizeEmail(email)}
-    returning id, email, full_name, country, state, city, banned_at, banned_reason
+    returning id, email, full_name, country, state, city, lat, lon, banned_at, banned_reason
   `) as Record<string, unknown>[];
 
   if (rows.length === 0) return null;
@@ -525,7 +553,7 @@ export async function unbanUser(email: string): Promise<AuthUser | null> {
   const rows = (await sql`
     update users set banned_at = null, banned_reason = null
     where email = ${normalizeEmail(email)}
-    returning id, email, full_name, country, state, city, banned_at, banned_reason
+    returning id, email, full_name, country, state, city, lat, lon, banned_at, banned_reason
   `) as Record<string, unknown>[];
   return rows.length > 0 ? toUser(rows[0]!) : null;
 }

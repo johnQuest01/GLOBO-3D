@@ -362,7 +362,16 @@ export const useGlobeStateAndHandlers = () => {
    * cada minuto refaria a identidade do socket e reconectaria à toa.
    */
   const sincronizarPerfil = useCallback(
-    (doServidor: { nickname?: string | null; fullName?: string | null; email?: string }) => {
+    (doServidor: {
+      nickname?: string | null;
+      fullName?: string | null;
+      email?: string;
+      country?: string | null;
+      state?: string | null;
+      city?: string | null;
+      lat?: number | null;
+      lon?: number | null;
+    }) => {
       setCurrentUser((atual) => {
         if (!atual) return atual;
 
@@ -370,15 +379,40 @@ export const useGlobeStateAndHandlers = () => {
         const fullName = doServidor.fullName ?? atual.fullName;
         const email = doServidor.email ?? atual.email;
 
+        /*
+         * O LUGAR TAMBÉM SEGUE O SERVIDOR, e antes não seguia.
+         *
+         * Enquanto só nickname, nome e e-mail eram copiados, um lugar corrigido
+         * no banco não chegava nunca a quem já estava logado: o aparelho
+         * continuava, para sempre, mostrando a pessoa onde ela não está. Era
+         * preciso sair da conta e entrar de novo — e ninguém sabe que precisa
+         * fazer isso, porque a tela não parece errada, parece só errada de
+         * lugar.
+         *
+         * Vale sobretudo para a coordenada: contas antigas não têm uma, e é por
+         * aqui que a coordenada nova aparece assim que a pessoa escolhe o lugar
+         * em outro aparelho.
+         */
+        const country = doServidor.country ?? atual.country;
+        const state = doServidor.state ?? atual.state;
+        const city = doServidor.city ?? atual.city;
+        const lat = doServidor.lat ?? atual.lat ?? null;
+        const lon = doServidor.lon ?? atual.lon ?? null;
+
         if (
           nickname === atual.nickname &&
           fullName === atual.fullName &&
-          email === atual.email
+          email === atual.email &&
+          country === atual.country &&
+          state === atual.state &&
+          city === atual.city &&
+          lat === (atual.lat ?? null) &&
+          lon === (atual.lon ?? null)
         ) {
           return atual;
         }
 
-        const novo = { ...atual, nickname, fullName, email };
+        const novo = { ...atual, nickname, fullName, email, country, state, city, lat, lon };
         try {
           localStorage.setItem('userData', JSON.stringify(novo));
         } catch {
@@ -449,6 +483,8 @@ export const useGlobeStateAndHandlers = () => {
           nickname: dados.user.nickname ?? undefined,
           state: dados.user.state ?? '',
           country: dados.user.country ?? '',
+          lat: dados.user.lat ?? null,
+          lon: dados.user.lon ?? null,
         };
         try {
           localStorage.setItem('userData', JSON.stringify(perfil));

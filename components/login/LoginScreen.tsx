@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation';
 import { UserProfileData } from '@/app/types/user';
 import { NICKNAME_MAX, validateNickname } from '@/lib/auth/nickname';
 import LocationFields from './LocationFields';
+import type { Lugar } from '@/lib/geo/lugar';
 
 interface FormData {
   fullName: string;
@@ -141,6 +142,11 @@ const LoginScreen: React.FC = () => {
     confirmPassword: '',
     isLogin: false,
   });
+  /**
+   * Onde fica o lugar escolhido — a coordenada que veio junto da opção na
+   * lista, e não uma que tentaremos deduzir do nome depois. Ver lib/geo/lugar.ts.
+   */
+  const [lugar, setLugar] = useState<Lugar | null>(null);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   /** Trava o botão enquanto o servidor responde, para não criar conta duplicada no duplo clique. */
   const [enviando, setEnviando] = useState(false);
@@ -369,6 +375,8 @@ const LoginScreen: React.FC = () => {
             city: formData.city,
             state: formData.state,
             country: formData.country,
+            lat: lugar?.lat ?? null,
+            lon: lugar?.lon ?? null,
             clientId,
           };
 
@@ -409,6 +417,8 @@ const LoginScreen: React.FC = () => {
         nickname: dados?.user?.nickname || formData.nickname || undefined,
         state: dados?.user?.state || formData.state,
         country: dados?.user?.country || formData.country,
+        lat: dados?.user?.lat ?? lugar?.lat ?? null,
+        lon: dados?.user?.lon ?? lugar?.lon ?? null,
       };
 
       try {
@@ -568,6 +578,7 @@ ${
                 city={formData.city}
                 onChange={handleChange}
                 errors={errors}
+                onLugar={setLugar}
               />
             </>
           )}

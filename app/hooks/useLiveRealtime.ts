@@ -168,12 +168,36 @@ export function useLiveRealtime(user: UserProfileData | null) {
     if (!user) return null;
 
     /*
-     * O mapa do globo guarda os nomes por extenso e COM acento ("são paulo").
-     * Quem se cadastra escreve "SP", "Sao Paulo", "Estado de São Paulo". Sem
-     * traduzir isso, a pessoa fica sem lugar no globo — e, até este conserto,
-     * ficava também sem chat, porque a conexão dependia da coordenada.
+     * A COORDENADA GUARDADA VEM PRIMEIRO, e é o caminho normal desde que o
+     * formulário passou a recolher o ponto da própria lista em que a pessoa
+     * escolheu o lugar (ver lib/geo/lugar.ts). Sendo um dado e não um palpite,
+     * não há nome para traduzir e portanto não há tradução para errar.
      */
-    const candidatos = [user.state, user.city, user.country].flatMap((v) =>
+    if (typeof user.lat === 'number' && typeof user.lon === 'number') {
+      return {
+        // A região continua sendo o nome, porque é dela que saem as salas de
+        // presença e o rótulo que as outras pessoas leem.
+        regionKey: (user.city || user.state || user.country || 'mundo')
+          .trim()
+          .toLowerCase(),
+        lat: user.lat,
+        lon: user.lon,
+      };
+    }
+
+    /*
+     * O CAMINHO ANTIGO, para as contas criadas antes disto — elas não têm ponto
+     * guardado, e tirá-lo daqui as apagaria do globo. Ele adivinha a coordenada
+     * casando o nome escrito com as chaves do mapa, e é falível: os nomes
+     * mostrados e os indexados vêm de vocabulários diferentes.
+     *
+     * A ORDEM AGORA É DA CIDADE PARA O PAÍS, e antes começava pelo estado. Um
+     * estado escolhido por engano numa lista longa ganhava de uma cidade certa,
+     * e foi assim que uma conta com Rússia e Moscou preenchidos foi parar na
+     * Sibéria. Quem for situado por aqui e reabrir "onde você está?" passa a ter
+     * o ponto guardado, e sai deste caminho para sempre.
+     */
+    const candidatos = [user.city, user.state, user.country].flatMap((v) =>
       chavesPossiveis(v),
     );
 

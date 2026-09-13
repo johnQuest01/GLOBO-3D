@@ -2,6 +2,8 @@
 
 import React, { ChangeEvent, useCallback, useEffect, useState } from 'react';
 
+import { CidadeLinha, Lugar, ondeFica } from '@/lib/geo/lugar';
+
 /**
  * País, estado e cidade no cadastro — usando os dados que o globo já carrega.
  *
@@ -18,6 +20,12 @@ import React, { ChangeEvent, useCallback, useEffect, useState } from 'react';
  * A LISTA NÃO PRENDE. São `<datalist>`, então o campo continua aceitando texto
  * digitado: quem mora num lugar que não está na lista consegue se cadastrar
  * assim mesmo. A lista é ajuda, não cadeado.
+ *
+ * E A LISTA SABE ONDE CADA LUGAR FICA. Os três arquivos trazem `lat` e `lon`
+ * em cada linha, e este componente passou a devolver essa coordenada pelo
+ * `onLugar` em vez de ficar só com o rótulo. Quem recebe grava o ponto junto
+ * com os nomes — e ninguém mais precisa reconstruir a coordenada a partir do
+ * texto depois, que era de onde vinham os erros de lugar (ver lib/geo/lugar.ts).
  */
 
 interface Props {
@@ -27,17 +35,24 @@ interface Props {
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
   errors: { [key: string]: string };
   className?: string;
+  /**
+   * Onde o lugar escrito fica — ou nulo, enquanto nada do que está escrito
+   * existe nas listas. Dispara a cada mudança dos campos.
+   */
+  onLugar?: (lugar: Lugar | null) => void;
 }
 
 interface PaisJson {
   name: string;
   key: string;
+  lat: number;
+  lon: number;
 }
 interface EstadoJson {
   name: string;
+  lat: number;
+  lon: number;
 }
-/** [chave, nome, lat, lon, regiao, pais] — ver city-search.json. */
-type CidadeLinha = [string, string, number, number, string, string];
 
 const ordenar = (a: string, b: string) => a.localeCompare(b, 'pt-BR');
 
@@ -47,9 +62,10 @@ const LocationFields: React.FC<Props> = ({
   city,
   onChange,
   errors,
+  onLugar,
 }) => {
   const [paises, setPaises] = useState<PaisJson[]>([]);
-  const [estados, setEstados] = useState<string[]>([]);
+  const [estados, setEstados] = useState<EstadoJson[]>([]);
   const [cidades, setCidades] = useState<CidadeLinha[]>([]);
   const [carregandoCidades, setCarregandoCidades] = useState(false);
 
@@ -80,8 +96,16 @@ const LocationFields: React.FC<Props> = ({
       .then((r) => (r.ok ? r.json() : []))
       .then((dados: EstadoJson[]) => {
         if (cancelado) return;
-        const nomes = [...new Set(dados.map((e) => e.name))].sort(ordenar);
-        setEstados(nomes);
+        /*
+         * O nome do estado se repete dentro do mesmo país — a Rússia tem dois
+         * "Moscovo", a cidade e a região em volta. Ficamos com a primeira
+         * ocorrência de cada nome, e não com um `Set` de textos, porque agora o
+         * que importa é levar a COORDENADA junto: um conjunto de nomes a
+         * descartaria, e voltaríamos a ter que adivinhar depois.
+         */
+        const porNome = new Map<string, EstadoJson>();
+        for (const e of dados) if (!porNome.has(e.name)) porNome.set(e.name, e);
+        setEstados([...porNome.values()].sort((a, b) => ordenar(a.name, b.name)));
       })
       .catch(() => {
         if (!cancelado) setEstados([]);
@@ -120,6 +144,31 @@ const LocationFields: React.FC<Props> = ({
 
     return [...new Set(filtradas.map((c) => c[1]))].sort(ordenar).slice(0, 400);
   }, [cidades, country, state]);
+
+  /*
+   * AS LISTAS PRECISAM ESTAR CARREGADAS PARA A COORDENADA SAIR, e nem sempre a
+   * pessoa passa pelos campos na ordem que carrega cada arquivo: um formulário
+   * já preenchido (voltar para editar, autocompletar do navegador) traz cidade
+   * escrita sem que o campo de cidade tenha recebido foco algum. Sem isto, o
+   * lugar resolveria pelo estado — a aproximação pior — só porque o arquivo das
+   * cidades ainda não tinha sido buscado.
+   */
+  useEffect(() => {
+    if (country.trim()) carregarPaises();
+    if (city.trim()) carregarCidades();
+  }, [country, city, carregarPaises, carregarCidades]);
+
+  /*
+   * Avisa onde fica o que está escrito, a cada mudança.
+   *
+   * Quem recebe grava essa coordenada junto com os nomes. É o ponto do
+   * conserto: a coordenada nasce aqui, onde a escolha acontece e o dado está na
+   * mão, e não é reconstruída depois a partir do rótulo.
+   */
+  useEffect(() => {
+    if (!onLugar) return;
+    onLugar(ondeFica({ country, state, city }, { paises, estados, cidades }));
+  }, [country, state, city, paises, estados, cidades, onLugar]);
 
   const campo =
     'flex-1 bg-transparent text-white placeholder-gray-400 py-2 px-3 focus:outline-none text-base sm:text-lg';
@@ -175,8 +224,8 @@ const LocationFields: React.FC<Props> = ({
           />
         </div>
         <datalist id="lista-estados">
-          {estados.map((nome) => (
-            <option key={nome} value={nome} />
+          {estados.map((e) => (
+            <option key={e.name} value={e.name} />
           ))}
         </datalist>
         {errors.state && (

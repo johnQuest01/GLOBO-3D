@@ -10,6 +10,7 @@ import {
   isAuthDbEnabled,
   normalizeEmail,
 } from '@/lib/db/auth';
+import { coordenadaValida } from '@/lib/geo/lugar';
 
 /**
  * Cadastro.
@@ -86,6 +87,18 @@ export async function POST(request: Request) {
   const state = texto(body.state, LIMITES.estado);
   const country = texto(body.country, LIMITES.pais);
 
+  /*
+   * A COORDENADA VEM DO FORMULÁRIO, que a recolheu da própria lista de onde a
+   * pessoa escolheu o lugar (ver lib/geo/lugar.ts). O servidor não confere se
+   * ela mora ali — não teria como, e mentir sobre a cidade já era possível
+   * digitando outra; confere que é um ponto do planeta, para o globo não
+   * receber lixo. Ausente, a conta continua sendo situada pelo nome, como as
+   * antigas.
+   */
+  const temPonto = coordenadaValida(body.lat, body.lon);
+  const lat = temPonto ? (body.lat as number) : null;
+  const lon = temPonto ? (body.lon as number) : null;
+
   if (!fullName) erros.fullName = 'Nome completo é obrigatório.';
   if (!city) erros.city = 'Cidade é obrigatória.';
   if (!state) erros.state = 'Estado é obrigatório.';
@@ -105,6 +118,8 @@ export async function POST(request: Request) {
     city,
     state,
     country,
+    lat,
+    lon,
     // Liga a conta ao anônimo que já navegava: o histórico de comportamento
     // que a pessoa tinha passa a ter dono.
     clientId: texto(body.clientId, 120),
@@ -148,6 +163,8 @@ export async function POST(request: Request) {
       city: user.city,
       state: user.state,
       country: user.country,
+      lat: user.lat,
+      lon: user.lon,
     },
   });
 }

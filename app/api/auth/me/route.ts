@@ -61,6 +61,8 @@ export async function GET(request: Request) {
           country: completo.country,
           state: completo.state,
           city: completo.city,
+          lat: completo.lat,
+          lon: completo.lon,
         }
       : session.user,
     viaCache: session.viaCache,
