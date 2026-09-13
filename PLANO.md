@@ -151,6 +151,15 @@ relevante — e não só o que é recente.
       atravessado no meio do vídeo de alguém. Os rótulos são transparentes
       (`renderOrder` 10) e o cartão era opaco; `renderOrder` só ordena dentro de
       um passe, e o passe transparente sempre vem depois do opaco
+- [x] ~~o preparo de vídeo produzia arquivo VAZIO se a página ficasse oculta~~ —
+      o laço de desenho usava `requestAnimationFrame`, que não dispara com a
+      página escondida. Quem trocasse de aplicativo durante o minuto de espera
+      subia um mp4 de 14 KB com cabeçalho e sem imagem — e a publicação dava
+      certo, aparecia no mural, e só quem abrisse descobria. Falha silenciosa é
+      pior que falha barulhenta. Agora: `requestVideoFrameCallback` com
+      `setInterval` de rede, pausa quando a página some, e **conferência do que
+      saiu antes de subir** (se não decodifica, o original segue)
+
 - [ ] **Vercel: branch de produção** — falta você clicar em
       Settings → Git → Production Branch → `globo/lod-luzes-fronteiras`.
       A API do Vercel recusa esse campo; é clique manual.

@@ -186,6 +186,48 @@ async function encolherImagem(arquivo: File): Promise<MidiaPronta> {
   };
 }
 
+/**
+ * O que saiu da gravação presta?
+ *
+ * ESTA CONFERÊNCIA EXISTE POR UM DEFEITO REAL, encontrado testando em produção:
+ * o vídeo subiu com 14 KB e não decodificava em lugar nenhum — nem no
+ * aplicativo, nem como arquivo local. A causa era o laço de desenho, que usava
+ * `requestAnimationFrame`: ele NÃO DISPARA com a página oculta. Quem troca de
+ * aplicativo durante o preparo — coisa que acontece o tempo todo num minuto de
+ * espera — fazia o canvas parar de receber quadros, e o que subia era um
+ * arquivo com cabeçalho e sem imagem.
+ *
+ * O PIOR DESSE DEFEITO NÃO ERA O ARQUIVO VAZIO: era ele ser SILENCIOSO. A
+ * publicação dava certo, aparecia no mural, e só quem abrisse descobria que não
+ * havia nada. Uma falha que se anuncia custa um aviso; uma que não se anuncia
+ * custa a confiança na funcionalidade inteira.
+ *
+ * Conferir é barato — carregar o blob num `<video>` e perguntar as medidas — e
+ * transforma uma falha silenciosa numa falha que se vê.
+ */
+async function saiuBom(blob: Blob): Promise<boolean> {
+  if (blob.size < 1024) return false;
+  const endereco = URL.createObjectURL(blob);
+  const v = document.createElement('video');
+  v.src = endereco;
+  v.muted = true;
+  try {
+    return await new Promise<boolean>((ok) => {
+      const encerrar = (valor: boolean) => {
+        clearTimeout(prazo);
+        ok(valor);
+      };
+      const prazo = setTimeout(() => encerrar(false), 8000);
+      v.onloadeddata = () => encerrar(v.videoWidth > 0 && v.videoHeight > 0);
+      v.onerror = () => encerrar(false);
+    });
+  } finally {
+    v.removeAttribute('src');
+    v.load();
+    URL.revokeObjectURL(endereco);
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Vídeo
 // ---------------------------------------------------------------------------
@@ -313,20 +355,67 @@ async function encolherVideo(
     gravador.start(1000);
     await video.play();
 
-    const desenhar = () => {
-      if (video.ended || video.paused) return;
+    /*
+     * O DESENHO NÃO PODE DEPENDER SÓ DE `requestAnimationFrame`.
+     *
+     * Ele não dispara com a página oculta, e foi assim que nasceu o vídeo de
+     * 14 KB sem imagem. `requestVideoFrameCallback` é melhor quando existe —
+     * ele acompanha os quadros DECODIFICADOS em vez do ritmo da tela —, e o
+     * `setInterval` fica de rede: mesmo estrangulado pelo navegador, ele
+     * continua entregando alguma coisa em vez de parar de vez.
+     */
+    const comQuadro = video as HTMLVideoElement & {
+      requestVideoFrameCallback?: (cb: () => void) => number;
+    };
+
+    const desenharUm = () => {
+      if (video.paused || video.ended) return;
       pincel.drawImage(video, 0, 0, largura, altura);
       aoAndar?.(Math.min(0.99, video.currentTime / duracao));
-      requestAnimationFrame(desenhar);
     };
-    requestAnimationFrame(desenhar);
+
+    const laco = () => {
+      desenharUm();
+      if (!video.ended) comQuadro.requestVideoFrameCallback?.(laco);
+    };
+    if (comQuadro.requestVideoFrameCallback) comQuadro.requestVideoFrameCallback(laco);
+
+    const relogio = setInterval(desenharUm, Math.round(1000 / QUADROS_POR_SEG));
+
+    /*
+     * A PÁGINA SUMIU: PAUSA TUDO, em vez de gravar o congelado.
+     *
+     * Trocar de aplicativo no meio de um minuto de espera é o comportamento
+     * normal de quem usa telefone, e não um caso raro. Pausando as duas pontas
+     * — a leitura do vídeo e a gravação —, voltar retoma de onde parou: o
+     * preparo demora mais, e é isso. Sem a pausa, o que se grava é o último
+     * quadro repetido, ou nada.
+     */
+    const aoTrocarDeAba = () => {
+      if (document.hidden) {
+        video.pause();
+        if (gravador.state === 'recording') gravador.pause();
+      } else {
+        if (gravador.state === 'paused') gravador.resume();
+        void video.play().catch(() => undefined);
+        if (comQuadro.requestVideoFrameCallback) comQuadro.requestVideoFrameCallback(laco);
+      }
+    };
+    document.addEventListener('visibilitychange', aoTrocarDeAba);
 
     await new Promise<void>((ok) => {
       video.onended = () => ok();
-      // Rede de segurança: se `ended` não vier (acontece com arquivos de
-      // duração torta), paramos pelo relógio, com folga.
-      setTimeout(ok, (duracao + 8) * 1000);
+      /*
+       * Rede de segurança pelo relógio. A FOLGA É GENEROSA de propósito: com a
+       * pausa acima, um preparo interrompido leva mais tempo de parede do que a
+       * duração do vídeo, e um prazo apertado cortaria a gravação no meio
+       * justamente de quem saiu e voltou.
+       */
+      setTimeout(ok, (duracao * 3 + 20) * 1000);
     });
+
+    clearInterval(relogio);
+    document.removeEventListener('visibilitychange', aoTrocarDeAba);
 
     if (gravador.state !== 'inactive') gravador.stop();
     await gravou;
@@ -336,10 +425,19 @@ async function encolherVideo(
     const blob = new Blob(pedacos, { type: saida.simples });
     aoAndar?.(1);
 
-    if (blob.size === 0 || blob.size >= arquivo.size) {
-      // Recodificar não ajudou. Mas se o original era HEVC, ele não tocaria —
-      // então o que saiu daqui vale mais, mesmo maior, desde que exista.
-      if (blob.size === 0) return intacto;
+    /*
+     * O QUE SAIU PRESTA? Se não, o ORIGINAL segue.
+     *
+     * Devolver o original é quase sempre melhor que devolver um arquivo
+     * quebrado: ele pode ser grande demais e esbarrar no teto — e aí a pessoa
+     * recebe uma mensagem com o número, que é acionável — mas pelo menos não
+     * vira uma publicação que existe e não mostra nada.
+     */
+    if (!(await saiuBom(blob))) return intacto;
+
+    if (blob.size >= arquivo.size) {
+      // Recodificar não encolheu. Mesmo assim o que saiu daqui vale mais: o
+      // original pode ser HEVC, que não toca em metade dos navegadores.
     }
 
     return {
