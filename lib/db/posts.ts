@@ -47,6 +47,15 @@ export interface Post {
   kind: TipoDePost;
   body: string | null;
   midiaChave: string | null;
+  /**
+   * Um quadro do vídeo, guardado à parte.
+   *
+   * É ele que aparece no cartão do globo. Desenhar o primeiro quadro do vídeo
+   * exigiria baixar o começo do arquivo — e no globo há vários cartões ao mesmo
+   * tempo; um JPEG de 30 KB aparece na hora e o vídeo só desce quando alguém
+   * pede para ver aquele lugar.
+   */
+  cartazChave: string | null;
   lat: number;
   lon: number;
   lugar: string | null;
@@ -69,6 +78,7 @@ function montar(l: Record<string, unknown>): Post {
     kind: l.kind as TipoDePost,
     body: (l.body as string) ?? null,
     midiaChave: (l.midia_chave as string) ?? null,
+    cartazChave: (l.cartaz_chave as string) ?? null,
     lat: Number(l.lat),
     lon: Number(l.lon),
     lugar: (l.lugar as string) ?? null,
@@ -89,6 +99,7 @@ export interface NovoPost {
   kind: TipoDePost;
   body: string | null;
   midiaChave: string | null;
+  cartazChave: string | null;
   lat: number;
   lon: number;
   lugar: string | null;
@@ -116,12 +127,13 @@ export interface NovoPost {
 export async function publicar(p: NovoPost): Promise<Post | null> {
   if (!sql) return null;
   const linhas = (await sql`
-    insert into posts (author_id, kind, body, midia_chave, lat, lon, lugar,
-                       pais, estado, cidade)
+    insert into posts (author_id, kind, body, midia_chave, cartaz_chave,
+                       lat, lon, lugar, pais, estado, cidade)
     values (${p.autorId}::uuid, ${p.kind}, ${p.body}, ${p.midiaChave},
-            ${p.lat}, ${p.lon}, ${p.lugar},
+            ${p.cartazChave}, ${p.lat}, ${p.lon}, ${p.lugar},
             ${p.pais}, ${p.estado}, ${p.cidade})
-    returning id, kind, body, midia_chave, lat, lon, lugar, created_at, expires_at,
+    returning id, kind, body, midia_chave, cartaz_chave, lat, lon, lugar,
+              created_at, expires_at,
               pais, estado, cidade,
               (select nickname from users where id = ${p.autorId}::uuid) as autor,
               (select avatar_url from users where id = ${p.autorId}::uuid) as autor_avatar
@@ -158,7 +170,7 @@ export async function listarMural(opcoes?: {
   const corte = opcoes?.antesDe ?? null;
 
   const linhas = (await sql`
-    select p.id, p.kind, p.body, p.midia_chave, p.lat, p.lon, p.lugar,
+    select p.id, p.kind, p.body, p.midia_chave, p.cartaz_chave, p.lat, p.lon, p.lugar,
            p.pais, p.estado, p.cidade, p.created_at, p.expires_at,
            u.nickname as autor, u.avatar_url as autor_avatar
       from posts p
@@ -180,7 +192,7 @@ export async function listarMural(opcoes?: {
 export async function meusPosts(autorId: string): Promise<Post[]> {
   if (!sql) return [];
   const linhas = (await sql`
-    select p.id, p.kind, p.body, p.midia_chave, p.lat, p.lon, p.lugar,
+    select p.id, p.kind, p.body, p.midia_chave, p.cartaz_chave, p.lat, p.lon, p.lugar,
            p.pais, p.estado, p.cidade,
            p.created_at, p.expires_at, p.oculto_em, p.removido_em,
            u.nickname as autor, u.avatar_url as autor_avatar,
@@ -304,7 +316,7 @@ export interface PostNaFila extends Post {
 export async function filaDeModeracao(limite = 50): Promise<PostNaFila[]> {
   if (!sql) return [];
   const linhas = (await sql`
-    select p.id, p.kind, p.body, p.midia_chave, p.lat, p.lon, p.lugar,
+    select p.id, p.kind, p.body, p.midia_chave, p.cartaz_chave, p.lat, p.lon, p.lugar,
            p.pais, p.estado, p.cidade, p.created_at, p.expires_at, p.oculto_em,
            u.nickname as autor, u.avatar_url as autor_avatar,
            (select count(*)::int from post_reports r where r.post_id = p.id) as denuncias,

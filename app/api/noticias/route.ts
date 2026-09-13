@@ -154,6 +154,18 @@ export async function POST(request: Request) {
 
   const midiaChave =
     typeof body.midiaChave === "string" ? body.midiaChave : null;
+
+  /*
+   * O CARTAZ PASSA PELA MESMA PENEIRA DA MIDIA. Ele e' uma chave de objeto que
+   * veio do navegador, e uma chave que nao conferimos e' um caminho para pedir
+   * assinatura de um objeto que nao e' nosso. Cartaz invalido nao derruba a
+   * publicacao: ele simplesmente nao entra, porque o video vive sem ele.
+   */
+  const cartazBruto =
+    typeof body.cartazChave === "string" ? body.cartazChave : null;
+  const cartazChave =
+    cartazBruto && CHAVE_VALIDA.test(cartazBruto) ? cartazBruto : null;
+
   if (midiaChave && !CHAVE_VALIDA.test(midiaChave)) {
     erros.midia = "Arquivo inválido.";
   }
@@ -217,6 +229,7 @@ export async function POST(request: Request) {
     corpo: corpo || null,
     kind,
     midiaChave,
+    cartazChave,
     categoria,
     // `alcance` ja' foi validado acima; o `!` diz isso ao compilador, que nao
     // consegue enxergar a checagem atraves do objeto de erros.

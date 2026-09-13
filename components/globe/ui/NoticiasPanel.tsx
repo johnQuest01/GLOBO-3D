@@ -3,6 +3,7 @@
 import React, { FC, useCallback, useEffect, useRef, useState } from "react";
 
 import { subirMidia, urlDaMidia } from "@/lib/chat/midiaRemota";
+import { prepararMidia, VIDEO_SEG_MAX } from "@/lib/midia/comprimir";
 
 /**
  * As notícias da região — escritas por quem mora nela.
@@ -55,6 +56,8 @@ interface Noticia {
   corpo: string | null;
   kind: "texto" | "imagem" | "video";
   midiaChave: string | null;
+  /** Um quadro do vídeo, para a lista não ficar cinza enquanto ele desce. */
+  cartazChave: string | null;
   categoria: string;
   alcance: string;
   lat: number;
@@ -93,13 +96,27 @@ function quando(iso: string): string {
 }
 
 /** A mídia de uma notícia, buscada só quando o cartão chega perto da tela. */
-const MidiaDaNoticia: FC<{ chave: string; kind: string; alt: string }> = ({
-  chave,
-  kind,
-  alt,
-}) => {
+const MidiaDaNoticia: FC<{
+  chave: string;
+  cartazChave?: string | null;
+  kind: string;
+  alt: string;
+}> = ({ chave, cartazChave, kind, alt }) => {
   const [url, setUrl] = useState<string | null>(null);
+  const [cartaz, setCartaz] = useState<string | null>(null);
   const caixaRef = useRef<HTMLDivElement | null>(null);
+
+  /* O quadro parado chega primeiro: são 30 KB contra vários megabytes. */
+  useEffect(() => {
+    if (!cartazChave || cartaz) return;
+    let vivo = true;
+    void urlDaMidia(cartazChave).then((u) => {
+      if (vivo) setCartaz(u);
+    });
+    return () => {
+      vivo = false;
+    };
+  }, [cartazChave, cartaz]);
 
   useEffect(() => {
     const caixa = caixaRef.current;
@@ -123,7 +140,13 @@ const MidiaDaNoticia: FC<{ chave: string; kind: string; alt: string }> = ({
       style={{ minHeight: url ? undefined : 150 }}
     >
       {url && kind === "video" && (
-        <video src={url} controls playsInline className="max-h-72 w-full" />
+        <video
+          src={url}
+          poster={cartaz ?? undefined}
+          controls
+          playsInline
+          className="max-h-72 w-full"
+        />
       )}
       {url && kind === "imagem" && (
         // eslint-disable-next-line @next/next/no-img-element
@@ -163,6 +186,8 @@ const NoticiasPanel: FC<Props> = ({
   );
   const [arquivo, setArquivo] = useState<File | null>(null);
   const [enviando, setEnviando] = useState(false);
+  /** De 0 a 1 enquanto o vídeo é recodificado; nulo quando não há preparo. */
+  const [preparo, setPreparo] = useState<number | null>(null);
   const arquivoRef = useRef<HTMLInputElement | null>(null);
   const [erros, setErros] = useState<Record<string, string>>({});
 
@@ -213,15 +238,49 @@ const NoticiasPanel: FC<Props> = ({
       let midiaChave: string | null = null;
       let kind: Noticia["kind"] = "texto";
 
+      let cartazChave: string | null = null;
+
       if (arquivo) {
-        const mime = arquivo.type || "application/octet-stream";
-        kind = mime.startsWith("video/") ? "video" : "imagem";
-        const enviada = await subirMidia(arquivo, mime);
+        kind = (arquivo.type || "").startsWith("video/") ? "video" : "imagem";
+
+        /*
+         * ENCOLHER ANTES DE SUBIR — ver lib/midia/comprimir.ts. Notícia com
+         * vídeo é exatamente o caso em que alguém filma com o telefone na rua e
+         * tenta mandar os 200 MB que saíram de lá.
+         */
+        setPreparo(0);
+        const pronta = await prepararMidia(arquivo, setPreparo);
+        setPreparo(null);
+
+        if (pronta.recusa === "longo-demais") {
+          setErros({
+            midia:
+              `Este vídeo tem ${Math.round((pronta.duracaoSeg ?? 0) / 60)} min; ` +
+              `o limite é ${VIDEO_SEG_MAX / 60} minutos.`,
+          });
+          return;
+        }
+        if (pronta.recusa === "nao-decodifica") {
+          setErros({
+            midia:
+              "Este navegador não consegue abrir esse arquivo. Tente exportar como MP4.",
+          });
+          return;
+        }
+
+        const enviada = await subirMidia(pronta.blob, pronta.mime);
         if (!enviada) {
-          setErros({ midia: "Não consegui enviar o arquivo." });
+          setErros({
+            midia: `Não consegui enviar o arquivo (${(pronta.bytesDepois / 1048576).toFixed(1)} MB).`,
+          });
           return;
         }
         midiaChave = enviada.chave;
+
+        if (pronta.cartaz) {
+          const c = await subirMidia(pronta.cartaz, "image/jpeg");
+          cartazChave = c?.chave ?? null;
+        }
       }
 
       const r = await fetch("/api/noticias", {
@@ -232,6 +291,7 @@ const NoticiasPanel: FC<Props> = ({
           corpo,
           kind,
           midiaChave,
+          cartazChave,
           categoria: assuntoNovo,
           alcance: alcanceNovo,
         }),
@@ -603,6 +663,7 @@ const NoticiasPanel: FC<Props> = ({
             {aberta.midiaChave && aberta.kind !== "texto" && (
               <MidiaDaNoticia
                 chave={aberta.midiaChave}
+                cartazChave={aberta.cartazChave}
                 kind={aberta.kind}
                 alt={aberta.titulo}
               />
@@ -720,9 +781,29 @@ const NoticiasPanel: FC<Props> = ({
               <p className="mt-1 text-[11px] text-red-300">{erros.alcance}</p>
             )}
 
+            {preparo !== null && (
+              <div className="mt-3">
+                <div className="flex items-center justify-between text-[11px] text-white/60">
+                  <span>Preparando o vídeo para caber…</span>
+                  <span className="tabular-nums text-white/40">
+                    {Math.round(preparo * 100)}%
+                  </span>
+                </div>
+                <div className="mt-1.5 h-1 overflow-hidden rounded-full bg-white/10">
+                  <div
+                    className="h-full rounded-full bg-emerald-400 transition-[width] duration-200 ease-out"
+                    style={{ width: `${Math.max(2, preparo * 100)}%` }}
+                  />
+                </div>
+              </div>
+            )}
+
             {arquivo && (
               <p className="mt-3 flex items-center gap-2 text-[11px] text-white/60">
                 <span className="truncate">{arquivo.name}</span>
+                <span className="shrink-0 text-white/35">
+                  {(arquivo.size / 1048576).toFixed(1)} MB
+                </span>
                 <button
                   type="button"
                   onClick={() => {

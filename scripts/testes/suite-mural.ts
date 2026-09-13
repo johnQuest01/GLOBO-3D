@@ -32,6 +32,7 @@ interface Post {
   kind: string;
   body: string | null;
   midiaChave: string | null;
+  cartazChave: string | null;
   lat: number;
   lon: number;
   lugar: string | null;
@@ -150,6 +151,50 @@ export async function suiteMural(base: string): Promise<Suite> {
         body: "oi",
       });
       igual(r.status, 400, "status");
+    });
+
+    await s.teste("o cartaz do vídeo vai e volta", async () => {
+      /*
+       * O CARTAZ É O QUE APARECE NO CARTÃO DO GLOBO enquanto o vídeo desce.
+       * Se ele não voltar na leitura, o cartão fica cinza pelos segundos em
+       * que o vídeo carrega — e o toque no botão fica sem resposta, que é
+       * justamente o gesto que o produto vende.
+       */
+      const chave = "m/2026-01-01/" + "c".repeat(32) + ".mp4";
+      const cartaz = "m/2026-01-01/" + "d".repeat(32) + ".jpg";
+      const r = await autor.cliente.post<{ post: Post }>("/api/posts", {
+        kind: "video",
+        midiaChave: chave,
+        cartazChave: cartaz,
+      });
+      igual(r.status, 200, "status");
+      igual(r.corpo.post.cartazChave, cartaz, "voltou na publicação");
+
+      const lidos = await autor.cliente.get<{ posts: Post[] }>(
+        "/api/posts?escopo=mundo",
+      );
+      const meu = lidos.corpo.posts.find((p) => p.id === r.corpo.post.id);
+      igual(meu?.cartazChave, cartaz, "voltou na leitura");
+      await sql`delete from posts where id = ${r.corpo.post.id}::uuid`;
+      return "ida e volta";
+    });
+
+    await s.teste("cartaz torto some, mas o vídeo publica", async () => {
+      /*
+       * O cartaz é um extra. Recusar a publicação inteira por causa dele
+       * transformaria um enfeite em requisito — e um navegador que falhou ao
+       * gerar o quadro deixaria a pessoa sem conseguir publicar o vídeo.
+       */
+      const chave = "m/2026-01-01/" + "e".repeat(32) + ".mp4";
+      const r = await autor.cliente.post<{ post: Post }>("/api/posts", {
+        kind: "video",
+        midiaChave: chave,
+        cartazChave: "../../etc/senha",
+      });
+      igual(r.status, 200, "publicou assim mesmo");
+      igual(r.corpo.post.cartazChave, null, "o cartaz torto não entrou");
+      await sql`delete from posts where id = ${r.corpo.post.id}::uuid`;
+      return "publicou sem o cartaz";
     });
 
     await s.teste("chave de mídia fora do formato é recusada", async () => {

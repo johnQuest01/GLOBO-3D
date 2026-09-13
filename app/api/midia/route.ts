@@ -22,8 +22,21 @@ export const runtime = 'nodejs';
 const VALIDADE_ENVIO_SEG = 5 * 60;
 const VALIDADE_LEITURA_SEG = 60 * 60;
 
-/** O maior arquivo aceito. O limite real é a paciência de quem espera subir. */
-const BYTES_MAX = 25 * 1024 * 1024;
+/**
+ * O maior arquivo aceito.
+ *
+ * ESTE TETO E' PARA O QUE JA' FOI ENCOLHIDO. O navegador recodifica video e
+ * imagem antes de subir (ver lib/midia/comprimir.ts): 720p a 1,6 Mb/s da' uns
+ * 12 MB por minuto, entao 60 MB cobrem com folga os tres minutos que o preparo
+ * aceita. Antes daquele passo, este numero era 25 MB e barrava praticamente
+ * todo video de celular — a pessoa via "nao consegui enviar o arquivo" e
+ * concluia, com razao, que o aplicativo nao aceitava video.
+ *
+ * ELE CONTINUA EXISTINDO porque o preparo pode falhar, e ai' o original tenta
+ * subir do jeito que esta'. O teto e' o que impede isso de virar um upload de
+ * 400 MB que ninguem termina.
+ */
+const BYTES_MAX = 60 * 1024 * 1024;
 
 /*
  * O QUE PODE SUBIR.

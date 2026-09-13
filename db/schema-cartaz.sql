@@ -1,0 +1,11 @@
+-- O cartaz de um video: um quadro guardado a parte.
+--
+-- POR QUE UMA COLUNA E NAO O PRIMEIRO QUADRO DO VIDEO. Para o navegador
+-- desenhar o primeiro quadro ele precisa baixar o comeco do video — centenas
+-- de kilobytes, e no globo ha varios cartoes ao mesmo tempo. Um JPEG de 30 KB
+-- aparece na hora, e o video so' comeca a baixar quando alguem de fato pede
+-- para ver aquele lugar.
+--
+-- NULO E' NORMAL: post de texto nao tem, imagem nao precisa, e video publicado
+-- antes desta coluna existir continua funcionando sem ela.
+alter table posts add column if not exists cartaz_chave text;

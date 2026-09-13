@@ -10,6 +10,7 @@ import React, {
 } from "react";
 
 import { subirMidia, urlDaMidia } from "@/lib/chat/midiaRemota";
+import { prepararMidia, VIDEO_SEG_MAX } from "@/lib/midia/comprimir";
 
 /**
  * A linha do tempo — e o gesto que só existe porque há um globo atrás dela.
@@ -41,6 +42,8 @@ interface Post {
   kind: "texto" | "imagem" | "video";
   body: string | null;
   midiaChave: string | null;
+  /** Um quadro do vídeo, para o cartão do globo ter o que mostrar na hora. */
+  cartazChave: string | null;
   lat: number;
   lon: number;
   lugar: string | null;
@@ -188,7 +191,24 @@ const MidiaDoPost: FC<{
   perto: boolean;
 }> = ({ post, visivel, perto }) => {
   const [url, setUrl] = useState<string | null>(null);
+  const [cartaz, setCartaz] = useState<string | null>(null);
   const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  /*
+   * O CARTAZ VEM ANTES DO VÍDEO, e de propósito. São 30 KB contra vários
+   * megabytes: a imagem já está na tela quando o vídeo ainda está descendo, e
+   * quem rola vê o lugar em vez de ver um retângulo preto.
+   */
+  useEffect(() => {
+    if (!perto || cartaz || !post.cartazChave) return;
+    let vivo = true;
+    void urlDaMidia(post.cartazChave).then((u) => {
+      if (vivo) setCartaz(u);
+    });
+    return () => {
+      vivo = false;
+    };
+  }, [perto, cartaz, post.cartazChave]);
 
   useEffect(() => {
     if (!perto || url || !post.midiaChave) return;
@@ -236,6 +256,7 @@ const MidiaDoPost: FC<{
         <video
           ref={videoRef}
           src={url}
+          poster={cartaz ?? undefined}
           loop
           muted
           playsInline
@@ -250,7 +271,11 @@ const MidiaDoPost: FC<{
           className="h-full w-full object-contain"
         />
       )}
-      {!url && (
+      {!url && cartaz && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img src={cartaz} alt="" className="h-full w-full object-contain" />
+      )}
+      {!url && !cartaz && (
         <div
           className="h-full w-full"
           style={{
@@ -277,8 +302,28 @@ const MidiaDoPost: FC<{
  */
 const PublicacaoNoCartao: FC<{ post: Post }> = ({ post }) => {
   const [url, setUrl] = useState<string | null>(null);
+  const [cartaz, setCartaz] = useState<string | null>(null);
   const [mudo, setMudo] = useState(false);
   const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  /*
+   * A MINIATURA APARECE ANTES DO VÍDEO. Este cartão nasce junto com o giro do
+   * globo; se ele ficasse cinza pelos segundos em que o vídeo desce, o gesto
+   * de tocar no botão não teria resposta — e a resposta é justamente o ponto.
+   */
+  useEffect(() => {
+    if (!post.cartazChave) {
+      setCartaz(null);
+      return;
+    }
+    let vivo = true;
+    void urlDaMidia(post.cartazChave).then((u) => {
+      if (vivo) setCartaz(u);
+    });
+    return () => {
+      vivo = false;
+    };
+  }, [post.cartazChave]);
 
   useEffect(() => {
     if (!post.midiaChave || post.kind === "texto") return;
@@ -334,6 +379,7 @@ const PublicacaoNoCartao: FC<{ post: Post }> = ({ post }) => {
         <video
           ref={videoRef}
           src={url}
+          poster={cartaz ?? undefined}
           loop
           playsInline
           controls
@@ -348,7 +394,11 @@ const PublicacaoNoCartao: FC<{ post: Post }> = ({ post }) => {
           className="max-h-52 w-full object-cover"
         />
       )}
-      {!url && (
+      {!url && cartaz && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img src={cartaz} alt="" className="max-h-52 w-full object-cover" />
+      )}
+      {!url && !cartaz && (
         <div
           className="h-[104px] w-full"
           style={{
@@ -421,6 +471,8 @@ const LinhaDoTempo: FC<Props> = ({
   const [texto, setTexto] = useState("");
   const [arquivo, setArquivo] = useState<File | null>(null);
   const [enviando, setEnviando] = useState(false);
+  /** De 0 a 1 enquanto o vídeo é recodificado; nulo quando não há preparo. */
+  const [preparo, setPreparo] = useState<number | null>(null);
   const arquivoRef = useRef<HTMLInputElement | null>(null);
 
   const [denunciando, setDenunciando] = useState<Post | null>(null);
@@ -597,21 +649,62 @@ const LinhaDoTempo: FC<Props> = ({
       let midiaChave: string | null = null;
       let kind: Post["kind"] = "texto";
 
+      let cartazChave: string | null = null;
+
       if (arquivo) {
-        const mime = arquivo.type || "application/octet-stream";
-        kind = mime.startsWith("video/") ? "video" : "imagem";
-        const enviada = await subirMidia(arquivo, mime);
+        kind = (arquivo.type || "").startsWith("video/") ? "video" : "imagem";
+
+        /*
+         * ENCOLHER ANTES DE SUBIR. Um vídeo de celular sai da câmera com
+         * dezenas ou centenas de megabytes e num formato que nem todo navegador
+         * sabe tocar; subir o original é o caminho mais curto para "não
+         * consegui enviar" ou para um retângulo preto do outro lado.
+         */
+        setPreparo(0);
+        const pronta = await prepararMidia(arquivo, setPreparo);
+        setPreparo(null);
+
+        if (pronta.recusa === "longo-demais") {
+          setAviso(
+            `Este vídeo tem ${Math.round((pronta.duracaoSeg ?? 0) / 60)} min. ` +
+            `Por enquanto o limite é ${VIDEO_SEG_MAX / 60} minutos — corte um trecho e mande.`,
+          );
+          return;
+        }
+        if (pronta.recusa === "nao-decodifica") {
+          setAviso(
+            "Este navegador não consegue abrir esse arquivo. Tente exportar como MP4.",
+          );
+          return;
+        }
+
+        const enviada = await subirMidia(pronta.blob, pronta.mime);
         if (!enviada) {
-          setAviso("Não consegui enviar o arquivo.");
+          // A causa quase sempre é tamanho, e dizer o número é o que permite à
+          // pessoa fazer alguma coisa a respeito.
+          setAviso(
+            `Não consegui enviar o arquivo (${(pronta.bytesDepois / 1048576).toFixed(1)} MB).`,
+          );
           return;
         }
         midiaChave = enviada.chave;
+
+        // O cartaz é um extra: se ele falhar, o vídeo continua publicável.
+        if (pronta.cartaz) {
+          const c = await subirMidia(pronta.cartaz, "image/jpeg");
+          cartazChave = c?.chave ?? null;
+        }
       }
 
       const r = await fetch("/api/posts", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ kind, body: texto.trim() || null, midiaChave }),
+        body: JSON.stringify({
+          kind,
+          body: texto.trim() || null,
+          midiaChave,
+          cartazChave,
+        }),
       });
       const d = (await r.json().catch(() => ({}))) as {
         post?: Post;
@@ -645,6 +738,7 @@ const LinhaDoTempo: FC<Props> = ({
     } catch {
       setAviso("Sem conexão agora.");
     } finally {
+      setPreparo(null);
       setEnviando(false);
     }
   };
@@ -1275,6 +1369,9 @@ const LinhaDoTempo: FC<Props> = ({
             {arquivo && (
               <p className="mt-2 flex items-center gap-2 text-[11px] text-white/60">
                 <span className="truncate">{arquivo.name}</span>
+                <span className="shrink-0 text-white/35">
+                  {(arquivo.size / 1048576).toFixed(1)} MB
+                </span>
                 <button
                   type="button"
                   onClick={() => {
@@ -1286,6 +1383,29 @@ const LinhaDoTempo: FC<Props> = ({
                   tirar
                 </button>
               </p>
+            )}
+
+            {/*
+              O PREPARO PRECISA SER VISÍVEL. Ele acontece em tempo real — um
+              vídeo de um minuto leva um minuto —, e um minuto de tela parada
+              sem explicação é indistinguível de um travamento. A barra e a
+              frase são o que transformam espera em espera.
+            */}
+            {preparo !== null && (
+              <div className="mt-2.5">
+                <div className="flex items-center justify-between text-[11px] text-white/60">
+                  <span>Preparando o vídeo para caber…</span>
+                  <span className="tabular-nums text-white/40">
+                    {Math.round(preparo * 100)}%
+                  </span>
+                </div>
+                <div className="mt-1.5 h-1 overflow-hidden rounded-full bg-white/10">
+                  <div
+                    className="h-full rounded-full bg-emerald-400 transition-[width] duration-200 ease-out"
+                    style={{ width: `${Math.max(2, preparo * 100)}%` }}
+                  />
+                </div>
+              </div>
             )}
 
             <div className="mt-2 flex items-center gap-2">
@@ -1324,7 +1444,11 @@ const LinhaDoTempo: FC<Props> = ({
                 disabled={enviando || (!texto.trim() && !arquivo)}
                 className="ml-auto rounded-xl bg-cyan-600 px-4 py-2 text-sm font-semibold text-white hover:bg-cyan-500 disabled:bg-white/10 disabled:text-white/30"
               >
-                {enviando ? "Publicando…" : "Publicar"}
+                {preparo !== null
+                  ? "Preparando…"
+                  : enviando
+                    ? "Publicando…"
+                    : "Publicar"}
               </button>
             </div>
           </div>

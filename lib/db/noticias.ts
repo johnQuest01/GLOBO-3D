@@ -59,6 +59,8 @@ export interface Noticia {
   corpo: string | null;
   kind: TipoDeMidia;
   midiaChave: string | null;
+  /** Um quadro do vídeo, para a lista não ficar cinza enquanto ele baixa. */
+  cartazChave: string | null;
   categoria: Assunto;
   alcance: Alcance;
   lat: number;
@@ -82,6 +84,7 @@ function montar(l: Record<string, unknown>): Noticia {
     corpo: (l.body as string) ?? null,
     kind: (l.kind as TipoDeMidia) ?? "texto",
     midiaChave: (l.midia_chave as string) ?? null,
+    cartazChave: (l.cartaz_chave as string) ?? null,
     categoria: (l.categoria as Assunto) ?? "outro",
     alcance: (l.alcance as Alcance) ?? "cidade",
     lat: Number(l.lat),
@@ -104,6 +107,7 @@ export interface NovaNoticia {
   corpo: string | null;
   kind: TipoDeMidia;
   midiaChave: string | null;
+  cartazChave: string | null;
   categoria: Assunto;
   alcance: Alcance;
   lat: number;
@@ -126,14 +130,15 @@ export async function publicarNoticia(n: NovaNoticia): Promise<Noticia | null> {
   if (!sql) return null;
   const linhas = (await sql`
     insert into posts
-      (author_id, tipo, kind, titulo, body, midia_chave, categoria, alcance,
+      (author_id, tipo, kind, titulo, body, midia_chave, cartaz_chave,
+       categoria, alcance,
        lat, lon, lugar, pais, estado, cidade, expires_at)
     values
       (${n.autorId}::uuid, 'noticia', ${n.kind}, ${n.titulo}, ${n.corpo},
-       ${n.midiaChave}, ${n.categoria}, ${n.alcance},
+       ${n.midiaChave}, ${n.cartazChave}, ${n.categoria}, ${n.alcance},
        ${n.lat}, ${n.lon}, ${n.lugar}, ${n.pais}, ${n.estado}, ${n.cidade},
        now() + interval '100 years')
-    returning id, kind, titulo, body, midia_chave, categoria, alcance,
+    returning id, kind, titulo, body, midia_chave, cartaz_chave, categoria, alcance,
               lat, lon, lugar, pais, estado, cidade, created_at,
               (select nickname from users where id = ${n.autorId}::uuid) as autor,
               (select avatar_url from users where id = ${n.autorId}::uuid) as autor_avatar
@@ -178,7 +183,7 @@ export async function listarNoticias(f: FiltroDeNoticias): Promise<Noticia[]> {
   const limite = Math.min(Math.max(1, f.limite ?? PAGINA), PAGINA);
 
   const linhas = (await sql`
-    select p.id, p.kind, p.titulo, p.body, p.midia_chave, p.categoria, p.alcance,
+    select p.id, p.kind, p.titulo, p.body, p.midia_chave, p.cartaz_chave, p.categoria, p.alcance,
            p.lat, p.lon, p.lugar, p.pais, p.estado, p.cidade, p.created_at,
            u.nickname as autor, u.avatar_url as autor_avatar
       from posts p
@@ -222,7 +227,7 @@ export async function noticiasDe(
 ): Promise<Noticia[]> {
   if (!sql) return [];
   const linhas = (await sql`
-    select p.id, p.kind, p.titulo, p.body, p.midia_chave, p.categoria, p.alcance,
+    select p.id, p.kind, p.titulo, p.body, p.midia_chave, p.cartaz_chave, p.categoria, p.alcance,
            p.lat, p.lon, p.lugar, p.pais, p.estado, p.cidade, p.created_at,
            u.nickname as autor, u.avatar_url as autor_avatar
       from posts p
@@ -242,7 +247,7 @@ export async function noticiasDe(
 export async function minhasNoticias(autorId: string): Promise<Noticia[]> {
   if (!sql) return [];
   const linhas = (await sql`
-    select p.id, p.kind, p.titulo, p.body, p.midia_chave, p.categoria, p.alcance,
+    select p.id, p.kind, p.titulo, p.body, p.midia_chave, p.cartaz_chave, p.categoria, p.alcance,
            p.lat, p.lon, p.lugar, p.pais, p.estado, p.cidade, p.created_at,
            p.oculto_em, p.removido_em,
            u.nickname as autor, u.avatar_url as autor_avatar,
