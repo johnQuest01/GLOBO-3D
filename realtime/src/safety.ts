@@ -22,7 +22,7 @@
  *    a quem denunciar em grupo.
  */
 
-import { bloquearConta, userIdDoNickname } from './db.js';
+import { bloquearConta, registrarDenuncia, userIdDoNickname } from './db.js';
 import type { RealtimeServer, RealtimeSocket } from './presence.js';
 import type { PresenceStore } from './store.js';
 
@@ -223,12 +223,28 @@ export function registerSafety(
     if (meu && typeof targetClientId === 'string' && targetClientId && targetClientId !== meu) {
       await store.block(meu, targetClientId);
     }
+    let alvoId: string | null = null;
     if (meuId && typeof targetNickname === 'string' && targetNickname.trim()) {
-      const alvoId = await userIdDoNickname(targetNickname);
+      alvoId = await userIdDoNickname(targetNickname);
       if (alvoId && alvoId !== meuId) await bloquearConta(meuId, alvoId);
     }
 
-    log(`report ${chave} (${total} no total) por ${meu ?? meuId?.slice(0, 8) ?? '?'}: ${String(reason).slice(0, 120)}`);
+    /*
+     * E FICA GRAVADA. O contador acima e' de memoria e morre no reinicio; a
+     * denuncia precisa sobreviver a isso, senao nao ha' moderacao possivel —
+     * so' um numero que some.
+     */
+    const gravou = await registrarDenuncia({
+      alvoUserId: alvoId,
+      alvoClientId: typeof targetClientId === 'string' ? targetClientId : null,
+      quemClientId: meu ?? null,
+      motivo: String(reason ?? '').slice(0, 500),
+    });
+
+    log(
+      `report ${chave} (${total} nesta instancia) por ${meu ?? meuId?.slice(0, 8) ?? '?'}` +
+        `: ${String(reason).slice(0, 120)}${gravou ? '' : ' [NAO GRAVOU]'}`,
+    );
   });
 }
 

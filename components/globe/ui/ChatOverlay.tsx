@@ -137,14 +137,44 @@ const Anexo: FC<{
  * valor ate' o teto.
  *
  * O TETO EXISTE porque um campo que cresce sem limite acabaria comendo a
- * conversa inteira. Passando dele — algo como oito linhas — a rolagem interna
- * volta, e ai' ela e' o comportamento certo.
+ * conversa inteira. Passando dele a rolagem interna volta, e ai' ela e' o
+ * comportamento certo.
+ *
+ * O TETO ERA DE 160px E ISSO ERA ALTO DEMAIS PARA CELULAR. Medido num aparelho
+ * de 375x812: com o campo cheio, o rodape inteiro chegava a 209px — mais de um
+ * QUARTO da tela ocupado pelo lugar de escrever, e a conversa espremida no que
+ * sobrava. Relatado assim: "ao escrever muita coisa a caixa de texto cresce
+ * para cima".
+ *
+ * Agora sao quatro linhas (22px cada, mais 16 de respiro), o que deixa o rodape
+ * em ~153px: um quinto da tela, que e' mais ou menos onde os aplicativos de
+ * conversa param.
+ *
+ * E O TETO ACOMPANHA A TELA VISIVEL, que nao e' a mesma coisa que a tela. Com o
+ * teclado aberto sobram uns 380px de altura num celular, e um campo de 104px
+ * ali ja' seria um quarto do que se enxerga. O `visualViewport` e' a unica
+ * medida que sabe do teclado; sem ele o campo ficaria certo com o teclado
+ * fechado, que e' justamente quando ninguem esta escrevendo.
  */
-const ALTURA_MAX_PX = 160;
+const LINHA_PX = 22;
+const RESPIRO_PX = 16;
+const LINHAS_MAX = 4;
+const ALTURA_MAX_PX = LINHAS_MAX * LINHA_PX + RESPIRO_PX;
+/** Quanto da tela visivel o campo pode tomar, no maximo. */
+const FATIA_DA_TELA = 0.25;
 
 function crescerComOTexto(campo: HTMLTextAreaElement): void {
+  const visivel =
+    typeof window !== 'undefined' && window.visualViewport
+      ? window.visualViewport.height
+      : (typeof window !== 'undefined' ? window.innerHeight : 0) || 0;
+
+  const teto = visivel
+    ? Math.max(LINHA_PX + RESPIRO_PX, Math.min(ALTURA_MAX_PX, visivel * FATIA_DA_TELA))
+    : ALTURA_MAX_PX;
+
   campo.style.height = 'auto';
-  campo.style.height = `${Math.min(campo.scrollHeight, ALTURA_MAX_PX)}px`;
+  campo.style.height = `${Math.min(campo.scrollHeight, teto)}px`;
 }
 
 const ChatOverlay: FC<Props> = ({
@@ -203,6 +233,30 @@ const ChatOverlay: FC<Props> = ({
    */
   useEffect(() => {
     if (aberta && campoRef.current) crescerComOTexto(campoRef.current);
+  }, [aberta]);
+
+  /*
+   * E E' ACERTADA DE NOVO QUANDO O TECLADO SOBE.
+   *
+   * O teto do campo depende da altura VISIVEL, e o teclado corta essa altura
+   * pela metade. Sem escutar isso, um campo que ja' tinha crescido com o
+   * teclado fechado continuaria com a altura antiga depois que ele subiu —
+   * exatamente no momento em que sobra menos tela, e exatamente com a pessoa
+   * olhando.
+   *
+   * `visualViewport` e' o unico que enxerga o teclado; `resize` da janela nao
+   * dispara para ele em boa parte dos celulares.
+   */
+  useEffect(() => {
+    if (!aberta) return;
+    const vv = typeof window !== 'undefined' ? window.visualViewport : null;
+    if (!vv) return;
+
+    const acertar = () => {
+      if (campoRef.current) crescerComOTexto(campoRef.current);
+    };
+    vv.addEventListener('resize', acertar);
+    return () => vv.removeEventListener('resize', acertar);
   }, [aberta]);
 
   /*

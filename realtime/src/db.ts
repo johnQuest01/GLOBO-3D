@@ -333,3 +333,49 @@ export async function apagarInscricao(endpoint: string): Promise<void> {
   if (!sql) return;
   await sql`delete from push_subscriptions where endpoint = ${endpoint}`;
 }
+
+// ---------------------------------------------------------------------------
+// Denúncias
+// ---------------------------------------------------------------------------
+
+/**
+ * Guarda uma denúncia.
+ *
+ * ATÉ AQUI ELA NÃO ERA GUARDADA EM LUGAR NENHUM. A tabela existia, a função que
+ * escreve nela existia em lib/db/auth.ts — e nada no projeto inteiro a chamava.
+ * O handler de denúncia somava um contador num `Map` de memória, que morre a
+ * cada reinício do processo. Quem denunciava via a tela dizer "denúncia
+ * registrada" e não havia registro nenhum: não havia o que moderar.
+ *
+ * ESCREVER É O MÍNIMO PARA UMA MODERAÇÃO EXISTIR. Nada aqui bane ninguém, e
+ * isso é deliberado — banir por volume de denúncias entrega a moderação a quem
+ * denuncia em grupo. O que a escrita permite é uma pessoa olhar depois, que é a
+ * única coisa que resolve caso difícil.
+ *
+ * NÃO DERRUBA A DENÚNCIA SE O BANCO FALHAR. A alternativa seria a pessoa
+ * receber um erro por ter denunciado alguém, o que é o pior momento possível
+ * para o aplicativo parecer quebrado. O bloqueio que acompanha a denúncia já
+ * aconteceu antes desta chamada.
+ */
+export async function registrarDenuncia(input: {
+  alvoUserId?: string | null;
+  alvoClientId?: string | null;
+  quemClientId?: string | null;
+  motivo: string;
+}): Promise<boolean> {
+  if (!sql) return false;
+  try {
+    await sql`
+      insert into policy_reports
+        (target_user_id, target_client_id, reporter_client_id, reason)
+      values (
+        ${input.alvoUserId ?? null},
+        ${input.alvoClientId ?? null},
+        ${input.quemClientId ?? null},
+        ${input.motivo.slice(0, 500)}
+      )`;
+    return true;
+  } catch {
+    return false;
+  }
+}
