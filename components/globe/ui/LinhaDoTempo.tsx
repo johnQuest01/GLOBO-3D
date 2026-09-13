@@ -83,9 +83,11 @@ interface Props {
     lon: number,
     rotulo: string,
     midia?: {
-      kind: "imagem" | "video";
-      midiaChave: string;
+      kind: "texto" | "imagem" | "video";
+      midiaChave: string | null;
       cartazChave: string | null;
+      texto?: string | null;
+      cor?: string | null;
     } | null,
   ) => void;
 }
@@ -308,11 +310,32 @@ const MidiaDoPost: FC<{
  * o que aquele ponto tem a dizer.
  */
 function midiaDoPost(p: Post) {
-  if (p.kind === "texto" || !p.midiaChave) return null;
+  /*
+   * POST DE TEXTO TAMBÉM VAI, e isso mudou de ideia.
+   *
+   * Antes ele ficava de fora, para não pairar um retângulo vazio sobre a
+   * cidade. Mas um cartão COM o texto não é vazio — e a ausência era pior do
+   * que o retângulo que ela evitava: quem tocava no botão via o globo girar e
+   * nada aparecer, que é indistinguível de estar quebrado. Foi exatamente o
+   * que aconteceu com as três publicações que havia no ar, todas de texto.
+   */
+  if (p.kind === "texto" || !p.midiaChave) {
+    const escrito = (p.body ?? "").trim();
+    if (!escrito) return null;
+    return {
+      kind: "texto" as const,
+      midiaChave: null,
+      cartazChave: null,
+      texto: escrito,
+      cor: corDoLugar(p.pais),
+    };
+  }
   return {
     kind: p.kind,
     midiaChave: p.midiaChave,
     cartazChave: p.cartazChave,
+    texto: null,
+    cor: corDoLugar(p.pais),
   };
 }
 

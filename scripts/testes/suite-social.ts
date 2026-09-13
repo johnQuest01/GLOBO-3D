@@ -558,13 +558,33 @@ export async function suiteSocial(base: string): Promise<Suite> {
     );
 
     await s.teste("remover leva as respostas junto", async () => {
-      const alvo = await publicar(ana, "post da remocao com respostas");
-      const kelly = await nova("kelly");
-      const raizR = await comentar(kelly, alvo, "raiz que sera' removida");
-      await comentar(ana, alvo, "resposta 1", raizR.corpo.comentario.id);
-      await comentar(bia, alvo, "resposta 2", raizR.corpo.comentario.id);
+      /*
+       * CONTAS NOVAS PARA OS TRÊS COMENTÁRIOS, e não as que a suíte já usou.
+       *
+       * O freio de escrita é de doze por minuto POR PESSOA, e a esta altura
+       * `ana` e `bia` já gastaram o balde nos testes acima. Este teste falhou
+       * exatamente assim — uma das respostas voltou 429 e a contagem deu 2 em
+       * vez de 3. O defeito era do teste, não do produto: ele mediu um efeito
+       * sem conferir se a causa aconteceu.
+       *
+       * E o `igual(status, 200)` em cada comentário é a outra metade da lição:
+       * um teste que ignora o status de uma escrita vai um dia culpar o
+       * contador por um erro que foi da escrita.
+       */
+      const lia = await nova("lia");
+      const mara = await nova("mara");
+      const nina = await nova("nina");
 
-      igual((await verPost(ana, alvo))?.comentarios, 3, "três antes");
+      const alvo = await publicar(lia, "post da remocao com respostas");
+      const raizR = await comentar(lia, alvo, "raiz que sera' removida");
+      igual(raizR.status, 200, "a raiz entrou");
+
+      const r1 = await comentar(mara, alvo, "resposta 1", raizR.corpo.comentario.id);
+      igual(r1.status, 200, "a resposta 1 entrou");
+      const r2 = await comentar(nina, alvo, "resposta 2", raizR.corpo.comentario.id);
+      igual(r2.status, 200, "a resposta 2 entrou");
+
+      igual((await verPost(lia, alvo))?.comentarios, 3, "três antes");
 
       const r = await admin.post("/api/admin/comentarios", {
         comentarioId: raizR.corpo.comentario.id,
@@ -572,8 +592,8 @@ export async function suiteSocial(base: string): Promise<Suite> {
       });
       igual(r.status, 200, "status");
 
-      igual((await verPost(ana, alvo))?.comentarios, 0, "zero depois");
-      igual((await lerRaizes(ana, alvo)).length, 0, "nada na lista");
+      igual((await verPost(lia, alvo))?.comentarios, 0, "zero depois");
+      igual((await lerRaizes(lia, alvo)).length, 0, "nada na lista");
       return "3 → 0";
     });
 

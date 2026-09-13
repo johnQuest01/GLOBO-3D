@@ -35,9 +35,14 @@ import { urlDaMidia } from '@/lib/chat/midiaRemota';
  */
 
 export interface MidiaDoFoco {
-  kind: 'imagem' | 'video';
-  midiaChave: string;
+  kind: 'texto' | 'imagem' | 'video';
+  /** Nulo num post de texto: nao ha' arquivo, e o texto e' o conteudo. */
+  midiaChave: string | null;
   cartazChave: string | null;
+  /** O que foi escrito. Usado quando `kind` e' 'texto'. */
+  texto?: string | null;
+  /** A cor do pais, para o cartao de texto nao ser cinza. */
+  cor?: string | null;
 }
 
 interface Props {
@@ -91,6 +96,73 @@ const MOLDURA = 0.14;
 
 const ORDEM = 24;
 
+/**
+ * Desenha o post de texto num quadrado, e devolve isso como textura.
+ *
+ * POR QUE O TEXTO PRECISOU APARECER AQUI. Ele nao aparecia: so' foto e video
+ * subiam ao globo, e um post de texto deixava o espaco acima do nome do lugar
+ * vazio. O raciocinio original era evitar um retangulo vazio pairando sobre a
+ * cidade — mas um cartao COM o texto nao e' vazio, e a ausencia era pior do que
+ * o retangulo que ela evitava: quem tocava no botao via o globo girar e nada
+ * acontecer, o que e' indistinguivel de estar quebrado.
+ *
+ * DESENHADO NUM CANVAS, e nao com o `<Text>` do drei. O cartao precisa do mesmo
+ * fundo, da mesma moldura e do mesmo caminho de textura que a foto e o video —
+ * um componente diferente para o terceiro caso significaria tres codigos de
+ * posicionamento para manter em acordo.
+ */
+function texturaDeTexto(texto: string, cor: string): THREE.CanvasTexture {
+  const L = 512;
+  const A = 512;
+  const tela = document.createElement('canvas');
+  tela.width = L;
+  tela.height = A;
+  const p = tela.getContext('2d')!;
+
+  const fundo = p.createLinearGradient(0, 0, L, A);
+  fundo.addColorStop(0, cor);
+  fundo.addColorStop(1, '#0b1220');
+  p.fillStyle = fundo;
+  p.fillRect(0, 0, L, A);
+
+  /*
+   * O TAMANHO DA LETRA SAI DO TAMANHO DO TEXTO. Um "oi" com a mesma letra de um
+   * paragrafo ficaria perdido no meio do quadrado; um paragrafo com a letra do
+   * "oi" nao caberia. Tres faixas bastam — mais que isso e' precisao que
+   * ninguem enxerga.
+   */
+  const limpo = texto.trim().slice(0, 280);
+  const corpo = limpo.length < 40 ? 54 : limpo.length < 120 ? 40 : 30;
+  p.font = `600 ${corpo}px system-ui, -apple-system, "Segoe UI", sans-serif`;
+  p.fillStyle = 'rgba(255,255,255,0.94)';
+  p.textAlign = 'center';
+  p.textBaseline = 'middle';
+
+  // Quebra por palavra, com margem dos dois lados.
+  const largura = L - 72;
+  const linhas: string[] = [];
+  let linha = '';
+  for (const palavra of limpo.split(/\s+/)) {
+    const tentativa = linha ? `${linha} ${palavra}` : palavra;
+    if (p.measureText(tentativa).width > largura && linha) {
+      linhas.push(linha);
+      linha = palavra;
+    } else {
+      linha = tentativa;
+    }
+    if (linhas.length >= 8) break;
+  }
+  if (linha && linhas.length < 9) linhas.push(linha);
+
+  const passo = corpo * 1.32;
+  const comeco = A / 2 - ((linhas.length - 1) * passo) / 2;
+  linhas.forEach((t, i) => p.fillText(t, L / 2, comeco + i * passo));
+
+  const textura = new THREE.CanvasTexture(tela);
+  textura.colorSpace = THREE.SRGBColorSpace;
+  return textura;
+}
+
 const MidiaNoGlobo: FC<Props> = ({ midia, base, pxPorUnidade }) => {
   const { size } = useThree();
   const [textura, setTextura] = useState<THREE.Texture | null>(null);
@@ -101,10 +173,23 @@ const MidiaNoGlobo: FC<Props> = ({ midia, base, pxPorUnidade }) => {
   const cartaz = midia?.cartazChave ?? null;
   const kind = midia?.kind ?? null;
 
+  /* -- O texto: nao precisa de rede, entao chega na hora ------------------ */
+  useEffect(() => {
+    if (kind !== 'texto') return;
+    const escrito = (midia?.texto ?? '').trim();
+    if (!escrito) return;
+    const t = texturaDeTexto(escrito, midia?.cor ?? '#334155');
+    setAspecto(1);
+    setTextura(t);
+    return () => {
+      t.dispose();
+    };
+  }, [kind, midia?.texto, midia?.cor]);
+
   /* -- O cartaz, ou a imagem: o que chega primeiro ------------------------ */
   useEffect(() => {
     const parada = kind === 'imagem' ? chave : cartaz;
-    if (!parada) return;
+    if (kind === 'texto' || !parada) return;
     let vivo = true;
     let minha: THREE.Texture | null = null;
 
@@ -263,21 +348,32 @@ const MidiaNoGlobo: FC<Props> = ({ midia, base, pxPorUnidade }) => {
       <mesh renderOrder={ORDEM}>
         <planeGeometry args={[largura + MOLDURA, altura + MOLDURA]} />
         {/*
-          A MOLDURA É OPACA, e isso não é gosto — é o que faz a mídia aparecer.
+          OS DOIS PASSES DO three.js, e por que os dois materiais daqui são
+          `transparent` com opacidade cheia.
 
-          Ela era semitransparente, e o plano saía preto. O motivo: o three.js
-          desenha em dois passes, primeiro tudo o que é opaco e depois tudo o
-          que é transparente, e `renderOrder` só ordena DENTRO de um passe. A
-          moldura transparente ia para o segundo passe e era pintada por cima
-          do vídeo — com o teste de profundidade desligado, nada a segurava.
-          Noventa e dois por cento de quase-preto sobre a imagem é exatamente o
-          retângulo escuro que aparecia.
+          O renderizador desenha primeiro tudo o que é opaco e só depois tudo o
+          que é transparente — e `renderOrder` ordena DENTRO de um passe, nunca
+          entre eles. Isso já causou dois defeitos seguidos nesta tela:
 
-          Opaca, ela volta para o mesmo passe da mídia, onde o `renderOrder`
-          manda e a mídia (25) ganha da moldura (24).
+            1. A moldura era semitransparente e a mídia opaca. A moldura ia
+               para o segundo passe e pintava por cima do vídeo: retângulo
+               escuro, sempre.
+
+            2. Corrigida a moldura para opaca, os dois foram para o primeiro
+               passe — e aí os NOMES DO MAPA, que são transparentes com
+               `renderOrder` 10 (ver LabelItem), passaram a ser desenhados por
+               cima da publicação. "Tocantins" e "Minas Gerais" atravessados no
+               meio do vídeo de alguém.
+
+          `transparent` com `opacity` 1 põe os dois no MESMO passe dos nomes,
+          onde o `renderOrder` finalmente manda: nomes (10) < moldura (24) <
+          mídia (25). Opacidade cheia mantém a aparência de opaco; o que muda é
+          só a fila em que eles entram.
         */}
         <meshBasicMaterial
           color="#0b1220"
+          transparent
+          opacity={1}
           depthTest={false}
           depthWrite={false}
           toneMapped={false}
@@ -299,6 +395,8 @@ const MidiaNoGlobo: FC<Props> = ({ midia, base, pxPorUnidade }) => {
         <meshBasicMaterial
           key={textura.uuid}
           map={textura}
+          transparent
+          opacity={1}
           depthTest={false}
           depthWrite={false}
           toneMapped={false}
