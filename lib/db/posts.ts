@@ -50,6 +50,10 @@ export interface Post {
   lat: number;
   lon: number;
   lugar: string | null;
+  /** O lugar em camadas — e' por elas que se segue. Ver lib/db/seguir.ts. */
+  pais: string | null;
+  estado: string | null;
+  cidade: string | null;
   criadoEm: string;
   expiraEm: string;
   /** Só nos meus posts, e só para a moderação. */
@@ -68,6 +72,9 @@ function montar(l: Record<string, unknown>): Post {
     lat: Number(l.lat),
     lon: Number(l.lon),
     lugar: (l.lugar as string) ?? null,
+    pais: (l.pais as string) ?? null,
+    estado: (l.estado as string) ?? null,
+    cidade: (l.cidade as string) ?? null,
     criadoEm: new Date(String(l.created_at)).toISOString(),
     expiraEm: new Date(String(l.expires_at)).toISOString(),
   };
@@ -85,6 +92,17 @@ export interface NovoPost {
   lat: number;
   lon: number;
   lugar: string | null;
+  /**
+   * O lugar em camadas, para ser ASSINÁVEL.
+   *
+   * `lugar` é o texto pronto para a tela ("Moscou, Rússia") e não serve para
+   * seguir: casar texto concatenado é o mesmo erro que mandou uma conta para a
+   * Sibéria. Estes três são o que a pessoa escolheu na lista, guardados
+   * separados, e é neles que "seguir Brasil" vira uma igualdade indexada.
+   */
+  pais: string | null;
+  estado: string | null;
+  cidade: string | null;
 }
 
 /**
@@ -98,10 +116,13 @@ export interface NovoPost {
 export async function publicar(p: NovoPost): Promise<Post | null> {
   if (!sql) return null;
   const linhas = (await sql`
-    insert into posts (author_id, kind, body, midia_chave, lat, lon, lugar)
+    insert into posts (author_id, kind, body, midia_chave, lat, lon, lugar,
+                       pais, estado, cidade)
     values (${p.autorId}::uuid, ${p.kind}, ${p.body}, ${p.midiaChave},
-            ${p.lat}, ${p.lon}, ${p.lugar})
+            ${p.lat}, ${p.lon}, ${p.lugar},
+            ${p.pais}, ${p.estado}, ${p.cidade})
     returning id, kind, body, midia_chave, lat, lon, lugar, created_at, expires_at,
+              pais, estado, cidade,
               (select nickname from users where id = ${p.autorId}::uuid) as autor,
               (select avatar_url from users where id = ${p.autorId}::uuid) as autor_avatar
   `) as Record<string, unknown>[];
@@ -138,7 +159,7 @@ export async function listarMural(opcoes?: {
 
   const linhas = (await sql`
     select p.id, p.kind, p.body, p.midia_chave, p.lat, p.lon, p.lugar,
-           p.created_at, p.expires_at,
+           p.pais, p.estado, p.cidade, p.created_at, p.expires_at,
            u.nickname as autor, u.avatar_url as autor_avatar
       from posts p
       join users u on u.id = p.author_id
@@ -159,6 +180,7 @@ export async function meusPosts(autorId: string): Promise<Post[]> {
   if (!sql) return [];
   const linhas = (await sql`
     select p.id, p.kind, p.body, p.midia_chave, p.lat, p.lon, p.lugar,
+           p.pais, p.estado, p.cidade,
            p.created_at, p.expires_at, p.oculto_em, p.removido_em,
            u.nickname as autor, u.avatar_url as autor_avatar,
            (select count(*)::int from post_reports r where r.post_id = p.id) as denuncias
@@ -281,7 +303,7 @@ export async function filaDeModeracao(limite = 50): Promise<PostNaFila[]> {
   if (!sql) return [];
   const linhas = (await sql`
     select p.id, p.kind, p.body, p.midia_chave, p.lat, p.lon, p.lugar,
-           p.created_at, p.expires_at, p.oculto_em,
+           p.pais, p.estado, p.cidade, p.created_at, p.expires_at, p.oculto_em,
            u.nickname as autor, u.avatar_url as autor_avatar,
            (select count(*)::int from post_reports r where r.post_id = p.id) as denuncias,
            (select coalesce(array_agg(r.reason), '{}')

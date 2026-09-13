@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import React, { FC, useEffect, useState } from 'react';
+import React, { FC, useEffect, useState } from "react";
 
 /**
  * O perfil de outra pessoa.
@@ -23,7 +23,7 @@ interface PerfilPublico {
   idade: number | null;
   avatarUrl: string | null;
   lugar: string | null;
-  visibilidade: 'publico' | 'reservado' | 'privado';
+  visibilidade: "publico" | "reservado" | "privado";
 }
 
 interface Props {
@@ -37,6 +37,16 @@ const PerfilDeOutroPanel: FC<Props> = ({ nickname, onFechar, onConversar }) => {
   const [perfil, setPerfil] = useState<PerfilPublico | null>(null);
   const [carregando, setCarregando] = useState(false);
   const [semPerfil, setSemPerfil] = useState(false);
+  /**
+   * Sigo esta pessoa?
+   *
+   * VEM DA MINHA LISTA, e não de uma contagem no perfil dela. Não existe rota
+   * que diga quantas pessoas seguem alguém, e a ausência é a funcionalidade:
+   * com o número visível ele vira o objetivo, e as pessoas passam a publicar
+   * para ele. Aqui a pergunta é sempre sobre MIM.
+   */
+  const [sigo, setSigo] = useState(false);
+  const [mexendo, setMexendo] = useState(false);
 
   useEffect(() => {
     if (!nickname) return;
@@ -48,7 +58,9 @@ const PerfilDeOutroPanel: FC<Props> = ({ nickname, onFechar, onConversar }) => {
 
     void (async () => {
       try {
-        const r = await fetch(`/api/users/perfil?de=${encodeURIComponent(nickname)}`);
+        const r = await fetch(
+          `/api/users/perfil?de=${encodeURIComponent(nickname)}`,
+        );
         if (!vivo) return;
         if (!r.ok) {
           setSemPerfil(true);
@@ -63,14 +75,46 @@ const PerfilDeOutroPanel: FC<Props> = ({ nickname, onFechar, onConversar }) => {
       }
     })();
 
+    void (async () => {
+      try {
+        const r = await fetch("/api/seguir");
+        if (!r.ok || !vivo) return;
+        const d = (await r.json()) as { pessoas?: string[] };
+        if (vivo) setSigo(Boolean(d.pessoas?.includes(nickname)));
+      } catch {
+        /* sem isto o botão só começa dizendo "seguir"; nada quebra */
+      }
+    })();
+
     return () => {
       vivo = false;
     };
   }, [nickname]);
 
+  const alternarSeguir = async () => {
+    if (!nickname || mexendo) return;
+    setMexendo(true);
+    // Otimista, e revertido se o servidor recusar: o toque precisa responder na
+    // hora, e uma recusa aqui é rara (só o teto).
+    const antes = sigo;
+    setSigo(!antes);
+    try {
+      const r = await fetch("/api/seguir", {
+        method: antes ? "DELETE" : "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ tipo: "pessoa", nickname }),
+      });
+      if (!r.ok) setSigo(antes);
+    } catch {
+      setSigo(antes);
+    } finally {
+      setMexendo(false);
+    }
+  };
+
   if (!nickname) return null;
 
-  const guardado = perfil && perfil.visibilidade !== 'publico';
+  const guardado = perfil && perfil.visibilidade !== "publico";
 
   return (
     <div className="fixed inset-0 z-[169] flex items-end justify-center sm:items-center">
@@ -94,7 +138,14 @@ const PerfilDeOutroPanel: FC<Props> = ({ nickname, onFechar, onConversar }) => {
           aria-label="Fechar"
           className="absolute right-4 top-4 rounded-full p-1 text-white/50 hover:bg-white/10 hover:text-white"
         >
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+          >
             <path d="M6 6l12 12M18 6L6 18" strokeLinecap="round" />
           </svg>
         </button>
@@ -123,7 +174,7 @@ const PerfilDeOutroPanel: FC<Props> = ({ nickname, onFechar, onConversar }) => {
             <p className="mt-0.5 text-xs text-white/45">
               {[perfil.idade ? `${perfil.idade} anos` : null, perfil.lugar]
                 .filter(Boolean)
-                .join(' · ')}
+                .join(" · ")}
             </p>
           )}
 
@@ -133,7 +184,9 @@ const PerfilDeOutroPanel: FC<Props> = ({ nickname, onFechar, onConversar }) => {
             </p>
           )}
 
-          {carregando && <p className="mt-3 text-xs text-white/30">carregando…</p>}
+          {carregando && (
+            <p className="mt-3 text-xs text-white/30">carregando…</p>
+          )}
 
           {semPerfil && (
             <p className="mt-3 text-xs text-white/40">
@@ -149,20 +202,38 @@ const PerfilDeOutroPanel: FC<Props> = ({ nickname, onFechar, onConversar }) => {
           */}
           {guardado && !carregando && (
             <p className="mt-3 text-xs text-white/35">
-              {perfil.visibilidade === 'privado'
-                ? 'Esta pessoa mantém o perfil privado.'
-                : 'Esta pessoa mostra só a foto e o nickname.'}
+              {perfil.visibilidade === "privado"
+                ? "Esta pessoa mantém o perfil privado."
+                : "Esta pessoa mostra só a foto e o nickname."}
             </p>
           )}
         </div>
 
-        <button
-          type="button"
-          onClick={() => onConversar(nickname)}
-          className="mt-5 w-full rounded-xl bg-cyan-600 py-3 font-semibold text-white hover:bg-cyan-500"
-        >
-          Conversar
-        </button>
+        <div className="mt-5 flex gap-2">
+          <button
+            type="button"
+            onClick={() => onConversar(nickname)}
+            className="flex-1 rounded-xl bg-cyan-600 py-3 font-semibold text-white hover:bg-cyan-500"
+          >
+            Conversar
+          </button>
+          <button
+            type="button"
+            onClick={() => void alternarSeguir()}
+            title={
+              sigo
+                ? "Deixar de ver o que esta pessoa publica"
+                : "Ver no seu mural o que esta pessoa publicar"
+            }
+            className={`rounded-xl px-4 py-3 text-sm font-semibold transition-colors ${
+              sigo
+                ? "bg-cyan-500/20 text-cyan-200 hover:bg-cyan-500/30"
+                : "bg-white/10 text-white/80 hover:bg-white/20"
+            }`}
+          >
+            {sigo ? "Seguindo" : "Seguir"}
+          </button>
+        </div>
       </div>
     </div>
   );

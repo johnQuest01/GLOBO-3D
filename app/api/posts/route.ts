@@ -11,6 +11,7 @@ import {
   publicar,
   type TipoDePost,
 } from '@/lib/db/posts';
+import { muralDeQuemSegue } from '@/lib/db/seguir';
 import { coordenadaValida } from '@/lib/geo/lugar';
 
 /**
@@ -57,6 +58,25 @@ export async function GET(request: Request) {
 
   if (url.searchParams.get('meus') === '1') {
     return NextResponse.json({ ok: true, posts: await meusPosts(session.user.id) });
+  }
+
+  /*
+   * DUAS ABAS, UMA ROTA. `?de=seguindo` devolve o mural filtrado pelo que a
+   * pessoa assinou — com o mundo misturado, porque assinar poucos lugares e
+   * abrir numa hora morta nao pode devolver tela em branco (ver
+   * lib/db/seguir.ts).
+   *
+   * Ele NAO pagina por cursor, e isso e' deliberado: a mistura e' calculada a
+   * cada leitura, entao "a proxima pagina" nao teria como ser estavel. Sessenta
+   * posts e' o que uma pessoa le' numa sentada; para ir mais fundo existe a aba
+   * do mundo, que pagina.
+   */
+  if (url.searchParams.get('de') === 'seguindo') {
+    return NextResponse.json({
+      ok: true,
+      posts: await muralDeQuemSegue(session.user.id),
+      proximo: null,
+    });
   }
 
   const antesDe = url.searchParams.get('antesDe');
@@ -160,8 +180,17 @@ export async function POST(request: Request) {
     lat: autor.lat!,
     lon: autor.lon!,
     lugar:
-      [autor.city, autor.country].filter((v) => typeof v === 'string' && v).join(', ') ||
-      null,
+      [autor.city, autor.country]
+        .filter((v) => typeof v === "string" && v)
+        .join(", ") || null,
+    /*
+     * AS CAMADAS VAO SEPARADAS, e nao so' o texto concatenado. E' por elas que
+     * "seguir Brasil" funciona como igualdade indexada, em vez de casamento de
+     * texto — que e' o erro que ja' mandou uma conta para a Siberia.
+     */
+    pais: autor.country,
+    estado: autor.state,
+    cidade: autor.city,
   });
 
   if (!post) return indisponivel();

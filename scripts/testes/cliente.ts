@@ -94,4 +94,7 @@ export class Conta {
     this.pedir<T>("POST", c, b);
   apagar = <T = Record<string, unknown>>(c: string) =>
     this.pedir<T>("DELETE", c);
+  /** DELETE com corpo — "deixar de seguir" precisa dizer o que deixar. */
+  apagarCom = <T = Record<string, unknown>>(c: string, b: unknown) =>
+    this.pedir<T>("DELETE", c, b);
 }

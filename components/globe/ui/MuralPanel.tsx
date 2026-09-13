@@ -32,10 +32,27 @@ interface Post {
   lat: number;
   lon: number;
   lugar: string | null;
+  pais: string | null;
+  estado: string | null;
+  cidade: string | null;
   criadoEm: string;
   expiraEm: string;
   oculto?: boolean;
   denuncias?: number;
+  /** Só no mural de quem segue: por que este post chegou aqui. */
+  porque?: "lugar" | "pessoa" | "mundo";
+}
+
+interface LugarSeguido {
+  tipo: "pais" | "estado" | "cidade";
+  valor: string;
+  pais: string | null;
+}
+
+interface OQueSigo {
+  lugares: LugarSeguido[];
+  pessoas: string[];
+  limites: { lugares: number; pessoas: number };
 }
 
 interface Props {
@@ -139,33 +156,61 @@ const MuralPanel: FC<Props> = ({
 
   const [denunciando, setDenunciando] = useState<Post | null>(null);
 
-  const carregar = useCallback(async (antesDe: string | null) => {
-    setCarregando(true);
-    try {
-      const r = await fetch(
-        antesDe
-          ? `/api/posts?antesDe=${encodeURIComponent(antesDe)}`
-          : "/api/posts",
-      );
-      if (!r.ok) {
-        setAviso("Não consegui carregar o mural agora.");
-        return;
+  /**
+   * A aba.
+   *
+   * ABRE EM "SEGUINDO", e não no mundo. É a aba que a pessoa curou, e por isso
+   * a que ela quer ver primeiro — e ela nunca fica vazia, porque o servidor
+   * mistura o mundo quando o assinado não enche (ver lib/db/seguir.ts). Abrir
+   * no mundo faria a escolha de quem seguiu não valer nada.
+   */
+  const [aba, setAba] = useState<"seguindo" | "mundo">("seguindo");
+  const [sigo, setSigo] = useState<OQueSigo | null>(null);
+  /** Qual post está com o menu de seguir aberto. */
+  const [seguindoDoPost, setSeguindoDoPost] = useState<Post | null>(null);
+
+  const carregar = useCallback(
+    async (antesDe: string | null, qual: "seguindo" | "mundo") => {
+      setCarregando(true);
+      try {
+        const caminho =
+          qual === "seguindo"
+            ? "/api/posts?de=seguindo"
+            : antesDe
+              ? `/api/posts?antesDe=${encodeURIComponent(antesDe)}`
+              : "/api/posts";
+        const r = await fetch(caminho);
+        if (!r.ok) {
+          setAviso("Não consegui carregar o mural agora.");
+          return;
+        }
+        const d = (await r.json()) as { posts: Post[]; proximo: string | null };
+        setPosts((atuais) => {
+          // Dedupe por id: a página seguinte pode encavalar com um post novo
+          // que chegou durante a rolagem.
+          const vistos = new Set(atuais.map((p) => p.id));
+          return antesDe
+            ? [...atuais, ...d.posts.filter((p) => !vistos.has(p.id))]
+            : d.posts;
+        });
+        setCursor(d.proximo);
+        if (d.posts.length === 0) setAcabou(true);
+      } catch {
+        setAviso("Sem conexão agora.");
+      } finally {
+        setCarregando(false);
       }
-      const d = (await r.json()) as { posts: Post[]; proximo: string | null };
-      setPosts((atuais) => {
-        // Dedupe por id: a página seguinte pode encavalar com um post novo
-        // que chegou durante a rolagem.
-        const vistos = new Set(atuais.map((p) => p.id));
-        return antesDe
-          ? [...atuais, ...d.posts.filter((p) => !vistos.has(p.id))]
-          : d.posts;
-      });
-      setCursor(d.proximo);
-      if (d.posts.length === 0) setAcabou(true);
+    },
+    [],
+  );
+
+  /** O que eu sigo, para os botões saberem dizer "seguir" ou "seguindo". */
+  const lerSigo = useCallback(async () => {
+    try {
+      const r = await fetch("/api/seguir");
+      if (r.ok) setSigo((await r.json()) as OQueSigo);
     } catch {
-      setAviso("Sem conexão agora.");
-    } finally {
-      setCarregando(false);
+      /* sem isto os botões só ficam sem o estado "seguindo"; nada quebra */
     }
   }, []);
 
@@ -173,8 +218,10 @@ const MuralPanel: FC<Props> = ({
     if (!aberto) return;
     setAcabou(false);
     setAviso(null);
-    void carregar(null);
-  }, [aberto, carregar]);
+    setPosts([]);
+    void carregar(null, aba);
+    void lerSigo();
+  }, [aberto, aba, carregar, lerSigo]);
 
   if (!aberto) return null;
 
@@ -247,6 +294,53 @@ const MuralPanel: FC<Props> = ({
     if (r.ok) setPosts((atuais) => atuais.filter((p) => p.id !== post.id));
   };
 
+  /**
+   * Seguir e deixar de seguir.
+   *
+   * A LISTA É RELIDA DO SERVIDOR depois de cada mudança, em vez de eu remendar
+   * o estado local. É uma requisição a mais num gesto raro, e em troca o botão
+   * nunca mente: sem isso, esbarrar no teto deixaria a tela dizendo "seguindo"
+   * sobre algo que o servidor recusou.
+   */
+  const mudarSeguir = async (
+    alvo:
+      | { tipo: "pessoa"; nickname: string }
+      | {
+          tipo: "lugar";
+          camada: LugarSeguido["tipo"];
+          valor: string;
+          pais: string | null;
+        },
+    seguir: boolean,
+  ) => {
+    setSeguindoDoPost(null);
+    try {
+      const r = await fetch("/api/seguir", {
+        method: seguir ? "POST" : "DELETE",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(alvo),
+      });
+      const d = (await r.json().catch(() => ({}))) as { message?: string };
+      if (!r.ok) {
+        setAviso(d.message ?? "Não consegui fazer isso agora.");
+        return;
+      }
+      await lerSigo();
+      // O mural de "seguindo" muda de conteúdo quando a assinatura muda; o do
+      // mundo, não.
+      if (aba === "seguindo") void carregar(null, "seguindo");
+    } catch {
+      setAviso("Sem conexão agora.");
+    }
+  };
+
+  const sigoPessoa = (nick: string) => Boolean(sigo?.pessoas.includes(nick));
+  const sigoLugar = (camada: LugarSeguido["tipo"], valor: string | null) =>
+    Boolean(
+      valor &&
+      sigo?.lugares.some((l) => l.tipo === camada && l.valor === valor),
+    );
+
   const denunciar = async (post: Post, motivo: string) => {
     setDenunciando(null);
     const r = await fetch("/api/posts/denunciar", {
@@ -314,6 +408,77 @@ const MuralPanel: FC<Props> = ({
             </svg>
           </button>
         </div>
+
+        {/* As duas abas */}
+        <div className="flex gap-1 border-b border-white/10 px-4 pb-2">
+          {(["seguindo", "mundo"] as const).map((qual) => (
+            <button
+              key={qual}
+              type="button"
+              onClick={() => setAba(qual)}
+              className={`rounded-full px-3.5 py-1.5 text-[13px] font-medium transition-colors ${
+                aba === qual
+                  ? "bg-white/15 text-white"
+                  : "text-white/45 hover:text-white/75"
+              }`}
+            >
+              {qual === "seguindo" ? "Seguindo" : "Mundo"}
+            </button>
+          ))}
+
+          {aba === "seguindo" &&
+            sigo &&
+            sigo.lugares.length === 0 &&
+            sigo.pessoas.length === 0 && (
+              <span className="ml-auto self-center text-[11px] text-white/30">
+                toque em um lugar para seguir
+              </span>
+            )}
+        </div>
+
+        {/* O que eu sigo, com o × para largar. Só na aba que isso governa. */}
+        {aba === "seguindo" &&
+          sigo &&
+          (sigo.lugares.length > 0 || sigo.pessoas.length > 0) && (
+            <div className="flex flex-wrap gap-1.5 border-b border-white/10 px-4 pb-3">
+              {sigo.lugares.map((l) => (
+                <button
+                  key={`${l.tipo}:${l.valor}`}
+                  type="button"
+                  onClick={() =>
+                    void mudarSeguir(
+                      {
+                        tipo: "lugar",
+                        camada: l.tipo,
+                        valor: l.valor,
+                        pais: l.pais,
+                      },
+                      false,
+                    )
+                  }
+                  title={`Deixar de seguir ${l.valor}`}
+                  className="flex items-center gap-1 rounded-full bg-cyan-500/15 px-2.5 py-1 text-[11px] text-cyan-200/90 hover:bg-cyan-500/25"
+                >
+                  {l.valor}
+                  <span className="text-cyan-200/50">×</span>
+                </button>
+              ))}
+              {sigo.pessoas.map((nick) => (
+                <button
+                  key={nick}
+                  type="button"
+                  onClick={() =>
+                    void mudarSeguir({ tipo: "pessoa", nickname: nick }, false)
+                  }
+                  title={`Deixar de seguir @${nick}`}
+                  className="flex items-center gap-1 rounded-full bg-white/10 px-2.5 py-1 text-[11px] text-white/70 hover:bg-white/20"
+                >
+                  @{nick}
+                  <span className="text-white/40">×</span>
+                </button>
+              ))}
+            </div>
+          )}
 
         {/* Escrever */}
         <div className="border-b border-white/10 p-4">
@@ -503,6 +668,26 @@ const MuralPanel: FC<Props> = ({
                         >
                           Conversar
                         </button>
+
+                        {/*
+                          UM BOTÃO, TRÊS ESCOLHAS. Seguir a pessoa, a cidade ou
+                          o país é a mesma intenção com alcances diferentes, e
+                          três botões lado a lado só encheriam a linha. O menu
+                          também ensina, de passagem, que aqui se segue LUGAR —
+                          que é a parte que ninguém espera.
+                        */}
+                        <button
+                          type="button"
+                          onClick={() =>
+                            setSeguindoDoPost(
+                              seguindoDoPost?.id === post.id ? null : post,
+                            )
+                          }
+                          className="font-medium text-white/45 hover:text-white/80"
+                        >
+                          Seguir
+                        </button>
+
                         <button
                           type="button"
                           onClick={() => setDenunciando(post)}
@@ -513,15 +698,75 @@ const MuralPanel: FC<Props> = ({
                       </>
                     )}
                   </div>
+
+                  {seguindoDoPost?.id === post.id && (
+                    <div className="mt-2 space-y-1 rounded-xl bg-slate-900/70 p-1.5 ring-1 ring-white/10">
+                      {[
+                        {
+                          rotulo: `@${post.autor}`,
+                          ja: sigoPessoa(post.autor),
+                          acao: {
+                            tipo: "pessoa" as const,
+                            nickname: post.autor,
+                          },
+                        },
+                        ...(post.cidade
+                          ? [
+                              {
+                                rotulo: post.cidade,
+                                ja: sigoLugar("cidade", post.cidade),
+                                acao: {
+                                  tipo: "lugar" as const,
+                                  camada: "cidade" as const,
+                                  valor: post.cidade,
+                                  pais: post.pais,
+                                },
+                              },
+                            ]
+                          : []),
+                        ...(post.pais
+                          ? [
+                              {
+                                rotulo: post.pais,
+                                ja: sigoLugar("pais", post.pais),
+                                acao: {
+                                  tipo: "lugar" as const,
+                                  camada: "pais" as const,
+                                  valor: post.pais,
+                                  pais: null,
+                                },
+                              },
+                            ]
+                          : []),
+                      ].map((op) => (
+                        <button
+                          key={op.rotulo}
+                          type="button"
+                          onClick={() => void mudarSeguir(op.acao, !op.ja)}
+                          className={`flex w-full items-center justify-between rounded-lg px-2.5 py-2 text-left text-[13px] hover:bg-white/10 ${
+                            op.ja ? "text-cyan-300/90" : "text-white/75"
+                          }`}
+                        >
+                          <span className="truncate">{op.rotulo}</span>
+                          <span className="ml-2 shrink-0 text-[11px] text-white/35">
+                            {op.ja ? "seguindo · toque para largar" : "seguir"}
+                          </span>
+                        </button>
+                      ))}
+                    </div>
+                  )}
                 </li>
               );
             })}
           </ul>
 
-          {cursor && !acabou && (
+          {/* "Ver mais" só na aba do mundo: a de seguindo é uma mistura
+              recalculada a cada leitura, e uma página seguinte dela não teria
+              como ser estável. */}
+          {aba === "mundo" && cursor && !acabou && (
             <button
               type="button"
-              onClick={() => void carregar(cursor)}
+              onClick={() => void carregar(cursor, "mundo")}
               disabled={carregando}
               className="mt-4 w-full rounded-xl bg-white/5 py-2.5 text-sm text-white/60 hover:bg-white/10"
             >
