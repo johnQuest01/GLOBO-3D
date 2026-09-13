@@ -9,6 +9,8 @@ import { latLonToVector3 } from '@/components/lib/utils';
 
 // ATUALIZADO: Busca apenas o JSON pré-processado
 const DATA_URL = '/data/geo-mapping.json';
+/** A lista que liga o nome em portugues a chave do mapa. Ver `carregarMapa`. */
+const APELIDOS_URL = '/data/country-labels.json';
 // REMOVIDO: const CACHE_BUST_PARAM = `?v=${Date.now()}`;
 
 
@@ -44,12 +46,55 @@ let carregamento: Promise<LocationMap> | null = null;
 function carregarMapa(): Promise<LocationMap> {
   if (carregamento) return carregamento;
 
-  carregamento = fetch(DATA_URL)
-    .then((res) => {
+  carregamento = Promise.all([
+    fetch(DATA_URL).then((res) => {
       if (!res.ok) throw new Error(`Falha ao buscar ${DATA_URL}: ${res.statusText}`);
       return res.json() as Promise<LocationObject>;
+    }),
+    /*
+     * A LISTA DE PAISES ENTRA COMO APELIDO, e sem isto o app so' funcionava
+     * para brasileiros.
+     *
+     * O formulario de cadastro guarda o nome que a pessoa VE' ("Russia" com
+     * acento, "Japao"), porque e' isso que ela escolhe na lista. O mapa do
+     * globo indexa pelo nome em ingles ("Russia", "Japan"). As duas coisas
+     * nunca casavam — e o sintoma era exatamente este: a pessoa preenchia o
+     * lugar, o app continuava dizendo que ela nao tinha lugar, e o popup
+     * voltava para sempre.
+     *
+     * O Brasil escapava por acaso: o ESTADO ("minas gerais") esta' no mapa em
+     * portugues, entao a camada de baixo resolvia antes de o pais ser
+     * consultado.
+     *
+     * Se esta lista falhar, o mapa principal continua valendo: e' um apelido a
+     * mais, nao uma dependencia.
+     */
+    fetch(APELIDOS_URL)
+      .then((r) => (r.ok ? (r.json() as Promise<{ name: string; key: string }[]>) : []))
+      .catch(() => [] as { name: string; key: string }[]),
+  ])
+    .then(([data, paises]) => {
+      /*
+       * TUDO EM MINUSCULAS na chave.
+       *
+       * Catorze chaves do mapa vem com maiuscula — sao os paises e continentes
+       * em ingles ("Russia", "Brazil", "Japan"). A busca era sensivel a
+       * maiusculas, entao nenhuma delas era encontrada por quem digitasse o
+       * nome. Medido: zero colisoes ao normalizar, entao nao ha' o que perder.
+       */
+      const mapa: LocationMap = new Map();
+      for (const [chave, valor] of Object.entries(data)) {
+        mapa.set(chave.toLowerCase(), valor);
+      }
+
+      // O nome em portugues aponta para a coordenada da chave em ingles.
+      for (const pais of paises) {
+        const coord = mapa.get(pais.key?.toLowerCase() ?? '');
+        if (coord && pais.name) mapa.set(pais.name.toLowerCase(), coord);
+      }
+
+      return mapa;
     })
-    .then((data) => new Map(Object.entries(data)))
     .catch((erro) => {
       console.error('Falha ao carregar geo-mapping pre-processado:', erro);
       // Zera para que uma proxima montagem possa tentar de novo: guardar a
@@ -80,7 +125,7 @@ export function useGeoMapping() {
   // 4. Função de conversão (memoizada) - Sem alteração na lógica interna
   const keyToVector3 = useCallback(
     (key: string, radius: number): THREE.Vector3 | null => {
-      const location = locationMap.get(key);
+      const location = locationMap.get(key.trim().toLowerCase());
       if (location) {
         return latLonToVector3(location.lat, location.lon, radius);
       }
@@ -100,7 +145,7 @@ export function useGeoMapping() {
    */
   const keyToLatLon = useCallback(
     (key: string): { lat: number; lon: number } | null =>
-      locationMap.get(key) ?? null,
+      locationMap.get(key.trim().toLowerCase()) ?? null,
     [locationMap],
   );
 

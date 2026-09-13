@@ -3,6 +3,8 @@
 import React, { ChangeEvent, FC, useState } from 'react';
 
 import LocationFields from '@/components/login/LocationFields';
+import { useGeoMapping } from '@/app/hooks/useGeoMapping';
+import { chavesPossiveis } from '@/lib/geo/normalizar';
 
 /**
  * "Onde você está no globo?" — para quem entrou pelo Google.
@@ -34,6 +36,7 @@ const EscolherLugar: FC<Props> = ({ aberto, onFechar }) => {
   const [campos, setCampos] = useState({ country: '', state: '', city: '' });
   const [erros, setErros] = useState<{ [key: string]: string }>({});
   const [enviando, setEnviando] = useState(false);
+  const { keyToLatLon } = useGeoMapping();
 
   if (!aberto) return null;
 
@@ -48,6 +51,28 @@ const EscolherLugar: FC<Props> = ({ aberto, onFechar }) => {
 
     if (!campos.country.trim()) {
       setErros({ country: 'Diga ao menos o país.' });
+      return;
+    }
+
+    /*
+     * O LUGAR PRECISA EXISTIR NO GLOBO — e isto e' o conserto de um laco.
+     *
+     * Salvar um nome que o mapa nao conhece nao dava erro nenhum: a tela
+     * recarregava, o app continuava achando que a pessoa nao tinha lugar, e o
+     * pedido voltava. Para sempre. Foi relatado assim: "preencho e nada
+     * acontece, continua perguntando".
+     *
+     * Conferir ANTES de gravar transforma um laco silencioso numa frase que
+     * diz o que fazer.
+     */
+    const achou = [campos.state, campos.city, campos.country].some((valor) =>
+      chavesPossiveis(valor).some((chave) => keyToLatLon(chave)),
+    );
+    if (!achou) {
+      setErros({
+        country:
+          'Nao encontrei esse lugar no globo. Escolha o pais pela lista que aparece ao digitar.',
+      });
       return;
     }
 
