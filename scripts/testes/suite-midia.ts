@@ -145,14 +145,28 @@ export async function suiteMidia(base: string): Promise<Suite> {
     });
 
     await s.teste(
-      "arquivo acima de 25 MB é recusado antes de subir",
+      "arquivo acima do teto é recusado antes de subir",
       async () => {
+        /*
+         * O TETO É 60 MB, e ele mede o que JÁ FOI ENCOLHIDO: o navegador
+         * recodifica vídeo para 720p antes de subir (lib/midia/comprimir.ts),
+         * o que dá uns 12 MB por minuto. Ele existe para o caso em que o
+         * preparo falha e o original tenta subir do jeito que está.
+         */
         const r = await c.cliente.post<RespostaEnvio>("/api/midia", {
           mime: "video/mp4",
-          bytes: 30 * 1024 * 1024,
+          bytes: 80 * 1024 * 1024,
         });
         igual(r.status, 400, "status");
         igual(r.corpo.reason, "tamanho", "motivo");
+
+        // E o que cabe passa — senão este teste ficaria verde com o teto em zero.
+        const ok60 = await c.cliente.post<RespostaEnvio>("/api/midia", {
+          mime: "video/mp4",
+          bytes: 40 * 1024 * 1024,
+        });
+        igual(ok60.status, 200, "40 MB passa");
+        return "80 MB recusado, 40 MB aceito";
       },
     );
 
