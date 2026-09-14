@@ -287,7 +287,7 @@ const FRACAO_DA_LARGURA_EM_PE = 0.79;
 const RAIO_DO_GLOBO = 1.5;
 
 function EnquadramentoInicial() {
-  const { camera, size } = useThree();
+  const { camera, size, invalidate } = useThree();
   useEffect(() => {
     const cam = camera as THREE.PerspectiveCamera;
     const meioV = THREE.MathUtils.degToRad(cam.fov / 2);
@@ -299,6 +299,16 @@ function EnquadramentoInicial() {
     const d = RAIO_DO_GLOBO / Math.sin(alvo);
     cam.position.setLength(THREE.MathUtils.clamp(d, 1.7, 15));
     cam.updateProjectionMatrix();
+    /*
+     * PEDIR O QUADRO. Descoberto medindo em produção: a câmera ia para a
+     * distância certa e a tela ficava PRETA até a primeira interação — um
+     * `resize` sintético, sem mudar nada, fazia o globo aparecer no tamanho
+     * exato. Mover a câmera num efeito não avisa o laço de desenho; o
+     * `invalidate` avisa. O segundo, um quadro depois, é para os controles de
+     * órbita (que montam depois deste efeito) lerem a posição nova.
+     */
+    invalidate();
+    requestAnimationFrame(() => invalidate());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return null;
