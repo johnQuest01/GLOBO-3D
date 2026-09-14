@@ -226,21 +226,26 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
           <Airplane startVec={flightPath.start} endVec={flightPath.end} />
         )}
 
-        {!isPopupOpen && (
-          <>
-            <Missile
-              startVec={missilePaths.kievToMoscow.start}
-              endVec={missilePaths.kievToMoscow.end}
-              delay={0}
-              isAnimated={animationState['missile-kiev-moscow']}
-            />
-            <Missile
-              startVec={missilePaths.moscowToKiev.start}
-              endVec={missilePaths.moscowToKiev.end}
-              delay={1.5}
-              isAnimated={animationState['missile-moscow-kiev']}
-            />
-          </>
+        {/*
+          So' MONTA o missil quando ele esta' ligado. Antes ele montava sempre e
+          so' ficava parado — e montar ja' baixa o modelo 3D (models/missile.glb)
+          em toda abertura da pagina, para uma animacao que esta' desligada.
+        */}
+        {!isPopupOpen && animationState['missile-kiev-moscow'] && (
+          <Missile
+            startVec={missilePaths.kievToMoscow.start}
+            endVec={missilePaths.kievToMoscow.end}
+            delay={0}
+            isAnimated
+          />
+        )}
+        {!isPopupOpen && animationState['missile-moscow-kiev'] && (
+          <Missile
+            startVec={missilePaths.moscowToKiev.start}
+            endVec={missilePaths.moscowToKiev.end}
+            delay={1.5}
+            isAnimated
+          />
         )}
 
         {isZoomedIn && !isPopupOpen && (

@@ -3,7 +3,12 @@
 import { useState, useEffect, useCallback } from 'react';
 
 // A chave que usaremos no localStorage para sincronizar entre as abas.
-const STORAGE_KEY = 'global-animation-controls';
+//
+// VERSAO 2, de proposito: o padrao dos misseis mudou de ligado para desligado,
+// e quem ja' tinha a chave antiga gravada continuaria vendo a animacao — o
+// valor salvo vence o padrao. Trocar o nome da chave faz todo mundo partir do
+// padrao novo. O admin que quiser ver a animacao liga de novo no painel.
+const STORAGE_KEY = 'global-animation-controls-v2';
 
 /**
  * Define a estrutura do estado de animação.
@@ -20,8 +25,11 @@ export interface AnimationState {
  * O estado padrão quando o app é carregado pela primeira vez.
  */
 const DEFAULT_STATE: AnimationState = {
-  'missile-kiev-moscow': true,
-  'missile-moscow-kiev': true,
+  // Desligados por decisao do dono do projeto. O codigo fica; o painel de
+  // admin continua podendo ligar — mas so' no navegador de quem ligou (o
+  // estado vive no localStorage, nao no servidor).
+  'missile-kiev-moscow': false,
+  'missile-moscow-kiev': false,
   'airplane-travel': true,
 };
 
