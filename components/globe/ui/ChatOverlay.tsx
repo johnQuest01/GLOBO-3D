@@ -664,7 +664,7 @@ const ChatOverlay: FC<Props> = ({
         )}
 
         {/* --- Mensagens --- */}
-        <div className="flex-1 space-y-2 overflow-y-auto px-4 py-3">
+        <div className="flex-1 space-y-2 overflow-y-auto overflow-x-hidden px-4 py-3">
           <p className="mx-auto max-w-sm rounded-2xl bg-black/25 px-3 py-2 text-center text-[11px] leading-relaxed text-white/45">
             A conversa fica guardada na sua conta, cifrada, e aparece em
             qualquer aparelho onde você entrar.
@@ -694,7 +694,7 @@ const ChatOverlay: FC<Props> = ({
                 )}
                 <div className={`flex ${minha ? 'justify-end' : 'justify-start'}`}>
                   <div
-                    className={`max-w-[82%] px-1.5 py-1.5 text-[15px] leading-snug shadow-sm ${
+                    className={`min-w-0 max-w-[82%] px-1.5 py-1.5 text-[15px] leading-snug shadow-sm ${
                       minha
                         ? 'rounded-2xl rounded-br-md bg-cyan-600/90 text-white'
                         : 'rounded-2xl rounded-bl-md bg-white/[0.13] text-white/95'
@@ -708,7 +708,7 @@ const ChatOverlay: FC<Props> = ({
                       <button
                         type="button"
                         onClick={() => setAmpliada(m.midiaUrl!)}
-                        className="block"
+                        className="block max-w-full"
                         title="Ver maior"
                       >
                         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -724,7 +724,14 @@ const ChatOverlay: FC<Props> = ({
                           alt="foto da conversa"
                           loading="lazy"
                           decoding="async"
-                          className="max-h-72 rounded-xl"
+                          /*
+                            `max-w-full h-auto`: a foto limitada so' na altura
+                            (1600px virava 384px de largura) passava da bolha e
+                            da TELA — no celular de 375px, o botao de fechar ia
+                            parar fora da vista. A imagem agora cabe na bolha, e
+                            a bolha cabe na tela.
+                          */
+                          className="max-h-72 max-w-full h-auto rounded-xl"
                         />
                       </button>
                     )}
@@ -737,7 +744,7 @@ const ChatOverlay: FC<Props> = ({
                         // Sem `preload="none"`, cada video da conversa baixava o
                         // cabecalho ao aparecer na tela. A duracao ja' vem na mensagem.
                         preload="none"
-                        className="max-h-72 rounded-xl"
+                        className="max-h-72 max-w-full rounded-xl"
                       />
                     )}
 
