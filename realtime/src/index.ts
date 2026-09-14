@@ -30,6 +30,7 @@ import { registerAuth } from './auth.js';
 import { registerBeacons } from './beacons.js';
 import { registerDirectory } from './directory.js';
 import { mailboxLigada, registerMailbox } from './mailbox.js';
+import { registerObservadores } from './observadores.js';
 import { configurarPush } from './push.js';
 import { avisarSeFaltaTurn, registerMatchmaking } from './matchmaking.js';
 import { registerPresence, type RealtimeServer, type SocketData } from './presence.js';
@@ -155,6 +156,7 @@ async function main() {
     registerPresence(io, socket, store, log);
     registerBeacons(io, socket, store, limitador, log);
     registerDirectory(io, socket, store, limitador, log);
+    registerObservadores(io, socket, limitador, log);
     registerMatchmaking(io, socket, store, limitador, log);
     registerSignaling(io, socket, log);
     registerSafety(io, socket, store, limitador, log);

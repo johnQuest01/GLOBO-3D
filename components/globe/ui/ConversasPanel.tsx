@@ -28,6 +28,8 @@ interface Props {
   /** Quem esta escrevendo agora, por nickname. */
   digitando: Record<string, boolean>;
   presencaPorNickname: Record<string, Presence | null>;
+  /** Conexao viva por nickname. E' isto que acende a bolinha — nao a coordenada. */
+  onlinePorNickname?: Record<string, boolean>;
   onAbrir: (com: string) => void;
   onApagar: (com: string) => void;
 }
@@ -56,6 +58,7 @@ const ConversasPanel: FC<Props> = ({
   naoLidasPorConversa,
   digitando,
   presencaPorNickname,
+  onlinePorNickname,
   onAbrir,
   onApagar,
 }) => {
@@ -106,7 +109,7 @@ const ConversasPanel: FC<Props> = ({
 
           {lista.map(({ com, ultima }) => {
             const naoLidas = naoLidasPorConversa[com] ?? 0;
-            const online = Boolean(presencaPorNickname[com]);
+            const online = Boolean(onlinePorNickname?.[com] ?? presencaPorNickname[com]);
             return (
               <div
                 key={com}

@@ -297,10 +297,13 @@ export default function GlobeCanvas() {
    * `presence:update`, que avisa sozinho, so' cobre quem esta' na mesma
    * celula de 2 km — o outro lado de uma conversa quase nunca esta'.
    *
-   * Agora, enquanto uma conversa esta' aberta ou a lista esta' na tela, a
-   * pergunta e' refeita a cada 10 s. O limite do servidor e' 20 consultas por
-   * minuto; isto gasta 6. Com a lista aberta, os dez contatos mais recentes
-   * vao numa consulta so'.
+   * Houve uma fase em que a pergunta era refeita a cada 10 s enquanto a
+   * conversa estava aberta. Era remendo: dez segundos de atraso no melhor
+   * caso, e "online" ainda significando "desenhado no globo".
+   *
+   * Agora o aparelho diz UMA VEZ quem esta' na tela (`observar`) e o servidor
+   * avisa no instante em que qualquer uma dessas contas conecta ou
+   * desconecta. Sem relogio, sem recarregar a pagina.
    */
   const conversaAbertaCom = conversas.abertaCom;
   const contatos = useMemo(
@@ -309,18 +312,12 @@ export default function GlobeCanvas() {
   );
   useEffect(() => {
     if (!realtime.socketPronto) return;
-    const alvo = conversaAbertaCom
-      ? [conversaAbertaCom]
-      : conversasAbertas
-        ? contatos
-        : [];
-    if (alvo.length === 0) return;
-    const perguntar = () => realtime.verQuemEstaOnline(alvo);
-    perguntar();
-    const t = window.setInterval(perguntar, 10_000);
-    return () => window.clearInterval(t);
+    // A conversa aberta E os contatos: fechar a conversa e voltar a' lista nao
+    // pode deixar a bolinha de ninguem congelada no estado de antes.
+    const alvo = [...new Set([...(conversaAbertaCom ? [conversaAbertaCom] : []), ...contatos])];
+    realtime.observar(alvo);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [conversaAbertaCom, conversasAbertas, contatos, realtime.socketPronto]);
+  }, [conversaAbertaCom, contatos, realtime.socketPronto]);
   const [pedindoNickname, setPedindoNickname] = useState(false);
   const [pedindoLugar, setPedindoLugar] = useState(false);
   /** Os sinais de um marcador agrupado, quando a pessoa toca nele. */
@@ -1097,7 +1094,7 @@ export default function GlobeCanvas() {
                 nome={conversas.abertaCom}
                 mensagens={conversas.mensagensAbertas}
                 online={Boolean(
-                  realtime.presencaPorNickname[conversas.abertaCom],
+                  realtime.onlinePorNickname[conversas.abertaCom],
                 )}
                 videoRemoto={realtime.estado.videoRemoto}
                 videoLocal={realtime.estado.videoLocal}
@@ -1294,6 +1291,7 @@ export default function GlobeCanvas() {
               naoLidasPorConversa={conversas.naoLidasPorConversa}
               digitando={conversas.digitando}
               presencaPorNickname={realtime.presencaPorNickname}
+              onlinePorNickname={realtime.onlinePorNickname}
               onAbrir={(com) => {
                 conversas.abrirConversa(com);
                 setConversasAbertas(false);

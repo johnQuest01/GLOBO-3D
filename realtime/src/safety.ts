@@ -80,6 +80,9 @@ export const LIMITES: Record<string, LimiteConfig> = {
   // tempo, isso dá algo como 40 por minuto; o teto é generoso porque este
   // evento é barato e não deixa rastro, mas continua havendo um.
   'msg:typing': { capacidade: 120, recargaMs: 60_000 },
+  // Uma por mudanca de tela (abrir conversa, abrir lista). Quem abre e fecha
+  // trinta vezes num minuto ainda passa; um script varrendo contas, nao.
+  'presence:watch': { capacidade: 30, recargaMs: 60_000 },
 };
 
 interface Balde {

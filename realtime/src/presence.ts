@@ -35,6 +35,7 @@ import type {
 import { celulaDe, celulasVizinhas } from '../shared/celulas.js';
 import { ErrorCode, PRESENCAS_MAX } from '../shared/protocol.js';
 import { restaurarBeacon, TTL_DO_SINAL_SEC } from './beacons.js';
+import { avisarObservadores } from './observadores.js';
 import type { PresenceStore } from './store.js';
 
 /** O que o servidor guarda por conexão. */
@@ -69,6 +70,8 @@ export interface SocketData {
   presence?: Presence;
   /** Beacon aceso por esta conexão, se houver. Um por pessoa. */
   beaconId?: string;
+  /** As contas (userId) que esta conexao pediu para observar. */
+  observando?: string[];
   /**
    * Em que região o beacon foi aceso.
    *
@@ -259,6 +262,12 @@ export function registerPresence(
      * inteiro ao voltar, em vez de ter que acender de novo.
      */
     await restaurarBeacon(socket, store, TTL_DO_SINAL_SEC);
+
+    // A coordenada chegou: quem observa esta conta ganha o pino no globo. A
+    // bolinha verde ja' estava acesa desde a conexao (ver mailbox.ts).
+    if (socket.data.userId && socket.data.nickname) {
+      avisarObservadores(io, socket.data.userId, socket.data.nickname, true, presence);
+    }
 
     // O snapshot vai só para quem entrou; o update vai para os outros. Se o
     // update fosse para a sala inteira incluindo o remetente, quem entra se

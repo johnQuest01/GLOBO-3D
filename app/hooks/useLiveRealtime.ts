@@ -138,6 +138,20 @@ export function useLiveRealtime(user: UserProfileData | null) {
     doMundo: Beacon[];
   }>({ doEstado: [], doPais: [], doMundo: [] });
 
+  /**
+   * Quem esta' online AGORA, por nickname — avisado pelo servidor, nao
+   * perguntado.
+   *
+   * Separado de `presencaPorNickname` de proposito: aquele e' a coordenada,
+   * para o pino do globo; este e' a conexao viva, para a bolinha verde. Quem
+   * entrou sem coordenada esta' aqui e nao esta' la', e a conversa precisa
+   * ver a diferenca.
+   */
+  const [onlinePorNickname, setOnlinePorNickname] = useState<Record<string, boolean>>({});
+
+  /** O que esta conexao pediu para observar, para pedir de novo ao reconectar. */
+  const observandoRef = useRef<string[]>([]);
+
   const peerRef = useRef<PeerConnection | null>(null);
   const peerSocketIdRef = useRef<string | null>(null);
   const meuClientIdRef = useRef<string>('');
@@ -331,6 +345,36 @@ export function useLiveRealtime(user: UserProfileData | null) {
       if (doPar?.presence) setParPresenca(doPar.presence);
     };
 
+    const aoMudarPresenca = ({
+      nickname,
+      online,
+      presence,
+    }: {
+      nickname: string;
+      online: boolean;
+      presence: Presence | null;
+    }) => {
+      setOnlinePorNickname((atual) =>
+        atual[nickname] === online ? atual : { ...atual, [nickname]: online },
+      );
+      // A coordenada, quando vem, alimenta o pino do globo e o arco.
+      if (presence) {
+        setPresencaPorNickname((atual) => ({ ...atual, [nickname]: presence }));
+        if (nickname === parNicknameRef.current) setParPresenca(presence);
+      }
+    };
+
+    /*
+     * RECONECTOU: as salas de observacao morreram com o socket antigo. Pedir
+     * de novo e' o que faz a bolinha continuar certa depois de o celular
+     * passar por um tunel.
+     */
+    const reobservar = () => {
+      if (observandoRef.current.length > 0) {
+        socket.emit('presence:watch', { nicknames: observandoRef.current });
+      }
+    };
+
     const aoConviteChegar = (p: ConviteRecebido) => setConvite(p);
 
     const aoRecusarem = () => setAviso('A pessoa não está disponível agora.');
@@ -359,6 +403,8 @@ export function useLiveRealtime(user: UserProfileData | null) {
     socket.on('disconnect', aoDesconectar);
     socket.on('presence:snapshot', aoSnapshot);
     socket.on('presence:update', aoAtualizarPresenca);
+    socket.on('presence:changed', aoMudarPresenca);
+    socket.on('connect', reobservar);
     socket.on('beacon:new', aoBeaconNovo);
     const aoListarSinais = (p: { sinais: Beacon[]; total: number }) => {
       setSinaisDoMundo(p.sinais);
@@ -413,6 +459,8 @@ export function useLiveRealtime(user: UserProfileData | null) {
       socket.off('disconnect', aoDesconectar);
       socket.off('presence:snapshot', aoSnapshot);
       socket.off('presence:update', aoAtualizarPresenca);
+      socket.off('presence:changed', aoMudarPresenca);
+      socket.off('connect', reobservar);
       socket.off('beacon:new', aoBeaconNovo);
       socket.off('beacon:list', aoListarSinais);
       socket.off('sugestoes:list', setSugestoes);
@@ -597,6 +645,20 @@ export function useLiveRealtime(user: UserProfileData | null) {
       .slice(0, 10);
     if (limpos.length === 0) return;
     getSocket()?.emit('directory:find', { nicknames: limpos });
+  }, []);
+
+  /**
+   * "Estas sao as conversas na tela: me avise quando alguem entrar ou sair."
+   *
+   * Chamada sempre que o conjunto muda, e so' entao — nao ha' relogio. O
+   * servidor responde o estado de agora na hora e, dali em diante, avisa a
+   * cada mudanca real.
+   */
+  const observar = useCallback((nicknames: string[]) => {
+    const limpos = [...new Set(nicknames.map((n) => n.trim().toLowerCase()).filter(Boolean))];
+    observandoRef.current = limpos;
+    const socket = getSocket();
+    if (socket?.connected) socket.emit('presence:watch', { nicknames: limpos });
   }, []);
 
   // --- Ações ----------------------------------------------------------------
@@ -869,6 +931,8 @@ export function useLiveRealtime(user: UserProfileData | null) {
      */
     semLugar: !carregandoMapa && !local,
     presencaPorNickname,
+    onlinePorNickname,
+    observar,
     verQuemEstaOnline,
     acenderBeacon,
     apagarBeacon,

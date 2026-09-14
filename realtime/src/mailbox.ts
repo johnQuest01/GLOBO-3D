@@ -34,6 +34,7 @@ import {
 } from './db.js';
 import type { RealtimeServer, RealtimeSocket } from './presence.js';
 import { permitir, type Limitador } from './safety.js';
+import { avisarObservadores, estadoDaConta, salaDaConta } from './observadores.js';
 import { avisar } from './push.js';
 import type { PresenceStore } from './store.js';
 
@@ -50,7 +51,8 @@ const TIPOS = new Set(['texto', 'imagem', 'audio', 'video', 'documento']);
  * não um socketId guardado: sala já resolve várias conexões e ainda funciona
  * quando as abas estão em instâncias diferentes do servidor.
  */
-const salaDaConta = (userId: string) => `conta:${userId}`;
+// A sala mora em observadores.ts: quem avisa "entrou/saiu" e quem entrega
+// mensagem precisam do MESMO nome, e um so' lugar para defini-lo garante isso.
 
 export function registerMailbox(
   io: RealtimeServer,
@@ -64,7 +66,34 @@ export function registerMailbox(
   // Sem conta não há caixa postal. A conexão continua valendo para o globo.
   if (!meuId) return;
 
-  void socket.join(salaDaConta(meuId));
+  /*
+   * ENTROU: quem observa esta conta fica sabendo AGORA.
+   *
+   * Sem esperar a coordenada, sem esperar a primeira mensagem. E' esta linha
+   * que troca "recarreguei a pagina para ver a bolinha verde" por "acendeu na
+   * hora". Avisa mesmo se ja' havia outra aba da mesma conta — para quem
+   * observa, "online" duas vezes e' o mesmo que uma, e contar conexoes aqui
+   * abriria uma corrida entre duas abas entrando juntas.
+   */
+  void (async () => {
+    await socket.join(salaDaConta(meuId));
+    const nick = socket.data.nickname;
+    if (nick) avisarObservadores(io, meuId, nick, true, socket.data.presence ?? null);
+  })();
+
+  /*
+   * SAIU — mas so' se nao sobrou nenhuma aba.
+   *
+   * No `disconnect` o socket ja' deixou as salas, entao contar o que resta na
+   * sala da conta e' contar as OUTRAS conexoes dela. Se houver alguma, a
+   * pessoa continua online e ninguem e' avisado de nada.
+   */
+  socket.on('disconnect', async () => {
+    const nick = socket.data.nickname;
+    if (!nick) return;
+    const { online } = await estadoDaConta(io, meuId);
+    if (!online) avisarObservadores(io, meuId, nick, false, null);
+  });
 
   /**
    * Manda para este aparelho tudo o que ele ainda não tem.

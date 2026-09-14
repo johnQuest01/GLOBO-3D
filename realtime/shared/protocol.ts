@@ -211,6 +211,20 @@ export interface ClientToServer {
    */
   'directory:find': (p: { nicknames: string[] }) => void;
 
+  /**
+   * "Me avise quando estas contas entrarem ou sairem."
+   *
+   * SUBSTITUI a lista anterior desta conexao. A interface manda "estas sao as
+   * conversas na tela" sempre que a tela muda; nao precisa lembrar do que
+   * pediu antes. A resposta imediata vem por `presence:changed`, um por nome,
+   * e depois a cada mudanca real — sem perguntar de novo.
+   *
+   * Diferente de `directory:find`, aqui "online" e' TER UMA CONEXAO VIVA na
+   * conta, e nao "estar desenhado no globo". Quem entrou sem coordenada esta'
+   * online para a conversa, e e' isso que a bolinha verde deve dizer.
+   */
+  'presence:watch': (p: { nicknames: string[] }) => void;
+
   'beacon:raise': (p: {
     topic?: string;
     ttlSec: number;
@@ -347,6 +361,17 @@ export interface ServerToClient {
    * uma vez, e oito eventos por tecla digitada consumiriam o limite de taxa em
    * segundos — o freio contra varredura acabaria punindo o uso normal.
    */
+  /**
+   * Uma conta observada mudou de estado — ou o estado inicial, logo apos o
+   * `presence:watch`. `presence` vai junto quando existe, para o pino do globo;
+   * a cor da bolinha e' decidida por `online`, nunca pela presenca.
+   */
+  'presence:changed': (p: {
+    nickname: string;
+    online: boolean;
+    presence: Presence | null;
+  }) => void;
+
   'directory:result': (p: {
     encontrados: { nickname: string; presence: Presence | null }[];
   }) => void;
