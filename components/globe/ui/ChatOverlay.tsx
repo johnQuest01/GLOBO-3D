@@ -547,11 +547,14 @@ const ChatOverlay: FC<Props> = ({
           a tela muda — e a tela muda a cada pixel de rolagem. Num telefone,
           borrar a tela inteira sessenta vezes por segundo enquanto a lista
           rola e' exatamente o tipo de trabalho que faz o dedo "sentir peso".
-          Em ponteiro grosso (toque) o fundo vira uma cor solida; o visual
-          clean fica, o custo vai embora. No computador (ponteiro fino) o
-          desfoque continua.
+          Em ponteiro grosso (toque) o fundo e' uma cor SOLIDA — opaca de
+          verdade, nao 85%: com qualquer transparencia os botoes e o texto de
+          tras vazavam pela conversa, e um leve gradiente estatico da' a
+          profundidade que o desfoque dava, sem custar nada por quadro
+          (gradiente e' pintado uma vez; desfoque e' refeito a cada rolagem).
+          No computador (ponteiro fino) o desfoque continua.
         */
-        className="absolute inset-0 bg-slate-950/85 [@media(pointer:fine)]:bg-slate-950/45 [@media(pointer:fine)]:backdrop-blur-2xl [@media(pointer:fine)]:backdrop-saturate-150"
+        className="absolute inset-0 bg-gradient-to-b from-[#0b1220] via-[#0d1526] to-[#0b1220] [@media(pointer:fine)]:bg-none [@media(pointer:fine)]:bg-slate-950/45 [@media(pointer:fine)]:backdrop-blur-2xl [@media(pointer:fine)]:backdrop-saturate-150"
         onClick={onFechar}
         aria-hidden="true"
       />
