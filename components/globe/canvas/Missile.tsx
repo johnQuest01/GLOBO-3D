@@ -24,7 +24,10 @@ const MissileModel: React.FC = () => {
 };
 
 // --- CORREÇÃO: Preload correto ---
-useGLTF.preload('/models/missile.glb');
+// SEM `useGLTF.preload` aqui, de proposito. O preload roda na IMPORTACAO do
+// arquivo — montado ou nao —, entao o modelo era baixado em toda abertura da
+// pagina mesmo com a animacao desligada por padrao. Quando o admin ligar, o
+// componente monta e o `useGLTF` de dentro baixa na hora, sob o Suspense da cena.
 
 const Missile: React.FC<MissileProps> = ({
   startVec,
