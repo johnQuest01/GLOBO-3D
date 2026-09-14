@@ -186,8 +186,16 @@ function corDoTempo(t: number, viva: boolean): string {
  * PISO para muitas não virarem uma mancha sem alvo: abaixo de uns seis pixels
  * ninguém acerta o toque, e a faixa deixa de ser clicável para virar enfeite.
  */
-const SEGMENTO_MAX_PX = 30;
-const SEGMENTO_MIN_PX = 6;
+const SEGMENTO_MAX_PX = 46;
+const SEGMENTO_MIN_PX = 10;
+/**
+ * Abaixo disto a miniatura nao mostra mais nada reconhecivel, e o quadrado
+ * volta a ser uma barra de cor. Com trinta publicacoes na faixa e' o que
+ * acontece; com cinco, cada uma e' uma foto.
+ */
+const MINIATURA_MIN_PX = 22;
+/** A largura da coluna: cabe uma miniatura e o respiro dos dois lados. */
+const FAIXA_PX = 60;
 
 /** "faltam 3 h" — o prazo é a informação mais útil que um post carrega aqui. */
 function tempoQueResta(expiraEm: string): string {
@@ -1033,7 +1041,10 @@ const LinhaDoTempo: FC<Props> = ({
           na cor do LUGAR daquela publicação. É assim que o país continua sendo
           dito sem voltar a bagunçar o eixo do tempo.
         */}
-        <div className="pointer-events-auto absolute right-0 top-0 flex h-full w-[26px] flex-col items-stretch pr-1.5">
+        <div
+          className="pointer-events-auto absolute right-0 top-0 flex h-full flex-col items-stretch pr-1.5"
+          style={{ width: FAIXA_PX }}
+        >
           {/*
             OS RÓTULOS FICAM DE PÉ. Deitados, "antes" tem 22px de largura e a
             coluna tem 20 — o texto era cortado no meio. Em pé eles cabem, e de
@@ -1097,6 +1108,20 @@ const LinhaDoTempo: FC<Props> = ({
                 .map(({ p, i }, posicao) => {
                   const t = posts.length > 1 ? posicao / (posts.length - 1) : 1;
                   const ativo = i === atual;
+                  /*
+                   * A MINIATURA E' O QUE TORNA A FAIXA LEGIVEL. Uma barra de
+                   * cor diz QUANDO; a miniatura diz O QUE — e e' o "o que"
+                   * que faz alguem tocar. Video mostra o cartaz, foto mostra a
+                   * foto, texto mostra a cor do lugar com a primeira letra.
+                   * Quando a faixa fica cheia demais para caber uma imagem,
+                   * volta a barra: um quadrado de 12 px com uma foto dentro e'
+                   * ruido, nao informacao.
+                   */
+                  const chaveDaMini =
+                    p.kind === "imagem" ? p.midiaChave : p.cartazChave;
+                  const urlMini = chaveDaMini ? urlPublicaDaMidia(chaveDaMini) : null;
+                  const comImagem = segmentoPx >= MINIATURA_MIN_PX && !!urlMini;
+                  const letra = (p.cidade ?? p.pais ?? "?").charAt(0).toUpperCase();
                   return (
                     <button
                       key={p.id}
@@ -1105,23 +1130,59 @@ const LinhaDoTempo: FC<Props> = ({
                       title={`${p.lugar ?? p.pais ?? ""} · ${tempoQueResta(p.expiraEm)}`}
                       aria-label={`Ver ${p.lugar ?? "esta publicação"} no globo`}
                       aria-current={ativo ? "true" : undefined}
-                      className="block w-full rounded-full transition-all duration-300 ease-out"
+                      className="relative mx-auto block overflow-hidden transition-all duration-300 ease-out"
                       style={{
                         height: segmentoPx,
+                        width: segmentoPx >= MINIATURA_MIN_PX ? segmentoPx : "100%",
                         marginBottom: vaoPx,
-                        background: corDoTempo(t, ativo),
-                        transform: ativo ? "scaleX(1)" : "scaleX(0.44)",
-                        opacity: ativo ? 1 : 0.32 + t * 0.3,
-                        // O halo é da cor do LUGAR: é onde o país volta a ser
-                        // dito, sem bagunçar o eixo do tempo.
+                        borderRadius: segmentoPx >= MINIATURA_MIN_PX ? Math.round(segmentoPx * 0.24) : 999,
+                        background: comImagem
+                          ? "#0b1220"
+                          : `linear-gradient(150deg, ${cores[i]}, ${corDoTempo(t, ativo)})`,
+                        transform: ativo ? "scale(1.12)" : "scale(0.92)",
+                        opacity: ativo ? 1 : 0.55 + t * 0.35,
+                        // A borda azul e' a mesma do cartao sobre o globo: e' o
+                        // que diz "isto e' o que esta' la' em cima".
                         boxShadow: ativo
-                          ? `0 0 0 1.5px rgb(255 255 255 / 0.5), 0 0 18px 3px ${cores[i]}`
-                          : "none",
+                          ? `0 0 0 2px #38bdf8, 0 0 16px 2px ${cores[i]}`
+                          : "0 0 0 1px rgb(255 255 255 / 0.12)",
                         animation: ativo
                           ? "pulsoDoPresente 2.6s ease-in-out infinite"
                           : undefined,
                       }}
-                    />
+                    >
+                      {comImagem && (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img
+                          crossOrigin="anonymous"
+                          src={urlMini!}
+                          alt=""
+                          loading="lazy"
+                          className="h-full w-full object-cover"
+                        />
+                      )}
+                      {!comImagem && segmentoPx >= MINIATURA_MIN_PX && (
+                        <span
+                          className="absolute inset-0 flex items-center justify-center font-bold text-white/90"
+                          style={{ fontSize: Math.round(segmentoPx * 0.42) }}
+                        >
+                          {letra}
+                        </span>
+                      )}
+                      {/* O eixo do tempo continua dito: um fio na cor do instante. */}
+                      <span
+                        aria-hidden="true"
+                        className="absolute bottom-0 left-0 top-0 w-[3px]"
+                        style={{ background: corDoTempo(t, ativo) }}
+                      />
+                      {p.kind === "video" && comImagem && (
+                        <span className="absolute bottom-0.5 right-0.5 rounded-sm bg-slate-950/80 p-px">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="currentColor" className="text-white">
+                            <path d="M8 5v14l11-7z" />
+                          </svg>
+                        </span>
+                      )}
+                    </button>
                   );
                 })}
             </div>
@@ -1158,7 +1219,10 @@ const LinhaDoTempo: FC<Props> = ({
 
         {/* O cartão do lugar focado. */}
         {postAtual && (
-          <div className="pointer-events-auto absolute bottom-4 left-4 right-[38px] rounded-2xl bg-slate-950/80 p-3 ring-1 ring-white/15 backdrop-blur-xl sm:right-auto sm:w-80">
+          <div
+            className="pointer-events-auto absolute bottom-4 left-4 rounded-2xl bg-slate-950/80 p-3 ring-1 ring-white/15 backdrop-blur-xl sm:right-auto sm:w-80"
+            style={{ right: FAIXA_PX + 10 }}
+          >
             {/*
               A MÍDIA NÃO ESTÁ MAIS AQUI: ela foi para o globo, logo acima do
               nome do lugar (ver MidiaNoGlobo). Duas cópias do mesmo vídeo na

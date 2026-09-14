@@ -246,6 +246,18 @@ teste, com arquivos reais.
       carregamento falhar — rede para quem já tem o cache sujo no telefone
 - [x] ~~"Para você" quebrava em duas linhas no celular~~ — `whitespace-nowrap`
 
+- [x] ~~com a linha do tempo minimizada, a faixa cobria metade dos botões da
+      coluna direita~~ — "partes do botão à mostra, como se a tela de botões
+      estivesse escondida por baixo". A faixa ocupa x 349–375 e o hambúrguer,
+      o cadeado, o menu e os botões de admin terminam em x 359. Agora a borda
+      direita é da linha do tempo enquanto ela está aberta: header, rodapé,
+      cadeado e admin somem com `muralAberto`
+- [x] ~~faixa da direita "mais interessante"~~ — virou uma coluna de
+      miniaturas (foto, cartaz do vídeo, ou a cor do lugar com a primeira
+      letra), com a borda azul do cartão sobre o globo no item ativo e um fio
+      na cor do instante. Com muitas publicações os quadrados encolhem até 22
+      px; abaixo disso voltam a ser barras, porque 12 px com foto é ruído
+
 - [ ] **Vercel: branch de produção** — falta você clicar em
       Settings → Git → Production Branch → `globo/lod-luzes-fronteiras`.
       A API do Vercel recusa esse campo; é clique manual.

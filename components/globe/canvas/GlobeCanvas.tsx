@@ -558,12 +558,21 @@ export default function GlobeCanvas() {
           canvas do globo e irmao disto e segue ocupando a tela inteira. */}
       <div className="absolute top-0 left-0 w-full z-10 pointer-events-none ui-safe-layer">
         <div className="pointer-events-auto">
+          {/*
+            A BORDA DIREITA E' DA LINHA DO TEMPO enquanto ela estiver aberta —
+            inclusive minimizada, quando a faixa ocupa a coluna inteira. O
+            hamburguer, o cadeado e os botoes de administrador ficavam por
+            baixo, com a metade esquerda a mostra: "partes do botao aparecendo,
+            como se a tela de botoes estivesse escondida por baixo". Era
+            exatamente isso. Dois conjuntos de alvos no mesmo lugar nao sao
+            dois conjuntos; sao um toque errado.
+          */}
           <AppHeader
-            isVisible={states.isMainUiVisible}
+            isVisible={states.isMainUiVisible && !muralAberto}
             onMenuClick={handlers.handleOpenMenuPopup}
           />
           <AppFooter
-            isVisible={states.isMainUiVisible}
+            isVisible={states.isMainUiVisible && !muralAberto}
             onVacationClick={() => {
               track({ kind: 'search' });
               handlers.handleOpenVacationPopup();
@@ -583,11 +592,13 @@ export default function GlobeCanvas() {
             isVisible={states.isMainUiVisible && globeMode === 'relogio'}
             className="top-[4.5rem] left-1/2 -translate-x-1/2 pointer-events-none"
           />
+          {!muralAberto && (
           <LockControl
             isVisible={states.isUiVisible}
             onLockClick={handlers.handleLockClick}
             className="pointer-events-auto"
           />
+          )}
           {/*
             A COLUNA DE DEZ BOTOES VIROU UM MENU.
 
@@ -802,7 +813,7 @@ export default function GlobeCanvas() {
             }
             className="bottom-4 left-4 pointer-events-auto"
           />
-          {isAdmin && (
+          {isAdmin && !muralAberto && (
             <>
               <button
                 onClick={() => setters.setIsAdminNewsEnabled((prev) => !prev)}
