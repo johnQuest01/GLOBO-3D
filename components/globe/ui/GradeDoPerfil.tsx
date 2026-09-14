@@ -127,7 +127,7 @@ const Quadrado: FC<{ item: ItemDaGrade; onAbrir: () => void }> = ({
     >
       {url ? (
         // eslint-disable-next-line @next/next/no-img-element
-        <img
+        <img crossOrigin="anonymous"
           src={url}
           alt=""
           loading="lazy"
@@ -270,6 +270,7 @@ const Visor: FC<{
         <div className="flex min-h-0 flex-1 items-center justify-center bg-black">
           {url && item.kind === "video" && (
             <video
+          crossOrigin="anonymous"
               ref={videoRef}
               src={url}
               poster={cartaz ?? undefined}
@@ -281,7 +282,7 @@ const Visor: FC<{
           )}
           {url && item.kind === "imagem" && (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={url} alt={item.titulo ?? ""} className="max-h-[58dvh] w-full object-contain" />
+            <img crossOrigin="anonymous" src={url} alt={item.titulo ?? ""} className="max-h-[58dvh] w-full object-contain" />
           )}
           {!url && (
             <div className="flex h-52 w-full items-center justify-center text-xs text-white/30">

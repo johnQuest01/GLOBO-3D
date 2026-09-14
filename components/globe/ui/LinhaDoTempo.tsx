@@ -340,6 +340,7 @@ const MidiaDoPost: FC<{
     <div className="relative flex h-full w-full items-center justify-center bg-black">
       {url && ehVideo && (
         <video
+          crossOrigin="anonymous"
           ref={videoRef}
           src={url}
           poster={cartaz ?? undefined}
@@ -404,7 +405,7 @@ const MidiaDoPost: FC<{
       )}
       {url && post.kind === "imagem" && (
         // eslint-disable-next-line @next/next/no-img-element
-        <img
+        <img crossOrigin="anonymous"
           src={url}
           alt={`Publicação de ${post.autor}`}
           className="h-full w-full object-contain"
@@ -412,7 +413,7 @@ const MidiaDoPost: FC<{
       )}
       {!url && cartaz && (
         // eslint-disable-next-line @next/next/no-img-element
-        <img src={cartaz} alt="" className="h-full w-full object-contain" />
+        <img crossOrigin="anonymous" src={cartaz} alt="" className="h-full w-full object-contain" />
       )}
       {!url && !cartaz && (
         <div
@@ -1536,7 +1537,7 @@ const LinhaDoTempo: FC<Props> = ({
             key={qual}
             type="button"
             onClick={() => setAba(qual)}
-            className={`pointer-events-auto rounded-full px-3.5 py-1.5 text-[13px] font-semibold backdrop-blur transition-colors ${
+            className={`pointer-events-auto whitespace-nowrap rounded-full px-3 py-1.5 text-[13px] font-semibold backdrop-blur transition-colors ${
               aba === qual
                 ? "bg-white/20 text-white"
                 : "bg-black/25 text-white/55 hover:text-white/85"

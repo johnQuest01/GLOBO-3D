@@ -116,6 +116,7 @@ const MidiaDoCaso: FC<{ post: PostNaFila }> = ({ post }) => {
     <div className="mt-2 overflow-hidden rounded-lg bg-black/50">
       {url && post.kind === "video" && (
         <video
+          crossOrigin="anonymous"
           src={url}
           poster={cartaz ?? undefined}
           controls
@@ -126,7 +127,7 @@ const MidiaDoCaso: FC<{ post: PostNaFila }> = ({ post }) => {
       )}
       {url && post.kind === "imagem" && (
         // eslint-disable-next-line @next/next/no-img-element
-        <img
+        <img crossOrigin="anonymous"
           src={url}
           alt={`Publicação de ${post.autor}`}
           className="max-h-56 w-full object-contain"

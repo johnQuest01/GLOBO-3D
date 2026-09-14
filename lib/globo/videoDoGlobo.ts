@@ -69,20 +69,52 @@ export function elementoDoGlobo(): HTMLVideoElement {
   v.preload = 'auto';
   v.style.cssText =
     'position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;z-index:-1';
+  v.addEventListener('error', aoFalhar);
   document.body.appendChild(v);
   elemento = v;
   return v;
 }
+
+/**
+ * O CACHE ENVENENADO, e a segunda tentativa.
+ *
+ * Descoberto medindo em produção: o mesmo arquivo carregava com `?cb=` e não
+ * carregava sem — "Format error". O feed pede o vídeo SEM `crossOrigin` (não
+ * precisa); o globo pede a mesma URL COM `crossOrigin` (o WebGL exige). O
+ * navegador guarda a primeira resposta no cache e a entrega para o segundo
+ * pedido — sem os cabeçalhos CORS que ele exigia —, e o decodificador recusa.
+ *
+ * A correção de raiz é todo mundo pedir com `crossOrigin` (feito nos
+ * componentes). Esta aqui é a rede para quem JÁ tem o cache sujo no telefone:
+ * ao primeiro erro, pede de novo com uma marca na URL, que o cache não conhece.
+ */
+let tentouFurarCache = false;
 
 /** Aponta o elemento para uma URL, sem recarregar se já for ela. */
 function carregar(url: string): HTMLVideoElement {
   const v = elementoDoGlobo();
   if (urlAtual !== url) {
     urlAtual = url;
+    tentouFurarCache = false;
     v.src = url;
     v.load();
   }
   return v;
+}
+
+function aoFalhar(this: HTMLVideoElement) {
+  if (tentouFurarCache || !urlAtual) return;
+  tentouFurarCache = true;
+  const marca = urlAtual.includes('?') ? '&cors=1' : '?cors=1';
+  const queriaSom = !this.muted;
+  this.src = urlAtual + marca;
+  this.load();
+  this.muted = !queriaSom;
+  void this.play().catch(() => {
+    this.muted = true;
+    marcar(true);
+    void this.play().catch(() => undefined);
+  });
 }
 
 /**

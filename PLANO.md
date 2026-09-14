@@ -237,6 +237,15 @@ teste, com arquivos reais.
       Instagram. De quebra, o painel de baixo (autor + legenda) engolia o toque
       sobre o vídeo; ficou transparente ao toque, com os botões clicáveis
 
+- [x] ~~o vídeo sobre o globo ficava PARADO~~ — o elemento dava "Format error"
+      num arquivo íntegro. Causa: cache do navegador envenenado. O feed pedia o
+      vídeo SEM `crossOrigin`; o globo pedia a mesma URL COM `crossOrigin` (o
+      WebGL exige) e recebia do cache a resposta sem os cabeçalhos CORS. Agora
+      todo `<video>`/`<img>` de mídia do R2 pede com `crossOrigin`, e o
+      elemento do globo tenta de novo com a URL marcada se o primeiro
+      carregamento falhar — rede para quem já tem o cache sujo no telefone
+- [x] ~~"Para você" quebrava em duas linhas no celular~~ — `whitespace-nowrap`
+
 - [ ] **Vercel: branch de produção** — falta você clicar em
       Settings → Git → Production Branch → `globo/lod-luzes-fronteiras`.
       A API do Vercel recusa esse campo; é clique manual.

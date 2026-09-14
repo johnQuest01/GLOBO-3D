@@ -141,6 +141,7 @@ const MidiaDaNoticia: FC<{
     >
       {url && kind === "video" && (
         <video
+          crossOrigin="anonymous"
           src={url}
           poster={cartaz ?? undefined}
           controls
@@ -150,7 +151,7 @@ const MidiaDaNoticia: FC<{
       )}
       {url && kind === "imagem" && (
         // eslint-disable-next-line @next/next/no-img-element
-        <img src={url} alt={alt} className="max-h-72 w-full object-cover" />
+        <img crossOrigin="anonymous" src={url} alt={alt} className="max-h-72 w-full object-cover" />
       )}
     </div>
   );
