@@ -239,7 +239,13 @@ export default function GlobeCanvas() {
    * As conversas. Nao dependem do realtime estar conectado para EXISTIR — o
    * historico vem do proprio aparelho —, so para enviar e receber.
    */
-  const conversas = useConversas(realtime.meuNickname, realtime.socketPronto);
+  const conversas = useConversas(
+    realtime.meuNickname,
+    realtime.socketPronto,
+    // Mensagem ou digitacao chegando = a pessoa esta' online AGORA. Uma
+    // consulta ao diretorio confirma e traz a posicao dela para o globo.
+    (nick) => realtime.verQuemEstaOnline([nick]),
+  );
 
   /** Quantas mensagens esperam resposta, somando todas as conversas. */
   const totalNaoLidas = useMemo(
@@ -281,6 +287,40 @@ export default function GlobeCanvas() {
 
   const [buscaAberta, setBuscaAberta] = useState(false);
   const [conversasAbertas, setConversasAbertas] = useState(false);
+
+  /**
+   * O "ONLINE" DO CHAT E' VIVO, e nao uma foto tirada ao abrir.
+   *
+   * O DEFEITO, medido em producao: o outro lado conectava e a bolinha ficava
+   * cinza ate' a pessoa recarregar a pagina. A consulta ao diretorio
+   * (`directory:find`) era feita UMA vez, ao abrir a conversa; e o
+   * `presence:update`, que avisa sozinho, so' cobre quem esta' na mesma
+   * celula de 2 km — o outro lado de uma conversa quase nunca esta'.
+   *
+   * Agora, enquanto uma conversa esta' aberta ou a lista esta' na tela, a
+   * pergunta e' refeita a cada 10 s. O limite do servidor e' 20 consultas por
+   * minuto; isto gasta 6. Com a lista aberta, os dez contatos mais recentes
+   * vao numa consulta so'.
+   */
+  const conversaAbertaCom = conversas.abertaCom;
+  const contatos = useMemo(
+    () => Object.keys(conversas.conversas).slice(0, 10),
+    [conversas.conversas],
+  );
+  useEffect(() => {
+    if (!realtime.socketPronto) return;
+    const alvo = conversaAbertaCom
+      ? [conversaAbertaCom]
+      : conversasAbertas
+        ? contatos
+        : [];
+    if (alvo.length === 0) return;
+    const perguntar = () => realtime.verQuemEstaOnline(alvo);
+    perguntar();
+    const t = window.setInterval(perguntar, 10_000);
+    return () => window.clearInterval(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [conversaAbertaCom, conversasAbertas, contatos, realtime.socketPronto]);
   const [pedindoNickname, setPedindoNickname] = useState(false);
   const [pedindoLugar, setPedindoLugar] = useState(false);
   /** Os sinais de um marcador agrupado, quando a pessoa toca nele. */

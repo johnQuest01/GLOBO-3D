@@ -135,8 +135,20 @@ function paraTela(g: MensagemGuardada): Mensagem {
   };
 }
 
-export function useConversas(meuNickname?: string, socketPronto?: boolean) {
+export function useConversas(
+  meuNickname?: string,
+  socketPronto?: boolean,
+  /**
+   * Chamado com o nickname de quem acabou de dar sinal de vida — mandou uma
+   * mensagem ou está digitando. Uma mensagem que chega AGORA prova que a
+   * conexão de quem mandou está viva agora; quem escuta isto usa para
+   * atualizar o "online" sem esperar a próxima consulta ao diretório.
+   */
+  aoSinalDeVida?: (nickname: string) => void,
+) {
   const [conversas, setConversas] = useState<Conversas>({});
+  const sinalDeVidaRef = useRef(aoSinalDeVida);
+  sinalDeVidaRef.current = aoSinalDeVida;
   const [abertaCom, setAbertaCom] = useState<string | null>(null);
   const [aviso, setAviso] = useState<string | null>(null);
 
@@ -296,6 +308,11 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
       const minha = Boolean(e.minha);
       const com = minha ? (e.to ?? '') : e.from;
       if (!com) return;
+      // So' o que chega AO VIVO e' sinal de vida: o que veio do `msg:sync`
+      // pode ter sido mandado ontem por quem ja' desligou.
+      if (!minha && !e.lida && Date.now() - new Date(e.sentAt).getTime() < 15_000) {
+        sinalDeVidaRef.current?.(com);
+      }
 
       const quando = new Date(e.sentAt).getTime();
 
@@ -372,6 +389,7 @@ export function useConversas(meuNickname?: string, socketPronto?: boolean) {
      */
     const aoDigitar = ({ from, typing }: { from: string; typing: boolean }) => {
       const quem = from.toLowerCase();
+      if (typing) sinalDeVidaRef.current?.(quem);
       const antigo = apagarDigitandoRef.current.get(quem);
       if (antigo) window.clearTimeout(antigo);
 

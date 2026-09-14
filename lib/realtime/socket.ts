@@ -132,6 +132,30 @@ export async function connectSocket(
     });
   });
 
+  /*
+   * VOLTOU DO SEGUNDO PLANO: reconecta AGORA.
+   *
+   * O celular mata o WebSocket quando a aba dorme. Ao voltar, o socket.io
+   * reconecta sozinho — mas com espera crescente, de 1 a 10 segundos, e
+   * multiplicada a cada tentativa que falhou enquanto a aba estava morta. E'
+   * o "atraso" que se sente ao voltar para o chat: a mensagem ja' esta' no
+   * servidor, e a tela espera o relogio do backoff. A volta da aba e' um
+   * evento que sabemos: nele, se a conexao caiu, pegamos um cracha' novo e
+   * conectamos na hora. O `connect` que se segue dispara o `msg:sync` de quem
+   * escuta, e o que chegou enquanto a aba dormia aparece.
+   */
+  if (typeof document !== 'undefined' && !acordaRegistrado) {
+    acordaRegistrado = true;
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState !== 'visible' || !singleton || singleton.connected) return;
+      void pegarToken().then((novo) => {
+        if (!singleton) return;
+        if (novo) singleton.auth = { token: novo };
+        singleton.connect();
+      });
+    });
+  }
+
   return singleton;
 }
 
@@ -141,6 +165,9 @@ export async function connectSocket(
  * Existe para quem só quer emitir um evento e não pode (nem deve) esperar:
  * quem abre a conexão é o hook de realtime, uma vez só.
  */
+/** O ouvinte de `visibilitychange` e' um so' por pagina. */
+let acordaRegistrado = false;
+
 export function getSocket(): RealtimeSocket | null {
   return singleton;
 }
