@@ -551,10 +551,15 @@ person. So the second person needs a separate cookie jar.
 
 ### Two test accounts (live, in the production database)
 
-| account | nickname | e-mail | password |
-|---|---|---|---|
-| Ana | `anateste_mg` | ana.teste.globo@example.com | senhaDeTeste123 |
-| Yuki | `yuki_tokyo` | yuki.teste.globo@example.com | senhaDeTeste123 |
+| account | nickname | e-mail |
+|---|---|---|
+| Ana | `anateste_mg` | ana.teste.globo@example.com |
+| Yuki | `yuki_tokyo` | yuki.teste.globo@example.com |
+
+The passwords are **not** in this file any more. They were, in every commit
+between 2026-09-12 and 2026-09-14, so treat the old value as public: change
+both passwords (or delete the accounts) before anyone real signs up. Keep the
+new ones in your password manager, not in the repository.
 
 They live in Minas Gerais and Tokyo on purpose: different regions is the case
 the magnifier exists for, and the one that a simple "who is nearby" list would
@@ -577,5 +582,9 @@ Ana in the production site and Yuki in a second origin, both against
 landed in the other, with ✓✓ on the sender's side. The server logged
 `msg anateste_mg -> yuki_tokyo` and then the `ack` that deletes the envelope.
 
-Delete these two accounts before the site has real users — they are a public
-door with a password written in a file.
+Delete these two accounts before the site has real users — the password they
+were created with sat in this file, in the public repository, for two days.
+`apagarConta()` in `scripts/testes/contas.ts` is the delete that removes
+everything they generated (posts, envelopes, sessions) in the right order;
+`npm run testes:faxina` only sweeps accounts with the automated-test prefix,
+so these two need the id passed by hand.

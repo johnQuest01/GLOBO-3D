@@ -249,8 +249,11 @@ teste, com arquivos reais.
 - [ ] **Vercel: branch de produção** — falta você clicar em
       Settings → Git → Production Branch → `globo/lod-luzes-fronteiras`.
       A API do Vercel recusa esse campo; é clique manual.
-- [ ] **senhas de teste no `CHAT-GLOBAL-PLAN.md`** — precisam sair antes de
-      qualquer pessoa de verdade entrar
+- [x] ~~senhas de teste no `CHAT-GLOBAL-PLAN.md`~~ — saíram do arquivo. Mas
+      ficaram no histórico do git por dois dias num repositório público, então
+      a senha antiga é pública: **trocar a senha das duas contas ou apagá-las**
+      (`apagarConta()` em `scripts/testes/contas.ts`) antes de entrar gente de
+      verdade
 - [ ] **tokens colados no histórico precisam ser rotacionados** (Google, Vercel,
       Railway)
 - [ ] **311 MB de texturas não usadas** no repositório
