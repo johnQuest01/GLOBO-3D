@@ -57,7 +57,14 @@ const QUADROS_POR_SEG = 30;
  * prender a pessoa meia hora numa tela de espera. Três minutos é o limite em
  * que a espera ainda é espera, e não abandono.
  */
-export const VIDEO_SEG_MAX = 180;
+export const VIDEO_SEG_MAX = 300;
+
+/**
+ * O maior arquivo que sobe SEM recodificar. Tem de casar com o teto da rota
+ * (app/api/midia/route.ts): passar daqui e' pedir uma assinatura que sera'
+ * recusada.
+ */
+export const BYTES_SEM_PREPARO = 100 * 1024 * 1024;
 
 /** O cartaz: um quadro só, para o cartão ter o que mostrar enquanto carrega. */
 const CARTAZ_LADO_MAX = 640;
@@ -228,6 +235,48 @@ async function saiuBom(blob: Blob): Promise<boolean> {
   }
 }
 
+/**
+ * O arquivo já está bom do jeito que veio?
+ *
+ * POR QUE ISTO EXISTE. O preparo recodifica em tempo real: um vídeo de cinco
+ * minutos são cinco minutos de barra. Mas um MP4 com H.264 que cabe no teto
+ * toca em todo navegador exatamente como está — recodificá-lo é gastar cinco
+ * minutos da pessoa para piorar a qualidade. Foi o caso do vídeo da
+ * Califórnia: 3:51, H.264, 58 MB, e o preparo o RECUSAVA pelo limite de
+ * tempo, sendo que ele não precisava de preparo nenhum.
+ *
+ * COMO SE SABE, sem decodificar: o cabeçalho do MP4 diz o codec. Procuramos
+ * `avc1` (H.264) nos primeiros e nos últimos megabytes, porque o `moov` — a
+ * tabela que descreve as trilhas — fica numa das duas pontas conforme quem
+ * gravou. HEVC (`hvc1`/`hev1`), que é o que o iPhone grava, NÃO passa aqui, e
+ * é exatamente por isso que a recodificação continua existindo.
+ */
+async function jaEstaBom(arquivo: File): Promise<boolean> {
+  if (!/^video\/(mp4|quicktime)$/.test(arquivo.type)) return false;
+  if (arquivo.size > BYTES_SEM_PREPARO) return false;
+
+  const PONTA = 4 * 1024 * 1024;
+  const cabeca = new Uint8Array(await arquivo.slice(0, Math.min(PONTA, arquivo.size)).arrayBuffer());
+  const cauda =
+    arquivo.size > PONTA
+      ? new Uint8Array(await arquivo.slice(arquivo.size - Math.min(PONTA, arquivo.size)).arrayBuffer())
+      : new Uint8Array(0);
+
+  const acha = (bytes: Uint8Array, marca: string) => {
+    const alvo = new TextEncoder().encode(marca);
+    outer: for (let i = 0; i <= bytes.length - alvo.length; i++) {
+      for (let j = 0; j < alvo.length; j++) if (bytes[i + j] !== alvo[j]) continue outer;
+      return true;
+    }
+    return false;
+  };
+
+  const temH264 = acha(cabeca, 'avc1') || acha(cauda, 'avc1');
+  const temHevc =
+    acha(cabeca, 'hvc1') || acha(cabeca, 'hev1') || acha(cauda, 'hvc1') || acha(cauda, 'hev1');
+  return temH264 && !temHevc;
+}
+
 // ---------------------------------------------------------------------------
 // Vídeo
 // ---------------------------------------------------------------------------
@@ -243,6 +292,15 @@ async function encolherVideo(
     bytesAntes: arquivo.size,
     bytesDepois: arquivo.size,
   };
+
+  /*
+   * JÁ ESTÁ BOM? SOBE COMO ESTÁ. Antes de qualquer decodificação: é a diferença
+   * entre cinco minutos de espera e nenhuma, para o arquivo que não precisava.
+   */
+  if (await jaEstaBom(arquivo)) {
+    aoAndar?.(1);
+    return { ...intacto, mime: 'video/mp4' };
+  }
 
   const saida = melhorSaida();
   if (!saida) return intacto;

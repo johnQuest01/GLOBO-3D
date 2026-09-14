@@ -27,8 +27,9 @@ const VALIDADE_LEITURA_SEG = 60 * 60;
  *
  * ESTE TETO E' PARA O QUE JA' FOI ENCOLHIDO. O navegador recodifica video e
  * imagem antes de subir (ver lib/midia/comprimir.ts): 720p a 1,6 Mb/s da' uns
- * 12 MB por minuto, entao 60 MB cobrem com folga os tres minutos que o preparo
- * aceita. Antes daquele passo, este numero era 25 MB e barrava praticamente
+ * 12 MB por minuto, entao 100 MB cobrem os cinco minutos que o preparo aceita
+ * — e tambem um video ja' em H.264 que sobe sem preparo (ver `jaEstaBom` em
+ * lib/midia/comprimir.ts), que e' o caso de quase todo video de camera Android. Antes daquele passo, este numero era 25 MB e barrava praticamente
  * todo video de celular — a pessoa via "nao consegui enviar o arquivo" e
  * concluia, com razao, que o aplicativo nao aceitava video.
  *
@@ -36,7 +37,7 @@ const VALIDADE_LEITURA_SEG = 60 * 60;
  * subir do jeito que esta'. O teto e' o que impede isso de virar um upload de
  * 400 MB que ninguem termina.
  */
-const BYTES_MAX = 60 * 1024 * 1024;
+const BYTES_MAX = 100 * 1024 * 1024;
 
 /*
  * O QUE PODE SUBIR.

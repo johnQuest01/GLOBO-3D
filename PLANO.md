@@ -141,7 +141,7 @@ relevante — e não só o que é recente.
 
 ## 7. Pular a recodificação quando o arquivo já está bom
 
-**Estado:** por fazer. Apareceu subindo o vídeo da Califórnia.
+**Estado:** feito — `jaEstaBom()` em `lib/midia/comprimir.ts` lê o cabeçalho do MP4 e sobe direto quando é H.264 e cabe. Limite de vídeo subiu para **5 minutos** e o teto de arquivo para **100 MB**. Falta o teste com arquivos reais (H.264 sobe direto, HEVC recodifica).
 
 O vídeo tem 3 min 51 s, já é H.264 + AAC e tem 57,9 MB. Do celular ele seria
 **recusado** — o preparo tem teto de 3 minutos, porque recodificar acontece em

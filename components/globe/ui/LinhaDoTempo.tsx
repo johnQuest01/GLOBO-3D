@@ -269,12 +269,21 @@ const MidiaDoPost: FC<{
       v.pause();
       return;
     }
+    /*
+     * SE JÁ ESTÁ TOCANDO DO JEITO PEDIDO, NÃO MEXE. Este efeito roda de novo
+     * logo depois do toque que ligou o som (porque `comSom` mudou) — e no
+     * iPhone um `play()` chamado aqui, fora do gesto, era RECUSADO e derrubava
+     * o som que o toque tinha acabado de ligar. O vídeo ficava mudo um instante
+     * depois de a pessoa pedir som, e parecia que o toque não funcionava.
+     */
+    if (!v.paused && v.muted === !comSom) return;
     v.muted = !comSom;
     v.volume = 1;
     void v
       .play()
       .then(() => setMudoForcado(comSom && v.muted))
       .catch(() => {
+        if (!v.paused) return;
         v.muted = true;
         setMudoForcado(comSom);
         void v.play().catch(() => undefined);
@@ -326,12 +335,7 @@ const MidiaDoPost: FC<{
   const semSom = !comSom || mudoForcado;
 
   return (
-    <div
-      className="relative flex h-full w-full items-center justify-center bg-black"
-      onClick={ehVideo ? alternarSom : undefined}
-      role={ehVideo ? "button" : undefined}
-      aria-label={ehVideo ? (semSom ? "Ligar o som" : "Tirar o som") : undefined}
-    >
+    <div className="relative flex h-full w-full items-center justify-center bg-black">
       {url && ehVideo && (
         <video
           ref={videoRef}
@@ -345,13 +349,33 @@ const MidiaDoPost: FC<{
       )}
 
       {/*
+        O TOQUE É UM <button> DE VERDADE, cobrindo o vídeo — e não um onClick
+        num <div>. O Safari do iPhone não entrega `click` a um elemento que não
+        é interativo (div, span) quando o ouvinte está em cima, no React; é uma
+        peculiaridade antiga e documentada, e é a explicação mais provável para
+        "toco e não liga" no telefone quando no emulador ligava. Um <button>
+        é interativo por definição e recebe o toque em todo navegador.
+
+        Ele fica ABAIXO da coluna de ações e do painel de baixo na ordem de
+        empilhamento (z-0), então os botões continuam por cima dele.
+      */}
+      {url && ehVideo && (
+        <button
+          type="button"
+          onClick={alternarSom}
+          aria-label={semSom ? "Ligar o som" : "Tirar o som"}
+          className="absolute inset-0 z-0 cursor-pointer bg-transparent"
+        />
+      )}
+
+      {/*
         O SELO DE SOM fica onde o dedo não cobre nada: canto superior esquerdo,
-        abaixo das abas. Ele diz o estado — mudo ou com som — e é o mesmo toque
+        abaixo das abas. Ele diz o estado — mudo ou com som — e o toque é o
         do vídeo inteiro; existe como aviso, não como o único alvo.
       */}
       {url && ehVideo && (
         <span
-          className={`pointer-events-none absolute left-4 top-16 flex items-center gap-1.5 rounded-full px-2.5 py-1.5 text-[11px] font-medium backdrop-blur ${
+          className={`pointer-events-none absolute left-4 top-16 z-10 flex items-center gap-1.5 rounded-full px-2.5 py-1.5 text-[11px] font-medium backdrop-blur ${
             semSom
               ? "bg-slate-950/70 text-white/85 ring-1 ring-white/20"
               : "bg-sky-500/25 text-sky-100 ring-1 ring-sky-300/40"
