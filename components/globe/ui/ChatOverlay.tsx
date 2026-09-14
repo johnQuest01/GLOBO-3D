@@ -540,7 +540,18 @@ const ChatOverlay: FC<Props> = ({
       className="fixed inset-0 z-[200] flex items-center justify-center"
     >
       <div
-        className="absolute inset-0 bg-slate-950/45 backdrop-blur-2xl backdrop-saturate-150"
+        /*
+          O DESFOQUE SO' ONDE HA' GPU SOBRANDO.
+
+          `backdrop-blur` refaz o borrao do que esta' atras a cada quadro em que
+          a tela muda — e a tela muda a cada pixel de rolagem. Num telefone,
+          borrar a tela inteira sessenta vezes por segundo enquanto a lista
+          rola e' exatamente o tipo de trabalho que faz o dedo "sentir peso".
+          Em ponteiro grosso (toque) o fundo vira uma cor solida; o visual
+          clean fica, o custo vai embora. No computador (ponteiro fino) o
+          desfoque continua.
+        */
+        className="absolute inset-0 bg-slate-950/85 [@media(pointer:fine)]:bg-slate-950/45 [@media(pointer:fine)]:backdrop-blur-2xl [@media(pointer:fine)]:backdrop-saturate-150"
         onClick={onFechar}
         aria-hidden="true"
       />
@@ -698,9 +709,18 @@ const ChatOverlay: FC<Props> = ({
                         title="Ver maior"
                       >
                         {/* eslint-disable-next-line @next/next/no-img-element */}
+                        {/*
+                          `loading="lazy"`: a foto de uma mensagem antiga so' e'
+                          baixada quando a rolagem chega perto dela — nao todas de
+                          uma vez ao abrir a conversa. `decoding="async"`: a
+                          decodificacao nao trava a rolagem; e' o que evita o
+                          "aparece em branco e depois estoura" ao rolar para tras.
+                        */}
                         <img
                           src={m.midiaUrl}
                           alt="foto da conversa"
+                          loading="lazy"
+                          decoding="async"
                           className="max-h-72 rounded-xl"
                         />
                       </button>
@@ -711,13 +731,21 @@ const ChatOverlay: FC<Props> = ({
                         src={m.midiaUrl}
                         controls
                         playsInline
+                        // Sem `preload="none"`, cada video da conversa baixava o
+                        // cabecalho ao aparecer na tela. A duracao ja' vem na mensagem.
+                        preload="none"
                         className="max-h-72 rounded-xl"
                       />
                     )}
 
                     {m.tipo === 'audio' && m.midiaUrl && (
                       <div className="flex items-center gap-2 px-1">
-                        <audio src={m.midiaUrl} controls className="h-10 max-w-[13rem]" />
+                        <audio
+                          src={m.midiaUrl}
+                          controls
+                          preload="none"
+                          className="h-10 max-w-[13rem]"
+                        />
                         {m.duracaoMs ? (
                           <span className="text-[11px] text-white/60">
                             {duracaoLegivel(m.duracaoMs)}

@@ -510,6 +510,21 @@ export default function GlobeCanvas() {
     >
       <Canvas
         /*
+         * O GLOBO PARA DE DESENHAR ENQUANTO A CONVERSA ESTA' ABERTA.
+         *
+         * A conversa cobre a tela inteira, e o globo continuava rodando a 60
+         * quadros por segundo embaixo dela — 27 mil luzes, fronteiras,
+         * rotulos, tudo para ninguem ver. No celular, isso e' a GPU inteira
+         * ocupada com o que esta' escondido, e o que esta' na frente (a lista
+         * de mensagens rolando) fica com as sobras. Foi sentido assim: "um
+         * peso ao dar scroll".
+         *
+         * `never` congela o ultimo quadro; ao fechar a conversa, `always`
+         * retoma de onde parou. Nada fora do canvas e' afetado: socket,
+         * presenca e caixa postal continuam vivos.
+         */
+        frameloop={conversas.abertaCom ? 'never' : 'always'}
+        /*
          * QUANTOS PIXELS DESENHAR, e no celular esta e' a conta que mais pesa.
          *
          * Um telefone moderno tem densidade 3: a tela de 400 pontos de largura
