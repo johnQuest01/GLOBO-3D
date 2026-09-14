@@ -87,6 +87,10 @@ async function principal(): Promise<void> {
       rodar: async () => (await import("./suite-social")).suiteSocial(base),
     },
     {
+      nome: "paravoce",
+      rodar: async () => (await import("./suite-paravoce")).suiteParaVoce(base),
+    },
+    {
       nome: "seguir",
       rodar: async () => (await import("./suite-seguir")).suiteSeguir(base),
     },

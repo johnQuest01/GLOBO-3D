@@ -37,7 +37,13 @@ export type BehaviorKind =
   | 'pin_add'
   | 'trip_plan'
   | 'tourism_view'
-  | 'search';
+  | 'search'
+  // Os sinais do feed: o que alimenta o "Para você" (ver lib/db/behavior.ts).
+  | 'post_view'
+  | 'post_like'
+  | 'post_comment'
+  | 'post_globe'
+  | 'post_share';
 
 export interface TrackInput {
   kind: BehaviorKind;

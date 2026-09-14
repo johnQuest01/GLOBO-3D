@@ -22,6 +22,8 @@ import {
 } from "@/lib/globo/videoDoGlobo";
 import { prepararMidia, VIDEO_SEG_MAX } from "@/lib/midia/comprimir";
 import ComentariosPanel from "./ComentariosPanel";
+import PausaPanel from "./PausaPanel";
+import { getClientId, useBehaviorTracker } from "@/app/hooks/useBehaviorTracker";
 
 /**
  * A linha do tempo — e o gesto que só existe porque há um globo atrás dela.
@@ -476,7 +478,7 @@ const LinhaDoTempo: FC<Props> = ({
   const [posts, setPosts] = useState<Post[]>([]);
   const [carregando, setCarregando] = useState(false);
   const [aviso, setAviso] = useState<string | null>(null);
-  const [aba, setAba] = useState<"seguindo" | "mundo">("seguindo");
+  const [aba, setAba] = useState<"seguindo" | "mundo" | "paravoce">("seguindo");
   const [sigo, setSigo] = useState<OQueSigo | null>(null);
 
   /** Qual post está na tela agora. Índice, porque a faixa precisa dele. */
@@ -531,11 +533,15 @@ const LinhaDoTempo: FC<Props> = ({
 
   // --- Carregar --------------------------------------------------------------
 
-  const carregar = useCallback(async (qual: "seguindo" | "mundo") => {
+  const carregar = useCallback(async (qual: "seguindo" | "mundo" | "paravoce") => {
     setCarregando(true);
     try {
       const r = await fetch(
-        qual === "seguindo" ? "/api/posts?de=seguindo" : "/api/posts",
+        qual === "seguindo"
+          ? "/api/posts?de=seguindo"
+          : qual === "paravoce"
+            ? `/api/posts?de=paravoce&cliente=${encodeURIComponent(getClientId())}`
+            : "/api/posts",
       );
       if (!r.ok) {
         setAviso("Não consegui carregar agora.");
@@ -598,6 +604,100 @@ const LinhaDoTempo: FC<Props> = ({
 
   const postAtual = posts[atual] ?? null;
 
+  // --- O que a atenção deixa, e o freio ------------------------------------
+
+  const { track } = useBehaviorTracker();
+
+  /**
+   * QUANTO TEMPO CADA PUBLICAÇÃO FICOU NA TELA. É o sinal que alimenta o
+   * "Para você" — e é medido aqui, no único lugar que sabe qual post está
+   * na frente da pessoa. Fecha-se ao trocar de post, ao minimizar, ao fechar
+   * o feed e ao desmontar; o tempo vai em `dwellMs`, o post em `refId`, o país
+   * e o autor nas dimensões que a afinidade entende.
+   */
+  const olhandoRef = useRef<{ post: Post; desde: number } | null>(null);
+  const [vistasNaSessao, setVistasNaSessao] = useState(0);
+
+  const fecharOlhar = useCallback(() => {
+    const o = olhandoRef.current;
+    if (!o) return;
+    olhandoRef.current = null;
+    const ms = Date.now() - o.desde;
+    track({
+      kind: "post_view",
+      refId: o.post.id,
+      regionKey: o.post.pais,
+      topic: `autor:${o.post.autor}`,
+      dwellMs: ms,
+    });
+    if (ms >= 1000) setVistasNaSessao((n) => n + 1);
+  }, [track]);
+
+  const idAtual = postAtual?.id ?? null;
+  useEffect(() => {
+    fecharOlhar();
+    if (aberto && !minimizado && postAtual) {
+      olhandoRef.current = { post: postAtual, desde: Date.now() };
+    }
+    // `idAtual` e não `postAtual`: curtir troca o objeto sem trocar o post, e
+    // isso partiria a mesma olhada em várias, inflando a contagem de vistas.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [idAtual, aberto, minimizado, fecharOlhar]);
+  useEffect(() => () => fecharOlhar(), [fecharOlhar]);
+
+  /**
+   * A PAUSA. Vinte minutos seguidos de feed abrem uma tela que cobre tudo e
+   * pede uma decisão; "continuar" adia mais vinte. O tempo de hoje fica no
+   * navegador (não vai ao servidor: é da pessoa, para a pessoa).
+   *
+   * Só conta com a aba visível e o feed na frente: tempo com o telefone no
+   * bolso não é tempo de feed, e contá-lo tornaria o aviso mentiroso — e um
+   * aviso mentiroso é ignorado para sempre.
+   */
+  const [segundosSeguidos, setSegundosSeguidos] = useState(0);
+  const [minutosHoje, setMinutosHoje] = useState(0);
+  const [pausaAberta, setPausaAberta] = useState(false);
+  const proximaPausaMinRef = useRef(20);
+
+  useEffect(() => {
+    if (!aberto) {
+      setSegundosSeguidos(0);
+      proximaPausaMinRef.current = 20;
+      return;
+    }
+    const CHAVE = "globoUsoDia";
+    const hoje = new Date().toISOString().slice(0, 10);
+    const ler = () => {
+      try {
+        const g = JSON.parse(localStorage.getItem(CHAVE) ?? "null") as
+          | { dia: string; seg: number }
+          | null;
+        return g && g.dia === hoje ? g.seg : 0;
+      } catch {
+        return 0;
+      }
+    };
+    setMinutosHoje(Math.round(ler() / 60));
+
+    const PASSO = 5;
+    const t = window.setInterval(() => {
+      if (minimizado || pausaAberta || document.visibilityState !== "visible") return;
+      const seg = ler() + PASSO;
+      try {
+        localStorage.setItem(CHAVE, JSON.stringify({ dia: hoje, seg }));
+      } catch {
+        /* sem armazenamento, só a sessão conta */
+      }
+      setMinutosHoje(Math.round(seg / 60));
+      setSegundosSeguidos((s) => {
+        const novo = s + PASSO;
+        if (novo / 60 >= proximaPausaMinRef.current) setPausaAberta(true);
+        return novo;
+      });
+    }, PASSO * 1000);
+    return () => window.clearInterval(t);
+  }, [aberto, minimizado, pausaAberta]);
+
   // --- Minimizar e viajar ----------------------------------------------------
 
   /**
@@ -622,6 +722,7 @@ const LinhaDoTempo: FC<Props> = ({
 
   const irParaOGlobo = useCallback(
     (post: Post) => {
+      track({ kind: "post_globe", refId: post.id, regionKey: post.pais, topic: `autor:${post.autor}` });
       prepararSomDoGlobo(post);
       setMinimizado(true);
       setMenuDoPost(null);
@@ -632,7 +733,8 @@ const LinhaDoTempo: FC<Props> = ({
         midiaDoPost(post),
       );
     },
-    [onFocarNoGlobo],
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [onFocarNoGlobo, track],
   );
 
   const escolherNaFaixa = useCallback(
@@ -830,6 +932,9 @@ const LinhaDoTempo: FC<Props> = ({
       euCurti: quero,
       curtidas: Math.max(0, (post.curtidas ?? 0) + (quero ? 1 : -1)),
     });
+    if (quero) {
+      track({ kind: "post_like", refId: post.id, regionKey: post.pais, topic: `autor:${post.autor}` });
+    }
 
     try {
       const r = await fetch("/api/curtir", {
@@ -1420,7 +1525,7 @@ const LinhaDoTempo: FC<Props> = ({
 
       {/* Topo: abas e sair. Flutuando, para não roubar altura do vídeo. */}
       <div className="pointer-events-none absolute inset-x-0 top-0 flex items-center gap-1 p-3 pt-[max(0.75rem,env(safe-area-inset-top))]">
-        {(["seguindo", "mundo"] as const).map((qual) => (
+        {(["seguindo", "mundo", "paravoce"] as const).map((qual) => (
           <button
             key={qual}
             type="button"
@@ -1431,7 +1536,7 @@ const LinhaDoTempo: FC<Props> = ({
                 : "bg-black/25 text-white/55 hover:text-white/85"
             }`}
           >
-            {qual === "seguindo" ? "Seguindo" : "Mundo"}
+            {qual === "seguindo" ? "Seguindo" : qual === "mundo" ? "Mundo" : "Para você"}
           </button>
         ))}
 
@@ -1714,15 +1819,35 @@ const LinhaDoTempo: FC<Props> = ({
         postId={comentando}
         onFechar={() => setComentando(null)}
         onVerPerfil={onVerPerfil}
-        onContagem={(id, quanto) =>
+        onContagem={(id, quanto) => {
+          if (quanto > 0) {
+            const p = posts.find((x) => x.id === id);
+            if (p) track({ kind: "post_comment", refId: id, regionKey: p.pais, topic: `autor:${p.autor}` });
+          }
           setPosts((todos) =>
             todos.map((p) =>
               p.id === id
                 ? { ...p, comentarios: Math.max(0, p.comentarios + quanto) }
                 : p,
             ),
-          )
-        }
+          );
+        }}
+      />
+
+      <PausaPanel
+        aberto={pausaAberta}
+        minutosSeguidos={Math.round(segundosSeguidos / 60)}
+        minutosHoje={minutosHoje}
+        publicacoesVistas={vistasNaSessao}
+        onContinuar={() => {
+          proximaPausaMinRef.current += 20;
+          setPausaAberta(false);
+        }}
+        onVerOGlobo={() => {
+          setPausaAberta(false);
+          if (postAtual) irParaOGlobo(postAtual);
+          else onFechar();
+        }}
       />
     </div>
   );

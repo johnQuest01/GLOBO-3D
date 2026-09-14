@@ -31,7 +31,27 @@ const EVENT_WEIGHT: Record<string, number> = {
   trip_plan: 15,
   tourism_view: 5,
   search: 2,
+
+  /*
+   * OS SINAIS DO FEED — o combustível do "Para você".
+   *
+   * `post_view` é tempo de tela puro, multiplicado pela permanência como o
+   * `dwell`. É o sinal que não pede gesto nenhum: a pessoa só ficou olhando. E
+   * é por isso que ele é o mais poderoso e o mais perigoso — ele mede o que
+   * PRENDE, sem perguntar se prendeu por encanto ou por irritação.
+   */
+  post_view: 1,
+  post_like: 10,
+  post_comment: 14,
+  post_globe: 8,
+  post_share: 12,
 };
+
+/** Os tipos que apontam para uma publicação (o `refId` é o id do post). */
+const KINDS_DE_POST = new Set(['post_view', 'post_like', 'post_comment', 'post_globe', 'post_share']);
+
+/** Abaixo disto uma passada não conta como "vista": foi só rolagem. */
+const VISTA_MINIMA_MS = 1000;
 
 /** Tipos aceitos — qualquer outro é descartado na entrada. */
 export const EVENT_KINDS = Object.keys(EVENT_WEIGHT);
@@ -68,7 +88,7 @@ export interface ProfileInput {
 /** Peso final de um evento, já considerando o tempo de permanência. */
 function resolveWeight(event: BehaviorEvent): number {
   const base = EVENT_WEIGHT[event.kind] ?? 0;
-  if (event.kind !== 'dwell') return base;
+  if (event.kind !== 'dwell' && event.kind !== 'post_view') return base;
 
   // Permanência entra em escala achatada: 2 minutos olhando não vale 120x
   // mais que 1 segundo, vale cerca de 11x.
@@ -133,6 +153,25 @@ export async function recordEvents(
         ${event.dwellMs ?? null}, ${resolveWeight(event)}
       )
     `;
+  }
+
+  /*
+   * 1b. O QUE A ATENÇÃO DEIXOU NA PUBLICAÇÃO. `vistas` e `tempo_visto_seg`
+   * moram na linha do post (db/schema-atencao.sql) pelo mesmo motivo das
+   * curtidas: somar a tabela de eventos a cada abertura do feed é o custo que
+   * cresce com o sucesso. Só passadas de mais de um segundo contam — abaixo
+   * disso foi rolagem, não olhar.
+   */
+  const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+  for (const event of valid) {
+    if (event.kind !== 'post_view' || !event.refId || !UUID.test(event.refId)) continue;
+    const ms = Math.min(Math.max(event.dwellMs ?? 0, 0), MAX_DWELL_MS);
+    if (ms < VISTA_MINIMA_MS) continue;
+    await sql`
+      update posts
+         set vistas = vistas + 1,
+             tempo_visto_seg = tempo_visto_seg + ${ms / 1000}
+       where id = ${event.refId}::uuid`;
   }
 
   // 2. Resumo por dimensão, para a recomendação ser uma leitura indexada.

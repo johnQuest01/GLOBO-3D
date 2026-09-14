@@ -14,6 +14,7 @@ import {
 import { muralDeQuemSegue } from '@/lib/db/seguir';
 import { coordenadaValida } from '@/lib/geo/lugar';
 import { quaisEuCurti } from '@/lib/db/social';
+import { feedParaVoce } from '@/lib/db/paraVoce';
 
 /**
  * O mural do globo.
@@ -93,6 +94,23 @@ export async function GET(request: Request) {
    * posts e' o que uma pessoa le' numa sentada; para ir mais fundo existe a aba
    * do mundo, que pagina.
    */
+  /*
+   * `?de=paravoce&cliente=<id>` — o feed que otimiza tempo de tela. A
+   * identidade e' a do NAVEGADOR (a mesma do rastreio de comportamento), e nao
+   * da conta: e' por ela que a afinidade foi acumulada. Sem `cliente`, cai no
+   * mural normal — o algoritmo nao trava esperando um id.
+   */
+  if (url.searchParams.get('de') === 'paravoce') {
+    const cliente = (url.searchParams.get('cliente') ?? '').trim().slice(0, 80);
+    if (cliente) {
+      return NextResponse.json({
+        ok: true,
+        posts: await comCurtida(await feedParaVoce(cliente), session.user.id),
+        proximo: null,
+      });
+    }
+  }
+
   if (url.searchParams.get('de') === 'seguindo') {
     return NextResponse.json({
       ok: true,

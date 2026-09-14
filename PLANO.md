@@ -110,7 +110,32 @@ público e convidando a entrar.
 
 ## 6. Recomendação — o feed que aprende
 
-**Estado:** por fazer. É o maior item, e o último de propósito.
+**Estado:** FEITO na versão que otimiza tempo de tela, por decisão sua, e com a
+objeção registrada. Está na aba **"Para você"** do feed.
+
+O que existe: `post_view` (tempo por publicação, medido no feed), `post_like`,
+`post_comment`, `post_globe` alimentam `affinity` (país e autor, meia-vida 45
+dias) e os contadores `posts.vistas` / `posts.tempo_visto_seg`. O ranking está
+em `lib/db/paraVoce.ts` com os pesos nomeados em `PESOS`.
+
+**A avaliação, com número** (suíte `paravoce`): a publicação que recebe cinco
+comentários "discordo!" sobe para 2º lugar **sem uma curtida sequer**; a
+publicação quieta do mesmo autor, mesmo lugar, mesmo minuto, fica em 5º. É o
+algoritmo funcionando como desenhado — e é exatamente o efeito da objeção.
+
+**O freio** (`PausaPanel`): a cada 20 minutos seguidos de feed, uma tela cobre
+tudo e devolve a pessoa para o globo. O tempo de hoje fica no navegador. É um
+número só e ajustamos com dados.
+
+**O que decidir depois, olhando uso real:** se o peso de comentário fica em 3
+(hoje puxa briga), e se a pausa em 20 min derruba a retenção de um app novo.
+Nenhum dos dois é código; são dois números.
+
+---
+
+### O plano original deste item, para referência
+
+**Estado anterior:** por fazer. É o maior item, e o último de propósito.
 
 **Não dá para recomendar sem sinal.** Até agora o app não guardava nada sobre o
 que a pessoa gosta. Curtida e comentário acabaram de nascer (commit `639c04d`) e
