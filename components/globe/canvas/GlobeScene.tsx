@@ -263,8 +263,20 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
         minDistance={1.7}
         maxDistance={15.0}
         enableDamping={true}
-        dampingFactor={0.02}
-        rotateSpeed={0.5}
+        /*
+         * O AMORTECIMENTO ERA O "DELAY" AO GIRAR.
+         *
+         * Com 0,02, so' 2% do movimento pendente entra por quadro: o globo fica
+         * ATRAS do dedo enquanto voce arrasta e continua deslizando por
+         * segundos depois de soltar. Foi relatado exatamente assim — "um delay,
+         * um peso para girar". O padrao do three.js e' 0,05; em 0,1 o globo
+         * responde no toque e ainda desliza suave ao soltar.
+         *
+         * `rotateSpeed` sobe junto: com 0,5 era preciso arrastar o dobro da
+         * tela para dar a mesma volta, o que tambem le como "pesado".
+         */
+        dampingFactor={0.1}
+        rotateSpeed={0.75}
       />
     </>
   );

@@ -91,7 +91,9 @@ const AtmosphereGlow = () => {
 
   return (
     <mesh ref={meshRef} scale={1.04}> {/* 4% maior que o globo */}
-      <sphereGeometry args={[SPHERE_RADIUS, 64, 64]} />
+      {/* 32 segmentos bastam: e' um brilho suave, sem detalhe para preservar,
+          e a esfera de 64 gastava o quadruplo de vertices para o mesmo efeito. */}
+      <sphereGeometry args={[SPHERE_RADIUS, 32, 32]} />
       <atmosphereMaterial
         key="atmosphere-material"
         transparent={true} // Habilita transparência
