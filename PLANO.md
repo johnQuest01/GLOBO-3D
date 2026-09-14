@@ -194,6 +194,13 @@ teste, com arquivos reais.
       alarme, não uma publicação. Toca uma vez, do começo ao fim
 - [x] borda azul arredondada, e um pouco menor — pedido seu
 
+- [x] ~~o vídeo no feed não tinha som~~ — era mudo de propósito (som que começa
+      sozinho enquanto se rola é o que faz fechar o app), mas som que a pessoa
+      PEDIU tem de continuar valendo. Agora: começa mudo, um toque no vídeo
+      liga, e a escolha vale para os vídeos seguintes do feed — como TikTok e
+      Instagram. De quebra, o painel de baixo (autor + legenda) engolia o toque
+      sobre o vídeo; ficou transparente ao toque, com os botões clicáveis
+
 - [ ] **Vercel: branch de produção** — falta você clicar em
       Settings → Git → Production Branch → `globo/lod-luzes-fronteiras`.
       A API do Vercel recusa esse campo; é clique manual.

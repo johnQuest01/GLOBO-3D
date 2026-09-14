@@ -214,9 +214,14 @@ const MidiaDoPost: FC<{
   post: Post;
   visivel: boolean;
   perto: boolean;
-}> = ({ post, visivel, perto }) => {
+  /** A pessoa já pediu som neste feed? Vale para todos os vídeos dele. */
+  comSom: boolean;
+  onSom: (querSom: boolean) => void;
+}> = ({ post, visivel, perto, comSom, onSom }) => {
   const [url, setUrl] = useState<string | null>(null);
   const [cartaz, setCartaz] = useState<string | null>(null);
+  /** O navegador recusou som fora de um toque: está tocando mudo à força. */
+  const [mudoForcado, setMudoForcado] = useState(false);
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
   /*
@@ -246,12 +251,54 @@ const MidiaDoPost: FC<{
     };
   }, [perto, url, post.midiaChave]);
 
+  /*
+   * COMEÇA MUDO, E O TOQUE LIGA — como o TikTok e o Instagram, e pelo motivo
+   * deles. Som que começa sozinho enquanto a pessoa rola é o que faz fechar o
+   * aplicativo no ônibus; mas som que a pessoa PEDIU tem de continuar valendo
+   * no vídeo seguinte, senão cada publicação vira um pedido novo.
+   *
+   * O navegador do celular pode recusar som fora de um toque, mesmo depois de
+   * a pessoa já ter pedido uma vez (no iPhone, cada `<video>` novo precisa do
+   * seu próprio toque). Nesse caso o vídeo toca mudo e o selo diz isso — e o
+   * próximo toque, que é um toque de verdade, liga.
+   */
   useEffect(() => {
     const v = videoRef.current;
     if (!v) return;
-    if (visivel) void v.play().catch(() => undefined);
-    else v.pause();
-  }, [visivel, url]);
+    if (!visivel) {
+      v.pause();
+      return;
+    }
+    v.muted = !comSom;
+    v.volume = 1;
+    void v
+      .play()
+      .then(() => setMudoForcado(comSom && v.muted))
+      .catch(() => {
+        v.muted = true;
+        setMudoForcado(comSom);
+        void v.play().catch(() => undefined);
+      });
+  }, [visivel, url, comSom]);
+
+  /** O toque no vídeo: liga o som (dentro do gesto, que é o que vale). */
+  const alternarSom = () => {
+    const v = videoRef.current;
+    if (!v) return;
+    const querSom = v.muted;
+    v.muted = !querSom;
+    if (querSom) {
+      v.volume = 1;
+      void v
+        .play()
+        .then(() => setMudoForcado(false))
+        .catch(() => {
+          v.muted = true;
+          setMudoForcado(true);
+        });
+    }
+    onSom(querSom);
+  };
 
   if (post.kind === "texto" || !post.midiaChave) {
     /*
@@ -275,9 +322,17 @@ const MidiaDoPost: FC<{
     );
   }
 
+  const ehVideo = post.kind === "video";
+  const semSom = !comSom || mudoForcado;
+
   return (
-    <div className="flex h-full w-full items-center justify-center bg-black">
-      {url && post.kind === "video" && (
+    <div
+      className="relative flex h-full w-full items-center justify-center bg-black"
+      onClick={ehVideo ? alternarSom : undefined}
+      role={ehVideo ? "button" : undefined}
+      aria-label={ehVideo ? (semSom ? "Ligar o som" : "Tirar o som") : undefined}
+    >
+      {url && ehVideo && (
         <video
           ref={videoRef}
           src={url}
@@ -287,6 +342,39 @@ const MidiaDoPost: FC<{
           playsInline
           className="h-full w-full object-contain"
         />
+      )}
+
+      {/*
+        O SELO DE SOM fica onde o dedo não cobre nada: canto superior esquerdo,
+        abaixo das abas. Ele diz o estado — mudo ou com som — e é o mesmo toque
+        do vídeo inteiro; existe como aviso, não como o único alvo.
+      */}
+      {url && ehVideo && (
+        <span
+          className={`pointer-events-none absolute left-4 top-16 flex items-center gap-1.5 rounded-full px-2.5 py-1.5 text-[11px] font-medium backdrop-blur ${
+            semSom
+              ? "bg-slate-950/70 text-white/85 ring-1 ring-white/20"
+              : "bg-sky-500/25 text-sky-100 ring-1 ring-sky-300/40"
+          }`}
+        >
+          {semSom ? (
+            <>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9">
+                <path d="M4 10v4h3l5 4V6l-5 4H4z" strokeLinejoin="round" />
+                <path d="M17 9l4 6M21 9l-4 6" strokeLinecap="round" />
+              </svg>
+              toque para ouvir
+            </>
+          ) : (
+            <>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9">
+                <path d="M4 10v4h3l5 4V6l-5 4H4z" strokeLinejoin="round" />
+                <path d="M17 9a4 4 0 0 1 0 6M19.5 6.5a8 8 0 0 1 0 11" strokeLinecap="round" />
+              </svg>
+              com som
+            </>
+          )}
+        </span>
       )}
       {url && post.kind === "imagem" && (
         // eslint-disable-next-line @next/next/no-img-element
@@ -384,6 +472,11 @@ const LinhaDoTempo: FC<Props> = ({
   const [preparo, setPreparo] = useState<number | null>(null);
   /** Qual publicacao esta' com os comentarios abertos. */
   const [comentando, setComentando] = useState<string | null>(null);
+  /**
+   * A pessoa pediu som neste feed. Uma escolha só, para o feed inteiro: cada
+   * vídeo que entra na tela respeita o que foi decidido no anterior.
+   */
+  const [somNoFeed, setSomNoFeed] = useState(false);
   const arquivoRef = useRef<HTMLInputElement | null>(null);
 
   const [denunciando, setDenunciando] = useState<Post | null>(null);
@@ -1081,8 +1174,10 @@ const LinhaDoTempo: FC<Props> = ({
             >
               <MidiaDoPost
                 post={post}
-                visivel={i === atual}
+                visivel={i === atual && !minimizado}
                 perto={Math.abs(i - atual) <= 1}
+                comSom={somNoFeed}
+                onSom={setSomNoFeed}
               />
 
               {/* O véu só embaixo: o texto precisa de contraste, a foto não
@@ -1090,8 +1185,16 @@ const LinhaDoTempo: FC<Props> = ({
               <div className="pointer-events-none absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-black/85 to-transparent" />
 
               {/* Quem publicou, e de onde. */}
-              <div className="absolute inset-x-0 bottom-0 p-4 pb-[max(1.25rem,env(safe-area-inset-bottom))]">
-                <div className="flex items-end gap-3">
+              {/*
+                O PAINEL DE BAIXO É TRANSPARENTE AO TOQUE. Ele cobre o terço
+                inferior do vídeo — e engolia o toque que deveria ligar o som,
+                descoberto com `elementFromPoint`. `pointer-events-none` no
+                painel e `pointer-events-auto` no que é clicável dentro dele:
+                o vídeo recebe o toque onde não há botão, e os botões continuam
+                botões.
+              */}
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 p-4 pb-[max(1.25rem,env(safe-area-inset-bottom))]">
+                <div className="pointer-events-auto flex items-end gap-3">
                   <div className="min-w-0 flex-1">
                     <button
                       type="button"
