@@ -59,6 +59,29 @@ export const PESOS = {
   jaVisto: 0.5,
   /** Acima disto, o tempo por vista para de somar (uma aba esquecida aberta). */
   tetoSegundosPorVista: 60,
+
+  /*
+   * EXPLORAÇÃO — o que um feed com zero usuários mais precisa.
+   *
+   * Sem isto, o algoritmo tem um defeito de nascença: uma publicação nova tem
+   * zero vistas, logo zero PRENDE, logo nunca sobe, logo nunca é vista, logo
+   * continua com zero. O rico fica rico. O TikTok resolve isso dando a TODO
+   * vídeo novo uma cota garantida de exibições antes de julgá-lo — e é essa
+   * cota, mais do que a fórmula, o segredo dele. Aqui: uma publicação com
+   * menos de `explorarAte` vistas recebe um bônus que encolhe a cada vista,
+   * até zerar. Ela ganha a chance; o que fizer com ela é com ela.
+   */
+  explora: 4.0,
+  explorarAte: 8,
+
+  /*
+   * DIVERSIDADE — o mesmo autor nunca em dois seguidos, o mesmo país nunca em
+   * três. Um feed que maximiza nota pura mostra cinco posts da mesma pessoa
+   * em fila quando ela está prendendo, e isso é o jeito mais rápido de a
+   * pessoa sentir que "só tem isso aqui" e fechar. Não muda a nota; muda a
+   * ORDEM depois da nota.
+   */
+  mesmoPaisSeguidosMax: 2,
 } as const;
 
 const HALF_LIFE_DAYS = 45;
@@ -72,6 +95,7 @@ export interface PostRanqueado extends Post {
     social: number;
     afinidade: number;
     frescor: number;
+    explora: number;
     jaVisto: boolean;
   };
 }
@@ -101,6 +125,7 @@ function montar(l: Record<string, unknown>): PostRanqueado {
       social: Number(l.p_social ?? 0),
       afinidade: Number(l.p_afinidade ?? 0),
       frescor: Number(l.p_frescor ?? 0),
+      explora: Number(l.p_explora ?? 0),
       jaVisto: Boolean(l.ja_visto),
     },
   };
@@ -170,6 +195,8 @@ export async function feedParaVoce(
           + ${P.afinidadeAutor}::float8  * coalesce(a.score, 0))) as p_afinidade,
         ${P.frescor}::float8 * power(0.5,
             extract(epoch from (now() - c.created_at)) / (${P.frescorMeiaVidaHoras}::float8 * 3600)) as p_frescor,
+        ${P.explora}::float8 * greatest(0,
+            1 - c.vistas::float8 / ${P.explorarAte}::float8) as p_explora,
         (v.ref_id is not null) as ja_visto
         from cand c
         left join pref r on r.dimension = 'region' and r.value = c.pais
@@ -177,12 +204,48 @@ export async function feedParaVoce(
         left join vistos v on v.ref_id = c.id::text
     )
     select *,
-           (p_prende + p_social + p_afinidade + p_frescor)
+           (p_prende + p_social + p_afinidade + p_frescor + p_explora)
              * (case when ja_visto then ${P.jaVisto}::float8 else 1.0 end) as nota
       from notas
      order by nota desc, created_at desc
      limit ${Math.min(Math.max(1, limite), 100)}
   `) as Record<string, unknown>[];
 
-  return linhas.map(montar);
+  return diversificar(linhas.map(montar));
+}
+
+/**
+ * Reordena SEM mudar notas: nunca o mesmo autor em dois seguidos, nunca o
+ * mesmo país mais de `mesmoPaisSeguidosMax` vezes em fila.
+ *
+ * O ALGORITMO É GULOSO, de propósito: a cada posição pega o primeiro da lista
+ * ordenada que não quebra a regra; se nenhum serve, pega o melhor mesmo assim.
+ * Uma solução "ótima" custaria mais e ninguém veria a diferença — a regra é
+ * para o olho não cansar, não para um teorema.
+ */
+function diversificar(ordenados: PostRanqueado[]): PostRanqueado[] {
+  const resto = [...ordenados];
+  const saida: PostRanqueado[] = [];
+  while (resto.length > 0) {
+    const anterior = saida[saida.length - 1];
+    const ultimosPaises = saida.slice(-PESOS.mesmoPaisSeguidosMax).map((p) => p.pais);
+    const paisEsgotado =
+      ultimosPaises.length === PESOS.mesmoPaisSeguidosMax &&
+      ultimosPaises.every((p) => p !== null && p === ultimosPaises[0]);
+    /*
+     * TRÊS TENTATIVAS, DA MAIS EXIGENTE À MAIS FROUXA: as duas regras; só a
+     * do autor; qualquer um. A do autor vale mais que a do país — ver a mesma
+     * pessoa duas vezes seguidas incomoda mais que ver o mesmo país três.
+     * Sem esta ordem, quando o país esgotava e só sobrava gente daquele país,
+     * o recuo cego pegava o primeiro da lista, que podia ser o MESMO autor de
+     * novo, com outro autor logo ali disponível.
+     */
+    const outroAutor = (p: PostRanqueado) => !anterior || p.autor !== anterior.autor;
+    const outroPais = (p: PostRanqueado) => !(paisEsgotado && p.pais === ultimosPaises[0]);
+    let i = resto.findIndex((p) => outroAutor(p) && outroPais(p));
+    if (i < 0) i = resto.findIndex(outroAutor);
+    if (i < 0) i = 0;
+    saida.push(resto.splice(i, 1)[0]!);
+  }
+  return saida;
 }

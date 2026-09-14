@@ -654,6 +654,12 @@ const LinhaDoTempo: FC<Props> = ({
    * bolso não é tempo de feed, e contá-lo tornaria o aviso mentiroso — e um
    * aviso mentiroso é ignorado para sempre.
    */
+  /**
+   * O FREIO ESTÁ DESLIGADO POR ENQUANTO, a pedido. Um app com zero usuários
+   * precisa primeiro de gente ficando; a pausa volta quando houver uso real
+   * para medir o que ela custa e o que ela devolve. Ligar é um booleano.
+   */
+  const FREIO_LIGADO = false;
   const [segundosSeguidos, setSegundosSeguidos] = useState(0);
   const [minutosHoje, setMinutosHoje] = useState(0);
   const [pausaAberta, setPausaAberta] = useState(false);
@@ -691,7 +697,7 @@ const LinhaDoTempo: FC<Props> = ({
       setMinutosHoje(Math.round(seg / 60));
       setSegundosSeguidos((s) => {
         const novo = s + PASSO;
-        if (novo / 60 >= proximaPausaMinRef.current) setPausaAberta(true);
+        if (FREIO_LIGADO && novo / 60 >= proximaPausaMinRef.current) setPausaAberta(true);
         return novo;
       });
     }, PASSO * 1000);

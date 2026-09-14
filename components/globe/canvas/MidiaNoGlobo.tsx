@@ -94,11 +94,11 @@ interface Props {
  * cresce até esbarrar no SEU limite, e nenhum sai da mesma moldura mental — o
  * olho não precisa se reajustar a cada troca na faixa do tempo.
  */
-const ALTURA_MAX_PX = 240;
-const LARGURA_MAX_PX = 270;
+const ALTURA_MAX_PX = 190;
+const LARGURA_MAX_PX = 220;
 /** Nunca mais que isto da tela, que é o que salva o celular. */
-const FATIA_DA_ALTURA = 0.26;
-const FATIA_DA_LARGURA = 0.6;
+const FATIA_DA_ALTURA = 0.21;
+const FATIA_DA_LARGURA = 0.5;
 
 /** O respiro entre o nome do lugar e a miniatura, em unidades. */
 const VAO = 0.4;

@@ -29,6 +29,7 @@ interface Post {
     social: number;
     afinidade: number;
     frescor: number;
+    explora: number;
     jaVisto: boolean;
   };
 }
@@ -158,7 +159,7 @@ export async function suiteParaVoce(base: string): Promise<Suite> {
       const lista = await feed();
       const r = lista.find((p) => p.id === daRussia.id)!;
       igual(r.parcelas!.jaVisto, true, "marcado como visto");
-      const bruta = r.parcelas!.prende + r.parcelas!.social + r.parcelas!.afinidade + r.parcelas!.frescor;
+      const bruta = r.parcelas!.prende + r.parcelas!.social + r.parcelas!.afinidade + r.parcelas!.frescor + r.parcelas!.explora;
       ok(Math.abs(r.nota! - bruta * 0.5) < 0.01, `nota ${r.nota!.toFixed(2)} = metade de ${bruta.toFixed(2)}`);
     });
 
@@ -215,12 +216,48 @@ export async function suiteParaVoce(base: string): Promise<Suite> {
       },
     );
 
+    await s.teste("EXPLORAÇÃO: a publicação nova, sem nenhuma vista, ganha a chance", async () => {
+      /*
+       * O defeito de nascença de um feed destes: zero vistas, zero PRENDE,
+       * nunca sobe, nunca é vista, zero vistas. Sem exploração, com zero
+       * usuários o feed seria só "o mais recente" para sempre.
+       */
+      const lista = await feed();
+      // `doBrasil` só levou uma passada de 400 ms — que não conta. Zero vistas.
+      const nova = lista.find((p) => p.id === doBrasil.id)!;
+      const muitoVista = lista.find((p) => p.id === daRussia.id)!;
+      ok(nova.parcelas!.explora > 0, "a nunca vista recebe bônus");
+      ok(
+        muitoVista.parcelas!.explora < nova.parcelas!.explora,
+        `a vista 3× ganha menos bônus (${muitoVista.parcelas!.explora.toFixed(2)}) que a nova (${nova.parcelas!.explora.toFixed(2)})`,
+      );
+      return "quem nunca foi vista recebe a chance";
+    });
+
+    await s.teste("DIVERSIDADE: nunca o mesmo autor em dois seguidos", async () => {
+      /*
+       * A regra tem um recuo honesto: quando só sobram posts da mesma pessoa,
+       * repetir é inevitável. Então o que se exige é que uma repetição só
+       * aconteça quando NÃO havia alternativa — todo post dali para a frente
+       * é do mesmo autor.
+       */
+      const lista = await feed();
+      let repeticoesEvitaveis = 0;
+      for (let i = 1; i < lista.length; i++) {
+        if (lista[i]!.autor !== lista[i - 1]!.autor) continue;
+        const haviaOutro = lista.slice(i).some((p) => p.autor !== lista[i - 1]!.autor);
+        if (haviaOutro) repeticoesEvitaveis++;
+      }
+      igual(repeticoesEvitaveis, 0, "repetições que tinham alternativa");
+      return `${lista.length} posts, nenhuma repetição evitável de autor`;
+    });
+
     await s.teste("AVALIAÇÃO: os pesos, impressos ao lado do que produzem", async () => {
       const { PESOS } = await import("../../lib/db/paraVoce");
       const lista = (await feed()).slice(0, 5);
       const linhas = lista.map(
         (p, i) =>
-          `${i + 1}º ${(p.body ?? "").padEnd(26)} nota ${p.nota!.toFixed(2)}  prende ${p.parcelas!.prende.toFixed(1)} social ${p.parcelas!.social.toFixed(1)} afin ${p.parcelas!.afinidade.toFixed(1)} fresc ${p.parcelas!.frescor.toFixed(1)}${p.parcelas!.jaVisto ? " (visto ×0.5)" : ""}`,
+          `${i + 1}º ${(p.body ?? "").padEnd(26)} nota ${p.nota!.toFixed(2)}  prende ${p.parcelas!.prende.toFixed(1)} social ${p.parcelas!.social.toFixed(1)} afin ${p.parcelas!.afinidade.toFixed(1)} fresc ${p.parcelas!.frescor.toFixed(1)} explora ${p.parcelas!.explora.toFixed(1)}${p.parcelas!.jaVisto ? " (visto ×0.5)" : ""}`,
       );
       return `pesos ${JSON.stringify(PESOS)}\n        ${linhas.join("\n        ")}`;
     });

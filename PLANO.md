@@ -123,9 +123,20 @@ comentários "discordo!" sobe para 2º lugar **sem uma curtida sequer**; a
 publicação quieta do mesmo autor, mesmo lugar, mesmo minuto, fica em 5º. É o
 algoritmo funcionando como desenhado — e é exatamente o efeito da objeção.
 
-**O freio** (`PausaPanel`): a cada 20 minutos seguidos de feed, uma tela cobre
-tudo e devolve a pessoa para o globo. O tempo de hoje fica no navegador. É um
-número só e ajustamos com dados.
+**O freio** (`PausaPanel`): existe, mas está **desligado** (`FREIO_LIGADO =
+false` em `LinhaDoTempo.tsx`), a pedido — um app com zero usuários precisa
+primeiro de gente ficando. Liga com um booleano quando houver uso para medir.
+
+**O que foi adicionado depois da primeira versão, porque com zero usuários é o
+que mais importa:**
+
+- **Exploração** — toda publicação com menos de 8 vistas ganha um bônus que
+  encolhe a cada vista. Sem isso o feed tinha um defeito de nascença: zero
+  vistas → zero "prende" → nunca sobe → zero vistas. O rico fica rico. É a cota
+  garantida de exibições que o TikTok dá a todo vídeo novo — e é isso, mais que
+  a fórmula, o segredo dele.
+- **Diversidade** — nunca o mesmo autor em dois seguidos, nunca o mesmo país em
+  três. Não muda a nota; muda a ordem depois da nota.
 
 **O que decidir depois, olhando uso real:** se o peso de comentário fica em 3
 (hoje puxa briga), e se a pausa em 20 min derruba a retenção de um app novo.

@@ -7,9 +7,10 @@ import {
   SetStateAction,
   useMemo,
   useRef,
+  useEffect,
 } from 'react';
 import { OrbitControls } from '@react-three/drei';
-import { useFrame } from '@react-three/fiber';
+import { useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls as OrbitControlsImpl } from 'three-stdlib';
 import * as THREE from 'three';
 
@@ -247,6 +248,8 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
         )}
       </Suspense>
 
+      <EnquadramentoInicial />
+
       <OrbitControls
         ref={controlsRef}
         enableZoom={isInteractive}
@@ -263,3 +266,40 @@ const GlobeScene: FC<GlobeSceneProps> = (props) => {
 };
 
 export default GlobeScene;
+
+/**
+ * O tamanho do globo ao entrar — igual no computador e no celular.
+ *
+ * A REFERÊNCIA SÃO DUAS CAPTURAS de tela (pasta globo.tamanho/): no computador
+ * o globo ocupa uns 66% da ALTURA; no celular, uns 79% da LARGURA. São
+ * proporções diferentes porque a tela limita em eixos diferentes — deitada,
+ * o que sobra é largura; em pé, o que sobra é altura. Uma distância fixa de
+ * câmera (o `position: [0, 0, 3]` de antes) dava um globo que estourava a
+ * tela no computador e ficava pequeno demais no celular.
+ *
+ * A CONTA: o raio angular aparente de uma esfera é asin(R / d). Queremos que
+ * ele seja a fração pedida do meio-campo de visão no eixo limitante; d sai
+ * disso. Roda UMA vez, ao montar — depois a câmera é de quem estiver com a
+ * mão nela, e uma rotação de tela no meio do uso não deve puxá-la de volta.
+ */
+const FRACAO_DA_ALTURA_DEITADO = 0.66;
+const FRACAO_DA_LARGURA_EM_PE = 0.79;
+const RAIO_DO_GLOBO = 1.5;
+
+function EnquadramentoInicial() {
+  const { camera, size } = useThree();
+  useEffect(() => {
+    const cam = camera as THREE.PerspectiveCamera;
+    const meioV = THREE.MathUtils.degToRad(cam.fov / 2);
+    const meioH = Math.atan(Math.tan(meioV) * (size.width / Math.max(1, size.height)));
+    const deitado = size.width >= size.height;
+    const alvo = deitado
+      ? FRACAO_DA_ALTURA_DEITADO * meioV
+      : FRACAO_DA_LARGURA_EM_PE * meioH;
+    const d = RAIO_DO_GLOBO / Math.sin(alvo);
+    cam.position.setLength(THREE.MathUtils.clamp(d, 1.7, 15));
+    cam.updateProjectionMatrix();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  return null;
+}
