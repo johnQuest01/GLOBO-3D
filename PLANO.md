@@ -258,6 +258,14 @@ teste, com arquivos reais.
       na cor do instante. Com muitas publicações os quadrados encolhem até 22
       px; abaixo disso voltam a ser barras, porque 12 px com foto é ruído
 
+- [x] ~~"online" do chat não atualizava sem recarregar~~ — a consulta ao
+      diretório era feita uma vez ao abrir a conversa (uma foto, não um
+      estado), e `presence:update` só cobre a mesma célula de 2 km. Agora:
+      consulta a cada 10 s com conversa/lista na tela, mensagem ou digitação
+      recebida dispara na hora, e a volta do segundo plano reconecta sem
+      esperar o backoff. Medido em produção: entrega ao vivo em 203 ms;
+      bolinha verde 2 s depois de abrir, cinza sozinha quando o outro sai
+
 - [ ] **Vercel: branch de produção** — falta você clicar em
       Settings → Git → Production Branch → `globo/lod-luzes-fronteiras`.
       A API do Vercel recusa esse campo; é clique manual.
