@@ -283,9 +283,17 @@ const NoticiasPanel: FC<Props> = ({
           return;
         }
         if (pronta.recusa === "nao-decodifica") {
+          /*
+           * A FRASE TEM DE CORRESPONDER AO QUE A PESSOA ESCOLHEU. Esta recusa
+           * serve para foto e para vídeo, e dizia "tente exportar como MP4"
+           * nos dois casos — conselho impossível de seguir para quem escolheu
+           * uma foto.
+           */
           setErros({
             midia:
-              "Este navegador não consegue abrir esse arquivo. Tente exportar como MP4.",
+              kind === "video"
+                ? "Este navegador não consegue abrir esse vídeo. Tente exportar como MP4."
+                : "Não consegui abrir essa foto. Tire uma captura de tela dela e publique a captura — ou mande em JPG.",
           });
           return;
         }

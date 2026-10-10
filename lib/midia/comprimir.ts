@@ -144,6 +144,69 @@ function suportaWebp(): boolean {
 // Imagem
 // ---------------------------------------------------------------------------
 
+interface ImagemLida {
+  desenhavel: CanvasImageSource;
+  largura: number;
+  altura: number;
+  soltar: () => void;
+}
+
+/**
+ * Lê a imagem pelo caminho rápido e, se ele falhar, pelo caminho que funciona.
+ *
+ * `createImageBitmap` é o preferido porque decodifica fora da linha principal
+ * — a tela não trava enquanto uma foto de 12 megapixels é aberta. Mas ele é
+ * mais exigente que o resto do navegador sobre QUAIS formatos aceita, e o
+ * `<img>` aceita tudo que aquele navegador sabe mostrar. Um é rápido, o outro
+ * é completo; usar os dois nesta ordem é ter as duas coisas.
+ */
+async function lerImagem(arquivo: File): Promise<ImagemLida | null> {
+  const bitmap = await createImageBitmap(arquivo).catch(() => null);
+  if (bitmap) {
+    return {
+      desenhavel: bitmap,
+      largura: bitmap.width,
+      altura: bitmap.height,
+      soltar: () => bitmap.close(),
+    };
+  }
+
+  const endereco = URL.createObjectURL(arquivo);
+  try {
+    const img = await new Promise<HTMLImageElement | null>((pronto) => {
+      const el = new Image();
+      // Uma foto que nunca carrega não pode prender a publicação para sempre.
+      const prazo = setTimeout(() => pronto(null), PACIENCIA_MS);
+      el.onload = () => {
+        clearTimeout(prazo);
+        pronto(el);
+      };
+      el.onerror = () => {
+        clearTimeout(prazo);
+        pronto(null);
+      };
+      el.src = endereco;
+    });
+
+    // `naturalWidth` zero é um carregamento que "deu certo" sem imagem nenhuma
+    // dentro — desenhar isso produziria um retângulo em branco publicado.
+    if (!img || !img.naturalWidth || !img.naturalHeight) {
+      URL.revokeObjectURL(endereco);
+      return null;
+    }
+
+    return {
+      desenhavel: img,
+      largura: img.naturalWidth,
+      altura: img.naturalHeight,
+      soltar: () => URL.revokeObjectURL(endereco),
+    };
+  } catch {
+    URL.revokeObjectURL(endereco);
+    return null;
+  }
+}
+
 /**
  * Uma foto de celular tem 12 megapixels e uns 5 MB. Numa tela ela nunca passa
  * de 1600 pixels de lado — o resto é peso que ninguém vê. Encolher aqui corta
@@ -162,27 +225,57 @@ async function encolherImagem(arquivo: File): Promise<MidiaPronta> {
   // não é a mesma coisa que o GIF que a pessoa escolheu.
   if (arquivo.type === 'image/gif') return intacto;
 
-  const bitmap = await createImageBitmap(arquivo).catch(() => null);
-  if (!bitmap) return { ...intacto, recusa: 'nao-decodifica' };
+  /*
+   * DUAS PORTAS PARA LER A IMAGEM, e a segunda existe por um defeito real:
+   * publicar uma foto respondia "este navegador não consegue abrir esse
+   * arquivo, tente exportar como MP4" — frase de vídeo, numa foto.
+   *
+   * A causa é que `createImageBitmap` recusa formatos que o MESMO navegador
+   * desenha sem dificuldade num `<img>`. O caso que importa é o iPhone: a
+   * câmera grava em HEIC por padrão, o Safari mostra HEIC numa tag `<img>` e
+   * engasga no `createImageBitmap`. Ou seja, a foto que a pessoa estava vendo
+   * na tela era recusada na hora de publicar.
+   *
+   * Então quando a primeira porta fecha, tentamos a segunda: um `<img>` com
+   * endereço local. O que ele conseguir desenhar, o canvas converte — e a
+   * conversão resolve de brinde o outro lado do problema, porque um HEIC
+   * publicado cru não abriria no Android de quem fosse ver.
+   */
+  const fonte = await lerImagem(arquivo);
+  if (!fonte) return { ...intacto, recusa: 'nao-decodifica' };
 
-  const { largura, altura } = caber(bitmap.width, bitmap.height, IMAGEM_LADO_MAX);
+  const { largura, altura } = caber(fonte.largura, fonte.altura, IMAGEM_LADO_MAX);
   const tela = document.createElement('canvas');
   tela.width = largura;
   tela.height = altura;
   const pincel = tela.getContext('2d');
   if (!pincel) {
-    bitmap.close();
+    fonte.soltar();
     return intacto;
   }
-  pincel.drawImage(bitmap, 0, 0, largura, altura);
-  bitmap.close();
+  pincel.drawImage(fonte.desenhavel, 0, 0, largura, altura);
+  fonte.soltar();
 
   const mime = suportaWebp() ? 'image/webp' : 'image/jpeg';
   const blob = await paraBlob(tela, mime, IMAGEM_QUALIDADE);
 
-  // NUNCA PIORAR. Uma imagem já otimizada pode sair maior do que entrou; nesse
-  // caso o original é a melhor versão que temos.
-  if (!blob || blob.size >= arquivo.size) return intacto;
+  /*
+   * NUNCA PIORAR — com uma exceção que é mais importante que a regra.
+   *
+   * A regra: uma imagem já otimizada pode sair maior do que entrou, e aí o
+   * original é a melhor versão que temos.
+   *
+   * A EXCEÇÃO: formato que só este navegador lê. HEIC do iPhone é o caso — ele
+   * comprime tão melhor que o JPEG convertido quase sempre sai MAIOR, então a
+   * regra escolheria o original... e publicaria uma foto que não abre no
+   * Android de ninguém. Tamanho é otimização; abrir é requisito. Quando o
+   * formato de entrada não é um dos que a web inteira lê, vai o convertido,
+   * custe os bytes que custar.
+   */
+  const LIDOS_POR_TODOS = /^image\/(jpeg|jpg|png|webp|gif|avif)$/i;
+  const formatoDeTodos = LIDOS_POR_TODOS.test(arquivo.type);
+  if (!blob) return intacto;
+  if (blob.size >= arquivo.size && formatoDeTodos) return intacto;
 
   return {
     blob,
