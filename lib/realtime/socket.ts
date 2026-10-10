@@ -28,6 +28,8 @@ import type {
  * porém anônima: aparece no globo, mas não tem nome público nem caixa postal.
  */
 
+import { CHAT_LIGADO } from './interruptor';
+
 export type RealtimeSocket = Socket<ServerToClient, ClientToServer>;
 
 const URL = process.env.NEXT_PUBLIC_REALTIME_URL?.trim();
@@ -48,8 +50,15 @@ let singleton: RealtimeSocket | null = null;
  */
 let identidadeDaConexao: string | null = null;
 
-/** Sem a variável configurada, o app inteiro segue funcionando sem realtime. */
-export const isRealtimeEnabled = Boolean(URL);
+/**
+ * Sem a variável configurada — ou com o interruptor desligado — o app inteiro
+ * segue funcionando sem tempo real.
+ *
+ * As duas condições moram aqui de propósito: é o único ponto por onde o resto
+ * do aplicativo pergunta se pode contar com o socket, então desligar aqui
+ * desliga em todo lugar, sem caçar chamada por chamada.
+ */
+export const isRealtimeEnabled = Boolean(URL) && CHAT_LIGADO;
 
 /**
  * Pega um crachá novo.
@@ -79,7 +88,9 @@ async function pegarToken(): Promise<string | null> {
 export async function connectSocket(
   identidade = 'anon',
 ): Promise<RealtimeSocket | null> {
-  if (!URL) return null;
+  // O interruptor vem ANTES de tudo: desligado, nem o pedido do crachá sai —
+  // e era esse pedido que acontecia para todo visitante que só queria ler.
+  if (!CHAT_LIGADO || !URL) return null;
 
   // Mesma pessoa de antes: a conexão que já existe serve.
   if (singleton && identidadeDaConexao === identidade) return singleton;

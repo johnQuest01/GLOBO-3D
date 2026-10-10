@@ -670,24 +670,39 @@ export default function GlobeCanvas() {
             visivel={states.isMainUiVisible && !muralAberto}
             bloqueado={states.isAnyPopupOpen}
             acoes={[
+              /*
+                A LINHA DO TEMPO NÃO DEPENDE DE TEMPO REAL, e estava dentro da
+                condição que depende.
+
+                Era um laço escondido: desligar a conversa apagava o menu
+                inteiro — notícias, mural, tudo —, porque o item do mural
+                morava dentro do `realtime.estado.ligado` junto com os que
+                precisam mesmo do socket. Com o interruptor desligado, o app
+                ficaria sem o caminho para a única coisa que ele continua
+                fazendo.
+
+                Agora o mural fica de fora da condição, e só o que de fato
+                conversa pelo socket — mensagens, sinais e a busca por
+                nickname, que viaja em `directory:find` — continua atrás dela.
+              */
+                {
+                  id: 'mural',
+                  rotulo: 'Linha do tempo',
+                  descricao: 'O que o mundo publicou hoje',
+                  cor: '#059669',
+                  onSelecionar: () =>
+                    precisaDeNickname
+                      ? setPedindoNickname(true)
+                      : setMuralAberto(true),
+                  icone: (
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                      <rect x="3" y="4" width="18" height="16" rx="2" />
+                      <path d="M7 9h10M7 13h6" strokeLinecap="round" />
+                    </svg>
+                  ),
+                },
               ...(realtime.estado.ligado
                 ? [
-                    {
-                      id: 'mural',
-                      rotulo: 'Linha do tempo',
-                      descricao: 'O que o mundo publicou hoje',
-                      cor: '#059669',
-                      onSelecionar: () =>
-                        precisaDeNickname
-                          ? setPedindoNickname(true)
-                          : setMuralAberto(true),
-                      icone: (
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                          <rect x="3" y="4" width="18" height="16" rx="2" />
-                          <path d="M7 9h10M7 13h6" strokeLinecap="round" />
-                        </svg>
-                      ),
-                    },
                     {
                       id: 'conversas',
                       rotulo: 'Conversas',
