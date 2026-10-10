@@ -10,6 +10,7 @@ import {
   listarNoticias,
   minhasNoticias,
   noticiasDe,
+  noticiasDoMundo,
   noticiasLigadas,
   publicarNoticia,
 } from "@/lib/db/noticias";
@@ -35,7 +36,7 @@ export const runtime = "nodejs";
 
 const TITULO_MAX = 140;
 const CORPO_MAX = 4000;
-const ALCANCES: Alcance[] = ["cidade", "estado", "pais"];
+const ALCANCES: Alcance[] = ["cidade", "estado", "pais", "mundo"];
 const TIPOS = ["texto", "imagem", "video"] as const;
 const CHAVE_VALIDA =
   /^m\/\d{4}-\d{2}-\d{2}\/[A-Za-z0-9_-]{20,48}\.[a-z0-9]{2,5}$/;
@@ -60,6 +61,21 @@ export async function GET(request: Request) {
   }
 
   const url = new URL(request.url);
+
+  /*
+   * ?mundo=1 — a linha do tempo mundial, sem filtro de região.
+   *
+   * A tela regional continua sendo a de cima (`listarNoticias`), onde a
+   * promessa é "o que chega até mim". Aqui a promessa é outra: o que está
+   * acontecendo, em qualquer lugar.
+   */
+  if (url.searchParams.get("mundo") === "1") {
+    return NextResponse.json({
+      ok: true,
+      noticias: await noticiasDoMundo(),
+      assuntos: ASSUNTOS,
+    });
+  }
 
   if (url.searchParams.get("minhas") === "1") {
     return NextResponse.json({

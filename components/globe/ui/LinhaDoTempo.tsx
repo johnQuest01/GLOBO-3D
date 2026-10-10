@@ -22,6 +22,7 @@ import {
 } from "@/lib/globo/videoDoGlobo";
 import { prepararMidia, VIDEO_SEG_MAX } from "@/lib/midia/comprimir";
 import ComentariosPanel from "./ComentariosPanel";
+import PreviaDaMidia from "./PreviaDaMidia";
 import PausaPanel from "./PausaPanel";
 import { getClientId, useBehaviorTracker } from "@/app/hooks/useBehaviorTracker";
 
@@ -69,7 +70,36 @@ interface Post {
   comentarios: number;
   euCurti?: boolean;
   porque?: "lugar" | "pessoa" | "mundo";
+  /**
+   * Só em notícia. O título é o que uma notícia tem e um post de mural não:
+   * ele é a frase que a pessoa lê ANTES de decidir assistir, e por isso vem
+   * em cima, grande, e não como legenda embaixo.
+   */
+  titulo?: string | null;
+  categoria?: string | null;
+  alcance?: string | null;
 }
+
+/** As cores dos assuntos, iguais às da tela de notícias. */
+const COR_DO_ASSUNTO: Record<string, string> = {
+  urgente: "#dc2626",
+  transito: "#ea580c",
+  tempo: "#0284c7",
+  cultura: "#7c3aed",
+  esporte: "#16a34a",
+  economia: "#ca8a04",
+  outro: "#64748b",
+};
+
+const ROTULO_DO_ASSUNTO: Record<string, string> = {
+  urgente: "Urgente",
+  transito: "Trânsito",
+  tempo: "Tempo",
+  cultura: "Cultura",
+  esporte: "Esporte",
+  economia: "Economia",
+  outro: "Outro",
+};
 
 interface LugarSeguido {
   tipo: "pais" | "estado" | "cidade";
@@ -487,7 +517,9 @@ const LinhaDoTempo: FC<Props> = ({
   const [posts, setPosts] = useState<Post[]>([]);
   const [carregando, setCarregando] = useState(false);
   const [aviso, setAviso] = useState<string | null>(null);
-  const [aba, setAba] = useState<"seguindo" | "mundo" | "paravoce">("seguindo");
+  const [aba, setAba] = useState<
+    "seguindo" | "mundo" | "paravoce" | "noticias"
+  >("seguindo");
   const [sigo, setSigo] = useState<OQueSigo | null>(null);
 
   /** Qual post está na tela agora. Índice, porque a faixa precisa dele. */
@@ -542,15 +574,19 @@ const LinhaDoTempo: FC<Props> = ({
 
   // --- Carregar --------------------------------------------------------------
 
-  const carregar = useCallback(async (qual: "seguindo" | "mundo" | "paravoce") => {
+  const carregar = useCallback(async (
+    qual: "seguindo" | "mundo" | "paravoce" | "noticias",
+  ) => {
     setCarregando(true);
     try {
       const r = await fetch(
         qual === "seguindo"
           ? "/api/posts?de=seguindo"
-          : qual === "paravoce"
-            ? `/api/posts?de=paravoce&cliente=${encodeURIComponent(getClientId())}`
-            : "/api/posts",
+          : qual === "noticias"
+            ? "/api/posts?de=noticias"
+            : qual === "paravoce"
+              ? `/api/posts?de=paravoce&cliente=${encodeURIComponent(getClientId())}`
+              : "/api/posts",
       );
       if (!r.ok) {
         setAviso("Não consegui carregar agora.");
@@ -1418,16 +1454,53 @@ const LinhaDoTempo: FC<Props> = ({
                       </span>
                     </button>
 
+                    {/*
+                      O TÍTULO VEM ANTES DE TUDO, e maior.
+
+                      É o que separa notícia de publicação: um post de mural se
+                      explica pela imagem; uma notícia se explica pela frase. A
+                      pessoa lê o título para decidir se assiste — então ele não
+                      pode ser legenda de rodapé, tem de ser a primeira coisa.
+                    */}
+                    {post.titulo && (
+                      <p className="mt-2 text-[17px] font-bold leading-tight text-white">
+                        {post.titulo}
+                      </p>
+                    )}
+
                     {post.body && post.kind !== "texto" && (
                       <p className="mt-2 line-clamp-3 text-[14px] leading-snug text-white/85">
                         {post.body}
                       </p>
                     )}
 
-                    <p className="mt-2 text-[11px] text-white/45">
-                      some em {tempoQueResta(post.expiraEm)}
-                      {post.porque === "mundo" && " · do mundo"}
-                    </p>
+                    {/*
+                      "SOME EM" É DO MURAL, não da notícia. Notícia não vence —
+                      dizer "some em 36500 dias" seria ruído com cara de
+                      informação. No lugar, ela diz o que é: o assunto, e até
+                      onde alcança.
+                    */}
+                    {post.titulo ? (
+                      <p className="mt-2 flex flex-wrap items-center gap-1.5 text-[11px] text-white/45">
+                        {post.categoria && (
+                          <span
+                            className="rounded px-1.5 py-px font-semibold text-white"
+                            style={{
+                              background:
+                                COR_DO_ASSUNTO[post.categoria] ?? COR_DO_ASSUNTO.outro,
+                            }}
+                          >
+                            {ROTULO_DO_ASSUNTO[post.categoria] ?? "Outro"}
+                          </span>
+                        )}
+                        {post.alcance === "mundo" && <span>no mundo todo</span>}
+                      </p>
+                    ) : (
+                      <p className="mt-2 text-[11px] text-white/45">
+                        some em {tempoQueResta(post.expiraEm)}
+                        {post.porque === "mundo" && " · do mundo"}
+                      </p>
+                    )}
                   </div>
 
                   {/* A coluna de ações, à direita, como as pessoas já esperam. */}
@@ -1596,7 +1669,7 @@ const LinhaDoTempo: FC<Props> = ({
 
       {/* Topo: abas e sair. Flutuando, para não roubar altura do vídeo. */}
       <div className="pointer-events-none absolute inset-x-0 top-0 flex items-center gap-1 p-3 pt-[max(0.75rem,env(safe-area-inset-top))]">
-        {(["seguindo", "mundo", "paravoce"] as const).map((qual) => (
+        {(["noticias", "seguindo", "mundo", "paravoce"] as const).map((qual) => (
           <button
             key={qual}
             type="button"
@@ -1607,7 +1680,13 @@ const LinhaDoTempo: FC<Props> = ({
                 : "bg-black/25 text-white/55 hover:text-white/85"
             }`}
           >
-            {qual === "seguindo" ? "Seguindo" : qual === "mundo" ? "Mundo" : "Para você"}
+            {qual === "noticias"
+              ? "Notícias"
+              : qual === "seguindo"
+                ? "Seguindo"
+                : qual === "mundo"
+                  ? "Mundo"
+                  : "Para você"}
           </button>
         ))}
 
@@ -1753,45 +1832,14 @@ const LinhaDoTempo: FC<Props> = ({
             />
 
             {arquivo && (
-              <p className="mt-2 flex items-center gap-2 text-[11px] text-white/60">
-                <span className="truncate">{arquivo.name}</span>
-                <span className="shrink-0 text-white/35">
-                  {(arquivo.size / 1048576).toFixed(1)} MB
-                </span>
-                <button
-                  type="button"
-                  onClick={() => {
-                    setArquivo(null);
-                    if (arquivoRef.current) arquivoRef.current.value = "";
-                  }}
-                  className="shrink-0 text-white/40 hover:text-white/80"
-                >
-                  tirar
-                </button>
-              </p>
-            )}
-
-            {/*
-              O PREPARO PRECISA SER VISÍVEL. Ele acontece em tempo real — um
-              vídeo de um minuto leva um minuto —, e um minuto de tela parada
-              sem explicação é indistinguível de um travamento. A barra e a
-              frase são o que transformam espera em espera.
-            */}
-            {preparo !== null && (
-              <div className="mt-2.5">
-                <div className="flex items-center justify-between text-[11px] text-white/60">
-                  <span>Preparando o vídeo para caber…</span>
-                  <span className="tabular-nums text-white/40">
-                    {Math.round(preparo * 100)}%
-                  </span>
-                </div>
-                <div className="mt-1.5 h-1 overflow-hidden rounded-full bg-white/10">
-                  <div
-                    className="h-full rounded-full bg-emerald-400 transition-[width] duration-200 ease-out"
-                    style={{ width: `${Math.max(2, preparo * 100)}%` }}
-                  />
-                </div>
-              </div>
+              <PreviaDaMidia
+                arquivo={arquivo}
+                preparo={preparo}
+                onTirar={() => {
+                  setArquivo(null);
+                  if (arquivoRef.current) arquivoRef.current.value = "";
+                }}
+              />
             )}
 
             <div className="mt-2 flex items-center gap-2">

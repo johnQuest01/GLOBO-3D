@@ -15,6 +15,7 @@ import { muralDeQuemSegue } from '@/lib/db/seguir';
 import { coordenadaValida } from '@/lib/geo/lugar';
 import { quaisEuCurti } from '@/lib/db/social';
 import { feedParaVoce } from '@/lib/db/paraVoce';
+import { noticiasDoMundo } from '@/lib/db/noticias';
 
 /**
  * O mural do globo.
@@ -100,6 +101,51 @@ export async function GET(request: Request) {
    * da conta: e' por ela que a afinidade foi acumulada. Sem `cliente`, cai no
    * mural normal — o algoritmo nao trava esperando um id.
    */
+  /*
+   * `?de=noticias` — a LINHA DO TEMPO MUNDIAL de noticias, na forma do feed.
+   *
+   * A noticia ja' tem tela propria, em lista. Esta rota existe porque lista e
+   * feed nao sao a mesma coisa: lista se LE, e ler e' um gesto de quem ja'
+   * decidiu se importar; o feed mostra o video em tela cheia, com som, e a
+   * pessoa decide depois de ver. Para uma rede de noticias, e' a diferenca
+   * entre um jornal e a janela.
+   *
+   * A noticia vira um Post com dois campos a mais — `titulo` e `categoria` —,
+   * e `expiraEm` cem anos adiante, que e' como ela ja' nasce no banco: o feed
+   * mostra "some em" so' para o mural.
+   */
+  if (url.searchParams.get('de') === 'noticias') {
+    const noticias = await noticiasDoMundo();
+    const posts = noticias.map((n) => ({
+      id: n.id,
+      autor: n.autor,
+      autorAvatar: n.autorAvatar,
+      kind: n.kind,
+      body: n.corpo,
+      midiaChave: n.midiaChave,
+      cartazChave: n.cartazChave,
+      lat: n.lat,
+      lon: n.lon,
+      lugar: n.lugar,
+      pais: n.pais,
+      estado: n.estado,
+      cidade: n.cidade,
+      criadoEm: n.criadoEm,
+      // Noticia nao vence; o feed usa isto so' para o rotulo "some em".
+      expiraEm: new Date(Date.now() + 3153600000000).toISOString(),
+      curtidas: 0,
+      comentarios: 0,
+      titulo: n.titulo,
+      categoria: n.categoria,
+      alcance: n.alcance,
+    }));
+    return NextResponse.json({
+      ok: true,
+      posts: await comCurtida(posts, session.user.id),
+      proximo: null,
+    });
+  }
+
   if (url.searchParams.get('de') === 'paravoce') {
     const cliente = (url.searchParams.get('cliente') ?? '').trim().slice(0, 80);
     if (cliente) {

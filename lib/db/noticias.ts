@@ -25,7 +25,17 @@ const sql = DATABASE_URL ? neon(DATABASE_URL) : null;
 
 export const noticiasLigadas = Boolean(sql);
 
-export type Alcance = "cidade" | "estado" | "pais";
+/**
+ * Até onde uma notícia alcança.
+ *
+ * `mundo` é a camada que faltava, e ela é o produto: um terremoto, uma
+ * eleição, um carnaval não têm fronteira — e um aplicativo de notícias
+ * construído sobre um globo sem a camada do globo era um mural de bairro com
+ * título. As outras três continuam valendo pelo mesmo motivo de sempre: um
+ * alagamento numa rua interessa ao bairro, e quem mora longe não deve receber
+ * a rua de ninguém.
+ */
+export type Alcance = "cidade" | "estado" | "pais" | "mundo";
 export type TipoDeMidia = "texto" | "imagem" | "video";
 
 /**
@@ -193,7 +203,10 @@ export async function listarNoticias(f: FiltroDeNoticias): Promise<Noticia[]> {
        and p.oculto_em is null
        and u.banned_at is null
        and (
-         (p.alcance = 'pais'   and p.pais   is not distinct from ${f.pais ?? null})
+         -- O MUNDO CHEGA A TODO MUNDO, inclusive a quem ainda não disse onde
+         -- mora. É a única camada que não depende do lugar de quem lê.
+         p.alcance = 'mundo'
+         or (p.alcance = 'pais'   and p.pais   is not distinct from ${f.pais ?? null})
          or (p.alcance = 'estado' and p.estado is not distinct from ${f.estado ?? null}
                                   and p.pais   is not distinct from ${f.pais ?? null})
          or (p.alcance = 'cidade' and p.cidade is not distinct from ${f.cidade ?? null}
@@ -264,4 +277,50 @@ export async function minhasNoticias(autorId: string): Promise<Noticia[]> {
     oculto: Boolean(l.oculto_em) || Boolean(l.removido_em),
     denuncias: Number(l.denuncias ?? 0),
   }));
+}
+
+// ---------------------------------------------------------------------------
+// A linha do tempo mundial
+// ---------------------------------------------------------------------------
+
+/**
+ * As notícias do mundo, na forma que o feed vertical entende.
+ *
+ * POR QUE NÃO BASTA A TELA DE NOTÍCIAS QUE JÁ EXISTE. Ela é uma LISTA: título,
+ * assunto, data. Lista se lê; e ler é um gesto que a pessoa só faz quando já
+ * decidiu se importar. O feed vertical é outra coisa — ele mostra o vídeo em
+ * tela cheia, com som, e a pessoa decide DEPOIS de ver. Para uma rede de
+ * notícias, é a diferença entre um jornal e a janela.
+ *
+ * SEM FILTRO DE REGIÃO AQUI, de propósito: esta é a aba do MUNDO. O alcance
+ * continua governando a tela regional (`listarNoticias`), que é onde ele
+ * importa — ali a promessa é "o que chega até mim". Aqui a promessa é outra:
+ * o que está acontecendo, em qualquer lugar.
+ *
+ * MAS O QUE FOI FEITO PARA O MUNDO VEM PRIMEIRO. Sem isso, a aba do mundo é
+ * só a ordem de chegada, e quem escreveu pensando no planeta fica atrás de um
+ * alagamento de bairro que entrou um minuto depois. Com isso, a primeira tela
+ * é sempre a que faz sentido para qualquer pessoa — e o resto do planeta vem
+ * embaixo, que é onde ele deixa de ser ruído e passa a ser descoberta.
+ *
+ * NOTÍCIA NÃO VENCE, e por isso a consulta não filtra por `expires_at`: a
+ * coluna existe com cem anos adiante só porque o mural a exige.
+ */
+export async function noticiasDoMundo(limite = 60): Promise<Noticia[]> {
+  if (!sql) return [];
+  const linhas = (await sql`
+    select p.id, p.kind, p.titulo, p.body, p.midia_chave, p.cartaz_chave,
+           p.categoria, p.alcance, p.lat, p.lon, p.lugar, p.pais, p.estado,
+           p.cidade, p.created_at,
+           u.nickname as autor, u.avatar_url as autor_avatar
+      from posts p
+      join users u on u.id = p.author_id
+     where p.tipo = 'noticia'
+       and p.removido_em is null
+       and p.oculto_em is null
+       and u.banned_at is null
+     order by (p.alcance = 'mundo') desc, p.created_at desc
+     limit ${Math.min(Math.max(1, limite), 100)}
+  `) as Record<string, unknown>[];
+  return linhas.map(montar);
 }

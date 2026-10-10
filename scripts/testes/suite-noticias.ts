@@ -226,6 +226,105 @@ export async function suiteNoticias(base: string): Promise<Suite> {
     });
 
     // -----------------------------------------------------------------------
+    // O MUNDO — a notícia que atravessa a fronteira de propósito
+    // -----------------------------------------------------------------------
+
+    let doMundo = "";
+
+    await s.teste("publicar para o mundo todo", async () => {
+      const r = await publicar(paulista, "Eclipse visível de todo o planeta", "mundo", {
+        corpo: "Começa às 3h da manhã no horário de Brasília.",
+        categoria: "tempo",
+      });
+      igual(r.status, 200, JSON.stringify(r.corpo).slice(0, 200));
+      doMundo = r.corpo.noticia!.id;
+      igual(r.corpo.noticia!.alcance, "mundo", "o alcance voltou do banco");
+      return r.corpo.noticia!.titulo;
+    });
+
+    await s.teste("a do MUNDO atravessa a fronteira", async () => {
+      /*
+       * É a razão de existir deste alcance. As outras três param na fronteira
+       * de propósito; esta passa de propósito. Se a russa não vê, o recurso
+       * não existe.
+       */
+      const ids = new Set((await lerDe(russa)).map((n) => n.id));
+      ok(ids.has(doMundo), "a notícia do mundo parou na fronteira");
+      igual(ids.has(daCidade), false, "e a de bairro continua parando");
+    });
+
+    await s.teste("o mundo chega a quem ainda não disse onde mora", async () => {
+      /*
+       * Quem entrou pelo Google e não preencheu o perfil tinha uma tela vazia:
+       * sem país, nenhuma das três regras casava. O mundo é o que essa pessoa
+       * pode ver no primeiro segundo — e é o que decide se ela fica.
+       */
+      const anonima = await nova("sl", SP);
+      await sql`update users set city = null, state = null, country = null
+                 where id = ${anonima.id}::uuid`;
+      const lista = await lerDe(anonima);
+      ok(
+        lista.some((n) => n.id === doMundo),
+        "quem não tem lugar viu uma tela vazia",
+      );
+      return `${lista.length} notícia(s) sem perfil preenchido`;
+    });
+
+    await s.teste("a aba do mundo COMEÇA pelo que é do mundo", async () => {
+      /*
+       * A aba do mundo mostra o planeta inteiro — se mostrasse só o que foi
+       * publicado COM alcance mundial, ela nasceria vazia, e tela vazia no
+       * primeiro dia é o que faz a pessoa não voltar.
+       *
+       * O que ela promete é a ORDEM: quem escreveu pensando no planeta aparece
+       * antes de um alagamento de bairro que entrou um minuto depois.
+       */
+      const r = await russa.cliente.get<{ noticias: Noticia[] }>(
+        "/api/noticias?mundo=1",
+      );
+      const lista = r.corpo.noticias;
+      ok(lista.length > 0, "a aba do mundo veio vazia");
+      const primeiroRegional = lista.findIndex((n) => n.alcance !== "mundo");
+      const ultimoMundial = lista.reduce(
+        (acc, n, i) => (n.alcance === "mundo" ? i : acc),
+        -1,
+      );
+      ok(
+        primeiroRegional === -1 || ultimoMundial < primeiroRegional,
+        "uma notícia de bairro passou na frente do que era para o mundo",
+      );
+      ok(
+        lista.some((n) => n.id === doMundo),
+        "a do mundo não está na aba do mundo",
+      );
+      return `${ultimoMundial + 1} mundial(is) antes de ${lista.length - ultimoMundial - 1} regional(is)`;
+    });
+
+    await s.teste("a linha do tempo mundial traz o título", async () => {
+      /*
+       * A linha do tempo é o mural: ela mostra body e mídia. Uma notícia sem o
+       * título ali chegaria sem a frase que faz a pessoa decidir se assiste.
+       */
+      const r = await russa.cliente.get<{
+        posts: { id: string; titulo?: string | null; alcance?: string | null }[];
+      }>("/api/posts?de=noticias");
+      const achada = r.corpo.posts.find((p) => p.id === doMundo);
+      ok(achada, "a notícia do mundo não entrou na linha do tempo");
+      igual(
+        achada!.titulo,
+        "Eclipse visível de todo o planeta",
+        "o título não chegou na linha do tempo",
+      );
+      return `${r.corpo.posts.length} na linha do tempo mundial`;
+    });
+
+    await s.teste("alcance inventado é recusado", async () => {
+      const r = await publicar(paulista, "Para a galáxia", "galaxia");
+      igual(r.status, 400, "status");
+      ok(r.corpo.errors?.alcance, "disse qual campo");
+    });
+
+    // -----------------------------------------------------------------------
     // A separação do mural
     // -----------------------------------------------------------------------
 

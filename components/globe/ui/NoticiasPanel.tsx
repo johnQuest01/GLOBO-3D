@@ -3,6 +3,7 @@
 import React, { FC, useCallback, useEffect, useRef, useState } from "react";
 
 import { subirMidia, urlDaMidia } from "@/lib/chat/midiaRemota";
+import PreviaDaMidia from "./PreviaDaMidia";
 import { prepararMidia, VIDEO_SEG_MAX } from "@/lib/midia/comprimir";
 
 /**
@@ -39,10 +40,26 @@ const corDoAssunto = (v: string) =>
 const rotuloDoAssunto = (v: string) =>
   ASSUNTOS.find((a) => a.valor === v)?.rotulo ?? "Outro";
 
-const ALCANCES: { valor: "cidade" | "estado" | "pais"; rotulo: string }[] = [
+/**
+ * Até onde a notícia alcança — e a quarta camada é a que dá sentido ao globo.
+ *
+ * As três primeiras existem para proteger quem lê: um alagamento numa rua
+ * interessa ao bairro, e quem mora longe não deve receber a rua de ninguém.
+ * `mundo` existe pelo motivo oposto — um terremoto, uma eleição, um carnaval
+ * não têm fronteira, e sem esta camada o aplicativo era um mural de bairro
+ * com título.
+ *
+ * NINGUÉM É PROMOVIDO AO MUNDO AUTOMATICAMENTE. Quem escreve escolhe, e
+ * responde por isso na mesma fila de moderação.
+ */
+const ALCANCES: {
+  valor: "cidade" | "estado" | "pais" | "mundo";
+  rotulo: string;
+}[] = [
   { valor: "cidade", rotulo: "Minha cidade" },
   { valor: "estado", rotulo: "Meu estado" },
   { valor: "pais", rotulo: "Meu país" },
+  { valor: "mundo", rotulo: "O mundo todo" },
 ];
 
 const TITULO_MAX = 140;
@@ -176,13 +193,15 @@ const NoticiasPanel: FC<Props> = ({
 
   const [assunto, setAssunto] = useState<string | null>(null);
   const [termo, setTermo] = useState("");
-  const [aba, setAba] = useState<"regiao" | "minhas">("regiao");
+  const [aba, setAba] = useState<"regiao" | "mundo" | "minhas">("regiao");
 
   const [escrevendo, setEscrevendo] = useState(false);
   const [titulo, setTitulo] = useState("");
   const [corpo, setCorpo] = useState("");
   const [assuntoNovo, setAssuntoNovo] = useState("outro");
-  const [alcanceNovo, setAlcanceNovo] = useState<"cidade" | "estado" | "pais">(
+  const [alcanceNovo, setAlcanceNovo] = useState<
+    "cidade" | "estado" | "pais" | "mundo"
+  >(
     "cidade",
   );
   const [arquivo, setArquivo] = useState<File | null>(null);
@@ -200,6 +219,8 @@ const NoticiasPanel: FC<Props> = ({
       const params = new URLSearchParams();
       if (paginaDe) params.set("de", paginaDe);
       else if (aba === "minhas") params.set("minhas", "1");
+      // A aba do mundo não leva filtro: ela é o oposto do alcance.
+      else if (aba === "mundo") params.set("mundo", "1");
       else {
         if (assunto) params.set("assunto", assunto);
         if (termo.trim().length >= 2) params.set("q", termo.trim());
@@ -412,7 +433,7 @@ const NoticiasPanel: FC<Props> = ({
           <>
             {/* Abas */}
             <div className="flex items-center gap-1 px-5 pt-3">
-              {(["regiao", "minhas"] as const).map((qual) => (
+              {(["regiao", "mundo", "minhas"] as const).map((qual) => (
                 <button
                   key={qual}
                   type="button"
@@ -423,7 +444,11 @@ const NoticiasPanel: FC<Props> = ({
                       : "text-white/45 hover:text-white/75"
                   }`}
                 >
-                  {qual === "regiao" ? "Da região" : "Minhas"}
+                  {qual === "regiao"
+                    ? "Da região"
+                    : qual === "mundo"
+                      ? "Do mundo"
+                      : "Minhas"}
                 </button>
               ))}
               <button
@@ -497,7 +522,9 @@ const NoticiasPanel: FC<Props> = ({
               <p className="text-sm text-white/40">
                 {aba === "minhas"
                   ? "Você ainda não publicou nenhuma notícia."
-                  : "Ninguém publicou nada por aqui ainda."}
+                  : aba === "mundo"
+                    ? "Nenhuma notícia alcançou o mundo ainda."
+                    : "Ninguém publicou nada por aqui ainda."}
               </p>
               {!paginaDe && (
                 <button
@@ -782,41 +809,17 @@ const NoticiasPanel: FC<Props> = ({
               <p className="mt-1 text-[11px] text-red-300">{erros.alcance}</p>
             )}
 
-            {preparo !== null && (
-              <div className="mt-3">
-                <div className="flex items-center justify-between text-[11px] text-white/60">
-                  <span>Preparando o vídeo para caber…</span>
-                  <span className="tabular-nums text-white/40">
-                    {Math.round(preparo * 100)}%
-                  </span>
-                </div>
-                <div className="mt-1.5 h-1 overflow-hidden rounded-full bg-white/10">
-                  <div
-                    className="h-full rounded-full bg-emerald-400 transition-[width] duration-200 ease-out"
-                    style={{ width: `${Math.max(2, preparo * 100)}%` }}
-                  />
-                </div>
-              </div>
+            {arquivo && (
+              <PreviaDaMidia
+                arquivo={arquivo}
+                preparo={preparo}
+                onTirar={() => {
+                  setArquivo(null);
+                  if (arquivoRef.current) arquivoRef.current.value = "";
+                }}
+              />
             )}
 
-            {arquivo && (
-              <p className="mt-3 flex items-center gap-2 text-[11px] text-white/60">
-                <span className="truncate">{arquivo.name}</span>
-                <span className="shrink-0 text-white/35">
-                  {(arquivo.size / 1048576).toFixed(1)} MB
-                </span>
-                <button
-                  type="button"
-                  onClick={() => {
-                    setArquivo(null);
-                    if (arquivoRef.current) arquivoRef.current.value = "";
-                  }}
-                  className="shrink-0 text-white/40 hover:text-white/80"
-                >
-                  tirar
-                </button>
-              </p>
-            )}
             {erros.midia && (
               <p className="mt-1 text-[11px] text-red-300">{erros.midia}</p>
             )}
