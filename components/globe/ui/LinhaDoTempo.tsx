@@ -517,9 +517,17 @@ const LinhaDoTempo: FC<Props> = ({
   const [posts, setPosts] = useState<Post[]>([]);
   const [carregando, setCarregando] = useState(false);
   const [aviso, setAviso] = useState<string | null>(null);
+  /*
+   * ABRE EM NOTÍCIAS, não em "Seguindo".
+   *
+   * Quem acaba de entrar não segue ninguém, e "Seguindo" é literalmente uma
+   * tela em branco — a primeira coisa que o app mostrava era o vazio. Numa
+   * rede de notícias a primeira tela tem de ter notícia: é o único conteúdo
+   * que existe antes de a pessoa conhecer alguém.
+   */
   const [aba, setAba] = useState<
     "seguindo" | "mundo" | "paravoce" | "noticias"
-  >("seguindo");
+  >("noticias");
   const [sigo, setSigo] = useState<OQueSigo | null>(null);
 
   /** Qual post está na tela agora. Índice, porque a faixa precisa dele. */
@@ -1669,6 +1677,17 @@ const LinhaDoTempo: FC<Props> = ({
 
       {/* Topo: abas e sair. Flutuando, para não roubar altura do vídeo. */}
       <div className="pointer-events-none absolute inset-x-0 top-0 flex items-center gap-1 p-3 pt-[max(0.75rem,env(safe-area-inset-top))]">
+        {/*
+          AS ABAS ROLAM; PUBLICAR NÃO.
+
+          Quatro abas mais Publicar mais Fechar não cabem em 375 pontos, e o
+          que acontecia é que o Publicar ficava metade para fora da tela —
+          visível o bastante para a pessoa ver que existe, cortado o bastante
+          para ela não confiar em apertar. Agora a fila de abas tem a largura
+          que sobrar e rola de lado; os dois botões de ação ficam inteiros,
+          sempre no mesmo lugar.
+        */}
+        <div className="pointer-events-auto -mx-0.5 flex min-w-0 flex-1 items-center gap-1 overflow-x-auto px-0.5 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         {(["noticias", "seguindo", "mundo", "paravoce"] as const).map((qual) => (
           <button
             key={qual}
@@ -1689,11 +1708,12 @@ const LinhaDoTempo: FC<Props> = ({
                   : "Para você"}
           </button>
         ))}
+        </div>
 
         <button
           type="button"
           onClick={() => setCompondo(true)}
-          className="pointer-events-auto ml-auto rounded-full bg-cyan-600/90 px-3.5 py-1.5 text-[13px] font-semibold text-white backdrop-blur hover:bg-cyan-500"
+          className="pointer-events-auto shrink-0 rounded-full bg-cyan-600/90 px-3.5 py-1.5 text-[13px] font-semibold text-white backdrop-blur hover:bg-cyan-500"
         >
           Publicar
         </button>
@@ -1701,7 +1721,7 @@ const LinhaDoTempo: FC<Props> = ({
           type="button"
           onClick={onFechar}
           aria-label="Fechar"
-          className="pointer-events-auto rounded-full bg-black/30 p-2 text-white/70 backdrop-blur hover:text-white"
+          className="pointer-events-auto shrink-0 rounded-full bg-black/30 p-2 text-white/70 backdrop-blur hover:text-white"
         >
           <svg
             width="16"
@@ -1823,15 +1843,26 @@ const LinhaDoTempo: FC<Props> = ({
             <p className="text-[11px] text-white/45">
               Some em 24 horas, e nasce no lugar onde você está no globo.
             </p>
-            <textarea
-              value={texto}
-              onChange={(e) => setTexto(e.target.value.slice(0, TEXTO_MAX))}
-              placeholder="O que está acontecendo aí?"
-              rows={3}
-              className="mt-2 w-full resize-none rounded-2xl bg-white/10 px-3 py-2 text-[15px] text-white placeholder-white/35 outline-none ring-1 ring-white/10 focus:ring-cyan-400/40"
+            {/*
+              A MÍDIA VEM PRIMEIRO, e a legenda é legenda.
+
+              Antes, a caixa de texto abria em cima e a foto era um ícone de
+              vinte pixels no rodapé, do mesmo tamanho do contador de letras.
+              Numa rede de notícias isso inverte o gesto: quem abre esta tela
+              com um vídeo na mão veio publicar o vídeo, não escrever um
+              parágrafo. É assim que o Instagram e o TikTok funcionam, e é
+              assim porque é esta a ordem em que a pessoa pensa.
+            */}
+            <input
+              ref={arquivoRef}
+              type="file"
+              accept="image/*,video/*"
+              onChange={(e) => setArquivo(e.target.files?.[0] ?? null)}
+              className="hidden"
+              id="linha-arquivo"
             />
 
-            {arquivo && (
+            {arquivo ? (
               <PreviaDaMidia
                 arquivo={arquivo}
                 preparo={preparo}
@@ -1840,35 +1871,57 @@ const LinhaDoTempo: FC<Props> = ({
                   if (arquivoRef.current) arquivoRef.current.value = "";
                 }}
               />
-            )}
-
-            <div className="mt-2 flex items-center gap-2">
-              <input
-                ref={arquivoRef}
-                type="file"
-                accept="image/*,video/*"
-                onChange={(e) => setArquivo(e.target.files?.[0] ?? null)}
-                className="hidden"
-                id="linha-arquivo"
-              />
+            ) : (
               <label
                 htmlFor="linha-arquivo"
-                className="cursor-pointer rounded-xl bg-white/10 p-2 text-white/70 hover:bg-white/20"
-                title="Foto ou vídeo"
+                className="mt-3 flex cursor-pointer flex-col items-center justify-center gap-1 rounded-2xl border border-dashed border-white/20 bg-white/[0.04] py-6 text-white/60 transition-colors hover:border-cyan-400/50 hover:bg-white/[0.08] hover:text-white/80"
               >
                 <svg
-                  width="20"
-                  height="20"
+                  width="26"
+                  height="26"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="1.8"
+                  strokeWidth="1.6"
                 >
                   <rect x="3" y="5" width="18" height="14" rx="2" />
                   <circle cx="8.5" cy="10" r="1.5" />
                   <path d="M21 16l-5-5-4 4-2-2-7 7" strokeLinejoin="round" />
                 </svg>
+                <span className="text-[13px] font-medium">Foto ou vídeo</span>
+                <span className="px-6 text-center text-[10px] leading-snug text-white/35">
+                  Vídeo de até cinco minutos. O aparelho prepara antes de
+                  enviar — ou escreva só o texto, embaixo.
+                </span>
               </label>
+            )}
+
+            {/*
+              A LEGENDA MUDA DE NOME quando há mídia. "O que está acontecendo
+              aí?" com um vídeo já escolhido pede a notícia de novo; com a
+              mídia na tela, o que falta é a legenda dela.
+            */}
+            <textarea
+              value={texto}
+              onChange={(e) => setTexto(e.target.value.slice(0, TEXTO_MAX))}
+              placeholder={
+                arquivo
+                  ? "Escreva uma legenda (ou publique sem)…"
+                  : "O que está acontecendo aí?"
+              }
+              rows={arquivo ? 2 : 3}
+              className="mt-3 w-full resize-none rounded-2xl bg-white/10 px-3 py-2 text-[15px] text-white placeholder-white/35 outline-none ring-1 ring-white/10 focus:ring-cyan-400/40"
+            />
+
+            <div className="mt-2 flex items-center gap-2">
+              {arquivo && (
+                <label
+                  htmlFor="linha-arquivo"
+                  className="cursor-pointer rounded-xl bg-white/10 px-2.5 py-2 text-[11px] font-medium text-white/70 hover:bg-white/20"
+                >
+                  Trocar
+                </label>
+              )}
               <span className="text-[11px] text-white/30">
                 {texto.length}/{TEXTO_MAX}
               </span>

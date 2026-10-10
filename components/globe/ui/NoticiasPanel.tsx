@@ -762,6 +762,59 @@ const NoticiasPanel: FC<Props> = ({
                          placeholder-white/30 outline-none ring-1 ring-white/10 focus:ring-orange-400/40"
             />
 
+            {/*
+              A MÍDIA LOGO DEPOIS DO TEXTO, e grande.
+
+              Numa notícia o título vem primeiro de propósito — notícia É a
+              manchete, e é por ela que a pessoa decide ler. Mas a foto e o
+              vídeo são a PROVA, e estavam num ícone de vinte pixels no
+              rodapé, depois de assunto e alcance: quem tinha a prova na mão
+              publicava sem ela, por não ter visto onde anexar.
+            */}
+            <input
+              ref={arquivoRef}
+              type="file"
+              accept="image/*,video/*"
+              onChange={(e) => setArquivo(e.target.files?.[0] ?? null)}
+              className="hidden"
+              id="noticia-arquivo"
+            />
+
+            {arquivo ? (
+              <PreviaDaMidia
+                arquivo={arquivo}
+                preparo={preparo}
+                onTirar={() => {
+                  setArquivo(null);
+                  if (arquivoRef.current) arquivoRef.current.value = "";
+                }}
+              />
+            ) : (
+              <label
+                htmlFor="noticia-arquivo"
+                className="mt-2 flex cursor-pointer flex-col items-center justify-center gap-1 rounded-xl border border-dashed border-white/20 bg-white/[0.04] py-5 text-white/60 transition-colors hover:border-orange-400/50 hover:bg-white/[0.08] hover:text-white/80"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.6"
+                >
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <circle cx="8.5" cy="10" r="1.5" />
+                  <path d="M21 16l-5-5-4 4-2-2-7 7" strokeLinejoin="round" />
+                </svg>
+                <span className="text-[13px] font-medium">
+                  Foto ou vídeo do que aconteceu
+                </span>
+                <span className="px-6 text-center text-[10px] leading-snug text-white/35">
+                  É o que faz a notícia ser acreditada. Opcional.
+                </span>
+              </label>
+            )}
+
             <p className="mt-4 text-[11px] font-medium text-white/50">
               Assunto
             </p>
@@ -789,7 +842,13 @@ const NoticiasPanel: FC<Props> = ({
             <p className="mt-4 text-[11px] font-medium text-white/50">
               Quem precisa ver isto?
             </p>
-            <div className="mt-1.5 grid grid-cols-3 gap-1.5">
+            {/*
+              DUAS COLUNAS, não três: com o 'mundo' são quatro opções, e em
+              três colunas a quarta ficava sozinha numa linha, parecendo um
+              acréscimo de última hora. Em duas, as quatro formam um quadrado
+              — e cada alvo fica do tamanho de um dedo.
+            */}
+            <div className="mt-1.5 grid grid-cols-2 gap-1.5">
               {ALCANCES.map((a) => (
                 <button
                   key={a.valor}
@@ -809,17 +868,6 @@ const NoticiasPanel: FC<Props> = ({
               <p className="mt-1 text-[11px] text-red-300">{erros.alcance}</p>
             )}
 
-            {arquivo && (
-              <PreviaDaMidia
-                arquivo={arquivo}
-                preparo={preparo}
-                onTirar={() => {
-                  setArquivo(null);
-                  if (arquivoRef.current) arquivoRef.current.value = "";
-                }}
-              />
-            )}
-
             {erros.midia && (
               <p className="mt-1 text-[11px] text-red-300">{erros.midia}</p>
             )}
@@ -830,32 +878,14 @@ const NoticiasPanel: FC<Props> = ({
             )}
 
             <div className="mt-4 flex items-center gap-2">
-              <input
-                ref={arquivoRef}
-                type="file"
-                accept="image/*,video/*"
-                onChange={(e) => setArquivo(e.target.files?.[0] ?? null)}
-                className="hidden"
-                id="noticia-arquivo"
-              />
-              <label
-                htmlFor="noticia-arquivo"
-                className="cursor-pointer rounded-xl bg-white/10 p-2.5 text-white/70 hover:bg-white/20"
-                title="Foto ou vídeo"
-              >
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
+              {arquivo && (
+                <label
+                  htmlFor="noticia-arquivo"
+                  className="cursor-pointer rounded-xl bg-white/10 px-2.5 py-2 text-[11px] font-medium text-white/70 hover:bg-white/20"
                 >
-                  <rect x="3" y="5" width="18" height="14" rx="2" />
-                  <circle cx="8.5" cy="10" r="1.5" />
-                  <path d="M21 16l-5-5-4 4-2-2-7 7" strokeLinejoin="round" />
-                </svg>
-              </label>
+                  Trocar
+                </label>
+              )}
               <span className="text-[11px] text-white/30">
                 {titulo.length}/{TITULO_MAX}
               </span>

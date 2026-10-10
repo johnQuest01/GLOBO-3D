@@ -28,6 +28,19 @@ interface Props {
   preparo?: number | null;
 }
 
+/**
+ * O tamanho na unidade em que ele é legível.
+ *
+ * `(bytes / 1048576).toFixed(1)` transforma todo arquivo pequeno em "0.0 MB",
+ * que a pessoa lê como "deu errado" — e um número que parece erro ao lado de
+ * uma foto que está certa faz ela desistir de publicar.
+ */
+function tamanhoLegivel(bytes: number): string {
+  if (bytes < 1024) return `${bytes} B`;
+  if (bytes < 1048576) return `${Math.round(bytes / 1024)} KB`;
+  return `${(bytes / 1048576).toFixed(1)} MB`;
+}
+
 /** "1:23" — a duração dita como se lê num tocador. */
 function duracaoLegivel(seg: number): string {
   const m = Math.floor(seg / 60);
@@ -35,11 +48,67 @@ function duracaoLegivel(seg: number): string {
   return `${m}:${String(s).padStart(2, "0")}`;
 }
 
+/*
+ * ONDE PROCURAR UM QUADRO QUE NÃO SEJA PRETO.
+ *
+ * Câmera de celular começa a gravar antes de o sensor se ajustar: o primeiro
+ * meio segundo costuma ser preto, às vezes mais. Um salto fixo para 0,1 s
+ * acerta num vídeo e erra no seguinte — e prévia preta não confirma nada, que
+ * é o problema inteiro que esta tela existe para resolver.
+ *
+ * Então em vez de adivinhar um instante, a prévia TENTA e OLHA: desenha o
+ * quadro num quadrado de 32 pixels, mede o brilho médio e, se for quase preto,
+ * pula para o próximo instante. Quatro tentativas bastam; nenhuma delas custa
+ * download, porque o arquivo já está no aparelho.
+ */
+const INSTANTES = [0.1, 0.6, 1.5, 3];
+const ESCURO_DEMAIS = 14; // 0–255. Abaixo disto, a tela parece desligada.
+
 const PreviaDaMidia: FC<Props> = ({ arquivo, onTirar, preparo }) => {
   const [url, setUrl] = useState<string | null>(null);
   const [duracao, setDuracao] = useState<number | null>(null);
   const [medidas, setMedidas] = useState<{ l: number; a: number } | null>(null);
   const videoRef = useRef<HTMLVideoElement | null>(null);
+  const tentativa = useRef(0);
+
+  /** O brilho médio do quadro que está na tela agora, de 0 a 255. */
+  const brilhoDoQuadro = (v: HTMLVideoElement): number | null => {
+    try {
+      const c = document.createElement("canvas");
+      c.width = 32;
+      c.height = 32;
+      const g = c.getContext("2d", { willReadFrequently: true });
+      if (!g) return null;
+      g.drawImage(v, 0, 0, 32, 32);
+      const d = g.getImageData(0, 0, 32, 32).data;
+      let soma = 0;
+      for (let i = 0; i < d.length; i += 4) {
+        soma += (d[i]! * 299 + d[i + 1]! * 587 + d[i + 2]! * 114) / 1000;
+      }
+      return soma / (d.length / 4);
+    } catch {
+      /* alguns formatos recusam a leitura; aí não dá para julgar */
+      return null;
+    }
+  };
+
+  /** Pula para o próximo instante da lista, se ainda houver. */
+  const procurarQuadro = (v: HTMLVideoElement) => {
+    const dur = Number.isFinite(v.duration) ? v.duration : 0;
+    while (tentativa.current < INSTANTES.length) {
+      const quando = INSTANTES[tentativa.current]!;
+      tentativa.current += 1;
+      if (dur === 0 || quando < dur * 0.9) {
+        try {
+          v.currentTime = quando;
+          return true;
+        } catch {
+          /* o formato recusou o salto; tenta o próximo */
+        }
+      }
+    }
+    return false;
+  };
 
   const ehVideo = (arquivo.type || "").startsWith("video/");
 
@@ -54,6 +123,7 @@ const PreviaDaMidia: FC<Props> = ({ arquivo, onTirar, preparo }) => {
     setUrl(endereco);
     setDuracao(null);
     setMedidas(null);
+    tentativa.current = 0;
     return () => URL.revokeObjectURL(endereco);
   }, [arquivo]);
 
@@ -71,17 +141,15 @@ const PreviaDaMidia: FC<Props> = ({ arquivo, onTirar, preparo }) => {
               const v = e.currentTarget;
               if (Number.isFinite(v.duration)) setDuracao(v.duration);
               if (v.videoWidth) setMedidas({ l: v.videoWidth, a: v.videoHeight });
-              /*
-               * UM SALTO PARA O SEGUNDO 0,1. O primeiro quadro de um vídeo de
-               * celular costuma ser preto — a câmera ainda estava se ajustando
-               * quando a gravação começou —, e uma prévia preta não confirma
-               * nada.
-               */
-              try {
-                v.currentTime = Math.min(0.1, (v.duration || 1) * 0.1);
-              } catch {
-                /* alguns formatos recusam o salto; fica o primeiro quadro */
-              }
+              tentativa.current = 0;
+              procurarQuadro(v);
+            }}
+            onSeeked={(e) => {
+              const v = e.currentTarget;
+              const brilho = brilhoDoQuadro(v);
+              // Nulo = não deu para medir; então fica o que veio, que é melhor
+              // que ficar saltando às cegas pelo vídeo inteiro.
+              if (brilho !== null && brilho < ESCURO_DEMAIS) procurarQuadro(v);
             }}
             className="max-h-64 w-full object-contain"
           />
@@ -159,7 +227,7 @@ const PreviaDaMidia: FC<Props> = ({ arquivo, onTirar, preparo }) => {
         souber o que são 148 MB —, mas não são o que ela veio ver.
       */}
       <p className="mt-1.5 flex items-center gap-2 px-0.5 text-[10px] text-white/35">
-        <span>{(arquivo.size / 1048576).toFixed(1)} MB</span>
+        <span>{tamanhoLegivel(arquivo.size)}</span>
         {medidas && (
           <span>
             · {medidas.l}×{medidas.a}
